@@ -66,7 +66,7 @@ When handed a PRD or a Brainstorming doc, you execute the following:
 
 ## 3. COGNITIVE PROTOCOLS
 - **Scratchpad Reasoning**: Output `<scratchpad>` to analyze the PRD before creating tickets.
-- **Pushback**: If a PRD is vague, you must reject it back to the `galyarder-agent-framework-specialist` or human partner for clarification.
+- **Pushback**: If a PRD is vague, you must reject it back to the `galyarder-specialist` or human partner for clarification.
 
 ## 4. FINAL VERIFICATION
 Before handing off to the `super-architect` or `planner`:

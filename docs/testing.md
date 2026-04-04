@@ -35,7 +35,7 @@ cd tests/claude-code
 
 - Must run from the **galyarder-agent-framework plugin directory** (not from temp directories)
 - Claude Code must be installed and available as `claude` command
-- Local dev marketplace must be enabled: `"galyarder-agent-framework@galyarder-agent-framework-marketplace": true` in `~/.claude/settings.json`
+- Local dev marketplace must be enabled: `"galyarder-agent-framework@galyarderlabs-marketplace": true` in `~/.claude/settings.json`
 
 ## Integration Test: subagent-driven-development
 

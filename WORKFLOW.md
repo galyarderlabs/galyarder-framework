@@ -3,7 +3,7 @@
 Code without distribution is worthless. Development without validation is chaos. The Galyarder Agent Framework enforces a strict, non-negotiable sequence to guarantee that what is built is mathematically sound and market-ready.
 
 ## Phase 1: Market Intelligence & Discovery (The "Why")
-**Agents:** `product-manager`, `growth-strategist`, `galyarder-agent-framework-specialist`
+**Agents:** `product-manager`, `growth-strategist`, `galyarder-specialist`
 **Skills:** `brainstorming`, `write-a-prd`, `competitor-alternatives`, `linear-ticket-management`
 
 Before a single line of code is written:
@@ -44,7 +44,7 @@ After the feature is built:
 4. Establish infrastructure-as-code (Docker/Terraform) and CI/CD pipelines (GitHub Actions).
 5. Merge the feature.
 
-## Phase 5: Revenue, Video, & Conversion (The "Cuan")
+## Phase 5: Marketing, Video, & Conversion (The Growth)
 **Agents:** `growth-strategist`, `remotion-engineer`, `social-strategist`
 **Skills:** `seo-audit`, `schema-markup`, `copywriting`, `paywall-upgrade-cro`, `video-generation`, `social-content`
 
@@ -52,7 +52,7 @@ Once the code is merged:
 1. Write action-oriented, high-signal marketing copy.
 2. Inject Schema.org markup.
 3. Apply PLFS scoring to onboarding and paywall flows.
-4. Generate programmatic revenue-focused videos in `remotion/`.
+4. Generate programmatic marketing and changelog videos in `remotion/`.
 5. Engineer social distribution threads and transition the Linear ticket to "Done".
 
 ---

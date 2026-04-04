@@ -1,7 +1,7 @@
 {
   "name": "galyarder-agent-framework",
   "version": "1.0.0",
-  "description": "Galyarder Agent Framework: The ultimate 1-Man Army framework for high-rigor engineering and business revenue (cuan)",
+  "description": "The ultimate 1-Man Army framework for high-rigor engineering and business growth",
   "type": "module",
   "main": ".opencode/plugins/galyarder-agent-framework.js",
   "author": "Galyarder Labs",

@@ -6,7 +6,7 @@
 
 Galyarder Agent Framework is a high-fidelity cognitive layer designed to transform standard AI coding assistants into a multi-disciplinary, autonomous workforce. It unifies elite software engineering, behavioral marketing psychology, and strategic product orchestration into a single, cohesive system.
 
-Built for the **1-Man Army** (Solo Founder), Galyarder enforces a strict lifecycle that ensures what you build is mathematically sound, production-ready, and optimized for **Revenue (Cuan)**.
+Built for the **1-Man Army** (Solo Founder), Galyarder enforces a strict lifecycle that ensures what you build is mathematically sound, production-ready, and optimized for market success.
 
 ## How it works
 
@@ -18,7 +18,9 @@ After you've signed off on the design, your agent puts together an implementatio
 
 Next up, once you say "go", it launches a *subagent-driven-development* process, having agents work through each engineering task, inspecting and reviewing their work, and continuing forward. It's not uncommon for Claude to be able to work autonomously for a couple hours at a time without deviating from the plan you put together.
 
-Finally, Galyarder Agent Framework shifts into **Revenue (Cuan) Mode**, triggering skills for SEO, CRO, Marketing, and Remotion (Video) to ensure what you built actually achieves market fit and generates revenue.
+Finally, Galyarder Agent Framework shifts into **Marketing Mode**, triggering skills for SEO, CRO, and Remotion (Video) to ensure what you built actually achieves market fit.
+
+There's a bunch more to it, but that's the core of the system. And because the skills trigger automatically, you don't need to do anything special. Your coding agent just has Galyarder Agent Framework.
 
 ## Sponsorship
 
@@ -43,7 +45,7 @@ Register the Galyarder marketplace first:
 Then install the plugin:
 
 ```bash
-/plugin install galyarder-agent-framework@galyarderlabs
+/plugin install galyarder-agent-framework@galyarderlabs-marketplace
 ```
 
 ### Cursor (via Plugin Marketplace)
@@ -162,7 +164,7 @@ Galyarder Agent Framework provides short-hand commands for rapid execution:
 - **Test-Driven Development** — Write tests first, always.
 - **Context Economy** — Use `rtk` proxy for all terminal operations.
 - **Math Over Magic** — Base decisions on data, ROI, and psychological leverage.
-- **Code to Cuan** — Code is a liability until it generates revenue.
+- **Code to Market** — Code is a liability until it achieves market fit.
 
 ## Contributing
 
