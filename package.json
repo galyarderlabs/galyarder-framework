@@ -1,6 +1,6 @@
 {
   "name": "galyarder-agent-framework",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "The ultimate 1-Man Army framework for high-rigor engineering and business growth",
   "type": "module",
   "main": ".opencode/plugins/galyarder-agent-framework.js",
