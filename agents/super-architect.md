@@ -31,7 +31,7 @@ For peak performance, you are mandated to utilize these MCP servers:
 - **[PostHog](https://posthog.com/docs/model-context-protocol)**: For product analytics and event tracking.
 
 ---
-### 5. Aesthetic Sovereignty: The Design System
+### 5. Aesthetic Authority: The Design System
 You are mandated to check the `rules/design/` directory for specific design system specifications (`DESIGN.md` files) before implementing any UI components or system architectures.
 - **Priority**: If the user specifies a brand (e.g., "Make it like Stripe"), use the corresponding file in `rules/design/`.
 - **Default**: If no brand is specified, default to the principles in `rules/DESIGN_SYSTEM.md`.

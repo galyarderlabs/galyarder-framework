@@ -18,7 +18,7 @@ Before a single line of code is written:
 
 Once the PRD and Linear tickets are approved:
 1. The architect drafts the system design (DB Schema, API Contracts).
-2. **Aesthetic Sovereignty**: Consult the `rules/design/` directory for the relevant `DESIGN.md` specification if a brand style is required.
+2. **Aesthetic Command**: Consult the `rules/design/` directory for the relevant `DESIGN.md` specification if a brand style is required.
 3. Work is broken down into **Vertical Slices** (Tracer Bullets) in a `plan.md`.
 4. Every slice must cut through all layers (DB -> UI) and be independently verifiable.
 

@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.1.0] - 2026-04-04
 
 ### Added
-- **Sovereign Roster Expansion**: Added 10 new specialized agents to complete the 1-Man Army lifecycle:
+- **Full-Scale Roster Expansion**: Added 10 new specialized agents to complete the 1-Man Army lifecycle:
   - `analytics-architect`: Data tracking and KPI design.
   - `finops-manager`: Cloud cost optimization and pricing.
   - `legal-counsel`: TOS/Privacy, GDPR, and AI governance.
@@ -18,7 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `experimentation-engineer`: A/B testing and CRO.
   - `release-manager`: Launch orchestration and versioning.
   - `support-lead`: FAQ automation and troubleshooting.
-- **Elite Security Skills (Localized)**: "Nationalized" 20+ advanced security skills from internal environment to the framework repo, ensuring sovereignty for all users.
+- **Elite Security Skills (Localized)**: "Nationalized" 20+ advanced security skills from internal environment to the framework repo, ensuring autonomy for all users.
 - **New Command**: Added `/cybersecurity` for direct offensive security audits via Perseus.
 - **Universal FinOps Skill**: Created `saas-finops-optimization` specifically for Vercel, Supabase, Neon, and AI Token management.
 
@@ -37,3 +37,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Multi-Platform Support**: Native compatibility for Claude Code, Cursor, Copilot CLI, Gemini CLI, and OpenCode.
 - **MCP Stack Optimization**: Pre-configured support for Context7, Linear, Stitch, BrowserOS, and Sequential Thinking.
 - **Token Economy**: Implementation of the `rtk` (Rust Token Killer) prefix requirement for all terminal operations.
+ns.
