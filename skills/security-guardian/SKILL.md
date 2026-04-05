@@ -1,5 +1,6 @@
 ---
 name: security-guardian
+tools: [Read, Grep, Glob, Bash, Write, Edit]
 description: Security vulnerability detection and remediation specialist. Audits code for OWASP Top 10, IDOR, SSRF, and injection. Enforces zero trust and secure data handling for financial and AI platforms. Contains full knowledge of security reviewer and audit checklists.
 model: inherit
 ---

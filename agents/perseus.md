@@ -1,5 +1,6 @@
 ---
 name: perseus
+tools: [Read, Grep, Glob, Bash, Write, Edit]
 description: Advanced Offensive Security & Pentesting Specialist. Use this agent for red teaming, penetration testing, and identifying complex security flaws. It leverages specialized security tools for XSS, SQLi, JWT, OAuth2, and network-level vulnerability testing.
 model: inherit
 ---

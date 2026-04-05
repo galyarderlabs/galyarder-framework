@@ -1,5 +1,6 @@
 ---
 name: ui-ux-designer
+tools: [Read, Grep, Glob, Bash, Write, Edit]
 description: |
   UI/UX and Frontend Design specialist. Use this agent to generate high-fidelity UI components, manage design tokens, and enforce aesthetic consistency using the Stitch MCP. It transforms design intent into production-ready React/Tailwind code.
 model: inherit

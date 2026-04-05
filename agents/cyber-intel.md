@@ -1,5 +1,6 @@
 ---
 name: cyber-intel
+tools: [Read, Grep, Glob, Bash, Write, Edit]
 description: External Threat & Intel Specialist. Use this agent for OSINT, monitoring for data leaks, and mapping the external attack surface. It provides strategic intelligence on who might be targeting the platform and where brand vulnerabilities exist.
 model: inherit
 ---

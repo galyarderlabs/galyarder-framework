@@ -1,5 +1,6 @@
 ---
 name: social-strategist
+tools: [Read, Grep, Glob, Bash, Write, Edit]
 description: |
   Social media and distribution specialist. Use this agent to create hype, draft Twitter/LinkedIn threads, and manage the social media distribution of new features. It focuses on the "Distribution" aspect of the 1-Man Army pipeline.
 model: inherit

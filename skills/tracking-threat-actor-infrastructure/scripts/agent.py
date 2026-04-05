@@ -97,6 +97,7 @@ class ThreatInfraTracker:
         """Retrieve SSL certificate details for fingerprinting."""
         try:
             ctx = ssl.create_default_context()
+            ctx.minimum_version = ssl.TLSVersion.TLSv1_2
             ctx.check_hostname = False
             ctx.verify_mode = ssl.CERT_NONE
             with ctx.wrap_socket(socket.socket(), server_hostname=host) as s:

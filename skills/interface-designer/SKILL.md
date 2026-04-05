@@ -1,5 +1,6 @@
 ---
 name: interface-designer
+tools: [Read, Grep, Glob, Bash, Write, Edit]
 description: |
   Specialist in module interface and API design. Use this agent to generate multiple radically different architectural designs for a system before implementation. It enforces the 'design-an-interface' skill to ensure clean, decoupled, and testable abstractions.
 model: inherit

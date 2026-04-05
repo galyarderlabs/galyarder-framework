@@ -1,5 +1,6 @@
 ---
 name: growth-engineer
+tools: [Read, Grep, Glob, Bash, Write, Edit]
 description: Engineering-as-Marketing Specialist. Use this agent to build viral referral loops, free utility tools for lead generation, and programmatic SEO pages at scale. It focuses on the "Inbound" part of the 1-Man Army pipeline.
 model: inherit
 ---

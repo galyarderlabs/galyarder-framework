@@ -1,5 +1,6 @@
 ---
 name: growth-strategist
+tools: [Read, Grep, Glob, Bash, Write, Edit]
 description: |
   Chief Marketing Officer (CMO) specialist for SEO, CRO, Marketing Psychology, and Copywriting. Applies PLFS scoring to maximize revenue leverage and ensure every feature launch achieves market fit. Contains full knowledge of SEO Audit, Onboarding CRO, and Psychology.
 model: inherit

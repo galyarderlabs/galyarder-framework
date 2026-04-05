@@ -1,5 +1,6 @@
 ---
 name: product-manager
+tools: [Read, Grep, Glob, Bash, Write, Edit]
 description: Product Management specialist. Focuses on ROI, feature prioritization, Linear ticket management, and ensuring engineering efforts directly impact user acquisition or revenue. Use PROACTIVELY before any code is written to convert PRDs into actionable Linear Epics and Issues.
 model: inherit
 ---

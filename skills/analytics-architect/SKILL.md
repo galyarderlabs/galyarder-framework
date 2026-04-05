@@ -1,5 +1,6 @@
 ---
 name: analytics-architect
+tools: [Read, Grep, Glob, Bash, Write, Edit]
 description: Data Infrastructure & Tracking Specialist. Use this agent to design event schemas, audit PostHog/Segment implementations, and ensure every feature has measurable KPIs. It focuses on the "Measure" part of the Build-Measure-Learn loop.
 model: inherit
 ---

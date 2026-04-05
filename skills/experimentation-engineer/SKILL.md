@@ -1,5 +1,6 @@
 ---
 name: experimentation-engineer
+tools: [Read, Grep, Glob, Bash, Write, Edit]
 description: Hypothesis & Experimentation Specialist. Use this agent to design A/B tests, optimize form completion rates, and manage the experiment lifecycle. It ensures that UI changes are driven by statistical evidence, not opinions.
 model: inherit
 ---

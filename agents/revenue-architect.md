@@ -1,5 +1,6 @@
 ---
 name: revenue-architect
+tools: [Read, Grep, Glob, Bash, Write, Edit]
 description: |
   Monetization and pricing strategy specialist. Use this agent to design revenue models, set price points based on value perception, and create viral referral loops. It focuses on the "Cuan" (Revenue) aspect of the 1-Man Army pipeline.
 model: inherit

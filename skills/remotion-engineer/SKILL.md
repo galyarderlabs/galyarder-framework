@@ -1,5 +1,6 @@
 ---
 name: remotion-engineer
+tools: [Read, Grep, Glob, Bash, Write, Edit]
 description: Remotion specialist for programmatic video generation using React. Use PROACTIVELY when the user wants to create, debug, or optimize Remotion video projects. Specializes in frame-perfect animations, physics-based motion, and FFmpeg rendering optimization.
 model: inherit
 ---

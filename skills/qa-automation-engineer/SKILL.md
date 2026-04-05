@@ -1,5 +1,6 @@
 ---
 name: qa-automation-engineer
+tools: [Read, Grep, Glob, Bash, Write, Edit]
 description: |
   E2E Testing and Browser Automation specialist. Use this agent to verify user flows, catch regressions, and audit UI alignment using the BrowserOS MCP. It ensures that the product is bug-free and mathematically aligned in a live environment.
 model: inherit
