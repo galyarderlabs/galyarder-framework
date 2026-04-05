@@ -5,6 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.4] - 2026-04-04
+
+### Fixed
+- **Gemini CLI Validation**: Converted agent frontmatter `tools` field to array format to pass Gemini CLI strict validation.
+- **Agent Synchronization**: Re-synced all agent definitions to the `skills/` directory to ensure consistency across all access methods.
+
+## [1.1.3] - 2026-04-04
+
+### Changed
+- **Narrative Refinement**: Softened the language for RTK and Scratchpad protocols from "Mandatory Rules" to "Environment Standards" to reduce AI resistance in restricted runtimes like Copilot CLI.
+
+## [1.1.2] - 2026-04-04
+
+### Added
+- **Copilot CLI Discovery**: Exposed all agents as individual skills in the `skills/` directory, allowing them to be discovered via the `/skills list` command in Copilot.
+
+## [1.1.1] - 2026-04-04
+
+### Fixed
+- **Command Registration**: Explicitly registered the `commands/` directory in plugin metadata to ensure shorthand commands (e.g., `/analytics`) are recognized as top-level CLI commands.
+
 ## [1.1.0] - 2026-04-04
 
 ### Added
