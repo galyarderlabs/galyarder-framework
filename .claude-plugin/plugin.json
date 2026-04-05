@@ -19,6 +19,5 @@
     "1-man-army"
   ],
   "commands": "./commands/",
-  "skills": "./skills/",
-  "agents": "./agents/"
+  "skills": "./skills/"
 }
