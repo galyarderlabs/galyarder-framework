@@ -31,3 +31,16 @@ These tools are available in Gemini CLI but have no Claude Code equivalent:
 | `ask_user` | Request structured input from the user |
 | `tracker_create_task` | Rich task management (create, update, list, visualize) |
 | `enter_plan_mode` / `exit_plan_mode` | Switch to read-only research mode before making changes |
+
+## Founder Expansion Routing
+
+For founder-facing tasks in Gemini, the founder / fundraising stack is an optional expansion path, not a mandatory default.
+
+Use the `fundraising-operator` role plus the founder-oriented skills when the task involves:
+- fundraising or investor pipeline work
+- deck narrative, investor outreach, or board updates
+- accelerator applications
+- market narrative or founder-led sales qualification
+- founder thought leadership and founder-brand distribution
+
+Do not inject this layer into ordinary coding, debugging, or architecture work unless the user is clearly working on startup-building tasks.
