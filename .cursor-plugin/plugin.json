@@ -2,7 +2,7 @@
   "name": "galyarder-framework",
   "displayName": "Galyarder Framework",
   "description": "Core skills library: TDD, debugging, collaboration patterns, and proven techniques",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "author": {
     "name": "Galyarder Labs",
     "email": "hello@galyarderlabs.app"
