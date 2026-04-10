@@ -1,17 +1,17 @@
 <p align="center">
-  <img src="framework/public/logo.png" width="200" alt="Galyarder Framework Logo">
+  <img src="framework/public/logo.png" width="200" alt="Galyarder Logo">
 </p>
 
 # GALYARDER FRAMEWORK
 
 **Digital Company Operating System for Solo Founders**
 
-Galyarder Framework transforms AI coding assistants into a fully structured, autonomous workforce. It provides **34 specialized agents** and **100+ execution-grade skills** across the full product lifecycle — from fundraising and product strategy to engineering, security, growth, and legal compliance.
+Galyarder Framework transforms AI coding assistants into a fully structured, autonomous workforce. It provides **35 specialized agents** and **132 execution-grade skills** across the full product lifecycle — from fundraising and product strategy to engineering, security, growth, and legal compliance.
 
-**Two Ways to Use:**
+This repository combines two powerful systems:
 
-1. **Standalone** - Install in Claude Code, Cursor, or Gemini. Chat with your digital company.
-2. **With Dashboard** - Visual web platform for managing multiple companies, agents, and tasks.
+1. **Galyarder Framework** - Agent workforce and skills library for AI coding assistants
+2. **Galyarder Dashboard** - Visual control plane for managing AI companies at scale
 
 Built for the **1-Man Army** - one founder with the leverage of an entire company.
 
@@ -29,105 +29,38 @@ Finally, Galyarder Framework shifts into **Marketing Mode**, triggering skills f
 
 There's a bunch more to it, but that's the core of the system. The workflow philosophy stays consistent across hosts, while runtime mechanics such as installation, command invocation, and subagent dispatch vary by platform. Once installed correctly for your host, your coding agent can follow the same Galyarder workflow.
 
-## Sponsorship
+## Two Ways to Use
 
-If Galyarder Framework has helped you do stuff that makes money and you are so inclined, I'd greatly appreciate it if you'd consider [sponsoring my opensource work](https://github.com/sponsors/galyarderlabs).
+### Option 1: Standalone Framework (Chat-Based)
 
-Thanks! 
+Install Framework directly in your AI coding assistant and work through conversation:
 
-- Galyarder Labs
-
-## Installation
-
-Galyarder is a multi-platform agent framework with host-specific installation and runtime adapters. Installation varies by platform:
-
-### Claude Code / Copilot CLI
-
-Register the Galyarder marketplace first:
-
-```bash
-/plugin marketplace add galyarderlabs/galyarder-framework
-```
-
-Then install the plugin:
-
-```bash
-/plugin install galyarder-framework@galyarderlabs-marketplace
-```
-
-### Cursor (via Plugin Marketplace)
-
-In Cursor Agent chat, install from marketplace:
-
-```text
-/add-plugin galyarder-framework
-```
-
-### Gemini CLI
-
-Install the extension directly from the repository:
-
-```bash
-gemini extensions install https://github.com/galyarderlabs/galyarder-framework
-```
-
-To update:
-
-```bash
-gemini extensions update galyarder-framework
-```
-
-### Codex
-
-Tell Codex:
-
-```
-Fetch and follow instructions from https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/refs/heads/main/.codex/INSTALL.md
-```
-
-**Detailed docs:** [framework/docs/README.codex.md](framework/docs/README.codex.md)
-
-### OpenCode
-
-Tell OpenCode:
-
-```
-Fetch and follow instructions from https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/refs/heads/main/.opencode/INSTALL.md
-```
-
-**Detailed docs:** [framework/docs/README.opencode.md](framework/docs/README.opencode.md)
-
-## Recommended MCP Stack
-
-For peak "1-Man Army" efficiency, we recommend the following MCP servers:
-
-- **[[RTK (Rust Token Killer)](https://github.com/rtk-ai/rtk)]**: Mandatory proxy for all shell commands to save 60-90% tokens.
-- **[[Linear](https://linear.app/framework/docs/mcp)]**: For real-time project management and issue tracking.
-- **[[Stitch](https://stitch.withgoogle.com/framework/docs/mcp/setup)]**: For rapid UI generation and design token management.
-- **[[BrowserOS](https://docs.browseros.com/features/use-with-claude-code)]**: For automated browser testing and external service integration.
-- **[[Context7](https://context7.com/framework/docs/resources/all-clients)]**: For up-to-date documentation and API references.
-- **[[Sequential Thinking](https://mcpservers.org/servers/modelcontextprotocol/sequentialthinking)]**: For deconstructing complex architectural problems.
-- **[[Neon](https://github.com/neondatabase/mcp-server-neon)] / [[Supabase](https://supabase.com/framework/docs/guides/getting-started/mcp)]**: For serverless database management.
-- **[[PostHog](https://posthog.com/framework/docs/model-context-protocol)]**: For product analytics and event tracking.
-
-## What's Inside
-
-### Two Deployment Options
-
-**Option 1: Standalone (Chat-Based)**
-- Install Framework in AI assistant (Claude Code, Cursor, Gemini)
 - Chat directly with galyarder-specialist
 - Agents execute through conversation
 - Tasks tracked in Linear (optional)
 - Reports in Obsidian (optional)
+- No server required
 
-**Option 2: With Dashboard (Web-Based)**
+**Best for:** Individual developers who want AI assistance in their existing workflow.
+
+### Option 2: Dashboard + Framework (Web Platform)
+
+Run the complete platform with visual management and orchestration:
+
 - Visual web UI for company management
 - Hire agents from Framework library
 - Monitor execution in real-time
 - Database-backed persistence
-- Multi-company support
-- See [Integration Guide](framework/docs/INTEGRATION.md) and [Quick Start](framework/docs/QUICK_START.md)
+- Multi-company support with data isolation
+- Heartbeat-based autonomous execution
+- Cost tracking and budget enforcement
+- Mobile-ready monitoring
+
+**Best for:** Managing multiple AI companies, teams, or running autonomous operations 24/7.
+
+## Galyarder Framework
+
+The Framework provides the agent workforce and skills library.
 
 ### Organization Structure
 
@@ -146,8 +79,6 @@ Galyarder Framework operates as a **digital company** with clear departments and
 See [Organization Chart](framework/docs/ORG_CHART.md) for full structure.
 
 ### Agents
-
-Galyarder Framework distributes tasks to specialized C-Suite agents as well as deep engineering engines.
 
 **The C-Suite (1-Man Army Edition)**
 - **`galyarder-specialist`** - Master workflow manager and orchestrator.
@@ -203,14 +134,11 @@ Galyarder Framework provides short-hand commands for rapid execution:
 - **/e2e** - Generate and run end-to-end user journey tests.
 - **/clean** - Remove dead code and refactor for maintainability.
 
-Command UX depends on the host. Some platforms expose these as native slash
-commands or plugin commands, while others map them through host-specific config
-or prompting conventions. Check the platform-specific install docs for the exact
-invocation model.
+Command UX depends on the host. Some platforms expose these as native slash commands or plugin commands, while others map them through host-specific config or prompting conventions. Check the platform-specific install docs for the exact invocation model.
 
 ### Skills Library
 
-- **Elite Design Collection**: 50+ high-fidelity `DESIGN.md` specifications from industry leaders (Vercel, Stripe, Linear, etc.) located in `rules/design/`.
+- **Elite Design Collection**: 50+ high-fidelity `DESIGN.md` specifications from industry leaders (Vercel, Stripe, Linear, etc.) located in `framework/design/`.
 - **Security & Intel**: `executing-red-team-exercise`, `monitoring-darkweb-sources`, `tracking-threat-actor-infrastructure`, `testing-for-xss-vulnerabilities-with-burpsuite`.
 - **Business & Legal**: `legal-tos-privacy`, `gdpr-compliance`, `iso-42001-ai-governance`, `saas-finops-optimization`, `finance-based-pricing-advisor`.
 - **Founder & Fundraising**: `founder-context`, `pitch-deck`, `investor-research`, `fundraising-email`, `data-room`, `board-update`, `accelerator-application`, `market-research`, `lead-scoring`, `founder-thought-leadership`.
@@ -221,73 +149,243 @@ invocation model.
 - **Video & Content**: `remotion-best-practices`, `video-generation`, `email-sequence`.
 - **Meta**: `writing-skills`, `using-galyarder-framework`.
 
-## Philosophy
+### Philosophy
 
 - **Test-Driven Development** — Write tests first, always.
 - **Context Economy** — Use `rtk` proxy for all terminal operations.
 - **Math Over Magic** — Base decisions on data, ROI, and psychological leverage.
 - **Code to Market** — Code is a liability until it achieves market fit.
 
-## Contributing
+## Galyarder Dashboard
 
-Skills live directly in this repository. To contribute:
+The Dashboard provides a visual control plane for managing AI companies at scale.
 
-1. Fork the repository.
-2. Create a branch for your skill.
-3. Follow the `writing-skills` skill for creating and testing new skills.
-4. Submit a PR.
+### Core Features
 
-See `framework/skills/writing-framework/skills/SKILL.md` for the complete guide.
+**Company Management**
+- Create and manage multiple AI companies
+- Each company has isolated data, agents, and budgets
+- Company-scoped access control
 
-## Dashboard Integration
+**Agent Orchestration**
+- Hire agents from Framework library or external adapters
+- Visual org chart showing agent hierarchy
+- Assign agents to departments and roles
+- Configure agent capabilities and permissions
 
-The Framework can be integrated with the Dashboard web platform for visual management.
+**Task Management**
+- Create issues and assign to agents
+- Track task status and execution history
+- View agent activity in real-time
+- Atomic checkout semantics (one agent per task)
 
-This repository contains both:
-- **Framework** (`framework/`) - 35 agents + 132 skills for AI coding assistants
-- **Dashboard** (root) - Visual control plane for managing AI companies
+**Cost Control**
+- Track token usage per company, agent, and task
+- Set budget limits with auto-pause on overspend
+- Cost projections and burn rate monitoring
+- Detailed cost breakdowns
 
-### Running with Dashboard
+**Autonomous Execution**
+- Heartbeat-based agent execution (agents work 24/7)
+- Configurable execution intervals
+- Automatic task pickup and completion
+- Activity logging for all mutations
+
+**Multi-Adapter Support**
+- Framework adapter (35 agents + 132 skills)
+- Claude, Cursor, Codex, Gemini adapters
+- External adapter plugin system
+- Custom adapter development
+
+### Architecture
+
+```
+galyarder-framework/              # Root = Dashboard
+├── framework/                    # Framework (35 agents + 132 skills)
+│   ├── agents/                   # Agent definitions (.md)
+│   ├── skills/                   # Skill implementations (132 dirs)
+│   ├── design/                   # Design specs
+│   └── docs/                     # Framework documentation
+├── packages/
+│   ├── adapters/
+│   │   └── galyarder-framework/  # Framework → Dashboard adapter
+│   ├── db/                       # Database schema (Drizzle)
+│   ├── shared/                   # Shared types and validators
+│   └── adapter-utils/            # Adapter utilities
+├── server/                       # Express REST API
+├── ui/                           # React + Vite board UI
+├── cli/                          # Dashboard CLI
+└── doc/                          # Dashboard documentation
+```
+
+### Technology Stack
+
+**Backend**
+- Express.js REST API
+- Drizzle ORM with PostgreSQL
+- PGlite for embedded dev database
+- TypeScript throughout
+
+**Frontend**
+- React + Vite
+- TanStack Query for data fetching
+- Tailwind CSS for styling
+- Radix UI components
+
+**Database**
+- PostgreSQL in production
+- PGlite (embedded) in development
+- Drizzle migrations
+
+**Adapters**
+- Plugin system for external adapters
+- Dynamic loading from `~/.galyarder/adapter-plugins.json`
+- Type-safe adapter contracts
+
+## Installation
+
+### Standalone Framework
+
+Install Framework directly in your AI coding assistant:
+
+#### Claude Code / Copilot CLI
+
+```bash
+/plugin marketplace add galyarderlabs/galyarder-framework
+/plugin install galyarder-framework@galyarderlabs-marketplace
+```
+
+#### Cursor
+
+```text
+/add-plugin galyarder-framework
+```
+
+#### Gemini CLI
+
+```bash
+gemini extensions install https://github.com/galyarderlabs/galyarder-framework
+```
+
+#### Codex
+
+```
+Fetch and follow instructions from https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/refs/heads/main/.codex/INSTALL.md
+```
+
+**Detailed docs:** [framework/docs/README.codex.md](framework/docs/README.codex.md)
+
+#### OpenCode
+
+```
+Fetch and follow instructions from https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/refs/heads/main/.opencode/INSTALL.md
+```
+
+**Detailed docs:** [framework/docs/README.opencode.md](framework/docs/README.opencode.md)
+
+### Dashboard + Framework
+
+Run the complete platform:
+
+```bash
+# 1. Install pnpm (if not installed)
+npm install -g pnpm
+
+# 2. Clone repository
+git clone https://github.com/galyarderlabs/galyarder-framework.git
+cd galyarder-framework
+
+# 3. Install dependencies
+pnpm install
+
+# 4. Start Dashboard (uses embedded PGlite in dev)
+pnpm dev
+
+# 5. Open browser
+# http://localhost:3100
+```
+
+**Testing guide:** [TESTING.md](TESTING.md)  
+**Development guide:** [doc/DEVELOPING.md](doc/DEVELOPING.md)
+
+## Recommended MCP Stack
+
+For peak "1-Man Army" efficiency, we recommend the following MCP servers:
+
+- **[RTK (Rust Token Killer)](https://github.com/rtk-ai/rtk)** - Mandatory proxy for all shell commands to save 60-90% tokens.
+- **[Linear](https://linear.app/docs/mcp)** - For real-time project management and issue tracking.
+- **[Stitch](https://stitch.withgoogle.com/docs/mcp/setup)** - For rapid UI generation and design token management.
+- **[BrowserOS](https://docs.browseros.com/features/use-with-claude-code)** - For automated browser testing and external service integration.
+- **[Context7](https://context7.com/docs/resources/all-clients)** - For up-to-date documentation and API references.
+- **[Sequential Thinking](https://mcpservers.org/servers/modelcontextprotocol/sequentialthinking)** - For deconstructing complex architectural problems.
+- **[Neon](https://github.com/neondatabase/mcp-server-neon) / [Supabase](https://supabase.com/docs/guides/getting-started/mcp)** - For serverless database management.
+- **[PostHog](https://posthog.com/docs/model-context-protocol)** - For product analytics and event tracking.
+
+## Development
 
 ```bash
 # Install dependencies
 pnpm install
 
-# Start Dashboard
+# Start Dashboard (dev mode with embedded PGlite)
 pnpm dev
 
-# Open browser
-# http://localhost:3100
+# Build everything
+pnpm build
+
+# Type checking
+pnpm typecheck
+
+# Run tests
+pnpm test:run
+
+# Database migrations
+pnpm db:generate
+pnpm db:migrate
 ```
 
-The Dashboard provides:
-- Web UI for company management
-- Visual org chart
-- Task monitoring and assignment
-- Cost tracking and budget enforcement
-- Multi-company support
-- Heartbeat-based autonomous execution
-- Real-time activity monitoring
+See [doc/DEVELOPING.md](doc/DEVELOPING.md) for full development guide.
 
-**Setup Guide:** [TESTING.md](TESTING.md)  
-**Development:** [doc/DEVELOPING.md](doc/DEVELOPING.md)  
-**Architecture:** [framework/docs/UNIFIED_PLATFORM.md](framework/docs/UNIFIED_PLATFORM.md)
+## Contributing
 
-Framework works standalone OR with Dashboard. Your choice.
+Skills live directly in this repository. To contribute:
+
+1. Fork the repository.
+2. Create a branch for your skill or feature.
+3. Follow the `writing-skills` skill for creating and testing new skills.
+4. Submit a PR.
+
+See `framework/skills/writing-skills/SKILL.md` for the complete guide.
+
+For Dashboard contributions, see [CONTRIBUTING.md](CONTRIBUTING.md) and [AGENTS.md](AGENTS.md).
 
 ## Updating
 
-Skills update automatically when you update the plugin:
+**Framework (Standalone):**
 
-**Claude Code / Copilot CLI:**
 ```bash
+# Claude Code / Copilot CLI
 /plugin update galyarder-framework@galyarderlabs-marketplace
-```
 
-**Gemini CLI:**
-```bash
+# Gemini CLI
 gemini extensions update galyarder-framework
 ```
+
+**Dashboard + Framework:**
+
+```bash
+git pull origin main
+pnpm install
+pnpm dev
+```
+
+## Sponsorship
+
+If Galyarder Framework has helped you do stuff that makes money and you are so inclined, I'd greatly appreciate it if you'd consider [sponsoring my opensource work](https://github.com/sponsors/galyarderlabs).
+
+Thanks! 
+
+- Galyarder Labs
 
 ## License
 
