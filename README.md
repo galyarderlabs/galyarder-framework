@@ -1,281 +1,305 @@
 <p align="center">
-  <img src="public/logo.png" width="200" alt="Galyarder Framework Logo">
+  <img src="doc/assets/header.png" alt="Galyarder — runs your business" width="720" />
 </p>
 
-# GALYARDER FRAMEWORK
+<p align="center">
+  <a href="#quickstart"><strong>Quickstart</strong></a> &middot;
+  <a href="https://galyarder.ing/docs"><strong>Docs</strong></a> &middot;
+  <a href="https://github.com/galyarder/galyarder"><strong>GitHub</strong></a> &middot;
+  <a href="https://discord.gg/m4HZY7xNG3"><strong>Discord</strong></a>
+</p>
 
-**Digital Company Operating System for Solo Founders**
+<p align="center">
+  <a href="https://github.com/galyarder/galyarder/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License" /></a>
+  <a href="https://github.com/galyarder/galyarder/stargazers"><img src="https://img.shields.io/github/stars/galyarder/galyarder?style=flat" alt="Stars" /></a>
+  <a href="https://discord.gg/m4HZY7xNG3"><img src="https://img.shields.io/discord/000000000?label=discord" alt="Discord" /></a>
+</p>
 
-Galyarder Framework transforms AI coding assistants into a fully structured, autonomous workforce. It provides **34 specialized agents** and **100+ execution-grade skills** across the full product lifecycle — from fundraising and product strategy to engineering, security, growth, and legal compliance.
+<br/>
 
-**Two Ways to Use:**
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/773bdfb2-6d1e-4e30-8c5f-3487d5b70c8f" width="600" controls></video>
+</div>
 
-1. **Standalone** - Install in Claude Code, Cursor, or Gemini. Chat with your digital company.
-2. **With Dashboard** - Visual web platform for managing multiple companies, agents, and tasks.
+<br/>
 
-Built for the **1-Man Army** - one founder with the leverage of an entire company.
+## What is Galyarder Dashboard?
 
-## How it works
+# Executive Control Plane for the Galyarder Digital Company
 
-It starts from the moment you fire up your coding agent. As soon as it sees that you're building something, it *doesn't* just jump into trying to write code. Instead, it steps back and asks you what you're really trying to do. 
+**If an AI Agent is an _employee_, Galyarder Dashboard is the _office_**
 
-Once it's teased a spec out of the conversation, it shows it to you in chunks short enough to actually read and digest. 
+Galyarder Dashboard is a Node.js server and React UI that orchestrates the Galyarder workforce to run a business. Leverage the Galyarder Skill library, assign departmental leads, and track your agents' work and costs from one executive board.
 
-After you've signed off on the design, your agent puts together an implementation plan that's clear enough for an enthusiastic junior engineer with poor taste, no judgement, no project context, and an aversion to testing to follow. It emphasizes true red/green TDD, YAGNI (You Aren't Gonna Need It), and DRY. 
+It looks like a task manager — but under the hood it has org charts, budgets, governance, goal alignment, and agent coordination.
 
-Next up, once you say "go", it launches a *subagent-driven-development* process, routing each engineering task through the host's available delegation model while preserving the same review and orchestration workflow. On some hosts this appears as named agent dispatch; on others it is implemented through native subagents using Galyarder role prompts. It's not uncommon for Claude to be able to work autonomously for a couple hours at a time without deviating from the plan you put together.
+**Manage business goals, not pull requests.**
 
-Finally, Galyarder Framework shifts into **Marketing Mode**, triggering skills for SEO, CRO, and Remotion (Video) to ensure what you built actually achieves market fit.
+|        | Step            | Example                                                            |
+| ------ | --------------- | ------------------------------------------------------------------ |
+| **01** | Define the goal | _"Build the #1 AI note-taking app to $1M MRR."_                    |
+| **02** | Hire the team   | CEO, CTO, engineers, designers, marketers — any bot, any provider. |
+| **03** | Approve and run | Review strategy. Set budgets. Hit go. Monitor from the dashboard.  |
 
-There's a bunch more to it, but that's the core of the system. The workflow philosophy stays consistent across hosts, while runtime mechanics such as installation, command invocation, and subagent dispatch vary by platform. Once installed correctly for your host, your coding agent can follow the same Galyarder workflow.
+<br/>
 
-## Sponsorship
+> **COMING SOON: Clipmart** — Download and run entire companies with one click. Browse pre-built company templates — full org structures, agent configs, and skills — and import them into your Galyarder instance in seconds.
 
-If Galyarder Framework has helped you do stuff that makes money and you are so inclined, I'd greatly appreciate it if you'd consider [sponsoring my opensource work](https://github.com/sponsors/galyarderlabs).
+<br/>
 
-Thanks! 
+<div align="center">
+<table>
+  <tr>
+    <td align="center"><strong>Works<br/>with</strong></td>
+    <td align="center"><img src="doc/assets/logos/openclaw.svg" width="32" alt="OpenClaw" /><br/><sub>OpenClaw</sub></td>
+    <td align="center"><img src="doc/assets/logos/claude.svg" width="32" alt="Claude" /><br/><sub>Claude Code</sub></td>
+    <td align="center"><img src="doc/assets/logos/codex.svg" width="32" alt="Codex" /><br/><sub>Codex</sub></td>
+    <td align="center"><img src="doc/assets/logos/cursor.svg" width="32" alt="Cursor" /><br/><sub>Cursor</sub></td>
+    <td align="center"><img src="doc/assets/logos/bash.svg" width="32" alt="Bash" /><br/><sub>Bash</sub></td>
+    <td align="center"><img src="doc/assets/logos/http.svg" width="32" alt="HTTP" /><br/><sub>HTTP</sub></td>
+  </tr>
+</table>
 
-- Galyarder Labs
+<em>If it can receive a heartbeat, it's hired.</em>
 
-## Installation
+</div>
 
-Galyarder is a multi-platform agent framework with host-specific installation and runtime adapters. Installation varies by platform:
+<br/>
 
-### Claude Code / Copilot CLI
+## Galyarder is right for you if
 
-Register the Galyarder marketplace first:
+- ✅ You want to build **autonomous AI companies**
+- ✅ You **coordinate many different agents** (OpenClaw, Codex, Claude, Cursor) toward a common goal
+- ✅ You have **20 simultaneous Claude Code terminals** open and lose track of what everyone is doing
+- ✅ You want agents running **autonomously 24/7**, but still want to audit work and chime in when needed
+- ✅ You want to **monitor costs** and enforce budgets
+- ✅ You want a process for managing agents that **feels like using a task manager**
+- ✅ You want to manage your autonomous businesses **from your phone**
+
+<br/>
+
+## Features
+
+<table>
+<tr>
+<td align="center" width="33%">
+<h3>🔌 Bring Your Own Agent</h3>
+Any agent, any runtime, one org chart. If it can receive a heartbeat, it's hired.
+</td>
+<td align="center" width="33%">
+<h3>🎯 Goal Alignment</h3>
+Every task traces back to the company mission. Agents know <em>what</em> to do and <em>why</em>.
+</td>
+<td align="center" width="33%">
+<h3>💓 Heartbeats</h3>
+Agents wake on a schedule, check work, and act. Delegation flows up and down the org chart.
+</td>
+</tr>
+<tr>
+<td align="center">
+<h3>💰 Cost Control</h3>
+Monthly budgets per agent. When they hit the limit, they stop. No runaway costs.
+</td>
+<td align="center">
+<h3>🏢 Multi-Company</h3>
+One deployment, many companies. Complete data isolation. One control plane for your portfolio.
+</td>
+<td align="center">
+<h3>🎫 Ticket System</h3>
+Every conversation traced. Every decision explained. Full tool-call tracing and immutable audit log.
+</td>
+</tr>
+<tr>
+<td align="center">
+<h3>🛡️ Governance</h3>
+You're the board. Approve hires, override strategy, pause or terminate any agent — at any time.
+</td>
+<td align="center">
+<h3>📊 Org Chart</h3>
+Hierarchies, roles, reporting lines. Your agents have a boss, a title, and a job description.
+</td>
+<td align="center">
+<h3>📱 Mobile Ready</h3>
+Monitor and manage your autonomous businesses from anywhere.
+</td>
+</tr>
+</table>
+
+<br/>
+
+## Problems Galyarder solves
+
+| Without Galyarder                                                                                                                     | With Galyarder                                                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| ❌ You have 20 Claude Code tabs open and can't track which one does what. On reboot you lose everything.                              | ✅ Tasks are ticket-based, conversations are threaded, sessions persist across reboots.                                                |
+| ❌ You manually gather context from several places to remind your bot what you're actually doing.                                     | ✅ Context flows from the task up through the project and company goals — your agent always knows what to do and why.                  |
+| ❌ Folders of agent configs are disorganized and you're re-inventing task management, communication, and coordination between agents. | ✅ Galyarder gives you org charts, ticketing, delegation, and governance out of the box — so you run a company, not a pile of scripts. |
+| ❌ Runaway loops waste hundreds of dollars of tokens and max your quota before you even know what happened.                           | ✅ Cost tracking surfaces token budgets and throttles agents when they're out. Management prioritizes with budgets.                    |
+| ❌ You have recurring jobs (customer support, social, reports) and have to remember to manually kick them off.                        | ✅ Heartbeats handle regular work on a schedule. Management supervises.                                                                |
+| ❌ You have an idea, you have to find your repo, fire up Claude Code, keep a tab open, and babysit it.                                | ✅ Add a task in Galyarder. Your coding agent works on it until it's done. Management reviews their work.                              |
+
+<br/>
+
+## Why Galyarder is special
+
+Galyarder handles the hard orchestration details correctly.
+
+|                                   |                                                                                                               |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| **Atomic execution.**             | Task checkout and budget enforcement are atomic, so no double-work and no runaway spend.                      |
+| **Persistent agent state.**       | Agents resume the same task context across heartbeats instead of restarting from scratch.                     |
+| **Runtime skill injection.**      | Agents can learn Galyarder workflows and project context at runtime, without retraining.                      |
+| **Governance with rollback.**     | Approval gates are enforced, config changes are revisioned, and bad changes can be rolled back safely.        |
+| **Goal-aware execution.**         | Tasks carry full goal ancestry so agents consistently see the "why," not just a title.                        |
+| **Portable company templates.**   | Export/import orgs, agents, and skills with secret scrubbing and collision handling.                          |
+| **True multi-company isolation.** | Every entity is company-scoped, so one deployment can run many companies with separate data and audit trails. |
+
+<br/>
+
+## What Galyarder is not
+
+|                              |                                                                                                                      |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| **Not a chatbot.**           | Agents have jobs, not chat windows.                                                                                  |
+| **Not an agent framework.**  | We don't tell you how to build agents. We tell you how to run a company made of them.                                |
+| **Not a workflow builder.**  | No drag-and-drop pipelines. Galyarder models companies — with org charts, goals, budgets, and governance.            |
+| **Not a prompt manager.**    | Agents bring their own prompts, models, and runtimes. Galyarder manages the organization they work in.               |
+| **Not a single-agent tool.** | This is for teams. If you have one agent, you probably don't need Galyarder. If you have twenty — you definitely do. |
+| **Not a code review tool.**  | Galyarder orchestrates work, not pull requests. Bring your own review process.                                       |
+
+<br/>
+
+## Quickstart
+
+Open source. Self-hosted. No Galyarder account required.
 
 ```bash
-/plugin marketplace add galyarderlabs/galyarder-framework
+npx galyarder onboard --yes
 ```
 
-Then install the plugin:
+If you already have Galyarder configured, rerunning `onboard` keeps the existing config in place. Use `galyarder configure` to edit settings.
+
+Or manually:
 
 ```bash
-/plugin install galyarder-framework@galyarderlabs-marketplace
+git clone https://github.com/galyarder/galyarder.git
+cd galyarder
+pnpm install
+pnpm dev
 ```
 
-### Cursor (via Plugin Marketplace)
+This starts the API server at `http://localhost:3100`. An embedded PostgreSQL database is created automatically — no setup required.
 
-In Cursor Agent chat, install from marketplace:
+> **Requirements:** Node.js 20+, pnpm 9.15+
 
-```text
-/add-plugin galyarder-framework
-```
+<br/>
 
-### Gemini CLI
+## FAQ
 
-Install the extension directly from the repository:
+**What does a typical setup look like?**
+Locally, a single Node.js process manages an embedded Postgres and local file storage. For production, point it at your own Postgres and deploy however you like. Configure projects, agents, and goals — the agents take care of the rest.
+
+If you're a solo-entreprenuer you can use Tailscale to access Galyarder on the go. Then later you can deploy to e.g. Vercel when you need it.
+
+**Can I run multiple companies?**
+Yes. A single deployment can run an unlimited number of companies with complete data isolation.
+
+**How is Galyarder different from agents like OpenClaw or Claude Code?**
+Galyarder _uses_ those agents. It orchestrates them into a company — with org charts, budgets, goals, governance, and accountability.
+
+**Why should I use Galyarder instead of just pointing my OpenClaw to Asana or Trello?**
+Agent orchestration has subtleties in how you coordinate who has work checked out, how to maintain sessions, monitoring costs, establishing governance - Galyarder does this for you.
+
+(Bring-your-own-ticket-system is on the Roadmap)
+
+**Do agents run continuously?**
+By default, agents run on scheduled heartbeats and event-based triggers (task assignment, @-mentions). You can also hook in continuous agents like OpenClaw. You bring your agent and Galyarder coordinates.
+
+<br/>
+
+## Development
 
 ```bash
-gemini extensions install https://github.com/galyarderlabs/galyarder-framework
+pnpm dev              # Full dev (API + UI, watch mode)
+pnpm dev:once         # Full dev without file watching
+pnpm dev:server       # Server only
+pnpm build            # Build all
+pnpm typecheck        # Type checking
+pnpm test:run         # Run tests
+pnpm db:generate      # Generate DB migration
+pnpm db:migrate       # Apply migrations
 ```
 
-To update:
+See [doc/DEVELOPING.md](doc/DEVELOPING.md) for the full development guide.
 
-```bash
-gemini extensions update galyarder-framework
-```
+<br/>
 
-### Codex
+## Roadmap
 
-Tell Codex:
+- ✅ Plugin system (e.g. add a knowledge base, custom tracing, queues, etc)
+- ✅ Get OpenClaw / claw-style agent employees
+- ✅ companies.sh - import and export entire organizations
+- ✅ Easy AGENTS.md configurations
+- ✅ Skills Manager
+- ✅ Scheduled Routines
+- ✅ Better Budgeting
+- ⚪ Artifacts & Deployments
+- ⚪ CEO Chat
+- ⚪ MAXIMIZER MODE
+- ⚪ Multiple Human Users
+- ⚪ Cloud / Sandbox agents (e.g. Cursor / e2b agents)
+- ⚪ Cloud deployments
+- ⚪ Desktop App
 
-```
-Fetch and follow instructions from https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/refs/heads/main/.codex/INSTALL.md
-```
+<br/>
 
-**Detailed docs:** [docs/README.codex.md](docs/README.codex.md)
+## Community & Plugins
 
-### OpenCode
+Find Plugins and more at [awesome-galyarder](https://github.com/gsxdsm/awesome-galyarder)
 
-Tell OpenCode:
+## Telemetry
 
-```
-Fetch and follow instructions from https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/refs/heads/main/.opencode/INSTALL.md
-```
+Galyarder collects anonymous usage telemetry to help us understand how the product is used and improve it. No personal information, issue content, prompts, file paths, or secrets are ever collected. Private repository references are hashed with a per-install salt before being sent.
 
-**Detailed docs:** [docs/README.opencode.md](docs/README.opencode.md)
+Telemetry is **enabled by default** and can be disabled with any of the following:
 
-## Recommended MCP Stack
-
-For peak "1-Man Army" efficiency, we recommend the following MCP servers:
-
-- **[[RTK (Rust Token Killer)](https://github.com/rtk-ai/rtk)]**: Mandatory proxy for all shell commands to save 60-90% tokens.
-- **[[Linear](https://linear.app/docs/mcp)]**: For real-time project management and issue tracking.
-- **[[Stitch](https://stitch.withgoogle.com/docs/mcp/setup)]**: For rapid UI generation and design token management.
-- **[[BrowserOS](https://docs.browseros.com/features/use-with-claude-code)]**: For automated browser testing and external service integration.
-- **[[Context7](https://context7.com/docs/resources/all-clients)]**: For up-to-date documentation and API references.
-- **[[Sequential Thinking](https://mcpservers.org/servers/modelcontextprotocol/sequentialthinking)]**: For deconstructing complex architectural problems.
-- **[[Neon](https://github.com/neondatabase/mcp-server-neon)] / [[Supabase](https://supabase.com/docs/guides/getting-started/mcp)]**: For serverless database management.
-- **[[PostHog](https://posthog.com/docs/model-context-protocol)]**: For product analytics and event tracking.
-
-## What's Inside
-
-### Two Deployment Options
-
-**Option 1: Standalone (Chat-Based)**
-- Install Framework in AI assistant (Claude Code, Cursor, Gemini)
-- Chat directly with galyarder-specialist
-- Agents execute through conversation
-- Tasks tracked in Linear (optional)
-- Reports in Obsidian (optional)
-
-**Option 2: With Dashboard (Web-Based)**
-- Visual web UI for company management
-- Hire agents from Framework library
-- Monitor execution in real-time
-- Database-backed persistence
-- Multi-company support
-- See [Integration Guide](docs/INTEGRATION.md) and [Quick Start](docs/QUICK_START.md)
-
-### Organization Structure
-
-Galyarder Framework operates as a **digital company** with clear departments and reporting lines:
-
-- **Executive:** galyarder-specialist (CEO/Orchestrator)
-- **Founder Office:** fundraising-operator (Capital & investor relations)
-- **Product:** product-manager, planner (Requirements & roadmap)
-- **Engineering:** super-architect, elite-developer, qa-automation-engineer (Implementation & quality)
-- **Security:** security-guardian, perseus, cyber-intel (Threat analysis & pentesting)
-- **Growth:** growth-strategist, conversion-engineer, retention-specialist (Acquisition & retention)
-- **Operations:** devops-engineer, release-manager (Infrastructure & deployment)
-- **Legal/Finance:** legal-counsel, finops-manager (Compliance & cost optimization)
-- **Knowledge:** obsidian-architect (Documentation & memory)
-
-See [Organization Chart](docs/ORG_CHART.md) for full structure.
-
-### Agents
-
-Galyarder Framework distributes tasks to specialized C-Suite agents as well as deep engineering engines.
-
-**The C-Suite (1-Man Army Edition)**
-- **`galyarder-specialist`** - Master workflow manager and orchestrator.
-- **`obsidian-architect`** - Digital Garden & Visual Architect. Manages Canvas mapping, technical KB, and automated journaling.
-- **`product-manager`** - Linear ticket management and ROI prioritization.
-- **`analytics-architect`** - Tracking schema and KPI enforcement.
-- **`finops-manager`** - Cloud cost optimization and pricing strategy.
-- **`legal-counsel`** - TOS/Privacy, GDPR audit, and AI governance.
-- **`super-architect`** - System design and Vertical Slice planning.
-- **`interface-designer`** - Module interface and API design specialist.
-- **`ui-ux-designer`** - UI generation via **Stitch** and design system enforcement.
-- **`experimentation-engineer`** - A/B testing and statistical evidence.
-- **`elite-developer`** - Implementation, TDD, and complex debugging.
-- **`vercel-react-expert`** - React/Next.js and Vercel performance optimization.
-- **`qa-automation-engineer`** - Live auditing and E2E testing via **BrowserOS**.
-- **`security-guardian`** - Zero-trust security audits, IDOR/SSRF remediation.
-- **`perseus`** - Advanced offensive security, red teaming, and pentesting.
-- **`cyber-intel`** - External threat intelligence and data leak monitoring.
-- **`devops-engineer`** - CI/CD, Docker, and zero-downtime deployment.
-- **`revenue-architect`** - Monetization and pricing strategy.
-- **`conversion-engineer`** - Onboarding CRO and paywall optimization.
-- **`growth-engineer`** - Engineering-as-marketing and referral loops.
-- **`growth-strategist`** - SEO dominance and high-signal copywriting.
-- **`retention-specialist`** - LTV, CRM, and psychological onboarding.
-- **`social-strategist`** - Social media and distribution hype.
-- **`remotion-engineer`** - Programmatic video generation using React.
-- **`release-manager`** - Versioning, changelogs, and launch orchestration.
-- **`support-lead`** - User education, FAQ automation, and troubleshooting.
-
-**Engineering Engines**
-- **architect**, **build-error-resolver**, **code-reviewer**, **doc-updater**, **e2e-runner**, **planner**, **refactor-cleaner**, **security-reviewer**, **tdd-guide**.
-
-### Commands
-
-Galyarder Framework provides short-hand commands for rapid execution:
-- **/brainstorm** - Socratic design refinement and intent exploration.
-- **/plan** - Initialize implementation planning with vertical slices.
-- **/tdd** - Start a test-driven development session.
-- **/review** - Perform a principal-level code review.
-- **/cybersecurity** - Advanced offensive security audit and attack simulation.
-- **/analytics** - Design tracking schemas and define KPIs.
-- **/finops** - Audit cloud costs and AI token efficiency.
-- **/legal** - Generate TOS/Privacy and audit compliance.
-- **/release** - Manage versioning and launch orchestration.
-- **/build-fix** - Systematically fix build and type errors.
-- **/triage** - Diagnose bugs and create reproduction fix plans.
-- **/marketing** - Optimize copy and growth strategies.
-- **/video** - Generate programmatic marketing videos.
-- **/deploy** - Automate infrastructure and deployment.
-- **/seo** - Audit SEO and inject schema markup.
-- **/cro** - Optimize onboarding and paywall funnels.
-- **/docs** - Update project documentation and codemaps.
-- **/e2e** - Generate and run end-to-end user journey tests.
-- **/clean** - Remove dead code and refactor for maintainability.
-
-Command UX depends on the host. Some platforms expose these as native slash
-commands or plugin commands, while others map them through host-specific config
-or prompting conventions. Check the platform-specific install docs for the exact
-invocation model.
-
-### Skills Library
-
-- **Elite Design Collection**: 50+ high-fidelity `DESIGN.md` specifications from industry leaders (Vercel, Stripe, Linear, etc.) located in `rules/design/`.
-- **Security & Intel**: `executing-red-team-exercise`, `monitoring-darkweb-sources`, `tracking-threat-actor-infrastructure`, `testing-for-xss-vulnerabilities-with-burpsuite`.
-- **Business & Legal**: `legal-tos-privacy`, `gdpr-compliance`, `iso-42001-ai-governance`, `saas-finops-optimization`, `finance-based-pricing-advisor`.
-- **Founder & Fundraising**: `founder-context`, `pitch-deck`, `investor-research`, `fundraising-email`, `data-room`, `board-update`, `accelerator-application`, `market-research`, `lead-scoring`, `founder-thought-leadership`.
-- **Testing & Debugging**: `test-driven-development` (RED-GREEN-REFACTOR cycle), `systematic-debugging` (4-phase root cause), `verification-before-completion`.
-- **Growth & Marketing**: `seo-audit`, `schema-markup`, `onboarding-cro`, `marketing-psychology`, `copywriting`, `viral-referral-loops`.
-- **Product Management**: `linear-ticket-management`, `prd-to-plan`, `prd-to-issues`, `write-a-prd`, `ubiquitous-language`.
-- **Collaboration & Documentation**: `brainstorming`, `writing-plans`, `executing-plans`, `subagent-driven-development`, `obsidian-cli`, `json-canvas`, `obsidian-bases`, `obsidian-markdown`, `defuddle`.
-- **Video & Content**: `remotion-best-practices`, `video-generation`, `email-sequence`.
-- **Meta**: `writing-skills`, `using-galyarder-framework`.
-
-## Philosophy
-
-- **Test-Driven Development** — Write tests first, always.
-- **Context Economy** — Use `rtk` proxy for all terminal operations.
-- **Math Over Magic** — Base decisions on data, ROI, and psychological leverage.
-- **Code to Market** — Code is a liability until it achieves market fit.
+| Method | How |
+|---|---|
+| Environment variable | `GALYARDER_TELEMETRY_DISABLED=1` |
+| Standard convention | `DO_NOT_TRACK=1` |
+| CI environments | Automatically disabled when `CI=true` |
+| Config file | Set `telemetry.enabled: false` in your Galyarder config |
 
 ## Contributing
 
-Skills live directly in this repository. To contribute:
+We welcome contributions. See the [contributing guide](CONTRIBUTING.md) for details.
 
-1. Fork the repository.
-2. Create a branch for your skill.
-3. Follow the `writing-skills` skill for creating and testing new skills.
-4. Submit a PR.
+<br/>
 
-See `skills/writing-skills/SKILL.md` for the complete guide.
+## Community
 
-## Dashboard Integration
+- [Discord](https://discord.gg/m4HZY7xNG3) — Join the community
+- [GitHub Issues](https://github.com/galyarder/galyarder/issues) — bugs and feature requests
+- [GitHub Discussions](https://github.com/galyarder/galyarder/discussions) — ideas and RFC
 
-The Framework can be integrated with the Dashboard web platform for visual management:
-
-- **Dashboard Location:** `dashboard/` subdirectory
-- **Adapter:** `dashboard/packages/adapters/galyarder-framework/`
-- **Setup Guide:** [docs/QUICK_START.md](docs/QUICK_START.md)
-- **Architecture:** [docs/UNIFIED_PLATFORM.md](docs/UNIFIED_PLATFORM.md)
-
-The Dashboard provides:
-- Web UI for company management
-- Visual org chart
-- Task monitoring
-- Cost tracking
-- Multi-company support
-
-Framework works standalone OR with Dashboard. Your choice.
-
-## Updating
-
-Skills update automatically when you update the plugin:
-
-**Claude Code / Copilot CLI:**
-```bash
-/plugin update galyarder-framework@galyarderlabs-marketplace
-```
-
-**Gemini CLI:**
-```bash
-gemini extensions update galyarder-framework
-```
+<br/>
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) file for details.
+MIT &copy; 2026 Galyarder
 
-## Support
+## Star History
 
-- **Issues**: https://github.com/galyarderlabs/galyarder-framework/issues
-- **Marketplace**: https://github.com/galyarderlabs/galyarder-framework
+[![Star History Chart](https://api.star-history.com/image?repos=galyarder/galyarder&type=date&legend=top-left)](https://www.star-history.com/?repos=galyarder%2Fgalyarder&type=date&legend=top-left)
+
+<br/>
+
+---
+
+<p align="center">
+  <img src="doc/assets/footer.jpg" alt="" width="720" />
+</p>
+
+<p align="center">
+  <sub>Open source under MIT. Built for people who want to run companies, not babysit agents.</sub>
+</p>

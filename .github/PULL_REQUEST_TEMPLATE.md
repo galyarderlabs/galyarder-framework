@@ -1,87 +1,65 @@
-<!--
-BEFORE SUBMITTING: Read every word of this template. PRs that leave
-sections blank, contain multiple unrelated changes, or show no evidence
-of human involvement will be closed without review.
--->
-
-## What problem are you trying to solve?
-<!-- Describe the specific problem you encountered. If this was a session
-     issue, include: what you were doing, what went wrong, the model's
-     exact failure mode, and ideally a transcript or session log.
-
-     "Improving" something is not a problem statement. What broke? What
-     failed? What was the user experience that motivated this? -->
-
-## What does this PR change?
-<!-- 1-3 sentences. What, not why — the "why" belongs above. -->
-
-## Is this change appropriate for the core library?
-<!-- Superpowers core contains general-purpose skills and infrastructure
-     that benefit all users. Ask yourself:
-
-     - Would this be useful to someone working on a completely different
-       kind of project than yours?
-     - Is this project-specific, team-specific, or tool-specific?
-     - Does this integrate or promote a third-party service?
-
-     If your change is a new skill for a specific domain, workflow tool,
-     or third-party integration, it belongs in its own plugin — not here.
-     See the plugin development docs for how to publish it separately. -->
-
-## What alternatives did you consider?
-<!-- What other approaches did you try or evaluate before landing on this
-     one? Why were they worse? If you didn't consider alternatives, say so
-     — but know that's a red flag. -->
-
-## Does this PR contain multiple unrelated changes?
-<!-- If yes: stop. Split it into separate PRs. Bundled PRs will be closed.
-     If you believe the changes are related, explain the dependency. -->
-
-## Existing PRs
-- [ ] I have reviewed all open AND closed PRs for duplicates or prior art
-- Related PRs: <!-- #number, #number, or "none found" -->
-
-<!-- If a related closed PR exists, explain what's different about your
-     approach and why it should succeed where the other didn't. -->
-
-## Environment tested
-
-| Harness (e.g. Claude Code, Cursor) | Harness version | Model | Model version/ID |
-|-------------------------------------|-----------------|-------|------------------|
-|                                     |                 |       |                  |
-
-## Evaluation
-- What was the initial prompt you (or your human partner) used to start
-  the session that led to this change?
-- How many eval sessions did you run AFTER making the change?
-- How did outcomes change compared to before the change?
-
-<!-- "It works" is not evaluation. Describe the before/after difference
-     you observed across multiple sessions. -->
-
-## Rigor
-
-- [ ] If this is a skills change: I used `superpowers:writing-skills` and
-      completed adversarial pressure testing (paste results below)
-- [ ] This change was tested adversarially, not just on the happy path
-- [ ] I did not modify carefully-tuned content (Red Flags table,
-      rationalizations, "human partner" language) without extensive evals
-      showing the change is an improvement
-
-<!-- If you changed wording in skills that shape agent behavior, show your
-     eval methodology and results. These are not prose — they are code. -->
-
-## Human review
-- [ ] A human has reviewed the COMPLETE proposed diff before submission
+## Thinking Path
 
 <!--
-STOP. If the checkbox above is not checked, do not submit this PR.
-
-PRs will be closed without review if they:
-- Show no evidence of human involvement
-- Contain multiple unrelated changes
-- Promote or integrate third-party services or tools
-- Submit project-specific or personal configuration as core changes
-- Leave required sections blank or use placeholder text
-- Modify behavior-shaping content without eval evidence
+  Required. Trace your reasoning from the top of the project down to this
+  specific change. Start with what Galyarder is, then narrow through the
+  subsystem, the problem, and why this PR exists. Use blockquote style.
+  Aim for 5–8 steps. See CONTRIBUTING.md for full examples.
 -->
+
+> - Galyarder orchestrates AI agents for zero-human companies
+> - [Which subsystem or capability is involved]
+> - [What problem or gap exists]
+> - [Why it needs to be addressed]
+> - This pull request ...
+> - The benefit is ...
+
+## What Changed
+
+<!-- Bullet list of concrete changes. One bullet per logical unit. -->
+
+-
+
+## Verification
+
+<!--
+  How can a reviewer confirm this works? Include test commands, manual
+  steps, or both. For UI changes, include before/after screenshots.
+-->
+
+-
+
+## Risks
+
+<!--
+  What could go wrong? Mention migration safety, breaking changes,
+  behavioral shifts, or "Low risk" if genuinely minor.
+-->
+
+-
+
+## Model Used
+
+<!--
+  Required. Specify which AI model was used to produce or assist with
+  this change. Be as descriptive as possible — include:
+    • Provider and model name (e.g., Claude, GPT, Gemini, Codex)
+    • Exact model ID or version (e.g., claude-opus-4-6, gpt-4-turbo-2024-04-09)
+    • Context window size if relevant (e.g., 1M context)
+    • Reasoning/thinking mode if applicable (e.g., extended thinking, chain-of-thought)
+    • Any other relevant capability details (e.g., tool use, code execution)
+  If no AI model was used, write "None — human-authored".
+-->
+
+-
+
+## Checklist
+
+- [ ] I have included a thinking path that traces from project context to this change
+- [ ] I have specified the model used (with version and capability details)
+- [ ] I have run tests locally and they pass
+- [ ] I have added or updated tests where applicable
+- [ ] If this change affects the UI, I have included before/after screenshots
+- [ ] I have updated relevant documentation to reflect my changes
+- [ ] I have considered and documented any risks above
+- [ ] I will address all Greptile and reviewer comments before requesting merge
