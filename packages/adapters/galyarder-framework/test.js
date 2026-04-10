@@ -15,7 +15,7 @@ const __dirname = dirname(__filename);
 
 // Simple agent loader for testing
 async function loadAgent(agentName) {
-  const agentsDir = resolve(__dirname, '../../../../../framework/agents');
+  const agentsDir = resolve(__dirname, '../../../framework/agents');
   const agentPath = join(agentsDir, `${agentName}.md`);
   
   try {
@@ -33,7 +33,7 @@ async function loadAgent(agentName) {
 }
 
 async function loadAllAgents() {
-  const agentsDir = resolve(__dirname, '../../../../../framework/agents');
+  const agentsDir = resolve(__dirname, '../../../framework/agents');
   const files = await readdir(agentsDir);
   const agentFiles = files.filter(f => f.endsWith('.md'));
   
@@ -52,7 +52,7 @@ async function loadAllAgents() {
 }
 
 async function loadSkill(skillName) {
-  const skillsDir = resolve(__dirname, '../../../../../framework/skills');
+  const skillsDir = resolve(__dirname, '../../../framework/skills');
   const skillPath = join(skillsDir, skillName, 'SKILL.md');
   
   try {
@@ -69,7 +69,7 @@ async function loadSkill(skillName) {
 }
 
 async function loadAllSkills() {
-  const skillsDir = resolve(__dirname, '../../../../../framework/skills');
+  const skillsDir = resolve(__dirname, '../../../framework/skills');
   const dirs = await readdir(skillsDir, { withFileTypes: true });
   const skillDirs = dirs.filter(d => d.isDirectory()).map(d => d.name);
   
