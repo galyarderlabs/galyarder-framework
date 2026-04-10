@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import type { Galyarder DashboardConfig } from "@paperclipai/shared";
+import type { GalyarderDashboardConfig } from "@paperclipai/shared";
 import { resolveGalyarderConfigPath, resolveGalyarderEnvPath } from "./paths.js";
 
 function nonEmpty(value: string | null | undefined): string | null {
