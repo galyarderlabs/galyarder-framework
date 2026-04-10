@@ -1,0 +1,14 @@
+{
+  "name": "@galyarder/adapter-galyarder-framework",
+  "version": "0.1.0",
+  "description": "Galyarder Framework adapter - executes Framework agents and skills",
+  "type": "module",
+  "main": "./src/index.ts",
+  "dependencies": {
+    "gray-matter": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,23 @@
+[Unit]
+Description=Galyarder AI Agent Orchestrator
+Requires=galyarder-db.service
+After=galyarder-db.service
+
+[Container]
+Image=galyarder-local
+ContainerName=galyarder
+Pod=galyarder.pod
+Volume=%h/.local/share/galyarder:/galyarder:Z
+Environment=HOST=0.0.0.0
+Environment=GALYARDER_HOME=/galyarder
+Environment=GALYARDER_DEPLOYMENT_MODE=authenticated
+Environment=GALYARDER_DEPLOYMENT_EXPOSURE=private
+Environment=GALYARDER_PUBLIC_URL=http://localhost:3100
+EnvironmentFile=%h/.config/containers/systemd/galyarder.env
+
+[Service]
+Restart=on-failure
+TimeoutStartSec=120
+
+[Install]
+WantedBy=default.target

@@ -2,7 +2,7 @@
   <img src="public/logo.png" width="200" alt="Galyarder Framework Logo">
 </p>
 
-# GALYARDER FRAMEWORK (v1.4.0)
+# GALYARDER FRAMEWORK
 
 **Digital Company Operating System for Solo Founders**
 
