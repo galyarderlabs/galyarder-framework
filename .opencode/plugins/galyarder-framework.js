@@ -31,7 +31,7 @@ const extractAndStripFrontmatter = (content) => {
 
 export const GalyarderAgentFrameworkPlugin = async ({ client, directory }) => {
   const homeDir = os.homedir();
-  const frameworkSkillsDir = path.resolve(__dirname, '../../framework/skills');
+  const frameworkSkillsDir = path.resolve(__dirname, '../../skills');
 
   const getBootstrapContent = () => {
     const skillPath = path.join(frameworkSkillsDir, 'using-galyarder-framework', 'SKILL.md');
