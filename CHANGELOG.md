@@ -2,7 +2,15 @@
 
 All notable changes to Galyarder Framework will be documented in this file.
 
-## [1.4.0] - 2026-04-10
+## [1.5.0] - 2026-04-11
+
+### Changed
+- Separated Framework from Dashboard into independent repos
+- Dashboard moved to [Galyarder HQ](https://github.com/galyarderlabs/galyarder-hq)
+- Framework is now standalone — agents and skills at root level
+- Updated README to reflect standalone Framework positioning
+- Fixed all symlinks for Antigravity, Codex, and OpenCode
+
 
 ### Added
 - **Dashboard Integration:** Complete integration layer between Framework and Dashboard

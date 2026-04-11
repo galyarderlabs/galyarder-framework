@@ -6,12 +6,11 @@
 
 **Digital Company Operating System for Solo Founders**
 
-Galyarder Framework transforms AI coding assistants into a fully structured, autonomous workforce. It provides **34 specialized agents** and **100+ execution-grade skills** across the full product lifecycle — from fundraising and product strategy to engineering, security, growth, and legal compliance.
+Galyarder Framework transforms AI coding assistants into a fully structured, autonomous workforce. It provides **35 specialized agents** and **132 execution-grade skills** across the full product lifecycle — from fundraising and product strategy to engineering, security, growth, and legal compliance.
 
-**Two Ways to Use:**
+**Install in your AI coding assistant. Chat with your digital company.**
 
-1. **Standalone** - Install in Claude Code, Cursor, or Gemini. Chat with your digital company.
-2. **With Dashboard** - Visual web platform for managing multiple companies, agents, and tasks.
+Built for the **1-Man Army** - one founder with the leverage of an entire company.
 
 Built for the **1-Man Army** - one founder with the leverage of an entire company.
 
@@ -121,13 +120,9 @@ For peak "1-Man Army" efficiency, we recommend the following MCP servers:
 - Tasks tracked in Linear (optional)
 - Reports in Obsidian (optional)
 
-**Option 2: With Dashboard (Web-Based)**
-- Visual web UI for company management
-- Hire agents from Framework library
-- Monitor execution in real-time
-- Database-backed persistence
-- Multi-company support
-- See [Integration Guide](docs/INTEGRATION.md) and [Quick Start](docs/QUICK_START.md)
+**With Dashboard (Galyarder HQ)**
+
+For visual management, connect Framework to [Galyarder HQ](https://github.com/galyarderlabs/galyarder-hq) — the control plane for running AI-native companies.
 
 ### Organization Structure
 
@@ -239,23 +234,19 @@ Skills live directly in this repository. To contribute:
 
 See `skills/writing-skills/SKILL.md` for the complete guide.
 
-## Dashboard Integration
+## Galyarder HQ
 
-The Framework can be integrated with the Dashboard web platform for visual management:
+For visual management of your AI workforce, connect Framework to [Galyarder HQ](https://github.com/galyarderlabs/galyarder-hq) — the control plane for running AI-native companies.
 
-- **Dashboard Location:** `dashboard/` subdirectory
-- **Adapter:** `dashboard/packages/adapters/galyarder-framework/`
-- **Setup Guide:** [docs/QUICK_START.md](docs/QUICK_START.md)
-- **Architecture:** [docs/UNIFIED_PLATFORM.md](docs/UNIFIED_PLATFORM.md)
-
-The Dashboard provides:
+Galyarder HQ provides:
 - Web UI for company management
 - Visual org chart
-- Task monitoring
-- Cost tracking
+- Task monitoring and assignment
+- Cost tracking and budget enforcement
 - Multi-company support
+- Heartbeat-based autonomous execution
 
-Framework works standalone OR with Dashboard. Your choice.
+Framework works standalone OR with Galyarder HQ. Your choice.
 
 ## Updating
 
