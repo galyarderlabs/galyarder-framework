@@ -1,8 +1,8 @@
 {
   "name": "galyarder-framework",
   "displayName": "Galyarder Framework",
-  "description": "Core skills library: TDD, debugging, marketing, security, operations, and proven company patterns",
-  "version": "1.4.0",
+  "description": "Agentic Skills & Agent Framework for AI Assistants",
+  "version": "1.5.0",
   "author": {
     "name": "Galyarder Labs",
     "email": "hello@galyarderlabs.app"
@@ -10,20 +10,10 @@
   "homepage": "https://github.com/galyarderlabs/galyarder-framework",
   "repository": "https://github.com/galyarderlabs/galyarder-framework",
   "license": "MIT",
-  "keywords": [
-    "skills",
-    "agents",
-    "personas",
-    "tdd",
-    "debugging",
-    "growth",
-    "security",
-    "operations",
-    "workflows"
-  ],
-  "personas": "./framework/personas/",
-  "agents": "./framework/agents/",
-  "skills": "./framework/skills/",
-  "commands": "./framework/commands/",
-  "hooks": "./framework/hooks/hooks-cursor.json"
+  "keywords": ["skills", "agents", "personas", "tdd", "debugging", "growth", "security"],
+  "personas": "./personas/",
+  "agents": "./agents/",
+  "skills": "./skills/",
+  "commands": "./commands/",
+  "hooks": "./hooks/hooks-cursor.json"
 }
