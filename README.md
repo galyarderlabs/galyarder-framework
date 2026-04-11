@@ -1,16 +1,18 @@
 <p align="center">
-  <img src="public/header.jpg" width="900" alt="Galyarder Framework">
+  <img src="public/header.jpg" width="600" alt="Galyarder Framework">
 </p>
 
-# GALYARDER FRAMEWORK
+<h1 align="center">Galyarder Framework</h1>
 
-**Agentic Skills & Agent Framework for AI Assistants**
+<p align="center">Agentic Skills & Agent Framework for AI Assistants</p>
 
-Galyarder Framework provides **35 specialized agents** and **132 production-ready skills** for AI assistants. Install in Claude Code, Cursor, Gemini, Codex, or any agentic tool and get a full workforce of specialized agents covering engineering, security, growth, legal, and more.
+<p align="center">
+  Galyarder Framework provides <strong>35 specialized agents</strong> and <strong>132 production-ready skills</strong> for AI assistants.<br>
+  Install in Claude Code, Cursor, Gemini, Codex, or any agentic tool and get a full workforce of specialized agents<br>
+  covering engineering, security, growth, legal, and more.
+</p>
 
-Built for the **1-Man Army** - one founder with the leverage of an entire company.
-
-Built for the **1-Man Army** - one founder with the leverage of an entire company.
+<p align="center">Built for the <strong>1-Man Army</strong> — one founder with the leverage of an entire company.</p>
 
 ## How it works
 
