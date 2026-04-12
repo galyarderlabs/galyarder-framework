@@ -7,7 +7,7 @@
 <p align="center">Agentic Skills & Agent Framework for AI Assistants</p>
 
 <p align="center">
-  Galyarder Framework provides <strong>35 specialized agents</strong> and <strong>132 production-ready skills</strong> for AI assistants.<br>
+  Galyarder Framework provides <strong>40 specialized agents</strong> and <strong>132 production-ready skills</strong> for AI assistants.<br>
   Install in Claude Code, Cursor, Gemini, Codex, or any agentic tool and get a full workforce of specialized agents<br>
   covering engineering, security, growth, legal, and more.
 </p>
@@ -171,6 +171,13 @@ Galyarder Framework distributes tasks to specialized C-Suite agents as well as d
 - **`remotion-engineer`** - Programmatic video generation using React.
 - **`release-manager`** - Versioning, changelogs, and launch orchestration.
 - **`support-lead`** - User education, FAQ automation, and troubleshooting.
+
+**New Agents (v1.6.0)**
+- **`mcp-builder`** - MCP server development specialist. Builds tools that extend AI agent capabilities.
+- **`sre`** - Site reliability engineering. SLOs, error budgets, observability, toil reduction.
+- **`chief-of-staff`** - Founder coordination. Filters noise, routes decisions, owns the space between functions.
+- **`rapid-prototyper`** - Ultra-fast POC and MVP. Validates ideas before they become expensive commitments.
+- **`sales-engineer`** - Pre-sales technical specialist. Wins the technical decision before the deal closes.
 
 **Engineering Engines**
 - **architect**, **build-error-resolver**, **code-reviewer**, **doc-updater**, **e2e-runner**, **planner**, **refactor-cleaner**, **security-reviewer**, **tdd-guide**.

@@ -2,7 +2,23 @@
 
 All notable changes to Galyarder Framework will be documented in this file.
 
-## [1.5.0] - 2026-04-11
+## [1.6.0] - 2026-04-12
+
+### Added
+- **5 new agents:**
+  - `mcp-builder` — MCP server development specialist
+  - `sre` — Site reliability engineering, SLOs, error budgets
+  - `chief-of-staff` — Founder coordination and clarity
+  - `rapid-prototyper` — Ultra-fast POC and MVP validation
+  - `sales-engineer` — Pre-sales technical specialist
+- Total: 40 agents, 132 skills
+
+### Fixed
+- All plugin configs updated to root paths (no `framework/` prefix)
+- Gemini extension paths fixed
+- FUNDING.yml removed (pending GitHub Sponsors enrollment)
+- Removed all Dashboard CI workflows (Docker, e2e, release-smoke)
+
 
 ### Changed
 - Separated Framework from Dashboard into independent repos
