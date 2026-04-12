@@ -43,7 +43,7 @@ If no directory exists and no CLAUDE.md preference:
 No worktree directory found. Where should I create worktrees?
 
 1. .worktrees/ (project-local, hidden)
-2. ~/.config/galyarder-agent-framework/worktrees/<project-name>/ (global location)
+2. ~/.config/galyarder-framework/worktrees/<project-name>/ (global location)
 
 Which would you prefer?
 ```
@@ -68,7 +68,7 @@ Per Jesse's rule "Fix broken things immediately":
 
 **Why critical:** Prevents accidentally committing worktree contents to repository.
 
-### For Global Directory (~/.config/galyarder-agent-framework/worktrees)
+### For Global Directory (~/.config/galyarder-framework/worktrees)
 
 No .gitignore verification needed - outside project entirely.
 
@@ -88,8 +88,8 @@ case $LOCATION in
   .worktrees|worktrees)
     path="$LOCATION/$BRANCH_NAME"
     ;;
-  ~/.config/galyarder-agent-framework/worktrees/*)
-    path="~/.config/galyarder-agent-framework/worktrees/$project/$BRANCH_NAME"
+  ~/.config/galyarder-framework/worktrees/*)
+    path="~/.config/galyarder-framework/worktrees/$project/$BRANCH_NAME"
     ;;
 esac
 
@@ -186,7 +186,7 @@ You: I'm using the using-git-worktrees skill to set up an isolated workspace.
 [Run npm install]
 [Run npm test - 47 passing]
 
-Worktree ready at /home/galyarder-agent-framework/myproject/.worktrees/auth
+Worktree ready at /home/galyarder-framework/myproject/.worktrees/auth
 Tests passing (47 tests, 0 failures)
 Ready to implement auth feature
 ```
