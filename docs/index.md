@@ -1,67 +1,71 @@
-# Galyarder Framework: Digital Enterprise OS
+# Galyarder Framework: Advanced Agentic OS
 
 <p align="center">
-  <img src="public/header.jpg" width="800" alt="Galyarder Framework Apex">
+  <img src="assets/header.jpg" width="800" alt="Galyarder Framework">
 </p>
 
-## The Humans 3.0 Infrastructure
+## Humans 3.0: Autonomous Goal Integration
 
-Welcome to the command center of the Galyarder Digital Enterprise. This portal provides deterministic documentation for history's first high-integrity AI workforce.
+Galyarder Framework is the underlying **Logic Engine** and **Autonomous Workforce** designed to power the next generation of agentic entities. It provides the "brain" for autonomous assistants running locally, on VPS, or across distributed infrastructure.
 
-### Master Architecture
+### Global Command Architecture
 
 ```mermaid
 graph TD
     Founder((Founder)) --> CEO[galyarder-ceo]
     CEO --> Orchestrator[galyarder-specialist]
     
-    subgraph Departments
-        Orchestrator --> Engineering
-        Orchestrator --> Growth
-        Orchestrator --> Security
-        Orchestrator --> Product
-        Orchestrator --> Legal[Legal-Finance]
-        Orchestrator --> Infrastructure
-        Orchestrator --> Knowledge
+    subgraph Commands
+        Orchestrator --> Engineering[Engineering Silo]
+        Orchestrator --> Growth[Growth Silo]
+        Orchestrator --> Security[Security Silo]
+        Orchestrator --> Product[Product Silo]
+        Orchestrator --> Legal[Legal-Finance Silo]
+        Orchestrator --> Infrastructure[Infrastructure Silo]
+        Orchestrator --> Knowledge[Knowledge Silo]
     end
 
     Engineering --> Elite[elite-developer]
     Growth --> CMO[galyarder-cmo]
     Legal --> CFO[galyarder-cfo-coo]
+    Security --> Pers[perseus]
 ```
 
-### Operational Silos
+### Institutional Departments
 
 <div class="grid cards" markdown>
 
--   :material-account-tie: **Executive Office**
+-   :material-account-tie: **Executive**
     ---
-    C-Suite personas and master orchestration protocols.
-    [View Agents](agents/index.md)
+    Strategic oversight and master orchestration protocols.
+    [Enter Command Silo](agents/index.md)
 
 -   :material-hammer-wrench: **Engineering**
     ---
-    Deterministic implementation and TDD factory.
-    [View Skills](skills/index.md)
+    Deterministic implementation and high-integrity TDD factory.
+    [Enter Command Silo](skills/index.md)
 
 -   :material-trending-up: **Growth**
     ---
-    Behavioral arbitrage and marketing engineering.
-    [View Design](design/index.md)
+    Behavioral arbitrage, marketing engineering, and design systems.
+    [Enter Command Silo](design/index.md)
 
 -   :material-shield-lock: **Security**
     ---
-    Offensive and defensive offensive security audits.
-    [View Skills](skills/index.md)
+    Zero-trust auditing and advanced offensive security.
+    [Enter Command Silo](skills/index.md)
 
 </div>
 
-## Key Protocols
+## The 1-Man Army Global Protocols
 
-1.  **Thinking MCP**: Mandatory structured reasoning via `sequentialthinking`.
-2.  **Official Docs**: Real-time documentation fetch via `context7`.
-3.  **Linear is Law**: No labor without a project-scoped ticket.
-4.  **Obsidian Loop**: Durable memory in departmental reports.
+To ensure institutional-grade output, every agent and skill within the framework enforces the following non-negotiable sequence:
+
+1.  **Thinking MCP**: Mandatory structured reasoning via `sequentialthinking` before any tool call.
+2.  **Official Documentation**: Real-time documentation fetch via `context7` to ensure 100% technical accuracy.
+3.  **Traceability**: Every task must be linked to a project-scoped **Linear** ticket.
+4.  **Token Economy**: Mandatory use of the `rtk` proxy to minimize computational overhead.
+5.  **Persistence**: Every mission concludes with a durable markdown artifact in **Obsidian**.
 
 ---
-Copyright 2026 Galyarder Labs. Galyarder Framework.
+© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.
