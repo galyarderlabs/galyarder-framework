@@ -18,13 +18,27 @@
 
 ## How it works
 
-Galyarder Framework bridges the gap between high-level intent and ground-level execution through a deterministic 5-stage process:
+It starts from the moment you fire up your autonomous assistant (Galyarder Agent, OpenClaw, Hermes, or Claude Code). As soon as the framework sees that you're building something, it *doesn't* just jump into trying to write code. Instead, it steps back and asks you what you're really trying to do. 
 
-1.  **Socratic Discovery**: The framework analyzes your intent, extracting hidden requirements and distilling them into short, digestible specifications.
-2.  **Deterministic Blueprinting**: An implementation plan is architected using **Vertical Slices**. Every step follows the iron laws of red/green TDD.
-3.  **Autonomous Orchestration**: The framework launches a *subagent-driven-development* process, routing tasks to its specialized workforce of 40+ agents, maintaining a continuous review and validation loop.
-4.  **Continuous Evolution**: Through recursive memory integration, the system learns from every session, adapting to your specific strategic mind.
-5.  **Marketing Mode**: Once built, the framework triggers specialized skills for SEO, CRO, and Remotion (Video) to ensure what you built actually achieves market fit.
+Once it's teased a spec out of the conversation, it shows it to you in chunks short enough to actually read and digest. 
+
+After you've signed off on the design, your agent puts together an implementation plan that's clear enough for an enthusiastic junior engineer with poor taste, no judgement, no project context, and an aversion to testing to follow. It emphasizes true red/green TDD, YAGNI (You Aren't Gonna Need It), and DRY. 
+
+Next up, once you say "go", it launches a *subagent-driven-development* process, routing each task through the host's available delegation model while preserving the same review and orchestration workflow. 
+
+This is the **Humans 3.0** protocol in action: the transition from deterministic execution into **Autonomous Goal Integration (AGI)**. 
+
+In this framework, AGI doesn't mean "sentient machines"; it means a self-evolving system capable of taking high-level business goals and independently orchestrating the entire lifecycle—from requirement extraction and TDD implementation to security audits and market distribution—without human micro-management. It's the ultimate realization of the **1-Man Army**: one founder providing the vision, while the framework provides the autonomous brain.
+
+---
+
+### The AGI Lifecycle (Professional Standard)
+
+1.  **Intent Extraction**: Distilling business goals into project-scoped Linear tickets and tactical PRDs.
+2.  **Architectural Determinism**: System design via formal verification and Vertical Slice (Tracer Bullet) implementation plans.
+3.  **Execution Factory**: Clinical implementation via strict Test-Driven Development (TDD) and high-fidelity design system enforcement.
+4.  **Operational Auditing**: Automated live-environment verification (BrowserOS) and professional security hardening.
+5.  **Autonomous Distribution**: Programmatic marketing generation (Remotion) and behavioral-targeted market deployment.
 
 ---
 
@@ -66,9 +80,9 @@ Agent: [Invokes perseus] -> Simulates attacks -> Identifies IDOR/SSRF -> Propose
 
 ## The Intelligence Layer of the Galyarder Ecosystem
 
-Galyarder Framework is the **brain** designed to power the next generation of autonomous entities.
+Galyarder Framework is the underlying **Logic Engine** designed to power the next generation of autonomous entities.
 
--   **[Galyarder Agent](https://github.com/galyarderlabs/galyarder-agent)**: The **Entity**. Digital personas with recursive memory and universal presence.
+-   **[Galyarder Agent](https://github.com/galyarderlabs/galyarder-agent)**: The **Entity**. Digital personas with recursive long-term memory, stable visual identity, and universal presence.
 -   **[Galyarder HQ](https://github.com/galyarderlabs/galyarder-hq)**: The **Control Plane**. Master governance for orchestrating swarms and maintaining operational control.
 -   **Galyarder Framework**: The **Intelligence**. The specialized workforce and elite SOPs.
 
@@ -125,9 +139,7 @@ Fetch and follow instructions from https://raw.githubusercontent.com/galyarderla
 
 ---
 
-## Digital Infrastructure
-
-Galyarder Framework is organized into **8 High-Integrity Silos**:
+## Digital Infrastructure: 8 High-Integrity Silos
 
 - **Executive**: Strategic oversight and master orchestration.
 - **Engineering**: Deterministic TDD factory and implementation.
