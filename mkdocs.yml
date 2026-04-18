@@ -25,32 +25,45 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.top
+    - navigation.indexes
+    - navigation.tracking
     - search.suggest
     - search.highlight
+    - search.share
     - content.code.copy
+    - toc.follow
   icon:
     logo: material/robot-industrial
 
 nav:
-  - Welcome: README.md
+  - Welcome: index.md
   - Organization: ORG_CHART.md
   - Workflow: WORKFLOW.md
-  - Agents: 
-      - Index: agents/index.md
-      - ALL Agents: agents/
-  - Skills:
-      - ALL Skills: skills/
-  - Commands:
-      - ALL Commands: commands/
-  - Design Systems:
-      - ALL Specs: design/
+  - Departments:
+      - Executive: Executive/
+      - Engineering: Engineering/
+      - Growth: Growth/
+      - Security: Security/
+      - Product: Product/
+      - Infrastructure: Infrastructure/
+      - Legal-Finance: Legal-Finance/
+      - Knowledge: Knowledge/
+  - Inventory:
+      - Agents: agents/index.md
+      - Skills: skills/index.md
+      - Commands: commands/index.md
+      - Design Systems: design/index.md
   - Integration: INTEGRATION.md
   - Release Notes: RELEASE-NOTES.md
 
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.mermaid_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:

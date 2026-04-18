@@ -2,7 +2,7 @@
 
 <div class="grid cards" markdown>
 
-## material/hammer-wrench Engineering Department
+## :material/folder-zip: Engineering
 
 -   **[/build-fix](../commands/build-fix.md)**
 
@@ -35,7 +35,7 @@
 
     
 
-## material/trending-up Growth Department
+## :material/folder-zip: Growth
 
 -   **[/cro](../commands/cro.md)**
 
@@ -58,7 +58,7 @@
 
     
 
-## material/shield-lock Security Department
+## :material/folder-zip: Security
 
 -   **[/cybersecurity](../commands/cybersecurity.md)**
 
@@ -66,7 +66,7 @@
 
     
 
-## material/package-variant-closed Product Department
+## :material/folder-zip: Product
 
 -   **[/linear](../commands/linear.md)**
 
@@ -84,7 +84,7 @@
 
     
 
-## material/server Infrastructure Department
+## :material/folder-zip: Infrastructure
 
 -   **[/deploy](../commands/deploy.md)**
 
@@ -97,7 +97,7 @@
 
     
 
-## material/scale-balance Legal-Finance Department
+## :material/folder-zip: Legal-Finance
 
 -   **[/finops](../commands/finops.md)**
 

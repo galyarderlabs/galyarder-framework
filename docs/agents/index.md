@@ -2,7 +2,7 @@
 
 <div class="grid cards" markdown>
 
-## material/account-tie Executive Department
+## :material/folder-zip: Executive
 
 -   **[chief-of-staff](../agents/chief-of-staff.md)**
 
@@ -15,7 +15,7 @@
 
     Fundraising and investor operations specialist. Owns founder context, pitch narrative, investor targeting, investor communication, diligence readiness, and board-update hygiene for the 1-Man Army founder.
 
-## material/hammer-wrench Engineering Department
+## :material/folder-zip: Engineering
 
 -   **[architect](../agents/architect.md)**
 
@@ -68,7 +68,7 @@
 
     |
 
-## material/trending-up Growth Department
+## :material/folder-zip: Growth
 
 -   **[conversion-engineer](../agents/conversion-engineer.md)**
 
@@ -106,7 +106,7 @@
 
     |
 
-## material/shield-lock Security Department
+## :material/folder-zip: Security
 
 -   **[cyber-intel](../agents/cyber-intel.md)**
 
@@ -129,7 +129,7 @@
 
     Security vulnerability detection and remediation specialist. Use PROACTIVELY after writing code that handles user input, authentication, API endpoints, or sensitive data. Flags secrets, SSRF, injection, unsafe crypto, and OWASP Top 10 vulnerabilities.
 
-## material/package-variant-closed Product Department
+## :material/folder-zip: Product
 
 -   **[planner](../agents/planner.md)**
 
@@ -147,7 +147,7 @@
 
     |
 
-## material/server Infrastructure Department
+## :material/folder-zip: Infrastructure
 
 -   **[devops-engineer](../agents/devops-engineer.md)**
 
@@ -165,7 +165,7 @@
 
     |
 
-## material/scale-balance Legal-Finance Department
+## :material/folder-zip: Legal-Finance
 
 -   **[finops-manager](../agents/finops-manager.md)**
 
@@ -178,7 +178,7 @@
 
     Legal & Compliance Specialist. Use this agent to generate TOS/Privacy policies, audit GDPR/CCPA compliance, review open-source licenses, and ensure AI governance (ISO 42001). It protects the 1-Man Army from legal liabilities.
 
-## material/brain Knowledge Department
+## :material/folder-zip: Knowledge
 
 -   **[obsidian-architect](../agents/obsidian-architect.md)**
 

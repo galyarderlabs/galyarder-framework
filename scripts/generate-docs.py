@@ -1,5 +1,5 @@
-#!/usr/bin/env python3
 import os
+import json
 import re
 import shutil
 from pathlib import Path
@@ -7,15 +7,17 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).parent.parent
 DOCS_DIR = REPO_ROOT / "docs"
 
-DEPARTMENTS = {
-    "Executive": {"icon": "material/account-tie", "desc": "C-Suite Strategic Hegemony"},
-    "Engineering": {"icon": "material/hammer-wrench", "desc": "Deterministic Implementation"},
-    "Growth": {"icon": "material/trending-up", "desc": "Behavioral Arbitrage & Marketing"},
-    "Security": {"icon": "material/shield-lock", "desc": "Offensive & Defensive Audits"},
-    "Product": {"icon": "material/package-variant-closed", "desc": "Discovery & Roadmap Integrity"},
-    "Infrastructure": {"icon": "material/server", "desc": "Reliability & Deployment Physics"},
-    "Legal-Finance": {"icon": "material/scale-balance", "desc": "Regulatory & Token FinOps"},
-    "Knowledge": {"icon": "material/brain", "desc": "Durable Memory & Visual Mapping"}
+# Global icons for auto-discovered domains
+ICONS = {
+    "executive": "material/account-tie",
+    "engineering": "material/hammer-wrench",
+    "growth": "material/trending-up",
+    "security": "material/shield-lock",
+    "product": "material/package-variant-closed",
+    "infrastructure": "material/server",
+    "finance": "material/scale-balance",
+    "knowledge": "material/brain",
+    "default": "material/folder-zip"
 }
 
 def extract_metadata(file_path):
@@ -36,46 +38,56 @@ def extract_metadata(file_path):
     except: pass
     return name, desc
 
-def generate_card(title, link, desc, icon=""):
-    return f"""
-[:octicons-terminal-24: **{title}**]({link})
-: .card
-
-{desc}
-"""
-
 def generate():
-    print("Generating Apex Documentation Portal...")
+    print("🚀 Initializing Mars Mission: Dynamic Asset Discovery...")
     
     for d in ["agents", "skills", "commands", "design"]:
         target = DOCS_DIR / d
         if target.exists(): shutil.rmtree(target)
         target.mkdir(parents=True, exist_ok=True)
 
-    dept_assets = {d: {"agents": [], "skills": [], "commands": []} for d in DEPARTMENTS}
+    # 1. Discover all Silos (any directory with a plugin.json)
+    silos = {}
+    for item in REPO_ROOT.iterdir():
+        if item.is_dir() and (item / ".claude-plugin" / "plugin.json").exists():
+            with open(item / ".claude-plugin" / "plugin.json", "r") as f:
+                manifest = json.load(f)
+                category = manifest.get("category", "default")
+                silos[item.name] = {
+                    "name": manifest.get("name", item.name),
+                    "category": category,
+                    "icon": ICONS.get(category, ICONS["default"]),
+                    "path": item
+                }
+    
+    print(f"[*] Discovered {len(silos)} independent organizational silos.")
 
-    for dept, info in DEPARTMENTS.items():
-        dept_path = REPO_ROOT / dept
-        if not dept_path.exists(): continue
+    assets = {"agents": {}, "skills": {}, "commands": {}}
+
+    for silo_name, info in silos.items():
+        silo_path = info["path"]
+        print(f"[*] Mapping Silo: {silo_name}")
         
-        # 1. Process Agents
-        agent_src = dept_path / "agents"
+        # Agents
+        agent_src = silo_path / "agents"
         if agent_src.exists():
             for f in agent_src.glob("*.md"):
                 if f.name == "README.md": continue
                 name, desc = extract_metadata(f)
                 shutil.copy(f, DOCS_DIR / "agents" / f.name)
-                dept_assets[dept]["agents"].append((name or f.stem, f"../agents/{f.name}", desc))
+                if silo_name not in assets["agents"]: assets["agents"][silo_name] = []
+                assets["agents"][silo_name].append((name or f.stem, f"../agents/{f.name}", desc))
 
-        # 2. Process Commands
-        cmd_src = dept_path / "commands"
+        # Commands
+        cmd_src = silo_path / "commands"
         if cmd_src.exists():
             for f in cmd_src.glob("*.md"):
                 shutil.copy(f, DOCS_DIR / "commands" / f.name)
-                dept_assets[dept]["commands"].append((f"/{f.stem}", f"../commands/{f.name}", ""))
+                if silo_name not in assets["commands"]: assets["commands"][silo_name] = []
+                assets["commands"][silo_name].append((f"/{f.stem}", f"../commands/{f.name}", ""))
 
-        # 3. Process Skills
-        skill_src = dept_path / "skills"
+        # Skills
+        skill_src = silo_path / "skills"
         if skill_src.exists():
             for skill_folder in skill_src.iterdir():
                 if not skill_folder.is_dir(): continue
@@ -88,35 +100,23 @@ def generate():
                     for sub in ["references", "assets", "templates"]:
                         if (skill_folder / sub).exists():
                             shutil.copytree(skill_folder / sub, dest_folder / sub, dirs_exist_ok=True)
-                    dept_assets[dept]["skills"].append((name or skill_folder.name, f"../skills/{skill_folder.name}/index.md", desc))
+                    if silo_name not in assets["skills"]: assets["skills"][silo_name] = []
+                    assets["skills"][silo_name].append((name or skill_folder.name, f"../skills/{skill_folder.name}/index.md", desc))
 
-    # Build High-Fidelity Landing Pages with Material Grids
+    # 2. Generate Grid Landing Pages
     for category in ["agents", "skills", "commands"]:
         idx_content = f"# Galyarder Framework {category.title()}\n\n"
         idx_content += '<div class="grid cards" markdown>\n'
-        
-        for dept, assets in dept_assets.items():
-            if assets[category]:
-                idx_content += f"\n## {DEPARTMENTS[dept]['icon']} {dept} Department\n\n"
-                for title, link, desc in sorted(assets[category]):
-                    idx_content += f"-   **[{title}]({link})**\n\n    ---\n\n    {desc}\n"
-        
+        for silo_name, silo_assets in assets[category].items():
+            info = silos[silo_name]
+            idx_content += f"\n## :{info['icon']}: {silo_name}\n\n"
+            for title, link, desc in sorted(silo_assets):
+                idx_content += f"-   **[{title}]({link})**\n\n    ---\n\n    {desc}\n"
         idx_content += "\n</div>"
         with open(DOCS_DIR / f"{category}/index.md", "w") as f:
             f.write(idx_content)
 
-    # Special: Design Systems
-    design_idx = "# Design System Specifications\n\n"
-    design_idx += '<div class="grid cards" markdown>\n'
-    design_src = REPO_ROOT / "Growth" / "design"
-    if design_src.exists():
-        for f in sorted(design_src.glob("*.md")):
-            shutil.copy(f, DOCS_DIR / "design" / f.name)
-            design_idx += f"-   **[{f.stem}]({f.name})**\n\n    ---\n\n    High-fidelity design spec.\n"
-    design_idx += "\n</div>"
-    with open(DOCS_DIR / "design/index.md", "w") as f: f.write(design_idx)
-
-    print("Portal generated with Material Card system.")
+    print("🌌 Olympus Mons Deployment Complete. System is now Dynamic.")
 
 if __name__ == "__main__":
     generate()

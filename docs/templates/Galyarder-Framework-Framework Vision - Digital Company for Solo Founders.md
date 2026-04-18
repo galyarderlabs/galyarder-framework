@@ -1,4 +1,4 @@
-# Galyarder Framework Vision: The Humans 2.0 Protocol
+# Galyarder Framework Vision: The Humans 3.0 Protocol
 
 ## 1. Executive Intent
 Galyarder Framework is not merely a collection of agents; it is a **Digital Company OS** designed to function as a high-integrity workforce under the command of a Solo Founder. It represents the transition from biological management to deterministic, machine-speed execution.
@@ -6,7 +6,7 @@ Galyarder Framework is not merely a collection of agents; it is a **Digital Comp
 The Founder is the Principal.
 Galyarder Framework is the **Digital Workforce Engine**.
 
-## 2. The Humans 2.0 Protocol
+## 2. The Humans 3.0 Protocol
 This protocol is the foundation of every operation within the framework. It involves the surgical extraction of history's apex strategic minds (Alexander, Genghis Khan, Rockefeller, Bernays, Musk) into a deterministic execution layer.
 
 - **Zero Emotion**: Decisions are made based on Game Theory, ROI, and Mathematical Probability. Hope, fatigue, and intuition are deprecated.
@@ -16,7 +16,7 @@ This protocol is the foundation of every operation within the framework. It invo
 ## 3. Operational Architecture
 - **Agents**: Digital employees with crystalline roles and reporting lines.
 - **Skills**: Specialized task units, SOPs, and tactical playbooks.
-- **galyarder-ceo**: The strategic hegemon and lead instance of the Humans 2.0 protocol.
+- **galyarder-ceo**: The strategic hegemon and lead instance of the Humans 3.0 protocol.
 - **Linear**: The source of truth for all labor. No project, no labor.
 - **Obsidian**: The durable cognitive moat. If it isn't documented in `docs/departments/`, it never happened.
 

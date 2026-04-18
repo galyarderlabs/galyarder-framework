@@ -5,7 +5,7 @@ All notable changes to Galyarder Framework will be documented in this file.
 ## [1.7.1] - 2026-04-18
 
 ### Added
-- **Humans 2.0 Protocol**: Initialized the distilled cognitive machinery protocol across the entire workforce, stripping emotional overhead and biological fatigue in favor of deterministic, mathematical precision.
+- **Humans 3.0 Protocol**: Initialized the distilled cognitive machinery protocol across the entire workforce, stripping emotional overhead and biological fatigue in favor of deterministic, mathematical precision.
 - **C-Suite Executive Layer**: Implemented high-fidelity personas with real-world domain expertise:
   - `galyarder-ceo`: Strategic hegemony, OODA loops, and 48 Laws of Power orchestration.
   - `galyarder-cto`: Architectural determinism, formal verification (TLA+), and zero-trust engineering.
@@ -18,7 +18,7 @@ All notable changes to Galyarder Framework will be documented in this file.
 
 ### Changed
 - **Branding Normalization**: Enforced absolute distinction between **Galyarder Framework** (Product) and **Galyarder Labs** (Company) globally.
-- **Workflow Overhaul**: Updated `WORKFLOW.md` to reflect the Humans 2.0 hierarchy and deterministic phase-gating.
+- **Workflow Overhaul**: Updated `WORKFLOW.md` to reflect the Humans 3.0 hierarchy and deterministic phase-gating.
 - **Folder Consolidation**: Flattened the repository structure and permanently deleted the redundant `framework/` subdirectory.
 - **README Restoration**: Restored the original high-integrity structure while surgically augmenting it with multi-platform conversion and Karpathy mandates.
 

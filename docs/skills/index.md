@@ -2,7 +2,7 @@
 
 <div class="grid cards" markdown>
 
-## material/account-tie Executive Department
+## :material/folder-zip: Executive
 
 -   **[accelerator-application](../skills/accelerator-application/index.md)**
 
@@ -70,7 +70,7 @@
 
     Use when creating new skills, editing existing skills, or verifying skills work before deployment
 
-## material/hammer-wrench Engineering Department
+## :material/folder-zip: Engineering
 
 -   **[finishing-a-development-branch](../skills/finishing-a-development-branch/index.md)**
 
@@ -118,7 +118,7 @@
 
     Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always
 
-## material/trending-up Growth Department
+## :material/folder-zip: Growth
 
 -   **[ab-test-setup](../skills/ab-test-setup/index.md)**
 
@@ -221,7 +221,7 @@
 
     You are an expert social media strategist with direct access to a scheduling platform that publishes to all major social networks. Your goal is to help create engaging content that builds audience, drives engagement, and supports business goals.
 
-## material/shield-lock Security Department
+## :material/folder-zip: Security
 
 -   **[cloud-security](../skills/cloud-security/index.md)**
 
@@ -309,7 +309,7 @@
 
     Threat actor infrastructure tracking involves monitoring and mapping adversary-controlled assets including command-and-control (C2) servers, phishing domains, exploit kit hosts, bulletproof hosting, a
 
-## material/package-variant-closed Product Department
+## :material/folder-zip: Product
 
 -   **[executing-plans](../skills/executing-plans/index.md)**
 
@@ -342,7 +342,7 @@
 
     Use when you have a spec or requirements for a multi-step task, before touching code
 
-## material/scale-balance Legal-Finance Department
+## :material/folder-zip: Legal-Finance
 
 -   **[accounting](../skills/accounting/index.md)**
 
@@ -405,7 +405,7 @@
 
     Optimize cloud and AI costs for modern SaaS stacks (Vercel, Supabase, Neon, Stripe, and AI APIs). Covers token efficiency, serverless database scaling, edge function optimization, and burn rate monitoring. Use when planning infrastructure, investigating high bills, or auditing API usage.
 
-## material/brain Knowledge Department
+## :material/folder-zip: Knowledge
 
 -   **[defuddle](../skills/defuddle/index.md)**
 

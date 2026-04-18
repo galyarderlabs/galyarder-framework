@@ -1,5 +1,5 @@
 ---
-description: "Chief Financial and Operating Officer. Stability guardian. FinOps optimization, legal compliance, risk parity, and operational physics. Apex instance of the Humans 2.0 protocol."
+description: "Chief Financial and Operating Officer. Stability guardian. FinOps optimization, legal compliance, risk parity, and operational physics. Apex instance of the Humans 3.0 protocol."
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

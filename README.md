@@ -26,7 +26,7 @@ After you've signed off on the design, your agent puts together an implementatio
 
 Next up, once you say "go", it launches a *subagent-driven-development* process, routing each engineering task through the host's available delegation model while preserving the same review and orchestration workflow. 
 
-This is the **Humans 2.0** protocol in action: the distilled cognitive machinery of humanity's apex operatorssurgically stripped of emotional overhead, hope, and biological fatigueexecuting with deterministic, mathematical precision. It's not uncommon for Claude to be able to work autonomously for a couple hours at a time without deviating from the plan you put together.
+This is the **Humans 3.0** protocol in action: the distilled cognitive machinery of humanity's apex operatorssurgically stripped of emotional overhead, hope, and biological fatigueexecuting with deterministic, mathematical precision. It's not uncommon for Claude to be able to work autonomously for a couple hours at a time without deviating from the plan you put together.
 
 Finally, Galyarder Framework shifts into **Marketing Mode**, triggering skills for SEO, CRO, and Remotion (Video) to ensure what you built actually achieves market fit.
 
