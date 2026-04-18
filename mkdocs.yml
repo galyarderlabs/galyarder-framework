@@ -5,7 +5,6 @@ site_author: Galyarder Labs
 
 theme:
   name: material
-  custom_dir: docs/overrides
   logo: assets/logo.png
   favicon: assets/logo.png
   palette:
@@ -53,7 +52,7 @@ nav:
       - Aesthetic Law (Design): design/index.md
   - Governance:
       - Global Conventions: CONVENTIONS.md
-      - Deployment Logic: TESTING.md
+      - Deployment Logic: testing.md
       - Platform Specifics:
           - Claude Code: CLAUDE.md
           - Gemini CLI: GEMINI.md
@@ -66,11 +65,7 @@ nav:
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.mermaid_format
+  - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
