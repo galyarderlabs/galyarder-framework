@@ -18,13 +18,13 @@ graph TD
     CEO --> Orchestrator[galyarder-specialist]
     
     subgraph Commands
-        Orchestrator --> Engineering[Engineering Silo]
-        Orchestrator --> Growth[Growth Silo]
-        Orchestrator --> Security[Security Silo]
-        Orchestrator --> Product[Product Silo]
-        Orchestrator --> Legal[Legal-Finance Silo]
-        Orchestrator --> Infrastructure[Infrastructure Silo]
-        Orchestrator --> Knowledge[Knowledge Silo]
+        Orchestrator --> Engineering[Engineering Department]
+        Orchestrator --> Growth[Growth Department]
+        Orchestrator --> Security[Security Department]
+        Orchestrator --> Product[Product Department]
+        Orchestrator --> Legal[Legal-Finance Department]
+        Orchestrator --> Infrastructure[Infrastructure Department]
+        Orchestrator --> Knowledge[Knowledge Department]
     end
 
     Engineering --> Elite[elite-developer]
@@ -47,7 +47,7 @@ Every operation within the framework enforces a non-negotiable sequence of high-
 
 ---
 
-## High-Integrity Command Silos
+## High-Integrity Command Departments
 
 Explore the specialized workforce and tactical playbooks of the Galyarder Digital Enterprise.
 
@@ -56,22 +56,22 @@ Explore the specialized workforce and tactical playbooks of the Galyarder Digita
 -   :material-account-tie: **Executive**
     ---
     Strategic oversight and master orchestration protocols.
-    [Enter Command Silo](agents/index.md)
+    [Enter Command Department](agents/index.md)
 
 -   :material-hammer-wrench: **Engineering**
     ---
     Deterministic implementation and high-integrity TDD factory.
-    [Enter Command Silo](skills/index.md)
+    [Enter Command Department](skills/index.md)
 
 -   :material-trending-up: **Growth**
     ---
     Behavioral arbitrage, marketing engineering, and design systems.
-    [Enter Command Silo](design/index.md)
+    [Enter Command Department](design/index.md)
 
 -   :material-shield-lock: **Security**
     ---
     Zero-trust auditing and advanced offensive security.
-    [Enter Command Silo](skills/index.md)
+    [Enter Command Department](skills/index.md)
 
 </div>
 

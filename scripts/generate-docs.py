@@ -175,7 +175,7 @@ def generate():
         
         for silo_name in sorted(inventory[category].keys()):
             info = silos[silo_name]
-            idx_content += f"## :{info['icon']}: {silo_name} Silo\n\n"
+            idx_content += f"## :{info['icon']}: {silo_name} Department\n\n"
             idx_content += '<div class="grid cards" markdown>\n\n'
             for title, link, desc in sorted(inventory[category][silo_name]):
                 idx_content += f"-   **[{title}]({link})**\n\n    ---\n\n    {desc}\n\n"
