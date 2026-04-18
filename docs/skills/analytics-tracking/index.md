@@ -3,13 +3,11 @@ title: "analytics-tracking | Galyarder Framework"
 description: "Design, audit, and improve analytics tracking systems that produce reliable, decision-ready data."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip analytics-tracking
+# :material-folder-zip: analytics-tracking
 
 <p class="domain-label">Growth Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -450,6 +448,3 @@ This skill is applicable to execute the workflow or actions described in the ove
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

@@ -3,13 +3,11 @@ title: "investor-research | Galyarder Framework"
 description: "Investor Targeting Specialist. Use to identify, qualify, and tier investors for a round based on stage, sector, geography, check size, and portfolio fit."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip investor-research
+# :material-folder-zip: investor-research
 
 <p class="domain-label">Executive Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -105,6 +103,3 @@ Produce:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

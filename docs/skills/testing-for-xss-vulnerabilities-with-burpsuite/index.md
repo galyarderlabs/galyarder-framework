@@ -3,13 +3,11 @@ title: "testing-for-xss-vulnerabilities-with-burpsuite | Galyarder Framework"
 description: "Identifying and validating cross-site scripting vulnerabilities using Burp Suite's scanner, intruder, and repeater tools during authorized security assessments."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip testing-for-xss-vulnerabilities-with-burpsuite
+# :material-folder-zip: testing-for-xss-vulnerabilities-with-burpsuite
 
 <p class="domain-label">Security Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -348,6 +346,3 @@ A WAF blocks common XSS patterns and CSP restricts inline scripts. Discover a JS
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

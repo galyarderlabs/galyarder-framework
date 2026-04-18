@@ -3,13 +3,11 @@ title: "Review Command | Galyarder Framework"
 description: "Perform a principal-level code review of the current changes against the PRD and Design System."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip Review Command
+# :material-folder-zip: Review Command
 
 <p class="domain-label">Engineering Command</p>
 
-</div>
+---
 
 This command invokes the **code-reviewer** agent to audit the quality, security, and maintainability of the codebase.
 
@@ -22,6 +20,3 @@ This command invokes the **code-reviewer** agent to audit the quality, security,
 
 ---
 **Note**: This command is powered by the `galyarder-framework:requesting-code-review` and `code-review-expert` skills.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

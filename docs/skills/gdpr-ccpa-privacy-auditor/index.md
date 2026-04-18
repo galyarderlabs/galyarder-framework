@@ -3,13 +3,11 @@ title: "gdpr-ccpa-privacy-auditor | Galyarder Framework"
 description: "Audits web applications to ensure declared privacy policies match actual technical data collection practices. Use to identify discrepancies in cookie usage, tracking scripts, and user data handling."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip gdpr-ccpa-privacy-auditor
+# :material-folder-zip: gdpr-ccpa-privacy-auditor
 
 <p class="domain-label">Legal-Finance Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -74,6 +72,3 @@ The `gdpr-ccpa-privacy-auditor` is a transparency tool. It helps companies ensur
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

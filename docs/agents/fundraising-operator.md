@@ -3,13 +3,11 @@ title: "fundraising-operator | Galyarder Framework"
 description: "Fundraising and investor operations specialist. Owns founder context, pitch narrative, investor targeting, investor communication, diligence readiness, and board-update hygiene for the 1-Man Army founder."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip fundraising-operator
+# :material-folder-zip: fundraising-operator
 
 <p class="domain-label">Executive Agent</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -99,6 +97,3 @@ If YES, approve the operating package.
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

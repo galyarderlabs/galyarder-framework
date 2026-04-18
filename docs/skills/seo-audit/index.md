@@ -3,13 +3,11 @@ title: "seo-audit | Galyarder Framework"
 description: "Diagnose and audit SEO issues affecting crawlability, indexation, rankings, and organic performance."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip seo-audit
+# :material-folder-zip: seo-audit
 
 <p class="domain-label">Growth Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -531,6 +529,3 @@ This skill is applicable to execute the workflow or actions described in the ove
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

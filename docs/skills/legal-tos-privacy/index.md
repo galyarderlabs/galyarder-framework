@@ -1,15 +1,13 @@
 ---
 title: "legal-tos-privacy | Galyarder Framework"
-description: "Create bulletproof Terms of Service and Privacy Policy documents for SaaS applications. Infers company information from codebase/marketing site, conducts comprehensive audits, drafts documents, then asks user ONLY for missing details at the end. Minimizes user interaction. Use when the user needs to draft, review, or update legal documents (ToS, Terms of Service, Privacy Policy, legal pages). Triggers on requests for legal documents, terms drafting, privacy policy creation, "cover our bases legally", liability protection, or legal compliance for software products."
+description: "Create bulletproof Terms of Service and Privacy Policy documents for SaaS applications. Infers company information from codebase/marketing site, conducts comprehensive audits, drafts documents, then asks user ONLY for missing details at the end. Minimizes user interaction. Use when the user needs to draft, review, or update legal documents (ToS, Terms of Service, Privacy Policy, legal pages). Triggers on requests for legal documents, terms drafting, privacy policy creation, 'cover our bases legally', liability protection, or legal compliance for software products."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip legal-tos-privacy
+# :material-folder-zip: legal-tos-privacy
 
 <p class="domain-label">Legal-Finance Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -559,6 +557,3 @@ Deliver final documents in this structure:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

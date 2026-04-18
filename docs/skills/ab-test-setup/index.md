@@ -3,13 +3,11 @@ title: "ab-test-setup | Galyarder Framework"
 description: "Structured guide for setting up A/B tests with mandatory gates for hypothesis, metrics, and execution readiness."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip ab-test-setup
+# :material-folder-zip: ab-test-setup
 
 <p class="domain-label">Growth Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -283,6 +281,3 @@ This skill is applicable to execute the workflow or actions described in the ove
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

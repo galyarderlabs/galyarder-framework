@@ -3,13 +3,11 @@ title: "json-canvas | Galyarder Framework"
 description: "Create and edit JSON Canvas files (.canvas) with nodes, edges, groups, and connections. Use when working with .canvas files, creating visual canvases, mind maps, flowcharts, or when the user mentions Canvas files in Obsidian."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip json-canvas
+# :material-folder-zip: json-canvas
 
 <p class="domain-label">Knowledge Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -292,6 +290,3 @@ See [references/EXAMPLES.md](references/EXAMPLES.md) for full canvas examples in
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

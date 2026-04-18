@@ -3,13 +3,11 @@ title: "legal-advisor | Galyarder Framework"
 description: "Draft privacy policies, terms of service, disclaimers, and legal notices. Creates GDPR-compliant texts, cookie policies, and data processing agreements."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip legal-advisor
+# :material-folder-zip: legal-advisor
 
 <p class="domain-label">Legal-Finance Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -113,6 +111,3 @@ Focus on comprehensiveness, clarity, and regulatory compliance while maintaining
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

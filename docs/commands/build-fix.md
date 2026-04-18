@@ -3,13 +3,11 @@ title: "Build Fix Command | Galyarder Framework"
 description: "Systematically investigate and fix build errors, TypeScript errors, or test failures with minimal diffs."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip Build Fix Command
+# :material-folder-zip: Build Fix Command
 
 <p class="domain-label">Engineering Command</p>
 
-</div>
+---
 
 This command invokes the **build-error-resolver** agent to surgically fix compilation or runtime errors.
 
@@ -28,6 +26,3 @@ Use `/build-fix` when:
 
 ---
 **Note**: This command is powered by the `galyarder-framework:systematic-debugging` skill.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

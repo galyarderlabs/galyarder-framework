@@ -3,13 +3,11 @@ title: "test-driven-development | Galyarder Framework"
 description: "Use when implementing any feature or bugfix, before writing implementation code"
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip test-driven-development
+# :material-folder-zip: test-driven-development
 
 <p class="domain-label">Engineering Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -419,6 +417,3 @@ No exceptions without your human partner's permission.
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

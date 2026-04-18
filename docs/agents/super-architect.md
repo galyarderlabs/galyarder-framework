@@ -3,13 +3,11 @@ title: "super-architect | Galyarder Framework"
 description: "Software architecture specialist for system design, scalability, and technical decision-making. Produces ADRs, Vertical Slice plans, and enforces deep module design for the 1-Man Army pipeline. Contains the full knowledge of Architecture Patterns, Systems Design, and Planning."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip super-architect
+# :material-folder-zip: super-architect
 
 <p class="domain-label">Engineering Agent</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -160,6 +158,3 @@ If YES, finalize the output and link to Linear.
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

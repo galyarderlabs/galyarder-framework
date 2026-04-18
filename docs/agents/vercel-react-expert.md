@@ -1,15 +1,13 @@
 ---
 title: "vercel-react-expert | Galyarder Framework"
-description: "Specialized agent asset for Galyarder Framework."
+description: "Specialized agent unit for Galyarder Framework orchestration."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip vercel-react-expert
+# :material-folder-zip: vercel-react-expert
 
 <p class="domain-label">Engineering Agent</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -90,6 +88,3 @@ If YES, finalize the optimization and link to the Linear ticket.
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

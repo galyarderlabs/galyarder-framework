@@ -3,13 +3,11 @@ title: "intercepting-mobile-traffic-with-burpsuite | Galyarder Framework"
 description: ">"
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip intercepting-mobile-traffic-with-burpsuite
+# :material-folder-zip: intercepting-mobile-traffic-with-burpsuite
 
 <p class="domain-label">Security Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -222,6 +220,3 @@ android sslpinning disable
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

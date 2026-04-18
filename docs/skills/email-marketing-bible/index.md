@@ -3,13 +3,11 @@ title: "email-marketing-bible | Galyarder Framework"
 description: ">"
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip email-marketing-bible
+# :material-folder-zip: email-marketing-bible
 
 <p class="domain-label">Growth Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -512,6 +510,3 @@ Also covers: Agency, Healthcare, Financial, Real Estate, Travel, Education, Reta
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

@@ -3,13 +3,11 @@ title: "prd-to-issues | Galyarder Framework"
 description: "Break a PRD into independently-grabbable GitHub issues using tracer-bullet vertical slices. Use when user wants to convert a PRD to issues, create implementation tickets, or break down a PRD into work items."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip prd-to-issues
+# :material-folder-zip: prd-to-issues
 
 <p class="domain-label">Product Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -136,6 +134,3 @@ Do NOT close or modify the parent PRD issue.
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

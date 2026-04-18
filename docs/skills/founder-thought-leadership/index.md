@@ -3,13 +3,11 @@ title: "founder-thought-leadership | Galyarder Framework"
 description: "Founder Brand And Thought Leadership Specialist. Use to define founder IP territory, create content systems for X and LinkedIn, and turn founder experience into audience, distribution, and credibility."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip founder-thought-leadership
+# :material-folder-zip: founder-thought-leadership
 
 <p class="domain-label">Executive Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -85,6 +83,3 @@ Produce:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

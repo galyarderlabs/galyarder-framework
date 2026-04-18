@@ -3,13 +3,11 @@ title: "executing-red-team-engagement-planning | Galyarder Framework"
 description: "Red team engagement planning is the foundational phase that defines scope, objectives, rules of engagement (ROE), threat model selection, and operational timelines before any offensive testing begins."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip executing-red-team-engagement-planning
+# :material-folder-zip: executing-red-team-engagement-planning
 
 <p class="domain-label">Security Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -181,6 +179,3 @@ Map organizational threats using MITRE ATT&CK Navigator to select relevant adver
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

@@ -3,13 +3,11 @@ title: "content-creator | Galyarder Framework"
 description: "Deprecated redirect skill that routes legacy 'content creator' requests to the correct specialist. Use when a user invokes 'content creator', asks to write a blog post, article, guide, or brand voice analysis (routes to content-production), or asks to plan content, build a topic cluster, or create a content calendar (routes to content-strategy). Does not handle requests directly  identifies user intent and redirects to content-production for writing/SEO/brand-voice tasks or content-strategy for planning tasks."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip content-creator
+# :material-folder-zip: content-creator
 
 <p class="domain-label">Growth Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -101,6 +99,3 @@ This is a redirect skill. Route the user to the correct specialist  don't attemp
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

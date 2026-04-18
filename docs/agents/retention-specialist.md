@@ -1,15 +1,13 @@
 ---
 title: "retention-specialist | Galyarder Framework"
-description: "LTV & Engagement Specialist. Use this agent to design email sequences, improve the first 5 minutes of the product (onboarding), and apply behavioral psychology to increase retention. It focuses on the "Active Users" part of the 1-Man Army pipeline."
+description: "LTV & Engagement Specialist. Use this agent to design email sequences, improve the first 5 minutes of the product (onboarding), and apply behavioral psychology to increase retention. It focuses on the 'Active Users' part of the 1-Man Army pipeline."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip retention-specialist
+# :material-folder-zip: retention-specialist
 
 <p class="domain-label">Growth Agent</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -74,6 +72,3 @@ You are the Retention Specialist at Galyarder Labs. You ensure that users who si
 
 ---
  2026 Galyarder Labs. Galyarder Framework. Retention Specialist.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

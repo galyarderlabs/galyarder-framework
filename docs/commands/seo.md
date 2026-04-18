@@ -3,13 +3,11 @@ title: "SEO Command | Galyarder Framework"
 description: "Diagnose and audit SEO issues. Injects Schema.org markup and optimizes for Answer Engines (AEO)."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip SEO Command
+# :material-folder-zip: SEO Command
 
 <p class="domain-label">Growth Command</p>
 
-</div>
+---
 
 This command invokes the **growth-strategist** agent to dominate search results.
 
@@ -21,6 +19,3 @@ This command invokes the **growth-strategist** agent to dominate search results.
 
 ---
 **Note**: This command is powered by the `galyarder-framework:seo-audit` and `schema-markup` skills.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

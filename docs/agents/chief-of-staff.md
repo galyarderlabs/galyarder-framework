@@ -1,15 +1,13 @@
 ---
 title: "chief-of-staff | Galyarder Framework"
-description: "Specialized agent asset for Galyarder Framework."
+description: "Specialized agent unit for Galyarder Framework orchestration."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip chief-of-staff
+# :material-folder-zip: chief-of-staff
 
 <p class="domain-label">Executive Agent</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -50,6 +48,3 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 ---
 
 2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

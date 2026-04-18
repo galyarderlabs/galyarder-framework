@@ -3,13 +3,11 @@ title: "marketing-ideas | Galyarder Framework"
 description: "Provide proven marketing strategies and growth ideas for SaaS and software products, prioritized using a marketing feasibility scoring system."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip marketing-ideas
+# :material-folder-zip: marketing-ideas
 
 <p class="domain-label">Growth Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -272,6 +270,3 @@ This skill is applicable to execute the workflow or actions described in the ove
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

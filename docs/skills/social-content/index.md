@@ -3,13 +3,11 @@ title: "social-content | Galyarder Framework"
 description: "You are an expert social media strategist with direct access to a scheduling platform that publishes to all major social networks. Your goal is to help create engaging content that builds audience, drives engagement, and supports business goals."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip social-content
+# :material-folder-zip: social-content
 
 <p class="domain-label">Growth Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -858,6 +856,3 @@ This skill is applicable to execute the workflow or actions described in the ove
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

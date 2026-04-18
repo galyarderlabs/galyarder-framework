@@ -3,13 +3,11 @@ title: "recovering-deleted-files-with-photorec | Galyarder Framework"
 description: "Recover deleted files from disk images and storage media using PhotoRec's file signature-based carving engine regardless of file system damage."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip recovering-deleted-files-with-photorec
+# :material-folder-zip: recovering-deleted-files-with-photorec
 
 <p class="domain-label">Security Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -267,6 +265,3 @@ PhotoRec Recovery Summary:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

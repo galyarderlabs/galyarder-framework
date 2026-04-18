@@ -3,13 +3,11 @@ title: "Clean Command | Galyarder Framework"
 description: "Dead code cleanup and consolidation specialist. Removes unused code, duplicates, and refactors for maintainability."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip Clean Command
+# :material-folder-zip: Clean Command
 
 <p class="domain-label">Engineering Command</p>
 
-</div>
+---
 
 This command invokes the **refactor-cleaner** agent to reduce technical debt.
 
@@ -21,6 +19,3 @@ This command invokes the **refactor-cleaner** agent to reduce technical debt.
 
 ---
 **Note**: This command is powered by the `galyarder-framework:improve-codebase-architecture` skill.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

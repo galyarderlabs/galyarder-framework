@@ -3,13 +3,11 @@ title: "gdpr-compliance | Galyarder Framework"
 description: "Implement GDPR data protection requirements. Configure consent management, data subject rights, and privacy by design. Use when processing EU personal data."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip gdpr-compliance
+# :material-folder-zip: gdpr-compliance
 
 <p class="domain-label">Legal-Finance Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -601,6 +599,3 @@ gdpr_compliance_checklist:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

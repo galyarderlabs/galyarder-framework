@@ -3,13 +3,11 @@ title: "writing-plans | Galyarder Framework"
 description: "Use when you have a spec or requirements for a multi-step task, before touching code"
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip writing-plans
+# :material-folder-zip: writing-plans
 
 <p class="domain-label">Product Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -200,6 +198,3 @@ After saving the plan, offer execution choice:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

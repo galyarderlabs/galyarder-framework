@@ -3,13 +3,11 @@ title: "iso-42001-ai-governance | Galyarder Framework"
 description: "AI governance audit using ISO 42001 standard. Ensures AI systems are developed and deployed responsibly with risk management, ethics, security, transparency, and compliance best practices."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip iso-42001-ai-governance
+# :material-folder-zip: iso-42001-ai-governance
 
 <p class="domain-label">Legal-Finance Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -1266,6 +1264,3 @@ ISO 42001 aligns with major AI regulations:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

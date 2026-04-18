@@ -3,13 +3,11 @@ title: "legal-counsel | Galyarder Framework"
 description: "Legal & Compliance Specialist. Use this agent to generate TOS/Privacy policies, audit GDPR/CCPA compliance, review open-source licenses, and ensure AI governance (ISO 42001). It protects the 1-Man Army from legal liabilities."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip legal-counsel
+# :material-folder-zip: legal-counsel
 
 <p class="domain-label">Legal-Finance Agent</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -80,6 +78,3 @@ You are the General Counsel at Galyarder Labs. Your mission is to mitigate risk 
 
 ---
  2026 Galyarder Labs. Galyarder Framework. Legal Counsel.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

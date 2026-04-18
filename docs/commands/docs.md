@@ -3,13 +3,11 @@ title: "Docs Command | Galyarder Framework"
 description: "Documentation and codemap specialist. Generates codemaps, updates READMEs, and syncs documentation with the source code."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip Docs Command
+# :material-folder-zip: Docs Command
 
 <p class="domain-label">Engineering Command</p>
 
-</div>
+---
 
 This command invokes the **doc-updater** agent to keep your documentation in sync with your implementation.
 
@@ -21,6 +19,3 @@ This command invokes the **doc-updater** agent to keep your documentation in syn
 
 ---
 **Note**: This command is powered by the `galyarder-framework:doc-updater` skill.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

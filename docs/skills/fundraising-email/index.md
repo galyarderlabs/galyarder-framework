@@ -3,13 +3,11 @@ title: "fundraising-email | Galyarder Framework"
 description: "Investor Email Specialist. Use to write fundraising outreach, warm intro blurbs, follow-ups, investor updates, and close-the-loop emails with founder-grade brevity and specificity."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip fundraising-email
+# :material-folder-zip: fundraising-email
 
 <p class="domain-label">Executive Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -95,6 +93,3 @@ Before finalizing, verify:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

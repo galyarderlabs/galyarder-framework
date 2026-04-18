@@ -3,13 +3,11 @@ title: "security-reviewer | Galyarder Framework"
 description: "Security vulnerability detection and remediation specialist. Use PROACTIVELY after writing code that handles user input, authentication, API endpoints, or sensitive data. Flags secrets, SSRF, injection, unsafe crypto, and OWASP Top 10 vulnerabilities."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip security-reviewer
+# :material-folder-zip: security-reviewer
 
 <p class="domain-label">Security Agent</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -591,6 +589,3 @@ After security review:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

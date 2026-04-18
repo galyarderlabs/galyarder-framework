@@ -3,13 +3,11 @@ title: "finishing-a-development-branch | Galyarder Framework"
 description: "Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides completion of development work by presenting structured options for merge, PR, or cleanup"
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip finishing-a-development-branch
+# :material-folder-zip: finishing-a-development-branch
 
 <p class="domain-label">Engineering Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -248,6 +246,3 @@ git worktree remove <worktree-path>
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

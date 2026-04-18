@@ -3,13 +3,11 @@ title: "FinOps Command | Galyarder Framework"
 description: "Audit cloud costs, optimize API token usage, and evaluate pricing models."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip FinOps Command
+# :material-folder-zip: FinOps Command
 
 <p class="domain-label">Legal-Finance Command</p>
 
-</div>
+---
 
 This command invokes the **finops-manager** to ensure financial sustainability.
 
@@ -21,6 +19,3 @@ This command invokes the **finops-manager** to ensure financial sustainability.
 
 ---
 **Note**: Powered by the `saas-finops-optimization` and `finance-based-pricing-advisor` skills.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

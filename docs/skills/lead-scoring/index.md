@@ -3,13 +3,11 @@ title: "lead-scoring | Galyarder Framework"
 description: "Lead Qualification And Scoring Specialist. Use to define ICP filters, score inbound and outbound leads, and improve pipeline focus for a founder-led sales motion."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip lead-scoring
+# :material-folder-zip: lead-scoring
 
 <p class="domain-label">Executive Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -84,6 +82,3 @@ Produce:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

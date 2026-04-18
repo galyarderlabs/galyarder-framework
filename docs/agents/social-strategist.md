@@ -1,15 +1,13 @@
 ---
 title: "social-strategist | Galyarder Framework"
-description: "Specialized agent asset for Galyarder Framework."
+description: "Specialized agent unit for Galyarder Framework orchestration."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip social-strategist
+# :material-folder-zip: social-strategist
 
 <p class="domain-label">Growth Agent</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -90,6 +88,3 @@ If YES, finalize the distribution plan.
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

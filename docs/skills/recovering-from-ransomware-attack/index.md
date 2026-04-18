@@ -3,13 +3,11 @@ title: "recovering-from-ransomware-attack | Galyarder Framework"
 description: ">"
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip recovering-from-ransomware-attack
+# :material-folder-zip: recovering-from-ransomware-attack
 
 <p class="domain-label">Security Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -337,6 +335,3 @@ Throughout: SOC monitoring on high alert
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

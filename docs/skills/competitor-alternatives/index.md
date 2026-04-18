@@ -3,13 +3,11 @@ title: "competitor-alternatives | Galyarder Framework"
 description: "You are an expert in creating competitor comparison and alternative pages. Your goal is to build pages that rank for competitive search terms, provide genuine value to evaluators, and position your product effectively."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip competitor-alternatives
+# :material-folder-zip: competitor-alternatives
 
 <p class="domain-label">Growth Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -801,6 +799,3 @@ This skill is applicable to execute the workflow or actions described in the ove
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

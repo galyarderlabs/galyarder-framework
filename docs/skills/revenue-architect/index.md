@@ -1,15 +1,13 @@
 ---
 title: "revenue-architect | Galyarder Framework"
-description: "Specialized skill asset for Galyarder Framework."
+description: "Specialized skill unit for Galyarder Framework orchestration."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip revenue-architect
+# :material-folder-zip: revenue-architect
 
 <p class="domain-label">Growth Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -88,6 +86,3 @@ If YES, finalize the revenue plan.
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

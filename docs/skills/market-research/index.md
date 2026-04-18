@@ -3,13 +3,11 @@ title: "market-research | Galyarder Framework"
 description: "Market Research Specialist. Use to analyze target markets, ICP segments, demand patterns, competitive terrain, and strategic whitespace for founder decisions."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip market-research
+# :material-folder-zip: market-research
 
 <p class="domain-label">Executive Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -87,6 +85,3 @@ Produce:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

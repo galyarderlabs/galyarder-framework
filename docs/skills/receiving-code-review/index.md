@@ -3,13 +3,11 @@ title: "receiving-code-review | Galyarder Framework"
 description: "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation"
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip receiving-code-review
+# :material-folder-zip: receiving-code-review
 
 <p class="domain-label">Engineering Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -261,6 +259,3 @@ No performative agreement. Technical rigor always.
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

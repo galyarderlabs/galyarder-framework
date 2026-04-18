@@ -3,13 +3,11 @@ title: "systematic-debugging | Galyarder Framework"
 description: "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes"
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip systematic-debugging
+# :material-folder-zip: systematic-debugging
 
 <p class="domain-label">Engineering Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -344,6 +342,3 @@ From debugging sessions:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

@@ -3,13 +3,11 @@ title: "marketing-psychology | Galyarder Framework"
 description: "Apply behavioral science and mental models to revenue (cuan) decisions, prioritized using a psychological leverage and feasibility scoring system."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip marketing-psychology
+# :material-folder-zip: marketing-psychology
 
 <p class="domain-label">Growth Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -306,6 +304,3 @@ This skill is applicable to execute the workflow or actions described in the ove
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

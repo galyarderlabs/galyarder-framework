@@ -3,13 +3,11 @@ title: "campaign-analytics | Galyarder Framework"
 description: "Analyzes campaign performance with multi-touch attribution, funnel conversion analysis, and ROI calculation for marketing optimization. Use when analyzing marketing campaigns, ad performance, attribution models, conversion rates, or calculating marketing ROI, ROAS, CPA, and campaign metrics across channels."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip campaign-analytics
+# :material-folder-zip: campaign-analytics
 
 <p class="domain-label">Growth Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -273,6 +271,3 @@ Calculates comprehensive ROI metrics with industry Standarding:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

@@ -3,13 +3,11 @@ title: "elite-developer | Galyarder Framework"
 description: "Principal Full-Stack Engineer. Deterministic implementation engine. Master of TDD, formal verification, and architectural minimalism."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip elite-developer
+# :material-folder-zip: elite-developer
 
 <p class="domain-label">Engineering Agent</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -122,6 +120,3 @@ Remember and build expertise in:
 
 ---
  2026 Galyarder Labs. Galyarder Framework. Engineering Office.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

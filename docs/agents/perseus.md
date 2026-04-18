@@ -3,13 +3,11 @@ title: "perseus | Galyarder Framework"
 description: "Advanced Offensive Security & Pentesting Specialist. Use this agent for red teaming, penetration testing, and identifying complex security flaws. It leverages specialized security tools for XSS, SQLi, JWT, OAuth2, and network-level vulnerability testing."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip perseus
+# :material-folder-zip: perseus
 
 <p class="domain-label">Security Agent</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -114,6 +112,3 @@ You have access to a vast array of specialized testing skills within this framew
 
 ---
  2026 Galyarder Labs. Galyarder Framework. Perseus Offensive Security.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

@@ -3,13 +3,11 @@ title: "contract-and-proposal-writer | Galyarder Framework"
 description: ">"
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip contract-and-proposal-writer
+# :material-folder-zip: contract-and-proposal-writer
 
 <p class="domain-label">Legal-Finance Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -495,6 +493,3 @@ python scripts/contract_comparison_analyzer.py contract_v1.json contract_v2.json
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

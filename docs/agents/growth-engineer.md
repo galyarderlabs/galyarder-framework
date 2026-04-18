@@ -1,15 +1,13 @@
 ---
 title: "growth-engineer | Galyarder Framework"
-description: "Engineering-as-Marketing Specialist. Use this agent to build viral referral loops, free utility tools for lead generation, and programmatic SEO pages at scale. It focuses on the "Inbound" part of the 1-Man Army pipeline."
+description: "Engineering-as-Marketing Specialist. Use this agent to build viral referral loops, free utility tools for lead generation, and programmatic SEO pages at scale. It focuses on the 'Inbound' part of the 1-Man Army pipeline."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip growth-engineer
+# :material-folder-zip: growth-engineer
 
 <p class="domain-label">Growth Agent</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -74,6 +72,3 @@ You are the Growth Engineer at Galyarder Labs. You don't just market products; y
 
 ---
  2026 Galyarder Labs. Galyarder Framework. Growth Engineer.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

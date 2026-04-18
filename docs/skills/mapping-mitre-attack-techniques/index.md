@@ -3,13 +3,11 @@ title: "mapping-mitre-attack-techniques | Galyarder Framework"
 description: ">"
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip mapping-mitre-attack-techniques
+# :material-folder-zip: mapping-mitre-attack-techniques
 
 <p class="domain-label">Security Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -169,6 +167,3 @@ Summarize coverage by tactic category (Initial Access, Execution, Persistence, e
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

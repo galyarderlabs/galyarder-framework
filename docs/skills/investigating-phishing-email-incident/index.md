@@ -3,13 +3,11 @@ title: "investigating-phishing-email-incident | Galyarder Framework"
 description: ">"
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip investigating-phishing-email-incident
+# :material-folder-zip: investigating-phishing-email-incident
 
 <p class="domain-label">Security Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -322,6 +320,3 @@ Status:       RESOLVED  No evidence of lateral movement post-compromise
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

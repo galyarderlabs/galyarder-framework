@@ -3,13 +3,11 @@ title: "executing-phishing-simulation-campaign | Galyarder Framework"
 description: ">"
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip executing-phishing-simulation-campaign
+# :material-folder-zip: executing-phishing-simulation-campaign
 
 <p class="domain-label">Security Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -220,6 +218,3 @@ Analyze campaign results and produce the assessment report:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

@@ -3,13 +3,11 @@ title: "programmatic-seo | Galyarder Framework"
 description: "Design and evaluate programmatic SEO strategies for creating SEO-driven pages at scale using templates and structured data."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip programmatic-seo
+# :material-folder-zip: programmatic-seo
 
 <p class="domain-label">Growth Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -396,6 +394,3 @@ This skill is applicable to execute the workflow or actions described in the ove
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

@@ -3,13 +3,11 @@ title: "writing-skills | Galyarder Framework"
 description: "Use when creating new skills, editing existing skills, or verifying skills work before deployment"
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip writing-skills
+# :material-folder-zip: writing-skills
 
 <p class="domain-label">Executive Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -701,6 +699,3 @@ If you follow TDD for code, follow it for skills. It's the same discipline appli
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

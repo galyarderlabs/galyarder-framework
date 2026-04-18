@@ -3,13 +3,11 @@ title: "generating-threat-intelligence-reports | Galyarder Framework"
 description: ">"
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip generating-threat-intelligence-reports
+# :material-folder-zip: generating-threat-intelligence-reports
 
 <p class="domain-label">Security Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -173,6 +171,3 @@ Before dissemination, apply these checks:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

@@ -3,13 +3,11 @@ title: "CRO Command | Galyarder Framework"
 description: "Conversion Rate Optimization specialist. Optimizes onboarding, paywalls, and signup flows."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip CRO Command
+# :material-folder-zip: CRO Command
 
 <p class="domain-label">Growth Command</p>
 
-</div>
+---
 
 This command invokes the **conversion-engineer** agent to maximize user activation and revenue.
 
@@ -21,6 +19,3 @@ This command invokes the **conversion-engineer** agent to maximize user activati
 
 ---
 **Note**: This command is powered by the `galyarder-framework:onboarding-cro` and `paywall-upgrade-cro` skills.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

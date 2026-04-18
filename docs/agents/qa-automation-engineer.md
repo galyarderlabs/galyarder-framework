@@ -1,15 +1,13 @@
 ---
 title: "qa-automation-engineer | Galyarder Framework"
-description: "Specialized agent asset for Galyarder Framework."
+description: "Specialized agent unit for Galyarder Framework orchestration."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip qa-automation-engineer
+# :material-folder-zip: qa-automation-engineer
 
 <p class="domain-label">Engineering Agent</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -82,6 +80,3 @@ If YES, sign off on the production release.
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

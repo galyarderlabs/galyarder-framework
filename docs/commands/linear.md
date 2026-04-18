@@ -3,13 +3,11 @@ title: "Linear Command | Galyarder Framework"
 description: "Project Management specialist. Converts PRDs into actionable Linear Epics and Issues."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip Linear Command
+# :material-folder-zip: Linear Command
 
 <p class="domain-label">Product Command</p>
 
-</div>
+---
 
 This command invokes the **product-manager** agent to manage the project roadmap and ticket lifecycle.
 
@@ -27,6 +25,3 @@ User: /linear Break down this authentication PRD into tickets.
 
 ---
 **Note**: This command is powered by the `galyarder-framework:linear-ticket-management` skill.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

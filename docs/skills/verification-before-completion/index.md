@@ -3,13 +3,11 @@ title: "verification-before-completion | Galyarder Framework"
 description: "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always"
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip verification-before-completion
+# :material-folder-zip: verification-before-completion
 
 <p class="domain-label">Engineering Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -187,6 +185,3 @@ This is non-negotiable.
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

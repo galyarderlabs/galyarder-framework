@@ -22,7 +22,11 @@ ICONS = {
 }
 
 def prettify(name):
-    return name.replace("-", " ").replace("_", " ").title()
+    # Fix double names and kebab-case
+    name = name.replace("-", " ").replace("_", " ").title()
+    if name.startswith("Galyarder"):
+        name = name.replace("Galyarder ", "")
+    return name.strip()
 
 class Asset:
     def __init__(self, file_path, category):
@@ -56,6 +60,7 @@ class Asset:
             h1_match = re.search(r"^# (.*)", self.content, re.MULTILINE)
             if h1_match:
                 self.title = h1_match.group(1).strip()
+                # Remove the H1 from content to avoid double headers
                 self.content = re.sub(r"^# .*", "", self.content, count=1, flags=re.MULTILINE).strip()
         
         if not self.title or self.title == "|":
@@ -64,51 +69,44 @@ class Asset:
         # 3. Clean Garbage Descriptions
         if self.description == "|" or not self.description:
             clean_content = re.sub(r"##.*", "", self.content, flags=re.DOTALL).strip()
+            # Remove protocol headers from description preview
+            clean_content = re.sub(r"## THE 1-MAN ARMY GLOBAL PROTOCOLS.*?\n---", "", clean_content, flags=re.DOTALL).strip()
             lines = [l for l in clean_content.split("\n") if l.strip() and not l.startswith("#") and not l.startswith(">")]
             if lines:
-                self.description = lines[0][:150].strip() + "..."
+                self.description = lines[0][:200].strip().rstrip(".") + "..."
             else:
-                self.description = f"Specialized {self.category} asset for Galyarder Framework."
+                self.description = f"Specialized {self.category} unit for Galyarder Framework orchestration."
 
-        self.title = "".join([c for c in self.title if ord(c) < 128])
-        self.description = "".join([c for c in self.description if ord(c) < 128])
+        # Ensure title and desc are clean
+        self.title = self.title.replace("Galyarder ", "").strip()
+        self.description = self.description.replace('"', "'").strip()
 
     def generate_page(self, icon, label):
+        # Format icon correctly for MkDocs Material (:material-name:)
+        mk_icon = f":{icon.replace('/', '-')}:"
+        
         return f"""---
 title: "{self.title} | Galyarder Framework"
 description: "{self.description}"
 ---
 
-<div class="domain-header" markdown>
-
-# {icon} {self.title}
+# {mk_icon} {self.title}
 
 <p class="domain-label">{label} {self.category.title()}</p>
 
-</div>
+---
 
 {self.content}
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.
 """
 
 def generate():
-    print("🚀 Generating High-Fidelity Documentation Portal v1.8.0...")
+    print("🚀 De-slopping Documentation Portal...")
     
     # Clean output directories
     for d in ["agents", "skills", "commands", "design"]:
         target = DOCS_DIR / d
         if target.exists(): shutil.rmtree(target)
         target.mkdir(parents=True, exist_ok=True)
-
-    # 0. Sync Core Files from Root
-    core_files = ["WORKFLOW.md", "ORG_CHART.md", "RELEASE-NOTES.md", "CHANGELOG.md", "CONVENTIONS.md"]
-    for cf in core_files:
-        src = REPO_ROOT / cf
-        if src.exists():
-            print(f"[*] Syncing core file: {cf}")
-            shutil.copy(src, DOCS_DIR / cf)
 
     # Discovery
     silos = {}
@@ -166,30 +164,36 @@ def generate():
                     if silo_name not in inventory["skills"]: inventory["skills"][silo_name] = []
                     inventory["skills"][silo_name].append((s.title, f"{skill_folder.name}/index.md", s.description))
 
-    # 4. Generate Landing Pages with CORRECT relative links
+    # 4. Generate High-Density Grid Landing Pages
     for category in ["agents", "skills", "commands"]:
-        idx_content = f"# Galyarder Framework {category.title()}\n\n"
-        idx_content += '<div class="grid cards" markdown>\n'
+        idx_content = f"# Galyarder Framework: {category.title()}\n\n"
+        idx_content += "Discover the high-integrity workforce and protocols designed for autonomous orchestration.\n\n"
+        
         for silo_name in sorted(inventory[category].keys()):
             info = silos[silo_name]
-            idx_content += f"\n## :{info['icon']}: {silo_name} Silo\n\n"
+            mk_icon = f":{info['icon'].replace('/', '-')}:"
+            idx_content += f"## {mk_icon} {silo_name}\n\n"
+            idx_content += '<div class="grid cards" markdown>\n\n'
             for title, link, desc in sorted(inventory[category][silo_name]):
-                idx_content += f"-   **[{title}]({link})**\n\n    ---\n\n    {desc}\n"
-        idx_content += "\n</div>"
+                idx_content += f"-   **[{title}]({link})**\n\n    ---\n\n    {desc}\n\n"
+            idx_content += "</div>\n\n"
+            
         with open(DOCS_DIR / category / "index.md", "w", encoding="utf-8") as f:
             f.write(idx_content)
 
-    # Special Case: Design System Grid
-    design_idx = "# Design System Specifications\n\n<div class=\"grid cards\" markdown>\n"
+    # Special Case: Design Systems
+    design_idx = "# Design System Specifications\n\nElite UI specifications to enforce aesthetic law.\n\n"
+    design_idx += '<div class="grid cards" markdown>\n\n'
     design_src = REPO_ROOT / "Growth" / "design"
     if design_src.exists():
         for f in sorted(design_src.glob("*.md")):
             shutil.copy(f, DOCS_DIR / "design" / f.name)
-            design_idx += f"-   **[{f.stem}]({f.name})**\n\n    ---\n\n    High-fidelity aesthetic law.\n"
-    design_idx += "\n</div>"
+            title = f.stem.replace("design-md-", "").title()
+            design_idx += f"-   **[{title}]({f.name})**\n\n    ---\n\n    Institutional-grade design law.\n\n"
+    design_idx += "</div>"
     with open(DOCS_DIR / "design/index.md", "w", encoding="utf-8") as f: f.write(design_idx)
 
-    print("Success: Documentation portal reconstructed with high-integrity paths.")
+    print("Success: Documentation portal de-slopped and verified.")
 
 if __name__ == "__main__":
     generate()

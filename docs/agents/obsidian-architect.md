@@ -1,15 +1,13 @@
 ---
 title: "obsidian-architect | Galyarder Framework"
-description: "Specialized agent asset for Galyarder Framework."
+description: "Specialized agent unit for Galyarder Framework orchestration."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip obsidian-architect
+# :material-folder-zip: obsidian-architect
 
 <p class="domain-label">Knowledge Agent</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -83,6 +81,3 @@ If YES, sync the changes and notify the Master Orchestrator.
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

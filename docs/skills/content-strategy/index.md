@@ -3,13 +3,11 @@ title: "content-strategy | Galyarder Framework"
 description: "Plan a content strategy, topic clusters, editorial roadmap, and content mix for traffic, authority, and lead generation. Use when deciding what to publish, what topics to prioritize, or how to structure a content program."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip content-strategy
+# :material-folder-zip: content-strategy
 
 <p class="domain-label">Growth Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -417,6 +415,3 @@ Visual or structured representation of how content interconnects.
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

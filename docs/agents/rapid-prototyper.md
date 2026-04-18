@@ -1,15 +1,13 @@
 ---
 title: "rapid-prototyper | Galyarder Framework"
-description: "Specialized agent asset for Galyarder Framework."
+description: "Specialized agent unit for Galyarder Framework orchestration."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip rapid-prototyper
+# :material-folder-zip: rapid-prototyper
 
 <p class="domain-label">Product Agent</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -50,6 +48,3 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 ---
 
 2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

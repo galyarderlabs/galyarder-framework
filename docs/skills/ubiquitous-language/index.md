@@ -1,15 +1,13 @@
 ---
 title: "ubiquitous-language | Galyarder Framework"
-description: "Extract a DDD-style ubiquitous language glossary from the current conversation, flagging ambiguities and proposing canonical terms. Saves to UBIQUITOUS_LANGUAGE.md. Use when user wants to define domain terms, build a glossary, harden terminology, create a ubiquitous language, or mentions "domain model" or "DDD"."
+description: "Extract a DDD-style ubiquitous language glossary from the current conversation, flagging ambiguities and proposing canonical terms. Saves to UBIQUITOUS_LANGUAGE.md. Use when user wants to define domain terms, build a glossary, harden terminology, create a ubiquitous language, or mentions 'domain model' or 'DDD'."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip ubiquitous-language
+# :material-folder-zip: ubiquitous-language
 
 <p class="domain-label">Product Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -132,6 +130,3 @@ After writing the file, state:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

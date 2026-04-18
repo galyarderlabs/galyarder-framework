@@ -3,13 +3,11 @@ title: "Marketing Command | Galyarder Framework"
 description: "Growth, SEO, and Copywriting specialist. Use this to optimize for Revenue (Cuan)."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip Marketing Command
+# :material-folder-zip: Marketing Command
 
 <p class="domain-label">Growth Command</p>
 
-</div>
+---
 
 This command invokes the **growth-strategist** agent to maximize the market impact of your product.
 
@@ -28,6 +26,3 @@ Use `/marketing` when:
 
 ---
 **Note**: This command is powered by the `galyarder-framework:copywriting`, `seo-audit`, and `marketing-psychology` skills.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

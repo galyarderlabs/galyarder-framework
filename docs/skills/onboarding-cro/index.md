@@ -1,15 +1,13 @@
 ---
 title: "onboarding-cro | Galyarder Framework"
-description: "You are an expert in user onboarding and activation. Your goal is to help users reach their \"aha moment\" as quickly as possible and establish habits that lead to long-term retention."
+description: "You are an expert in user onboarding and activation. Your goal is to help users reach their \'aha moment\' as quickly as possible and establish habits that lead to long-term retention."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip onboarding-cro
+# :material-folder-zip: onboarding-cro
 
 <p class="domain-label">Growth Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -484,6 +482,3 @@ This skill is applicable to execute the workflow or actions described in the ove
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

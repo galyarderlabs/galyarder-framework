@@ -3,13 +3,11 @@ title: "build-error-resolver | Galyarder Framework"
 description: "Build and TypeScript error resolution specialist. Use PROACTIVELY when build fails or type errors occur. Fixes build/type errors only with minimal diffs, no architectural edits. Focuses on getting the build green quickly."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip build-error-resolver
+# :material-folder-zip: build-error-resolver
 
 <p class="domain-label">Engineering Agent</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -578,6 +576,3 @@ After build error resolution:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

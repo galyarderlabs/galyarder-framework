@@ -3,13 +3,11 @@ title: "E2E Command | Galyarder Framework"
 description: "End-to-end testing specialist using Playwright. Generates and runs user journey tests."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip E2E Command
+# :material-folder-zip: E2E Command
 
 <p class="domain-label">Engineering Command</p>
 
-</div>
+---
 
 This command invokes the **e2e-runner** agent to verify complete user flows.
 
@@ -21,6 +19,3 @@ This command invokes the **e2e-runner** agent to verify complete user flows.
 
 ---
 **Note**: This command is powered by the `galyarder-framework:verification-before-completion` and `systematic-debugging` skills.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

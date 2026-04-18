@@ -1,15 +1,13 @@
 ---
 title: "release-manager | Galyarder Framework"
-description: "Release Orchestration & Versioning Specialist. Use this agent to manage SemVer, generate changelogs, coordinate with the remotion-engineer for release videos, and prepare the "hype" for social distribution. It ensures every deployment is a "moment"."
+description: "Release Orchestration & Versioning Specialist. Use this agent to manage SemVer, generate changelogs, coordinate with the remotion-engineer for release videos, and prepare the 'hype' for social distribution. It ensures every deployment is a 'moment'."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip release-manager
+# :material-folder-zip: release-manager
 
 <p class="domain-label">Infrastructure Agent</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -74,6 +72,3 @@ You are the Release Manager at Galyarder Labs. You don't just "deploy"; you "lau
 
 ---
  2026 Galyarder Labs. Galyarder Framework. Release Manager.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

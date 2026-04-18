@@ -3,13 +3,11 @@ title: "open-source-license | Galyarder Framework"
 description: "Open Source License guidance, selection, compliance review, and drafting. Use this skill when users ask about choosing open source licenses, checking license compatibility, reviewing projects for OSS compliance, generating LICENSE/NOTICE files, or understanding specific license terms. Triggers include questions about MIT, Apache, GPL, BSD, LGPL, AGPL, copyleft, permissive licenses, license compatibility, SPDX identifiers, or any OSS licensing topic."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip open-source-license
+# :material-folder-zip: open-source-license
 
 <p class="domain-label">Legal-Finance Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -198,6 +196,3 @@ When reviewing compliance:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

@@ -3,13 +3,11 @@ title: "executing-plans | Galyarder Framework"
 description: "Use when you have a written implementation plan to execute in a separate session with review checkpoints"
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip executing-plans
+# :material-folder-zip: executing-plans
 
 <p class="domain-label">Product Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -118,6 +116,3 @@ After all tasks complete and verified:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

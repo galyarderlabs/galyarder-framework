@@ -3,13 +3,11 @@ title: "subagent-driven-development | Galyarder Framework"
 description: "Use when executing implementation plans with independent tasks in the current session"
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip subagent-driven-development
+# :material-folder-zip: subagent-driven-development
 
 <p class="domain-label">Engineering Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -339,6 +337,3 @@ Done!
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

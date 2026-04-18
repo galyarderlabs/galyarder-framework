@@ -3,13 +3,11 @@ title: "finance-based-pricing-advisor | Galyarder Framework"
 description: "Evaluate pricing changes using ARPU, conversion, churn risk, NRR, and payback. Use when deciding whether a pricing move should ship."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip finance-based-pricing-advisor
+# :material-folder-zip: finance-based-pricing-advisor
 
 <p class="domain-label">Legal-Finance Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -799,6 +797,3 @@ For topics NOT covered here, see future `pricing-strategy-suite`:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

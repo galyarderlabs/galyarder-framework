@@ -3,13 +3,11 @@ title: "data-room | Galyarder Framework"
 description: "Due Diligence Data Room Specialist. Use to prepare, audit, and organize fundraising materials for investor diligence before or after a term sheet."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip data-room
+# :material-folder-zip: data-room
 
 <p class="domain-label">Executive Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -98,6 +96,3 @@ Produce:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

@@ -3,13 +3,11 @@ title: "executing-red-team-exercise | Galyarder Framework"
 description: ">"
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip executing-red-team-exercise
+# :material-folder-zip: executing-red-team-exercise
 
 <p class="domain-label">Security Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -213,6 +211,3 @@ Convert red team findings into defensive improvements:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

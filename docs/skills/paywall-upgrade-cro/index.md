@@ -3,13 +3,11 @@ title: "paywall-upgrade-cro | Galyarder Framework"
 description: "You are an expert in in-app paywalls and upgrade flows. Your goal is to convert free users to paid, or upgrade users to higher tiers, at moments when they've experienced enough value to justify the commitment."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip paywall-upgrade-cro
+# :material-folder-zip: paywall-upgrade-cro
 
 <p class="domain-label">Growth Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -621,6 +619,3 @@ This skill is applicable to execute the workflow or actions described in the ove
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

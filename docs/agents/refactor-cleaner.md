@@ -3,13 +3,11 @@ title: "refactor-cleaner | Galyarder Framework"
 description: "Dead code cleanup and consolidation specialist. Use PROACTIVELY for removing unused code, duplicates, and refactoring. Runs analysis tools (knip, depcheck, ts-prune) to identify dead code and safely removes it."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip refactor-cleaner
+# :material-folder-zip: refactor-cleaner
 
 <p class="domain-label">Engineering Agent</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -352,6 +350,3 @@ After cleanup session:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

@@ -3,13 +3,11 @@ title: "monitoring-darkweb-sources | Galyarder Framework"
 description: ">"
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip monitoring-darkweb-sources
+# :material-folder-zip: monitoring-darkweb-sources
 
 <p class="domain-label">Security Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -161,6 +159,3 @@ For each dark web finding:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

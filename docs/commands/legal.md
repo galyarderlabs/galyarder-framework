@@ -3,13 +3,11 @@ title: "Legal Command | Galyarder Framework"
 description: "Generate TOS/Privacy policies, audit GDPR compliance, and review licenses."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip Legal Command
+# :material-folder-zip: Legal Command
 
 <p class="domain-label">Legal-Finance Command</p>
 
-</div>
+---
 
 This command invokes the **legal-counsel** to handle compliance and risk management.
 
@@ -21,6 +19,3 @@ This command invokes the **legal-counsel** to handle compliance and risk managem
 
 ---
 **Note**: Powered by the `legal-tos-privacy` and `gdpr-compliance` skills.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

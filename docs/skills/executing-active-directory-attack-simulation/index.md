@@ -3,13 +3,11 @@ title: "executing-active-directory-attack-simulation | Galyarder Framework"
 description: ">"
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip executing-active-directory-attack-simulation
+# :material-folder-zip: executing-active-directory-attack-simulation
 
 <p class="domain-label">Security Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -210,6 +208,3 @@ could access all 5,000 user accounts, 800 computer objects, and all data within 
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

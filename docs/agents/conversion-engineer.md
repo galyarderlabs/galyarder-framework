@@ -1,15 +1,13 @@
 ---
 title: "conversion-engineer | Galyarder Framework"
-description: "Specialized agent asset for Galyarder Framework."
+description: "Specialized agent unit for Galyarder Framework orchestration."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip conversion-engineer
+# :material-folder-zip: conversion-engineer
 
 <p class="domain-label">Growth Agent</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -88,6 +86,3 @@ If YES, finalize the conversion strategy.
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

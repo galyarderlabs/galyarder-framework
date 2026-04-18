@@ -3,13 +3,11 @@ title: "profiling-threat-actor-groups | Galyarder Framework"
 description: ">"
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip profiling-threat-actor-groups
+# :material-folder-zip: profiling-threat-actor-groups
 
 <p class="domain-label">Security Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -159,6 +157,3 @@ Classify TLP:AMBER for internal distribution; seek ISAC approval before external
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

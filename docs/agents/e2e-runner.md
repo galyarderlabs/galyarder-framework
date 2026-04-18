@@ -3,13 +3,11 @@ title: "e2e-runner | Galyarder Framework"
 description: "End-to-end testing specialist using Playwright. Use PROACTIVELY for generating, maintaining, and running E2E tests. Manages test journeys, quarantines flaky tests, uploads artifacts (screenshots, videos, traces), and ensures critical user flows work."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip e2e-runner
+# :material-folder-zip: e2e-runner
 
 <p class="domain-label">Engineering Agent</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -754,6 +752,3 @@ After E2E test run:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

@@ -3,13 +3,11 @@ title: "Cybersecurity Command | Galyarder Framework"
 description: "Perform an advanced offensive security audit and attack simulation on the current features."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip Cybersecurity Command
+# :material-folder-zip: Cybersecurity Command
 
 <p class="domain-label">Security Command</p>
 
-</div>
+---
 
 This command invokes the **perseus** agent to conduct red teaming, penetration testing, and identify bypasses in the security model.
 
@@ -22,6 +20,3 @@ This command invokes the **perseus** agent to conduct red teaming, penetration t
 
 ---
 **Note**: This command leverages the `gemini-cli-security` suite of specialized testing skills.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.

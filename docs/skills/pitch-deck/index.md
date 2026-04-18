@@ -3,13 +3,11 @@ title: "pitch-deck | Galyarder Framework"
 description: "Fundraising Pitch Deck Specialist. Use to build, review, or restructure a founder deck for pre-seed through Series A, with a clear narrative arc, investor-grade slide logic, and explicit asks."
 ---
 
-<div class="domain-header" markdown>
-
-# material/folder-zip pitch-deck
+# :material-folder-zip: pitch-deck
 
 <p class="domain-label">Executive Skill</p>
 
-</div>
+---
 
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -107,6 +105,3 @@ Before finalizing, verify:
 
 ---
  2026 Galyarder Labs. Galyarder Framework.
-
----
-Copyright 2026 Galyarder Labs. Galyarder Framework.
