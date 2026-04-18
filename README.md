@@ -50,24 +50,24 @@ Galyarder Framework does not merely execute; it orchestrates. Every mission foll
 
 ```mermaid
 sequenceDiagram
-    participant Founder as Founder (You)
-    participant CE as Galyarder-CEO
-    participant ME as MCP (Think/Context7)
-    participant AG as Specialist Agent
-    participant EX as RTK (Terminal)
-    participant RP as Reporting (Linear/Obsidian)
+    participant F as Founder (You)
+    participant CEO as Galyarder CEO
+    participant MCP as MCP (Think/Context7)
+    participant Agent as Specialist Agent
+    participant RTK as RTK (Terminal)
+    participant Docs as Reporting (Linear/Obsidian)
 
-    Founder->>CE: Initiates High-Level Goal
-    CE->>RP: Checks Linear Project / Creates Project-Scoped Issue
-    CE->>ME: Invokes sequentialthinking (Deconstruction & Risk)
-    ME-->>CE: Structured Strategic Plan
-    CE->>AG: Dispatches Mission to Specialist Swarm
-    AG->>ME: Invokes context7 (Official Documentation Fetch)
-    ME-->>AG: Institutional-Grade API/Docs
-    AG->>EX: Surgical Execution via RTK Proxy
-    EX-->>AG: Verified Output
-    AG->>RP: Saves Artifact to docs/departments/ (Obsidian Loop)
-    RP-->>Founder: High-Signal Executive Report
+    F->>CEO: Initiates High-Level Goal
+    CEO->>Docs: Checks Linear Project / Creates Issue
+    CEO->>MCP: Invokes sequentialthinking
+    MCP-->>CEO: Structured Strategic Plan
+    CEO->>Agent: Dispatches Mission to Specialist Swarm
+    Agent->>MCP: Invokes context7 (Official Docs)
+    MCP-->>Agent: Institutional-Grade Reference
+    Agent->>RTK: Surgical Execution via RTK Proxy
+    RTK-->>Agent: Verified Output
+    Agent->>Docs: Saves Artifact to docs/departments/
+    Docs-->>F: High-Signal Executive Report
 ```
 
 ### 2. The 1-Man Army Command Protocol
