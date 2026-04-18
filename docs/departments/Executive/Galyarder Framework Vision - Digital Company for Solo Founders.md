@@ -1,10 +1,10 @@
-# Galyarder Framework Vision - Digital Company for Solo Founders
+# Galyarder Framework Vision - Digital Enterprise for Solo Founders
 
 ## Vision
-Galyarder Framework should behave like a digital company that a solo founder can recruit, direct, and scale.
+Galyarder Framework should behave like a digital enterprise that a solo founder can recruit, direct, and scale.
 
 The founder is still the human owner and final decision-maker.
-Galyarder Framework becomes the digital company working underneath that founder.
+Galyarder Framework becomes the digital enterprise working underneath that founder.
 
 In this model:
 - agents are digital employees with clear roles and reporting lines
@@ -48,7 +48,7 @@ Responsibilities:
 - understand the founder's top-level objective
 - route work to the right departments
 - enforce the operating model
-- keep quality high across the digital company
+- keep quality high across the digital enterprise
 - synthesize progress back upward to the founder
 
 ### Specialist Agents
@@ -96,7 +96,7 @@ Potential future executive pattern:
 - `fundraising-operator` as founder office / capital markets operator
 
 ### Department Layer
-The digital company should be organized as departments.
+The digital enterprise should be organized as departments.
 
 #### 1. Founder Office / Capital
 Purpose:
@@ -266,7 +266,7 @@ Everything operational should be traceable in Linear:
 - ownership
 - next actions
 
-In the digital company metaphor, Linear is the work management system.
+In the digital enterprise metaphor, Linear is the work management system.
 
 **Integration Options:**
 1. **Standalone:** Manual Linear management
@@ -283,7 +283,7 @@ Obsidian should capture:
 - knowledge base materials
 - dashboards and visual maps
 
-In the digital company metaphor, Obsidian is the internal company memory plus founder reporting layer.
+In the digital enterprise metaphor, Obsidian is the internal company memory plus founder reporting layer.
 
 **Integration Options:**
 1. **Standalone:** Manual report writing using templates
@@ -367,9 +367,9 @@ Gaps:
 - many agents still do not have explicit skill-stack mapping
 - departments are implied, not fully documented
 - reporting loops to Obsidian are not yet formalized per department
-- Linear structure for the digital company is not yet standardized
+- Linear structure for the digital enterprise is not yet standardized
 - external best-in-class skills from large libraries have not yet been systematically imported or Standarded
-- some docs still describe the framework like a skill library rather than a digital company
+- some docs still describe the framework like a skill library rather than a digital enterprise
 
 ## External Standard Insight
 The cloned `Galyarder Framework` repository shows what a very broad skills marketplace looks like.
@@ -399,7 +399,7 @@ The right move is:
 
 ## Strategic Direction From Here
 ### Near-Term Objective
-Turn Galyarder Framework from a framework with many specialists into a digital company with:
+Turn Galyarder Framework from a framework with many specialists into a digital enterprise with:
 - a clear org chart
 - explicit department leads
 - mapped skill employees beneath those leads
@@ -412,7 +412,7 @@ Turn Galyarder Framework from a framework with many specialists into a digital c
 3. Define how each department reports into Obsidian.
 4. Define how each department tracks work in Linear.
 5. Audit external repositories by department and import best-in-class skills selectively.
-6. Rewrite top-level docs so the framework is described as a digital company, not a random library.
+6. Rewrite top-level docs so the framework is described as a digital enterprise, not a random library.
 
 ## Department Audit Backlog
 Priority audit order:
@@ -444,7 +444,7 @@ These reports should be written into Obsidian and should answer:
 
 This is how a solo founder actually experiences leverage.
 Not by staring at skill lists.
-But by receiving coordinated output from a functioning digital company.
+But by receiving coordinated output from a functioning digital enterprise.
 
 ## Final Principle
 Galyarder Framework should feel like hiring a company, not installing a plugin.
@@ -454,5 +454,5 @@ That means:
 - skills act like trained workers and job-specific playbooks
 - Linear tracks the work
 - Obsidian preserves memory and reports upward
-- `galyarder-specialist` operates as the CEO of the digital company
+- `galyarder-specialist` operates as the CEO of the digital enterprise
 - the founder remains the human principal over the whole system

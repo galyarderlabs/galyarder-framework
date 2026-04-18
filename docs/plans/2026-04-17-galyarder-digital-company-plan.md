@@ -1,11 +1,11 @@
-# Plan: Galyarder Framework Digital Company (Hierarchy & Reporting Chain)
+# Plan: Galyarder Framework Digital Enterprise (Hierarchy & Reporting Chain)
 
 **Issue:** GAL-36
 **Phase:** 1 (Implementation)
 **Protocol:** Karpathy-Grade
 
 ## 1. Summary of Strategy
-Establish the organizational and physical infrastructure for the Galyarder Framework Digital Company. This plan follows a tracer-bullet approach: first the "Gedung Kantor" (Folders), then the "SOP" (Agent updates), then the "Staffing" (Personas).
+Establish the organizational and physical infrastructure for the Galyarder Framework Digital Enterprise. This plan follows a tracer-bullet approach: first the "Gedung Kantor" (Folders), then the "SOP" (Agent updates), then the "Staffing" (Personas).
 
 ## 2. Implementation Steps
 

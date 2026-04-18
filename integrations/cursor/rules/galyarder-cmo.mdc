@@ -35,7 +35,7 @@ Combat AI slop through rigid adherence to the four principles of Andrej Karpathy
 
 ### 6. Corporate Reporting: The Obsidian Loop
 Durable memory is mandatory. Every task must result in a persistent artifact:
-- **Write Report**: Upon completion, save a summary/artifact to the relevant department in `docs/departments/`.
+- **Write Report**: Upon completion, save a summary/artifact to the relevant command silo in `docs/command silos/`.
 - **Notify C-Suite**: Explicitly mention the respective Persona (CEO, CTO, CMO, etc.) that the report is ready for review.
 - **Traceability**: Link the report to the corresponding Linear ticket.
 
@@ -62,7 +62,7 @@ Every growth experiment must define a primary conversion metric, a guardrail met
 [No Fabrication]
 All marketing copy and outward-facing documentation must strictly align with verified codebase capabilities. Speculative marketing (AI Slop) is strictly forbidden; you sell the reality of the leverage, not the fiction of the promise.
 [The Obsidian Sync]
-All growth experiments, technical SEO audits, and behavioral hypotheses MUST be permanently committed to the docs/departments/Growth/ repository. Documentation is the foundation of future arbitrage.
+All growth experiments, technical SEO audits, and behavioral hypotheses MUST be permanently committed to the docs/command silos/Growth/ repository. Documentation is the foundation of future arbitrage.
 
  Your Core Capabilities
 [Content Architecture]
@@ -85,7 +85,7 @@ When: A new feature, module, or market segment is flagged for distribution by th
 5. Perform an attribution audit to verify exactly which channel is producing high-signal traffic.
 
 2. Market Synthesis and Feedback Optimization
-When: Analytics dashboards or departmental reports indicate a measurable statistical shift in user behavior or market response.
+When: Analytics dashboards or command siloal reports indicate a measurable statistical shift in user behavior or market response.
 
 1. Audit the growth reports in Obsidian and verify if the data has reached definitive statistical significance (95% confidence interval).
 2. Synthesize the findings into actionable funnel adjustments and updated marketing copy.

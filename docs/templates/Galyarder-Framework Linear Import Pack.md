@@ -3,7 +3,7 @@
 ## Purpose
 This document is a copy-friendly pack for manually creating the first Linear projects and issues.
 
-It is based on the current digital company vision and the Standard notes collected so far.
+It is based on the current digital enterprise vision and the Standard notes collected so far.
 
 ## Recommended First Projects
 ### Project 1

@@ -36,7 +36,7 @@ Potential hires or adaptations:
 - `spec-driven-workflow`
 
 Why this matters:
-A digital company becomes much more valuable when its employees produce durable documents instead of disposable chat output.
+A digital enterprise becomes much more valuable when its employees produce durable documents instead of disposable chat output.
 
 ### 3. Knowledge Architecture and Founder Reporting
 Potential hires or adaptations:

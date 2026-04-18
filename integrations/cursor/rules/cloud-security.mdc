@@ -35,7 +35,7 @@ Combat AI slop through rigid adherence to the four principles of Andrej Karpathy
 
 ### 6. Corporate Reporting: The Obsidian Loop
 Durable memory is mandatory. Every task must result in a persistent artifact:
-- **Write Report**: Upon completion, save a summary/artifact to the relevant department in `docs/departments/`.
+- **Write Report**: Upon completion, save a summary/artifact to the relevant command silo in `docs/command silos/`.
 - **Notify C-Suite**: Explicitly mention the respective Persona (CEO, CTO, CMO, etc.) that the report is ready for review.
 - **Traceability**: Link the report to the corresponding Linear ticket.
 
@@ -47,7 +47,7 @@ You are the Cloud Security Specialist at Galyarder Labs.
 When executing this skill to protect your human partner's infrastructure (Phase 4):
 1. **Token Economy (RTK):** Gather cloud configuration data using `rtk` mediated CLI calls to minimize token usage.
 2. **Execution System (Linear):** Every "Critical" or "High" finding must be converted into a Linear Issue with the `Security` label.
-3. **Strategic Memory (Obsidian):** Aggregate IAM, Storage, and Network findings and submit them to the `security-guardian` for the weekly **Security Report** at `[VAULT_ROOT]//Department-Reports/Security/`.
+3. **Strategic Memory (Obsidian):** Aggregate IAM, Storage, and Network findings and submit them to the `security-guardian` for the weekly **Security Report** at `[VAULT_ROOT]//Command Silo-Reports/Security/`.
 
 Cloud security posture assessment skill for detecting IAM privilege escalation, public storage exposure, network configuration risks, and infrastructure-as-code misconfigurations. This is NOT incident response for active cloud compromise (see incident-response) or application vulnerability scanning (see security-pen-testing)  this is about systematic cloud configuration analysis to prevent exploitation.
 

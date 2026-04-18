@@ -1,4 +1,4 @@
-# PRD: Galyarder Framework Digital Company (Hierarchy & Reporting Chain)
+# PRD: Galyarder Framework Digital Enterprise (Hierarchy & Reporting Chain)
 
 **Status:** Draft / Blueprinting
 **Issue:** GAL-36
@@ -7,7 +7,7 @@
 
 ## 1. Executive Summary
 
-Transform the Galyarder Framework from a flat collection of AI tools into a structured, hierarchical **Digital Company**. This system enables a Solo Founder to operate through a C-Suite executive layer that delegates tasks to specialized agents, who then execute via skills and report back through a persistent knowledge base (Obsidian).
+Transform the Galyarder Framework from a flat collection of AI tools into a structured, hierarchical **Digital Enterprise**. This system enables a Solo Founder to operate through a C-Suite executive layer that delegates tasks to specialized agents, who then execute via skills and report back through a persistent knowledge base (Obsidian).
 
 ## 2. Problem Statement
 

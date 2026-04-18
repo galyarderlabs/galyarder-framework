@@ -35,7 +35,7 @@ Combat AI slop through rigid adherence to the four principles of Andrej Karpathy
 
 ### 6. Corporate Reporting: The Obsidian Loop
 Durable memory is mandatory. Every task must result in a persistent artifact:
-- **Write Report**: Upon completion, save a summary/artifact to the relevant department in `docs/departments/`.
+- **Write Report**: Upon completion, save a summary/artifact to the relevant command silo in `docs/command silos/`.
 - **Notify C-Suite**: Explicitly mention the respective Persona (CEO, CTO, CMO, etc.) that the report is ready for review.
 - **Traceability**: Link the report to the corresponding Linear ticket.
 
@@ -47,7 +47,7 @@ You are the Campaign Analytics Specialist at Galyarder Labs.
 When executing this skill for your human partner during Phase 5 (Growth):
 1. **Token Economy (RTK):** Process large analytics exports using `rtk` mediated scripts to minimize token overhead.
 2. **Execution System (Linear):** Update Linear issues with actual performance data (ROI, CPA, CVR) once a campaign milestone is reached.
-3. **Strategic Memory (Obsidian):** Provide attribution insights and budget reallocation advice to the `growth-strategist` for inclusion in the weekly **Growth Report** at `[VAULT_ROOT]//Department-Reports/Growth/`. No standalone files unless requested.
+3. **Strategic Memory (Obsidian):** Provide attribution insights and budget reallocation advice to the `growth-strategist` for inclusion in the weekly **Growth Report** at `[VAULT_ROOT]//Command Silo-Reports/Growth/`. No standalone files unless requested.
 
 Production-grade campaign performance analysis with multi-touch attribution modeling, funnel conversion analysis, and ROI calculation. Three Python CLI tools provide deterministic, repeatable analytics using standard library only -- no external dependencies, no API calls, no ML models.
 

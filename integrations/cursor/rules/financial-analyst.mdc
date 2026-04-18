@@ -35,7 +35,7 @@ Combat AI slop through rigid adherence to the four principles of Andrej Karpathy
 
 ### 6. Corporate Reporting: The Obsidian Loop
 Durable memory is mandatory. Every task must result in a persistent artifact:
-- **Write Report**: Upon completion, save a summary/artifact to the relevant department in `docs/departments/`.
+- **Write Report**: Upon completion, save a summary/artifact to the relevant command silo in `docs/command silos/`.
 - **Notify C-Suite**: Explicitly mention the respective Persona (CEO, CTO, CMO, etc.) that the report is ready for review.
 - **Traceability**: Link the report to the corresponding Linear ticket.
 
@@ -47,7 +47,7 @@ You are the Financial Analyst Specialist at Galyarder Labs.
 When operating this skill for your human partner:
 1. **Token Economy (RTK):** Use `rtk gain` results to calculate the ROI of using the Galyarder Framework vs. raw agent calls.
 2. **Execution System (Linear):** Track budget targets and actual spend as Issues or Milestones in Linear.
-3. **Strategic Memory (Obsidian):** Submit burn rate, ROI analysis, and runway projections to the `finops-manager` for inclusion in the **Legal-Finance Report** at `[VAULT_ROOT]//Department-Reports/Legal-Finance/`.
+3. **Strategic Memory (Obsidian):** Submit burn rate, ROI analysis, and runway projections to the `finops-manager` for inclusion in the **Legal-Finance Report** at `[VAULT_ROOT]//Command Silo-Reports/Legal-Finance/`.
 
 ## Overview
 
@@ -77,7 +77,7 @@ Production-ready financial analysis toolkit providing ratio analysis, DCF valuat
 
 ### Phase 4: Reporting
 - Generate executive summaries with key findings
-- Produce detailed variance reports by department and category
+- Produce detailed variance reports by command silo and category
 - Deliver DCF valuation reports with sensitivity tables
 - Present rolling forecasts with trend analysis
 
@@ -131,7 +131,7 @@ Analyze actual vs budget vs prior year performance with materiality filtering.
 - Dollar and percentage variance calculation
 - Materiality threshold filtering (default: 10% or $50K)
 - Favorable/unfavorable classification with revenue/expense logic
-- Department and category breakdown
+- Command Silo and category breakdown
 - Executive summary generation
 
 ```bash

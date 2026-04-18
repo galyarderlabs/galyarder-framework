@@ -1,7 +1,7 @@
 # Galyarder Framework Import Adapt Reject Rubric
 
 ## Purpose
-This rubric defines how Galyarder Framework should evaluate external skills before hiring them into the digital company.
+This rubric defines how Galyarder Framework should evaluate external skills before hiring them into the digital enterprise.
 
 The goal is to avoid random collection behavior and make every hire accountable to a department and founder outcome.
 
@@ -103,4 +103,4 @@ Reject or pause if:
 
 ## Golden Rule
 Do not hire because a skill looks cool.
-Hire because it makes a department stronger and improves the founder's leverage through a clearer digital company.
+Hire because it makes a department stronger and improves the founder's leverage through a clearer digital enterprise.

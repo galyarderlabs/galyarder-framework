@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Galyarder Framework: Company Scaffolder
-# Purpose: Initialize the hierarchical directory structure for a Digital Company.
+# Purpose: Initialize the hierarchical directory structure for a Digital Enterprise.
 
-echo "Initializing Galyarder Framework Digital Company headquarters..."
+echo "Initializing Galyarder Framework Digital Enterprise headquarters..."
 
 # 1. Base Directories
 mkdir -p docs/specs

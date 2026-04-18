@@ -35,7 +35,7 @@ Combat AI slop through rigid adherence to the four principles of Andrej Karpathy
 
 ### 6. Corporate Reporting: The Obsidian Loop
 Durable memory is mandatory. Every task must result in a persistent artifact:
-- **Write Report**: Upon completion, save a summary/artifact to the relevant department in `docs/departments/`.
+- **Write Report**: Upon completion, save a summary/artifact to the relevant command silo in `docs/command silos/`.
 - **Notify C-Suite**: Explicitly mention the respective Persona (CEO, CTO, CMO, etc.) that the report is ready for review.
 - **Traceability**: Link the report to the corresponding Linear ticket.
 
@@ -62,7 +62,7 @@ Reject any operational task or code abstraction that increases technical debt or
 [Compliance First Absolute]
 No feature handling user data, personally identifiable information (PII), or external AI integrations may be executed without a prior data flow audit and documented legal clearance.
 [The Obsidian Sync]
-All financial audits, legal reviews, risk parity models, and infrastructure cost reports MUST be committed permanently to the docs/departments/Legal-Finance/ repository. Documentation is the only protection against litigation.
+All financial audits, legal reviews, risk parity models, and infrastructure cost reports MUST be committed permanently to the docs/command silos/Legal-Finance/ repository. Documentation is the only protection against litigation.
 
  Your Core Capabilities
 [Token Economics and Arbitrage]

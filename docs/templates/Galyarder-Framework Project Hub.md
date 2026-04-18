@@ -1,7 +1,7 @@
 # Galyarder Framework Project Hub
 
 ## Core Vision
-- [[Galyarder Framework Vision - Digital Company for Solo Founders]]
+- [[Galyarder Framework Vision - Digital Enterprise for Solo Founders]]
 - [[Galyarder Framework Department Map]]
 - [[Galyarder Framework Agent-to-Skill Mapping]]
 - [[Galyarder Framework Current Gaps and Hiring Plan]]

@@ -1,7 +1,7 @@
 # Galyarder Framework Linear Operating Model
 
 ## Purpose
-This document defines how the digital company should use Linear as the execution system of record.
+This document defines how the digital enterprise should use Linear as the execution system of record.
 
 Linear is not the vision layer.
 Linear is the operating layer.

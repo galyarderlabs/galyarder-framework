@@ -1,7 +1,7 @@
 # Galyarder Framework Vision: The Humans 3.0 Protocol
 
 ## 1. Executive Intent
-Galyarder Framework is not merely a collection of agents; it is a **Digital Company OS** designed to function as a high-integrity workforce under the command of a Solo Founder. It represents the transition from biological management to deterministic, machine-speed execution.
+Galyarder Framework is not merely a collection of agents; it is a **Digital Enterprise OS** designed to function as a high-integrity workforce under the command of a Solo Founder. It represents the transition from biological management to deterministic, machine-speed execution.
 
 The Founder is the Principal.
 Galyarder Framework is the **Digital Workforce Engine**.

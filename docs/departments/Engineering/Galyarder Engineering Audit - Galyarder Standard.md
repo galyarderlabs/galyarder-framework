@@ -105,7 +105,7 @@ Potential hires:
 
 Recommendation:
 - high priority
-- test depth is a strong leverage area for the digital company model
+- test depth is a strong leverage area for the digital enterprise model
 
 ### 4. DevOps / Infra / Release
 Galyarder Framework status:
@@ -151,7 +151,7 @@ Potential hires:
 
 Recommendation:
 - medium to high priority
-- especially useful if Galyarder Framework continues to evolve as a digital company with many agent-worker relationships
+- especially useful if Galyarder Framework continues to evolve as a digital enterprise with many agent-worker relationships
 
 ## Recommended First Engineering Hires
 Top priority shortlist:

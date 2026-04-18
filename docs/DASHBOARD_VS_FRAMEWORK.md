@@ -11,7 +11,7 @@
 ## Framework (Your Focus)
 
 ### What It Is
-A digital company that works FOR you through AI assistants.
+A digital enterprise that works FOR you through AI assistants.
 
 ### How It Works
 ```
@@ -123,7 +123,7 @@ But Framework still works fine without it.
 
 ## Your Situation
 
-You built **Framework** (the digital company).
+You built **Framework** (the digital enterprise).
 
 Dashboard is a **separate project** someone else is building.
 

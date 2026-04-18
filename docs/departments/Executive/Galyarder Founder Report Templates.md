@@ -1,7 +1,7 @@
 # Galyarder Framework Founder Report Templates
 
 ## Purpose
-These templates define how the digital company should report upward to the founder.
+These templates define how the digital enterprise should report upward to the founder.
 
 Each department should be able to submit a compact founder-readable report.
 Those reports should roll up through `galyarder-specialist` into a single executive summary when needed.

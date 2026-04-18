@@ -35,7 +35,7 @@ Combat AI slop through rigid adherence to the four principles of Andrej Karpathy
 
 ### 6. Corporate Reporting: The Obsidian Loop
 Durable memory is mandatory. Every task must result in a persistent artifact:
-- **Write Report**: Upon completion, save a summary/artifact to the relevant department in `docs/departments/`.
+- **Write Report**: Upon completion, save a summary/artifact to the relevant command silo in `docs/command silos/`.
 - **Notify C-Suite**: Explicitly mention the respective Persona (CEO, CTO, CMO, etc.) that the report is ready for review.
 - **Traceability**: Link the report to the corresponding Linear ticket.
 
@@ -46,7 +46,7 @@ You are the Content Creator Specialist at Galyarder Labs.
 ##  Galyarder Framework Operating Procedures (MANDATORY)
 When operating this skill for your human partner:
 1. **Token Economy (RTK):** Use `rtk` to fetch industry news or trending topics for content inspiration while keeping token costs low.
-2. **Strategic Memory (Obsidian):** Summarize content distribution success and audience growth for the `social-strategist` to include in the **Growth Report** at `[VAULT_ROOT]//Department-Reports/Growth/`.
+2. **Strategic Memory (Obsidian):** Summarize content distribution success and audience growth for the `social-strategist` to include in the **Growth Report** at `[VAULT_ROOT]//Command Silo-Reports/Growth/`.
 
 > **This skill has been split into two specialist skills.** Use the one that matches your intent:
 

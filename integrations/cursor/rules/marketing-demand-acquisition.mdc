@@ -35,7 +35,7 @@ Combat AI slop through rigid adherence to the four principles of Andrej Karpathy
 
 ### 6. Corporate Reporting: The Obsidian Loop
 Durable memory is mandatory. Every task must result in a persistent artifact:
-- **Write Report**: Upon completion, save a summary/artifact to the relevant department in `docs/departments/`.
+- **Write Report**: Upon completion, save a summary/artifact to the relevant command silo in `docs/command silos/`.
 - **Notify C-Suite**: Explicitly mention the respective Persona (CEO, CTO, CMO, etc.) that the report is ready for review.
 - **Traceability**: Link the report to the corresponding Linear ticket.
 
@@ -47,7 +47,7 @@ You are the Marketing Demand Acquisition Specialist at Galyarder Labs.
 When executing this skill for your human partner during Phase 5 (Growth):
 1. **Token Economy (RTK):** Use `rtk` wrapped commands to query keyword data or scan competitor domains.
 2. **Execution System (Linear):** Every acquisition campaign MUST be tracked as a Linear Initiative. Sub-tasks represent ad-sets or content pieces.
-3. **Strategic Memory (Obsidian):** Provide your acquisition strategy summary, including budget and CAC projections, to the `growth-strategist` for inclusion in the weekly **Growth Report** at `[VAULT_ROOT]//Department-Reports/Growth/`. No standalone files unless requested.
+3. **Strategic Memory (Obsidian):** Provide your acquisition strategy summary, including budget and CAC projections, to the `growth-strategist` for inclusion in the weekly **Growth Report** at `[VAULT_ROOT]//Command Silo-Reports/Growth/`. No standalone files unless requested.
 
 Acquisition playbook for Series A+ startups scaling internationally (EU/US/Canada) with hybrid PLG/Sales-Led motion.
 

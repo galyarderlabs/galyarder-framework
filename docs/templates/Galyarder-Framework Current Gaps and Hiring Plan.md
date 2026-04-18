@@ -1,7 +1,7 @@
 # Galyarder Framework Current Gaps and Hiring Plan
 
 ## Purpose
-This document describes the current situation of Galyarder Framework as a digital company and defines where the next "hires" should happen.
+This document describes the current situation of Galyarder Framework as a digital enterprise and defines where the next "hires" should happen.
 
 Here, a hire can mean:
 - adding a new agent
@@ -91,7 +91,7 @@ Needs:
 
 ### 5. Knowledge / Reporting
 Reason:
-Obsidian is present, but not yet formalized as the reporting destination for the digital company.
+Obsidian is present, but not yet formalized as the reporting destination for the digital enterprise.
 
 Needs:
 - founder report templates
@@ -174,7 +174,7 @@ Each department should eventually have:
 The biggest current systems gap is not just skill count.
 It is reporting structure.
 
-The digital company should produce consistent founder-readable outputs.
+The digital enterprise should produce consistent founder-readable outputs.
 That means department heads should eventually know how to produce:
 - weekly summaries
 - milestone updates
@@ -189,11 +189,11 @@ Those should roll up through `galyarder-specialist` and be preserved in Obsidian
 2. Formalize Obsidian report templates for every department.
 3. Define a standard Linear structure for department execution.
 4. Keep founder office as an optional expansion layer, not core law.
-5. Rewrite more docs to reflect the digital company model.
+5. Rewrite more docs to reflect the digital enterprise model.
 
 ## Decision Rule
 When in doubt, hire to strengthen a department.
 Do not hire just to increase the number of skills.
 
 The metric is not library size.
-The metric is whether the founder gains a more capable digital company.
+The metric is whether the founder gains a more capable digital enterprise.

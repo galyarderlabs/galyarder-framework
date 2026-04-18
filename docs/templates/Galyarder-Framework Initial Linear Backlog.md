@@ -1,7 +1,7 @@
 # Galyarder Framework Initial Linear Backlog
 
 ## Purpose
-This is the first backlog proposal derived from the digital company vision.
+This is the first backlog proposal derived from the digital enterprise vision.
 
 These items should be turned into actual Linear projects and issues.
 
@@ -64,10 +64,10 @@ Suggested issues:
 
 ## Project 6 - Documentation Rewrite
 Goal:
-Rewrite framework docs around the digital company model.
+Rewrite framework docs around the digital enterprise model.
 
 Suggested issues:
-- rewrite README narrative toward digital company framing
+- rewrite README narrative toward digital enterprise framing
 - rewrite AGENTS docs to reflect department ownership
 - define department manifests
 - update host bootstrap docs where useful

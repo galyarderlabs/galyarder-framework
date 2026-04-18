@@ -143,10 +143,10 @@ These specs are intended to be copied into Linear with minimal rewriting.
 - Reporting impact: high
 
 ## Project - Documentation Rewrite
-### Issue 15 - Rewrite Top-Level Narrative Around The Digital Company Model
+### Issue 15 - Rewrite Top-Level Narrative Around The Digital Enterprise Model
 - Department: Foundation / Docs
 - Lead agent: `galyarder-specialist`
-- Goal: make repo docs reflect the digital company framing.
+- Goal: make repo docs reflect the digital enterprise framing.
 - Definition of done:
   - README direction updated
   - AGENTS framing updated where needed

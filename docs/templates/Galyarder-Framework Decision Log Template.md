@@ -1,7 +1,7 @@
 # Galyarder Framework Decision Log Template
 
 ## Purpose
-This template is used to record important decisions made by the digital company and surfaced to the founder.
+This template is used to record important decisions made by the digital enterprise and surfaced to the founder.
 
 A good decision log prevents repeated debates, preserves reasoning, and gives future agents context about why something was chosen.
 

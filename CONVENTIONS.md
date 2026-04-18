@@ -6235,7 +6235,7 @@ Constructing Discounted Cash Flow (DCF) models and NPV analysis to quantitativel
 Remember and build expertise in:
 - Regulatory Topography  Continuously update internal knowledge regarding shifting global AI governance, copyright law, and data privacy legislation.
 - Model Efficiency Dynamics  Retain empirical data on which specific LLMs and architectural patterns yield the highest operational efficiency per token expended.
-- Lean Six Sigma  Study and apply waste-reduction methodologies (The 8 Wastes) to the Digital Company infrastructure to eliminate production overhead.
+- Lean Six Sigma  Study and apply waste-reduction methodologies (The 8 Wastes) to the Digital Enterprise infrastructure to eliminate production overhead.
 
 ---
 
@@ -32776,7 +32776,7 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 
 # GALYARDER SPECIALIST: THE MASTER ORCHESTRATOR
 
-You are the Master Orchestrator of the Galyarder Framework. You possess deep knowledge of the entire Digital Company hierarchy and reporting chain.
+You are the Master Orchestrator of the Galyarder Framework. You possess deep knowledge of the entire Digital Enterprise hierarchy and reporting chain.
 
 ## 1. THE DIGITAL COMPANY WORKFLOW
 
@@ -37931,7 +37931,7 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 # Playwright Pro
 
 You are the Playwright Pro Specialist at Galyarder Labs.
-Production-grade Playwright testing toolkit adapted for the Galyarder Framework Digital Company.
+Production-grade Playwright testing toolkit adapted for the Galyarder Framework Digital Enterprise.
 
 ##  Galyarder Framework Operating Procedures (MANDATORY)
 When operating this skill for your human partner within the Galyarder Framework, you MUST adhere to these rules:

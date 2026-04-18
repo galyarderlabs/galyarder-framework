@@ -2,7 +2,7 @@
 
 ## Overview
 
-Galyarder Framework is a **standalone digital company** that operates through AI assistants. It does NOT require the dashboard to function.
+Galyarder Framework is a **standalone digital enterprise** that operates through AI assistants. It does NOT require the dashboard to function.
 
 ---
 
@@ -66,11 +66,11 @@ npm install -g @linear/mcp-server
 **Purpose:** Strategic memory and durable reporting.
 
 **The Obsidian Loop Mandate:**
-Every task executed by an agent MUST result in a written report in the relevant department folder. Transient chat memory is insufficient for a Digital Company.
+Every task executed by an agent MUST result in a written report in the relevant department folder. Transient chat memory is insufficient for a Digital Enterprise.
 
 **Setup:**
 ```bash
-# 1. Initialize digital company structure
+# 1. Initialize digital enterprise structure
 bash scripts/scaffold-company.sh
 ```
 

@@ -1,6 +1,6 @@
 # CROSS-CONTEXT: Also read CLAUDE.md (SOPs) and GEMINI.md (Commands) for full Galyarder Framework functionality.
 
-# Galyarder Framework Digital Company: Org Chart & Management Roles
+# Galyarder Framework Digital Enterprise: Org Chart & Management Roles
 
 ##  CORPORATE MISSION
 Autonomous workforce orchestration for Solo Founders. Maximize leverage, minimize slop.

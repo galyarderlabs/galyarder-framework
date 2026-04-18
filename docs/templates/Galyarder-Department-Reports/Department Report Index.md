@@ -1,7 +1,7 @@
 # Department Report Index
 
 ## Purpose
-This folder contains founder-readable report templates for each department in the digital company.
+This folder contains founder-readable report templates for each department in the digital enterprise.
 
 ## Templates
 - [[Founder Office Report Template]]

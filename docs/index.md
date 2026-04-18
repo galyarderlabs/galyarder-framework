@@ -1,4 +1,4 @@
-# Galyarder Framework: Digital Company OS
+# Galyarder Framework: Digital Enterprise OS
 
 <p align="center">
   <img src="public/header.jpg" width="800" alt="Galyarder Framework Apex">
@@ -6,7 +6,7 @@
 
 ## The Humans 3.0 Infrastructure
 
-Welcome to the command center of the Galyarder Digital Company. This portal provides deterministic documentation for history's first high-integrity AI workforce.
+Welcome to the command center of the Galyarder Digital Enterprise. This portal provides deterministic documentation for history's first high-integrity AI workforce.
 
 ### Master Architecture
 
