@@ -1,19 +1,56 @@
-# Release Notes - Galyarder Framework v1.3.1
+# Release Notes - Galyarder Framework
 
-The **Identity Update**. Version 1.3.1 marks our official transition to the **Galyarder Framework** name, aligning our technical power with a clear focus on **elite agent skills**.
+## [v1.8.0-alpha] - 2026-04-18
+### The Humans 3.0 Ascension
+This release marks the transition from deterministic execution (Humans 2.0) to **Autonomous Goal Integration (AGI)**.
 
-## Highlights
-
-### 1. New Brand: Galyarder Framework
-We have streamlined our name to represent the full-scale system we've built. It's not just an agent system; it's a framework for high-rigor engineering.
-
-### 2. Marketing Positioning
-Our core value proposition is now centered on the **100+ elite skills** that power the framework. We've updated our documentation to better reflect how these skills transform standard AI agents into an autonomous workforce.
-
-### 3. Structural Alignment
-- Renamed all manifest slugs to `galyarder-framework`.
-- Updated core skill directory to `using-galyarder-framework`.
-- Fixed all internal references to ensure consistency across all platforms (OpenCode, Codex, Gemini, Claude).
+#### Highlights
+- **Galactic-Scale Orchestration**: Re-engineered C-Suite personas (CEO, CTO, CMO, CFO/COO) into self-evolving, federated intelligences.
+- **Dynamic Asset Discovery**: The conversion engine and documentation portal now automatically discover and assemble silos without hardcoded mapping.
+- **Apex Documentation Portal**: Launched a high-density Material Design portal with Mermaid.js architecture and high-fidelity grid navigation.
+- **Professional Terminology**: Purged hyperbolic language in favor of a grounded, high-scale "Institutional" tone.
 
 ---
- 2026 Galyarder Labs. The ultimate 1-Man Army framework.
+
+## [v1.7.1] - 2026-04-18
+### Path Integrity & Silo Hardening
+A maintenance release focusing on the structural hardening of the Digital Department Silos.
+
+#### Fixes & Improvements
+- **Manifest Discovery**: Standardized Claude Code sub-plugin manifests at `[Dept]/.claude-plugin/plugin.json`.
+- **Root Discovery**: Hardened root `gemini-extension.json` with explicit arrays for all department paths.
+- **Link Integrity**: Surgical fix for 404s and relative pathing in the generated documentation portal.
+- **Auto-Deployment**: Integrated GitHub Actions for seamless MkDocs portal updates.
+
+---
+
+## [v1.7.0] - 2026-04-17
+### Humans 2.0 & Department Silos
+The foundational transformation into a high-integrity Digital Company OS.
+
+#### Added
+- **Humans 2.0 Protocol**: Initialized across the entire workforce for deterministic, mathematical precision.
+- **Digital Department Silos**: Full reorganization into Executive, Engineering, Growth, Security, Product, Infrastructure, Legal-Finance, and Knowledge silos.
+- **Thinking & Docs MCP**: Mandatory injection of `sequentialthinking` and `context7` protocols into 185 files.
+- **12-Tool Engine**: Support for Hermes Agent, OpenClaw, Codex, and 9 other platforms.
+
+---
+
+## [v1.6.0] - 2026-04-12
+### Operational Expansion
+Added 5 new specialized agents: `mcp-builder`, `sre`, `chief-of-staff`, `rapid-prototyper`, and `sales-engineer`. Total: 40 agents, 132 skills.
+
+---
+
+## [v1.3.1] - 2026-04-06
+### Identity Update
+Official transition to the **Galyarder Framework** name, aligning technical power with elite agent skills.
+
+---
+
+## [v1.0.0] - 2026-04-04
+### Initial Release
+Full restoration of high-rigor engineering agents (TDD, Architecture, Systematic Debugging) and the 1-Man Army C-Suite.
+
+---
+© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.
