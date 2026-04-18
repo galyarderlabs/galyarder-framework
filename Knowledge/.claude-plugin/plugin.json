@@ -1,7 +1,7 @@
 {
   "name": "galyarder-knowledge",
   "description": "Knowledge Department for Galyarder Framework. Includes specialized agents, skills, and tools.",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "author": {
     "name": "Galyarder Labs",
     "email": "hello@galyarderlabs.app"

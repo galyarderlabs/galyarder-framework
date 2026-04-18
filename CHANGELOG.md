@@ -2,7 +2,7 @@
 
 All notable changes to Galyarder Framework will be documented in this file.
 
-## [1.7.0] - 2026-04-18
+## [1.7.1] - 2026-04-18
 
 ### Added
 - **Humans 2.0 Protocol**: Initialized the distilled cognitive machinery protocol across the entire workforce, stripping emotional overhead and biological fatigue in favor of deterministic, mathematical precision.

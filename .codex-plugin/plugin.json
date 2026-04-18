@@ -1,7 +1,7 @@
 {
   "name": "galyarder-framework",
   "description": "Apex Digital Company Orchestration for OpenAI Codex.",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "author": {
     "name": "Galyarder Labs",
     "email": "hello@galyarderlabs.app"

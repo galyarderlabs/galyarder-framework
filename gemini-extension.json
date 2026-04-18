@@ -1,7 +1,7 @@
 {
   "name": "galyarder-framework",
   "description": "Galyarder Framework: Advanced Digital Company OS (Humans 2.0 Edition)",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "contextFileName": "GEMINI.md",
   "personas": [
     "./Executive/personas/"
