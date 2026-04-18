@@ -1,15 +1,8 @@
 ---
-title: "/linear  Slash Command for AI Coding Agents"
-description: "Project Management specialist. Converts PRDs into actionable Linear Epics and Issues.. Slash command for Claude Code, Codex CLI, Gemini CLI."
+description: Project Management specialist. Converts PRDs into actionable Linear Epics and Issues.
 ---
 
-# /linear
-
-<div class="page-meta" markdown>
-<span class="meta-badge"> Slash Command</span>
-<span class="meta-badge"> <a href="https://github.com/galyarderlabs/galyarder-framework/tree/main/commands/linear.md">Source</a></span>
-</div>
-
+# Linear Command
 
 This command invokes the **product-manager** agent to manage the project roadmap and ticket lifecycle.
 

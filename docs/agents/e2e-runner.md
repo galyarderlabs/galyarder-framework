@@ -1,16 +1,8 @@
 ---
-title: "E2E Runner | AI Agent & Galyarder Framework"
-description: "End-to-end testing specialist using Playwright. Use PROACTIVELY for generating, maintaining, and running E2E tests. Manages test journeys. Agent-native orchestrator for Galyarder Framework."
+name: e2e-runner
+description: End-to-end testing specialist using Playwright. Use PROACTIVELY for generating, maintaining, and running E2E tests. Manages test journeys, quarantines flaky tests, uploads artifacts (screenshots, videos, traces), and ensures critical user flows work.
+tools: [read_file, write_file, replace, run_shell_command, grep_search, glob]
 ---
-
-<div class="domain-header" markdown>
-
-#  E2E Runner
-
-<p class="domain-label">Operations Agent</p>
-
-</div>
-
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Token Economy: The RTK Prefix

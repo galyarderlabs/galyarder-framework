@@ -1,15 +1,8 @@
 ---
-title: "/cybersecurity  Slash Command for AI Coding Agents"
-description: "Perform an advanced offensive security audit and attack simulation on the current features.. Slash command for Claude Code, Codex CLI, Gemini CLI."
+description: Perform an advanced offensive security audit and attack simulation on the current features.
 ---
 
-# /cybersecurity
-
-<div class="page-meta" markdown>
-<span class="meta-badge"> Slash Command</span>
-<span class="meta-badge"> <a href="https://github.com/galyarderlabs/galyarder-framework/tree/main/commands/cybersecurity.md">Source</a></span>
-</div>
-
+# Cybersecurity Command
 
 This command invokes the **perseus** agent to conduct red teaming, penetration testing, and identify bypasses in the security model.
 

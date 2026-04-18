@@ -1,15 +1,8 @@
 ---
-title: "/triage  Slash Command for AI Coding Agents"
-description: "Triage a bug or issue. Explore the codebase to find root cause, then create a fix plan.. Slash command for Claude Code, Codex CLI, Gemini CLI."
+description: Triage a bug or issue. Explore the codebase to find root cause, then create a fix plan.
 ---
 
-# /triage
-
-<div class="page-meta" markdown>
-<span class="meta-badge"> Slash Command</span>
-<span class="meta-badge"> <a href="https://github.com/galyarderlabs/galyarder-framework/tree/main/commands/triage.md">Source</a></span>
-</div>
-
+# Triage Command
 
 This command invokes the **triage-issue** agent to diagnose and plan a fix for a reported bug.
 

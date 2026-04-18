@@ -1,15 +1,8 @@
 ---
-title: "/tdd  Slash Command for AI Coding Agents"
-description: "Enforce test-driven development workflow. Scaffold interfaces, generate tests FIRST, then implement minimal code to pass. Ensure 80%+ coverage.. Slash command for Claude Code, Codex CLI, Gemini CLI."
+description: Enforce test-driven development workflow. Scaffold interfaces, generate tests FIRST, then implement minimal code to pass. Ensure 80%+ coverage.
 ---
 
-# /tdd
-
-<div class="page-meta" markdown>
-<span class="meta-badge"> Slash Command</span>
-<span class="meta-badge"> <a href="https://github.com/galyarderlabs/galyarder-framework/tree/main/commands/tdd.md">Source</a></span>
-</div>
-
+# TDD Command
 
 This command invokes the **elite-developer** agent to enforce test-driven development methodology.
 

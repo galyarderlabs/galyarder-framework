@@ -1,15 +1,8 @@
 ---
-title: "/release  Slash Command for AI Coding Agents"
-description: "Orchestrate the launch process, bump versions, and generate changelogs.. Slash command for Claude Code, Codex CLI, Gemini CLI."
+description: Orchestrate the launch process, bump versions, and generate changelogs.
 ---
 
-# /release
-
-<div class="page-meta" markdown>
-<span class="meta-badge"> Slash Command</span>
-<span class="meta-badge"> <a href="https://github.com/galyarderlabs/galyarder-framework/tree/main/commands/release.md">Source</a></span>
-</div>
-
+# Release Command
 
 This command invokes the **release-manager** to finalize a production-ready version.
 

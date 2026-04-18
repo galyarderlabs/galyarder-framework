@@ -1,15 +1,8 @@
 ---
-title: "/cro  Slash Command for AI Coding Agents"
-description: "Conversion Rate Optimization specialist. Optimizes onboarding, paywalls, and signup flows.. Slash command for Claude Code, Codex CLI, Gemini CLI."
+description: Conversion Rate Optimization specialist. Optimizes onboarding, paywalls, and signup flows.
 ---
 
-# /cro
-
-<div class="page-meta" markdown>
-<span class="meta-badge"> Slash Command</span>
-<span class="meta-badge"> <a href="https://github.com/galyarderlabs/galyarder-framework/tree/main/commands/cro.md">Source</a></span>
-</div>
-
+# CRO Command
 
 This command invokes the **conversion-engineer** agent to maximize user activation and revenue.
 

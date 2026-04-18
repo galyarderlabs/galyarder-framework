@@ -1,15 +1,8 @@
 ---
-title: "/clean  Slash Command for AI Coding Agents"
-description: "Dead code cleanup and consolidation specialist. Removes unused code, duplicates, and refactors for maintainability.. Slash command for Claude Code, Codex CLI, Gemini CLI."
+description: Dead code cleanup and consolidation specialist. Removes unused code, duplicates, and refactors for maintainability.
 ---
 
-# /clean
-
-<div class="page-meta" markdown>
-<span class="meta-badge"> Slash Command</span>
-<span class="meta-badge"> <a href="https://github.com/galyarderlabs/galyarder-framework/tree/main/commands/clean.md">Source</a></span>
-</div>
-
+# Clean Command
 
 This command invokes the **refactor-cleaner** agent to reduce technical debt.
 

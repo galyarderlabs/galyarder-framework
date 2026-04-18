@@ -1,16 +1,9 @@
 ---
-title: "Qa Automation Engineer | AI Agent & Galyarder Framework"
-description: "E2E Testing and Browser Automation specialist. Use this agent to verify user flows, catch regressions, and audit UI alignment using the BrowserOS. Agent-native orchestrator for Galyarder Framework."
+name: qa-automation-engineer
+tools: [read_file, grep_search, glob, run_shell_command, write_file, replace]
+description: |
+  E2E Testing and Browser Automation specialist. Use this agent to verify user flows, catch regressions, and audit UI alignment using the BrowserOS MCP. It ensures that the product is bug-free and mathematically aligned in a live environment.
 ---
-
-<div class="domain-header" markdown>
-
-#  Qa Automation Engineer
-
-<p class="domain-label">Operations Agent</p>
-
-</div>
-
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Token Economy: The RTK Prefix

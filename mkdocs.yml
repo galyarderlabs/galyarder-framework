@@ -1,0 +1,62 @@
+site_name: Galyarder Framework
+site_url: https://galyarderlabs.github.io/galyarder-framework/
+site_description: Advanced Digital Company Orchestration for Solo Founders.
+site_author: Galyarder Labs
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  icon:
+    logo: material/robot-industrial
+
+nav:
+  - Welcome: README.md
+  - Organization: ORG_CHART.md
+  - Workflow: WORKFLOW.md
+  - Agents: 
+      - Index: agents/index.md
+      - ALL Agents: agents/
+  - Skills:
+      - ALL Skills: skills/
+  - Commands:
+      - ALL Commands: commands/
+  - Design Systems:
+      - ALL Specs: design/
+  - Integration: INTEGRATION.md
+  - Release Notes: RELEASE-NOTES.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+
+copyright: Copyright &copy; 2026 Galyarder Labs

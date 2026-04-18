@@ -1,16 +1,8 @@
 ---
-title: "Planner | AI Agent & Galyarder Framework"
-description: "Expert planning specialist for complex features and refactoring. Use PROACTIVELY when users request feature implementation, architectural changes, or. Agent-native orchestrator for Galyarder Framework."
+name: planner
+description: Expert planning specialist for complex features and refactoring. Use PROACTIVELY when users request feature implementation, architectural changes, or complex refactoring. Automatically activated for planning tasks.
+tools: [read_file, grep_search, glob]
 ---
-
-<div class="domain-header" markdown>
-
-#  Planner
-
-<p class="domain-label">Operations Agent</p>
-
-</div>
-
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Token Economy: The RTK Prefix

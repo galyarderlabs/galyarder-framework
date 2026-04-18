@@ -1,15 +1,8 @@
 ---
-title: "/docs  Slash Command for AI Coding Agents"
-description: "Documentation and codemap specialist. Generates codemaps, updates READMEs, and syncs documentation with the source code.. Slash command for Claude Code, Codex CLI, Gemini CLI."
+description: Documentation and codemap specialist. Generates codemaps, updates READMEs, and syncs documentation with the source code.
 ---
 
-# /docs
-
-<div class="page-meta" markdown>
-<span class="meta-badge"> Slash Command</span>
-<span class="meta-badge"> <a href="https://github.com/galyarderlabs/galyarder-framework/tree/main/commands/docs.md">Source</a></span>
-</div>
-
+# Docs Command
 
 This command invokes the **doc-updater** agent to keep your documentation in sync with your implementation.
 

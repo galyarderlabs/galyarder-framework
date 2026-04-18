@@ -1,15 +1,8 @@
 ---
-title: "/review  Slash Command for AI Coding Agents"
-description: "Perform a principal-level code review of the current changes against the PRD and Design System.. Slash command for Claude Code, Codex CLI, Gemini CLI."
+description: Perform a principal-level code review of the current changes against the PRD and Design System.
 ---
 
-# /review
-
-<div class="page-meta" markdown>
-<span class="meta-badge"> Slash Command</span>
-<span class="meta-badge"> <a href="https://github.com/galyarderlabs/galyarder-framework/tree/main/commands/review.md">Source</a></span>
-</div>
-
+# Review Command
 
 This command invokes the **code-reviewer** agent to audit the quality, security, and maintainability of the codebase.
 

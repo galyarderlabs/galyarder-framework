@@ -1,15 +1,8 @@
 ---
-title: "/video  Slash Command for AI Coding Agents"
-description: "Programmatic video generation specialist using React and Remotion.. Slash command for Claude Code, Codex CLI, Gemini CLI."
+description: Programmatic video generation specialist using React and Remotion.
 ---
 
-# /video
-
-<div class="page-meta" markdown>
-<span class="meta-badge"> Slash Command</span>
-<span class="meta-badge"> <a href="https://github.com/galyarderlabs/galyarder-framework/tree/main/commands/video.md">Source</a></span>
-</div>
-
+# Video Command
 
 This command invokes the **remotion-engineer** agent to create marketing videos, changelogs, and trailers.
 

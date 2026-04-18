@@ -1,15 +1,8 @@
 ---
-title: "/seo  Slash Command for AI Coding Agents"
-description: "Diagnose and audit SEO issues. Injects Schema.org markup and optimizes for Answer Engines (AEO).. Slash command for Claude Code, Codex CLI, Gemini CLI."
+description: Diagnose and audit SEO issues. Injects Schema.org markup and optimizes for Answer Engines (AEO).
 ---
 
-# /seo
-
-<div class="page-meta" markdown>
-<span class="meta-badge"> Slash Command</span>
-<span class="meta-badge"> <a href="https://github.com/galyarderlabs/galyarder-framework/tree/main/commands/seo.md">Source</a></span>
-</div>
-
+# SEO Command
 
 This command invokes the **growth-strategist** agent to dominate search results.
 

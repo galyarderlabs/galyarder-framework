@@ -1,16 +1,8 @@
 ---
-title: "Remotion Engineer | AI Agent & Galyarder Framework"
-description: "Remotion specialist for programmatic video generation using React. Use PROACTIVELY when the user wants to create, debug, or optimize Remotion video. Agent-native orchestrator for Galyarder Framework."
+name: remotion-engineer
+tools: [read_file, grep_search, glob, run_shell_command, write_file, replace]
+description: Remotion specialist for programmatic video generation using React. Use PROACTIVELY when the user wants to create, debug, or optimize Remotion video projects. Specializes in frame-perfect animations, physics-based motion, and FFmpeg rendering optimization.
 ---
-
-<div class="domain-header" markdown>
-
-#  Remotion Engineer
-
-<p class="domain-label">Operations Agent</p>
-
-</div>
-
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Token Economy: The RTK Prefix

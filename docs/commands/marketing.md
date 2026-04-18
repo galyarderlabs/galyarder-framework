@@ -1,15 +1,8 @@
 ---
-title: "/marketing  Slash Command for AI Coding Agents"
-description: "Growth, SEO, and Copywriting specialist. Use this to optimize for Revenue (Cuan).. Slash command for Claude Code, Codex CLI, Gemini CLI."
+description: Growth, SEO, and Copywriting specialist. Use this to optimize for Revenue (Cuan).
 ---
 
-# /marketing
-
-<div class="page-meta" markdown>
-<span class="meta-badge"> Slash Command</span>
-<span class="meta-badge"> <a href="https://github.com/galyarderlabs/galyarder-framework/tree/main/commands/marketing.md">Source</a></span>
-</div>
-
+# Marketing Command
 
 This command invokes the **growth-strategist** agent to maximize the market impact of your product.
 

@@ -1,15 +1,8 @@
 ---
-title: "/finops  Slash Command for AI Coding Agents"
-description: "Audit cloud costs, optimize API token usage, and evaluate pricing models.. Slash command for Claude Code, Codex CLI, Gemini CLI."
+description: Audit cloud costs, optimize API token usage, and evaluate pricing models.
 ---
 
-# /finops
-
-<div class="page-meta" markdown>
-<span class="meta-badge"> Slash Command</span>
-<span class="meta-badge"> <a href="https://github.com/galyarderlabs/galyarder-framework/tree/main/commands/finops.md">Source</a></span>
-</div>
-
+# FinOps Command
 
 This command invokes the **finops-manager** to ensure financial sustainability.
 

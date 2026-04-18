@@ -1,15 +1,8 @@
 ---
-title: "/deploy  Slash Command for AI Coding Agents"
-description: "Infrastructure and CI/CD specialist. Automates deployments to Vercel, Docker, or AWS.. Slash command for Claude Code, Codex CLI, Gemini CLI."
+description: Infrastructure and CI/CD specialist. Automates deployments to Vercel, Docker, or AWS.
 ---
 
-# /deploy
-
-<div class="page-meta" markdown>
-<span class="meta-badge"> Slash Command</span>
-<span class="meta-badge"> <a href="https://github.com/galyarderlabs/galyarder-framework/tree/main/commands/deploy.md">Source</a></span>
-</div>
-
+# Deploy Command
 
 This command invokes the **devops-engineer** agent to productionize your application.
 

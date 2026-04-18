@@ -1,15 +1,8 @@
 ---
-title: "/build-fix  Slash Command for AI Coding Agents"
-description: "Systematically investigate and fix build errors, TypeScript errors, or test failures with minimal diffs.. Slash command for Claude Code, Codex CLI, Gemini CLI."
+description: Systematically investigate and fix build errors, TypeScript errors, or test failures with minimal diffs.
 ---
 
-# /build-fix
-
-<div class="page-meta" markdown>
-<span class="meta-badge"> Slash Command</span>
-<span class="meta-badge"> <a href="https://github.com/galyarderlabs/galyarder-framework/tree/main/commands/build-fix.md">Source</a></span>
-</div>
-
+# Build Fix Command
 
 This command invokes the **build-error-resolver** agent to surgically fix compilation or runtime errors.
 

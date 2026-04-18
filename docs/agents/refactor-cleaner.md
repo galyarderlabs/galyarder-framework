@@ -1,16 +1,8 @@
 ---
-title: "Refactor Cleaner | AI Agent & Galyarder Framework"
-description: "Dead code cleanup and consolidation specialist. Use PROACTIVELY for removing unused code, duplicates, and refactoring. Runs analysis tools (knip. Agent-native orchestrator for Galyarder Framework."
+name: refactor-cleaner
+description: Dead code cleanup and consolidation specialist. Use PROACTIVELY for removing unused code, duplicates, and refactoring. Runs analysis tools (knip, depcheck, ts-prune) to identify dead code and safely removes it.
+tools: [read_file, write_file, replace, run_shell_command, grep_search, glob]
 ---
-
-<div class="domain-header" markdown>
-
-#  Refactor Cleaner
-
-<p class="domain-label">Operations Agent</p>
-
-</div>
-
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Token Economy: The RTK Prefix

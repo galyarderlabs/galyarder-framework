@@ -1,15 +1,8 @@
 ---
-title: "/plan  Slash Command for AI Coding Agents"
-description: "Restate requirements, assess risks, and create a step-by-step implementation plan with Vertical Slices (Tracer Bullets).. Slash command for Claude Code, Codex CLI, Gemini CLI."
+description: Restate requirements, assess risks, and create a step-by-step implementation plan with Vertical Slices (Tracer Bullets).
 ---
 
-# /plan
-
-<div class="page-meta" markdown>
-<span class="meta-badge"> Slash Command</span>
-<span class="meta-badge"> <a href="https://github.com/galyarderlabs/galyarder-framework/tree/main/commands/plan.md">Source</a></span>
-</div>
-
+# Plan Command
 
 This command invokes the **super-architect** agent to create a comprehensive implementation plan before writing any code.
 

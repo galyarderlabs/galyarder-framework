@@ -1,15 +1,8 @@
 ---
-title: "/legal  Slash Command for AI Coding Agents"
-description: "Generate TOS/Privacy policies, audit GDPR compliance, and review licenses.. Slash command for Claude Code, Codex CLI, Gemini CLI."
+description: Generate TOS/Privacy policies, audit GDPR compliance, and review licenses.
 ---
 
-# /legal
-
-<div class="page-meta" markdown>
-<span class="meta-badge"> Slash Command</span>
-<span class="meta-badge"> <a href="https://github.com/galyarderlabs/galyarder-framework/tree/main/commands/legal.md">Source</a></span>
-</div>
-
+# Legal Command
 
 This command invokes the **legal-counsel** to handle compliance and risk management.
 

@@ -1,16 +1,8 @@
 ---
-title: "Architect | AI Agent & Galyarder Framework"
-description: "Software architecture specialist for system design, scalability, and technical decision-making. Use PROACTIVELY when planning new features. Agent-native orchestrator for Galyarder Framework."
+name: architect
+description: Software architecture specialist for system design, scalability, and technical decision-making. Use PROACTIVELY when planning new features, refactoring large systems, or making architectural decisions.
+tools: [read_file, grep_search, glob]
 ---
-
-<div class="domain-header" markdown>
-
-#  Architect
-
-<p class="domain-label">Operations Agent</p>
-
-</div>
-
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Token Economy: The RTK Prefix

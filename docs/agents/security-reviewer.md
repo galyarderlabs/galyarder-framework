@@ -1,16 +1,8 @@
 ---
-title: "Security Reviewer | AI Agent & Galyarder Framework"
-description: "Security vulnerability detection and remediation specialist. Use PROACTIVELY after writing code that handles user input, authentication, API. Agent-native orchestrator for Galyarder Framework."
+name: security-reviewer
+description: Security vulnerability detection and remediation specialist. Use PROACTIVELY after writing code that handles user input, authentication, API endpoints, or sensitive data. Flags secrets, SSRF, injection, unsafe crypto, and OWASP Top 10 vulnerabilities.
+tools: [read_file, write_file, replace, run_shell_command, grep_search, glob]
 ---
-
-<div class="domain-header" markdown>
-
-#  Security Reviewer
-
-<p class="domain-label">Operations Agent</p>
-
-</div>
-
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Token Economy: The RTK Prefix

@@ -1,15 +1,8 @@
 ---
-title: "/e2e  Slash Command for AI Coding Agents"
-description: "End-to-end testing specialist using Playwright. Generates and runs user journey tests.. Slash command for Claude Code, Codex CLI, Gemini CLI."
+description: End-to-end testing specialist using Playwright. Generates and runs user journey tests.
 ---
 
-# /e2e
-
-<div class="page-meta" markdown>
-<span class="meta-badge"> Slash Command</span>
-<span class="meta-badge"> <a href="https://github.com/galyarderlabs/galyarder-framework/tree/main/commands/e2e.md">Source</a></span>
-</div>
-
+# E2E Command
 
 This command invokes the **e2e-runner** agent to verify complete user flows.
 

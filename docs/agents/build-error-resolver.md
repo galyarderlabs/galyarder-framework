@@ -1,16 +1,8 @@
 ---
-title: "Build Error Resolver | AI Agent & Galyarder Framework"
-description: "Build and TypeScript error resolution specialist. Use PROACTIVELY when build fails or type errors occur. Fixes build/type errors only with minimal. Agent-native orchestrator for Galyarder Framework."
+name: build-error-resolver
+description: Build and TypeScript error resolution specialist. Use PROACTIVELY when build fails or type errors occur. Fixes build/type errors only with minimal diffs, no architectural edits. Focuses on getting the build green quickly.
+tools: [read_file, write_file, replace, run_shell_command, grep_search, glob]
 ---
-
-<div class="domain-header" markdown>
-
-#  Build Error Resolver
-
-<p class="domain-label">Operations Agent</p>
-
-</div>
-
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Token Economy: The RTK Prefix
