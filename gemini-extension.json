@@ -1,16 +1,39 @@
 {
   "name": "galyarder-framework",
-  "description": "Galyarder Framework: Advanced Digital Company OS",
+  "description": "Galyarder Framework: Advanced Digital Company OS (Humans 2.0 Edition)",
   "version": "1.7.0",
   "contextFileName": "GEMINI.md",
-  "departments": [
-    "./Executive/",
-    "./Engineering/",
-    "./Growth/",
-    "./Security/",
-    "./Product/",
-    "./Infrastructure/",
-    "./Legal-Finance/",
-    "./Knowledge/"
+  "personas": [
+    "./Executive/personas/"
+  ],
+  "agents": [
+    "./Executive/agents/",
+    "./Engineering/agents/",
+    "./Growth/agents/",
+    "./Security/agents/",
+    "./Product/agents/",
+    "./Infrastructure/agents/",
+    "./Legal-Finance/agents/",
+    "./Knowledge/agents/"
+  ],
+  "skills": [
+    "./Executive/skills/",
+    "./Engineering/skills/",
+    "./Growth/skills/",
+    "./Growth/design/",
+    "./Security/skills/",
+    "./Product/skills/",
+    "./Infrastructure/skills/",
+    "./Legal-Finance/skills/",
+    "./Knowledge/skills/"
+  ],
+  "commands": [
+    "./Engineering/commands/",
+    "./Growth/commands/",
+    "./Security/commands/",
+    "./Product/commands/",
+    "./Infrastructure/commands/",
+    "./Legal-Finance/commands/",
+    "./Knowledge/commands/"
   ]
 }
