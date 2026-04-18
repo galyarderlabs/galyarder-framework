@@ -5,6 +5,7 @@ site_author: Galyarder Labs
 
 theme:
   name: material
+  custom_dir: docs/overrides
   logo: assets/logo.png
   favicon: assets/logo.png
   palette:
