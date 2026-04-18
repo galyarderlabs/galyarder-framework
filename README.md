@@ -1,18 +1,14 @@
-# Galyarder Framework
-
 <p align="center">
   <img src="public/header.jpg" width="600" alt="Galyarder Framework">
 </p>
 
 <h1 align="center">Galyarder Framework</h1>
 
-<p align="center">Advanced Digital Company Orchestration for Agentic Intelligence/p>
+<p align="center">Advanced Digital Company Orchestration for Agentic Intelligence
 
 <p align="center">
   Galyarder Framework provides <strong>40 specialized agents</strong> and <strong>132 production-ready skills</strong> for AI assistants.<br>
-  <strong>Documentation: <a href="https://galyarderlabs.github.io/galyarder-framework/">galyarderlabs.github.io/galyarder-framework</a></strong><br>
-  Install in OpenClaw, Hermes Agent, Galyarder Agent, Galyarder HQ, Claude Code, Gemini Cli, Codex, or any agentic tool and get a full workforce of specialized agents<br>
-  covering engineering, security, growth, legal, and more.
+  Install in OpenClaw, Hermes Agent, Galyarder Agent, Galyarder HQ, Claude Code, Gemini Cli, Codex, or any agentic tool.<br>
 </p>
 
 <p align="center">Built for the <strong>1-Man Army</strong> — one founder with the leverage of an entire company.</p>
