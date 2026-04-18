@@ -137,6 +137,3 @@ Galyarder Framework is organized into **8 High-Integrity Silos**, each acting as
 - **Knowledge**: Memory preservation and visual logic mapping.
 
 For a full inventory of the 259 assets, visit the [Documentation Portal](https://galyarderlabs.github.io/galyarder-framework/).
-
----
-© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.
