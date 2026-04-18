@@ -16,17 +16,17 @@
 
 ## How it works
 
-It starts from the moment you fire up your autonomous assistant (Galyarder Agent, OpenClaw, Hermes, or Claude Code). As soon as the framework sees that you're building something, it *doesn't* just jump into trying to write code. Instead, it steps back and asks you what you're really trying to do. 
+It starts from the moment you fire up your autonomous assistant (Galyarder Agent, OpenClaw, Hermes, or Claude Code). As soon as the framework sees that you're initiating a mission, it *doesn't* just jump into trying to execute tasks. Instead, it steps back and analyzes the high-level business intent behind your request. 
 
-Once it's teased a spec out of the conversation, it shows it to you in chunks short enough to actually read and digest. 
+Once it's teased a comprehensive strategy out of the conversation, it presents it to you in structured segments short enough to actually verify and digest. 
 
-After you've signed off on the design, your agent puts together an implementation plan that's clear enough for an enthusiastic junior engineer with poor taste, no judgement, no project context, and an aversion to testing to follow. It emphasizes true red/green TDD, YAGNI (You Aren't Gonna Need It), and DRY. 
+After you've signed off on the direction, your agent puts together a mission-critical execution plan that's designed for deterministic precision. It emphasizes institutional-grade verification, lean operations (YAGNI), and systematic accuracy, ensuring every action provides maximum leverage toward your goal. 
 
-Next up, once you say "go", it launches a *subagent-driven-development* process, routing each task through the host's available delegation model while preserving the same review and orchestration workflow. 
+Next up, once you say "go", it launches a *subagent-driven-orchestration* process, routing each task through the host's available delegation model while preserving a rigid review and validation workflow. 
 
 This is the **Humans 3.0** protocol in action: the transition from deterministic execution into **Autonomous Goal Integration (AGI)**. 
 
-In this framework, AGI doesn't mean "sentient machines"; it means a self-evolving system capable of taking high-level business goals and independently orchestrating the entire lifecycle—from requirement extraction and TDD implementation to security audits and market distribution—without human micro-management. It's the ultimate realization of the **1-Man Army**: one founder providing the vision, while the framework provides the autonomous brain.
+In this framework, AGI doesn't mean "sentient machines"; it means a self-evolving system capable of taking high-level business goals and independently orchestrating the entire lifecycle—from requirement extraction and high-integrity implementation to operational auditing and market distribution—without human micro-management. It's the ultimate realization of the **1-Man Army**: one founder providing the vision, while the framework provides the autonomous brain.
 
 ---
 
@@ -34,22 +34,22 @@ In this framework, AGI doesn't mean "sentient machines"; it means a self-evolvin
 
 Galyarder Framework bridges the gap between high-level intent and ground-level execution through a deterministic 5-stage process:
 
-1.  **Intent Extraction**: Distilling business goals into project-scoped Linear tickets and tactical PRDs.
-2.  **Architectural Determinism**: System design via formal verification and Vertical Slice (Tracer Bullet) implementation plans.
-3.  **Execution Factory**: Clinical implementation via strict Test-Driven Development (TDD) and high-fidelity design system enforcement.
-4.  **Operational Auditing**: Automated live-environment verification (BrowserOS) and professional security hardening.
-5.  **Autonomous Distribution**: Programmatic marketing generation (Remotion) and behavioral-targeted market deployment.
+1.  **Intent Extraction**: Distilling business goals into project-scoped Linear tickets and tactical specifications.
+2.  **Strategic Blueprinting**: Mission design via formal verification and Vertical Slice (Tracer Bullet) implementation plans.
+3.  **Autonomous Implementation**: Clinical execution via 40+ specialized logic engines and high-fidelity institutional standards.
+4.  **Operational Auditing**: Automated live-environment verification and zero-trust security hardening.
+5.  **Autonomous Distribution**: Programmatic asset generation and behavioral-targeted market deployment.
 
 ---
 
 ## What you get
 
-A high-integrity workforce in a single repository:
+A high-integrity workforce for any autonomous mission:
 
 - **40 Specialized Agents**: Engineering, Growth, Security, Product, and Legal experts.
-- **132 Production-Ready Skills**: SOPs for TDD, SEO, CRO, FinOps, and more.
+- **132 Production-Ready Skills**: SOPs for development, SEO, CRO, FinOps, and more.
 - **54 Design Specifications**: Elite UI specs (Stripe, Vercel, Apple) to enforce aesthetic law.
-- **20+ Slash Commands**: Instant orchestration triggers (e.g., `/tdd`, `/review`, `/marketing`).
+- **20+ Slash Commands**: Instant orchestration triggers (e.g., `/tdd`, `/review`, `/plan`).
 - **12+ Platform Compatibility**: Native support for Galyarder Agent, OpenClaw, Hermes, Claude Code, Gemini, and more.
 
 ---
@@ -58,32 +58,32 @@ A high-integrity workforce in a single repository:
 
 Galyarder Framework handles the heavy lifting of building and scaling:
 
-### Case 1: Automating a Feature (TDD)
+### Case 1: Automating a Mission
 ```
-User: /tdd Build a secure JWT authentication layer for my Next.js app.
-Agent: [Invokes elite-developer] -> Extracts specs -> Writes tests -> Implements minimal code -> Verifies.
-```
-
-### Case 2: Market Dominance (Growth)
-```
-User: /marketing Analyze my landing page for conversion leaks and optimize the copy.
-Agent: [Invokes growth-strategist] -> Runs CRO audit -> Applies behavioral heuristics -> Rewrites copy.
+User: Build a secure payment infrastructure for my subscription service.
+Agent: [Invokes elite-developer] -> Extracts specs -> Architects system -> Implements verified logic -> Hardens security.
 ```
 
-### Case 3: Security Hardening
+### Case 2: Market Dominance
 ```
-User: /cybersecurity Run an offensive audit on my API endpoints.
-Agent: [Invokes perseus] -> Simulates attacks -> Identifies IDOR/SSRF -> Proposes surgical fixes.
+User: Optimize my entire sales funnel for maximum conversion efficiency.
+Agent: [Invokes growth-strategist] -> Runs CRO audit -> Applies behavioral heuristics -> Automates marketing swarms.
+```
+
+### Case 3: Operational Control
+```
+User: Conduct a professional audit of my distributed infrastructure.
+Agent: [Invokes perseus] -> Identifies vulnerabilities -> Hardens access controls -> Proposes surgical optimizations.
 ```
 
 ---
 
 ## The Intelligence Layer of the Galyarder Ecosystem
 
-Galyarder Framework is the underlying **brain** designed to power the next generation of autonomous entities.
+Galyarder Framework is the **brain** designed to power the next generation of autonomous entities.
 
 -   **[Galyarder Agent](https://github.com/galyarderlabs/galyarder-agent)**: The **Entity**. Digital personas with recursive long-term memory, stable visual identity, and universal presence.
--   **[Galyarder HQ](https://github.com/galyarderlabs/galyarder-hq)**: The **Control Plane**. Master governance for orchestrating swarms and maintaining operational control.
+-   **[Galyarder HQ](https://github.com/galyarderlabs/galyarder-hq)**: The **Control Plane**. Master governance for orchestrating swarms, monitoring mission queues, and maintaining operational control.
 -   **Galyarder Framework**: The **Intelligence**. The specialized workforce and elite SOPs.
 
 ---
@@ -153,10 +153,10 @@ For local/VPS deployments or tools without a central marketplace, use the conver
 
 ## Philosophy
 
-- **Test-Driven Development** — Logic is irrelevant until verified.
-- **Context Economy** — RTK proxy usage is mandatory for all operations to minimize token consumption.
-- **Math Over Magic** — Base decisions on data, ROI, and psychological leverage.
-- **Code to Market** — Development is a liability until it achieves market fit.
+- **Verified Logic** — Output is a liability until it is systematically verified.
+- **Context Economy** — RTK proxy usage is mandatory to maintain high-signal communication.
+- **Math Over Magic** — Base decisions on empirical data, ROI, and institutional probability.
+- **Goal to Market** — A mission is not complete until it achieves market-ready status.
 
 ---
 
@@ -165,9 +165,9 @@ For local/VPS deployments or tools without a central marketplace, use the conver
 The framework enforces rigid adherence to the Karpathy Principles to eliminate slop:
 
 - **Think Before Coding**: Mandatory `sequentialthinking` and `context7` MCP loops before any implementation.
-- **Simplicity First**: Minimum code to solve the immediate problem. Zero speculative abstractions.
-- **Surgical Changes**: Touch only what is necessary. Perfect alignment with existing infrastructure and conventions.
-- **Goal-Driven Execution**: Empirical verification via a tests-first methodology.
+- **Simplicity First**: Minimum effort to solve the objective. Zero speculative abstractions.
+- **Surgical Changes**: Touch only what is necessary. Perfect alignment with existing infrastructure.
+- **Goal-Driven Execution**: Empirical verification via a mission-first methodology.
 
 ---
 
@@ -176,10 +176,10 @@ The framework enforces rigid adherence to the Karpathy Principles to eliminate s
 The workforce is organized into specialized departments:
 
 - **Executive**: Strategic oversight and master orchestration.
-- **Engineering**: Deterministic TDD factory and implementation.
+- **Engineering**: Deterministic implementation and TDD factory.
 - **Growth**: Behavioral arbitrage, marketing engineering, and design systems.
 - **Security**: Professional auditing and advanced offensive security.
-- **Product**: Roadmap integrity and PRD extraction.
+- **Product**: Roadmap integrity and strategic extraction.
 - **Infrastructure**: Reliability physics and automated deployment.
 - **Legal-Finance**: Regulatory compliance and token FinOps.
 - **Knowledge**: Memory preservation and visual logic mapping.
