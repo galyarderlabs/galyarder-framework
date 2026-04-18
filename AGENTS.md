@@ -286,7 +286,7 @@ Obsidian should capture:
 
 ##  EXTERNAL TOOLS RESTRICTION
 - **No-Fly List**: DILARANG menggunakan atau menyarankan penggunaan tool eksternal pihak ketiga seperti **Codacy**, **SonarQube**, atau **Snyk** kecuali secara eksplisit diminta oleh founder.
-- **Internal Only**: Gunakan agen internal (`@security-guardian`, `@perseus`, `@security-reviewer`) untuk audit keamanan dan kualitas. Galyarder Framework beroperasi secara lokal dan mandiri (Sovereign).
+- **Internal Only**: Gunakan agen internal (`@security-guardian`, `@perseus`, `@security-reviewer`) untuk audit keamanan dan kualitas. Galyarder Framework beroperasi secara lokal dan mandiri (Digital).
 
 ##  DEPARTMENT HEADS & SPECIALISTS
 ### @analytics-architect

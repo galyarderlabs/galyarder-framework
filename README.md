@@ -4,7 +4,7 @@
 
 <h1 align="center">Galyarder Framework</h1>
 
-<p align="center">Advanced Logic Engine & Agentic Skills for Autonomous Sovereignty</p>
+<p align="center">Advanced Logic Engine & Agentic Skills for Autonomous Operations</p>
 
 <p align="center">
   Galyarder Framework provides <strong>40 specialized agents</strong> and <strong>132 production-ready skills</strong> for AI assistants.<br>
@@ -12,7 +12,7 @@
   Install in Galyarder Agent, OpenClaw, Hermes, Claude Code, Gemini, or any autonomous tool to enable institutional-grade mission execution.
 </p>
 
-<p align="center">Built for the <strong>1-Man Army</strong> — one founder with the leverage of a self-evolving organization.</p>
+<p align="center">Built for the <strong>1-Man Army</strong> — one founder with the leverage of a high-scale organization.</p>
 
 ---
 
@@ -21,21 +21,21 @@
 Galyarder Framework is the underlying **Logic Engine** designed to power the next generation of autonomous entities. It provides the "brain" for AI agents running on local servers, VPS, or distributed cloud infrastructure.
 
 ### The Galyarder Triad:
-1.  **[Galyarder Agent](https://galyarderlabs.app/agent)**: The **Entity**. Self-evolving digital personas with recursive long-term memory, stable visual identity, and universal presence (Telegram, Discord, WhatsApp).
-2.  **[Galyarder HQ](https://galyarderlabs.app/hq)**: The **Control Plane**. A master governance layer for orchestrating swarms, monitoring mission queues, and maintaining systemic sovereignty.
+1.  **[Galyarder Agent](https://galyarderlabs.app/agent)**: The **Entity**. Digital personas with recursive long-term memory, stable visual identity, and universal presence (Telegram, Discord, WhatsApp).
+2.  **[Galyarder HQ](https://galyarderlabs.app/hq)**: The **Control Plane**. A master governance layer for orchestrating swarms, monitoring mission queues, and maintaining operational control.
 3.  **Galyarder Framework**: The **Intelligence**. A suite of 40+ specialized logic engines and 130+ elite-level SOPs that execute complex missions with deterministic precision.
 
 ---
 
 ## Mission Orchestration: Humans 3.0 Protocol
 
-Galyarder Framework facilitates **Autonomous Goal Integration (AGI)**. This protocol enables a self-evolving system to take a founder's high-level vision and independently orchestrate the entire development, security, and distribution lifecycle.
+Galyarder Framework facilitates **Autonomous Goal Integration (AGI)**. This protocol enables a system to take a founder's high-level vision and independently orchestrate the entire development, security, and distribution lifecycle.
 
 ### The AGI Lifecycle:
 1.  **Intent Extraction**: Distilling business goals into project-scoped Linear tickets and tactical PRDs.
-2.  **Deterministic Blueprinting**: System design via formal verification and Vertical Slice (Tracer Bullet) implementation plans.
+2.  **Architectural Determinism**: System design via formal verification and Vertical Slice (Tracer Bullet) implementation plans.
 3.  **Execution Factory**: Clinical implementation via strict Test-Driven Development (TDD) and high-fidelity design system enforcement.
-4.  **Operational Auditing**: Automated live-environment verification (BrowserOS) and zero-trust security hardening.
+4.  **Operational Auditing**: Automated live-environment verification (BrowserOS) and professional security hardening.
 5.  **Autonomous Distribution**: Programmatic marketing generation (Remotion) and behavioral-targeted market deployment.
 
 ---
@@ -97,7 +97,7 @@ The framework enforces rigid adherence to the Karpathy Principles to eliminate s
 
 - **Think Before Coding**: Mandatory `sequentialthinking` and `context7` MCP loops before any implementation.
 - **Simplicity First**: Minimum code to solve the immediate problem. Zero speculative abstractions.
-- **Surgical Changes**: Touch only what is necessary. Perfect alignment with existing conventions.
+- **Surgical Changes**: Touch only what is necessary. Perfect alignment with existing infrastructure and conventions.
 - **Goal-Driven Execution**: Empirical verification via a tests-first methodology.
 
 ---
@@ -109,7 +109,7 @@ Galyarder Framework is organized into **8 High-Integrity Silos**, each acting as
 - **Executive**: Strategic oversight and master orchestration.
 - **Engineering**: Deterministic TDD factory and implementation.
 - **Growth**: Behavioral arbitrage, marketing engineering, and design systems.
-- **Security**: Zero-trust auditing and advanced offensive security.
+- **Security**: Professional auditing and advanced offensive security.
 - **Product**: Roadmap integrity and PRD extraction.
 - **Infrastructure**: Reliability physics and automated deployment.
 - **Legal-Finance**: Regulatory compliance and token FinOps.

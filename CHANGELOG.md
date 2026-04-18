@@ -13,7 +13,7 @@ All notable changes to Galyarder Framework will be documented in this file.
   - `galyarder-cfo-coo`: Token FinOps, regulatory arbitrage (GDPR/ISO 42001), and antifragility models.
 - **The Obsidian Loop**: Established mandatory durable reporting infrastructure. All tasks now conclude with a persistent markdown artifact in `docs/departments/`.
 - **Advanced Multi-Platform Engine**: Refactored `scripts/convert.sh` and `scripts/install.sh` to provide high-fidelity integration for 12+ tools (Cursor, Aider, Windsurf, OpenCode, Claude Code, etc.).
-- **Company Scaffolder**: Added `scripts/scaffold-company.sh` to automate the initialization of galactic command center and seed departmental templates.
+- **Company Scaffolder**: Added `scripts/scaffold-company.sh` to automate the initialization of professional command center and seed departmental templates.
 - **Sync Suite**: Integrated high-end synchronization scripts from elite-global standards: `sync-gemini-skills.py`, `sync-codex-skills.py`, `sync-hermes-skills.py`, and `generate-docs.py`.
 
 ### Changed
