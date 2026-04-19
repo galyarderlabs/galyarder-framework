@@ -1,162 +1,46 @@
-# CROSS-CONTEXT: Also read AGENTS.md (Org Chart) and GEMINI.md (Commands) for full Galyarder Framework functionality.
+# Claude Code: Implementation Protocol
 
-# Galyarder Framework Workforce: SOPs & Skill Matrix
+This guide defines the high-integrity integration of Galyarder Framework within the **Claude Code** (Anthropic) environment.
 
-##  THE WORKFLOW CONSTITUTION (PHASE 1-5)
-1. **Discovery**: PRD & Business Intent.
-2. **Blueprint**: Architecture & Plan.md (Vertical Slices).
-3. **Factory**: TDD Implementation.
-4. **Gatekeeper**: QA (BrowserOS) & Security Audit.
-5. **Distribution**: Marketing, SEO & Video.
-
-###  Technical Integrity: The Karpathy Principles
-- **Think Before Coding**: State assumptions explicitly. Surface tradeoffs. Push back on complexity. Stop when confused.
-- **Simplicity First**: Minimum code to solve the immediate problem. No speculative abstractions.
-- **Surgical Changes**: Touch ONLY what is necessary. Match existing style. No drive-by refactoring.
-- **Goal-Driven Execution**: Define success criteria via tests-first. Loop until verified. Every change traces to the request.
-
-##  SKILL DIRECTORY
-- **@ab-test-setup**: Structured guide for setting up A/B tests with mandatory gates for hypothesis, metrics, and execution readiness.
-- **@accelerator-application**: Accelerator Application Specialist. Use to shortlist startup programs, draft applications, prepare founder videos, and rehearse accelerator interviews with a disciplined founder narrative.
-- **@accounting**: Use this skill when the user needs to set up bookkeeping, track revenue and expenses, prepare for taxes, choose accounting software, understand SaaS revenue recognition, or manage the financial operations of their bootstrapped business. Covers bookkeeping setup, tax preparation, accounting tools, and financial hygiene for the 1-Man Army.
-- **@adversarial-reviewer**: Adversarial code review that breaks the self-review monoculture. Use when you want a genuinely critical review of recent changes, before merging a PR, or when you suspect Claude is being too agreeable about code quality. Forces perspective shifts through hostile reviewer personas that catch blind spots the author's mental model shares with the reviewer.
-- **@analytics-architect**: Data Infrastructure & Tracking Specialist. Use this agent to design event schemas, audit PostHog/Segment implementations, and ensure every feature has measurable KPIs. It focuses on the "Measure" part of the Build-Measure-Learn loop.
-- **@analytics-tracking**: Design, audit, and improve analytics tracking systems that produce reliable, decision-ready data.
-- **@architect**: Software architecture specialist for system design, scalability, and technical decision-making. Use PROACTIVELY when planning new features, refactoring large systems, or making architectural decisions.
-- **@audit-website**: Audit websites for SEO, performance, security, technical, content, and 15 other issue cateories with 230+ rules using the squirrelscan CLI. Returns LLM-optimized reports with health scores, broken links, meta tag analysis, and actionable recommendations. Use to discover and asses website or webapp issues and health.
-- **@board-deck-builder**: Multi-agent board meeting protocol for strategic decisions. Runs a structured 6-phase deliberation: context loading, independent C-suite contributions (isolated, no cross-pollination), critic analysis, synthesis, founder review, and decision extraction. Use when the user invokes /cs:board, calls a board meeting, or wants structured multi-perspective executive deliberation on a strategic question.
-- **@board-update**: Investor And Board Communication Specialist. Use to draft monthly investor updates, quarterly board decks, and high-signal stakeholder communications that surface wins, misses, risks, and asks clearly.
-- **@brainstorming**: You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.
-- **@build-error-resolver**: Build and TypeScript error resolution specialist. Use PROACTIVELY when build fails or type errors occur. Fixes build/type errors only with minimal diffs, no architectural edits. Focuses on getting the build green quickly.
-- **@campaign-analytics**: Analyzes campaign performance with multi-touch attribution, funnel conversion analysis, and ROI calculation for marketing optimization. Use when analyzing marketing campaigns, ad performance, attribution models, conversion rates, or calculating marketing ROI, ROAS, CPA, and campaign metrics across channels.
-- **@cloud-security**: Use when assessing cloud infrastructure for security misconfigurations, IAM privilege escalation paths, S3 public exposure, open security group rules, or IaC security gaps. Covers AWS, Azure, and GCP posture assessment with MITRE ATT&CK mapping.
-- **@code-review-expert**: Expert code review of current git changes with a senior engineer lens. Detects SOLID violations, security risks, and proposes actionable improvements.
-- **@code-reviewer**: Expert code review specialist. Proactively reviews code for quality, security, and maintainability. Use immediately after writing or modifying code. MUST BE USED for all code changes.
-- **@competitor-alternatives**: You are an expert in creating competitor comparison and alternative pages. Your goal is to build pages that rank for competitive search terms, provide genuine value to evaluators, and position your product effectively.
-- **@content-creator**: Deprecated redirect skill that routes legacy 'content creator' requests to the correct specialist. Use when a user invokes 'content creator', asks to write a blog post, article, guide, or brand voice analysis (routes to content-production), or asks to plan content, build a topic cluster, or create a content calendar (routes to content-strategy). Does not handle requests directly  identifies user intent and redirects to content-production for writing/SEO/brand-voice tasks or content-strategy for planning tasks.
-- **@content-strategy**: Plan a content strategy, topic clusters, editorial roadmap, and content mix for traffic, authority, and lead generation. Use when deciding what to publish, what topics to prioritize, or how to structure a content program.
-- **@contract-and-proposal-writer**: >
-- **@contract-review**: Analyze and red-flag contracts systematically, identifying risks, unfavorable terms, and negotiation opportunities
-- **@conversion-engineer**: |
-- **@copy-editing**: You are an expert copy editor specializing in marketing and conversion copy. Your goal is to systematically improve existing copy through focused editing passes while preserving the core message.
-- **@copywriting**: Write rigorous, conversion-focused marketing copy for landing pages and emails. Enforces brief confirmation and strict no-fabrication rules.
-- **@cyber-intel**: External Threat & Intel Specialist. Use this agent for OSINT, monitoring for data leaks, and mapping the external attack surface. It provides strategic intelligence on who might be targeting the platform and where brand vulnerabilities exist.
-- **@data-room**: Due Diligence Data Room Specialist. Use to prepare, audit, and organize fundraising materials for investor diligence before or after a term sheet.
-- **@decision-logger**: Two-layer memory architecture for board meeting decisions. Manages raw transcripts (Layer 1) and approved decisions (Layer 2). Use when logging decisions after a board meeting, reviewing past decisions with /cs:decisions, or checking overdue action items with /cs:review. Invoked automatically by the board-meeting skill after Phase 5 founder approval.
-- **@defuddle**: Extract clean markdown content from web pages using Defuddle CLI, removing clutter and navigation to save tokens. Use instead of WebFetch when the user provides a URL to read or analyze, for online documentation, articles, blog posts, or any standard web page. Do NOT use for URLs ending in .md  those are already markdown, use WebFetch directly.
-- **@devops-engineer**: Infrastructure, Deployment, and CI/CD specialist. Use PROACTIVELY when a feature is ready to merge to handle deployments (Vercel, AWS, Docker), infrastructure-as-code (Terraform), and pipeline automation (GitHub Actions).
-- **@dispatching-parallel-agents**: Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies
-- **@doc-updater**: Documentation and codemap specialist. Use PROACTIVELY for updating codemaps and documentation. Runs /update-codemaps and /update-docs, generates docs/CODEMAPS/*, updates READMEs and guides.
-- **@e2e-runner**: End-to-end testing specialist using Playwright. Use PROACTIVELY for generating, maintaining, and running E2E tests. Manages test journeys, quarantines flaky tests, uploads artifacts (screenshots, videos, traces), and ensures critical user flows work.
-- **@elite-developer**: Principal Full-Stack Engineer for surgical implementation, strict TDD, complex debugging, and UI construction. Enforces the 1-Man Army pipeline and high-rigor engineering standards. This agent contains the full knowledge of TDD, Systematic Debugging, Build Error Resolution, and Refactoring.
-- **@email-marketing-bible**: >
-- **@eradicating-malware-from-infected-systems**: Systematically remove malware, backdoors, and attacker persistence mechanisms from infected systems while ensuring complete eradication and preventing re-infection.
-- **@executing-active-directory-attack-simulation**: >
-- **@executing-phishing-simulation-campaign**: >
-- **@executing-plans**: Use when you have a written implementation plan to execute in a separate session with review checkpoints
-- **@executing-red-team-engagement-planning**: Red team engagement planning is the foundational phase that defines scope, objectives, rules of engagement (ROE), threat model selection, and operational timelines before any offensive testing begins.
-- **@executing-red-team-exercise**: >
-- **@experimentation-engineer**: Hypothesis & Experimentation Specialist. Use this agent to design A/B tests, optimize form completion rates, and manage the experiment lifecycle. It ensures that UI changes are driven by statistical evidence, not opinions.
-- **@finance-based-pricing-advisor**: Evaluate pricing changes using ARPU, conversion, churn risk, NRR, and payback. Use when deciding whether a pricing move should ship.
-- **@financial-analyst**: Performs financial ratio analysis, DCF valuation, budget variance analysis, and rolling forecast construction for strategic decision-making. Use when analyzing financial statements, building valuation models, assessing budget variances, or constructing financial projections and forecasts. Also applicable when users mention financial modeling, cash flow analysis, company valuation, financial projections, or spreadsheet analysis.
-- **@finishing-a-development-branch**: Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides completion of development work by presenting structured options for merge, PR, or cleanup
-- **@finops-manager**: Finance & Cloud Cost Specialist. Use this agent to optimize cloud spend (Vercel/AWS), design value-based pricing models, and manage the burn rate. It ensures the 1-Man Army remains profitable and financially sustainable.
-- **@founder-context**: Founder Operating Context. Use to create or update the canonical founder/startup context document so every fundraising, growth, product, and recruiting workflow runs on concrete company facts instead of generic assumptions.
-- **@founder-thought-leadership**: Founder Brand And Thought Leadership Specialist. Use to define founder IP territory, create content systems for X and LinkedIn, and turn founder experience into audience, distribution, and credibility.
-- **@fundraising-email**: Investor Email Specialist. Use to write fundraising outreach, warm intro blurbs, follow-ups, investor updates, and close-the-loop emails with founder-grade brevity and specificity.
-- **@galyarder-specialist**: |
-- **@gdpr-ccpa-privacy-auditor**: Audits web applications to ensure declared privacy policies match actual technical data collection practices. Use to identify discrepancies in cookie usage, tracking scripts, and user data handling.
-- **@gdpr-compliance**: Implement GDPR data protection requirements. Configure consent management, data subject rights, and privacy by design. Use when processing EU personal data.
-- **@generating-threat-intelligence-reports**: >
-- **@growth-engineer**: Engineering-as-Marketing Specialist. Use this agent to build viral referral loops, free utility tools for lead generation, and programmatic SEO pages at scale. It focuses on the "Inbound" part of the 1-Man Army pipeline.
-- **@growth-strategist**: |
-- **@intercepting-mobile-traffic-with-burpsuite**: >
-- **@interface-designer**: |
-- **@investigating-phishing-email-incident**: >
-- **@investor-research**: Investor Targeting Specialist. Use to identify, qualify, and tier investors for a round based on stage, sector, geography, check size, and portfolio fit.
-- **@iso-42001-ai-governance**: AI governance audit using ISO 42001 standard. Ensures AI systems are developed and deployed responsibly with risk management, ethics, security, transparency, and compliance best practices.
-- **@json-canvas**: Create and edit JSON Canvas files (.canvas) with nodes, edges, groups, and connections. Use when working with .canvas files, creating visual canvases, mind maps, flowcharts, or when the user mentions Canvas files in Obsidian.
-- **@launch-strategy**: You are an expert in SaaS product launches and feature announcements. Your goal is to help users plan launches that build momentum, capture attention, and convert interest into users.
-- **@lead-scoring**: Lead Qualification And Scoring Specialist. Use to define ICP filters, score inbound and outbound leads, and improve pipeline focus for a founder-led sales motion.
-- **@legal-advisor**: Draft privacy policies, terms of service, disclaimers, and legal notices. Creates GDPR-compliant texts, cookie policies, and data processing agreements.
-- **@legal-counsel**: Legal & Compliance Specialist. Use this agent to generate TOS/Privacy policies, audit GDPR/CCPA compliance, review open-source licenses, and ensure AI governance (ISO 42001). It protects the 1-Man Army from legal liabilities.
-- **@legal-tos-privacy**: Create bulletproof Terms of Service and Privacy Policy documents for SaaS applications. Infers company information from codebase/marketing site, conducts comprehensive audits, drafts documents, then asks user ONLY for missing details at the end. Minimizes user interaction. Use when the user needs to draft, review, or update legal documents (ToS, Terms of Service, Privacy Policy, legal pages). Triggers on requests for legal documents, terms drafting, privacy policy creation, "cover our bases legally", liability protection, or legal compliance for software products.
-- **@mapping-mitre-attack-techniques**: >
-- **@market-research**: Market Research Specialist. Use to analyze target markets, ICP segments, demand patterns, competitive terrain, and strategic whitespace for founder decisions.
-- **@marketing-demand-acquisition**: Creates demand generation campaigns, optimizes paid ad spend across LinkedIn, Google, and Meta, develops SEO strategies, and structures partnership programs for Series A+ startups scaling internationally. Use when planning marketing strategy, growth marketing, advertising campaigns, PPC optimization, lead generation, pipeline generation, or startup marketing budgets. Covers multi-channel acquisition (Google Ads, LinkedIn Ads, Meta Ads), CAC analysis, MQL/SQL workflows, attribution modeling, technical SEO, and co-marketing partnerships for hybrid PLG/Sales-Led motions in EU/US/Canada markets.
-- **@marketing-ideas**: Provide proven marketing strategies and growth ideas for SaaS and software products, prioritized using a marketing feasibility scoring system.
-- **@marketing-psychology**: Apply behavioral science and mental models to revenue (cuan) decisions, prioritized using a psychological leverage and feasibility scoring system.
-- **@monitoring-darkweb-sources**: >
-- **@obsidian-bases**: Create and edit Obsidian Bases (.base files) with views, filters, formulas, and summaries. Use when working with .base files, creating database-like views of notes, or when the user mentions Bases, table views, card views, filters, or formulas in Obsidian.
-- **@obsidian-cli**: Interact with Obsidian vaults using the Obsidian CLI to read, create, search, and manage notes, tasks, properties, and more. Also supports plugin and theme development with commands to reload plugins, run JavaScript, capture errors, take screenshots, and inspect the DOM. Use when the user asks to interact with their Obsidian vault, manage notes, search vault content, perform vault operations from the command line, or develop and debug Obsidian plugins and themes.
-- **@obsidian-markdown**: Create and edit Obsidian Flavored Markdown with wikilinks, embeds, callouts, properties, and other Obsidian-specific syntax. Use when working with .md files in Obsidian, or when the user mentions wikilinks, callouts, frontmatter, tags, embeds, or Obsidian notes.
-- **@onboarding-cro**: You are an expert in user onboarding and activation. Your goal is to help users reach their \"aha moment\" as quickly as possible and establish habits that lead to long-term retention.
-- **@open-source-license**: Open Source License guidance, selection, compliance review, and drafting. Use this skill when users ask about choosing open source licenses, checking license compatibility, reviewing projects for OSS compliance, generating LICENSE/NOTICE files, or understanding specific license terms. Triggers include questions about MIT, Apache, GPL, BSD, LGPL, AGPL, copyleft, permissive licenses, license compatibility, SPDX identifiers, or any OSS licensing topic.
-- **@page-cro**: Analyze and optimize individual pages for conversion performance.
-- **@paywall-upgrade-cro**: You are an expert in in-app paywalls and upgrade flows. Your goal is to convert free users to paid, or upgrade users to higher tiers, at moments when they've experienced enough value to justify the commitment.
-- **@perseus**: Advanced Offensive Security & Pentesting Specialist. Use this agent for red teaming, penetration testing, and identifying complex security flaws. It leverages specialized security tools for XSS, SQLi, JWT, OAuth2, and network-level vulnerability testing.
-- **@pitch-deck**: Fundraising Pitch Deck Specialist. Use to build, review, or restructure a founder deck for pre-seed through Series A, with a clear narrative arc, investor-grade slide logic, and explicit asks.
-- **@planner**: Expert planning specialist for complex features and refactoring. Use PROACTIVELY when users request feature implementation, architectural changes, or complex refactoring. Automatically activated for planning tasks.
-- **@playwright-pro**: Production-grade Playwright testing toolkit. Use when the user mentions Playwright tests, end-to-end testing, browser automation, fixing flaky tests, test migration, CI/CD testing, or test suites. Generate tests, fix flaky failures, migrate from Cypress/Selenium, sync with TestRail, run on BrowserStack. 55 templates, 3 agents, smart reporting.
-- **@playwright-pro/skills/browserstack**: >-
-- **@playwright-pro/skills/coverage**: >-
-- **@playwright-pro/skills/fix**: >-
-- **@playwright-pro/skills/generate**: >-
-- **@playwright-pro/skills/init**: >-
-- **@playwright-pro/skills/migrate**: >-
-- **@playwright-pro/skills/report**: >-
-- **@playwright-pro/skills/review**: >-
-- **@playwright-pro/skills/testrail**: >-
-- **@pr-review-expert**: Use when the user asks to review pull requests, analyze code changes, check for security issues in PRs, or assess code quality of diffs.
-- **@prd-to-issues**: Break a PRD into independently-grabbable GitHub issues using tracer-bullet vertical slices. Use when user wants to convert a PRD to issues, create implementation tickets, or break down a PRD into work items.
-- **@prd-to-plan**: Turn a PRD into a multi-phase implementation plan using tracer-bullet vertical slices, saved as a local Markdown file in ./plans/. Use when user wants to break down a PRD, create an implementation plan, plan phases from a PRD, or mentions "tracer bullets".
-- **@pricing-strategy**: Design pricing, packaging, and monetization strategies based on value, customer willingness to pay, and growth objectives.
-- **@product-manager**: Product Management specialist. Focuses on ROI, feature prioritization, Linear ticket management, and ensuring engineering efforts directly impact user acquisition or revenue. Use PROACTIVELY before any code is written to convert PRDs into actionable Linear Epics and Issues.
-- **@product-marketing-context**: Create or update a reusable product marketing context document with positioning, audience, ICP, use cases, and messaging. Use at the start of a project to avoid repeating core marketing context across tasks.
-- **@profiling-threat-actor-groups**: >
-- **@programmatic-seo**: Design and evaluate programmatic SEO strategies for creating SEO-driven pages at scale using templates and structured data.
-- **@qa-automation-engineer**: |
-- **@receiving-code-review**: Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation
-- **@recovering-deleted-files-with-photorec**: Recover deleted files from disk images and storage media using PhotoRec's file signature-based carving engine regardless of file system damage.
-- **@recovering-from-ransomware-attack**: >
-- **@refactor-cleaner**: Dead code cleanup and consolidation specialist. Use PROACTIVELY for removing unused code, duplicates, and refactoring. Runs analysis tools (knip, depcheck, ts-prune) to identify dead code and safely removes it.
-- **@referral-program**: You are an expert in viral growth and referral marketing with access to referral program data and third-party tools. Your goal is to help design and optimize programs that turn customers into Revenue (Cuan) engines.
-- **@release-manager**: Release Orchestration & Versioning Specialist. Use this agent to manage SemVer, generate changelogs, coordinate with the remotion-engineer for release videos, and prepare the "hype" for social distribution. It ensures every deployment is a "moment".
-- **@remotion-best-practices**: Best practices for Remotion - Video creation in React
-- **@remotion-engineer**: Remotion specialist for programmatic video generation using React. Use PROACTIVELY when the user wants to create, debug, or optimize Remotion video projects. Specializes in frame-perfect animations, physics-based motion, and FFmpeg rendering optimization.
-- **@requesting-code-review**: Use when completing tasks, implementing major features, or before merging to verify work meets requirements
-- **@retention-specialist**: LTV & Engagement Specialist. Use this agent to design email sequences, improve the first 5 minutes of the product (onboarding), and apply behavioral psychology to increase retention. It focuses on the "Active Users" part of the 1-Man Army pipeline.
-- **@revenue-architect**: |
-- **@reverse-engineering-malware-with-ghidra**: >
-- **@runbook-generator**: Runbook Generator
-- **@saas-finops-optimization**: Optimize cloud and AI costs for modern SaaS stacks (Vercel, Supabase, Neon, Stripe, and AI APIs). Covers token efficiency, serverless database scaling, edge function optimization, and burn rate monitoring. Use when planning infrastructure, investigating high bills, or auditing API usage.
-- **@schema-markup**: Design, validate, and optimize schema.org structured data for eligibility, correctness, and measurable SEO impact.
-- **@security-guardian**: Security vulnerability detection and remediation specialist. Audits code for OWASP Top 10, IDOR, SSRF, and injection. Enforces zero trust and secure data handling for financial and AI platforms. Contains full knowledge of security reviewer and audit checklists.
-- **@security-reviewer**: Security vulnerability detection and remediation specialist. Use PROACTIVELY after writing code that handles user input, authentication, API endpoints, or sensitive data. Flags secrets, SSRF, injection, unsafe crypto, and OWASP Top 10 vulnerabilities.
-- **@seo-audit**: Diagnose and audit SEO issues affecting crawlability, indexation, rankings, and organic performance.
-- **@signup-flow-cro**: You are an expert in optimizing signup and registration flows. Your goal is to reduce friction, increase completion rates, and set users up for successful activation.
-- **@social-content**: You are an expert social media strategist with direct access to a scheduling platform that publishes to all major social networks. Your goal is to help create engaging content that builds audience, drives engagement, and supports business goals.
-- **@social-strategist**: |
-- **@subagent-driven-development**: Use when executing implementation plans with independent tasks in the current session
-- **@super-architect**: Software architecture specialist for system design, scalability, and technical decision-making. Produces ADRs, Vertical Slice plans, and enforces deep module design for the 1-Man Army pipeline. Contains the full knowledge of Architecture Patterns, Systems Design, and Planning.
-- **@support-lead**: User Education & Support Specialist. Use this agent to generate FAQs, troubleshoot from code logic, and manage documentation as a first line of defense. It turns technical complexity into accessible guides for users.
-- **@systematic-debugging**: Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes
-- **@tdd-guide**: Test-Driven Development specialist enforcing write-tests-first methodology. Use PROACTIVELY when writing new features, fixing bugs, or refactoring code. Ensures 80%+ test coverage.
-- **@test-driven-development**: Use when implementing any feature or bugfix, before writing implementation code
-- **@testing-for-xss-vulnerabilities-with-burpsuite**: Identifying and validating cross-site scripting vulnerabilities using Burp Suite's scanner, intruder, and repeater tools during authorized security assessments.
-- **@tracking-threat-actor-infrastructure**: Threat actor infrastructure tracking involves monitoring and mapping adversary-controlled assets including command-and-control (C2) servers, phishing domains, exploit kit hosts, bulletproof hosting, a
-- **@ubiquitous-language**: Extract a DDD-style ubiquitous language glossary from the current conversation, flagging ambiguities and proposing canonical terms. Saves to UBIQUITOUS_LANGUAGE.md. Use when user wants to define domain terms, build a glossary, harden terminology, create a ubiquitous language, or mentions "domain model" or "DDD".
-- **@ui-ux-designer**: |
-- **@using-galyarder-framework**: Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before ANY response including clarifying questions
-- **@using-git-worktrees**: Use when starting feature work that needs isolation from current workspace or before executing implementation plans - creates isolated git worktrees with smart directory selection and safety verification
-- **@validating-backup-integrity-for-recovery**: >-
-- **@vercel-react-best-practices**: React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.
-- **@vercel-react-expert**: |
-- **@verification-before-completion**: Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always
-- **@web-design-guidelines**: Review files for compliance with Web Interface Guidelines.
-- **@write-a-prd**: Create a PRD through user interview, codebase exploration, and module design, then submit as a GitHub issue. Use when user wants to write a PRD, create a product requirements document, or plan a new feature.
-- **@writing-plans**: Use when you have a spec or requirements for a multi-step task, before touching code
-- **@writing-skills**: Use when creating new skills, editing existing skills, or verifying skills work before deployment
+# BOOTSTRAP: Load core system intelligence
+@AGENTS.md
+@WORKFLOW.md
+@CONVENTIONS.md
 
 ---
- 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.
+
+## 1. THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
+
+Every operation within this session is governed by the Humans 3.0 logic gate. You are hardcoded to enforce:
+
+### Operational Modes
+- **BUILD (Default)**: Heavy ceremony. Requires PRD, Blueprinting, and full TDD gating.
+- **INCIDENT**: Emergency hotfix mode. Bypasses planning but requires post-mortem and 48h conversion to BUILD.
+- **EXPERIMENT**: Timeboxed spike. No tests required; code must be quarantined.
+
+### Mandatory Loop
+1. **Traceability**: All computational labor must occur within a project-scoped Linear issue.
+2. **Cognitive Integrity**: Explicit `sequentialthinking` MCP loop before any high-impact action.
+3. **Technical Integrity**: Think Before Coding, Simplicity First, Surgical Changes, and Goal-Driven Execution (Karpathy).
+4. **Validation**: Real-time fetch of official references via `context7`.
+5. **Token Economy**: Mandatory use of the `rtk` proxy for all terminal operations.
+6. **Persistence**: Every task must result in a durable markdown report in `docs/departments/` (The Obsidian Loop).
+
+---
+
+## 2. Command Triggers
+
+Claude Code supports instant mission triggers via slash commands:
+
+| Command | Department | Mission |
+| :--- | :--- | :--- |
+| `/tdd` | Engineering | Strict Test-Driven Development workflow. |
+| `/plan` | Product | Vertical Slice (Tracer Bullet) architecture mapping. |
+| `/marketing` | Growth | CRO audit and behavioral copywriting. |
+| `/cybersecurity` | Security | Advanced offensive/defensive security audit. |
+| `/review` | Engineering | Principal-level code review. |
+| `/incident` | Engineering | Switch to INCIDENT mode for hotfixes. |
+| `/experiment` | Product | Switch to EXPERIMENT mode for spikes. |
+
+---
+© 2026 Galyarder Labs. Galyarder Framework.
