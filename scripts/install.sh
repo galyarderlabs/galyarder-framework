@@ -119,7 +119,7 @@ for t in $TOOLS; do
                 cp -R "$item" "${DEST}/"
             done
             ok "Installed Gemini skills to ${DEST}."
-            warn "Gemini CLI extension install only appends GEMINI.md context. External framework agents do not appear in /agents list unless Gemini adds native agent registry support." ;;
+            ;;
         opencode)
             DEST="${HOME}/.opencode/plugins"
             mkdir -p "$DEST"

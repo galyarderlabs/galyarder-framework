@@ -1,1 +1,0 @@
-../../Security/commands/cybersecurity.md

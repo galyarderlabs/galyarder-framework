@@ -1,1 +1,0 @@
-../../../Growth/design/design-md-apple.md

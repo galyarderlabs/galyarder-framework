@@ -1,1 +1,0 @@
-../../integrations/gemini/super-architect.md

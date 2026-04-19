@@ -1,40 +1,18 @@
 {
   "name": "galyarder-framework",
   "description": "Complete Galyarder Framework bundle with all 8 departments, agents, commands, personas, and skills.",
-  "version": "1.8.5",
+  "version": "1.8.6",
   "author": "Galyarder Labs",
   "personas": [
-    "./Executive/personas/"
+    "./personas/"
   ],
   "agents": [
-    "./Executive/personas/",
-    "./Executive/agents/",
-    "./Engineering/agents/",
-    "./Growth/agents/",
-    "./Security/agents/",
-    "./Product/agents/",
-    "./Infrastructure/agents/",
-    "./Legal-Finance/agents/",
-    "./Knowledge/agents/"
+    "./agents/"
   ],
   "skills": [
-    "./Executive/skills/",
-    "./Engineering/skills/",
-    "./Growth/skills/",
-    "./Growth/design/",
-    "./Security/skills/",
-    "./Product/skills/",
-    "./Infrastructure/skills/",
-    "./Legal-Finance/skills/",
-    "./Knowledge/skills/"
+    "./skills/"
   ],
   "commands": [
-    "./Engineering/commands/",
-    "./Growth/commands/",
-    "./Security/commands/",
-    "./Product/commands/",
-    "./Infrastructure/commands/",
-    "./Legal-Finance/commands/",
-    "./Knowledge/commands/"
+    "./commands/"
   ]
 }

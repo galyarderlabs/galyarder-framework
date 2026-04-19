@@ -1,1 +1,0 @@
-../../Growth/agents/growth-strategist.md

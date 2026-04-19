@@ -2,6 +2,18 @@
 
 All notable changes to Galyarder Framework will be documented in this file.
 
+## [1.8.6] - 2026-04-19
+### Added
+- **Canonical Root Runtime**: `agents/`, `skills/`, `commands/`, and `personas/` are now real committed runtime directories instead of root symlink shims.
+- **Full Bundle Root Surface**: `.marketplace/full/` now carries the same real root runtime layout so all-in-one marketplace installs expose the same asset structure as the repo root.
+### Changed
+- **Runtime Ownership**: Host integrations now build from the root runtime surface first; department silos remain the source content for docs/reporting and surface generation, not the direct install shape.
+- **Design Packaging**: Growth design libraries now ship as first-class skill directories under `skills/design-md-*/SKILL.md` and flow through generated integrations the same way as other skills.
+- **Manifest Routing**: Full bundle manifests now point at root `./agents/`, `./skills/`, `./commands/`, and `./personas/` surfaces instead of scattered department paths.
+### Fixed
+- **GitHub Extension Packaging**: Installers that scan fixed root paths now receive actual directories from the repository archive instead of repo-local symlink tricks that only worked after local regeneration.
+- **Cross-Tool Consistency**: Gemini, Codex, Cursor, Claude bundle exports, and generated integrations now consume the same canonical runtime shape.
+
 ## [1.8.5] - 2026-04-19
 ### Added
 - **Root Compatibility Surface**: Restored root-level `agents/`, `skills/`, `commands/`, and `personas/` paths as generated symlink surfaces so extension hosts that scan fixed root directories can discover framework assets again.

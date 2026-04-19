@@ -1,1 +1,0 @@
-../../integrations/gemini/code-reviewer.md

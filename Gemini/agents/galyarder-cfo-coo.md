@@ -1,1 +1,0 @@
-../../integrations/gemini/galyarder-cfo-coo.md

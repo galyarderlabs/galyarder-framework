@@ -1,1 +1,0 @@
-../../integrations/gemini/finops-manager.md

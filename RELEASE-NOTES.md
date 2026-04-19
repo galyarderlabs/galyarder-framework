@@ -1,5 +1,23 @@
 # Release Notes - Galyarder Framework
 
+## [v1.8.6] - 2026-04-19
+### Canonical Root Runtime
+This patch finishes the packaging refactor: runtime assets now live in real root directories that can ship directly from GitHub archives, while department silos remain the documentation and reporting structure around them.
+
+#### Highlights
+- **Real Root `agents/skills/commands/personas`**: Replaced symlink-only compatibility shims with actual committed runtime directories.
+- **Design-as-Skill Packaging**: Growth design assets now ship through `skills/design-md-*/SKILL.md`, so hosts see them as normal skills instead of orphan root markdown files.
+- **Full Bundle Alignment**: `.marketplace/full` now exposes the same root runtime layout and manifest routing as the repo root.
+- **Canonical Build Flow**: Conversion and bundle generators now read from the root runtime surface, so Gemini, Codex, Cursor, Claude bundles, and downstream integrations stay in sync.
+
+#### Verification
+```bash
+bash scripts/convert.sh --tool all
+bash scripts/smoke.sh
+```
+
+---
+
 ## [v1.8.5] - 2026-04-19
 ### Root Extension Surface
 This patch restores the fixed root directory layout that extension hosts like Gemini CLI expect while keeping the department-based source structure intact underneath.

@@ -1,1 +1,0 @@
-../../integrations/gemini/graph.md

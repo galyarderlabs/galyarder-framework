@@ -1,1 +1,0 @@
-../../integrations/gemini/vercel-react-expert.md

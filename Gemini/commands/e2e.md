@@ -1,1 +1,0 @@
-../../integrations/gemini/e2e.md

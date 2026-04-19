@@ -1,0 +1,43 @@
+name: gdpr-ccpa-privacy-auditor
+version: 1.0.0
+description: Audits web applications to ensure declared privacy policies match actual technical data collection practices. Use to identify discrepancies in cookie usage, tracking scripts, and user data handling.
+inputs:
+  website_url:
+    type: string
+    description: The public URL of the application to scan.
+  policy_text:
+    type: string
+    description: The text of the privacy policy to analyze.
+  source_code_path:
+    type: string
+    description: Path to source code for backend analysis.
+outputs:
+  alignment_report:
+    type: object
+    properties:
+      discrepancies:
+        type: array
+        items:
+          type: string
+      detected_trackers:
+        type: array
+        items:
+          type: string
+capabilities:
+  - Cookie and script crawling.
+  - Policy claim extraction via NLP.
+  - Cross-referencing technical behavior with legal claims.
+constraints:
+  - Server-side tracking cannot be detected without source code.
+  - Reflects point-in-time compliance.
+security:
+  - Scans public elements only.
+  - Does not bypass security or access user data.
+examples:
+  - input:
+      website_url: "https://example.com"
+      policy_text: "No tracking cookies used."
+    output:
+      alignment_report:
+        discrepancies: ["Policy claims no tracking, but Google Analytics found."]
+        detected_trackers: ["Google Analytics"]

@@ -257,16 +257,19 @@ if ! is_valid_tool "$TOOL"; then err "Invalid --tool: ${TOOL}"; usage; exit 1; f
 TOOLS="antigravity cursor kilocode windsurf opencode augment claude-code codex gemini openclaw hermes galyarder-agent"
 [[ "$TOOL" != "all" ]] && TOOLS="$TOOL"
 
+python3 "${SCRIPT_DIR}/build_root_extension_surface.py"
+python3 "${SCRIPT_DIR}/build_root_extension_surface.py" --output-root "${REPO_ROOT}/.marketplace/full"
+
 SKILLS_TMP="$(mktemp)"
 ( cd "$REPO_ROOT"
-  # SURGICAL FIND: Search across all Department Directories
-  DEPT_DIRS="Executive Engineering Growth Security Product Infrastructure Legal-Finance Knowledge"
-  for d in $DEPT_DIRS; do
+  for d in agents personas commands; do
     if [ -d "$d" ]; then
-        find "$d" -maxdepth 2 -type f -name "*.md" -not -path './.git/*' | sort
-        find "$d" -type f -name 'SKILL.md' -not -path '*/assets/*' -not -path '*/scripts/*' -not -path '*/references/*' -not -path './.git/*' | sort
+      find "$d" -maxdepth 1 -type f -name "*.md" -not -path './.git/*' | sort
     fi
   done
+  if [ -d "skills" ]; then
+    find "skills" -type f -name 'SKILL.md' -not -path '*/assets/*' -not -path '*/scripts/*' -not -path '*/references/*' -not -path './.git/*' | sort
+  fi
 ) | sort -u > "$SKILLS_TMP"
 
 for t in $TOOLS; do
@@ -342,7 +345,6 @@ fi
 
 if [[ "$OUT_BASE" == "${REPO_ROOT}/integrations" ]]; then
   python3 "${SCRIPT_DIR}/build_host_bundle.py"
-  python3 "${SCRIPT_DIR}/build_root_extension_surface.py"
 fi
 
 echo; info "Conversion summary"

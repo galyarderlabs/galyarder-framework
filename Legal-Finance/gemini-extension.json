@@ -1,7 +1,7 @@
 {
   "name": "galyarder-legal-finance",
   "description": "Legal-Finance Department for Galyarder Framework.",
-  "version": "1.8.3",
+  "version": "1.8.6",
   "agents": "./agents/",
   "skills": [
     "./skills/"

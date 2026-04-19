@@ -1,1 +1,0 @@
-../../Growth/commands/video.md

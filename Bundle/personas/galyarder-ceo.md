@@ -1,1 +1,0 @@
-../../Executive/personas/galyarder-ceo.md

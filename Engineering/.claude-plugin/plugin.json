@@ -1,7 +1,7 @@
 {
   "name": "galyarder-engineering",
   "description": "Engineering Department for Galyarder Framework. Includes specialized agents, skills, and tools.",
-  "version": "1.8.3",
+  "version": "1.8.6",
   "author": "Galyarder Labs",
   "agents": "./agents/",
   "skills": "./skills/",

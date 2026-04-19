@@ -1,1 +1,0 @@
-../../Legal-Finance/agents/legal-counsel.md

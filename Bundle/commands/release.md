@@ -1,1 +1,0 @@
-../../Infrastructure/commands/release.md

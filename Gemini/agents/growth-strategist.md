@@ -1,1 +1,0 @@
-../../integrations/gemini/growth-strategist.md

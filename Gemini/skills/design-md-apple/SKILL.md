@@ -1,1 +1,0 @@
-../../../integrations/gemini/design-md-apple.md

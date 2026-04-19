@@ -1,7 +1,7 @@
 {
   "name": "galyarder-executive",
   "description": "Executive Department for Galyarder Framework.",
-  "version": "1.8.3",
+  "version": "1.8.6",
   "personas": "./personas/",
   "agents": "./agents/",
   "skills": [

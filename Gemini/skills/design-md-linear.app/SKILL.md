@@ -1,1 +1,0 @@
-../../../integrations/gemini/design-md-linear.app.md

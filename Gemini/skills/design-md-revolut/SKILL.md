@@ -1,1 +1,0 @@
-../../../integrations/gemini/design-md-revolut.md

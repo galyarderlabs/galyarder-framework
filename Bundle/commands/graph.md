@@ -1,1 +1,0 @@
-../../Knowledge/commands/graph.md

@@ -1,1 +1,0 @@
-../../Engineering/agents/architect.md

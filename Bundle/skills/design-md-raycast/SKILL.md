@@ -1,1 +1,0 @@
-../../../Growth/design/design-md-raycast.md

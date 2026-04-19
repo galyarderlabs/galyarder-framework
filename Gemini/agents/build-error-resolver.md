@@ -1,1 +1,0 @@
-../../integrations/gemini/build-error-resolver.md

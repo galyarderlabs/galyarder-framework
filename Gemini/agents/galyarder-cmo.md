@@ -1,1 +1,0 @@
-../../integrations/gemini/galyarder-cmo.md

@@ -1,1 +1,0 @@
-../../integrations/gemini/product-manager.md

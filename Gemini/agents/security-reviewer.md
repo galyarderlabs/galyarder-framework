@@ -1,1 +1,0 @@
-../../integrations/gemini/security-reviewer.md

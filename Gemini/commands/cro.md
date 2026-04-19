@@ -1,1 +1,0 @@
-../../integrations/gemini/cro.md
