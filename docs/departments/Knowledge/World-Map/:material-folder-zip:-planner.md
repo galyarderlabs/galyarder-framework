@@ -8,5 +8,4 @@ source_path: docs/agents/planner.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-planner]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

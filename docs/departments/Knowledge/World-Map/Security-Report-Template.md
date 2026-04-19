@@ -6,6 +6,3 @@ source_path: docs/templates/Galyarder-Department-Reports/Security Report Templat
 # Security Report Template
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Security-Report-Template]] (structural_reference)

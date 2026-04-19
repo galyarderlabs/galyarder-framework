@@ -8,5 +8,4 @@ source_path: docs/skills/executing-red-team-engagement-planning/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-executing-red-team-engagement-planning]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Growth
-source_path: Growth/skills/revenue-architect/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/THE-REVENUE-ARCHITECT:-CHIEF-REVENUE-OFFICER-(CRO)-PROTOCOL.md
 ---
 # THE REVENUE ARCHITECT: CHIEF REVENUE OFFICER (CRO) PROTOCOL
 

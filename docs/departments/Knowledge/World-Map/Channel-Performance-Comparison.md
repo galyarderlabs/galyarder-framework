@@ -6,6 +6,3 @@ source_path: docs/skills/campaign-analytics/assets/channel_comparison_template.m
 # Channel Performance Comparison
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Channel-Performance-Comparison]] (structural_reference)

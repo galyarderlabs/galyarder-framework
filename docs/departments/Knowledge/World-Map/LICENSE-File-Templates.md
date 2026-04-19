@@ -6,6 +6,3 @@ source_path: docs/skills/open-source-license/references/templates/license-files.
 # LICENSE File Templates
 
 ## 🔗 Connections
-
-### Informed By:
-- [[LICENSE-File-Templates]] (structural_reference)

@@ -8,5 +8,4 @@ source_path: docs/agents/growth-strategist.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-growth-strategist]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

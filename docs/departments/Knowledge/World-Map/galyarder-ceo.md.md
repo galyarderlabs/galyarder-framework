@@ -1,7 +1,7 @@
 ---
-node_type: governance
-silo: Executive
-source_path: Executive/personas/galyarder-ceo.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/galyarder-ceo.md.md
 ---
 # galyarder-ceo.md
 

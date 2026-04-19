@@ -8,5 +8,4 @@ source_path: docs/agents/retention-specialist.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-retention-specialist]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

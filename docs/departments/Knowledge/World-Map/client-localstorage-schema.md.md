@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Engineering
-source_path: Engineering/skills/vercel-react-best-practices/rules/client-localstorage-schema.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/client-localstorage-schema.md.md
 ---
 # client-localstorage-schema.md
 

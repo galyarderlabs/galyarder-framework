@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Changelog.md
 ## 🔗 Connections
 
 ### Directing To:
-- [[Changelog]] (structural_reference)
-
-### Informed By:
-- [[Changelog]] (structural_reference)
+- [[Changelog]] (semantic_link)
+- [[Changelog]] (semantic_link)

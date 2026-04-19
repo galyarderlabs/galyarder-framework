@@ -8,5 +8,4 @@ source_path: docs/skills/investor-research/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-investor-research]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

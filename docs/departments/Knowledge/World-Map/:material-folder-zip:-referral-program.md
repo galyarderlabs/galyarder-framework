@@ -8,5 +8,4 @@ source_path: docs/skills/referral-program/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-referral-program]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

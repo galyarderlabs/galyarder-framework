@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Department:-Knowledge.md
 ## 🔗 Connections
 
 ### Directing To:
-- [[Department:-Knowledge]] (structural_reference)
-
-### Informed By:
-- [[Department:-Knowledge]] (structural_reference)
+- [[Department:-Knowledge]] (semantic_link)
+- [[Department:-Knowledge]] (semantic_link)

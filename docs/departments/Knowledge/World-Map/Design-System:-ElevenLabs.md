@@ -8,5 +8,4 @@ source_path: docs/design/design-md-elevenlabs.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-ElevenLabs]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

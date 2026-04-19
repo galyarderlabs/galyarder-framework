@@ -11,5 +11,5 @@ graph LR
 ```
 
 ## Statistics
-- **Total Entities**: 1383
-- **Total Relationships**: 1552
+- **Total Entities**: 1648
+- **Total Relationships**: 1807

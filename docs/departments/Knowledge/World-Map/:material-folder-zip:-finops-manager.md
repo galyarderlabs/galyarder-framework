@@ -8,5 +8,4 @@ source_path: docs/agents/finops-manager.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-finops-manager]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

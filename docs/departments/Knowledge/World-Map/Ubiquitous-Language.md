@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Product
-source_path: Product/skills/ubiquitous-language/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Ubiquitous-Language.md
 ---
 # Ubiquitous Language
 

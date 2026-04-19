@@ -8,5 +8,4 @@ source_path: docs/commands/release.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-Release]] (structural_reference)
 - [[Galyarder-Framework:-Commands]] (structural_reference)

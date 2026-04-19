@@ -8,5 +8,4 @@ source_path: docs/agents/legal-counsel.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-legal-counsel]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

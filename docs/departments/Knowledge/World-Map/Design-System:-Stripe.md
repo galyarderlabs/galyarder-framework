@@ -8,5 +8,4 @@ source_path: docs/design/design-md-stripe.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Stripe]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

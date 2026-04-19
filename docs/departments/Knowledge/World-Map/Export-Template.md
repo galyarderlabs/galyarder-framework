@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/dashboard/export.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Export-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

@@ -8,5 +8,4 @@ source_path: docs/agents/qa-automation-engineer.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-qa-automation-engineer]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

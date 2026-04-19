@@ -8,5 +8,4 @@ source_path: docs/agents/architect.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-architect]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

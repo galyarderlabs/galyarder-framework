@@ -8,5 +8,4 @@ source_path: docs/commands/docs.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-Docs]] (structural_reference)
 - [[Galyarder-Framework:-Commands]] (structural_reference)

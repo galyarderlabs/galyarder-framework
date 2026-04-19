@@ -8,5 +8,4 @@ source_path: docs/agents/tdd-guide.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-tdd-guide]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

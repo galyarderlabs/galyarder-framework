@@ -1,7 +1,7 @@
 ---
-node_type: governance
-silo: Executive
-source_path: Executive/personas/galyarder-cfo-coo.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/galyarder-cfo-coo.md.md
 ---
 # galyarder-cfo-coo.md
 

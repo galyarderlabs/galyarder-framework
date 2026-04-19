@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Engineering
-source_path: Engineering/skills/vercel-react-best-practices/rules/server-after-nonblocking.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/server-after-nonblocking.md.md
 ---
 # server-after-nonblocking.md
 

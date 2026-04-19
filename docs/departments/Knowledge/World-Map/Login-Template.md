@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/auth/login.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Login-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

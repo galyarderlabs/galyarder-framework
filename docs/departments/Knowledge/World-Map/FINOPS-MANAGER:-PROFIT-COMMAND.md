@@ -1,7 +1,7 @@
 ---
-node_type: agent
-silo: Legal-Finance
-source_path: Legal-Finance/agents/finops-manager.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/FINOPS-MANAGER:-PROFIT-COMMAND.md
 ---
 # FINOPS MANAGER: PROFIT COMMAND
 

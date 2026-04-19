@@ -1,7 +1,7 @@
 ---
-node_type: governance
-silo: Legal-Finance
-source_path: Legal-Finance/commands/legal.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/legal.md.md
 ---
 # legal.md
 

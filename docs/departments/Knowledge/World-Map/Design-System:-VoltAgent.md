@@ -8,5 +8,4 @@ source_path: docs/design/design-md-voltagent.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-VoltAgent]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

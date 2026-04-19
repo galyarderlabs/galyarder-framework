@@ -8,5 +8,4 @@ source_path: docs/design/design-md-notion.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Notion]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

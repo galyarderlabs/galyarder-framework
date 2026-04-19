@@ -8,5 +8,4 @@ source_path: docs/skills/contract-and-proposal-writer/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-contract-and-proposal-writer]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

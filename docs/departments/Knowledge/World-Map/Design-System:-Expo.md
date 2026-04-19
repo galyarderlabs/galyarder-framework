@@ -8,5 +8,4 @@ source_path: docs/design/design-md-expo.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Expo]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

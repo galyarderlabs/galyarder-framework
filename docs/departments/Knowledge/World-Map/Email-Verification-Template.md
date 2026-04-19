@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/onboarding/email-verification.
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Email-Verification-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

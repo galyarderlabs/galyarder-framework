@@ -8,5 +8,4 @@ source_path: docs/commands/deploy.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-Deploy]] (structural_reference)
 - [[Galyarder-Framework:-Commands]] (structural_reference)

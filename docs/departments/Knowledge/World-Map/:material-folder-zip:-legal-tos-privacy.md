@@ -28,5 +28,4 @@ source_path: docs/skills/legal-tos-privacy/index.md
 - [[...]] (semantic_link)
 
 ### Informed By:
-- [[:material-folder-zip:-legal-tos-privacy]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

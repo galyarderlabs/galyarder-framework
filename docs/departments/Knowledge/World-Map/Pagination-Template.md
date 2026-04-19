@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/search/pagination.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Pagination-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Claude-Code:-Implementation-Pr
 ## 🔗 Connections
 
 ### Directing To:
-- [[Claude-Code:-Implementation-Protocol]] (structural_reference)
-
-### Informed By:
-- [[Claude-Code:-Implementation-Protocol]] (structural_reference)
+- [[Claude-Code:-Implementation-Protocol]] (semantic_link)
+- [[Claude-Code:-Implementation-Protocol]] (semantic_link)

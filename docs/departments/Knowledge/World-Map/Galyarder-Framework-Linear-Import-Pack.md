@@ -6,6 +6,3 @@ source_path: docs/templates/Galyarder-Framework Linear Import Pack.md
 # Galyarder Framework Linear Import Pack
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Galyarder-Framework-Linear-Import-Pack]] (structural_reference)

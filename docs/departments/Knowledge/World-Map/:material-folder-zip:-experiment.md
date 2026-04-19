@@ -8,5 +8,4 @@ source_path: docs/commands/experiment.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-experiment]] (structural_reference)
 - [[Galyarder-Framework:-Commands]] (structural_reference)

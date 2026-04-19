@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Engineering
-source_path: Engineering/skills/vercel-react-best-practices/rules/js-min-max-loop.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/js-min-max-loop.md.md
 ---
 # js-min-max-loop.md
 

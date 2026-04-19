@@ -30,6 +30,3 @@ source_path: docs/templates/Galyarder-Framework Project Hub.md
 - [[Galyarder-Framework-Knowledge-Audit]] (semantic_link)
 - [[Galyarder-Framework-Cross-Department-Hire-Queue]] (semantic_link)
 - [[Galyarder-Framework-Import-Adapt-Reject-Rubric]] (semantic_link)
-
-### Informed By:
-- [[Galyarder-Framework-Project-Hub]] (structural_reference)

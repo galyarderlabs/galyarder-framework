@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Galyarder-Ecosystem:-The-Unifi
 ## 🔗 Connections
 
 ### Directing To:
-- [[Galyarder-Ecosystem:-The-Unified-Platform]] (structural_reference)
-
-### Informed By:
-- [[Galyarder-Ecosystem:-The-Unified-Platform]] (structural_reference)
+- [[Galyarder-Ecosystem:-The-Unified-Platform]] (semantic_link)
+- [[Galyarder-Ecosystem:-The-Unified-Platform]] (semantic_link)

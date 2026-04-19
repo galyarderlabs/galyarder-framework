@@ -8,5 +8,4 @@ source_path: docs/skills/investigating-phishing-email-incident/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-investigating-phishing-email-incident]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

@@ -6,6 +6,3 @@ source_path: docs/skills/executing-red-team-engagement-planning/references/api-r
 # API Reference: Red Team Engagement Planning
 
 ## 🔗 Connections
-
-### Informed By:
-- [[API-Reference:-Red-Team-Engagement-Planning]] (structural_reference)

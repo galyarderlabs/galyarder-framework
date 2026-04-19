@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Executive
-source_path: Executive/skills/writing-skills/persuasion-principles.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Persuasion-Principles-for-Skill-Design.md
 ---
 # Persuasion Principles for Skill Design
 

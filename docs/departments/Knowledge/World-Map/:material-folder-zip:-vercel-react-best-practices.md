@@ -8,5 +8,4 @@ source_path: docs/skills/vercel-react-best-practices/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-vercel-react-best-practices]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

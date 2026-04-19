@@ -6,6 +6,3 @@ source_path: docs/templates/Galyarder-Framework Framework Vision - Digital Compa
 # Galyarder Framework Vision - Digital Enterprise for Solo Founders
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Galyarder-Framework-Vision---Digital-Enterprise-for-Solo-Founders]] (structural_reference)

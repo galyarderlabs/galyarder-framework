@@ -8,5 +8,4 @@ source_path: docs/skills/prd-to-plan/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-prd-to-plan]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

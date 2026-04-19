@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Galyarder-Framework:-The-Human
 ## 🔗 Connections
 
 ### Directing To:
-- [[Galyarder-Framework:-The-Humans-3.0-Workflow]] (structural_reference)
-
-### Informed By:
-- [[Galyarder-Framework:-The-Humans-3.0-Workflow]] (structural_reference)
+- [[Galyarder-Framework:-The-Humans-3.0-Workflow]] (semantic_link)
+- [[Galyarder-Framework:-The-Humans-3.0-Workflow]] (semantic_link)

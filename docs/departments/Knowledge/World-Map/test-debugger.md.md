@@ -1,7 +1,7 @@
 ---
-node_type: agent
-silo: Engineering
-source_path: Engineering/skills/playwright-pro/agents/test-debugger.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/test-debugger.md.md
 ---
 # test-debugger.md
 

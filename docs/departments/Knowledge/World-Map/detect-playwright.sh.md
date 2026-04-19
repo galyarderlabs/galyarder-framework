@@ -1,7 +1,7 @@
 ---
-node_type: logic-engine
-silo: Engineering
-source_path: Engineering/skills/playwright-pro/hooks/detect-playwright.sh
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/detect-playwright.sh.md
 ---
 # detect-playwright.sh
 

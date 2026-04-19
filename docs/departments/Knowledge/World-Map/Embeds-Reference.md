@@ -24,6 +24,5 @@ source_path: docs/skills/obsidian-markdown/references/EMBEDS.md
 ### Informed By:
 - [[Obsidian-Flavored-Markdown-Skill]] (structural_reference)
 - [[Obsidian-Flavored-Markdown-Skill]] (structural_reference)
-- [[Embeds-Reference]] (structural_reference)
 - [[:material-folder-zip:-obsidian-markdown]] (structural_reference)
 - [[:material-folder-zip:-obsidian-markdown]] (structural_reference)

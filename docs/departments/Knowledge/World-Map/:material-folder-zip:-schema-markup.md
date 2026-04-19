@@ -8,5 +8,4 @@ source_path: docs/skills/schema-markup/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-schema-markup]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

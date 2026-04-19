@@ -6,6 +6,3 @@ source_path: docs/skills/recovering-from-ransomware-attack/references/standards.
 # Standards & References - Recovering from Ransomware Attack
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Standards-&-References---Recovering-from-Ransomware-Attack]] (structural_reference)

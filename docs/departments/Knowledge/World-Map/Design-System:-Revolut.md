@@ -8,5 +8,4 @@ source_path: docs/design/design-md-revolut.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Revolut]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

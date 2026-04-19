@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/checkout/update-quantity.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Update-Cart-Quantity-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

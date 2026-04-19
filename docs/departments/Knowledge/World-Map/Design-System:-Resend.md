@@ -8,5 +8,4 @@ source_path: docs/design/design-md-resend.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Resend]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

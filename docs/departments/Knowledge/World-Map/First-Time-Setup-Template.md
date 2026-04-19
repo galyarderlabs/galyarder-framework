@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/onboarding/first-time-setup.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[First-Time-Setup-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

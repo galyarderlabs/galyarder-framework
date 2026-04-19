@@ -9,5 +9,4 @@ source_path: docs/skills/company-creator/references/companies-spec.md
 
 ### Informed By:
 - [[Company-Creator]] (structural_reference)
-- [[Agent-Companies-Specification-Reference]] (structural_reference)
 - [[:material-folder-zip:-company-creator]] (structural_reference)

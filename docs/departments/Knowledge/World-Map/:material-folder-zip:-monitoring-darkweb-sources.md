@@ -8,5 +8,4 @@ source_path: docs/skills/monitoring-darkweb-sources/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-monitoring-darkweb-sources]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

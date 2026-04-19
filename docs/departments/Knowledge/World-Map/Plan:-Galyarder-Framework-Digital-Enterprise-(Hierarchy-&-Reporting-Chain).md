@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Plan:-Galyarder-Framework-Digi
 ## 🔗 Connections
 
 ### Directing To:
-- [[Plan:-Galyarder-Framework-Digital-Enterprise-(Hierarchy-&-Reporting-Chain)]] (structural_reference)
-
-### Informed By:
-- [[Plan:-Galyarder-Framework-Digital-Enterprise-(Hierarchy-&-Reporting-Chain)]] (structural_reference)
+- [[Plan:-Galyarder-Framework-Digital-Enterprise-(Hierarchy-&-Reporting-Chain)]] (semantic_link)
+- [[Plan:-Galyarder-Framework-Digital-Enterprise-(Hierarchy-&-Reporting-Chain)]] (semantic_link)

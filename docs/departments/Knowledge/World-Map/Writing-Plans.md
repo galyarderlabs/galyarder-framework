@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Product
-source_path: Product/skills/writing-plans/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Writing-Plans.md
 ---
 # Writing Plans
 

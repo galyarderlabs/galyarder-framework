@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/forms/multi-step.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Multi-Step-Form-(Wizard)-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

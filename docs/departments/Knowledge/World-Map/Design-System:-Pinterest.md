@@ -8,5 +8,4 @@ source_path: docs/design/design-md-pinterest.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Pinterest]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

@@ -8,5 +8,4 @@ source_path: docs/skills/recovering-from-ransomware-attack/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-recovering-from-ransomware-attack]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

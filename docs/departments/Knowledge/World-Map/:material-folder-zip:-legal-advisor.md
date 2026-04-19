@@ -8,5 +8,4 @@ source_path: docs/skills/legal-advisor/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-legal-advisor]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

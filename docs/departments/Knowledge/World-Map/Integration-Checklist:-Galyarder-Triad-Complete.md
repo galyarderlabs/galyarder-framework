@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Integration-Checklist:-Galyard
 ## 🔗 Connections
 
 ### Directing To:
-- [[Integration-Checklist:-Galyarder-Triad-Complete]] (structural_reference)
-
-### Informed By:
-- [[Integration-Checklist:-Galyarder-Triad-Complete]] (structural_reference)
+- [[Integration-Checklist:-Galyarder-Triad-Complete]] (semantic_link)
+- [[Integration-Checklist:-Galyarder-Triad-Complete]] (semantic_link)

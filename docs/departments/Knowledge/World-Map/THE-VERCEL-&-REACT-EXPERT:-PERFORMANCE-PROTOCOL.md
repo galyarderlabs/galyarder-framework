@@ -1,7 +1,7 @@
 ---
-node_type: agent
-silo: Engineering
-source_path: Engineering/agents/vercel-react-expert.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/THE-VERCEL-&-REACT-EXPERT:-PERFORMANCE-PROTOCOL.md
 ---
 # THE VERCEL & REACT EXPERT: PERFORMANCE PROTOCOL
 

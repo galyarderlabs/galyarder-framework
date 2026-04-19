@@ -8,5 +8,4 @@ source_path: docs/design/design-md-mistral.ai.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Mistral-AI]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

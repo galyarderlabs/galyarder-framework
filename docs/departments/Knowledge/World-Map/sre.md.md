@@ -1,7 +1,7 @@
 ---
-node_type: agent
-silo: Infrastructure
-source_path: Infrastructure/agents/sre.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/sre.md.md
 ---
 # sre.md
 

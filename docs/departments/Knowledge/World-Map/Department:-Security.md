@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Department:-Security.md
 ## 🔗 Connections
 
 ### Directing To:
-- [[Department:-Security]] (structural_reference)
-
-### Informed By:
-- [[Department:-Security]] (structural_reference)
+- [[Department:-Security]] (semantic_link)
+- [[Department:-Security]] (semantic_link)

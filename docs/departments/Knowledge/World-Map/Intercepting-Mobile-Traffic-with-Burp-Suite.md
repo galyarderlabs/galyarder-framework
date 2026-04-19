@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Security
-source_path: Security/skills/intercepting-mobile-traffic-with-burpsuite/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Intercepting-Mobile-Traffic-with-Burp-Suite.md
 ---
 # Intercepting Mobile Traffic with Burp Suite
 

@@ -8,5 +8,4 @@ source_path: docs/skills/playwright-pro/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-playwright-pro]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

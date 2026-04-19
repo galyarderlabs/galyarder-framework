@@ -8,5 +8,4 @@ source_path: docs/commands/finops.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-Finops]] (structural_reference)
 - [[Galyarder-Framework:-Commands]] (structural_reference)

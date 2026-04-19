@@ -8,5 +8,4 @@ source_path: docs/skills/founder-context/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-founder-context]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

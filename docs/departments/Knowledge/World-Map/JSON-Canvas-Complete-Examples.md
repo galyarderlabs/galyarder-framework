@@ -9,5 +9,4 @@ source_path: docs/skills/json-canvas/references/EXAMPLES.md
 
 ### Informed By:
 - [[JSON-Canvas-Skill]] (structural_reference)
-- [[JSON-Canvas-Complete-Examples]] (structural_reference)
 - [[:material-folder-zip:-json-canvas]] (structural_reference)

@@ -6,6 +6,3 @@ source_path: docs/skills/social-content/references/reverse-engineering.md
 # Reverse Engineering Viral Content
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Reverse-Engineering-Viral-Content]] (structural_reference)

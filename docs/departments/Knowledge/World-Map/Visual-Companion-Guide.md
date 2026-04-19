@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Executive
-source_path: Executive/skills/brainstorming/visual-companion.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Visual-Companion-Guide.md
 ---
 # Visual Companion Guide
 

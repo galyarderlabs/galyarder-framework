@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Security
-source_path: Security/skills/profiling-threat-actor-groups/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Profiling-Threat-Actor-Groups.md
 ---
 # Profiling Threat Actor Groups
 

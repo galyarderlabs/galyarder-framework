@@ -8,5 +8,4 @@ source_path: docs/design/design-md-webflow.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Webflow]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

@@ -8,5 +8,4 @@ source_path: docs/design/design-md-coinbase.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Coinbase]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

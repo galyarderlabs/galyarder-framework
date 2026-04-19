@@ -8,5 +8,4 @@ source_path: docs/commands/marketing.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-Marketing]] (structural_reference)
 - [[Galyarder-Framework:-Commands]] (structural_reference)

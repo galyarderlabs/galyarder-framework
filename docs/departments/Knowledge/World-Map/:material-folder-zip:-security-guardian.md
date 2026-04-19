@@ -8,5 +8,4 @@ source_path: docs/agents/security-guardian.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-security-guardian]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

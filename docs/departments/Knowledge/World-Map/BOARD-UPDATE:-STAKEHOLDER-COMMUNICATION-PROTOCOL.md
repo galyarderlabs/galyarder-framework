@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Executive
-source_path: Executive/skills/board-update/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/BOARD-UPDATE:-STAKEHOLDER-COMMUNICATION-PROTOCOL.md
 ---
 # BOARD UPDATE: STAKEHOLDER COMMUNICATION PROTOCOL
 

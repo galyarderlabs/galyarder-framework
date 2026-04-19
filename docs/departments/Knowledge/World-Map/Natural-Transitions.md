@@ -6,6 +6,3 @@ source_path: docs/skills/copywriting/references/natural-transitions.md
 # Natural Transitions
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Natural-Transitions]] (structural_reference)

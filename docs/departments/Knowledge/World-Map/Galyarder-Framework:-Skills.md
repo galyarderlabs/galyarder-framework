@@ -100,4 +100,3 @@ source_path: docs/skills/index.md
 ### Informed By:
 - [[Welcome-to-Galyarder-Framework]] (structural_reference)
 - [[Welcome-to-Galyarder-Framework]] (structural_reference)
-- [[Galyarder-Framework:-Skills]] (structural_reference)

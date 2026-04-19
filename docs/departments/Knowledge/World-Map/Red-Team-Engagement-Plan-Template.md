@@ -6,6 +6,3 @@ source_path: docs/skills/executing-red-team-engagement-planning/assets/template.
 # Red Team Engagement Plan Template
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Red-Team-Engagement-Plan-Template]] (structural_reference)

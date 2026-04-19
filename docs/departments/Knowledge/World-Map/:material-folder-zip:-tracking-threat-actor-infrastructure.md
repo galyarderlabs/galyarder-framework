@@ -8,5 +8,4 @@ source_path: docs/skills/tracking-threat-actor-infrastructure/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-tracking-threat-actor-infrastructure]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

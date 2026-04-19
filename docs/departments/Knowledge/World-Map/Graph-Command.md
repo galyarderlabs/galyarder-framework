@@ -1,7 +1,7 @@
 ---
-node_type: governance
-silo: Knowledge
-source_path: Knowledge/commands/graph.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Graph-Command.md
 ---
 # Graph Command
 

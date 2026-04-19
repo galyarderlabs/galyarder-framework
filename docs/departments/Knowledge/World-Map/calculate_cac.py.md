@@ -1,7 +1,7 @@
 ---
-node_type: logic-engine
-silo: Growth
-source_path: Growth/skills/marketing-demand-acquisition/scripts/calculate_cac.py
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/calculate_cac.py.md
 ---
 # calculate_cac.py
 

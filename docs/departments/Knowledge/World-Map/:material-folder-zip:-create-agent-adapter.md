@@ -8,5 +8,4 @@ source_path: docs/skills/create-agent-adapter/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-create-agent-adapter]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

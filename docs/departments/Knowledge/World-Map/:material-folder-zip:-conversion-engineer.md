@@ -8,5 +8,4 @@ source_path: docs/agents/conversion-engineer.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-conversion-engineer]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

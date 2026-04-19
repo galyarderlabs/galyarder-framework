@@ -6,6 +6,3 @@ source_path: docs/skills/recovering-from-ransomware-attack/references/api-refere
 # API Reference: Recovering from Ransomware Attack
 
 ## 🔗 Connections
-
-### Informed By:
-- [[API-Reference:-Recovering-from-Ransomware-Attack]] (structural_reference)

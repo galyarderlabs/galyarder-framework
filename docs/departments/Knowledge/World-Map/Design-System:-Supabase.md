@@ -8,5 +8,4 @@ source_path: docs/design/design-md-supabase.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Supabase]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

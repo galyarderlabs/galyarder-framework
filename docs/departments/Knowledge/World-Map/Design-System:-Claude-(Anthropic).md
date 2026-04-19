@@ -8,5 +8,4 @@ source_path: docs/design/design-md-claude.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Claude-(Anthropic)]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

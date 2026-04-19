@@ -8,5 +8,4 @@ source_path: docs/design/design-md-ibm.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-IBM]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

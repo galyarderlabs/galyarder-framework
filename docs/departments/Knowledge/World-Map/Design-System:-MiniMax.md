@@ -8,5 +8,4 @@ source_path: docs/design/design-md-minimax.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-MiniMax]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

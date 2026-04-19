@@ -8,5 +8,4 @@ source_path: docs/design/design-md-hashicorp.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-HashiCorp]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

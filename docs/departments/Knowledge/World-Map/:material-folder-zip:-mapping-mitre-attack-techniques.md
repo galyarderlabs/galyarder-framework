@@ -8,5 +8,4 @@ source_path: docs/skills/mapping-mitre-attack-techniques/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-mapping-mitre-attack-techniques]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

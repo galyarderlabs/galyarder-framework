@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Department:-Product.md
 ## 🔗 Connections
 
 ### Directing To:
-- [[Department:-Product]] (structural_reference)
-
-### Informed By:
-- [[Department:-Product]] (structural_reference)
+- [[Department:-Product]] (semantic_link)
+- [[Department:-Product]] (semantic_link)

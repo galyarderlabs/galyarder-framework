@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Legal-Finance
-source_path: Legal-Finance/skills/open-source-license/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Open-Source-License-Skill.md
 ---
 # Open Source License Skill
 

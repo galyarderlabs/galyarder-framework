@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/checkout/add-to-cart.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Add-to-Cart-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

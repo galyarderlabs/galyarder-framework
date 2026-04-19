@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Engineering
-source_path: Engineering/skills/playwright-pro/skills/generate/patterns.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Test-Generation-Patterns.md
 ---
 # Test Generation Patterns
 

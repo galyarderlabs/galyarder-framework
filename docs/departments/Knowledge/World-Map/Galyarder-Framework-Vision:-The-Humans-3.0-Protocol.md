@@ -6,6 +6,3 @@ source_path: docs/templates/Galyarder-Framework-Framework Vision - Digital Compa
 # Galyarder Framework Vision: The Humans 3.0 Protocol
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Galyarder-Framework-Vision:-The-Humans-3.0-Protocol]] (structural_reference)

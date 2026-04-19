@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Galyarder-Framework-for-OpenCo
 ## 🔗 Connections
 
 ### Directing To:
-- [[Galyarder-Framework-for-OpenCode]] (structural_reference)
-
-### Informed By:
-- [[Galyarder-Framework-for-OpenCode]] (structural_reference)
+- [[Galyarder-Framework-for-OpenCode]] (semantic_link)
+- [[Galyarder-Framework-for-OpenCode]] (semantic_link)

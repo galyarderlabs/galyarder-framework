@@ -1,7 +1,7 @@
 ---
-node_type: logic-engine
-silo: Executive
-source_path: Executive/skills/brainstorming/scripts/start-server.sh
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/start-server.sh.md
 ---
 # start-server.sh
 

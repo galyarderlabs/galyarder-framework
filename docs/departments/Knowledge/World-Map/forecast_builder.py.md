@@ -1,7 +1,7 @@
 ---
-node_type: logic-engine
-silo: Legal-Finance
-source_path: Legal-Finance/skills/financial-analyst/scripts/forecast_builder.py
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/forecast_builder.py.md
 ---
 # forecast_builder.py
 

@@ -6,6 +6,3 @@ source_path: docs/templates/Galyarder-Department-Reports/Engineering Report Temp
 # Engineering Report Template
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Engineering-Report-Template]] (structural_reference)

@@ -8,5 +8,4 @@ source_path: docs/design/design-md-spotify.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Spotify]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

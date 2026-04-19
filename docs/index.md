@@ -22,7 +22,9 @@ To automate a high-scale enterprise, you need three layers working in perfect sy
 
 ## 2. Humans 3.0: Autonomous Goal Integration (AGI)
 
-We define AGI as **Autonomous Goal Integration**. It is a self-evolving system capable of taking high-level intent from the **Presence layer** and independently orchestrating the entire lifecycle of a mission—from requirement extraction to final market distribution—without human micro-management.
+We define AGI as **Autonomous Goal Integration**. It is a self-evolving system capable of taking high-level intent from the **Presence layer** and independently orchestrating the entire lifecycle of a mission.
+
+👉 **[Launch Interactive Neural Map (Galyarder World Map)](assets/graph-visualizer.html)**
 
 ### The AGI Mission Lifecycle:
 1.  **Intent Extraction**: The **Galyarder Agent** distills your goals into project-scoped Linear tickets and tactical specifications.

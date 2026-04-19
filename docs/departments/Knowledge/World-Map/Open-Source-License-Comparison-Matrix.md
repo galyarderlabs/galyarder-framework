@@ -6,6 +6,3 @@ source_path: docs/skills/open-source-license/references/selection/comparison-mat
 # Open Source License Comparison Matrix
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Open-Source-License-Comparison-Matrix]] (structural_reference)

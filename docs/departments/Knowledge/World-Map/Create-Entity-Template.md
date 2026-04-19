@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/crud/create.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Create-Entity-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

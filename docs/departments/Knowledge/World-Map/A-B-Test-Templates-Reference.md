@@ -6,6 +6,3 @@ source_path: docs/skills/ab-test-setup/references/test-templates.md
 # A/B Test Templates Reference
 
 ## 🔗 Connections
-
-### Informed By:
-- [[A/B-Test-Templates-Reference]] (structural_reference)

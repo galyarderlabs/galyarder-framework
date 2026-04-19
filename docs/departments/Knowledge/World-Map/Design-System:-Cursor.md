@@ -8,5 +8,4 @@ source_path: docs/design/design-md-cursor.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Cursor]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

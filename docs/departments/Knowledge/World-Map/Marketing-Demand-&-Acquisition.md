@@ -1,18 +1,18 @@
 ---
-node_type: skill
-silo: Growth
-source_path: Growth/skills/marketing-demand-acquisition/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Marketing-Demand-&-Acquisition.md
 ---
 # Marketing Demand & Acquisition
 
 ## 🔗 Connections
 
 ### Directing To:
-- [[Campaign-Templates]] (structural_reference)
-- [[International-Market-Playbooks]] (structural_reference)
-- [[Attribution-Guide]] (structural_reference)
-- [[HubSpot-Workflow-Templates]] (structural_reference)
-- [[HubSpot-Workflow-Templates]] (structural_reference)
-- [[Campaign-Templates]] (structural_reference)
-- [[International-Market-Playbooks]] (structural_reference)
-- [[Attribution-Guide]] (structural_reference)
+- [[Campaign-Templates]] (semantic_link)
+- [[International-Market-Playbooks]] (semantic_link)
+- [[Attribution-Guide]] (semantic_link)
+- [[HubSpot-Workflow-Templates]] (semantic_link)
+- [[HubSpot-Workflow-Templates]] (semantic_link)
+- [[Campaign-Templates]] (semantic_link)
+- [[International-Market-Playbooks]] (semantic_link)
+- [[Attribution-Guide]] (semantic_link)

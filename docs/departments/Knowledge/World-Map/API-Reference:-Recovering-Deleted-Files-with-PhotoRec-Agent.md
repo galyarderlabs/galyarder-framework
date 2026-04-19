@@ -6,6 +6,3 @@ source_path: docs/skills/recovering-deleted-files-with-photorec/references/api-r
 # API Reference: Recovering Deleted Files with PhotoRec Agent
 
 ## 🔗 Connections
-
-### Informed By:
-- [[API-Reference:-Recovering-Deleted-Files-with-PhotoRec-Agent]] (structural_reference)

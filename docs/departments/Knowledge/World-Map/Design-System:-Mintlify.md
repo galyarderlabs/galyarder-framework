@@ -8,5 +8,4 @@ source_path: docs/design/design-md-mintlify.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Mintlify]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

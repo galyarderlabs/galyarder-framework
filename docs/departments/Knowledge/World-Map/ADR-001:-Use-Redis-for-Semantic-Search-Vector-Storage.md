@@ -1,7 +1,7 @@
 ---
-node_type: agent
-silo: Engineering
-source_path: Engineering/agents/architect.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/ADR-001:-Use-Redis-for-Semantic-Search-Vector-Storage.md
 ---
 # ADR-001: Use Redis for Semantic Search Vector Storage
 

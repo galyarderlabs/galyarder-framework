@@ -1,7 +1,7 @@
 ---
-node_type: governance
-silo: Growth
-source_path: Growth/commands/marketing.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/marketing.md.md
 ---
 # marketing.md
 

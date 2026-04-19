@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/checkout/apply-coupon.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Apply-Coupon-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

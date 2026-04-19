@@ -1,7 +1,7 @@
 ---
-node_type: logic-engine
-silo: Security
-source_path: Security/skills/cloud-security/scripts/cloud_posture_check.py
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/cloud_posture_check.py.md
 ---
 # cloud_posture_check.py
 

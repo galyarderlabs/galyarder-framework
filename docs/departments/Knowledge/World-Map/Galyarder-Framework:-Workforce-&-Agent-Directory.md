@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Galyarder-Framework:-Workforce
 ## 🔗 Connections
 
 ### Directing To:
-- [[Galyarder-Framework:-Workforce-&-Agent-Directory]] (structural_reference)
-
-### Informed By:
-- [[Galyarder-Framework:-Workforce-&-Agent-Directory]] (structural_reference)
+- [[Galyarder-Framework:-Workforce-&-Agent-Directory]] (semantic_link)
+- [[Galyarder-Framework:-Workforce-&-Agent-Directory]] (semantic_link)

@@ -6,6 +6,3 @@ source_path: docs/skills/generating-threat-intelligence-reports/references/api-r
 # API Reference: Threat Intelligence Report Generator Agent
 
 ## 🔗 Connections
-
-### Informed By:
-- [[API-Reference:-Threat-Intelligence-Report-Generator-Agent]] (structural_reference)

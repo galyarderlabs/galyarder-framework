@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Engineering
-source_path: Engineering/skills/systematic-debugging/condition-based-waiting.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Condition-Based-Waiting.md
 ---
 # Condition-Based Waiting
 

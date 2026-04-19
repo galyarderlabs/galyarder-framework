@@ -8,5 +8,4 @@ source_path: docs/design/design-md-mongodb.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-MongoDB]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

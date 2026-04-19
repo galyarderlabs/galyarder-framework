@@ -8,5 +8,4 @@ source_path: docs/commands/review.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-Review]] (structural_reference)
 - [[Galyarder-Framework:-Commands]] (structural_reference)

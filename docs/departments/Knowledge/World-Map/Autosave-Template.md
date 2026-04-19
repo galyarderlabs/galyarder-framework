@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/forms/autosave.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Autosave-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

@@ -8,5 +8,4 @@ source_path: docs/skills/fundraising-email/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-fundraising-email]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

@@ -1,7 +1,7 @@
 ---
-node_type: agent
-silo: Executive
-source_path: Executive/agents/fundraising-operator.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/THE-FUNDRAISING-OPERATOR:-CAPITAL-COMMAND.md
 ---
 # THE FUNDRAISING OPERATOR: CAPITAL COMMAND
 

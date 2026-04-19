@@ -8,5 +8,4 @@ source_path: docs/design/design-md-together.ai.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Together-AI]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

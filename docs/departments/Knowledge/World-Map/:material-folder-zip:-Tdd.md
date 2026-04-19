@@ -8,5 +8,4 @@ source_path: docs/commands/tdd.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-Tdd]] (structural_reference)
 - [[Galyarder-Framework:-Commands]] (structural_reference)

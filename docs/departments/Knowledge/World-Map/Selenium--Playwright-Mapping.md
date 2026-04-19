@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Engineering
-source_path: Engineering/skills/playwright-pro/skills/migrate/selenium-mapping.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Selenium--Playwright-Mapping.md
 ---
 # Selenium  Playwright Mapping
 

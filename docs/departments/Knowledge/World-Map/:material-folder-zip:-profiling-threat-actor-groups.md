@@ -8,5 +8,4 @@ source_path: docs/skills/profiling-threat-actor-groups/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-profiling-threat-actor-groups]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

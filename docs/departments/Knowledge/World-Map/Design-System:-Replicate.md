@@ -8,5 +8,4 @@ source_path: docs/design/design-md-replicate.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Replicate]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

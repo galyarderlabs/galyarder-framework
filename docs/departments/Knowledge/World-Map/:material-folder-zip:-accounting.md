@@ -8,5 +8,4 @@ source_path: docs/skills/accounting/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-accounting]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

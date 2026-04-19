@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Engineering
-source_path: Engineering/skills/vercel-react-best-practices/rules/js-set-map-lookups.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/js-set-map-lookups.md.md
 ---
 # js-set-map-lookups.md
 

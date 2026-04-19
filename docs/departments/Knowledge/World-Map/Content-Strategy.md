@@ -1,11 +1,11 @@
 ---
-node_type: skill
-silo: Growth
-source_path: Growth/skills/content-strategy/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Content-Strategy.md
 ---
 # Content Strategy
 
 ## 🔗 Connections
 
 ### Directing To:
-- [[Headless-CMS-Guide]] (structural_reference)
+- [[Headless-CMS-Guide]] (semantic_link)

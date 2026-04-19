@@ -8,5 +8,4 @@ source_path: docs/skills/lead-scoring/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-lead-scoring]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

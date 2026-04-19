@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Department:-Growth.md
 ## 🔗 Connections
 
 ### Directing To:
-- [[Department:-Growth]] (structural_reference)
-
-### Informed By:
-- [[Department:-Growth]] (structural_reference)
+- [[Department:-Growth]] (semantic_link)
+- [[Department:-Growth]] (semantic_link)

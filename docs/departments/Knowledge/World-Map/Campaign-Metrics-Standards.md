@@ -6,6 +6,3 @@ source_path: docs/skills/campaign-analytics/references/campaign-metrics-benchmar
 # Campaign Metrics Standards
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Campaign-Metrics-Standards]] (structural_reference)

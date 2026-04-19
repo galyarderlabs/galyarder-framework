@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Security
-source_path: Security/skills/monitoring-darkweb-sources/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Monitoring-Dark-Web-Sources.md
 ---
 # Monitoring Dark Web Sources
 

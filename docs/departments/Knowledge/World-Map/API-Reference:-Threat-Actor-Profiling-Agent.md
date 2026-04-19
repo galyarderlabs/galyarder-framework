@@ -6,6 +6,3 @@ source_path: docs/skills/profiling-threat-actor-groups/references/api-reference.
 # API Reference: Threat Actor Profiling Agent
 
 ## 🔗 Connections
-
-### Informed By:
-- [[API-Reference:-Threat-Actor-Profiling-Agent]] (structural_reference)

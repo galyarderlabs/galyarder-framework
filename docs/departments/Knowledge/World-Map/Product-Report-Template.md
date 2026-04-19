@@ -6,6 +6,3 @@ source_path: docs/templates/Galyarder-Department-Reports/Product Report Template
 # Product Report Template
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Product-Report-Template]] (structural_reference)

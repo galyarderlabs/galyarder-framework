@@ -6,6 +6,3 @@ source_path: docs/skills/campaign-analytics/references/funnel-optimization-frame
 # Funnel Optimization Framework
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Funnel-Optimization-Framework]] (structural_reference)

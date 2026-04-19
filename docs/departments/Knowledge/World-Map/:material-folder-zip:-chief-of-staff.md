@@ -8,5 +8,4 @@ source_path: docs/agents/chief-of-staff.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-chief-of-staff]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

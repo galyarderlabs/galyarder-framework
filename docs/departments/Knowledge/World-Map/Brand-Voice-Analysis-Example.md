@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Growth
-source_path: Growth/skills/content-creator/examples/brand_voice_analysis_example.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Brand-Voice-Analysis-Example.md
 ---
 # Brand Voice Analysis Example
 

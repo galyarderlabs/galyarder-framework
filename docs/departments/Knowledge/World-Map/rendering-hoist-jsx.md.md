@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Engineering
-source_path: Engineering/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/rendering-hoist-jsx.md.md
 ---
 # rendering-hoist-jsx.md
 

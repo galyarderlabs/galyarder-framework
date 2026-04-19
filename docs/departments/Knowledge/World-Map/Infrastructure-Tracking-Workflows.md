@@ -6,6 +6,3 @@ source_path: docs/skills/tracking-threat-actor-infrastructure/references/workflo
 # Infrastructure Tracking Workflows
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Infrastructure-Tracking-Workflows]] (structural_reference)

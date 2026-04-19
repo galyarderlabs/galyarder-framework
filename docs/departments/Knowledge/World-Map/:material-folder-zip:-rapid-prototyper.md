@@ -8,5 +8,4 @@ source_path: docs/agents/rapid-prototyper.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-rapid-prototyper]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

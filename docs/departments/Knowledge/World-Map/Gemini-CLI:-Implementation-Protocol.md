@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Gemini-CLI:-Implementation-Pro
 ## 🔗 Connections
 
 ### Directing To:
-- [[Gemini-CLI:-Implementation-Protocol]] (structural_reference)
-
-### Informed By:
-- [[Gemini-CLI:-Implementation-Protocol]] (structural_reference)
+- [[Gemini-CLI:-Implementation-Protocol]] (semantic_link)
+- [[Gemini-CLI:-Implementation-Protocol]] (semantic_link)

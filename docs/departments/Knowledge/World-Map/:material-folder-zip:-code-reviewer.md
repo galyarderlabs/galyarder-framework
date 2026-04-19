@@ -8,5 +8,4 @@ source_path: docs/agents/code-reviewer.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-code-reviewer]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

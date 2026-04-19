@@ -1,7 +1,7 @@
 ---
-node_type: agent
-silo: Infrastructure
-source_path: Infrastructure/agents/devops-engineer.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/THE-DEVOPS-ENGINEER:-INFRASTRUCTURE-PROTOCOL.md
 ---
 # THE DEVOPS ENGINEER: INFRASTRUCTURE PROTOCOL
 

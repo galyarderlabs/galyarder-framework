@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/checkout/order-confirm.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Order-Confirmation-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

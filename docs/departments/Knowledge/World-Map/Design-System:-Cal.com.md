@@ -8,5 +8,4 @@ source_path: docs/design/design-md-cal.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Cal.com]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

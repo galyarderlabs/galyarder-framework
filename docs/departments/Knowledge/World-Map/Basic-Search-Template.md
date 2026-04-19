@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/search/basic-search.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Basic-Search-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

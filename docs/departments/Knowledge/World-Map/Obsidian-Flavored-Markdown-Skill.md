@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Knowledge
-source_path: Knowledge/skills/obsidian-markdown/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Obsidian-Flavored-Markdown-Skill.md
 ---
 # Obsidian Flavored Markdown Skill
 
@@ -25,9 +25,9 @@ source_path: Knowledge/skills/obsidian-markdown/SKILL.md
 - [[Algorithm-Notes#Sorting]] (semantic_link)
 - [[Architecture-Diagram.png|600]] (semantic_link)
 - [[Meeting-Notes-2024-01-10#Decisions]] (semantic_link)
-- [[Properties-(Frontmatter)-Reference]] (structural_reference)
-- [[Embeds-Reference]] (structural_reference)
-- [[Callouts-Reference]] (structural_reference)
-- [[Embeds-Reference]] (structural_reference)
-- [[Callouts-Reference]] (structural_reference)
-- [[Properties-(Frontmatter)-Reference]] (structural_reference)
+- [[Properties-(Frontmatter)-Reference]] (semantic_link)
+- [[Embeds-Reference]] (semantic_link)
+- [[Callouts-Reference]] (semantic_link)
+- [[Embeds-Reference]] (semantic_link)
+- [[Callouts-Reference]] (semantic_link)
+- [[Properties-(Frontmatter)-Reference]] (semantic_link)

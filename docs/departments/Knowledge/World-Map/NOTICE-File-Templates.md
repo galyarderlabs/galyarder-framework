@@ -6,6 +6,3 @@ source_path: docs/skills/open-source-license/references/templates/notice-files.m
 # NOTICE File Templates
 
 ## 🔗 Connections
-
-### Informed By:
-- [[NOTICE-File-Templates]] (structural_reference)

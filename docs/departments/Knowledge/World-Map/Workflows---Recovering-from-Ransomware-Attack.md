@@ -6,6 +6,3 @@ source_path: docs/skills/recovering-from-ransomware-attack/references/workflows.
 # Workflows - Recovering from Ransomware Attack
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Workflows---Recovering-from-Ransomware-Attack]] (structural_reference)

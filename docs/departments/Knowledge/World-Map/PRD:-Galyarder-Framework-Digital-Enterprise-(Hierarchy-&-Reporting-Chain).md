@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/PRD:-Galyarder-Framework-Digit
 ## 🔗 Connections
 
 ### Directing To:
-- [[PRD:-Galyarder-Framework-Digital-Enterprise-(Hierarchy-&-Reporting-Chain)]] (structural_reference)
-
-### Informed By:
-- [[PRD:-Galyarder-Framework-Digital-Enterprise-(Hierarchy-&-Reporting-Chain)]] (structural_reference)
+- [[PRD:-Galyarder-Framework-Digital-Enterprise-(Hierarchy-&-Reporting-Chain)]] (semantic_link)
+- [[PRD:-Galyarder-Framework-Digital-Enterprise-(Hierarchy-&-Reporting-Chain)]] (semantic_link)

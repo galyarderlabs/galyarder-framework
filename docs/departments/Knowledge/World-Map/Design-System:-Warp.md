@@ -8,5 +8,4 @@ source_path: docs/design/design-md-warp.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Warp]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

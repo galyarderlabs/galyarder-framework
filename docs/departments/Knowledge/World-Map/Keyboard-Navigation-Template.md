@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/accessibility/keyboard-navigat
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Keyboard-Navigation-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

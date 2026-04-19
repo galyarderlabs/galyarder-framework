@@ -8,5 +8,4 @@ source_path: docs/skills/paywall-upgrade-cro/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-paywall-upgrade-cro]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

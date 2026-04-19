@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Security
-source_path: Security/skills/executing-red-team-engagement-planning/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Executing-Red-Team-Engagement-Planning.md
 ---
 # Executing Red Team Engagement Planning
 

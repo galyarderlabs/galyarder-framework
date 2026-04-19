@@ -8,5 +8,4 @@ source_path: docs/commands/video.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-Video]] (structural_reference)
 - [[Galyarder-Framework:-Commands]] (structural_reference)

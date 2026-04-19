@@ -8,5 +8,4 @@ source_path: docs/design/design-md-figma.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Figma]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

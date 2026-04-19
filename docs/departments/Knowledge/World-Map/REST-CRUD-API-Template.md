@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/api/rest-crud.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[REST-CRUD-API-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

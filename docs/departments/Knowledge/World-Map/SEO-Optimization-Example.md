@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Growth
-source_path: Growth/skills/content-creator/examples/seo_optimization_example.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/SEO-Optimization-Example.md
 ---
 # SEO Optimization Example
 

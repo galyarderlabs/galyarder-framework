@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/dashboard/realtime-updates.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Realtime-Updates-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

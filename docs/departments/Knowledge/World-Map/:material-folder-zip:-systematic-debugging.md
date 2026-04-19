@@ -8,5 +8,4 @@ source_path: docs/skills/systematic-debugging/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-systematic-debugging]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

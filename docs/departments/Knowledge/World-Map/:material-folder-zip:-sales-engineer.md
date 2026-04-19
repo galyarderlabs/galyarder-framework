@@ -8,5 +8,4 @@ source_path: docs/agents/sales-engineer.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-sales-engineer]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

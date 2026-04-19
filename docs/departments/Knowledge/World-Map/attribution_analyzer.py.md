@@ -1,7 +1,7 @@
 ---
-node_type: logic-engine
-silo: Growth
-source_path: Growth/skills/campaign-analytics/scripts/attribution_analyzer.py
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/attribution_analyzer.py.md
 ---
 # attribution_analyzer.py
 

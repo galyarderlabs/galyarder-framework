@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Engineering
-source_path: Engineering/skills/requesting-code-review/code-reviewer.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Code-Review-Agent.md
 ---
 # Code Review Agent
 

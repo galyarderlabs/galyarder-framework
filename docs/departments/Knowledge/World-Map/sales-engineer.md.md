@@ -1,7 +1,7 @@
 ---
-node_type: agent
-silo: Growth
-source_path: Growth/agents/sales-engineer.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/sales-engineer.md.md
 ---
 # sales-engineer.md
 

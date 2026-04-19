@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Growth
-source_path: Growth/skills/marketing-psychology/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Marketing-Psychology-&-Mental-Models.md
 ---
 # Marketing Psychology & Mental Models
 

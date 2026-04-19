@@ -6,6 +6,3 @@ source_path: docs/skills/tracking-threat-actor-infrastructure/references/api-ref
 # API Reference: Tracking Threat Actor Infrastructure
 
 ## 🔗 Connections
-
-### Informed By:
-- [[API-Reference:-Tracking-Threat-Actor-Infrastructure]] (structural_reference)

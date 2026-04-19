@@ -8,5 +8,4 @@ source_path: docs/agents/security-reviewer.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-security-reviewer]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

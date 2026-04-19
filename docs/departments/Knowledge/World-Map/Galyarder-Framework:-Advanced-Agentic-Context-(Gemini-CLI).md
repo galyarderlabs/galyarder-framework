@@ -1,7 +1,7 @@
 ---
-node_type: core-hukum
-silo: Root
-source_path: GEMINI.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Galyarder-Framework:-Advanced-Agentic-Context-(Gemini-CLI).md
 ---
 # Galyarder Framework: Advanced Agentic Context (Gemini CLI)
 

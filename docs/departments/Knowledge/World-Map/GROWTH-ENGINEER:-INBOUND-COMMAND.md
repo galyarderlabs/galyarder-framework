@@ -1,7 +1,7 @@
 ---
-node_type: agent
-silo: Growth
-source_path: Growth/agents/growth-engineer.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/GROWTH-ENGINEER:-INBOUND-COMMAND.md
 ---
 # GROWTH ENGINEER: INBOUND COMMAND
 

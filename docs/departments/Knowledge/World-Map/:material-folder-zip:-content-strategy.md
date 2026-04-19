@@ -11,5 +11,4 @@ source_path: docs/skills/content-strategy/index.md
 - [[Headless-CMS-Guide]] (structural_reference)
 
 ### Informed By:
-- [[:material-folder-zip:-content-strategy]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

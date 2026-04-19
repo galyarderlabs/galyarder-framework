@@ -6,6 +6,3 @@ source_path: docs/skills/using-galyarder-framework/references/copilot-tools.md
 # Copilot CLI Tool Mapping
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Copilot-CLI-Tool-Mapping]] (structural_reference)

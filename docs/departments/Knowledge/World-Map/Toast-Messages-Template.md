@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/notifications/toast-messages.m
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Toast-Messages-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

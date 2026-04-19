@@ -8,5 +8,4 @@ source_path: docs/agents/perseus.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-perseus]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

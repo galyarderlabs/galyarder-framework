@@ -6,6 +6,3 @@ source_path: docs/skills/financial-analyst/assets/variance_report_template.md
 # Budget Variance Report
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Budget-Variance-Report]] (structural_reference)

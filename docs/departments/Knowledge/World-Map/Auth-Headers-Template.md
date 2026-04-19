@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/api/auth-headers.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Auth-Headers-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

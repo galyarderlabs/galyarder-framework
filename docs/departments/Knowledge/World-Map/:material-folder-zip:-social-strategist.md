@@ -8,5 +8,4 @@ source_path: docs/agents/social-strategist.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-social-strategist]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

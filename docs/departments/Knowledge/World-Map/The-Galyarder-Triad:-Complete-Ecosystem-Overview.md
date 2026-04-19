@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/The-Galyarder-Triad:-Complete-
 ## 🔗 Connections
 
 ### Directing To:
-- [[The-Galyarder-Triad:-Complete-Ecosystem-Overview]] (structural_reference)
-
-### Informed By:
-- [[The-Galyarder-Triad:-Complete-Ecosystem-Overview]] (structural_reference)
+- [[The-Galyarder-Triad:-Complete-Ecosystem-Overview]] (semantic_link)
+- [[The-Galyarder-Triad:-Complete-Ecosystem-Overview]] (semantic_link)

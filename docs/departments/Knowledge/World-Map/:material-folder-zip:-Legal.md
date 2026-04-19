@@ -8,5 +8,4 @@ source_path: docs/commands/legal.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-Legal]] (structural_reference)
 - [[Galyarder-Framework:-Commands]] (structural_reference)

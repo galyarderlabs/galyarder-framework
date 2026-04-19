@@ -8,5 +8,4 @@ source_path: docs/skills/iso-42001-ai-governance/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-iso-42001-ai-governance]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

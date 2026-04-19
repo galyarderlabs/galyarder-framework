@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Cross-Platform-Polyglot-Hooks-
 ## 🔗 Connections
 
 ### Directing To:
-- [[Cross-Platform-Polyglot-Hooks-for-Claude-Code]] (structural_reference)
-
-### Informed By:
-- [[Cross-Platform-Polyglot-Hooks-for-Claude-Code]] (structural_reference)
+- [[Cross-Platform-Polyglot-Hooks-for-Claude-Code]] (semantic_link)
+- [[Cross-Platform-Polyglot-Hooks-for-Claude-Code]] (semantic_link)

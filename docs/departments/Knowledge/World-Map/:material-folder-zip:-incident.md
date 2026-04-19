@@ -8,5 +8,4 @@ source_path: docs/commands/incident.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-incident]] (structural_reference)
 - [[Galyarder-Framework:-Commands]] (structural_reference)

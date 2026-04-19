@@ -8,5 +8,4 @@ source_path: docs/skills/pr-report/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-pr-report]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

@@ -8,5 +8,4 @@ source_path: docs/agents/sre.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-sre]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

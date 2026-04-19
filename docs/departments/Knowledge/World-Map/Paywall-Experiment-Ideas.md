@@ -6,6 +6,3 @@ source_path: docs/skills/paywall-upgrade-cro/references/experiments.md
 # Paywall Experiment Ideas
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Paywall-Experiment-Ideas]] (structural_reference)

@@ -1,7 +1,7 @@
 ---
-node_type: agent
-silo: Security
-source_path: Security/agents/security-reviewer.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Security-Reviewer.md
 ---
 # Security Reviewer
 

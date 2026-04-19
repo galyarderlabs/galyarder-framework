@@ -8,5 +8,4 @@ source_path: docs/design/design-md-intercom.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Intercom]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

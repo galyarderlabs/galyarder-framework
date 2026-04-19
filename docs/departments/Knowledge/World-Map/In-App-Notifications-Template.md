@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/notifications/in-app.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[In-App-Notifications-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

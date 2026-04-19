@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Executive
-source_path: Executive/skills/investor-research/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/INVESTOR-RESEARCH:-TARGET-LIST-PROTOCOL.md
 ---
 # INVESTOR RESEARCH: TARGET LIST PROTOCOL
 

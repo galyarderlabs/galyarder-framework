@@ -6,6 +6,3 @@ source_path: docs/skills/tracking-threat-actor-infrastructure/references/standar
 # Standards and Frameworks Reference
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Standards-and-Frameworks-Reference]] (structural_reference)

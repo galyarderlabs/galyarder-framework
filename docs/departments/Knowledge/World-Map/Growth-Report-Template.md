@@ -6,6 +6,3 @@ source_path: docs/templates/Galyarder-Department-Reports/Growth Report Template.
 # Growth Report Template
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Growth-Report-Template]] (structural_reference)

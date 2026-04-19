@@ -6,6 +6,3 @@ source_path: docs/templates/Galyarder-Department-Reports/Legal-Finance Report Te
 # Legal-Finance Report Template
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Legal-Finance-Report-Template]] (structural_reference)

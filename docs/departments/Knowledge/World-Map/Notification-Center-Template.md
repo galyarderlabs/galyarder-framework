@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/notifications/notification-cen
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Notification-Center-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

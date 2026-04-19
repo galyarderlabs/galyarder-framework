@@ -1,7 +1,7 @@
 ---
-node_type: agent
-silo: Legal-Finance
-source_path: Legal-Finance/agents/legal-counsel.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/LEGAL-COUNSEL:-RISK-COMMAND.md
 ---
 # LEGAL COUNSEL: RISK COMMAND
 

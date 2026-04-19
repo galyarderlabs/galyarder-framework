@@ -8,5 +8,4 @@ source_path: docs/agents/refactor-cleaner.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-refactor-cleaner]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

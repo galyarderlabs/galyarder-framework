@@ -8,5 +8,4 @@ source_path: docs/skills/saas-finops-optimization/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-saas-finops-optimization]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

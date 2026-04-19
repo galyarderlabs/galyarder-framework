@@ -6,6 +6,3 @@ source_path: docs/skills/intercepting-mobile-traffic-with-burpsuite/references/a
 # API Reference: Mobile Traffic Interception with Burp Suite
 
 ## 🔗 Connections
-
-### Informed By:
-- [[API-Reference:-Mobile-Traffic-Interception-with-Burp-Suite]] (structural_reference)

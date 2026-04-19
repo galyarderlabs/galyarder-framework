@@ -63,6 +63,3 @@ source_path: docs/skills/playwright-pro/templates/README.md
 - [[Keyboard-Navigation-Template]] (structural_reference)
 - [[Screen-Reader-Template]] (structural_reference)
 - [[Color-Contrast-Template]] (structural_reference)
-
-### Informed By:
-- [[Test-Case-Templates]] (structural_reference)

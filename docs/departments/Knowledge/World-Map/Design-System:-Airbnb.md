@@ -8,5 +8,4 @@ source_path: docs/design/design-md-airbnb.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Airbnb]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

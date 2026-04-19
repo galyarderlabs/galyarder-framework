@@ -8,5 +8,4 @@ source_path: docs/design/design-md-airtable.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Airtable]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

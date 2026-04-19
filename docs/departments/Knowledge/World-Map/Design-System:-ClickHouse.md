@@ -8,5 +8,4 @@ source_path: docs/design/design-md-clickhouse.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-ClickHouse]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

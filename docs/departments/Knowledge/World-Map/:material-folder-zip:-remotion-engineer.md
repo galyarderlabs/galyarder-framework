@@ -8,5 +8,4 @@ source_path: docs/agents/remotion-engineer.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-remotion-engineer]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

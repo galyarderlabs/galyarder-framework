@@ -8,5 +8,4 @@ source_path: docs/agents/release-manager.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-release-manager]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

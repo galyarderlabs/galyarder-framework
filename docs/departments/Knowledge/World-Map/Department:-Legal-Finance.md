@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Department:-Legal-Finance.md
 ## 🔗 Connections
 
 ### Directing To:
-- [[Department:-Legal-Finance]] (structural_reference)
-
-### Informed By:
-- [[Department:-Legal-Finance]] (structural_reference)
+- [[Department:-Legal-Finance]] (semantic_link)
+- [[Department:-Legal-Finance]] (semantic_link)

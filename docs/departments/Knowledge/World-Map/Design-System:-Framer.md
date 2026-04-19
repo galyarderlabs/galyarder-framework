@@ -8,5 +8,4 @@ source_path: docs/design/design-md-framer.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Framer]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

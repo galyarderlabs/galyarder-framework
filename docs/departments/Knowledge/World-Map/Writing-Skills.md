@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Executive
-source_path: Executive/skills/writing-skills/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Writing-Skills.md
 ---
 # Writing Skills
 

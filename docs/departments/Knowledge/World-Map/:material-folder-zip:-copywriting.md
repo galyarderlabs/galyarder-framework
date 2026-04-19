@@ -8,5 +8,4 @@ source_path: docs/skills/copywriting/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-copywriting]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

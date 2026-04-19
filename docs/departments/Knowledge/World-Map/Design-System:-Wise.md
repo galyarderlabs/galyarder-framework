@@ -8,5 +8,4 @@ source_path: docs/design/design-md-wise.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Wise]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

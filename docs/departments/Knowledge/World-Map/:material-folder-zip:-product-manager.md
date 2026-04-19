@@ -8,5 +8,4 @@ source_path: docs/agents/product-manager.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-product-manager]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

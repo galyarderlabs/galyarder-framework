@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Legal-Finance
-source_path: Legal-Finance/skills/finance-based-pricing-advisor/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/SKILL.md.md
 ---
 # SKILL.md
 

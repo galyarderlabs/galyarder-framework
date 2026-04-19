@@ -65,4 +65,3 @@ source_path: docs/design/index.md
 
 ### Informed By:
 - [[Welcome-to-Galyarder-Framework]] (structural_reference)
-- [[Design-System-Specifications]] (structural_reference)

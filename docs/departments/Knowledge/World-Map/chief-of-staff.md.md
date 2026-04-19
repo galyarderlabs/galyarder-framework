@@ -1,7 +1,7 @@
 ---
-node_type: agent
-silo: Executive
-source_path: Executive/agents/chief-of-staff.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/chief-of-staff.md.md
 ---
 # chief-of-staff.md
 

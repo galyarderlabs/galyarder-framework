@@ -8,5 +8,4 @@ source_path: docs/agents/cyber-intel.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-cyber-intel]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

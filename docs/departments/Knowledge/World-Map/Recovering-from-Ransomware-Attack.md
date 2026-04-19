@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Security
-source_path: Security/skills/recovering-from-ransomware-attack/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Recovering-from-Ransomware-Attack.md
 ---
 # Recovering from Ransomware Attack
 

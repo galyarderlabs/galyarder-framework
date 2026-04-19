@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Product
-source_path: Product/skills/prd-to-issues/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/PRD-to-Issues.md
 ---
 # PRD to Issues
 

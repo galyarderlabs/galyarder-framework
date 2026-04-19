@@ -14,5 +14,4 @@ source_path: docs/skills/obsidian-bases/index.md
 - [[Functions-Reference]] (structural_reference)
 
 ### Informed By:
-- [[:material-folder-zip:-obsidian-bases]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

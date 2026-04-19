@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/crud/bulk-operations.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Bulk-Operations-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

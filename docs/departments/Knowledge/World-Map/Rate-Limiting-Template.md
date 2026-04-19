@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/api/rate-limiting.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Rate-Limiting-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

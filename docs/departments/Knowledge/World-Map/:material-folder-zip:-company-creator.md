@@ -13,5 +13,4 @@ source_path: docs/skills/company-creator/index.md
 - [[example-company.md]] (structural_reference)
 
 ### Informed By:
-- [[:material-folder-zip:-company-creator]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

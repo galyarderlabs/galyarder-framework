@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Galyarder-Framework-—-Aider-
 ## 🔗 Connections
 
 ### Directing To:
-- [[Galyarder-Framework-—-Aider-Conventions]] (structural_reference)
-
-### Informed By:
-- [[Galyarder-Framework-—-Aider-Conventions]] (structural_reference)
+- [[Galyarder-Framework-—-Aider-Conventions]] (semantic_link)
+- [[Galyarder-Framework-—-Aider-Conventions]] (semantic_link)

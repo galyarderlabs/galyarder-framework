@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Design-Spec:-Galyarder-Framewo
 ## 🔗 Connections
 
 ### Directing To:
-- [[Design-Spec:-Galyarder-Framework-x-Obsidian-Integration]] (structural_reference)
-
-### Informed By:
-- [[Design-Spec:-Galyarder-Framework-x-Obsidian-Integration]] (structural_reference)
+- [[Design-Spec:-Galyarder-Framework-x-Obsidian-Integration]] (semantic_link)
+- [[Design-Spec:-Galyarder-Framework-x-Obsidian-Integration]] (semantic_link)

@@ -1,13 +1,13 @@
 ---
-node_type: skill
-silo: Product
-source_path: Product/skills/company-creator/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Company-Creator.md
 ---
 # Company Creator
 
 ## 🔗 Connections
 
 ### Directing To:
-- [[Creating-a-Company-From-an-Existing-Repository]] (structural_reference)
-- [[Agent-Companies-Specification-Reference]] (structural_reference)
-- [[example-company.md]] (structural_reference)
+- [[Creating-a-Company-From-an-Existing-Repository]] (semantic_link)
+- [[Agent-Companies-Specification-Reference]] (semantic_link)
+- [[example-company.md]] (semantic_link)

@@ -8,5 +8,4 @@ source_path: docs/skills/writing-plans/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-writing-plans]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

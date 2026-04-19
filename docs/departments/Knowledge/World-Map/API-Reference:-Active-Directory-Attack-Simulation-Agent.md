@@ -6,6 +6,3 @@ source_path: docs/skills/executing-active-directory-attack-simulation/references
 # API Reference: Active Directory Attack Simulation Agent
 
 ## 🔗 Connections
-
-### Informed By:
-- [[API-Reference:-Active-Directory-Attack-Simulation-Agent]] (structural_reference)

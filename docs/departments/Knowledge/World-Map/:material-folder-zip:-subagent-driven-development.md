@@ -8,5 +8,4 @@ source_path: docs/skills/subagent-driven-development/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-subagent-driven-development]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

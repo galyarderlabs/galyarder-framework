@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Product
-source_path: Product/skills/writing-plans/plan-document-reviewer-prompt.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Plan-Document-Reviewer-Prompt-Template.md
 ---
 # Plan Document Reviewer Prompt Template
 

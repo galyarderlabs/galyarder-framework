@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Knowledge
-source_path: Knowledge/skills/doc-maintenance/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Doc-Maintenance-Skill.md
 ---
 # Doc Maintenance Skill
 

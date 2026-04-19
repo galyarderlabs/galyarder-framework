@@ -8,5 +8,4 @@ source_path: docs/design/design-md-bmw.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-BMW]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

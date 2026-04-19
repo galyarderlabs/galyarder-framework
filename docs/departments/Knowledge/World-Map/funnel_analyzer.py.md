@@ -1,7 +1,7 @@
 ---
-node_type: logic-engine
-silo: Growth
-source_path: Growth/skills/campaign-analytics/scripts/funnel_analyzer.py
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/funnel_analyzer.py.md
 ---
 # funnel_analyzer.py
 

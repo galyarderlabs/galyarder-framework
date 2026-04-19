@@ -8,5 +8,4 @@ source_path: docs/agents/vercel-react-expert.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-vercel-react-expert]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

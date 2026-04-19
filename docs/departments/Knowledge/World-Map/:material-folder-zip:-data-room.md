@@ -8,5 +8,4 @@ source_path: docs/skills/data-room/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-data-room]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

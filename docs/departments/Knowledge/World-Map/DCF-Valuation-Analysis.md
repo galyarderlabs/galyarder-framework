@@ -6,6 +6,3 @@ source_path: docs/skills/financial-analyst/assets/dcf_analysis_template.md
 # DCF Valuation Analysis
 
 ## 🔗 Connections
-
-### Informed By:
-- [[DCF-Valuation-Analysis]] (structural_reference)

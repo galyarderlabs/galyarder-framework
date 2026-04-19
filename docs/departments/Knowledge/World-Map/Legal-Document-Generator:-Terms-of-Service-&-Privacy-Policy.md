@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Legal-Finance
-source_path: Legal-Finance/skills/legal-tos-privacy/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Legal-Document-Generator:-Terms-of-Service-&-Privacy-Policy.md
 ---
 # Legal Document Generator: Terms of Service & Privacy Policy
 

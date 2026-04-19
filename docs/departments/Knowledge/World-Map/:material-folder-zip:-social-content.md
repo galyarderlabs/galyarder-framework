@@ -8,5 +8,4 @@ source_path: docs/skills/social-content/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-social-content]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

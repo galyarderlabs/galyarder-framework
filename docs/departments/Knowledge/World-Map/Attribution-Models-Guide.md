@@ -6,6 +6,3 @@ source_path: docs/skills/campaign-analytics/references/attribution-models-guide.
 # Attribution Models Guide
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Attribution-Models-Guide]] (structural_reference)

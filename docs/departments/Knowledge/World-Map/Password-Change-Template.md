@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/settings/password-change.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Password-Change-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

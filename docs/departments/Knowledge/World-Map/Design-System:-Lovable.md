@@ -8,5 +8,4 @@ source_path: docs/design/design-md-lovable.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Lovable]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

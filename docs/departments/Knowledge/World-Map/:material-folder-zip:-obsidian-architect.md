@@ -11,5 +11,4 @@ source_path: docs/agents/obsidian-architect.md
 - [[Note-Name]] (semantic_link)
 
 ### Informed By:
-- [[:material-folder-zip:-obsidian-architect]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

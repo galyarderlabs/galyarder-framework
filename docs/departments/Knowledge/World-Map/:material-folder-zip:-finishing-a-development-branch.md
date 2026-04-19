@@ -8,5 +8,4 @@ source_path: docs/skills/finishing-a-development-branch/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-finishing-a-development-branch]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

@@ -6,6 +6,3 @@ source_path: docs/templates/Galyarder-Department-Reports/Operations Report Templ
 # Operations Report Template
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Operations-Report-Template]] (structural_reference)

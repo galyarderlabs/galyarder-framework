@@ -8,5 +8,4 @@ source_path: docs/design/design-md-nvidia.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-NVIDIA]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

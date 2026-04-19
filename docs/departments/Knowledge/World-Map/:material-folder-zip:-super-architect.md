@@ -8,5 +8,4 @@ source_path: docs/agents/super-architect.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-super-architect]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

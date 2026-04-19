@@ -6,6 +6,3 @@ source_path: docs/skills/testing-for-xss-vulnerabilities-with-burpsuite/referenc
 # API Reference: Testing for XSS Vulnerabilities with Burp Suite
 
 ## 🔗 Connections
-
-### Informed By:
-- [[API-Reference:-Testing-for-XSS-Vulnerabilities-with-Burp-Suite]] (structural_reference)

@@ -8,5 +8,4 @@ source_path: docs/commands/build-fix.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-Build-Fix]] (structural_reference)
 - [[Galyarder-Framework:-Commands]] (structural_reference)

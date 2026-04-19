@@ -6,6 +6,3 @@ source_path: docs/skills/executing-phishing-simulation-campaign/references/api-r
 # API Reference: Phishing Simulation Campaign Agent
 
 ## 🔗 Connections
-
-### Informed By:
-- [[API-Reference:-Phishing-Simulation-Campaign-Agent]] (structural_reference)

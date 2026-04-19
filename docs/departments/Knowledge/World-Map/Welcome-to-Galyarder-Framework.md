@@ -15,7 +15,5 @@ source_path: docs/departments/Knowledge/World-Map/Welcome-to-Galyarder-Framework
 - [[generate-docs.py]] (semantic_link)
 - [[generate-docs.py]] (semantic_link)
 - [[himalayan_link_fixer.py]] (semantic_link)
-- [[Welcome-to-Galyarder-Framework]] (structural_reference)
-
-### Informed By:
-- [[Welcome-to-Galyarder-Framework]] (structural_reference)
+- [[Welcome-to-Galyarder-Framework]] (semantic_link)
+- [[Welcome-to-Galyarder-Framework]] (semantic_link)

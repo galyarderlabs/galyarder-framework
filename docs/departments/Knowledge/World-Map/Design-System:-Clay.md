@@ -8,5 +8,4 @@ source_path: docs/design/design-md-clay.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Clay]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

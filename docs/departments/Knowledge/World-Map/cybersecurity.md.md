@@ -1,7 +1,7 @@
 ---
-node_type: governance
-silo: Security
-source_path: Security/commands/cybersecurity.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/cybersecurity.md.md
 ---
 # cybersecurity.md
 

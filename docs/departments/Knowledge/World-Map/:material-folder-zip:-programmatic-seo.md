@@ -8,5 +8,4 @@ source_path: docs/skills/programmatic-seo/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-programmatic-seo]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

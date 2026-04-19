@@ -1,7 +1,7 @@
 ---
-node_type: governance
-silo: Growth
-source_path: Growth/commands/video.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/video.md.md
 ---
 # video.md
 

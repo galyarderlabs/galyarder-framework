@@ -18,5 +18,4 @@ source_path: docs/skills/marketing-demand-acquisition/index.md
 - [[Attribution-Guide]] (structural_reference)
 
 ### Informed By:
-- [[:material-folder-zip:-marketing-demand-acquisition]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

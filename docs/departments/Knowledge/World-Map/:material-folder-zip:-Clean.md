@@ -8,5 +8,4 @@ source_path: docs/commands/clean.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-Clean]] (structural_reference)
 - [[Galyarder-Framework:-Commands]] (structural_reference)

@@ -8,5 +8,4 @@ source_path: docs/commands/plan.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-Plan]] (structural_reference)
 - [[Galyarder-Framework:-Commands]] (structural_reference)

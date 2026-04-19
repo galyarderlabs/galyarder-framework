@@ -6,6 +6,3 @@ source_path: docs/skills/doc-maintenance/references/audit-checklist.md
 # Doc Maintenance Audit Checklist
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Doc-Maintenance-Audit-Checklist]] (structural_reference)

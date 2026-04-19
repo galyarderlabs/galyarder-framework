@@ -1,7 +1,7 @@
 ---
-node_type: governance
-silo: Product
-source_path: Product/commands/triage.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/triage.md.md
 ---
 # triage.md
 

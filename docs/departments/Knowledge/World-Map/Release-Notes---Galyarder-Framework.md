@@ -9,7 +9,5 @@ source_path: docs/departments/Knowledge/World-Map/Release-Notes---Galyarder-Fram
 
 ### Directing To:
 - [[Galyarder-Migration-Guide:-v1.7.x-->-v1.8.0]] (semantic_link)
-- [[Release-Notes---Galyarder-Framework]] (structural_reference)
-
-### Informed By:
-- [[Release-Notes---Galyarder-Framework]] (structural_reference)
+- [[Release-Notes---Galyarder-Framework]] (semantic_link)
+- [[Release-Notes---Galyarder-Framework]] (semantic_link)

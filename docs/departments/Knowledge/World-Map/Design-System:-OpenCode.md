@@ -8,5 +8,4 @@ source_path: docs/design/design-md-opencode.ai.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-OpenCode]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

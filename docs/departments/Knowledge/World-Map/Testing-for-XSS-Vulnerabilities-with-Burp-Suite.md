@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Security
-source_path: Security/skills/testing-for-xss-vulnerabilities-with-burpsuite/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Testing-for-XSS-Vulnerabilities-with-Burp-Suite.md
 ---
 # Testing for XSS Vulnerabilities with Burp Suite
 

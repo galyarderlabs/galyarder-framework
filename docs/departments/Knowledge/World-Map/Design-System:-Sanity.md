@@ -8,5 +8,4 @@ source_path: docs/design/design-md-sanity.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Sanity]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

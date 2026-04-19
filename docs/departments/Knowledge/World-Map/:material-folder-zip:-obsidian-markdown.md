@@ -33,5 +33,4 @@ source_path: docs/skills/obsidian-markdown/index.md
 - [[Properties-(Frontmatter)-Reference]] (structural_reference)
 
 ### Informed By:
-- [[:material-folder-zip:-obsidian-markdown]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/dashboard/chart-rendering.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Chart-Rendering-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

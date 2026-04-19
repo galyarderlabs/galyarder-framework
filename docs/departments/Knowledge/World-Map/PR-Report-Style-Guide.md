@@ -6,6 +6,3 @@ source_path: docs/skills/pr-report/references/style-guide.md
 # PR Report Style Guide
 
 ## 🔗 Connections
-
-### Informed By:
-- [[PR-Report-Style-Guide]] (structural_reference)

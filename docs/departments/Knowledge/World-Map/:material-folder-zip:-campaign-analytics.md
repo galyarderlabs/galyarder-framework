@@ -8,5 +8,4 @@ source_path: docs/skills/campaign-analytics/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-campaign-analytics]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

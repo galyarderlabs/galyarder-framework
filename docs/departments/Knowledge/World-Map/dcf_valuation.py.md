@@ -1,7 +1,7 @@
 ---
-node_type: logic-engine
-silo: Legal-Finance
-source_path: Legal-Finance/skills/financial-analyst/scripts/dcf_valuation.py
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/dcf_valuation.py.md
 ---
 # dcf_valuation.py
 

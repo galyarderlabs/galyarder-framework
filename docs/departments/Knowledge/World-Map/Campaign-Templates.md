@@ -10,6 +10,5 @@ source_path: docs/skills/marketing-demand-acquisition/references/campaign-templa
 ### Informed By:
 - [[Marketing-Demand-&-Acquisition]] (structural_reference)
 - [[Marketing-Demand-&-Acquisition]] (structural_reference)
-- [[Campaign-Templates]] (structural_reference)
 - [[:material-folder-zip:-marketing-demand-acquisition]] (structural_reference)
 - [[:material-folder-zip:-marketing-demand-acquisition]] (structural_reference)

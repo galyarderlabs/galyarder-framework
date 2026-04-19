@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Engineering
-source_path: Engineering/skills/vercel-react-best-practices/rules/server-serialization.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/server-serialization.md.md
 ---
 # server-serialization.md
 

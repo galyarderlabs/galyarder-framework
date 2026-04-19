@@ -8,5 +8,4 @@ source_path: docs/design/design-md-linear.app.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Linear]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

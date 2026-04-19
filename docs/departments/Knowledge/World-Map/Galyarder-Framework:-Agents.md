@@ -43,4 +43,3 @@ source_path: docs/agents/index.md
 
 ### Informed By:
 - [[Welcome-to-Galyarder-Framework]] (structural_reference)
-- [[Galyarder-Framework:-Agents]] (structural_reference)

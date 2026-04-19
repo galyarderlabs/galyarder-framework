@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/search/filters.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Search-Filters-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

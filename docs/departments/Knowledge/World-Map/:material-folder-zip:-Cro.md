@@ -8,5 +8,4 @@ source_path: docs/commands/cro.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-Cro]] (structural_reference)
 - [[Galyarder-Framework:-Commands]] (structural_reference)

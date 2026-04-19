@@ -1,7 +1,7 @@
 ---
-node_type: logic-engine
-silo: Security
-source_path: Security/skills/recovering-deleted-files-with-photorec/scripts/agent.py
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/agent.py.md
 ---
 # agent.py
 

@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Plan:-Galyarder-Framework---Hi
 ## 🔗 Connections
 
 ### Directing To:
-- [[Plan:-Galyarder-Framework---High-Fidelity-Recovery-&-"Humans-2.0"-Transformation]] (structural_reference)
-
-### Informed By:
-- [[Plan:-Galyarder-Framework---High-Fidelity-Recovery-&-"Humans-2.0"-Transformation]] (structural_reference)
+- [[Plan:-Galyarder-Framework---High-Fidelity-Recovery-&-"Humans-2.0"-Transformation]] (semantic_link)
+- [[Plan:-Galyarder-Framework---High-Fidelity-Recovery-&-"Humans-2.0"-Transformation]] (semantic_link)

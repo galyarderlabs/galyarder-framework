@@ -8,5 +8,4 @@ source_path: docs/agents/build-error-resolver.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-build-error-resolver]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

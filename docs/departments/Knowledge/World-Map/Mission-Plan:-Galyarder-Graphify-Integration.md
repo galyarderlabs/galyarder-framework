@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Mission-Plan:-Galyarder-Graphi
 ## 🔗 Connections
 
 ### Directing To:
-- [[Mission-Plan:-Galyarder-Graphify-Integration]] (structural_reference)
-
-### Informed By:
-- [[Mission-Plan:-Galyarder-Graphify-Integration]] (structural_reference)
+- [[Mission-Plan:-Galyarder-Graphify-Integration]] (semantic_link)
+- [[Mission-Plan:-Galyarder-Graphify-Integration]] (semantic_link)

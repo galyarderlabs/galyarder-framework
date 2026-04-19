@@ -6,6 +6,3 @@ source_path: docs/skills/legal-tos-privacy/references/compliance-checklist.md
 # Jurisdiction-Specific Compliance Requirements
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Jurisdiction-Specific-Compliance-Requirements]] (structural_reference)

@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Galyarder-Framework---Organiza
 ## 🔗 Connections
 
 ### Directing To:
-- [[Galyarder-Framework---Organization-Chart]] (structural_reference)
-
-### Informed By:
-- [[Galyarder-Framework---Organization-Chart]] (structural_reference)
+- [[Galyarder-Framework---Organization-Chart]] (semantic_link)
+- [[Galyarder-Framework---Organization-Chart]] (semantic_link)

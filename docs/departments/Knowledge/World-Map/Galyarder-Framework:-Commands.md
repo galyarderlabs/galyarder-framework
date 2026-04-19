@@ -22,12 +22,10 @@ source_path: docs/commands/index.md
 - [[:material-folder-zip:-Video]] (structural_reference)
 - [[:material-folder-zip:-Deploy]] (structural_reference)
 - [[:material-folder-zip:-Release]] (structural_reference)
+- [[:material-folder-zip:-graph]] (structural_reference)
 - [[:material-folder-zip:-Finops]] (structural_reference)
 - [[:material-folder-zip:-Legal]] (structural_reference)
 - [[:material-folder-zip:-Linear]] (structural_reference)
 - [[:material-folder-zip:-Plan]] (structural_reference)
 - [[:material-folder-zip:-Triage]] (structural_reference)
 - [[:material-folder-zip:-Cybersecurity]] (structural_reference)
-
-### Informed By:
-- [[Galyarder-Framework:-Commands]] (structural_reference)

@@ -6,6 +6,3 @@ source_path: docs/skills/open-source-license/references/templates/source-headers
 # Source File Header Templates
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Source-File-Header-Templates]] (structural_reference)

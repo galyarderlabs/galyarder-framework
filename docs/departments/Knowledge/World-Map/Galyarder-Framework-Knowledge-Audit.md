@@ -6,6 +6,3 @@ source_path: docs/templates/Galyarder-Framework Knowledge Audit.md
 # Galyarder Framework Knowledge Audit
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Galyarder-Framework-Knowledge-Audit]] (structural_reference)

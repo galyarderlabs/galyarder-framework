@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Department:-Executive.md
 ## 🔗 Connections
 
 ### Directing To:
-- [[Department:-Executive]] (structural_reference)
-
-### Informed By:
-- [[Department:-Executive]] (structural_reference)
+- [[Department:-Executive]] (semantic_link)
+- [[Department:-Executive]] (semantic_link)

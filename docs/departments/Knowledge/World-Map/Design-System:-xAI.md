@@ -8,5 +8,4 @@ source_path: docs/design/design-md-x.ai.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-xAI]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

@@ -8,5 +8,4 @@ source_path: docs/commands/triage.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-Triage]] (structural_reference)
 - [[Galyarder-Framework:-Commands]] (structural_reference)

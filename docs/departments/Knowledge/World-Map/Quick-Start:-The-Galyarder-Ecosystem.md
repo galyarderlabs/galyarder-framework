@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Quick-Start:-The-Galyarder-Eco
 ## 🔗 Connections
 
 ### Directing To:
-- [[Quick-Start:-The-Galyarder-Ecosystem]] (structural_reference)
-
-### Informed By:
-- [[Quick-Start:-The-Galyarder-Ecosystem]] (structural_reference)
+- [[Quick-Start:-The-Galyarder-Ecosystem]] (semantic_link)
+- [[Quick-Start:-The-Galyarder-Ecosystem]] (semantic_link)

@@ -8,5 +8,4 @@ source_path: docs/agents/devops-engineer.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-devops-engineer]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

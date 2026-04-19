@@ -8,5 +8,4 @@ source_path: docs/skills/board-update/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-board-update]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

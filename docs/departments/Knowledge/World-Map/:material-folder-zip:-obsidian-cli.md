@@ -8,5 +8,4 @@ source_path: docs/skills/obsidian-cli/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-obsidian-cli]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

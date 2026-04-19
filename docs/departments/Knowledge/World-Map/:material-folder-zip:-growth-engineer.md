@@ -8,5 +8,4 @@ source_path: docs/agents/growth-engineer.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-growth-engineer]] (structural_reference)
 - [[Galyarder-Framework:-Agents]] (structural_reference)

@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/auth/logout.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Logout-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

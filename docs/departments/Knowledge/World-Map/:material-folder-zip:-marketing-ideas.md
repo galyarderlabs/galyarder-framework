@@ -8,5 +8,4 @@ source_path: docs/skills/marketing-ideas/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-marketing-ideas]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

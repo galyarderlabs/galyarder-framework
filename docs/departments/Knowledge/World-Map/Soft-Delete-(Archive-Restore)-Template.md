@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/crud/soft-delete.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Soft-Delete-(Archive/Restore)-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

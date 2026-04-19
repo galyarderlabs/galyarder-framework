@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Knowledge
-source_path: Knowledge/skills/defuddle/SKILL.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Defuddle.md
 ---
 # Defuddle
 

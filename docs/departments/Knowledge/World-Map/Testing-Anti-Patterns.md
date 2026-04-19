@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Engineering
-source_path: Engineering/skills/test-driven-development/testing-anti-patterns.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Testing-Anti-Patterns.md
 ---
 # Testing Anti-Patterns
 

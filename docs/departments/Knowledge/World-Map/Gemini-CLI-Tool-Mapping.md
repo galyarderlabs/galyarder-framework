@@ -6,6 +6,3 @@ source_path: docs/skills/using-galyarder-framework/references/gemini-tools.md
 # Gemini CLI Tool Mapping
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Gemini-CLI-Tool-Mapping]] (structural_reference)

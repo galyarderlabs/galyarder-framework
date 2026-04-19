@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Engineering
-source_path: Engineering/skills/vercel-react-best-practices/rules/rerender-memo.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/rerender-memo.md.md
 ---
 # rerender-memo.md
 

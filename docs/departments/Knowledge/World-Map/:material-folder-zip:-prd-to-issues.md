@@ -8,5 +8,4 @@ source_path: docs/skills/prd-to-issues/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-prd-to-issues]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

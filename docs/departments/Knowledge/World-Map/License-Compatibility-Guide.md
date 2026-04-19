@@ -6,6 +6,3 @@ source_path: docs/skills/open-source-license/references/compliance/compatibility
 # License Compatibility Guide
 
 ## 🔗 Connections
-
-### Informed By:
-- [[License-Compatibility-Guide]] (structural_reference)

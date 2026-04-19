@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/accessibility/screen-reader.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Screen-Reader-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

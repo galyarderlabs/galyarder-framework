@@ -9,5 +9,4 @@ source_path: docs/skills/company-creator/references/example-company.md
 
 ### Informed By:
 - [[Company-Creator]] (structural_reference)
-- [[example-company.md]] (structural_reference)
 - [[:material-folder-zip:-company-creator]] (structural_reference)

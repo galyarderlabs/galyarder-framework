@@ -6,6 +6,3 @@ source_path: docs/skills/executing-red-team-engagement-planning/references/stand
 # Standards and Framework References
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Standards-and-Framework-References]] (structural_reference)

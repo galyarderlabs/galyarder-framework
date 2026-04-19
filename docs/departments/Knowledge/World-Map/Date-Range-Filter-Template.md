@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/dashboard/date-range-filter.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Date-Range-Filter-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

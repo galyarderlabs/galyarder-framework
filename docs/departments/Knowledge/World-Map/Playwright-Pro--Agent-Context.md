@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Engineering
-source_path: Engineering/skills/playwright-pro/CLAUDE.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Playwright-Pro--Agent-Context.md
 ---
 # Playwright Pro  Agent Context
 

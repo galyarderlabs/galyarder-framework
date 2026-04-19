@@ -8,5 +8,4 @@ source_path: docs/skills/analytics-tracking/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-analytics-tracking]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

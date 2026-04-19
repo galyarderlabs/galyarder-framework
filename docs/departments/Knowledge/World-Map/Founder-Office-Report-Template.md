@@ -6,6 +6,3 @@ source_path: docs/templates/Galyarder-Department-Reports/Founder Office Report T
 # Founder Office Report Template
 
 ## 🔗 Connections
-
-### Informed By:
-- [[Founder-Office-Report-Template]] (structural_reference)

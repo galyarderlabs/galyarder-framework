@@ -8,5 +8,4 @@ source_path: docs/design/design-md-sentry.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Sentry]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

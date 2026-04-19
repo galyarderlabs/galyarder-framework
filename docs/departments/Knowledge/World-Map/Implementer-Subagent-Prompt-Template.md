@@ -1,7 +1,7 @@
 ---
-node_type: skill
-silo: Engineering
-source_path: Engineering/skills/subagent-driven-development/implementer-prompt.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/Implementer-Subagent-Prompt-Template.md
 ---
 # Implementer Subagent Prompt Template
 

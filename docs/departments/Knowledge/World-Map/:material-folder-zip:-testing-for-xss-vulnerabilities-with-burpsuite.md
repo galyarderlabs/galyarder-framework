@@ -8,5 +8,4 @@ source_path: docs/skills/testing-for-xss-vulnerabilities-with-burpsuite/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-testing-for-xss-vulnerabilities-with-burpsuite]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

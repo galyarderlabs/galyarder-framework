@@ -8,5 +8,4 @@ source_path: docs/commands/e2e.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-E2E]] (structural_reference)
 - [[Galyarder-Framework:-Commands]] (structural_reference)

@@ -8,7 +8,5 @@ source_path: docs/departments/Knowledge/World-Map/Multi-Platform-Integration-Pro
 ## 🔗 Connections
 
 ### Directing To:
-- [[Multi-Platform-Integration-Protocol]] (structural_reference)
-
-### Informed By:
-- [[Multi-Platform-Integration-Protocol]] (structural_reference)
+- [[Multi-Platform-Integration-Protocol]] (semantic_link)
+- [[Multi-Platform-Integration-Protocol]] (semantic_link)

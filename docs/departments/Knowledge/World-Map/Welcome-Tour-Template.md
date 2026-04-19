@@ -9,5 +9,4 @@ source_path: docs/skills/playwright-pro/templates/onboarding/welcome-tour.md
 
 ### Informed By:
 - [[Test-Case-Templates]] (structural_reference)
-- [[Welcome-Tour-Template]] (structural_reference)
 - [[Test-Case-Templates]] (structural_reference)

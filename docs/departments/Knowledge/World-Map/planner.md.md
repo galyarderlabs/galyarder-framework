@@ -1,7 +1,7 @@
 ---
-node_type: agent
-silo: Product
-source_path: Product/agents/planner.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/planner.md.md
 ---
 # planner.md
 

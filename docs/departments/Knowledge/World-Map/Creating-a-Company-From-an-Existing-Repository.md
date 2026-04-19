@@ -9,5 +9,4 @@ source_path: docs/skills/company-creator/references/from-repo-guide.md
 
 ### Informed By:
 - [[Company-Creator]] (structural_reference)
-- [[Creating-a-Company-From-an-Existing-Repository]] (structural_reference)
 - [[:material-folder-zip:-company-creator]] (structural_reference)

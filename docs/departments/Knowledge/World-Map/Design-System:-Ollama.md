@@ -8,5 +8,4 @@ source_path: docs/design/design-md-ollama.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[Design-System:-Ollama]] (structural_reference)
 - [[Design-System-Specifications]] (structural_reference)

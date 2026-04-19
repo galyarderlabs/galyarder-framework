@@ -16,6 +16,3 @@ source_path: docs/templates/Galyarder-Department-Reports/Department Report Index
 - [[Operations-Report-Template]] (semantic_link)
 - [[Legal-Finance-Report-Template]] (semantic_link)
 - [[Knowledge-Report-Template]] (semantic_link)
-
-### Informed By:
-- [[Department-Report-Index]] (structural_reference)

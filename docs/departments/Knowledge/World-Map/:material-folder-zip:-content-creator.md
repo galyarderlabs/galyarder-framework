@@ -8,5 +8,4 @@ source_path: docs/skills/content-creator/index.md
 ## 🔗 Connections
 
 ### Informed By:
-- [[:material-folder-zip:-content-creator]] (structural_reference)
 - [[Galyarder-Framework:-Skills]] (structural_reference)

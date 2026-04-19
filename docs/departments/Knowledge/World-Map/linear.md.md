@@ -1,7 +1,7 @@
 ---
-node_type: governance
-silo: Product
-source_path: Product/commands/linear.md
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/linear.md.md
 ---
 # linear.md
 
