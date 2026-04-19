@@ -1,7 +1,7 @@
 # Welcome to Galyarder Framework
 
 <p align="center">
-  <img src="assets/header.jpg" width="800" alt="Galyarder Framework">
+  <img src="assets/framework-thumb.webp" width="800" alt="Galyarder Framework">
 </p>
 
 ## Advanced Agentic Orchestration for the 1-Man Army

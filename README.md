@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/header.jpg" width="600" alt="Galyarder Framework">
+  <img src="public/framework-thumb.webp" width="600" alt="Galyarder Framework">
 </p>
 
 <h1 align="center">Galyarder Framework</h1>
