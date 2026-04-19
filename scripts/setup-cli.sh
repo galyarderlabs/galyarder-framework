@@ -5,23 +5,28 @@
 
 set -e
 
-# Setup directories
-FRAMEWORK_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+# Determine the ABSOLUTE path of the framework root
+# This logic traces back to the real directory even if run via path
+REAL_PATH=$(readlink -f "$0")
+FRAMEWORK_DIR="$(cd "$(dirname "$REAL_PATH")/.." && pwd)"
 BIN_DIR="$HOME/.local/bin"
 mkdir -p "$BIN_DIR"
 
 echo "🚀 Linking Galyarder Framework to global PATH..."
 
-# Create symbolic links with ergonomic names
+# Create symbolic links with absolute paths to the source repo
 ln -sf "$FRAMEWORK_DIR/scripts/scaffold-company.sh" "$BIN_DIR/galyarder-scaffold"
 ln -sf "$FRAMEWORK_DIR/scripts/install.sh" "$BIN_DIR/galyarder-deploy"
 ln -sf "$FRAMEWORK_DIR/scripts/smoke.sh" "$BIN_DIR/galyarder-smoke"
+ln -sf "$FRAMEWORK_DIR/scripts/convert.sh" "$BIN_DIR/galyarder-convert"
+
+# Hidden internal link used by install.sh
+ln -sf "$FRAMEWORK_DIR/scripts/convert.sh" "$BIN_DIR/convert.sh"
 
 # Verify PATH
 if [[ ":$PATH:" != *":$BIN_DIR:"* ]]; then
     echo "[!] Warning: $BIN_DIR is not in your PATH."
     
-    # Detect Shell
     SHELL_NAME=$(basename "$SHELL")
     RC_FILE=""
     if [[ "$SHELL_NAME" == "zsh" ]]; then
@@ -45,7 +50,7 @@ fi
 
 echo "---"
 echo "✅ CLI Setup Complete."
-echo "You can now run these commands from ANY project directory:"
+echo "Commands now available globally:"
 echo "  - galyarder-scaffold : Initialize Digital HQ"
 echo "  - galyarder-deploy   : Deploy agents to your IDE/Host"
 echo "  - galyarder-smoke    : Verify system integrity"

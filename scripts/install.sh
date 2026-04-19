@@ -7,18 +7,22 @@
 
 set -euo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# HARDENED PATH RESOLUTION: Trace symlinks to the real framework source
+REAL_PATH=$(readlink -f "$0")
+SCRIPT_DIR="$(cd "$(dirname "$REAL_PATH")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 
 TOOL="all"
 TARGET_DIR=""
 
 GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
 RED='\033[0;31m'
 BLUE='\033[0;34m'
 NC='\033[0m'
 
 ok() { echo -e "${GREEN}[OK]${NC} $*"; }
+warn() { echo -e "${YELLOW}[!!]${NC} $*"; }
 err() { echo -e "${RED}[ERR]${NC} $*" >&2; }
 info() { echo -e "${BLUE}[*]${NC} $*"; }
 
@@ -44,7 +48,7 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
-# 1. Run Conversion
+# 1. Run Conversion (Point to the absolute path of sibling script)
 info "Running Galyarder Framework conversion engine..."
 "${SCRIPT_DIR}/convert.sh" --tool "$TOOL"
 
@@ -55,12 +59,18 @@ for t in $TOOLS; do
     info "Installing for ${t}..."
     SRC_DIR="${REPO_ROOT}/integrations/${t}"
     
+    if [ ! -d "$SRC_DIR" ]; then
+        warn "Source directory for ${t} missing. Skipping."
+        continue
+    fi
+
     case "$t" in
         antigravity)
             DEST="${HOME}/.gemini/antigravity/skills"
             mkdir -p "$DEST"
-            # Surgical overwrite: remove existing to prevent dir-vs-file conflicts
+            # Surgical overwrite to prevent dir-vs-file conflicts
             for item in "${SRC_DIR}/"*; do
+                [ -e "$item" ] || continue
                 name=$(basename "$item")
                 rm -rf "${DEST}/${name}"
                 cp -R "$item" "${DEST}/"
@@ -85,6 +95,7 @@ for t in $TOOLS; do
             DEST="${HOME}/.windsurf/skills"
             mkdir -p "$DEST"
             for item in "${SRC_DIR}/skills/"*; do
+                [ -e "$item" ] || continue
                 name=$(basename "$item")
                 rm -rf "${DEST}/${name}"
                 cp -R "$item" "${DEST}/"
@@ -94,6 +105,7 @@ for t in $TOOLS; do
             DEST="${HOME}/.opencode/plugins"
             mkdir -p "$DEST"
             for item in "${SRC_DIR}/skills/"*; do
+                [ -e "$item" ] || continue
                 name=$(basename "$item")
                 rm -rf "${DEST}/${name}"
                 cp -R "$item" "${DEST}/"
