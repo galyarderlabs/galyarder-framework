@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/board-update/index.md
 ---
-
 # :material-folder-zip: board-update
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
-
----
-[View Original Source](../../../../docs/skills/board-update/index.md)
+### Informed By:
+- [[:material-folder-zip:-board-update]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

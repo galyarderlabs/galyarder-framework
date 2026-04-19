@@ -3,12 +3,9 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/ab-test-setup/references/test-templates.md
 ---
-
 # A/B Test Templates Reference
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../docs/skills/ab-test-setup/references/test-templates.md)
+### Informed By:
+- [[A/B-Test-Templates-Reference]] (structural_reference)

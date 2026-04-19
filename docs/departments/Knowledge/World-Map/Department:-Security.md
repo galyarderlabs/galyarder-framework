@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/departments/Security/README.md
+source_path: docs/departments/Knowledge/World-Map/Department:-Security.md
 ---
-
 # Department: Security
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[Department:-Security]] (structural_reference)
 
----
-[View Original Source](../../../../docs/departments/Security/README.md)
+### Informed By:
+- [[Department:-Security]] (structural_reference)

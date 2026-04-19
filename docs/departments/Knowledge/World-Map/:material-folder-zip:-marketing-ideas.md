@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/marketing-ideas/index.md
 ---
-
 # :material-folder-zip: marketing-ideas
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
-
----
-[View Original Source](../../../../docs/skills/marketing-ideas/index.md)
+### Informed By:
+- [[:material-folder-zip:-marketing-ideas]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

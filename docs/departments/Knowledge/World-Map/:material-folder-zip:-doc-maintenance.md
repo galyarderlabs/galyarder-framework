@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/doc-maintenance/index.md
 ---
-
 # :material-folder-zip: doc-maintenance
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
-
----
-[View Original Source](../../../../docs/skills/doc-maintenance/index.md)
+### Informed By:
+- [[:material-folder-zip:-doc-maintenance]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

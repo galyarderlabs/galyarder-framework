@@ -3,12 +3,9 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/campaign-analytics/references/attribution-models-guide.md
 ---
-
 # Attribution Models Guide
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../docs/skills/campaign-analytics/references/attribution-models-guide.md)
+### Informed By:
+- [[Attribution-Models-Guide]] (structural_reference)

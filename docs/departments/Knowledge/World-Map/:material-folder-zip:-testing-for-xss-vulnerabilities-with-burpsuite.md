@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/testing-for-xss-vulnerabilities-with-burpsuite/index.md
 ---
-
 # :material-folder-zip: testing-for-xss-vulnerabilities-with-burpsuite
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
-
----
-[View Original Source](../../../../docs/skills/testing-for-xss-vulnerabilities-with-burpsuite/index.md)
+### Informed By:
+- [[:material-folder-zip:-testing-for-xss-vulnerabilities-with-burpsuite]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

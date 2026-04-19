@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/agents/fundraising-operator.md
 ---
-
 # :material-folder-zip: fundraising-operator
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Agents]]
-
----
-[View Original Source](../../../../docs/agents/fundraising-operator.md)
+### Informed By:
+- [[:material-folder-zip:-fundraising-operator]] (structural_reference)
+- [[Galyarder-Framework:-Agents]] (structural_reference)

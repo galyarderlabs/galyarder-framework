@@ -3,12 +3,9 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/legal-tos-privacy/references/legal-guide.md
 ---
-
 # legal-guide.md
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../docs/skills/legal-tos-privacy/references/legal-guide.md)
+### Informed By:
+- [[legal-guide.md]] (structural_reference)

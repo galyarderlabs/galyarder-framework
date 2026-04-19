@@ -3,12 +3,9 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/programmatic-seo/references/playbooks.md
 ---
-
 # The 12 Programmatic SEO Playbooks
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../docs/skills/programmatic-seo/references/playbooks.md)
+### Informed By:
+- [[The-12-Programmatic-SEO-Playbooks]] (structural_reference)

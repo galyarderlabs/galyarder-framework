@@ -3,13 +3,11 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/playwright-pro/templates/forms/conditional-fields.md
 ---
-
 # Conditional Fields Template
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Test-Case-Templates]]
-
----
-[View Original Source](../../../../docs/skills/playwright-pro/templates/forms/conditional-fields.md)
+### Informed By:
+- [[Test-Case-Templates]] (structural_reference)
+- [[Conditional-Fields-Template]] (structural_reference)
+- [[Test-Case-Templates]] (structural_reference)

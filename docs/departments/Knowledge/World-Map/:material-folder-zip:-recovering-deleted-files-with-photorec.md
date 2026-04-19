@@ -3,13 +3,13 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/recovering-deleted-files-with-photorec/index.md
 ---
-
 # :material-folder-zip: recovering-deleted-files-with-photorec
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
+### Directing To:
+- [[-"$ext"-==-"jpg"-]] (semantic_link)
 
----
-[View Original Source](../../../../docs/skills/recovering-deleted-files-with-photorec/index.md)
+### Informed By:
+- [[:material-folder-zip:-recovering-deleted-files-with-photorec]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

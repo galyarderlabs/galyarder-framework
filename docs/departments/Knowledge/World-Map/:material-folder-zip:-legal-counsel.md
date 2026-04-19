@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/agents/legal-counsel.md
 ---
-
 # :material-folder-zip: legal-counsel
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Agents]]
-
----
-[View Original Source](../../../../docs/agents/legal-counsel.md)
+### Informed By:
+- [[:material-folder-zip:-legal-counsel]] (structural_reference)
+- [[Galyarder-Framework:-Agents]] (structural_reference)

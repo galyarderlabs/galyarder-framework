@@ -1,15 +1,11 @@
 ---
-node_type: script
-silo: scripts
-source_path: scripts/himalayan_link_fixer.py
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/himalayan_link_fixer.py.md
 ---
-
 # himalayan_link_fixer.py
 
-## Links Out
-- [[Welcome-to-Galyarder-Framework]]
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../scripts/himalayan_link_fixer.py)
+### Directing To:
+- [[Welcome-to-Galyarder-Framework]] (semantic_link)

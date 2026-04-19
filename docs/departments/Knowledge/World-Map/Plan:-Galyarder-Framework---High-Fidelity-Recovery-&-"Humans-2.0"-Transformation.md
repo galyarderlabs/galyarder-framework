@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/plans/2026-04-17-high-fidelity-recovery-plan.md
+source_path: docs/departments/Knowledge/World-Map/Plan:-Galyarder-Framework---High-Fidelity-Recovery-&-"Humans-2.0"-Transformation.md
 ---
-
 # Plan: Galyarder Framework - High-Fidelity Recovery & "Humans 2.0" Transformation
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[Plan:-Galyarder-Framework---High-Fidelity-Recovery-&-"Humans-2.0"-Transformation]] (structural_reference)
 
----
-[View Original Source](../../../../docs/plans/2026-04-17-high-fidelity-recovery-plan.md)
+### Informed By:
+- [[Plan:-Galyarder-Framework---High-Fidelity-Recovery-&-"Humans-2.0"-Transformation]] (structural_reference)

@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/commands/review.md
 ---
-
 # :material-folder-zip: Review
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Commands]]
-
----
-[View Original Source](../../../../docs/commands/review.md)
+### Informed By:
+- [[:material-folder-zip:-Review]] (structural_reference)
+- [[Galyarder-Framework:-Commands]] (structural_reference)

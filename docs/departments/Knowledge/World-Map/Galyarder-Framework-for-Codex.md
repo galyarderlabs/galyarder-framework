@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/README.codex.md
+source_path: docs/departments/Knowledge/World-Map/Galyarder-Framework-for-Codex.md
 ---
-
 # Galyarder Framework for Codex
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[Galyarder-Framework-for-Codex]] (structural_reference)
 
----
-[View Original Source](../../../../docs/README.codex.md)
+### Informed By:
+- [[Galyarder-Framework-for-Codex]] (structural_reference)

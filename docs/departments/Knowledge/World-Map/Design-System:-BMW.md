@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/design/design-md-bmw.md
 ---
-
 # Design System: BMW
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Design-System-Specifications]]
-
----
-[View Original Source](../../../../docs/design/design-md-bmw.md)
+### Informed By:
+- [[Design-System:-BMW]] (structural_reference)
+- [[Design-System-Specifications]] (structural_reference)

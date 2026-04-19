@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/accelerator-application/index.md
 ---
-
 # :material-folder-zip: accelerator-application
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
-
----
-[View Original Source](../../../../docs/skills/accelerator-application/index.md)
+### Informed By:
+- [[:material-folder-zip:-accelerator-application]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

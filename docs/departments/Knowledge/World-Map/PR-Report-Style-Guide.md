@@ -3,12 +3,9 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/pr-report/references/style-guide.md
 ---
-
 # PR Report Style Guide
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../docs/skills/pr-report/references/style-guide.md)
+### Informed By:
+- [[PR-Report-Style-Guide]] (structural_reference)

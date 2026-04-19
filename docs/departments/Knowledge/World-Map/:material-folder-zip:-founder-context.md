@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/founder-context/index.md
 ---
-
 # :material-folder-zip: founder-context
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
-
----
-[View Original Source](../../../../docs/skills/founder-context/index.md)
+### Informed By:
+- [[:material-folder-zip:-founder-context]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

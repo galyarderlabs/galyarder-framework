@@ -3,68 +3,66 @@ node_type: documentation
 silo: docs
 source_path: docs/design/index.md
 ---
-
 # Design System Specifications
 
-## Links Out
-- [[Design-System:-Airbnb]]
-- [[Design-System:-Airtable]]
-- [[Design-System:-Apple]]
-- [[Design-System:-BMW]]
-- [[Design-System:-Cal.com]]
-- [[Design-System:-Claude-(Anthropic)]]
-- [[Design-System:-Clay]]
-- [[Design-System:-ClickHouse]]
-- [[Design-System:-Cohere]]
-- [[Design-System:-Coinbase]]
-- [[Design-System:-Composio]]
-- [[Design-System:-Cursor]]
-- [[Design-System:-ElevenLabs]]
-- [[Design-System:-Expo]]
-- [[Design-System:-Figma]]
-- [[Design-System:-Framer]]
-- [[Design-System:-HashiCorp]]
-- [[Design-System:-IBM]]
-- [[Design-System:-Intercom]]
-- [[Design-System:-Kraken]]
-- [[Design-System:-Linear]]
-- [[Design-System:-Lovable]]
-- [[Design-System:-MiniMax]]
-- [[Design-System:-Mintlify]]
-- [[Design-System:-Miro]]
-- [[Design-System:-Mistral-AI]]
-- [[Design-System:-MongoDB]]
-- [[Design-System:-Notion]]
-- [[Design-System:-NVIDIA]]
-- [[Design-System:-Ollama]]
-- [[Design-System:-OpenCode]]
-- [[Design-System:-Pinterest]]
-- [[Design-System:-PostHog]]
-- [[Design-System:-Raycast]]
-- [[Design-System:-Replicate]]
-- [[Design-System:-Resend]]
-- [[Design-System:-Revolut]]
-- [[Design-System:-Runway]]
-- [[Design-System:-Sanity]]
-- [[Design-System:-Sentry]]
-- [[Design-System:-SpaceX]]
-- [[Design-System:-Spotify]]
-- [[Design-System:-Stripe]]
-- [[Design-System:-Supabase]]
-- [[Design-System:-Superhuman]]
-- [[Design-System:-Together-AI]]
-- [[Design-System:-Uber]]
-- [[Design-System:-Vercel]]
-- [[Design-System:-VoltAgent]]
-- [[Design-System:-Warp]]
-- [[Design-System:-Webflow]]
-- [[Design-System:-Wise]]
-- [[Design-System:-xAI]]
-- [[Design-System:-Zapier]]
+## 🔗 Connections
 
-## Linked From
-- [[Welcome-to-Galyarder-Framework]]
-- [[generate-docs.py]]
+### Directing To:
+- [[Design-System:-Airbnb]] (structural_reference)
+- [[Design-System:-Airtable]] (structural_reference)
+- [[Design-System:-Apple]] (structural_reference)
+- [[Design-System:-BMW]] (structural_reference)
+- [[Design-System:-Cal.com]] (structural_reference)
+- [[Design-System:-Claude-(Anthropic)]] (structural_reference)
+- [[Design-System:-Clay]] (structural_reference)
+- [[Design-System:-ClickHouse]] (structural_reference)
+- [[Design-System:-Cohere]] (structural_reference)
+- [[Design-System:-Coinbase]] (structural_reference)
+- [[Design-System:-Composio]] (structural_reference)
+- [[Design-System:-Cursor]] (structural_reference)
+- [[Design-System:-ElevenLabs]] (structural_reference)
+- [[Design-System:-Expo]] (structural_reference)
+- [[Design-System:-Figma]] (structural_reference)
+- [[Design-System:-Framer]] (structural_reference)
+- [[Design-System:-HashiCorp]] (structural_reference)
+- [[Design-System:-IBM]] (structural_reference)
+- [[Design-System:-Intercom]] (structural_reference)
+- [[Design-System:-Kraken]] (structural_reference)
+- [[Design-System:-Linear]] (structural_reference)
+- [[Design-System:-Lovable]] (structural_reference)
+- [[Design-System:-MiniMax]] (structural_reference)
+- [[Design-System:-Mintlify]] (structural_reference)
+- [[Design-System:-Miro]] (structural_reference)
+- [[Design-System:-Mistral-AI]] (structural_reference)
+- [[Design-System:-MongoDB]] (structural_reference)
+- [[Design-System:-Notion]] (structural_reference)
+- [[Design-System:-NVIDIA]] (structural_reference)
+- [[Design-System:-Ollama]] (structural_reference)
+- [[Design-System:-OpenCode]] (structural_reference)
+- [[Design-System:-Pinterest]] (structural_reference)
+- [[Design-System:-PostHog]] (structural_reference)
+- [[Design-System:-Raycast]] (structural_reference)
+- [[Design-System:-Replicate]] (structural_reference)
+- [[Design-System:-Resend]] (structural_reference)
+- [[Design-System:-Revolut]] (structural_reference)
+- [[Design-System:-Runway]] (structural_reference)
+- [[Design-System:-Sanity]] (structural_reference)
+- [[Design-System:-Sentry]] (structural_reference)
+- [[Design-System:-SpaceX]] (structural_reference)
+- [[Design-System:-Spotify]] (structural_reference)
+- [[Design-System:-Stripe]] (structural_reference)
+- [[Design-System:-Supabase]] (structural_reference)
+- [[Design-System:-Superhuman]] (structural_reference)
+- [[Design-System:-Together-AI]] (structural_reference)
+- [[Design-System:-Uber]] (structural_reference)
+- [[Design-System:-Vercel]] (structural_reference)
+- [[Design-System:-VoltAgent]] (structural_reference)
+- [[Design-System:-Warp]] (structural_reference)
+- [[Design-System:-Webflow]] (structural_reference)
+- [[Design-System:-Wise]] (structural_reference)
+- [[Design-System:-xAI]] (structural_reference)
+- [[Design-System:-Zapier]] (structural_reference)
 
----
-[View Original Source](../../../../docs/design/index.md)
+### Informed By:
+- [[Welcome-to-Galyarder-Framework]] (structural_reference)
+- [[Design-System-Specifications]] (structural_reference)

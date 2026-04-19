@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/design/design-md-posthog.md
 ---
-
 # Design System: PostHog
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Design-System-Specifications]]
-
----
-[View Original Source](../../../../docs/design/design-md-posthog.md)
+### Informed By:
+- [[Design-System:-PostHog]] (structural_reference)
+- [[Design-System-Specifications]] (structural_reference)

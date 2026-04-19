@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/brainstorming/index.md
 ---
-
 # :material-folder-zip: brainstorming
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
-
----
-[View Original Source](../../../../docs/skills/brainstorming/index.md)
+### Informed By:
+- [[:material-folder-zip:-brainstorming]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

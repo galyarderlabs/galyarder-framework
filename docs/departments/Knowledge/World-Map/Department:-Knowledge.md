@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/departments/Knowledge/README.md
+source_path: docs/departments/Knowledge/World-Map/Department:-Knowledge.md
 ---
-
 # Department: Knowledge
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[Department:-Knowledge]] (structural_reference)
 
----
-[View Original Source](../../../../docs/departments/Knowledge/README.md)
+### Informed By:
+- [[Department:-Knowledge]] (structural_reference)

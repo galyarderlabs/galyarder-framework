@@ -1,14 +1,8 @@
 ---
-node_type: script
-silo: scripts
-source_path: scripts/inject_thinking_mcp.py
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/inject_thinking_mcp.py.md
 ---
-
 # inject_thinking_mcp.py
 
-## Links Out
-
-## Linked From
-
----
-[View Original Source](../../../../scripts/inject_thinking_mcp.py)
+## 🔗 Connections

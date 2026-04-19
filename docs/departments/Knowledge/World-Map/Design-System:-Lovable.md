@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/design/design-md-lovable.md
 ---
-
 # Design System: Lovable
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Design-System-Specifications]]
-
----
-[View Original Source](../../../../docs/design/design-md-lovable.md)
+### Informed By:
+- [[Design-System:-Lovable]] (structural_reference)
+- [[Design-System-Specifications]] (structural_reference)

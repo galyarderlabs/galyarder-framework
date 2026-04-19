@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/QUICK_START.md
+source_path: docs/departments/Knowledge/World-Map/Quick-Start:-The-Galyarder-Ecosystem.md
 ---
-
 # Quick Start: The Galyarder Ecosystem
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[Quick-Start:-The-Galyarder-Ecosystem]] (structural_reference)
 
----
-[View Original Source](../../../../docs/QUICK_START.md)
+### Informed By:
+- [[Quick-Start:-The-Galyarder-Ecosystem]] (structural_reference)

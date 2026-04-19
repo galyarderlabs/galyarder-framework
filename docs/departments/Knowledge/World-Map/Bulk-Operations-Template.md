@@ -3,13 +3,11 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/playwright-pro/templates/crud/bulk-operations.md
 ---
-
 # Bulk Operations Template
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Test-Case-Templates]]
-
----
-[View Original Source](../../../../docs/skills/playwright-pro/templates/crud/bulk-operations.md)
+### Informed By:
+- [[Test-Case-Templates]] (structural_reference)
+- [[Bulk-Operations-Template]] (structural_reference)
+- [[Test-Case-Templates]] (structural_reference)

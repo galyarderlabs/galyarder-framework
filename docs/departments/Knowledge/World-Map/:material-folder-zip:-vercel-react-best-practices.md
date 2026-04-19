@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/vercel-react-best-practices/index.md
 ---
-
 # :material-folder-zip: vercel-react-best-practices
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
-
----
-[View Original Source](../../../../docs/skills/vercel-react-best-practices/index.md)
+### Informed By:
+- [[:material-folder-zip:-vercel-react-best-practices]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

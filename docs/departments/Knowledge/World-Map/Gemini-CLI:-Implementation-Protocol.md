@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/GEMINI.md
+source_path: docs/departments/Knowledge/World-Map/Gemini-CLI:-Implementation-Protocol.md
 ---
-
 # Gemini CLI: Implementation Protocol
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[Gemini-CLI:-Implementation-Protocol]] (structural_reference)
 
----
-[View Original Source](../../../../docs/GEMINI.md)
+### Informed By:
+- [[Gemini-CLI:-Implementation-Protocol]] (structural_reference)

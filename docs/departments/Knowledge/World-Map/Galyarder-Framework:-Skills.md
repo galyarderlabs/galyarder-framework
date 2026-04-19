@@ -3,102 +3,101 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/index.md
 ---
-
 # Galyarder Framework: Skills
 
-## Links Out
-- [[:material-folder-zip:-create-agent-adapter]]
-- [[:material-folder-zip:-finishing-a-development-branch]]
-- [[:material-folder-zip:-playwright-pro]]
-- [[:material-folder-zip:-pr-report]]
-- [[:material-folder-zip:-receiving-code-review]]
-- [[:material-folder-zip:-requesting-code-review]]
-- [[:material-folder-zip:-subagent-driven-development]]
-- [[:material-folder-zip:-systematic-debugging]]
-- [[:material-folder-zip:-test-driven-development]]
-- [[:material-folder-zip:-vercel-react-best-practices]]
-- [[:material-folder-zip:-verification-before-completion]]
-- [[:material-folder-zip:-accelerator-application]]
-- [[:material-folder-zip:-board-update]]
-- [[:material-folder-zip:-brainstorming]]
-- [[:material-folder-zip:-data-room]]
-- [[:material-folder-zip:-founder-context]]
-- [[:material-folder-zip:-founder-thought-leadership]]
-- [[:material-folder-zip:-fundraising-email]]
-- [[:material-folder-zip:-investor-research]]
-- [[:material-folder-zip:-lead-scoring]]
-- [[:material-folder-zip:-market-research]]
-- [[:material-folder-zip:-pitch-deck]]
-- [[:material-folder-zip:-using-galyarder-framework]]
-- [[:material-folder-zip:-writing-skills]]
-- [[:material-folder-zip:-ab-test-setup]]
-- [[:material-folder-zip:-analytics-tracking]]
-- [[:material-folder-zip:-campaign-analytics]]
-- [[:material-folder-zip:-competitor-alternatives]]
-- [[:material-folder-zip:-content-creator]]
-- [[:material-folder-zip:-content-strategy]]
-- [[:material-folder-zip:-copywriting]]
-- [[:material-folder-zip:-email-marketing-bible]]
-- [[:material-folder-zip:-marketing-demand-acquisition]]
-- [[:material-folder-zip:-marketing-ideas]]
-- [[:material-folder-zip:-marketing-psychology]]
-- [[:material-folder-zip:-onboarding-cro]]
-- [[:material-folder-zip:-page-cro]]
-- [[:material-folder-zip:-paywall-upgrade-cro]]
-- [[:material-folder-zip:-programmatic-seo]]
-- [[:material-folder-zip:-referral-program]]
-- [[:material-folder-zip:-revenue-architect]]
-- [[:material-folder-zip:-schema-markup]]
-- [[:material-folder-zip:-seo-audit]]
-- [[:material-folder-zip:-social-content]]
-- [[:material-folder-zip:-release]]
-- [[:material-folder-zip:-release-changelog]]
-- [[:material-folder-zip:-defuddle]]
-- [[:material-folder-zip:-doc-maintenance]]
-- [[:material-folder-zip:-json-canvas]]
-- [[:material-folder-zip:-obsidian-bases]]
-- [[:material-folder-zip:-obsidian-cli]]
-- [[:material-folder-zip:-obsidian-markdown]]
-- [[:material-folder-zip:-accounting]]
-- [[:material-folder-zip:-contract-and-proposal-writer]]
-- [[:material-folder-zip:-contract-review]]
-- [[:material-folder-zip:-finance-based-pricing-advisor]]
-- [[:material-folder-zip:-financial-analyst]]
-- [[:material-folder-zip:-gdpr-ccpa-privacy-auditor]]
-- [[:material-folder-zip:-gdpr-compliance]]
-- [[:material-folder-zip:-iso-42001-ai-governance]]
-- [[:material-folder-zip:-legal-advisor]]
-- [[:material-folder-zip:-legal-tos-privacy]]
-- [[:material-folder-zip:-open-source-license]]
-- [[:material-folder-zip:-saas-finops-optimization]]
-- [[:material-folder-zip:-company-creator]]
-- [[:material-folder-zip:-executing-plans]]
-- [[:material-folder-zip:-prd-to-issues]]
-- [[:material-folder-zip:-prd-to-plan]]
-- [[:material-folder-zip:-ubiquitous-language]]
-- [[:material-folder-zip:-write-a-prd]]
-- [[:material-folder-zip:-writing-plans]]
-- [[:material-folder-zip:-cloud-security]]
-- [[:material-folder-zip:-eradicating-malware-from-infected-systems]]
-- [[:material-folder-zip:-executing-active-directory-attack-simulation]]
-- [[:material-folder-zip:-executing-phishing-simulation-campaign]]
-- [[:material-folder-zip:-executing-red-team-engagement-planning]]
-- [[:material-folder-zip:-executing-red-team-exercise]]
-- [[:material-folder-zip:-generating-threat-intelligence-reports]]
-- [[:material-folder-zip:-intercepting-mobile-traffic-with-burpsuite]]
-- [[:material-folder-zip:-investigating-phishing-email-incident]]
-- [[:material-folder-zip:-mapping-mitre-attack-techniques]]
-- [[:material-folder-zip:-monitoring-darkweb-sources]]
-- [[:material-folder-zip:-profiling-threat-actor-groups]]
-- [[:material-folder-zip:-recovering-deleted-files-with-photorec]]
-- [[:material-folder-zip:-recovering-from-ransomware-attack]]
-- [[:material-folder-zip:-reverse-engineering-malware-with-ghidra]]
-- [[:material-folder-zip:-testing-for-xss-vulnerabilities-with-burpsuite]]
-- [[:material-folder-zip:-tracking-threat-actor-infrastructure]]
+## 🔗 Connections
 
-## Linked From
-- [[Welcome-to-Galyarder-Framework]]
-- [[Welcome-to-Galyarder-Framework]]
+### Directing To:
+- [[:material-folder-zip:-create-agent-adapter]] (structural_reference)
+- [[:material-folder-zip:-finishing-a-development-branch]] (structural_reference)
+- [[:material-folder-zip:-playwright-pro]] (structural_reference)
+- [[:material-folder-zip:-pr-report]] (structural_reference)
+- [[:material-folder-zip:-receiving-code-review]] (structural_reference)
+- [[:material-folder-zip:-requesting-code-review]] (structural_reference)
+- [[:material-folder-zip:-subagent-driven-development]] (structural_reference)
+- [[:material-folder-zip:-systematic-debugging]] (structural_reference)
+- [[:material-folder-zip:-test-driven-development]] (structural_reference)
+- [[:material-folder-zip:-vercel-react-best-practices]] (structural_reference)
+- [[:material-folder-zip:-verification-before-completion]] (structural_reference)
+- [[:material-folder-zip:-accelerator-application]] (structural_reference)
+- [[:material-folder-zip:-board-update]] (structural_reference)
+- [[:material-folder-zip:-brainstorming]] (structural_reference)
+- [[:material-folder-zip:-data-room]] (structural_reference)
+- [[:material-folder-zip:-founder-context]] (structural_reference)
+- [[:material-folder-zip:-founder-thought-leadership]] (structural_reference)
+- [[:material-folder-zip:-fundraising-email]] (structural_reference)
+- [[:material-folder-zip:-investor-research]] (structural_reference)
+- [[:material-folder-zip:-lead-scoring]] (structural_reference)
+- [[:material-folder-zip:-market-research]] (structural_reference)
+- [[:material-folder-zip:-pitch-deck]] (structural_reference)
+- [[:material-folder-zip:-using-galyarder-framework]] (structural_reference)
+- [[:material-folder-zip:-writing-skills]] (structural_reference)
+- [[:material-folder-zip:-ab-test-setup]] (structural_reference)
+- [[:material-folder-zip:-analytics-tracking]] (structural_reference)
+- [[:material-folder-zip:-campaign-analytics]] (structural_reference)
+- [[:material-folder-zip:-competitor-alternatives]] (structural_reference)
+- [[:material-folder-zip:-content-creator]] (structural_reference)
+- [[:material-folder-zip:-content-strategy]] (structural_reference)
+- [[:material-folder-zip:-copywriting]] (structural_reference)
+- [[:material-folder-zip:-email-marketing-bible]] (structural_reference)
+- [[:material-folder-zip:-marketing-demand-acquisition]] (structural_reference)
+- [[:material-folder-zip:-marketing-ideas]] (structural_reference)
+- [[:material-folder-zip:-marketing-psychology]] (structural_reference)
+- [[:material-folder-zip:-onboarding-cro]] (structural_reference)
+- [[:material-folder-zip:-page-cro]] (structural_reference)
+- [[:material-folder-zip:-paywall-upgrade-cro]] (structural_reference)
+- [[:material-folder-zip:-programmatic-seo]] (structural_reference)
+- [[:material-folder-zip:-referral-program]] (structural_reference)
+- [[:material-folder-zip:-revenue-architect]] (structural_reference)
+- [[:material-folder-zip:-schema-markup]] (structural_reference)
+- [[:material-folder-zip:-seo-audit]] (structural_reference)
+- [[:material-folder-zip:-social-content]] (structural_reference)
+- [[:material-folder-zip:-release]] (structural_reference)
+- [[:material-folder-zip:-release-changelog]] (structural_reference)
+- [[:material-folder-zip:-defuddle]] (structural_reference)
+- [[:material-folder-zip:-doc-maintenance]] (structural_reference)
+- [[:material-folder-zip:-json-canvas]] (structural_reference)
+- [[:material-folder-zip:-obsidian-bases]] (structural_reference)
+- [[:material-folder-zip:-obsidian-cli]] (structural_reference)
+- [[:material-folder-zip:-obsidian-markdown]] (structural_reference)
+- [[:material-folder-zip:-accounting]] (structural_reference)
+- [[:material-folder-zip:-contract-and-proposal-writer]] (structural_reference)
+- [[:material-folder-zip:-contract-review]] (structural_reference)
+- [[:material-folder-zip:-finance-based-pricing-advisor]] (structural_reference)
+- [[:material-folder-zip:-financial-analyst]] (structural_reference)
+- [[:material-folder-zip:-gdpr-ccpa-privacy-auditor]] (structural_reference)
+- [[:material-folder-zip:-gdpr-compliance]] (structural_reference)
+- [[:material-folder-zip:-iso-42001-ai-governance]] (structural_reference)
+- [[:material-folder-zip:-legal-advisor]] (structural_reference)
+- [[:material-folder-zip:-legal-tos-privacy]] (structural_reference)
+- [[:material-folder-zip:-open-source-license]] (structural_reference)
+- [[:material-folder-zip:-saas-finops-optimization]] (structural_reference)
+- [[:material-folder-zip:-company-creator]] (structural_reference)
+- [[:material-folder-zip:-executing-plans]] (structural_reference)
+- [[:material-folder-zip:-prd-to-issues]] (structural_reference)
+- [[:material-folder-zip:-prd-to-plan]] (structural_reference)
+- [[:material-folder-zip:-ubiquitous-language]] (structural_reference)
+- [[:material-folder-zip:-write-a-prd]] (structural_reference)
+- [[:material-folder-zip:-writing-plans]] (structural_reference)
+- [[:material-folder-zip:-cloud-security]] (structural_reference)
+- [[:material-folder-zip:-eradicating-malware-from-infected-systems]] (structural_reference)
+- [[:material-folder-zip:-executing-active-directory-attack-simulation]] (structural_reference)
+- [[:material-folder-zip:-executing-phishing-simulation-campaign]] (structural_reference)
+- [[:material-folder-zip:-executing-red-team-engagement-planning]] (structural_reference)
+- [[:material-folder-zip:-executing-red-team-exercise]] (structural_reference)
+- [[:material-folder-zip:-generating-threat-intelligence-reports]] (structural_reference)
+- [[:material-folder-zip:-intercepting-mobile-traffic-with-burpsuite]] (structural_reference)
+- [[:material-folder-zip:-investigating-phishing-email-incident]] (structural_reference)
+- [[:material-folder-zip:-mapping-mitre-attack-techniques]] (structural_reference)
+- [[:material-folder-zip:-monitoring-darkweb-sources]] (structural_reference)
+- [[:material-folder-zip:-profiling-threat-actor-groups]] (structural_reference)
+- [[:material-folder-zip:-recovering-deleted-files-with-photorec]] (structural_reference)
+- [[:material-folder-zip:-recovering-from-ransomware-attack]] (structural_reference)
+- [[:material-folder-zip:-reverse-engineering-malware-with-ghidra]] (structural_reference)
+- [[:material-folder-zip:-testing-for-xss-vulnerabilities-with-burpsuite]] (structural_reference)
+- [[:material-folder-zip:-tracking-threat-actor-infrastructure]] (structural_reference)
 
----
-[View Original Source](../../../../docs/skills/index.md)
+### Informed By:
+- [[Welcome-to-Galyarder-Framework]] (structural_reference)
+- [[Welcome-to-Galyarder-Framework]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

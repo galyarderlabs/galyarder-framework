@@ -3,12 +3,9 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/tracking-threat-actor-infrastructure/assets/template.md
 ---
-
 # Threat Actor Infrastructure Tracking Report
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../docs/skills/tracking-threat-actor-infrastructure/assets/template.md)
+### Informed By:
+- [[Threat-Actor-Infrastructure-Tracking-Report]] (structural_reference)

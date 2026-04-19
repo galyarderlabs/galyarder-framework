@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/windows/polyglot-hooks.md
+source_path: docs/departments/Knowledge/World-Map/Cross-Platform-Polyglot-Hooks-for-Claude-Code.md
 ---
-
 # Cross-Platform Polyglot Hooks for Claude Code
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[Cross-Platform-Polyglot-Hooks-for-Claude-Code]] (structural_reference)
 
----
-[View Original Source](../../../../docs/windows/polyglot-hooks.md)
+### Informed By:
+- [[Cross-Platform-Polyglot-Hooks-for-Claude-Code]] (structural_reference)

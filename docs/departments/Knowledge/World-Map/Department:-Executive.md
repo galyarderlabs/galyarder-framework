@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/departments/Executive/README.md
+source_path: docs/departments/Knowledge/World-Map/Department:-Executive.md
 ---
-
 # Department: Executive
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[Department:-Executive]] (structural_reference)
 
----
-[View Original Source](../../../../docs/departments/Executive/README.md)
+### Informed By:
+- [[Department:-Executive]] (structural_reference)

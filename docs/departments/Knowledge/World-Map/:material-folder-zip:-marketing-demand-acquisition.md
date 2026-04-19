@@ -3,21 +3,20 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/marketing-demand-acquisition/index.md
 ---
-
 # :material-folder-zip: marketing-demand-acquisition
 
-## Links Out
-- [[Campaign-Templates]]
-- [[International-Market-Playbooks]]
-- [[Attribution-Guide]]
-- [[HubSpot-Workflow-Templates]]
-- [[HubSpot-Workflow-Templates]]
-- [[Campaign-Templates]]
-- [[International-Market-Playbooks]]
-- [[Attribution-Guide]]
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
+### Directing To:
+- [[Campaign-Templates]] (structural_reference)
+- [[International-Market-Playbooks]] (structural_reference)
+- [[Attribution-Guide]] (structural_reference)
+- [[HubSpot-Workflow-Templates]] (structural_reference)
+- [[HubSpot-Workflow-Templates]] (structural_reference)
+- [[Campaign-Templates]] (structural_reference)
+- [[International-Market-Playbooks]] (structural_reference)
+- [[Attribution-Guide]] (structural_reference)
 
----
-[View Original Source](../../../../docs/skills/marketing-demand-acquisition/index.md)
+### Informed By:
+- [[:material-folder-zip:-marketing-demand-acquisition]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

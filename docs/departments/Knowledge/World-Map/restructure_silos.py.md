@@ -1,14 +1,8 @@
 ---
-node_type: script
-silo: scripts
-source_path: scripts/restructure_silos.py
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/restructure_silos.py.md
 ---
-
 # restructure_silos.py
 
-## Links Out
-
-## Linked From
-
----
-[View Original Source](../../../../scripts/restructure_silos.py)
+## 🔗 Connections

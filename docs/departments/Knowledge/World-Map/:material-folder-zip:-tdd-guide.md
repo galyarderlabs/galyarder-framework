@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/agents/tdd-guide.md
 ---
-
 # :material-folder-zip: tdd-guide
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Agents]]
-
----
-[View Original Source](../../../../docs/agents/tdd-guide.md)
+### Informed By:
+- [[:material-folder-zip:-tdd-guide]] (structural_reference)
+- [[Galyarder-Framework:-Agents]] (structural_reference)

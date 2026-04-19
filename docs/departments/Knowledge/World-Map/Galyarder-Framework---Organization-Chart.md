@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/ORG_CHART.md
+source_path: docs/departments/Knowledge/World-Map/Galyarder-Framework---Organization-Chart.md
 ---
-
 # Galyarder Framework - Organization Chart
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[Galyarder-Framework---Organization-Chart]] (structural_reference)
 
----
-[View Original Source](../../../../docs/ORG_CHART.md)
+### Informed By:
+- [[Galyarder-Framework---Organization-Chart]] (structural_reference)

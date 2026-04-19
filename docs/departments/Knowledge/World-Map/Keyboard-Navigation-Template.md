@@ -3,13 +3,11 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/playwright-pro/templates/accessibility/keyboard-navigation.md
 ---
-
 # Keyboard Navigation Template
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Test-Case-Templates]]
-
----
-[View Original Source](../../../../docs/skills/playwright-pro/templates/accessibility/keyboard-navigation.md)
+### Informed By:
+- [[Test-Case-Templates]] (structural_reference)
+- [[Keyboard-Navigation-Template]] (structural_reference)
+- [[Test-Case-Templates]] (structural_reference)

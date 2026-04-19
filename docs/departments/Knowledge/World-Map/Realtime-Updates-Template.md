@@ -3,13 +3,11 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/playwright-pro/templates/dashboard/realtime-updates.md
 ---
-
 # Realtime Updates Template
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Test-Case-Templates]]
-
----
-[View Original Source](../../../../docs/skills/playwright-pro/templates/dashboard/realtime-updates.md)
+### Informed By:
+- [[Test-Case-Templates]] (structural_reference)
+- [[Realtime-Updates-Template]] (structural_reference)
+- [[Test-Case-Templates]] (structural_reference)

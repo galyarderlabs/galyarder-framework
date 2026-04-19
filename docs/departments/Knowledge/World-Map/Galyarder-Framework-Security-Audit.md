@@ -3,12 +3,9 @@ node_type: documentation
 silo: docs
 source_path: docs/templates/Galyarder-Framework Security Audit.md
 ---
-
 # Galyarder Framework Security Audit
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../docs/templates/Galyarder-Framework Security Audit.md)
+### Informed By:
+- [[Galyarder-Framework-Security-Audit]] (structural_reference)

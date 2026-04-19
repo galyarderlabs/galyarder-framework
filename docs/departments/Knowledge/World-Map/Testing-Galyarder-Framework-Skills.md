@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/testing.md
+source_path: docs/departments/Knowledge/World-Map/Testing-Galyarder-Framework-Skills.md
 ---
-
 # Testing Galyarder Framework Skills
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[Testing-Galyarder-Framework-Skills]] (structural_reference)
 
----
-[View Original Source](../../../../docs/testing.md)
+### Informed By:
+- [[Testing-Galyarder-Framework-Skills]] (structural_reference)

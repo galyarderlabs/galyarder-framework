@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/agents/retention-specialist.md
 ---
-
 # :material-folder-zip: retention-specialist
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Agents]]
-
----
-[View Original Source](../../../../docs/agents/retention-specialist.md)
+### Informed By:
+- [[:material-folder-zip:-retention-specialist]] (structural_reference)
+- [[Galyarder-Framework:-Agents]] (structural_reference)

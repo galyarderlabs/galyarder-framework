@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/recovering-from-ransomware-attack/index.md
 ---
-
 # :material-folder-zip: recovering-from-ransomware-attack
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
-
----
-[View Original Source](../../../../docs/skills/recovering-from-ransomware-attack/index.md)
+### Informed By:
+- [[:material-folder-zip:-recovering-from-ransomware-attack]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

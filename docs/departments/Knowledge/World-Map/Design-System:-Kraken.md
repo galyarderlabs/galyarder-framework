@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/design/design-md-kraken.md
 ---
-
 # Design System: Kraken
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Design-System-Specifications]]
-
----
-[View Original Source](../../../../docs/design/design-md-kraken.md)
+### Informed By:
+- [[Design-System:-Kraken]] (structural_reference)
+- [[Design-System-Specifications]] (structural_reference)

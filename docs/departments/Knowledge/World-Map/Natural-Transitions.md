@@ -3,12 +3,9 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/copywriting/references/natural-transitions.md
 ---
-
 # Natural Transitions
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../docs/skills/copywriting/references/natural-transitions.md)
+### Informed By:
+- [[Natural-Transitions]] (structural_reference)

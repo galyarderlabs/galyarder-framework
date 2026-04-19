@@ -3,12 +3,9 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/open-source-license/references/templates/license-files.md
 ---
-
 # LICENSE File Templates
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../docs/skills/open-source-license/references/templates/license-files.md)
+### Informed By:
+- [[LICENSE-File-Templates]] (structural_reference)

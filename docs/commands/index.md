@@ -104,6 +104,18 @@ Discover the high-integrity workforce and protocols designed for autonomous orch
 
 </div>
 
+## :material-folder-zip: Knowledge Department
+
+<div class="grid cards" markdown>
+
+-   **[/graph](graph.md)**
+
+    ---
+
+    Rebuild the Galyarder Knowledge Graph and Obsidian World Map. Essential for structural RAG and multi-platform synchronization.
+
+</div>
+
 ## :material-folder-zip: Legal-Finance Department
 
 <div class="grid cards" markdown>

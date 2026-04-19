@@ -3,14 +3,13 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/obsidian-bases/references/FUNCTIONS_REFERENCE.md
 ---
-
 # Functions Reference
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[:material-folder-zip:-obsidian-bases]]
-- [[:material-folder-zip:-obsidian-bases]]
-
----
-[View Original Source](../../../../docs/skills/obsidian-bases/references/FUNCTIONS_REFERENCE.md)
+### Informed By:
+- [[Obsidian-Bases-Skill]] (structural_reference)
+- [[Obsidian-Bases-Skill]] (structural_reference)
+- [[Functions-Reference]] (structural_reference)
+- [[:material-folder-zip:-obsidian-bases]] (structural_reference)
+- [[:material-folder-zip:-obsidian-bases]] (structural_reference)

@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/agents/architect.md
 ---
-
 # :material-folder-zip: architect
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Agents]]
-
----
-[View Original Source](../../../../docs/agents/architect.md)
+### Informed By:
+- [[:material-folder-zip:-architect]] (structural_reference)
+- [[Galyarder-Framework:-Agents]] (structural_reference)

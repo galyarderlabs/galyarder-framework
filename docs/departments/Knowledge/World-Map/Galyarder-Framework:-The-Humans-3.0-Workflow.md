@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/WORKFLOW.md
+source_path: docs/departments/Knowledge/World-Map/Galyarder-Framework:-The-Humans-3.0-Workflow.md
 ---
-
 # Galyarder Framework: The Humans 3.0 Workflow
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[Galyarder-Framework:-The-Humans-3.0-Workflow]] (structural_reference)
 
----
-[View Original Source](../../../../docs/WORKFLOW.md)
+### Informed By:
+- [[Galyarder-Framework:-The-Humans-3.0-Workflow]] (structural_reference)

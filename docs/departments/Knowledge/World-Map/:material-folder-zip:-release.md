@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/release/index.md
 ---
-
 # :material-folder-zip: release
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
-
----
-[View Original Source](../../../../docs/skills/release/index.md)
+### Informed By:
+- [[:material-folder-zip:-release]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

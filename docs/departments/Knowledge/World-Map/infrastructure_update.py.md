@@ -1,15 +1,11 @@
 ---
-node_type: script
-silo: scripts
-source_path: scripts/infrastructure_update.py
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/infrastructure_update.py.md
 ---
-
 # infrastructure_update.py
 
-## Links Out
-- [[generate-docs.py]]
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../scripts/infrastructure_update.py)
+### Directing To:
+- [[generate-docs.py]] (semantic_link)

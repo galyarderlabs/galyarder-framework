@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/design/design-md-spacex.md
 ---
-
 # Design System: SpaceX
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Design-System-Specifications]]
-
----
-[View Original Source](../../../../docs/design/design-md-spacex.md)
+### Informed By:
+- [[Design-System:-SpaceX]] (structural_reference)
+- [[Design-System-Specifications]] (structural_reference)

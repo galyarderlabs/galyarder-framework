@@ -1,14 +1,8 @@
 ---
-node_type: script
-silo: scripts
-source_path: scripts/galyarder-graph-engine.py
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/galyarder-graph-engine.py.md
 ---
-
 # galyarder-graph-engine.py
 
-## Links Out
-
-## Linked From
-
----
-[View Original Source](../../../../scripts/galyarder-graph-engine.py)
+## 🔗 Connections

@@ -3,12 +3,9 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/tracking-threat-actor-infrastructure/references/workflows.md
 ---
-
 # Infrastructure Tracking Workflows
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../docs/skills/tracking-threat-actor-infrastructure/references/workflows.md)
+### Informed By:
+- [[Infrastructure-Tracking-Workflows]] (structural_reference)

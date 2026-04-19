@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/agents/qa-automation-engineer.md
 ---
-
 # :material-folder-zip: qa-automation-engineer
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Agents]]
-
----
-[View Original Source](../../../../docs/agents/qa-automation-engineer.md)
+### Informed By:
+- [[:material-folder-zip:-qa-automation-engineer]] (structural_reference)
+- [[Galyarder-Framework:-Agents]] (structural_reference)

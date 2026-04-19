@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/content-creator/index.md
 ---
-
 # :material-folder-zip: content-creator
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
-
----
-[View Original Source](../../../../docs/skills/content-creator/index.md)
+### Informed By:
+- [[:material-folder-zip:-content-creator]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/finishing-a-development-branch/index.md
 ---
-
 # :material-folder-zip: finishing-a-development-branch
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
-
----
-[View Original Source](../../../../docs/skills/finishing-a-development-branch/index.md)
+### Informed By:
+- [[:material-folder-zip:-finishing-a-development-branch]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

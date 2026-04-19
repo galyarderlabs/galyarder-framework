@@ -3,13 +3,11 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/playwright-pro/templates/settings/account-delete.md
 ---
-
 # Account Delete Template
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Test-Case-Templates]]
-
----
-[View Original Source](../../../../docs/skills/playwright-pro/templates/settings/account-delete.md)
+### Informed By:
+- [[Test-Case-Templates]] (structural_reference)
+- [[Account-Delete-Template]] (structural_reference)
+- [[Test-Case-Templates]] (structural_reference)

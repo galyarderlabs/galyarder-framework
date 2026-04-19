@@ -3,14 +3,13 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/marketing-demand-acquisition/references/attribution-guide.md
 ---
-
 # Attribution Guide
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[:material-folder-zip:-marketing-demand-acquisition]]
-- [[:material-folder-zip:-marketing-demand-acquisition]]
-
----
-[View Original Source](../../../../docs/skills/marketing-demand-acquisition/references/attribution-guide.md)
+### Informed By:
+- [[Marketing-Demand-&-Acquisition]] (structural_reference)
+- [[Marketing-Demand-&-Acquisition]] (structural_reference)
+- [[Attribution-Guide]] (structural_reference)
+- [[:material-folder-zip:-marketing-demand-acquisition]] (structural_reference)
+- [[:material-folder-zip:-marketing-demand-acquisition]] (structural_reference)

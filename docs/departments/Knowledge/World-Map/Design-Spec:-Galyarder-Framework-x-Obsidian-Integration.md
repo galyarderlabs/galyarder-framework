@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/galyarder-framework/specs/2026-04-06-obsidian-integration-design.md
+source_path: docs/departments/Knowledge/World-Map/Design-Spec:-Galyarder-Framework-x-Obsidian-Integration.md
 ---
-
 # Design Spec: Galyarder Framework x Obsidian Integration
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[Design-Spec:-Galyarder-Framework-x-Obsidian-Integration]] (structural_reference)
 
----
-[View Original Source](../../../../docs/galyarder-framework/specs/2026-04-06-obsidian-integration-design.md)
+### Informed By:
+- [[Design-Spec:-Galyarder-Framework-x-Obsidian-Integration]] (structural_reference)

@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/social-content/index.md
 ---
-
 # :material-folder-zip: social-content
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
-
----
-[View Original Source](../../../../docs/skills/social-content/index.md)
+### Informed By:
+- [[:material-folder-zip:-social-content]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

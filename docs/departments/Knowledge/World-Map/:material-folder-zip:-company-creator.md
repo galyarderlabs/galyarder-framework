@@ -3,16 +3,15 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/company-creator/index.md
 ---
-
 # :material-folder-zip: company-creator
 
-## Links Out
-- [[Creating-a-Company-From-an-Existing-Repository]]
-- [[Agent-Companies-Specification-Reference]]
-- [[example-company.md]]
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
+### Directing To:
+- [[Creating-a-Company-From-an-Existing-Repository]] (structural_reference)
+- [[Agent-Companies-Specification-Reference]] (structural_reference)
+- [[example-company.md]] (structural_reference)
 
----
-[View Original Source](../../../../docs/skills/company-creator/index.md)
+### Informed By:
+- [[:material-folder-zip:-company-creator]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

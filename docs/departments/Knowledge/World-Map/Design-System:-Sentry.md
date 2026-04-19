@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/design/design-md-sentry.md
 ---
-
 # Design System: Sentry
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Design-System-Specifications]]
-
----
-[View Original Source](../../../../docs/design/design-md-sentry.md)
+### Informed By:
+- [[Design-System:-Sentry]] (structural_reference)
+- [[Design-System-Specifications]] (structural_reference)

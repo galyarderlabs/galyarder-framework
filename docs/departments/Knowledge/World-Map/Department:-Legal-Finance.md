@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/departments/Legal-Finance/README.md
+source_path: docs/departments/Knowledge/World-Map/Department:-Legal-Finance.md
 ---
-
 # Department: Legal-Finance
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[Department:-Legal-Finance]] (structural_reference)
 
----
-[View Original Source](../../../../docs/departments/Legal-Finance/README.md)
+### Informed By:
+- [[Department:-Legal-Finance]] (structural_reference)

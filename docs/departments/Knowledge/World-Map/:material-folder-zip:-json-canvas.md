@@ -3,14 +3,13 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/json-canvas/index.md
 ---
-
 # :material-folder-zip: json-canvas
 
-## Links Out
-- [[JSON-Canvas-Complete-Examples]]
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
+### Directing To:
+- [[JSON-Canvas-Complete-Examples]] (structural_reference)
 
----
-[View Original Source](../../../../docs/skills/json-canvas/index.md)
+### Informed By:
+- [[:material-folder-zip:-json-canvas]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

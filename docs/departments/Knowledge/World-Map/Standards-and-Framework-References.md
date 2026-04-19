@@ -3,12 +3,9 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/executing-red-team-engagement-planning/references/standards.md
 ---
-
 # Standards and Framework References
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../docs/skills/executing-red-team-engagement-planning/references/standards.md)
+### Informed By:
+- [[Standards-and-Framework-References]] (structural_reference)

@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/departments/Product/README.md
+source_path: docs/departments/Knowledge/World-Map/Department:-Product.md
 ---
-
 # Department: Product
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[Department:-Product]] (structural_reference)
 
----
-[View Original Source](../../../../docs/departments/Product/README.md)
+### Informed By:
+- [[Department:-Product]] (structural_reference)

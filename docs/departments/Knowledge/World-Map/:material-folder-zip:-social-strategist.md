@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/agents/social-strategist.md
 ---
-
 # :material-folder-zip: social-strategist
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Agents]]
-
----
-[View Original Source](../../../../docs/agents/social-strategist.md)
+### Informed By:
+- [[:material-folder-zip:-social-strategist]] (structural_reference)
+- [[Galyarder-Framework:-Agents]] (structural_reference)

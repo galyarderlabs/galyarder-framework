@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/schema-markup/index.md
 ---
-
 # :material-folder-zip: schema-markup
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
-
----
-[View Original Source](../../../../docs/skills/schema-markup/index.md)
+### Informed By:
+- [[:material-folder-zip:-schema-markup]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

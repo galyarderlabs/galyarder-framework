@@ -3,67 +3,66 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/playwright-pro/templates/README.md
 ---
-
 # Test Case Templates
 
-## Links Out
-- [[Login-Template]]
-- [[Logout-Template]]
-- [[SSO-Template]]
-- [[MFA-Template]]
-- [[Password-Reset-Template]]
-- [[Session-Timeout-Template]]
-- [[Remember-Me-Template]]
-- [[RBAC-Template]]
-- [[Create-Entity-Template]]
-- [[Read-Entity-Template]]
-- [[Update-Entity-Template]]
-- [[Delete-Entity-Template]]
-- [[Bulk-Operations-Template]]
-- [[Soft-Delete-(Archive/Restore)-Template]]
-- [[Add-to-Cart-Template]]
-- [[Update-Cart-Quantity-Template]]
-- [[Apply-Coupon-Template]]
-- [[Payment-Template]]
-- [[Order-Confirmation-Template]]
-- [[Order-History-Template]]
-- [[Basic-Search-Template]]
-- [[Search-Filters-Template]]
-- [[Search-Sorting-Template]]
-- [[Pagination-Template]]
-- [[Empty-State-Template]]
-- [[Single-Step-Form-Template]]
-- [[Multi-Step-Form-(Wizard)-Template]]
-- [[Form-Validation-Template]]
-- [[File-Upload-Template]]
-- [[Conditional-Fields-Template]]
-- [[Autosave-Template]]
-- [[Dashboard-Data-Loading-Template]]
-- [[Chart-Rendering-Template]]
-- [[Date-Range-Filter-Template]]
-- [[Export-Template]]
-- [[Realtime-Updates-Template]]
-- [[Profile-Update-Template]]
-- [[Password-Change-Template]]
-- [[Notification-Preferences-Template]]
-- [[Account-Delete-Template]]
-- [[Registration-Template]]
-- [[Email-Verification-Template]]
-- [[Welcome-Tour-Template]]
-- [[First-Time-Setup-Template]]
-- [[In-App-Notifications-Template]]
-- [[Toast-Messages-Template]]
-- [[Notification-Center-Template]]
-- [[REST-CRUD-API-Template]]
-- [[GraphQL-API-Template]]
-- [[Auth-Headers-Template]]
-- [[API-Error-Responses-Template]]
-- [[Rate-Limiting-Template]]
-- [[Keyboard-Navigation-Template]]
-- [[Screen-Reader-Template]]
-- [[Color-Contrast-Template]]
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[Login-Template]] (structural_reference)
+- [[Logout-Template]] (structural_reference)
+- [[SSO-Template]] (structural_reference)
+- [[MFA-Template]] (structural_reference)
+- [[Password-Reset-Template]] (structural_reference)
+- [[Session-Timeout-Template]] (structural_reference)
+- [[Remember-Me-Template]] (structural_reference)
+- [[RBAC-Template]] (structural_reference)
+- [[Create-Entity-Template]] (structural_reference)
+- [[Read-Entity-Template]] (structural_reference)
+- [[Update-Entity-Template]] (structural_reference)
+- [[Delete-Entity-Template]] (structural_reference)
+- [[Bulk-Operations-Template]] (structural_reference)
+- [[Soft-Delete-(Archive/Restore)-Template]] (structural_reference)
+- [[Add-to-Cart-Template]] (structural_reference)
+- [[Update-Cart-Quantity-Template]] (structural_reference)
+- [[Apply-Coupon-Template]] (structural_reference)
+- [[Payment-Template]] (structural_reference)
+- [[Order-Confirmation-Template]] (structural_reference)
+- [[Order-History-Template]] (structural_reference)
+- [[Basic-Search-Template]] (structural_reference)
+- [[Search-Filters-Template]] (structural_reference)
+- [[Search-Sorting-Template]] (structural_reference)
+- [[Pagination-Template]] (structural_reference)
+- [[Empty-State-Template]] (structural_reference)
+- [[Single-Step-Form-Template]] (structural_reference)
+- [[Multi-Step-Form-(Wizard)-Template]] (structural_reference)
+- [[Form-Validation-Template]] (structural_reference)
+- [[File-Upload-Template]] (structural_reference)
+- [[Conditional-Fields-Template]] (structural_reference)
+- [[Autosave-Template]] (structural_reference)
+- [[Dashboard-Data-Loading-Template]] (structural_reference)
+- [[Chart-Rendering-Template]] (structural_reference)
+- [[Date-Range-Filter-Template]] (structural_reference)
+- [[Export-Template]] (structural_reference)
+- [[Realtime-Updates-Template]] (structural_reference)
+- [[Profile-Update-Template]] (structural_reference)
+- [[Password-Change-Template]] (structural_reference)
+- [[Notification-Preferences-Template]] (structural_reference)
+- [[Account-Delete-Template]] (structural_reference)
+- [[Registration-Template]] (structural_reference)
+- [[Email-Verification-Template]] (structural_reference)
+- [[Welcome-Tour-Template]] (structural_reference)
+- [[First-Time-Setup-Template]] (structural_reference)
+- [[In-App-Notifications-Template]] (structural_reference)
+- [[Toast-Messages-Template]] (structural_reference)
+- [[Notification-Center-Template]] (structural_reference)
+- [[REST-CRUD-API-Template]] (structural_reference)
+- [[GraphQL-API-Template]] (structural_reference)
+- [[Auth-Headers-Template]] (structural_reference)
+- [[API-Error-Responses-Template]] (structural_reference)
+- [[Rate-Limiting-Template]] (structural_reference)
+- [[Keyboard-Navigation-Template]] (structural_reference)
+- [[Screen-Reader-Template]] (structural_reference)
+- [[Color-Contrast-Template]] (structural_reference)
 
----
-[View Original Source](../../../../docs/skills/playwright-pro/templates/README.md)
+### Informed By:
+- [[Test-Case-Templates]] (structural_reference)

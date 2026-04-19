@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/specs/2026-04-17-galyarder-digital-company-prd.md
+source_path: docs/departments/Knowledge/World-Map/PRD:-Galyarder-Framework-Digital-Enterprise-(Hierarchy-&-Reporting-Chain).md
 ---
-
 # PRD: Galyarder Framework Digital Enterprise (Hierarchy & Reporting Chain)
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[PRD:-Galyarder-Framework-Digital-Enterprise-(Hierarchy-&-Reporting-Chain)]] (structural_reference)
 
----
-[View Original Source](../../../../docs/specs/2026-04-17-galyarder-digital-company-prd.md)
+### Informed By:
+- [[PRD:-Galyarder-Framework-Digital-Enterprise-(Hierarchy-&-Reporting-Chain)]] (structural_reference)

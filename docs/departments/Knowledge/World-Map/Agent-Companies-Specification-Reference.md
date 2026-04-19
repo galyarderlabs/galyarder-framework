@@ -3,13 +3,11 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/company-creator/references/companies-spec.md
 ---
-
 # Agent Companies Specification Reference
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[:material-folder-zip:-company-creator]]
-
----
-[View Original Source](../../../../docs/skills/company-creator/references/companies-spec.md)
+### Informed By:
+- [[Company-Creator]] (structural_reference)
+- [[Agent-Companies-Specification-Reference]] (structural_reference)
+- [[:material-folder-zip:-company-creator]] (structural_reference)

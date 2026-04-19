@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/paywall-upgrade-cro/index.md
 ---
-
 # :material-folder-zip: paywall-upgrade-cro
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
-
----
-[View Original Source](../../../../docs/skills/paywall-upgrade-cro/index.md)
+### Informed By:
+- [[:material-folder-zip:-paywall-upgrade-cro]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

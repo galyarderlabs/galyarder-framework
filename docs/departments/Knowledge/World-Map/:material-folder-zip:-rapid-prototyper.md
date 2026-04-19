@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/agents/rapid-prototyper.md
 ---
-
 # :material-folder-zip: rapid-prototyper
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Agents]]
-
----
-[View Original Source](../../../../docs/agents/rapid-prototyper.md)
+### Informed By:
+- [[:material-folder-zip:-rapid-prototyper]] (structural_reference)
+- [[Galyarder-Framework:-Agents]] (structural_reference)

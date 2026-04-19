@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/UNIFIED_PLATFORM.md
+source_path: docs/departments/Knowledge/World-Map/Galyarder-Ecosystem:-The-Unified-Platform.md
 ---
-
 # Galyarder Ecosystem: The Unified Platform
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[Galyarder-Ecosystem:-The-Unified-Platform]] (structural_reference)
 
----
-[View Original Source](../../../../docs/UNIFIED_PLATFORM.md)
+### Informed By:
+- [[Galyarder-Ecosystem:-The-Unified-Platform]] (structural_reference)

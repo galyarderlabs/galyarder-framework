@@ -1,19 +1,15 @@
 ---
-node_type: script
-silo: scripts
-source_path: scripts/generate-docs.py
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/generate-docs.py.md
 ---
-
 # generate-docs.py
 
-## Links Out
-- [[Welcome-to-Galyarder-Framework]]
-- [[Welcome-to-Galyarder-Framework]]
-- [[Design-System-Specifications]]
+## 🔗 Connections
 
-## Linked From
-- [[fix_unpacking.py]]
-- [[infrastructure_update.py]]
-
----
-[View Original Source](../../../../scripts/generate-docs.py)
+### Directing To:
+- [[Welcome-to-Galyarder-Framework]] (semantic_link)
+- [[Welcome-to-Galyarder-Framework]] (semantic_link)
+- [[Design-System-Specifications]] (semantic_link)
+- [[fix_unpacking.py]] (semantic_link)
+- [[infrastructure_update.py]] (semantic_link)

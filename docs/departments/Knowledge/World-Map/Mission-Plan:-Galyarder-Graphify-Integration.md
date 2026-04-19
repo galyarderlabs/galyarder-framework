@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/plans/2026-04-19-galyarder-graphify.md
+source_path: docs/departments/Knowledge/World-Map/Mission-Plan:-Galyarder-Graphify-Integration.md
 ---
-
 # Mission Plan: Galyarder Graphify Integration
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[Mission-Plan:-Galyarder-Graphify-Integration]] (structural_reference)
 
----
-[View Original Source](../../../../docs/plans/2026-04-19-galyarder-graphify.md)
+### Informed By:
+- [[Mission-Plan:-Galyarder-Graphify-Integration]] (structural_reference)

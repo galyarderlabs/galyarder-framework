@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/commands/experiment.md
 ---
-
 # :material-folder-zip: experiment
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Commands]]
-
----
-[View Original Source](../../../../docs/commands/experiment.md)
+### Informed By:
+- [[:material-folder-zip:-experiment]] (structural_reference)
+- [[Galyarder-Framework:-Commands]] (structural_reference)

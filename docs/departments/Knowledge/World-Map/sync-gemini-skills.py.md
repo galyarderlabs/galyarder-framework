@@ -1,14 +1,8 @@
 ---
-node_type: script
-silo: scripts
-source_path: scripts/sync-gemini-skills.py
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/sync-gemini-skills.py.md
 ---
-
 # sync-gemini-skills.py
 
-## Links Out
-
-## Linked From
-
----
-[View Original Source](../../../../scripts/sync-gemini-skills.py)
+## 🔗 Connections

@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/commands/legal.md
 ---
-
 # :material-folder-zip: Legal
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Commands]]
-
----
-[View Original Source](../../../../docs/commands/legal.md)
+### Informed By:
+- [[:material-folder-zip:-Legal]] (structural_reference)
+- [[Galyarder-Framework:-Commands]] (structural_reference)

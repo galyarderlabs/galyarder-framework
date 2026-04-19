@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/agents/super-architect.md
 ---
-
 # :material-folder-zip: super-architect
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Agents]]
-
----
-[View Original Source](../../../../docs/agents/super-architect.md)
+### Informed By:
+- [[:material-folder-zip:-super-architect]] (structural_reference)
+- [[Galyarder-Framework:-Agents]] (structural_reference)

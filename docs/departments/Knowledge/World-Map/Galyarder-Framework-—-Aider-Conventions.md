@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/CONVENTIONS.md
+source_path: docs/departments/Knowledge/World-Map/Galyarder-Framework-—-Aider-Conventions.md
 ---
-
 # Galyarder Framework — Aider Conventions
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[Galyarder-Framework-—-Aider-Conventions]] (structural_reference)
 
----
-[View Original Source](../../../../docs/CONVENTIONS.md)
+### Informed By:
+- [[Galyarder-Framework-—-Aider-Conventions]] (structural_reference)

@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/iso-42001-ai-governance/index.md
 ---
-
 # :material-folder-zip: iso-42001-ai-governance
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
-
----
-[View Original Source](../../../../docs/skills/iso-42001-ai-governance/index.md)
+### Informed By:
+- [[:material-folder-zip:-iso-42001-ai-governance]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

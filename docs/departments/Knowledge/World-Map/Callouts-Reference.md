@@ -3,14 +3,13 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/obsidian-markdown/references/CALLOUTS.md
 ---
-
 # Callouts Reference
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[:material-folder-zip:-obsidian-markdown]]
-- [[:material-folder-zip:-obsidian-markdown]]
-
----
-[View Original Source](../../../../docs/skills/obsidian-markdown/references/CALLOUTS.md)
+### Informed By:
+- [[Obsidian-Flavored-Markdown-Skill]] (structural_reference)
+- [[Obsidian-Flavored-Markdown-Skill]] (structural_reference)
+- [[Callouts-Reference]] (structural_reference)
+- [[:material-folder-zip:-obsidian-markdown]] (structural_reference)
+- [[:material-folder-zip:-obsidian-markdown]] (structural_reference)

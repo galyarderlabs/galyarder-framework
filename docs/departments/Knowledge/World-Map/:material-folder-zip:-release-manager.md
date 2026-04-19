@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/agents/release-manager.md
 ---
-
 # :material-folder-zip: release-manager
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Agents]]
-
----
-[View Original Source](../../../../docs/agents/release-manager.md)
+### Informed By:
+- [[:material-folder-zip:-release-manager]] (structural_reference)
+- [[Galyarder-Framework:-Agents]] (structural_reference)

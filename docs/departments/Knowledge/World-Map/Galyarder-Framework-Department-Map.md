@@ -3,12 +3,9 @@ node_type: documentation
 silo: docs
 source_path: docs/templates/Galyarder-Framework Department Map.md
 ---
-
 # Galyarder Framework Department Map
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../docs/templates/Galyarder-Framework Department Map.md)
+### Informed By:
+- [[Galyarder-Framework-Department-Map]] (structural_reference)

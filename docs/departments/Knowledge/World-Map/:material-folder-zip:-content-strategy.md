@@ -3,14 +3,13 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/content-strategy/index.md
 ---
-
 # :material-folder-zip: content-strategy
 
-## Links Out
-- [[Headless-CMS-Guide]]
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
+### Directing To:
+- [[Headless-CMS-Guide]] (structural_reference)
 
----
-[View Original Source](../../../../docs/skills/content-strategy/index.md)
+### Informed By:
+- [[:material-folder-zip:-content-strategy]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

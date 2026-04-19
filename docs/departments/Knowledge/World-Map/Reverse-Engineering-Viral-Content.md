@@ -3,12 +3,9 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/social-content/references/reverse-engineering.md
 ---
-
 # Reverse Engineering Viral Content
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../docs/skills/social-content/references/reverse-engineering.md)
+### Informed By:
+- [[Reverse-Engineering-Viral-Content]] (structural_reference)

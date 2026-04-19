@@ -3,13 +3,11 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/playwright-pro/templates/crud/delete.md
 ---
-
 # Delete Entity Template
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Test-Case-Templates]]
-
----
-[View Original Source](../../../../docs/skills/playwright-pro/templates/crud/delete.md)
+### Informed By:
+- [[Test-Case-Templates]] (structural_reference)
+- [[Delete-Entity-Template]] (structural_reference)
+- [[Test-Case-Templates]] (structural_reference)

@@ -3,12 +3,9 @@ node_type: documentation
 silo: docs
 source_path: docs/templates/Galyarder-Framework Agent-to-Skill Mapping.md
 ---
-
 # Galyarder Framework Agent-to-Skill Mapping
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../docs/templates/Galyarder-Framework Agent-to-Skill Mapping.md)
+### Informed By:
+- [[Galyarder-Framework-Agent-to-Skill-Mapping]] (structural_reference)

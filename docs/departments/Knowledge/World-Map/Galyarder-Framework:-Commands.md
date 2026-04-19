@@ -3,32 +3,31 @@ node_type: documentation
 silo: docs
 source_path: docs/commands/index.md
 ---
-
 # Galyarder Framework: Commands
 
-## Links Out
-- [[:material-folder-zip:-Build-Fix]]
-- [[:material-folder-zip:-Clean]]
-- [[:material-folder-zip:-Docs]]
-- [[:material-folder-zip:-E2E]]
-- [[:material-folder-zip:-experiment]]
-- [[:material-folder-zip:-incident]]
-- [[:material-folder-zip:-Review]]
-- [[:material-folder-zip:-Tdd]]
-- [[:material-folder-zip:-Cro]]
-- [[:material-folder-zip:-Marketing]]
-- [[:material-folder-zip:-Seo]]
-- [[:material-folder-zip:-Video]]
-- [[:material-folder-zip:-Deploy]]
-- [[:material-folder-zip:-Release]]
-- [[:material-folder-zip:-Finops]]
-- [[:material-folder-zip:-Legal]]
-- [[:material-folder-zip:-Linear]]
-- [[:material-folder-zip:-Plan]]
-- [[:material-folder-zip:-Triage]]
-- [[:material-folder-zip:-Cybersecurity]]
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[:material-folder-zip:-Build-Fix]] (structural_reference)
+- [[:material-folder-zip:-Clean]] (structural_reference)
+- [[:material-folder-zip:-Docs]] (structural_reference)
+- [[:material-folder-zip:-E2E]] (structural_reference)
+- [[:material-folder-zip:-experiment]] (structural_reference)
+- [[:material-folder-zip:-incident]] (structural_reference)
+- [[:material-folder-zip:-Review]] (structural_reference)
+- [[:material-folder-zip:-Tdd]] (structural_reference)
+- [[:material-folder-zip:-Cro]] (structural_reference)
+- [[:material-folder-zip:-Marketing]] (structural_reference)
+- [[:material-folder-zip:-Seo]] (structural_reference)
+- [[:material-folder-zip:-Video]] (structural_reference)
+- [[:material-folder-zip:-Deploy]] (structural_reference)
+- [[:material-folder-zip:-Release]] (structural_reference)
+- [[:material-folder-zip:-Finops]] (structural_reference)
+- [[:material-folder-zip:-Legal]] (structural_reference)
+- [[:material-folder-zip:-Linear]] (structural_reference)
+- [[:material-folder-zip:-Plan]] (structural_reference)
+- [[:material-folder-zip:-Triage]] (structural_reference)
+- [[:material-folder-zip:-Cybersecurity]] (structural_reference)
 
----
-[View Original Source](../../../../docs/commands/index.md)
+### Informed By:
+- [[Galyarder-Framework:-Commands]] (structural_reference)

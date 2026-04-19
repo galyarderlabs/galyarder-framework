@@ -1,14 +1,8 @@
 ---
-node_type: script
-silo: scripts
-source_path: scripts/sync-hermes-skills.py
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/sync-hermes-skills.py.md
 ---
-
 # sync-hermes-skills.py
 
-## Links Out
-
-## Linked From
-
----
-[View Original Source](../../../../scripts/sync-hermes-skills.py)
+## 🔗 Connections

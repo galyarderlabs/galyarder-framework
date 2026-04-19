@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/plans/2026-04-17-galyarder-digital-company-plan.md
+source_path: docs/departments/Knowledge/World-Map/Plan:-Galyarder-Framework-Digital-Enterprise-(Hierarchy-&-Reporting-Chain).md
 ---
-
 # Plan: Galyarder Framework Digital Enterprise (Hierarchy & Reporting Chain)
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[Plan:-Galyarder-Framework-Digital-Enterprise-(Hierarchy-&-Reporting-Chain)]] (structural_reference)
 
----
-[View Original Source](../../../../docs/plans/2026-04-17-galyarder-digital-company-plan.md)
+### Informed By:
+- [[Plan:-Galyarder-Framework-Digital-Enterprise-(Hierarchy-&-Reporting-Chain)]] (structural_reference)

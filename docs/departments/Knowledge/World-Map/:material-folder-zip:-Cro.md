@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/commands/cro.md
 ---
-
 # :material-folder-zip: Cro
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Commands]]
-
----
-[View Original Source](../../../../docs/commands/cro.md)
+### Informed By:
+- [[:material-folder-zip:-Cro]] (structural_reference)
+- [[Galyarder-Framework:-Commands]] (structural_reference)

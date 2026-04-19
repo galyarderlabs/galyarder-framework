@@ -3,13 +3,11 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/playwright-pro/templates/api/rate-limiting.md
 ---
-
 # Rate Limiting Template
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Test-Case-Templates]]
-
----
-[View Original Source](../../../../docs/skills/playwright-pro/templates/api/rate-limiting.md)
+### Informed By:
+- [[Test-Case-Templates]] (structural_reference)
+- [[Rate-Limiting-Template]] (structural_reference)
+- [[Test-Case-Templates]] (structural_reference)

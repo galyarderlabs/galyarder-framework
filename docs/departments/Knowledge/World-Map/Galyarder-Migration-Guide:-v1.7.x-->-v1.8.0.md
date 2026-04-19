@@ -1,15 +1,17 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/MIGRATION.md
+source_path: docs/departments/Knowledge/World-Map/Galyarder-Migration-Guide:-v1.7.x-->-v1.8.0.md
 ---
-
 # Galyarder Migration Guide: v1.7.x -> v1.8.0
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Release-Notes---Galyarder-Framework]]
+### Directing To:
+- [[Release-Notes---Galyarder-Framework]] (semantic_link)
+- [[Galyarder-Migration-Guide:-v1.7.x-->-v1.8.0]] (structural_reference)
 
----
-[View Original Source](../../../../docs/MIGRATION.md)
+### Informed By:
+- [[Release-Notes---Galyarder-Framework]] (structural_reference)
+- [[Release-Notes---Galyarder-Framework]] (structural_reference)
+- [[Galyarder-Migration-Guide:-v1.7.x-->-v1.8.0]] (structural_reference)

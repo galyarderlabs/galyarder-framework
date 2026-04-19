@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/commands/triage.md
 ---
-
 # :material-folder-zip: Triage
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Commands]]
-
----
-[View Original Source](../../../../docs/commands/triage.md)
+### Informed By:
+- [[:material-folder-zip:-Triage]] (structural_reference)
+- [[Galyarder-Framework:-Commands]] (structural_reference)

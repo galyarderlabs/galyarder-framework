@@ -1,21 +1,21 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/index.md
+source_path: docs/departments/Knowledge/World-Map/Welcome-to-Galyarder-Framework.md
 ---
-
 # Welcome to Galyarder Framework
 
-## Links Out
-- [[Galyarder-Framework:-Agents]]
-- [[Galyarder-Framework:-Skills]]
-- [[Design-System-Specifications]]
-- [[Galyarder-Framework:-Skills]]
+## 🔗 Connections
 
-## Linked From
-- [[generate-docs.py]]
-- [[generate-docs.py]]
-- [[himalayan_link_fixer.py]]
+### Directing To:
+- [[Galyarder-Framework:-Agents]] (semantic_link)
+- [[Galyarder-Framework:-Skills]] (semantic_link)
+- [[Design-System-Specifications]] (semantic_link)
+- [[Galyarder-Framework:-Skills]] (semantic_link)
+- [[generate-docs.py]] (semantic_link)
+- [[generate-docs.py]] (semantic_link)
+- [[himalayan_link_fixer.py]] (semantic_link)
+- [[Welcome-to-Galyarder-Framework]] (structural_reference)
 
----
-[View Original Source](../../../../docs/index.md)
+### Informed By:
+- [[Welcome-to-Galyarder-Framework]] (structural_reference)

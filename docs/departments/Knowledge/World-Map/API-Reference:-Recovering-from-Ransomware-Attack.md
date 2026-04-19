@@ -3,12 +3,9 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/recovering-from-ransomware-attack/references/api-reference.md
 ---
-
 # API Reference: Recovering from Ransomware Attack
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../docs/skills/recovering-from-ransomware-attack/references/api-reference.md)
+### Informed By:
+- [[API-Reference:-Recovering-from-Ransomware-Attack]] (structural_reference)

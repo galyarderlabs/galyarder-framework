@@ -3,12 +3,9 @@ node_type: documentation
 silo: docs
 source_path: docs/templates/Galyarder-Department-Reports/Founder Office Report Template.md
 ---
-
 # Founder Office Report Template
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../docs/templates/Galyarder-Department-Reports/Founder Office Report Template.md)
+### Informed By:
+- [[Founder-Office-Report-Template]] (structural_reference)

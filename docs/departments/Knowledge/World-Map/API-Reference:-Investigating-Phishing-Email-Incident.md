@@ -3,12 +3,9 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/investigating-phishing-email-incident/references/api-reference.md
 ---
-
 # API Reference: Investigating Phishing Email Incident
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../docs/skills/investigating-phishing-email-incident/references/api-reference.md)
+### Informed By:
+- [[API-Reference:-Investigating-Phishing-Email-Incident]] (structural_reference)

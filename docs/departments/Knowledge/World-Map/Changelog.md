@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/CHANGELOG.md
+source_path: docs/departments/Knowledge/World-Map/Changelog.md
 ---
-
 # Changelog
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[Changelog]] (structural_reference)
 
----
-[View Original Source](../../../../docs/CHANGELOG.md)
+### Informed By:
+- [[Changelog]] (structural_reference)

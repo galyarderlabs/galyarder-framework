@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/requesting-code-review/index.md
 ---
-
 # :material-folder-zip: requesting-code-review
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
-
----
-[View Original Source](../../../../docs/skills/requesting-code-review/index.md)
+### Informed By:
+- [[:material-folder-zip:-requesting-code-review]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

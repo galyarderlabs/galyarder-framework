@@ -3,12 +3,9 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/executing-active-directory-attack-simulation/references/api-reference.md
 ---
-
 # API Reference: Active Directory Attack Simulation Agent
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../docs/skills/executing-active-directory-attack-simulation/references/api-reference.md)
+### Informed By:
+- [[API-Reference:-Active-Directory-Attack-Simulation-Agent]] (structural_reference)

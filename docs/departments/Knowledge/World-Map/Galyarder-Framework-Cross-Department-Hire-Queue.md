@@ -3,12 +3,9 @@ node_type: documentation
 silo: docs
 source_path: docs/templates/Galyarder-Framework Cross-Department Hire Queue.md
 ---
-
 # Galyarder Framework Cross-Department Hire Queue
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../docs/templates/Galyarder-Framework Cross-Department Hire Queue.md)
+### Informed By:
+- [[Galyarder-Framework-Cross-Department-Hire-Queue]] (structural_reference)

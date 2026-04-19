@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/departments/Engineering/README.md
+source_path: docs/departments/Knowledge/World-Map/Department:-Engineering.md
 ---
-
 # Department: Engineering
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[Department:-Engineering]] (structural_reference)
 
----
-[View Original Source](../../../../docs/departments/Engineering/README.md)
+### Informed By:
+- [[Department:-Engineering]] (structural_reference)

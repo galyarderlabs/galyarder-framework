@@ -3,12 +3,9 @@ node_type: documentation
 silo: docs
 source_path: docs/templates/Galyarder-Department-Reports/Security Report Template.md
 ---
-
 # Security Report Template
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../docs/templates/Galyarder-Department-Reports/Security Report Template.md)
+### Informed By:
+- [[Security-Report-Template]] (structural_reference)

@@ -3,12 +3,9 @@ node_type: documentation
 silo: docs
 source_path: docs/templates/Galyarder-Framework Product Audit.md
 ---
-
 # Galyarder Framework Product Audit
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../docs/templates/Galyarder-Framework Product Audit.md)
+### Informed By:
+- [[Galyarder-Framework-Product-Audit]] (structural_reference)

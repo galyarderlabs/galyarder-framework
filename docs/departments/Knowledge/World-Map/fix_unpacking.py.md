@@ -1,15 +1,11 @@
 ---
-node_type: script
-silo: scripts
-source_path: scripts/fix_unpacking.py
+node_type: documentation
+silo: docs
+source_path: docs/departments/Knowledge/World-Map/fix_unpacking.py.md
 ---
-
 # fix_unpacking.py
 
-## Links Out
-- [[generate-docs.py]]
+## 🔗 Connections
 
-## Linked From
-
----
-[View Original Source](../../../../scripts/fix_unpacking.py)
+### Directing To:
+- [[generate-docs.py]] (semantic_link)

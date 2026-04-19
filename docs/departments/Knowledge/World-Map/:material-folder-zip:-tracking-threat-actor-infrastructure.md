@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/tracking-threat-actor-infrastructure/index.md
 ---
-
 # :material-folder-zip: tracking-threat-actor-infrastructure
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
-
----
-[View Original Source](../../../../docs/skills/tracking-threat-actor-infrastructure/index.md)
+### Informed By:
+- [[:material-folder-zip:-tracking-threat-actor-infrastructure]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

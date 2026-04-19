@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/skills/ab-test-setup/index.md
 ---
-
 # :material-folder-zip: ab-test-setup
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Galyarder-Framework:-Skills]]
-
----
-[View Original Source](../../../../docs/skills/ab-test-setup/index.md)
+### Informed By:
+- [[:material-folder-zip:-ab-test-setup]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference)

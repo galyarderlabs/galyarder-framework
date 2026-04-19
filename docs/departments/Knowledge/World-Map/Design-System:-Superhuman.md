@@ -3,13 +3,10 @@ node_type: documentation
 silo: docs
 source_path: docs/design/design-md-superhuman.md
 ---
-
 # Design System: Superhuman
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
-- [[Design-System-Specifications]]
-
----
-[View Original Source](../../../../docs/design/design-md-superhuman.md)
+### Informed By:
+- [[Design-System:-Superhuman]] (structural_reference)
+- [[Design-System-Specifications]] (structural_reference)

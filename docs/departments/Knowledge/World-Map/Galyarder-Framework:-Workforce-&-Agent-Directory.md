@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/AGENTS.md
+source_path: docs/departments/Knowledge/World-Map/Galyarder-Framework:-Workforce-&-Agent-Directory.md
 ---
-
 # Galyarder Framework: Workforce & Agent Directory
 
-## Links Out
+## 🔗 Connections
 
-## Linked From
+### Directing To:
+- [[Galyarder-Framework:-Workforce-&-Agent-Directory]] (structural_reference)
 
----
-[View Original Source](../../../../docs/AGENTS.md)
+### Informed By:
+- [[Galyarder-Framework:-Workforce-&-Agent-Directory]] (structural_reference)
