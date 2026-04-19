@@ -29,12 +29,18 @@ const extractAndStripFrontmatter = (content) => {
   return { frontmatter, content: body };
 };
 
-export const GalyarderAgentFrameworkPlugin = async ({ client, directory }) => {
-  const homeDir = os.homedir();
-  const frameworkSkillsDir = path.resolve(__dirname, '../../skills');
+export const GalyarderFrameworkPlugin = async ({ client, directory }) => {
+  const repoRoot = path.resolve(__dirname, '../../');
+  
+  // High-Integrity Silo Discovery
+  const SILOS = [
+    'Executive', 'Engineering', 'Growth', 'Security', 
+    'Product', 'Infrastructure', 'Legal-Finance', 'Knowledge'
+  ];
 
   const getBootstrapContent = () => {
-    const skillPath = path.join(frameworkSkillsDir, 'using-galyarder-framework', 'SKILL.md');
+    // Bootstrap always comes from Executive department
+    const skillPath = path.join(repoRoot, 'Executive', 'skills', 'using-galyarder-framework', 'SKILL.md');
     if (!fs.existsSync(skillPath)) return null;
 
     const fullContent = fs.readFileSync(skillPath, 'utf8');
@@ -48,7 +54,7 @@ When skills reference tools you don't have, substitute OpenCode equivalents:
 - \`Read\`, \`Write\`, \`Edit\`, \`Bash\`  Your native tools`;
 
     return `<EXTREMELY_IMPORTANT>
-You have galyarder-framework.
+You have Galyarder Framework.
 
 ${content}
 
@@ -60,9 +66,14 @@ ${toolMapping}
     config: async (config) => {
       config.skills = config.skills || {};
       config.skills.paths = config.skills.paths || [];
-      if (!config.skills.paths.includes(frameworkSkillsDir)) {
-        config.skills.paths.push(frameworkSkillsDir);
-      }
+      
+      // Inject all Silo paths
+      SILOS.forEach(silo => {
+        const siloSkillsPath = path.join(repoRoot, silo, 'skills');
+        if (fs.existsSync(siloSkillsPath) && !config.skills.paths.includes(siloSkillsPath)) {
+          config.skills.paths.push(siloSkillsPath);
+        }
+      });
     },
 
     'experimental.chat.messages.transform': async (_input, output) => {

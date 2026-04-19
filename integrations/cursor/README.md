@@ -4,7 +4,7 @@ This directory contains converted Galyarder Framework assets for **Cursor**.
 
 ## Included Assets
 
-- **201** assets.
+- **207** assets.
 
 ## Format
 

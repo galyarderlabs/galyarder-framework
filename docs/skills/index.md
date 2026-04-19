@@ -6,6 +6,12 @@ Discover the high-integrity workforce and protocols designed for autonomous orch
 
 <div class="grid cards" markdown>
 
+-   **[create-agent-adapter](create-agent-adapter/index.md)**
+
+    ---
+
+    >
+
 -   **[finishing-a-development-branch](finishing-a-development-branch/index.md)**
 
     ---
@@ -17,6 +23,12 @@ Discover the high-integrity workforce and protocols designed for autonomous orch
     ---
 
     Production-grade Playwright testing toolkit. Use when the user mentions Playwright tests, end-to-end testing, browser automation, fixing flaky tests, test migration, CI/CD testing, or test suites. Generate tests, fix flaky failures, migrate from Cypress/Selenium, sync with TestRail, run on BrowserStack. 55 templates, 3 agents, smart reporting.
+
+-   **[pr-report](pr-report/index.md)**
+
+    ---
+
+    >
 
 -   **[receiving-code-review](receiving-code-review/index.md)**
 
@@ -272,6 +284,24 @@ Discover the high-integrity workforce and protocols designed for autonomous orch
 
 </div>
 
+## :material-folder-zip: Infrastructure Department
+
+<div class="grid cards" markdown>
+
+-   **[release](release/index.md)**
+
+    ---
+
+    >
+
+-   **[release-changelog](release-changelog/index.md)**
+
+    ---
+
+    >
+
+</div>
+
 ## :material-folder-zip: Knowledge Department
 
 <div class="grid cards" markdown>
@@ -281,6 +311,12 @@ Discover the high-integrity workforce and protocols designed for autonomous orch
     ---
 
     Extract clean markdown content from web pages using Defuddle CLI, removing clutter and navigation to save tokens. Use instead of WebFetch when the user provides a URL to read or analyze, for online documentation, articles, blog posts, or any standard web page. Do NOT use for URLs ending in .md  those are already markdown, use WebFetch directly.
+
+-   **[doc-maintenance](doc-maintenance/index.md)**
+
+    ---
+
+    >
 
 -   **[json-canvas](json-canvas/index.md)**
 
@@ -389,6 +425,12 @@ Discover the high-integrity workforce and protocols designed for autonomous orch
 ## :material-folder-zip: Product Department
 
 <div class="grid cards" markdown>
+
+-   **[company-creator](company-creator/index.md)**
+
+    ---
+
+    >
 
 -   **[executing-plans](executing-plans/index.md)**
 
