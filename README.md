@@ -7,7 +7,7 @@
 <p align="center">Humans 3.0 Protocol: Advanced Agentic Orchestration for the 1-Man Army</p>
 
 <p align="center">
-  Implementing <strong>Autonomous Goal Integration (AGI)</strong> to power self-evolving digital entities with institutional-grade intelligence.
+  Implementing <strong>Autonomous Goal Integration (AGI)</strong> to power self-evolving digital entities intelligence.
 </p>
 
 <p align="center">Built for the <strong>1-Man Army</strong> — one founder with the leverage of an entire company.</p>
