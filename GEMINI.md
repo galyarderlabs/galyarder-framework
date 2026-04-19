@@ -3,7 +3,9 @@
 # BOOTSTRAP: Load core system intelligence
 @AGENTS.md
 @WORKFLOW.md
-@CONVENTIONS.md
+
+Load behavior must stay department-scoped. Use the selected extension's personas,
+agents, commands, and skills; do not rely on root-level monolithic rule files.
 
 ## 1. THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
@@ -32,6 +34,7 @@ Every operation within this session is governed by the Humans 3.0 logic gate. Yo
 - **Reason**: Access to the `rtk` binary and departmental workspace folders requires privileged file-system interaction.
 
 ## 4. OPERATIONAL COMMAND TRIGGERS
+- `/graph`: Rebuild the Galyarder Neural Link and synchronize the Obsidian World Map.
 - `/tdd`: Trigger the Engineering Test-Driven Development workflow.
 - `/plan`: Initiate PRD and architecture blueprinting via Vertical Slices.
 - `/marketing`: Launch growth, SEO, and conversion optimization swarms.

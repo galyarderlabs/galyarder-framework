@@ -20,7 +20,7 @@ This checklist defines the "Apex State" for a project. A project is only conside
 - [ ] **Digital HQ Initialization**: `galyarder-scaffold` has been executed in the project root.
 - [ ] **Protocol Injection**: Every agent/skill file contains the mandatory **Humans 3.0** header (Karpathy, TDD Oracle, Modes).
 - [ ] **Local CLI Link**: `galyarder-deploy` is available in the system PATH and points to the correct source repo.
-- [ ] **Asset Transformation**: 200+ assets have been successfully converted for the specific host (e.g., `.mdc` for Cursor, `CONVENTIONS.md` for Aider).
+- [ ] **Asset Transformation**: 200+ assets have been successfully converted for the specific host (e.g., `.mdc` for Cursor or native skill bundles for CLI agents).
 - [ ] **Smoke Test Verified**: `galyarder-smoke` returns a full Green state for the project.
 
 ---

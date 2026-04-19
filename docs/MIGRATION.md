@@ -32,9 +32,9 @@ If you have custom scripts or local references, update them according to this ma
    ```
 
 3. **Re-Install via Conversion Engine**:
-   If using Cursor or Aider, re-run the installer to update the `.mdc` or `CONVENTIONS.md` files:
+   If using Cursor, re-run the installer to update the `.mdc` files:
    ```bash
-   ./scripts/install.sh --tool <cursor|aider>
+   ./scripts/install.sh --tool cursor
    ```
 
 4. **Update Custom Hooks**:

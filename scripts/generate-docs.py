@@ -110,7 +110,7 @@ def generate():
     print("[*] Syncing all core markdown files...")
     for f in REPO_ROOT.glob("*.md"):
         # Skip temporary, oversized, or platform-specific raw instructions
-        if f.name in ["README.md", "README_GOOD.md", "README_CURRENT.md", "CONVENTIONS.md", "CLAUDE.md", "GEMINI.md"]: continue
+        if f.name in ["README.md", "README_GOOD.md", "README_CURRENT.md", "CLAUDE.md", "GEMINI.md"]: continue
         
         with open(f, 'r', encoding='utf-8') as src:
             content = src.read()
@@ -122,10 +122,6 @@ def generate():
         with open(dest, 'w', encoding='utf-8') as out:
             out.write(content)
         print(f"  - Synchronized and repaired: {f.name}")
-
-    # Special handling for CONVENTIONS.md (too large to re-process usually, but we sync it)
-    if (REPO_ROOT / "CONVENTIONS.md").exists():
-        shutil.copy(REPO_ROOT / "CONVENTIONS.md", DOCS_DIR / "CONVENTIONS.md")
 
     # Discovery
     silos = {}

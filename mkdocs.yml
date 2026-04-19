@@ -60,7 +60,6 @@ nav:
   - Aesthetic Law (Design):
       - UI Specifications: design/index.md
   - Governance:
-      - Global Conventions: CONVENTIONS.md
       - Deployment & Testing: testing.md
       - Platform Specifics:
           - Claude Code: CLAUDE.md

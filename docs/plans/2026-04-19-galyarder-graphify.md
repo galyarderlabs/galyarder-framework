@@ -39,7 +39,7 @@ Transform Galyarder Framework from a collection of static files into a **Self-Ma
 - [ ] **Slice 1**: Basic graph engine that maps Markdown links in `docs/`.
 - [ ] **Slice 2**: Python AST parser integration to map internal script dependencies.
 - [ ] **Slice 3**: Export to Obsidian format with automatic Wikilink generation.
-- [ ] **Slice 4**: Global protocol injection of "Check the Map First" mandate.
+- [ ] **Slice 4**: Global protocol injection of lazy Neural Link lookup guidance.
 
 ---
 

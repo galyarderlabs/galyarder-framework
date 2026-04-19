@@ -57,7 +57,7 @@ Implement the native bash engine for cross-platform portability.
 - **Verification**  verify: Script correctly creates all department subdirectories.
 
 ### Step 3.2: Multi-Platform Conversion Engine
-- **Action**: Rewrite `scripts/convert.sh` and `scripts/install.sh` in Bash to handle `.mdc` (Cursor), `CONVENTIONS.md` (Aider), and local rule bundles for all 12+ platforms.
+- **Action**: Rewrite `scripts/convert.sh` and `scripts/install.sh` in Bash to handle `.mdc` (Cursor), native skill bundles, and local rule bundles across supported platforms.
 - **Verification**  verify: `./scripts/install.sh --tool windsurf` generates correct artifacts.
 
 ---

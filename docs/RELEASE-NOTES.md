@@ -1,5 +1,39 @@
 # Release Notes - Galyarder Framework
 
+## [v1.8.3] - 2026-04-19
+### Packaging Recovery & Lazy Neural Link
+This release hardens the framework for real marketplace installs: lighter boot context, one-shot full-bundle install, and no more broken nested skill paths.
+
+#### Highlights
+- **Lazy Neural Link**: World-Map / graph context is now fetched only when the task actually needs architecture discovery, dependency mapping, or explicit `/graph` work.
+- **Full Marketplace Bundle**: Added `galyarder-framework` as a top-level bundle so all 8 departments can be installed together instead of one by one.
+- **Installer Repair**: Removed broken nested skill symlinks that were producing `ENOENT realpath` failures during plugin install.
+- **Aider Purge**: Deleted the old `CONVENTIONS.md` monolith and removed Aider integration exports from generated packages.
+- **Integration Rebuild**: Re-generated all supported tool packages so the lighter load policy lands everywhere consistently.
+
+#### Verification
+```bash
+bash scripts/smoke.sh
+```
+
+Expected outcome:
+- Neural Link lookup is lazy
+- No broken symlinks detected
+- Full marketplace bundle is present and scoped
+
+---
+
+## [v1.8.2] - 2026-04-19
+### Ecosystem Broadcast: The Neural Link
+Officially broadcasted the Galyarder Neural Link capability across all 14 platforms and executive agents.
+
+#### Highlights
+- **Command Broadcast**: The `/graph` command is now natively recognized across Claude Code, Gemini CLI, and other integrations.
+- **Executive Awareness**: `chief-of-staff` and `galyarder-specialist` are now programmed to orchestrate map rebuilding after major architectural shifts.
+- **Global Manifest Bump**: All 21 marketplace and plugin manifests have been bumped to v1.8.2 to ensure the ecosystem picks up the new capabilities.
+
+---
+
 ## [v1.8.1] - 2026-04-19
 ### Final Audit & Path Hardening
 A critical patch following the Humans 3.0 deep audit to ensure 100% logic integrity across all 14 platforms.
@@ -28,7 +62,7 @@ Architectural guardrails to make execution provable: gated testing ladder, test-
 #### How to Run (100% Copy-Paste)
 ```bash
 # 1. Install & Scaffold
-./scripts/install.sh --tool <cursor|aider|claude-code> && ./scripts/scaffold-company.sh
+./scripts/install.sh --tool <cursor|claude-code> && ./scripts/scaffold-company.sh
 
 # 2. Run Audit-Grade Smoke Test
 bash scripts/smoke.sh
@@ -43,7 +77,6 @@ rtk npm run test:unit && rtk npm run test:contract && rtk npm run test:e2e
 | **Claude Code** | Full (Native) | v0.2.x | Slower marketplace crawl on first init. |
 | **Gemini CLI** | Full (Native) | v1.1.x | Requires manual hard refresh for favicon. |
 | **Cursor** | High (MDC) | v0.42.x | `.mdc` files require IDE restart to reload. |
-| **Aider** | High | v0.70.x | Consolidated context can hit token limits. |
 | **Windsurf** | Medium | v1.0.x | Plugin lifecycle is still in experimental. |
 
 #### Known Issues (Alpha Caveats)

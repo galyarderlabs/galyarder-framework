@@ -2,7 +2,7 @@
 # Usage:
 #   ./scripts/install.sh [--tool <name>] [--target <dir>] [--help]
 #
-# Tools: antigravity, cursor, aider, kilocode, windsurf, opencode, augment, all
+# Tools: antigravity, cursor, kilocode, windsurf, opencode, augment, all
 # Default: all
 
 set -euo pipefail
@@ -32,7 +32,7 @@ Usage:
   ./scripts/install.sh [--tool <name>] [--target <dir>] [--help]
 
 Tools:
-  antigravity, cursor, aider, kilocode, windsurf, opencode, augment, all
+  antigravity, cursor, kilocode, windsurf, opencode, augment, all
 
 Defaults:
   --tool all
@@ -52,7 +52,7 @@ done
 info "Running Galyarder Framework conversion engine..."
 "${SCRIPT_DIR}/convert.sh" --tool "$TOOL"
 
-TOOLS="antigravity cursor aider kilocode windsurf opencode augment claude-code codex gemini openclaw hermes galyarder-agent"
+TOOLS="antigravity cursor kilocode windsurf opencode augment claude-code codex gemini openclaw hermes galyarder-agent"
 [[ "$TOOL" != "all" ]] && TOOLS="$TOOL"
 
 for t in $TOOLS; do
@@ -94,13 +94,6 @@ for t in $TOOLS; do
                 ok "Installed Cursor rules to ${TARGET_DIR}."
             else
                 warn "No --target provided for Cursor. Rules available at integrations/cursor/rules/"
-            fi ;;
-        aider)
-            if [ -n "$TARGET_DIR" ]; then
-                cp "${SRC_DIR}/CONVENTIONS.md" "${TARGET_DIR}/"
-                ok "Installed Aider conventions to ${TARGET_DIR}."
-            else
-                warn "No --target provided for Aider. File available at integrations/aider/CONVENTIONS.md"
             fi ;;
         windsurf)
             DEST="${HOME}/.windsurf/skills"

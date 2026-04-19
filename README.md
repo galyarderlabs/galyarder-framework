@@ -131,7 +131,7 @@ Navigate to **your specific project** (e.g., `~/projects/my-app`) and deploy the
 galyarder-scaffold
 
 # 2. Deploy Agents to your mission environment
-# Available: cursor, aider, windsurf, kilocode, augment, openclaw, hermes, antigravity, galyarder-agent
+# Available: cursor, windsurf, kilocode, augment, openclaw, hermes, antigravity, galyarder-agent
 galyarder-deploy --tool <name>
 ```
 
@@ -145,10 +145,20 @@ galyarder-deploy --tool <name>
 - **Claude Code**:
   ```bash
   /plugin marketplace add galyarderlabs/galyarder-framework
+  /plugin install galyarder-framework@galyarderlabs-marketplace
+  ```
+
+  Or install departments selectively:
+
+  ```bash
   /plugin install executive-dept@galyarderlabs-marketplace
   /plugin install engineering-dept@galyarderlabs-marketplace
   /plugin install growth-dept@galyarderlabs-marketplace
   /plugin install security-dept@galyarderlabs-marketplace
+  /plugin install product-dept@galyarderlabs-marketplace
+  /plugin install infrastructure-dept@galyarderlabs-marketplace
+  /plugin install legal-finance-dept@galyarderlabs-marketplace
+  /plugin install knowledge-dept@galyarderlabs-marketplace
   ```
 
 - **Gemini CLI**:

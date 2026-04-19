@@ -5,7 +5,9 @@ This guide defines the high-integrity integration of Galyarder Framework within 
 # BOOTSTRAP: Load core system intelligence
 @AGENTS.md
 @WORKFLOW.md
-@CONVENTIONS.md
+
+Load behavior must stay department-scoped. Use the selected plugin's personas,
+agents, commands, and skills; do not rely on root-level monolithic rule files.
 
 ---
 
@@ -34,6 +36,7 @@ Claude Code supports instant mission triggers via slash commands:
 
 | Command | Department | Mission |
 | :--- | :--- | :--- |
+| `/graph` | Knowledge | Rebuild the Galyarder Neural Link and Obsidian Map. |
 | `/tdd` | Engineering | Strict Test-Driven Development workflow. |
 | `/plan` | Product | Vertical Slice (Tracer Bullet) architecture mapping. |
 | `/marketing` | Growth | CRO audit and behavioral copywriting. |

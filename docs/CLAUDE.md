@@ -4,14 +4,24 @@ This guide defines the high-integrity integration of Galyarder Framework within 
 
 ## 1. Installation
 
-Register the Galyarder Labs marketplace and install the departmental plugins:
+Register the Galyarder Labs marketplace and install the complete framework:
 
 ```bash
 /plugin marketplace add galyarderlabs/galyarder-framework
+/plugin install galyarder-framework@galyarderlabs-marketplace
+```
+
+Or install departments selectively:
+
+```bash
 /plugin install executive-dept@galyarderlabs-marketplace
 /plugin install engineering-dept@galyarderlabs-marketplace
 /plugin install growth-dept@galyarderlabs-marketplace
 /plugin install security-dept@galyarderlabs-marketplace
+/plugin install product-dept@galyarderlabs-marketplace
+/plugin install infrastructure-dept@galyarderlabs-marketplace
+/plugin install legal-finance-dept@galyarderlabs-marketplace
+/plugin install knowledge-dept@galyarderlabs-marketplace
 ```
 
 ## 2. Mandatory Protocols

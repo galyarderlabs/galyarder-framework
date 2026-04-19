@@ -2,6 +2,24 @@
 
 All notable changes to Galyarder Framework will be documented in this file.
 
+## [1.8.3] - 2026-04-19
+### Added
+- **Bundle Install Path**: Added a top-level `galyarder-framework` marketplace bundle so all 8 departments can be installed as one package.
+### Changed
+- **Neural Link Policy**: Re-scoped Neural Link / World-Map access to lazy lookup. Agents, personas, and commands now load graph context only for architecture discovery, cross-department routing, or explicit `/graph` work.
+- **Boot Surface**: Root operating context is department-scoped and monolith-free instead of dragging full-world context into normal execution.
+### Fixed
+- **Marketplace Integrity**: Removed broken nested skill symlinks that caused `ENOENT realpath` install failures in marketplace consumers.
+- **Aider Decommission**: Removed legacy `CONVENTIONS.md` and the `integrations/aider` export so obsolete Aider conventions no longer leak into generated tool packages.
+- **Generated Integrations**: Rebuilt all supported tool integrations so the lazy-load policy and cleaned packaging propagate consistently.
+
+## [1.8.2] - 2026-04-19
+### Added
+- **Neural Link Broadcast**: Added `/graph` command to core `GEMINI.md` and `CLAUDE.md` operational triggers.
+- **Executive Awareness**: Injected "Strategic Knowledge Synthesis" into `chief-of-staff` to automate map rebuilding.
+### Changed
+- **Manifest Versions**: Bumped all 21 `gemini-extension.json`, `plugin.json`, and `marketplace.json` manifests to `1.8.2`.
+
 ## [1.8.1] - 2026-04-19
 ### Fixed
 - **Legacy Path Purge**: Surgically removed all hardcoded references to `.agents/`, `.claude/`, and `.gemini/` hidden directories inside logic files.

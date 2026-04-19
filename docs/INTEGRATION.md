@@ -2,7 +2,7 @@
 
 Galyarder Framework is a host-agnostic logic library compatible with institutional-grade AI orchestration tools.
 
-## Supported Platforms (The 14 Tools)
+## Supported Platforms
 
 The framework is surgically converted for the following environments:
 
@@ -12,14 +12,13 @@ The framework is surgically converted for the following environments:
 4.  **Cursor**: IDE-native `.mdc` rule sets.
 5.  **Gemini CLI**: Official extension repository support.
 6.  **OpenAI Codex CLI**: Direct instruction-based logic.
-7.  **Aider**: Consolidated `CONVENTIONS.md` protocol.
-8.  **Windsurf**: Native plugin architecture.
-9.  **OpenCode**: Specialized plugin ecosystem.
-10. **Hermes Agent**: High-integrity autonomous orchestration.
-11. **OpenClaw**: Distributed agentic logic.
-12. **Kilo Code**: Enterprise-grade coding assistant.
-13. **Augment**: Performance-optimized AI workflow.
-14. **Antigravity**: System-level skill injection.
+7.  **Windsurf**: Native plugin architecture.
+8.  **OpenCode**: Specialized plugin ecosystem.
+9.  **Hermes Agent**: High-integrity autonomous orchestration.
+10. **OpenClaw**: Distributed agentic logic.
+11. **Kilo Code**: Enterprise-grade coding assistant.
+12. **Augment**: Performance-optimized AI workflow.
+13. **Antigravity**: System-level skill injection.
 
 ## Command Silo Structure
 

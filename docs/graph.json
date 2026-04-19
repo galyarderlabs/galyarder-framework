@@ -29,13 +29,6 @@
       "community": "Root",
       "degree": 1
     },
-    "CONVENTIONS.md": {
-      "title": "Galyarder Framework \u2014 Aider Conventions",
-      "category": "core-hukum",
-      "silo": "Root",
-      "community": "Root",
-      "degree": 2
-    },
     "README.md": {
       "title": "1. Clone the intelligence layer",
       "category": "core-hukum",
@@ -48,24 +41,17 @@
       "category": "core-hukum",
       "silo": "Root",
       "community": "Root",
-      "degree": 348
+      "degree": 346
     },
     "GEMINI.md": {
       "title": "Galyarder Framework: Advanced Agentic Context (Gemini CLI)",
       "category": "core-hukum",
       "silo": "Root",
       "community": "Root",
-      "degree": 312
+      "degree": 310
     },
-    "Executive/personas/galyarder-ceo.md": {
-      "title": "galyarder-ceo.md",
-      "category": "governance",
-      "silo": "Executive",
-      "community": "Executive",
-      "degree": 2
-    },
-    "Executive/personas/galyarder-cfo-coo.md": {
-      "title": "galyarder-cfo-coo.md",
+    "Executive/personas/galyarder-cto.md": {
+      "title": "galyarder-cto.md",
       "category": "governance",
       "silo": "Executive",
       "community": "Executive",
@@ -78,22 +64,29 @@
       "community": "Executive",
       "degree": 2
     },
-    "Executive/personas/galyarder-cto.md": {
-      "title": "galyarder-cto.md",
+    "Executive/personas/galyarder-cfo-coo.md": {
+      "title": "galyarder-cfo-coo.md",
       "category": "governance",
       "silo": "Executive",
       "community": "Executive",
       "degree": 2
     },
-    "Executive/agents/fundraising-operator.md": {
-      "title": "THE FUNDRAISING OPERATOR: CAPITAL COMMAND",
-      "category": "agent",
+    "Executive/personas/galyarder-ceo.md": {
+      "title": "galyarder-ceo.md",
+      "category": "governance",
       "silo": "Executive",
       "community": "Executive",
       "degree": 2
     },
     "Executive/agents/chief-of-staff.md": {
       "title": "chief-of-staff.md",
+      "category": "agent",
+      "silo": "Executive",
+      "community": "Executive",
+      "degree": 2
+    },
+    "Executive/agents/fundraising-operator.md": {
+      "title": "THE FUNDRAISING OPERATOR: CAPITAL COMMAND",
       "category": "agent",
       "silo": "Executive",
       "community": "Executive",
@@ -141,13 +134,6 @@
       "community": "Executive",
       "degree": 1
     },
-    "Executive/skills/writing-skills/SKILL.md": {
-      "title": "Writing Skills",
-      "category": "skill",
-      "silo": "Executive",
-      "community": "Executive",
-      "degree": 2
-    },
     "Executive/skills/writing-skills/testing-skills-with-subagents.md": {
       "title": "Testing Skills With Subagents",
       "category": "skill",
@@ -155,19 +141,19 @@
       "community": "Executive",
       "degree": 1
     },
+    "Executive/skills/writing-skills/SKILL.md": {
+      "title": "Writing Skills",
+      "category": "skill",
+      "silo": "Executive",
+      "community": "Executive",
+      "degree": 2
+    },
     "Executive/skills/writing-skills/examples/CLAUDE_MD_TESTING.md": {
       "title": "Testing CLAUDE.md Skills Documentation",
       "category": "skill",
       "silo": "Executive",
       "community": "Executive",
       "degree": 0
-    },
-    "Executive/skills/brainstorming/SKILL.md": {
-      "title": "Brainstorming Ideas Into Designs",
-      "category": "skill",
-      "silo": "Executive",
-      "community": "Executive",
-      "degree": 2
     },
     "Executive/skills/brainstorming/spec-document-reviewer-prompt.md": {
       "title": "Spec Document Reviewer Prompt Template",
@@ -182,6 +168,13 @@
       "silo": "Executive",
       "community": "Executive",
       "degree": 0
+    },
+    "Executive/skills/brainstorming/SKILL.md": {
+      "title": "Brainstorming Ideas Into Designs",
+      "category": "skill",
+      "silo": "Executive",
+      "community": "Executive",
+      "degree": 2
     },
     "Executive/skills/brainstorming/scripts/start-server.sh": {
       "title": "start-server.sh",
@@ -267,57 +260,8 @@
       "community": "Executive",
       "degree": 2
     },
-    "Engineering/agents/elite-developer.md": {
-      "title": "elite-developer.md",
-      "category": "agent",
-      "silo": "Engineering",
-      "community": "Engineering",
-      "degree": 2
-    },
-    "Engineering/agents/architect.md": {
-      "title": "ADR-001: Use Redis for Semantic Search Vector Storage",
-      "category": "agent",
-      "silo": "Engineering",
-      "community": "Engineering",
-      "degree": 2
-    },
-    "Engineering/agents/super-architect.md": {
-      "title": "THE SUPER ARCHITECT: SYSTEMS DESIGN PROTOCOL",
-      "category": "agent",
-      "silo": "Engineering",
-      "community": "Engineering",
-      "degree": 2
-    },
-    "Engineering/agents/qa-automation-engineer.md": {
-      "title": "THE QA ENGINEER: AUTOMATION & INTEGRITY PROTOCOL",
-      "category": "agent",
-      "silo": "Engineering",
-      "community": "Engineering",
-      "degree": 2
-    },
-    "Engineering/agents/code-reviewer.md": {
-      "title": "code-reviewer.md",
-      "category": "agent",
-      "silo": "Engineering",
-      "community": "Engineering",
-      "degree": 2
-    },
-    "Engineering/agents/build-error-resolver.md": {
-      "title": "Build Error Resolver",
-      "category": "agent",
-      "silo": "Engineering",
-      "community": "Engineering",
-      "degree": 2
-    },
-    "Engineering/agents/refactor-cleaner.md": {
-      "title": "Refactor & Dead Code Cleaner",
-      "category": "agent",
-      "silo": "Engineering",
-      "community": "Engineering",
-      "degree": 2
-    },
-    "Engineering/agents/vercel-react-expert.md": {
-      "title": "THE VERCEL & REACT EXPERT: PERFORMANCE PROTOCOL",
+    "Engineering/agents/tdd-guide.md": {
+      "title": "Test should fail - we haven't implemented yet",
       "category": "agent",
       "silo": "Engineering",
       "community": "Engineering",
@@ -330,16 +274,58 @@
       "community": "Engineering",
       "degree": 2
     },
-    "Engineering/agents/tdd-guide.md": {
-      "title": "Test should fail - we haven't implemented yet",
+    "Engineering/agents/vercel-react-expert.md": {
+      "title": "THE VERCEL & REACT EXPERT: PERFORMANCE PROTOCOL",
       "category": "agent",
       "silo": "Engineering",
       "community": "Engineering",
       "degree": 2
     },
-    "Engineering/skills/test-driven-development/SKILL.md": {
-      "title": "Test-Driven Development (TDD)",
-      "category": "skill",
+    "Engineering/agents/refactor-cleaner.md": {
+      "title": "Refactor & Dead Code Cleaner",
+      "category": "agent",
+      "silo": "Engineering",
+      "community": "Engineering",
+      "degree": 2
+    },
+    "Engineering/agents/build-error-resolver.md": {
+      "title": "Build Error Resolver",
+      "category": "agent",
+      "silo": "Engineering",
+      "community": "Engineering",
+      "degree": 2
+    },
+    "Engineering/agents/code-reviewer.md": {
+      "title": "code-reviewer.md",
+      "category": "agent",
+      "silo": "Engineering",
+      "community": "Engineering",
+      "degree": 2
+    },
+    "Engineering/agents/qa-automation-engineer.md": {
+      "title": "THE QA ENGINEER: AUTOMATION & INTEGRITY PROTOCOL",
+      "category": "agent",
+      "silo": "Engineering",
+      "community": "Engineering",
+      "degree": 2
+    },
+    "Engineering/agents/super-architect.md": {
+      "title": "THE SUPER ARCHITECT: SYSTEMS DESIGN PROTOCOL",
+      "category": "agent",
+      "silo": "Engineering",
+      "community": "Engineering",
+      "degree": 2
+    },
+    "Engineering/agents/architect.md": {
+      "title": "ADR-001: Use Redis for Semantic Search Vector Storage",
+      "category": "agent",
+      "silo": "Engineering",
+      "community": "Engineering",
+      "degree": 2
+    },
+    "Engineering/agents/elite-developer.md": {
+      "title": "elite-developer.md",
+      "category": "agent",
       "silo": "Engineering",
       "community": "Engineering",
       "degree": 2
@@ -350,6 +336,13 @@
       "silo": "Engineering",
       "community": "Engineering",
       "degree": 0
+    },
+    "Engineering/skills/test-driven-development/SKILL.md": {
+      "title": "Test-Driven Development (TDD)",
+      "category": "skill",
+      "silo": "Engineering",
+      "community": "Engineering",
+      "degree": 2
     },
     "Engineering/skills/systematic-debugging/find-polluter.sh": {
       "title": "find-polluter.sh",
@@ -400,13 +393,6 @@
       "community": "Engineering",
       "degree": 0
     },
-    "Engineering/skills/systematic-debugging/SKILL.md": {
-      "title": "Systematic Debugging",
-      "category": "skill",
-      "silo": "Engineering",
-      "community": "Engineering",
-      "degree": 2
-    },
     "Engineering/skills/systematic-debugging/CREATION-LOG.md": {
       "title": "Creation Log: Systematic Debugging Skill",
       "category": "skill",
@@ -420,6 +406,13 @@
       "silo": "Engineering",
       "community": "Engineering",
       "degree": 1
+    },
+    "Engineering/skills/systematic-debugging/SKILL.md": {
+      "title": "Systematic Debugging",
+      "category": "skill",
+      "silo": "Engineering",
+      "community": "Engineering",
+      "degree": 2
     },
     "Engineering/skills/verification-before-completion/SKILL.md": {
       "title": "Verification Before Completion",
@@ -883,8 +876,8 @@
       "community": "Engineering",
       "degree": 2
     },
-    "Engineering/skills/playwright-pro/agents/migration-planner.md": {
-      "title": "migration-planner.md",
+    "Engineering/skills/playwright-pro/agents/test-debugger.md": {
+      "title": "test-debugger.md",
       "category": "agent",
       "silo": "Engineering",
       "community": "Engineering",
@@ -897,8 +890,8 @@
       "community": "Engineering",
       "degree": 2
     },
-    "Engineering/skills/playwright-pro/agents/test-debugger.md": {
-      "title": "test-debugger.md",
+    "Engineering/skills/playwright-pro/agents/migration-planner.md": {
+      "title": "migration-planner.md",
       "category": "agent",
       "silo": "Engineering",
       "community": "Engineering",
@@ -974,13 +967,6 @@
       "community": "Engineering",
       "degree": 2
     },
-    "Engineering/skills/playwright-pro/skills/fix/SKILL.md": {
-      "title": "Fix Failing or Flaky Tests",
-      "category": "skill",
-      "silo": "Engineering",
-      "community": "Engineering",
-      "degree": 2
-    },
     "Engineering/skills/playwright-pro/skills/fix/flaky-taxonomy.md": {
       "title": "Flaky Test Taxonomy",
       "category": "skill",
@@ -988,8 +974,8 @@
       "community": "Engineering",
       "degree": 0
     },
-    "Engineering/skills/playwright-pro/skills/generate/SKILL.md": {
-      "title": "Generate Playwright Tests",
+    "Engineering/skills/playwright-pro/skills/fix/SKILL.md": {
+      "title": "Fix Failing or Flaky Tests",
       "category": "skill",
       "silo": "Engineering",
       "community": "Engineering",
@@ -1002,15 +988,15 @@
       "community": "Engineering",
       "degree": 0
     },
-    "Engineering/skills/playwright-pro/skills/init/SKILL.md": {
-      "title": "Initialize Playwright Project",
+    "Engineering/skills/playwright-pro/skills/generate/SKILL.md": {
+      "title": "Generate Playwright Tests",
       "category": "skill",
       "silo": "Engineering",
       "community": "Engineering",
       "degree": 2
     },
-    "Engineering/skills/playwright-pro/skills/migrate/SKILL.md": {
-      "title": "Migrate to Playwright",
+    "Engineering/skills/playwright-pro/skills/init/SKILL.md": {
+      "title": "Initialize Playwright Project",
       "category": "skill",
       "silo": "Engineering",
       "community": "Engineering",
@@ -1030,15 +1016,15 @@
       "community": "Engineering",
       "degree": 0
     },
-    "Engineering/skills/playwright-pro/skills/report/SKILL.md": {
-      "title": "Smart Test Reporting",
+    "Engineering/skills/playwright-pro/skills/migrate/SKILL.md": {
+      "title": "Migrate to Playwright",
       "category": "skill",
       "silo": "Engineering",
       "community": "Engineering",
       "degree": 2
     },
-    "Engineering/skills/playwright-pro/skills/review/SKILL.md": {
-      "title": "Review Playwright Tests",
+    "Engineering/skills/playwright-pro/skills/report/SKILL.md": {
+      "title": "Smart Test Reporting",
       "category": "skill",
       "silo": "Engineering",
       "community": "Engineering",
@@ -1050,6 +1036,13 @@
       "silo": "Engineering",
       "community": "Engineering",
       "degree": 0
+    },
+    "Engineering/skills/playwright-pro/skills/review/SKILL.md": {
+      "title": "Review Playwright Tests",
+      "category": "skill",
+      "silo": "Engineering",
+      "community": "Engineering",
+      "degree": 2
     },
     "Engineering/skills/playwright-pro/skills/testrail/SKILL.md": {
       "title": "TestRail Integration",
@@ -1471,43 +1464,8 @@
       "community": "Engineering",
       "degree": 0
     },
-    "Engineering/commands/tdd.md": {
-      "title": "tdd.md",
-      "category": "governance",
-      "silo": "Engineering",
-      "community": "Engineering",
-      "degree": 2
-    },
-    "Engineering/commands/review.md": {
-      "title": "review.md",
-      "category": "governance",
-      "silo": "Engineering",
-      "community": "Engineering",
-      "degree": 2
-    },
-    "Engineering/commands/build-fix.md": {
-      "title": "build-fix.md",
-      "category": "governance",
-      "silo": "Engineering",
-      "community": "Engineering",
-      "degree": 2
-    },
-    "Engineering/commands/e2e.md": {
-      "title": "e2e.md",
-      "category": "governance",
-      "silo": "Engineering",
-      "community": "Engineering",
-      "degree": 2
-    },
-    "Engineering/commands/clean.md": {
-      "title": "clean.md",
-      "category": "governance",
-      "silo": "Engineering",
-      "community": "Engineering",
-      "degree": 2
-    },
-    "Engineering/commands/docs.md": {
-      "title": "docs.md",
+    "Engineering/commands/experiment.md": {
+      "title": "experiment.md",
       "category": "governance",
       "silo": "Engineering",
       "community": "Engineering",
@@ -1520,22 +1478,57 @@
       "community": "Engineering",
       "degree": 2
     },
-    "Engineering/commands/experiment.md": {
-      "title": "experiment.md",
+    "Engineering/commands/docs.md": {
+      "title": "docs.md",
       "category": "governance",
       "silo": "Engineering",
       "community": "Engineering",
       "degree": 2
     },
-    "Growth/agents/growth-strategist.md": {
-      "title": "THE GROWTH STRATEGIST: CMO PROTOCOL",
+    "Engineering/commands/clean.md": {
+      "title": "clean.md",
+      "category": "governance",
+      "silo": "Engineering",
+      "community": "Engineering",
+      "degree": 2
+    },
+    "Engineering/commands/e2e.md": {
+      "title": "e2e.md",
+      "category": "governance",
+      "silo": "Engineering",
+      "community": "Engineering",
+      "degree": 2
+    },
+    "Engineering/commands/build-fix.md": {
+      "title": "build-fix.md",
+      "category": "governance",
+      "silo": "Engineering",
+      "community": "Engineering",
+      "degree": 2
+    },
+    "Engineering/commands/review.md": {
+      "title": "review.md",
+      "category": "governance",
+      "silo": "Engineering",
+      "community": "Engineering",
+      "degree": 2
+    },
+    "Engineering/commands/tdd.md": {
+      "title": "tdd.md",
+      "category": "governance",
+      "silo": "Engineering",
+      "community": "Engineering",
+      "degree": 2
+    },
+    "Growth/agents/remotion-engineer.md": {
+      "title": "THE REMOTION ENGINEER: VIDEO PRODUCT LEAD",
       "category": "agent",
       "silo": "Growth",
       "community": "Growth",
       "degree": 2
     },
-    "Growth/agents/growth-engineer.md": {
-      "title": "GROWTH ENGINEER: INBOUND COMMAND",
+    "Growth/agents/sales-engineer.md": {
+      "title": "sales-engineer.md",
       "category": "agent",
       "silo": "Growth",
       "community": "Growth",
@@ -1555,22 +1548,22 @@
       "community": "Growth",
       "degree": 2
     },
+    "Growth/agents/growth-engineer.md": {
+      "title": "GROWTH ENGINEER: INBOUND COMMAND",
+      "category": "agent",
+      "silo": "Growth",
+      "community": "Growth",
+      "degree": 2
+    },
+    "Growth/agents/growth-strategist.md": {
+      "title": "THE GROWTH STRATEGIST: CMO PROTOCOL",
+      "category": "agent",
+      "silo": "Growth",
+      "community": "Growth",
+      "degree": 2
+    },
     "Growth/agents/social-strategist.md": {
       "title": "THE SOCIAL STRATEGIST: HEAD OF DISTRIBUTION PROTOCOL",
-      "category": "agent",
-      "silo": "Growth",
-      "community": "Growth",
-      "degree": 2
-    },
-    "Growth/agents/sales-engineer.md": {
-      "title": "sales-engineer.md",
-      "category": "agent",
-      "silo": "Growth",
-      "community": "Growth",
-      "degree": 2
-    },
-    "Growth/agents/remotion-engineer.md": {
-      "title": "THE REMOTION ENGINEER: VIDEO PRODUCT LEAD",
       "category": "agent",
       "silo": "Growth",
       "community": "Growth",
@@ -2031,15 +2024,8 @@
       "community": "Growth",
       "degree": 1
     },
-    "Growth/commands/marketing.md": {
-      "title": "marketing.md",
-      "category": "governance",
-      "silo": "Growth",
-      "community": "Growth",
-      "degree": 2
-    },
-    "Growth/commands/seo.md": {
-      "title": "seo.md",
+    "Growth/commands/video.md": {
+      "title": "video.md",
       "category": "governance",
       "silo": "Growth",
       "community": "Growth",
@@ -2052,8 +2038,15 @@
       "community": "Growth",
       "degree": 2
     },
-    "Growth/commands/video.md": {
-      "title": "video.md",
+    "Growth/commands/seo.md": {
+      "title": "seo.md",
+      "category": "governance",
+      "silo": "Growth",
+      "community": "Growth",
+      "degree": 2
+    },
+    "Growth/commands/marketing.md": {
+      "title": "marketing.md",
       "category": "governance",
       "silo": "Growth",
       "community": "Growth",
@@ -2437,15 +2430,8 @@
       "community": "Growth",
       "degree": 0
     },
-    "Security/agents/security-guardian.md": {
-      "title": "THE SECURITY GUARDIAN: CISO PROTOCOL",
-      "category": "agent",
-      "silo": "Security",
-      "community": "Security",
-      "degree": 2
-    },
-    "Security/agents/security-reviewer.md": {
-      "title": "Security Reviewer",
+    "Security/agents/perseus.md": {
+      "title": "PERSEUS: THE OFFENSIVE SECURITY SPECIALIST",
       "category": "agent",
       "silo": "Security",
       "community": "Security",
@@ -2458,8 +2444,15 @@
       "community": "Security",
       "degree": 2
     },
-    "Security/agents/perseus.md": {
-      "title": "PERSEUS: THE OFFENSIVE SECURITY SPECIALIST",
+    "Security/agents/security-reviewer.md": {
+      "title": "Security Reviewer",
+      "category": "agent",
+      "silo": "Security",
+      "community": "Security",
+      "degree": 2
+    },
+    "Security/agents/security-guardian.md": {
+      "title": "THE SECURITY GUARDIAN: CISO PROTOCOL",
       "category": "agent",
       "silo": "Security",
       "community": "Security",
@@ -2962,8 +2955,8 @@
       "community": "Security",
       "degree": 2
     },
-    "Product/agents/product-manager.md": {
-      "title": "THE PRODUCT MANAGER: HEAD OF PRODUCT PROTOCOL",
+    "Product/agents/rapid-prototyper.md": {
+      "title": "rapid-prototyper.md",
       "category": "agent",
       "silo": "Product",
       "community": "Product",
@@ -2976,8 +2969,8 @@
       "community": "Product",
       "degree": 2
     },
-    "Product/agents/rapid-prototyper.md": {
-      "title": "rapid-prototyper.md",
+    "Product/agents/product-manager.md": {
+      "title": "THE PRODUCT MANAGER: HEAD OF PRODUCT PROTOCOL",
       "category": "agent",
       "silo": "Product",
       "community": "Product",
@@ -3060,8 +3053,8 @@
       "community": "Product",
       "degree": 1
     },
-    "Product/commands/plan.md": {
-      "title": "plan.md",
+    "Product/commands/triage.md": {
+      "title": "triage.md",
       "category": "governance",
       "silo": "Product",
       "community": "Product",
@@ -3074,15 +3067,15 @@
       "community": "Product",
       "degree": 2
     },
-    "Product/commands/triage.md": {
-      "title": "triage.md",
+    "Product/commands/plan.md": {
+      "title": "plan.md",
       "category": "governance",
       "silo": "Product",
       "community": "Product",
       "degree": 2
     },
-    "Infrastructure/agents/devops-engineer.md": {
-      "title": "THE DEVOPS ENGINEER: INFRASTRUCTURE PROTOCOL",
+    "Infrastructure/agents/sre.md": {
+      "title": "sre.md",
       "category": "agent",
       "silo": "Infrastructure",
       "community": "Infrastructure",
@@ -3095,8 +3088,8 @@
       "community": "Infrastructure",
       "degree": 2
     },
-    "Infrastructure/agents/sre.md": {
-      "title": "sre.md",
+    "Infrastructure/agents/devops-engineer.md": {
+      "title": "THE DEVOPS ENGINEER: INFRASTRUCTURE PROTOCOL",
       "category": "agent",
       "silo": "Infrastructure",
       "community": "Infrastructure",
@@ -3116,13 +3109,6 @@
       "community": "Infrastructure",
       "degree": 2
     },
-    "Infrastructure/commands/deploy.md": {
-      "title": "deploy.md",
-      "category": "governance",
-      "silo": "Infrastructure",
-      "community": "Infrastructure",
-      "degree": 2
-    },
     "Infrastructure/commands/release.md": {
       "title": "release.md",
       "category": "governance",
@@ -3130,15 +3116,22 @@
       "community": "Infrastructure",
       "degree": 2
     },
-    "Legal-Finance/agents/legal-counsel.md": {
-      "title": "LEGAL COUNSEL: RISK COMMAND",
+    "Infrastructure/commands/deploy.md": {
+      "title": "deploy.md",
+      "category": "governance",
+      "silo": "Infrastructure",
+      "community": "Infrastructure",
+      "degree": 2
+    },
+    "Legal-Finance/agents/finops-manager.md": {
+      "title": "FINOPS MANAGER: PROFIT COMMAND",
       "category": "agent",
       "silo": "Legal-Finance",
       "community": "Legal-Finance",
       "degree": 2
     },
-    "Legal-Finance/agents/finops-manager.md": {
-      "title": "FINOPS MANAGER: PROFIT COMMAND",
+    "Legal-Finance/agents/legal-counsel.md": {
+      "title": "LEGAL COUNSEL: RISK COMMAND",
       "category": "agent",
       "silo": "Legal-Finance",
       "community": "Legal-Finance",
@@ -3424,15 +3417,15 @@
       "community": "Legal-Finance",
       "degree": 0
     },
-    "Legal-Finance/commands/legal.md": {
-      "title": "legal.md",
+    "Legal-Finance/commands/finops.md": {
+      "title": "finops.md",
       "category": "governance",
       "silo": "Legal-Finance",
       "community": "Legal-Finance",
       "degree": 2
     },
-    "Legal-Finance/commands/finops.md": {
-      "title": "finops.md",
+    "Legal-Finance/commands/legal.md": {
+      "title": "legal.md",
       "category": "governance",
       "silo": "Legal-Finance",
       "community": "Legal-Finance",
@@ -3619,13 +3612,6 @@
       "silo": "docs",
       "community": "docs",
       "degree": 1
-    },
-    "docs/CONVENTIONS.md": {
-      "title": "Galyarder Framework \u2014 Aider Conventions",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 2
     },
     "docs/CLAUDE.md": {
       "title": "Claude Code: Implementation Protocol",
@@ -4145,13 +4131,6 @@
       "community": "docs",
       "degree": 7
     },
-    "docs/agents/fundraising-operator.md": {
-      "title": ":material-folder-zip: fundraising-operator",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
     "docs/agents/chief-of-staff.md": {
       "title": ":material-folder-zip: chief-of-staff",
       "category": "documentation",
@@ -4159,64 +4138,8 @@
       "community": "docs",
       "degree": 3
     },
-    "docs/agents/elite-developer.md": {
-      "title": ":material-folder-zip: elite-developer",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
-    "docs/agents/architect.md": {
-      "title": ":material-folder-zip: architect",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
-    "docs/agents/super-architect.md": {
-      "title": ":material-folder-zip: super-architect",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
-    "docs/agents/qa-automation-engineer.md": {
-      "title": ":material-folder-zip: qa-automation-engineer",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
-    "docs/agents/code-reviewer.md": {
-      "title": ":material-folder-zip: code-reviewer",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
-    "docs/agents/build-error-resolver.md": {
-      "title": ":material-folder-zip: build-error-resolver",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
-    "docs/agents/refactor-cleaner.md": {
-      "title": ":material-folder-zip: refactor-cleaner",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
-    "docs/agents/vercel-react-expert.md": {
-      "title": ":material-folder-zip: vercel-react-expert",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
-    "docs/agents/e2e-runner.md": {
-      "title": ":material-folder-zip: e2e-runner",
+    "docs/agents/fundraising-operator.md": {
+      "title": ":material-folder-zip: fundraising-operator",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -4229,15 +4152,78 @@
       "community": "docs",
       "degree": 3
     },
-    "docs/agents/growth-strategist.md": {
-      "title": ":material-folder-zip: growth-strategist",
+    "docs/agents/e2e-runner.md": {
+      "title": ":material-folder-zip: e2e-runner",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 3
     },
-    "docs/agents/growth-engineer.md": {
-      "title": ":material-folder-zip: growth-engineer",
+    "docs/agents/vercel-react-expert.md": {
+      "title": ":material-folder-zip: vercel-react-expert",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/agents/refactor-cleaner.md": {
+      "title": ":material-folder-zip: refactor-cleaner",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/agents/build-error-resolver.md": {
+      "title": ":material-folder-zip: build-error-resolver",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/agents/code-reviewer.md": {
+      "title": ":material-folder-zip: code-reviewer",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/agents/qa-automation-engineer.md": {
+      "title": ":material-folder-zip: qa-automation-engineer",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/agents/super-architect.md": {
+      "title": ":material-folder-zip: super-architect",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/agents/architect.md": {
+      "title": ":material-folder-zip: architect",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/agents/elite-developer.md": {
+      "title": ":material-folder-zip: elite-developer",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/agents/remotion-engineer.md": {
+      "title": ":material-folder-zip: remotion-engineer",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/agents/sales-engineer.md": {
+      "title": ":material-folder-zip: sales-engineer",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -4257,43 +4243,22 @@
       "community": "docs",
       "degree": 3
     },
+    "docs/agents/growth-engineer.md": {
+      "title": ":material-folder-zip: growth-engineer",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/agents/growth-strategist.md": {
+      "title": ":material-folder-zip: growth-strategist",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
     "docs/agents/social-strategist.md": {
       "title": ":material-folder-zip: social-strategist",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
-    "docs/agents/sales-engineer.md": {
-      "title": ":material-folder-zip: sales-engineer",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
-    "docs/agents/remotion-engineer.md": {
-      "title": ":material-folder-zip: remotion-engineer",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
-    "docs/agents/security-guardian.md": {
-      "title": ":material-folder-zip: security-guardian",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
-    "docs/agents/security-reviewer.md": {
-      "title": ":material-folder-zip: security-reviewer",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
-    "docs/agents/cyber-intel.md": {
-      "title": ":material-folder-zip: cyber-intel",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -4306,15 +4271,22 @@
       "community": "docs",
       "degree": 3
     },
-    "docs/agents/product-manager.md": {
-      "title": ":material-folder-zip: product-manager",
+    "docs/agents/cyber-intel.md": {
+      "title": ":material-folder-zip: cyber-intel",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 3
     },
-    "docs/agents/planner.md": {
-      "title": ":material-folder-zip: planner",
+    "docs/agents/security-reviewer.md": {
+      "title": ":material-folder-zip: security-reviewer",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/agents/security-guardian.md": {
+      "title": ":material-folder-zip: security-guardian",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -4327,15 +4299,15 @@
       "community": "docs",
       "degree": 3
     },
-    "docs/agents/devops-engineer.md": {
-      "title": ":material-folder-zip: devops-engineer",
+    "docs/agents/planner.md": {
+      "title": ":material-folder-zip: planner",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 3
     },
-    "docs/agents/release-manager.md": {
-      "title": ":material-folder-zip: release-manager",
+    "docs/agents/product-manager.md": {
+      "title": ":material-folder-zip: product-manager",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -4348,8 +4320,15 @@
       "community": "docs",
       "degree": 3
     },
-    "docs/agents/legal-counsel.md": {
-      "title": ":material-folder-zip: legal-counsel",
+    "docs/agents/release-manager.md": {
+      "title": ":material-folder-zip: release-manager",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/agents/devops-engineer.md": {
+      "title": ":material-folder-zip: devops-engineer",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -4357,6 +4336,13 @@
     },
     "docs/agents/finops-manager.md": {
       "title": ":material-folder-zip: finops-manager",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/agents/legal-counsel.md": {
+      "title": ":material-folder-zip: legal-counsel",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -6119,43 +6105,8 @@
       "community": "docs",
       "degree": 0
     },
-    "docs/commands/tdd.md": {
-      "title": ":material-folder-zip: Tdd",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
-    "docs/commands/review.md": {
-      "title": ":material-folder-zip: Review",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
-    "docs/commands/build-fix.md": {
-      "title": ":material-folder-zip: Build Fix",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
-    "docs/commands/e2e.md": {
-      "title": ":material-folder-zip: E2E",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
-    "docs/commands/clean.md": {
-      "title": ":material-folder-zip: Clean",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
-    "docs/commands/docs.md": {
-      "title": ":material-folder-zip: Docs",
+    "docs/commands/experiment.md": {
+      "title": ":material-folder-zip: experiment",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -6168,29 +6119,43 @@
       "community": "docs",
       "degree": 3
     },
-    "docs/commands/experiment.md": {
-      "title": ":material-folder-zip: experiment",
+    "docs/commands/docs.md": {
+      "title": ":material-folder-zip: Docs",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 3
     },
-    "docs/commands/marketing.md": {
-      "title": ":material-folder-zip: Marketing",
+    "docs/commands/clean.md": {
+      "title": ":material-folder-zip: Clean",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 3
     },
-    "docs/commands/seo.md": {
-      "title": ":material-folder-zip: Seo",
+    "docs/commands/e2e.md": {
+      "title": ":material-folder-zip: E2E",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 3
     },
-    "docs/commands/cro.md": {
-      "title": ":material-folder-zip: Cro",
+    "docs/commands/build-fix.md": {
+      "title": ":material-folder-zip: Build Fix",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/commands/review.md": {
+      "title": ":material-folder-zip: Review",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/commands/tdd.md": {
+      "title": ":material-folder-zip: Tdd",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -6203,22 +6168,29 @@
       "community": "docs",
       "degree": 3
     },
+    "docs/commands/cro.md": {
+      "title": ":material-folder-zip: Cro",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/commands/seo.md": {
+      "title": ":material-folder-zip: Seo",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/commands/marketing.md": {
+      "title": ":material-folder-zip: Marketing",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
     "docs/commands/cybersecurity.md": {
       "title": ":material-folder-zip: Cybersecurity",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
-    "docs/commands/plan.md": {
-      "title": ":material-folder-zip: Plan",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
-    "docs/commands/linear.md": {
-      "title": ":material-folder-zip: Linear",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -6231,8 +6203,15 @@
       "community": "docs",
       "degree": 3
     },
-    "docs/commands/deploy.md": {
-      "title": ":material-folder-zip: Deploy",
+    "docs/commands/linear.md": {
+      "title": ":material-folder-zip: Linear",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/commands/plan.md": {
+      "title": ":material-folder-zip: Plan",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -6245,8 +6224,8 @@
       "community": "docs",
       "degree": 3
     },
-    "docs/commands/legal.md": {
-      "title": ":material-folder-zip: Legal",
+    "docs/commands/deploy.md": {
+      "title": ":material-folder-zip: Deploy",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -6254,6 +6233,13 @@
     },
     "docs/commands/finops.md": {
       "title": ":material-folder-zip: Finops",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/commands/legal.md": {
+      "title": ":material-folder-zip: Legal",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -6703,18 +6689,6 @@
       "confidence": 0.8
     },
     {
-      "source": "CONVENTIONS.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "CONVENTIONS.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
       "source": "README.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
@@ -6745,25 +6719,13 @@
       "confidence": 0.8
     },
     {
-      "source": "Executive/personas/galyarder-ceo.md",
+      "source": "Executive/personas/galyarder-cto.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Executive/personas/galyarder-ceo.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "Executive/personas/galyarder-cfo-coo.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "Executive/personas/galyarder-cfo-coo.md",
+      "source": "Executive/personas/galyarder-cto.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -6781,25 +6743,25 @@
       "confidence": 0.8
     },
     {
-      "source": "Executive/personas/galyarder-cto.md",
+      "source": "Executive/personas/galyarder-cfo-coo.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Executive/personas/galyarder-cto.md",
+      "source": "Executive/personas/galyarder-cfo-coo.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
     },
     {
-      "source": "Executive/agents/fundraising-operator.md",
+      "source": "Executive/personas/galyarder-ceo.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Executive/agents/fundraising-operator.md",
+      "source": "Executive/personas/galyarder-ceo.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -6812,6 +6774,18 @@
     },
     {
       "source": "Executive/agents/chief-of-staff.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "Executive/agents/fundraising-operator.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "Executive/agents/fundraising-operator.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -6835,24 +6809,24 @@
       "confidence": 0.8
     },
     {
-      "source": "Executive/skills/writing-skills/SKILL.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "Executive/skills/writing-skills/SKILL.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
       "source": "Executive/skills/writing-skills/testing-skills-with-subagents.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
+      "source": "Executive/skills/writing-skills/SKILL.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "Executive/skills/writing-skills/SKILL.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
       "source": "Executive/skills/brainstorming/SKILL.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
@@ -6985,97 +6959,13 @@
       "confidence": 0.8
     },
     {
-      "source": "Engineering/agents/elite-developer.md",
+      "source": "Engineering/agents/tdd-guide.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Engineering/agents/elite-developer.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/agents/architect.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/agents/architect.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/agents/super-architect.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/agents/super-architect.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/agents/qa-automation-engineer.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/agents/qa-automation-engineer.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/agents/code-reviewer.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/agents/code-reviewer.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/agents/build-error-resolver.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/agents/build-error-resolver.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/agents/refactor-cleaner.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/agents/refactor-cleaner.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/agents/vercel-react-expert.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/agents/vercel-react-expert.md",
+      "source": "Engineering/agents/tdd-guide.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -7093,13 +6983,97 @@
       "confidence": 0.8
     },
     {
-      "source": "Engineering/agents/tdd-guide.md",
+      "source": "Engineering/agents/vercel-react-expert.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Engineering/agents/tdd-guide.md",
+      "source": "Engineering/agents/vercel-react-expert.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/agents/refactor-cleaner.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/agents/refactor-cleaner.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/agents/build-error-resolver.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/agents/build-error-resolver.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/agents/code-reviewer.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/agents/code-reviewer.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/agents/qa-automation-engineer.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/agents/qa-automation-engineer.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/agents/super-architect.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/agents/super-architect.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/agents/architect.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/agents/architect.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/agents/elite-developer.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/agents/elite-developer.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -7112,18 +7086,6 @@
     },
     {
       "source": "Engineering/skills/test-driven-development/SKILL.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/skills/systematic-debugging/SKILL.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/skills/systematic-debugging/SKILL.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -7135,6 +7097,18 @@
       "confidence": 0.8
     },
     {
+      "source": "Engineering/skills/systematic-debugging/SKILL.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/skills/systematic-debugging/SKILL.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
       "source": "Engineering/skills/verification-before-completion/SKILL.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
@@ -7219,13 +7193,13 @@
       "confidence": 0.8
     },
     {
-      "source": "Engineering/skills/playwright-pro/agents/migration-planner.md",
+      "source": "Engineering/skills/playwright-pro/agents/test-debugger.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Engineering/skills/playwright-pro/agents/migration-planner.md",
+      "source": "Engineering/skills/playwright-pro/agents/test-debugger.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -7243,13 +7217,13 @@
       "confidence": 0.8
     },
     {
-      "source": "Engineering/skills/playwright-pro/agents/test-debugger.md",
+      "source": "Engineering/skills/playwright-pro/agents/migration-planner.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Engineering/skills/playwright-pro/agents/test-debugger.md",
+      "source": "Engineering/skills/playwright-pro/agents/migration-planner.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -7717,73 +7691,13 @@
       "confidence": 0.8
     },
     {
-      "source": "Engineering/commands/tdd.md",
+      "source": "Engineering/commands/experiment.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Engineering/commands/tdd.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/commands/review.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/commands/review.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/commands/build-fix.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/commands/build-fix.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/commands/e2e.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/commands/e2e.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/commands/clean.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/commands/clean.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/commands/docs.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/commands/docs.md",
+      "source": "Engineering/commands/experiment.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -7801,37 +7715,97 @@
       "confidence": 0.8
     },
     {
-      "source": "Engineering/commands/experiment.md",
+      "source": "Engineering/commands/docs.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Engineering/commands/experiment.md",
+      "source": "Engineering/commands/docs.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
     },
     {
-      "source": "Growth/agents/growth-strategist.md",
+      "source": "Engineering/commands/clean.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Growth/agents/growth-strategist.md",
+      "source": "Engineering/commands/clean.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
     },
     {
-      "source": "Growth/agents/growth-engineer.md",
+      "source": "Engineering/commands/e2e.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Growth/agents/growth-engineer.md",
+      "source": "Engineering/commands/e2e.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/commands/build-fix.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/commands/build-fix.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/commands/review.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/commands/review.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/commands/tdd.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/commands/tdd.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "Growth/agents/remotion-engineer.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "Growth/agents/remotion-engineer.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "Growth/agents/sales-engineer.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "Growth/agents/sales-engineer.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -7861,6 +7835,30 @@
       "confidence": 0.8
     },
     {
+      "source": "Growth/agents/growth-engineer.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "Growth/agents/growth-engineer.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "Growth/agents/growth-strategist.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "Growth/agents/growth-strategist.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
       "source": "Growth/agents/social-strategist.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
@@ -7868,30 +7866,6 @@
     },
     {
       "source": "Growth/agents/social-strategist.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "Growth/agents/sales-engineer.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "Growth/agents/sales-engineer.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "Growth/agents/remotion-engineer.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "Growth/agents/remotion-engineer.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -8233,25 +8207,13 @@
       "confidence": 0.8
     },
     {
-      "source": "Growth/commands/marketing.md",
+      "source": "Growth/commands/video.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Growth/commands/marketing.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "Growth/commands/seo.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "Growth/commands/seo.md",
+      "source": "Growth/commands/video.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -8269,37 +8231,37 @@
       "confidence": 0.8
     },
     {
-      "source": "Growth/commands/video.md",
+      "source": "Growth/commands/seo.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Growth/commands/video.md",
+      "source": "Growth/commands/seo.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
     },
     {
-      "source": "Security/agents/security-guardian.md",
+      "source": "Growth/commands/marketing.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Security/agents/security-guardian.md",
+      "source": "Growth/commands/marketing.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
     },
     {
-      "source": "Security/agents/security-reviewer.md",
+      "source": "Security/agents/perseus.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Security/agents/security-reviewer.md",
+      "source": "Security/agents/perseus.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -8317,13 +8279,25 @@
       "confidence": 0.8
     },
     {
-      "source": "Security/agents/perseus.md",
+      "source": "Security/agents/security-reviewer.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Security/agents/perseus.md",
+      "source": "Security/agents/security-reviewer.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "Security/agents/security-guardian.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "Security/agents/security-guardian.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -8545,13 +8519,13 @@
       "confidence": 0.8
     },
     {
-      "source": "Product/agents/product-manager.md",
+      "source": "Product/agents/rapid-prototyper.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Product/agents/product-manager.md",
+      "source": "Product/agents/rapid-prototyper.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -8569,13 +8543,13 @@
       "confidence": 0.8
     },
     {
-      "source": "Product/agents/rapid-prototyper.md",
+      "source": "Product/agents/product-manager.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Product/agents/rapid-prototyper.md",
+      "source": "Product/agents/product-manager.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -8695,13 +8669,13 @@
       "confidence": 0.8
     },
     {
-      "source": "Product/commands/plan.md",
+      "source": "Product/commands/triage.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Product/commands/plan.md",
+      "source": "Product/commands/triage.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -8719,25 +8693,25 @@
       "confidence": 0.8
     },
     {
-      "source": "Product/commands/triage.md",
+      "source": "Product/commands/plan.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Product/commands/triage.md",
+      "source": "Product/commands/plan.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
     },
     {
-      "source": "Infrastructure/agents/devops-engineer.md",
+      "source": "Infrastructure/agents/sre.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Infrastructure/agents/devops-engineer.md",
+      "source": "Infrastructure/agents/sre.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -8755,13 +8729,13 @@
       "confidence": 0.8
     },
     {
-      "source": "Infrastructure/agents/sre.md",
+      "source": "Infrastructure/agents/devops-engineer.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Infrastructure/agents/sre.md",
+      "source": "Infrastructure/agents/devops-engineer.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -8791,18 +8765,6 @@
       "confidence": 0.8
     },
     {
-      "source": "Infrastructure/commands/deploy.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "Infrastructure/commands/deploy.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
       "source": "Infrastructure/commands/release.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
@@ -8815,13 +8777,13 @@
       "confidence": 0.8
     },
     {
-      "source": "Legal-Finance/agents/legal-counsel.md",
+      "source": "Infrastructure/commands/deploy.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Legal-Finance/agents/legal-counsel.md",
+      "source": "Infrastructure/commands/deploy.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -8834,6 +8796,18 @@
     },
     {
       "source": "Legal-Finance/agents/finops-manager.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "Legal-Finance/agents/legal-counsel.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "Legal-Finance/agents/legal-counsel.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -9001,25 +8975,25 @@
       "confidence": 0.8
     },
     {
-      "source": "Legal-Finance/commands/legal.md",
+      "source": "Legal-Finance/commands/finops.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Legal-Finance/commands/legal.md",
+      "source": "Legal-Finance/commands/finops.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
     },
     {
-      "source": "Legal-Finance/commands/finops.md",
+      "source": "Legal-Finance/commands/legal.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Legal-Finance/commands/finops.md",
+      "source": "Legal-Finance/commands/legal.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -9208,18 +9182,6 @@
       "source": "docs/CHANGELOG.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/CONVENTIONS.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/CONVENTIONS.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
       "confidence": 0.8
     },
     {
@@ -9481,18 +9443,6 @@
       "confidence": 0.9
     },
     {
-      "source": "docs/agents/fundraising-operator.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/fundraising-operator.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
       "source": "docs/agents/chief-of-staff.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
@@ -9505,109 +9455,13 @@
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/elite-developer.md",
+      "source": "docs/agents/fundraising-operator.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/elite-developer.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/architect.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/architect.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/super-architect.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/super-architect.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/qa-automation-engineer.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/qa-automation-engineer.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/code-reviewer.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/code-reviewer.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/build-error-resolver.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/build-error-resolver.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/refactor-cleaner.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/refactor-cleaner.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/vercel-react-expert.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/vercel-react-expert.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/e2e-runner.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/e2e-runner.md",
+      "source": "docs/agents/fundraising-operator.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -9625,25 +9479,133 @@
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/growth-strategist.md",
+      "source": "docs/agents/e2e-runner.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/growth-strategist.md",
+      "source": "docs/agents/e2e-runner.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/growth-engineer.md",
+      "source": "docs/agents/vercel-react-expert.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/growth-engineer.md",
+      "source": "docs/agents/vercel-react-expert.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/refactor-cleaner.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/refactor-cleaner.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/build-error-resolver.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/build-error-resolver.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/code-reviewer.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/code-reviewer.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/qa-automation-engineer.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/qa-automation-engineer.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/super-architect.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/super-architect.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/architect.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/architect.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/elite-developer.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/elite-developer.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/remotion-engineer.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/remotion-engineer.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/sales-engineer.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/sales-engineer.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -9673,6 +9635,30 @@
       "confidence": 0.8
     },
     {
+      "source": "docs/agents/growth-engineer.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/growth-engineer.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/growth-strategist.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/growth-strategist.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
       "source": "docs/agents/social-strategist.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
@@ -9680,66 +9666,6 @@
     },
     {
       "source": "docs/agents/social-strategist.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/sales-engineer.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/sales-engineer.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/remotion-engineer.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/remotion-engineer.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/security-guardian.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/security-guardian.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/security-reviewer.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/security-reviewer.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/cyber-intel.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/cyber-intel.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -9757,25 +9683,37 @@
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/product-manager.md",
+      "source": "docs/agents/cyber-intel.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/product-manager.md",
+      "source": "docs/agents/cyber-intel.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/planner.md",
+      "source": "docs/agents/security-reviewer.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/planner.md",
+      "source": "docs/agents/security-reviewer.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/security-guardian.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/security-guardian.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -9793,25 +9731,25 @@
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/devops-engineer.md",
+      "source": "docs/agents/planner.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/devops-engineer.md",
+      "source": "docs/agents/planner.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/release-manager.md",
+      "source": "docs/agents/product-manager.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/release-manager.md",
+      "source": "docs/agents/product-manager.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -9829,13 +9767,25 @@
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/legal-counsel.md",
+      "source": "docs/agents/release-manager.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/legal-counsel.md",
+      "source": "docs/agents/release-manager.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/devops-engineer.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/devops-engineer.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -9848,6 +9798,18 @@
     },
     {
       "source": "docs/agents/finops-manager.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/legal-counsel.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/legal-counsel.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -12169,73 +12131,13 @@
       "confidence": 0.8
     },
     {
-      "source": "docs/commands/tdd.md",
+      "source": "docs/commands/experiment.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/commands/tdd.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/commands/review.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/commands/review.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/commands/build-fix.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/commands/build-fix.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/commands/e2e.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/commands/e2e.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/commands/clean.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/commands/clean.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/commands/docs.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/commands/docs.md",
+      "source": "docs/commands/experiment.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -12253,49 +12155,73 @@
       "confidence": 0.8
     },
     {
-      "source": "docs/commands/experiment.md",
+      "source": "docs/commands/docs.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/commands/experiment.md",
+      "source": "docs/commands/docs.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
     },
     {
-      "source": "docs/commands/marketing.md",
+      "source": "docs/commands/clean.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/commands/marketing.md",
+      "source": "docs/commands/clean.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
     },
     {
-      "source": "docs/commands/seo.md",
+      "source": "docs/commands/e2e.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/commands/seo.md",
+      "source": "docs/commands/e2e.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
     },
     {
-      "source": "docs/commands/cro.md",
+      "source": "docs/commands/build-fix.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/commands/cro.md",
+      "source": "docs/commands/build-fix.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/commands/review.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/commands/review.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/commands/tdd.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/commands/tdd.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -12313,6 +12239,42 @@
       "confidence": 0.8
     },
     {
+      "source": "docs/commands/cro.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/commands/cro.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/commands/seo.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/commands/seo.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/commands/marketing.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/commands/marketing.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
       "source": "docs/commands/cybersecurity.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
@@ -12320,30 +12282,6 @@
     },
     {
       "source": "docs/commands/cybersecurity.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/commands/plan.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/commands/plan.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/commands/linear.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/commands/linear.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -12361,13 +12299,25 @@
       "confidence": 0.8
     },
     {
-      "source": "docs/commands/deploy.md",
+      "source": "docs/commands/linear.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/commands/deploy.md",
+      "source": "docs/commands/linear.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/commands/plan.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/commands/plan.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -12385,13 +12335,13 @@
       "confidence": 0.8
     },
     {
-      "source": "docs/commands/legal.md",
+      "source": "docs/commands/deploy.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/commands/legal.md",
+      "source": "docs/commands/deploy.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -12404,6 +12354,18 @@
     },
     {
       "source": "docs/commands/finops.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/commands/legal.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/commands/legal.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -12868,7 +12830,7 @@
           "category": "core-hukum",
           "silo": "Root",
           "community": "Root",
-          "degree": 348
+          "degree": 346
         }
       ],
       [
@@ -12878,7 +12840,7 @@
           "category": "core-hukum",
           "silo": "Root",
           "community": "Root",
-          "degree": 312
+          "degree": 310
         }
       ],
       [

@@ -2,7 +2,7 @@
 # Usage:
 #   ./scripts/convert.sh [--tool <name>] [--out <dir>] [--help]
 #
-# Tools: antigravity, cursor, aider, kilocode, windsurf, opencode, augment, claude-code, codex, gemini, openclaw, hermes, all
+# Tools: antigravity, cursor, kilocode, windsurf, opencode, augment, claude-code, codex, gemini, openclaw, hermes, all
 # Default: all
 
 set -euo pipefail
@@ -33,7 +33,7 @@ Usage:
   ./scripts/convert.sh [--tool <name>] [--out <dir>] [--help]
 
 Tools:
-  antigravity, cursor, aider, kilocode, windsurf, opencode, augment, claude-code, codex, gemini, openclaw, hermes, all
+  antigravity, cursor, kilocode, windsurf, opencode, augment, claude-code, codex, gemini, openclaw, hermes, all
 
 Defaults:
   --tool all
@@ -43,7 +43,7 @@ USAGE
 
 is_valid_tool() {
   case "$1" in
-    antigravity|cursor|aider|kilocode|windsurf|opencode|augment|claude-code|codex|gemini|openclaw|hermes|galyarder-agent|all) return 0 ;;
+    antigravity|cursor|kilocode|windsurf|opencode|augment|claude-code|codex|gemini|openclaw|hermes|galyarder-agent|all) return 0 ;;
     *) return 1 ;;
   esac
 }
@@ -65,12 +65,12 @@ yaml_quote() {
 }
 
 init_count_vars() {
-  converted_antigravity=0; converted_cursor=0; converted_aider=0; converted_kilocode=0
+  converted_antigravity=0; converted_cursor=0; converted_kilocode=0
   converted_windsurf=0; converted_opencode=0; converted_augment=0; converted_claudecode=0
   converted_codex=0; converted_gemini=0; converted_openclaw=0; converted_hermes=0
   converted_galyarderagent=0
   
-  skipped_antigravity=0; skipped_cursor=0; skipped_aider=0; skipped_kilocode=0
+  skipped_antigravity=0; skipped_cursor=0; skipped_kilocode=0
   skipped_windsurf=0; skipped_opencode=0; skipped_augment=0; skipped_claudecode=0
   skipped_codex=0; skipped_gemini=0; skipped_openclaw=0; skipped_hermes=0
   skipped_galyarderagent=0
@@ -81,7 +81,6 @@ inc_converted() {
   case "$t" in
     antigravity) converted_antigravity=$((converted_antigravity + 1)) ;;
     cursor) converted_cursor=$((converted_cursor + 1)) ;;
-    aider) converted_aider=$((converted_aider + 1)) ;;
     kilocode) converted_kilocode=$((converted_kilocode + 1)) ;;
     windsurf) converted_windsurf=$((converted_windsurf + 1)) ;;
     opencode) converted_opencode=$((converted_opencode + 1)) ;;
@@ -100,7 +99,6 @@ inc_skipped() {
   case "$t" in
     antigravity) skipped_antigravity=$((skipped_antigravity + 1)) ;;
     cursor) skipped_cursor=$((skipped_cursor + 1)) ;;
-    aider) skipped_aider=$((skipped_aider + 1)) ;;
     kilocode) skipped_kilocode=$((skipped_kilocode + 1)) ;;
     windsurf) skipped_windsurf=$((skipped_windsurf + 1)) ;;
     opencode) skipped_opencode=$((skipped_opencode + 1)) ;;
@@ -119,7 +117,6 @@ get_converted() {
   case "$t" in
     antigravity) echo "$converted_antigravity" ;;
     cursor) echo "$converted_cursor" ;;
-    aider) echo "$converted_aider" ;;
     kilocode) echo "$converted_kilocode" ;;
     windsurf) echo "$converted_windsurf" ;;
     opencode) echo "$converted_opencode" ;;
@@ -138,7 +135,6 @@ get_skipped() {
   case "$t" in
     antigravity) echo "$skipped_antigravity" ;;
     cursor) echo "$skipped_cursor" ;;
-    aider) echo "$skipped_aider" ;;
     kilocode) echo "$skipped_kilocode" ;;
     windsurf) echo "$skipped_windsurf" ;;
     opencode) echo "$skipped_opencode" ;;
@@ -215,14 +211,9 @@ copy_supporting_dirs() {
   done
 }
 
-append_aider_skill() {
-  local name="$1"; local description="$2"; local body_file="$3"
-  { echo "---"; echo; echo "## ${name}"; echo "> ${description}"; echo; cat "$body_file"; echo; } >> "${AIDER_FILE}"
-}
-
 tool_title() {
   case "$1" in
-    antigravity) echo "Antigravity" ;; cursor) echo "Cursor" ;; aider) echo "Aider" ;;
+    antigravity) echo "Antigravity" ;; cursor) echo "Cursor" ;;
     kilocode) echo "Kilo Code" ;; windsurf) echo "Windsurf" ;; opencode) echo "OpenCode" ;;
     augment) echo "Augment" ;; claude-code) echo "Claude Code" ;; codex) echo "OpenAI Codex" ;;
     gemini) echo "Gemini CLI" ;; openclaw) echo "OpenClaw" ;; hermes) echo "Hermes Agent" ;;
@@ -240,9 +231,6 @@ write_tool_readme() {
     cursor)
       format_line='Flat Cursor rules: `.cursor/rules/<name>.mdc`.'
       manual_install='Copy `integrations/cursor/rules/*.mdc` into `.cursor/rules/`.' ;;
-    aider)
-      format_line='Single conventions file: `CONVENTIONS.md`.'
-      manual_install='Copy `integrations/aider/CONVENTIONS.md` into project root.' ;;
     *)
       format_line='Native Markdown assets.'
       manual_install='Copy assets to the required tool directory.' ;;
@@ -266,7 +254,7 @@ done
 
 if ! is_valid_tool "$TOOL"; then err "Invalid --tool: ${TOOL}"; usage; exit 1; fi
 
-TOOLS="antigravity cursor aider kilocode windsurf opencode augment claude-code codex gemini openclaw hermes galyarder-agent"
+TOOLS="antigravity cursor kilocode windsurf opencode augment claude-code codex gemini openclaw hermes galyarder-agent"
 [[ "$TOOL" != "all" ]] && TOOLS="$TOOL"
 
 SKILLS_TMP="$(mktemp)"
@@ -285,10 +273,6 @@ for t in $TOOLS; do
   rm -rf "${OUT_BASE}/${t}"; mkdir -p "${OUT_BASE}/${t}"
   [[ "$t" =~ ^(cursor|kilocode|augment|openclaw|hermes)$ ]] && mkdir -p "${OUT_BASE}/${t}/rules"
   [[ "$t" =~ ^(windsurf|opencode|galyarder-agent)$ ]] && mkdir -p "${OUT_BASE}/${t}/skills"
-  if [[ "$t" == "aider" ]]; then
-    AIDER_FILE="${OUT_BASE}/aider/CONVENTIONS.md"
-    { echo "# Galyarder Framework — Aider Conventions"; echo "> Generated: ${TODAY}"; echo; } > "$AIDER_FILE"
-  fi
 done
 
 init_count_vars
@@ -325,7 +309,6 @@ while IFS= read -r rel_path; do
       cursor)
         out_file="${OUT_BASE}/cursor/rules/${safe_name}.mdc"
         { echo "---"; echo "description: $(yaml_quote "$description")"; echo "globs:"; echo "alwaysApply: false"; echo "---"; cat "$body_tmp"; } > "$out_file" ;;
-      aider) append_aider_skill "$name" "$description" "$body_tmp" ;;
       kilocode|augment)
         out_file="${OUT_BASE}/${t}/rules/${safe_name}.md"
         { echo "---"; echo "description: $(yaml_quote "$description")"; echo "---"; cat "$body_tmp"; } > "$out_file" ;;
