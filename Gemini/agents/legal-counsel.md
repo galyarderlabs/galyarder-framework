@@ -1,0 +1,1 @@
+../../integrations/gemini/legal-counsel.md

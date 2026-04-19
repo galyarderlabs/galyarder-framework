@@ -166,6 +166,14 @@ galyarder-deploy --tool <name>
   gemini extensions install https://github.com/galyarderlabs/galyarder-framework
   ```
 
+  For local skill discovery after the extension is installed:
+
+  ```bash
+  ./scripts/install.sh --tool gemini
+  ```
+
+  Note: Gemini currently loads `GEMINI.md` from the extension, but it does not expose external framework agents in `/agents list`. Galyarder skills are installed under `~/.gemini/skills/`.
+
 #### B. Autonomous Directives (Codex / OpenCode)
 *For tools that can autonomously fetch logic via direct instructions.*
 

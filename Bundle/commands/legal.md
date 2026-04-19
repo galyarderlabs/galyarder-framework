@@ -1,0 +1,1 @@
+../../Legal-Finance/commands/legal.md

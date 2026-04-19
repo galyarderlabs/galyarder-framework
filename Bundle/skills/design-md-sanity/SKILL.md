@@ -1,0 +1,1 @@
+../../../Growth/design/design-md-sanity.md

@@ -1,0 +1,1 @@
+../../integrations/gemini/planner.md

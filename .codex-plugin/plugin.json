@@ -1,7 +1,7 @@
 {
   "name": "galyarder-framework",
   "description": "Apex Digital Enterprise Orchestration for OpenAI Codex.",
-  "version": "1.8.3",
+  "version": "1.8.4",
   "author": "Galyarder Labs",
   "homepage": "https://galyarderlabs.github.io/galyarder-framework/",
   "repository": "https://github.com/galyarderlabs/galyarder-framework",
@@ -13,6 +13,6 @@
     "tdd",
     "growth"
   ],
-  "commands": "./commands/",
-  "skills": "./skills/"
+  "commands": "./Bundle/commands/",
+  "skills": "./Bundle/skills/"
 }

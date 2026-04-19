@@ -335,6 +335,15 @@ done < "$SKILLS_TMP"
 rm -f "$SKILLS_TMP"
 
 for t in $TOOLS; do write_tool_readme "$t" "$(get_converted "$t")"; done
+
+if [[ " $TOOLS " == *" gemini "* ]] && [[ "$OUT_BASE" == "${REPO_ROOT}/integrations" ]]; then
+  python3 "${SCRIPT_DIR}/build_gemini_bundle.py"
+fi
+
+if [[ "$OUT_BASE" == "${REPO_ROOT}/integrations" ]]; then
+  python3 "${SCRIPT_DIR}/build_host_bundle.py"
+fi
+
 echo; info "Conversion summary"
 for t in $TOOLS; do echo "  ${t}: $(get_converted "$t") converted, $(get_skipped "$t") skipped"; done
 echo; ok "Done"

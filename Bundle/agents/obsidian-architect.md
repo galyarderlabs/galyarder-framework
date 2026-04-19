@@ -1,0 +1,1 @@
+../../Knowledge/agents/obsidian-architect.md

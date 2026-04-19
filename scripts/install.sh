@@ -2,7 +2,7 @@
 # Usage:
 #   ./scripts/install.sh [--tool <name>] [--target <dir>] [--help]
 #
-# Tools: antigravity, cursor, kilocode, windsurf, opencode, augment, all
+# Tools: antigravity, cursor, kilocode, windsurf, opencode, augment, claude-code, codex, gemini, openclaw, hermes, galyarder-agent, all
 # Default: all
 
 set -euo pipefail
@@ -32,7 +32,7 @@ Usage:
   ./scripts/install.sh [--tool <name>] [--target <dir>] [--help]
 
 Tools:
-  antigravity, cursor, kilocode, windsurf, opencode, augment, all
+  antigravity, cursor, kilocode, windsurf, opencode, augment, claude-code, codex, gemini, openclaw, hermes, galyarder-agent, all
 
 Defaults:
   --tool all
@@ -105,6 +105,21 @@ for t in $TOOLS; do
                 cp -R "$item" "${DEST}/"
             done
             ok "Installed Windsurf skills to ${DEST}." ;;
+        gemini)
+            if [ -n "$TARGET_DIR" ]; then
+                DEST="${TARGET_DIR}/.gemini/skills"
+            else
+                DEST="${HOME}/.gemini/skills"
+            fi
+            mkdir -p "$DEST"
+            for item in "${SRC_DIR}/skills/"*; do
+                [ -e "$item" ] || continue
+                name=$(basename "$item")
+                rm -rf "${DEST}/${name}"
+                cp -R "$item" "${DEST}/"
+            done
+            ok "Installed Gemini skills to ${DEST}."
+            warn "Gemini CLI extension install only appends GEMINI.md context. External framework agents do not appear in /agents list unless Gemini adds native agent registry support." ;;
         opencode)
             DEST="${HOME}/.opencode/plugins"
             mkdir -p "$DEST"

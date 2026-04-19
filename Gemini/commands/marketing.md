@@ -1,0 +1,1 @@
+../../integrations/gemini/marketing.md

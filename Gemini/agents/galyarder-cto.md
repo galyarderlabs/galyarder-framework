@@ -1,0 +1,1 @@
+../../integrations/gemini/galyarder-cto.md

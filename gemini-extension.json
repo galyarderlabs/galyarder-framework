@@ -1,42 +1,12 @@
 {
   "name": "galyarder-framework",
   "description": "Humans 3.0 Protocol: Advanced Agentic Orchestration for the 1-Man Army. Implementing Autonomous Goal Integration (AGI) to power self-evolving digital enterprises.",
-  "version": "1.8.3",
+  "version": "1.8.4",
   "author": "Galyarder Labs",
   "homepage": "https://galyarderlabs.github.io/galyarder-framework/",
   "repository": "https://github.com/galyarderlabs/galyarder-framework",
   "contextFileName": "GEMINI.md",
-  "personas": [
-    "./Executive/personas/"
-  ],
-  "agents": [
-    "./Executive/agents/",
-    "./Engineering/agents/",
-    "./Growth/agents/",
-    "./Security/agents/",
-    "./Product/agents/",
-    "./Infrastructure/agents/",
-    "./Legal-Finance/agents/",
-    "./Knowledge/agents/"
-  ],
-  "skills": [
-    "./Executive/skills/",
-    "./Engineering/skills/",
-    "./Growth/skills/",
-    "./Growth/design/",
-    "./Security/skills/",
-    "./Product/skills/",
-    "./Infrastructure/skills/",
-    "./Legal-Finance/skills/",
-    "./Knowledge/skills/"
-  ],
-  "commands": [
-    "./Engineering/commands/",
-    "./Growth/commands/",
-    "./Security/commands/",
-    "./Product/commands/",
-    "./Infrastructure/commands/",
-    "./Legal-Finance/commands/",
-    "./Knowledge/commands/"
-  ]
+  "agents": "./Gemini/agents/",
+  "skills": "./Gemini/skills/",
+  "commands": "./Gemini/commands/"
 }

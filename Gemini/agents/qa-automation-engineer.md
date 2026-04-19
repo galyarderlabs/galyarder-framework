@@ -1,0 +1,1 @@
+../../integrations/gemini/qa-automation-engineer.md

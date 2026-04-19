@@ -1,5 +1,24 @@
 # Release Notes - Galyarder Framework
 
+## [v1.8.4] - 2026-04-19
+### Host Bundle Repair
+This patch fixes the all-in-one install surface for Gemini and other host manifests that expect one root bundle instead of scattered department paths.
+
+#### Highlights
+- **Gemini All-in-One**: Added a root `Gemini/` bundle with unified `agents`, `skills`, and `commands` paths.
+- **Design Included**: Growth design libraries are now exposed as bundle skill entries instead of being left outside the all-in-one install surface.
+- **Executive Picker Repair**: CEO, CFO/COO, CMO, and CTO are now exposed through host-facing agent bundles for pickers that only read `agents`.
+- **Cursor/Codex Root Fix**: Top-level plugin manifests now point to valid bundle directories instead of nonexistent root folders.
+
+#### Verification
+```bash
+python3 scripts/build_gemini_bundle.py
+python3 scripts/build_host_bundle.py
+bash scripts/smoke.sh
+```
+
+---
+
 ## [v1.8.3] - 2026-04-19
 ### Packaging Recovery & Lazy Neural Link
 This release hardens the framework for real marketplace installs: lighter boot context, one-shot full-bundle install, and no more broken nested skill paths.

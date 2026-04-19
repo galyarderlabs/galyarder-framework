@@ -1,0 +1,1 @@
+../../integrations/gemini/incident.md

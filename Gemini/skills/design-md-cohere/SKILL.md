@@ -1,0 +1,1 @@
+../../../integrations/gemini/design-md-cohere.md

@@ -1,0 +1,1 @@
+../../integrations/gemini/cyber-intel.md

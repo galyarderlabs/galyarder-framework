@@ -1,0 +1,1 @@
+../../Infrastructure/agents/release-manager.md

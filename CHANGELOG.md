@@ -2,6 +2,17 @@
 
 All notable changes to Galyarder Framework will be documented in this file.
 
+## [1.8.4] - 2026-04-19
+### Added
+- **Host Bundle Layer**: Added root `Bundle/` and `Gemini/` all-in-one install surfaces so multi-department assets are exposed through single paths that host manifests can scan.
+### Changed
+- **Gemini Manifest Shape**: Reworked the top-level Gemini extension manifest to use single bundle paths for `agents`, `skills`, and `commands`, matching the older manifest style that previously registered custom assets.
+- **Design Discovery**: Folded `Growth/design/*.md` assets into bundle-backed skill entries so design libraries travel with all-in-one installs.
+### Fixed
+- **Executive Visibility**: Exposed CEO/CFO/CMO/CTO personas through host-facing `agents` bundles for pickers that ignore `personas`.
+- **Cursor/Codex Root Paths**: Repointed root plugin manifests away from nonexistent `./agents` / `./skills` / `./commands` directories to valid bundle paths.
+- **Gemini Local Install**: Fixed Gemini sync/install scripts so generated skills deploy from `integrations/gemini` instead of the pre-silo root layout.
+
 ## [1.8.3] - 2026-04-19
 ### Added
 - **Bundle Install Path**: Added a top-level `galyarder-framework` marketplace bundle so all 8 departments can be installed as one package.

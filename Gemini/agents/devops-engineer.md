@@ -1,0 +1,1 @@
+../../integrations/gemini/devops-engineer.md
