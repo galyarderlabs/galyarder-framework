@@ -1,18 +1,23 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/templates/Galyarder-Department-Reports/Department Report Index.md
+degree: 7
+source: docs/templates/Galyarder-Department-Reports/Department Report Index.md
 ---
 # Department Report Index
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **7**.
+
+## 🔗 Neural Links
 
 ### Directing To:
-- [[Founder-Office-Report-Template]] (semantic_link)
-- [[Product-Report-Template]] (semantic_link)
-- [[Engineering-Report-Template]] (semantic_link)
-- [[Security-Report-Template]] (semantic_link)
-- [[Growth-Report-Template]] (semantic_link)
-- [[Operations-Report-Template]] (semantic_link)
-- [[Legal-Finance-Report-Template]] (semantic_link)
-- [[Knowledge-Report-Template]] (semantic_link)
+- [[Founder-Office-Report-Template]] (semantic_link | 0.9)
+- [[Product-Report-Template]] (semantic_link | 0.9)
+- [[Engineering-Report-Template]] (semantic_link | 0.9)
+- [[Security-Report-Template]] (semantic_link | 0.9)
+- [[Growth-Report-Template]] (semantic_link | 0.9)
+- [[Operations-Report-Template]] (semantic_link | 0.9)
+- [[Legal-Finance-Report-Template]] (semantic_link | 0.9)
+- [[Knowledge-Report-Template]] (semantic_link | 0.9)

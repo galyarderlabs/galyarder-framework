@@ -1,14 +1,19 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/skills/obsidian-bases/references/FUNCTIONS_REFERENCE.md
+degree: 2
+source: docs/skills/obsidian-bases/references/FUNCTIONS_REFERENCE.md
 ---
 # Functions Reference
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **2**.
+
+## 🔗 Neural Links
 
 ### Informed By:
-- [[Obsidian-Bases-Skill]] (structural_reference)
-- [[Obsidian-Bases-Skill]] (structural_reference)
-- [[:material-folder-zip:-obsidian-bases]] (structural_reference)
-- [[:material-folder-zip:-obsidian-bases]] (structural_reference)
+- [[Obsidian-Bases-Skill]] (structural_reference | 1.0)
+- [[Obsidian-Bases-Skill]] (structural_reference | 1.0)
+- [[:material-folder-zip:-obsidian-bases]] (structural_reference | 1.0)
+- [[:material-folder-zip:-obsidian-bases]] (structural_reference | 1.0)

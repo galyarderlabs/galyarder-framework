@@ -1,12 +1,16 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/departments/Knowledge/World-Map/The-Galyarder-Triad:-Complete-Ecosystem-Overview.md
+degree: 1
+source: docs/TRIAD_OVERVIEW.md
 ---
 # The Galyarder Triad: Complete Ecosystem Overview
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **1**.
+
+## 🔗 Neural Links
 
 ### Directing To:
-- [[The-Galyarder-Triad:-Complete-Ecosystem-Overview]] (semantic_link)
-- [[The-Galyarder-Triad:-Complete-Ecosystem-Overview]] (semantic_link)
+- [[Claude-Code:-Implementation-Protocol]] (enforces_protocol | 0.8)

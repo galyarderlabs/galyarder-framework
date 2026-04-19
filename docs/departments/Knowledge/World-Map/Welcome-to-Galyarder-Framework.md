@@ -1,19 +1,20 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/departments/Knowledge/World-Map/Welcome-to-Galyarder-Framework.md
+degree: 5
+source: docs/index.md
 ---
 # Welcome to Galyarder Framework
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **5**.
+
+## 🔗 Neural Links
 
 ### Directing To:
-- [[Galyarder-Framework:-Agents]] (semantic_link)
-- [[Galyarder-Framework:-Skills]] (semantic_link)
-- [[Design-System-Specifications]] (semantic_link)
-- [[Galyarder-Framework:-Skills]] (semantic_link)
-- [[generate-docs.py]] (semantic_link)
-- [[generate-docs.py]] (semantic_link)
-- [[himalayan_link_fixer.py]] (semantic_link)
-- [[Welcome-to-Galyarder-Framework]] (semantic_link)
-- [[Welcome-to-Galyarder-Framework]] (semantic_link)
+- [[Galyarder-Framework:-Agents]] (structural_reference | 1.0)
+- [[Galyarder-Framework:-Skills]] (structural_reference | 1.0)
+- [[Design-System-Specifications]] (structural_reference | 1.0)
+- [[Galyarder-Framework:-Skills]] (structural_reference | 1.0)
+- [[Claude-Code:-Implementation-Protocol]] (enforces_protocol | 0.8)

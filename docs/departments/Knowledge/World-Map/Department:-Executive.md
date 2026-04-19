@@ -1,12 +1,13 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/departments/Knowledge/World-Map/Department:-Executive.md
+degree: 0
+source: docs/departments/Executive/README.md
 ---
 # Department: Executive
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **0**.
 
-### Directing To:
-- [[Department:-Executive]] (semantic_link)
-- [[Department:-Executive]] (semantic_link)
+## 🔗 Neural Links

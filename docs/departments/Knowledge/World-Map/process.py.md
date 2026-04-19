@@ -1,8 +1,13 @@
 ---
-node_type: documentation
-silo: docs
-source_path: docs/departments/Knowledge/World-Map/process.py.md
+node_type: logic-engine
+silo: Security
+degree: 0
+source: Security/skills/recovering-from-ransomware-attack/scripts/process.py
 ---
 # process.py
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **logic-engine** within the **Security** silo. 
+It has a connectivity degree of **0**.
+
+## 🔗 Neural Links

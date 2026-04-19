@@ -1,12 +1,16 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/departments/Knowledge/World-Map/Integration-Checklist:-Galyarder-Triad-Complete.md
+degree: 1
+source: docs/INTEGRATION_COMPLETE.md
 ---
 # Integration Checklist: Galyarder Triad Complete
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **1**.
+
+## 🔗 Neural Links
 
 ### Directing To:
-- [[Integration-Checklist:-Galyarder-Triad-Complete]] (semantic_link)
-- [[Integration-Checklist:-Galyarder-Triad-Complete]] (semantic_link)
+- [[Claude-Code:-Implementation-Protocol]] (enforces_protocol | 0.8)

@@ -1,8 +1,13 @@
 ---
-node_type: documentation
-silo: docs
-source_path: docs/departments/Knowledge/World-Map/budget_variance_analyzer.py.md
+node_type: logic-engine
+silo: Legal-Finance
+degree: 0
+source: Legal-Finance/skills/financial-analyst/scripts/budget_variance_analyzer.py
 ---
 # budget_variance_analyzer.py
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **logic-engine** within the **Legal-Finance** silo. 
+It has a connectivity degree of **0**.
+
+## 🔗 Neural Links

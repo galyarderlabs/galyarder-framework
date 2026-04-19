@@ -1,8 +1,13 @@
 ---
-node_type: documentation
-silo: docs
-source_path: docs/departments/Knowledge/World-Map/Skill-authoring-best-practices.md
+node_type: skill
+silo: Executive
+degree: 0
+source: Executive/skills/writing-skills/anthropic-best-practices.md
 ---
 # Skill authoring best practices
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **skill** within the **Executive** silo. 
+It has a connectivity degree of **0**.
+
+## 🔗 Neural Links

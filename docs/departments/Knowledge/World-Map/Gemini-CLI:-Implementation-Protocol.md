@@ -1,12 +1,17 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/departments/Knowledge/World-Map/Gemini-CLI:-Implementation-Protocol.md
+degree: 2
+source: docs/GEMINI.md
 ---
 # Gemini CLI: Implementation Protocol
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **2**.
+
+## 🔗 Neural Links
 
 ### Directing To:
-- [[Gemini-CLI:-Implementation-Protocol]] (semantic_link)
-- [[Gemini-CLI:-Implementation-Protocol]] (semantic_link)
+- [[Claude-Code:-Implementation-Protocol]] (enforces_protocol | 0.8)
+- [[Galyarder-Framework:-Advanced-Agentic-Context-(Gemini-CLI)]] (uses_proxy | 0.8)

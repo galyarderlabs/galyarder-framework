@@ -1,8 +1,13 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/skills/programmatic-seo/references/playbooks.md
+degree: 0
+source: docs/skills/programmatic-seo/references/playbooks.md
 ---
 # The 12 Programmatic SEO Playbooks
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **0**.
+
+## 🔗 Neural Links

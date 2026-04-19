@@ -1,8 +1,13 @@
 ---
-node_type: documentation
-silo: docs
-source_path: docs/departments/Knowledge/World-Map/attribution_analyzer.py.md
+node_type: logic-engine
+silo: Growth
+degree: 0
+source: Growth/skills/campaign-analytics/scripts/attribution_analyzer.py
 ---
 # attribution_analyzer.py
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **logic-engine** within the **Growth** silo. 
+It has a connectivity degree of **0**.
+
+## 🔗 Neural Links

@@ -1,14 +1,19 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/skills/obsidian-markdown/references/CALLOUTS.md
+degree: 2
+source: docs/skills/obsidian-markdown/references/CALLOUTS.md
 ---
 # Callouts Reference
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **2**.
+
+## 🔗 Neural Links
 
 ### Informed By:
-- [[Obsidian-Flavored-Markdown-Skill]] (structural_reference)
-- [[Obsidian-Flavored-Markdown-Skill]] (structural_reference)
-- [[:material-folder-zip:-obsidian-markdown]] (structural_reference)
-- [[:material-folder-zip:-obsidian-markdown]] (structural_reference)
+- [[Obsidian-Flavored-Markdown-Skill]] (structural_reference | 1.0)
+- [[Obsidian-Flavored-Markdown-Skill]] (structural_reference | 1.0)
+- [[:material-folder-zip:-obsidian-markdown]] (structural_reference | 1.0)
+- [[:material-folder-zip:-obsidian-markdown]] (structural_reference | 1.0)

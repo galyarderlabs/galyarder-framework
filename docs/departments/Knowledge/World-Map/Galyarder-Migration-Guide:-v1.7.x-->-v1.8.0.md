@@ -1,19 +1,17 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/departments/Knowledge/World-Map/Galyarder-Migration-Guide:-v1.7.x-->-v1.8.0.md
+degree: 2
+source: docs/MIGRATION.md
 ---
 # Galyarder Migration Guide: v1.7.x -> v1.8.0
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **2**.
 
-### Directing To:
-- [[Release-Notes---Galyarder-Framework]] (semantic_link)
-- [[Galyarder-Migration-Guide:-v1.7.x-->-v1.8.0]] (semantic_link)
-- [[Release-Notes---Galyarder-Framework]] (semantic_link)
-- [[Release-Notes---Galyarder-Framework]] (semantic_link)
-- [[Galyarder-Migration-Guide:-v1.7.x-->-v1.8.0]] (semantic_link)
+## 🔗 Neural Links
 
 ### Informed By:
-- [[Release-Notes---Galyarder-Framework]] (structural_reference)
-- [[Release-Notes---Galyarder-Framework]] (structural_reference)
+- [[Release-Notes---Galyarder-Framework]] (structural_reference | 1.0)
+- [[Release-Notes---Galyarder-Framework]] (structural_reference | 1.0)

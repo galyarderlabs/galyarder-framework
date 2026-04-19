@@ -1,11 +1,16 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/design/design-md-hashicorp.md
+degree: 1
+source: docs/design/design-md-hashicorp.md
 ---
 # Design System: HashiCorp
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **1**.
+
+## 🔗 Neural Links
 
 ### Informed By:
-- [[Design-System-Specifications]] (structural_reference)
+- [[Design-System-Specifications]] (structural_reference | 1.0)

@@ -1,14 +1,21 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/skills/recovering-deleted-files-with-photorec/index.md
+degree: 3
+source: docs/skills/recovering-deleted-files-with-photorec/index.md
 ---
 # :material-folder-zip: recovering-deleted-files-with-photorec
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **3**.
+
+## 🔗 Neural Links
 
 ### Directing To:
-- [[-"$ext"-==-"jpg"-]] (semantic_link)
+- [[-"$ext"-==-"jpg"-]] (semantic_link | 0.9)
+- [[Claude-Code:-Implementation-Protocol]] (enforces_protocol | 0.8)
+- [[Galyarder-Framework:-Advanced-Agentic-Context-(Gemini-CLI)]] (uses_proxy | 0.8)
 
 ### Informed By:
-- [[Galyarder-Framework:-Skills]] (structural_reference)
+- [[Galyarder-Framework:-Skills]] (structural_reference | 1.0)

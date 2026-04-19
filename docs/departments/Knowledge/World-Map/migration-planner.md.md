@@ -1,8 +1,17 @@
 ---
-node_type: documentation
-silo: docs
-source_path: docs/departments/Knowledge/World-Map/migration-planner.md.md
+node_type: agent
+silo: Engineering
+degree: 2
+source: Engineering/skills/playwright-pro/agents/migration-planner.md
 ---
 # migration-planner.md
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **agent** within the **Engineering** silo. 
+It has a connectivity degree of **2**.
+
+## 🔗 Neural Links
+
+### Directing To:
+- [[Claude-Code:-Implementation-Protocol]] (enforces_protocol | 0.8)
+- [[Galyarder-Framework:-Advanced-Agentic-Context-(Gemini-CLI)]] (uses_proxy | 0.8)

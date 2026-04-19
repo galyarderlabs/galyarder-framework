@@ -1,8 +1,17 @@
 ---
-node_type: documentation
-silo: docs
-source_path: docs/departments/Knowledge/World-Map/Doc-Maintenance-Skill.md
+node_type: skill
+silo: Knowledge
+degree: 2
+source: Knowledge/skills/doc-maintenance/SKILL.md
 ---
 # Doc Maintenance Skill
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **skill** within the **Knowledge** silo. 
+It has a connectivity degree of **2**.
+
+## 🔗 Neural Links
+
+### Directing To:
+- [[Claude-Code:-Implementation-Protocol]] (enforces_protocol | 0.8)
+- [[Galyarder-Framework:-Advanced-Agentic-Context-(Gemini-CLI)]] (uses_proxy | 0.8)

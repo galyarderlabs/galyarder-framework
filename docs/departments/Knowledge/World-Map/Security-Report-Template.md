@@ -1,8 +1,16 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/templates/Galyarder-Department-Reports/Security Report Template.md
+degree: 1
+source: docs/templates/Galyarder-Department-Reports/Security Report Template.md
 ---
 # Security Report Template
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **1**.
+
+## 🔗 Neural Links
+
+### Informed By:
+- [[Department-Report-Index]] (semantic_link | 0.9)

@@ -1,18 +1,25 @@
 ---
-node_type: documentation
-silo: docs
-source_path: docs/departments/Knowledge/World-Map/Marketing-Demand-&-Acquisition.md
+node_type: skill
+silo: Growth
+degree: 10
+source: Growth/skills/marketing-demand-acquisition/SKILL.md
 ---
 # Marketing Demand & Acquisition
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **skill** within the **Growth** silo. 
+It has a connectivity degree of **10**.
+
+## 🔗 Neural Links
 
 ### Directing To:
-- [[Campaign-Templates]] (semantic_link)
-- [[International-Market-Playbooks]] (semantic_link)
-- [[Attribution-Guide]] (semantic_link)
-- [[HubSpot-Workflow-Templates]] (semantic_link)
-- [[HubSpot-Workflow-Templates]] (semantic_link)
-- [[Campaign-Templates]] (semantic_link)
-- [[International-Market-Playbooks]] (semantic_link)
-- [[Attribution-Guide]] (semantic_link)
+- [[Campaign-Templates]] (structural_reference | 1.0)
+- [[International-Market-Playbooks]] (structural_reference | 1.0)
+- [[Attribution-Guide]] (structural_reference | 1.0)
+- [[HubSpot-Workflow-Templates]] (structural_reference | 1.0)
+- [[HubSpot-Workflow-Templates]] (structural_reference | 1.0)
+- [[Campaign-Templates]] (structural_reference | 1.0)
+- [[International-Market-Playbooks]] (structural_reference | 1.0)
+- [[Attribution-Guide]] (structural_reference | 1.0)
+- [[Claude-Code:-Implementation-Protocol]] (enforces_protocol | 0.8)
+- [[Galyarder-Framework:-Advanced-Agentic-Context-(Gemini-CLI)]] (uses_proxy | 0.8)

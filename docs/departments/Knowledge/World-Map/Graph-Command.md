@@ -1,12 +1,17 @@
 ---
-node_type: documentation
-silo: docs
-source_path: docs/departments/Knowledge/World-Map/Graph-Command.md
+node_type: governance
+silo: Knowledge
+degree: 0
+source: Knowledge/commands/graph.md
 ---
 # Graph Command
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **governance** within the **Knowledge** silo. 
+It has a connectivity degree of **0**.
+
+## 🔗 Neural Links
 
 ### Directing To:
-- [[wikilinks]] (semantic_link)
-- [[wikilinks]] (semantic_link)
+- [[wikilinks]] (semantic_link | 0.9)
+- [[wikilinks]] (semantic_link | 0.9)

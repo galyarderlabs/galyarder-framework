@@ -1,8 +1,17 @@
 ---
-node_type: documentation
-silo: docs
-source_path: docs/departments/Knowledge/World-Map/LEGAL-COUNSEL:-RISK-COMMAND.md
+node_type: agent
+silo: Legal-Finance
+degree: 2
+source: Legal-Finance/agents/legal-counsel.md
 ---
 # LEGAL COUNSEL: RISK COMMAND
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **agent** within the **Legal-Finance** silo. 
+It has a connectivity degree of **2**.
+
+## 🔗 Neural Links
+
+### Directing To:
+- [[Claude-Code:-Implementation-Protocol]] (enforces_protocol | 0.8)
+- [[Galyarder-Framework:-Advanced-Agentic-Context-(Gemini-CLI)]] (uses_proxy | 0.8)

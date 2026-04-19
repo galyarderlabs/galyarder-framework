@@ -1,8 +1,13 @@
 ---
-node_type: documentation
-silo: docs
-source_path: docs/departments/Knowledge/World-Map/rerender-lazy-state-init.md.md
+node_type: skill
+silo: Engineering
+degree: 0
+source: Engineering/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md
 ---
 # rerender-lazy-state-init.md
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **skill** within the **Engineering** silo. 
+It has a connectivity degree of **0**.
+
+## 🔗 Neural Links

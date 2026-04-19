@@ -1,12 +1,17 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/skills/json-canvas/references/EXAMPLES.md
+degree: 1
+source: docs/skills/json-canvas/references/EXAMPLES.md
 ---
 # JSON Canvas Complete Examples
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **1**.
+
+## 🔗 Neural Links
 
 ### Informed By:
-- [[JSON-Canvas-Skill]] (structural_reference)
-- [[:material-folder-zip:-json-canvas]] (structural_reference)
+- [[JSON-Canvas-Skill]] (structural_reference | 1.0)
+- [[:material-folder-zip:-json-canvas]] (structural_reference | 1.0)

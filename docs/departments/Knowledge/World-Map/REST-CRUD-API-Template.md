@@ -1,12 +1,17 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/skills/playwright-pro/templates/api/rest-crud.md
+degree: 1
+source: docs/skills/playwright-pro/templates/api/rest-crud.md
 ---
 # REST CRUD API Template
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **1**.
+
+## 🔗 Neural Links
 
 ### Informed By:
-- [[Test-Case-Templates]] (structural_reference)
-- [[Test-Case-Templates]] (structural_reference)
+- [[Test-Case-Templates]] (structural_reference | 1.0)
+- [[Test-Case-Templates]] (structural_reference | 1.0)

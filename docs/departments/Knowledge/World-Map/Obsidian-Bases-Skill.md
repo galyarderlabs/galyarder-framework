@@ -1,14 +1,21 @@
 ---
-node_type: documentation
-silo: docs
-source_path: docs/departments/Knowledge/World-Map/Obsidian-Bases-Skill.md
+node_type: skill
+silo: Knowledge
+degree: 4
+source: Knowledge/skills/obsidian-bases/SKILL.md
 ---
 # Obsidian Bases Skill
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **skill** within the **Knowledge** silo. 
+It has a connectivity degree of **4**.
+
+## 🔗 Neural Links
 
 ### Directing To:
-- [[MyBase.base]] (semantic_link)
-- [[MyBase.base#View-Name]] (semantic_link)
-- [[Functions-Reference]] (semantic_link)
-- [[Functions-Reference]] (semantic_link)
+- [[Functions-Reference]] (structural_reference | 1.0)
+- [[Functions-Reference]] (structural_reference | 1.0)
+- [[MyBase.base]] (semantic_link | 0.9)
+- [[MyBase.base#View-Name]] (semantic_link | 0.9)
+- [[Claude-Code:-Implementation-Protocol]] (enforces_protocol | 0.8)
+- [[Galyarder-Framework:-Advanced-Agentic-Context-(Gemini-CLI)]] (uses_proxy | 0.8)

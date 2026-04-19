@@ -1,12 +1,13 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/departments/Knowledge/World-Map/Galyarder-Framework-for-OpenCode.md
+degree: 0
+source: docs/README.opencode.md
 ---
 # Galyarder Framework for OpenCode
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **0**.
 
-### Directing To:
-- [[Galyarder-Framework-for-OpenCode]] (semantic_link)
-- [[Galyarder-Framework-for-OpenCode]] (semantic_link)
+## 🔗 Neural Links

@@ -1,12 +1,17 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/skills/company-creator/references/from-repo-guide.md
+degree: 1
+source: docs/skills/company-creator/references/from-repo-guide.md
 ---
 # Creating a Company From an Existing Repository
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **1**.
+
+## 🔗 Neural Links
 
 ### Informed By:
-- [[Company-Creator]] (structural_reference)
-- [[:material-folder-zip:-company-creator]] (structural_reference)
+- [[Company-Creator]] (structural_reference | 1.0)
+- [[:material-folder-zip:-company-creator]] (structural_reference | 1.0)

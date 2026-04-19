@@ -1,8 +1,13 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/templates/Galyarder-Framework Agent-to-Skill Mapping.md
+degree: 0
+source: docs/templates/Galyarder-Framework Agent-to-Skill Mapping.md
 ---
 # Galyarder Framework Agent-to-Skill Mapping
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **0**.
+
+## 🔗 Neural Links

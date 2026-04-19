@@ -1,12 +1,13 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/departments/Knowledge/World-Map/Department:-Product.md
+degree: 0
+source: docs/departments/Product/README.md
 ---
 # Department: Product
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **0**.
 
-### Directing To:
-- [[Department:-Product]] (semantic_link)
-- [[Department:-Product]] (semantic_link)
+## 🔗 Neural Links

@@ -1,8 +1,16 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/skills/social-content/references/reverse-engineering.md
+degree: 1
+source: docs/skills/social-content/references/reverse-engineering.md
 ---
 # Reverse Engineering Viral Content
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **1**.
+
+## 🔗 Neural Links
+
+### Directing To:
+- [[Claude-Code:-Implementation-Protocol]] (enforces_protocol | 0.8)

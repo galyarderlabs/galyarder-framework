@@ -1,8 +1,16 @@
 ---
-node_type: documentation
-silo: docs
-source_path: docs/departments/Knowledge/World-Map/Root-Cause-Tracing.md
+node_type: skill
+silo: Engineering
+degree: 1
+source: Engineering/skills/systematic-debugging/root-cause-tracing.md
 ---
 # Root Cause Tracing
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **skill** within the **Engineering** silo. 
+It has a connectivity degree of **1**.
+
+## 🔗 Neural Links
+
+### Directing To:
+- [[Claude-Code:-Implementation-Protocol]] (enforces_protocol | 0.8)

@@ -1,8 +1,13 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/skills/analytics-tracking/references/event-library.md
+degree: 0
+source: docs/skills/analytics-tracking/references/event-library.md
 ---
 # Event Library Reference
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **0**.
+
+## 🔗 Neural Links

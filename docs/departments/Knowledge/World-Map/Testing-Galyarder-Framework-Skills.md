@@ -1,12 +1,13 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/departments/Knowledge/World-Map/Testing-Galyarder-Framework-Skills.md
+degree: 0
+source: docs/testing.md
 ---
 # Testing Galyarder Framework Skills
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **0**.
 
-### Directing To:
-- [[Testing-Galyarder-Framework-Skills]] (semantic_link)
-- [[Testing-Galyarder-Framework-Skills]] (semantic_link)
+## 🔗 Neural Links

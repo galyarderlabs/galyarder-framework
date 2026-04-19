@@ -1,8 +1,16 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/skills/campaign-analytics/assets/campaign_report_template.md
+degree: 1
+source: docs/skills/campaign-analytics/assets/campaign_report_template.md
 ---
 # Campaign Performance Report
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **1**.
+
+## 🔗 Neural Links
+
+### Directing To:
+- [[Claude-Code:-Implementation-Protocol]] (enforces_protocol | 0.8)

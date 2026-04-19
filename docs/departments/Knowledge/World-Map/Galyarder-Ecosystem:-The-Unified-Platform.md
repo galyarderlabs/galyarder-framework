@@ -1,12 +1,13 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/departments/Knowledge/World-Map/Galyarder-Ecosystem:-The-Unified-Platform.md
+degree: 0
+source: docs/UNIFIED_PLATFORM.md
 ---
 # Galyarder Ecosystem: The Unified Platform
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **0**.
 
-### Directing To:
-- [[Galyarder-Ecosystem:-The-Unified-Platform]] (semantic_link)
-- [[Galyarder-Ecosystem:-The-Unified-Platform]] (semantic_link)
+## 🔗 Neural Links

@@ -1,8 +1,13 @@
 ---
-node_type: documentation
-silo: docs
-source_path: docs/departments/Knowledge/World-Map/Email-Marketing-Bible--Claude-Code-Skill.md
+node_type: skill
+silo: Growth
+degree: 0
+source: Growth/skills/email-marketing-bible/README.md
 ---
 # Email Marketing Bible  Claude Code Skill
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **skill** within the **Growth** silo. 
+It has a connectivity degree of **0**.
+
+## 🔗 Neural Links

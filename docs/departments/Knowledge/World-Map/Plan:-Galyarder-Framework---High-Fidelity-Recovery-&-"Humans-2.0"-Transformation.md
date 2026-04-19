@@ -1,12 +1,16 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/departments/Knowledge/World-Map/Plan:-Galyarder-Framework---High-Fidelity-Recovery-&-"Humans-2.0"-Transformation.md
+degree: 1
+source: docs/plans/2026-04-17-high-fidelity-recovery-plan.md
 ---
 # Plan: Galyarder Framework - High-Fidelity Recovery & "Humans 2.0" Transformation
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **1**.
+
+## 🔗 Neural Links
 
 ### Directing To:
-- [[Plan:-Galyarder-Framework---High-Fidelity-Recovery-&-"Humans-2.0"-Transformation]] (semantic_link)
-- [[Plan:-Galyarder-Framework---High-Fidelity-Recovery-&-"Humans-2.0"-Transformation]] (semantic_link)
+- [[Claude-Code:-Implementation-Protocol]] (enforces_protocol | 0.8)

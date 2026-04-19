@@ -1,12 +1,13 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/departments/Knowledge/World-Map/Department:-Legal-Finance.md
+degree: 0
+source: docs/departments/Legal-Finance/README.md
 ---
 # Department: Legal-Finance
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **0**.
 
-### Directing To:
-- [[Department:-Legal-Finance]] (semantic_link)
-- [[Department:-Legal-Finance]] (semantic_link)
+## 🔗 Neural Links

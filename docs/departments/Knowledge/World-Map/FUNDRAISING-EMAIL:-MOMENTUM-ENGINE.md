@@ -1,8 +1,17 @@
 ---
-node_type: documentation
-silo: docs
-source_path: docs/departments/Knowledge/World-Map/FUNDRAISING-EMAIL:-MOMENTUM-ENGINE.md
+node_type: skill
+silo: Executive
+degree: 2
+source: Executive/skills/fundraising-email/SKILL.md
 ---
 # FUNDRAISING EMAIL: MOMENTUM ENGINE
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **skill** within the **Executive** silo. 
+It has a connectivity degree of **2**.
+
+## 🔗 Neural Links
+
+### Directing To:
+- [[Claude-Code:-Implementation-Protocol]] (enforces_protocol | 0.8)
+- [[Galyarder-Framework:-Advanced-Agentic-Context-(Gemini-CLI)]] (uses_proxy | 0.8)

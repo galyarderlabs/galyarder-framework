@@ -1,12 +1,13 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/departments/Knowledge/World-Map/Cross-Platform-Polyglot-Hooks-for-Claude-Code.md
+degree: 0
+source: docs/windows/polyglot-hooks.md
 ---
 # Cross-Platform Polyglot Hooks for Claude Code
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **0**.
 
-### Directing To:
-- [[Cross-Platform-Polyglot-Hooks-for-Claude-Code]] (semantic_link)
-- [[Cross-Platform-Polyglot-Hooks-for-Claude-Code]] (semantic_link)
+## 🔗 Neural Links

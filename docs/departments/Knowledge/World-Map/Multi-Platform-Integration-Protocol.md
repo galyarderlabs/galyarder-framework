@@ -1,12 +1,13 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/departments/Knowledge/World-Map/Multi-Platform-Integration-Protocol.md
+degree: 0
+source: docs/INTEGRATION.md
 ---
 # Multi-Platform Integration Protocol
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **0**.
 
-### Directing To:
-- [[Multi-Platform-Integration-Protocol]] (semantic_link)
-- [[Multi-Platform-Integration-Protocol]] (semantic_link)
+## 🔗 Neural Links

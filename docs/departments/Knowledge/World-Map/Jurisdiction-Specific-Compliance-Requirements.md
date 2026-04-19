@@ -1,8 +1,13 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/skills/legal-tos-privacy/references/compliance-checklist.md
+degree: 0
+source: docs/skills/legal-tos-privacy/references/compliance-checklist.md
 ---
 # Jurisdiction-Specific Compliance Requirements
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **0**.
+
+## 🔗 Neural Links

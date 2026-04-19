@@ -1,8 +1,13 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/skills/open-source-license/references/licenses/copyleft.md
+degree: 0
+source: docs/skills/open-source-license/references/licenses/copyleft.md
 ---
 # Copyleft Open Source Licenses
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **0**.
+
+## 🔗 Neural Links

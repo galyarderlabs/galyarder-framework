@@ -1,12 +1,16 @@
 ---
 node_type: documentation
 silo: docs
-source_path: docs/departments/Knowledge/World-Map/PRD:-Galyarder-Framework-Digital-Enterprise-(Hierarchy-&-Reporting-Chain).md
+degree: 1
+source: docs/specs/2026-04-17-galyarder-digital-company-prd.md
 ---
 # PRD: Galyarder Framework Digital Enterprise (Hierarchy & Reporting Chain)
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **documentation** within the **docs** silo. 
+It has a connectivity degree of **1**.
+
+## 🔗 Neural Links
 
 ### Directing To:
-- [[PRD:-Galyarder-Framework-Digital-Enterprise-(Hierarchy-&-Reporting-Chain)]] (semantic_link)
-- [[PRD:-Galyarder-Framework-Digital-Enterprise-(Hierarchy-&-Reporting-Chain)]] (semantic_link)
+- [[Claude-Code:-Implementation-Protocol]] (enforces_protocol | 0.8)

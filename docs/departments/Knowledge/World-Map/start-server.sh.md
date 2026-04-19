@@ -1,8 +1,13 @@
 ---
-node_type: documentation
-silo: docs
-source_path: docs/departments/Knowledge/World-Map/start-server.sh.md
+node_type: logic-engine
+silo: Executive
+degree: 0
+source: Executive/skills/brainstorming/scripts/start-server.sh
 ---
 # start-server.sh
 
-## 🔗 Connections
+## 🧠 Strategic Intelligence
+This entity is a **logic-engine** within the **Executive** silo. 
+It has a connectivity degree of **0**.
+
+## 🔗 Neural Links
