@@ -104,32 +104,20 @@ Galyarder Framework is the underlying **brain** designed to power the next gener
 
 ---
 
-## Installation: The Digital Company Protocol
+## Installation: The Digital Company Setup
 
-To transform any directory into a high-integrity Digital Company, follow the sequence below.
+Transform any repository into a high-integrity Digital Company using the protocol below.
 
-### Phase 1: Bootstrap (The Intelligence Engine)
+### Step 0: Initialize Digital Headquarters (Mandatory)
 
-First, clone the core logic library to your machine. This provides the scripts and conversion engine required to deploy the workforce.
+Before deploying agents, you must establish the "Memory" of your enterprise. This one-liner creates the 8-department hierarchy required for the **Obsidian Loop**.
 
+**Execute in your project root:**
 ```bash
-git clone https://github.com/galyarderlabs/galyarder-framework.git ~/galyarder-framework
-cd galyarder-framework
+curl -sSL https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/main/scripts/scaffold-company.sh | bash
 ```
 
-### Phase 2: Initialize Your Project (The Headquarters)
-
-Navigate to **your specific project** (e.g., `~/projects/my-app`) and use the framework to initialize its Digital Headquarters structure.
-
-```bash
-# 1. Go to your app directory
-cd ~/projects/my-app
-
-# 2. Run the scaffolder from the framework directory
-~/galyarder-framework/scripts/scaffold-company.sh
-```
-
-### Phase 3: Deploy Agents & Skills
+### Step 1: Deploy Agents & Skills
 
 Choose the deployment path for your specific mission environment:
 
@@ -150,16 +138,20 @@ Choose the deployment path for your specific mission environment:
   gemini extensions install https://github.com/galyarderlabs/galyarder-framework
   ```
 
-#### B. IDE Injection & Distributed Deployment (Manual)
-*Use this command inside your project directory to inject rules into local or remote hosts.*
+#### B. IDE Injection & Distributed Hosts (Manual)
+*For local IDEs or remote autonomous hosts. Requires cloning the framework repo first.*
 
 ```bash
-# Required for: Cursor, Aider, Windsurf, OpenClaw, Hermes, Antigravity
+# 1. Clone the intelligence engine
+git clone https://github.com/galyarderlabs/galyarder-framework.git ~/galyarder-framework
+
+# 2. Deploy to your tool
+# Available tools: cursor, aider, windsurf, openclaw, hermes, antigravity
 ~/galyarder-framework/scripts/install.sh --tool <name>
 ```
 
 #### C. Autonomous Directives (Codex / OpenCode)
-*For tools that can autonomously fetch and implement logic from URLs.*
+*For tools that can autonomously fetch logic via direct instructions.*
 
 - **OpenAI Codex**:
   Tell Codex: `Fetch and follow instructions from https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/main/.codex/INSTALL.md`
@@ -170,37 +162,17 @@ Choose the deployment path for your specific mission environment:
 ---
 
 ## Philosophy
-
-- **Verified Logic** — Output is a liability until it is systematically verified.
-- **Context Economy** — RTK proxy usage is mandatory to maintain high-signal communication.
-- **Math Over Magic** — Base decisions on empirical data, ROI, and institutional probability.
-- **Goal to Market** — A mission is not complete until it achieves market-ready status.
+...
 
 ---
 
 ## Technical Integrity: The Karpathy Principles
-
-The framework enforces rigid adherence to the Karpathy Principles to eliminate slop:
-
-- **Think Before Coding**: Mandatory `sequentialthinking` and `context7` MCP loops before any implementation.
-- **Simplicity First**: Minimum effort to solve the objective. Zero speculative abstractions.
-- **Surgical Changes**: Touch only what is necessary. Perfect alignment with existing infrastructure.
-- **Goal-Driven Execution**: Empirical verification via a mission-first methodology.
+...
 
 ---
 
 ## Digital Infrastructure: 8 High-Integrity Silos
-
-The workforce is organized into specialized departments:
-
-- **Executive**: Strategic oversight and master orchestration.
-- **Engineering**: Deterministic implementation and TDD factory.
-- **Growth**: Behavioral arbitrage, marketing engineering, and design systems.
-- **Security**: Professional auditing and advanced offensive security.
-- **Product**: Roadmap integrity and strategic extraction.
-- **Infrastructure**: Reliability physics and automated deployment.
-- **Legal-Finance**: Regulatory compliance and token FinOps.
-- **Knowledge**: Memory preservation and visual logic mapping.
+...
 
 ---
 

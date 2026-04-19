@@ -2,13 +2,14 @@
 
 # Galyarder Framework: Company Scaffolder
 # Purpose: Initialize the hierarchical directory structure for a Digital Enterprise.
-# This script can be run from anywhere by pointing to its absolute path.
+# This script can be run locally or via:
+# curl -sSL https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/main/scripts/scaffold-company.sh | bash
 
-# Determine where the script lives to find templates
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-TEMPLATE_DIR="$SCRIPT_DIR/../docs/templates"
+RAW_URL="https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/main/docs/templates"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" 2>/dev/null && pwd || echo "")"
+LOCAL_TEMPLATE_DIR="$SCRIPT_DIR/../docs/templates"
 
-echo "🚀 Initializing Galyarder Framework Digital Enterprise headquarters in $(pwd)..."
+echo "🚀 Initializing Galyarder Framework Digital Headquarters in $(pwd)..."
 
 # 1. Base Directories
 mkdir -p docs/specs
@@ -32,18 +33,37 @@ for DEPT in "${DEPARTMENTS[@]}"; do
     fi
 done
 
-# 3. Seed Templates (Logic: Look for templates relative to the script)
-if [ -d "$TEMPLATE_DIR" ]; then
-    echo "[*] Seeding departmental templates from $TEMPLATE_DIR..."
-    cp "$TEMPLATE_DIR"/*Founder* docs/departments/Executive/ 2>/dev/null || true
-    cp "$TEMPLATE_DIR"/*Product* docs/departments/Product/ 2>/dev/null || true
-    cp "$TEMPLATE_DIR"/*Engineering* docs/departments/Engineering/ 2>/dev/null || true
-    cp "$TEMPLATE_DIR"/*Growth* docs/departments/Growth/ 2>/dev/null || true
-    cp "$TEMPLATE_DIR"/*Security* docs/departments/Security/ 2>/dev/null || true
-    cp "$TEMPLATE_DIR"/*Legal-Finance* docs/departments/Legal-Finance/ 2>/dev/null || true
-    cp "$TEMPLATE_DIR"/*Knowledge* docs/departments/Knowledge/ 2>/dev/null || true
+# 3. Seed Templates
+echo "[*] Seeding departmental templates..."
+
+seed_remote() {
+    local file=$1
+    local dest=$2
+    # Convert spaces to %20 for URL
+    local url_file="${file// /%20}"
+    echo "  -> Fetching: $file"
+    curl -sSL "$RAW_URL/$url_file" -o "$dest/$file"
+}
+
+if [ -d "$LOCAL_TEMPLATE_DIR" ]; then
+    echo "    (Using local source: $LOCAL_TEMPLATE_DIR)"
+    cp "$LOCAL_TEMPLATE_DIR"/*Founder* docs/departments/Executive/ 2>/dev/null || true
+    cp "$LOCAL_TEMPLATE_DIR"/*Product* docs/departments/Product/ 2>/dev/null || true
+    cp "$LOCAL_TEMPLATE_DIR"/*Engineering* docs/departments/Engineering/ 2>/dev/null || true
+    cp "$LOCAL_TEMPLATE_DIR"/*Growth* docs/departments/Growth/ 2>/dev/null || true
+    cp "$LOCAL_TEMPLATE_DIR"/*Security* docs/departments/Security/ 2>/dev/null || true
+    cp "$LOCAL_TEMPLATE_DIR"/*Legal-Finance* docs/departments/Legal-Finance/ 2>/dev/null || true
+    cp "$LOCAL_TEMPLATE_DIR"/*Knowledge* docs/departments/Knowledge/ 2>/dev/null || true
 else
-    echo "⚠️ Warning: Template source not found at $TEMPLATE_DIR. Skipping seed."
+    echo "    (Local source not found. Fetching from Galyarder GitHub...)"
+    seed_remote "Galyarder-Framework Founder Office Audit.md" "docs/departments/Executive"
+    seed_remote "Galyarder-Framework Product Audit.md" "docs/departments/Product"
+    seed_remote "Galyarder-Framework Engineering Audit.md" "docs/departments/Engineering"
+    seed_remote "Galyarder-Framework Growth Audit.md" "docs/departments/Growth"
+    seed_remote "Galyarder-Framework Security Audit.md" "docs/departments/Security"
+    seed_remote "Galyarder-Framework Legal-Finance Audit.md" "docs/departments/Legal-Finance"
+    seed_remote "Galyarder-Framework Knowledge Audit.md" "docs/departments/Knowledge"
+    seed_remote "Galyarder-Framework Decision Log Template.md" "docs/reports"
 fi
 
 echo "✅ Company structure initialized at docs/departments/"
