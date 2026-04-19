@@ -59,7 +59,12 @@ for t in $TOOLS; do
         antigravity)
             DEST="${HOME}/.gemini/antigravity/skills"
             mkdir -p "$DEST"
-            cp -R "${SRC_DIR}/"* "$DEST/"
+            # Surgical overwrite: remove existing to prevent dir-vs-file conflicts
+            for item in "${SRC_DIR}/"*; do
+                name=$(basename "$item")
+                rm -rf "${DEST}/${name}"
+                cp -R "$item" "${DEST}/"
+            done
             ok "Linked skills to Antigravity global directory." ;;
         cursor)
             if [ -n "$TARGET_DIR" ]; then
@@ -79,12 +84,20 @@ for t in $TOOLS; do
         windsurf)
             DEST="${HOME}/.windsurf/skills"
             mkdir -p "$DEST"
-            cp -R "${SRC_DIR}/skills/"* "$DEST/"
+            for item in "${SRC_DIR}/skills/"*; do
+                name=$(basename "$item")
+                rm -rf "${DEST}/${name}"
+                cp -R "$item" "${DEST}/"
+            done
             ok "Installed Windsurf skills to ${DEST}." ;;
         opencode)
             DEST="${HOME}/.opencode/plugins"
             mkdir -p "$DEST"
-            cp -R "${SRC_DIR}/skills/"* "$DEST/"
+            for item in "${SRC_DIR}/skills/"*; do
+                name=$(basename "$item")
+                rm -rf "${DEST}/${name}"
+                cp -R "$item" "${DEST}/"
+            done
             ok "Installed OpenCode skills to ${DEST}." ;;
         claude-code)
             DEST="${HOME}/.claude/agents"

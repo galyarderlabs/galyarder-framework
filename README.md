@@ -104,31 +104,31 @@ Galyarder Framework is the underlying **brain** designed to power the next gener
 
 ---
 
-## Installation: The Digital Company Setup
+## Installation: The 1-Man Army Protocol
 
-Deploying Galyarder Framework requires a two-step process: **Infrastructure Initialization** and **Agent Deployment**.
+Deploying Galyarder Framework requires a two-step sequence: **Digital Company Bootstrap** and **Agent Deployment**.
 
 ### 1. Bootstrap & Initialize (Mandatory)
 
-Establish your Digital Headquarters by cloning the repository and initializing the 8-department memory structure required for the **Obsidian Loop**.
+Establish your Digital Headquarters by cloning the intelligence layer and initializing the 8-department memory structure required for the **Obsidian Loop**.
 
 ```bash
-# 1. Clone the intelligence layer
+# Clone the repository
 git clone https://github.com/galyarderlabs/galyarder-framework.git
 cd galyarder-framework
 
-# 2. Initialize departmental infrastructure
+# Initialize digital headquarters structure
 ./scripts/scaffold-company.sh
 ```
 
 ### 2. Deploy Agents & Skills
 
-Choose the deployment path for your specific environment:
+Choose the deployment path for your specific mission environment:
 
-#### A. Managed Marketplace (Recommended)
-*For rapid integration with official AI orchestration tools.*
+#### A. Managed Marketplace (Cloud/CLI Orchestrators)
+*Recommended for Claude Code, Copilot CLI, or Gemini.*
 
-- **Claude Code / Copilot CLI**:
+- **Claude Code**:
   ```bash
   /plugin marketplace add galyarderlabs/galyarder-framework
   /plugin install executive-dept@galyarderlabs-marketplace
@@ -137,22 +137,21 @@ Choose the deployment path for your specific environment:
   /plugin install security-dept@galyarderlabs-marketplace
   ```
 
-- **Gemini CLI (Official Extension)**:
+- **Gemini CLI**:
   ```bash
   gemini extensions install https://github.com/galyarderlabs/galyarder-framework
   ```
 
-#### B. IDE & Distributed Deployment
-*Inject Galyarder rules directly into your local or remote development environment.*
+#### B. IDE Injection & Distributed Deployment (Manual)
+*For local IDEs (Cursor, Windsurf) or remote autonomous hosts (Aider, OpenClaw, Hermes).*
 
-**Command:**
 ```bash
 # Available tools: cursor, aider, windsurf, openclaw, hermes, antigravity
 ./scripts/install.sh --tool <name>
 ```
 
 #### C. Autonomous Directives (Codex / OpenCode)
-*For tools that can autonomously fetch and implement logic from URLs.*
+*For tools that can autonomously fetch logic via direct instructions.*
 
 - **OpenAI Codex**:
   Tell Codex: `Fetch and follow instructions from https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/main/.codex/INSTALL.md`
