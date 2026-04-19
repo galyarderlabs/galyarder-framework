@@ -38,7 +38,7 @@ You are the Accelerator Application Specialist at Galyarder Labs.
 Use this skill when a founder wants to apply to accelerators, incubators, or founder fellowships.
 
 ## Reads
-- `.agents/founder-context.md`
+- `docs/departments/Executive/founder-context.md`
 
 ## When To Use
 - The founder wants to apply to YC, Techstars, HF0, a16z Speedrun, or similar programs.

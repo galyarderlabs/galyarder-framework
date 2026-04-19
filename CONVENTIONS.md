@@ -7229,7 +7229,7 @@ You are the Accelerator Application Specialist at Galyarder Labs.
 Use this skill when a founder wants to apply to accelerators, incubators, or founder fellowships.
 
 ## Reads
-- `.agents/founder-context.md`
+- `docs/departments/Executive/founder-context.md`
 
 ## When To Use
 - The founder wants to apply to YC, Techstars, HF0, a16z Speedrun, or similar programs.
@@ -7297,7 +7297,7 @@ You are the Board Update Specialist at Galyarder Labs.
 Use this skill when the founder needs to communicate progress, misses, risk, or asks to investors and board stakeholders.
 
 ## Reads
-- `.agents/founder-context.md`
+- `docs/departments/Executive/founder-context.md`
 
 ## Formats
 - Monthly investor update email
@@ -7572,7 +7572,7 @@ You are the Data Room Specialist at Galyarder Labs.
 Use this skill when the founder needs diligence readiness, not just a deck.
 
 ## Reads
-- `.agents/founder-context.md`
+- `docs/departments/Executive/founder-context.md`
 
 ## When To Use
 - The founder is about to begin fundraising.
@@ -7659,10 +7659,10 @@ This skill establishes the operating context for a solo founder or lean founding
 - Major company facts have changed: pricing, stage, raise target, GTM motion, ICP, traction, runway, or team.
 
 ## Required Output
-Create or update `.agents/founder-context.md` in the project root.
+Create or update `docs/departments/Executive/founder-context.md` in the project root.
 
 ## Workflow
-1. Check whether `.agents/founder-context.md` already exists.
+1. Check whether `docs/departments/Executive/founder-context.md` already exists.
 2. If missing or stale, gather facts from the founder in compact rounds.
 3. Write a factual context document. Do not hallucinate unknowns.
 4. Mark unknown fields as `TBD`.
@@ -7783,7 +7783,7 @@ You are the Founder Thought Leadership Specialist at Galyarder Labs.
 Use this skill when the founder wants to build audience, credibility, and strategic distribution through personal brand.
 
 ## Reads
-- `.agents/founder-context.md`
+- `docs/departments/Executive/founder-context.md`
 
 ## When To Use
 - The founder wants stronger personal brand on X or LinkedIn.
@@ -7851,7 +7851,7 @@ You are the Fundraising Email Specialist at Galyarder Labs.
 Use this skill when a founder needs investor communication that is short, credible, and specific.
 
 ## Reads
-- `.agents/founder-context.md`
+- `docs/departments/Executive/founder-context.md`
 
 ## Email Modes
 1. Cold outreach
@@ -7929,7 +7929,7 @@ You are the Investor Research Specialist at Galyarder Labs.
 Use this skill when a founder needs a qualified investor pipeline instead of random VC spraying.
 
 ## Reads
-- `.agents/founder-context.md`
+- `docs/departments/Executive/founder-context.md`
 
 ## When To Use
 - The founder asks who to pitch.
@@ -8017,7 +8017,7 @@ You are the Lead Scoring Specialist at Galyarder Labs.
 Use this skill when a founder needs a sharper pipeline instead of chasing every prospect.
 
 ## Reads
-- `.agents/founder-context.md`
+- `docs/departments/Executive/founder-context.md`
 
 ## When To Use
 - The founder wants to define or refine ICP.
@@ -8084,7 +8084,7 @@ You are the Market Research Specialist at Galyarder Labs.
 Use this skill when the founder needs market clarity before shipping, positioning, fundraising, or GTM decisions.
 
 ## Reads
-- `.agents/founder-context.md`
+- `docs/departments/Executive/founder-context.md`
 
 ## When To Use
 - The founder wants to size or understand a market.
@@ -8154,7 +8154,7 @@ You are the Pitch Deck Specialist at Galyarder Labs.
 Use this skill when the founder needs to create or improve a fundraising deck.
 
 ## Reads
-- `.agents/founder-context.md`
+- `docs/departments/Executive/founder-context.md`
 
 ## When To Use
 - The founder is preparing a pre-seed, seed, or Series A deck.
@@ -8414,7 +8414,7 @@ You are the Writing Skills Specialist at Galyarder Labs.
 
 **Writing skills IS Test-Driven Development applied to process documentation.**
 
-**Personal skills live in agent-specific directories (`~/.claude/skills` for Claude Code, `~/.agents/skills/` for Codex)** 
+**Personal skills live in agent-specific directories (`integrations/claude-code/` for Claude Code, `integrations/codex/` for Codex)** 
 
 You write test cases (pressure scenarios with subagents), watch them fail (baseline behavior), write the skill (documentation), watch tests pass (agents comply), and refactor (close loopholes).
 
@@ -25672,7 +25672,7 @@ You are a content strategist. Your goal is to help plan content that drives traf
 ## Before Planning
 
 **Check for product marketing context first:**
-If `.agents/product-marketing-context.md` exists (or `.claude/product-marketing-context.md` in older setups), read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
+If `docs/departments/Growth/product-marketing-context.md` exists (or `docs/departments/Growth/product-marketing-context.md` in older setups), read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
 
 Gather this context (ask if not provided):
 

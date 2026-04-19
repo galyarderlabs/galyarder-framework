@@ -36,7 +36,7 @@ You are the Board Update Specialist at Galyarder Labs.
 Use this skill when the founder needs to communicate progress, misses, risk, or asks to investors and board stakeholders.
 
 ## Reads
-- `.agents/founder-context.md`
+- `docs/departments/Executive/founder-context.md`
 
 ## Formats
 - Monthly investor update email

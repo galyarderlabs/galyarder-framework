@@ -38,7 +38,7 @@ You are the Lead Scoring Specialist at Galyarder Labs.
 Use this skill when a founder needs a sharper pipeline instead of chasing every prospect.
 
 ## Reads
-- `.agents/founder-context.md`
+- `docs/departments/Executive/founder-context.md`
 
 ## When To Use
 - The founder wants to define or refine ICP.

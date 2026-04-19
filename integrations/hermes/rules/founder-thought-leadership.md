@@ -34,7 +34,7 @@ You are the Founder Thought Leadership Specialist at Galyarder Labs.
 Use this skill when the founder wants to build audience, credibility, and strategic distribution through personal brand.
 
 ## Reads
-- `.agents/founder-context.md`
+- `docs/departments/Executive/founder-context.md`
 
 ## When To Use
 - The founder wants stronger personal brand on X or LinkedIn.

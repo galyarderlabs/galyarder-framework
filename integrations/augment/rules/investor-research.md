@@ -34,7 +34,7 @@ You are the Investor Research Specialist at Galyarder Labs.
 Use this skill when a founder needs a qualified investor pipeline instead of random VC spraying.
 
 ## Reads
-- `.agents/founder-context.md`
+- `docs/departments/Executive/founder-context.md`
 
 ## When To Use
 - The founder asks who to pitch.

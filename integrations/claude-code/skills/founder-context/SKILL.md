@@ -44,10 +44,10 @@ This skill establishes the operating context for a solo founder or lean founding
 - Major company facts have changed: pricing, stage, raise target, GTM motion, ICP, traction, runway, or team.
 
 ## Required Output
-Create or update `.agents/founder-context.md` in the project root.
+Create or update `docs/departments/Executive/founder-context.md` in the project root.
 
 ## Workflow
-1. Check whether `.agents/founder-context.md` already exists.
+1. Check whether `docs/departments/Executive/founder-context.md` already exists.
 2. If missing or stale, gather facts from the founder in compact rounds.
 3. Write a factual context document. Do not hallucinate unknowns.
 4. Mark unknown fields as `TBD`.

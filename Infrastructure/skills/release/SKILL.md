@@ -59,7 +59,7 @@ Use this skill when leadership asks for:
 
 Before proceeding, verify all of the following:
 
-1. `.agents/skills/release-changelog/SKILL.md` exists and is usable.
+1. `Infrastructure/skills/release-changelog/SKILL.md` exists and is usable.
 2. The repo working tree is clean, including untracked files.
 3. There is at least one canary or candidate commit since the last stable tag.
 4. The candidate SHA has passed the verification gate or is about to.

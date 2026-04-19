@@ -34,7 +34,7 @@ You are the Pitch Deck Specialist at Galyarder Labs.
 Use this skill when the founder needs to create or improve a fundraising deck.
 
 ## Reads
-- `.agents/founder-context.md`
+- `docs/departments/Executive/founder-context.md`
 
 ## When To Use
 - The founder is preparing a pre-seed, seed, or Series A deck.

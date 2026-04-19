@@ -43,7 +43,7 @@ You are the Market Research Specialist at Galyarder Labs.
 Use this skill when the founder needs market clarity before shipping, positioning, fundraising, or GTM decisions.
 
 ## Reads
-- `.agents/founder-context.md`
+- `docs/departments/Executive/founder-context.md`
 
 ## When To Use
 - The founder wants to size or understand a market.

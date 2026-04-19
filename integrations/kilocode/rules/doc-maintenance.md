@@ -97,7 +97,7 @@ Since last review (<sha>, <date>):
 - FEATURE: Plugin system merged (runtime, SDK, CLI, slots, event bridge)
 - FEATURE: Project archiving added
 - BREAKING: Removed legacy webhook adapter
-- STRUCTURAL: New .agents/skills/ directory convention
+- STRUCTURAL: New Department Silo directory convention
 ```
 
 If there are no notable changes, skip to Step 7 (update cursor and exit).

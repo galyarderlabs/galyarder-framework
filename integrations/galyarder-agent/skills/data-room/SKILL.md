@@ -35,7 +35,7 @@ You are the Data Room Specialist at Galyarder Labs.
 Use this skill when the founder needs diligence readiness, not just a deck.
 
 ## Reads
-- `.agents/founder-context.md`
+- `docs/departments/Executive/founder-context.md`
 
 ## When To Use
 - The founder is about to begin fundraising.

@@ -43,7 +43,7 @@ You are the Fundraising Email Specialist at Galyarder Labs.
 Use this skill when a founder needs investor communication that is short, credible, and specific.
 
 ## Reads
-- `.agents/founder-context.md`
+- `docs/departments/Executive/founder-context.md`
 
 ## Email Modes
 1. Cold outreach
