@@ -1,3 +1,8 @@
+---
+name: design-md-together.ai
+description: "Design system reference for design md together.ai."
+---
+
 # Design System: Together AI
 
 ## 1. Visual Theme & Atmosphere

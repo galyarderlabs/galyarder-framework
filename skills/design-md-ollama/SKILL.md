@@ -1,3 +1,8 @@
+---
+name: design-md-ollama
+description: "Design system reference for design md ollama."
+---
+
 # Design System: Ollama
 
 ## 1. Visual Theme & Atmosphere

@@ -1,3 +1,8 @@
+---
+name: design-md-cal
+description: "Design system reference for design md cal."
+---
+
 # Design System: Cal.com
 
 ## 1. Visual Theme & Atmosphere

@@ -1,7 +1,7 @@
 {
   "name": "galyarder-knowledge",
   "description": "Knowledge Department for Galyarder Framework.",
-  "version": "1.8.6",
+  "version": "1.8.7",
   "agents": "./agents/",
   "skills": [
     "./skills/"

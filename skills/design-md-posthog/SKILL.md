@@ -1,3 +1,8 @@
+---
+name: design-md-posthog
+description: "Design system reference for design md posthog."
+---
+
 # Design System: PostHog
 
 ## 1. Visual Theme & Atmosphere

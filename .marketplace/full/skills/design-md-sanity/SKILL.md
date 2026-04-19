@@ -1,3 +1,8 @@
+---
+name: design-md-sanity
+description: "Design system reference for design md sanity."
+---
+
 # Design System: Sanity
 
 ## 1. Visual Theme & Atmosphere

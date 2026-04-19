@@ -1,3 +1,8 @@
+---
+name: design-md-superhuman
+description: "Design system reference for design md superhuman."
+---
+
 # Design System: Superhuman
 
 ## 1. Visual Theme & Atmosphere

@@ -1,5 +1,23 @@
 # Release Notes - Galyarder Framework
 
+## [v1.8.7] - 2026-04-19
+### Gemini Schema + Design Skill Fix
+This patch fixes the two remaining loader issues after the root-runtime refactor: Gemini agent schema validation and missing skill frontmatter for design references.
+
+#### Highlights
+- **Gemini Agent Cleanup**: Strips unsupported `color`, `emoji`, and `vibe` keys from exported runtime agents.
+- **Valid Design Skills**: Wraps `design-md-*` references with native YAML frontmatter so hosts treat them as proper skills.
+- **Root + Full Bundle Parity**: Applies the same sanitation to repo root and `.marketplace/full`.
+
+#### Verification
+```bash
+python3 scripts/build_root_extension_surface.py
+python3 scripts/build_root_extension_surface.py --output-root .marketplace/full
+bash scripts/smoke.sh
+```
+
+---
+
 ## [v1.8.6] - 2026-04-19
 ### Canonical Root Runtime
 This patch finishes the packaging refactor: runtime assets now live in real root directories that can ship directly from GitHub archives, while department silos remain the documentation and reporting structure around them.

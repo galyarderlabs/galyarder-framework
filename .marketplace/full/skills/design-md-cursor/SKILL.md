@@ -1,3 +1,8 @@
+---
+name: design-md-cursor
+description: "Design system reference for design md cursor."
+---
+
 # Design System: Cursor
 
 ## 1. Visual Theme & Atmosphere

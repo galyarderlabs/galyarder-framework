@@ -2,6 +2,11 @@
 
 All notable changes to Galyarder Framework will be documented in this file.
 
+## [1.8.7] - 2026-04-19
+### Fixed
+- **Gemini Agent Schema**: Root and full-bundle agent exports now strip unsupported `color`, `emoji`, and `vibe` frontmatter keys so Gemini can load executive/persona agents without validation errors.
+- **Design Skill Packaging**: Root and full-bundle design references now ship with valid YAML frontmatter in `skills/design-md-*/SKILL.md`, fixing skill loader warnings in Codex and other hosts that require native skill metadata.
+
 ## [1.8.6] - 2026-04-19
 ### Added
 - **Canonical Root Runtime**: `agents/`, `skills/`, `commands/`, and `personas/` are now real committed runtime directories instead of root symlink shims.

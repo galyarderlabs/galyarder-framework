@@ -1,7 +1,7 @@
 {
   "name": "galyarder-framework",
   "description": "Complete Galyarder Framework bundle with all 8 departments, agents, commands, personas, and skills.",
-  "version": "1.8.6",
+  "version": "1.8.7",
   "author": "Galyarder Labs",
   "personas": [
     "./personas/"

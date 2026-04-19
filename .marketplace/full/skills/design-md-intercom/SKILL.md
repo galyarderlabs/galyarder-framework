@@ -1,3 +1,8 @@
+---
+name: design-md-intercom
+description: "Design system reference for design md intercom."
+---
+
 # Design System: Intercom
 
 ## 1. Visual Theme & Atmosphere

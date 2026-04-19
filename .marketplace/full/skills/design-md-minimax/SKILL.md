@@ -1,3 +1,8 @@
+---
+name: design-md-minimax
+description: "Design system reference for design md minimax."
+---
+
 # Design System: MiniMax
 
 ## 1. Visual Theme & Atmosphere

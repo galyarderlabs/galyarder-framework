@@ -1,3 +1,8 @@
+---
+name: design-md-sentry
+description: "Design system reference for design md sentry."
+---
+
 # Design System: Sentry
 
 ## 1. Visual Theme & Atmosphere

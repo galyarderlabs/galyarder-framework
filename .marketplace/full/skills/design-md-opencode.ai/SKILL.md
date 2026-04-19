@@ -1,3 +1,8 @@
+---
+name: design-md-opencode.ai
+description: "Design system reference for design md opencode.ai."
+---
+
 # Design System: OpenCode
 
 ## 1. Visual Theme & Atmosphere

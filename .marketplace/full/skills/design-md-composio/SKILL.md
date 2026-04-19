@@ -1,3 +1,8 @@
+---
+name: design-md-composio
+description: "Design system reference for design md composio."
+---
+
 # Design System: Composio
 
 ## 1. Visual Theme & Atmosphere

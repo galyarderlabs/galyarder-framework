@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import re
 import shutil
 from pathlib import Path
 
@@ -48,6 +49,8 @@ DESIGN_DIRS = [
     REPO_ROOT / "Growth" / "design",
 ]
 
+DISALLOWED_AGENT_KEYS = {"color", "emoji", "vibe"}
+
 
 def reset_path(path: Path) -> None:
     if path.is_symlink() or path.is_file():
@@ -74,6 +77,41 @@ def copy_unique_markdown(source_dirs: list[Path], target_dir: Path) -> None:
                 raise SystemExit(f"Duplicate markdown asset '{src.name}': {seen[src.name]} and {src}")
             seen[src.name] = src
             shutil.copy2(src, target_dir / src.name)
+
+
+def strip_frontmatter_keys(markdown: str, disallowed_keys: set[str]) -> str:
+    if not markdown.startswith("---\n"):
+        return markdown
+
+    end = markdown.find("\n---\n", 4)
+    if end == -1:
+        return markdown
+
+    frontmatter = markdown[4:end].splitlines()
+    kept_lines = []
+    for line in frontmatter:
+        match = re.match(r"^([A-Za-z0-9_-]+):", line)
+        if match and match.group(1) in disallowed_keys:
+            continue
+        kept_lines.append(line)
+
+    body = markdown[end + 5 :]
+    return "---\n" + "\n".join(kept_lines) + "\n---\n" + body
+
+
+def copy_unique_agent_markdown(source_dirs: list[Path], target_dir: Path) -> None:
+    seen: dict[str, Path] = {}
+    target_dir.mkdir(parents=True, exist_ok=True)
+
+    for source_dir in source_dirs:
+        if not source_dir.exists():
+            continue
+        for src in sorted(source_dir.glob("*.md")):
+            if src.name in seen:
+                raise SystemExit(f"Duplicate markdown asset '{src.name}': {seen[src.name]} and {src}")
+            seen[src.name] = src
+            content = strip_frontmatter_keys(src.read_text(), DISALLOWED_AGENT_KEYS)
+            (target_dir / src.name).write_text(content)
 
 
 def copy_unique_skill_dirs(source_dirs: list[Path], target_dir: Path) -> None:
@@ -106,7 +144,15 @@ def copy_design_markdown_as_skills(source_dirs: list[Path], target_dir: Path) ->
             seen[skill_name] = src
             dest_dir = target_dir / skill_name
             dest_dir.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(src, dest_dir / "SKILL.md")
+            title = src.stem.replace("-", " ").strip()
+            wrapped = (
+                "---\n"
+                f"name: {skill_name}\n"
+                f'description: "Design system reference for {title}."\n'
+                "---\n\n"
+                + src.read_text()
+            )
+            (dest_dir / "SKILL.md").write_text(wrapped)
 
 
 def build_surface(output_root: Path) -> None:
@@ -118,8 +164,8 @@ def build_surface(output_root: Path) -> None:
     for path in (agents_dir, skills_dir, commands_dir, personas_dir):
         ensure_empty_dir(path)
 
-    copy_unique_markdown(PERSONA_DIRS, personas_dir)
-    copy_unique_markdown(PERSONA_DIRS + AGENT_DIRS, agents_dir)
+    copy_unique_agent_markdown(PERSONA_DIRS, personas_dir)
+    copy_unique_agent_markdown(PERSONA_DIRS + AGENT_DIRS, agents_dir)
     copy_unique_markdown(COMMAND_DIRS, commands_dir)
     copy_unique_skill_dirs(SKILL_DIRS, skills_dir)
     copy_design_markdown_as_skills(DESIGN_DIRS, skills_dir)

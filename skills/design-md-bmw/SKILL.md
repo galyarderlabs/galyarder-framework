@@ -1,3 +1,8 @@
+---
+name: design-md-bmw
+description: "Design system reference for design md bmw."
+---
+
 # Design System: BMW
 
 ## 1. Visual Theme & Atmosphere
