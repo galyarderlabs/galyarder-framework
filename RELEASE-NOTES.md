@@ -1,5 +1,22 @@
 # Release Notes - Galyarder Framework
 
+## [v1.8.5] - 2026-04-19
+### Root Extension Surface
+This patch restores the fixed root directory layout that extension hosts like Gemini CLI expect while keeping the department-based source structure intact underneath.
+
+#### Highlights
+- **Root `agents/skills/commands/personas`**: Added generated root compatibility paths for host scanners that do not follow custom bundle conventions.
+- **Manifest Repointing**: Gemini, Cursor, and Codex top-level manifests now target the restored root paths again.
+- **Department Sources Preserved**: The framework still uses department folders as the source of truth; the root surface is generated as a compatibility layer.
+
+#### Verification
+```bash
+python3 scripts/build_root_extension_surface.py
+bash scripts/smoke.sh
+```
+
+---
+
 ## [v1.8.4] - 2026-04-19
 ### Host Bundle Repair
 This patch fixes the all-in-one install surface for Gemini and other host manifests that expect one root bundle instead of scattered department paths.

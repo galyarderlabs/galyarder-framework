@@ -2,6 +2,14 @@
 
 All notable changes to Galyarder Framework will be documented in this file.
 
+## [1.8.5] - 2026-04-19
+### Added
+- **Root Compatibility Surface**: Restored root-level `agents/`, `skills/`, `commands/`, and `personas/` paths as generated symlink surfaces so extension hosts that scan fixed root directories can discover framework assets again.
+### Changed
+- **Gemini/Cursor/Codex Root Paths**: Repointed top-level manifests back to root compatibility directories instead of custom bundle-only paths.
+### Fixed
+- **Gemini Extension Discovery**: Root extension installs can now resolve the standard directory names Gemini CLI expects for custom agents, skills, and commands.
+
 ## [1.8.4] - 2026-04-19
 ### Added
 - **Host Bundle Layer**: Added root `Bundle/` and `Gemini/` all-in-one install surfaces so multi-department assets are exposed through single paths that host manifests can scan.

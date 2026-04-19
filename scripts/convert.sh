@@ -342,6 +342,7 @@ fi
 
 if [[ "$OUT_BASE" == "${REPO_ROOT}/integrations" ]]; then
   python3 "${SCRIPT_DIR}/build_host_bundle.py"
+  python3 "${SCRIPT_DIR}/build_root_extension_surface.py"
 fi
 
 echo; info "Conversion summary"
