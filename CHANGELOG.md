@@ -2,10 +2,14 @@
 
 All notable changes to Galyarder Framework will be documented in this file.
 
-## [1.7.1] - 2026-04-18
+## [1.8.0] - 2026-04-18
 
 ### Added
 - **Humans 3.0 Protocol**: Initialized the distilled cognitive machinery protocol across the entire workforce, stripping emotional overhead and biological fatigue in favor of deterministic, mathematical precision.
+- **Architectural Guardrails**: Formalized 'Test Oracle' and 'Mutation Testing' mandates to ensure deterministic TDD (tests must fail for the right reason).
+- **Explicit Operational Modes**: Introduced BUILD (Heavy Ceremony), INCIDENT (Bypass Planning), and EXPERIMENT (Timeboxed Quarantine) modes.
+- **Context Truth**: Hardened Context7 protocol to mandate version metadata verification before trusting official documentation.
+- **Tool Boundaries**: Defined explicit interfaces for Issue Tracking (Linear), Execution (RTK), and Memory (Obsidian).
 - **C-Suite Executive Layer**: Implemented high-fidelity personas with real-world domain expertise:
   - `galyarder-ceo`: Strategic hegemony, OODA loops, and 48 Laws of Power orchestration.
   - `galyarder-cto`: Architectural determinism, formal verification (TLA+), and zero-trust engineering.
@@ -13,13 +17,13 @@ All notable changes to Galyarder Framework will be documented in this file.
   - `galyarder-cfo-coo`: Token FinOps, regulatory arbitrage (GDPR/ISO 42001), and antifragility models.
 - **The Obsidian Loop**: Established mandatory durable reporting infrastructure. All tasks now conclude with a persistent markdown artifact in `docs/departments/`.
 - **Advanced Multi-Platform Engine**: Refactored `scripts/convert.sh` and `scripts/install.sh` to provide high-fidelity integration for 12+ tools (Cursor, Aider, Windsurf, OpenCode, Claude Code, etc.).
-- **Company Scaffolder**: Added `scripts/scaffold-company.sh` to automate the initialization of professional command center and seed departmental templates.
+- **Company Scaffolder**: Added `scripts/scaffold-company.sh` to automate the initialization of digital headquarters and seed departmental templates.
 - **Sync Suite**: Integrated high-end synchronization scripts from elite-global standards: `sync-gemini-skills.py`, `sync-codex-skills.py`, `sync-hermes-skills.py`, and `generate-docs.py`.
 
 ### Changed
 - **Branding Normalization**: Enforced absolute distinction between **Galyarder Framework** (Product) and **Galyarder Labs** (Company) globally.
-- **Workflow Overhaul**: Updated `WORKFLOW.md` to reflect the Humans 3.0 hierarchy and deterministic phase-gating.
-- **Folder Consolidation**: Flattened the repository structure and permanently deleted the redundant `framework/` subdirectory.
+- **Workflow Overhaul**: Updated `WORKFLOW.md` to reflect the Humans 3.0 hierarchy, deterministic phase-gating, and explicit operational modes.
+- **Folder Consolidation**: Flattened the repository structure and permanently deleted the redundant `framework/` subdirectory, migrating to 8 high-integrity silos (Executive, Engineering, Growth, Security, Product, Infrastructure, Legal-Finance, Knowledge).
 - **README Restoration**: Restored the original high-integrity structure while surgically augmenting it with multi-platform conversion and Karpathy mandates.
 
 ### Fixed

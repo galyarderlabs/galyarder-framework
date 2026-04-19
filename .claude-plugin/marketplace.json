@@ -9,63 +9,63 @@
   "repository": "https://github.com/galyarderlabs/galyarder-framework",
   "metadata": {
     "description": "Galyarder Framework: The Humans 3.0 protocol for autonomous workforce orchestration.",
-    "version": "1.8.0-alpha"
+    "version": "1.8.0"
   },
   "plugins": [
     {
       "name": "executive-dept",
       "source": "./Executive",
       "description": "C-Suite personas and master orchestration skills.",
-      "version": "1.8.0-alpha",
+      "version": "1.8.0",
       "category": "executive"
     },
     {
       "name": "engineering-dept",
       "source": "./Engineering",
       "description": "Full-stack implementation, TDD, and architecture.",
-      "version": "1.8.0-alpha",
+      "version": "1.8.0",
       "category": "engineering"
     },
     {
       "name": "growth-dept",
       "source": "./Growth",
       "description": "Marketing, SEO, CRO, and design systems.",
-      "version": "1.8.0-alpha",
+      "version": "1.8.0",
       "category": "growth"
     },
     {
       "name": "security-dept",
       "source": "./Security",
       "description": "Offensive and defensive security audits.",
-      "version": "1.8.0-alpha",
+      "version": "1.8.0",
       "category": "security"
     },
     {
       "name": "product-dept",
       "source": "./Product",
       "description": "Product discovery, PRDs, and plan management.",
-      "version": "1.8.0-alpha",
+      "version": "1.8.0",
       "category": "product"
     },
     {
       "name": "infrastructure-dept",
       "source": "./Infrastructure",
       "description": "CI/CD, deployment, and site reliability.",
-      "version": "1.8.0-alpha",
+      "version": "1.8.0",
       "category": "infrastructure"
     },
     {
       "name": "legal-finance-dept",
       "source": "./Legal-Finance",
       "description": "Compliance, FinOps, and regulatory arbitrage.",
-      "version": "1.8.0-alpha",
+      "version": "1.8.0",
       "category": "finance"
     },
     {
       "name": "knowledge-dept",
       "source": "./Knowledge",
       "description": "Obsidian architecture and knowledge management.",
-      "version": "1.8.0-alpha",
+      "version": "1.8.0",
       "category": "knowledge"
     }
   ]

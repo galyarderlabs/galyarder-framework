@@ -1,11 +1,13 @@
 # Release Notes - Galyarder Framework
 
-## [v1.8.0-alpha] - 2026-04-18
+## [v1.8.0] - 2026-04-18
 ### The Humans 3.0 Ascension
 This release marks the transition from deterministic execution (Humans 2.0) to **Autonomous Goal Integration (AGI)**.
 
 #### Highlights
 - **Galactic-Scale Orchestration**: Re-engineered C-Suite personas (CEO, CTO, CMO, CFO/COO) into self-evolving, federated intelligences.
+- **Architectural Guardrails**: Formalized 'Test Oracle' and 'Mutation Testing' mandates to ensure deterministic TDD. Introduced explicit Operational Modes: BUILD, INCIDENT, and EXPERIMENT.
+- **Context Truth**: Hardened Context7 protocol to mandate version metadata verification before trusting official documentation.
 - **Dynamic Asset Discovery**: The conversion engine and documentation portal now automatically discover and assemble silos without hardcoded mapping.
 - **Apex Documentation Portal**: Launched a high-density Material Design portal with Mermaid.js architecture and high-fidelity grid navigation.
 - **Professional Terminology**: Purged hyperbolic language in favor of a grounded, high-scale "Institutional" tone.
