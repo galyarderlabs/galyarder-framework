@@ -22,11 +22,11 @@ Once it's teased a comprehensive strategy out of the conversation, it presents i
 
 After you've signed off on the direction, your agent puts together a mission-critical execution plan that's designed for deterministic precision. It emphasizes institutional-grade verification, lean operations (YAGNI), and systematic accuracy, ensuring every action provides maximum leverage toward your goal. 
 
-Next up, once you say "go", it launches a *subagent-driven-orchestration* process, routing each task through the host's available delegation model while preserving a rigid review and validation workflow. 
+Next up, once you say "go", it launches a *subagent-driven-orchestration* process, routing each engineering task through the host's available delegation model while preserving the same review and orchestration workflow. 
 
 This is the **Humans 3.0** protocol in action: the transition from deterministic execution into **Autonomous Goal Integration (AGI)**. 
 
-In this framework, AGI doesn't mean "sentient machines"; it means a self-evolving system capable of taking high-level business goals and independently orchestrating the entire lifecycle—from requirement extraction and TDD implementation to security audits and market distribution—without human micro-management. It's the ultimate realization of the **1-Man Army**: one founder providing the vision, while the framework provides the autonomous brain.
+In this framework, AGI doesn't mean "sentient machines"; it means a self-evolving system capable of taking high-level business goals and independently orchestrating the entire lifecycle—from requirement extraction and high-integrity implementation to operational auditing and market distribution—without human micro-management. It's the ultimate realization of the **1-Man Army**: one founder providing the vision, while the framework provides the autonomous brain.
 
 ---
 
@@ -34,11 +34,23 @@ In this framework, AGI doesn't mean "sentient machines"; it means a self-evolvin
 
 Galyarder Framework bridges the gap between high-level intent and ground-level execution through a deterministic 5-stage process:
 
-1.  **Intent Extraction**: Distilling business goals into project-scoped Linear tickets and tactical PRDs.
+1.  **Intent Extraction**: Distilling business goals into project-scoped Linear tickets and tactical specifications.
 2.  **Strategic Blueprinting**: Mission design via formal verification and Vertical Slice (Tracer Bullet) implementation plans.
 3.  **Autonomous Implementation**: Clinical execution via 40+ specialized logic engines and high-fidelity institutional standards.
-4.  **Operational Auditing**: Automated live-environment verification (BrowserOS) and professional security hardening.
-5.  **Autonomous Distribution**: Programmatic marketing generation (Remotion) and behavioral-targeted market deployment.
+4.  **Operational Auditing**: Automated live-environment verification and zero-trust security hardening.
+5.  **Autonomous Distribution**: Programmatic asset generation and behavioral-targeted market deployment.
+
+---
+
+## What you get
+
+A high-integrity workforce in a single repository:
+
+- **40 Specialized Agents**: Engineering, Growth, Security, Product, and Legal experts.
+- **132 Production-Ready Skills**: SOPs for TDD, SEO, CRO, FinOps, and more.
+- **54 Design Specifications**: Elite UI specs (Stripe, Vercel, Apple) to enforce aesthetic law.
+- **20+ Slash Commands**: Instant orchestration triggers (e.g., `/tdd`, `/review`, `/marketing`).
+- **12+ Platform Compatibility**: Native support for Galyarder Agent, OpenClaw, Hermes, Claude Code, Gemini, and more.
 
 ---
 
@@ -82,18 +94,6 @@ sequenceDiagram
 
 ---
 
-## What you get
-
-A high-integrity workforce for any autonomous mission:
-
-- **40 Specialized Agents**: Engineering, Growth, Security, Product, and Legal experts.
-- **132 Production-Ready Skills**: SOPs for development, SEO, CRO, FinOps, and more.
-- **54 Design Specifications**: Elite UI specs (Stripe, Vercel, Apple) to enforce aesthetic law.
-- **20+ Slash Commands**: Instant orchestration triggers (e.g., `/tdd`, `/review`, `/plan`).
-- **12+ Platform Compatibility**: Native support for Galyarder Agent, OpenClaw, Hermes, Claude Code, Gemini, and more.
-
----
-
 ## The Intelligence Layer of the Galyarder Ecosystem
 
 Galyarder Framework is the underlying **brain** designed to power the next generation of autonomous entities.
@@ -106,36 +106,59 @@ Galyarder Framework is the underlying **brain** designed to power the next gener
 
 ## Installation
 
+Galyarder Framework is a multi-platform agent logic library. Follow the protocol for your specific environment.
+
 ### 1. Claude Code / Copilot CLI (Marketplace)
+
+Register the Galyarder Labs marketplace:
+
 ```bash
 /plugin marketplace add galyarderlabs/galyarder-framework
-/plugin install executive-dept@galyarderlabs-marketplace
-/plugin install engineering-dept@galyarderlabs-marketplace
-/plugin install growth-dept@galyarderlabs-marketplace
-/plugin install security-dept@galyarderlabs-marketplace
+```
+
+Install the Humans 3.0 Departments:
+
+```bash
+/plugin install executive-dept@galyarderlabs-marketplace    # Personas & Orchestration
+/plugin install engineering-dept@galyarderlabs-marketplace  # TDD, Arch, & Testing
+/plugin install growth-dept@galyarderlabs-marketplace       # Marketing, SEO, & Design
+/plugin install security-dept@galyarderlabs-marketplace     # Offensive/Defensive Audits
 ```
 
 ### 2. Gemini CLI (Official Extension)
+
+Install the full framework directly from the repository:
+
 ```bash
 gemini extensions install https://github.com/galyarderlabs/galyarder-framework
 ```
 
 ### 3. OpenAI Codex (Direct Instructions)
+
+Tell Codex:
+
 ```
 Fetch and follow instructions from https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/main/.codex/INSTALL.md
 ```
 
-### 4. OpenCode / Windsurf (Native Plugins)
-```bash
-./scripts/install.sh --tool <opencode>
+### 4. OpenCode (Direct Instructions)
 
-# Windsurf
-./scripts/install.sh --tool <windsurf>
+Tell OpenCode:
+
+```
+Fetch and follow instructions from https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/main/.opencode/INSTALL.md
 ```
 
-### 5. Cross-Platform Engine (Cursor, Aider, OpenClaw, Hermes)
+### 5. Cross-Platform Engine (Cursor, Aider, Windsurf, OpenClaw, Hermes)
+
+For local/VPS deployments or tools without a central marketplace, use the conversion engine:
+
 ```bash
-./scripts/install.sh --tool <cursor|aider|openclaw|hermes|antigravity>
+# 1. Initialize digital headquarters structure
+./scripts/scaffold-company.sh
+
+# 2. Convert and install for your specific tool
+./scripts/install.sh --tool <cursor|aider|windsurf|openclaw|hermes|antigravity>
 ```
 
 ---
@@ -151,10 +174,27 @@ Fetch and follow instructions from https://raw.githubusercontent.com/galyarderla
 
 ## Technical Integrity: The Karpathy Principles
 
+The framework enforces rigid adherence to the Karpathy Principles to eliminate slop:
+
 - **Think Before Coding**: Mandatory `sequentialthinking` and `context7` MCP loops before any implementation.
 - **Simplicity First**: Minimum effort to solve the objective. Zero speculative abstractions.
 - **Surgical Changes**: Touch only what is necessary. Perfect alignment with existing infrastructure.
 - **Goal-Driven Execution**: Empirical verification via a mission-first methodology.
+
+---
+
+## Digital Infrastructure: 8 High-Integrity Silos
+
+The workforce is organized into specialized departments:
+
+- **Executive**: Strategic oversight and master orchestration.
+- **Engineering**: Deterministic implementation and TDD factory.
+- **Growth**: Behavioral arbitrage, marketing engineering, and design systems.
+- **Security**: Professional auditing and advanced offensive security.
+- **Product**: Roadmap integrity and strategic extraction.
+- **Infrastructure**: Reliability physics and automated deployment.
+- **Legal-Finance**: Regulatory compliance and token FinOps.
+- **Knowledge**: Memory preservation and visual logic mapping.
 
 ---
 
