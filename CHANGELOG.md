@@ -2,6 +2,12 @@
 
 All notable changes to Galyarder Framework will be documented in this file.
 
+## [1.8.10] - 2026-04-20
+### Fixed
+- **Claude Marketplace Manifest Schema**: Full bundle and departmental Claude plugin manifests now use an object-shaped `author` field and no longer ship the unsupported `personas` key, fixing marketplace install validation failures.
+- **Executive Persona Identity Parity**: `galyarder-cfo-coo`, `galyarder-cmo`, and `galyarder-cto` now carry the same host-aware identity contract as `galyarder-ceo`, so Copilot-style hosts stop collapsing them to the platform default persona.
+- **Skill Name Length**: Shortened the canonical XSS Burp Suite skill name to `xss-testing-burpsuite`, keeping prefixed host registries under the 64-character limit.
+
 ## [1.8.9] - 2026-04-20
 ### Fixed
 - **Copilot Persona Identity**: `galyarder-ceo` now includes an explicit identity contract so hosts that preserve their own platform identity still answer as the Galyarder CEO persona running inside the host, instead of collapsing to a plain "I am just Copilot" response.

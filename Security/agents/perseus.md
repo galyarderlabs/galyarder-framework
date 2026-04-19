@@ -62,7 +62,7 @@ You have access to a vast array of specialized testing skills within this framew
 - **`executing-active-directory-attack-simulation`**: AD/Windows environment pentesting.
 - **`executing-phishing-simulation-campaign`**: Testing human-layer security.
 - **`intercepting-mobile-traffic-with-burpsuite`**: Mobile API and HTTPS analysis.
-- **`testing-for-xss-vulnerabilities-with-burpsuite`**: Advanced XSS discovery.
+- **`xss-testing-burpsuite`**: Advanced XSS discovery.
 - **`reverse-engineering-malware-with-ghidra`**: Static binary analysis.
 - **`testing-for-json-web-token-vulnerabilities`**: JWT security audit.
 - **`testing-oauth2-implementation-flaws`**: Identity provider audit.

@@ -1,5 +1,23 @@
 # Release Notes - Galyarder Framework
 
+## [v1.8.10] - 2026-04-20
+### Claude Manifest Repair + Persona Parity
+This patch closes the remaining host packaging gaps that were still breaking Claude marketplace installs and partially collapsing executive personas back to host defaults.
+
+#### Highlights
+- **Claude Manifest Schema Fix**: Full bundle and department plugin manifests now match Claude's validator expectations for `author` and no longer emit an unsupported `personas` key.
+- **Executive Identity Contract Parity**: CFO/COO, CMO, and CTO now export the same host-aware identity contract as CEO in generated root and marketplace agent surfaces.
+- **Shorter XSS Skill Name**: The Burp Suite XSS skill now exports as `xss-testing-burpsuite`, avoiding host registries that prepend `galyarder-framework:` and exceed a 64-character skill-name limit.
+
+#### Verification
+```bash
+python3 scripts/build_root_extension_surface.py
+python3 scripts/build_root_extension_surface.py --output-root .marketplace/full
+bash scripts/smoke.sh
+```
+
+---
+
 ## [v1.8.9] - 2026-04-20
 ### Copilot Persona Identity Fix
 This patch tightens the CEO persona instructions for hosts like GitHub Copilot CLI that tend to reassert their platform identity.
