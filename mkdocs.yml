@@ -41,23 +41,33 @@ extra_javascript:
 
 nav:
   - Welcome: index.md
-  - Evolution:
-      - Humans 3.0 Protocol: WORKFLOW.md
+  - Getting Started:
+      - Quick Start Guide: QUICK_START.md
+      - HQ vs Framework: DASHBOARD_VS_FRAMEWORK.md
+      - Unified Platform: UNIFIED_PLATFORM.md
+  - Evolution (Protocols):
+      - Humans 3.0 Workflow: WORKFLOW.md
       - Global Command Architecture: ORG_CHART.md
-      - Integration Map: INTEGRATION.md
-  - Inventory:
-      - Workforce (Agents): agents/index.md
-      - SOP Library (Skills): skills/index.md
-      - Command Triggers: commands/index.md
-      - Aesthetic Law (Design): design/index.md
+      - Multi-Platform Engine: INTEGRATION.md
+      - Migration Guide: MIGRATION.md
+  - Workforce (Agents):
+      - Agent Directory: AGENTS.md
+      - Specialized Agents: agents/index.md
+  - SOP Library (Skills):
+      - Strategic Skills: skills/index.md
+  - Command Triggers:
+      - Slash Commands: commands/index.md
+  - Aesthetic Law (Design):
+      - UI Specifications: design/index.md
   - Governance:
       - Global Conventions: CONVENTIONS.md
-      - Deployment Logic: testing.md
+      - Deployment & Testing: testing.md
       - Platform Specifics:
           - Claude Code: CLAUDE.md
           - Gemini CLI: GEMINI.md
           - OpenAI Codex: README.codex.md
           - OpenCode: README.opencode.md
+          - Integration Checklist: INTEGRATION_COMPLETE.md
   - Chronicle:
       - Changelog: CHANGELOG.md
       - Release Notes: RELEASE-NOTES.md
