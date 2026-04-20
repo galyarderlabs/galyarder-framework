@@ -51,7 +51,7 @@ A high-integrity workforce in a single repository:
 - **132 Production-Ready Skills**: SOPs for TDD, SEO, CRO, FinOps, and more.
 - **54 Design Specifications**: Elite UI specs (Stripe, Vercel, Apple) to enforce aesthetic law.
 - **20+ Slash Commands**: Instant orchestration triggers (e.g., `/tdd`, `/review`, `/marketing`).
-- **Universal Compatibility**: Native support for Galyarder Agent, Claude Code, Gemini CLI, Cursor, Windsurf, and 9 other elite platforms.
+- **Universal Compatibility**: Native support for Galyarder Agent, Claude Code, Gemini CLI, OpenClaw, Hermes Agent, and 9 other platforms.
 
 ---
 
