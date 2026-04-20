@@ -147,20 +147,31 @@ galyarder-deploy --tool <name>
 #### A. Official Marketplaces
 *Recommended for rapid integration with cloud orchestrators.*
 
-- **Claude Code**:
+- **Claude Code / Copilot CLI**:
   ```bash
-  /plugin add galyarderlabs-marketplace
+  # 1. Add the Galyarder Marketplace
+  /plugin marketplace add galyarderlabs/galyarder-framework
+
+  # 2. Install the full bundle
+  /plugin install galyarder-framework@galyarderlabs-marketplace
+
+  # OR install departments selectively (9 available)
+  /plugin install executive-dept@galyarderlabs-marketplace
+  /plugin install engineering-dept@galyarderlabs-marketplace
+  # ... (growth, security, product, infrastructure, legal-finance, knowledge)
   ```
 
-  - **Copilot CLI**:
-    ```bash
-    /plugin install galyarder-framework@galyarderlabs-marketplace
-    ```
+- **Gemini CLI**:
+  ```bash
+  # Install
+  gemini extensions install https://github.com/galyarderlabs/galyarder-framework
 
-  - **Gemini CLI**:
-    ```bash
-    gemini extensions install https://github.com/galyarderlabs/galyarder-framework
-    ```
+  # Update
+  gemini extensions update galyarder-framework
+
+  # Uninstall
+  gemini extensions uninstall galyarder-framework
+  ```
 
   Note: The framework uses a **Universal Plugin Architecture**. All assets are unified into `agents/`, `skills/`, and `commands/` for 100% compatibility across Google, Anthropic, and Microsoft environments.
 

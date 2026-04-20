@@ -9,7 +9,7 @@ description: >
 domain: cybersecurity
 subdomain: threat-intelligence
 tags: [MITRE-ATT&CK, ATT&CK-Navigator, Sigma, D3FEND, TTP, detection-engineering, NIST-CSF]
-version: "1.8.18"
+version: "1.8.19"
 author: mahipal
 license: Apache-2.0
 ---

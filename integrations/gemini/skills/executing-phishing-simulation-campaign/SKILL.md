@@ -10,7 +10,7 @@ description: >
 domain: cybersecurity
 subdomain: penetration-testing
 tags: [phishing-simulation, social-engineering, GoPhish, email-security, security-awareness]
-version: "1.8.18"
+version: "1.8.19"
 author: mahipal
 license: Apache-2.0
 ---

@@ -20,6 +20,34 @@ The framework is surgically converted for the following environments:
 12. **Augment**: Performance-optimized AI workflow.
 13. **Antigravity**: System-level skill injection.
 
+## Official Marketplace Integration
+
+For cloud-native orchestrators, use the standard plugin protocol:
+
+### Claude Code & Copilot CLI
+1. **Connect Marketplace**:
+   ```bash
+   /plugin marketplace add galyarderlabs/galyarder-framework
+   ```
+2. **Install Asset**:
+   ```bash
+   # Full Intelligence Bundle
+   /plugin install galyarder-framework@galyarderlabs-marketplace
+
+   # Selective Department (e.g., Engineering)
+   /plugin install engineering-dept@galyarderlabs-marketplace
+   ```
+
+### Gemini CLI
+```bash
+# High-fidelity installation
+gemini extensions install https://github.com/galyarderlabs/galyarder-framework
+
+# Life-cycle management
+gemini extensions update galyarder-framework
+gemini extensions uninstall galyarder-framework
+```
+
 ## Command Silo Structure (Universal Architecture)
 
 The repository is organized into 8 departments. To ensure compatibility with Google (Gemini), Anthropic (Claude), and Microsoft (Copilot), all assets are mapped to a flat tripartite structure:
