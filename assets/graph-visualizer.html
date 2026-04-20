@@ -8,51 +8,49 @@
     <script src="https://unpkg.com/3d-force-graph@1.73.0/dist/3d-force-graph.min.js"></script>
     <script src="https://unpkg.com/three-spritetext@1.8.2/dist/three-spritetext.min.js"></script>
     <style>
-        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #02040a; font-family: 'Inter', sans-serif; color: #fff; }
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #010206; font-family: 'Inter', sans-serif; color: #fff; }
         #graph-container { width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; z-index: 1; }
         
-        /* High-Signal HUD */
-        .hud { position: absolute; left: 30px; top: 30px; z-index: 20; background: rgba(5, 10, 20, 0.95); padding: 30px; border-radius: 4px; border-left: 4px solid #00f2ff; backdrop-filter: blur(20px); width: 320px; pointer-events: auto; }
+        .hud { position: absolute; left: 30px; top: 30px; z-index: 20; background: rgba(2, 4, 10, 0.98); padding: 30px; border-radius: 4px; border-left: 4px solid #00f2ff; backdrop-filter: blur(25px); width: 320px; pointer-events: auto; box-shadow: 0 0 50px rgba(0,0,0,0.5); }
         h1 { margin: 0 0 5px 0; font-size: 22px; color: #fff; letter-spacing: 4px; text-transform: uppercase; font-weight: 900; }
-        .tagline { font-size: 10px; color: #00f2ff; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; opacity: 0.8; }
+        .tagline { font-size: 10px; color: #00f2ff; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; }
         
-        /* Node Info Panel */
-        #node-info { margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); display: none; }
-        .info-label { font-size: 9px; color: #555; text-transform: uppercase; margin-bottom: 5px; font-weight: 800; }
-        .info-title { font-size: 16px; color: #fff; font-weight: 900; margin-bottom: 15px; text-transform: uppercase; }
-        .info-meta { font-size: 11px; color: #888; line-height: 1.6; }
+        #node-info { margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(0, 242, 255, 0.1); display: none; }
+        .info-label { font-size: 9px; color: #444; text-transform: uppercase; margin-bottom: 5px; font-weight: 800; letter-spacing: 1px; }
+        .info-title { font-size: 16px; color: #fff; font-weight: 900; margin-bottom: 15px; text-transform: uppercase; text-shadow: 0 0 10px currentColor; }
+        .info-meta { font-size: 11px; color: #888; line-height: 1.8; }
         .highlight { color: #00f2ff; font-weight: bold; }
 
         .silo-map { margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05); }
-        .silo-item { display: flex; align-items: center; margin-bottom: 12px; font-size: 9px; color: #666; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; }
-        .synapse-dot { width: 6px; height: 6px; margin-right: 15px; border-radius: 50%; }
+        .silo-item { display: flex; align-items: center; margin-bottom: 12px; font-size: 9px; color: #666; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; }
+        .synapse-dot { width: 7px; height: 7px; margin-right: 15px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.1); }
 
-        #loading-overlay { position: absolute; width: 100%; height: 100%; background: #02040a; display: flex; align-items: center; justify-content: center; z-index: 1000; transition: opacity 1s; }
-        .pulse { font-size: 12px; letter-spacing: 8px; color: #00f2ff; animation: pulse-anim 2s infinite; font-weight: 900; }
-        @keyframes pulse-anim { 0% { opacity: 0.3; } 50% { opacity: 1; } 100% { opacity: 0.3; } }
+        #loading-overlay { position: absolute; width: 100%; height: 100%; background: #010206; display: flex; align-items: center; justify-content: center; z-index: 1000; transition: opacity 0.8s; }
+        .pulse { font-size: 12px; letter-spacing: 10px; color: #00f2ff; animation: pulse-anim 1.5s infinite; font-weight: 900; }
+        @keyframes pulse-anim { 0% { opacity: 0.2; transform: scale(0.98); } 50% { opacity: 1; transform: scale(1); } 100% { opacity: 0.2; transform: scale(0.98); } }
     </style>
 </head>
 <body>
     <div id="loading-overlay">
-        <div class="pulse">SYNCING NEURAL INTERFACE</div>
+        <div class="pulse">ILLUMINATING NEURAL MESH</div>
     </div>
     
     <div class="hud">
         <h1>GALYARDER</h1>
-        <div class="tagline">Neural Synapse v3.2</div>
+        <div class="tagline">Neural Synapse v3.3</div>
         
-        <!-- Contextual Info Display -->
         <div id="node-info">
-            <div class="info-label">Selected Neuron</div>
-            <div id="target-title" class="info-title">IDENTIFYING...</div>
-            <div id="target-meta" class="info-meta">Waiting for synapse signal...</div>
+            <div class="info-label">Synaptic Probe</div>
+            <div id="target-title" class="info-title">...</div>
+            <div id="target-meta" class="info-meta"></div>
         </div>
 
         <div class="silo-map" id="silo-map"></div>
         
-        <div style="margin-top: 30px; font-size: 9px; color: #333; letter-spacing: 1px;">
-            CLICK: Focus & Probe Neuron<br>
-            SCROLL: Depth Zoom
+        <div style="margin-top: 30px; font-size: 9px; color: #444; letter-spacing: 1px; line-height: 1.5;">
+            CLICK NEURON: Probe Logic<br>
+            DRAG: Navigate Mesh<br>
+            SCROLL: Synaptic Depth
         </div>
     </div>
 
@@ -71,16 +69,14 @@
         const mapDiv = document.getElementById('silo-map');
         Object.keys(siloColors).forEach(silo => {
             if (silo === "Root") return;
-            mapDiv.innerHTML += `<div class="silo-item"><div class="synapse-dot" style="background: ${siloColors[silo]}; box-shadow: 0 0 10px ${siloColors[silo]}"></div> ${silo}</div>`;
+            mapDiv.innerHTML += `<div class="silo-item"><div class="synapse-dot" style="background: ${siloColors[silo]}; box-shadow: 0 0 12px ${siloColors[silo]}"></div> ${silo}</div>`;
         });
 
-        // Cleaning Logic: Remove slop (path, extensions, verbose labels)
         function cleanName(name) {
-            if (!name) return "Unknown";
+            if (!name) return "SYSTEM CORE";
             let clean = name.split('/').pop().replace('.md', '').replace('.py', '').replace('.sh', '');
             clean = clean.replace(/-/g, ' ').replace(/_/g, ' ');
-            // Special cases
-            if (clean.toLowerCase() === 'claud') return 'CLAUDE CORE';
+            if (clean.toLowerCase() === 'claud') return 'CLAUDE RULES';
             if (clean.toLowerCase() === 'gemini') return 'GEMINI CORE';
             return clean.toUpperCase();
         }
@@ -100,93 +96,112 @@
                 };
 
                 Graph = ForceGraph3D()(document.getElementById('graph-container'))
-                    .backgroundColor('#02040a')
+                    .backgroundColor('#010206')
                     .showNavInfo(false)
-                    .linkCurvature(0.2)
-                    .linkColor(() => 'rgba(0, 242, 255, 0.15)')
-                    .linkDirectionalParticles(3)
-                    .linkDirectionalParticleSpeed(0.007)
-                    .linkDirectionalParticleWidth(1.2)
+                    // HIGH-LUMINANCE NEURAL LINKS
+                    .linkCurvature(0.25)
+                    .linkColor(link => 'rgba(0, 242, 255, 0.4)') // Much brighter base color
+                    .linkWidth(1)
+                    .linkDirectionalParticles(4) // More particles for visibility
+                    .linkDirectionalParticleSpeed(0.008)
+                    .linkDirectionalParticleWidth(2.5) // Bigger particles (Live signals)
                     .onNodeClick(node => {
-                        // Display clean info in HUD
                         infoPanel.style.display = 'block';
                         targetTitle.innerText = cleanName(node.title || node.id);
                         targetTitle.style.color = siloColors[node.silo] || '#fff';
                         targetMeta.innerHTML = `
-                            Silo: <span class="highlight">${node.silo}</span><br>
-                            Type: <span class="highlight">${node.category}</span><br>
-                            Connectivity: <span class="highlight">${node.degree} Synapses</span>
+                            SILO: <span class="highlight">${node.silo}</span><br>
+                            ARCHITECTURE: <span class="highlight">${node.category.toUpperCase()}</span><br>
+                            SYNAPTIC CONNECTIVITY: <span class="highlight">${node.degree} PATHS</span>
                         `;
 
-                        // Tactical Focus Camera
-                        const distance = 120;
+                        const distance = 140;
                         const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
                         Graph.cameraPosition({ x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, node, 1000);
                     });
 
-                // NEURON RENDERING (Clean, Pulsing Spheres)
+                // NEURON RENDERING (Professional Bio-Digital)
                 Graph.nodeThreeObject(node => {
                     const group = new THREE.Group();
                     
                     let size = 6;
-                    if (node.category === 'core-hukum') size = 20;
-                    else if (node.category === 'agent') size = 12;
-                    else if (node.strategic) size = 8;
+                    if (node.category === 'core-hukum') size = 22;
+                    else if (node.category === 'agent') size = 13;
+                    else if (node.strategic) size = 9;
 
+                    // The Glowing Cell
                     const neuron = new THREE.Mesh(
                         new THREE.SphereGeometry(size),
-                        new THREE.MeshLambertMaterial({ 
+                        new THREE.MeshStandardMaterial({ 
                             color: siloColors[node.silo] || '#444',
-                            transparent: true,
-                            opacity: 0.9,
                             emissive: siloColors[node.silo] || '#000',
-                            emissiveIntensity: 0.7
+                            emissiveIntensity: 1.5, // High intensity glow
+                            transparent: true,
+                            opacity: 0.95
                         })
                     );
                     group.add(neuron);
 
-                    // HIGH-SIGNAL LABELS (No slop, no .md)
-                    const showLabel = (node.category === 'core-hukum' || node.category === 'agent' || node.degree > 18);
-                    if (showLabel) {
+                    // Add an outer halo for Core nodes
+                    if (node.category === 'core-hukum') {
+                        const halo = new THREE.Mesh(
+                            new THREE.SphereGeometry(size * 1.3),
+                            new THREE.MeshBasicMaterial({
+                                color: siloColors[node.silo] || '#fff',
+                                transparent: true,
+                                opacity: 0.15
+                            })
+                        );
+                        group.add(halo);
+                    }
+
+                    // ZERO-SLOP LABELS
+                    const isGodNode = node.category === 'core-hukum';
+                    const isAgent = node.category === 'agent';
+                    if (isGodNode || isAgent || node.degree > 20) {
                         const labelText = cleanName(node.title || node.id);
-                        const thought = new SpriteText(labelText);
-                        thought.color = '#fff';
-                        thought.textHeight = size * 0.8;
-                        thought.position.y = size + 10;
-                        thought.fontFace = 'Inter';
-                        thought.fontWeight = '900';
-                        thought.backgroundColor = 'rgba(2, 4, 10, 0.9)';
-                        thought.padding = 3;
-                        thought.borderRadius = 1;
-                        group.add(thought);
+                        const label = new SpriteText(labelText);
+                        label.color = '#fff';
+                        label.textHeight = size * 0.9;
+                        label.position.y = size + 12;
+                        label.fontFace = 'Inter';
+                        label.fontWeight = '900';
+                        label.backgroundColor = 'rgba(1, 2, 6, 0.95)';
+                        label.padding = 4;
+                        label.borderRadius = 2;
+                        group.add(label);
                     }
                     
                     return group;
                 });
 
-                // Atmospheric Grid
-                const grid = new THREE.GridHelper(10000, 50, 0x0a1020, 0x02040a);
-                grid.position.y = -800;
+                // Atmospheric Grid (Deeper)
+                const grid = new THREE.GridHelper(15000, 60, 0x0a1020, 0x010206);
+                grid.position.y = -1000;
                 Graph.scene().add(grid);
 
-                // Optimal Physics for readability
-                Graph.d3Force('charge').strength(-700);
-                Graph.d3Force('link').distance(250);
+                // Forces: Increased spacing for massive connections
+                Graph.d3Force('charge').strength(-900);
+                Graph.d3Force('link').distance(300);
 
-                // Set initial data (Full Synapse is the standard)
-                Graph.graphData({ nodes: fullData.nodes.filter(n => n.strategic), links: fullData.links.filter(l => {
+                // Initialize with Strategic Data
+                const filteredNodes = fullData.nodes.filter(n => n.strategic);
+                const nodeIds = new Set(filteredNodes.map(n => n.id));
+                const filteredLinks = fullData.links.filter(l => {
                     const s = typeof l.source === 'object' ? l.source.id : l.source;
                     const t = typeof l.target === 'object' ? l.target.id : l.target;
-                    return fullData.nodes.some(n => n.id === s && n.strategic) && fullData.nodes.some(n => n.id === t && n.strategic);
-                })});
+                    return nodeIds.has(s) && nodeIds.has(t);
+                });
+
+                Graph.graphData({ nodes: filteredNodes, links: filteredLinks });
                 
                 const loader = document.getElementById('loading-overlay');
                 loader.style.opacity = '0';
-                setTimeout(() => loader.style.display = 'none', 1000);
+                setTimeout(() => loader.style.display = 'none', 800);
 
             } catch (err) {
                 console.error(err);
-                document.getElementById('loading-overlay').innerHTML = `<div style="color:red">NEURAL COLLAPSE: ${err.message}</div>`;
+                document.getElementById('loading-overlay').innerHTML = `<div style="color:red; font-weight: 900;">SYNAPTIC FAILURE: ${err.message}</div>`;
             }
         }
 
