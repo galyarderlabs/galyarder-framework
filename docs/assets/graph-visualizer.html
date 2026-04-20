@@ -8,47 +8,44 @@
     <script src="https://unpkg.com/3d-force-graph@1.73.0/dist/3d-force-graph.min.js"></script>
     <script src="https://unpkg.com/three-spritetext@1.8.2/dist/three-spritetext.min.js"></script>
     <style>
-        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #000; font-family: 'Inter', 'Segoe UI', sans-serif; }
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #050505; font-family: 'Inter', sans-serif; }
         #graph-container { width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; z-index: 1; }
         
-        .overlay { position: absolute; left: 20px; top: 20px; z-index: 20; background: rgba(0,0,0,0.9); padding: 25px; border-radius: 12px; border: 1px solid rgba(0, 212, 255, 0.4); backdrop-filter: blur(15px); width: 280px; color: #fff; pointer-events: auto; box-shadow: 0 10px 40px rgba(0,0,0,0.8); }
-        h2 { margin: 0 0 5px 0; font-size: 18px; color: #00f2ff; letter-spacing: 3px; text-transform: uppercase; font-weight: 900; }
-        .subtitle { font-size: 10px; color: #666; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+        .overlay { position: absolute; left: 20px; top: 20px; z-index: 20; background: rgba(10,10,10,0.95); padding: 25px; border-radius: 8px; border: 1px solid #1a1a1a; backdrop-filter: blur(10px); width: 280px; color: #fff; pointer-events: auto; }
+        h1 { margin: 0 0 5px 0; font-size: 18px; color: #00f2ff; letter-spacing: 2px; text-transform: uppercase; font-weight: 800; }
+        .subtitle { font-size: 11px; color: #444; margin-bottom: 25px; text-transform: uppercase; }
         
-        .toggle-btn { background: #111; border: 1px solid #333; color: #888; padding: 12px 15px; border-radius: 8px; cursor: pointer; width: 100%; font-size: 11px; transition: all 0.3s; text-transform: uppercase; font-weight: bold; margin-bottom: 8px; }
-        .toggle-btn:hover { border-color: #555; color: #fff; }
-        .toggle-btn.active { background: #00d4ff; border-color: #00d4ff; color: #000; box-shadow: 0 0 15px rgba(0,212,255,0.5); }
+        .view-controls { display: flex; flex-direction: column; gap: 8px; }
+        .view-btn { background: #111; border: 1px solid #222; color: #666; padding: 12px; border-radius: 4px; cursor: pointer; font-size: 11px; font-weight: 600; text-transform: uppercase; text-align: center; transition: all 0.2s; }
+        .view-btn:hover { border-color: #333; color: #888; }
+        .view-btn.active { background: #00d4ff; border-color: #00d4ff; color: #000; }
         
-        .legend-item { display: flex; align-items: center; margin-bottom: 10px; font-size: 11px; color: #aaa; font-weight: 500; }
-        .color-box { width: 10px; height: 10px; margin-right: 15px; border-radius: 50%; box-shadow: 0 0 15px currentColor; }
+        .legend { margin-top: 25px; padding-top: 15px; border-top: 1px solid #1a1a1a; }
+        .legend-item { display: flex; align-items: center; margin-bottom: 10px; font-size: 10px; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+        .color-dot { width: 8px; height: 8px; margin-right: 12px; border-radius: 2px; box-shadow: 0 0 8px currentColor; }
 
-        #status-msg { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #00f2ff; font-size: 14px; letter-spacing: 6px; z-index: 100; text-align: center; font-weight: bold; pointer-events: none; }
+        #loading { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #00f2ff; font-size: 12px; letter-spacing: 4px; z-index: 100; font-weight: bold; }
     </style>
 </head>
 <body>
-    <div id="status-msg">ELITE NEURAL LINK: SYNCING...</div>
+    <div id="loading">SYNCING NEURAL LINK...</div>
     
     <div class="overlay">
-        <h2>GALYARDER NEURAL LINK</h2>
-        <div class="subtitle">v2.9 Elite Constellation</div>
+        <h1>NEURAL LINK</h1>
+        <div class="subtitle">Framework Visualization v3.0</div>
         
-        <div id="controls">
-            <button id="btn-elite" class="toggle-btn active">Elite Galaxy</button>
-            <button id="btn-strategic" class="toggle-btn">Strategic Map</button>
-            <button id="btn-full" class="toggle-btn">Full Mesh</button>
+        <div class="view-controls">
+            <button id="btn-core" class="view-btn active">System Core</button>
+            <button id="btn-agent" class="view-btn">Agent Network</button>
+            <button id="btn-full" class="view-btn">Full Mesh</button>
         </div>
 
-        <div id="legend" style="margin-top: 20px;"></div>
-        <div style="margin-top: 20px; font-size: 9px; color: #444; line-height: 1.4; border-top: 1px solid #222; padding-top: 15px;">
-            SCROLL: Zoom | DRAG: Orbit<br>
-            CLICK PLANET: Tactical Focus
-        </div>
+        <div class="legend" id="legend"></div>
     </div>
 
     <div id="graph-container"></div>
 
     <script>
-        const statusMsg = document.getElementById('status-msg');
         const siloColors = {
             "Executive": "#ff00ff", "Engineering": "#00f2ff", "Growth": "#39ff14",
             "Security": "#ff3131", "Product": "#ff9100", "Knowledge": "#00d4ff", "Root": "#ffffff"
@@ -57,11 +54,11 @@
         const legendDiv = document.getElementById('legend');
         Object.keys(siloColors).forEach(silo => {
             if (silo === "Root") return;
-            legendDiv.innerHTML += `<div class="legend-item"><div class="color-box" style="background: ${siloColors[silo]}"></div> ${silo}</div>`;
+            legendDiv.innerHTML += `<div class="legend-item"><div class="color-dot" style="background: ${siloColors[silo]}; color: ${siloColors[silo]}"></div> ${silo}</div>`;
         });
 
         let fullData = null;
-        let currentMode = 'elite'; // elite | strategic | full
+        let currentMode = 'core'; // core | agent | full
         let Graph = null;
 
         async function init() {
@@ -71,101 +68,92 @@
                 const raw = await response.json();
                 
                 fullData = {
-                    nodes: Object.keys(raw.nodes).map(id => ({ 
-                        id, 
-                        ...raw.nodes[id],
-                        sizeVariance: 0.8 + Math.random() * 0.4 
-                    })),
+                    nodes: Object.keys(raw.nodes).map(id => ({ id, ...raw.nodes[id] })),
                     links: raw.edges
                 };
 
                 Graph = ForceGraph3D()(document.getElementById('graph-container'))
-                    .backgroundColor('#000000')
+                    .backgroundColor('#050505')
                     .showNavInfo(false)
-                    .nodeOpacity(1)
-                    .nodeRelSize(node => {
-                        let base = 5;
-                        if (node.category === 'core-hukum') base = 45; 
-                        else if (node.category === 'agent') base = 30;
-                        else if (node.strategic) base = 18;
-                        else base = 8;
-                        return base * node.sizeVariance;
-                    })
-                    .linkColor(() => 'rgba(0, 242, 255, 0.05)')
-                    .linkDirectionalParticles(2)
-                    .linkDirectionalParticleSpeed(0.005)
+                    .nodeRelSize(8)
+                    .nodeColor(node => siloColors[node.silo] || '#444')
+                    .linkColor(() => 'rgba(255, 255, 255, 0.1)')
+                    .linkDirectionalParticles(1)
+                    .linkDirectionalParticleSpeed(0.004)
                     .onNodeClick(node => {
-                        const distance = 300;
+                        const distance = 200;
                         const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
-                        Graph.cameraPosition({ x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, node, 1500);
+                        Graph.cameraPosition({ x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, node, 1200);
                     });
 
+                // Professional Node Object
                 Graph.nodeThreeObject(node => {
                     const group = new THREE.Group();
-                    const baseSize = node.category === 'core-hukum' ? 45 : node.category === 'agent' ? 30 : node.strategic ? 18 : 8;
-                    const finalSize = baseSize * node.sizeVariance;
                     
+                    // Sphere size based on importance
+                    let size = 6;
+                    if (node.category === 'core-hukum') size = 20;
+                    else if (node.category === 'agent') size = 12;
+                    else if (node.strategic) size = 8;
+
                     const sphere = new THREE.Mesh(
-                        new THREE.SphereGeometry(finalSize),
-                        new THREE.MeshStandardMaterial({ 
-                            color: siloColors[node.silo] || '#888',
-                            emissive: siloColors[node.silo] || '#888',
-                            emissiveIntensity: node.category === 'core-hukum' ? 1.8 : 0.7,
-                            roughness: 0.2
+                        new THREE.SphereGeometry(size),
+                        new THREE.MeshLambertMaterial({ 
+                            color: siloColors[node.silo] || '#444',
+                            transparent: true,
+                            opacity: 0.9,
+                            emissive: siloColors[node.silo] || '#000',
+                            emissiveIntensity: 0.5
                         })
                     );
                     group.add(sphere);
 
-                    // Show labels based on mode visibility
-                    let showLabel = false;
-                    if (currentMode === 'elite') showLabel = (node.category === 'core-hukum' || node.category === 'agent');
-                    else if (currentMode === 'strategic') showLabel = node.strategic;
-                    else showLabel = (node.category === 'core-hukum' || node.category === 'agent' || node.degree > 10);
+                    // Labels: Permanent for Core/Agents in their respective views
+                    let shouldLabel = false;
+                    if (currentMode === 'core') shouldLabel = (node.category === 'core-hukum');
+                    else if (currentMode === 'agent') shouldLabel = (node.category === 'core-hukum' || node.category === 'agent');
+                    else shouldLabel = (node.category === 'core-hukum' || node.category === 'agent' || node.degree > 15);
 
-                    if (showLabel) {
-                        const label = new SpriteText(node.title.toUpperCase());
+                    if (shouldLabel) {
+                        const label = new SpriteText(node.title);
                         label.color = siloColors[node.silo] || '#fff';
-                        label.textHeight = finalSize * 0.9;
-                        label.position.y = finalSize * 1.6;
-                        label.fontFace = 'Inter, sans-serif';
-                        label.fontWeight = '900';
-                        label.backgroundColor = 'rgba(0,0,0,0.85)';
-                        label.padding = 4;
-                        label.borderRadius = 10;
+                        label.textHeight = size * 0.8;
+                        label.position.y = size + (size * 0.5);
+                        label.fontFace = 'Inter';
+                        label.backgroundColor = 'rgba(0,0,0,0.8)';
+                        label.padding = 3;
+                        label.borderRadius = 2;
                         group.add(label);
                     }
+                    
                     return group;
                 });
 
-                // GALAXY BACKGROUND
-                const starsGeometry = new THREE.BufferGeometry();
-                const starsVertices = [];
-                for (let i = 0; i < 25000; i++) {
-                    starsVertices.push(THREE.MathUtils.randFloatSpread(12000), THREE.MathUtils.randFloatSpread(12000), THREE.MathUtils.randFloatSpread(12000));
-                }
-                starsGeometry.setAttribute('position', new THREE.Float32BufferAttribute(starsVertices, 3));
-                const starsMaterial = new THREE.PointsMaterial({ color: 0xFFFFFF, size: 1.5, transparent: true, opacity: 0.6 });
-                Graph.scene().add(new THREE.Points(starsGeometry, starsMaterial));
+                // Neural Grid Background
+                const grid = new THREE.GridHelper(10000, 50, 0x111111, 0x050505);
+                grid.position.y = -500;
+                Graph.scene().add(grid);
 
-                Graph.d3Force('charge').strength(-1000);
-                Graph.d3Force('link').distance(400);
+                // Forces: Structured and Clean
+                Graph.d3Force('charge').strength(-500);
+                Graph.d3Force('link').distance(200);
 
                 updateView();
-                statusMsg.style.display = 'none';
+                document.getElementById('loading').style.display = 'none';
 
             } catch (err) {
-                statusMsg.innerHTML = `<span style="color: #ff3131">OFFLINE: ${err.message}</span>`;
+                document.getElementById('loading').innerHTML = `<span style="color:red">ERROR: ${err.message}</span>`;
             }
         }
 
         function updateView() {
             let filteredNodes = [];
-            if (currentMode === 'elite') {
+            if (currentMode === 'core') {
+                filteredNodes = fullData.nodes.filter(n => n.category === 'core-hukum' || n.degree > 20);
+            } else if (currentMode === 'agent') {
                 filteredNodes = fullData.nodes.filter(n => n.category === 'core-hukum' || n.category === 'agent');
-            } else if (currentMode === 'strategic') {
-                filteredNodes = fullData.nodes.filter(n => n.strategic);
             } else {
-                filteredNodes = fullData.nodes;
+                filteredNodes = fullData.nodes.filter(n => n.strategic);
             }
 
             const nodeIds = new Set(filteredNodes.map(n => n.id));
@@ -176,19 +164,18 @@
             });
 
             Graph.graphData({ nodes: filteredNodes, links: filteredLinks });
-            // Refresh node objects to update label visibility
-            Graph.nodeThreeObject(Graph.nodeThreeObject()); 
+            Graph.nodeThreeObject(Graph.nodeThreeObject()); // Force refresh labels
         }
 
         function setMode(mode) {
             currentMode = mode;
-            document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
             document.getElementById(`btn-${mode}`).classList.add('active');
             updateView();
         }
 
-        document.getElementById('btn-elite').onclick = () => setMode('elite');
-        document.getElementById('btn-strategic').onclick = () => setMode('strategic');
+        document.getElementById('btn-core').onclick = () => setMode('core');
+        document.getElementById('btn-agent').onclick = () => setMode('agent');
         document.getElementById('btn-full').onclick = () => setMode('full');
 
         window.onload = () => setTimeout(init, 300);
