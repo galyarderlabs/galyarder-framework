@@ -4,7 +4,7 @@ description: React and Next.js performance optimization guidelines from Vercel E
 license: MIT
 metadata:
   author: vercel
-  version: "1.8.17"
+  version: "1.8.18"
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

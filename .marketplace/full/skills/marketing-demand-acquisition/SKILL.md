@@ -18,7 +18,7 @@ triggers:
   - acquisition strategy
   - HubSpot campaigns
 metadata:
-  version: "1.8.17"
+  version: "1.8.18"
   author: Alireza Rezvani
   category: marketing
   domain: demand-generation
