@@ -51,7 +51,7 @@ A high-integrity workforce in a single repository:
 - **132 Production-Ready Skills**: SOPs for TDD, SEO, CRO, FinOps, and more.
 - **54 Design Specifications**: Elite UI specs (Stripe, Vercel, Apple) to enforce aesthetic law.
 - **20+ Slash Commands**: Instant orchestration triggers (e.g., `/tdd`, `/review`, `/marketing`).
-- **14+ Platform Compatibility**: Native support for Galyarder Agent, OpenClaw, Hermes, Claude Code, Gemini, and more.
+- **Universal Compatibility**: Native support for Galyarder Agent, Claude Code, Gemini CLI, Cursor, Windsurf, and 9 other elite platforms.
 
 ---
 
@@ -144,35 +144,20 @@ galyarder-deploy --tool <name>
 
 - **Claude Code**:
   ```bash
-  /plugin marketplace add galyarderlabs/galyarder-framework
-  /plugin install galyarder-framework@galyarderlabs-marketplace
+  /plugin add galyarderlabs-marketplace
   ```
 
-  Or install departments selectively:
+  - **Copilot CLI**:
+    ```bash
+    /plugin install galyarder-framework@galyarderlabs-marketplace
+    ```
 
-  ```bash
-  /plugin install executive-dept@galyarderlabs-marketplace
-  /plugin install engineering-dept@galyarderlabs-marketplace
-  /plugin install growth-dept@galyarderlabs-marketplace
-  /plugin install security-dept@galyarderlabs-marketplace
-  /plugin install product-dept@galyarderlabs-marketplace
-  /plugin install infrastructure-dept@galyarderlabs-marketplace
-  /plugin install legal-finance-dept@galyarderlabs-marketplace
-  /plugin install knowledge-dept@galyarderlabs-marketplace
-  ```
+  - **Gemini CLI**:
+    ```bash
+    gemini extensions install https://github.com/galyarderlabs/galyarder-framework
+    ```
 
-- **Gemini CLI**:
-  ```bash
-  gemini extensions install https://github.com/galyarderlabs/galyarder-framework
-  ```
-
-  For local skill discovery after the extension is installed:
-
-  ```bash
-  ./scripts/install.sh --tool gemini
-  ```
-
-  Note: Gemini currently loads `GEMINI.md` from the extension, but it does not expose external framework agents in `/agents list`. Galyarder skills are installed under `~/.gemini/skills/`.
+  Note: The framework uses a **Universal Plugin Architecture**. All assets are unified into `agents/`, `skills/`, and `commands/` for 100% compatibility across Google, Anthropic, and Microsoft environments.
 
 #### B. Autonomous Directives (Codex / OpenCode)
 *For tools that can autonomously fetch logic via direct instructions.*

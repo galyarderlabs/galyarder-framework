@@ -1,7 +1,7 @@
 {
   "name": "galyarder-growth",
   "description": "Growth Department for Galyarder Framework. Includes specialized agents, skills, and tools.",
-  "version": "1.8.15",
+  "version": "1.8.16",
   "author": {
     "name": "Galyarder Labs",
     "url": "https://galyarderlabs.github.io/galyarder-framework/"

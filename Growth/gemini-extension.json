@@ -1,7 +1,7 @@
 {
   "name": "galyarder-growth",
   "description": "Growth Department for Galyarder Framework.",
-  "version": "1.8.15",
+  "version": "1.8.16",
   "agents": "./agents/",
   "skills": [
     "./skills/",

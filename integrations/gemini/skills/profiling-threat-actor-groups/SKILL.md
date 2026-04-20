@@ -10,7 +10,7 @@ description: >
 domain: cybersecurity
 subdomain: threat-intelligence
 tags: [MITRE-ATT&CK, threat-actor, APT, CrowdStrike, Mandiant, attribution, kill-chain, NIST-CSF]
-version: "1.8.15"
+version: "1.8.16"
 author: mahipal
 license: Apache-2.0
 ---

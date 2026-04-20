@@ -16,7 +16,18 @@ If you have custom scripts or local references, update them according to this ma
 | `skills/` | `[Department]/skills/` |
 | `.claude/marketplace.json` | `.claude-plugin/marketplace.json` |
 
-## Migration Steps
+## v1.8.15 -> v1.8.16 (The Zero-Slop Hardening)
+
+### 1. Aider Decommission
+The `integrations/aider` directory and the 2MB+ `CONVENTIONS.md` monolith have been permanently purged. If you previously relied on Aider, we recommend transitioning to **Claude Code** or **Gemini CLI** for superior context handling.
+
+### 2. Universal Plugin Mapping
+To comply with the strict schema requirements of Google, Anthropic, and Microsoft, the following internal mapping is now enforced:
+- **Personas** are now located in `agents/`.
+- **Aesthetic Law / Design Specs** are now located in `skills/`.
+- **Slash Commands** are strictly in `commands/`.
+
+This ensures that tools only see valid directories, preventing "Context Bloat" and installation failures.
 
 1. **Flush Local Symlinks**:
    If using Codex or Gemini locally, remove old symlink directories:

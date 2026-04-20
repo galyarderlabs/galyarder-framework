@@ -20,18 +20,24 @@ The framework is surgically converted for the following environments:
 12. **Augment**: Performance-optimized AI workflow.
 13. **Antigravity**: System-level skill injection.
 
-## Command Silo Structure
+## Command Silo Structure (Universal Architecture)
 
-The repository is organized into 8 departments, each acting as a self-contained unit of intelligence.
+The repository is organized into 8 departments. To ensure compatibility with Google (Gemini), Anthropic (Claude), and Microsoft (Copilot), all assets are mapped to a flat tripartite structure:
 
 ```text
 Silo/
-├── agents/             # Specialized operational agents
-├── skills/             # Strategic SOPs and task units
+├── agents/             # Personas + Specialized Agents
+├── skills/             # Strategic SOPs + Aesthetic Design
 ├── commands/           # Rapid orchestration triggers
 ├── .claude-plugin/     # Claude Code manifest
 └── gemini-extension.json # Gemini CLI manifest
 ```
+
+## Zero-Slop Standard
+
+Following the Humans 3.0 protocol, all legacy context-bloat tools (e.g., Aider monoliths) have been purged. This ensures:
+- **100% Context Integrity**: 0% compression on 1M token models.
+- **Deterministic Loads**: Only the required instructions are loaded into the agent's memory.
 
 ## Conversion Engine
 

@@ -4,7 +4,7 @@ silo: Engineering
 degree: 2
 source: Engineering/agents/qa-automation-engineer.md
 ---
-# THE QA ENGINEER: AUTOMATION & INTEGRITY PROTOCOL
+# QA ENGINEER PROTOCOL
 
 ## 🧠 Strategic Intelligence
 This entity is a **agent** within the **Engineering** silo. 
