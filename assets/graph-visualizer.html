@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galyarder Neural Link</title>
-    <!-- Galyarder Library Pinning: Standardizing dependencies for Apex Reliability -->
     <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
     <script src="https://unpkg.com/3d-force-graph@1.73.0/dist/3d-force-graph.min.js"></script>
+    <script src="https://unpkg.com/three-spritetext@1.8.2/dist/three-spritetext.min.js"></script>
     <style>
         body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #000; font-family: 'Inter', 'Segoe UI', sans-serif; }
         #graph-container { width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; z-index: 1; }
         
-        .overlay { position: absolute; left: 20px; top: 20px; z-index: 20; background: rgba(0,0,0,0.85); padding: 25px; border-radius: 12px; border: 1px solid rgba(0, 212, 255, 0.4); backdrop-filter: blur(10px); width: 260px; color: #fff; }
-        h2 { margin: 0 0 5px 0; font-size: 16px; color: #00f2ff; letter-spacing: 2px; }
+        .overlay { position: absolute; left: 20px; top: 20px; z-index: 20; background: rgba(0,0,0,0.85); padding: 25px; border-radius: 12px; border: 1px solid rgba(0, 212, 255, 0.4); backdrop-filter: blur(10px); width: 260px; color: #fff; pointer-events: auto; }
+        h2 { margin: 0 0 5px 0; font-size: 16px; color: #00f2ff; letter-spacing: 2px; text-transform: uppercase; }
         .subtitle { font-size: 10px; color: #666; margin-bottom: 20px; text-transform: uppercase; }
         
         .toggle-btn { background: #111; border: 1px solid #333; color: #888; padding: 10px 15px; border-radius: 8px; cursor: pointer; width: 100%; font-size: 10px; transition: all 0.3s; text-transform: uppercase; font-weight: bold; }
@@ -21,17 +21,17 @@
         .legend-item { display: flex; align-items: center; margin-bottom: 8px; font-size: 11px; color: #aaa; }
         .color-box { width: 8px; height: 8px; margin-right: 12px; border-radius: 50%; box-shadow: 0 0 10px currentColor; }
 
-        #status-msg { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #00f2ff; font-size: 12px; letter-spacing: 4px; z-index: 100; text-align: center; }
-        #debug-log { position: absolute; bottom: 10px; left: 10px; font-size: 8px; color: #444; max-width: 400px; z-index: 100; pointer-events: none; }
+        #status-msg { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #00f2ff; font-size: 12px; letter-spacing: 4px; z-index: 100; text-align: center; pointer-events: none; }
+        #debug-log { position: absolute; bottom: 10px; left: 10px; font-size: 8px; color: #444; max-width: 300px; z-index: 100; pointer-events: none; }
     </style>
 </head>
 <body>
-    <div id="status-msg">NEURAL LINK CALIBRATING...</div>
+    <div id="status-msg">STABILIZING ASTRO-LINK...</div>
     <div id="debug-log"></div>
     
     <div class="overlay">
         <h2>GALYARDER NEURAL LINK</h2>
-        <div class="subtitle">v2.6 Apex Integrity</div>
+        <div class="subtitle">v2.7 Astro-Hierarchy</div>
         
         <div style="margin-bottom: 15px;">
             <button id="viewToggle" class="toggle-btn active">Strategic Galaxy</button>
@@ -63,52 +63,94 @@
         let Graph = null;
 
         async function init() {
-            log("Checking dependencies...");
+            log("Initializing Astro-Engine...");
             try {
-                if (typeof THREE === 'undefined') throw new Error("THREE.js failed to load.");
-                if (typeof ForceGraph3D === 'undefined') throw new Error("ForceGraph3D failed to load.");
+                if (typeof THREE === 'undefined' || typeof ForceGraph3D === 'undefined' || typeof SpriteText === 'undefined') {
+                    throw new Error("Core libraries not found. Checking orbit...");
+                }
 
                 const baseUrl = window.location.origin + window.location.pathname.split('/').slice(0, -2).join('/');
                 const dataUrl = `${baseUrl}/graph.json`;
-                log(`Syncing data: ${dataUrl}`);
                 
                 const response = await fetch(dataUrl);
-                if (!response.ok) throw new Error(`Fetch failed (${response.status})`);
+                if (!response.ok) throw new Error(`Access Denied: ${response.status}`);
                 
                 const raw = await response.json();
                 fullData = {
                     nodes: Object.keys(raw.nodes).map(id => ({ id, ...raw.nodes[id] })),
                     links: raw.edges
                 };
-                log(`Graph Map: ${fullData.nodes.length} nodes ready`);
 
                 Graph = ForceGraph3D()(document.getElementById('graph-container'))
                     .backgroundColor('#000000')
                     .showNavInfo(false)
-                    .nodeLabel(node => `<b style="color:${siloColors[node.silo]}">${node.title}</b>`)
                     .nodeColor(node => siloColors[node.silo] || '#888')
-                    .nodeRelSize(node => node.category === 'agent' ? 9 : 5)
-                    .linkColor(() => 'rgba(255,255,255,0.1)')
-                    .linkDirectionalParticles(1)
-                    .linkDirectionalParticleSpeed(0.003)
-                    .linkDirectionalParticleWidth(1);
+                    .nodeOpacity(0.9)
+                    // HIERARCHY SCALING: matahari vs bumi vs pluto
+                    .nodeRelSize(node => {
+                        if (node.category === 'core-hukum') return 12; // MATAHARI
+                        if (node.category === 'agent') return 8;      // BUMI
+                        if (node.strategic) return 5;                  // MOON
+                        return 2;                                      // PLUTO/ASTEROID
+                    })
+                    .linkColor(() => 'rgba(255,255,255,0.08)')
+                    .linkDirectionalParticles(2)
+                    .linkDirectionalParticleSpeed(0.004)
+                    .onNodeClick(node => {
+                        const distance = 100;
+                        const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
+                        Graph.cameraPosition({ x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, node, 1200);
+                    });
 
-                // Add Galaxy Starfield
+                // TEXT LABELS: Glow in the dark intelligence
+                Graph.nodeThreeObject(node => {
+                    const group = new THREE.Group();
+                    
+                    // The Planet Sphere
+                    const size = node.category === 'core-hukum' ? 12 : node.category === 'agent' ? 8 : node.strategic ? 5 : 2;
+                    const sphere = new THREE.Mesh(
+                        new THREE.SphereGeometry(size),
+                        new THREE.MeshLambertMaterial({ 
+                            color: siloColors[node.silo] || '#888',
+                            transparent: true,
+                            opacity: 0.8,
+                            emissive: siloColors[node.silo] || '#888',
+                            emissiveIntensity: 0.5
+                        })
+                    );
+                    group.add(sphere);
+
+                    // The Dynamic Label (Only for strategic or hovered)
+                    if (node.strategic || node.category === 'agent') {
+                        const sprite = new SpriteText(node.title);
+                        sprite.color = siloColors[node.silo] || '#fff';
+                        sprite.textHeight = size * 1.5;
+                        sprite.position.y = size + 10;
+                        sprite.padding = 2;
+                        sprite.backgroundColor = 'rgba(0,0,0,0.5)';
+                        sprite.borderRadius = 4;
+                        group.add(sprite);
+                    }
+                    
+                    return group;
+                });
+
+                // Add 15k Star Nebula
                 const starsGeometry = new THREE.BufferGeometry();
                 const starsVertices = [];
-                for (let i = 0; i < 10000; i++) {
-                    starsVertices.push(THREE.MathUtils.randFloatSpread(5000), THREE.MathUtils.randFloatSpread(5000), THREE.MathUtils.randFloatSpread(5000));
+                for (let i = 0; i < 15000; i++) {
+                    starsVertices.push(THREE.MathUtils.randFloatSpread(6000), THREE.MathUtils.randFloatSpread(6000), THREE.MathUtils.randFloatSpread(6000));
                 }
                 starsGeometry.setAttribute('position', new THREE.Float32BufferAttribute(starsVertices, 3));
-                const starsMaterial = new THREE.PointsMaterial({ color: 0xFFFFFF, size: 0.6, transparent: true, opacity: 0.4 });
+                const starsMaterial = new THREE.PointsMaterial({ color: 0xFFFFFF, size: 0.7, transparent: true, opacity: 0.3 });
                 Graph.scene().add(new THREE.Points(starsGeometry, starsMaterial));
 
                 updateGraph();
                 statusMsg.style.display = 'none';
-                log("Galaxy initialized.");
+                log("Astro-System Online.");
 
             } catch (err) {
-                log(`CRITICAL FAIL: ${err.message}`);
+                log(`ORBITAL ERROR: ${err.message}`);
                 statusMsg.innerHTML = `<span style="color: #ff3131">NEURAL LINK OFFLINE</span><br><small>${err.message}</small>`;
             }
         }
@@ -131,7 +173,7 @@
             updateGraph();
         };
 
-        window.onload = () => setTimeout(init, 500);
+        window.onload = () => setTimeout(init, 400);
     </script>
 </body>
 </html>
