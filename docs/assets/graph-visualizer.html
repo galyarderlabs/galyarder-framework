@@ -3,44 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galyarder Neural Link</title>
+    <title>Galyarder Framework | Neural Interface</title>
     <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
     <script src="https://unpkg.com/3d-force-graph@1.73.0/dist/3d-force-graph.min.js"></script>
     <script src="https://unpkg.com/three-spritetext@1.8.2/dist/three-spritetext.min.js"></script>
     <style>
-        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #050505; font-family: 'Inter', sans-serif; }
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #02040a; font-family: 'Inter', sans-serif; color: #fff; }
         #graph-container { width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; z-index: 1; }
         
-        .overlay { position: absolute; left: 20px; top: 20px; z-index: 20; background: rgba(10,10,10,0.95); padding: 25px; border-radius: 8px; border: 1px solid #1a1a1a; backdrop-filter: blur(10px); width: 280px; color: #fff; pointer-events: auto; }
-        h1 { margin: 0 0 5px 0; font-size: 18px; color: #00f2ff; letter-spacing: 2px; text-transform: uppercase; font-weight: 800; }
-        .subtitle { font-size: 11px; color: #444; margin-bottom: 25px; text-transform: uppercase; }
+        .hud { position: absolute; left: 30px; top: 30px; z-index: 20; background: rgba(5, 10, 20, 0.9); padding: 30px; border-radius: 4px; border-left: 3px solid #00f2ff; backdrop-filter: blur(20px); width: 300px; pointer-events: auto; }
+        h1 { margin: 0 0 5px 0; font-size: 20px; color: #fff; letter-spacing: 3px; text-transform: uppercase; font-weight: 900; }
+        .tagline { font-size: 10px; color: #00f2ff; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; }
         
-        .view-controls { display: flex; flex-direction: column; gap: 8px; }
-        .view-btn { background: #111; border: 1px solid #222; color: #666; padding: 12px; border-radius: 4px; cursor: pointer; font-size: 11px; font-weight: 600; text-transform: uppercase; text-align: center; transition: all 0.2s; }
-        .view-btn:hover { border-color: #333; color: #888; }
-        .view-btn.active { background: #00d4ff; border-color: #00d4ff; color: #000; }
+        .cortex-selector { display: flex; flex-direction: column; gap: 10px; }
+        .cortex-btn { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); color: #666; padding: 14px; border-radius: 2px; cursor: pointer; font-size: 10px; font-weight: 800; text-transform: uppercase; text-align: left; transition: all 0.3s; letter-spacing: 1px; }
+        .cortex-btn:hover { background: rgba(0, 242, 255, 0.05); color: #aaa; }
+        .cortex-btn.active { border-color: #00f2ff; color: #00f2ff; background: rgba(0, 242, 255, 0.1); box-shadow: inset 0 0 15px rgba(0,242,255,0.1); }
         
-        .legend { margin-top: 25px; padding-top: 15px; border-top: 1px solid #1a1a1a; }
-        .legend-item { display: flex; align-items: center; margin-bottom: 10px; font-size: 10px; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        .color-dot { width: 8px; height: 8px; margin-right: 12px; border-radius: 2px; box-shadow: 0 0 8px currentColor; }
+        .silo-map { margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05); }
+        .silo-item { display: flex; align-items: center; margin-bottom: 12px; font-size: 9px; color: #555; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; }
+        .synapse-dot { width: 6px; height: 6px; margin-right: 15px; border-radius: 50%; }
 
-        #loading { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #00f2ff; font-size: 12px; letter-spacing: 4px; z-index: 100; font-weight: bold; }
+        #loading-overlay { position: absolute; width: 100%; height: 100%; background: #02040a; display: flex; align-items: center; justify-content: center; z-index: 1000; transition: opacity 1s; }
+        .pulse { font-size: 12px; letter-spacing: 8px; color: #00f2ff; animation: pulse-anim 2s infinite; font-weight: 900; }
+        @keyframes pulse-anim { 0% { opacity: 0.3; } 50% { opacity: 1; } 100% { opacity: 0.3; } }
     </style>
 </head>
 <body>
-    <div id="loading">SYNCING NEURAL LINK...</div>
+    <div id="loading-overlay">
+        <div class="pulse">INITIALIZING NEURAL SYNAPSE</div>
+    </div>
     
-    <div class="overlay">
-        <h1>NEURAL LINK</h1>
-        <div class="subtitle">Framework Visualization v3.0</div>
+    <div class="hud">
+        <h1>GALYARDER FRAMEWORK</h1>
+        <div class="tagline">Neural Interface v3.1</div>
         
-        <div class="view-controls">
-            <button id="btn-core" class="view-btn active">System Core</button>
-            <button id="btn-agent" class="view-btn">Agent Network</button>
-            <button id="btn-full" class="view-btn">Full Mesh</button>
+        <div class="cortex-selector">
+            <button id="btn-core" class="cortex-btn active">Cognitive Core</button>
+            <button id="btn-agent" class="cortex-btn">Agentic Cortex</button>
+            <button id="btn-full" class="cortex-btn">Full Synapse</button>
         </div>
 
-        <div class="legend" id="legend"></div>
+        <div class="silo-map" id="silo-map"></div>
     </div>
 
     <div id="graph-container"></div>
@@ -51,14 +55,14 @@
             "Security": "#ff3131", "Product": "#ff9100", "Knowledge": "#00d4ff", "Root": "#ffffff"
         };
 
-        const legendDiv = document.getElementById('legend');
+        const mapDiv = document.getElementById('silo-map');
         Object.keys(siloColors).forEach(silo => {
             if (silo === "Root") return;
-            legendDiv.innerHTML += `<div class="legend-item"><div class="color-dot" style="background: ${siloColors[silo]}; color: ${siloColors[silo]}"></div> ${silo}</div>`;
+            mapDiv.innerHTML += `<div class="silo-item"><div class="synapse-dot" style="background: ${siloColors[silo]}; box-shadow: 0 0 10px ${siloColors[silo]}"></div> ${silo}</div>`;
         });
 
         let fullData = null;
-        let currentMode = 'core'; // core | agent | full
+        let currentMode = 'core'; 
         let Graph = null;
 
         async function init() {
@@ -73,76 +77,82 @@
                 };
 
                 Graph = ForceGraph3D()(document.getElementById('graph-container'))
-                    .backgroundColor('#050505')
+                    .backgroundColor('#02040a')
                     .showNavInfo(false)
-                    .nodeRelSize(8)
-                    .nodeColor(node => siloColors[node.silo] || '#444')
-                    .linkColor(() => 'rgba(255, 255, 255, 0.1)')
-                    .linkDirectionalParticles(1)
-                    .linkDirectionalParticleSpeed(0.004)
+                    // ORGANIC NEURAL LINKS
+                    .linkCurvature(0.2)
+                    .linkColor(() => 'rgba(0, 242, 255, 0.15)')
+                    .linkDirectionalParticles(3)
+                    .linkDirectionalParticleSpeed(0.006)
+                    .linkDirectionalParticleWidth(1.2)
                     .onNodeClick(node => {
-                        const distance = 200;
+                        const distance = 150;
                         const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
                         Graph.cameraPosition({ x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, node, 1200);
                     });
 
-                // Professional Node Object
+                // NEURON RENDERING
                 Graph.nodeThreeObject(node => {
                     const group = new THREE.Group();
                     
-                    // Sphere size based on importance
-                    let size = 6;
-                    if (node.category === 'core-hukum') size = 20;
-                    else if (node.category === 'agent') size = 12;
-                    else if (node.strategic) size = 8;
+                    let size = 5;
+                    if (node.category === 'core-hukum') size = 18;
+                    else if (node.category === 'agent') size = 10;
+                    else if (node.strategic) size = 7;
 
-                    const sphere = new THREE.Mesh(
+                    // The Neural Cell (Glow)
+                    const neuron = new THREE.Mesh(
                         new THREE.SphereGeometry(size),
                         new THREE.MeshLambertMaterial({ 
                             color: siloColors[node.silo] || '#444',
                             transparent: true,
-                            opacity: 0.9,
+                            opacity: 0.8,
                             emissive: siloColors[node.silo] || '#000',
-                            emissiveIntensity: 0.5
+                            emissiveIntensity: 0.6
                         })
                     );
-                    group.add(sphere);
+                    group.add(neuron);
 
-                    // Labels: Permanent for Core/Agents in their respective views
-                    let shouldLabel = false;
-                    if (currentMode === 'core') shouldLabel = (node.category === 'core-hukum');
-                    else if (currentMode === 'agent') shouldLabel = (node.category === 'core-hukum' || node.category === 'agent');
-                    else shouldLabel = (node.category === 'core-hukum' || node.category === 'agent' || node.degree > 15);
+                    // Thought Labels
+                    let showLabel = false;
+                    if (currentMode === 'core') showLabel = (node.category === 'core-hukum' || node.degree > 25);
+                    else if (currentMode === 'agent') showLabel = (node.category === 'core-hukum' || node.category === 'agent');
+                    else showLabel = (node.category === 'core-hukum' || node.category === 'agent' || node.degree > 15);
 
-                    if (shouldLabel) {
-                        const label = new SpriteText(node.title);
-                        label.color = siloColors[node.silo] || '#fff';
-                        label.textHeight = size * 0.8;
-                        label.position.y = size + (size * 0.5);
-                        label.fontFace = 'Inter';
-                        label.backgroundColor = 'rgba(0,0,0,0.8)';
-                        label.padding = 3;
-                        label.borderRadius = 2;
-                        group.add(label);
+                    if (showLabel) {
+                        const thought = new SpriteText(node.title);
+                        thought.color = '#fff';
+                        thought.textHeight = size * 0.7;
+                        thought.position.y = size + 8;
+                        thought.fontFace = 'Inter';
+                        thought.fontWeight = 'bold';
+                        thought.backgroundColor = 'rgba(2, 4, 10, 0.9)';
+                        thought.padding = 3;
+                        thought.borderRadius = 1;
+                        group.add(thought);
                     }
                     
                     return group;
                 });
 
-                // Neural Grid Background
-                const grid = new THREE.GridHelper(10000, 50, 0x111111, 0x050505);
-                grid.position.y = -500;
+                // Bio-Digital Grid
+                const grid = new THREE.GridHelper(10000, 40, 0x0a1020, 0x02040a);
+                grid.position.y = -600;
                 Graph.scene().add(grid);
 
-                // Forces: Structured and Clean
-                Graph.d3Force('charge').strength(-500);
-                Graph.d3Force('link').distance(200);
+                // Neural Dynamics
+                Graph.d3Force('charge').strength(-600);
+                Graph.d3Force('link').distance(250);
 
                 updateView();
-                document.getElementById('loading').style.display = 'none';
+                
+                const loader = document.getElementById('loading-overlay');
+                loader.style.opacity = '0';
+                setTimeout(() => loader.style.display = 'none', 1000);
 
             } catch (err) {
-                document.getElementById('loading').innerHTML = `<span style="color:red">ERROR: ${err.message}</span>`;
+                console.error(err);
+                document.getElementById('loading-overlay').innerHTML = `<div style="color:red">INTERFACE COLLAPSE: ${err.message}</div>`;
             }
         }
 
@@ -164,12 +174,12 @@
             });
 
             Graph.graphData({ nodes: filteredNodes, links: filteredLinks });
-            Graph.nodeThreeObject(Graph.nodeThreeObject()); // Force refresh labels
+            Graph.nodeThreeObject(Graph.nodeThreeObject()); 
         }
 
         function setMode(mode) {
             currentMode = mode;
-            document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.cortex-btn').forEach(b => b.classList.remove('active'));
             document.getElementById(`btn-${mode}`).classList.add('active');
             updateView();
         }
