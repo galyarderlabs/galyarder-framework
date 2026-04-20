@@ -3,7 +3,7 @@ name: "doc-maintenance"
 description: "Audit top-level documentation (README, SPEC, PRODUCT) against recent git history to find drift  shipped features missing from docs or features listed as upcoming that already landed. Proposes minimal edits, creates a branch, and opens a PR. Use when asked to review docs for accuracy, after major feature merges, or on a periodic schedule."
 risk: low
 source: internal
-date_added: '2026-04-19'
+date_added: '2026-04-20'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

@@ -1,9 +1,9 @@
 ---
-title: "testing-for-xss-vulnerabilities-with-burpsuite | Galyarder Framework"
+title: "xss-testing-burpsuite | Galyarder Framework"
 description: "Identifying and validating cross-site scripting vulnerabilities using Burp Suite's scanner, intruder, and repeater tools during authorized security assessments."
 ---
 
-# :material-folder-zip: testing-for-xss-vulnerabilities-with-burpsuite
+# :material-folder-zip: xss-testing-burpsuite
 
 <p class="domain-label">Security Skill</p>
 

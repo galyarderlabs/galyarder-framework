@@ -120,6 +120,12 @@ Discover the high-integrity workforce and protocols designed for autonomous orch
 
     Investor Email Specialist. Use to write fundraising outreach, warm intro blurbs, follow-ups, investor updates, and close-the-loop emails with founder-grade brevity and specificity.
 
+-   **[galyarder-specialist](galyarder-specialist/index.md)**
+
+    ---
+
+    Use when the founder needs a single orchestrator to route work across multiple departments, synthesize specialist output, or translate an ambiguous business request into a concrete execution path.
+
 -   **[investor-research](investor-research/index.md)**
 
     ---
@@ -564,17 +570,17 @@ Discover the high-integrity workforce and protocols designed for autonomous orch
 
     >
 
--   **[testing-for-xss-vulnerabilities-with-burpsuite](testing-for-xss-vulnerabilities-with-burpsuite/index.md)**
-
-    ---
-
-    Identifying and validating cross-site scripting vulnerabilities using Burp Suite's scanner, intruder, and repeater tools during authorized security assessments.
-
 -   **[tracking-threat-actor-infrastructure](tracking-threat-actor-infrastructure/index.md)**
 
     ---
 
     Threat actor infrastructure tracking involves monitoring and mapping adversary-controlled assets including command-and-control (C2) servers, phishing domains, exploit kit hosts, bulletproof hosting, a
+
+-   **[xss-testing-burpsuite](testing-for-xss-vulnerabilities-with-burpsuite/index.md)**
+
+    ---
+
+    Identifying and validating cross-site scripting vulnerabilities using Burp Suite's scanner, intruder, and repeater tools during authorized security assessments.
 
 </div>
 

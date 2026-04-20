@@ -50,7 +50,7 @@ kind: company | team | agent | project | task
 slug: url-safe-stable-identity
 name: Human Readable Name
 description: Short description for discovery
-version: 0.1.0
+version: "1.8.15"
 license: MIT
 authors:
   - name: Jane Doe

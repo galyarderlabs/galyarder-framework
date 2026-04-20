@@ -2,6 +2,79 @@
 
 All notable changes to Galyarder Framework will be documented in this file.
 
+## [1.8.14] - 2026-04-20
+### Changed
+- **Canonical Root Runtime**: `agents/`, `skills/`, `commands/`, and `personas/` remain the source of truth for host installs and bundle generation.
+### Fixed
+- **Compat Layer Removal**: Removed the temporary `Compat/` restore layer after migrating restored runtime assets into the canonical root runtime.
+- **Bundle Generation**: `scripts/build_root_extension_surface.py` now treats the root runtime as canonical and only regenerates `.marketplace/full`, instead of re-merging from a separate compatibility source tree.
+
+## [1.8.13] - 2026-04-20
+### Added
+- **Compatibility Runtime Layer**: Added `Compat/agents` and `Compat/skills` as a source layer for generated root and marketplace runtime surfaces so legacy assets can exist without re-fragmenting department ownership.
+### Fixed
+- **Missing Agent Restore**: Restored missing runtime agents including `galyarder-specialist`, `analytics-architect`, `doc-updater`, `experimentation-engineer`, `interface-designer`, `mcp-builder`, `revenue-architect`, `support-lead`, and `ui-ux-designer`.
+- **Missing Skill Restore**: Restored legacy compatibility skills and orchestration wrappers so historical prompts, docs, and host registries resolve cleanly again.
+- **Runtime Parity Audit**: Rebuilt root and full-bundle surfaces until historical canonical agents, personas, skills, and subagents all resolve with zero missing entries in the parity audit.
+
+## [1.8.12] - 2026-04-20
+### Fixed
+- **Claude Bundle Autodiscovery**: The full Claude marketplace bundle manifest now relies on Claude Code's default `agents/`, `skills/`, and `commands/` discovery instead of explicit path override fields, avoiding the remaining `agents: Invalid input` validator failure.
+
+## [1.8.11] - 2026-04-20
+### Fixed
+- **Claude Bundle Manifest Shape**: The full marketplace bundle now exports `agents`, `skills`, and `commands` as string paths instead of arrays, matching the Claude Code plugin validator and fixing `agents: Invalid input` install failures.
+
+## [1.8.10] - 2026-04-20
+### Fixed
+- **Claude Marketplace Manifest Schema**: Full bundle and departmental Claude plugin manifests now use an object-shaped `author` field and no longer ship the unsupported `personas` key, fixing marketplace install validation failures.
+- **Executive Persona Identity Parity**: `galyarder-cfo-coo`, `galyarder-cmo`, and `galyarder-cto` now carry the same host-aware identity contract as `galyarder-ceo`, so Copilot-style hosts stop collapsing them to the platform default persona.
+- **Skill Name Length**: Shortened the canonical XSS Burp Suite skill name to `xss-testing-burpsuite`, keeping prefixed host registries under the 64-character limit.
+
+## [1.8.9] - 2026-04-20
+### Fixed
+- **Copilot Persona Identity**: `galyarder-ceo` now includes an explicit identity contract so hosts that preserve their own platform identity still answer as the Galyarder CEO persona running inside the host, instead of collapsing to a plain "I am just Copilot" response.
+
+## [1.8.8] - 2026-04-19
+### Fixed
+- **Gemini Agent Tool Schema**: Root and full-bundle runtime agents now export Gemini-native `allowed-tools` blocks instead of legacy `tools` arrays, reducing the chance of `400 INVALID_ARGUMENT` failures when custom agents are invoked.
+
+## [1.8.7] - 2026-04-19
+### Fixed
+- **Gemini Agent Schema**: Root and full-bundle agent exports now strip unsupported `color`, `emoji`, and `vibe` frontmatter keys so Gemini can load executive/persona agents without validation errors.
+- **Design Skill Packaging**: Root and full-bundle design references now ship with valid YAML frontmatter in `skills/design-md-*/SKILL.md`, fixing skill loader warnings in Codex and other hosts that require native skill metadata.
+
+## [1.8.6] - 2026-04-19
+### Added
+- **Canonical Root Runtime**: `agents/`, `skills/`, `commands/`, and `personas/` are now real committed runtime directories instead of root symlink shims.
+- **Full Bundle Root Surface**: `.marketplace/full/` now carries the same real root runtime layout so all-in-one marketplace installs expose the same asset structure as the repo root.
+### Changed
+- **Runtime Ownership**: Host integrations now build from the root runtime surface first; department silos remain the source content for docs/reporting and surface generation, not the direct install shape.
+- **Design Packaging**: Growth design libraries now ship as first-class skill directories under `skills/design-md-*/SKILL.md` and flow through generated integrations the same way as other skills.
+- **Manifest Routing**: Full bundle manifests now point at root `./agents/`, `./skills/`, `./commands/`, and `./personas/` surfaces instead of scattered department paths.
+### Fixed
+- **GitHub Extension Packaging**: Installers that scan fixed root paths now receive actual directories from the repository archive instead of repo-local symlink tricks that only worked after local regeneration.
+- **Cross-Tool Consistency**: Gemini, Codex, Cursor, Claude bundle exports, and generated integrations now consume the same canonical runtime shape.
+
+## [1.8.5] - 2026-04-19
+### Added
+- **Root Compatibility Surface**: Restored root-level `agents/`, `skills/`, `commands/`, and `personas/` paths as generated symlink surfaces so extension hosts that scan fixed root directories can discover framework assets again.
+### Changed
+- **Gemini/Cursor/Codex Root Paths**: Repointed top-level manifests back to root compatibility directories instead of custom bundle-only paths.
+### Fixed
+- **Gemini Extension Discovery**: Root extension installs can now resolve the standard directory names Gemini CLI expects for custom agents, skills, and commands.
+
+## [1.8.4] - 2026-04-19
+### Added
+- **Host Bundle Layer**: Added root `Bundle/` and `Gemini/` all-in-one install surfaces so multi-department assets are exposed through single paths that host manifests can scan.
+### Changed
+- **Gemini Manifest Shape**: Reworked the top-level Gemini extension manifest to use single bundle paths for `agents`, `skills`, and `commands`, matching the older manifest style that previously registered custom assets.
+- **Design Discovery**: Folded `Growth/design/*.md` assets into bundle-backed skill entries so design libraries travel with all-in-one installs.
+### Fixed
+- **Executive Visibility**: Exposed CEO/CFO/CMO/CTO personas through host-facing `agents` bundles for pickers that ignore `personas`.
+- **Cursor/Codex Root Paths**: Repointed root plugin manifests away from nonexistent `./agents` / `./skills` / `./commands` directories to valid bundle paths.
+- **Gemini Local Install**: Fixed Gemini sync/install scripts so generated skills deploy from `integrations/gemini` instead of the pre-silo root layout.
+
 ## [1.8.3] - 2026-04-19
 ### Added
 - **Bundle Install Path**: Added a top-level `galyarder-framework` marketplace bundle so all 8 departments can be installed as one package.

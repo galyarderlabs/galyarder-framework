@@ -1,6 +1,11 @@
 ---
 name: sre
-tools: [read_file, write_file, replace, run_shell_command, grep_search]
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Grep
 description: |
   Site Reliability Engineer. Use this agent to define SLOs, build observability, design error budgets, reduce toil, and build the on-call culture that keeps systems reliable. Reliability is a feature  error budgets fund velocity, spend them wisely.
 model: inherit

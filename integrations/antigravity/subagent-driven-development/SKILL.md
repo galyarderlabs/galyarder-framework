@@ -3,7 +3,7 @@ name: "subagent-driven-development"
 description: "Use when executing implementation plans with independent tasks in the current session"
 risk: low
 source: internal
-date_added: '2026-04-19'
+date_added: '2026-04-20'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

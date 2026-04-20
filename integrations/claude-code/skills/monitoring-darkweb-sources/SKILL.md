@@ -10,7 +10,7 @@ description: >
 domain: cybersecurity
 subdomain: threat-intelligence
 tags: [dark-web, OSINT, credential-monitoring, ransomware-leaks, Recorded-Future, SpiderFoot, CTI]
-version: 1.0.0
+version: "1.8.15"
 author: team-cybersecurity
 license: Apache-2.0
 ---

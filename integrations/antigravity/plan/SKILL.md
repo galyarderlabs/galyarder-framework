@@ -3,7 +3,7 @@ name: "plan"
 description: "Restate requirements, assess risks, and create a step-by-step implementation plan with Vertical Slices (Tracer Bullets)."
 risk: low
 source: internal
-date_added: '2026-04-19'
+date_added: '2026-04-20'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

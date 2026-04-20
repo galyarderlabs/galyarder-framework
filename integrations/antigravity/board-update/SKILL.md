@@ -3,7 +3,7 @@ name: "board-update"
 description: "Investor And Board Communication Specialist. Use to draft monthly investor updates, quarterly board decks, and high-signal stakeholder communications that surface wins, misses, risks, and asks clearly."
 risk: low
 source: internal
-date_added: '2026-04-19'
+date_added: '2026-04-20'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

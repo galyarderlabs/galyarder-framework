@@ -1,14 +1,14 @@
 ---
 node_type: core-hukum
 silo: Root
-degree: 310
+degree: 313
 source: GEMINI.md
 ---
 # Galyarder Framework: Advanced Agentic Context (Gemini CLI)
 
 ## 🧠 Strategic Intelligence
 This entity is a **core-hukum** within the **Root** silo. 
-It has a connectivity degree of **310**.
+It has a connectivity degree of **313**.
 
 ## 🔗 Neural Links
 
@@ -27,6 +27,7 @@ It has a connectivity degree of **310**.
 - [[galyarder-ceo.md]] (uses_proxy | 0.8)
 - [[chief-of-staff.md]] (uses_proxy | 0.8)
 - [[THE-FUNDRAISING-OPERATOR:-CAPITAL-COMMAND]] (uses_proxy | 0.8)
+- [[GALYARDER-SPECIALIST:-FOUNDER-ORCHESTRATION-PROTOCOL]] (uses_proxy | 0.8)
 - [[Using-Skills]] (uses_proxy | 0.8)
 - [[Writing-Skills]] (uses_proxy | 0.8)
 - [[Brainstorming-Ideas-Into-Designs]] (uses_proxy | 0.8)
@@ -40,6 +41,7 @@ It has a connectivity degree of **310**.
 - [[MARKET-RESEARCH:-STRATEGIC-LANDSCAPE-PROTOCOL]] (uses_proxy | 0.8)
 - [[LEAD-SCORING:-PIPELINE-FOCUS-SYSTEM]] (uses_proxy | 0.8)
 - [[FOUNDER-THOUGHT-LEADERSHIP:-IP-ENGINE]] (uses_proxy | 0.8)
+- [[Galyarder-Specialist]] (uses_proxy | 0.8)
 - [[Test-should-fail---we-haven't-implemented-yet]] (uses_proxy | 0.8)
 - [[E2E-Test-Runner]] (uses_proxy | 0.8)
 - [[THE-VERCEL-&-REACT-EXPERT:-PERFORMANCE-PROTOCOL]] (uses_proxy | 0.8)
@@ -186,6 +188,7 @@ It has a connectivity degree of **310**.
 - [[Galyarder-Framework-Vision:-The-Humans-3.0-Protocol]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-chief-of-staff]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-fundraising-operator]] (uses_proxy | 0.8)
+- [[:material-folder-zip:-galyarder-specialist]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-tdd-guide]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-e2e-runner]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-vercel-react-expert]] (uses_proxy | 0.8)
@@ -195,7 +198,6 @@ It has a connectivity degree of **310**.
 - [[:material-folder-zip:-qa-automation-engineer]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-super-architect]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-architect]] (uses_proxy | 0.8)
-- [[:material-folder-zip:-elite-developer]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-remotion-engineer]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-sales-engineer]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-conversion-engineer]] (uses_proxy | 0.8)
@@ -229,6 +231,7 @@ It has a connectivity degree of **310**.
 - [[:material-folder-zip:-market-research]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-lead-scoring]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-founder-thought-leadership]] (uses_proxy | 0.8)
+- [[:material-folder-zip:-galyarder-specialist]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-test-driven-development]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-systematic-debugging]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-verification-before-completion]] (uses_proxy | 0.8)
@@ -263,7 +266,7 @@ It has a connectivity degree of **310**.
 - [[:material-folder-zip:-executing-red-team-exercise]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-monitoring-darkweb-sources]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-tracking-threat-actor-infrastructure]] (uses_proxy | 0.8)
-- [[:material-folder-zip:-testing-for-xss-vulnerabilities-with-burpsuite]] (uses_proxy | 0.8)
+- [[:material-folder-zip:-xss-testing-burpsuite]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-generating-threat-intelligence-reports]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-executing-phishing-simulation-campaign]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-investigating-phishing-email-incident]] (uses_proxy | 0.8)

@@ -10,7 +10,7 @@ domain: cybersecurity
 subdomain: mobile-security
 author: mahipal
 tags: [mobile-security, android, ios, burp-suite, traffic-interception, penetration-testing]
-version: 1.0.0
+version: "1.8.15"
 license: Apache-2.0
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

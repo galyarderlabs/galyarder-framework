@@ -3,7 +3,7 @@ name: "email-marketing-bible"
 description: "Comprehensive, data-backed email marketing knowledge base. 908 sources, 4,798 insights. Use when reviewing email setups, building automation flows, diagnosing deliverability, writing email copy, selecting platforms, or pulling Standards. Covers strategy, flows, deliverability, copywriting, segmentation, compliance, cold email, and 19 industry playbooks."
 risk: low
 source: internal
-date_added: '2026-04-19'
+date_added: '2026-04-20'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

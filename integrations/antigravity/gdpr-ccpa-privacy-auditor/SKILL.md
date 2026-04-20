@@ -3,7 +3,7 @@ name: "gdpr-ccpa-privacy-auditor"
 description: "Audits web applications to ensure declared privacy policies match actual technical data collection practices. Use to identify discrepancies in cookie usage, tracking scripts, and user data handling."
 risk: low
 source: internal
-date_added: '2026-04-19'
+date_added: '2026-04-20'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

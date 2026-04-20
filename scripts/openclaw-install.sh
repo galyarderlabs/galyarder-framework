@@ -5,7 +5,10 @@
 set -euo pipefail
 
 SKILLS_DIR="${HOME}/.openclaw/workspace/skills"
-REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+# HARDENED PATH RESOLUTION: Trace symlinks to the real framework source
+REAL_PATH=$(readlink -f "$0")
+SCRIPT_DIR="$(cd "$(dirname "$REAL_PATH")" && pwd)"
+REPO_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 DRY_RUN=false
 
 [[ "${1:-}" == "--dry-run" ]] && DRY_RUN=true

@@ -1,6 +1,10 @@
 ---
 name: chief-of-staff
-tools: [read_file, write_file, replace, grep_search]
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Grep
 description: |
   Master coordinator for the founder. Filters noise, owns cross-functional processes, enforces consistency, routes decisions, and positions outputs for impact so the founder can think clearly. Doesn't own any function  owns the space between all of them.
 model: inherit

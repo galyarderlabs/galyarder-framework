@@ -4,7 +4,7 @@ This directory contains converted Galyarder Framework assets for **Hermes Agent*
 
 ## Included Assets
 
-- **212** assets.
+- **272** assets.
 
 ## Format
 

@@ -3,7 +3,7 @@ name: "release-changelog"
 description: "Generate the stable Galyarder Framework release changelog at releases/vYYYY.MDD.P.md by reading commits, changesets, and merged PR context since the last stable tag."
 risk: low
 source: internal
-date_added: '2026-04-19'
+date_added: '2026-04-20'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
