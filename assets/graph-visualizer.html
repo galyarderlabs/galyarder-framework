@@ -11,33 +11,37 @@
         body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #000; font-family: 'Inter', 'Segoe UI', sans-serif; }
         #graph-container { width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; z-index: 1; }
         
-        .overlay { position: absolute; left: 20px; top: 20px; z-index: 20; background: rgba(0,0,0,0.85); padding: 25px; border-radius: 12px; border: 1px solid rgba(0, 212, 255, 0.4); backdrop-filter: blur(10px); width: 260px; color: #fff; pointer-events: auto; }
-        h2 { margin: 0 0 5px 0; font-size: 16px; color: #00f2ff; letter-spacing: 2px; text-transform: uppercase; }
-        .subtitle { font-size: 10px; color: #666; margin-bottom: 20px; text-transform: uppercase; }
+        .overlay { position: absolute; left: 20px; top: 20px; z-index: 20; background: rgba(0,0,0,0.85); padding: 25px; border-radius: 12px; border: 1px solid rgba(0, 212, 255, 0.4); backdrop-filter: blur(10px); width: 280px; color: #fff; pointer-events: auto; }
+        h2 { margin: 0 0 5px 0; font-size: 18px; color: #00f2ff; letter-spacing: 3px; text-transform: uppercase; font-weight: 900; }
+        .subtitle { font-size: 10px; color: #666; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
         
-        .toggle-btn { background: #111; border: 1px solid #333; color: #888; padding: 10px 15px; border-radius: 8px; cursor: pointer; width: 100%; font-size: 10px; transition: all 0.3s; text-transform: uppercase; font-weight: bold; }
-        .toggle-btn.active { background: #00d4ff; border-color: #00d4ff; color: #000; }
+        .toggle-btn { background: #111; border: 1px solid #333; color: #888; padding: 12px 15px; border-radius: 8px; cursor: pointer; width: 100%; font-size: 10px; transition: all 0.3s; text-transform: uppercase; font-weight: bold; }
+        .toggle-btn.active { background: #00d4ff; border-color: #00d4ff; color: #000; box-shadow: 0 0 15px rgba(0,212,255,0.5); }
         
-        .legend-item { display: flex; align-items: center; margin-bottom: 8px; font-size: 11px; color: #aaa; }
-        .color-box { width: 8px; height: 8px; margin-right: 12px; border-radius: 50%; box-shadow: 0 0 10px currentColor; }
+        .legend-item { display: flex; align-items: center; margin-bottom: 10px; font-size: 11px; color: #aaa; font-weight: 500; }
+        .color-box { width: 10px; height: 10px; margin-right: 15px; border-radius: 50%; box-shadow: 0 0 15px currentColor; }
 
-        #status-msg { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #00f2ff; font-size: 12px; letter-spacing: 4px; z-index: 100; text-align: center; pointer-events: none; }
-        #debug-log { position: absolute; bottom: 10px; left: 10px; font-size: 8px; color: #444; max-width: 300px; z-index: 100; pointer-events: none; }
+        #status-msg { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #00f2ff; font-size: 14px; letter-spacing: 6px; z-index: 100; text-align: center; font-weight: bold; pointer-events: none; }
+        #debug-log { position: absolute; bottom: 10px; left: 10px; font-size: 9px; color: #333; max-width: 400px; z-index: 100; pointer-events: none; opacity: 0.5; }
     </style>
 </head>
 <body>
-    <div id="status-msg">STABILIZING ASTRO-LINK...</div>
+    <div id="status-msg">NEURAL LINK: PLANETARY INITIALIZATION...</div>
     <div id="debug-log"></div>
     
     <div class="overlay">
         <h2>GALYARDER NEURAL LINK</h2>
-        <div class="subtitle">v2.7 Astro-Hierarchy</div>
+        <div class="subtitle">v2.8 Macro-Cosmos Scaling</div>
         
         <div style="margin-bottom: 15px;">
             <button id="viewToggle" class="toggle-btn active">Strategic Galaxy</button>
         </div>
 
         <div id="legend"></div>
+        <div style="margin-top: 20px; font-size: 9px; color: #555; line-height: 1.4;">
+            SCROLL: Zoom | DRAG: Orbit<br>
+            CLICK: Focus Planet
+        </div>
     </div>
 
     <div id="graph-container"></div>
@@ -63,94 +67,118 @@
         let Graph = null;
 
         async function init() {
-            log("Initializing Astro-Engine...");
+            log("Booting Macro-Engine...");
             try {
-                if (typeof THREE === 'undefined' || typeof ForceGraph3D === 'undefined' || typeof SpriteText === 'undefined') {
-                    throw new Error("Core libraries not found. Checking orbit...");
-                }
-
                 const baseUrl = window.location.origin + window.location.pathname.split('/').slice(0, -2).join('/');
                 const dataUrl = `${baseUrl}/graph.json`;
                 
                 const response = await fetch(dataUrl);
-                if (!response.ok) throw new Error(`Access Denied: ${response.status}`);
+                if (!response.ok) throw new Error(`Link Broken: ${response.status}`);
                 
                 const raw = await response.json();
                 fullData = {
-                    nodes: Object.keys(raw.nodes).map(id => ({ id, ...raw.nodes[id] })),
+                    nodes: Object.keys(raw.nodes).map(id => ({ 
+                        id, 
+                        ...raw.nodes[id],
+                        // Random Variance within class for "Natural" Planet look
+                        sizeVariance: 0.8 + Math.random() * 0.4 
+                    })),
                     links: raw.edges
                 };
 
                 Graph = ForceGraph3D()(document.getElementById('graph-container'))
                     .backgroundColor('#000000')
                     .showNavInfo(false)
-                    .nodeColor(node => siloColors[node.silo] || '#888')
-                    .nodeOpacity(0.9)
-                    // HIERARCHY SCALING: matahari vs bumi vs pluto
+                    .nodeOpacity(1)
+                    // HIERARCHY MACRO-SCALING (MASSIVE BODIES)
                     .nodeRelSize(node => {
-                        if (node.category === 'core-hukum') return 12; // MATAHARI
-                        if (node.category === 'agent') return 8;      // BUMI
-                        if (node.strategic) return 5;                  // MOON
-                        return 2;                                      // PLUTO/ASTEROID
+                        let base = 5;
+                        if (node.category === 'core-hukum') base = 40; // GIGANTIC SUNS
+                        else if (node.category === 'agent') base = 25; // GAS GIANTS
+                        else if (node.strategic) base = 15;            // ROCKY PLANETS
+                        else base = 6;                                // MOONS/ASTEROIDS
+                        return base * node.sizeVariance;
                     })
-                    .linkColor(() => 'rgba(255,255,255,0.08)')
+                    .linkColor(() => 'rgba(0, 242, 255, 0.05)')
                     .linkDirectionalParticles(2)
-                    .linkDirectionalParticleSpeed(0.004)
+                    .linkDirectionalParticleSpeed(0.005)
+                    .linkDirectionalParticleWidth(1.5)
                     .onNodeClick(node => {
-                        const distance = 100;
+                        const distance = 250; // Pull back more for big planets
                         const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
-                        Graph.cameraPosition({ x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, node, 1200);
+                        Graph.cameraPosition({ x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, node, 1500);
                     });
 
-                // TEXT LABELS: Glow in the dark intelligence
+                // ADVANCED PLANETARY RENDERING
                 Graph.nodeThreeObject(node => {
                     const group = new THREE.Group();
                     
-                    // The Planet Sphere
-                    const size = node.category === 'core-hukum' ? 12 : node.category === 'agent' ? 8 : node.strategic ? 5 : 2;
+                    const baseSize = node.category === 'core-hukum' ? 40 : node.category === 'agent' ? 25 : node.strategic ? 15 : 6;
+                    const finalSize = baseSize * node.sizeVariance;
+                    
+                    // The Planet Sphere (Emissive Core)
                     const sphere = new THREE.Mesh(
-                        new THREE.SphereGeometry(size),
-                        new THREE.MeshLambertMaterial({ 
+                        new THREE.SphereGeometry(finalSize),
+                        new THREE.MeshStandardMaterial({ 
                             color: siloColors[node.silo] || '#888',
-                            transparent: true,
-                            opacity: 0.8,
                             emissive: siloColors[node.silo] || '#888',
-                            emissiveIntensity: 0.5
+                            emissiveIntensity: node.category === 'core-hukum' ? 1.5 : 0.6,
+                            roughness: 0.3,
+                            metalness: 0.2
                         })
                     );
                     group.add(sphere);
 
-                    // The Dynamic Label (Only for strategic or hovered)
+                    // Add Atmosphere/Glow for big nodes
+                    if (node.category === 'core-hukum' || node.category === 'agent') {
+                        const glow = new THREE.Mesh(
+                            new THREE.SphereGeometry(finalSize * 1.2),
+                            new THREE.MeshBasicMaterial({
+                                color: siloColors[node.silo] || '#fff',
+                                transparent: true,
+                                opacity: 0.1
+                            })
+                        );
+                        group.add(glow);
+                    }
+
+                    // Strategic Labels (Clean & Readable)
                     if (node.strategic || node.category === 'agent') {
-                        const sprite = new SpriteText(node.title);
-                        sprite.color = siloColors[node.silo] || '#fff';
-                        sprite.textHeight = size * 1.5;
-                        sprite.position.y = size + 10;
-                        sprite.padding = 2;
-                        sprite.backgroundColor = 'rgba(0,0,0,0.5)';
-                        sprite.borderRadius = 4;
-                        group.add(sprite);
+                        const label = new SpriteText(node.title.toUpperCase());
+                        label.color = siloColors[node.silo] || '#fff';
+                        label.textHeight = finalSize * 0.8; // Scale with planet size
+                        label.position.y = finalSize + (finalSize * 0.5);
+                        label.fontFace = 'Inter, sans-serif';
+                        label.fontWeight = '900';
+                        label.padding = 3;
+                        label.backgroundColor = 'rgba(0,0,0,0.8)';
+                        label.borderRadius = 8;
+                        group.add(label);
                     }
                     
                     return group;
                 });
 
-                // Add 15k Star Nebula
+                // MASSIVE STARFIELD (20,000 STARS)
                 const starsGeometry = new THREE.BufferGeometry();
                 const starsVertices = [];
-                for (let i = 0; i < 15000; i++) {
-                    starsVertices.push(THREE.MathUtils.randFloatSpread(6000), THREE.MathUtils.randFloatSpread(6000), THREE.MathUtils.randFloatSpread(6000));
+                for (let i = 0; i < 20000; i++) {
+                    starsVertices.push(THREE.MathUtils.randFloatSpread(10000), THREE.MathUtils.randFloatSpread(10000), THREE.MathUtils.randFloatSpread(10000));
                 }
                 starsGeometry.setAttribute('position', new THREE.Float32BufferAttribute(starsVertices, 3));
-                const starsMaterial = new THREE.PointsMaterial({ color: 0xFFFFFF, size: 0.7, transparent: true, opacity: 0.3 });
+                const starsMaterial = new THREE.PointsMaterial({ color: 0xFFFFFF, size: 1.2, transparent: true, opacity: 0.5 });
                 Graph.scene().add(new THREE.Points(starsGeometry, starsMaterial));
+
+                // Orbit Physics (Stronger spacing for big planets)
+                Graph.d3Force('charge').strength(-800);
+                Graph.d3Force('link').distance(300);
 
                 updateGraph();
                 statusMsg.style.display = 'none';
-                log("Astro-System Online.");
+                log("Macro-Cosmos Operational.");
 
             } catch (err) {
-                log(`ORBITAL ERROR: ${err.message}`);
+                log(`VOID ERROR: ${err.message}`);
                 statusMsg.innerHTML = `<span style="color: #ff3131">NEURAL LINK OFFLINE</span><br><small>${err.message}</small>`;
             }
         }
@@ -173,7 +201,7 @@
             updateGraph();
         };
 
-        window.onload = () => setTimeout(init, 400);
+        window.onload = () => setTimeout(init, 300);
     </script>
 </body>
 </html>
