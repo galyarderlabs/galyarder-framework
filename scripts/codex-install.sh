@@ -27,7 +27,9 @@ set -e
 
 # Configuration
 CODEX_SKILLS_DIR="${CODEX_SKILLS_DIR:-$HOME/.codex/skills}"
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# HARDENED PATH RESOLUTION: Trace symlinks to the real framework source
+REAL_PATH=$(readlink -f "$0")
+SCRIPT_DIR="$(cd "$(dirname "$REAL_PATH")" && pwd)"
 REPO_ROOT="$(dirname "$SCRIPT_DIR")"
 CODEX_SKILLS_SRC="$REPO_ROOT/.codex/skills"
 CODEX_INDEX="$REPO_ROOT/.codex/skills-index.json"
