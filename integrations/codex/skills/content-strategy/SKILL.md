@@ -5,7 +5,7 @@ risk: unknown
 source: "https://github.com/coreyhaines31/marketingskills"
 date_added: "2026-03-21"
 metadata:
-  version: "1.8.16"
+  version: "1.8.17"
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

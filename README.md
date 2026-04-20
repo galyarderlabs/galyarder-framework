@@ -65,6 +65,7 @@ Galyarder Framework does not merely execute; it orchestrates. Every mission foll
 sequenceDiagram
     participant F as Founder (You)
     participant CEO as Galyarder CEO
+    participant Graph as Neural Link (v2.0)
     participant MCP as MCP (Think/Context7)
     participant Agent as Specialist Agent
     participant RTK as RTK (Terminal)
@@ -72,6 +73,8 @@ sequenceDiagram
 
     F->>CEO: Initiates High-Level Goal
     CEO->>Docs: Checks Linear Project / Creates Issue
+    CEO->>Graph: Query Knowledge Graph (AST/Semantic)
+    Graph-->>CEO: Structural Awareness & Dependencies
     CEO->>MCP: Invokes sequentialthinking
     MCP-->>CEO: Structured Strategic Plan
     CEO->>Agent: Dispatches Mission to Specialist Swarm
@@ -79,6 +82,7 @@ sequenceDiagram
     MCP-->>Agent: Institutional-Grade Reference
     Agent->>RTK: Surgical Execution via RTK Proxy
     RTK-->>Agent: Verified Output
+    Agent->>Graph: Triggers /graph (Self-Mapping)
     Agent->>Docs: Saves Artifact to docs/departments/
     Docs-->>F: High-Signal Executive Report
 ```
@@ -88,10 +92,11 @@ sequenceDiagram
 | Phase | Category | Action | Mandatory Tool | Outcome |
 | :--- | :--- | :--- | :--- | :--- |
 | **I** | **Traceability** | Alignment with Roadmap | **Linear** | Project-scoped issue locked & tracked. |
-| **II** | **Cognition** | Socratic Deconstruction | **SequentialThinking** | 8-phase logic map with risk mitigation. |
-| **III** | **Validation** | Official Reference Fetch | **Context7** | 100% accurate API & best practice alignment. |
-| **IV** | **Execution** | Token-Efficient Actions | **RTK Proxy** | Surgical changes with verified TDD tests. |
-| **V** | **Persistence** | Durable Memory Storage | **Obsidian** | Report pushed to Dept folder & C-Suite. |
+| **II** | **Mapping** | Neural Dependency Audit | **Neural Link** | Self-mapping graph with AST awareness. |
+| **III** | **Cognition** | Socratic Deconstruction | **SequentialThinking** | 8-phase logic map with risk mitigation. |
+| **IV** | **Validation** | Official Reference Fetch | **Context7** | 100% accurate API & best practice alignment. |
+| **V** | **Execution** | Token-Efficient Actions | **RTK Proxy** | Surgical changes with verified TDD tests. |
+| **VI** | **Persistence** | Durable Memory Storage | **Obsidian** | Report pushed to Dept folder & C-Suite. |
 
 ---
 

@@ -29,13 +29,6 @@
       "community": "Root",
       "degree": 1
     },
-    "README.md": {
-      "title": "1. Clone the intelligence layer",
-      "category": "core-hukum",
-      "silo": "Root",
-      "community": "Root",
-      "degree": 1
-    },
     "CLAUDE.md": {
       "title": "Claude Code: Implementation Protocol",
       "category": "core-hukum",
@@ -49,6 +42,13 @@
       "silo": "Root",
       "community": "Root",
       "degree": 313
+    },
+    "README.md": {
+      "title": "1. Clone the intelligence layer",
+      "category": "core-hukum",
+      "silo": "Root",
+      "community": "Root",
+      "degree": 1
     },
     "Executive/personas/galyarder-ceo.md": {
       "title": "galyarder-ceo.md",
@@ -4145,6 +4145,13 @@
       "community": "docs",
       "degree": 3
     },
+    "docs/agents/galyarder-specialist.md": {
+      "title": ":material-folder-zip: galyarder-specialist",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
     "docs/agents/tdd-guide.md": {
       "title": ":material-folder-zip: tdd-guide",
       "category": "documentation",
@@ -4187,13 +4194,6 @@
       "community": "docs",
       "degree": 3
     },
-    "docs/agents/qa-automation-engineer.md": {
-      "title": ":material-folder-zip: qa-automation-engineer",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
     "docs/agents/super-architect.md": {
       "title": ":material-folder-zip: super-architect",
       "category": "documentation",
@@ -4207,6 +4207,20 @@
       "silo": "docs",
       "community": "docs",
       "degree": 3
+    },
+    "docs/agents/qa-automation-engineer.md": {
+      "title": ":material-folder-zip: qa-automation-engineer",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/agents/elite-developer.md": {
+      "title": ":material-folder-zip: elite-developer",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 2
     },
     "docs/agents/remotion-engineer.md": {
       "title": ":material-folder-zip: remotion-engineer",
@@ -4252,6 +4266,13 @@
     },
     "docs/agents/social-strategist.md": {
       "title": ":material-folder-zip: social-strategist",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/agents/perseus.md": {
+      "title": ":material-folder-zip: perseus",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -4341,33 +4362,12 @@
       "community": "docs",
       "degree": 3
     },
-    "docs/agents/elite-developer.md": {
-      "title": ":material-folder-zip: elite-developer",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 2
-    },
-    "docs/agents/galyarder-specialist.md": {
-      "title": ":material-folder-zip: galyarder-specialist",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
     "docs/agents/index.md": {
       "title": "Galyarder Framework: Agents",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 34
-    },
-    "docs/agents/perseus.md": {
-      "title": ":material-folder-zip: perseus",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
     },
     "docs/skills/index.md": {
       "title": "Galyarder Framework: Skills",
@@ -4483,6 +4483,13 @@
     },
     "docs/skills/founder-thought-leadership/index.md": {
       "title": ":material-folder-zip: founder-thought-leadership",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/skills/galyarder-specialist/index.md": {
+      "title": ":material-folder-zip: galyarder-specialist",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -6112,13 +6119,6 @@
       "community": "docs",
       "degree": 0
     },
-    "docs/skills/galyarder-specialist/index.md": {
-      "title": ":material-folder-zip: galyarder-specialist",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3
-    },
     "docs/commands/experiment.md": {
       "title": ":material-folder-zip: experiment",
       "category": "documentation",
@@ -6703,33 +6703,33 @@
       "confidence": 0.8
     },
     {
+      "source": "CLAUDE.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "CLAUDE.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "GEMINI.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "GEMINI.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
       "source": "README.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "CLAUDE.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "CLAUDE.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "GEMINI.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "GEMINI.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
       "confidence": 0.8
     },
     {
@@ -9511,6 +9511,18 @@
       "confidence": 0.8
     },
     {
+      "source": "docs/agents/galyarder-specialist.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/galyarder-specialist.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
       "source": "docs/agents/tdd-guide.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
@@ -9583,18 +9595,6 @@
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/qa-automation-engineer.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/qa-automation-engineer.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
       "source": "docs/agents/super-architect.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
@@ -9619,229 +9619,13 @@
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/remotion-engineer.md",
+      "source": "docs/agents/qa-automation-engineer.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/remotion-engineer.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/sales-engineer.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/sales-engineer.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/conversion-engineer.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/conversion-engineer.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/retention-specialist.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/retention-specialist.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/growth-engineer.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/growth-engineer.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/growth-strategist.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/growth-strategist.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/social-strategist.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/social-strategist.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/cyber-intel.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/cyber-intel.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/security-reviewer.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/security-reviewer.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/security-guardian.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/security-guardian.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/rapid-prototyper.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/rapid-prototyper.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/planner.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/planner.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/product-manager.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/product-manager.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/sre.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/sre.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/release-manager.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/release-manager.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/devops-engineer.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/devops-engineer.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/finops-manager.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/finops-manager.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/legal-counsel.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/legal-counsel.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/obsidian-architect.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/obsidian-architect.md",
+      "source": "docs/agents/qa-automation-engineer.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -9853,13 +9637,241 @@
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/galyarder-specialist.md",
+      "source": "docs/agents/remotion-engineer.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/galyarder-specialist.md",
+      "source": "docs/agents/remotion-engineer.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/sales-engineer.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/sales-engineer.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/conversion-engineer.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/conversion-engineer.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/retention-specialist.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/retention-specialist.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/growth-engineer.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/growth-engineer.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/growth-strategist.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/growth-strategist.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/social-strategist.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/social-strategist.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/perseus.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/perseus.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/cyber-intel.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/cyber-intel.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/security-reviewer.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/security-reviewer.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/security-guardian.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/security-guardian.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/rapid-prototyper.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/rapid-prototyper.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/planner.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/planner.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/product-manager.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/product-manager.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/sre.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/sre.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/release-manager.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/release-manager.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/devops-engineer.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/devops-engineer.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/finops-manager.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/finops-manager.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/legal-counsel.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/legal-counsel.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/obsidian-architect.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/obsidian-architect.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -10061,18 +10073,6 @@
       "target": "docs/agents/security-reviewer.md",
       "type": "structural_reference",
       "confidence": 1.0
-    },
-    {
-      "source": "docs/agents/perseus.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/perseus.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
     },
     {
       "source": "docs/skills/index.md",
@@ -10760,6 +10760,18 @@
     },
     {
       "source": "docs/skills/founder-thought-leadership/index.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/skills/galyarder-specialist/index.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/skills/galyarder-specialist/index.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -12188,18 +12200,6 @@
     },
     {
       "source": "docs/skills/doc-maintenance/index.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/skills/galyarder-specialist/index.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/skills/galyarder-specialist/index.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8

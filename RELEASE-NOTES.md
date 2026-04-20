@@ -1,6 +1,17 @@
 # Release Notes - Galyarder Framework
 
-## [v1.8.14] - 2026-04-20
+## [v1.8.17] - 2026-04-19
+### Operational Realignment
+Updated the core operational sequence and command protocols to explicitly incorporate the **Galyarder Neural Link** as a foundational mapping phase.
+
+#### Highlights
+- **Mermaid Sequence Update**: Injected the Neural Link into the "Operational Sequence" to show automated dependency auditing before strategic planning.
+- **Protocol Expansion**: Added "Mapping" as Phase II of the 1-Man Army Command Protocol, ensuring all missions begin with a neural dependency audit.
+
+---
+
+## [v1.8.16] - 2026-04-19
+
 ### Root Runtime Cleanup
 This patch removes the temporary compatibility source layer and keeps the restored assets directly in the canonical root runtime.
 

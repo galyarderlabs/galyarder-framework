@@ -1,7 +1,7 @@
 {
   "name": "galyarder-security",
   "description": "Security Department for Galyarder Framework. Includes specialized agents, skills, and tools.",
-  "version": "1.8.16",
+  "version": "1.8.17",
   "author": {
     "name": "Galyarder Labs",
     "url": "https://galyarderlabs.github.io/galyarder-framework/"

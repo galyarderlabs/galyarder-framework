@@ -4,7 +4,7 @@ description: Analyze and red-flag contracts systematically, identifying risks, u
 license: MIT
 metadata:
   author: ClawFu
-  version: "1.8.16"
+  version: "1.8.17"
   mcp-server: "@clawfu/mcp-skills"
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

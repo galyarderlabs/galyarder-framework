@@ -10,7 +10,7 @@ description: >
 domain: cybersecurity
 subdomain: threat-intelligence
 tags: [CTI, threat-intelligence, intelligence-products, TLP, PIR, report-writing, NIST-CSF]
-version: "1.8.16"
+version: "1.8.17"
 author: team-cybersecurity
 license: Apache-2.0
 ---

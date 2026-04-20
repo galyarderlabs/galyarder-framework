@@ -3,7 +3,7 @@ name: Lean Dev Shop
 description: Small engineering-focused AI company that builds and ships software products
 slug: lean-dev-shop
 schema: agentcompanies/v1
-version: "1.8.16"
+version: "1.8.17"
 license: MIT
 authors:
   - name: Example Org

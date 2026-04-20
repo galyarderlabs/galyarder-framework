@@ -2,7 +2,13 @@
 
 All notable changes to Galyarder Framework will be documented in this file.
 
-## [1.8.14] - 2026-04-20
+## [1.8.17] - 2026-04-19
+### Changed
+- **Operational Sequence**: Enhanced the Mermaid diagram in `README.md` to include the **Neural Link** dependency audit phase.
+- **Command Protocol**: Updated the "1-Man Army Command Protocol" table to include **Neural Mapping** as Phase II.
+
+## [1.8.16] - 2026-04-19
+
 ### Changed
 - **Canonical Root Runtime**: `agents/`, `skills/`, `commands/`, and `personas/` remain the source of truth for host installs and bundle generation.
 ### Fixed

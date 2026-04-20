@@ -9,7 +9,7 @@ description: >
   agreements, or needing GDPR-compliant data processing addenda.
 license: MIT + Commons Clause
 metadata:
-  version: "1.8.16"
+  version: "1.8.17"
   author: borghei
   category: business-growth
   domain: legal-documents
