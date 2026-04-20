@@ -49,7 +49,7 @@ A high-integrity workforce in a single repository:
 - **40 Specialized Agents**: Engineering, Growth, Security, Product, and Legal experts.
 - **Galyarder Neural Link**: Self-mapping knowledge graph with deterministic AST parsing and semantic inference.
 - **132 Production-Ready Skills**: SOPs for TDD, SEO, CRO, FinOps, and more.
-- **54 Design Specifications**: Elite UI specs (Stripe, Vercel, Apple) to enforce aesthetic law.
+- **54 Design Specifications**: Elite UI specs (SuperHuman, Bmw, Apple) to enforce aesthetic law.
 - **20+ Slash Commands**: Instant orchestration triggers (e.g., `/tdd`, `/review`, `/marketing`).
 - **Universal Compatibility**: Native support for Galyarder Agent, Claude Code, Gemini CLI, OpenClaw, Hermes Agent, and 9 other platforms.
 
