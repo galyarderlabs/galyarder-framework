@@ -9,47 +9,10 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
-PERSONA_DIRS = [
-    REPO_ROOT / "Executive" / "personas",
-]
-
-AGENT_DIRS = [
-    REPO_ROOT / "Compat" / "agents",
-    REPO_ROOT / "Executive" / "agents",
-    REPO_ROOT / "Engineering" / "agents",
-    REPO_ROOT / "Growth" / "agents",
-    REPO_ROOT / "Security" / "agents",
-    REPO_ROOT / "Product" / "agents",
-    REPO_ROOT / "Infrastructure" / "agents",
-    REPO_ROOT / "Legal-Finance" / "agents",
-    REPO_ROOT / "Knowledge" / "agents",
-]
-
-SKILL_DIRS = [
-    REPO_ROOT / "Compat" / "skills",
-    REPO_ROOT / "Executive" / "skills",
-    REPO_ROOT / "Engineering" / "skills",
-    REPO_ROOT / "Growth" / "skills",
-    REPO_ROOT / "Security" / "skills",
-    REPO_ROOT / "Product" / "skills",
-    REPO_ROOT / "Infrastructure" / "skills",
-    REPO_ROOT / "Legal-Finance" / "skills",
-    REPO_ROOT / "Knowledge" / "skills",
-]
-
-COMMAND_DIRS = [
-    REPO_ROOT / "Engineering" / "commands",
-    REPO_ROOT / "Growth" / "commands",
-    REPO_ROOT / "Security" / "commands",
-    REPO_ROOT / "Product" / "commands",
-    REPO_ROOT / "Infrastructure" / "commands",
-    REPO_ROOT / "Legal-Finance" / "commands",
-    REPO_ROOT / "Knowledge" / "commands",
-]
-
-DESIGN_DIRS = [
-    REPO_ROOT / "Growth" / "design",
-]
+PERSONA_DIRS = [REPO_ROOT / "personas"]
+AGENT_DIRS = [REPO_ROOT / "agents"]
+SKILL_DIRS = [REPO_ROOT / "skills"]
+COMMAND_DIRS = [REPO_ROOT / "commands"]
 
 DISALLOWED_AGENT_KEYS = {"color", "emoji", "vibe"}
 TOOL_NAME_MAP = {
@@ -171,31 +134,6 @@ def copy_unique_skill_dirs(source_dirs: list[Path], target_dir: Path) -> None:
             shutil.copytree(src, target_dir / src.name)
 
 
-def copy_design_markdown_as_skills(source_dirs: list[Path], target_dir: Path) -> None:
-    seen: dict[str, Path] = {}
-    target_dir.mkdir(parents=True, exist_ok=True)
-
-    for source_dir in source_dirs:
-        if not source_dir.exists():
-            continue
-        for src in sorted(source_dir.glob("*.md")):
-            skill_name = src.stem
-            if skill_name in seen:
-                raise SystemExit(f"Duplicate design skill '{skill_name}': {seen[skill_name]} and {src}")
-            seen[skill_name] = src
-            dest_dir = target_dir / skill_name
-            dest_dir.mkdir(parents=True, exist_ok=True)
-            title = src.stem.replace("-", " ").strip()
-            wrapped = (
-                "---\n"
-                f"name: {skill_name}\n"
-                f'description: "Design system reference for {title}."\n'
-                "---\n\n"
-                + src.read_text()
-            )
-            (dest_dir / "SKILL.md").write_text(wrapped)
-
-
 def build_surface(output_root: Path) -> None:
     agents_dir = output_root / "agents"
     skills_dir = output_root / "skills"
@@ -209,7 +147,6 @@ def build_surface(output_root: Path) -> None:
     copy_unique_agent_markdown(PERSONA_DIRS + AGENT_DIRS, agents_dir)
     copy_unique_markdown(COMMAND_DIRS, commands_dir)
     copy_unique_skill_dirs(SKILL_DIRS, skills_dir)
-    copy_design_markdown_as_skills(DESIGN_DIRS, skills_dir)
 
 
 def main() -> None:
@@ -219,6 +156,9 @@ def main() -> None:
 
     output_root = Path(args.output_root).resolve()
     output_root.mkdir(parents=True, exist_ok=True)
+    if output_root == REPO_ROOT:
+        print(f"Root runtime is canonical at {output_root}")
+        return
     build_surface(output_root)
     print(f"Root extension surface built at {output_root}")
 

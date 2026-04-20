@@ -1,5 +1,21 @@
 # Release Notes - Galyarder Framework
 
+## [v1.8.14] - 2026-04-20
+### Root Runtime Cleanup
+This patch removes the temporary compatibility source layer and keeps the restored assets directly in the canonical root runtime.
+
+#### Highlights
+- **No More `Compat/`**: The temporary compatibility source tree is gone.
+- **Root Is Canonical**: `agents/`, `skills/`, `commands/`, and `personas/` remain the install surface and the source for bundle generation.
+- **Bundle Builder Simplified**: `scripts/build_root_extension_surface.py` now only regenerates `.marketplace/full` from the canonical root runtime.
+
+#### Verification
+```bash
+bash scripts/smoke.sh
+```
+
+---
+
 ## [v1.8.13] - 2026-04-20
 ### Runtime Compatibility Recovery
 This patch restores the legacy runtime assets that had fallen out of the canonical root and full-bundle surfaces during the packaging refactors.

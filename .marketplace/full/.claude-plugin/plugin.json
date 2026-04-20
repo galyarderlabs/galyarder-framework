@@ -1,7 +1,7 @@
 {
   "name": "galyarder-framework",
   "description": "Complete Galyarder Framework bundle with all 8 departments, agents, commands, personas, and skills.",
-  "version": "1.8.13",
+  "version": "1.8.14",
   "author": {
     "name": "Galyarder Labs",
     "url": "https://galyarderlabs.github.io/galyarder-framework/"

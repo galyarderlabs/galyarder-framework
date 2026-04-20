@@ -2,6 +2,13 @@
 
 All notable changes to Galyarder Framework will be documented in this file.
 
+## [1.8.14] - 2026-04-20
+### Changed
+- **Canonical Root Runtime**: `agents/`, `skills/`, `commands/`, and `personas/` remain the source of truth for host installs and bundle generation.
+### Fixed
+- **Compat Layer Removal**: Removed the temporary `Compat/` restore layer after migrating restored runtime assets into the canonical root runtime.
+- **Bundle Generation**: `scripts/build_root_extension_surface.py` now treats the root runtime as canonical and only regenerates `.marketplace/full`, instead of re-merging from a separate compatibility source tree.
+
 ## [1.8.13] - 2026-04-20
 ### Added
 - **Compatibility Runtime Layer**: Added `Compat/agents` and `Compat/skills` as a source layer for generated root and marketplace runtime surfaces so legacy assets can exist without re-fragmenting department ownership.
