@@ -1,0 +1,2542 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Humans 3.0 Protocol: Advanced Agentic Orchestration for the 1-Man Army. Implementing Autonomous Goal Integration (AGI).">
+      
+      
+        <meta name="author" content="Galyarder Labs">
+      
+      
+        <link rel="canonical" href="https://galyarderlabs.github.io/galyarder-framework/design/design-md-ollama/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Design System: Ollama - Galyarder Framework</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#design-system-ollama" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Galyarder Framework" class="md-header__button md-logo" aria-label="Galyarder Framework" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Galyarder Framework
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Design System: Ollama
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../QUICK_START/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../WORKFLOW/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Evolution (Protocols)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../AGENTS/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Workforce (Agents)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../skills/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  SOP Library (Skills)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../commands/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Command Triggers
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Aesthetic Law (Design)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../testing/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Governance
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../CHANGELOG/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Chronicle
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Galyarder Framework" class="md-nav__button md-logo" aria-label="Galyarder Framework" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Galyarder Framework
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../QUICK_START/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TRIAD_OVERVIEW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ecosystem Triad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UNIFIED_PLATFORM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unified Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evolution (Protocols)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Evolution (Protocols)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WORKFLOW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Humans 3.0 Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ORG_CHART/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Global Command Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../INTEGRATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi-Platform Engine
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MIGRATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migration Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../agents/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workforce (Agents)
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Workforce (Agents)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AGENTS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent Directory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../skills/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SOP Library (Skills)
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    SOP Library (Skills)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../commands/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Command Triggers
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Command Triggers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aesthetic Law (Design)
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Aesthetic Law (Design)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment & Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Platform Specifics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Platform Specifics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CLAUDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claude Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GEMINI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gemini CLI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/galyarderlabs/galyarder-agent/blob/main/README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Galyarder Agent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../README.codex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenAI Codex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../README.opencode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenCode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../INTEGRATION_COMPLETE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integration Checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chronicle
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Chronicle
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RELEASE-NOTES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Release Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-visual-theme-atmosphere" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Visual Theme &amp; Atmosphere
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-color-palette-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Color Palette &amp; Roles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Color Palette &amp; Roles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Primary
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#surface-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Surface &amp; Background
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#neutrals-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Neutrals &amp; Text
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semantic-accent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semantic &amp; Accent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gradient-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gradient System
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-typography-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Typography Rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Typography Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#font-family" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Font Family
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hierarchy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-component-stylings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Component Stylings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Component Stylings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#buttons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Buttons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cards-containers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cards &amp; Containers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inputs-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inputs &amp; Forms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navigation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-treatment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Treatment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distinctive-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distinctive Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-layout-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Layout Principles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Layout Principles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spacing-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spacing System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grid &amp; Container
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whitespace-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Whitespace Philosophy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#border-radius-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Border Radius Scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-depth-elevation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Depth &amp; Elevation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-dos-and-donts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Do's and Don'ts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Do&#39;s and Don&#39;ts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dont" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Don't
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-responsive-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Responsive Behavior
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Responsive Behavior">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breakpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breakpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#touch-targets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Touch Targets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collapsing-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Collapsing Strategy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Behavior
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-agent-prompt-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Agent Prompt Guide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Agent Prompt Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-color-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Color Reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-component-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Component Prompts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteration-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteration Guide
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="design-system-ollama">Design System: Ollama</h1>
+<h2 id="1-visual-theme-atmosphere">1. Visual Theme &amp; Atmosphere</h2>
+<p>Ollama's interface is radical minimalism taken to its logical conclusion  a pure-white void where content floats without decoration, shadow, or color. The design philosophy mirrors the product itself: strip away everything unnecessary until only the essential tool remains. This is the digital equivalent of a Dieter Rams object  every pixel earns its place, and the absence of design IS the design.</p>
+<p>The entire page exists in pure grayscale. There is zero chromatic color in the interface  no brand blue, no accent green, no semantic red. The only colors that exist are shades between pure black (<code>#000000</code>) and pure white (<code>#ffffff</code>), creating a monochrome environment that lets the user's mental model of "open models" remain uncolored by brand opinion. The Ollama llama mascot, rendered in simple black line art, is the only illustration  and even it's monochrome.</p>
+<p>What makes Ollama distinctive is the combination of SF Pro Rounded (Apple's rounded system font) with an exclusively pill-shaped geometry (9999px radius on everything interactive). The rounded letterforms + rounded buttons + rounded containers create a cohesive "softness language" that makes a developer CLI tool feel approachable and friendly rather than intimidating. This is minimalism with warmth  not cold Swiss-style grid minimalism, but the kind where the edges are literally softened.</p>
+<p><strong>Key Characteristics:</strong>
+- Pure white canvas with zero chromatic color  completely grayscale
+- SF Pro Rounded headlines creating a distinctively Apple-like softness
+- Binary border-radius system: 12px (containers) or 9999px (everything interactive)
+- Zero shadows  depth comes exclusively from background color shifts and borders
+- Pill-shaped geometry on all interactive elements (buttons, tabs, inputs, tags)
+- The Ollama llama as the sole illustration  black line art, no color
+- Extreme content restraint  the homepage is short, focused, and uncluttered</p>
+<h2 id="2-color-palette-roles">2. Color Palette &amp; Roles</h2>
+<h3 id="primary">Primary</h3>
+<ul>
+<li><strong>Pure Black</strong> (<code>#000000</code>): Primary headlines, primary links, and the darkest text. The only "color" that demands attention.</li>
+<li><strong>Near Black</strong> (<code>#262626</code>): Button text on light surfaces, secondary headline weight.</li>
+<li><strong>Darkest Surface</strong> (<code>#090909</code>): The darkest possible surface  barely distinguishable from pure black, used for footer or dark containers.</li>
+</ul>
+<h3 id="surface-background">Surface &amp; Background</h3>
+<ul>
+<li><strong>Pure White</strong> (<code>#ffffff</code>): The primary page background  not off-white, not cream, pure white. Button surfaces for secondary actions.</li>
+<li><strong>Snow</strong> (<code>#fafafa</code>): The subtlest possible surface distinction from white  used for section backgrounds and barely-elevated containers.</li>
+<li><strong>Light Gray</strong> (<code>#e5e5e5</code>): Button backgrounds, borders, and the primary containment color. The workhorse neutral.</li>
+</ul>
+<h3 id="neutrals-text">Neutrals &amp; Text</h3>
+<ul>
+<li><strong>Stone</strong> (<code>#737373</code>): Secondary body text, footer links, and de-emphasized content. The primary "muted" tone.</li>
+<li><strong>Mid Gray</strong> (<code>#525252</code>): Emphasized secondary text, slightly darker than Stone.</li>
+<li><strong>Silver</strong> (<code>#a3a3a3</code>): Tertiary text, placeholders, and deeply de-emphasized metadata.</li>
+<li><strong>Button Text Dark</strong> (<code>#404040</code>): Specific to white-surface button text.</li>
+</ul>
+<h3 id="semantic-accent">Semantic &amp; Accent</h3>
+<ul>
+<li><strong>Ring Blue</strong> (<code>#3b82f6</code> at 50%): The ONLY non-gray color in the entire system  Tailwind's default focus ring, used exclusively for keyboard accessibility. Never visible in normal interaction flow.</li>
+<li><strong>Border Light</strong> (<code>#d4d4d4</code>): A slightly darker gray for white-surface button borders.</li>
+</ul>
+<h3 id="gradient-system">Gradient System</h3>
+<ul>
+<li><strong>None.</strong> Ollama uses absolutely no gradients. Visual separation comes from flat color blocks and single-pixel borders. This is a deliberate, almost philosophical design choice.</li>
+</ul>
+<h2 id="3-typography-rules">3. Typography Rules</h2>
+<h3 id="font-family">Font Family</h3>
+<ul>
+<li><strong>Display</strong>: <code>SF Pro Rounded</code>, with fallbacks: <code>system-ui, -apple-system, system-ui</code></li>
+<li><strong>Body / UI</strong>: <code>ui-sans-serif</code>, with fallbacks: <code>system-ui, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji</code></li>
+<li><strong>Monospace</strong>: <code>ui-monospace</code>, with fallbacks: <code>SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New</code></li>
+</ul>
+<p><em>Note: SF Pro Rounded is Apple's system font  it renders with rounded terminals on macOS/iOS and falls back to the system sans-serif on other platforms.</em></p>
+<h3 id="hierarchy">Hierarchy</h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Font</th>
+<th>Size</th>
+<th>Weight</th>
+<th>Line Height</th>
+<th>Letter Spacing</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Display / Hero</td>
+<td>SF Pro Rounded</td>
+<td>48px (3rem)</td>
+<td>500</td>
+<td>1.00 (tight)</td>
+<td>normal</td>
+<td>Maximum impact, rounded letterforms</td>
+</tr>
+<tr>
+<td>Section Heading</td>
+<td>SF Pro Rounded</td>
+<td>36px (2.25rem)</td>
+<td>500</td>
+<td>1.11 (tight)</td>
+<td>normal</td>
+<td>Feature section titles</td>
+</tr>
+<tr>
+<td>Sub-heading</td>
+<td>SF Pro Rounded / ui-sans-serif</td>
+<td>30px (1.88rem)</td>
+<td>400500</td>
+<td>1.20 (tight)</td>
+<td>normal</td>
+<td>Card headings, feature names</td>
+</tr>
+<tr>
+<td>Card Title</td>
+<td>ui-sans-serif</td>
+<td>24px (1.5rem)</td>
+<td>400</td>
+<td>1.33</td>
+<td>normal</td>
+<td>Medium emphasis headings</td>
+</tr>
+<tr>
+<td>Body Large</td>
+<td>ui-sans-serif</td>
+<td>18px (1.13rem)</td>
+<td>400500</td>
+<td>1.56</td>
+<td>normal</td>
+<td>Hero descriptions, button text</td>
+</tr>
+<tr>
+<td>Body / Link</td>
+<td>ui-sans-serif</td>
+<td>16px (1rem)</td>
+<td>400500</td>
+<td>1.50</td>
+<td>normal</td>
+<td>Standard body text, navigation</td>
+</tr>
+<tr>
+<td>Caption</td>
+<td>ui-sans-serif</td>
+<td>14px (0.88rem)</td>
+<td>400</td>
+<td>1.43</td>
+<td>normal</td>
+<td>Metadata, descriptions</td>
+</tr>
+<tr>
+<td>Small</td>
+<td>ui-sans-serif</td>
+<td>12px (0.75rem)</td>
+<td>400</td>
+<td>1.33</td>
+<td>normal</td>
+<td>Smallest sans-serif text</td>
+</tr>
+<tr>
+<td>Code Body</td>
+<td>ui-monospace</td>
+<td>16px (1rem)</td>
+<td>400</td>
+<td>1.50</td>
+<td>normal</td>
+<td>Inline code, commands</td>
+</tr>
+<tr>
+<td>Code Caption</td>
+<td>ui-monospace</td>
+<td>14px (0.88rem)</td>
+<td>400</td>
+<td>1.43</td>
+<td>normal</td>
+<td>Code snippets, secondary</td>
+</tr>
+<tr>
+<td>Code Small</td>
+<td>ui-monospace</td>
+<td>12px (0.75rem)</td>
+<td>400700</td>
+<td>1.63</td>
+<td>normal</td>
+<td>Tags, labels</td>
+</tr>
+</tbody>
+</table>
+<h3 id="principles">Principles</h3>
+<ul>
+<li><strong>Rounded display, standard body</strong>: SF Pro Rounded carries display headlines with its distinctive rounded terminals, while the standard system sans handles all body text. The rounded font IS the brand expression.</li>
+<li><strong>Weight restraint</strong>: Only two weights matter  400 (regular) for body and 500 (medium) for headings. No bold, no light, no black weight. This extreme restraint reinforces the minimal philosophy.</li>
+<li><strong>Tight display, comfortable body</strong>: Headlines compress to 1.0 line-height, while body text relaxes to 1.431.56. The contrast creates clear hierarchy without needing weight contrast.</li>
+<li><strong>Monospace for developer identity</strong>: Code blocks and terminal commands appear throughout as primary content, using the system monospace stack.</li>
+</ul>
+<h2 id="4-component-stylings">4. Component Stylings</h2>
+<h3 id="buttons">Buttons</h3>
+<p><strong>Gray Pill (Primary)</strong>
+- Background: Light Gray (<code>#e5e5e5</code>)
+- Text: Near Black (<code>#262626</code>)
+- Padding: 10px 24px
+- Border: thin solid Light Gray (<code>1px solid #e5e5e5</code>)
+- Radius: pill-shaped (9999px)
+- The primary action button  understated, grayscale, always pill-shaped</p>
+<p><strong>White Pill (Secondary)</strong>
+- Background: Pure White (<code>#ffffff</code>)
+- Text: Button Text Dark (<code>#404040</code>)
+- Padding: 10px 24px
+- Border: thin solid Border Light (<code>1px solid #d4d4d4</code>)
+- Radius: pill-shaped (9999px)
+- Secondary action  visually lighter than Gray Pill</p>
+<p><strong>Black Pill (CTA)</strong>
+- Background: Pure Black (<code>#000000</code>)
+- Text: Pure White (<code>#ffffff</code>)
+- Radius: pill-shaped (9999px)
+- Inferred from "Create account" and "Explore" buttons
+- Maximum emphasis  black on white</p>
+<h3 id="cards-containers">Cards &amp; Containers</h3>
+<ul>
+<li>Background: Pure White or Snow (<code>#fafafa</code>)</li>
+<li>Border: thin solid Light Gray (<code>1px solid #e5e5e5</code>) when needed</li>
+<li>Radius: comfortably rounded (12px)  the ONLY non-pill radius in the system</li>
+<li>Shadow: <strong>none</strong>  zero shadows on any element</li>
+<li>Hover: likely subtle background shift or border darkening</li>
+</ul>
+<h3 id="inputs-forms">Inputs &amp; Forms</h3>
+<ul>
+<li>Background: Pure White</li>
+<li>Border: <code>1px solid #e5e5e5</code></li>
+<li>Radius: pill-shaped (9999px)  search inputs and form fields are pill-shaped</li>
+<li>Focus: Ring Blue (<code>#3b82f6</code> at 50%) ring</li>
+<li>Placeholder: Silver (<code>#a3a3a3</code>)</li>
+</ul>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li>Clean horizontal nav with minimal elements</li>
+<li>Logo: Ollama llama icon + wordmark in black</li>
+<li>Links: "Models", "Docs", "Pricing" in black at 16px, weight 400</li>
+<li>Search bar: pill-shaped with placeholder text</li>
+<li>Right side: "Sign in" link + "Download" black pill CTA</li>
+<li>No borders, no background  transparent nav on white page</li>
+</ul>
+<h3 id="image-treatment">Image Treatment</h3>
+<ul>
+<li>The Ollama llama mascot is the only illustration  black line art on white</li>
+<li>Code screenshots/terminal outputs shown in bordered containers (12px radius)</li>
+<li>Integration logos displayed as simple icons in a grid</li>
+<li>No photographs, no gradients, no decorative imagery</li>
+</ul>
+<h3 id="distinctive-components">Distinctive Components</h3>
+<p><strong>Tab Pills</strong>
+- Pill-shaped tab selectors (e.g., "Coding" | "OpenClaw")
+- Active: Light Gray bg; Inactive: transparent
+- All pill-shaped (9999px)</p>
+<p><strong>Model Tags</strong>
+- Small pill-shaped tags (e.g., "ollama", "launch", "claude")
+- Light Gray background, dark text
+- The primary way to browse models</p>
+<p><strong>Terminal Command Block</strong>
+- Monospace code showing <code>ollama run</code> commands
+- Minimal styling  just a bordered 12px-radius container
+- Copy button integrated</p>
+<p><strong>Integration Grid</strong>
+- Grid of integration logos (Codex, Claude Code, OpenCode, LangChain, etc.)
+- Each in a bordered pill or card with icon + name
+- Tabbed by category (Coding, Documents &amp; RAG, Automation, Chat)</p>
+<h2 id="5-layout-principles">5. Layout Principles</h2>
+<h3 id="spacing-system">Spacing System</h3>
+<ul>
+<li>Base unit: 8px</li>
+<li>Scale: 4px, 6px, 8px, 9px, 10px, 12px, 14px, 16px, 20px, 24px, 32px, 40px, 48px, 88px, 112px</li>
+<li>Button padding: 10px 24px (consistent across all buttons)</li>
+<li>Card internal padding: approximately 2432px</li>
+<li>Section vertical spacing: very generous (88px112px)</li>
+</ul>
+<h3 id="grid-container">Grid &amp; Container</h3>
+<ul>
+<li>Max container width: approximately 10241280px, centered</li>
+<li>Hero: centered single-column with llama illustration</li>
+<li>Feature sections: 2-column layout (text left, code right)</li>
+<li>Integration grid: responsive multi-column</li>
+<li>Footer: clean single-row</li>
+</ul>
+<h3 id="whitespace-philosophy">Whitespace Philosophy</h3>
+<ul>
+<li><strong>Emptiness as luxury</strong>: The page is remarkably short and sparse  no feature section overstays its welcome. Each concept gets minimal but sufficient space.</li>
+<li><strong>Content density is low by design</strong>: Where other AI companies pack feature after feature, Ollama presents three ideas (run models, use with apps, integrations) and stops.</li>
+<li><strong>The white space IS the brand</strong>: Pure white space with zero decoration communicates "this tool gets out of your way."</li>
+</ul>
+<h3 id="border-radius-scale">Border Radius Scale</h3>
+<ul>
+<li>Comfortably rounded (12px): The sole container radius  code blocks, cards, panels</li>
+<li>Pill-shaped (9999px): Everything interactive  buttons, tabs, inputs, tags, badges</li>
+</ul>
+<p><em>This binary system is extreme and distinctive. There is no 4px, no 8px, no gradient of roundness. Elements are either containers (12px) or interactive (pill).</em></p>
+<h2 id="6-depth-elevation">6. Depth &amp; Elevation</h2>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Treatment</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Flat (Level 0)</td>
+<td>No shadow, no border</td>
+<td>Page background, most content</td>
+</tr>
+<tr>
+<td>Bordered (Level 1)</td>
+<td><code>1px solid #e5e5e5</code></td>
+<td>Cards, code blocks, buttons</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Shadow Philosophy</strong>: Ollama uses <strong>zero shadows</strong>. This is not an oversight  it's a deliberate design decision. Every other major AI product site uses at least subtle shadows. Ollama's flat, shadowless approach creates a paper-like experience where elements are distinguished purely by background color and single-pixel borders. Depth is communicated through <strong>content hierarchy and typography weight</strong>, not visual layering.</p>
+<h2 id="7-dos-and-donts">7. Do's and Don'ts</h2>
+<h3 id="do">Do</h3>
+<ul>
+<li>Use pure white (<code>#ffffff</code>) as the page background  never off-white or cream</li>
+<li>Use pill-shaped (9999px) radius on all interactive elements  buttons, tabs, inputs, tags</li>
+<li>Use 12px radius on all non-interactive containers  code blocks, cards, panels</li>
+<li>Keep the palette strictly grayscale  no chromatic colors except the blue focus ring</li>
+<li>Use SF Pro Rounded at weight 500 for display headings  the rounded terminals are the brand expression</li>
+<li>Maintain zero shadows  depth comes from borders and background shifts only</li>
+<li>Keep content density low  each section should present one clear idea</li>
+<li>Use monospace for terminal commands and code  it's primary content, not decoration</li>
+<li>Keep all buttons at 10px 24px padding with pill shape  consistency is absolute</li>
+</ul>
+<h3 id="dont">Don't</h3>
+<ul>
+<li>Don't introduce any chromatic color  no brand blue, no accent green, no warm tones</li>
+<li>Don't use border-radius between 12px and 9999px  the system is binary</li>
+<li>Don't add shadows to any element  the flat aesthetic is intentional</li>
+<li>Don't use font weights above 500  no bold, no black weight</li>
+<li>Don't add decorative illustrations beyond the llama mascot</li>
+<li>Don't use gradients anywhere  flat blocks and borders only</li>
+<li>Don't overcomplicate the layout  two columns maximum, no complex grids</li>
+<li>Don't use borders heavier than 1px  containment is always the lightest possible touch</li>
+<li>Don't add hover animations or transitions  interactions should feel instant and direct</li>
+</ul>
+<h2 id="8-responsive-behavior">8. Responsive Behavior</h2>
+<h3 id="breakpoints">Breakpoints</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Width</th>
+<th>Key Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mobile</td>
+<td>&lt;640px</td>
+<td>Single column, stacked everything, hamburger nav</td>
+</tr>
+<tr>
+<td>Small Tablet</td>
+<td>640768px</td>
+<td>Minor adjustments to spacing</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>768850px</td>
+<td>2-column layouts begin</td>
+</tr>
+<tr>
+<td>Desktop</td>
+<td>8501024px</td>
+<td>Standard layout, expanded features</td>
+</tr>
+<tr>
+<td>Large Desktop</td>
+<td>10241280px</td>
+<td>Maximum content width</td>
+</tr>
+</tbody>
+</table>
+<h3 id="touch-targets">Touch Targets</h3>
+<ul>
+<li>All buttons are pill-shaped with generous padding (10px 24px)</li>
+<li>Navigation links at comfortable 16px size</li>
+<li>Minimum touch area easily exceeds 44x44px</li>
+</ul>
+<h3 id="collapsing-strategy">Collapsing Strategy</h3>
+<ul>
+<li><strong>Navigation</strong>: Collapses to hamburger menu on mobile</li>
+<li><strong>Feature sections</strong>: 2-column  stacked single column</li>
+<li><strong>Hero text</strong>: 48px  36px  30px progressive scaling</li>
+<li><strong>Integration grid</strong>: Multi-column  2-column  single column</li>
+<li><strong>Code blocks</strong>: Horizontal scroll maintained</li>
+</ul>
+<h3 id="image-behavior">Image Behavior</h3>
+<ul>
+<li>Llama mascot scales proportionally</li>
+<li>Code blocks maintain monospace formatting</li>
+<li>Integration icons reflow to fewer columns</li>
+<li>No art direction changes</li>
+</ul>
+<h2 id="9-agent-prompt-guide">9. Agent Prompt Guide</h2>
+<h3 id="quick-color-reference">Quick Color Reference</h3>
+<ul>
+<li>Primary Text: "Pure Black (#000000)"</li>
+<li>Page Background: "Pure White (#ffffff)"</li>
+<li>Secondary Text: "Stone (#737373)"</li>
+<li>Button Background: "Light Gray (#e5e5e5)"</li>
+<li>Borders: "Light Gray (#e5e5e5)"</li>
+<li>Muted Text: "Silver (#a3a3a3)"</li>
+<li>Dark Text: "Near Black (#262626)"</li>
+<li>Subtle Surface: "Snow (#fafafa)"</li>
+</ul>
+<h3 id="example-component-prompts">Example Component Prompts</h3>
+<ul>
+<li>"Create a hero section on pure white (#ffffff) with an illustration centered above a headline at 48px SF Pro Rounded weight 500, line-height 1.0. Use Pure Black (#000000) text. Below, add a black pill-shaped CTA button (9999px radius, 10px 24px padding) and a gray pill button."</li>
+<li>"Design a code block with a 12px border-radius, 1px solid Light Gray (#e5e5e5) border on white background. Use ui-monospace at 16px for the terminal command. No shadow."</li>
+<li>"Build a tab bar with pill-shaped tabs (9999px radius). Active tab: Light Gray (#e5e5e5) background, Near Black (#262626) text. Inactive: transparent background, Stone (#737373) text."</li>
+<li>"Create an integration card grid. Each card is a bordered pill (9999px radius) or a 12px-radius card with 1px solid #e5e5e5 border. Icon + name inside. Grid of 4 columns on desktop."</li>
+<li>"Design a navigation bar: transparent background, no border. Ollama logo on the left, 3 text links (Pure Black, 16px, weight 400), pill search input in the center, 'Sign in' text link and black pill 'Download' button on the right."</li>
+</ul>
+<h3 id="iteration-guide">Iteration Guide</h3>
+<ol>
+<li>Focus on ONE component at a time</li>
+<li>Keep all values grayscale  "Stone (#737373)" not "use a light color"</li>
+<li>Always specify pill (9999px) or container (12px) radius  nothing in between</li>
+<li>Shadows are always zero  never add them</li>
+<li>Weight is always 400 or 500  never bold</li>
+<li>If something feels too decorated, remove it  less is always more for Ollama</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Galyarder Labs
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "navigation.tracking", "search.suggest", "search.highlight", "search.share", "content.code.copy", "toc.follow", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

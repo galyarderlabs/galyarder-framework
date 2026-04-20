@@ -1,0 +1,2340 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Humans 3.0 Protocol: Advanced Agentic Orchestration for the 1-Man Army. Implementing Autonomous Goal Integration (AGI).">
+      
+      
+        <meta name="author" content="Galyarder Labs">
+      
+      
+        <link rel="canonical" href="https://galyarderlabs.github.io/galyarder-framework/skills/analytics-tracking/references/ga4-implementation/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>GA4 Implementation Reference - Galyarder Framework</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ga4-implementation-reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Galyarder Framework" class="md-header__button md-logo" aria-label="Galyarder Framework" data-md-component="logo">
+      
+  <img src="../../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Galyarder Framework
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              GA4 Implementation Reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../QUICK_START/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../WORKFLOW/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Evolution (Protocols)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../AGENTS/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Workforce (Agents)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  SOP Library (Skills)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../commands/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Command Triggers
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../design/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Aesthetic Law (Design)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../testing/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Governance
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../CHANGELOG/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Chronicle
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Galyarder Framework" class="md-nav__button md-logo" aria-label="Galyarder Framework" data-md-component="logo">
+      
+  <img src="../../../../assets/logo.png" alt="logo">
+
+    </a>
+    Galyarder Framework
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../QUICK_START/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../TRIAD_OVERVIEW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ecosystem Triad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../UNIFIED_PLATFORM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unified Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evolution (Protocols)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Evolution (Protocols)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../WORKFLOW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Humans 3.0 Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ORG_CHART/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Global Command Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../INTEGRATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi-Platform Engine
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../MIGRATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migration Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../agents/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workforce (Agents)
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Workforce (Agents)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../AGENTS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent Directory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SOP Library (Skills)
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    SOP Library (Skills)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../commands/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Command Triggers
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Command Triggers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../design/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aesthetic Law (Design)
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Aesthetic Law (Design)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment & Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Platform Specifics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Platform Specifics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../CLAUDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claude Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../GEMINI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gemini CLI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/galyarderlabs/galyarder-agent/blob/main/README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Galyarder Agent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../README.codex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenAI Codex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../README.opencode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenCode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../INTEGRATION_COMPLETE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integration Checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chronicle
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Chronicle
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../RELEASE-NOTES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Release Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-streams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Streams
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhanced-measurement-events-automatic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enhanced Measurement Events (Automatic)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended Events
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Events
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Custom Events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gtagjs-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gtag.js Implementation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#google-tag-manager-datalayer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Google Tag Manager (dataLayer)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conversions-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conversions Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conversions Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-conversions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating Conversions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversion-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conversion Values
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-dimensions-and-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Dimensions and Metrics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Custom Dimensions and Metrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When to Use
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audiences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audiences
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Audiences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-audiences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating Audiences
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audience-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audience Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debugging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Debugging
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Debugging">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#debugview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DebugView
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-time-reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Real-Time Reports
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Issues
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Quality
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Quality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cross-domain-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cross-Domain Tracking
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-with-google-ads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration with Google Ads
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integration with Google Ads">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linking
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audience-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audience Export
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ga4-implementation-reference">GA4 Implementation Reference</h1>
+<p>Detailed implementation guide for Google Analytics 4.</p>
+<h2 id="configuration">Configuration</h2>
+<h3 id="data-streams">Data Streams</h3>
+<ul>
+<li>One stream per platform (web, iOS, Android)</li>
+<li>Enable enhanced measurement for automatic tracking</li>
+<li>Configure data retention (2 months default, 14 months max)</li>
+<li>Enable Google Signals (for cross-device, if consented)</li>
+</ul>
+<h3 id="enhanced-measurement-events-automatic">Enhanced Measurement Events (Automatic)</h3>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Description</th>
+<th>Configuration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>page_view</td>
+<td>Page loads</td>
+<td>Automatic</td>
+</tr>
+<tr>
+<td>scroll</td>
+<td>90% scroll depth</td>
+<td>Toggle on/off</td>
+</tr>
+<tr>
+<td>outbound_click</td>
+<td>Click to external domain</td>
+<td>Automatic</td>
+</tr>
+<tr>
+<td>site_search</td>
+<td>Search query used</td>
+<td>Configure parameter</td>
+</tr>
+<tr>
+<td>video_engagement</td>
+<td>YouTube video plays</td>
+<td>Toggle on/off</td>
+</tr>
+<tr>
+<td>file_download</td>
+<td>PDF, docs, etc.</td>
+<td>Configurable extensions</td>
+</tr>
+</tbody>
+</table>
+<h3 id="recommended-events">Recommended Events</h3>
+<p>Use Google's predefined events when possible for enhanced reporting:</p>
+<p><strong>All properties:</strong>
+- login, sign_up
+- share
+- search</p>
+<p><strong>E-commerce:</strong>
+- view_item, view_item_list
+- add_to_cart, remove_from_cart
+- begin_checkout
+- add_payment_info
+- purchase, refund</p>
+<p><strong>Games:</strong>
+- level_up, unlock_achievement
+- post_score, spend_virtual_currency</p>
+<p>Reference: https://support.google.com/analytics/answer/9267735</p>
+<hr />
+<h2 id="custom-events">Custom Events</h2>
+<h3 id="gtagjs-implementation">gtag.js Implementation</h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// Basic event</span>
+<span class="nx">gtag</span><span class="p">(</span><span class="s1">&#39;event&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;signup_completed&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="s1">&#39;method&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;email&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;plan&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;free&#39;</span>
+<span class="p">});</span>
+
+<span class="c1">// Event with value</span>
+<span class="nx">gtag</span><span class="p">(</span><span class="s1">&#39;event&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;purchase&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="s1">&#39;transaction_id&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;T12345&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;value&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">99.99</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;currency&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;USD&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;items&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">[{</span>
+<span class="w">    </span><span class="s1">&#39;item_id&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;SKU123&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;item_name&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Product Name&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;price&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">99.99</span>
+<span class="w">  </span><span class="p">}]</span>
+<span class="p">});</span>
+
+<span class="c1">// User properties</span>
+<span class="nx">gtag</span><span class="p">(</span><span class="s1">&#39;set&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;user_properties&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="s1">&#39;user_type&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;premium&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;plan_name&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;pro&#39;</span>
+<span class="p">});</span>
+
+<span class="c1">// User ID (for logged-in users)</span>
+<span class="nx">gtag</span><span class="p">(</span><span class="s1">&#39;config&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;GA_MEASUREMENT_ID&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="s1">&#39;user_id&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;USER_ID&#39;</span>
+<span class="p">});</span>
+</code></pre></div>
+<h3 id="google-tag-manager-datalayer">Google Tag Manager (dataLayer)</h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// Custom event</span>
+<span class="nx">dataLayer</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span>
+<span class="w">  </span><span class="s1">&#39;event&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;signup_completed&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;method&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;email&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;plan&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;free&#39;</span>
+<span class="p">});</span>
+
+<span class="c1">// Set user properties</span>
+<span class="nx">dataLayer</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span>
+<span class="w">  </span><span class="s1">&#39;user_id&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;12345&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;user_type&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;premium&#39;</span>
+<span class="p">});</span>
+
+<span class="c1">// E-commerce purchase</span>
+<span class="nx">dataLayer</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span>
+<span class="w">  </span><span class="s1">&#39;event&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;purchase&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;ecommerce&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s1">&#39;transaction_id&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;T12345&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;value&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">99.99</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;currency&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;USD&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;items&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">[{</span>
+<span class="w">      </span><span class="s1">&#39;item_id&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;SKU123&#39;</span><span class="p">,</span>
+<span class="w">      </span><span class="s1">&#39;item_name&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Product Name&#39;</span><span class="p">,</span>
+<span class="w">      </span><span class="s1">&#39;price&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">99.99</span><span class="p">,</span>
+<span class="w">      </span><span class="s1">&#39;quantity&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span>
+<span class="w">    </span><span class="p">}]</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">});</span>
+
+<span class="c1">// Clear ecommerce before sending (best practice)</span>
+<span class="nx">dataLayer</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="w"> </span><span class="nx">ecommerce</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="p">});</span>
+<span class="nx">dataLayer</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span>
+<span class="w">  </span><span class="s1">&#39;event&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;view_item&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;ecommerce&#39;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// ...</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div>
+<hr />
+<h2 id="conversions-setup">Conversions Setup</h2>
+<h3 id="creating-conversions">Creating Conversions</h3>
+<ol>
+<li><strong>Collect the event</strong> - Ensure event is firing in GA4</li>
+<li><strong>Mark as conversion</strong> - Admin &gt; Events &gt; Mark as conversion</li>
+<li><strong>Set counting method</strong>:</li>
+<li>Once per session (leads, signups)</li>
+<li>Every event (purchases)</li>
+<li><strong>Import to Google Ads</strong> - For conversion-optimized bidding</li>
+</ol>
+<h3 id="conversion-values">Conversion Values</h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// Event with conversion value</span>
+<span class="nx">gtag</span><span class="p">(</span><span class="s1">&#39;event&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;purchase&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="s1">&#39;value&#39;</span><span class="o">:</span><span class="w"> </span><span class="mf">99.99</span><span class="p">,</span>
+<span class="w">  </span><span class="s1">&#39;currency&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;USD&#39;</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>Or set default value in GA4 Admin when marking conversion.</p>
+<hr />
+<h2 id="custom-dimensions-and-metrics">Custom Dimensions and Metrics</h2>
+<h3 id="when-to-use">When to Use</h3>
+<p><strong>Custom dimensions:</strong>
+- Properties you want to segment/filter by
+- User attributes (plan type, industry)
+- Content attributes (author, category)</p>
+<p><strong>Custom metrics:</strong>
+- Numeric values to aggregate
+- Scores, counts, durations</p>
+<h3 id="setup-steps">Setup Steps</h3>
+<ol>
+<li>Admin &gt; Data display &gt; Custom definitions</li>
+<li>Create dimension or metric</li>
+<li>Choose scope:</li>
+<li><strong>Event</strong>: Per event (content_type)</li>
+<li><strong>User</strong>: Per user (account_type)</li>
+<li><strong>Item</strong>: Per product (product_category)</li>
+<li>Enter parameter name (must match event parameter)</li>
+</ol>
+<h3 id="examples">Examples</h3>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Scope</th>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>User Type</td>
+<td>User</td>
+<td>user_type</td>
+<td>Free, trial, paid</td>
+</tr>
+<tr>
+<td>Content Author</td>
+<td>Event</td>
+<td>author</td>
+<td>Blog post author</td>
+</tr>
+<tr>
+<td>Product Category</td>
+<td>Item</td>
+<td>item_category</td>
+<td>E-commerce category</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="audiences">Audiences</h2>
+<h3 id="creating-audiences">Creating Audiences</h3>
+<p>Admin &gt; Data display &gt; Audiences</p>
+<p><strong>Use cases:</strong>
+- Remarketing audiences (export to Ads)
+- Segment analysis
+- Trigger-based events</p>
+<h3 id="audience-examples">Audience Examples</h3>
+<p><strong>High-intent visitors:</strong>
+- Viewed pricing page
+- Did not convert
+- In last 7 days</p>
+<p><strong>Engaged users:</strong>
+- 3+ sessions
+- Or 5+ minutes total engagement</p>
+<p><strong>Purchasers:</strong>
+- Purchase event
+- For exclusion or lookalike</p>
+<hr />
+<h2 id="debugging">Debugging</h2>
+<h3 id="debugview">DebugView</h3>
+<p>Enable with:
+- URL parameter: <code>?debug_mode=true</code>
+- Chrome extension: GA Debugger
+- gtag: <code>'debug_mode': true</code> in config</p>
+<p>View at: Reports &gt; Configure &gt; DebugView</p>
+<h3 id="real-time-reports">Real-Time Reports</h3>
+<p>Check events within 30 minutes:
+Reports &gt; Real-time</p>
+<h3 id="common-issues">Common Issues</h3>
+<p><strong>Events not appearing:</strong>
+- Check DebugView first
+- Verify gtag/GTM firing
+- Check filter exclusions</p>
+<p><strong>Parameter values missing:</strong>
+- Custom dimension not created
+- Parameter name mismatch
+- Data still processing (24-48 hrs)</p>
+<p><strong>Conversions not recording:</strong>
+- Event not marked as conversion
+- Event name doesn't match
+- Counting method (once vs. every)</p>
+<hr />
+<h2 id="data-quality">Data Quality</h2>
+<h3 id="filters">Filters</h3>
+<p>Admin &gt; Data streams &gt; [Stream] &gt; Configure tag settings &gt; Define internal traffic</p>
+<p><strong>Exclude:</strong>
+- Internal IP addresses
+- Developer traffic
+- Testing environments</p>
+<h3 id="cross-domain-tracking">Cross-Domain Tracking</h3>
+<p>For multiple domains sharing analytics:</p>
+<ol>
+<li>Admin &gt; Data streams &gt; [Stream] &gt; Configure tag settings</li>
+<li>Configure your domains</li>
+<li>List all domains that should share sessions</li>
+</ol>
+<h3 id="session-settings">Session Settings</h3>
+<p>Admin &gt; Data streams &gt; [Stream] &gt; Configure tag settings</p>
+<ul>
+<li>Session timeout (default 30 min)</li>
+<li>Engaged session duration (10 sec default)</li>
+</ul>
+<hr />
+<h2 id="integration-with-google-ads">Integration with Google Ads</h2>
+<h3 id="linking">Linking</h3>
+<ol>
+<li>Admin &gt; Product links &gt; Google Ads links</li>
+<li>Enable auto-tagging in Google Ads</li>
+<li>Import conversions in Google Ads</li>
+</ol>
+<h3 id="audience-export">Audience Export</h3>
+<p>Audiences created in GA4 can be used in Google Ads for:
+- Remarketing campaigns
+- Customer match
+- Similar audiences</p>
+<hr />
+<p>2026 Galyarder Labs. Galyarder Framework.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Galyarder Labs
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "navigation.tracking", "search.suggest", "search.highlight", "search.share", "content.code.copy", "toc.follow", "content.tabs.link"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

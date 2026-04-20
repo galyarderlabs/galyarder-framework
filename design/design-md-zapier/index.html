@@ -1,0 +1,2745 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Humans 3.0 Protocol: Advanced Agentic Orchestration for the 1-Man Army. Implementing Autonomous Goal Integration (AGI).">
+      
+      
+        <meta name="author" content="Galyarder Labs">
+      
+      
+        <link rel="canonical" href="https://galyarderlabs.github.io/galyarder-framework/design/design-md-zapier/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Design System: Zapier - Galyarder Framework</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#design-system-zapier" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Galyarder Framework" class="md-header__button md-logo" aria-label="Galyarder Framework" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Galyarder Framework
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Design System: Zapier
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../QUICK_START/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../WORKFLOW/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Evolution (Protocols)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../AGENTS/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Workforce (Agents)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../skills/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  SOP Library (Skills)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../commands/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Command Triggers
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Aesthetic Law (Design)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../testing/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Governance
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../CHANGELOG/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Chronicle
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Galyarder Framework" class="md-nav__button md-logo" aria-label="Galyarder Framework" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Galyarder Framework
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../QUICK_START/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TRIAD_OVERVIEW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ecosystem Triad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UNIFIED_PLATFORM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unified Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evolution (Protocols)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Evolution (Protocols)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WORKFLOW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Humans 3.0 Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ORG_CHART/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Global Command Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../INTEGRATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi-Platform Engine
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MIGRATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migration Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../agents/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workforce (Agents)
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Workforce (Agents)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AGENTS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent Directory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../skills/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SOP Library (Skills)
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    SOP Library (Skills)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../commands/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Command Triggers
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Command Triggers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aesthetic Law (Design)
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Aesthetic Law (Design)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment & Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Platform Specifics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Platform Specifics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CLAUDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claude Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GEMINI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gemini CLI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/galyarderlabs/galyarder-agent/blob/main/README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Galyarder Agent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../README.codex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenAI Codex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../README.opencode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenCode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../INTEGRATION_COMPLETE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integration Checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chronicle
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Chronicle
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RELEASE-NOTES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Release Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-visual-theme-atmosphere" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Visual Theme &amp; Atmosphere
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-color-palette-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Color Palette &amp; Roles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Color Palette &amp; Roles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Primary
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#brand-accent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Brand Accent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#neutral-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Neutral Scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interactive
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overlay-surface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overlay &amp; Surface
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shadows-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shadows &amp; Depth
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-typography-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Typography Rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Typography Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#font-families" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Font Families
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hierarchy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-component-stylings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Component Stylings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Component Stylings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#buttons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Buttons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cards-containers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cards &amp; Containers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inputs-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inputs &amp; Forms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navigation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-treatment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Treatment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distinctive-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distinctive Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-layout-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Layout Principles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Layout Principles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spacing-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spacing System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grid &amp; Container
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whitespace-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Whitespace Philosophy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#border-radius-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Border Radius Scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-depth-elevation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Depth &amp; Elevation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Depth &amp; Elevation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#decorative-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decorative Depth
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-dos-and-donts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Do's and Don'ts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Do&#39;s and Don&#39;ts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dont" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Don't
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-responsive-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Responsive Behavior
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Responsive Behavior">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breakpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breakpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#touch-targets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Touch Targets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collapsing-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Collapsing Strategy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Behavior
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-agent-prompt-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Agent Prompt Guide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Agent Prompt Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-color-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Color Reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-component-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Component Prompts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteration-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteration Guide
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="design-system-zapier">Design System: Zapier</h1>
+<h2 id="1-visual-theme-atmosphere">1. Visual Theme &amp; Atmosphere</h2>
+<p>Zapier's website radiates warm, approachable professionalism. It rejects the cold monochrome minimalism of developer tools in favor of a cream-tinted canvas (<code>#fffefb</code>) that feels like unbleached paper -- the digital equivalent of a well-organized notebook. The near-black (<code>#201515</code>) text has a faint reddish-brown warmth, creating an atmosphere more human than mechanical. This is automation designed to feel effortless, not technical.</p>
+<p>The typographic system is a deliberate interplay of two distinct personalities. <strong>Degular Display</strong> -- a geometric, wide-set display face -- handles hero-scale headlines at 56-80px with medium weight (500) and extraordinarily tight line-heights (0.90), creating headlines that compress vertically like stacked blocks. <strong>Inter</strong> serves as the workhorse for everything else, from section headings to body text and navigation, with fallbacks to Helvetica and Arial. <strong>GT Alpina</strong>, an elegant thin-weight serif with aggressive negative letter-spacing (-1.6px to -1.92px), makes occasional appearances for softer editorial moments. This three-font system gives Zapier the ability to shift register -- from bold and punchy (Degular) to clean and functional (Inter) to refined and literary (GT Alpina).</p>
+<p>The brand's signature orange (<code>#ff4f00</code>) is unmistakable -- a vivid, saturated red-orange that sits precisely between traffic-cone urgency and sunset warmth. It's used sparingly but decisively: primary CTA buttons, active state underlines, and accent borders. Against the warm cream background, this orange creates a color relationship that feels energetic without being aggressive.</p>
+<p><strong>Key Characteristics:</strong>
+- Warm cream canvas (<code>#fffefb</code>) instead of pure white -- organic, paper-like warmth
+- Near-black with reddish undertone (<code>#201515</code>) -- text that breathes rather than dominates
+- Degular Display for hero headlines at 0.90 line-height -- compressed, impactful, modern
+- Inter as the universal UI font across all functional typography
+- GT Alpina for editorial accents -- thin-weight serif with extreme negative tracking
+- Zapier Orange (<code>#ff4f00</code>) as the single accent -- vivid, warm, sparingly applied
+- Warm neutral palette: borders (<code>#c5c0b1</code>), muted text (<code>#939084</code>), surface tints (<code>#eceae3</code>)
+- 8px base spacing system with generous padding on CTAs (20px 24px)
+- Border-forward design: <code>1px solid</code> borders in warm grays define structure over shadows</p>
+<h2 id="2-color-palette-roles">2. Color Palette &amp; Roles</h2>
+<h3 id="primary">Primary</h3>
+<ul>
+<li><strong>Zapier Black</strong> (<code>#201515</code>): Primary text, headings, dark button backgrounds. A warm near-black with reddish undertones -- never cold.</li>
+<li><strong>Cream White</strong> (<code>#fffefb</code>): Page background, card surfaces, light button fills. Not pure white; the yellowish warmth is intentional.</li>
+<li><strong>Off-White</strong> (<code>#fffdf9</code>): Secondary background surface, subtle alternate tint. Nearly indistinguishable from cream white but creates depth.</li>
+</ul>
+<h3 id="brand-accent">Brand Accent</h3>
+<ul>
+<li><strong>Zapier Orange</strong> (<code>#ff4f00</code>): Primary CTA buttons, active underline indicators, accent borders. The signature color -- vivid and warm.</li>
+</ul>
+<h3 id="neutral-scale">Neutral Scale</h3>
+<ul>
+<li><strong>Dark Charcoal</strong> (<code>#36342e</code>): Secondary text, footer text, border color for strong dividers. A warm dark gray-brown with 70% opacity variant.</li>
+<li><strong>Warm Gray</strong> (<code>#939084</code>): Tertiary text, muted labels, timestamp-style content. Mid-range with greenish-warm undertone.</li>
+<li><strong>Sand</strong> (<code>#c5c0b1</code>): Primary border color, hover state backgrounds, divider lines. The backbone of Zapier's structural elements.</li>
+<li><strong>Light Sand</strong> (<code>#eceae3</code>): Secondary button backgrounds, light borders, subtle card surfaces.</li>
+<li><strong>Mid Warm</strong> (<code>#b5b2aa</code>): Alternate border tone, used on specific span elements.</li>
+</ul>
+<h3 id="interactive">Interactive</h3>
+<ul>
+<li><strong>Orange CTA</strong> (<code>#ff4f00</code>): Primary action buttons and active tab underlines.</li>
+<li><strong>Dark CTA</strong> (<code>#201515</code>): Secondary dark buttons with sand hover state.</li>
+<li><strong>Light CTA</strong> (<code>#eceae3</code>): Tertiary/ghost buttons with sand hover.</li>
+<li><strong>Link Default</strong> (<code>#201515</code>): Standard link color, matching body text.</li>
+<li><strong>Hover Underline</strong>: Links remove <code>text-decoration: underline</code> on hover (inverse pattern).</li>
+</ul>
+<h3 id="overlay-surface">Overlay &amp; Surface</h3>
+<ul>
+<li><strong>Semi-transparent Dark</strong> (<code>rgba(45, 45, 46, 0.5)</code>): Overlay button variant, backdrop-like elements.</li>
+<li><strong>Pill Surface</strong> (<code>#fffefb</code>): White pill buttons with sand borders.</li>
+</ul>
+<h3 id="shadows-depth">Shadows &amp; Depth</h3>
+<ul>
+<li><strong>Inset Underline</strong> (<code>rgb(255, 79, 0) 0px -4px 0px 0px inset</code>): Active tab indicator -- orange underline using inset box-shadow.</li>
+<li><strong>Hover Underline</strong> (<code>rgb(197, 192, 177) 0px -4px 0px 0px inset</code>): Inactive tab hover -- sand-colored underline.</li>
+</ul>
+<h2 id="3-typography-rules">3. Typography Rules</h2>
+<h3 id="font-families">Font Families</h3>
+<ul>
+<li><strong>Display</strong>: <code>Degular Display</code> -- wide geometric display face for hero headlines</li>
+<li><strong>Primary</strong>: <code>Inter</code>, with fallbacks: <code>Helvetica, Arial</code></li>
+<li><strong>Editorial</strong>: <code>GT Alpina</code> -- thin-weight serif for editorial moments</li>
+<li><strong>System</strong>: <code>Arial</code> -- fallback for form elements and system UI</li>
+</ul>
+<h3 id="hierarchy">Hierarchy</h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Font</th>
+<th>Size</th>
+<th>Weight</th>
+<th>Line Height</th>
+<th>Letter Spacing</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Display Hero XL</td>
+<td>Degular Display</td>
+<td>80px (5.00rem)</td>
+<td>500</td>
+<td>0.90 (tight)</td>
+<td>normal</td>
+<td>Maximum impact, compressed block</td>
+</tr>
+<tr>
+<td>Display Hero</td>
+<td>Degular Display</td>
+<td>56px (3.50rem)</td>
+<td>500</td>
+<td>0.90-1.10 (tight)</td>
+<td>0-1.12px</td>
+<td>Primary hero headlines</td>
+</tr>
+<tr>
+<td>Display Hero SM</td>
+<td>Degular Display</td>
+<td>40px (2.50rem)</td>
+<td>500</td>
+<td>0.90 (tight)</td>
+<td>normal</td>
+<td>Smaller hero variant</td>
+</tr>
+<tr>
+<td>Display Button</td>
+<td>Degular Display</td>
+<td>24px (1.50rem)</td>
+<td>600</td>
+<td>1.00 (tight)</td>
+<td>1px</td>
+<td>Large CTA button text</td>
+</tr>
+<tr>
+<td>Section Heading</td>
+<td>Inter</td>
+<td>48px (3.00rem)</td>
+<td>500</td>
+<td>1.04 (tight)</td>
+<td>normal</td>
+<td>Major section titles</td>
+</tr>
+<tr>
+<td>Editorial Heading</td>
+<td>GT Alpina</td>
+<td>48px (3.00rem)</td>
+<td>250</td>
+<td>normal</td>
+<td>-1.92px</td>
+<td>Thin editorial headlines</td>
+</tr>
+<tr>
+<td>Editorial Sub</td>
+<td>GT Alpina</td>
+<td>40px (2.50rem)</td>
+<td>300</td>
+<td>1.08 (tight)</td>
+<td>-1.6px</td>
+<td>Editorial subheadings</td>
+</tr>
+<tr>
+<td>Sub-heading LG</td>
+<td>Inter</td>
+<td>36px (2.25rem)</td>
+<td>500</td>
+<td>normal</td>
+<td>-1px</td>
+<td>Large sub-sections</td>
+</tr>
+<tr>
+<td>Sub-heading</td>
+<td>Inter</td>
+<td>32px (2.00rem)</td>
+<td>400</td>
+<td>1.25 (tight)</td>
+<td>normal</td>
+<td>Standard sub-sections</td>
+</tr>
+<tr>
+<td>Sub-heading MD</td>
+<td>Inter</td>
+<td>28px (1.75rem)</td>
+<td>500</td>
+<td>normal</td>
+<td>normal</td>
+<td>Medium sub-headings</td>
+</tr>
+<tr>
+<td>Card Title</td>
+<td>Inter</td>
+<td>24px (1.50rem)</td>
+<td>600</td>
+<td>normal</td>
+<td>-0.48px</td>
+<td>Card headings</td>
+</tr>
+<tr>
+<td>Body Large</td>
+<td>Inter</td>
+<td>20px (1.25rem)</td>
+<td>400-500</td>
+<td>1.00-1.20 (tight)</td>
+<td>-0.2px</td>
+<td>Feature descriptions</td>
+</tr>
+<tr>
+<td>Body Emphasis</td>
+<td>Inter</td>
+<td>18px (1.13rem)</td>
+<td>600</td>
+<td>1.00 (tight)</td>
+<td>normal</td>
+<td>Emphasized body text</td>
+</tr>
+<tr>
+<td>Body</td>
+<td>Inter</td>
+<td>16px (1.00rem)</td>
+<td>400-500</td>
+<td>1.20-1.25</td>
+<td>-0.16px</td>
+<td>Standard reading text</td>
+</tr>
+<tr>
+<td>Body Semibold</td>
+<td>Inter</td>
+<td>16px (1.00rem)</td>
+<td>600</td>
+<td>1.16 (tight)</td>
+<td>normal</td>
+<td>Strong labels</td>
+</tr>
+<tr>
+<td>Button</td>
+<td>Inter</td>
+<td>16px (1.00rem)</td>
+<td>600</td>
+<td>normal</td>
+<td>normal</td>
+<td>Standard buttons</td>
+</tr>
+<tr>
+<td>Button SM</td>
+<td>Inter</td>
+<td>14px (0.88rem)</td>
+<td>600</td>
+<td>normal</td>
+<td>normal</td>
+<td>Small buttons</td>
+</tr>
+<tr>
+<td>Caption</td>
+<td>Inter</td>
+<td>14px (0.88rem)</td>
+<td>500</td>
+<td>1.25-1.43</td>
+<td>normal</td>
+<td>Labels, metadata</td>
+</tr>
+<tr>
+<td>Caption Upper</td>
+<td>Inter</td>
+<td>14px (0.88rem)</td>
+<td>600</td>
+<td>normal</td>
+<td>0.5px</td>
+<td>Uppercase section labels</td>
+</tr>
+<tr>
+<td>Micro</td>
+<td>Inter</td>
+<td>12px (0.75rem)</td>
+<td>600</td>
+<td>0.90-1.33</td>
+<td>0.5px</td>
+<td>Tiny labels, often uppercase</td>
+</tr>
+<tr>
+<td>Micro SM</td>
+<td>Inter</td>
+<td>13px (0.81rem)</td>
+<td>500</td>
+<td>1.00-1.54</td>
+<td>normal</td>
+<td>Small metadata text</td>
+</tr>
+</tbody>
+</table>
+<h3 id="principles">Principles</h3>
+<ul>
+<li><strong>Three-font system, clear roles</strong>: Degular Display commands attention at hero scale only. Inter handles everything functional. GT Alpina adds editorial warmth sparingly.</li>
+<li><strong>Compressed display</strong>: Degular at 0.90 line-height creates vertically compressed headline blocks that feel modern and architectural.</li>
+<li><strong>Weight as hierarchy signal</strong>: Inter uses 400 (reading), 500 (navigation/emphasis), 600 (headings/CTAs). Degular uses 500 (display) and 600 (buttons).</li>
+<li><strong>Uppercase for labels</strong>: Section labels (like "01 / Colors") and small categorization use <code>text-transform: uppercase</code> with 0.5px letter-spacing.</li>
+<li><strong>Negative tracking for elegance</strong>: GT Alpina uses -1.6px to -1.92px letter-spacing for its thin-weight editorial headlines.</li>
+</ul>
+<h2 id="4-component-stylings">4. Component Stylings</h2>
+<h3 id="buttons">Buttons</h3>
+<p><strong>Primary Orange</strong>
+- Background: <code>#ff4f00</code>
+- Text: <code>#fffefb</code>
+- Padding: 8px 16px
+- Radius: 4px
+- Border: <code>1px solid #ff4f00</code>
+- Use: Primary CTA ("Start free with email", "Sign up free")</p>
+<p><strong>Primary Dark</strong>
+- Background: <code>#201515</code>
+- Text: <code>#fffefb</code>
+- Padding: 20px 24px
+- Radius: 8px
+- Border: <code>1px solid #201515</code>
+- Hover: background shifts to <code>#c5c0b1</code>, text to <code>#201515</code>
+- Use: Large secondary CTA buttons</p>
+<p><strong>Light / Ghost</strong>
+- Background: <code>#eceae3</code>
+- Text: <code>#36342e</code>
+- Padding: 20px 24px
+- Radius: 8px
+- Border: <code>1px solid #c5c0b1</code>
+- Hover: background shifts to <code>#c5c0b1</code>, text to <code>#201515</code>
+- Use: Tertiary actions, filter buttons</p>
+<p><strong>Pill Button</strong>
+- Background: <code>#fffefb</code>
+- Text: <code>#36342e</code>
+- Padding: 0px 16px
+- Radius: 20px
+- Border: <code>1px solid #c5c0b1</code>
+- Use: Tag-like selections, filter pills</p>
+<p><strong>Overlay Semi-transparent</strong>
+- Background: <code>rgba(45, 45, 46, 0.5)</code>
+- Text: <code>#fffefb</code>
+- Radius: 20px
+- Hover: background becomes fully opaque <code>#2d2d2e</code>
+- Use: Video play buttons, floating actions</p>
+<p><strong>Tab / Navigation (Inset Shadow)</strong>
+- Background: transparent
+- Text: <code>#201515</code>
+- Padding: 12px 16px
+- Shadow: <code>rgb(255, 79, 0) 0px -4px 0px 0px inset</code> (active orange underline)
+- Hover shadow: <code>rgb(197, 192, 177) 0px -4px 0px 0px inset</code> (sand underline)
+- Use: Horizontal tab navigation</p>
+<h3 id="cards-containers">Cards &amp; Containers</h3>
+<ul>
+<li>Background: <code>#fffefb</code></li>
+<li>Border: <code>1px solid #c5c0b1</code> (warm sand border)</li>
+<li>Radius: 5px (standard), 8px (featured)</li>
+<li>No shadow elevation by default -- borders define containment</li>
+<li>Hover: subtle border color intensification</li>
+</ul>
+<h3 id="inputs-forms">Inputs &amp; Forms</h3>
+<ul>
+<li>Background: <code>#fffefb</code></li>
+<li>Text: <code>#201515</code></li>
+<li>Border: <code>1px solid #c5c0b1</code></li>
+<li>Radius: 5px</li>
+<li>Focus: border color shifts to <code>#ff4f00</code> (orange)</li>
+<li>Placeholder: <code>#939084</code></li>
+</ul>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li>Clean horizontal nav on cream background</li>
+<li>Zapier logotype left-aligned, 104x28px</li>
+<li>Links: Inter 16px weight 500, <code>#201515</code> text</li>
+<li>CTA: Orange button ("Start free with email")</li>
+<li>Tab navigation uses inset box-shadow underline technique</li>
+<li>Mobile: hamburger collapse</li>
+</ul>
+<h3 id="image-treatment">Image Treatment</h3>
+<ul>
+<li>Product screenshots with <code>1px solid #c5c0b1</code> border</li>
+<li>Rounded corners: 5-8px</li>
+<li>Dashboard/workflow screenshots prominent in feature sections</li>
+<li>Light gradient backgrounds behind hero content</li>
+</ul>
+<h3 id="distinctive-components">Distinctive Components</h3>
+<p><strong>Workflow Integration Cards</strong>
+- Display connected app icons in pairs
+- Arrow or connection indicator between apps
+- Sand border containment
+- Inter weight 500 for app names</p>
+<p><strong>Stat Counter</strong>
+- Large display number using Inter 48px weight 500
+- Muted description below in <code>#36342e</code>
+- Used for social proof metrics</p>
+<p><strong>Social Proof Icons</strong>
+- Circular icon buttons: 14px radius
+- Sand border: <code>1px solid #c5c0b1</code>
+- Used for social media follow links in footer</p>
+<h2 id="5-layout-principles">5. Layout Principles</h2>
+<h3 id="spacing-system">Spacing System</h3>
+<ul>
+<li>Base unit: 8px</li>
+<li>Scale: 1px, 4px, 6px, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 56px, 64px, 72px</li>
+<li>CTA buttons use generous padding: 20px 24px for large, 8px 16px for standard</li>
+<li>Section padding: 64px-80px vertical</li>
+</ul>
+<h3 id="grid-container">Grid &amp; Container</h3>
+<ul>
+<li>Max content width: approximately 1200px</li>
+<li>Hero: centered single-column with large top padding</li>
+<li>Feature sections: 2-3 column grids for integration cards</li>
+<li>Full-width sand-bordered dividers between sections</li>
+<li>Footer: multi-column dark background (<code>#201515</code>)</li>
+</ul>
+<h3 id="whitespace-philosophy">Whitespace Philosophy</h3>
+<ul>
+<li><strong>Warm breathing room</strong>: Generous vertical spacing between sections (64px-80px), but content areas are relatively dense -- Zapier packs information efficiently within its cream canvas.</li>
+<li><strong>Architectural compression</strong>: Degular Display headlines at 0.90 line-height compress vertically, contrasting with the open spacing around them.</li>
+<li><strong>Section rhythm</strong>: Cream background throughout, with sections separated by sand-colored borders rather than background color changes.</li>
+</ul>
+<h3 id="border-radius-scale">Border Radius Scale</h3>
+<ul>
+<li>Tight (3px): Small inline spans</li>
+<li>Standard (4px): Buttons (orange CTA), tags, small elements</li>
+<li>Content (5px): Cards, links, general containers</li>
+<li>Comfortable (8px): Featured cards, large buttons, tabs</li>
+<li>Social (14px): Social icon buttons, pill-like elements</li>
+<li>Pill (20px): Play buttons, large pill buttons, floating actions</li>
+</ul>
+<h2 id="6-depth-elevation">6. Depth &amp; Elevation</h2>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Treatment</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Flat (Level 0)</td>
+<td>No shadow</td>
+<td>Page background, text blocks</td>
+</tr>
+<tr>
+<td>Bordered (Level 1)</td>
+<td><code>1px solid #c5c0b1</code></td>
+<td>Standard cards, containers, inputs</td>
+</tr>
+<tr>
+<td>Strong Border (Level 1b)</td>
+<td><code>1px solid #36342e</code></td>
+<td>Dark dividers, emphasized sections</td>
+</tr>
+<tr>
+<td>Active Tab (Level 2)</td>
+<td><code>rgb(255, 79, 0) 0px -4px 0px 0px inset</code></td>
+<td>Active tab underline (orange)</td>
+</tr>
+<tr>
+<td>Hover Tab (Level 2b)</td>
+<td><code>rgb(197, 192, 177) 0px -4px 0px 0px inset</code></td>
+<td>Hover tab underline (sand)</td>
+</tr>
+<tr>
+<td>Focus (Accessibility)</td>
+<td><code>1px solid #ff4f00</code> outline</td>
+<td>Focus ring on interactive elements</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Shadow Philosophy</strong>: Zapier deliberately avoids traditional shadow-based elevation. Structure is defined almost entirely through borders -- warm sand (<code>#c5c0b1</code>) borders for standard containment, dark charcoal (<code>#36342e</code>) borders for emphasis. The only shadow-like technique is the inset box-shadow used for tab underlines, where a <code>0px -4px 0px 0px inset</code> shadow creates a bottom-bar indicator. This border-first approach keeps the design grounded and tangible rather than floating.</p>
+<h3 id="decorative-depth">Decorative Depth</h3>
+<ul>
+<li>Orange inset underline on active tabs creates visual "weight" at the bottom of elements</li>
+<li>Sand hover underlines provide preview states without layout shifts</li>
+<li>No background gradients in main content -- the cream canvas is consistent</li>
+<li>Footer uses full dark background (<code>#201515</code>) for contrast reversal</li>
+</ul>
+<h2 id="7-dos-and-donts">7. Do's and Don'ts</h2>
+<h3 id="do">Do</h3>
+<ul>
+<li>Use Degular Display exclusively for hero-scale headlines (40px+) with 0.90 line-height for compressed impact</li>
+<li>Use Inter for all functional UI -- navigation, body text, buttons, labels</li>
+<li>Apply warm cream (<code>#fffefb</code>) as the background, never pure white</li>
+<li>Use <code>#201515</code> for text, never pure black -- the reddish warmth matters</li>
+<li>Keep Zapier Orange (<code>#ff4f00</code>) reserved for primary CTAs and active state indicators</li>
+<li>Use sand (<code>#c5c0b1</code>) borders as the primary structural element instead of shadows</li>
+<li>Apply generous button padding (20px 24px) for large CTAs to match Zapier's spacious button style</li>
+<li>Use inset box-shadow underlines for tab navigation rather than border-bottom</li>
+<li>Apply uppercase with 0.5px letter-spacing for section labels and micro-categorization</li>
+</ul>
+<h3 id="dont">Don't</h3>
+<ul>
+<li>Don't use Degular Display for body text or UI elements -- it's display-only</li>
+<li>Don't use pure white (<code>#ffffff</code>) or pure black (<code>#000000</code>) -- Zapier's palette is warm-shifted</li>
+<li>Don't apply box-shadow elevation to cards -- use borders instead</li>
+<li>Don't scatter Zapier Orange across the UI -- it's reserved for CTAs and active states</li>
+<li>Don't use tight padding on large CTA buttons -- Zapier's buttons are deliberately spacious</li>
+<li>Don't ignore the warm neutral system -- borders should be <code>#c5c0b1</code>, not gray</li>
+<li>Don't use GT Alpina for functional UI -- it's an editorial accent at thin weights only</li>
+<li>Don't apply positive letter-spacing to GT Alpina -- it uses aggressive negative tracking (-1.6px to -1.92px)</li>
+<li>Don't use rounded pill shapes (9999px) for primary buttons -- pills are for tags and social icons</li>
+</ul>
+<h2 id="8-responsive-behavior">8. Responsive Behavior</h2>
+<h3 id="breakpoints">Breakpoints</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Width</th>
+<th>Key Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mobile Small</td>
+<td>&lt;450px</td>
+<td>Tight single column, reduced hero text</td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>450-600px</td>
+<td>Standard mobile, stacked layout</td>
+</tr>
+<tr>
+<td>Mobile Large</td>
+<td>600-640px</td>
+<td>Slight horizontal breathing room</td>
+</tr>
+<tr>
+<td>Tablet Small</td>
+<td>640-680px</td>
+<td>2-column grids begin</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>680-768px</td>
+<td>Card grids expand</td>
+</tr>
+<tr>
+<td>Tablet Large</td>
+<td>768-991px</td>
+<td>Full card grids, expanded padding</td>
+</tr>
+<tr>
+<td>Desktop Small</td>
+<td>991-1024px</td>
+<td>Desktop layout initiates</td>
+</tr>
+<tr>
+<td>Desktop</td>
+<td>1024-1280px</td>
+<td>Full layout, maximum content width</td>
+</tr>
+<tr>
+<td>Large Desktop</td>
+<td>&gt;1280px</td>
+<td>Centered with generous margins</td>
+</tr>
+</tbody>
+</table>
+<h3 id="touch-targets">Touch Targets</h3>
+<ul>
+<li>Large CTA buttons: 20px 24px padding (comfortable 60px+ height)</li>
+<li>Standard buttons: 8px 16px padding</li>
+<li>Navigation links: 16px weight 500 with adequate spacing</li>
+<li>Social icons: 14px radius circular buttons</li>
+<li>Tab items: 12px 16px padding</li>
+</ul>
+<h3 id="collapsing-strategy">Collapsing Strategy</h3>
+<ul>
+<li>Hero: Degular 80px display scales to 40-56px on smaller screens</li>
+<li>Navigation: horizontal links + CTA collapse to hamburger menu</li>
+<li>Feature cards: 3-column grid to 2-column to single-column stacked</li>
+<li>Integration workflow illustrations: maintain aspect ratio, may simplify</li>
+<li>Footer: multi-column dark section collapses to stacked</li>
+<li>Section spacing: 64-80px reduces to 40-48px on mobile</li>
+</ul>
+<h3 id="image-behavior">Image Behavior</h3>
+<ul>
+<li>Product screenshots maintain sand border treatment at all sizes</li>
+<li>Integration app icons maintain fixed sizes within responsive containers</li>
+<li>Hero illustrations scale proportionally</li>
+<li>Full-width sections maintain edge-to-edge treatment</li>
+</ul>
+<h2 id="9-agent-prompt-guide">9. Agent Prompt Guide</h2>
+<h3 id="quick-color-reference">Quick Color Reference</h3>
+<ul>
+<li>Primary CTA: Zapier Orange (<code>#ff4f00</code>)</li>
+<li>Background: Cream White (<code>#fffefb</code>)</li>
+<li>Heading text: Zapier Black (<code>#201515</code>)</li>
+<li>Body text: Dark Charcoal (<code>#36342e</code>)</li>
+<li>Border: Sand (<code>#c5c0b1</code>)</li>
+<li>Secondary surface: Light Sand (<code>#eceae3</code>)</li>
+<li>Muted text: Warm Gray (<code>#939084</code>)</li>
+</ul>
+<h3 id="example-component-prompts">Example Component Prompts</h3>
+<ul>
+<li>"Create a hero section on cream background (<code>#fffefb</code>). Headline at 56px Degular Display weight 500, line-height 0.90, color <code>#201515</code>. Subtitle at 20px Inter weight 400, line-height 1.20, color <code>#36342e</code>. Orange CTA button (<code>#ff4f00</code>, 4px radius, 8px 16px padding, white text) and dark button (<code>#201515</code>, 8px radius, 20px 24px padding, white text)."</li>
+<li>"Design a card: cream background (<code>#fffefb</code>), <code>1px solid #c5c0b1</code> border, 5px radius. Title at 24px Inter weight 600, letter-spacing -0.48px, <code>#201515</code>. Body at 16px weight 400, <code>#36342e</code>. No box-shadow."</li>
+<li>"Build a tab navigation: transparent background. Inter 16px weight 500, <code>#201515</code> text. Active tab: <code>box-shadow: rgb(255, 79, 0) 0px -4px 0px 0px inset</code>. Hover: <code>box-shadow: rgb(197, 192, 177) 0px -4px 0px 0px inset</code>. Padding 12px 16px."</li>
+<li>"Create navigation: cream sticky header (<code>#fffefb</code>). Inter 16px weight 500 for links, <code>#201515</code> text. Orange pill CTA 'Start free with email' right-aligned (<code>#ff4f00</code>, 4px radius, 8px 16px padding)."</li>
+<li>"Design a footer with dark background (<code>#201515</code>). Text <code>#fffefb</code>. Links in <code>#c5c0b1</code> with hover to <code>#fffefb</code>. Multi-column layout. Social icons as 14px-radius circles with sand borders."</li>
+</ul>
+<h3 id="iteration-guide">Iteration Guide</h3>
+<ol>
+<li>Always use warm cream (<code>#fffefb</code>) background, never pure white -- the warmth defines Zapier</li>
+<li>Borders (<code>1px solid #c5c0b1</code>) are the structural backbone -- avoid shadow elevation</li>
+<li>Zapier Orange (<code>#ff4f00</code>) is the only accent color; everything else is warm neutrals</li>
+<li>Three fonts, strict roles: Degular Display (hero), Inter (UI), GT Alpina (editorial)</li>
+<li>Large CTA buttons need generous padding (20px 24px) -- Zapier buttons feel spacious</li>
+<li>Tab navigation uses inset box-shadow underlines, not border-bottom</li>
+<li>Text is always warm: <code>#201515</code> for dark, <code>#36342e</code> for body, <code>#939084</code> for muted</li>
+<li>Uppercase labels at 12-14px with 0.5px letter-spacing for section categorization</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Galyarder Labs
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "navigation.tracking", "search.suggest", "search.highlight", "search.share", "content.code.copy", "toc.follow", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

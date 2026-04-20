@@ -1,0 +1,3368 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Humans 3.0 Protocol: Advanced Agentic Orchestration for the 1-Man Army. Implementing Autonomous Goal Integration (AGI).">
+      
+      
+        <meta name="author" content="Galyarder Labs">
+      
+      
+        <link rel="canonical" href="https://galyarderlabs.github.io/galyarder-framework/CHANGELOG/">
+      
+      
+        <link rel="prev" href="../INTEGRATION_COMPLETE/">
+      
+      
+        <link rel="next" href="../RELEASE-NOTES/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Changelog - Galyarder Framework</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#changelog" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Galyarder Framework" class="md-header__button md-logo" aria-label="Galyarder Framework" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Galyarder Framework
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Changelog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../QUICK_START/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../WORKFLOW/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Evolution (Protocols)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../AGENTS/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Workforce (Agents)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../skills/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  SOP Library (Skills)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../commands/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Command Triggers
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../design/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Aesthetic Law (Design)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../testing/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Governance
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Chronicle
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Galyarder Framework" class="md-nav__button md-logo" aria-label="Galyarder Framework" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Galyarder Framework
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../QUICK_START/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TRIAD_OVERVIEW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ecosystem Triad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UNIFIED_PLATFORM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unified Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evolution (Protocols)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Evolution (Protocols)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WORKFLOW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Humans 3.0 Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ORG_CHART/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Global Command Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../INTEGRATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi-Platform Engine
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MIGRATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migration Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../agents/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workforce (Agents)
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Workforce (Agents)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AGENTS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent Directory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../skills/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SOP Library (Skills)
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    SOP Library (Skills)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../commands/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Command Triggers
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Command Triggers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../design/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aesthetic Law (Design)
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Aesthetic Law (Design)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment & Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Platform Specifics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Platform Specifics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CLAUDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claude Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GEMINI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gemini CLI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/galyarderlabs/galyarder-agent/blob/main/README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Galyarder Agent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../README.codex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenAI Codex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../README.opencode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenCode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../INTEGRATION_COMPLETE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integration Checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chronicle
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Chronicle
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1817-2026-04-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.17] - 2026-04-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.17] - 2026-04-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1816-2026-04-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.16] - 2026-04-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.16] - 2026-04-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1813-2026-04-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.13] - 2026-04-20
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.13] - 2026-04-20">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1812-2026-04-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.12] - 2026-04-20
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.12] - 2026-04-20">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1811-2026-04-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.11] - 2026-04-20
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.11] - 2026-04-20">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1810-2026-04-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.10] - 2026-04-20
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.10] - 2026-04-20">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#189-2026-04-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.9] - 2026-04-20
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.9] - 2026-04-20">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#188-2026-04-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.8] - 2026-04-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.8] - 2026-04-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#187-2026-04-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.7] - 2026-04-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.7] - 2026-04-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#186-2026-04-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.6] - 2026-04-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.6] - 2026-04-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#185-2026-04-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.5] - 2026-04-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.5] - 2026-04-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#184-2026-04-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.4] - 2026-04-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.4] - 2026-04-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#183-2026-04-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.3] - 2026-04-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.3] - 2026-04-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#182-2026-04-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.2] - 2026-04-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.2] - 2026-04-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#181-2026-04-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.1] - 2026-04-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.1] - 2026-04-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#180-2026-04-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.0] - 2026-04-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.0] - 2026-04-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#breaking-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breaking Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Migration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verification-smoke" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verification (Smoke)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#160-2026-04-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.6.0] - 2026-04-12
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.6.0] - 2026-04-12">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#breaking-changes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breaking Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RELEASE-NOTES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Release Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1817-2026-04-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.17] - 2026-04-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.17] - 2026-04-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1816-2026-04-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.16] - 2026-04-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.16] - 2026-04-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#changed_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1813-2026-04-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.13] - 2026-04-20
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.13] - 2026-04-20">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1812-2026-04-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.12] - 2026-04-20
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.12] - 2026-04-20">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1811-2026-04-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.11] - 2026-04-20
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.11] - 2026-04-20">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1810-2026-04-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.10] - 2026-04-20
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.10] - 2026-04-20">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#189-2026-04-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.9] - 2026-04-20
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.9] - 2026-04-20">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#188-2026-04-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.8] - 2026-04-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.8] - 2026-04-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#187-2026-04-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.7] - 2026-04-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.7] - 2026-04-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#186-2026-04-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.6] - 2026-04-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.6] - 2026-04-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#185-2026-04-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.5] - 2026-04-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.5] - 2026-04-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#184-2026-04-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.4] - 2026-04-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.4] - 2026-04-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#183-2026-04-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.3] - 2026-04-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.3] - 2026-04-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#182-2026-04-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.2] - 2026-04-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.2] - 2026-04-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#181-2026-04-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.1] - 2026-04-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.1] - 2026-04-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#180-2026-04-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.8.0] - 2026-04-19
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.8.0] - 2026-04-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#added_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#breaking-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breaking Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Migration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verification-smoke" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verification (Smoke)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#160-2026-04-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [1.6.0] - 2026-04-12
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[1.6.0] - 2026-04-12">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Added
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#breaking-changes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breaking Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="changelog">Changelog</h1>
+<p>All notable changes to Galyarder Framework will be documented in this file.</p>
+<h2 id="1817-2026-04-19">[1.8.17] - 2026-04-19</h2>
+<h3 id="changed">Changed</h3>
+<ul>
+<li><strong>Operational Sequence</strong>: Enhanced the Mermaid diagram in <code>README.md</code> to include the <strong>Neural Link</strong> dependency audit phase.</li>
+<li><strong>Command Protocol</strong>: Updated the "1-Man Army Command Protocol" table to include <strong>Neural Mapping</strong> as Phase II.</li>
+</ul>
+<h2 id="1816-2026-04-19">[1.8.16] - 2026-04-19</h2>
+<h3 id="changed_1">Changed</h3>
+<ul>
+<li><strong>Canonical Root Runtime</strong>: <code>agents/</code>, <code>skills/</code>, <code>commands/</code>, and <code>personas/</code> remain the source of truth for host installs and bundle generation.</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li><strong>Compat Layer Removal</strong>: Removed the temporary <code>Compat/</code> restore layer after migrating restored runtime assets into the canonical root runtime.</li>
+<li><strong>Bundle Generation</strong>: <code>scripts/build_root_extension_surface.py</code> now treats the root runtime as canonical and only regenerates <code>.marketplace/full</code>, instead of re-merging from a separate compatibility source tree.</li>
+</ul>
+<h2 id="1813-2026-04-20">[1.8.13] - 2026-04-20</h2>
+<h3 id="added">Added</h3>
+<ul>
+<li><strong>Compatibility Runtime Layer</strong>: Added <code>Compat/agents</code> and <code>Compat/skills</code> as a source layer for generated root and marketplace runtime surfaces so legacy assets can exist without re-fragmenting department ownership.</li>
+</ul>
+<h3 id="fixed_1">Fixed</h3>
+<ul>
+<li><strong>Missing Agent Restore</strong>: Restored missing runtime agents including <code>galyarder-specialist</code>, <code>analytics-architect</code>, <code>doc-updater</code>, <code>experimentation-engineer</code>, <code>interface-designer</code>, <code>mcp-builder</code>, <code>revenue-architect</code>, <code>support-lead</code>, and <code>ui-ux-designer</code>.</li>
+<li><strong>Missing Skill Restore</strong>: Restored legacy compatibility skills and orchestration wrappers so historical prompts, docs, and host registries resolve cleanly again.</li>
+<li><strong>Runtime Parity Audit</strong>: Rebuilt root and full-bundle surfaces until historical canonical agents, personas, skills, and subagents all resolve with zero missing entries in the parity audit.</li>
+</ul>
+<h2 id="1812-2026-04-20">[1.8.12] - 2026-04-20</h2>
+<h3 id="fixed_2">Fixed</h3>
+<ul>
+<li><strong>Claude Bundle Autodiscovery</strong>: The full Claude marketplace bundle manifest now relies on Claude Code's default <code>agents/</code>, <code>skills/</code>, and <code>commands/</code> discovery instead of explicit path override fields, avoiding the remaining <code>agents: Invalid input</code> validator failure.</li>
+</ul>
+<h2 id="1811-2026-04-20">[1.8.11] - 2026-04-20</h2>
+<h3 id="fixed_3">Fixed</h3>
+<ul>
+<li><strong>Claude Bundle Manifest Shape</strong>: The full marketplace bundle now exports <code>agents</code>, <code>skills</code>, and <code>commands</code> as string paths instead of arrays, matching the Claude Code plugin validator and fixing <code>agents: Invalid input</code> install failures.</li>
+</ul>
+<h2 id="1810-2026-04-20">[1.8.10] - 2026-04-20</h2>
+<h3 id="fixed_4">Fixed</h3>
+<ul>
+<li><strong>Claude Marketplace Manifest Schema</strong>: Full bundle and departmental Claude plugin manifests now use an object-shaped <code>author</code> field and no longer ship the unsupported <code>personas</code> key, fixing marketplace install validation failures.</li>
+<li><strong>Executive Persona Identity Parity</strong>: <code>galyarder-cfo-coo</code>, <code>galyarder-cmo</code>, and <code>galyarder-cto</code> now carry the same host-aware identity contract as <code>galyarder-ceo</code>, so Copilot-style hosts stop collapsing them to the platform default persona.</li>
+<li><strong>Skill Name Length</strong>: Shortened the canonical XSS Burp Suite skill name to <code>xss-testing-burpsuite</code>, keeping prefixed host registries under the 64-character limit.</li>
+</ul>
+<h2 id="189-2026-04-20">[1.8.9] - 2026-04-20</h2>
+<h3 id="fixed_5">Fixed</h3>
+<ul>
+<li><strong>Copilot Persona Identity</strong>: <code>galyarder-ceo</code> now includes an explicit identity contract so hosts that preserve their own platform identity still answer as the Galyarder CEO persona running inside the host, instead of collapsing to a plain "I am just Copilot" response.</li>
+</ul>
+<h2 id="188-2026-04-19">[1.8.8] - 2026-04-19</h2>
+<h3 id="fixed_6">Fixed</h3>
+<ul>
+<li><strong>Gemini Agent Tool Schema</strong>: Root and full-bundle runtime agents now export Gemini-native <code>allowed-tools</code> blocks instead of legacy <code>tools</code> arrays, reducing the chance of <code>400 INVALID_ARGUMENT</code> failures when custom agents are invoked.</li>
+</ul>
+<h2 id="187-2026-04-19">[1.8.7] - 2026-04-19</h2>
+<h3 id="fixed_7">Fixed</h3>
+<ul>
+<li><strong>Gemini Agent Schema</strong>: Root and full-bundle agent exports now strip unsupported <code>color</code>, <code>emoji</code>, and <code>vibe</code> frontmatter keys so Gemini can load executive/persona agents without validation errors.</li>
+<li><strong>Design Skill Packaging</strong>: Root and full-bundle design references now ship with valid YAML frontmatter in <code>skills/design-md-*/SKILL.md</code>, fixing skill loader warnings in Codex and other hosts that require native skill metadata.</li>
+</ul>
+<h2 id="186-2026-04-19">[1.8.6] - 2026-04-19</h2>
+<h3 id="added_1">Added</h3>
+<ul>
+<li><strong>Canonical Root Runtime</strong>: <code>agents/</code>, <code>skills/</code>, <code>commands/</code>, and <code>personas/</code> are now real committed runtime directories instead of root symlink shims.</li>
+<li><strong>Full Bundle Root Surface</strong>: <code>.marketplace/full/</code> now carries the same real root runtime layout so all-in-one marketplace installs expose the same asset structure as the repo root.</li>
+</ul>
+<h3 id="changed_2">Changed</h3>
+<ul>
+<li><strong>Runtime Ownership</strong>: Host integrations now build from the root runtime surface first; department silos remain the source content for docs/reporting and surface generation, not the direct install shape.</li>
+<li><strong>Design Packaging</strong>: Growth design libraries now ship as first-class skill directories under <code>skills/design-md-*/SKILL.md</code> and flow through generated integrations the same way as other skills.</li>
+<li><strong>Manifest Routing</strong>: Full bundle manifests now point at root <code>./agents/</code>, <code>./skills/</code>, <code>./commands/</code>, and <code>./personas/</code> surfaces instead of scattered department paths.</li>
+</ul>
+<h3 id="fixed_8">Fixed</h3>
+<ul>
+<li><strong>GitHub Extension Packaging</strong>: Installers that scan fixed root paths now receive actual directories from the repository archive instead of repo-local symlink tricks that only worked after local regeneration.</li>
+<li><strong>Cross-Tool Consistency</strong>: Gemini, Codex, Cursor, Claude bundle exports, and generated integrations now consume the same canonical runtime shape.</li>
+</ul>
+<h2 id="185-2026-04-19">[1.8.5] - 2026-04-19</h2>
+<h3 id="added_2">Added</h3>
+<ul>
+<li><strong>Root Compatibility Surface</strong>: Restored root-level <code>agents/</code>, <code>skills/</code>, <code>commands/</code>, and <code>personas/</code> paths as generated symlink surfaces so extension hosts that scan fixed root directories can discover framework assets again.</li>
+</ul>
+<h3 id="changed_3">Changed</h3>
+<ul>
+<li><strong>Gemini/Cursor/Codex Root Paths</strong>: Repointed top-level manifests back to root compatibility directories instead of custom bundle-only paths.</li>
+</ul>
+<h3 id="fixed_9">Fixed</h3>
+<ul>
+<li><strong>Gemini Extension Discovery</strong>: Root extension installs can now resolve the standard directory names Gemini CLI expects for custom agents, skills, and commands.</li>
+</ul>
+<h2 id="184-2026-04-19">[1.8.4] - 2026-04-19</h2>
+<h3 id="added_3">Added</h3>
+<ul>
+<li><strong>Host Bundle Layer</strong>: Added root <code>Bundle/</code> and <code>Gemini/</code> all-in-one install surfaces so multi-department assets are exposed through single paths that host manifests can scan.</li>
+</ul>
+<h3 id="changed_4">Changed</h3>
+<ul>
+<li><strong>Gemini Manifest Shape</strong>: Reworked the top-level Gemini extension manifest to use single bundle paths for <code>agents</code>, <code>skills</code>, and <code>commands</code>, matching the older manifest style that previously registered custom assets.</li>
+<li><strong>Design Discovery</strong>: Folded <code>Growth/design/*.md</code> assets into bundle-backed skill entries so design libraries travel with all-in-one installs.</li>
+</ul>
+<h3 id="fixed_10">Fixed</h3>
+<ul>
+<li><strong>Executive Visibility</strong>: Exposed CEO/CFO/CMO/CTO personas through host-facing <code>agents</code> bundles for pickers that ignore <code>personas</code>.</li>
+<li><strong>Cursor/Codex Root Paths</strong>: Repointed root plugin manifests away from nonexistent <code>./agents</code> / <code>./skills</code> / <code>./commands</code> directories to valid bundle paths.</li>
+<li><strong>Gemini Local Install</strong>: Fixed Gemini sync/install scripts so generated skills deploy from <code>integrations/gemini</code> instead of the pre-silo root layout.</li>
+</ul>
+<h2 id="183-2026-04-19">[1.8.3] - 2026-04-19</h2>
+<h3 id="added_4">Added</h3>
+<ul>
+<li><strong>Bundle Install Path</strong>: Added a top-level <code>galyarder-framework</code> marketplace bundle so all 8 departments can be installed as one package.</li>
+</ul>
+<h3 id="changed_5">Changed</h3>
+<ul>
+<li><strong>Neural Link Policy</strong>: Re-scoped Neural Link / World-Map access to lazy lookup. Agents, personas, and commands now load graph context only for architecture discovery, cross-department routing, or explicit <code>/graph</code> work.</li>
+<li><strong>Boot Surface</strong>: Root operating context is department-scoped and monolith-free instead of dragging full-world context into normal execution.</li>
+</ul>
+<h3 id="fixed_11">Fixed</h3>
+<ul>
+<li><strong>Marketplace Integrity</strong>: Removed broken nested skill symlinks that caused <code>ENOENT realpath</code> install failures in marketplace consumers.</li>
+<li><strong>Aider Decommission</strong>: Removed legacy <code>CONVENTIONS.md</code> and the <code>integrations/aider</code> export so obsolete Aider conventions no longer leak into generated tool packages.</li>
+<li><strong>Generated Integrations</strong>: Rebuilt all supported tool integrations so the lazy-load policy and cleaned packaging propagate consistently.</li>
+</ul>
+<h2 id="182-2026-04-19">[1.8.2] - 2026-04-19</h2>
+<h3 id="added_5">Added</h3>
+<ul>
+<li><strong>Neural Link Broadcast</strong>: Added <code>/graph</code> command to core <code>GEMINI.md</code> and <code>CLAUDE.md</code> operational triggers.</li>
+<li><strong>Executive Awareness</strong>: Injected "Strategic Knowledge Synthesis" into <code>chief-of-staff</code> to automate map rebuilding.</li>
+</ul>
+<h3 id="changed_6">Changed</h3>
+<ul>
+<li><strong>Manifest Versions</strong>: Bumped all 21 <code>gemini-extension.json</code>, <code>plugin.json</code>, and <code>marketplace.json</code> manifests to <code>1.8.2</code>.</li>
+</ul>
+<h2 id="181-2026-04-19">[1.8.1] - 2026-04-19</h2>
+<h3 id="fixed_12">Fixed</h3>
+<ul>
+<li><strong>Legacy Path Purge</strong>: Surgically removed all hardcoded references to <code>.agents/</code>, <code>.claude/</code>, and <code>.gemini/</code> hidden directories inside logic files.</li>
+<li><strong>Dependency Re-routing</strong>: Updated agent memory logic to use the new <code>docs/departments/</code> structure for <code>founder-context.md</code> and <code>product-marketing-context.md</code>.</li>
+<li><strong>OpenCode Plugin Integrity</strong>: Fixed Silo path resolution and internal tool mapping for the OpenCode environment.</li>
+<li><strong>Hidden Directory Eradication</strong>: Permanently deleted <code>.autoresearch</code>, <code>.claude</code>, <code>.gemini</code>, <code>.github</code>, and <code>.agents</code> legacy folders.</li>
+<li><strong>Asset Re-generation</strong>: 207 assets across 14 platforms re-synced to ensure consistent path logic system-wide.</li>
+</ul>
+<h2 id="180-2026-04-19">[1.8.0] - 2026-04-19</h2>
+<h3 id="summary">Summary</h3>
+<p>Architectural guardrails to make execution provable: gated testing ladder, test-oracle defenses, operational modes, context version-truth, and tool interface boundaries.</p>
+<h3 id="added_6">Added</h3>
+<ul>
+<li><strong>Gating Ladder</strong>: Enforced execution gates: <strong>Unit → Contract → E2E</strong>.</li>
+<li><strong>Test Oracle Guardrails</strong>: Mandatory negative control / mutation check to prevent “fake green” tests.</li>
+<li><strong>Operational Modes</strong>:</li>
+<li><code>BUILD</code> (default): PRD-driven, full ceremony, full TDD.</li>
+<li><code>INCIDENT</code>: hotfix bypass with mandatory post-mortem.</li>
+<li><code>EXPERIMENT</code>: timeboxed, quarantined throwaway work.</li>
+<li><strong>Context Truth</strong>: <code>context7</code> fetch must verify <strong>library version</strong> against local dependencies before adoption.</li>
+<li><strong>Tool Interfaces</strong>: Standard interfaces introduced:</li>
+<li><code>IssueTracker</code> (Linear adapter)</li>
+<li><code>ExecutionProxy</code> (RTK adapter)</li>
+<li><code>MemoryStore</code> (Obsidian adapter)</li>
+<li><strong>Obsidian Loop</strong>: Mandatory durable reporting artifact output to <code>docs/departments/</code>.</li>
+<li><strong>Company Scaffolder</strong>: <code>scripts/scaffold-company.sh</code> to initialize HQ + departmental templates.</li>
+<li><strong>Sync Suite</strong>: Added/updated sync + docs generation scripts (see <code>/scripts</code>).</li>
+</ul>
+<h3 id="changed_7">Changed</h3>
+<ul>
+<li>Repo structure flattened; removed legacy <code>framework/</code> directory.</li>
+<li><code>WORKFLOW.md</code> updated for Humans 3.0 hierarchy + gating + modes.</li>
+<li>Branding standardized: “Galyarder Framework” vs “Galyarder Labs”.</li>
+</ul>
+<h3 id="fixed_13">Fixed</h3>
+<ul>
+<li>Non-ASCII purge for terminal compatibility.</li>
+<li>Linear scoping hardened to enforce project-scoped operations.</li>
+<li>Global Karpathy protocol integrated across agents/skills (think-first, simplicity-first, surgical changes, goal-driven execution).</li>
+</ul>
+<h3 id="breaking-changes">Breaking Changes</h3>
+<ul>
+<li>Removed <code>framework/</code> subdirectory; paths have changed accordingly.</li>
+<li>Any workflows/scripts referencing old paths must be updated.</li>
+</ul>
+<h3 id="migration">Migration</h3>
+<ol>
+<li>Update local references from <code>framework/...</code> to repo root paths.</li>
+<li>Re-run install/conversion scripts for your tool (<code>./scripts/install.sh --tool &lt;...&gt;</code>).</li>
+<li>Regenerate docs if you rely on portal output (<code>generate-docs.py</code>).</li>
+</ol>
+<h3 id="verification-smoke">Verification (Smoke)</h3>
+<ul>
+<li>Run one BUILD mission and confirm gates: unit pass → contract pass → e2e pass.</li>
+<li>Confirm test-oracle policy: a known-bad variant must fail before implementation proceeds.</li>
+<li>Confirm <code>context7</code> outputs include version verification metadata.</li>
+</ul>
+<h2 id="160-2026-04-12">[1.6.0] - 2026-04-12</h2>
+<h3 id="added_7">Added</h3>
+<ul>
+<li><strong>5 new agents:</strong></li>
+<li><code>mcp-builder</code> - MCP server development specialist</li>
+<li><code>sre</code> - Site reliability engineering, SLOs, error budgets</li>
+<li><code>chief-of-staff</code> - Founder coordination and clarity</li>
+<li><code>rapid-prototyper</code> - Ultra-fast POC and MVP validation</li>
+<li><code>sales-engineer</code> - Pre-sales technical specialist</li>
+<li>Total: 40 agents, 132 skills</li>
+</ul>
+<h3 id="fixed_14">Fixed</h3>
+<ul>
+<li>All plugin configs updated to root paths (no <code>framework/</code> prefix)</li>
+<li>Gemini extension paths fixed</li>
+<li>FUNDING.yml removed (pending GitHub Sponsors enrollment)</li>
+</ul>
+<h3 id="changed_8">Changed</h3>
+<ul>
+<li>Separated Framework from Dashboard into independent repos</li>
+<li>Dashboard moved to <a href="https://github.com/galyarderlabs/galyarder-hq">Galyarder Framework HQ</a></li>
+<li>Framework is now standalone - agents and skills at root level</li>
+<li>Updated README to reflect standalone Framework positioning</li>
+<li>Fixed all symlinks for Antigravity, Codex, and OpenCode</li>
+</ul>
+<h3 id="breaking-changes_1">Breaking Changes</h3>
+<ul>
+<li>Removed all Dashboard CI workflows (Docker, e2e, release-smoke).</li>
+<li>Migrated dashboard logic to a separate repository; local hooks must be re-pointed to <code>@galyarderlabs/galyarder-hq</code>.</li>
+</ul>
+<hr />
+<p>© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Galyarder Labs
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "navigation.tracking", "search.suggest", "search.highlight", "search.share", "content.code.copy", "toc.follow", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

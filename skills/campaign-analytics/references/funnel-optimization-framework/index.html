@@ -1,0 +1,2496 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Humans 3.0 Protocol: Advanced Agentic Orchestration for the 1-Man Army. Implementing Autonomous Goal Integration (AGI).">
+      
+      
+        <meta name="author" content="Galyarder Labs">
+      
+      
+        <link rel="canonical" href="https://galyarderlabs.github.io/galyarder-framework/skills/campaign-analytics/references/funnel-optimization-framework/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Funnel Optimization Framework - Galyarder Framework</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#funnel-optimization-framework" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Galyarder Framework" class="md-header__button md-logo" aria-label="Galyarder Framework" data-md-component="logo">
+      
+  <img src="../../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Galyarder Framework
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Funnel Optimization Framework
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../QUICK_START/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../WORKFLOW/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Evolution (Protocols)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../AGENTS/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Workforce (Agents)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  SOP Library (Skills)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../commands/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Command Triggers
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../design/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Aesthetic Law (Design)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../testing/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Governance
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../CHANGELOG/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Chronicle
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Galyarder Framework" class="md-nav__button md-logo" aria-label="Galyarder Framework" data-md-component="logo">
+      
+  <img src="../../../../assets/logo.png" alt="logo">
+
+    </a>
+    Galyarder Framework
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../QUICK_START/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../TRIAD_OVERVIEW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ecosystem Triad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../UNIFIED_PLATFORM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unified Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evolution (Protocols)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Evolution (Protocols)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../WORKFLOW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Humans 3.0 Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../ORG_CHART/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Global Command Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../INTEGRATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi-Platform Engine
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../MIGRATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migration Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../agents/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workforce (Agents)
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Workforce (Agents)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../AGENTS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent Directory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SOP Library (Skills)
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    SOP Library (Skills)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../commands/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Command Triggers
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Command Triggers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../design/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aesthetic Law (Design)
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Aesthetic Law (Design)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment & Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Platform Specifics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Platform Specifics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../CLAUDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claude Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../GEMINI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gemini CLI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/galyarderlabs/galyarder-agent/blob/main/README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Galyarder Agent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../README.codex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenAI Codex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../README.opencode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenCode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../INTEGRATION_COMPLETE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integration Checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chronicle
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Chronicle
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../RELEASE-NOTES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Release Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-standard-marketing-funnel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Standard Marketing Funnel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stage-by-stage-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage-by-Stage Optimization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stage-by-Stage Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stage-1-awareness-to-interest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 1: Awareness to Interest
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-2-interest-to-consideration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 2: Interest to Consideration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-3-consideration-to-intent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 3: Consideration to Intent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-4-intent-to-purchase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 4: Intent to Purchase
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-5-purchase-to-retention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 5: Purchase to Retention
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bottleneck-diagnosis-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bottleneck Diagnosis Framework
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bottleneck Diagnosis Framework">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-quantify-the-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Quantify the Problem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-segment-the-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Segment the Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-identify-root-cause" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Identify Root Cause
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-prioritize-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: Prioritize Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funnel-math-and-revenue-impact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funnel Math and Revenue Impact
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Funnel Math and Revenue Impact">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculating-the-revenue-impact-of-funnel-improvements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calculating the Revenue Impact of Funnel Improvements
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-anti-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Anti-Patterns
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Anti-Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-optimizing-the-wrong-stage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Optimizing the Wrong Stage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ignoring-segment-differences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Ignoring Segment Differences
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-over-optimizing-for-conversion-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Over-Optimizing for Conversion Rate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-single-metric-focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Single-Metric Focus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-not-accounting-for-time-lag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Not Accounting for Time Lag
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-technical-integrity-the-karpathy-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Technical Integrity: The Karpathy Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-corporate-reporting-the-obsidian-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Corporate Reporting: The Obsidian Loop
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#segment-comparison-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Segment Comparison Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommended-review-cadence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended Review Cadence
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="funnel-optimization-framework">Funnel Optimization Framework</h1>
+<p>A stage-by-stage guide to diagnosing and improving marketing and sales funnel performance. Use this framework alongside the funnel_analyzer.py tool to identify bottlenecks and implement targeted optimizations.</p>
+<hr />
+<h2 id="the-standard-marketing-funnel">The Standard Marketing Funnel</h2>
+<div class="highlight"><pre><span></span><code>    AWARENESS          (Impressions, Reach)
+        |
+    INTEREST           (Clicks, Engagement)
+        |
+    CONSIDERATION      (Leads, Sign-ups)
+        |
+    INTENT             (Demos, Trials, Cart Adds)
+        |
+    PURCHASE           (Customers, Revenue)
+        |
+    RETENTION          (Repeat, Upsell, Referral)
+</code></pre></div>
+<p>Each transition between stages represents a conversion point. The funnel analyzer measures these transitions and identifies where the largest drop-offs occur.</p>
+<hr />
+<h2 id="stage-by-stage-optimization">Stage-by-Stage Optimization</h2>
+<h3 id="stage-1-awareness-to-interest">Stage 1: Awareness to Interest</h3>
+<p><strong>What it measures:</strong> How effectively you capture attention and generate initial engagement.</p>
+<p><strong>Healthy conversion rate:</strong> 2-8% (varies widely by channel)</p>
+<p><strong>Common bottlenecks:</strong>
+- Poor targeting: Reaching the wrong audience
+- Weak creative: Ads that do not stand out or communicate value
+- Message-market mismatch: Content that does not resonate with the audience's needs
+- Low brand recognition: No trust or familiarity established</p>
+<p><strong>Optimization tactics:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tactic</th>
+<th>Expected Impact</th>
+<th>Effort</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Audience refinement (lookalike, interest targeting)</td>
+<td>High</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Creative testing (3-5 variants per campaign)</td>
+<td>High</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Headline optimization (clear value proposition)</td>
+<td>Medium</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>Channel diversification (test new platforms)</td>
+<td>Medium</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Retargeting past engagers</td>
+<td>Medium</td>
+<td>Low</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key metrics to track:</strong>
+- Impressions and reach
+- CTR by creative variant
+- Cost per engagement
+- Brand lift (if measured)</p>
+<hr />
+<h3 id="stage-2-interest-to-consideration">Stage 2: Interest to Consideration</h3>
+<p><strong>What it measures:</strong> How well you convert initial interest into genuine evaluation.</p>
+<p><strong>Healthy conversion rate:</strong> 10-30%</p>
+<p><strong>Common bottlenecks:</strong>
+- Landing page disconnect: The page does not match the ad promise
+- Poor user experience: Slow load times, confusing layout, mobile issues
+- Missing social proof: No testimonials, case studies, or trust signals
+- Unclear value proposition: Visitor does not understand "what's in it for me"
+- Friction in lead capture: Too many form fields, unclear CTA</p>
+<p><strong>Optimization tactics:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tactic</th>
+<th>Expected Impact</th>
+<th>Effort</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Landing page A/B testing</td>
+<td>High</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Message match (ad copy = page headline)</td>
+<td>High</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>Reduce form fields to essential only</td>
+<td>High</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>Add social proof (logos, testimonials, numbers)</td>
+<td>Medium</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>Improve page load speed (&lt;3 seconds)</td>
+<td>Medium</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Mobile optimization</td>
+<td>Medium</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Add exit-intent offers</td>
+<td>Low-Medium</td>
+<td>Low</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key metrics to track:</strong>
+- Landing page conversion rate
+- Bounce rate
+- Time on page
+- Form abandonment rate</p>
+<hr />
+<h3 id="stage-3-consideration-to-intent">Stage 3: Consideration to Intent</h3>
+<p><strong>What it measures:</strong> How effectively you move evaluated prospects toward a purchase decision.</p>
+<p><strong>Healthy conversion rate:</strong> 15-40%</p>
+<p><strong>Common bottlenecks:</strong>
+- Insufficient nurturing: Leads go cold without follow-up
+- Lack of differentiation: Prospects do not understand why you are better than alternatives
+- Missing information: Pricing, features, or comparisons not available
+- Sales-marketing misalignment: MQLs are not meeting sales expectations
+- Poor timing: Follow-up is too slow or too aggressive</p>
+<p><strong>Optimization tactics:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tactic</th>
+<th>Expected Impact</th>
+<th>Effort</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Email nurture sequences (5-7 touchpoints)</td>
+<td>High</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Lead scoring to prioritize sales outreach</td>
+<td>High</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Comparison content (vs. competitors)</td>
+<td>Medium</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Free trial or demo offers</td>
+<td>High</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Case studies relevant to prospect's industry</td>
+<td>Medium</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Retargeting with mid-funnel content</td>
+<td>Medium</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>Pricing transparency</td>
+<td>Medium</td>
+<td>Low</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key metrics to track:</strong>
+- MQL to SQL conversion rate
+- Lead response time
+- Email engagement rates (nurture sequences)
+- Content engagement (case studies, comparisons)</p>
+<hr />
+<h3 id="stage-4-intent-to-purchase">Stage 4: Intent to Purchase</h3>
+<p><strong>What it measures:</strong> How well you convert ready-to-buy prospects into paying customers.</p>
+<p><strong>Healthy conversion rate:</strong> 20-50%</p>
+<p><strong>Common bottlenecks:</strong>
+- Complex purchase process: Too many steps, unclear pricing, difficult checkout
+- Lack of urgency: No reason to buy now
+- Unaddressed objections: Common concerns not proactively handled
+- Poor sales process: Inconsistent follow-up, inadequate discovery
+- Payment friction: Limited payment options, security concerns</p>
+<p><strong>Optimization tactics:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tactic</th>
+<th>Expected Impact</th>
+<th>Effort</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Simplify checkout/purchase flow</td>
+<td>High</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Add urgency (limited-time offers, scarcity)</td>
+<td>Medium</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>Address objections in sales collateral</td>
+<td>Medium</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Offer guarantees (money-back, free trial extension)</td>
+<td>Medium</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>Cart abandonment emails (3-email sequence)</td>
+<td>High</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>Live chat or chatbot support at checkout</td>
+<td>Medium</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Multiple payment options</td>
+<td>Low-Medium</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Customer success stories at point of purchase</td>
+<td>Medium</td>
+<td>Low</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key metrics to track:</strong>
+- Cart abandonment rate
+- Checkout completion rate
+- Average deal cycle length
+- Win rate (B2B)
+- Average order value</p>
+<hr />
+<h3 id="stage-5-purchase-to-retention">Stage 5: Purchase to Retention</h3>
+<p><strong>What it measures:</strong> How well you retain customers and expand their lifetime value.</p>
+<p><strong>Healthy retention rate:</strong> 70-95% annually (varies by business model)</p>
+<p><strong>Common bottlenecks:</strong>
+- Poor onboarding: Customers do not achieve value quickly
+- Lack of engagement: No ongoing communication or community
+- Product/service issues: Unmet expectations post-purchase
+- No expansion path: No upsell, cross-sell, or referral programs
+- Competitor poaching: Better offers from alternatives</p>
+<p><strong>Optimization tactics:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tactic</th>
+<th>Expected Impact</th>
+<th>Effort</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Structured onboarding (first 30/60/90 days)</td>
+<td>High</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Regular check-ins and health scoring</td>
+<td>High</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Loyalty programs</td>
+<td>Medium</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Referral incentives</td>
+<td>Medium</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>Cross-sell/upsell email sequences</td>
+<td>Medium</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Customer community building</td>
+<td>Medium</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Proactive support based on usage patterns</td>
+<td>High</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key metrics to track:</strong>
+- Customer retention rate
+- Net Promoter Score (NPS)
+- Customer Lifetime Value (CLV)
+- Expansion revenue
+- Churn rate and reasons</p>
+<hr />
+<h2 id="bottleneck-diagnosis-framework">Bottleneck Diagnosis Framework</h2>
+<p>When the funnel analyzer identifies a bottleneck, use this diagnostic framework:</p>
+<h3 id="step-1-quantify-the-problem">Step 1: Quantify the Problem</h3>
+<ul>
+<li>What is the conversion rate at this stage?</li>
+<li>How does it compare to your historical average?</li>
+<li>How does it compare to industry Standards?</li>
+<li>What is the absolute number of prospects lost?</li>
+</ul>
+<h3 id="step-2-segment-the-data">Step 2: Segment the Data</h3>
+<p>Look at the bottleneck broken down by:
+- <strong>Channel</strong>: Is the drop-off worse for certain traffic sources?
+- <strong>Device</strong>: Mobile vs desktop performance gaps
+- <strong>Geography</strong>: Regional differences
+- <strong>Cohort</strong>: Has it changed over time?
+- <strong>Campaign</strong>: Specific campaigns performing worse</p>
+<h3 id="step-3-identify-root-cause">Step 3: Identify Root Cause</h3>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Likely Root Cause</th>
+<th>Diagnostic Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High bounce rate</td>
+<td>Message mismatch or UX issue</td>
+<td>Review landing page vs ad</td>
+</tr>
+<tr>
+<td>High time on page but low conversion</td>
+<td>Confusion or missing CTA</td>
+<td>Heatmap analysis</td>
+</tr>
+<tr>
+<td>Drop-off at form</td>
+<td>Too many fields or unclear value</td>
+<td>Form analytics review</td>
+</tr>
+<tr>
+<td>Long time between stages</td>
+<td>Insufficient nurturing</td>
+<td>Review email engagement</td>
+</tr>
+<tr>
+<td>Drop-off after pricing page</td>
+<td>Pricing concerns</td>
+<td>Test pricing presentation</td>
+</tr>
+<tr>
+<td>High cart abandonment</td>
+<td>Checkout friction</td>
+<td>Checkout flow analysis</td>
+</tr>
+</tbody>
+</table>
+<h3 id="step-4-prioritize-fixes">Step 4: Prioritize Fixes</h3>
+<p>Use the ICE scoring framework:</p>
+<ul>
+<li><strong>Impact</strong> (1-10): How much will fixing this improve the bottleneck?</li>
+<li><strong>Confidence</strong> (1-10): How confident are you that this fix will work?</li>
+<li><strong>Ease</strong> (1-10): How easy is this to implement?</li>
+</ul>
+<p>Score = (Impact + Confidence + Ease) / 3</p>
+<p>Prioritize fixes with the highest ICE score.</p>
+<hr />
+<h2 id="funnel-math-and-revenue-impact">Funnel Math and Revenue Impact</h2>
+<h3 id="calculating-the-revenue-impact-of-funnel-improvements">Calculating the Revenue Impact of Funnel Improvements</h3>
+<p>A useful way to prioritize is to calculate how much revenue each percentage point of improvement is worth at each stage.</p>
+<p><strong>Formula:</strong></p>
+<div class="highlight"><pre><span></span><code>Revenue Impact = Current_Revenue * (1 / Current_Conversion_Rate) * Improvement_Percentage
+</code></pre></div>
+<p><strong>Example:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Current Rate</th>
+<th>+1pp Improvement</th>
+<th>Revenue Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Awareness -&gt; Interest</td>
+<td>5.0%</td>
+<td>6.0%</td>
+<td>+20% more leads entering funnel</td>
+</tr>
+<tr>
+<td>Interest -&gt; Consideration</td>
+<td>25%</td>
+<td>26%</td>
+<td>+4% more MQLs</td>
+</tr>
+<tr>
+<td>Consideration -&gt; Intent</td>
+<td>30%</td>
+<td>31%</td>
+<td>+3.3% more SQLs</td>
+</tr>
+<tr>
+<td>Intent -&gt; Purchase</td>
+<td>40%</td>
+<td>41%</td>
+<td>+2.5% more customers</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key insight:</strong> Improvements at the top of the funnel have a multiplied effect on downstream stages. But improvements at the bottom of the funnel convert to revenue faster.</p>
+<hr />
+<h2 id="common-anti-patterns">Common Anti-Patterns</h2>
+<h3 id="1-optimizing-the-wrong-stage">1. Optimizing the Wrong Stage</h3>
+<p>Fixing a bottom-of-funnel problem when the real issue is top-of-funnel volume. Always diagnose the full funnel before optimizing.</p>
+<h3 id="2-ignoring-segment-differences">2. Ignoring Segment Differences</h3>
+<p>Aggregate funnel metrics can hide that one segment performs well while another is broken. Always segment before optimizing.</p>
+<h3 id="3-over-optimizing-for-conversion-rate">3. Over-Optimizing for Conversion Rate</h3>
+<p>Increasing conversion rate by narrowing the funnel (stricter targeting, higher-intent-only leads) can reduce total volume. Balance rate and volume.</p>
+<h3 id="4-single-metric-focus">4. Single-Metric Focus</h3>
+<p>Optimizing CTR without watching CPA, or optimizing CPA without watching volume. Always track paired metrics.</p>
+<h3 id="5-not-accounting-for-time-lag">5. Not Accounting for Time Lag</h3>
+<p>B2B funnels can take weeks or months. Measuring a campaign's funnel performance too early produces incomplete data.</p>
+<h3 id="6-technical-integrity-the-karpathy-principles">6. Technical Integrity: The Karpathy Principles</h3>
+<p>Combat AI slop through rigid adherence to the four principles of Andrej Karpathy:</p>
+<h3 id="7-corporate-reporting-the-obsidian-loop">7. Corporate Reporting: The Obsidian Loop</h3>
+<p>Durable memory is mandatory. Every task must result in a persistent artifact:
+- <strong>Write Report</strong>: Upon completion, save a summary/artifact to the relevant department in <code>docs/departments/</code> (e.g., <code>Engineering/</code>, <code>Growth/</code>).
+- <strong>Notify C-Suite</strong>: Explicitly mention the respective Persona (CEO, CTO, CMO, etc.) that the report is ready for review.
+- <strong>Traceability</strong>: Link the report to the corresponding Linear ticket.
+1. <strong>Think Before Coding</strong>: Don't guess. <strong>If uncertain, STOP and ASK.</strong> State assumptions explicitly. If ambiguity exists, present multiple interpretations<strong>don't pick silently.</strong> Push back if a simpler approach exists.
+2. <strong>Simplicity First</strong>: Implement the minimum code that solves the problem. <strong>No speculative abstractions.</strong> If 200 lines could be 50, <strong>rewrite it.</strong> No "configurability" unless requested.
+3. <strong>Surgical Changes</strong>: Touch <strong>ONLY</strong> what you must. Every changed line must trace to the request. Don't "improve" adjacent code or refactor things that aren't broken. Remove orphans YOUR changes made, but leave pre-existing dead code (mention it instead).
+4. <strong>Goal-Driven Execution</strong>: Define success criteria via tests-first. <strong>Loop until verified.</strong>
+   - Multi-step tasks MUST use this syntax:
+     1. [Step]  verify: [check]
+     2. [Step]  verify: [check]</p>
+<hr />
+<h2 id="segment-comparison-best-practices">Segment Comparison Best Practices</h2>
+<p>When using the funnel analyzer's segment comparison feature:</p>
+<ol>
+<li><strong>Compare meaningful segments</strong>: Channel, campaign type, audience demographic, or time period</li>
+<li><strong>Ensure comparable volume</strong>: Do not compare a segment with 100 entries to one with 10,000</li>
+<li><strong>Look for stage-specific differences</strong>: Two segments may have similar overall rates but different bottlenecks</li>
+<li><strong>Use insights to inform targeting</strong>: If one segment converts better at a specific stage, understand why and apply those lessons</li>
+</ol>
+<hr />
+<h2 id="recommended-review-cadence">Recommended Review Cadence</h2>
+<table>
+<thead>
+<tr>
+<th>Review Type</th>
+<th>Frequency</th>
+<th>Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Campaign funnel check</td>
+<td>Weekly</td>
+<td>Active campaign stage rates</td>
+</tr>
+<tr>
+<td>Full funnel audit</td>
+<td>Monthly</td>
+<td>Overall funnel health, bottleneck shifts</td>
+</tr>
+<tr>
+<td>Segment deep-dive</td>
+<td>Monthly</td>
+<td>Channel and cohort comparisons</td>
+</tr>
+<tr>
+<td>Strategic funnel review</td>
+<td>Quarterly</td>
+<td>Funnel structure, stage definitions, Standard updates</td>
+</tr>
+<tr>
+<td>Annual funnel redesign</td>
+<td>Annually</td>
+<td>Stage definitions, measurement methodology, tool updates</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>2026 Galyarder Labs. Galyarder Framework.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Galyarder Labs
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "navigation.tracking", "search.suggest", "search.highlight", "search.share", "content.code.copy", "toc.follow", "content.tabs.link"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

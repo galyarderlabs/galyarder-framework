@@ -1,0 +1,2767 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Humans 3.0 Protocol: Advanced Agentic Orchestration for the 1-Man Army. Implementing Autonomous Goal Integration (AGI).">
+      
+      
+        <meta name="author" content="Galyarder Labs">
+      
+      
+        <link rel="canonical" href="https://galyarderlabs.github.io/galyarder-framework/design/design-md-sanity/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Design System: Sanity - Galyarder Framework</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#design-system-sanity" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Galyarder Framework" class="md-header__button md-logo" aria-label="Galyarder Framework" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Galyarder Framework
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Design System: Sanity
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../QUICK_START/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../WORKFLOW/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Evolution (Protocols)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../AGENTS/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Workforce (Agents)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../skills/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  SOP Library (Skills)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../commands/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Command Triggers
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Aesthetic Law (Design)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../testing/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Governance
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../CHANGELOG/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Chronicle
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Galyarder Framework" class="md-nav__button md-logo" aria-label="Galyarder Framework" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Galyarder Framework
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../QUICK_START/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TRIAD_OVERVIEW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ecosystem Triad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UNIFIED_PLATFORM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unified Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evolution (Protocols)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Evolution (Protocols)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WORKFLOW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Humans 3.0 Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ORG_CHART/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Global Command Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../INTEGRATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi-Platform Engine
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MIGRATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migration Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../agents/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workforce (Agents)
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Workforce (Agents)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AGENTS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent Directory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../skills/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SOP Library (Skills)
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    SOP Library (Skills)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../commands/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Command Triggers
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Command Triggers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aesthetic Law (Design)
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Aesthetic Law (Design)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment & Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Platform Specifics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Platform Specifics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CLAUDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claude Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GEMINI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gemini CLI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/galyarderlabs/galyarder-agent/blob/main/README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Galyarder Agent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../README.codex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenAI Codex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../README.opencode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenCode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../INTEGRATION_COMPLETE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integration Checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chronicle
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Chronicle
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RELEASE-NOTES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Release Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-visual-theme-atmosphere" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Visual Theme &amp; Atmosphere
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-color-palette-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Color Palette &amp; Roles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Color Palette &amp; Roles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primary-brand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Primary Brand
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accent-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accent &amp; Interactive
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#surface-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Surface &amp; Background
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#neutrals-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Neutrals &amp; Text
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semantic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semantic
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#border-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Border System
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-typography-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Typography Rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Typography Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#font-family" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Font Family
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hierarchy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-component-stylings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Component Stylings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Component Stylings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#buttons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Buttons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cards
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inputs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navigation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#badges-pills" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Badges / Pills
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-layout-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Layout Principles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Layout Principles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spacing-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spacing System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grid &amp; Container
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whitespace-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Whitespace Philosophy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#border-radius-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Border Radius Scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-depth-elevation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Depth &amp; Elevation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Depth &amp; Elevation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shadow-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shadow System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depth-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Depth Philosophy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-dos-and-donts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Do's and Don'ts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Do&#39;s and Don&#39;ts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dont" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Don't
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-responsive-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Responsive Behavior
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Responsive Behavior">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breakpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breakpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collapsing-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Collapsing Strategy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mobile-specific-adjustments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mobile-Specific Adjustments
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-agent-prompt-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Agent Prompt Guide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Agent Prompt Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-color-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Color Reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Prompts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteration-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteration Guide
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="design-system-sanity">Design System: Sanity</h1>
+<h2 id="1-visual-theme-atmosphere">1. Visual Theme &amp; Atmosphere</h2>
+<p>Sanity's website is a developer-content platform rendered as a nocturnal command center -- dark, precise, and deeply structured. The entire experience sits on a near-black canvas (<code>#0b0b0b</code>) that reads less like a "dark mode toggle" and more like the natural state of a tool built for people who live in terminals. Where most CMS marketing pages reach for friendly pastels and soft illustration, Sanity leans into the gravity of its own product: structured content deserves a structured stage.</p>
+<p>The signature typographic voice is waldenburgNormal -- a distinctive, slightly geometric sans-serif with tight negative letter-spacing (-0.32px to -4.48px at display sizes) that gives headlines a compressed, engineered quality. At 112px hero scale with -4.48px tracking, the type feels almost machined -- like precision-cut steel letterforms. This is paired with IBM Plex Mono for code and technical labels, creating a dual-register voice: editorial authority meets developer credibility.</p>
+<p>What makes Sanity distinctive is the interplay between its monochromatic dark palette and vivid, saturated accent punctuation. The neutral scale runs from pure black through a tightly controlled gray ramp (<code>#0b0b0b</code> -&gt; <code>#212121</code> -&gt; <code>#353535</code> -&gt; <code>#797979</code> -&gt; <code>#b9b9b9</code> -&gt; <code>#ededed</code> -&gt; <code>#ffffff</code>) with no warm or cool bias -- just pure, achromatic precision. Against this disciplined backdrop, a neon green accent (display-p3 green) and electric blue (<code>#0052ef</code>) land with the impact of signal lights in a dark control room. The orange-red CTA (<code>#f36458</code>) provides the only warm touch in an otherwise cool system.</p>
+<p><strong>Key Characteristics:</strong>
+- Near-black canvas (<code>#0b0b0b</code>) as the default, natural environment -- not a dark "mode" but the primary identity
+- waldenburgNormal with extreme negative tracking at display sizes, creating a precision-engineered typographic voice
+- Pure achromatic gray scale -- no warm or cool undertones, pure neutral discipline
+- Vivid accent punctuation: neon green, electric blue (<code>#0052ef</code>), and coral-red (<code>#f36458</code>) against the dark field
+- Pill-shaped primary buttons (99999px radius) contrasting with subtle rounded rectangles (3-6px) for secondary actions
+- IBM Plex Mono as the technical counterweight to the editorial display face
+- Full-bleed dark sections with content contained in measured max-width containers
+- Hover states that shift to electric blue (<code>#0052ef</code>) across all interactive elements -- a consistent "activation" signal</p>
+<h2 id="2-color-palette-roles">2. Color Palette &amp; Roles</h2>
+<h3 id="primary-brand">Primary Brand</h3>
+<ul>
+<li><strong>Sanity Black</strong> (<code>#0b0b0b</code>): The primary canvas and dominant surface color. Not pure black but close enough to feel absolute. The foundation of the entire visual identity.</li>
+<li><strong>Pure Black</strong> (<code>#000000</code>): Used for maximum-contrast moments, deep overlays, and certain border accents.</li>
+<li><strong>Sanity Red</strong> (<code>#f36458</code>): The primary CTA and brand accent -- a warm coral-red that serves as the main call-to-action color. Used for "Get Started" buttons and primary conversion points.</li>
+</ul>
+<h3 id="accent-interactive">Accent &amp; Interactive</h3>
+<ul>
+<li><strong>Electric Blue</strong> (<code>#0052ef</code>): The universal hover/active state color across the entire system. Buttons, links, and interactive elements all shift to this blue on hover. Also used as <code>--color-blue-700</code> for focus rings and active states.</li>
+<li><strong>Light Blue</strong> (<code>#55beff</code> / <code>#afe3ff</code>): Secondary blue variants used for accent backgrounds, badges, and dimmed blue surfaces.</li>
+<li><strong>Neon Green</strong> (<code>color(display-p3 .270588 1 0)</code>): A vivid, wide-gamut green used as <code>--color-fg-accent-green</code> for success states and premium feature highlights. Falls back to <code>#19d600</code> in sRGB.</li>
+<li><strong>Accent Magenta</strong> (<code>color(display-p3 .960784 0 1)</code>): A vivid wide-gamut magenta for specialized accent moments.</li>
+</ul>
+<h3 id="surface-background">Surface &amp; Background</h3>
+<ul>
+<li><strong>Near Black</strong> (<code>#0b0b0b</code>): Default page background and primary surface.</li>
+<li><strong>Dark Gray</strong> (<code>#212121</code>): Elevated surface color for cards, secondary containers, input backgrounds, and subtle layering above the base canvas.</li>
+<li><strong>Medium Dark</strong> (<code>#353535</code>): Tertiary surface and border color for creating depth between dark layers.</li>
+<li><strong>Pure White</strong> (<code>#ffffff</code>): Used for inverted sections, light-on-dark text, and specific button surfaces.</li>
+<li><strong>Light Gray</strong> (<code>#ededed</code>): Light surface for inverted/light sections and subtle background tints.</li>
+</ul>
+<h3 id="neutrals-text">Neutrals &amp; Text</h3>
+<ul>
+<li><strong>White</strong> (<code>#ffffff</code>): Primary text color on dark surfaces, maximum legibility.</li>
+<li><strong>Silver</strong> (<code>#b9b9b9</code>): Secondary text, body copy on dark surfaces, muted descriptions, and placeholder text.</li>
+<li><strong>Medium Gray</strong> (<code>#797979</code>): Tertiary text, metadata, timestamps, and de-emphasized content.</li>
+<li><strong>Charcoal</strong> (<code>#212121</code>): Text on light/inverted surfaces.</li>
+<li><strong>Near Black Text</strong> (<code>#0b0b0b</code>): Primary text on white/light button surfaces.</li>
+</ul>
+<h3 id="semantic">Semantic</h3>
+<ul>
+<li><strong>Error Red</strong> (<code>#dd0000</code>): Destructive actions, validation errors, and critical warnings -- a pure, high-saturation red.</li>
+<li><strong>GPC Green</strong> (<code>#37cd84</code>): Privacy/compliance indicator green.</li>
+<li><strong>Focus Ring Blue</strong> (<code>#0052ef</code>): Focus ring color for accessibility, matching the interactive blue.</li>
+</ul>
+<h3 id="border-system">Border System</h3>
+<ul>
+<li><strong>Dark Border</strong> (<code>#0b0b0b</code>): Primary border on dark containers -- barely visible, maintaining minimal containment.</li>
+<li><strong>Subtle Border</strong> (<code>#212121</code>): Standard border for inputs, textareas, and card edges on dark surfaces.</li>
+<li><strong>Medium Border</strong> (<code>#353535</code>): More visible borders for emphasized containment and dividers.</li>
+<li><strong>Light Border</strong> (<code>#ffffff</code>): Border on inverted/light elements or buttons needing contrast separation.</li>
+<li><strong>Orange Border</strong> (<code>color(display-p3 1 0.3333 0)</code>): Special accent border for highlighted/featured elements.</li>
+</ul>
+<h2 id="3-typography-rules">3. Typography Rules</h2>
+<h3 id="font-family">Font Family</h3>
+<ul>
+<li><strong>Display / Headline</strong>: <code>waldenburgNormal</code>, fallback: <code>waldenburgNormal Fallback, ui-sans-serif, system-ui</code></li>
+<li><strong>Body / UI</strong>: <code>waldenburgNormal</code>, fallback: <code>waldenburgNormal Fallback, ui-sans-serif, system-ui</code></li>
+<li><strong>Code / Technical</strong>: <code>IBM Plex Mono</code>, fallback: <code>ibmPlexMono Fallback, ui-monospace</code></li>
+<li><strong>Fallback / CJK</strong>: <code>Helvetica</code>, fallback: <code>Arial, Hiragino Sans GB, STXihei, Microsoft YaHei, WenQuanYi Micro Hei</code></li>
+</ul>
+<p><em>Note: waldenburgNormal is a custom typeface. For external implementations, use Inter or Space Grotesk as the sans substitute (geometric, slightly condensed feel). IBM Plex Mono is available on Google Fonts.</em></p>
+<h3 id="hierarchy">Hierarchy</h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Font</th>
+<th>Size</th>
+<th>Weight</th>
+<th>Line Height</th>
+<th>Letter Spacing</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Display / Hero</td>
+<td>waldenburgNormal</td>
+<td>112px (7rem)</td>
+<td>400</td>
+<td>1.00 (tight)</td>
+<td>-4.48px</td>
+<td>Maximum impact, compressed tracking</td>
+</tr>
+<tr>
+<td>Hero Secondary</td>
+<td>waldenburgNormal</td>
+<td>72px (4.5rem)</td>
+<td>400</td>
+<td>1.05 (tight)</td>
+<td>-2.88px</td>
+<td>Large section headers</td>
+</tr>
+<tr>
+<td>Section Heading</td>
+<td>waldenburgNormal</td>
+<td>48px (3rem)</td>
+<td>400</td>
+<td>1.08 (tight)</td>
+<td>-1.68px</td>
+<td>Primary section anchors</td>
+</tr>
+<tr>
+<td>Heading Large</td>
+<td>waldenburgNormal</td>
+<td>38px (2.38rem)</td>
+<td>400</td>
+<td>1.10 (tight)</td>
+<td>-1.14px</td>
+<td>Feature section titles</td>
+</tr>
+<tr>
+<td>Heading Medium</td>
+<td>waldenburgNormal</td>
+<td>32px (2rem)</td>
+<td>425</td>
+<td>1.24 (tight)</td>
+<td>-0.32px</td>
+<td>Card titles, subsection headers</td>
+</tr>
+<tr>
+<td>Heading Small</td>
+<td>waldenburgNormal</td>
+<td>24px (1.5rem)</td>
+<td>425</td>
+<td>1.24 (tight)</td>
+<td>-0.24px</td>
+<td>Smaller feature headings</td>
+</tr>
+<tr>
+<td>Subheading</td>
+<td>waldenburgNormal</td>
+<td>20px (1.25rem)</td>
+<td>425</td>
+<td>1.13 (tight)</td>
+<td>-0.2px</td>
+<td>Sub-section markers</td>
+</tr>
+<tr>
+<td>Body Large</td>
+<td>waldenburgNormal</td>
+<td>18px (1.13rem)</td>
+<td>400</td>
+<td>1.50</td>
+<td>-0.18px</td>
+<td>Intro paragraphs, descriptions</td>
+</tr>
+<tr>
+<td>Body</td>
+<td>waldenburgNormal</td>
+<td>16px (1rem)</td>
+<td>400</td>
+<td>1.50</td>
+<td>normal</td>
+<td>Standard body text</td>
+</tr>
+<tr>
+<td>Body Small</td>
+<td>waldenburgNormal</td>
+<td>15px (0.94rem)</td>
+<td>400</td>
+<td>1.50</td>
+<td>-0.15px</td>
+<td>Compact body text</td>
+</tr>
+<tr>
+<td>Caption</td>
+<td>waldenburgNormal</td>
+<td>13px (0.81rem)</td>
+<td>400-500</td>
+<td>1.30-1.50</td>
+<td>-0.13px</td>
+<td>Metadata, descriptions, tags</td>
+</tr>
+<tr>
+<td>Small Caption</td>
+<td>waldenburgNormal</td>
+<td>12px (0.75rem)</td>
+<td>400</td>
+<td>1.50</td>
+<td>-0.12px</td>
+<td>Footnotes, timestamps</td>
+</tr>
+<tr>
+<td>Micro / Label</td>
+<td>waldenburgNormal</td>
+<td>11px (0.69rem)</td>
+<td>500-600</td>
+<td>1.00-1.50</td>
+<td>normal</td>
+<td>Uppercase labels, tiny badges</td>
+</tr>
+<tr>
+<td>Code Body</td>
+<td>IBM Plex Mono</td>
+<td>15px (0.94rem)</td>
+<td>400</td>
+<td>1.50</td>
+<td>normal</td>
+<td>Code blocks, technical content</td>
+</tr>
+<tr>
+<td>Code Caption</td>
+<td>IBM Plex Mono</td>
+<td>13px (0.81rem)</td>
+<td>400-500</td>
+<td>1.30-1.50</td>
+<td>normal</td>
+<td>Inline code, small technical labels</td>
+</tr>
+<tr>
+<td>Code Micro</td>
+<td>IBM Plex Mono</td>
+<td>10-12px</td>
+<td>400</td>
+<td>1.30-1.50</td>
+<td>normal</td>
+<td>Tiny code labels, uppercase tags</td>
+</tr>
+</tbody>
+</table>
+<h3 id="principles">Principles</h3>
+<ul>
+<li><strong>Extreme negative tracking at scale</strong>: Display headings at 72px+ use aggressive negative letter-spacing (-2.88px to -4.48px), creating a tight, engineered quality that distinguishes Sanity from looser editorial typography.</li>
+<li><strong>Single font, multiple registers</strong>: waldenburgNormal handles both editorial display and functional UI text. The weight range is narrow (400-425 for most, 500-600 only for tiny labels), keeping the voice consistent.</li>
+<li><strong>OpenType feature control</strong>: Typography uses deliberate feature settings including <code>"cv01", "cv11", "cv12", "cv13", "ss07"</code> for display sizes and <code>"calt" 0</code> for body text, fine-tuning character alternates for different contexts.</li>
+<li><strong>Tight headings, relaxed body</strong>: Headings use 1.00-1.24 line-height (extremely tight), while body text breathes at 1.50. This contrast creates clear visual hierarchy.</li>
+<li><strong>Uppercase for technical labels</strong>: IBM Plex Mono captions and small labels frequently use <code>text-transform: uppercase</code> with tight line-heights, creating a "system readout" aesthetic for technical metadata.</li>
+</ul>
+<h2 id="4-component-stylings">4. Component Stylings</h2>
+<h3 id="buttons">Buttons</h3>
+<p><strong>Primary CTA (Pill)</strong>
+- Background: Sanity Red (<code>#f36458</code>)
+- Text: White (<code>#ffffff</code>)
+- Padding: 8px 16px
+- Border Radius: 99999px (full pill)
+- Border: none
+- Hover: Electric Blue (<code>#0052ef</code>) background, white text
+- Font: 16px waldenburgNormal, weight 400</p>
+<p><strong>Secondary (Dark Pill)</strong>
+- Background: Near Black (<code>#0b0b0b</code>)
+- Text: Silver (<code>#b9b9b9</code>)
+- Padding: 8px 12px
+- Border Radius: 99999px (full pill)
+- Border: none
+- Hover: Electric Blue (<code>#0052ef</code>) background, white text</p>
+<p><strong>Outlined (Light Pill)</strong>
+- Background: White (<code>#ffffff</code>)
+- Text: Near Black (<code>#0b0b0b</code>)
+- Padding: 8px
+- Border Radius: 99999px (full pill)
+- Border: 1px solid <code>#0b0b0b</code>
+- Hover: Electric Blue (<code>#0052ef</code>) background, white text</p>
+<p><strong>Ghost / Subtle</strong>
+- Background: Dark Gray (<code>#212121</code>)
+- Text: Silver (<code>#b9b9b9</code>)
+- Padding: 0px 12px
+- Border Radius: 5px
+- Border: 1px solid <code>#212121</code>
+- Hover: Electric Blue (<code>#0052ef</code>) background, white text</p>
+<p><strong>Uppercase Label Button</strong>
+- Font: 11px waldenburgNormal, weight 600, uppercase
+- Background: transparent or <code>#212121</code>
+- Text: Silver (<code>#b9b9b9</code>)
+- Letter-spacing: normal
+- Used for tab-like navigation and filter controls</p>
+<h3 id="cards">Cards</h3>
+<p><strong>Dark Content Card</strong>
+- Background: <code>#212121</code>
+- Border: 1px solid <code>#353535</code> or <code>#212121</code>
+- Border Radius: 6px
+- Padding: 24px
+- Text: White (<code>#ffffff</code>) for titles, Silver (<code>#b9b9b9</code>) for body
+- Hover: subtle border color shift or elevation change</p>
+<p><strong>Feature Card (Full-bleed)</strong>
+- Background: <code>#0b0b0b</code> or full-bleed image/gradient
+- Border: none or 1px solid <code>#212121</code>
+- Border Radius: 12px
+- Padding: 32-48px
+- Contains large imagery with overlaid text</p>
+<h3 id="inputs">Inputs</h3>
+<p><strong>Text Input / Textarea</strong>
+- Background: Near Black (<code>#0b0b0b</code>)
+- Text: Silver (<code>#b9b9b9</code>)
+- Border: 1px solid <code>#212121</code>
+- Padding: 8px 12px
+- Border Radius: 3px
+- Focus: outline with <code>var(--focus-ring-color)</code> (blue), 2px solid
+- Focus background: shifts to deep cyan (<code>#072227</code>)</p>
+<p><strong>Search Input</strong>
+- Background: <code>#0b0b0b</code>
+- Text: Silver (<code>#b9b9b9</code>)
+- Padding: 0px 12px
+- Border Radius: 3px
+- Placeholder: Medium Gray (<code>#797979</code>)</p>
+<h3 id="navigation">Navigation</h3>
+<p><strong>Top Navigation</strong>
+- Background: Near Black (<code>#0b0b0b</code>) with backdrop blur
+- Height: auto, compact padding
+- Logo: left-aligned, Sanity wordmark
+- Links: waldenburgNormal 16px, Silver (<code>#b9b9b9</code>)
+- Link Hover: Electric Blue via <code>--color-fg-accent-blue</code>
+- CTA Button: Sanity Red pill button right-aligned
+- Separator: 1px border-bottom <code>#212121</code></p>
+<p><strong>Footer</strong>
+- Background: Near Black (<code>#0b0b0b</code>)
+- Multi-column link layout
+- Links: Silver (<code>#b9b9b9</code>), hover to blue
+- Section headers: White (<code>#ffffff</code>), 13px uppercase IBM Plex Mono</p>
+<h3 id="badges-pills">Badges / Pills</h3>
+<p><strong>Neutral Subtle</strong>
+- Background: White (<code>#ffffff</code>)
+- Text: Near Black (<code>#0b0b0b</code>)
+- Padding: 8px
+- Font: 13px
+- Border Radius: 99999px</p>
+<p><strong>Neutral Filled</strong>
+- Background: Near Black (<code>#0b0b0b</code>)
+- Text: White (<code>#ffffff</code>)
+- Padding: 8px
+- Font: 13px
+- Border Radius: 99999px</p>
+<h2 id="5-layout-principles">5. Layout Principles</h2>
+<h3 id="spacing-system">Spacing System</h3>
+<p>Base unit: <strong>8px</strong></p>
+<table>
+<thead>
+<tr>
+<th>Token</th>
+<th>Value</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>space-1</td>
+<td>1px</td>
+<td>Hairline gaps, border-like spacing</td>
+</tr>
+<tr>
+<td>space-2</td>
+<td>2px</td>
+<td>Minimal internal padding</td>
+</tr>
+<tr>
+<td>space-3</td>
+<td>4px</td>
+<td>Tight component internal spacing</td>
+</tr>
+<tr>
+<td>space-4</td>
+<td>6px</td>
+<td>Small element gaps</td>
+</tr>
+<tr>
+<td>space-5</td>
+<td>8px</td>
+<td>Base unit -- button padding, input padding, badge padding</td>
+</tr>
+<tr>
+<td>space-6</td>
+<td>12px</td>
+<td>Standard component gap, button horizontal padding</td>
+</tr>
+<tr>
+<td>space-7</td>
+<td>16px</td>
+<td>Section internal padding, card spacing</td>
+</tr>
+<tr>
+<td>space-8</td>
+<td>24px</td>
+<td>Large component padding, card internal spacing</td>
+</tr>
+<tr>
+<td>space-9</td>
+<td>32px</td>
+<td>Section padding, container gutters</td>
+</tr>
+<tr>
+<td>space-10</td>
+<td>48px</td>
+<td>Large section vertical spacing</td>
+</tr>
+<tr>
+<td>space-11</td>
+<td>64px</td>
+<td>Major section breaks</td>
+</tr>
+<tr>
+<td>space-12</td>
+<td>96-120px</td>
+<td>Hero vertical padding, maximum section spacing</td>
+</tr>
+</tbody>
+</table>
+<h3 id="grid-container">Grid &amp; Container</h3>
+<ul>
+<li>Max content width: ~1440px (inferred from breakpoints)</li>
+<li>Page gutter: 32px on desktop, 16px on mobile</li>
+<li>Content sections use full-bleed backgrounds with centered, max-width content</li>
+<li>Multi-column layouts: 2-3 columns on desktop, single column on mobile</li>
+<li>Card grids: CSS Grid with consistent gaps (16-24px)</li>
+</ul>
+<h3 id="whitespace-philosophy">Whitespace Philosophy</h3>
+<p>Sanity uses aggressive vertical spacing between sections (64-120px) to create breathing room on the dark canvas. Within sections, spacing is tighter (16-32px), creating dense information clusters separated by generous voids. This rhythm gives the page a "slides" quality -- each section feels like its own focused frame.</p>
+<h3 id="border-radius-scale">Border Radius Scale</h3>
+<table>
+<thead>
+<tr>
+<th>Token</th>
+<th>Value</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>radius-xs</td>
+<td>3px</td>
+<td>Inputs, textareas, subtle rounding</td>
+</tr>
+<tr>
+<td>radius-sm</td>
+<td>4-5px</td>
+<td>Secondary buttons, small cards, tags</td>
+</tr>
+<tr>
+<td>radius-md</td>
+<td>6px</td>
+<td>Standard cards, containers</td>
+</tr>
+<tr>
+<td>radius-lg</td>
+<td>12px</td>
+<td>Large cards, feature containers, forms</td>
+</tr>
+<tr>
+<td>radius-pill</td>
+<td>99999px</td>
+<td>Primary buttons, badges, nav pills</td>
+</tr>
+</tbody>
+</table>
+<h2 id="6-depth-elevation">6. Depth &amp; Elevation</h2>
+<h3 id="shadow-system">Shadow System</h3>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Value</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Level 0 (Flat)</td>
+<td>none</td>
+<td>Default state for most elements -- dark surfaces create depth through color alone</td>
+</tr>
+<tr>
+<td>Level 1 (Subtle)</td>
+<td>0px 0px 0px 1px <code>#212121</code></td>
+<td>Border-like shadow for minimal containment without visible borders</td>
+</tr>
+<tr>
+<td>Level 2 (Focus)</td>
+<td>0 0 0 2px <code>var(--color-blue-500)</code></td>
+<td>Focus ring for inputs and interactive elements</td>
+</tr>
+<tr>
+<td>Level 3 (Overlay)</td>
+<td>Backdrop blur + semi-transparent dark</td>
+<td>Navigation overlay, modal backgrounds</td>
+</tr>
+</tbody>
+</table>
+<h3 id="depth-philosophy">Depth Philosophy</h3>
+<p>Sanity's depth system is almost entirely <strong>colorimetric</strong> rather than shadow-based. Elevation is communicated through surface color shifts: <code>#0b0b0b</code> (ground) -&gt; <code>#212121</code> (elevated) -&gt; <code>#353535</code> (prominent) -&gt; <code>#ffffff</code> (inverted/highest). This approach is native to dark interfaces where traditional drop shadows would be invisible. The few shadows that exist are ring-based (0px 0px 0px Npx) or blur-based (backdrop-filter) rather than offset shadows, maintaining the flat, precision-engineered aesthetic.</p>
+<p>Border-based containment (1px solid <code>#212121</code> or <code>#353535</code>) serves as the primary spatial separator, with the border darkness calibrated to be visible but not dominant. The system avoids "floating card" aesthetics -- everything feels mounted to the surface rather than hovering above it.</p>
+<h2 id="7-dos-and-donts">7. Do's and Don'ts</h2>
+<h3 id="do">Do</h3>
+<ul>
+<li>Use the achromatic gray scale as the foundation -- maintain pure neutral discipline with no warm/cool tinting</li>
+<li>Apply Electric Blue (<code>#0052ef</code>) consistently as the universal hover/active state across all interactive elements</li>
+<li>Use extreme negative letter-spacing (-2px to -4.48px) on display headings 48px and above</li>
+<li>Keep primary CTAs as full-pill shapes (99999px radius) with the coral-red (<code>#f36458</code>)</li>
+<li>Use IBM Plex Mono uppercase for technical labels, tags, and system metadata</li>
+<li>Communicate depth through surface color (dark-to-light) rather than shadows</li>
+<li>Maintain generous vertical section spacing (64-120px) on the dark canvas</li>
+<li>Use <code>"cv01", "cv11", "cv12", "cv13", "ss07"</code> OpenType features for display typography</li>
+</ul>
+<h3 id="dont">Don't</h3>
+<ul>
+<li>Don't introduce warm or cool color tints to the neutral scale -- Sanity's grays are pure achromatic</li>
+<li>Don't use drop shadows for elevation -- dark interfaces demand colorimetric depth</li>
+<li>Don't apply border-radius between 13px and 99998px -- the system jumps from 12px (large card) directly to pill (99999px)</li>
+<li>Don't mix the coral-red CTA with the electric blue interactive color in the same element</li>
+<li>Don't use heavy font weights (700+) -- the system maxes out at 600 and only for 11px uppercase labels</li>
+<li>Don't place light text on light surfaces or dark text on dark surfaces without checking the gray-on-gray contrast ratio</li>
+<li>Don't use traditional offset box-shadows -- ring shadows (0 0 0 Npx) or border-based containment only</li>
+<li>Don't break the tight line-height on headings -- 1.00-1.24 is the range, never go to 1.5+ for display text</li>
+</ul>
+<h2 id="8-responsive-behavior">8. Responsive Behavior</h2>
+<h3 id="breakpoints">Breakpoints</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Width</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Desktop XL</td>
+<td>&gt;= 1640px</td>
+<td>Full layout, maximum content width</td>
+</tr>
+<tr>
+<td>Desktop</td>
+<td>&gt;= 1440px</td>
+<td>Standard desktop layout</td>
+</tr>
+<tr>
+<td>Desktop Compact</td>
+<td>&gt;= 1200px</td>
+<td>Slightly condensed desktop</td>
+</tr>
+<tr>
+<td>Laptop</td>
+<td>&gt;= 1100px</td>
+<td>Reduced column widths</td>
+</tr>
+<tr>
+<td>Tablet Landscape</td>
+<td>&gt;= 960px</td>
+<td>2-column layouts begin collapsing</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>&gt;= 768px</td>
+<td>Transition zone, some elements stack</td>
+</tr>
+<tr>
+<td>Mobile Large</td>
+<td>&gt;= 720px</td>
+<td>Near-tablet layout</td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>&gt;= 480px</td>
+<td>Single-column, stacked layout</td>
+</tr>
+<tr>
+<td>Mobile Small</td>
+<td>&gt;= 376px</td>
+<td>Minimum supported width</td>
+</tr>
+</tbody>
+</table>
+<h3 id="collapsing-strategy">Collapsing Strategy</h3>
+<ul>
+<li><strong>Navigation</strong>: Horizontal links collapse to hamburger menu below 768px</li>
+<li><strong>Hero typography</strong>: Scales from 112px -&gt; 72px -&gt; 48px -&gt; 38px across breakpoints, maintaining tight letter-spacing ratios</li>
+<li><strong>Grid layouts</strong>: 3-column -&gt; 2-column at ~960px, single-column below 768px</li>
+<li><strong>Card grids</strong>: Horizontal scrolling on mobile instead of wrapping (preserving card aspect ratios)</li>
+<li><strong>Section spacing</strong>: Vertical padding reduces by ~40% on mobile (120px -&gt; 64px -&gt; 48px)</li>
+<li><strong>Button sizing</strong>: CTA pills maintain padding but reduce font size; ghost buttons stay fixed</li>
+<li><strong>Code blocks</strong>: Horizontal scroll with preserved monospace formatting</li>
+</ul>
+<h3 id="mobile-specific-adjustments">Mobile-Specific Adjustments</h3>
+<ul>
+<li>Full-bleed sections extend edge-to-edge with 16px internal gutters</li>
+<li>Touch targets: minimum 44px for all interactive elements</li>
+<li>Heading letter-spacing relaxes slightly at mobile sizes (less aggressive negative tracking)</li>
+<li>Image containers switch from fixed aspect ratios to full-width with auto height</li>
+</ul>
+<h2 id="9-agent-prompt-guide">9. Agent Prompt Guide</h2>
+<h3 id="quick-color-reference">Quick Color Reference</h3>
+<div class="highlight"><pre><span></span><code>Background:      #0b0b0b (near-black canvas)
+Surface:         #212121 (elevated cards/containers)
+Border:          #353535 (visible) / #212121 (subtle)
+Text Primary:    #ffffff (white on dark)
+Text Secondary:  #b9b9b9 (silver on dark)
+Text Tertiary:   #797979 (medium gray)
+CTA:             #f36458 (coral-red)
+Interactive:     #0052ef (electric blue, all hovers)
+Success:         #19d600 (green, sRGB fallback)
+Error:           #dd0000 (pure red)
+Light Surface:   #ededed / #ffffff (inverted sections)
+</code></pre></div>
+<h3 id="example-prompts">Example Prompts</h3>
+<p><strong>Landing page section:</strong>
+"Create a feature section with a near-black (#0b0b0b) background. Use a 48px heading in Inter with -1.68px letter-spacing, white text. Below it, 16px body text in #b9b9b9 with 1.50 line-height. Include a coral-red (#f36458) pill button with white text and a secondary dark (#0b0b0b) pill button with #b9b9b9 text. Both buttons hover to #0052ef blue."</p>
+<p><strong>Card grid:</strong>
+"Build a 3-column card grid on a #0b0b0b background. Each card has a #212121 surface, 1px solid #353535 border, 6px border-radius, and 24px padding. Card titles are 24px white with -0.24px letter-spacing. Body text is 13px #b9b9b9. Add a 13px IBM Plex Mono uppercase tag in #797979 at the top of each card."</p>
+<p><strong>Form section:</strong>
+"Design a contact form on a #0b0b0b background. Inputs have #0b0b0b background, 1px solid #212121 border, 3px border-radius, 8px 12px padding, and #b9b9b9 placeholder text. Focus state shows a 2px blue (#0052ef) ring. Submit button is a full-width coral-red (#f36458) pill. Include a 13px #797979 helper text below each field."</p>
+<p><strong>Navigation bar:</strong>
+"Create a sticky top navigation on #0b0b0b with backdrop blur. Left: brand text in 15px white. Center/right: nav links in 16px #b9b9b9 that hover to blue. Far right: a coral-red (#f36458) pill CTA button. Bottom border: 1px solid #212121."</p>
+<h3 id="iteration-guide">Iteration Guide</h3>
+<ol>
+<li><strong>Start dark</strong>: Begin with <code>#0b0b0b</code> background, <code>#ffffff</code> primary text, <code>#b9b9b9</code> secondary text</li>
+<li><strong>Add structure</strong>: Use <code>#212121</code> surfaces and <code>#353535</code> borders for containment -- no shadows</li>
+<li><strong>Apply typography</strong>: Inter (or Space Grotesk) with tight letter-spacing on headings, 1.50 line-height on body</li>
+<li><strong>Color punctuation</strong>: Add <code>#f36458</code> for CTAs and <code>#0052ef</code> for all hover/interactive states</li>
+<li><strong>Refine spacing</strong>: 8px base unit, 24-32px within sections, 64-120px between sections</li>
+<li><strong>Technical details</strong>: Add IBM Plex Mono uppercase labels for tags and metadata</li>
+<li><strong>Polish</strong>: Ensure all interactive elements hover to <code>#0052ef</code>, all buttons are pills or subtle 5px radius, borders are hairline (1px)</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Galyarder Labs
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "navigation.tracking", "search.suggest", "search.highlight", "search.share", "content.code.copy", "toc.follow", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
