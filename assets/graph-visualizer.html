@@ -11,36 +11,37 @@
         body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #000; font-family: 'Inter', 'Segoe UI', sans-serif; }
         #graph-container { width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; z-index: 1; }
         
-        .overlay { position: absolute; left: 20px; top: 20px; z-index: 20; background: rgba(0,0,0,0.85); padding: 25px; border-radius: 12px; border: 1px solid rgba(0, 212, 255, 0.4); backdrop-filter: blur(10px); width: 280px; color: #fff; pointer-events: auto; }
+        .overlay { position: absolute; left: 20px; top: 20px; z-index: 20; background: rgba(0,0,0,0.9); padding: 25px; border-radius: 12px; border: 1px solid rgba(0, 212, 255, 0.4); backdrop-filter: blur(15px); width: 280px; color: #fff; pointer-events: auto; box-shadow: 0 10px 40px rgba(0,0,0,0.8); }
         h2 { margin: 0 0 5px 0; font-size: 18px; color: #00f2ff; letter-spacing: 3px; text-transform: uppercase; font-weight: 900; }
         .subtitle { font-size: 10px; color: #666; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
         
-        .toggle-btn { background: #111; border: 1px solid #333; color: #888; padding: 12px 15px; border-radius: 8px; cursor: pointer; width: 100%; font-size: 10px; transition: all 0.3s; text-transform: uppercase; font-weight: bold; }
+        .toggle-btn { background: #111; border: 1px solid #333; color: #888; padding: 12px 15px; border-radius: 8px; cursor: pointer; width: 100%; font-size: 11px; transition: all 0.3s; text-transform: uppercase; font-weight: bold; margin-bottom: 8px; }
+        .toggle-btn:hover { border-color: #555; color: #fff; }
         .toggle-btn.active { background: #00d4ff; border-color: #00d4ff; color: #000; box-shadow: 0 0 15px rgba(0,212,255,0.5); }
         
         .legend-item { display: flex; align-items: center; margin-bottom: 10px; font-size: 11px; color: #aaa; font-weight: 500; }
         .color-box { width: 10px; height: 10px; margin-right: 15px; border-radius: 50%; box-shadow: 0 0 15px currentColor; }
 
         #status-msg { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #00f2ff; font-size: 14px; letter-spacing: 6px; z-index: 100; text-align: center; font-weight: bold; pointer-events: none; }
-        #debug-log { position: absolute; bottom: 10px; left: 10px; font-size: 9px; color: #333; max-width: 400px; z-index: 100; pointer-events: none; opacity: 0.5; }
     </style>
 </head>
 <body>
-    <div id="status-msg">NEURAL LINK: PLANETARY INITIALIZATION...</div>
-    <div id="debug-log"></div>
+    <div id="status-msg">ELITE NEURAL LINK: SYNCING...</div>
     
     <div class="overlay">
         <h2>GALYARDER NEURAL LINK</h2>
-        <div class="subtitle">v2.8 Macro-Cosmos Scaling</div>
+        <div class="subtitle">v2.9 Elite Constellation</div>
         
-        <div style="margin-bottom: 15px;">
-            <button id="viewToggle" class="toggle-btn active">Strategic Galaxy</button>
+        <div id="controls">
+            <button id="btn-elite" class="toggle-btn active">Elite Galaxy</button>
+            <button id="btn-strategic" class="toggle-btn">Strategic Map</button>
+            <button id="btn-full" class="toggle-btn">Full Mesh</button>
         </div>
 
-        <div id="legend"></div>
-        <div style="margin-top: 20px; font-size: 9px; color: #555; line-height: 1.4;">
+        <div id="legend" style="margin-top: 20px;"></div>
+        <div style="margin-top: 20px; font-size: 9px; color: #444; line-height: 1.4; border-top: 1px solid #222; padding-top: 15px;">
             SCROLL: Zoom | DRAG: Orbit<br>
-            CLICK: Focus Planet
+            CLICK PLANET: Tactical Focus
         </div>
     </div>
 
@@ -48,9 +49,6 @@
 
     <script>
         const statusMsg = document.getElementById('status-msg');
-        const debugLog = document.getElementById('debug-log');
-        function log(msg) { debugLog.innerHTML += `<div>> ${msg}</div>`; console.log(msg); }
-
         const siloColors = {
             "Executive": "#ff00ff", "Engineering": "#00f2ff", "Growth": "#39ff14",
             "Security": "#ff3131", "Product": "#ff9100", "Knowledge": "#00d4ff", "Root": "#ffffff"
@@ -63,24 +61,19 @@
         });
 
         let fullData = null;
-        let isStrategicOnly = true;
+        let currentMode = 'elite'; // elite | strategic | full
         let Graph = null;
 
         async function init() {
-            log("Booting Macro-Engine...");
             try {
                 const baseUrl = window.location.origin + window.location.pathname.split('/').slice(0, -2).join('/');
-                const dataUrl = `${baseUrl}/graph.json`;
-                
-                const response = await fetch(dataUrl);
-                if (!response.ok) throw new Error(`Link Broken: ${response.status}`);
-                
+                const response = await fetch(`${baseUrl}/graph.json`);
                 const raw = await response.json();
+                
                 fullData = {
                     nodes: Object.keys(raw.nodes).map(id => ({ 
                         id, 
                         ...raw.nodes[id],
-                        // Random Variance within class for "Natural" Planet look
                         sizeVariance: 0.8 + Math.random() * 0.4 
                     })),
                     links: raw.edges
@@ -90,116 +83,113 @@
                     .backgroundColor('#000000')
                     .showNavInfo(false)
                     .nodeOpacity(1)
-                    // HIERARCHY MACRO-SCALING (MASSIVE BODIES)
                     .nodeRelSize(node => {
                         let base = 5;
-                        if (node.category === 'core-hukum') base = 40; // GIGANTIC SUNS
-                        else if (node.category === 'agent') base = 25; // GAS GIANTS
-                        else if (node.strategic) base = 15;            // ROCKY PLANETS
-                        else base = 6;                                // MOONS/ASTEROIDS
+                        if (node.category === 'core-hukum') base = 45; 
+                        else if (node.category === 'agent') base = 30;
+                        else if (node.strategic) base = 18;
+                        else base = 8;
                         return base * node.sizeVariance;
                     })
                     .linkColor(() => 'rgba(0, 242, 255, 0.05)')
                     .linkDirectionalParticles(2)
                     .linkDirectionalParticleSpeed(0.005)
-                    .linkDirectionalParticleWidth(1.5)
                     .onNodeClick(node => {
-                        const distance = 250; // Pull back more for big planets
+                        const distance = 300;
                         const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
                         Graph.cameraPosition({ x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, node, 1500);
                     });
 
-                // ADVANCED PLANETARY RENDERING
                 Graph.nodeThreeObject(node => {
                     const group = new THREE.Group();
-                    
-                    const baseSize = node.category === 'core-hukum' ? 40 : node.category === 'agent' ? 25 : node.strategic ? 15 : 6;
+                    const baseSize = node.category === 'core-hukum' ? 45 : node.category === 'agent' ? 30 : node.strategic ? 18 : 8;
                     const finalSize = baseSize * node.sizeVariance;
                     
-                    // The Planet Sphere (Emissive Core)
                     const sphere = new THREE.Mesh(
                         new THREE.SphereGeometry(finalSize),
                         new THREE.MeshStandardMaterial({ 
                             color: siloColors[node.silo] || '#888',
                             emissive: siloColors[node.silo] || '#888',
-                            emissiveIntensity: node.category === 'core-hukum' ? 1.5 : 0.6,
-                            roughness: 0.3,
-                            metalness: 0.2
+                            emissiveIntensity: node.category === 'core-hukum' ? 1.8 : 0.7,
+                            roughness: 0.2
                         })
                     );
                     group.add(sphere);
 
-                    // Add Atmosphere/Glow for big nodes
-                    if (node.category === 'core-hukum' || node.category === 'agent') {
-                        const glow = new THREE.Mesh(
-                            new THREE.SphereGeometry(finalSize * 1.2),
-                            new THREE.MeshBasicMaterial({
-                                color: siloColors[node.silo] || '#fff',
-                                transparent: true,
-                                opacity: 0.1
-                            })
-                        );
-                        group.add(glow);
-                    }
+                    // Show labels based on mode visibility
+                    let showLabel = false;
+                    if (currentMode === 'elite') showLabel = (node.category === 'core-hukum' || node.category === 'agent');
+                    else if (currentMode === 'strategic') showLabel = node.strategic;
+                    else showLabel = (node.category === 'core-hukum' || node.category === 'agent' || node.degree > 10);
 
-                    // Strategic Labels (Clean & Readable)
-                    if (node.strategic || node.category === 'agent') {
+                    if (showLabel) {
                         const label = new SpriteText(node.title.toUpperCase());
                         label.color = siloColors[node.silo] || '#fff';
-                        label.textHeight = finalSize * 0.8; // Scale with planet size
-                        label.position.y = finalSize + (finalSize * 0.5);
+                        label.textHeight = finalSize * 0.9;
+                        label.position.y = finalSize * 1.6;
                         label.fontFace = 'Inter, sans-serif';
                         label.fontWeight = '900';
-                        label.padding = 3;
-                        label.backgroundColor = 'rgba(0,0,0,0.8)';
-                        label.borderRadius = 8;
+                        label.backgroundColor = 'rgba(0,0,0,0.85)';
+                        label.padding = 4;
+                        label.borderRadius = 10;
                         group.add(label);
                     }
-                    
                     return group;
                 });
 
-                // MASSIVE STARFIELD (20,000 STARS)
+                // GALAXY BACKGROUND
                 const starsGeometry = new THREE.BufferGeometry();
                 const starsVertices = [];
-                for (let i = 0; i < 20000; i++) {
-                    starsVertices.push(THREE.MathUtils.randFloatSpread(10000), THREE.MathUtils.randFloatSpread(10000), THREE.MathUtils.randFloatSpread(10000));
+                for (let i = 0; i < 25000; i++) {
+                    starsVertices.push(THREE.MathUtils.randFloatSpread(12000), THREE.MathUtils.randFloatSpread(12000), THREE.MathUtils.randFloatSpread(12000));
                 }
                 starsGeometry.setAttribute('position', new THREE.Float32BufferAttribute(starsVertices, 3));
-                const starsMaterial = new THREE.PointsMaterial({ color: 0xFFFFFF, size: 1.2, transparent: true, opacity: 0.5 });
+                const starsMaterial = new THREE.PointsMaterial({ color: 0xFFFFFF, size: 1.5, transparent: true, opacity: 0.6 });
                 Graph.scene().add(new THREE.Points(starsGeometry, starsMaterial));
 
-                // Orbit Physics (Stronger spacing for big planets)
-                Graph.d3Force('charge').strength(-800);
-                Graph.d3Force('link').distance(300);
+                Graph.d3Force('charge').strength(-1000);
+                Graph.d3Force('link').distance(400);
 
-                updateGraph();
+                updateView();
                 statusMsg.style.display = 'none';
-                log("Macro-Cosmos Operational.");
 
             } catch (err) {
-                log(`VOID ERROR: ${err.message}`);
-                statusMsg.innerHTML = `<span style="color: #ff3131">NEURAL LINK OFFLINE</span><br><small>${err.message}</small>`;
+                statusMsg.innerHTML = `<span style="color: #ff3131">OFFLINE: ${err.message}</span>`;
             }
         }
 
-        function updateGraph() {
-            const filteredNodes = isStrategicOnly ? fullData.nodes.filter(n => n.strategic) : fullData.nodes;
+        function updateView() {
+            let filteredNodes = [];
+            if (currentMode === 'elite') {
+                filteredNodes = fullData.nodes.filter(n => n.category === 'core-hukum' || n.category === 'agent');
+            } else if (currentMode === 'strategic') {
+                filteredNodes = fullData.nodes.filter(n => n.strategic);
+            } else {
+                filteredNodes = fullData.nodes;
+            }
+
             const nodeIds = new Set(filteredNodes.map(n => n.id));
             const filteredLinks = fullData.links.filter(l => {
                 const s = typeof l.source === 'object' ? l.source.id : l.source;
                 const t = typeof l.target === 'object' ? l.target.id : l.target;
                 return nodeIds.has(s) && nodeIds.has(t);
             });
+
             Graph.graphData({ nodes: filteredNodes, links: filteredLinks });
+            // Refresh node objects to update label visibility
+            Graph.nodeThreeObject(Graph.nodeThreeObject()); 
         }
 
-        document.getElementById('viewToggle').onclick = function() {
-            isStrategicOnly = !isStrategicOnly;
-            this.classList.toggle('active');
-            this.innerText = isStrategicOnly ? "Strategic Galaxy" : "Full Neural Mesh";
-            updateGraph();
-        };
+        function setMode(mode) {
+            currentMode = mode;
+            document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(`btn-${mode}`).classList.add('active');
+            updateView();
+        }
+
+        document.getElementById('btn-elite').onclick = () => setMode('elite');
+        document.getElementById('btn-strategic').onclick = () => setMode('strategic');
+        document.getElementById('btn-full').onclick = () => setMode('full');
 
         window.onload = () => setTimeout(init, 300);
     </script>
