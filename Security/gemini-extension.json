@@ -1,7 +1,7 @@
 {
   "name": "galyarder-security",
   "description": "Security Department for Galyarder Framework.",
-  "version": "1.8.14",
+  "version": "1.8.15",
   "agents": "./agents/",
   "skills": [
     "./skills/"

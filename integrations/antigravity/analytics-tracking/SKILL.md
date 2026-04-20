@@ -3,7 +3,7 @@ name: "analytics-tracking"
 description: "Design, audit, and improve analytics tracking systems that produce reliable, decision-ready data."
 risk: low
 source: internal
-date_added: '2026-04-19'
+date_added: '2026-04-20'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

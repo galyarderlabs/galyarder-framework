@@ -3,7 +3,7 @@ name: "executing-red-team-engagement-planning"
 description: "Red team engagement planning is the foundational phase that defines scope, objectives, rules of engagement (ROE), threat model selection, and operational timelines before any offensive testing begins."
 risk: low
 source: internal
-date_added: '2026-04-19'
+date_added: '2026-04-20'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

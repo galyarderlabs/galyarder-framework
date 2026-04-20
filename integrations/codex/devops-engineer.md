@@ -1,6 +1,12 @@
 ---
 name: devops-engineer
-tools: [read_file, grep_search, glob, run_shell_command, write_file, replace]
+allowed-tools:
+  - Read
+  - Grep
+  - Glob
+  - Bash
+  - Write
+  - Edit
 description: Infrastructure, Deployment, and CI/CD specialist. Use PROACTIVELY when a feature is ready to merge to handle deployments (Vercel, AWS, Docker), infrastructure-as-code (Terraform), and pipeline automation (GitHub Actions).
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

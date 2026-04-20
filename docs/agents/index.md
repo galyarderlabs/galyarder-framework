@@ -84,6 +84,12 @@ Discover the high-integrity workforce and protocols designed for autonomous orch
 
     Fundraising and investor operations specialist. Owns founder context, pitch narrative, investor targeting, investor communication, diligence readiness, and board-update hygiene for the 1-Man Army founder.
 
+-   **[galyarder-specialist](galyarder-specialist.md)**
+
+    ---
+
+    Founder-facing master orchestrator. Use PROACTIVELY when work spans multiple departments, when the founder needs one executive synthesis instead of specialist chatter, or when a task must be routed across product, engineering, growth, security, and finance.
+
 </div>
 
 ## :material-folder-zip: Growth Department

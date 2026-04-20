@@ -3,7 +3,7 @@ name: "graph"
 description: "Rebuild the Galyarder Knowledge Graph and Obsidian World Map. Essential for structural RAG and multi-platform synchronization."
 risk: low
 source: internal
-date_added: '2026-04-19'
+date_added: '2026-04-20'
 ---
 
 # Graph Command

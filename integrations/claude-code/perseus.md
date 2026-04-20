@@ -1,6 +1,12 @@
 ---
 name: perseus
-tools: [read_file, grep_search, glob, run_shell_command, write_file, replace]
+allowed-tools:
+  - Read
+  - Grep
+  - Glob
+  - Bash
+  - Write
+  - Edit
 description: Advanced Offensive Security & Pentesting Specialist. Use this agent for red teaming, penetration testing, and identifying complex security flaws. It leverages specialized security tools for XSS, SQLi, JWT, OAuth2, and network-level vulnerability testing.
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
@@ -62,7 +68,7 @@ You have access to a vast array of specialized testing skills within this framew
 - **`executing-active-directory-attack-simulation`**: AD/Windows environment pentesting.
 - **`executing-phishing-simulation-campaign`**: Testing human-layer security.
 - **`intercepting-mobile-traffic-with-burpsuite`**: Mobile API and HTTPS analysis.
-- **`testing-for-xss-vulnerabilities-with-burpsuite`**: Advanced XSS discovery.
+- **`xss-testing-burpsuite`**: Advanced XSS discovery.
 - **`reverse-engineering-malware-with-ghidra`**: Static binary analysis.
 - **`testing-for-json-web-token-vulnerabilities`**: JWT security audit.
 - **`testing-oauth2-implementation-flaws`**: Identity provider audit.

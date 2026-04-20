@@ -3,7 +3,7 @@ name: "saas-finops-optimization"
 description: "Optimize cloud and AI costs for modern SaaS stacks (Vercel, Supabase, Neon, Stripe, and AI APIs). Covers token efficiency, serverless database scaling, edge function optimization, and burn rate monitoring. Use when planning infrastructure, investigating high bills, or auditing API usage."
 risk: low
 source: internal
-date_added: '2026-04-19'
+date_added: '2026-04-20'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

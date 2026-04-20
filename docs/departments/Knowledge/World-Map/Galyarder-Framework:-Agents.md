@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-degree: 33
+degree: 34
 source: docs/agents/index.md
 ---
 # Galyarder Framework: Agents
 
 ## 🧠 Strategic Intelligence
 This entity is a **documentation** within the **docs** silo. 
-It has a connectivity degree of **33**.
+It has a connectivity degree of **34**.
 
 ## 🔗 Neural Links
 
@@ -25,6 +25,7 @@ It has a connectivity degree of **33**.
 - [[:material-folder-zip:-vercel-react-expert]] (structural_reference | 1.0)
 - [[:material-folder-zip:-chief-of-staff]] (structural_reference | 1.0)
 - [[:material-folder-zip:-fundraising-operator]] (structural_reference | 1.0)
+- [[:material-folder-zip:-galyarder-specialist]] (structural_reference | 1.0)
 - [[:material-folder-zip:-conversion-engineer]] (structural_reference | 1.0)
 - [[:material-folder-zip:-growth-engineer]] (structural_reference | 1.0)
 - [[:material-folder-zip:-growth-strategist]] (structural_reference | 1.0)

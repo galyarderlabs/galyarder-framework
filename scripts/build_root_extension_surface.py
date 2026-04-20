@@ -47,7 +47,7 @@ def copy_unique_markdown(source_dirs: list[Path], target_dir: Path) -> None:
             continue
         for src in sorted(source_dir.glob("*.md")):
             if src.name in seen:
-                raise SystemExit(f"Duplicate markdown asset '{src.name}': {seen[src.name]} and {src}")
+                continue
             seen[src.name] = src
             shutil.copy2(src, target_dir / src.name)
 
@@ -112,7 +112,7 @@ def copy_unique_agent_markdown(source_dirs: list[Path], target_dir: Path) -> Non
             continue
         for src in sorted(source_dir.glob("*.md")):
             if src.name in seen:
-                raise SystemExit(f"Duplicate markdown asset '{src.name}': {seen[src.name]} and {src}")
+                continue
             seen[src.name] = src
             content = normalize_agent_frontmatter(src.read_text())
             (target_dir / src.name).write_text(content)

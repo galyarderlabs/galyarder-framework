@@ -3,7 +3,7 @@ name: "brainstorming"
 description: "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation."
 risk: low
 source: internal
-date_added: '2026-04-19'
+date_added: '2026-04-20'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

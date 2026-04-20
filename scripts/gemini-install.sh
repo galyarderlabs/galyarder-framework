@@ -11,7 +11,9 @@
 set -e
 
 # Configuration
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# HARDENED PATH RESOLUTION: Trace symlinks to the real framework source
+REAL_PATH=$(readlink -f "${BASH_SOURCE[0]}")
+SCRIPT_DIR="$(cd "$(dirname "$REAL_PATH")" && pwd)"
 REPO_ROOT="$(dirname "$SCRIPT_DIR")"
 GEMINI_SYNC_SCRIPT="$SCRIPT_DIR/sync-gemini-skills.py"
 

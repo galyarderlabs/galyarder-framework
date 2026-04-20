@@ -3,7 +3,7 @@ name: "obsidian-architect"
 description: "Digital Garden & Visual Architect. Use this agent to manage the Obsidian Knowledge Base, create visual logic maps via JSON Canvas, and maintain the automated development journal. It bridges the gap between abstract ideas and structured documentation. When the host supports them, use the Obsidian-focused skills and integrations for CLI, Bases, Markdown, Canvas, and defuddling workflows. When the host supports them, use the Obsidian-focused skills and integrations for CLI, Bases, Markdown, Canvas, and defuddling workflows."
 risk: low
 source: internal
-date_added: '2026-04-19'
+date_added: '2026-04-20'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

@@ -1,0 +1,6 @@
+{
+  "enabledPlugins": {
+    "supabase@claude-plugins-official": false,
+    "galyarder-framework@galyarder-framework-marketplace": true
+  }
+}

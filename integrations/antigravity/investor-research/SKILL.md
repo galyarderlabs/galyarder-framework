@@ -3,7 +3,7 @@ name: "investor-research"
 description: "Investor Targeting Specialist. Use to identify, qualify, and tier investors for a round based on stage, sector, geography, check size, and portfolio fit."
 risk: low
 source: internal
-date_added: '2026-04-19'
+date_added: '2026-04-20'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

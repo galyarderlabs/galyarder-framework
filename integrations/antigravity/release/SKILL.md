@@ -3,7 +3,7 @@ name: "release"
 description: "Coordinate a full Galyarder Framework release across engineering verification, npm, GitHub, smoke testing, and announcement follow-up. Use when leadership asks to ship a release, not merely to discuss versioning."
 risk: low
 source: internal
-date_added: '2026-04-19'
+date_added: '2026-04-20'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

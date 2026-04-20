@@ -41,14 +41,14 @@
       "category": "core-hukum",
       "silo": "Root",
       "community": "Root",
-      "degree": 346
+      "degree": 350
     },
     "GEMINI.md": {
       "title": "Galyarder Framework: Advanced Agentic Context (Gemini CLI)",
       "category": "core-hukum",
       "silo": "Root",
       "community": "Root",
-      "degree": 310
+      "degree": 313
     },
     "Executive/personas/galyarder-cto.md": {
       "title": "galyarder-cto.md",
@@ -87,6 +87,13 @@
     },
     "Executive/agents/fundraising-operator.md": {
       "title": "THE FUNDRAISING OPERATOR: CAPITAL COMMAND",
+      "category": "agent",
+      "silo": "Executive",
+      "community": "Executive",
+      "degree": 2
+    },
+    "Executive/agents/galyarder-specialist.md": {
+      "title": "GALYARDER SPECIALIST: FOUNDER ORCHESTRATION PROTOCOL",
       "category": "agent",
       "silo": "Executive",
       "community": "Executive",
@@ -255,6 +262,13 @@
     },
     "Executive/skills/founder-thought-leadership/SKILL.md": {
       "title": "FOUNDER THOUGHT LEADERSHIP: IP ENGINE",
+      "category": "skill",
+      "silo": "Executive",
+      "community": "Executive",
+      "degree": 2
+    },
+    "Executive/skills/galyarder-specialist/SKILL.md": {
+      "title": "Galyarder Specialist",
       "category": "skill",
       "silo": "Executive",
       "community": "Executive",
@@ -3662,20 +3676,6 @@
       "community": "docs",
       "degree": 0
     },
-    "docs/windows/polyglot-hooks.md": {
-      "title": "Cross-Platform Polyglot Hooks for Claude Code",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 0
-    },
-    "docs/galyarder-framework/specs/2026-04-06-obsidian-integration-design.md": {
-      "title": "Design Spec: Galyarder Framework x Obsidian Integration",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 0
-    },
     "docs/specs/2026-04-17-galyarder-digital-company-prd.md": {
       "title": "PRD: Galyarder Framework Digital Enterprise (Hierarchy & Reporting Chain)",
       "category": "documentation",
@@ -4145,6 +4145,13 @@
       "community": "docs",
       "degree": 3
     },
+    "docs/agents/galyarder-specialist.md": {
+      "title": ":material-folder-zip: galyarder-specialist",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
     "docs/agents/tdd-guide.md": {
       "title": ":material-folder-zip: tdd-guide",
       "category": "documentation",
@@ -4213,7 +4220,7 @@
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
-      "degree": 3
+      "degree": 2
     },
     "docs/agents/remotion-engineer.md": {
       "title": ":material-folder-zip: remotion-engineer",
@@ -4360,14 +4367,14 @@
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
-      "degree": 33
+      "degree": 34
     },
     "docs/skills/index.md": {
       "title": "Galyarder Framework: Skills",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
-      "degree": 90
+      "degree": 91
     },
     "docs/skills/using-galyarder-framework/index.md": {
       "title": ":material-folder-zip: using-galyarder-framework",
@@ -4476,6 +4483,13 @@
     },
     "docs/skills/founder-thought-leadership/index.md": {
       "title": ":material-folder-zip: founder-thought-leadership",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3
+    },
+    "docs/skills/galyarder-specialist/index.md": {
+      "title": ":material-folder-zip: galyarder-specialist",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -5427,7 +5441,7 @@
       "degree": 0
     },
     "docs/skills/testing-for-xss-vulnerabilities-with-burpsuite/index.md": {
-      "title": ":material-folder-zip: testing-for-xss-vulnerabilities-with-burpsuite",
+      "title": ":material-folder-zip: xss-testing-burpsuite",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -6791,6 +6805,18 @@
       "confidence": 0.8
     },
     {
+      "source": "Executive/agents/galyarder-specialist.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "Executive/agents/galyarder-specialist.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
       "source": "Executive/skills/using-galyarder-framework/SKILL.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
@@ -6954,6 +6980,18 @@
     },
     {
       "source": "Executive/skills/founder-thought-leadership/SKILL.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "Executive/skills/galyarder-specialist/SKILL.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "Executive/skills/galyarder-specialist/SKILL.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -9467,6 +9505,18 @@
       "confidence": 0.8
     },
     {
+      "source": "docs/agents/galyarder-specialist.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/galyarder-specialist.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
       "source": "docs/agents/tdd-guide.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
@@ -9578,12 +9628,6 @@
       "source": "docs/agents/elite-developer.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/elite-developer.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
       "confidence": 0.8
     },
     {
@@ -9900,6 +9944,12 @@
     },
     {
       "source": "docs/agents/index.md",
+      "target": "docs/agents/galyarder-specialist.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/agents/index.md",
       "target": "docs/agents/conversion-engineer.md",
       "type": "structural_reference",
       "confidence": 1.0
@@ -10123,6 +10173,12 @@
     {
       "source": "docs/skills/index.md",
       "target": "docs/skills/fundraising-email/index.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/skills/index.md",
+      "target": "docs/skills/galyarder-specialist/index.md",
       "type": "structural_reference",
       "confidence": 1.0
     },
@@ -10536,17 +10592,17 @@
     },
     {
       "source": "docs/skills/index.md",
-      "target": "docs/skills/testing-for-xss-vulnerabilities-with-burpsuite/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
       "target": "docs/skills/tracking-threat-actor-infrastructure/index.md",
       "type": "structural_reference",
       "confidence": 1.0
     },
     {
+      "source": "docs/skills/index.md",
+      "target": "docs/skills/testing-for-xss-vulnerabilities-with-burpsuite/index.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
       "source": "docs/skills/using-galyarder-framework/index.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
@@ -10698,6 +10754,18 @@
     },
     {
       "source": "docs/skills/founder-thought-leadership/index.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/skills/galyarder-specialist/index.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/skills/galyarder-specialist/index.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -12830,7 +12898,7 @@
           "category": "core-hukum",
           "silo": "Root",
           "community": "Root",
-          "degree": 346
+          "degree": 350
         }
       ],
       [
@@ -12840,7 +12908,7 @@
           "category": "core-hukum",
           "silo": "Root",
           "community": "Root",
-          "degree": 310
+          "degree": 313
         }
       ],
       [
@@ -12850,7 +12918,7 @@
           "category": "documentation",
           "silo": "docs",
           "community": "docs",
-          "degree": 90
+          "degree": 91
         }
       ],
       [

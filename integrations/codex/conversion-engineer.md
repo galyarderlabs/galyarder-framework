@@ -1,6 +1,12 @@
 ---
 name: conversion-engineer
-tools: [read_file, grep_search, glob, run_shell_command, write_file, replace]
+allowed-tools:
+  - Read
+  - Grep
+  - Glob
+  - Bash
+  - Write
+  - Edit
 description: |
   CRO (Conversion Rate Optimization) and Funnel specialist. Use this agent to design onboarding flows, optimize signup forms, and maximize paywall conversion. It focuses on the bridge between Engineering and Revenue.
 ---

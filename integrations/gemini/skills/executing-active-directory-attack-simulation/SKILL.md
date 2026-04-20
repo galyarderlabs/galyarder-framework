@@ -11,7 +11,7 @@ description: >
 domain: cybersecurity
 subdomain: penetration-testing
 tags: [Active-Directory, BloodHound, Mimikatz, Kerberoasting, domain-compromise]
-version: 1.0.0
+version: "1.8.15"
 author: mahipal
 license: Apache-2.0
 ---

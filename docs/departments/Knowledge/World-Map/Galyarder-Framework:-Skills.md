@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-degree: 90
+degree: 91
 source: docs/skills/index.md
 ---
 # Galyarder Framework: Skills
 
 ## 🧠 Strategic Intelligence
 This entity is a **documentation** within the **docs** silo. 
-It has a connectivity degree of **90**.
+It has a connectivity degree of **91**.
 
 ## 🔗 Neural Links
 
@@ -31,6 +31,7 @@ It has a connectivity degree of **90**.
 - [[:material-folder-zip:-founder-context]] (structural_reference | 1.0)
 - [[:material-folder-zip:-founder-thought-leadership]] (structural_reference | 1.0)
 - [[:material-folder-zip:-fundraising-email]] (structural_reference | 1.0)
+- [[:material-folder-zip:-galyarder-specialist]] (structural_reference | 1.0)
 - [[:material-folder-zip:-investor-research]] (structural_reference | 1.0)
 - [[:material-folder-zip:-lead-scoring]] (structural_reference | 1.0)
 - [[:material-folder-zip:-market-research]] (structural_reference | 1.0)
@@ -99,8 +100,8 @@ It has a connectivity degree of **90**.
 - [[:material-folder-zip:-recovering-deleted-files-with-photorec]] (structural_reference | 1.0)
 - [[:material-folder-zip:-recovering-from-ransomware-attack]] (structural_reference | 1.0)
 - [[:material-folder-zip:-reverse-engineering-malware-with-ghidra]] (structural_reference | 1.0)
-- [[:material-folder-zip:-testing-for-xss-vulnerabilities-with-burpsuite]] (structural_reference | 1.0)
 - [[:material-folder-zip:-tracking-threat-actor-infrastructure]] (structural_reference | 1.0)
+- [[:material-folder-zip:-xss-testing-burpsuite]] (structural_reference | 1.0)
 
 ### Informed By:
 - [[Welcome-to-Galyarder-Framework]] (structural_reference | 1.0)
