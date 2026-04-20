@@ -3,145 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galyarder Framework: Strategic Neural Map</title>
-    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
-    <style type="text/css">
-        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #0b0e14; color: #fff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-        #mynetwork { width: 100%; height: 100%; }
-        .loading { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 24px; z-index: 10; }
+    <title>Galyarder Framework: Cosmic Neural Link</title>
+    <script src="https://unpkg.com/3d-force-graph"></script>
+    <script src="https://unpkg.com/three"></script>
+    <script src="https://unpkg.com/three-spritetext"></script>
+    <style>
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #000; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+        #3d-graph { width: 100%; height: 100%; }
         
-        .panel { position: absolute; left: 20px; top: 20px; z-index: 20; background: rgba(0,0,0,0.85); padding: 20px; border-radius: 12px; border: 1px solid #444; backdrop-filter: blur(10px); width: 250px; }
-        h2 { margin: 0 0 15px 0; font-size: 18px; color: #00bcd4; letter-spacing: 1px; }
-        .control-group { margin-bottom: 20px; }
-        .label-text { display: block; margin-bottom: 10px; font-size: 12px; text-transform: uppercase; color: #888; font-weight: bold; }
+        .overlay { position: absolute; left: 20px; top: 20px; z-index: 20; background: rgba(0,0,0,0.7); padding: 25px; border-radius: 15px; border: 1px solid rgba(0, 212, 255, 0.3); backdrop-filter: blur(15px); width: 280px; color: #fff; box-shadow: 0 0 30px rgba(0, 212, 255, 0.1); }
+        h2 { margin: 0 0 5px 0; font-size: 20px; color: #00f2ff; letter-spacing: 2px; text-shadow: 0 0 10px rgba(0, 242, 255, 0.5); }
+        .subtitle { font-size: 10px; color: #555; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
         
-        .toggle-btn { background: #222; border: 1px solid #444; color: #fff; padding: 8px 12px; border-radius: 6px; cursor: pointer; width: 100%; font-size: 13px; transition: all 0.2s; }
-        .toggle-btn.active { background: #00bcd4; border-color: #00bcd4; color: #000; font-weight: bold; }
+        .control-group { margin-bottom: 25px; }
+        .label-text { display: block; margin-bottom: 12px; font-size: 11px; text-transform: uppercase; color: #aaa; font-weight: bold; letter-spacing: 1px; }
         
-        .legend { margin-top: 10px; }
-        .legend-item { display: flex; align-items: center; margin-bottom: 8px; font-size: 12px; }
-        .color-box { width: 10px; height: 10px; margin-right: 10px; border-radius: 50%; }
+        .toggle-btn { background: #111; border: 1px solid #333; color: #888; padding: 10px 15px; border-radius: 8px; cursor: pointer; width: 100%; font-size: 12px; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); text-transform: uppercase; letter-spacing: 1px; }
+        .toggle-btn.active { background: linear-gradient(135deg, #00d4ff 0%, #0081ff 100%); border-color: transparent; color: #000; font-weight: bold; box-shadow: 0 0 20px rgba(0, 212, 255, 0.4); }
+        .toggle-btn:hover { border-color: #00f2ff; color: #fff; }
+        
+        .legend-item { display: flex; align-items: center; margin-bottom: 10px; font-size: 12px; color: #ddd; }
+        .color-box { width: 8px; height: 8px; margin-right: 12px; border-radius: 50%; box-shadow: 0 0 8px currentColor; }
 
-        .stats { position: absolute; bottom: 20px; right: 20px; font-size: 10px; color: #555; }
+        .loading { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 18px; color: #00f2ff; z-index: 10; letter-spacing: 5px; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { opacity: 0.3; } 50% { opacity: 1; } 100% { opacity: 0.3; } }
+
+        .footer { position: absolute; bottom: 20px; width: 100%; text-align: center; color: rgba(255,255,255,0.2); font-size: 9px; letter-spacing: 2px; pointer-events: none; }
     </style>
 </head>
 <body>
-    <div id="loading" class="loading">Initializing Neural Link...</div>
+    <div id="loading" class="loading">CALIBRATING NEURAL LINK...</div>
     
-    <div class="panel">
-        <h2>GALYARDER MAP</h2>
+    <div class="overlay">
+        <h2>COSMIC LINK</h2>
+        <div class="subtitle">v2.2 Apex Intelligence</div>
         
         <div class="control-group">
-            <span class="label-text">Intelligence View</span>
-            <button id="viewToggle" class="toggle-btn active">STRATEGIC ONLY</button>
-            <p style="font-size: 10px; color: #666; margin-top: 5px;">Hiding support docs for max clarity.</p>
+            <span class="label-text">Perception Mode</span>
+            <button id="viewToggle" class="toggle-btn active">Strategic Galaxy</button>
         </div>
 
         <div class="control-group">
-            <span class="label-text">Department Silos</span>
-            <div class="legend">
-                <div class="legend-item"><div class="color-box" style="background: #9c27b0;"></div> Executive</div>
-                <div class="legend-item"><div class="color-box" style="background: #2196f3;"></div> Engineering</div>
-                <div class="legend-item"><div class="color-box" style="background: #4caf50;"></div> Growth</div>
-                <div class="legend-item"><div class="color-box" style="background: #f44336;"></div> Security</div>
-                <div class="legend-item"><div class="color-box" style="background: #ff9800;"></div> Product</div>
-                <div class="legend-item"><div class="color-box" style="background: #00bcd4;"></div> Knowledge</div>
-            </div>
+            <span class="label-text">Department Constellations</span>
+            <div id="legend"></div>
         </div>
     </div>
 
-    <div class="stats" id="graphStats">Nodes: 0 | Edges: 0</div>
-    <div id="mynetwork"></div>
+    <div class="footer">GALYARDER FRAMEWORK • HUMANS 3.0 PROTOCOL • APEX DOMINANCE</div>
+    <div id="3d-graph"></div>
 
-    <script type="text/javascript">
-        let network = null;
-        let fullData = null;
-        let isStrategicOnly = true;
-
+    <script>
         const siloColors = {
-            "Executive": "#9c27b0",
-            "Engineering": "#2196f3",
-            "Growth": "#4caf50",
-            "Security": "#f44336",
-            "Product": "#ff9800",
+            "Executive": "#ff00ff",   // Neon Magenta
+            "Engineering": "#00f2ff", // Electric Blue
+            "Growth": "#39ff14",      // Cyber Green
+            "Security": "#ff3131",    // Blood Red
+            "Product": "#ff9100",     // Neon Orange
             "Infrastructure": "#607d8b",
             "Legal-Finance": "#795548",
-            "Knowledge": "#00bcd4",
+            "Knowledge": "#00d4ff",   // Celestial Cyan
             "Root": "#ffffff"
         };
 
-        async function loadData() {
-            const response = await fetch('../graph.json');
-            fullData = await response.json();
-            renderGraph();
-        }
+        const legendDiv = document.getElementById('legend');
+        Object.keys(siloColors).forEach(silo => {
+            if (silo === "Root" || silo === "Infrastructure" || silo === "Legal-Finance") return;
+            legendDiv.innerHTML += `<div class="legend-item"><div class="color-box" style="background: ${siloColors[silo]}; color: ${siloColors[silo]}"></div> ${silo}</div>`;
+        });
 
-        function renderGraph() {
-            document.getElementById('loading').style.display = 'none';
-            
-            const filteredNodes = [];
-            const visibleNodeIds = new Set();
-
-            Object.keys(fullData.nodes).forEach(id => {
-                const meta = fullData.nodes[id];
-                if (isStrategicOnly && !meta.strategic) return;
-
-                visibleNodeIds.add(id);
-                filteredNodes.push({
-                    id: id,
-                    label: meta.title,
-                    color: siloColors[meta.silo] || "#888",
-                    font: { color: '#fff', size: meta.strategic ? 14 : 10 },
-                    shape: meta.category === 'agent' ? 'diamond' : meta.category === 'core-hukum' ? 'star' : 'dot',
-                    size: meta.category === 'agent' ? 30 : meta.category === 'core-hukum' ? 35 : 15,
-                    borderWidth: meta.strategic ? 2 : 1,
-                    shadow: meta.strategic
-                });
+        let fullData = null;
+        let isStrategicOnly = true;
+        const Graph = ForceGraph3D()(document.getElementById('3d-graph'))
+            .backgroundColor('#000000')
+            .showNavInfo(false)
+            .nodeLabel('title')
+            .nodeColor(node => siloColors[node.silo] || '#888')
+            .nodeOpacity(0.9)
+            .nodeRelSize(7)
+            .linkWidth(1)
+            .linkColor(() => 'rgba(255,255,255,0.1)')
+            .linkDirectionalParticles(2)
+            .linkDirectionalParticleSpeed(d => d.confidence * 0.01)
+            .linkDirectionalParticleWidth(1.5)
+            .onNodeClick(node => {
+                const distance = 40;
+                const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
+                Graph.cameraPosition({ x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, node, 2000);
             });
 
-            const filteredEdges = fullData.edges.filter(e => 
-                visibleNodeIds.has(e.source) && visibleNodeIds.has(e.target)
-            ).map(e => ({
-                from: e.source,
-                to: e.target,
-                arrows: 'to',
-                color: { color: '#444', highlight: '#00bcd4' },
-                width: e.confidence * 1.5,
-                smooth: { type: 'cubicBezier' }
-            }));
+        // Add Starfield
+        const color = new THREE.Color();
+        const starsGeometry = new THREE.BufferGeometry();
+        const starsMaterial = new THREE.PointsMaterial({ color: 0xFFFFFF, size: 0.7, transparent: true, opacity: 0.8 });
+        const starsVertices = [];
+        for (let i = 0; i < 5000; i++) {
+            starsVertices.push(THREE.MathUtils.randFloatSpread(2000), THREE.MathUtils.randFloatSpread(2000), THREE.MathUtils.randFloatSpread(2000));
+        }
+        starsGeometry.setAttribute('position', new THREE.Float32BufferAttribute(starsVertices, 3));
+        const starField = new THREE.Points(starsGeometry, starsMaterial);
+        Graph.scene().add(starField);
 
-            const container = document.getElementById('mynetwork');
-            const data = { nodes: new vis.DataSet(filteredNodes), edges: new vis.DataSet(filteredEdges) };
-            
-            const options = {
-                physics: {
-                    solver: 'forceAtlas2Based',
-                    forceAtlas2Based: {
-                        gravitationalConstant: -100,
-                        centralGravity: 0.005,
-                        springLength: 150,
-                        springConstant: 0.18
-                    },
-                    maxVelocity: 50,
-                    timestep: 0.35,
-                    stabilization: { iterations: 100 }
-                }
+        async function init() {
+            const response = await fetch('../graph.json');
+            const raw = await response.json();
+            fullData = {
+                nodes: Object.keys(raw.nodes).map(id => ({ id, ...raw.nodes[id] })),
+                links: raw.edges
             };
+            updateGraph();
+            document.getElementById('loading').style.display = 'none';
+        }
 
-            if (network) network.destroy();
-            network = new vis.Network(container, data, options);
+        function updateGraph() {
+            const filteredNodes = isStrategicOnly 
+                ? fullData.nodes.filter(n => n.strategic)
+                : fullData.nodes;
             
-            document.getElementById('graphStats').innerText = `Nodes: ${filteredNodes.length} | Edges: ${filteredEdges.length}`;
+            const nodeIds = new Set(filteredNodes.map(n => n.id));
+            const filteredLinks = fullData.links.filter(l => nodeIds.has(l.source) && nodeIds.has(l.target));
+
+            Graph.graphData({ nodes: filteredNodes, links: filteredLinks });
+
+            // Custom node styling: Add text sprites for strategic assets
+            Graph.nodeThreeObject(node => {
+                if (node.strategic) {
+                    const sprite = new SpriteText(node.title);
+                    sprite.color = siloColors[node.silo] || '#fff';
+                    sprite.textHeight = node.category === 'agent' ? 12 : 8;
+                    sprite.padding = 4;
+                    sprite.backgroundColor = 'rgba(0,0,0,0.5)';
+                    sprite.borderRadius = 4;
+                    return sprite;
+                }
+                return false; // Default sphere
+            });
         }
 
         document.getElementById('viewToggle').onclick = function() {
             isStrategicOnly = !isStrategicOnly;
             this.classList.toggle('active');
-            this.innerText = isStrategicOnly ? "STRATEGIC ONLY" : "FULL MESH";
-            renderGraph();
+            this.innerText = isStrategicOnly ? "Strategic Galaxy" : "Full Neural Mesh";
+            updateGraph();
         };
 
-        loadData();
+        init();
     </script>
 </body>
 </html>
