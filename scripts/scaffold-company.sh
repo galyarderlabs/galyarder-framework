@@ -6,7 +6,9 @@
 # curl -sSL https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/main/scripts/scaffold-company.sh | bash
 
 RAW_URL="https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/main/docs/templates"
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" 2>/dev/null && pwd || echo "")"
+# HARDENED PATH RESOLUTION: Trace symlinks to the real framework source
+REAL_PATH=$(readlink -f "${BASH_SOURCE[0]}")
+SCRIPT_DIR="$(cd "$(dirname "$REAL_PATH")" && pwd)"
 LOCAL_TEMPLATE_DIR="$SCRIPT_DIR/../docs/templates"
 
 echo "🚀 Initializing Galyarder Framework Digital Headquarters in $(pwd)..."
