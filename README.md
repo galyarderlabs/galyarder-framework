@@ -30,7 +30,7 @@ In this framework, AGI doesn't mean "sentient machines"; it means a self-evolvin
 
 ---
 
-### The AGI Lifecycle (Professional Standard)
+### The AGI Lifecycle
 
 Galyarder Framework bridges the gap between high-level intent and ground-level execution through a deterministic 5-stage process:
 
@@ -47,7 +47,7 @@ Galyarder Framework bridges the gap between high-level intent and ground-level e
 A high-integrity workforce in a single repository:
 
 - **40 Specialized Agents**: Engineering, Growth, Security, Product, and Legal experts.
-- **Galyarder Neural Link (v2.0)**: Self-mapping knowledge graph with deterministic AST parsing and semantic inference.
+- **Galyarder Neural Link**: Self-mapping knowledge graph with deterministic AST parsing and semantic inference.
 - **132 Production-Ready Skills**: SOPs for TDD, SEO, CRO, FinOps, and more.
 - **54 Design Specifications**: Elite UI specs (Stripe, Vercel, Apple) to enforce aesthetic law.
 - **20+ Slash Commands**: Instant orchestration triggers (e.g., `/tdd`, `/review`, `/marketing`).
@@ -59,7 +59,7 @@ A high-integrity workforce in a single repository:
 
 Galyarder Framework does not merely execute; it orchestrates. Every mission follows a non-negotiable sequence of high-fidelity protocols to ensure zero-slop output.
 
-### 1. Operational Sequence (Visual)
+### 1. Operational Sequence
 
 ```mermaid
 sequenceDiagram
