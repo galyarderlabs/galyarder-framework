@@ -27,13 +27,23 @@ class GalyarderNeuralLink:
             
             if not silo:
                 silo = rel_path.split('/')[0] if '/' in rel_path else "Root"
-                
+            
+            # Determine if this is a high-signal strategic asset
+            strategic = False
+            if category in ['agent', 'skill', 'core-hukum', 'persona', 'logic-engine']:
+                strategic = True
+            if "design/" in rel_path or "personas/" in rel_path:
+                strategic = True
+            if rel_path.count('/') == 0 and rel_path.endswith('.md'):
+                strategic = True # Root hukum files (CLAUDE, GEMINI, etc)
+
             self.nodes[rel_path] = {
                 "title": title,
                 "category": category,
                 "silo": silo,
-                "community": silo, # Initial community is the silo
-                "degree": 0
+                "community": silo,
+                "degree": 0,
+                "strategic": strategic
             }
         except: pass
 

@@ -3,98 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galyarder Framework: Neural Map</title>
+    <title>Galyarder Framework: Strategic Neural Map</title>
     <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
     <style type="text/css">
         body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #0b0e14; color: #fff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
         #mynetwork { width: 100%; height: 100%; }
         .loading { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 24px; z-index: 10; }
-        .controls { position: absolute; bottom: 20px; left: 20px; z-index: 20; background: rgba(0,0,0,0.7); padding: 10px; border-radius: 8px; border: 1px solid #333; }
-        .legend { position: absolute; top: 20px; right: 20px; background: rgba(0,0,0,0.7); padding: 15px; border-radius: 8px; border: 1px solid #333; }
-        .legend-item { display: flex; align-items: center; margin-bottom: 5px; font-size: 12px; }
-        .color-box { width: 12px; height: 12px; margin-right: 8px; border-radius: 2px; }
+        
+        .panel { position: absolute; left: 20px; top: 20px; z-index: 20; background: rgba(0,0,0,0.85); padding: 20px; border-radius: 12px; border: 1px solid #444; backdrop-filter: blur(10px); width: 250px; }
+        h2 { margin: 0 0 15px 0; font-size: 18px; color: #00bcd4; letter-spacing: 1px; }
+        .control-group { margin-bottom: 20px; }
+        .label-text { display: block; margin-bottom: 10px; font-size: 12px; text-transform: uppercase; color: #888; font-weight: bold; }
+        
+        .toggle-btn { background: #222; border: 1px solid #444; color: #fff; padding: 8px 12px; border-radius: 6px; cursor: pointer; width: 100%; font-size: 13px; transition: all 0.2s; }
+        .toggle-btn.active { background: #00bcd4; border-color: #00bcd4; color: #000; font-weight: bold; }
+        
+        .legend { margin-top: 10px; }
+        .legend-item { display: flex; align-items: center; margin-bottom: 8px; font-size: 12px; }
+        .color-box { width: 10px; height: 10px; margin-right: 10px; border-radius: 50%; }
+
+        .stats { position: absolute; bottom: 20px; right: 20px; font-size: 10px; color: #555; }
     </style>
 </head>
 <body>
     <div id="loading" class="loading">Initializing Neural Link...</div>
     
-    <div class="legend">
-        <div class="legend-item"><div class="color-box" style="background: #9c27b0;"></div> Executive</div>
-        <div class="legend-item"><div class="color-box" style="background: #2196f3;"></div> Engineering</div>
-        <div class="legend-item"><div class="color-box" style="background: #4caf50;"></div> Growth</div>
-        <div class="legend-item"><div class="color-box" style="background: #f44336;"></div> Security</div>
-        <div class="legend-item"><div class="color-box" style="background: #ff9800;"></div> Product</div>
-        <div class="legend-item"><div class="color-box" style="background: #607d8b;"></div> Infrastructure</div>
+    <div class="panel">
+        <h2>GALYARDER MAP</h2>
+        
+        <div class="control-group">
+            <span class="label-text">Intelligence View</span>
+            <button id="viewToggle" class="toggle-btn active">STRATEGIC ONLY</button>
+            <p style="font-size: 10px; color: #666; margin-top: 5px;">Hiding support docs for max clarity.</p>
+        </div>
+
+        <div class="control-group">
+            <span class="label-text">Department Silos</span>
+            <div class="legend">
+                <div class="legend-item"><div class="color-box" style="background: #9c27b0;"></div> Executive</div>
+                <div class="legend-item"><div class="color-box" style="background: #2196f3;"></div> Engineering</div>
+                <div class="legend-item"><div class="color-box" style="background: #4caf50;"></div> Growth</div>
+                <div class="legend-item"><div class="color-box" style="background: #f44336;"></div> Security</div>
+                <div class="legend-item"><div class="color-box" style="background: #ff9800;"></div> Product</div>
+                <div class="legend-item"><div class="color-box" style="background: #00bcd4;"></div> Knowledge</div>
+            </div>
+        </div>
     </div>
 
+    <div class="stats" id="graphStats">Nodes: 0 | Edges: 0</div>
     <div id="mynetwork"></div>
 
     <script type="text/javascript">
-        async function init() {
-            try {
-                const response = await fetch('../graph.json');
-                const data = await response.json();
-                document.getElementById('loading').style.display = 'none';
+        let network = null;
+        let fullData = null;
+        let isStrategicOnly = true;
 
-                const nodes = [];
-                const siloColors = {
-                    "Executive": "#9c27b0",
-                    "Engineering": "#2196f3",
-                    "Growth": "#4caf50",
-                    "Security": "#f44336",
-                    "Product": "#ff9800",
-                    "Infrastructure": "#607d8b",
-                    "Legal-Finance": "#795548",
-                    "Knowledge": "#00bcd4",
-                    "Root": "#ffffff"
-                };
+        const siloColors = {
+            "Executive": "#9c27b0",
+            "Engineering": "#2196f3",
+            "Growth": "#4caf50",
+            "Security": "#f44336",
+            "Product": "#ff9800",
+            "Infrastructure": "#607d8b",
+            "Legal-Finance": "#795548",
+            "Knowledge": "#00bcd4",
+            "Root": "#ffffff"
+        };
 
-                Object.keys(data.nodes).forEach(id => {
-                    const meta = data.nodes[id];
-                    nodes.push({
-                        id: id,
-                        label: meta.title,
-                        color: siloColors[meta.silo] || "#888",
-                        group: meta.silo,
-                        font: { color: '#fff' },
-                        shape: meta.category === 'agent' ? 'diamond' : 'dot',
-                        size: meta.category === 'agent' ? 25 : 15
-                    });
-                });
-
-                const edges = data.edges.map(e => ({
-                    from: e.source,
-                    to: e.target,
-                    arrows: 'to',
-                    color: { color: '#444', highlight: '#fff' },
-                    label: e.type,
-                    font: { size: 8, color: '#aaa', align: 'middle' }
-                }));
-
-                const container = document.getElementById('mynetwork');
-                const graphData = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
-                const options = {
-                    nodes: { borderWidth: 2, scaling: { min: 10, max: 30 } },
-                    edges: { smooth: { type: 'continuous' } },
-                    physics: {
-                        forceAtlas2Based: { gravitationalConstant: -50, centralGravity: 0.01, springLength: 100, springConstant: 0.08 },
-                        maxVelocity: 50,
-                        solver: 'forceAtlas2Based',
-                        timestep: 0.35,
-                        stabilization: { iterations: 150 }
-                    },
-                    groups: {
-                        agent: { shape: 'diamond' },
-                        skill: { shape: 'dot' }
-                    }
-                };
-                new vis.Network(container, graphData, options);
-            } catch (error) {
-                document.getElementById('loading').innerText = "Error loading Neural Map.";
-                console.error(error);
-            }
+        async function loadData() {
+            const response = await fetch('../graph.json');
+            fullData = await response.json();
+            renderGraph();
         }
-        init();
+
+        function renderGraph() {
+            document.getElementById('loading').style.display = 'none';
+            
+            const filteredNodes = [];
+            const visibleNodeIds = new Set();
+
+            Object.keys(fullData.nodes).forEach(id => {
+                const meta = fullData.nodes[id];
+                if (isStrategicOnly && !meta.strategic) return;
+
+                visibleNodeIds.add(id);
+                filteredNodes.push({
+                    id: id,
+                    label: meta.title,
+                    color: siloColors[meta.silo] || "#888",
+                    font: { color: '#fff', size: meta.strategic ? 14 : 10 },
+                    shape: meta.category === 'agent' ? 'diamond' : meta.category === 'core-hukum' ? 'star' : 'dot',
+                    size: meta.category === 'agent' ? 30 : meta.category === 'core-hukum' ? 35 : 15,
+                    borderWidth: meta.strategic ? 2 : 1,
+                    shadow: meta.strategic
+                });
+            });
+
+            const filteredEdges = fullData.edges.filter(e => 
+                visibleNodeIds.has(e.source) && visibleNodeIds.has(e.target)
+            ).map(e => ({
+                from: e.source,
+                to: e.target,
+                arrows: 'to',
+                color: { color: '#444', highlight: '#00bcd4' },
+                width: e.confidence * 1.5,
+                smooth: { type: 'cubicBezier' }
+            }));
+
+            const container = document.getElementById('mynetwork');
+            const data = { nodes: new vis.DataSet(filteredNodes), edges: new vis.DataSet(filteredEdges) };
+            
+            const options = {
+                physics: {
+                    solver: 'forceAtlas2Based',
+                    forceAtlas2Based: {
+                        gravitationalConstant: -100,
+                        centralGravity: 0.005,
+                        springLength: 150,
+                        springConstant: 0.18
+                    },
+                    maxVelocity: 50,
+                    timestep: 0.35,
+                    stabilization: { iterations: 100 }
+                }
+            };
+
+            if (network) network.destroy();
+            network = new vis.Network(container, data, options);
+            
+            document.getElementById('graphStats').innerText = `Nodes: ${filteredNodes.length} | Edges: ${filteredEdges.length}`;
+        }
+
+        document.getElementById('viewToggle').onclick = function() {
+            isStrategicOnly = !isStrategicOnly;
+            this.classList.toggle('active');
+            this.innerText = isStrategicOnly ? "STRATEGIC ONLY" : "FULL MESH";
+            renderGraph();
+        };
+
+        loadData();
     </script>
 </body>
 </html>
