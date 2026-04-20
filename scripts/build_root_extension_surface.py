@@ -14,6 +14,7 @@ PERSONA_DIRS = [
 ]
 
 AGENT_DIRS = [
+    REPO_ROOT / "Compat" / "agents",
     REPO_ROOT / "Executive" / "agents",
     REPO_ROOT / "Engineering" / "agents",
     REPO_ROOT / "Growth" / "agents",
@@ -25,6 +26,7 @@ AGENT_DIRS = [
 ]
 
 SKILL_DIRS = [
+    REPO_ROOT / "Compat" / "skills",
     REPO_ROOT / "Executive" / "skills",
     REPO_ROOT / "Engineering" / "skills",
     REPO_ROOT / "Growth" / "skills",

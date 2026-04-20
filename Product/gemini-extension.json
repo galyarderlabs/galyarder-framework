@@ -1,7 +1,7 @@
 {
   "name": "galyarder-product",
   "description": "Product Department for Galyarder Framework.",
-  "version": "1.8.12",
+  "version": "1.8.13",
   "agents": "./agents/",
   "skills": [
     "./skills/"

@@ -1,5 +1,24 @@
 # Release Notes - Galyarder Framework
 
+## [v1.8.13] - 2026-04-20
+### Runtime Compatibility Recovery
+This patch restores the legacy runtime assets that had fallen out of the canonical root and full-bundle surfaces during the packaging refactors.
+
+#### Highlights
+- **Compat Source Layer**: Added `Compat/agents` and `Compat/skills`, and wired the root surface builder to include them in generated runtime outputs.
+- **Agent Recovery**: Restored the missing founder-office and specialist agent surfaces, including `galyarder-specialist` and several historical orchestration agents.
+- **Skill Recovery**: Restored missing compatibility skills and legacy entrypoints so older prompts, docs, and registries can still resolve their intended capability names.
+- **Parity Audit Clean**: Historical canonical runtime audit now reports zero missing agents, personas, skills, or subagents.
+
+#### Verification
+```bash
+python3 scripts/build_root_extension_surface.py
+python3 scripts/build_root_extension_surface.py --output-root .marketplace/full
+bash scripts/smoke.sh
+```
+
+---
+
 ## [v1.8.12] - 2026-04-20
 ### Claude Bundle Autodiscovery Fix
 This patch removes the full bundle's explicit component-path overrides and lets Claude Code discover the standard root `agents/`, `skills/`, and `commands/` directories automatically.

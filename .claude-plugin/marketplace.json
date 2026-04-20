@@ -9,70 +9,70 @@
   "repository": "https://github.com/galyarderlabs/galyarder-framework",
   "metadata": {
     "description": "Galyarder Framework: The Humans 3.0 protocol for autonomous workforce orchestration.",
-    "version": "1.8.12"
+    "version": "1.8.13"
   },
   "plugins": [
     {
       "name": "galyarder-framework",
       "source": "./.marketplace/full",
       "description": "Complete Galyarder Framework bundle with all 8 departments.",
-      "version": "1.8.12",
+      "version": "1.8.13",
       "category": "bundle"
     },
     {
       "name": "executive-dept",
       "source": "./Executive",
       "description": "C-Suite personas and master orchestration skills.",
-      "version": "1.8.12",
+      "version": "1.8.13",
       "category": "executive"
     },
     {
       "name": "engineering-dept",
       "source": "./Engineering",
       "description": "Full-stack implementation, TDD, and architecture.",
-      "version": "1.8.12",
+      "version": "1.8.13",
       "category": "engineering"
     },
     {
       "name": "growth-dept",
       "source": "./Growth",
       "description": "Marketing, SEO, CRO, and design systems.",
-      "version": "1.8.12",
+      "version": "1.8.13",
       "category": "growth"
     },
     {
       "name": "security-dept",
       "source": "./Security",
       "description": "Offensive and defensive security audits.",
-      "version": "1.8.12",
+      "version": "1.8.13",
       "category": "security"
     },
     {
       "name": "product-dept",
       "source": "./Product",
       "description": "Product discovery, PRDs, and plan management.",
-      "version": "1.8.12",
+      "version": "1.8.13",
       "category": "product"
     },
     {
       "name": "infrastructure-dept",
       "source": "./Infrastructure",
       "description": "CI/CD, deployment, and site reliability.",
-      "version": "1.8.12",
+      "version": "1.8.13",
       "category": "infrastructure"
     },
     {
       "name": "legal-finance-dept",
       "source": "./Legal-Finance",
       "description": "Compliance, FinOps, and regulatory arbitrage.",
-      "version": "1.8.12",
+      "version": "1.8.13",
       "category": "finance"
     },
     {
       "name": "knowledge-dept",
       "source": "./Knowledge",
       "description": "Obsidian architecture and knowledge management.",
-      "version": "1.8.12",
+      "version": "1.8.13",
       "category": "knowledge"
     }
   ]

@@ -2,6 +2,14 @@
 
 All notable changes to Galyarder Framework will be documented in this file.
 
+## [1.8.13] - 2026-04-20
+### Added
+- **Compatibility Runtime Layer**: Added `Compat/agents` and `Compat/skills` as a source layer for generated root and marketplace runtime surfaces so legacy assets can exist without re-fragmenting department ownership.
+### Fixed
+- **Missing Agent Restore**: Restored missing runtime agents including `galyarder-specialist`, `analytics-architect`, `doc-updater`, `experimentation-engineer`, `interface-designer`, `mcp-builder`, `revenue-architect`, `support-lead`, and `ui-ux-designer`.
+- **Missing Skill Restore**: Restored legacy compatibility skills and orchestration wrappers so historical prompts, docs, and host registries resolve cleanly again.
+- **Runtime Parity Audit**: Rebuilt root and full-bundle surfaces until historical canonical agents, personas, skills, and subagents all resolve with zero missing entries in the parity audit.
+
 ## [1.8.12] - 2026-04-20
 ### Fixed
 - **Claude Bundle Autodiscovery**: The full Claude marketplace bundle manifest now relies on Claude Code's default `agents/`, `skills/`, and `commands/` discovery instead of explicit path override fields, avoiding the remaining `agents: Invalid input` validator failure.
