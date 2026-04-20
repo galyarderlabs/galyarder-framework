@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galyarder Framework: Cosmic Neural Link</title>
+    <title>Galyarder Neural Link</title>
     <script src="https://unpkg.com/3d-force-graph"></script>
     <script src="https://unpkg.com/three"></script>
     <script src="https://unpkg.com/three-spritetext"></script>
@@ -27,16 +27,19 @@
 
         .loading { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 18px; color: #00f2ff; z-index: 10; letter-spacing: 5px; animation: pulse 2s infinite; }
         @keyframes pulse { 0% { opacity: 0.3; } 50% { opacity: 1; } 100% { opacity: 0.3; } }
+        
+        #error-msg { position: absolute; top: 60%; left: 50%; transform: translateX(-50%); color: #ff3131; font-size: 12px; display: none; text-align: center; }
 
         .footer { position: absolute; bottom: 20px; width: 100%; text-align: center; color: rgba(255,255,255,0.2); font-size: 9px; letter-spacing: 2px; pointer-events: none; }
     </style>
 </head>
 <body>
     <div id="loading" class="loading">CALIBRATING NEURAL LINK...</div>
+    <div id="error-msg"></div>
     
     <div class="overlay">
-        <h2>COSMIC LINK</h2>
-        <div class="subtitle">v2.2 Apex Intelligence</div>
+        <h2>NEURAL LINK</h2>
+        <div class="subtitle">v2.3 Apex Intelligence</div>
         
         <div class="control-group">
             <span class="label-text">Perception Mode</span>
@@ -73,45 +76,73 @@
 
         let fullData = null;
         let isStrategicOnly = true;
+        
         const Graph = ForceGraph3D()(document.getElementById('3d-graph'))
             .backgroundColor('#000000')
             .showNavInfo(false)
             .nodeLabel('title')
             .nodeColor(node => siloColors[node.silo] || '#888')
-            .nodeOpacity(0.9)
             .nodeRelSize(7)
             .linkWidth(1)
-            .linkColor(() => 'rgba(255,255,255,0.1)')
+            .linkColor(() => 'rgba(255,255,255,0.15)')
             .linkDirectionalParticles(2)
-            .linkDirectionalParticleSpeed(d => d.confidence * 0.01)
+            .linkDirectionalParticleSpeed(d => (d.confidence || 0.5) * 0.01)
             .linkDirectionalParticleWidth(1.5)
             .onNodeClick(node => {
-                const distance = 40;
+                const distance = 60;
                 const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
-                Graph.cameraPosition({ x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, node, 2000);
+                Graph.cameraPosition({ x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, node, 1500);
             });
 
         // Add Starfield
-        const color = new THREE.Color();
         const starsGeometry = new THREE.BufferGeometry();
-        const starsMaterial = new THREE.PointsMaterial({ color: 0xFFFFFF, size: 0.7, transparent: true, opacity: 0.8 });
+        const starsMaterial = new THREE.PointsMaterial({ color: 0xFFFFFF, size: 0.8, transparent: true, opacity: 0.6 });
         const starsVertices = [];
-        for (let i = 0; i < 5000; i++) {
-            starsVertices.push(THREE.MathUtils.randFloatSpread(2000), THREE.MathUtils.randFloatSpread(2000), THREE.MathUtils.randFloatSpread(2000));
+        for (let i = 0; i < 6000; i++) {
+            starsVertices.push(THREE.MathUtils.randFloatSpread(3000), THREE.MathUtils.randFloatSpread(3000), THREE.MathUtils.randFloatSpread(3000));
         }
         starsGeometry.setAttribute('position', new THREE.Float32BufferAttribute(starsVertices, 3));
         const starField = new THREE.Points(starsGeometry, starsMaterial);
         Graph.scene().add(starField);
 
         async function init() {
-            const response = await fetch('../graph.json');
-            const raw = await response.json();
-            fullData = {
-                nodes: Object.keys(raw.nodes).map(id => ({ id, ...raw.nodes[id] })),
-                links: raw.edges
-            };
-            updateGraph();
-            document.getElementById('loading').style.display = 'none';
+            try {
+                // Try multiple paths to find graph.json (handles local vs deployed differences)
+                const paths = ['../graph.json', 'graph.json', '/galyarder-framework/graph.json'];
+                let raw = null;
+                
+                for (const p of paths) {
+                    try {
+                        const response = await fetch(p);
+                        if (response.ok) {
+                            raw = await response.json();
+                            console.log(`Successfully loaded from: ${p}`);
+                            break;
+                        }
+                    } catch (e) {}
+                }
+
+                if (!raw) throw new Error("Could not locate graph.json data source.");
+
+                fullData = {
+                    nodes: Object.keys(raw.nodes).map(id => ({ id, ...raw.nodes[id] })),
+                    links: raw.edges.map(e => ({
+                        source: e.source,
+                        target: e.target,
+                        type: e.type,
+                        confidence: e.confidence
+                    }))
+                };
+                
+                updateGraph();
+                document.getElementById('loading').style.display = 'none';
+            } catch (error) {
+                console.error("Initialization failed:", error);
+                document.getElementById('loading').innerText = "CALIBRATION FAILED";
+                const errDiv = document.getElementById('error-msg');
+                errDiv.innerText = error.message + "\nCheck browser console for details.";
+                errDiv.style.display = "block";
+            }
         }
 
         function updateGraph() {
@@ -120,22 +151,27 @@
                 : fullData.nodes;
             
             const nodeIds = new Set(filteredNodes.map(n => n.id));
-            const filteredLinks = fullData.links.filter(l => nodeIds.has(l.source) && nodeIds.has(l.target));
+            const filteredLinks = fullData.links.filter(l => {
+                // Ensure both source and target exist in the visible node set
+                const src = typeof l.source === 'object' ? l.source.id : l.source;
+                const tgt = typeof l.target === 'object' ? l.target.id : l.target;
+                return nodeIds.has(src) && nodeIds.has(tgt);
+            });
 
             Graph.graphData({ nodes: filteredNodes, links: filteredLinks });
 
-            // Custom node styling: Add text sprites for strategic assets
+            // Custom node styling
             Graph.nodeThreeObject(node => {
                 if (node.strategic) {
                     const sprite = new SpriteText(node.title);
                     sprite.color = siloColors[node.silo] || '#fff';
                     sprite.textHeight = node.category === 'agent' ? 12 : 8;
                     sprite.padding = 4;
-                    sprite.backgroundColor = 'rgba(0,0,0,0.5)';
+                    sprite.backgroundColor = 'rgba(0,0,0,0.6)';
                     sprite.borderRadius = 4;
                     return sprite;
                 }
-                return false; // Default sphere
+                return false;
             });
         }
 
