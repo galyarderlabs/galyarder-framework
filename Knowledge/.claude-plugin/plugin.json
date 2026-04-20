@@ -1,7 +1,7 @@
 {
   "name": "galyarder-knowledge",
   "description": "Knowledge Department for Galyarder Framework. Includes specialized agents, skills, and tools.",
-  "version": "1.8.17",
+  "version": "1.8.18",
   "author": {
     "name": "Galyarder Labs",
     "url": "https://galyarderlabs.github.io/galyarder-framework/"
