@@ -4,51 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galyarder Neural Link</title>
-    <script src="https://unpkg.com/3d-force-graph"></script>
-    <script src="https://unpkg.com/three"></script>
+    <!-- Galyarder Library Pinning: Standardizing dependencies for Apex Reliability -->
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/3d-force-graph@1.73.0/dist/3d-force-graph.min.js"></script>
     <style>
         body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #000; font-family: 'Inter', 'Segoe UI', sans-serif; }
         #graph-container { width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; z-index: 1; }
         
-        .overlay { position: absolute; left: 20px; top: 20px; z-index: 20; background: rgba(0,0,0,0.85); padding: 25px; border-radius: 12px; border: 1px solid rgba(0, 212, 255, 0.4); backdrop-filter: blur(10px); width: 260px; color: #fff; pointer-events: auto; }
+        .overlay { position: absolute; left: 20px; top: 20px; z-index: 20; background: rgba(0,0,0,0.85); padding: 25px; border-radius: 12px; border: 1px solid rgba(0, 212, 255, 0.4); backdrop-filter: blur(10px); width: 260px; color: #fff; }
         h2 { margin: 0 0 5px 0; font-size: 16px; color: #00f2ff; letter-spacing: 2px; }
-        .subtitle { font-size: 10px; color: #555; margin-bottom: 20px; text-transform: uppercase; }
+        .subtitle { font-size: 10px; color: #666; margin-bottom: 20px; text-transform: uppercase; }
         
         .toggle-btn { background: #111; border: 1px solid #333; color: #888; padding: 10px 15px; border-radius: 8px; cursor: pointer; width: 100%; font-size: 10px; transition: all 0.3s; text-transform: uppercase; font-weight: bold; }
         .toggle-btn.active { background: #00d4ff; border-color: #00d4ff; color: #000; }
         
-        .legend { margin-top: 20px; }
         .legend-item { display: flex; align-items: center; margin-bottom: 8px; font-size: 11px; color: #aaa; }
         .color-box { width: 8px; height: 8px; margin-right: 12px; border-radius: 50%; box-shadow: 0 0 10px currentColor; }
 
-        #status-msg { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #00f2ff; font-size: 12px; letter-spacing: 4px; z-index: 100; text-align: center; pointer-events: none; }
-        #debug-log { position: absolute; bottom: 10px; left: 10px; font-size: 8px; color: #333; max-width: 300px; z-index: 100; pointer-events: none; }
+        #status-msg { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #00f2ff; font-size: 12px; letter-spacing: 4px; z-index: 100; text-align: center; }
+        #debug-log { position: absolute; bottom: 10px; left: 10px; font-size: 8px; color: #444; max-width: 400px; z-index: 100; pointer-events: none; }
     </style>
 </head>
 <body>
-    <div id="status-msg">CALIBRATING NEURAL LINK...</div>
+    <div id="status-msg">NEURAL LINK CALIBRATING...</div>
     <div id="debug-log"></div>
     
     <div class="overlay">
         <h2>GALYARDER NEURAL LINK</h2>
-        <div class="subtitle">v2.5 Apex Galaxy</div>
+        <div class="subtitle">v2.6 Apex Integrity</div>
         
         <div style="margin-bottom: 15px;">
             <button id="viewToggle" class="toggle-btn active">Strategic Galaxy</button>
         </div>
 
-        <div class="legend" id="legend"></div>
+        <div id="legend"></div>
     </div>
 
     <div id="graph-container"></div>
 
     <script>
-        const status = document.getElementById('status-msg');
-        const debug = document.getElementById('debug-log');
-        function log(msg) { 
-            console.log(msg);
-            debug.innerHTML += `<div>> ${msg}</div>`;
-        }
+        const statusMsg = document.getElementById('status-msg');
+        const debugLog = document.getElementById('debug-log');
+        function log(msg) { debugLog.innerHTML += `<div>> ${msg}</div>`; console.log(msg); }
 
         const siloColors = {
             "Executive": "#ff00ff", "Engineering": "#00f2ff", "Growth": "#39ff14",
@@ -58,7 +55,7 @@
         const legendDiv = document.getElementById('legend');
         Object.keys(siloColors).forEach(silo => {
             if (silo === "Root") return;
-            legendDiv.innerHTML += `<div class="legend-item"><div class="color-box" style="background: ${siloColors[silo]}; color: ${siloColors[silo]}"></div> ${silo}</div>`;
+            legendDiv.innerHTML += `<div class="legend-item"><div class="color-box" style="background: ${siloColors[silo]}"></div> ${silo}</div>`;
         });
 
         let fullData = null;
@@ -66,73 +63,64 @@
         let Graph = null;
 
         async function init() {
-            log("Engine check...");
+            log("Checking dependencies...");
             try {
-                // Determine absolute path to graph.json
+                if (typeof THREE === 'undefined') throw new Error("THREE.js failed to load.");
+                if (typeof ForceGraph3D === 'undefined') throw new Error("ForceGraph3D failed to load.");
+
                 const baseUrl = window.location.origin + window.location.pathname.split('/').slice(0, -2).join('/');
                 const dataUrl = `${baseUrl}/graph.json`;
-                log(`Target: ${dataUrl}`);
+                log(`Syncing data: ${dataUrl}`);
                 
                 const response = await fetch(dataUrl);
-                if (!response.ok) throw new Error(`Data access failed (${response.status})`);
+                if (!response.ok) throw new Error(`Fetch failed (${response.status})`);
                 
                 const raw = await response.json();
-                log(`Sync: ${Object.keys(raw.nodes).length} nodes mapped`);
-
                 fullData = {
                     nodes: Object.keys(raw.nodes).map(id => ({ id, ...raw.nodes[id] })),
                     links: raw.edges
                 };
+                log(`Graph Map: ${fullData.nodes.length} nodes ready`);
 
                 Graph = ForceGraph3D()(document.getElementById('graph-container'))
                     .backgroundColor('#000000')
                     .showNavInfo(false)
-                    .nodeLabel(node => `<span style="color:${siloColors[node.silo]}">${node.title}</span>`)
+                    .nodeLabel(node => `<b style="color:${siloColors[node.silo]}">${node.title}</b>`)
                     .nodeColor(node => siloColors[node.silo] || '#888')
-                    .nodeRelSize(node => node.category === 'agent' ? 8 : 4)
-                    .nodeOpacity(1)
-                    .linkColor(() => 'rgba(0, 242, 255, 0.1)')
-                    .linkDirectionalParticles(2)
-                    .linkDirectionalParticleSpeed(0.005)
-                    .linkDirectionalParticleWidth(1.2);
+                    .nodeRelSize(node => node.category === 'agent' ? 9 : 5)
+                    .linkColor(() => 'rgba(255,255,255,0.1)')
+                    .linkDirectionalParticles(1)
+                    .linkDirectionalParticleSpeed(0.003)
+                    .linkDirectionalParticleWidth(1);
 
-                // GALAXY PHYSICS
-                Graph.d3Force('link').distance(100);
-                Graph.d3Force('charge').strength(-150);
-
-                // Add Starfield
+                // Add Galaxy Starfield
                 const starsGeometry = new THREE.BufferGeometry();
                 const starsVertices = [];
-                for (let i = 0; i < 8000; i++) {
-                    starsVertices.push(THREE.MathUtils.randFloatSpread(4000), THREE.MathUtils.randFloatSpread(4000), THREE.MathUtils.randFloatSpread(4000));
+                for (let i = 0; i < 10000; i++) {
+                    starsVertices.push(THREE.MathUtils.randFloatSpread(5000), THREE.MathUtils.randFloatSpread(5000), THREE.MathUtils.randFloatSpread(5000));
                 }
                 starsGeometry.setAttribute('position', new THREE.Float32BufferAttribute(starsVertices, 3));
-                const starsMaterial = new THREE.PointsMaterial({ color: 0xFFFFFF, size: 0.5, transparent: true, opacity: 0.5 });
+                const starsMaterial = new THREE.PointsMaterial({ color: 0xFFFFFF, size: 0.6, transparent: true, opacity: 0.4 });
                 Graph.scene().add(new THREE.Points(starsGeometry, starsMaterial));
 
                 updateGraph();
-                status.style.display = 'none';
+                statusMsg.style.display = 'none';
                 log("Galaxy initialized.");
 
             } catch (err) {
-                log(`CRITICAL: ${err.message}`);
-                status.innerHTML = `<span style="color: #ff3131">NEURAL LINK OFFLINE</span><br><small>${err.message}</small>`;
+                log(`CRITICAL FAIL: ${err.message}`);
+                statusMsg.innerHTML = `<span style="color: #ff3131">NEURAL LINK OFFLINE</span><br><small>${err.message}</small>`;
             }
         }
 
         function updateGraph() {
-            log(`Rendering view: ${isStrategicOnly ? 'STRATEGIC' : 'FULL'}`);
-            const filteredNodes = isStrategicOnly 
-                ? fullData.nodes.filter(n => n.strategic)
-                : fullData.nodes;
-            
+            const filteredNodes = isStrategicOnly ? fullData.nodes.filter(n => n.strategic) : fullData.nodes;
             const nodeIds = new Set(filteredNodes.map(n => n.id));
             const filteredLinks = fullData.links.filter(l => {
                 const s = typeof l.source === 'object' ? l.source.id : l.source;
                 const t = typeof l.target === 'object' ? l.target.id : l.target;
                 return nodeIds.has(s) && nodeIds.has(t);
             });
-
             Graph.graphData({ nodes: filteredNodes, links: filteredLinks });
         }
 
@@ -143,7 +131,7 @@
             updateGraph();
         };
 
-        window.onload = () => setTimeout(init, 300);
+        window.onload = () => setTimeout(init, 500);
     </script>
 </body>
 </html>
