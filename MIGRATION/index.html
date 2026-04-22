@@ -889,6 +889,67 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#v190-the-unified-cli-npm-era" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v1.9.0+: The Unified CLI &amp; NPM Era
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v1.9.0+: The Unified CLI &amp; NPM Era">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-installation-method-migration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Installation Method Migration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-command-unification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Command Unification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-departmental-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Departmental Infrastructure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-agentic-skill-injection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Agentic Skill Injection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1762,6 +1823,67 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#v190-the-unified-cli-npm-era" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v1.9.0+: The Unified CLI &amp; NPM Era
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="v1.9.0+: The Unified CLI &amp; NPM Era">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-installation-method-migration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Installation Method Migration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-command-unification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Command Unification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-departmental-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Departmental Infrastructure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-agentic-skill-injection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Agentic Skill Injection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1850,11 +1972,73 @@ python3<span class="w"> </span>scripts/sync-gemini-skills.py
    <div class="highlight"><pre><span></span><code>./scripts/install.sh<span class="w"> </span>--tool<span class="w"> </span>cursor
 </code></pre></div></p>
 </li>
-<li>
-<p><strong>Update Custom Hooks</strong>:
-   If you have hooks in <code>hooks/hooks.json</code> referencing <code>framework/</code>, update them to point to the new 8-department structure.</p>
-</li>
 </ol>
+<h2 id="v190-the-unified-cli-npm-era">v1.9.0+: The Unified CLI &amp; NPM Era</h2>
+<p>Version 1.9.0 represents a major architectural shift in how the Galyarder Framework is distributed and consumed. We have moved from a "Script-First" model to a "Package-First" model.</p>
+<h3 id="1-installation-method-migration">1. Installation Method Migration</h3>
+<p>Legacy users who cloned the repository manually should transition to the global NPM package for easier updates and path resolution.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Source Method</th>
+<th style="text-align: left;">Command (New Standard)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Git Clone</strong></td>
+<td style="text-align: left;"><code>npm install -g galyarder-framework</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Direct Pull</strong></td>
+<td style="text-align: left;"><code>npx skills add galyarderlabs/galyarder-framework --skill full</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-command-unification">2. Command Unification</h3>
+<p>We have consolidated all separate shell scripts into a single, high-fidelity Node.js CLI. The old <code>galyarder-*</code> aliases are deprecated.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Legacy Command</th>
+<th style="text-align: left;">New CLI Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>galyarder-deploy</code></td>
+<td style="text-align: left;"><code>galyarder deploy</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>galyarder-scaffold</code></td>
+<td style="text-align: left;"><code>galyarder scaffold</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>galyarder-smoke</code></td>
+<td style="text-align: left;"><code>galyarder smoke</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>galyarder-convert</code></td>
+<td style="text-align: left;"><code>galyarder convert</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-departmental-infrastructure">3. Departmental Infrastructure</h3>
+<p>The number of mandatory departments has been finalized to 8. If your Digital HQ was scaffolded before v1.9.5, you may be missing the <strong>Infrastructure</strong> department.</p>
+<p><strong>To fix:</strong>
+<div class="highlight"><pre><span></span><code><span class="c1"># Update to latest framework</span>
+npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>galyarder-framework
+
+<span class="c1"># Re-run scaffold to inject missing departments/templates</span>
+galyarder<span class="w"> </span>scaffold
+</code></pre></div></p>
+<h3 id="4-agentic-skill-injection">4. Agentic Skill Injection</h3>
+<p>You can now pull Galyarder intelligence directly into any agent environment using the <code>skills.sh</code> standard. This eliminates the need for manual file copying.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Inject the complete Galyarder engineering brain</span>
+npx<span class="w"> </span>skills<span class="w"> </span>add<span class="w"> </span>galyarderlabs/galyarder-framework<span class="w"> </span>--skill<span class="w"> </span>engineering
+</code></pre></div>
+<hr />
+<p>© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.</p>
 
 
 
