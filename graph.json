@@ -353,14 +353,6 @@
       "degree": 2,
       "strategic": true
     },
-    "Engineering/agents/code-reviewer.md": {
-      "title": "code-reviewer.md",
-      "category": "agent",
-      "silo": "Engineering",
-      "community": "Engineering",
-      "degree": 2,
-      "strategic": true
-    },
     "Engineering/agents/super-architect.md": {
       "title": "THE SUPER ARCHITECT: SYSTEMS DESIGN PROTOCOL",
       "category": "agent",
@@ -377,16 +369,24 @@
       "degree": 2,
       "strategic": true
     },
-    "Engineering/agents/qa-automation-engineer.md": {
-      "title": "QA ENGINEER PROTOCOL",
+    "Engineering/agents/elite-developer.md": {
+      "title": "elite-developer.md",
       "category": "agent",
       "silo": "Engineering",
       "community": "Engineering",
       "degree": 2,
       "strategic": true
     },
-    "Engineering/agents/elite-developer.md": {
-      "title": "elite-developer.md",
+    "Engineering/agents/code-reviewer.md": {
+      "title": "code-reviewer.md",
+      "category": "agent",
+      "silo": "Engineering",
+      "community": "Engineering",
+      "degree": 2,
+      "strategic": true
+    },
+    "Engineering/agents/qa-automation-engineer.md": {
+      "title": "QA PROTOCOL",
       "category": "agent",
       "silo": "Engineering",
       "community": "Engineering",
@@ -8008,18 +8008,6 @@
       "confidence": 0.8
     },
     {
-      "source": "Engineering/agents/code-reviewer.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "Engineering/agents/code-reviewer.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
       "source": "Engineering/agents/super-architect.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
@@ -8044,25 +8032,37 @@
       "confidence": 0.8
     },
     {
-      "source": "Engineering/agents/qa-automation-engineer.md",
+      "source": "Engineering/agents/elite-developer.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Engineering/agents/qa-automation-engineer.md",
+      "source": "Engineering/agents/elite-developer.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
     },
     {
-      "source": "Engineering/agents/elite-developer.md",
+      "source": "Engineering/agents/code-reviewer.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "Engineering/agents/elite-developer.md",
+      "source": "Engineering/agents/code-reviewer.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/agents/qa-automation-engineer.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "Engineering/agents/qa-automation-engineer.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
