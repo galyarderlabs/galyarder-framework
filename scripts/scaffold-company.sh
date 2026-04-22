@@ -20,7 +20,7 @@ mkdir -p docs/reports
 mkdir -p docs/templates
 
 # 2. Departmental Structure
-DEPARTMENTS=("Executive" "Product" "Engineering" "Growth" "Security" "Legal-Finance" "Knowledge")
+DEPARTMENTS=("Executive" "Product" "Engineering" "Growth" "Security" "Infrastructure" "Legal-Finance" "Knowledge")
 
 for DEPT in "${DEPARTMENTS[@]}"; do
     DEPT_PATH="docs/departments/$DEPT"
@@ -56,6 +56,7 @@ if [ -d "$LOCAL_TEMPLATE_DIR" ]; then
     cp "$LOCAL_TEMPLATE_DIR"/*Security* docs/departments/Security/ 2>/dev/null || true
     cp "$LOCAL_TEMPLATE_DIR"/*Legal-Finance* docs/departments/Legal-Finance/ 2>/dev/null || true
     cp "$LOCAL_TEMPLATE_DIR"/*Knowledge* docs/departments/Knowledge/ 2>/dev/null || true
+    cp "$LOCAL_TEMPLATE_DIR"/*Operations* docs/departments/Infrastructure/ 2>/dev/null || true
 else
     echo "    (Local source not found. Fetching from Galyarder GitHub...)"
     seed_remote "Galyarder-Framework Founder Office Audit.md" "docs/departments/Executive"
@@ -63,6 +64,7 @@ else
     seed_remote "Galyarder-Framework Engineering Audit.md" "docs/departments/Engineering"
     seed_remote "Galyarder-Framework Growth Audit.md" "docs/departments/Growth"
     seed_remote "Galyarder-Framework Security Audit.md" "docs/departments/Security"
+    seed_remote "Galyarder-Framework Operations Audit.md" "docs/departments/Infrastructure"
     seed_remote "Galyarder-Framework Legal-Finance Audit.md" "docs/departments/Legal-Finance"
     seed_remote "Galyarder-Framework Knowledge Audit.md" "docs/departments/Knowledge"
     seed_remote "Galyarder-Framework Decision Log Template.md" "docs/reports"
