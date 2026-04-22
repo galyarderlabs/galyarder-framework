@@ -46,7 +46,7 @@
       "category": "core-hukum",
       "silo": "Root",
       "community": "Root",
-      "degree": 313,
+      "degree": 314,
       "strategic": true
     },
     "README.md": {
@@ -4227,6 +4227,14 @@
     },
     "docs/plans/2026-04-19-galyarder-graphify.md": {
       "title": "Mission Plan: Galyarder Graphify Integration",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": false
+    },
+    "docs/plans/2025-05-15-legacy-branding-purge.md": {
+      "title": "Legacy Purge: Removing Galyarder Branding",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -10270,6 +10278,12 @@
       "confidence": 0.8
     },
     {
+      "source": "docs/plans/2025-05-15-legacy-branding-purge.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
       "source": "docs/departments/Executive/Galyarder-Framework-Framework Vision - Digital Company for Solo Founders.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
@@ -13866,7 +13880,7 @@
           "category": "core-hukum",
           "silo": "Root",
           "community": "Root",
-          "degree": 313,
+          "degree": 314,
           "strategic": true
         }
       ],

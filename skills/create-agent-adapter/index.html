@@ -1679,15 +1679,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-shared-types-paperclipaiadapter-utils" class="md-nav__link">
+  <a href="#2-shared-types-galyarderadapter-utils" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Shared Types (@paperclipai/adapter-utils)
+        2. Shared Types (@galyarder/adapter-utils)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Shared Types (@paperclipai/adapter-utils)">
+    <nav class="md-nav" aria-label="2. Shared Types (@galyarder/adapter-utils)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2248,8 +2248,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="2-shared-types-paperclipaiadapter-utils">2. Shared Types (<code>@paperclipai/adapter-utils</code>)</h2>
-<p>All adapter interfaces live in <code>packages/adapter-utils/src/types.ts</code>. Import from <code>@paperclipai/adapter-utils</code> (types) or <code>@paperclipai/adapter-utils/server-utils</code> (runtime helpers).</p>
+<h2 id="2-shared-types-galyarderadapter-utils">2. Shared Types (<code>@galyarder/adapter-utils</code>)</h2>
+<p>All adapter interfaces live in <code>packages/adapter-utils/src/types.ts</code>. Import from <code>@galyarder/adapter-utils</code> (types) or <code>@galyarder/adapter-utils/server-utils</code> (runtime helpers).</p>
 <h3 id="core-interfaces">Core Interfaces</h3>
 <div class="highlight"><pre><span></span><code><span class="c1">// The execute function signature  every adapter must implement this</span>
 <span class="kd">interface</span><span class="w"> </span><span class="nx">AdapterExecutionContext</span><span class="w"> </span><span class="p">{</span>
@@ -2368,7 +2368,7 @@ Example: for <code>claude_local</code>, detected <code>ANTHROPIC_API_KEY</code> 
 </code></pre></div>
 <p><strong>package.json</strong>  must use the four-export convention:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@paperclipai/adapter-&lt;name&gt;&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@galyarder/adapter-&lt;name&gt;&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0.0.1&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;private&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;module&quot;</span><span class="p">,</span>
@@ -2379,7 +2379,7 @@ Example: for <code>claude_local</code>, detected <code>ANTHROPIC_API_KEY</code> 
 <span class="w">    </span><span class="nt">&quot;./cli&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;./src/cli/index.ts&quot;</span>
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;dependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;@paperclipai/adapter-utils&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;workspace:*&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;@galyarder/adapter-utils&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;workspace:*&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;picocolors&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^1.1.1&quot;</span>
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;devDependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
@@ -2433,7 +2433,7 @@ Example: for <code>claude_local</code>, detected <code>ANTHROPIC_API_KEY</code> 
 <p>This is the most important file. It receives an <code>AdapterExecutionContext</code> and must return an <code>AdapterExecutionResult</code>.</p>
 <p><strong>Required behavior:</strong></p>
 <ol>
-<li><strong>Read config</strong>  extract typed values from <code>ctx.config</code> using helpers (<code>asString</code>, <code>asNumber</code>, <code>asBoolean</code>, <code>asStringArray</code>, <code>parseObject</code> from <code>@paperclipai/adapter-utils/server-utils</code>)</li>
+<li><strong>Read config</strong>  extract typed values from <code>ctx.config</code> using helpers (<code>asString</code>, <code>asNumber</code>, <code>asBoolean</code>, <code>asStringArray</code>, <code>parseObject</code> from <code>@galyarder/adapter-utils/server-utils</code>)</li>
 <li><strong>Build environment</strong>  call <code>buildGalyarderEnv(agent)</code> then layer in <code>GALYARDER_RUN_ID</code>, context vars (<code>GALYARDER_TASK_ID</code>, <code>GALYARDER_WAKE_REASON</code>, <code>GALYARDER_WAKE_COMMENT_ID</code>, <code>GALYARDER_APPROVAL_ID</code>, <code>GALYARDER_APPROVAL_STATUS</code>, <code>GALYARDER_LINKED_ISSUE_IDS</code>), user env overrides, and auth token</li>
 <li><strong>Resolve session</strong>  check <code>runtime.sessionParams</code> / <code>runtime.sessionId</code> for an existing session; validate it's compatible (e.g. same cwd); decide whether to resume or start fresh</li>
 <li><strong>Render prompt</strong>  use <code>renderTemplate(template, data)</code> with the template variables: <code>agentId</code>, <code>companyId</code>, <code>runId</code>, <code>company</code>, <code>agent</code>, <code>run</code>, <code>context</code></li>
@@ -2593,8 +2593,8 @@ Example: for <code>claude_local</code>, detected <code>ANTHROPIC_API_KEY</code> 
 <h2 id="4-registration-checklist">4. Registration Checklist</h2>
 <p>After creating the adapter package, register it in all three consumers:</p>
 <h3 id="41-server-registry-serversrcadaptersregistryts">4.1 Server Registry (<code>server/src/adapters/registry.ts</code>)</h3>
-<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">execute</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">myExecute</span><span class="p">,</span><span class="w"> </span><span class="nx">sessionCodec</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">mySessionCodec</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@paperclipai/adapter-my-agent/server&quot;</span><span class="p">;</span>
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">agentConfigurationDoc</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">myDoc</span><span class="p">,</span><span class="w"> </span><span class="nx">models</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">myModels</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@paperclipai/adapter-my-agent&quot;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">execute</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">myExecute</span><span class="p">,</span><span class="w"> </span><span class="nx">sessionCodec</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">mySessionCodec</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@galyarder/adapter-my-agent/server&quot;</span><span class="p">;</span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">agentConfigurationDoc</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">myDoc</span><span class="p">,</span><span class="w"> </span><span class="nx">models</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">myModels</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@galyarder/adapter-my-agent&quot;</span><span class="p">;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">myAgentAdapter</span><span class="o">:</span><span class="w"> </span><span class="kt">ServerAdapterModule</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;my_agent&quot;</span><span class="p">,</span>
@@ -2619,9 +2619,9 @@ Example: for <code>claude_local</code>, detected <code>ANTHROPIC_API_KEY</code> 
 </code></pre></div>
 <p>With <code>ui/src/adapters/my-agent/index.ts</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">UIAdapterModule</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;../types&quot;</span><span class="p">;</span>
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">parseMyAgentStdoutLine</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@paperclipai/adapter-my-agent/ui&quot;</span><span class="p">;</span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">parseMyAgentStdoutLine</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@galyarder/adapter-my-agent/ui&quot;</span><span class="p">;</span>
 <span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">MyAgentConfigFields</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./config-fields&quot;</span><span class="p">;</span>
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">buildMyAgentConfig</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@paperclipai/adapter-my-agent/ui&quot;</span><span class="p">;</span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">buildMyAgentConfig</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@galyarder/adapter-my-agent/ui&quot;</span><span class="p">;</span>
 
 <span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">myAgentUIAdapter</span><span class="o">:</span><span class="w"> </span><span class="kt">UIAdapterModule</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;my_agent&quot;</span><span class="p">,</span>
@@ -2632,7 +2632,7 @@ Example: for <code>claude_local</code>, detected <code>ANTHROPIC_API_KEY</code> 
 <span class="p">};</span>
 </code></pre></div>
 <h3 id="43-cli-registry-clisrcadaptersregistryts">4.3 CLI Registry (<code>cli/src/adapters/registry.ts</code>)</h3>
-<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">printMyAgentStreamEvent</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@paperclipai/adapter-my-agent/cli&quot;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">printMyAgentStreamEvent</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@galyarder/adapter-my-agent/cli&quot;</span><span class="p">;</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">myAgentCLIAdapter</span><span class="o">:</span><span class="w"> </span><span class="kt">CLIAdapterModule</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;my_agent&quot;</span><span class="p">,</span>
@@ -2669,7 +2669,7 @@ Example: for <code>claude_local</code>, detected <code>ANTHROPIC_API_KEY</code> 
 </code></pre></div>
 <hr />
 <h2 id="6-server-utils-helpers">6. Server-Utils Helpers</h2>
-<p>Import from <code>@paperclipai/adapter-utils/server-utils</code>:</p>
+<p>Import from <code>@galyarder/adapter-utils/server-utils</code>:</p>
 <table>
 <thead>
 <tr>
@@ -2737,7 +2737,7 @@ Example: for <code>claude_local</code>, detected <code>ANTHROPIC_API_KEY</code> 
 <h3 id="naming">Naming</h3>
 <ul>
 <li>Adapter type: <code>snake_case</code> (e.g. <code>claude_local</code>, <code>codex_local</code>)</li>
-<li>Package name: <code>@paperclipai/adapter-&lt;kebab-name&gt;</code></li>
+<li>Package name: <code>@galyarder/adapter-&lt;kebab-name&gt;</code></li>
 <li>Package directory: <code>packages/adapters/&lt;kebab-name&gt;/</code></li>
 </ul>
 <h3 id="config-parsing">Config Parsing</h3>
