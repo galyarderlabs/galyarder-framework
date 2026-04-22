@@ -1,4 +1,4 @@
-# Legacy Purge: Removing Paperclip Branding
+# Legacy Purge: Removing Galyarder Branding
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use galyarder-framework:subagent-driven-development (recommended) or galyarder-framework:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
@@ -70,24 +70,24 @@ git commit -m "refactor: replace lowercase galyarder branding with galyarder"
 
 ---
 
-### Task 3: Replace 'Paperclip' (Capitalized) with 'Galyarder'
+### Task 3: Replace 'Galyarder' (Capitalized) with 'Galyarder'
 
 **Files:**
-- Modify: All files containing 'Paperclip' (capitalized)
+- Modify: All files containing 'Galyarder' (capitalized)
 
-- [ ] **Step 1: Identify and replace 'Paperclip' with 'Galyarder'**
+- [ ] **Step 1: Identify and replace 'Galyarder' with 'Galyarder'**
 
-Run: `grep -rl "Paperclip" . --exclude-dir=.git | xargs sed -i 's/Paperclip/Galyarder/g'`
+Run: `grep -rl "Galyarder" . --exclude-dir=.git | xargs sed -i 's/Galyarder/Galyarder/g'`
 Expected: Capitalized branding updated.
 
 - [ ] **Step 2: Verify the replacement**
 
-Run: `grep -r "Paperclip" . --exclude-dir=.git`
+Run: `grep -r "Galyarder" . --exclude-dir=.git`
 Expected: No matches found.
 
 - [ ] **Step 3: Commit**
 
 ```bash
 git add .
-git commit -m "refactor: replace capitalized Paperclip with Galyarder"
+git commit -m "refactor: replace capitalized Galyarder with Galyarder"
 ```
