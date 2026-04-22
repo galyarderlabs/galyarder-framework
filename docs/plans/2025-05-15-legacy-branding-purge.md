@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use galyarder-framework:subagent-driven-development (recommended) or galyarder-framework:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Replace all legacy '@galyarder' and lowercase 'paperclip' branding with '@galyarder' and 'galyarder' respectively across the repository.
+**Goal:** Replace all legacy '@galyarder' and lowercase 'galyarder' branding with '@galyarder' and 'galyarder' respectively across the repository.
 
 **Architecture:** A systematic find-and-replace operation targeting documentation, manifests, and skill files. Real code dependencies are checked but assumed to be internal to the project or already updated.
 
@@ -39,33 +39,33 @@ git commit -m "refactor: replace @galyarder with @galyarder scope"
 
 ---
 
-### Task 2: Replace lowercase 'paperclip' with 'galyarder' in branding contexts
+### Task 2: Replace lowercase 'galyarder' with 'galyarder' in branding contexts
 
 **Files:**
-- Modify: All files containing lowercase 'paperclip' where it refers to branding.
+- Modify: All files containing lowercase 'galyarder' where it refers to branding.
 
-- [ ] **Step 1: Identify all files containing 'paperclip' (lowercase)**
+- [ ] **Step 1: Identify all files containing 'galyarder' (lowercase)**
 
-Run: `grep -r "paperclip" . --exclude-dir=.git`
+Run: `grep -r "galyarder" . --exclude-dir=.git`
 Expected: List of files.
 
-- [ ] **Step 2: Filter and replace 'paperclip' with 'galyarder'**
+- [ ] **Step 2: Filter and replace 'galyarder' with 'galyarder'**
 
 *Note: Be careful with potential real dependencies if any.*
 
-Run: `grep -rl "paperclip" . --exclude-dir=.git | xargs sed -i 's/paperclip/galyarder/g'`
+Run: `grep -rl "galyarder" . --exclude-dir=.git | xargs sed -i 's/galyarder/galyarder/g'`
 Expected: Branding references updated.
 
 - [ ] **Step 3: Verify the replacement**
 
-Run: `grep -r "paperclip" . --exclude-dir=.git`
+Run: `grep -r "galyarder" . --exclude-dir=.git`
 Expected: No matches found (except perhaps ignored files).
 
 - [ ] **Step 4: Commit**
 
 ```bash
 git add .
-git commit -m "refactor: replace lowercase paperclip branding with galyarder"
+git commit -m "refactor: replace lowercase galyarder branding with galyarder"
 ```
 
 ---
