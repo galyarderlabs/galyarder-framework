@@ -48,5 +48,47 @@ This ensures that tools only see valid directories, preventing "Context Bloat" a
    ./scripts/install.sh --tool cursor
    ```
 
-4. **Update Custom Hooks**:
-   If you have hooks in `hooks/hooks.json` referencing `framework/`, update them to point to the new 8-department structure.
+## v1.9.0+: The Unified CLI & NPM Era
+
+Version 1.9.0 represents a major architectural shift in how the Galyarder Framework is distributed and consumed. We have moved from a "Script-First" model to a "Package-First" model.
+
+### 1. Installation Method Migration
+Legacy users who cloned the repository manually should transition to the global NPM package for easier updates and path resolution.
+
+| Source Method | Command (New Standard) |
+| :--- | :--- |
+| **Git Clone** | `npm install -g galyarder-framework` |
+| **Direct Pull** | `npx skills add galyarderlabs/galyarder-framework --skill full` |
+
+### 2. Command Unification
+We have consolidated all separate shell scripts into a single, high-fidelity Node.js CLI. The old `galyarder-*` aliases are deprecated.
+
+| Legacy Command | New CLI Command |
+| :--- | :--- |
+| `galyarder-deploy` | `galyarder deploy` |
+| `galyarder-scaffold` | `galyarder scaffold` |
+| `galyarder-smoke` | `galyarder smoke` |
+| `galyarder-convert` | `galyarder convert` |
+
+### 3. Departmental Infrastructure
+The number of mandatory departments has been finalized to 8. If your Digital HQ was scaffolded before v1.9.5, you may be missing the **Infrastructure** department.
+
+**To fix:**
+```bash
+# Update to latest framework
+npm install -g galyarder-framework
+
+# Re-run scaffold to inject missing departments/templates
+galyarder scaffold
+```
+
+### 4. Agentic Skill Injection
+You can now pull Galyarder intelligence directly into any agent environment using the `skills.sh` standard. This eliminates the need for manual file copying.
+
+```bash
+# Inject the complete Galyarder engineering brain
+npx skills add galyarderlabs/galyarder-framework --skill engineering
+```
+
+---
+© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.
