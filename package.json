@@ -1,6 +1,6 @@
 {
   "name": "galyarder-framework",
-  "version": "1.8.33",
+  "version": "1.9.2",
   "description": "Galyarder Framework: High-Integrity Intelligence Layer for AI Agents",
   "main": "index.js",
   "bin": {
@@ -13,7 +13,7 @@
   "scripts": {
     "test": "rtk ./scripts/smoke.sh",
     "install-cli": "./scripts/setup-cli.sh",
-    "sync": "python3 scripts/galyarder-graph-engine.py && python3 scripts/generate-docs.py"
+    "sync": "python3 scripts/galyarder-graph-engine.py && python3 scripts/generate-docs.py && python3 scripts/sync-skills-manifest.py"
   },
   "keywords": [
     "galyarder",

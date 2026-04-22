@@ -23,7 +23,7 @@ It has a connectivity degree of **2**.
 - [[Changelog]] (enforces_protocol | 0.8)
 - [[Claude-Code:-Implementation-Protocol]] (enforces_protocol | 0.8)
 - [[Galyarder-Framework:-Advanced-Agentic-Context-(Gemini-CLI)]] (enforces_protocol | 0.8)
-- [[1.-Clone-the-intelligence-layer]] (enforces_protocol | 0.8)
+- [[Pull-everything]] (enforces_protocol | 0.8)
 - [[galyarder-ceo.md]] (enforces_protocol | 0.8)
 - [[galyarder-cfo-coo.md]] (enforces_protocol | 0.8)
 - [[galyarder-cmo.md]] (enforces_protocol | 0.8)

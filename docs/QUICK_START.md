@@ -21,7 +21,17 @@ Install directly from the global registry to get all commands instantly.
 npm install -g galyarder-framework
 ```
 
-### Option B: Git Clone
+### Option B: Skills.sh (Agentic)
+Pull specific intelligence bundles directly into your agent environment.
+```bash
+# Pull everything
+npx skills add galyarderlabs/galyarder-framework --skill full
+
+# Or pull by department (engineering, growth, security, etc.)
+npx skills add galyarderlabs/galyarder-framework --skill engineering
+```
+
+### Option C: Git Clone
 For developers who want to stay on the bleeding edge of the source.
 ```bash
 # 1. Clone the logic library

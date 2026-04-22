@@ -4,7 +4,7 @@ silo: Root
 degree: 1
 source: README.md
 ---
-# 1. Clone the intelligence layer
+# Pull everything
 
 ## 🧠 Strategic Intelligence
 This entity is a **core-hukum** within the **Root** silo. 
