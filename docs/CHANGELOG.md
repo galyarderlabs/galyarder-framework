@@ -2,6 +2,35 @@
 
 All notable changes to Galyarder Framework will be documented in this file.
 
+## [1.9.7] - 2026-04-22
+### Fixed
+- **Legacy Purge**: Permanently removed all legacy "Paperclip" references from Agent Adapter documentation, manifests, and skill logic. Standardized all packages under the `@galyarder` scope.
+
+## [1.9.6] - 2026-04-22
+### Changed
+- **Migration Guide**: Updated the `MIGRATION.md` guide to document the transition to the Unified CLI and NPM distribution model.
+
+## [1.9.5] - 2026-04-22
+### Fixed
+- **Infrastructure Mismatch**: Added the missing `Infrastructure` department to the `galyarder scaffold` command to ensure full architectural parity with system smoke tests.
+
+## [1.9.4] - 2026-04-22
+### Added
+- **Physical Skill Bundles**: Implemented physical directory entry points for each department (Engineering, Growth, etc.) to enable seamless `npx skills add` integration.
+
+## [1.9.3] - 2026-04-22
+### Added
+- **Skills.sh Integration**: Created the `skills.json` manifest and auto-sync engine to enable agentic skill injection via the `skills.sh` standard.
+
+## [1.9.2] - 2026-04-22
+### Fixed
+- **NPM Registry Preparation**: Adjusted installation links to favor the official `galyarder-framework` package name and optimized package size via `.npmignore`.
+
+## [1.9.0] - 2026-04-22
+### Added
+- **Unified Framework CLI**: Implemented the `galyarder` Node.js CLI to consolidate all shell scripts into a single, high-fidelity entry point.
+- **NPM Distribution**: Transformed the framework into a first-class NPM package for global installation.
+
 ## [1.8.17] - 2026-04-19
 ### Changed
 - **Operational Sequence**: Enhanced the Mermaid diagram in `README.md` to include the **Neural Link** dependency audit phase.

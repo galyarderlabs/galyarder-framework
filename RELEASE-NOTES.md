@@ -1,5 +1,35 @@
 # Release Notes - Galyarder Framework
 
+## [v1.9.7] - 2026-04-22
+### Legacy Branding Purge
+This release finalizes the "Galyarder Standard" by permanently purging all legacy "Paperclip" references from the framework's documentation, manifests, and internal logic.
+
+#### Highlights
+- **Universal Refactor**: Replaced `@paperclipai` scope with `@galyarder` across all files.
+- **Branding Sterilization**: Conducted a recursive audit to ensure 100% Galyarder identity.
+- **Agent Adapter Fix**: Updated the `create-agent-adapter` skill to reflect the new standardized types.
+
+---
+
+## [v1.9.0] - 2026-04-22
+### The Unified CLI & NPM Era
+A major architectural shift transitioning Galyarder Framework from a "Script-First" repository to a globally distributed "Package-First" intelligence layer.
+
+#### Highlights
+- **Unified CLI**: All commands consolidated under the `galyarder` binary (e.g., `galyarder scaffold`, `galyarder deploy`).
+- **NPM Distribution**: Official support for `npm install -g galyarder-framework`.
+- **Skills.sh Support**: First-class integration with `npx skills add` for departmental and full-framework injection.
+- **Infrastructure Parity**: Finalized the 8-department structure including the mandatory `Infrastructure` silo.
+
+#### Verification
+```bash
+npm install -g galyarder-framework
+galyarder help
+galyarder smoke
+```
+
+---
+
 ## [v1.8.17] - 2026-04-19
 ### Operational Realignment
 Updated the core operational sequence and command protocols to explicitly incorporate the **Galyarder Neural Link** as a foundational mapping phase.

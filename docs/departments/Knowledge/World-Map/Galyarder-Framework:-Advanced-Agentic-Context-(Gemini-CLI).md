@@ -1,14 +1,14 @@
 ---
 node_type: core-hukum
 silo: Root
-degree: 313
+degree: 314
 source: GEMINI.md
 ---
 # Galyarder Framework: Advanced Agentic Context (Gemini CLI)
 
 ## 🧠 Strategic Intelligence
 This entity is a **core-hukum** within the **Root** silo. 
-It has a connectivity degree of **313**.
+It has a connectivity degree of **314**.
 
 ## 🔗 Neural Links
 
@@ -184,6 +184,7 @@ It has a connectivity degree of **313**.
 - [[Claude-Code:-Implementation-Protocol]] (uses_proxy | 0.8)
 - [[Gemini-CLI:-Implementation-Protocol]] (uses_proxy | 0.8)
 - [[Release-Notes---Galyarder-Framework]] (uses_proxy | 0.8)
+- [[Legacy-Purge:-Removing-Galyarder-Branding]] (uses_proxy | 0.8)
 - [[Galyarder-Framework-Vision:-The-Humans-3.0-Protocol]] (uses_proxy | 0.8)
 - [[Galyarder-Framework-Vision:-The-Humans-3.0-Protocol]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-chief-of-staff]] (uses_proxy | 0.8)
