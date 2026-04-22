@@ -1,0 +1,62 @@
+{
+  "name": "galyarder-framework",
+  "version": "1.8.33",
+  "description": "Galyarder Framework: High-Integrity Intelligence Layer for AI Agents",
+  "main": "index.js",
+  "bin": {
+    "galyarder": "bin/galyarder.js",
+    "g-scaffold": "scripts/scaffold-company.sh",
+    "g-deploy": "scripts/install.sh",
+    "g-smoke": "scripts/smoke.sh",
+    "g-convert": "scripts/convert.sh"
+  },
+  "scripts": {
+    "test": "rtk ./scripts/smoke.sh",
+    "install-cli": "./scripts/setup-cli.sh",
+    "sync": "python3 scripts/galyarder-graph-engine.py && python3 scripts/generate-docs.py"
+  },
+  "keywords": [
+    "galyarder",
+    "framework",
+    "ai",
+    "agents",
+    "intelligence-layer",
+    "mcp"
+  ],
+  "author": "Galyarder Labs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/galyarderlabs/galyarder-framework.git"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "agents",
+    "commands",
+    "docs",
+    "Engineering",
+    "Executive",
+    "Gemini",
+    "Growth",
+    "Infrastructure",
+    "integrations",
+    "Knowledge",
+    "Legal-Finance",
+    "Product",
+    "public",
+    "scripts",
+    "Security",
+    "skills",
+    "AGENTS.md",
+    "CHANGELOG.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    "RELEASE-NOTES.md",
+    "WORKFLOW.md",
+    "gemini-extension.json",
+    "mkdocs.yml",
+    "bin"
+  ]
+}

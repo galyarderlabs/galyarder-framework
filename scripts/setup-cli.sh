@@ -15,10 +15,11 @@ mkdir -p "$BIN_DIR"
 echo "🚀 Linking Galyarder Framework to global PATH..."
 
 # Create symbolic links with absolute paths to the source repo
-ln -sf "$FRAMEWORK_DIR/scripts/scaffold-company.sh" "$BIN_DIR/galyarder-scaffold"
-ln -sf "$FRAMEWORK_DIR/scripts/install.sh" "$BIN_DIR/galyarder-deploy"
-ln -sf "$FRAMEWORK_DIR/scripts/smoke.sh" "$BIN_DIR/galyarder-smoke"
-ln -sf "$FRAMEWORK_DIR/scripts/convert.sh" "$BIN_DIR/galyarder-convert"
+ln -sf "$FRAMEWORK_DIR/bin/galyarder.js" "$BIN_DIR/galyarder"
+ln -sf "$FRAMEWORK_DIR/scripts/scaffold-company.sh" "$BIN_DIR/g-scaffold"
+ln -sf "$FRAMEWORK_DIR/scripts/install.sh" "$BIN_DIR/g-deploy"
+ln -sf "$FRAMEWORK_DIR/scripts/smoke.sh" "$BIN_DIR/g-smoke"
+ln -sf "$FRAMEWORK_DIR/scripts/convert.sh" "$BIN_DIR/g-convert"
 
 # Hidden internal link used by install.sh
 ln -sf "$FRAMEWORK_DIR/scripts/convert.sh" "$BIN_DIR/convert.sh"
@@ -51,6 +52,7 @@ fi
 echo "---"
 echo "✅ CLI Setup Complete."
 echo "Commands now available globally:"
-echo "  - galyarder-scaffold : Initialize Digital HQ"
-echo "  - galyarder-deploy   : Deploy agents to your IDE/Host"
-echo "  - galyarder-smoke    : Verify system integrity"
+echo "  - galyarder <cmd> : Main Framework CLI (Recommended)"
+echo "  - g-scaffold      : Initialize Digital HQ"
+echo "  - g-deploy        : Deploy agents to your IDE/Host"
+echo "  - g-smoke         : Verify system integrity"

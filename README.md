@@ -116,8 +116,16 @@ Follow this sequence to transform any directory into a high-integrity Digital Co
 
 ### Step 1: Global CLI Installation (One-Time)
 
-Bootstrap the framework and link the core commands to your system's PATH. This allows you to run Galyarder commands from **any project** instantly.
+Bootstrap the framework and link the core commands to your system's PATH.
 
+#### Option A: NPM (Recommended)
+Install directly from the global registry. This automatically links all `galyarder` commands.
+```bash
+npm install -g galyarder-framework
+```
+
+#### Option B: Git Clone
+For developers who want to stay on the bleeding edge of the source.
 ```bash
 # 1. Clone the intelligence layer
 git clone https://github.com/galyarderlabs/galyarder-framework.git ~/galyarder-framework
@@ -133,11 +141,11 @@ Navigate to **your specific project** (e.g., `~/projects/my-app`) and deploy the
 
 ```bash
 # 1. Initialize Digital Headquarters
-galyarder-scaffold
+galyarder scaffold
 
 # 2. Deploy Agents to your mission environment
 # Available: cursor, windsurf, kilocode, augment, openclaw, hermes, antigravity, galyarder-agent
-galyarder-deploy --tool <name>
+galyarder deploy --tool <name>
 ```
 
 ---

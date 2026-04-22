@@ -22,7 +22,7 @@ Discover the high-integrity workforce and protocols designed for autonomous orch
 
     ---
 
-    Expert code review specialist. Proactively reviews code for quality, security, and maintainability. Use immediately after writing or modifying code. MUST BE USED for all code changes.
+    Expert code review specialist. Proactively reviews code for quality, security, and maintainability. MUST BE USED for all code changes.
 
 -   **[e2e-runner](e2e-runner.md)**
 
