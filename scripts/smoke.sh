@@ -40,10 +40,10 @@ echo "✅ All ${#DEPARTMENTS[@]} Departments accounted for."
 
 # 2. Path & Script Awareness
 echo "[2/8] Verifying CLI Accessibility..."
-if command -v galyarder-scaffold >/dev/null 2>&1; then
+if command -v galyarder scaffold >/dev/null 2>&1; then
     echo "✅ CLI commands are reachable."
 else
-    echo "⚠️ Warning: 'galyarder-scaffold' not in PATH."
+    echo "⚠️ Warning: 'galyarder scaffold' not in PATH."
 fi
 
 # 3. Documentation/HQ Readiness
@@ -51,7 +51,7 @@ echo "[3/8] Checking Workspace Maturity..."
 if [ -d "docs/departments" ]; then
     echo "✅ Digital HQ structure exists."
 else
-    echo "⚠️ Warning: Digital HQ not initialized. Run 'galyarder-scaffold'."
+    echo "⚠️ Warning: Digital HQ not initialized. Run 'galyarder scaffold'."
 fi
 
 # 4. Framework Source specific checks

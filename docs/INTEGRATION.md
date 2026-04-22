@@ -73,7 +73,7 @@ To maintain parity across all 14 platforms, use the Galyarder conversion engine:
 
 ```bash
 # Full recursive conversion
-galyarder-deploy --tool all
+galyarder deploy --tool all
 ```
 
 ---

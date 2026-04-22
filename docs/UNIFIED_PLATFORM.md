@@ -29,7 +29,7 @@ The Galyarder ecosystem is designed as a modular, distributed platform where **I
 ```
 
 1.  **Galyarder Framework**: Provides the logic, agent profiles, and elite SOPs.
-2.  **Digital HQ**: Every project initialized via `galyarder-scaffold` becomes an indexable entity.
+2.  **Digital HQ**: Every project initialized via `galyarder scaffold` becomes an indexable entity.
 3.  **Galyarder HQ (Web UI)**: Discovers these projects on your local or remote file system and provides the governance interface.
 
 ---
@@ -40,7 +40,7 @@ The Galyarder ecosystem is designed as a modular, distributed platform where **I
 The framework acts as the "Software" for your AI assistants. By installing the framework, you give your agents the protocols needed to produce institutional-grade work.
 
 ### 2. Digital Headquarters (Scaffolding)
-By running `galyarder-scaffold` in your project root, you create the **Universal Schema** that Galyarder HQ uses for discovery:
+By running `galyarder scaffold` in your project root, you create the **Universal Schema** that Galyarder HQ uses for discovery:
 - `docs/departments/`: Strategic memory.
 - `docs/plans/`: Execution blueprints.
 - `docs/reports/`: Executive summaries.

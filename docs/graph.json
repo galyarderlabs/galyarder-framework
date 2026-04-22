@@ -4785,14 +4785,6 @@
       "degree": 3,
       "strategic": false
     },
-    "docs/agents/code-reviewer.md": {
-      "title": ":material-folder-zip: code-reviewer",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3,
-      "strategic": false
-    },
     "docs/agents/super-architect.md": {
       "title": ":material-folder-zip: super-architect",
       "category": "documentation",
@@ -4809,20 +4801,28 @@
       "degree": 3,
       "strategic": false
     },
-    "docs/agents/qa-automation-engineer.md": {
-      "title": ":material-folder-zip: qa-automation-engineer",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 3,
-      "strategic": false
-    },
     "docs/agents/elite-developer.md": {
       "title": ":material-folder-zip: elite-developer",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 2,
+      "strategic": false
+    },
+    "docs/agents/code-reviewer.md": {
+      "title": ":material-folder-zip: code-reviewer",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3,
+      "strategic": false
+    },
+    "docs/agents/qa-automation-engineer.md": {
+      "title": ":material-folder-zip: qa-automation-engineer",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3,
       "strategic": false
     },
     "docs/agents/remotion-engineer.md": {
@@ -10534,18 +10534,6 @@
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/code-reviewer.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/code-reviewer.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
       "source": "docs/agents/super-architect.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
@@ -10565,18 +10553,6 @@
     },
     {
       "source": "docs/agents/architect.md",
-      "target": "GEMINI.md",
-      "type": "uses_proxy",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/qa-automation-engineer.md",
-      "target": "CLAUDE.md",
-      "type": "enforces_protocol",
-      "confidence": 0.8
-    },
-    {
-      "source": "docs/agents/qa-automation-engineer.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -10585,6 +10561,30 @@
       "source": "docs/agents/elite-developer.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/code-reviewer.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/code-reviewer.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/qa-automation-engineer.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/agents/qa-automation-engineer.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
       "confidence": 0.8
     },
     {
