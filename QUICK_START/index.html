@@ -620,6 +620,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Phase 1: Initialize the Intelligence (Framework)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-a-npm-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option A: NPM (Recommended)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-b-git-clone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option B: Git Clone
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1787,6 +1815,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Phase 1: Initialize the Intelligence (Framework)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-a-npm-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option A: NPM (Recommended)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-b-git-clone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option B: Git Clone
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1900,14 +1956,20 @@
 </ul>
 <hr />
 <h2 id="phase-1-initialize-the-intelligence-framework">Phase 1: Initialize the Intelligence (Framework)</h2>
-<p>Bootstrap your system with the global Galyarder commands.</p>
+<p>Bootstrap your system with the global Galyarder CLI.</p>
+<h3 id="option-a-npm-recommended">Option A: NPM (Recommended)</h3>
+<p>Install directly from the global registry to get all commands instantly.
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>galyarder-framework
+</code></pre></div></p>
+<h3 id="option-b-git-clone">Option B: Git Clone</h3>
+<p>For developers who want to stay on the bleeding edge of the source.
 <div class="highlight"><pre><span></span><code><span class="c1"># 1. Clone the logic library</span>
 git<span class="w"> </span>clone<span class="w"> </span>https://github.com/galyarderlabs/galyarder-framework.git<span class="w"> </span>~/galyarder-framework
 
 <span class="c1"># 2. Setup global CLI</span>
 <span class="nb">cd</span><span class="w"> </span>~/galyarder-framework
 ./scripts/setup-cli.sh
-</code></pre></div>
+</code></pre></div></p>
 <hr />
 <h2 id="phase-2-establish-the-presence-galyarder-agent">Phase 2: Establish the Presence (Galyarder Agent)</h2>
 <p>Deploy your physical assistant runtime.</p>
@@ -1920,14 +1982,14 @@ g-agent<span class="w"> </span>gateway
 </code></pre></div>
 <hr />
 <h2 id="phase-3-initialize-your-project-hq">Phase 3: Initialize Your Project HQ</h2>
-<p>établissement of your specific project's digital headquarters.</p>
+<p>Establish your specific project's digital headquarters.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/projects/my-startup
 
 <span class="c1"># 1. Build the Digital HQ structure</span>
-galyarder-scaffold
+galyarder<span class="w"> </span>scaffold
 
 <span class="c1"># 2. Inject Intelligence into your Agent</span>
-galyarder-deploy<span class="w"> </span>--tool<span class="w"> </span>galyarder-agent
+galyarder<span class="w"> </span>deploy<span class="w"> </span>--tool<span class="w"> </span>galyarder-agent
 </code></pre></div>
 <hr />
 <h2 id="phase-4-launch-the-control-plane-galyarder-hq">Phase 4: Launch the Control Plane (Galyarder HQ)</h2>
@@ -1957,7 +2019,7 @@ npm<span class="w"> </span>run<span class="w"> </span>dev
 <h3 id="commands-not-found">Commands not found</h3>
 <p>Ensure <code>~/.local/bin</code> is in your PATH. Run <code>source ~/.zshrc</code> (or <code>.bashrc</code>) after running the setup script.</p>
 <h3 id="no-agents-detected">No agents detected</h3>
-<p>Ensure you have run <code>galyarder-scaffold</code> inside your project directory. Both Agent and HQ rely on the <code>docs/departments/</code> structure.</p>
+<p>Ensure you have run <code>galyarder scaffold</code> inside your project directory. Both Agent and HQ rely on the <code>docs/departments/</code> structure.</p>
 <hr />
 <p>© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.</p>
 
