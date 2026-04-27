@@ -1,12 +1,12 @@
 ---
 name: interface-designer
-allowed-tools:
-  - Read
-  - Grep
-  - Glob
-  - Bash
-  - Write
-  - Edit
+tools:
+  - read_file
+  - grep_search
+  - glob
+  - run_shell_command
+  - write_file
+  - replace
 description: UI and interaction design orchestrator. Use PROACTIVELY when a workflow needs interaction structure, component behavior, and user-facing system design before implementation.
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

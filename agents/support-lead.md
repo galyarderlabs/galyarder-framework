@@ -1,12 +1,12 @@
 ---
 name: support-lead
-allowed-tools:
-  - Read
-  - Grep
-  - Glob
-  - Bash
-  - Write
-  - Edit
+tools:
+  - read_file
+  - grep_search
+  - glob
+  - run_shell_command
+  - write_file
+  - replace
 description: Support and post-launch issue orchestration. Use PROACTIVELY when customer-facing problems, launch fallout, or support-system gaps need structured triage and response ownership.
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

@@ -16,12 +16,12 @@ COMMAND_DIRS = [REPO_ROOT / "commands"]
 
 DISALLOWED_AGENT_KEYS = {"color", "emoji", "vibe"}
 TOOL_NAME_MAP = {
-    "read_file": "Read",
-    "grep_search": "Grep",
-    "glob": "Glob",
-    "run_shell_command": "Bash",
-    "write_file": "Write",
-    "replace": "Edit",
+    "read_file": "read_file",
+    "grep_search": "grep_search",
+    "glob": "glob",
+    "run_shell_command": "run_shell_command",
+    "write_file": "write_file",
+    "replace": "replace",
 }
 
 
@@ -95,7 +95,7 @@ def normalize_agent_frontmatter(markdown: str) -> str:
             mapped_name = TOOL_NAME_MAP.get(tool)
             if mapped_name and mapped_name not in mapped:
                 mapped.append(mapped_name)
-        rewritten.append("allowed-tools:")
+        rewritten.append("tools:")
         for tool_name in mapped:
             rewritten.append(f"  - {tool_name}")
 

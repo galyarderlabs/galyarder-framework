@@ -1,11 +1,11 @@
 ---
 name: rapid-prototyper
-allowed-tools:
-  - Read
-  - Write
-  - Edit
-  - Bash
-  - Grep
+tools:
+  - read_file
+  - write_file
+  - replace
+  - run_shell_command
+  - grep_search
 description: |
   Ultra-fast proof-of-concept and MVP specialist. Use this agent when you need to validate an idea quickly  working prototype before the meeting's over. Pragmatic, speed-focused, validation-oriented. Ships in days, not weeks.
 model: inherit

@@ -1,12 +1,12 @@
 ---
 name: experimentation-engineer
-allowed-tools:
-  - Read
-  - Grep
-  - Glob
-  - Bash
-  - Write
-  - Edit
+tools:
+  - read_file
+  - grep_search
+  - glob
+  - run_shell_command
+  - write_file
+  - replace
 description: Experimentation and A/B testing orchestrator. Use PROACTIVELY when a launch needs test design, guardrails, metrics, and rollout logic before exposure to users.
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

@@ -1,12 +1,12 @@
 ---
 name: analytics-architect
-allowed-tools:
-  - Read
-  - Grep
-  - Glob
-  - Bash
-  - Write
-  - Edit
+tools:
+  - read_file
+  - grep_search
+  - glob
+  - run_shell_command
+  - write_file
+  - replace
 description: Analytics and measurement orchestrator. Use PROACTIVELY when a feature, funnel, or growth workflow needs event design, KPI definition, attribution structure, or analytics QA across product and GTM.
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

@@ -1,12 +1,12 @@
 ---
 name: product-manager
-allowed-tools:
-  - Read
-  - Grep
-  - Glob
-  - Bash
-  - Write
-  - Edit
+tools:
+  - read_file
+  - grep_search
+  - glob
+  - run_shell_command
+  - write_file
+  - replace
 description: Product Management specialist. Focuses on ROI, feature prioritization, Linear ticket management, and ensuring engineering efforts directly impact user acquisition or revenue. Use PROACTIVELY before any code is written to convert PRDs into actionable Linear Epics and Issues.
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

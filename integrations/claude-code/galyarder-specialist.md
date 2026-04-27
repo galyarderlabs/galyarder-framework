@@ -1,12 +1,12 @@
 ---
 name: galyarder-specialist
-allowed-tools:
-  - Read
-  - Grep
-  - Glob
-  - Bash
-  - Write
-  - Edit
+tools:
+  - read_file
+  - grep_search
+  - glob
+  - run_shell_command
+  - write_file
+  - replace
 description: Founder-facing master orchestrator. Use PROACTIVELY when work spans multiple departments, when the founder needs one executive synthesis instead of specialist chatter, or when a task must be routed across product, engineering, growth, security, and finance.
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

@@ -1,12 +1,12 @@
 ---
 name: growth-engineer
-allowed-tools:
-  - Read
-  - Grep
-  - Glob
-  - Bash
-  - Write
-  - Edit
+tools:
+  - read_file
+  - grep_search
+  - glob
+  - run_shell_command
+  - write_file
+  - replace
 description: Engineering-as-Marketing Specialist. Use this agent to build viral referral loops, free utility tools for lead generation, and programmatic SEO pages at scale. It focuses on the "Inbound" part of the 1-Man Army pipeline.
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

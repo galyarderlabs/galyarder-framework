@@ -1,12 +1,12 @@
 ---
 name: doc-updater
-allowed-tools:
-  - Read
-  - Grep
-  - Glob
-  - Bash
-  - Write
-  - Edit
+tools:
+  - read_file
+  - grep_search
+  - glob
+  - run_shell_command
+  - write_file
+  - replace
 description: Documentation maintenance orchestrator. Use PROACTIVELY when shipped behavior, commands, or agent surfaces have drifted from docs and release artifacts.
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

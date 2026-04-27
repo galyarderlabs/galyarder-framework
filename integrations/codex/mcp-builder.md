@@ -1,12 +1,12 @@
 ---
 name: mcp-builder
-allowed-tools:
-  - Read
-  - Grep
-  - Glob
-  - Bash
-  - Write
-  - Edit
+tools:
+  - read_file
+  - grep_search
+  - glob
+  - run_shell_command
+  - write_file
+  - replace
 description: MCP integration orchestrator. Use PROACTIVELY when the framework needs a new MCP-backed workflow, connector surface, or toolchain integration.
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

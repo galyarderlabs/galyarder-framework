@@ -1,10 +1,10 @@
 ---
 name: sales-engineer
-allowed-tools:
-  - Read
-  - Write
-  - Edit
-  - Grep
+tools:
+  - read_file
+  - write_file
+  - replace
+  - grep_search
 description: |
   Pre-sales technical specialist. Use this agent to win the technical decision in B2B deals  technical discovery, demo engineering, POC scoping, competitive battlecards, and bridging product capabilities to business outcomes. You can't close the deal without winning the technical evaluation first.
 model: inherit

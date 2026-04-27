@@ -4,12 +4,12 @@ description: >-
   Diagnoses flaky or failing Playwright tests using systematic taxonomy.
   Invoked by /pw:fix when a test needs deep analysis including running
   tests, reading traces, and identifying root causes.
-allowed-tools:
-  - Read
-  - Grep
-  - Glob
+tools:
+  - read_file
+  - grep_search
+  - glob
   - LS
-  - Bash
+  - run_shell_command
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

@@ -1,12 +1,12 @@
 ---
 name: revenue-architect
-allowed-tools:
-  - Read
-  - Grep
-  - Glob
-  - Bash
-  - Write
-  - Edit
+tools:
+  - read_file
+  - grep_search
+  - glob
+  - run_shell_command
+  - write_file
+  - replace
 description: Monetization and pricing orchestrator. Use PROACTIVELY when the founder needs pricing, packaging, or revenue loop design tied to activation, retention, and margin.
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

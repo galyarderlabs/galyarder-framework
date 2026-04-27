@@ -3,10 +3,10 @@ name: migration-planner
 description: >-
   Analyzes Cypress or Selenium test suites and creates a file-by-file
   migration plan. Invoked by /pw:migrate before conversion starts.
-allowed-tools:
-  - Read
-  - Grep
-  - Glob
+tools:
+  - read_file
+  - grep_search
+  - glob
   - LS
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

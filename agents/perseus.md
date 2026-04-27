@@ -1,12 +1,12 @@
 ---
 name: perseus
-allowed-tools:
-  - Read
-  - Grep
-  - Glob
-  - Bash
-  - Write
-  - Edit
+tools:
+  - read_file
+  - grep_search
+  - glob
+  - run_shell_command
+  - write_file
+  - replace
 description: Advanced Offensive Security & Pentesting Specialist. Use this agent for red teaming, penetration testing, and identifying complex security flaws. It leverages specialized security tools for XSS, SQLi, JWT, OAuth2, and network-level vulnerability testing.
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)

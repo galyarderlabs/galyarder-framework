@@ -146,7 +146,7 @@ bash scripts/smoke.sh
 This patch converts exported root/full-bundle agents to Gemini-native tool metadata so custom agents no longer ship legacy Codex-style tool arrays.
 
 #### Highlights
-- **Gemini Tool Schema**: Replaces legacy `tools: [...]` frontmatter in exported runtime agents with `allowed-tools:` lists.
+- **Gemini Tool Schema**: Replaces legacy `tools: [...]` frontmatter in exported runtime agents with `tools:` lists.
 - **Root + Full Bundle Sync**: Applies the same normalization to repo root and `.marketplace/full`.
 
 #### Verification
