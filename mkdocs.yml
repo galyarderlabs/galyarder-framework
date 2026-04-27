@@ -2,42 +2,54 @@ site_name: Galyarder Framework
 site_url: https://galyarderlabs.github.io/galyarder-framework/
 site_description: "Humans 3.0 Protocol: Advanced Agentic Orchestration for the 1-Man Army. Implementing Autonomous Goal Integration (AGI)."
 site_author: Galyarder Labs
+repo_url: https://github.com/galyarderlabs/galyarder-framework
+repo_name: galyarderlabs/galyarder-framework
+edit_uri: edit/main/docs/
 
 theme:
   name: material
+  custom_dir: docs/overrides
   logo: assets/logo.png
   favicon: assets/logo.png
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.path
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
   palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Use system preference
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: deep purple
-      accent: deep purple
+      primary: black
+      accent: teal
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-night
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: purple
+      accent: teal
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Switch to light mode
-  features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.expand
-    - navigation.top
-    - navigation.indexes
-    - navigation.tracking
-    - search.suggest
-    - search.highlight
-    - search.share
-    - content.code.copy
-    - toc.follow
-    - content.tabs.link
-
-extra_javascript:
-  - https://unpkg.com/mermaid/dist/mermaid.min.js
 
 nav:
   - Welcome: index.md
@@ -74,14 +86,36 @@ nav:
 
 markdown_extensions:
   - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
   - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - attr_list
-  - md_in_html
+
+plugins:
+  - search:
+      lang: en
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/galyarderlabs/galyarder-framework
 
 copyright: Copyright &copy; 2026 Galyarder Labs
+
+extra_css:
+  - styles/extra.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid/dist/mermaid.min.js

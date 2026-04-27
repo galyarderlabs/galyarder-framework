@@ -1,0 +1,714 @@
+:root {
+  --gagent-accent: #0f766e;
+  --gagent-accent-strong: #115e59;
+  --gagent-glow: rgba(15, 118, 110, 0.15);
+  --gagent-nav-bg: rgba(255, 255, 255, 0.85);
+  --gagent-nav-text: #111827;
+  --gagent-nav-border: rgba(0, 0, 0, 0.1);
+}
+
+[data-md-color-scheme="slate"] {
+  --gagent-accent: #2dd4bf;
+  --gagent-accent-strong: #5eead4;
+  --gagent-glow: rgba(45, 212, 191, 0.1);
+  --gagent-nav-bg: rgba(13, 17, 23, 0.85);
+  --gagent-nav-text: #f8fafc;
+  --gagent-nav-border: rgba(255, 255, 255, 0.15);
+  --md-default-bg-color: #0d1117;
+  --md-primary-fg-color: #0d1117;
+}
+
+/* --- GLOBAL LAYOUT CLEANUP --- */
+
+.md-main__inner, 
+.md-content, 
+.md-content__inner, 
+article, 
+.md-grid,
+.md-typeset h1,
+.md-typeset h2,
+hr {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Specific fix for Material theme's H2 bottom border */
+.md-typeset h2 {
+  padding-bottom: 0 !important;
+  margin-top: 2rem !important;
+}
+
+/* --- THE SOVEREIGN CAPSULE (DEFINITIVE SYMMETRY) --- */
+
+.md-header {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.md-header__inner {
+  background: var(--gagent-nav-bg) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--gagent-nav-border);
+  border-radius: 100px;
+  max-width: 1200px !important;
+  margin: 1.5rem auto !important;
+  padding: 0 1.5rem !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  height: 3.4rem;
+  display: flex !important;
+  align-items: center;
+  position: relative; /* CRITICAL: Base for absolute search */
+}
+
+/* 1. LEFT: Logo & Title */
+.md-header__button.md-logo {
+  margin-right: 0.75rem !important;
+  display: flex !important;
+  align-items: center;
+}
+
+.md-header__button.md-logo img {
+  height: 2rem !important; /* Fixed robust size */
+  width: auto !important;
+}
+
+.md-header__title {
+  display: block !important;
+  flex-grow: 0 !important;
+  width: auto !important;
+  font-weight: 700 !important;
+  font-size: 1.1rem !important;
+}
+
+/* 2. THEME TOGGLE: Keep it simple but clean */
+.md-header__option .md-icon {
+  width: 1.2rem !important;
+  height: 1.2rem !important;
+  transition: opacity 0.3s ease;
+}
+
+.md-header__option:hover .md-icon {
+  opacity: 0.7;
+}
+
+/* 3. NAVIGATION TABS: Restore and Fix Visibility */
+.md-tabs {
+  display: block !important; /* Ensure they are visible */
+  background-color: transparent !important;
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-tabs {
+    position: absolute !important;
+    top: 5rem !important;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background: transparent !important;
+  }
+  
+  .md-tabs__list {
+    display: flex !important;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .md-tabs__item {
+    margin: 0 0.5rem;
+  }
+  
+  .md-tabs__link {
+    color: var(--md-typeset-color) !important;
+    font-size: 0.75rem;
+    font-weight: 600;
+    opacity: 0.65;
+    padding: 0.5rem 0.8rem;
+    border-radius: 100px;
+    transition: all 0.2s ease;
+    display: block;
+  }
+  
+  .md-tabs__link:hover {
+    opacity: 1;
+    background: rgba(128, 128, 128, 0.1);
+  }
+  
+  .md-tabs__item--active .md-tabs__link {
+    opacity: 1;
+    color: var(--gagent-accent) !important;
+    background: rgba(15, 118, 110, 0.1);
+  }
+}
+
+.md-header__topic {
+  display: block !important;
+  white-space: nowrap;
+}
+
+/* 2. CENTER: Hard-Centered Search Bar */
+.md-header__search {
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 340px !important;
+  margin: 0 !important;
+}
+
+.md-search__form {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  border-radius: 50px !important;
+}
+
+[data-md-color-scheme="slate"] .md-search__form {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* 3. RIGHT: Options & Source */
+.md-header__option {
+  margin-left: auto !important; /* Push everything else to left */
+  display: flex !important;
+  align-items: center;
+}
+
+/* Theme toggle is inside .md-header__option or sibling */
+[data-md-color-scheme] .md-header__option {
+  margin-left: auto !important;
+}
+
+.md-header__source {
+  margin-left: 0.75rem !important;
+}
+
+/* Mobile: Disable absolute center to prevent overlap */
+@media screen and (max-width: 76.24em) {
+  .md-header__search {
+    position: static !important;
+    transform: none !important;
+    width: auto !important;
+    margin-left: auto !important;
+    left: auto !important;
+  }
+  .md-header__title {
+    display: none !important;
+  }
+}
+
+/* Navbar Text Visibility */
+.md-header__topic, .md-header__button, .md-header__link, .md-header__title,
+.md-header__source .md-source__repository, .md-header__source .md-source__facts,
+.md-search__input + .md-search__icon, .md-source__icon .md-icon, .md-header__button .md-icon {
+  color: var(--gagent-nav-text) !important;
+}
+
+/* Adjust Search Appearance */
+.md-search__form {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  border-radius: 50px !important;
+}
+
+[data-md-color-scheme="slate"] .md-search__form {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Sidebar Cleanup */
+.md-sidebar--primary .md-nav__title {
+  display: none;
+}
+
+/* --- PAPERCLIP HERO COMPONENT --- */
+
+.paperclip-hero {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background-color: var(--md-default-bg-color);
+  display: flex;
+  flex-direction: column;
+  border: none !important;
+  margin-bottom: -1px; /* Overlap slightly to kill potential sub-pixel gap line */
+}
+
+.paperclip-image-container {
+  width: 100%;
+  height: 65vh; /* Increased to 65% to pull the edge lower */
+  overflow: hidden;
+  position: relative;
+  background-color: var(--md-default-bg-color);
+}
+
+.paperclip-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%; /* Shifted down slightly from center (50%) to show more top area */
+}
+
+.paperclip-mask {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to bottom, transparent 20%, var(--md-default-bg-color) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.paperclip-inner {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem 1rem 8rem !important;
+  z-index: 10;
+  text-align: center;
+}
+
+.paperclip-content {
+  max-width: 50rem !important;
+}
+
+.paperclip-content h1 {
+  font-family: "Newsreader", serif;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-weight: 500;
+  line-height: 1.05;
+  margin: 0 0 1rem;
+  color: var(--md-typeset-color);
+}
+
+.paperclip-subtitle {
+  font-size: clamp(1.1rem, 3vw, 1.4rem) !important;
+  opacity: 0.8;
+  margin: 0 auto 2.5rem !important;
+  max-width: 38rem;
+  line-height: 1.4;
+  color: var(--md-typeset-color);
+}
+
+.paperclip-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.paperclip-actions .md-button {
+  padding: 0.8rem 2.2rem;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.paperclip-actions .md-button--primary {
+  background-color: var(--md-typeset-color) !important;
+  color: var(--md-default-bg-color) !important;
+  border: none;
+}
+
+/* --- INTERNAL PAGES & NAVIGATION --- */
+
+body:not(.is-home) .md-header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  margin-bottom: 0;
+  background-color: transparent !important;
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-tabs {
+    background-color: transparent !important;
+    position: absolute;
+    top: 5.5rem;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  .md-tabs__list {
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: transparent !important;
+    border: none !important;
+    padding: 0;
+  }
+  
+  .md-tabs__link {
+    color: var(--gagent-nav-text) !important;
+    font-size: 0.75rem;
+    font-weight: 600;
+    opacity: 0.6;
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+  }
+  
+  .md-tabs__link:hover {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  .md-tabs__item--active .md-tabs__link {
+    opacity: 1;
+    color: var(--gagent-accent) !important;
+    background: rgba(255, 255, 255, 0.08);
+  }
+}
+
+/* Mobile Specifics */
+@media screen and (max-width: 76.24em) {
+  .md-header__inner {
+    margin: 1rem 1rem 0 !important;
+    max-width: calc(100% - 2rem) !important;
+  }
+  .md-sidebar--primary { z-index: 2000 !important; }
+  .md-overlay { z-index: 1500 !important; opacity: 1 !important; background: rgba(0, 0, 0, 0.5); }
+}
+
+/* Grid Layout */
+.gagent-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 4rem 0;
+  padding: 0 1rem;
+}
+
+.md-typeset img {
+  margin-top: 2rem;
+  border-radius: 8px;
+}
+
+.gagent-card {
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.gagent-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--gagent-accent);
+}
+
+.gagent-card strong {
+  font-size: 1.2rem;
+  color: var(--md-typeset-color);
+}
+
+.gagent-card span {
+  font-size: 0.95rem;
+  color: var(--md-typeset-color);
+  opacity: 0.6;
+  line-height: 1.6;
+}
+
+/* --- HEADER NAV REPAIR: theme control, desktop tabs, mobile drawer order --- */
+
+.md-header__option {
+  width: 2.4rem !important;
+  height: 2.4rem !important;
+  margin-left: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex: 0 0 2.4rem !important;
+}
+
+.md-header__option .md-header__button,
+.md-header__option .md-icon {
+  width: 2.2rem !important;
+  height: 2.2rem !important;
+  margin: 0 !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.md-header__option label.md-header__button:not([hidden]) {
+  display: flex !important;
+}
+
+.md-header__option label.md-header__button[hidden] {
+  display: none !important;
+}
+
+.md-header__option svg {
+  width: 1.15rem !important;
+  height: 1.15rem !important;
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-tabs {
+    position: absolute !important;
+    top: 5.35rem !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 99 !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scrollbar-width: thin;
+    background: transparent !important;
+  }
+
+  .md-tabs__list {
+    width: max-content !important;
+    min-width: max-content !important;
+    max-width: none !important;
+    margin: 0 auto !important;
+    padding: 0 1rem !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .md-tabs__item {
+    flex: 0 0 auto !important;
+    margin: 0 0.25rem !important;
+  }
+
+  .md-tabs__link {
+    white-space: nowrap !important;
+  }
+}
+
+@media screen and (max-width: 76.24em) {
+  .md-header__inner {
+    gap: 0.35rem !important;
+    padding: 0 0.75rem !important;
+  }
+
+  .md-header__button[for="__drawer"] {
+    order: -30 !important;
+    margin-left: 0 !important;
+    margin-right: 0.25rem !important;
+  }
+
+  .md-header__button.md-logo {
+    order: -20 !important;
+    margin-left: 0 !important;
+    margin-right: 0.25rem !important;
+  }
+
+  .md-header__title {
+    order: -10 !important;
+  }
+
+  .md-header__button[for="__search"] {
+    order: 20 !important;
+    margin-left: auto !important;
+  }
+
+  .md-header__option {
+    order: 30 !important;
+    margin-left: 0 !important;
+  }
+}
+
+/* --- HEADER NAV REPAIR V2: target real MkDocs Material DOM --- */
+
+.md-header__inner {
+  isolation: isolate;
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-search {
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    width: min(22rem, 28vw) !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 2 !important;
+  }
+
+  .md-search__inner {
+    width: 100% !important;
+  }
+
+  .md-header__button[for="__search"] {
+    display: none !important;
+  }
+
+  .md-header__option {
+    order: 40 !important;
+    margin-left: auto !important;
+    margin-right: 0.5rem !important;
+  }
+
+  .md-header__source {
+    order: 50 !important;
+    margin-left: 0 !important;
+    max-width: 13rem !important;
+  }
+
+  .md-tabs {
+    left: 0 !important;
+    right: 0 !important;
+    overflow: visible !important;
+  }
+
+  .md-tabs .md-grid {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .md-tabs .md-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .md-tabs__list {
+    width: max-content !important;
+    min-width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 1rem !important;
+    justify-content: flex-start !important;
+  }
+}
+
+@media screen and (max-width: 76.24em) {
+  .md-header__button[for="__drawer"] {
+    order: -100 !important;
+    flex: 0 0 auto !important;
+  }
+
+  .md-header__button.md-logo {
+    order: -90 !important;
+    flex: 0 0 auto !important;
+  }
+
+  .md-header__option {
+    order: 90 !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+  }
+
+  .md-header__button[for="__search"] {
+    order: 100 !important;
+    margin-left: 0 !important;
+  }
+
+  .md-search {
+    order: 110 !important;
+  }
+}
+
+/* --- NON-HOME PAGE POSITION REPAIR: match home header without touching hero --- */
+
+.md-header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: transparent !important;
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-tabs {
+    position: fixed !important;
+    top: 5rem !important;
+    width: 100% !important;
+    z-index: 999 !important;
+  }
+
+  .md-container {
+    padding-top: 7rem;
+  }
+}
+
+@media screen and (max-width: 76.24em) {
+  .md-container {
+    padding-top: 5.25rem;
+  }
+}
+
+/* --- FOOTER CUSTOMIZATION --- */
+
+.md-footer {
+  background-color: var(--md-default-bg-color) !important;
+}
+
+.md-footer-meta {
+  background-color: rgba(128, 128, 128, 0.05) !important;
+  border-top: 1px solid var(--gagent-nav-border);
+  padding: 2.5rem 0;
+}
+
+[data-md-color-scheme="slate"] .md-footer-meta {
+  background-color: rgba(255, 255, 255, 0.02) !important;
+}
+
+.md-footer-meta__inner {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 1.5rem !important;
+}
+
+.md-copyright {
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  opacity: 0.8 !important;
+  color: var(--md-typeset-color) !important;
+  text-align: center !important;
+  margin: 0 !important;
+  width: 100% !important;
+  line-height: 1.6 !important;
+}
+
+.md-copyright__highlight {
+  display: block !important;
+  color: inherit !important;
+}
+
+.md-social {
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  gap: 0.75rem !important;
+}
+
+.md-social__link {
+  width: 2.4rem !important;
+  height: 2.4rem !important;
+  background: rgba(128, 128, 128, 0.1) !important;
+  color: var(--md-typeset-color) !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.md-social__link svg {
+  fill: currentColor !important;
+  width: 1.1rem !important;
+  height: 1.1rem !important;
+}
+
+.md-social__link:hover {
+  background: var(--gagent-accent) !important;
+  color: #fff !important;
+  transform: translateY(-4px) !important;
+  box-shadow: 0 4px 12px var(--gagent-glow) !important;
+}
+
+.md-top {
+  z-index: 1200 !important;
+}
