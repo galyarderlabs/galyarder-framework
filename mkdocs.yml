@@ -112,3 +112,6 @@ copyright: "© 2026 Galyarder Labs."
 
 extra_css:
   - styles/extra.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
