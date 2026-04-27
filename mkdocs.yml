@@ -1,7 +1,6 @@
 site_name: Galyarder Framework
-site_url: https://galyarderlabs.github.io/galyarder-framework/
 site_description: "Humans 3.0 Protocol: Advanced Agentic Orchestration for the 1-Man Army. Implementing Autonomous Goal Integration (AGI)."
-site_author: Galyarder Labs
+site_url: https://galyarderlabs.github.io/galyarder-framework/
 repo_url: https://github.com/galyarderlabs/galyarder-framework
 repo_name: galyarderlabs/galyarder-framework
 edit_uri: edit/main/docs/
@@ -9,8 +8,8 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   custom_dir: docs/overrides
-  logo: assets/logo.png
-  favicon: assets/logo.png
+  logo: assets/logo.webp
+  favicon: assets/logo.webp
   features:
     - announce.dismiss
     - content.action.edit
@@ -99,9 +98,6 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
   - search:
@@ -112,10 +108,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/galyarderlabs/galyarder-framework
 
-copyright: Copyright &copy; 2026 Galyarder Labs
+copyright: "© 2026 Galyarder Labs."
 
 extra_css:
   - styles/extra.css
-
-extra_javascript:
-  - https://unpkg.com/mermaid/dist/mermaid.min.js
