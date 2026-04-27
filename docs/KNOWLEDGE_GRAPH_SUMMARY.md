@@ -1,4 +1,4 @@
-# 🧠 Knowledge Graph Summary
+# Knowledge Graph Summary
 
 ## High-Level Orchestration Map
 
