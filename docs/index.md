@@ -1,6 +1,5 @@
 template: home.html
 title: Galyarder Framework
-subtitle: "Advanced Agentic Orchestration for the 1-Man Army. Implementing Autonomous Goal Integration (AGI)."
 hide:
   - navigation
   - toc

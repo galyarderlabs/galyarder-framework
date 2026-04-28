@@ -793,3 +793,20 @@ body:not(.is-home) .md-header {
     height: 4rem !important;
   }
 }
+
+/* Force breathing room for the very first item in any drawer list */
+.md-nav__list > .md-nav__item:first-child {
+  margin-top: 0.75rem !important;
+}
+
+/* Ensure the back button is centered vertically with the title */
+.md-nav__title .md-nav__icon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Drawer title refinement */
+.md-nav--primary > .md-nav__title {
+  min-height: 5rem !important;
+}
