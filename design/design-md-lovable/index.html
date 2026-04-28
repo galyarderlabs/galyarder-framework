@@ -1,0 +1,2235 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Advanced Agentic Orchestration for the 1-Man Army. Implementing Autonomous Goal Integration (AGI).">
+      
+      
+      
+        <link rel="canonical" href="https://galyarderlabs.github.io/galyarder-framework/design/design-md-lovable/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/logo.webp">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Design System: Lovable - Galyarder Framework</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../styles/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+  <style>
+    body, input { font-family: "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif }
+    h1, .md-typeset h1 { font-family: "Newsreader", serif; font-weight: 500; }
+  </style>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#design-system-lovable" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Galyarder Framework" class="md-header__button md-logo" aria-label="Galyarder Framework" data-md-component="logo">
+      
+  <img src="../../assets/logo.webp" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Galyarder Framework
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Design System: Lovable
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Use system preference"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Use system preference" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/galyarderlabs/galyarder-framework" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    galyarderlabs/galyarder-framework
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../QUICK_START/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Quick Start
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../TRIAD_OVERVIEW/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Triad Ecosystem
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../UNIFIED_PLATFORM/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Unified Platform
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../WORKFLOW/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Humans 3.0 Workflow
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../ORG_CHART/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Org Chart
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../INTEGRATION/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Multi-Platform
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../MIGRATION/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Migration
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../AGENTS/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Agent Directory
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../agents/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Specialized Agents
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../skills/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Strategic Skills
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../commands/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Slash Commands
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Design Specs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../testing/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Testing
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../CLAUDE/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Claude Rules
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../GEMINI/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Gemini Rules
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../INTEGRATION_COMPLETE/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Integration Checklist
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../CHANGELOG/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Changelog
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../RELEASE-NOTES/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Release Notes
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Galyarder Framework" class="md-nav__button md-logo" aria-label="Galyarder Framework" data-md-component="logo">
+      
+  <img src="../../assets/logo.webp" alt="logo">
+
+    </a>
+    Galyarder Framework
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/galyarderlabs/galyarder-framework" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    galyarderlabs/galyarder-framework
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../QUICK_START/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TRIAD_OVERVIEW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Triad Ecosystem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UNIFIED_PLATFORM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unified Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WORKFLOW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Humans 3.0 Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ORG_CHART/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Org Chart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../INTEGRATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi-Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MIGRATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AGENTS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent Directory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Specialized Agents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strategic Skills
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Slash Commands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design Specs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CLAUDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claude Rules
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GEMINI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gemini Rules
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../INTEGRATION_COMPLETE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integration Checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RELEASE-NOTES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Release Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-visual-theme-atmosphere" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Visual Theme &amp; Atmosphere
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-color-palette-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Color Palette &amp; Roles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Color Palette &amp; Roles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Primary
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#neutral-scale-opacity-based" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Neutral Scale (Opacity-Based)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#surface-border" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Surface &amp; Border
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interactive
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inset-shadows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inset Shadows
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-typography-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Typography Rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Typography Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#font-family" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Font Family
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hierarchy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-component-stylings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Component Stylings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Component Stylings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#buttons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Buttons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cards-containers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cards &amp; Containers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inputs-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inputs &amp; Forms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navigation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Links
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-treatment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Treatment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distinctive-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distinctive Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-layout-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Layout Principles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Layout Principles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spacing-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spacing System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grid &amp; Container
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whitespace-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Whitespace Philosophy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#border-radius-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Border Radius Scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-depth-elevation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Depth &amp; Elevation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Depth &amp; Elevation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#decorative-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decorative Depth
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-dos-and-donts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Do's and Don'ts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Do&#39;s and Don&#39;ts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dont" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Don't
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-responsive-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Responsive Behavior
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Responsive Behavior">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breakpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breakpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#touch-targets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Touch Targets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collapsing-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Collapsing Strategy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Behavior
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-agent-prompt-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Agent Prompt Guide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Agent Prompt Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-color-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Color Reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-component-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Component Prompts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteration-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteration Guide
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/galyarderlabs/galyarder-framework/edit/main/docs/design/design-md-lovable.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="design-system-lovable">Design System: Lovable<a class="headerlink" href="#design-system-lovable" title="Permanent link">&para;</a></h1>
+<h2 id="1-visual-theme-atmosphere">1. Visual Theme &amp; Atmosphere<a class="headerlink" href="#1-visual-theme-atmosphere" title="Permanent link">&para;</a></h2>
+<p>Lovable's website radiates warmth through restraint. The entire page sits on a creamy, parchment-toned background (<code>#f7f4ed</code>) that immediately separates it from the cold-white conventions of most developer tool sites. This isn't minimalism for minimalism's sake  it's a deliberate choice to feel approachable, almost analog, like a well-crafted notebook. The near-black text (<code>#1c1c1c</code>) against this warm cream creates a contrast ratio that's easy on the eyes while maintaining sharp readability.</p>
+<p>The custom Camera Plain Variable typeface is the system's secret weapon. Unlike geometric sans-serifs that signal "tech company," Camera Plain has a humanist warmth  slightly rounded terminals, organic curves, and a comfortable reading rhythm. At display sizes (48px60px), weight 600 with aggressive negative letter-spacing (-0.9px to -1.5px) compresses headlines into confident, editorial statements. The font uses <code>ui-sans-serif, system-ui</code> as fallbacks, acknowledging that the custom typeface carries the brand personality.</p>
+<p>What makes Lovable's visual system distinctive is its opacity-driven depth model. Rather than using a traditional gray scale, the system modulates <code>#1c1c1c</code> at varying opacities (0.03, 0.04, 0.4, 0.820.83) to create a unified tonal range. Every shade of gray on the page is technically the same hue  just more or less transparent. This creates a visual coherence that's nearly impossible to achieve with arbitrary hex values. The border system follows suit: <code>1px solid #eceae4</code> for light divisions and <code>1px solid rgba(28, 28, 28, 0.4)</code> for stronger interactive boundaries.</p>
+<p><strong>Key Characteristics:</strong>
+- Warm parchment background (<code>#f7f4ed</code>)  not white, not beige, a deliberate cream that feels hand-selected
+- Camera Plain Variable typeface with humanist warmth and editorial letter-spacing at display sizes
+- Opacity-driven color system: all grays derived from <code>#1c1c1c</code> at varying transparency levels
+- Inset shadow technique on buttons: <code>rgba(255,255,255,0.2) 0px 0.5px 0px 0px inset, rgba(0,0,0,0.2) 0px 0px 0px 0.5px inset</code>
+- Warm neutral border palette: <code>#eceae4</code> for subtle, <code>rgba(28,28,28,0.4)</code> for interactive elements
+- Full-pill radius (<code>9999px</code>) used extensively for action buttons and icon containers
+- Focus state uses <code>rgba(0,0,0,0.1) 0px 4px 12px</code> shadow for soft, warm emphasis
+- shadcn/ui + Radix UI component primitives with Tailwind CSS utility styling</p>
+<h2 id="2-color-palette-roles">2. Color Palette &amp; Roles<a class="headerlink" href="#2-color-palette-roles" title="Permanent link">&para;</a></h2>
+<h3 id="primary">Primary<a class="headerlink" href="#primary" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Cream</strong> (<code>#f7f4ed</code>): Page background, card surfaces, button surfaces. The foundation  warm, paper-like, human.</li>
+<li><strong>Charcoal</strong> (<code>#1c1c1c</code>): Primary text, headings, dark button backgrounds. Not pure black  organic warmth.</li>
+<li><strong>Off-White</strong> (<code>#fcfbf8</code>): Button text on dark backgrounds, subtle highlight. Barely distinguishable from pure white.</li>
+</ul>
+<h3 id="neutral-scale-opacity-based">Neutral Scale (Opacity-Based)<a class="headerlink" href="#neutral-scale-opacity-based" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Charcoal 100%</strong> (<code>#1c1c1c</code>): Primary text, headings, dark surfaces.</li>
+<li><strong>Charcoal 83%</strong> (<code>rgba(28,28,28,0.83)</code>): Strong secondary text.</li>
+<li><strong>Charcoal 82%</strong> (<code>rgba(28,28,28,0.82)</code>): Body copy.</li>
+<li><strong>Muted Gray</strong> (<code>#5f5f5d</code>): Secondary text, descriptions, captions.</li>
+<li><strong>Charcoal 40%</strong> (<code>rgba(28,28,28,0.4)</code>): Interactive borders, button outlines.</li>
+<li><strong>Charcoal 4%</strong> (<code>rgba(28,28,28,0.04)</code>): Subtle hover backgrounds, micro-tints.</li>
+<li><strong>Charcoal 3%</strong> (<code>rgba(28,28,28,0.03)</code>): Barely-visible overlays, background depth.</li>
+</ul>
+<h3 id="surface-border">Surface &amp; Border<a class="headerlink" href="#surface-border" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Light Cream</strong> (<code>#eceae4</code>): Card borders, dividers, image outlines. The warm divider line.</li>
+<li><strong>Cream Surface</strong> (<code>#f7f4ed</code>): Card backgrounds, section fills  same as page background for seamless integration.</li>
+</ul>
+<h3 id="interactive">Interactive<a class="headerlink" href="#interactive" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Ring Blue</strong> (<code>#3b82f6</code> at 50% opacity): <code>--tw-ring-color</code>, Tailwind focus ring.</li>
+<li><strong>Focus Shadow</strong> (<code>rgba(0,0,0,0.1) 0px 4px 12px</code>): Focus and active state shadow  soft, warm, diffused.</li>
+</ul>
+<h3 id="inset-shadows">Inset Shadows<a class="headerlink" href="#inset-shadows" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Button Inset</strong> (<code>rgba(255,255,255,0.2) 0px 0.5px 0px 0px inset, rgba(0,0,0,0.2) 0px 0px 0px 0.5px inset, rgba(0,0,0,0.05) 0px 1px 2px 0px</code>): The signature multi-layer inset shadow on dark buttons.</li>
+</ul>
+<h2 id="3-typography-rules">3. Typography Rules<a class="headerlink" href="#3-typography-rules" title="Permanent link">&para;</a></h2>
+<h3 id="font-family">Font Family<a class="headerlink" href="#font-family" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Primary</strong>: <code>Camera Plain Variable</code>, with fallbacks: <code>ui-sans-serif, system-ui</code></li>
+<li><strong>Weight range</strong>: 400 (body/reading), 480 (special display), 600 (headings/emphasis)</li>
+<li><strong>Feature</strong>: Variable font with continuous weight axis  allows fine-tuned intermediary weights like 480.</li>
+</ul>
+<h3 id="hierarchy">Hierarchy<a class="headerlink" href="#hierarchy" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Font</th>
+<th>Size</th>
+<th>Weight</th>
+<th>Line Height</th>
+<th>Letter Spacing</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Display Hero</td>
+<td>Camera Plain Variable</td>
+<td>60px (3.75rem)</td>
+<td>600</td>
+<td>1.001.10 (tight)</td>
+<td>-1.5px</td>
+<td>Maximum impact, editorial</td>
+</tr>
+<tr>
+<td>Display Alt</td>
+<td>Camera Plain Variable</td>
+<td>60px (3.75rem)</td>
+<td>480</td>
+<td>1.00 (tight)</td>
+<td>normal</td>
+<td>Lighter hero variant</td>
+</tr>
+<tr>
+<td>Section Heading</td>
+<td>Camera Plain Variable</td>
+<td>48px (3.00rem)</td>
+<td>600</td>
+<td>1.00 (tight)</td>
+<td>-1.2px</td>
+<td>Feature section titles</td>
+</tr>
+<tr>
+<td>Sub-heading</td>
+<td>Camera Plain Variable</td>
+<td>36px (2.25rem)</td>
+<td>600</td>
+<td>1.10 (tight)</td>
+<td>-0.9px</td>
+<td>Sub-sections</td>
+</tr>
+<tr>
+<td>Card Title</td>
+<td>Camera Plain Variable</td>
+<td>20px (1.25rem)</td>
+<td>400</td>
+<td>1.25 (tight)</td>
+<td>normal</td>
+<td>Card headings</td>
+</tr>
+<tr>
+<td>Body Large</td>
+<td>Camera Plain Variable</td>
+<td>18px (1.13rem)</td>
+<td>400</td>
+<td>1.38</td>
+<td>normal</td>
+<td>Introductions</td>
+</tr>
+<tr>
+<td>Body</td>
+<td>Camera Plain Variable</td>
+<td>16px (1.00rem)</td>
+<td>400</td>
+<td>1.50</td>
+<td>normal</td>
+<td>Standard reading text</td>
+</tr>
+<tr>
+<td>Button</td>
+<td>Camera Plain Variable</td>
+<td>16px (1.00rem)</td>
+<td>400</td>
+<td>1.50</td>
+<td>normal</td>
+<td>Button labels</td>
+</tr>
+<tr>
+<td>Button Small</td>
+<td>Camera Plain Variable</td>
+<td>14px (0.88rem)</td>
+<td>400</td>
+<td>1.50</td>
+<td>normal</td>
+<td>Compact buttons</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>Camera Plain Variable</td>
+<td>16px (1.00rem)</td>
+<td>400</td>
+<td>1.50</td>
+<td>normal</td>
+<td>Underline decoration</td>
+</tr>
+<tr>
+<td>Link Small</td>
+<td>Camera Plain Variable</td>
+<td>14px (0.88rem)</td>
+<td>400</td>
+<td>1.50</td>
+<td>normal</td>
+<td>Footer links</td>
+</tr>
+<tr>
+<td>Caption</td>
+<td>Camera Plain Variable</td>
+<td>14px (0.88rem)</td>
+<td>400</td>
+<td>1.50</td>
+<td>normal</td>
+<td>Metadata, small text</td>
+</tr>
+</tbody>
+</table>
+<h3 id="principles">Principles<a class="headerlink" href="#principles" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Warm humanist voice</strong>: Camera Plain Variable gives Lovable its approachable personality. The slightly rounded terminals and organic curves contrast with the sharp geometric sans-serifs used by most developer tools.</li>
+<li><strong>Variable weight as design tool</strong>: The font supports continuous weight values (e.g., 480), enabling nuanced hierarchy beyond standard weight stops. Weight 480 at 60px creates a display style that feels lighter than semibold but stronger than regular.</li>
+<li><strong>Compression at scale</strong>: Headlines use negative letter-spacing (-0.9px to -1.5px) for editorial impact. Body text stays at normal tracking for comfortable reading.</li>
+<li><strong>Two weights, clear roles</strong>: 400 (body/UI/links/buttons) and 600 (headings/emphasis). The narrow weight range creates hierarchy through size and spacing, not weight variation.</li>
+</ul>
+<h2 id="4-component-stylings">4. Component Stylings<a class="headerlink" href="#4-component-stylings" title="Permanent link">&para;</a></h2>
+<h3 id="buttons">Buttons<a class="headerlink" href="#buttons" title="Permanent link">&para;</a></h3>
+<p><strong>Primary Dark (Inset Shadow)</strong>
+- Background: <code>#1c1c1c</code>
+- Text: <code>#fcfbf8</code>
+- Padding: 8px 16px
+- Radius: 6px
+- Shadow: <code>rgba(0,0,0,0) 0px 0px 0px 0px, rgba(0,0,0,0) 0px 0px 0px 0px, rgba(255,255,255,0.2) 0px 0.5px 0px 0px inset, rgba(0,0,0,0.2) 0px 0px 0px 0.5px inset, rgba(0,0,0,0.05) 0px 1px 2px 0px</code>
+- Active: opacity 0.8
+- Focus: <code>rgba(0,0,0,0.1) 0px 4px 12px</code> shadow
+- Use: Primary CTA ("Start Building", "Get Started")</p>
+<p><strong>Ghost / Outline</strong>
+- Background: transparent
+- Text: <code>#1c1c1c</code>
+- Padding: 8px 16px
+- Radius: 6px
+- Border: <code>1px solid rgba(28,28,28,0.4)</code>
+- Active: opacity 0.8
+- Focus: <code>rgba(0,0,0,0.1) 0px 4px 12px</code> shadow
+- Use: Secondary actions ("Log In", "Documentation")</p>
+<p><strong>Cream Surface</strong>
+- Background: <code>#f7f4ed</code>
+- Text: <code>#1c1c1c</code>
+- Padding: 8px 16px
+- Radius: 6px
+- No border
+- Active: opacity 0.8
+- Use: Tertiary actions, toolbar buttons</p>
+<p><strong>Pill / Icon Button</strong>
+- Background: <code>#f7f4ed</code>
+- Text: <code>#1c1c1c</code>
+- Radius: 9999px (full pill)
+- Shadow: same inset pattern as primary dark
+- Opacity: 0.5 (default), 0.8 (active)
+- Use: Additional actions, plan mode toggle, voice recording</p>
+<h3 id="cards-containers">Cards &amp; Containers<a class="headerlink" href="#cards-containers" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Background: <code>#f7f4ed</code> (matches page)</li>
+<li>Border: <code>1px solid #eceae4</code></li>
+<li>Radius: 12px (standard), 16px (featured), 8px (compact)</li>
+<li>No box-shadow by default  borders define boundaries</li>
+<li>Image cards: <code>1px solid #eceae4</code> with 12px radius</li>
+</ul>
+<h3 id="inputs-forms">Inputs &amp; Forms<a class="headerlink" href="#inputs-forms" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Background: <code>#f7f4ed</code></li>
+<li>Text: <code>#1c1c1c</code></li>
+<li>Border: <code>1px solid #eceae4</code></li>
+<li>Radius: 6px</li>
+<li>Focus: ring blue (<code>rgba(59,130,246,0.5)</code>) outline</li>
+<li>Placeholder: <code>#5f5f5d</code></li>
+</ul>
+<h3 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Clean horizontal nav on cream background, fixed</li>
+<li>Logo/wordmark left-aligned (128.75 x 22px)</li>
+<li>Links: Camera Plain 1416px weight 400, <code>#1c1c1c</code> text</li>
+<li>CTA: dark button with inset shadow, 6px radius</li>
+<li>Mobile: hamburger menu with 6px radius button</li>
+<li>Subtle border or no border on scroll</li>
+</ul>
+<h3 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Color: <code>#1c1c1c</code></li>
+<li>Decoration: underline (default)</li>
+<li>Hover: primary accent (via CSS variable <code>hsl(var(--primary))</code>)</li>
+<li>No color change on hover  decoration carries the interactive signal</li>
+</ul>
+<h3 id="image-treatment">Image Treatment<a class="headerlink" href="#image-treatment" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Showcase/portfolio images with <code>1px solid #eceae4</code> border</li>
+<li>Consistent 12px border radius on all image containers</li>
+<li>Soft gradient backgrounds behind hero content (warm multi-color wash)</li>
+<li>Gallery-style presentation for template/project showcases</li>
+</ul>
+<h3 id="distinctive-components">Distinctive Components<a class="headerlink" href="#distinctive-components" title="Permanent link">&para;</a></h3>
+<p><strong>AI Chat Input</strong>
+- Large prompt input area with soft borders
+- Suggestion pills with <code>#eceae4</code> borders
+- Voice recording / plan mode toggle buttons as pill shapes (9999px)
+- Warm, inviting input area  not clinical</p>
+<p><strong>Template Gallery</strong>
+- Card grid showing project templates
+- Each card: image + title, <code>1px solid #eceae4</code> border, 12px radius
+- Hover: subtle shadow or border darkening
+- Category labels as text links</p>
+<p><strong>Stats Bar</strong>
+- Large metrics: "0M+" pattern in 48px+ weight 600
+- Descriptive text below in muted gray
+- Horizontal layout with generous spacing</p>
+<h2 id="5-layout-principles">5. Layout Principles<a class="headerlink" href="#5-layout-principles" title="Permanent link">&para;</a></h2>
+<h3 id="spacing-system">Spacing System<a class="headerlink" href="#spacing-system" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Base unit: 8px</li>
+<li>Scale: 8px, 10px, 12px, 16px, 24px, 32px, 40px, 56px, 80px, 96px, 128px, 176px, 192px, 208px</li>
+<li>The scale expands generously at the top end  sections use 80px208px vertical spacing for editorial breathing room</li>
+</ul>
+<h3 id="grid-container">Grid &amp; Container<a class="headerlink" href="#grid-container" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Max content width: approximately 1200px (centered)</li>
+<li>Hero: centered single-column with massive vertical padding (96px+)</li>
+<li>Feature sections: 23 column grids</li>
+<li>Full-width footer with multi-column link layout</li>
+<li>Showcase sections with centered card grids</li>
+</ul>
+<h3 id="whitespace-philosophy">Whitespace Philosophy<a class="headerlink" href="#whitespace-philosophy" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Editorial generosity</strong>: Lovable's spacing is lavish at section boundaries (80px208px). The warm cream background makes these expanses feel cozy rather than empty.</li>
+<li><strong>Content-driven rhythm</strong>: Tight internal spacing within cards (1224px) contrasts with wide section gaps, creating a reading rhythm that alternates between focused content and visual rest.</li>
+<li><strong>Section separation</strong>: Footer uses <code>1px solid #eceae4</code> border and 16px radius container. Sections defined by generous spacing rather than border lines.</li>
+</ul>
+<h3 id="border-radius-scale">Border Radius Scale<a class="headerlink" href="#border-radius-scale" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Micro (4px): Small buttons, interactive elements</li>
+<li>Standard (6px): Buttons, inputs, navigation menu</li>
+<li>Comfortable (8px): Compact cards, divs</li>
+<li>Card (12px): Standard cards, image containers, templates</li>
+<li>Container (16px): Large containers, footer sections</li>
+<li>Full Pill (9999px): Action pills, icon buttons, toggles</li>
+</ul>
+<h2 id="6-depth-elevation">6. Depth &amp; Elevation<a class="headerlink" href="#6-depth-elevation" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Treatment</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Flat (Level 0)</td>
+<td>No shadow, cream background</td>
+<td>Page surface, most content</td>
+</tr>
+<tr>
+<td>Bordered (Level 1)</td>
+<td><code>1px solid #eceae4</code></td>
+<td>Cards, images, dividers</td>
+</tr>
+<tr>
+<td>Inset (Level 2)</td>
+<td><code>rgba(255,255,255,0.2) 0px 0.5px 0px inset, rgba(0,0,0,0.2) 0px 0px 0px 0.5px inset, rgba(0,0,0,0.05) 0px 1px 2px</code></td>
+<td>Dark buttons, primary actions</td>
+</tr>
+<tr>
+<td>Focus (Level 3)</td>
+<td><code>rgba(0,0,0,0.1) 0px 4px 12px</code></td>
+<td>Active/focus states</td>
+</tr>
+<tr>
+<td>Ring (Accessibility)</td>
+<td><code>rgba(59,130,246,0.5)</code> 2px ring</td>
+<td>Keyboard focus on inputs</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Shadow Philosophy</strong>: Lovable's depth system is intentionally shallow. Instead of floating cards with dramatic drop-shadows, the system relies on warm borders (<code>#eceae4</code>) against the cream surface to create gentle containment. The only notable shadow pattern is the inset shadow on dark buttons  a subtle multi-layer technique where a white highlight line sits at the top edge while a dark ring and soft drop handle the bottom. This creates a tactile, pressed-into-surface feeling rather than a hovering-above-surface feeling. The warm focus shadow (<code>rgba(0,0,0,0.1) 0px 4px 12px</code>) is deliberately diffused and large, creating a soft glow rather than a sharp outline.</p>
+<h3 id="decorative-depth">Decorative Depth<a class="headerlink" href="#decorative-depth" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Hero: soft, warm multi-color gradient wash (pinks, oranges, blues) behind hero  atmospheric, barely visible</li>
+<li>Footer: gradient background with warm tones transitioning to the bottom</li>
+<li>No harsh section dividers  spacing and background warmth handle transitions</li>
+</ul>
+<h2 id="7-dos-and-donts">7. Do's and Don'ts<a class="headerlink" href="#7-dos-and-donts" title="Permanent link">&para;</a></h2>
+<h3 id="do">Do<a class="headerlink" href="#do" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Use the warm cream background (<code>#f7f4ed</code>) as the page foundation  it's the brand's signature warmth</li>
+<li>Use Camera Plain Variable at display sizes with negative letter-spacing (-0.9px to -1.5px)</li>
+<li>Derive all grays from <code>#1c1c1c</code> at varying opacity levels for tonal unity</li>
+<li>Use the inset shadow technique on dark buttons for tactile depth</li>
+<li>Use <code>#eceae4</code> borders instead of shadows for card containment</li>
+<li>Keep the weight system narrow: 400 for body/UI, 600 for headings</li>
+<li>Use full-pill radius (9999px) only for action pills and icon buttons</li>
+<li>Apply opacity 0.8 on active states for responsive tactile feedback</li>
+</ul>
+<h3 id="dont">Don't<a class="headerlink" href="#dont" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Don't use pure white (<code>#ffffff</code>) as a page background  the cream is intentional</li>
+<li>Don't use heavy box-shadows for cards  borders are the containment mechanism</li>
+<li>Don't introduce saturated accent colors  the palette is intentionally warm-neutral</li>
+<li>Don't use weight 700 (bold)  600 is the maximum weight in the system</li>
+<li>Don't apply 9999px radius on rectangular buttons  pills are for icon/action toggles</li>
+<li>Don't use sharp focus outlines  the system uses soft shadow-based focus indicators</li>
+<li>Don't mix border styles  <code>#eceae4</code> for passive, <code>rgba(28,28,28,0.4)</code> for interactive</li>
+<li>Don't increase letter-spacing on headings  Camera Plain is designed to run tight at scale</li>
+</ul>
+<h2 id="8-responsive-behavior">8. Responsive Behavior<a class="headerlink" href="#8-responsive-behavior" title="Permanent link">&para;</a></h2>
+<h3 id="breakpoints">Breakpoints<a class="headerlink" href="#breakpoints" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Width</th>
+<th>Key Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mobile Small</td>
+<td>&lt;600px</td>
+<td>Tight single column, reduced padding</td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>600640px</td>
+<td>Standard mobile layout</td>
+</tr>
+<tr>
+<td>Tablet Small</td>
+<td>640700px</td>
+<td>2-column grids begin</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>700768px</td>
+<td>Card grids expand</td>
+</tr>
+<tr>
+<td>Desktop Small</td>
+<td>7681024px</td>
+<td>Multi-column layouts</td>
+</tr>
+<tr>
+<td>Desktop</td>
+<td>10241280px</td>
+<td>Full feature layout</td>
+</tr>
+<tr>
+<td>Large Desktop</td>
+<td>12801536px</td>
+<td>Maximum content width, generous margins</td>
+</tr>
+</tbody>
+</table>
+<h3 id="touch-targets">Touch Targets<a class="headerlink" href="#touch-targets" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Buttons: 8px 16px padding (comfortable touch)</li>
+<li>Navigation: adequate spacing between items</li>
+<li>Pill buttons: 9999px radius creates large tap-friendly targets</li>
+<li>Menu toggle: 6px radius button with adequate sizing</li>
+</ul>
+<h3 id="collapsing-strategy">Collapsing Strategy<a class="headerlink" href="#collapsing-strategy" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Hero: 60px  48px  36px headline scaling with proportional letter-spacing</li>
+<li>Navigation: horizontal links  hamburger menu at 768px</li>
+<li>Feature cards: 3-column  2-column  single column stacked</li>
+<li>Template gallery: grid  stacked vertical cards</li>
+<li>Stats bar: horizontal  stacked vertical</li>
+<li>Footer: multi-column  stacked single column</li>
+<li>Section spacing: 128px+  64px on mobile</li>
+</ul>
+<h3 id="image-behavior">Image Behavior<a class="headerlink" href="#image-behavior" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Template screenshots maintain <code>1px solid #eceae4</code> border at all sizes</li>
+<li>12px border radius preserved across breakpoints</li>
+<li>Gallery images responsive with consistent aspect ratios</li>
+<li>Hero gradient softens/simplifies on mobile</li>
+</ul>
+<h2 id="9-agent-prompt-guide">9. Agent Prompt Guide<a class="headerlink" href="#9-agent-prompt-guide" title="Permanent link">&para;</a></h2>
+<h3 id="quick-color-reference">Quick Color Reference<a class="headerlink" href="#quick-color-reference" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Primary CTA: Charcoal (<code>#1c1c1c</code>)</li>
+<li>Background: Cream (<code>#f7f4ed</code>)</li>
+<li>Heading text: Charcoal (<code>#1c1c1c</code>)</li>
+<li>Body text: Muted Gray (<code>#5f5f5d</code>)</li>
+<li>Border: <code>#eceae4</code> (passive), <code>rgba(28,28,28,0.4)</code> (interactive)</li>
+<li>Focus: <code>rgba(0,0,0,0.1) 0px 4px 12px</code></li>
+<li>Button text on dark: <code>#fcfbf8</code></li>
+</ul>
+<h3 id="example-component-prompts">Example Component Prompts<a class="headerlink" href="#example-component-prompts" title="Permanent link">&para;</a></h3>
+<ul>
+<li>"Create a hero section on cream background (#f7f4ed). Headline at 60px Camera Plain Variable weight 600, line-height 1.10, letter-spacing -1.5px, color #1c1c1c. Subtitle at 18px weight 400, line-height 1.38, color #5f5f5d. Dark CTA button (#1c1c1c bg, #fcfbf8 text, 6px radius, 8px 16px padding, inset shadow) and ghost button (transparent bg, 1px solid rgba(28,28,28,0.4) border, 6px radius)."</li>
+<li>"Design a card on cream (#f7f4ed) background. Border: 1px solid #eceae4. Radius 12px. No box-shadow. Title at 20px Camera Plain Variable weight 400, line-height 1.25, color #1c1c1c. Body at 14px weight 400, color #5f5f5d."</li>
+<li>"Build a template gallery: grid of cards with 12px radius, 1px solid #eceae4 border, cream backgrounds. Each card: image with 12px top radius, title below. Hover: subtle border darkening."</li>
+<li>"Create navigation: sticky on cream (#f7f4ed). Camera Plain 16px weight 400 for links, #1c1c1c text. Dark CTA button right-aligned with inset shadow. Mobile: hamburger menu with 6px radius."</li>
+<li>"Design a stats section: large numbers at 48px Camera Plain weight 600, letter-spacing -1.2px, #1c1c1c. Labels below at 16px weight 400, #5f5f5d. Horizontal layout with 32px gap."</li>
+</ul>
+<h3 id="iteration-guide">Iteration Guide<a class="headerlink" href="#iteration-guide" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Always use cream (<code>#f7f4ed</code>) as the base  never pure white</li>
+<li>Derive grays from <code>#1c1c1c</code> at opacity levels rather than using distinct hex values</li>
+<li>Use <code>#eceae4</code> borders for containment, not shadows</li>
+<li>Letter-spacing scales with size: -1.5px at 60px, -1.2px at 48px, -0.9px at 36px, normal at 16px</li>
+<li>Two weights: 400 (everything except headings) and 600 (headings)</li>
+<li>The inset shadow on dark buttons is the signature detail  don't skip it</li>
+<li>Camera Plain Variable at weight 480 is for special display moments only</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/galyarderlabs/galyarder-framework" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      <div class="md-copyright">
+        
+          <div class="md-copyright__highlight">
+            © 2026 Galyarder Labs.
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.path", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,2281 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Advanced Agentic Orchestration for the 1-Man Army. Implementing Autonomous Goal Integration (AGI).">
+      
+      
+      
+        <link rel="canonical" href="https://galyarderlabs.github.io/galyarder-framework/design/design-md-apple/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/logo.webp">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Design System: Apple - Galyarder Framework</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../styles/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+  <style>
+    body, input { font-family: "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif }
+    h1, .md-typeset h1 { font-family: "Newsreader", serif; font-weight: 500; }
+  </style>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#design-system-apple" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Galyarder Framework" class="md-header__button md-logo" aria-label="Galyarder Framework" data-md-component="logo">
+      
+  <img src="../../assets/logo.webp" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Galyarder Framework
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Design System: Apple
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Use system preference"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Use system preference" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/galyarderlabs/galyarder-framework" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    galyarderlabs/galyarder-framework
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../QUICK_START/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Quick Start
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../TRIAD_OVERVIEW/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Triad Ecosystem
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../UNIFIED_PLATFORM/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Unified Platform
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../WORKFLOW/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Humans 3.0 Workflow
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../ORG_CHART/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Org Chart
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../INTEGRATION/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Multi-Platform
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../MIGRATION/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Migration
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../AGENTS/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Agent Directory
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../agents/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Specialized Agents
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../skills/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Strategic Skills
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../commands/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Slash Commands
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Design Specs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../testing/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Testing
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../CLAUDE/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Claude Rules
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../GEMINI/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Gemini Rules
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../INTEGRATION_COMPLETE/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Integration Checklist
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../CHANGELOG/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Changelog
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../RELEASE-NOTES/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Release Notes
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Galyarder Framework" class="md-nav__button md-logo" aria-label="Galyarder Framework" data-md-component="logo">
+      
+  <img src="../../assets/logo.webp" alt="logo">
+
+    </a>
+    Galyarder Framework
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/galyarderlabs/galyarder-framework" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    galyarderlabs/galyarder-framework
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../QUICK_START/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TRIAD_OVERVIEW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Triad Ecosystem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UNIFIED_PLATFORM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unified Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WORKFLOW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Humans 3.0 Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ORG_CHART/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Org Chart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../INTEGRATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi-Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MIGRATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AGENTS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent Directory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Specialized Agents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strategic Skills
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Slash Commands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design Specs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CLAUDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claude Rules
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GEMINI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gemini Rules
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../INTEGRATION_COMPLETE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integration Checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RELEASE-NOTES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Release Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-visual-theme-atmosphere" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Visual Theme &amp; Atmosphere
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-color-palette-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Color Palette &amp; Roles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Color Palette &amp; Roles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Primary
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interactive
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Text
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#surface-dark-variants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Surface &amp; Dark Variants
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#button-states" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Button States
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shadows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shadows
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-typography-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Typography Rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Typography Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#font-family" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Font Family
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hierarchy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-component-stylings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Component Stylings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Component Stylings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#buttons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Buttons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cards-containers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cards &amp; Containers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navigation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-treatment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Treatment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distinctive-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distinctive Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-layout-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Layout Principles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Layout Principles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spacing-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spacing System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grid &amp; Container
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whitespace-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Whitespace Philosophy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#border-radius-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Border Radius Scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-depth-elevation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Depth &amp; Elevation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Depth &amp; Elevation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#decorative-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decorative Depth
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-dos-and-donts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Do's and Don'ts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Do&#39;s and Don&#39;ts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dont" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Don't
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-responsive-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Responsive Behavior
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Responsive Behavior">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breakpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breakpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#touch-targets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Touch Targets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collapsing-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Collapsing Strategy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Behavior
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-agent-prompt-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Agent Prompt Guide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Agent Prompt Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-color-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Color Reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-component-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Component Prompts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteration-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iteration Guide
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/galyarderlabs/galyarder-framework/edit/main/docs/design/design-md-apple.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="design-system-apple">Design System: Apple<a class="headerlink" href="#design-system-apple" title="Permanent link">&para;</a></h1>
+<h2 id="1-visual-theme-atmosphere">1. Visual Theme &amp; Atmosphere<a class="headerlink" href="#1-visual-theme-atmosphere" title="Permanent link">&para;</a></h2>
+<p>Apple's website is a masterclass in controlled drama  vast expanses of pure black and near-white serve as cinematic backdrops for products that are photographed as if they were sculptures in a gallery. The design philosophy is reductive to its core: every pixel exists in service of the product, and the interface itself retreats until it becomes invisible. This is not minimalism as aesthetic preference; it is minimalism as reverence for the object.</p>
+<p>The typography anchors everything. San Francisco (SF Pro Display for large sizes, SF Pro Text for body) is Apple's proprietary typeface, engineered with optical sizing that automatically adjusts letterforms depending on point size. At display sizes (56px), weight 600 with a tight line-height of 1.07 and subtle negative letter-spacing (-0.28px) creates headlines that feel machined rather than typeset  precise, confident, and unapologetically direct. At body sizes (17px), the tracking loosens slightly (-0.374px) and line-height opens to 1.47, creating a reading rhythm that is comfortable without ever feeling slack.</p>
+<p>The color story is starkly binary. Product sections alternate between pure black (<code>#000000</code>) backgrounds with white text and light gray (<code>#f5f5f7</code>) backgrounds with near-black text (<code>#1d1d1f</code>). This creates a cinematic pacing  dark sections feel immersive and premium, light sections feel open and informational. The only chromatic accent is Apple Blue (<code>#0071e3</code>), reserved exclusively for interactive elements: links, buttons, and focus states. This singular accent color in a sea of neutrals gives every clickable element unmistakable visibility.</p>
+<p><strong>Key Characteristics:</strong>
+- SF Pro Display/Text with optical sizing  letterforms adapt automatically to size context
+- Binary light/dark section rhythm: black (<code>#000000</code>) alternating with light gray (<code>#f5f5f7</code>)
+- Single accent color: Apple Blue (<code>#0071e3</code>) reserved exclusively for interactive elements
+- Product-as-hero photography on solid color fields  no gradients, no textures, no distractions
+- Extremely tight headline line-heights (1.07-1.14) creating compressed, billboard-like impact
+- Full-width section layout with centered content  the viewport IS the canvas
+- Pill-shaped CTAs (980px radius) creating soft, approachable action buttons
+- Generous whitespace between sections allowing each product moment to breathe</p>
+<h2 id="2-color-palette-roles">2. Color Palette &amp; Roles<a class="headerlink" href="#2-color-palette-roles" title="Permanent link">&para;</a></h2>
+<h3 id="primary">Primary<a class="headerlink" href="#primary" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Pure Black</strong> (<code>#000000</code>): Hero section backgrounds, immersive product showcases. The darkest canvas for the brightest products.</li>
+<li><strong>Light Gray</strong> (<code>#f5f5f7</code>): Alternate section backgrounds, informational areas. Not white  the slight blue-gray tint prevents sterility.</li>
+<li><strong>Near Black</strong> (<code>#1d1d1f</code>): Primary text on light backgrounds, dark button fills. Slightly warmer than pure black for comfortable reading.</li>
+</ul>
+<h3 id="interactive">Interactive<a class="headerlink" href="#interactive" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Apple Blue</strong> (<code>#0071e3</code>): <code>--sk-focus-color</code>, primary CTA backgrounds, focus rings. The ONLY chromatic color in the interface.</li>
+<li><strong>Link Blue</strong> (<code>#0066cc</code>): <code>--sk-body-link-color</code>, inline text links. Slightly darker than Apple Blue for text-level readability.</li>
+<li><strong>Bright Blue</strong> (<code>#2997ff</code>): Links on dark backgrounds. Higher luminance for contrast on black sections.</li>
+</ul>
+<h3 id="text">Text<a class="headerlink" href="#text" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>White</strong> (<code>#ffffff</code>): Text on dark backgrounds, button text on blue/dark CTAs.</li>
+<li><strong>Near Black</strong> (<code>#1d1d1f</code>): Primary body text on light backgrounds.</li>
+<li><strong>Black 80%</strong> (<code>rgba(0, 0, 0, 0.8)</code>): Secondary text, nav items on light backgrounds. Slightly softened.</li>
+<li><strong>Black 48%</strong> (<code>rgba(0, 0, 0, 0.48)</code>): Tertiary text, disabled states, carousel controls.</li>
+</ul>
+<h3 id="surface-dark-variants">Surface &amp; Dark Variants<a class="headerlink" href="#surface-dark-variants" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Dark Surface 1</strong> (<code>#272729</code>): Card backgrounds in dark sections.</li>
+<li><strong>Dark Surface 2</strong> (<code>#262628</code>): Subtle surface variation in dark contexts.</li>
+<li><strong>Dark Surface 3</strong> (<code>#28282a</code>): Elevated cards on dark backgrounds.</li>
+<li><strong>Dark Surface 4</strong> (<code>#2a2a2d</code>): Highest dark surface elevation.</li>
+<li><strong>Dark Surface 5</strong> (<code>#242426</code>): Deepest dark surface tone.</li>
+</ul>
+<h3 id="button-states">Button States<a class="headerlink" href="#button-states" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Button Active</strong> (<code>#ededf2</code>): Active/pressed state for light buttons.</li>
+<li><strong>Button Default Light</strong> (<code>#fafafc</code>): Search/filter button backgrounds.</li>
+<li><strong>Overlay</strong> (<code>rgba(210, 210, 215, 0.64)</code>): Media control scrims, overlays.</li>
+<li><strong>White 32%</strong> (<code>rgba(255, 255, 255, 0.32)</code>): Hover state on dark modal close buttons.</li>
+</ul>
+<h3 id="shadows">Shadows<a class="headerlink" href="#shadows" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Card Shadow</strong> (<code>rgba(0, 0, 0, 0.22) 3px 5px 30px 0px</code>): Soft, diffused elevation for product cards. Offset and wide blur create a natural, photographic shadow.</li>
+</ul>
+<h2 id="3-typography-rules">3. Typography Rules<a class="headerlink" href="#3-typography-rules" title="Permanent link">&para;</a></h2>
+<h3 id="font-family">Font Family<a class="headerlink" href="#font-family" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Display</strong>: <code>SF Pro Display</code>, with fallbacks: <code>SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif</code></li>
+<li><strong>Body</strong>: <code>SF Pro Text</code>, with fallbacks: <code>SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif</code></li>
+<li>SF Pro Display is used at 20px and above; SF Pro Text is optimized for 19px and below.</li>
+</ul>
+<h3 id="hierarchy">Hierarchy<a class="headerlink" href="#hierarchy" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Font</th>
+<th>Size</th>
+<th>Weight</th>
+<th>Line Height</th>
+<th>Letter Spacing</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Display Hero</td>
+<td>SF Pro Display</td>
+<td>56px (3.50rem)</td>
+<td>600</td>
+<td>1.07 (tight)</td>
+<td>-0.28px</td>
+<td>Product launch headlines, maximum impact</td>
+</tr>
+<tr>
+<td>Section Heading</td>
+<td>SF Pro Display</td>
+<td>40px (2.50rem)</td>
+<td>600</td>
+<td>1.10 (tight)</td>
+<td>normal</td>
+<td>Feature section titles</td>
+</tr>
+<tr>
+<td>Tile Heading</td>
+<td>SF Pro Display</td>
+<td>28px (1.75rem)</td>
+<td>400</td>
+<td>1.14 (tight)</td>
+<td>0.196px</td>
+<td>Product tile headlines</td>
+</tr>
+<tr>
+<td>Card Title</td>
+<td>SF Pro Display</td>
+<td>21px (1.31rem)</td>
+<td>700</td>
+<td>1.19 (tight)</td>
+<td>0.231px</td>
+<td>Bold card headings</td>
+</tr>
+<tr>
+<td>Sub-heading</td>
+<td>SF Pro Display</td>
+<td>21px (1.31rem)</td>
+<td>400</td>
+<td>1.19 (tight)</td>
+<td>0.231px</td>
+<td>Regular card headings</td>
+</tr>
+<tr>
+<td>Nav Heading</td>
+<td>SF Pro Text</td>
+<td>34px (2.13rem)</td>
+<td>600</td>
+<td>1.47</td>
+<td>-0.374px</td>
+<td>Large navigation headings</td>
+</tr>
+<tr>
+<td>Sub-nav</td>
+<td>SF Pro Text</td>
+<td>24px (1.50rem)</td>
+<td>300</td>
+<td>1.50</td>
+<td>normal</td>
+<td>Light sub-navigation text</td>
+</tr>
+<tr>
+<td>Body</td>
+<td>SF Pro Text</td>
+<td>17px (1.06rem)</td>
+<td>400</td>
+<td>1.47</td>
+<td>-0.374px</td>
+<td>Standard reading text</td>
+</tr>
+<tr>
+<td>Body Emphasis</td>
+<td>SF Pro Text</td>
+<td>17px (1.06rem)</td>
+<td>600</td>
+<td>1.24 (tight)</td>
+<td>-0.374px</td>
+<td>Emphasized body text, labels</td>
+</tr>
+<tr>
+<td>Button Large</td>
+<td>SF Pro Text</td>
+<td>18px (1.13rem)</td>
+<td>300</td>
+<td>1.00 (tight)</td>
+<td>normal</td>
+<td>Large button text, light weight</td>
+</tr>
+<tr>
+<td>Button</td>
+<td>SF Pro Text</td>
+<td>17px (1.06rem)</td>
+<td>400</td>
+<td>2.41 (relaxed)</td>
+<td>normal</td>
+<td>Standard button text</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>SF Pro Text</td>
+<td>14px (0.88rem)</td>
+<td>400</td>
+<td>1.43</td>
+<td>-0.224px</td>
+<td>Body links, "Learn more"</td>
+</tr>
+<tr>
+<td>Caption</td>
+<td>SF Pro Text</td>
+<td>14px (0.88rem)</td>
+<td>400</td>
+<td>1.29 (tight)</td>
+<td>-0.224px</td>
+<td>Secondary text, descriptions</td>
+</tr>
+<tr>
+<td>Caption Bold</td>
+<td>SF Pro Text</td>
+<td>14px (0.88rem)</td>
+<td>600</td>
+<td>1.29 (tight)</td>
+<td>-0.224px</td>
+<td>Emphasized captions</td>
+</tr>
+<tr>
+<td>Micro</td>
+<td>SF Pro Text</td>
+<td>12px (0.75rem)</td>
+<td>400</td>
+<td>1.33</td>
+<td>-0.12px</td>
+<td>Fine print, footnotes</td>
+</tr>
+<tr>
+<td>Micro Bold</td>
+<td>SF Pro Text</td>
+<td>12px (0.75rem)</td>
+<td>600</td>
+<td>1.33</td>
+<td>-0.12px</td>
+<td>Bold fine print</td>
+</tr>
+<tr>
+<td>Nano</td>
+<td>SF Pro Text</td>
+<td>10px (0.63rem)</td>
+<td>400</td>
+<td>1.47</td>
+<td>-0.08px</td>
+<td>Legal text, smallest size</td>
+</tr>
+</tbody>
+</table>
+<h3 id="principles">Principles<a class="headerlink" href="#principles" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Optical sizing as philosophy</strong>: SF Pro automatically switches between Display and Text optical sizes. Display versions have wider letter spacing and thinner strokes optimized for large sizes; Text versions are tighter and sturdier for small sizes. This means the font literally changes its DNA based on context.</li>
+<li><strong>Weight restraint</strong>: The scale spans 300 (light) to 700 (bold) but most text lives at 400 (regular) and 600 (semibold). Weight 300 appears only on large decorative text. Weight 700 is rare, used only for bold card titles.</li>
+<li><strong>Negative tracking at all sizes</strong>: Unlike most systems that only track headlines, Apple applies subtle negative letter-spacing even at body sizes (-0.374px at 17px, -0.224px at 14px, -0.12px at 12px). This creates universally tight, efficient text.</li>
+<li><strong>Extreme line-height range</strong>: Headlines compress to 1.07 while body text opens to 1.47, and some button contexts stretch to 2.41. This dramatic range creates clear visual hierarchy through rhythm alone.</li>
+</ul>
+<h2 id="4-component-stylings">4. Component Stylings<a class="headerlink" href="#4-component-stylings" title="Permanent link">&para;</a></h2>
+<h3 id="buttons">Buttons<a class="headerlink" href="#buttons" title="Permanent link">&para;</a></h3>
+<p><strong>Primary Blue (CTA)</strong>
+- Background: <code>#0071e3</code> (Apple Blue)
+- Text: <code>#ffffff</code>
+- Padding: 8px 15px
+- Radius: 8px
+- Border: 1px solid transparent
+- Font: SF Pro Text, 17px, weight 400
+- Hover: background brightens slightly
+- Active: <code>#ededf2</code> background shift
+- Focus: <code>2px solid var(--sk-focus-color, #0071E3)</code> outline
+- Use: Primary call-to-action ("Buy", "Shop iPhone")</p>
+<p><strong>Primary Dark</strong>
+- Background: <code>#1d1d1f</code>
+- Text: <code>#ffffff</code>
+- Padding: 8px 15px
+- Radius: 8px
+- Font: SF Pro Text, 17px, weight 400
+- Use: Secondary CTA, dark variant</p>
+<p><strong>Pill Link (Learn More / Shop)</strong>
+- Background: transparent
+- Text: <code>#0066cc</code> (light bg) or <code>#2997ff</code> (dark bg)
+- Radius: 980px (full pill)
+- Border: 1px solid <code>#0066cc</code>
+- Font: SF Pro Text, 14px-17px
+- Hover: underline decoration
+- Use: "Learn more" and "Shop" links  the signature Apple inline CTA</p>
+<p><strong>Filter / Search Button</strong>
+- Background: <code>#fafafc</code>
+- Text: <code>rgba(0, 0, 0, 0.8)</code>
+- Padding: 0px 14px
+- Radius: 11px
+- Border: 3px solid <code>rgba(0, 0, 0, 0.04)</code>
+- Focus: <code>2px solid var(--sk-focus-color, #0071E3)</code> outline
+- Use: Search bars, filter controls</p>
+<p><strong>Media Control</strong>
+- Background: <code>rgba(210, 210, 215, 0.64)</code>
+- Text: <code>rgba(0, 0, 0, 0.48)</code>
+- Radius: 50% (circular)
+- Active: scale(0.9), background shifts
+- Focus: <code>2px solid var(--sk-focus-color, #0071e3)</code> outline, white bg, black text
+- Use: Play/pause, carousel arrows</p>
+<h3 id="cards-containers">Cards &amp; Containers<a class="headerlink" href="#cards-containers" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Background: <code>#f5f5f7</code> (light) or <code>#272729</code>-<code>#2a2a2d</code> (dark)</li>
+<li>Border: none (borders are rare in Apple's system)</li>
+<li>Radius: 5px-8px</li>
+<li>Shadow: <code>rgba(0, 0, 0, 0.22) 3px 5px 30px 0px</code> for elevated product cards</li>
+<li>Content: centered, generous padding</li>
+<li>Hover: no standard hover state  cards are static, links within them are interactive</li>
+</ul>
+<h3 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Background: <code>rgba(0, 0, 0, 0.8)</code> (translucent dark) with <code>backdrop-filter: saturate(180%) blur(20px)</code></li>
+<li>Height: 48px (compact)</li>
+<li>Text: <code>#ffffff</code> at 12px, weight 400</li>
+<li>Active: underline on hover</li>
+<li>Logo: Apple logomark (SVG) centered or left-aligned, 17x48px viewport</li>
+<li>Mobile: collapses to hamburger with full-screen overlay menu</li>
+<li>The nav floats above content, maintaining its dark translucent glass regardless of section background</li>
+</ul>
+<h3 id="image-treatment">Image Treatment<a class="headerlink" href="#image-treatment" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Products on solid-color fields (black or white)  no backgrounds, no context, just the object</li>
+<li>Full-bleed section images that span the entire viewport width</li>
+<li>Product photography at extremely high resolution with subtle shadows</li>
+<li>Lifestyle images confined to rounded-corner containers (12px+ radius)</li>
+</ul>
+<h3 id="distinctive-components">Distinctive Components<a class="headerlink" href="#distinctive-components" title="Permanent link">&para;</a></h3>
+<p><strong>Product Hero Module</strong>
+- Full-viewport-width section with solid background (black or <code>#f5f5f7</code>)
+- Product name as the primary headline (SF Pro Display, 56px, weight 600)
+- One-line descriptor below in lighter weight
+- Two pill CTAs side by side: "Learn more" (outline) and "Buy" / "Shop" (filled)</p>
+<p><strong>Product Grid Tile</strong>
+- Square or near-square card on contrasting background
+- Product image dominating 60-70% of the tile
+- Product name + one-line description below
+- "Learn more" and "Shop" link pair at bottom</p>
+<p><strong>Feature Comparison Strip</strong>
+- Horizontal scroll of product variants
+- Each variant as a vertical card with image, name, and key specs
+- Minimal chrome  the products speak for themselves</p>
+<h2 id="5-layout-principles">5. Layout Principles<a class="headerlink" href="#5-layout-principles" title="Permanent link">&para;</a></h2>
+<h3 id="spacing-system">Spacing System<a class="headerlink" href="#spacing-system" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Base unit: 8px</li>
+<li>Scale: 2px, 4px, 5px, 6px, 7px, 8px, 9px, 10px, 11px, 14px, 15px, 17px, 20px, 24px</li>
+<li>Notable characteristic: the scale is dense at small sizes (2-11px) with granular 1px increments, then jumps in larger steps. This allows precise micro-adjustments for typography and icon alignment.</li>
+</ul>
+<h3 id="grid-container">Grid &amp; Container<a class="headerlink" href="#grid-container" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Max content width: approximately 980px (the recurring "980px radius" in pill buttons echoes this width)</li>
+<li>Hero: full-viewport-width sections with centered content block</li>
+<li>Product grids: 2-3 column layouts within centered container</li>
+<li>Single-column for hero moments  one product, one message, full attention</li>
+<li>No visible grid lines or gutters  spacing creates implied structure</li>
+</ul>
+<h3 id="whitespace-philosophy">Whitespace Philosophy<a class="headerlink" href="#whitespace-philosophy" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Cinematic breathing room</strong>: Each product section occupies a full viewport height (or close to it). The whitespace between products is not empty  it is the pause between scenes in a film.</li>
+<li><strong>Vertical rhythm through color blocks</strong>: Rather than using spacing alone to separate sections, Apple uses alternating background colors (black, <code>#f5f5f7</code>, white). Each color change signals a new "scene."</li>
+<li><strong>Compression within, expansion between</strong>: Text blocks are tightly set (negative letter-spacing, tight line-heights) while the space surrounding them is vast. This creates a tension between density and openness.</li>
+</ul>
+<h3 id="border-radius-scale">Border Radius Scale<a class="headerlink" href="#border-radius-scale" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Micro (5px): Small containers, link tags</li>
+<li>Standard (8px): Buttons, product cards, image containers</li>
+<li>Comfortable (11px): Search inputs, filter buttons</li>
+<li>Large (12px): Feature panels, lifestyle image containers</li>
+<li>Full Pill (980px): CTA links ("Learn more", "Shop"), navigation pills</li>
+<li>Circle (50%): Media controls (play/pause, arrows)</li>
+</ul>
+<h2 id="6-depth-elevation">6. Depth &amp; Elevation<a class="headerlink" href="#6-depth-elevation" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Treatment</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Flat (Level 0)</td>
+<td>No shadow, solid background</td>
+<td>Standard content sections, text blocks</td>
+</tr>
+<tr>
+<td>Navigation Glass</td>
+<td><code>backdrop-filter: saturate(180%) blur(20px)</code> on <code>rgba(0,0,0,0.8)</code></td>
+<td>Sticky navigation bar  the glass effect</td>
+</tr>
+<tr>
+<td>Subtle Lift (Level 1)</td>
+<td><code>rgba(0, 0, 0, 0.22) 3px 5px 30px 0px</code></td>
+<td>Product cards, floating elements</td>
+</tr>
+<tr>
+<td>Media Control</td>
+<td><code>rgba(210, 210, 215, 0.64)</code> background with scale transforms</td>
+<td>Play/pause buttons, carousel controls</td>
+</tr>
+<tr>
+<td>Focus (Accessibility)</td>
+<td><code>2px solid #0071e3</code> outline</td>
+<td>Keyboard focus on all interactive elements</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Shadow Philosophy</strong>: Apple uses shadow extremely sparingly. The primary shadow (<code>3px 5px 30px</code> with 0.22 opacity) is soft, wide, and offset  mimicking a diffused studio light casting a natural shadow beneath a physical object. This reinforces the "product as physical sculpture" metaphor. Most elements have NO shadow at all; elevation comes from background color contrast (dark card on darker background, or light card on slightly different gray).</p>
+<h3 id="decorative-depth">Decorative Depth<a class="headerlink" href="#decorative-depth" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Navigation glass: the translucent, blurred navigation bar is the most recognizable depth element, creating a sense of floating UI above scrolling content</li>
+<li>Section color transitions: depth is implied by the alternation between black and light gray sections rather than by shadows</li>
+<li>Product photography shadows: the products themselves cast shadows in their photography, so the UI doesn't need to add synthetic ones</li>
+</ul>
+<h2 id="7-dos-and-donts">7. Do's and Don'ts<a class="headerlink" href="#7-dos-and-donts" title="Permanent link">&para;</a></h2>
+<h3 id="do">Do<a class="headerlink" href="#do" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Use SF Pro Display at 20px+ and SF Pro Text below 20px  respect the optical sizing boundary</li>
+<li>Apply negative letter-spacing at all text sizes (not just headlines)  Apple tracks tight universally</li>
+<li>Use Apple Blue (<code>#0071e3</code>) ONLY for interactive elements  it must be the singular accent</li>
+<li>Alternate between black and light gray (<code>#f5f5f7</code>) section backgrounds for cinematic rhythm</li>
+<li>Use 980px pill radius for CTA links  the signature Apple link shape</li>
+<li>Keep product imagery on solid-color fields with no competing visual elements</li>
+<li>Use the translucent dark glass (<code>rgba(0,0,0,0.8)</code> + blur) for sticky navigation</li>
+<li>Compress headline line-heights to 1.07-1.14  Apple headlines are famously tight</li>
+</ul>
+<h3 id="dont">Don't<a class="headerlink" href="#dont" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Don't introduce additional accent colors  the entire chromatic budget is spent on blue</li>
+<li>Don't use heavy shadows or multiple shadow layers  Apple's shadow system is one soft diffused shadow or nothing</li>
+<li>Don't use borders on cards or containers  Apple almost never uses visible borders (except on specific buttons)</li>
+<li>Don't apply wide letter-spacing to SF Pro  it is designed to run tight at every size</li>
+<li>Don't use weight 800 or 900  the maximum is 700 (bold), and even that is rare</li>
+<li>Don't add textures, patterns, or gradients to backgrounds  solid colors only</li>
+<li>Don't make the navigation opaque  the glass blur effect is essential to the Apple UI identity</li>
+<li>Don't center-align body text  Apple body copy is left-aligned; only headlines center</li>
+<li>Don't use rounded corners larger than 12px on rectangular elements (980px is for pills only)</li>
+</ul>
+<h2 id="8-responsive-behavior">8. Responsive Behavior<a class="headerlink" href="#8-responsive-behavior" title="Permanent link">&para;</a></h2>
+<h3 id="breakpoints">Breakpoints<a class="headerlink" href="#breakpoints" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Width</th>
+<th>Key Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Small Mobile</td>
+<td>&lt;360px</td>
+<td>Minimum supported, single column</td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>360-480px</td>
+<td>Standard mobile layout</td>
+</tr>
+<tr>
+<td>Mobile Large</td>
+<td>480-640px</td>
+<td>Wider single column, larger images</td>
+</tr>
+<tr>
+<td>Tablet Small</td>
+<td>640-834px</td>
+<td>2-column product grids begin</td>
+</tr>
+<tr>
+<td>Tablet</td>
+<td>834-1024px</td>
+<td>Full tablet layout, expanded nav</td>
+</tr>
+<tr>
+<td>Desktop Small</td>
+<td>1024-1070px</td>
+<td>Standard desktop layout begins</td>
+</tr>
+<tr>
+<td>Desktop</td>
+<td>1070-1440px</td>
+<td>Full layout, max content width</td>
+</tr>
+<tr>
+<td>Large Desktop</td>
+<td>&gt;1440px</td>
+<td>Centered with generous margins</td>
+</tr>
+</tbody>
+</table>
+<h3 id="touch-targets">Touch Targets<a class="headerlink" href="#touch-targets" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Primary CTAs: 8px 15px padding creating ~44px touch height</li>
+<li>Navigation links: 48px height with adequate spacing</li>
+<li>Media controls: 50% radius circular buttons, minimum 44x44px</li>
+<li>"Learn more" pills: generous padding for comfortable tapping</li>
+</ul>
+<h3 id="collapsing-strategy">Collapsing Strategy<a class="headerlink" href="#collapsing-strategy" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Hero headlines: 56px Display  40px  28px on mobile, maintaining tight line-height proportionally</li>
+<li>Product grids: 3-column  2-column  single column stacked</li>
+<li>Navigation: full horizontal nav  compact mobile menu (hamburger)</li>
+<li>Product hero modules: full-bleed maintained at all sizes, text scales down</li>
+<li>Section backgrounds: maintain full-width color blocks at all breakpoints  the cinematic rhythm never breaks</li>
+<li>Image sizing: products scale proportionally, never crop  the product silhouette is sacred</li>
+</ul>
+<h3 id="image-behavior">Image Behavior<a class="headerlink" href="#image-behavior" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Product photography maintains aspect ratio at all breakpoints</li>
+<li>Hero product images scale down but stay centered</li>
+<li>Full-bleed section backgrounds persist at every size</li>
+<li>Lifestyle images may crop on mobile but maintain their rounded corners</li>
+<li>Lazy loading for below-fold product images</li>
+</ul>
+<h2 id="9-agent-prompt-guide">9. Agent Prompt Guide<a class="headerlink" href="#9-agent-prompt-guide" title="Permanent link">&para;</a></h2>
+<h3 id="quick-color-reference">Quick Color Reference<a class="headerlink" href="#quick-color-reference" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Primary CTA: Apple Blue (<code>#0071e3</code>)</li>
+<li>Page background (light): <code>#f5f5f7</code></li>
+<li>Page background (dark): <code>#000000</code></li>
+<li>Heading text (light): <code>#1d1d1f</code></li>
+<li>Heading text (dark): <code>#ffffff</code></li>
+<li>Body text: <code>rgba(0, 0, 0, 0.8)</code> on light, <code>#ffffff</code> on dark</li>
+<li>Link (light bg): <code>#0066cc</code></li>
+<li>Link (dark bg): <code>#2997ff</code></li>
+<li>Focus ring: <code>#0071e3</code></li>
+<li>Card shadow: <code>rgba(0, 0, 0, 0.22) 3px 5px 30px 0px</code></li>
+</ul>
+<h3 id="example-component-prompts">Example Component Prompts<a class="headerlink" href="#example-component-prompts" title="Permanent link">&para;</a></h3>
+<ul>
+<li>"Create a hero section on black background. Headline at 56px SF Pro Display weight 600, line-height 1.07, letter-spacing -0.28px, color white. One-line subtitle at 21px SF Pro Display weight 400, line-height 1.19, color white. Two pill CTAs: 'Learn more' (transparent bg, white text, 1px solid white border, 980px radius) and 'Buy' (Apple Blue #0071e3 bg, white text, 8px radius, 8px 15px padding)."</li>
+<li>"Design a product card: #f5f5f7 background, 8px border-radius, no border, no shadow. Product image top 60% of card on solid background. Title at 28px SF Pro Display weight 400, letter-spacing 0.196px, line-height 1.14. Description at 14px SF Pro Text weight 400, color rgba(0,0,0,0.8). 'Learn more' and 'Shop' links in #0066cc at 14px."</li>
+<li>"Build the Apple navigation: sticky, 48px height, background rgba(0,0,0,0.8) with backdrop-filter: saturate(180%) blur(20px). Links at 12px SF Pro Text weight 400, white text. Apple logo left, links centered, search and bag icons right."</li>
+<li>"Create an alternating section layout: first section black bg with white text and centered product image, second section #f5f5f7 bg with #1d1d1f text. Each section near full-viewport height with 56px headline and two pill CTAs below."</li>
+<li>"Design a 'Learn more' link: text #0066cc on light bg or #2997ff on dark bg, 14px SF Pro Text, underline on hover. After the text, include a right-arrow chevron character (&gt;). Wrap in a container with 980px border-radius for pill shape when used as a standalone CTA."</li>
+</ul>
+<h3 id="iteration-guide">Iteration Guide<a class="headerlink" href="#iteration-guide" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Every interactive element gets Apple Blue (<code>#0071e3</code>)  no other accent colors</li>
+<li>Section backgrounds alternate: black for immersive moments, <code>#f5f5f7</code> for informational moments</li>
+<li>Typography optical sizing: SF Pro Display at 20px+, SF Pro Text below  never mix</li>
+<li>Negative letter-spacing at all sizes: -0.28px at 56px, -0.374px at 17px, -0.224px at 14px, -0.12px at 12px</li>
+<li>The navigation glass effect (translucent dark + blur) is non-negotiable  it defines the Apple web experience</li>
+<li>Products always appear on solid color fields  never on gradients, textures, or lifestyle backgrounds in hero modules</li>
+<li>Shadow is rare and always soft: <code>3px 5px 30px 0.22 opacity</code> or nothing at all</li>
+<li>Pill CTAs use 980px radius  this creates the signature Apple rounded-rectangle-that-looks-like-a-capsule shape</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/galyarderlabs/galyarder-framework" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      <div class="md-copyright">
+        
+          <div class="md-copyright__highlight">
+            © 2026 Galyarder Labs.
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.path", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
