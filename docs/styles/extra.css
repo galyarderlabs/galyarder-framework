@@ -78,7 +78,7 @@ hr {
   flex-grow: 0 !important;
   width: auto !important;
   font-weight: 700 !important;
-  font-size: 1.1rem !important;
+  font-size: 0.9rem !important;
 }
 
 /* 2. THEME TOGGLE: Keep it simple but clean */
@@ -723,7 +723,7 @@ body:not(.is-home) .md-header {
   background-color: #0d1117 !important;
   color: #fff !important;
   font-weight: 700 !important;
-  font-size: 1.1rem !important;
+  font-size: 0.9rem !important;
   height: auto !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
@@ -738,7 +738,7 @@ body:not(.is-home) .md-header {
 .md-nav--primary > .md-nav__title .md-nav__link {
   padding: 0 !important;
   font-size: 0.95rem !important;
-  font-weight: 800 !important;
+  font-weight: 700 !important;
   white-space: nowrap !important;
   color: #fff !important;
 }
