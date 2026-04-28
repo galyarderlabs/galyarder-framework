@@ -1,8 +1,10 @@
+---
 template: home.html
 title: Welcome
 hide:
   - navigation
   - toc
+---
 
 <div class="gagent-grid">
   <a class="gagent-card" href="ORG_CHART/">
@@ -23,6 +25,7 @@ hide:
 
 Galyarder Framework provides the specialized logic engines and SOPs designed for founders who demand institutional-grade output with zero headcount.
 
+---
 
 ## 1. The Galyarder Triad
 
@@ -30,6 +33,7 @@ Galyarder Framework provides the specialized logic engines and SOPs designed for
 2.  **Galyarder Framework**: The **Intelligence (Logic)**.
 3.  **[Galyarder HQ](https://github.com/galyarderlabs/galyarder-hq)**: The **Control Plane (Governance)**.
 
+---
 
 ## 2. Humans 3.0: Autonomous Goal Integration (AGI)
 
@@ -42,6 +46,7 @@ Galyarder Framework provides the specialized logic engines and SOPs designed for
 4.  **Operational Auditing**
 5.  **Autonomous Distribution**
 
+---
 
 ## 3. Technical Integrity: The Karpathy Principles
 
