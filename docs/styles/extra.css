@@ -742,3 +742,54 @@ body:not(.is-home) .md-header {
 [data-md-color-scheme] .md-content > .md-content__inner {
   margin-top: 0;
 }
+
+/* --- MOBILE DRAWER REFINEMENT --- */
+
+/* Drawer Header (Logo + Site Name) */
+.md-nav--primary > .md-nav__title {
+  padding: 1.5rem 1rem !important; /* Give it air */
+  background-color: #000 !important; /* Maintain dark theme */
+  color: #fff !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 1rem !important;
+  font-size: 1.2rem !important;
+}
+
+.md-nav--primary > .md-nav__title .md-logo img {
+  height: 2.5rem !important;
+  width: auto !important;
+}
+
+/* Sub-menu Titles (Back Button Section) */
+.md-nav__title {
+  padding: 1.25rem 1rem !important; /* Increase vertical spacing */
+  font-size: 0.9rem !important;
+  letter-spacing: 0.02em;
+}
+
+/* Back Button spacing */
+.md-nav__title .md-nav__icon {
+  margin-right: 0.75rem !important;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
+
+/* Ensure sub-menu items don't stick to the header */
+.md-nav__list {
+  padding-top: 0.5rem !important;
+}
+
+/* Fix collision of Logo and Text in the drawer */
+.md-nav__title .md-logo {
+  margin-bottom: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Search bar on mobile - ensure it doesn't overlap header items */
+@media screen and (max-width: 60em) {
+  .md-header__inner {
+    height: 4rem !important;
+  }
+}
