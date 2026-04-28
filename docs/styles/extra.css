@@ -711,91 +711,76 @@ body:not(.is-home) .md-header {
 }
 
 
-/* --- DEFINITIVE MOBILE DRAWER FIX --- */
 
-/* 1. Primary Drawer Header (Logo + Title) */
+/* --- MOBILE DRAWER HEADER REPAIR --- */
+
+/* The container that holds logo and title in mobile drawer */
 .md-nav--primary > .md-nav__title {
   display: flex !important;
-  flex-direction: row !important;
   align-items: center !important;
-  padding: 1.5rem 1.25rem !important;
-  background-color: #0d1117 !important; /* Matches slate dark theme precisely */
+  justify-content: flex-start !important;
+  padding: 1.5rem 1rem !important;
+  background-color: #0d1117 !important;
   color: #ffffff !important;
   font-weight: 800 !important;
   font-size: 1.1rem !important;
-  gap: 0.75rem !important;
-  line-height: 1.2 !important;
+  gap: 1rem !important; /* Proper separation between logo and text */
+  white-space: nowrap !important;
+  height: auto !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
 }
 
-/* Ensure the logo inside the drawer header doesn't shrink and has proper size */
+/* The Logo Link inside the drawer title */
 .md-nav--primary > .md-nav__title .md-logo {
-  display: flex !important;
-  align-items: center !important;
-  margin: 0 !important;
-}
-
-.md-nav--primary > .md-nav__title .md-logo img {
-  height: 2.25rem !important;
-  width: auto !important;
   display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  flex: 0 0 2.5rem !important; /* Don't shrink the logo */
 }
 
-/* 2. Sub-menu Navigation Titles (with Back Button) */
-.md-nav__title {
+/* The Image inside that logo link */
+.md-nav--primary > .md-nav__title .md-logo img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+/* Hide any duplicate text labels if MkDocs is injecting them twice */
+.md-nav--primary > .md-nav__title a.md-nav__link {
+  display: none !important;
+}
+
+/* Ensure the text node (Site Name) is properly spaced if it's not in a span */
+/* We rely on the 'gap' property of the flex container above */
+
+/* --- DRAWER NAVIGATION ITEMS --- */
+
+.md-nav__item .md-nav__link {
+  padding: 12px 20px !important;
+  font-size: 0.9rem !important;
+  color: var(--md-typeset-color) !important;
+}
+
+/* Sub-menu title with Back Button */
+.md-nav__title:not(.md-nav--primary > .md-nav__title) {
   display: flex !important;
   align-items: center !important;
-  padding: 1rem 1.25rem !important;
-  font-weight: 700 !important;
-  font-size: 0.95rem !important;
+  padding: 1.25rem 1rem !important;
   background-color: rgba(255, 255, 255, 0.02) !important;
+  font-size: 0.95rem !important;
 }
 
-/* The Back Button Icon */
+/* The Back Arrow Icon */
 .md-nav__title .md-nav__icon {
   margin-right: 0.75rem !important;
-  color: #00f2ff !important; /* Galyarder cyan highlight */
+  color: #00f2ff !important;
   width: 1.25rem !important;
   height: 1.25rem !important;
-  display: flex !important;
-  align-items: center !important;
 }
 
-/* 3. General Drawer Item Spacing */
-.md-nav__link {
-  padding: 0.75rem 1.25rem !important;
-  font-size: 0.9rem !important;
-  transition: background-color 0.2s ease !important;
-}
-
-.md-nav__item {
-  border-bottom: 1px solid rgba(128, 128, 128, 0.03) !important;
-}
-
-/* Remove redundant labels and fix the drawer structure */
-.md-nav__title .md-logo + br,
-.md-nav__title .md-logo + span {
-  display: none !important; /* Hide potential duplicate labels if any */
-}
-
-/* Ensure the drawer overlay doesn't have weird transitions */
-.md-overlay {
-  backdrop-filter: blur(4px) !important;
-  background: rgba(0, 0, 0, 0.4) !important;
-}
-
-/* Force specific text size for the site name in the drawer to prevent collision */
-.md-nav--primary > .md-nav__title .md-nav__button.md-logo + .md-nav__link,
-.md-nav--primary > .md-nav__title .md-logo + span,
-.md-nav--primary > .md-nav__title a.md-nav__link {
-  font-size: 0.95rem !important;
-  font-weight: 700 !important;
-  color: #fff !important;
-  white-space: normal !important; /* Allow wrapping if too long */
-}
-
-/* Ensure the logo has space and doesn't collide */
-.md-nav--primary > .md-nav__title .md-logo {
-  flex: 0 0 auto !important;
-  margin-right: 0.5rem !important;
+/* Fix for Repo link visibility on mobile */
+.md-header__source {
+  display: none !important; /* Usually too crowded on mobile header */
 }
