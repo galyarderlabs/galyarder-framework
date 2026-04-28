@@ -22,6 +22,7 @@ theme:
     - navigation.instant.progress
     - navigation.path
     - navigation.sections
+    - navigation.expand
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top

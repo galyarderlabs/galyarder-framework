@@ -216,9 +216,6 @@ hr {
 }
 
 /* Sidebar Cleanup */
-.md-sidebar--primary .md-nav__title {
-  display: none;
-}
 
 /* --- PAPERCLIP HERO COMPONENT --- */
 
@@ -711,4 +708,37 @@ body:not(.is-home) .md-header {
 
 .md-top {
   z-index: 1200 !important;
+}
+
+/* --- MOBILE DRAWER & NAVIGATION FIX --- */
+
+/* Ensure the back button and section titles are visible in the mobile drawer */
+.md-nav__title {
+  display: flex !important;
+  padding: 0.75rem 1rem !important;
+  font-weight: 700;
+  color: var(--md-typeset-color);
+  background-color: rgba(128, 128, 128, 0.05);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.05);
+}
+
+/* Fix navbar title overlap on medium screens */
+@media screen and (min-width: 60em) and (max-width: 85em) {
+  .md-header__title {
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* Ensure hamburger icon is properly aligned and visible */
+.md-header__button[for="__drawer"] {
+  display: flex !important;
+  order: -1 !important;
+}
+
+/* Hide navigation and TOC only on the actual home template */
+[data-md-color-scheme] .md-content > .md-content__inner {
+  margin-top: 0;
 }
