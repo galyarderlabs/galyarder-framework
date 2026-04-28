@@ -720,7 +720,7 @@ body:not(.is-home) .md-header {
   align-items: center !important;
   justify-content: flex-start !important;
   padding: 1.5rem 1rem !important;
-  gap: 12px !important;
+  gap: 0 !important;
   background-color: #0d1117 !important;
   color: #fff !important;
   font-weight: 700 !important;
@@ -729,7 +729,7 @@ body:not(.is-home) .md-header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
-.md-nav--primary > .md-nav__title .md-logo {
+.md-nav--primary > .md-nav__title .md-logo { display: none !important;
   display: flex !important;
   width: 2.5rem !important;
   height: 2.5rem !important;
