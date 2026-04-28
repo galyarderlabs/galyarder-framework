@@ -22,7 +22,6 @@ theme:
     - navigation.instant.progress
     - navigation.path
     - navigation.sections
-    - navigation.expand
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
@@ -52,37 +51,25 @@ theme:
         name: Switch to light mode
 
 nav:
-  - Welcome: index.md
-  - Getting Started:
-      - Quick Start Guide: QUICK_START.md
-      - Ecosystem Triad: TRIAD_OVERVIEW.md
-      - Unified Platform: UNIFIED_PLATFORM.md
-  - Evolution (Protocols):
-      - Humans 3.0 Workflow: WORKFLOW.md
-      - Global Command Architecture: ORG_CHART.md
-      - Multi-Platform Engine: INTEGRATION.md
-      - Migration Guide: MIGRATION.md
-  - Workforce (Agents):
-      - Agent Directory: AGENTS.md
-      - Specialized Agents: agents/index.md
-  - SOP Library (Skills):
-      - Strategic Skills: skills/index.md
-  - Command Triggers:
-      - Slash Commands: commands/index.md
-  - Aesthetic Law (Design):
-      - UI Specifications: design/index.md
-  - Governance:
-      - Deployment & Testing: testing.md
-      - Platform Specifics:
-          - Claude Code: CLAUDE.md
-          - Gemini CLI: GEMINI.md
-          - Galyarder Agent: https://github.com/galyarderlabs/galyarder-agent/blob/main/README.md
-          - OpenAI Codex: README.codex.md
-          - OpenCode: README.opencode.md
-          - Integration Checklist: INTEGRATION_COMPLETE.md
-  - Chronicle:
-      - Changelog: CHANGELOG.md
-      - Release Notes: RELEASE-NOTES.md
+  - Home: index.md
+  - Quick Start: QUICK_START.md
+  - Triad Ecosystem: TRIAD_OVERVIEW.md
+  - Unified Platform: UNIFIED_PLATFORM.md
+  - Humans 3.0 Workflow: WORKFLOW.md
+  - Org Chart: ORG_CHART.md
+  - Multi-Platform: INTEGRATION.md
+  - Migration: MIGRATION.md
+  - Agent Directory: AGENTS.md
+  - Specialized Agents: agents/index.md
+  - Strategic Skills: skills/index.md
+  - Slash Commands: commands/index.md
+  - Design Specs: design/index.md
+  - Testing: testing.md
+  - Claude Rules: CLAUDE.md
+  - Gemini Rules: GEMINI.md
+  - Integration Checklist: INTEGRATION_COMPLETE.md
+  - Changelog: CHANGELOG.md
+  - Release Notes: RELEASE-NOTES.md
 
 markdown_extensions:
   - admonition

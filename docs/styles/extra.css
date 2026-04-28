@@ -73,12 +73,12 @@ hr {
   width: auto !important;
 }
 
-.md-header__title {
+.md-header__title { font-size: 0.9rem !important;
   display: block !important;
   flex-grow: 0 !important;
   width: auto !important;
   font-weight: 700 !important;
-  font-size: 0.9rem !important;
+  font-size: 1.1rem !important;
 }
 
 /* 2. THEME TOGGLE: Keep it simple but clean */
@@ -193,7 +193,7 @@ hr {
     margin-left: auto !important;
     left: auto !important;
   }
-  .md-header__title {
+  .md-header__title { font-size: 0.9rem !important;
     display: none !important;
   }
 }
@@ -216,6 +216,9 @@ hr {
 }
 
 /* Sidebar Cleanup */
+.md-sidebar--primary .md-nav__title {
+  display: none;
+}
 
 /* --- PAPERCLIP HERO COMPONENT --- */
 
@@ -496,7 +499,7 @@ body:not(.is-home) .md-header {
     margin-right: 0.25rem !important;
   }
 
-  .md-header__title {
+  .md-header__title { font-size: 0.9rem !important;
     order: -10 !important;
   }
 
@@ -710,77 +713,72 @@ body:not(.is-home) .md-header {
   z-index: 1200 !important;
 }
 
-
-
-/* --- MOBILE DRAWER HEADER REPAIR --- */
-
-/* The container that holds logo and title in mobile drawer */
+/* --- SURGICAL REPAIR FOR DRAWER HEADER --- */
 .md-nav--primary > .md-nav__title {
   display: flex !important;
+  flex-direction: row !important;
   align-items: center !important;
   justify-content: flex-start !important;
   padding: 1.5rem 1rem !important;
+  gap: 12px !important;
   background-color: #0d1117 !important;
-  color: #ffffff !important;
-  font-weight: 800 !important;
-  font-size: 1.1rem !important;
-  gap: 1rem !important; /* Proper separation between logo and text */
-  white-space: nowrap !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
   height: auto !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
-/* The Logo Link inside the drawer title */
 .md-nav--primary > .md-nav__title .md-logo {
-  display: block !important;
-  margin: 0 !important;
-  padding: 0 !important;
+  display: flex !important;
   width: 2.5rem !important;
   height: 2.5rem !important;
-  flex: 0 0 2.5rem !important; /* Don't shrink the logo */
+  margin: 0 !important;
+  flex: 0 0 2.5rem !important;
 }
 
-/* The Image inside that logo link */
 .md-nav--primary > .md-nav__title .md-logo img {
   width: 100% !important;
   height: 100% !important;
   object-fit: contain !important;
 }
 
-/* Hide any duplicate text labels if MkDocs is injecting them twice */
-.md-nav--primary > .md-nav__title a.md-nav__link {
+/* Fix text wrapping and size in drawer title */
+.md-nav--primary > .md-nav__title .md-nav__link {
+  padding: 0 !important;
+  font-size: 0.95rem !important;
+  font-weight: 800 !important;
+  white-space: nowrap !important;
+  color: #fff !important;
+}
+
+/* Ensure no double labels */
+.md-nav--primary > .md-nav__title label[for="__drawer"] {
   display: none !important;
 }
 
-/* Ensure the text node (Site Name) is properly spaced if it's not in a span */
-/* We rely on the 'gap' property of the flex container above */
-
-/* --- DRAWER NAVIGATION ITEMS --- */
-
-.md-nav__item .md-nav__link {
-  padding: 12px 20px !important;
-  font-size: 0.9rem !important;
-  color: var(--md-typeset-color) !important;
-}
-
-/* Sub-menu title with Back Button */
+/* Sub-menu title (Back button) */
 .md-nav__title:not(.md-nav--primary > .md-nav__title) {
   display: flex !important;
   align-items: center !important;
   padding: 1.25rem 1rem !important;
-  background-color: rgba(255, 255, 255, 0.02) !important;
-  font-size: 0.95rem !important;
+  background-color: rgba(255, 255, 255, 0.03) !important;
+  font-size: 0.9rem !important;
+  color: var(--md-typeset-color) !important;
 }
 
-/* The Back Arrow Icon */
 .md-nav__title .md-nav__icon {
-  margin-right: 0.75rem !important;
+  margin-right: 12px !important;
   color: #00f2ff !important;
-  width: 1.25rem !important;
-  height: 1.25rem !important;
 }
 
-/* Fix for Repo link visibility on mobile */
-.md-header__source {
-  display: none !important; /* Usually too crowded on mobile header */
+/* General Link Padding for readability */
+.md-nav__link {
+  padding: 12px 16px !important;
+  font-size: 0.9rem !important;
+}
+
+/* Fix indentation for flattened nav */
+.md-nav__item {
+  padding: 0 !important;
 }
