@@ -52,4 +52,3 @@ Transform Galyarder Framework from a collection of static files into a **Self-Ma
 
 ---
 **Mandat**: Sesuai perintah Founder ("Sikatlah gaskeun"), operasi ini resmi dimulai.
-© 2026 Galyarder Labs. Galyarder Framework.

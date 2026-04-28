@@ -91,4 +91,3 @@ npx skills add galyarderlabs/galyarder-framework --skill engineering
 ```
 
 ---
-© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.

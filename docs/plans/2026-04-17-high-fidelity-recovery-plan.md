@@ -85,4 +85,3 @@ Perform a final "Absolute Zero" audit of the repository.
 - [ ] "Galyarder Framework" and "Galyarder Labs" naming is 100% correct.
 
 ---
-Copyright 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.

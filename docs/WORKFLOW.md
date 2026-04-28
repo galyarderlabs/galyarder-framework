@@ -104,4 +104,3 @@ Once the code is merged:
 **Core Rule**: Never skip phases (unless explicitly in INCIDENT or EXPERIMENT mode). Every change must trace to a verified request and conclude with a durable report. Information flows up; Vision flows down.
 
 ---
-Copyright 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.

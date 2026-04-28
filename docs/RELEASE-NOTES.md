@@ -318,4 +318,3 @@ rtk npm run test:unit && rtk npm run test:contract && rtk npm run test:e2e
 [View Full Migration Guide](MIGRATION.md)
 
 ---
-© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.

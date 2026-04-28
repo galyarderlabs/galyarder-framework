@@ -78,4 +78,3 @@ The Unified Platform is not a monolithic piece of software, but a **coordinated 
 Together, they provide the asymmetric leverage required for a solo founder to operate with the efficiency of a 100-person organization.
 
 ---
-© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.

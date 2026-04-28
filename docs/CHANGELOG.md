@@ -206,4 +206,3 @@ Architectural guardrails to make execution provable: gated testing ladder, test-
 - Migrated dashboard logic to a separate repository; local hooks must be re-pointed to `@galyarderlabs/galyarder-hq`.
 
 ---
-© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.

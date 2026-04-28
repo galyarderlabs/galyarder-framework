@@ -115,4 +115,3 @@ Ensure `~/.local/bin` is in your PATH. Run `source ~/.zshrc` (or `.bashrc`) afte
 Ensure you have run `galyarder scaffold` inside your project directory. Both Agent and HQ rely on the `docs/departments/` structure.
 
 ---
-© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.

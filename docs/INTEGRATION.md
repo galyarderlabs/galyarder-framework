@@ -77,4 +77,3 @@ galyarder deploy --tool all
 ```
 
 ---
-© 2026 Galyarder Labs. Galyarder Framework.

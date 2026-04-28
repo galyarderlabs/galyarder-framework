@@ -62,4 +62,3 @@ To build a high-scale Digital Company, you need three layers working in perfect 
 **The Galyarder Triad is the ultimate 1-Man Army stack.** You provide the Vision; the Triad provides the Execution.
 
 ---
-© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.

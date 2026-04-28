@@ -36,4 +36,3 @@ Gemini CLI provides native support for the Galyarder workforce commands:
 - `/review`: Invoke the principal-level code reviewer.
 
 ---
-© 2026 Galyarder Labs. Galyarder Framework.

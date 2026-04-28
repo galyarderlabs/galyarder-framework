@@ -66,4 +66,3 @@ Memory preservation and visual logic mapping.
 **Protocol Enforcement**: Every agent listed above is hardcoded with the mandatory 1-Man Army Protocols including SequentialThinking, Context7, and the Iron Law of TDD.
 
 ---
-© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.

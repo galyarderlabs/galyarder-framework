@@ -46,4 +46,3 @@ Claude Code supports instant mission triggers via slash commands:
 | `/review` | Engineering | Principal-level code quality and security review. |
 
 ---
-© 2026 Galyarder Labs. Galyarder Framework.

@@ -91,5 +91,3 @@ Every agent and skill within the framework enforces rigid adherence to the Karpa
 
 </div>
 
----
-© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.
