@@ -217,7 +217,7 @@ hr {
 
 /* Sidebar Cleanup */
 .md-sidebar--primary .md-nav__title {
-  display: none;
+  display: none !important;
 }
 
 /* --- PAPERCLIP HERO COMPONENT --- */
@@ -713,6 +713,7 @@ body:not(.is-home) .md-header {
   z-index: 1200 !important;
 }
 
+@media screen and (max-width: 76.24em) {
 /* --- SURGICAL REPAIR FOR DRAWER HEADER --- */
 .md-nav--primary > .md-nav__title {
   display: flex !important;
@@ -772,4 +773,5 @@ body:not(.is-home) .md-header {
 /* Fix indentation for flattened nav */
 .md-nav__item {
   padding: 0 !important;
+}
 }
