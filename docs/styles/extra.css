@@ -710,103 +710,92 @@ body:not(.is-home) .md-header {
   z-index: 1200 !important;
 }
 
-/* --- MOBILE DRAWER & NAVIGATION FIX --- */
 
-/* Ensure the back button and section titles are visible in the mobile drawer */
-.md-nav__title {
-  display: flex !important;
-  padding: 0.75rem 1rem !important;
-  font-weight: 700;
-  color: var(--md-typeset-color);
-  background-color: rgba(128, 128, 128, 0.05);
-  border-bottom: 1px solid rgba(128, 128, 128, 0.05);
-}
+/* --- DEFINITIVE MOBILE DRAWER FIX --- */
 
-/* Fix navbar title overlap on medium screens */
-@media screen and (min-width: 60em) and (max-width: 85em) {
-  .md-header__title {
-    max-width: 150px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-
-/* Ensure hamburger icon is properly aligned and visible */
-.md-header__button[for="__drawer"] {
-  display: flex !important;
-  order: -1 !important;
-}
-
-/* Hide navigation and TOC only on the actual home template */
-[data-md-color-scheme] .md-content > .md-content__inner {
-  margin-top: 0;
-}
-
-/* --- MOBILE DRAWER REFINEMENT --- */
-
-/* Drawer Header (Logo + Site Name) */
+/* 1. Primary Drawer Header (Logo + Title) */
 .md-nav--primary > .md-nav__title {
-  padding: 1.5rem 1rem !important; /* Give it air */
-  background-color: #000 !important; /* Maintain dark theme */
-  color: #fff !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  padding: 1.5rem 1.25rem !important;
+  background-color: #0d1117 !important; /* Matches slate dark theme precisely */
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  font-size: 1.1rem !important;
+  gap: 0.75rem !important;
+  line-height: 1.2 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Ensure the logo inside the drawer header doesn't shrink and has proper size */
+.md-nav--primary > .md-nav__title .md-logo {
   display: flex !important;
   align-items: center !important;
-  gap: 1rem !important;
-  font-size: 1.2rem !important;
+  margin: 0 !important;
 }
 
 .md-nav--primary > .md-nav__title .md-logo img {
-  height: 2.5rem !important;
+  height: 2.25rem !important;
   width: auto !important;
+  display: block !important;
 }
 
-/* Sub-menu Titles (Back Button Section) */
+/* 2. Sub-menu Navigation Titles (with Back Button) */
 .md-nav__title {
-  padding: 1.25rem 1rem !important; /* Increase vertical spacing */
-  font-size: 0.9rem !important;
-  letter-spacing: 0.02em;
+  display: flex !important;
+  align-items: center !important;
+  padding: 1rem 1.25rem !important;
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  background-color: rgba(255, 255, 255, 0.02) !important;
 }
 
-/* Back Button spacing */
+/* The Back Button Icon */
 .md-nav__title .md-nav__icon {
   margin-right: 0.75rem !important;
-  width: 1.5rem !important;
-  height: 1.5rem !important;
-}
-
-/* Ensure sub-menu items don't stick to the header */
-.md-nav__list {
-  padding-top: 0.5rem !important;
-}
-
-/* Fix collision of Logo and Text in the drawer */
-.md-nav__title .md-logo {
-  margin-bottom: 0 !important;
+  color: #00f2ff !important; /* Galyarder cyan highlight */
+  width: 1.25rem !important;
+  height: 1.25rem !important;
   display: flex !important;
   align-items: center !important;
 }
 
-/* Search bar on mobile - ensure it doesn't overlap header items */
-@media screen and (max-width: 60em) {
-  .md-header__inner {
-    height: 4rem !important;
-  }
+/* 3. General Drawer Item Spacing */
+.md-nav__link {
+  padding: 0.75rem 1.25rem !important;
+  font-size: 0.9rem !important;
+  transition: background-color 0.2s ease !important;
 }
 
-/* Force breathing room for the very first item in any drawer list */
-.md-nav__list > .md-nav__item:first-child {
-  margin-top: 0.75rem !important;
+.md-nav__item {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.03) !important;
 }
 
-/* Ensure the back button is centered vertically with the title */
-.md-nav__title .md-nav__icon {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+/* Remove redundant labels and fix the drawer structure */
+.md-nav__title .md-logo + br,
+.md-nav__title .md-logo + span {
+  display: none !important; /* Hide potential duplicate labels if any */
 }
 
-/* Drawer title refinement */
-.md-nav--primary > .md-nav__title {
-  min-height: 5rem !important;
+/* Ensure the drawer overlay doesn't have weird transitions */
+.md-overlay {
+  backdrop-filter: blur(4px) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Force specific text size for the site name in the drawer to prevent collision */
+.md-nav--primary > .md-nav__title .md-nav__button.md-logo + .md-nav__link,
+.md-nav--primary > .md-nav__title .md-logo + span,
+.md-nav--primary > .md-nav__title a.md-nav__link {
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  white-space: normal !important; /* Allow wrapping if too long */
+}
+
+/* Ensure the logo has space and doesn't collide */
+.md-nav--primary > .md-nav__title .md-logo {
+  flex: 0 0 auto !important;
+  margin-right: 0.5rem !important;
 }

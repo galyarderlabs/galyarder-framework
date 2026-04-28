@@ -1,5 +1,5 @@
 template: home.html
-title: Galyarder Framework
+title: Welcome
 hide:
   - navigation
   - toc
@@ -7,15 +7,15 @@ hide:
 <div class="gagent-grid">
   <a class="gagent-card" href="ORG_CHART/">
     <strong>Structure</strong>
-    <span>Clinical organizational hierarchy modeled after Humans 3.0 protocol for deterministic mission execution.</span>
+    <span>Clinical organizational hierarchy modeled after Humans 3.0 protocol.</span>
   </a>
   <a class="gagent-card" href="WORKFLOW/">
     <strong>Workflow</strong>
-    <span>Rigid 5-phase engineering lifecycle (Discovery, Architecture, Execution, Compliance, Distribution).</span>
+    <span>Rigid 5-phase engineering lifecycle (Discovery, Architecture, Execution).</span>
   </a>
   <a class="gagent-card" href="agents/">
     <strong>Workforce</strong>
-    <span>40+ specialized agents and 130+ elite-level SOPs required to execute complex high-scale missions.</span>
+    <span>40+ specialized agents and 130+ elite-level SOPs.</span>
   </a>
 </div>
 
@@ -49,26 +49,3 @@ Galyarder Framework provides the specialized logic engines and SOPs designed for
 -   **Simplicity First**
 -   **Surgical Changes**
 -   **Goal-Driven Execution**
-
-
-## 4. Departments & Workforce
-
-<div class="grid cards" markdown>
-
--   :material-account-tie: **Executive**
-    Strategic oversight and master orchestration.
-    [Enter Department](agents/index.md)
-
--   :material-hammer-wrench: **Engineering**
-    Deterministic implementation and TDD factory.
-    [Enter Department](skills/index.md)
-
--   :material-trending-up: **Growth**
-    Behavioral arbitrage and design systems.
-    [Enter Department](design/index.md)
-
--   :material-shield-lock: **Security**
-    Professional auditing and offensive security.
-    [Enter Department](skills/index.md)
-
-</div>
