@@ -30,7 +30,6 @@ at any time, with or without notice. We shall not be liable to you or any third
 party for any modification, suspension, or discontinuation of the Service.
 ```
 
----
 
 ## AI/ML/Automated Output Disclaimers
 
@@ -73,7 +72,6 @@ You acknowledge that AI technology has inherent limitations and agree not to rel
 solely on AI outputs for decisions with significant consequences.
 ```
 
----
 
 ## Financial & Business Impact
 
@@ -104,7 +102,6 @@ capacity. Any financial information provided is for informational purposes only.
 should consult qualified financial professionals before making financial decisions.
 ```
 
----
 
 ## User Content & Third-Party Content
 
@@ -146,7 +143,6 @@ services are governed by their own terms and policies. We disclaim all liability
 any loss or damage arising from your use of or reliance on third-party services.
 ```
 
----
 
 ## Data & Security
 
@@ -184,7 +180,6 @@ you as required by applicable law. Our notification shall not be construed as an
 admission of fault or liability.
 ```
 
----
 
 ## Liability Limitations
 
@@ -239,7 +234,6 @@ APPLY TO YOU. IN SUCH JURISDICTIONS, OUR LIABILITY SHALL BE LIMITED TO THE GREAT
 EXTENT PERMITTED BY LAW.
 ```
 
----
 
 ## Indemnification
 
@@ -267,7 +261,6 @@ defense of such claim. You shall not settle any claim without our prior written
 consent.
 ```
 
----
 
 ## Dispute Resolution
 
@@ -311,7 +304,6 @@ limitation applies regardless of whether you knew or should have known of the fa
 giving rise to the claim.
 ```
 
----
 
 ## Force Majeure
 
@@ -337,7 +329,6 @@ make reasonable efforts to notify you of such circumstances and their expected
 duration.
 ```
 
----
 
 ## Termination
 
@@ -373,7 +364,6 @@ provide a prorated refund of any prepaid fees for the unused portion of the
 subscription period.
 ```
 
----
 
 ## Modification of Terms
 
@@ -396,5 +386,4 @@ material changes include modifications to: pricing, payment terms, dispute resol
 procedures, liability limitations, or data processing practices.
 ```
 
----
  2026 Galyarder Labs. Galyarder Framework.

@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Knowledge
 degree: 2
 source: Knowledge/skills/obsidian-cli/SKILL.md
----
 # Obsidian CLI
 
 ## 🧠 Strategic Intelligence

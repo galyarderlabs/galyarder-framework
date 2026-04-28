@@ -28,7 +28,6 @@ Code published without a license file is NOT open source. Copyright law defaults
 ls LICENSE* COPYING* 2>/dev/null || echo "WARNING: No license file found"
 ```
 
----
 
 ### 2. Ignoring Copyleft Obligations
 
@@ -43,7 +42,6 @@ Combat AI slop through rigid adherence to the four principles of Andrej Karpathy
      1. [Step]  verify: [check]
      2. [Step]  verify: [check]
 
----
 
 ### 3. Stripping Copyright Notices
 
@@ -71,7 +69,6 @@ Removing or failing to preserve copyright notices and license headers.
 // Your modifications below...
 ```
 
----
 
 ### 4. Missing NOTICE File Preservation
 
@@ -91,7 +88,6 @@ Apache-2.0 licensed projects often include NOTICE files that MUST be preserved.
 **Apache-2.0 Section 4(d):**
 > "If the Work includes a 'NOTICE' text file... then any Derivative Works that You distribute must include a readable copy of the attribution notices contained within such NOTICE file"
 
----
 
 ### 5. Static Linking with LGPL
 
@@ -112,7 +108,6 @@ Statically linking LGPL libraries in proprietary software violates LGPL terms.
 - Users must be able to replace the LGPL library
 - Either dynamic link, or provide object files for relinking
 
----
 
 ### 6. Apache-2.0 + GPL-2.0 Conflict
 
@@ -133,7 +128,6 @@ Apache-2.0 and GPL-2.0 are incompatible. You cannot combine them in the same wor
 **Why Incompatible:**
 Apache-2.0's patent retaliation and indemnification clauses are "additional restrictions" under GPL-2.0's terms.
 
----
 
 ### 7. AGPL Network Loophole Surprise
 
@@ -154,7 +148,6 @@ Using AGPL code in a web service triggers copyleft, even without distribution.
 **AGPL Section 13:**
 > "if you modify the Program, your modified version must prominently offer all users interacting with it remotely through a computer network... an opportunity to receive the Corresponding Source"
 
----
 
 ### 8. License File Without Actual Compliance
 
@@ -171,7 +164,6 @@ Including a LICENSE file but not actually following its terms.
 - Follow ALL requirements, not just "include LICENSE"
 - Use compliance checklist for each license type
 
----
 
 ### 9. Dual-License Confusion
 
@@ -194,7 +186,6 @@ Not understanding how to choose or apply dual licenses.
 - Understand the difference between OR/AND
 - Check if "or later" clause applies
 
----
 
 ### 10. Assuming Stack Overflow Code is Free
 
@@ -218,7 +209,6 @@ Code from Stack Overflow has specific license terms that are often ignored.
 - Check compatibility with your license
 - For MIT/BSD projects, CC BY-SA may cause issues
 
----
 
 ## Industry-Specific Issues
 
@@ -246,7 +236,6 @@ Code from Stack Overflow has specific license terms that are often ignored.
 - **Export controls:** Some licenses have geographic restrictions
 - **Government use:** Some licenses have specific government clauses
 
----
 
 ## Compliance Failure Consequences
 
@@ -271,7 +260,6 @@ Code from Stack Overflow has specific license terms that are often ignored.
 - **VMware/Linux:** High-profile GPL dispute
 - **Google/Oracle:** API copyright (not license, but related)
 
----
 
 ## Prevention Best Practices
 
@@ -283,5 +271,4 @@ Code from Stack Overflow has specific license terms that are often ignored.
 6. **Legal review** - Consult counsel for complex situations
 7. **Upstream engagement** - Contribute back to avoid divergence
 
----
  2026 Galyarder Labs. Galyarder Framework.

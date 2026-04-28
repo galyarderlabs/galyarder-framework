@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 2
 source: Engineering/skills/requesting-code-review/SKILL.md
----
 # Requesting Code Review
 
 ## 🧠 Strategic Intelligence

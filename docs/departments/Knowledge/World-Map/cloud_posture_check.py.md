@@ -1,9 +1,7 @@
----
 node_type: logic-engine
 silo: Security
 degree: 0
 source: Security/skills/cloud-security/scripts/cloud_posture_check.py
----
 # cloud_posture_check.py
 
 ## 🧠 Strategic Intelligence

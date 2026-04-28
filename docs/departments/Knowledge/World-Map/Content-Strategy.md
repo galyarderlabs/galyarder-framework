@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Growth
 degree: 3
 source: Growth/skills/content-strategy/SKILL.md
----
 # Content Strategy
 
 ## 🧠 Strategic Intelligence

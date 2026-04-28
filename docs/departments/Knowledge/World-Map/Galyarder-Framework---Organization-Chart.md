@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/ORG_CHART.md
----
 # Galyarder Framework - Organization Chart
 
 ## 🧠 Strategic Intelligence

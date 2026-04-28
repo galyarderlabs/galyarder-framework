@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Legal-Finance
 degree: 2
 source: Legal-Finance/skills/finance-based-pricing-advisor/SKILL.md
----
 # SKILL.md
 
 ## 🧠 Strategic Intelligence

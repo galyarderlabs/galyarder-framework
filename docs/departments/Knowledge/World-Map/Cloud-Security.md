@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Security
 degree: 2
 source: Security/skills/cloud-security/SKILL.md
----
 # Cloud Security
 
 ## 🧠 Strategic Intelligence

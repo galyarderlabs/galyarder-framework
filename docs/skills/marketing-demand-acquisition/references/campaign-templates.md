@@ -2,7 +2,6 @@
 
 Ready-to-use campaign briefs and structures for LinkedIn, Google, and Meta.
 
----
 
 ## Table of Contents
 
@@ -12,7 +11,6 @@ Ready-to-use campaign briefs and structures for LinkedIn, Google, and Meta.
 - [Meta Ads Structure](#meta-ads-structure)
 - [Ad Copy Frameworks](#ad-copy-frameworks)
 
----
 
 ## Campaign Brief Template
 
@@ -44,7 +42,6 @@ Handoff Protocol:
 
 **Validation:** Campaign appears in HubSpot with all assets tagged.
 
----
 
 ## LinkedIn Ads Structure
 
@@ -88,7 +85,6 @@ Account
 
 **Validation:** LinkedIn Insight Tag firing. Matched audiences syncing.
 
----
 
 ## Google Ads Structure
 
@@ -141,7 +137,6 @@ download, tutorial, course, certification, example, template
 
 **Validation:** Conversion tracking firing. Search terms report reviewed weekly.
 
----
 
 ## Meta Ads Structure
 
@@ -176,7 +171,6 @@ Campaign Objective: [Conversions]
 
 **Validation:** Meta Pixel events firing. Conversion values passing correctly.
 
----
 
 ## Ad Copy Frameworks
 
@@ -220,5 +214,4 @@ Campaign Objective: [Conversions]
 
 **Validation:** Ad strength score of "Excellent" before launch.
 
----
  2026 Galyarder Labs. Galyarder Framework.

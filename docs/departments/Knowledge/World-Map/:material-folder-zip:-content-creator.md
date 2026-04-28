@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/content-creator/index.md
----
 # :material-folder-zip: content-creator
 
 ## 🧠 Strategic Intelligence

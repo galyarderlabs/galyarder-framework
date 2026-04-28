@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/UNIFIED_PLATFORM.md
----
 # Galyarder Ecosystem: The Unified Platform
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 91
 source: docs/skills/index.md
----
 # Galyarder Framework: Skills
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/agents/legal-counsel.md
----
 # :material-folder-zip: legal-counsel
 
 ## 🧠 Strategic Intelligence

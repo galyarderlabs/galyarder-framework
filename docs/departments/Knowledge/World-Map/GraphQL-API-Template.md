@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/skills/playwright-pro/templates/api/graphql.md
----
 # GraphQL API Template
 
 ## 🧠 Strategic Intelligence

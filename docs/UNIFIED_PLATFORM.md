@@ -10,7 +10,6 @@ The Galyarder ecosystem is designed as a modular, distributed platform where **I
 3.  **Audit**: Monitor progress, review Obsidian reports, and track Linear tickets from a single web dashboard.
 4.  **Scale**: Run agents across any host (Claude, Gemini, Cursor) while maintaining a central source of truth.
 
----
 
 ## Distributed Architecture
 
@@ -22,7 +21,6 @@ The Galyarder ecosystem is designed as a modular, distributed platform where **I
 [ Project A ]     [ Project B ]     [ Project C ]
   (Digital HQ)      (Digital HQ)      (Digital HQ)
       |                 |                 |
-      -------------------------------------
                         |
             [ GALYARDER FRAMEWORK ]
               (Intelligence Layer)
@@ -32,7 +30,6 @@ The Galyarder ecosystem is designed as a modular, distributed platform where **I
 2.  **Digital HQ**: Every project initialized via `galyarder scaffold` becomes an indexable entity.
 3.  **Galyarder HQ (Web UI)**: Discovers these projects on your local or remote file system and provides the governance interface.
 
----
 
 ## Implementation Protocol
 
@@ -51,7 +48,6 @@ Galyarder HQ is built to "listen" to your file system. It parses your project's 
 - Visualize the mission status via Linear integration.
 - Archive decisions and milestones for long-term memory.
 
----
 
 ## User Experience
 
@@ -66,7 +62,6 @@ Galyarder HQ is built to "listen" to your file system. It parses your project's 
 3. See which agents are active, which tickets are blocked, and read historical reports in a high-fidelity web UI.
 4. Switch between projects (Ledger, SaaS, API) instantly without losing context.
 
----
 
 ## Conclusion
 
@@ -77,4 +72,3 @@ The Unified Platform is not a monolithic piece of software, but a **coordinated 
 
 Together, they provide the asymmetric leverage required for a solo founder to operate with the efficiency of a 100-person organization.
 
----

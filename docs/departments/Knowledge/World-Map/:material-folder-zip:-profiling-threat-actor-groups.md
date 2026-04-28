@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/profiling-threat-actor-groups/index.md
----
 # :material-folder-zip: profiling-threat-actor-groups
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/campaign-analytics/index.md
----
 # :material-folder-zip: campaign-analytics
 
 ## 🧠 Strategic Intelligence

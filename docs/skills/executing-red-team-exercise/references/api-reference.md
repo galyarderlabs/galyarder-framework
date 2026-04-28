@@ -47,5 +47,4 @@ Compares executed vs. detected techniques. Outputs detection rate and missed tec
 - Format: STIX 2.0 bundle with `intrusion-set`, `attack-pattern`, and `relationship` objects
 - Locally cached as `attack_enterprise.json` after first download
 
----
  2026 Galyarder Labs. Galyarder Framework.

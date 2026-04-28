@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 11
 source: docs/skills/marketing-demand-acquisition/index.md
----
 # :material-folder-zip: marketing-demand-acquisition
 
 ## 🧠 Strategic Intelligence

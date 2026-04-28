@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/templates/Galyarder-Framework Founder Office Audit.md
----
 # Galyarder Framework Founder Office Audit
 
 ## 🧠 Strategic Intelligence

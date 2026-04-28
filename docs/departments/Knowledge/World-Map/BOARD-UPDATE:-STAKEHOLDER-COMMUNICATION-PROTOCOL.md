@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Executive
 degree: 2
 source: Executive/skills/board-update/SKILL.md
----
 # BOARD UPDATE: STAKEHOLDER COMMUNICATION PROTOCOL
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/campaign-analytics/references/attribution-models-guide.md
----
 # Attribution Models Guide
 
 ## 🧠 Strategic Intelligence

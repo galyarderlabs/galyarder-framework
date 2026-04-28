@@ -2,7 +2,6 @@
 
 Comprehensive reference for multi-touch attribution modeling in marketing analytics. This guide covers the five standard attribution models, their mathematical foundations, selection criteria, and practical application guidelines.
 
----
 
 ## Overview
 
@@ -10,7 +9,6 @@ Attribution modeling answers the question: **Which marketing touchpoints deserve
 
 No single model is "correct." Each reveals different aspects of channel performance. Best practice is to run multiple models and compare results to build a complete picture.
 
----
 
 ## Model 1: First-Touch Attribution
 
@@ -47,7 +45,6 @@ Credit(channel) = 0               (otherwise)
 
 Marketing teams focused on expanding reach and entering new markets where understanding initial discovery channels is the priority.
 
----
 
 ## Model 2: Last-Touch Attribution
 
@@ -84,7 +81,6 @@ Credit(channel) = 0               (otherwise)
 
 Performance marketing teams running direct-response campaigns where the final interaction is the primary lever.
 
----
 
 ## Model 3: Linear Attribution
 
@@ -120,7 +116,6 @@ Credit(channel) = Revenue / N     (for each of N touchpoints)
 
 Teams running consistent multi-channel campaigns where every touchpoint is intentionally designed to contribute to conversion.
 
----
 
 ## Model 4: Time-Decay Attribution
 
@@ -176,7 +171,6 @@ Credit(channel) = Revenue * (Weight / Sum_of_all_weights)
 
 E-commerce and B2C companies with identifiable sales cycles where recent interactions carry more decision weight.
 
----
 
 ## Model 5: Position-Based Attribution (U-Shaped)
 
@@ -218,7 +212,6 @@ Special cases:
 
 B2B and enterprise marketing teams running coordinated campaigns across the full customer journey from awareness through conversion.
 
----
 
 ## Model Comparison Matrix
 
@@ -231,7 +224,6 @@ B2B and enterprise marketing teams running coordinated campaigns across the full
 | Best sales cycle | Any | Short | Long | Short-Medium | Any |
 | Stakeholder clarity | High | High | High | Medium | Medium |
 
----
 
 ## Practical Guidelines
 
@@ -254,7 +246,6 @@ When models disagree significantly on a channel's value:
 - **Confusing correlation with causation**: Attribution shows correlation between touchpoints and conversion, not definitive causation.
 - **Insufficient data volume**: Models require statistically meaningful journey counts. With fewer than 100 journeys, results are unreliable.
 
----
 
 ## Data Requirements
 
@@ -275,7 +266,6 @@ When models disagree significantly on a channel's value:
 | timestamp | Yes | ISO-format timestamp of the interaction |
 | interaction | Optional | Type of interaction (click, view, open, etc.) |
 
----
 
 ## Further Reading
 
@@ -284,5 +274,4 @@ When models disagree significantly on a channel's value:
 - HubSpot multi-touch revenue attribution methodology
 - Bizible/Marketo B2B attribution best practices
 
----
  2026 Galyarder Labs. Galyarder Framework.

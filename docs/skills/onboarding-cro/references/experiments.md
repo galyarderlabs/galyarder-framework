@@ -38,7 +38,6 @@ Comprehensive list of A/B tests and experiments for user onboarding and activati
 | Starting point | Begin at 20% vs. 0% |
 | Celebration moments | Acknowledge completions |
 
----
 
 ## Guided Experience Experiments
 
@@ -74,7 +73,6 @@ Comprehensive list of A/B tests and experiments for user onboarding and activati
 | Contextual help | Help where users need it |
 | Search vs. guided | Self-service vs. directed |
 
----
 
 ## Personalization Experiments
 
@@ -100,7 +98,6 @@ Comprehensive list of A/B tests and experiments for user onboarding and activati
 | Feature highlighting | Relevant to stated goals |
 | Standard data | Industry-specific metrics |
 
----
 
 ## Quick Wins & Engagement Experiments
 
@@ -136,7 +133,6 @@ Comprehensive list of A/B tests and experiments for user onboarding and activati
 | Self-service resources | Help docs, videos |
 | Community access | Peer support early |
 
----
 
 ## Email & Multi-Channel Experiments
 
@@ -173,7 +169,6 @@ Comprehensive list of A/B tests and experiments for user onboarding and activati
 | Survey timing | When to request feedback |
 | Feedback incentives | Reward for completing |
 
----
 
 ## Re-engagement Experiments
 
@@ -198,7 +193,6 @@ Comprehensive list of A/B tests and experiments for user onboarding and activati
 | Re-onboarding | Fresh start option |
 | Urgency messaging | Trial time remaining |
 
----
 
 ## Technical & UX Experiments
 
@@ -230,7 +224,6 @@ Comprehensive list of A/B tests and experiments for user onboarding and activati
 | Color contrast | Visibility |
 | Font sizing | Readability |
 
----
 
 ## Metrics to Track
 
@@ -247,5 +240,4 @@ For all experiments, measure:
 | Feature adoption | Which features get used |
 | Support requests | Volume during onboarding |
 
----
  2026 Galyarder Labs. Galyarder Framework.

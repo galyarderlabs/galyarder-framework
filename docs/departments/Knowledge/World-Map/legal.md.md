@@ -1,9 +1,7 @@
----
 node_type: governance
 silo: Legal-Finance
 degree: 2
 source: Legal-Finance/commands/legal.md
----
 # legal.md
 
 ## 🧠 Strategic Intelligence

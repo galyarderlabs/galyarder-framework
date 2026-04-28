@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/recovering-from-ransomware-attack/index.md
----
 # :material-folder-zip: recovering-from-ransomware-attack
 
 ## 🧠 Strategic Intelligence

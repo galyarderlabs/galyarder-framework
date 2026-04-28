@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/writing-plans/index.md
----
 # :material-folder-zip: writing-plans
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/skills/playwright-pro/templates/crud/soft-delete.md
----
 # Soft Delete (Archive/Restore) Template
 
 ## 🧠 Strategic Intelligence

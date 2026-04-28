@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/legal-advisor/index.md
----
 # :material-folder-zip: legal-advisor
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 0
 source: Engineering/skills/playwright-pro/reference/golden-rules.md
----
 # Golden Rules
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/legal-tos-privacy/index.md
----
 # :material-folder-zip: legal-tos-privacy
 
 ## 🧠 Strategic Intelligence

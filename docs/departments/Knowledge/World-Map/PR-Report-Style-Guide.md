@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/pr-report/references/style-guide.md
----
 # PR Report Style Guide
 
 ## 🧠 Strategic Intelligence

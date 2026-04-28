@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 0
 source: Engineering/skills/subagent-driven-development/spec-reviewer-prompt.md
----
 # Spec Compliance Reviewer Prompt Template
 
 ## 🧠 Strategic Intelligence

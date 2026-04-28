@@ -53,5 +53,4 @@ mitmproxy2har output.flow > capture.har
 - HAR spec: https://w3c.github.io/web-performance/specs/HAR/Overview.html
 - mitmproxy: https://docs.mitmproxy.org/stable/
 
----
  2026 Galyarder Labs. Galyarder Framework.

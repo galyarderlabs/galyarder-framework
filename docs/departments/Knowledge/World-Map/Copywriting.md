@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Growth
 degree: 2
 source: Growth/skills/copywriting/SKILL.md
----
 # Copywriting
 
 ## 🧠 Strategic Intelligence

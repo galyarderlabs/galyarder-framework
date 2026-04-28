@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 0
 source: Engineering/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md
----
 # bundle-defer-third-party.md
 
 ## 🧠 Strategic Intelligence

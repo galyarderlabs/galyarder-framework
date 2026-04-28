@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/skills/playwright-pro/templates/accessibility/color-contrast.md
----
 # Color Contrast Template
 
 ## 🧠 Strategic Intelligence

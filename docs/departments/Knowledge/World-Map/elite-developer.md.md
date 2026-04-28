@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Engineering
 degree: 2
 source: Engineering/agents/elite-developer.md
----
 # elite-developer.md
 
 ## 🧠 Strategic Intelligence

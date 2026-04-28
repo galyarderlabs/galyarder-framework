@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/write-a-prd/index.md
----
 # :material-folder-zip: write-a-prd
 
 ## 🧠 Strategic Intelligence

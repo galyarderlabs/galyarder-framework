@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/financial-analyst/assets/forecast_report_template.md
----
 # Revenue Forecast Report
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Security
 degree: 2
 source: Security/skills/profiling-threat-actor-groups/SKILL.md
----
 # Profiling Threat Actor Groups
 
 ## 🧠 Strategic Intelligence

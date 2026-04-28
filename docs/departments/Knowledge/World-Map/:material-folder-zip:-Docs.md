@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/commands/docs.md
----
 # :material-folder-zip: Docs
 
 ## 🧠 Strategic Intelligence

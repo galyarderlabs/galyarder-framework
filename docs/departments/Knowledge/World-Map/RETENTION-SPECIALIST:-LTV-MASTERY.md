@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Growth
 degree: 2
 source: Growth/agents/retention-specialist.md
----
 # RETENTION SPECIALIST: LTV MASTERY
 
 ## 🧠 Strategic Intelligence

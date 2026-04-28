@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Security
 degree: 2
 source: Security/skills/intercepting-mobile-traffic-with-burpsuite/SKILL.md
----
 # Intercepting Mobile Traffic with Burp Suite
 
 ## 🧠 Strategic Intelligence

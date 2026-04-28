@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 2
 source: docs/skills/marketing-demand-acquisition/references/attribution-guide.md
----
 # Attribution Guide
 
 ## 🧠 Strategic Intelligence

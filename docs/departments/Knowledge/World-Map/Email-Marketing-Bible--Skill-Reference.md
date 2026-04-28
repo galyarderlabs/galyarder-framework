@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Growth
 degree: 2
 source: Growth/skills/email-marketing-bible/SKILL.md
----
 # Email Marketing Bible  Skill Reference
 
 ## 🧠 Strategic Intelligence

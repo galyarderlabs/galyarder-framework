@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/lead-scoring/index.md
----
 # :material-folder-zip: lead-scoring
 
 ## 🧠 Strategic Intelligence

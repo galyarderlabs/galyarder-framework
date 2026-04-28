@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/plans/2025-05-15-legacy-branding-purge.md
----
 # Legacy Purge: Removing Galyarder Branding
 
 ## 🧠 Strategic Intelligence

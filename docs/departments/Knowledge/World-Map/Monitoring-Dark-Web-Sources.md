@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Security
 degree: 2
 source: Security/skills/monitoring-darkweb-sources/SKILL.md
----
 # Monitoring Dark Web Sources
 
 ## 🧠 Strategic Intelligence

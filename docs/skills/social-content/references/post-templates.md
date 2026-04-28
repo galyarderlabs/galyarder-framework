@@ -71,7 +71,6 @@ Step 3: [Action]
 [CTA or question]
 ```
 
----
 
 ## Twitter/X Thread Templates
 
@@ -114,7 +113,6 @@ Tweet 7: [Your key takeaway]
 "[Related insight + follow CTA]"
 ```
 
----
 
 ## Instagram Templates
 
@@ -135,7 +133,6 @@ Value (5-25 sec): [The actual advice/content]
 CTA (25-30 sec): [Follow, comment, share, link]
 ```
 
----
 
 ## Hook Formulas
 
@@ -170,5 +167,4 @@ The first line determines whether anyone reads the rest.
 - "[Number] people asked me about [topic]. Here's my answer:"
 - "[Authority figure] taught me [lesson]."
 
----
  2026 Galyarder Labs. Galyarder Framework.

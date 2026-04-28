@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 4
 source: docs/skills/json-canvas/index.md
----
 # :material-folder-zip: json-canvas
 
 ## 🧠 Strategic Intelligence

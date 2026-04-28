@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Growth
 degree: 2
 source: Growth/skills/referral-program/SKILL.md
----
 # Referral & Affiliate Programs
 
 ## 🧠 Strategic Intelligence

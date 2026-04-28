@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/create-agent-adapter/index.md
----
 # :material-folder-zip: create-agent-adapter
 
 ## 🧠 Strategic Intelligence

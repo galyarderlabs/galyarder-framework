@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/templates/Galyarder-Framework Product Audit.md
----
 # Galyarder Framework Product Audit
 
 ## 🧠 Strategic Intelligence

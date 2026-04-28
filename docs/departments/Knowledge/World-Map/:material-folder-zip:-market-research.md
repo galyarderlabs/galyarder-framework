@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/market-research/index.md
----
 # :material-folder-zip: market-research
 
 ## 🧠 Strategic Intelligence

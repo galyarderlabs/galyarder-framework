@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/defuddle/index.md
----
 # :material-folder-zip: defuddle
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/copywriting/references/copy-frameworks.md
----
 # Copy Frameworks Reference
 
 ## 🧠 Strategic Intelligence

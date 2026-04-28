@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/programmatic-seo/references/playbooks.md
----
 # The 12 Programmatic SEO Playbooks
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/commands/finops.md
----
 # :material-folder-zip: Finops
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Security
 degree: 2
 source: Security/skills/executing-red-team-engagement-planning/SKILL.md
----
 # Executing Red Team Engagement Planning
 
 ## 🧠 Strategic Intelligence

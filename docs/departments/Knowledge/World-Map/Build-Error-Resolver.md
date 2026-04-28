@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Engineering
 degree: 2
 source: Engineering/agents/build-error-resolver.md
----
 # Build Error Resolver
 
 ## 🧠 Strategic Intelligence

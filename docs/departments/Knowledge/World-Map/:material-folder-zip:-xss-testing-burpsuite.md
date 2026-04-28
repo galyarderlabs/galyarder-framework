@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/testing-for-xss-vulnerabilities-with-burpsuite/index.md
----
 # :material-folder-zip: xss-testing-burpsuite
 
 ## 🧠 Strategic Intelligence

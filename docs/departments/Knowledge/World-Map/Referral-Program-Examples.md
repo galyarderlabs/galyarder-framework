@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/referral-program/references/program-examples.md
----
 # Referral Program Examples
 
 ## 🧠 Strategic Intelligence

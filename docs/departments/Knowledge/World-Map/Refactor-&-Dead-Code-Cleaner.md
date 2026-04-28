@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Engineering
 degree: 2
 source: Engineering/agents/refactor-cleaner.md
----
 # Refactor & Dead Code Cleaner
 
 ## 🧠 Strategic Intelligence

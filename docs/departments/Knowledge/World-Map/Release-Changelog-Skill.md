@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Infrastructure
 degree: 2
 source: Infrastructure/skills/release-changelog/SKILL.md
----
 # Release Changelog Skill
 
 ## 🧠 Strategic Intelligence

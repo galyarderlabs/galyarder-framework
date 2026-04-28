@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/open-source-license/references/compliance/compatibility.md
----
 # License Compatibility Guide
 
 ## 🧠 Strategic Intelligence

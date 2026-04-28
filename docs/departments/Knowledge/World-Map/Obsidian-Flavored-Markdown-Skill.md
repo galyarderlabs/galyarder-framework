@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Knowledge
 degree: 8
 source: Knowledge/skills/obsidian-markdown/SKILL.md
----
 # Obsidian Flavored Markdown Skill
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/accelerator-application/index.md
----
 # :material-folder-zip: accelerator-application
 
 ## 🧠 Strategic Intelligence

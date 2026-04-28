@@ -6,7 +6,6 @@ Tests CSV and PDF export, download triggering, and file verification.
 - Authenticated session via `{{authStorageStatePath}}`
 - Dashboard or report page at `{{baseUrl}}/{{reportPath}}`
 
----
 
 ## TypeScript
 
@@ -91,7 +90,6 @@ test.describe('Export', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -145,5 +143,4 @@ test.describe('Export', () => {
 | Server error | Export failure  error alert |
 | Empty dataset | No-data warning shown |
 
----
  2026 Galyarder Labs. Galyarder Framework.

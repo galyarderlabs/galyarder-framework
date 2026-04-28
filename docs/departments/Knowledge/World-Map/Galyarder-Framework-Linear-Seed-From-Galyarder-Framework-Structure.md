@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/templates/Galyarder-Department-Reports/Galyarder Linear Seed From Galyarder Structure.md
----
 # Galyarder Framework Linear Seed From Galyarder Framework Structure
 
 ## 🧠 Strategic Intelligence

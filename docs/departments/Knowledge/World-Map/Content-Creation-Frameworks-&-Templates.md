@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/skills/content-creator/references/content_frameworks.md
----
 # Content Creation Frameworks & Templates
 
 ## 🧠 Strategic Intelligence

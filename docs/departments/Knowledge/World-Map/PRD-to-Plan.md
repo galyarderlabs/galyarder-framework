@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Product
 degree: 2
 source: Product/skills/prd-to-plan/SKILL.md
----
 # PRD to Plan
 
 ## 🧠 Strategic Intelligence

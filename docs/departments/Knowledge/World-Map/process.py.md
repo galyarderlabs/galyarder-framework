@@ -1,9 +1,7 @@
----
 node_type: logic-engine
 silo: Security
 degree: 0
 source: Security/skills/recovering-from-ransomware-attack/scripts/process.py
----
 # process.py
 
 ## 🧠 Strategic Intelligence

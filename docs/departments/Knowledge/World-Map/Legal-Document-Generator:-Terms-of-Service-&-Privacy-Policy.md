@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Legal-Finance
 degree: 2
 source: Legal-Finance/skills/legal-tos-privacy/SKILL.md
----
 # Legal Document Generator: Terms of Service & Privacy Policy
 
 ## 🧠 Strategic Intelligence

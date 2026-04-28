@@ -22,7 +22,6 @@ Beyond mixing and matching data point permutations, these are the proven playboo
 
 **URL structure**: `/templates/[type]/` or `/templates/[category]/[type]/`
 
----
 
 ## 2. Curation
 
@@ -44,7 +43,6 @@ Beyond mixing and matching data point permutations, these are the proven playboo
 
 **URL structure**: `/best/[category]/` or `/[category]/best/`
 
----
 
 ## 3. Conversions
 
@@ -66,7 +64,6 @@ Beyond mixing and matching data point permutations, these are the proven playboo
 
 **URL structure**: `/convert/[from]-to-[to]/` or `/[from]-to-[to]-converter/`
 
----
 
 ## 4. Comparisons
 
@@ -90,7 +87,6 @@ Beyond mixing and matching data point permutations, these are the proven playboo
 
 *See also: competitor-alternatives skill for detailed frameworks*
 
----
 
 ## 5. Examples
 
@@ -112,7 +108,6 @@ Beyond mixing and matching data point permutations, these are the proven playboo
 
 **URL structure**: `/examples/[type]/` or `/[type]-examples/`
 
----
 
 ## 6. Locations
 
@@ -134,7 +129,6 @@ Beyond mixing and matching data point permutations, these are the proven playboo
 
 **URL structure**: `/[service]/[city]/` or `/locations/[city]/[service]/`
 
----
 
 ## 7. Personas
 
@@ -156,7 +150,6 @@ Beyond mixing and matching data point permutations, these are the proven playboo
 
 **URL structure**: `/for/[persona]/` or `/solutions/[industry]/`
 
----
 
 ## 8. Integrations
 
@@ -178,7 +171,6 @@ Beyond mixing and matching data point permutations, these are the proven playboo
 
 **URL structure**: `/integrations/[product]/` or `/connect/[product]/`
 
----
 
 ## 9. Glossary
 
@@ -200,7 +192,6 @@ Beyond mixing and matching data point permutations, these are the proven playboo
 
 **URL structure**: `/glossary/[term]/` or `/learn/[term]/`
 
----
 
 ## 10. Translations
 
@@ -222,7 +213,6 @@ Beyond mixing and matching data point permutations, these are the proven playboo
 
 **URL structure**: `/[lang]/[page]/` or `yoursite.com/es/`, `/de/`, etc.
 
----
 
 ## 11. Directory
 
@@ -244,7 +234,6 @@ Beyond mixing and matching data point permutations, these are the proven playboo
 
 **URL structure**: `/directory/[category]/` or `/[category]-directory/`
 
----
 
 ## 12. Profiles
 
@@ -266,7 +255,6 @@ Beyond mixing and matching data point permutations, these are the proven playboo
 
 **URL structure**: `/people/[name]/` or `/companies/[name]/`
 
----
 
 ## Choosing Your Playbook
 
@@ -292,5 +280,4 @@ You can layer multiple playbooks:
 - **Integrations + Personas**: "Slack for sales teams"
 - **Glossary + Translations**: Multi-language educational content
 
----
  2026 Galyarder Labs. Galyarder Framework.

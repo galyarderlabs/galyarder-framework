@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/financial-analyst/index.md
----
 # :material-folder-zip: financial-analyst
 
 ## 🧠 Strategic Intelligence

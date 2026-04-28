@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Knowledge
 degree: 2
 source: Knowledge/skills/doc-maintenance/SKILL.md
----
 # Doc Maintenance Skill
 
 ## 🧠 Strategic Intelligence

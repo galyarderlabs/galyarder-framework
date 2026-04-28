@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/templates/Galyarder-Framework Legal-Finance Audit.md
----
 # Galyarder Framework Legal-Finance Audit
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Executive
 degree: 2
 source: Executive/skills/writing-skills/SKILL.md
----
 # Writing Skills
 
 ## 🧠 Strategic Intelligence

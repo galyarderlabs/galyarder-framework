@@ -76,4 +76,3 @@ To maintain parity across all 14 platforms, use the Galyarder conversion engine:
 galyarder deploy --tool all
 ```
 
----

@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Growth
 degree: 2
 source: Growth/agents/remotion-engineer.md
----
 # THE REMOTION ENGINEER: VIDEO PRODUCT LEAD
 
 ## 🧠 Strategic Intelligence

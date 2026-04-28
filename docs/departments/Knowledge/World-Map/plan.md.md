@@ -1,9 +1,7 @@
----
 node_type: governance
 silo: Product
 degree: 2
 source: Product/commands/plan.md
----
 # plan.md
 
 ## 🧠 Strategic Intelligence

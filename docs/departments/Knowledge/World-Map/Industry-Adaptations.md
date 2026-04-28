@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/financial-analyst/references/industry-adaptations.md
----
 # Industry Adaptations
 
 ## 🧠 Strategic Intelligence

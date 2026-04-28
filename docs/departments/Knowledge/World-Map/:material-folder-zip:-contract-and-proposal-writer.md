@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/contract-and-proposal-writer/index.md
----
 # :material-folder-zip: contract-and-proposal-writer
 
 ## 🧠 Strategic Intelligence

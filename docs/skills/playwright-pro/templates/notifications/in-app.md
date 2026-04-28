@@ -7,7 +7,6 @@ Tests notification badge count, dropdown, and mark-as-read behaviour.
 - At least `{{unreadCount}}` unread notifications seeded
 - App running at `{{baseUrl}}`
 
----
 
 ## TypeScript
 
@@ -82,7 +81,6 @@ test.describe('In-App Notifications', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -124,5 +122,4 @@ test.describe('In-App Notifications', () => {
 | Empty state | No-notifications message |
 | Outside click | Dropdown closes |
 
----
  2026 Galyarder Labs. Galyarder Framework.

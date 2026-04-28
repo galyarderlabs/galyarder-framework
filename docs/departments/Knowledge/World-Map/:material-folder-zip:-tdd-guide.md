@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/agents/tdd-guide.md
----
 # :material-folder-zip: tdd-guide
 
 ## 🧠 Strategic Intelligence

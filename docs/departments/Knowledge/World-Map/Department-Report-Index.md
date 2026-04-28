@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 7
 source: docs/templates/Galyarder-Department-Reports/Department Report Index.md
----
 # Department Report Index
 
 ## 🧠 Strategic Intelligence

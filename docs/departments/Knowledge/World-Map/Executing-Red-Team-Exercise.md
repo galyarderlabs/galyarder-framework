@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Security
 degree: 2
 source: Security/skills/executing-red-team-exercise/SKILL.md
----
 # Executing Red Team Exercise
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 2
 source: Engineering/skills/verification-before-completion/SKILL.md
----
 # Verification Before Completion
 
 ## 🧠 Strategic Intelligence

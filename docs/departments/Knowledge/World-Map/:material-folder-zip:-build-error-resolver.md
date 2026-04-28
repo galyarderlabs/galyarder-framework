@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/agents/build-error-resolver.md
----
 # :material-folder-zip: build-error-resolver
 
 ## 🧠 Strategic Intelligence

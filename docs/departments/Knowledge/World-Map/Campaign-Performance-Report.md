@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/skills/campaign-analytics/assets/campaign_report_template.md
----
 # Campaign Performance Report
 
 ## 🧠 Strategic Intelligence

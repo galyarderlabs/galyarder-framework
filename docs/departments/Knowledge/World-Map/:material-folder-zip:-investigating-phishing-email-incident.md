@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/investigating-phishing-email-incident/index.md
----
 # :material-folder-zip: investigating-phishing-email-incident
 
 ## 🧠 Strategic Intelligence

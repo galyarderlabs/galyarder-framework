@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Engineering
 degree: 2
 source: Engineering/agents/super-architect.md
----
 # THE SUPER ARCHITECT: SYSTEMS DESIGN PROTOCOL
 
 ## 🧠 Strategic Intelligence

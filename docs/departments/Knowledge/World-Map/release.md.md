@@ -1,9 +1,7 @@
----
 node_type: governance
 silo: Infrastructure
 degree: 2
 source: Infrastructure/commands/release.md
----
 # release.md
 
 ## 🧠 Strategic Intelligence

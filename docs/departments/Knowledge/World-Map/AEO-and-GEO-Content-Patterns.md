@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/skills/seo-audit/references/aeo-geo-patterns.md
----
 # AEO and GEO Content Patterns
 
 ## 🧠 Strategic Intelligence

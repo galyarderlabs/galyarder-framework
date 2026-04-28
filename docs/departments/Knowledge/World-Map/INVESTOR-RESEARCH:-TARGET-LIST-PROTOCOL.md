@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Executive
 degree: 2
 source: Executive/skills/investor-research/SKILL.md
----
 # INVESTOR RESEARCH: TARGET LIST PROTOCOL
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Growth
 degree: 2
 source: Growth/skills/page-cro/SKILL.md
----
 # Page Conversion Rate Optimization (CRO)
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Legal-Finance
 degree: 2
 source: Legal-Finance/skills/contract-review/SKILL.md
----
 # Contract Review
 
 ## 🧠 Strategic Intelligence

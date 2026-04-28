@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/skills/playwright-pro/templates/dashboard/date-range-filter.md
----
 # Date Range Filter Template
 
 ## 🧠 Strategic Intelligence

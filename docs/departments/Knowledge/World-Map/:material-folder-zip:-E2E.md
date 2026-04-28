@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/commands/e2e.md
----
 # :material-folder-zip: E2E
 
 ## 🧠 Strategic Intelligence

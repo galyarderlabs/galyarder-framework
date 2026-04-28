@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/departments/Product/README.md
----
 # Department: Product
 
 ## 🧠 Strategic Intelligence

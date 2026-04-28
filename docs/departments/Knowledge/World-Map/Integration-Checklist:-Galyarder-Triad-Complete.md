@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/INTEGRATION_COMPLETE.md
----
 # Integration Checklist: Galyarder Triad Complete
 
 ## 🧠 Strategic Intelligence

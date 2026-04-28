@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 0
 source: Engineering/skills/systematic-debugging/test-pressure-1.md
----
 # Pressure Test 1: Emergency Production Fix
 
 ## 🧠 Strategic Intelligence

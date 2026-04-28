@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/ubiquitous-language/index.md
----
 # :material-folder-zip: ubiquitous-language
 
 ## 🧠 Strategic Intelligence

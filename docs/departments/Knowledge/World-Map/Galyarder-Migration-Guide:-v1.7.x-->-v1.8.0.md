@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 2
 source: docs/MIGRATION.md
----
 # Galyarder Migration Guide: v1.7.x -> v1.8.0
 
 ## 🧠 Strategic Intelligence

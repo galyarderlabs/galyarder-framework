@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/templates/Galyarder-Framework Department Map.md
----
 # Galyarder Framework Department Map
 
 ## 🧠 Strategic Intelligence

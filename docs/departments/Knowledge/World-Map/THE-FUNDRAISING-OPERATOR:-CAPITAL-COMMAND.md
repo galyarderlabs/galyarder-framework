@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Executive
 degree: 2
 source: Executive/agents/fundraising-operator.md
----
 # THE FUNDRAISING OPERATOR: CAPITAL COMMAND
 
 ## 🧠 Strategic Intelligence

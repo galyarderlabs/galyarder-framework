@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 21
 source: docs/commands/index.md
----
 # Galyarder Framework: Commands
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Executive
 degree: 2
 source: Executive/skills/lead-scoring/SKILL.md
----
 # LEAD SCORING: PIPELINE FOCUS SYSTEM
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/departments/Security/README.md
----
 # Department: Security
 
 ## 🧠 Strategic Intelligence

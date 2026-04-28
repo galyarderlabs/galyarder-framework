@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/schema-markup/index.md
----
 # :material-folder-zip: schema-markup
 
 ## 🧠 Strategic Intelligence

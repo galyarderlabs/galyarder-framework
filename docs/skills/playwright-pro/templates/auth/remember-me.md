@@ -7,7 +7,6 @@ Tests persistent login cookie behaviour and expiry.
 - `{{sessionCookieName}}` cookie used for auth
 - App running at `{{baseUrl}}`
 
----
 
 ## TypeScript
 
@@ -86,7 +85,6 @@ test.describe('Remember Me', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -126,5 +124,4 @@ test.describe('Remember Me', () => {
 | Expired cookie | Stale cookie  redirect to /login |
 | Checkbox retained | State preserved after failed login attempt |
 
----
  2026 Galyarder Labs. Galyarder Framework.

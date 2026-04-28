@@ -24,7 +24,6 @@ Reference for calculating sample sizes and test duration.
 
 **Statistical power (80%)**: Means if there's a real effect of size MDE, you have 80% chance of detecting it.
 
----
 
 ## Sample Size Quick Reference Tables
 
@@ -78,7 +77,6 @@ Reference for calculating sample sizes and test duration.
 | 50% (20%  30%) | 700 | 1,400 |
 | 100% (20%  40%) | 200 | 400 |
 
----
 
 ## Duration Calculator
 
@@ -123,7 +121,6 @@ Avoid running tests longer than 4-8 weeks:
 - External factors intervene
 - Opportunity cost of other tests
 
----
 
 ## Online Calculators
 
@@ -149,7 +146,6 @@ https://vwo.com/tools/ab-test-duration-calculator/
 - Duration-focused
 - Good for planning
 
----
 
 ## Adjusting for Multiple Variants
 
@@ -169,7 +165,6 @@ With more than 2 variants (A/B/n tests), you need more sample:
 
 Apply Bonferroni correction or use tools that handle this automatically.
 
----
 
 ## Common Sample Size Mistakes
 
@@ -209,7 +204,6 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
      1. [Step]  verify: [check]
      2. [Step]  verify: [check]
 
----
 
 ## When Sample Size Requirements Are Too High
 
@@ -223,7 +217,6 @@ Options when you can't get enough traffic:
 6. **Don't test**: Make decision based on qualitative data instead
 7. **Longer test**: Accept longer duration (weeks/months)
 
----
 
 ## Sequential Testing
 
@@ -247,7 +240,6 @@ Statistical method that adjusts for multiple looks at data.
 - Slightly larger sample size requirement
 - More complex analysis
 
----
 
 ## Quick Decision Framework
 
@@ -267,5 +259,4 @@ If days < 14: Likely feasible
 If days < 7: Easy to run, consider running longer anyway
 ```
 
----
  2026 Galyarder Labs. Galyarder Framework.

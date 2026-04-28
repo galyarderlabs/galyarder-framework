@@ -89,5 +89,4 @@ bloodhound-python -d corp.local -u user -p pass -c all
 | Detection Gaps | What blue team missed |
 | Recommendations | Prioritized remediation |
 
----
  2026 Galyarder Labs. Galyarder Framework.

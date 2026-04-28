@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Growth
 degree: 2
 source: Growth/skills/content-creator/SKILL.md
----
 # Content Creator  Redirected
 
 ## 🧠 Strategic Intelligence

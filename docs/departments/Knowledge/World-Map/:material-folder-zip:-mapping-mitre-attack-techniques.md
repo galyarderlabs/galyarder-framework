@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/mapping-mitre-attack-techniques/index.md
----
 # :material-folder-zip: mapping-mitre-attack-techniques
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Security
 degree: 2
 source: Security/skills/recovering-deleted-files-with-photorec/SKILL.md
----
 # Recovering Deleted Files with PhotoRec
 
 ## 🧠 Strategic Intelligence

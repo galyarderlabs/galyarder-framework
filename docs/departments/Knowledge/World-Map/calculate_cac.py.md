@@ -1,9 +1,7 @@
----
 node_type: logic-engine
 silo: Growth
 degree: 0
 source: Growth/skills/marketing-demand-acquisition/scripts/calculate_cac.py
----
 # calculate_cac.py
 
 ## 🧠 Strategic Intelligence

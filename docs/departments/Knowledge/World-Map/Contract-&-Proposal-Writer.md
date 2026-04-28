@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Legal-Finance
 degree: 2
 source: Legal-Finance/skills/contract-and-proposal-writer/SKILL.md
----
 # Contract & Proposal Writer
 
 ## 🧠 Strategic Intelligence

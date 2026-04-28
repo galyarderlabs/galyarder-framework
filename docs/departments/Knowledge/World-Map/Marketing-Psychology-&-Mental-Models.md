@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Growth
 degree: 2
 source: Growth/skills/marketing-psychology/SKILL.md
----
 # Marketing Psychology & Mental Models
 
 ## 🧠 Strategic Intelligence

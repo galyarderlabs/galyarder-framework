@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/agents/growth-strategist.md
----
 # :material-folder-zip: growth-strategist
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/playwright-pro/index.md
----
 # :material-folder-zip: playwright-pro
 
 ## 🧠 Strategic Intelligence

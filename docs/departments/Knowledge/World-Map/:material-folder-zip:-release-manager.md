@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/agents/release-manager.md
----
 # :material-folder-zip: release-manager
 
 ## 🧠 Strategic Intelligence

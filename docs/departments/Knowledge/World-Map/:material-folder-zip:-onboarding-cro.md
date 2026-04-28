@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/onboarding-cro/index.md
----
 # :material-folder-zip: onboarding-cro
 
 ## 🧠 Strategic Intelligence

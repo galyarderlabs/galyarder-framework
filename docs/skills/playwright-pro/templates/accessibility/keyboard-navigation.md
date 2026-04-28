@@ -6,7 +6,6 @@ Tests tab order, focus visibility, and keyboard shortcuts.
 - App running at `{{baseUrl}}`
 - Page under test: `{{baseUrl}}/{{pagePath}}`
 
----
 
 ## TypeScript
 
@@ -95,7 +94,6 @@ test.describe('Keyboard Navigation', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -148,5 +146,4 @@ test.describe('Keyboard Navigation', () => {
 | Focus after update | Focus not lost on async update |
 | Arrow keys | Tab/listbox/menu arrow navigation |
 
----
  2026 Galyarder Labs. Galyarder Framework.

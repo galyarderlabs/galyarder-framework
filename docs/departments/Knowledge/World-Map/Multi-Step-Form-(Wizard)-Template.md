@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/skills/playwright-pro/templates/forms/multi-step.md
----
 # Multi-Step Form (Wizard) Template
 
 ## 🧠 Strategic Intelligence

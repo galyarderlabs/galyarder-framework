@@ -45,5 +45,4 @@
 - [JARM](https://github.com/salesforce/jarm)
 - [JA3/JA3S](https://github.com/salesforce/ja3)
 
----
  2026 Galyarder Labs. Galyarder Framework.

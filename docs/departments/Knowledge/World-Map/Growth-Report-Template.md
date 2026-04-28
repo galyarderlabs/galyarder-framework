@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/templates/Galyarder-Department-Reports/Growth Report Template.md
----
 # Growth Report Template
 
 ## 🧠 Strategic Intelligence

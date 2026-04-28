@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/revenue-architect/index.md
----
 # :material-folder-zip: revenue-architect
 
 ## 🧠 Strategic Intelligence

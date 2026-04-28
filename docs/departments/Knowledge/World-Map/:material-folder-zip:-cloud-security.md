@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/cloud-security/index.md
----
 # :material-folder-zip: cloud-security
 
 ## 🧠 Strategic Intelligence

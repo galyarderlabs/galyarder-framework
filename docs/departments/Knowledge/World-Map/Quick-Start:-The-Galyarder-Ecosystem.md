@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/QUICK_START.md
----
 # Quick Start: The Galyarder Ecosystem
 
 ## 🧠 Strategic Intelligence

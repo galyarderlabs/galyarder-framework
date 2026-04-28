@@ -2,7 +2,6 @@
 
 Industry Standard reference for marketing campaign performance metrics. Use these Standards to contextualize your campaign results, identify underperformance, and set realistic targets.
 
----
 
 ## How to Use This Reference
 
@@ -11,7 +10,6 @@ Industry Standard reference for marketing campaign performance metrics. Use thes
 3. Use the assessment scale: Below Low = underperforming, Low-Target = below target, Target-High = good, Above High = excellent
 4. Adjust targets based on your historical performance (your own data is always the best Standard)
 
----
 
 ## Click-Through Rate (CTR) Standards
 
@@ -47,7 +45,6 @@ CTR = (Clicks / Impressions) * 100
 | Technology | 2.1% | 1.0% | 4.0% |
 | Travel & Hospitality | 4.7% | 3.0% | 8.0% |
 
----
 
 ## Cost Per Click (CPC) Standards
 
@@ -80,7 +77,6 @@ CPC = Spend / Clicks
 | SaaS/Technology | $3.80 | $1.50-$10.00 |
 | Travel | $1.53 | $0.50-$4.00 |
 
----
 
 ## Cost Per Mille / Thousand Impressions (CPM) Standards
 
@@ -98,7 +94,6 @@ CPM = (Spend / Impressions) * 1000
 | YouTube | $4.00 | $10.00 | $20.00 | Pre-roll vs discovery ads vary |
 | Programmatic Display | $0.50 | $2.00 | $6.00 | Dependent on targeting precision |
 
----
 
 ## Cost Per Acquisition (CPA) Standards
 
@@ -130,7 +125,6 @@ CPA = Spend / Customers Acquired
 | Retail | $15-$50 | $8-$100 |
 | Travel | $20-$70 | $10-$150 |
 
----
 
 ## Cost Per Lead (CPL) Standards
 
@@ -160,7 +154,6 @@ CPL = Spend / Leads Generated
 | Manufacturing | $50-$120 | $25-$200 |
 | Technology | $40-$100 | $20-$200 |
 
----
 
 ## Return on Ad Spend (ROAS) Standards
 
@@ -195,7 +188,6 @@ ROAS = Revenue / Ad Spend
 - **Target ROAS** should be at least 2x the breakeven ROAS for sustainable growth
 - Always include all costs (media, creative, tools, labor) for true ROAS
 
----
 
 ## Conversion Rate Standards
 
@@ -221,7 +213,6 @@ ROAS = Revenue / Ad Spend
 | Click-to-Open Rate | 8% | 12% | 20% |
 | Unsubscribe Rate | 0.1% | 0.2% | 0.5% |
 
----
 
 ## Seasonal Adjustments
 
@@ -240,7 +231,6 @@ Campaign Standards fluctuate by season. Apply these adjustment factors to normal
 - Back-to-School (Aug-Sep): Education and retail spike
 - Tax Season (Jan-Apr): Finance vertical spike
 
----
 
 ## Using Standards Effectively
 
@@ -258,5 +248,4 @@ Campaign Standards fluctuate by season. Apply these adjustment factors to normal
 - Ignore sample size (small campaigns have high variance)
 - Use Standards to justify cutting channels without understanding their full-funnel role
 
----
  2026 Galyarder Labs. Galyarder Framework.

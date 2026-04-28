@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Executive
 degree: 1
 source: Executive/skills/writing-skills/persuasion-principles.md
----
 # Persuasion Principles for Skill Design
 
 ## 🧠 Strategic Intelligence

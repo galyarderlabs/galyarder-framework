@@ -60,10 +60,8 @@ mkdir -p ~/.config/opencode/skills/my-skill
 Create `~/.config/opencode/skills/my-skill/SKILL.md`:
 
 ```markdown
----
 name: my-skill
 description: Use when [condition] - [what it does]
----
 
 # My Skill
 

@@ -7,7 +7,6 @@ Tests selecting multiple items and performing bulk delete/update actions.
 - At least `{{minItemCount}}` entities seeded in list
 - App running at `{{baseUrl}}`
 
----
 
 ## TypeScript
 
@@ -83,7 +82,6 @@ test.describe('Bulk Operations', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -128,5 +126,4 @@ test.describe('Bulk Operations', () => {
 | Confirmation required | Bulk delete shows dialog first |
 | Cross-page select | Select-all-pages option shown on multi-page lists |
 
----
  2026 Galyarder Labs. Galyarder Framework.

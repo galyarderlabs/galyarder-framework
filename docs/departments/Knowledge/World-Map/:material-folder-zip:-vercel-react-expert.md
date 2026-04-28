@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/agents/vercel-react-expert.md
----
 # :material-folder-zip: vercel-react-expert
 
 ## 🧠 Strategic Intelligence

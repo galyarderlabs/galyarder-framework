@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 34
 source: docs/agents/index.md
----
 # Galyarder Framework: Agents
 
 ## 🧠 Strategic Intelligence

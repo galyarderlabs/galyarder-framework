@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/templates/Galyarder-Framework Growth Audit.md
----
 # Galyarder Framework Growth Audit
 
 ## 🧠 Strategic Intelligence

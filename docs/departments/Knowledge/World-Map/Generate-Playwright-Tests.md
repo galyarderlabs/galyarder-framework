@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 2
 source: Engineering/skills/playwright-pro/skills/generate/SKILL.md
----
 # Generate Playwright Tests
 
 ## 🧠 Strategic Intelligence

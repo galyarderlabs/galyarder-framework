@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/copywriting/index.md
----
 # :material-folder-zip: copywriting
 
 ## 🧠 Strategic Intelligence

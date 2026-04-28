@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/agents/chief-of-staff.md
----
 # :material-folder-zip: chief-of-staff
 
 ## 🧠 Strategic Intelligence

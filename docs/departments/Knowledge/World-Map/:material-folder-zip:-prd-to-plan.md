@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/prd-to-plan/index.md
----
 # :material-folder-zip: prd-to-plan
 
 ## 🧠 Strategic Intelligence

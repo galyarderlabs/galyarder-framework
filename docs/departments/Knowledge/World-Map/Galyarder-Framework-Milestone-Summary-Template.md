@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/templates/Galyarder-Framework Milestone Summary Template.md
----
 # Galyarder Framework Milestone Summary Template
 
 ## 🧠 Strategic Intelligence

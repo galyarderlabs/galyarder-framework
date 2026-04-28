@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/skills/social-content/references/reverse-engineering.md
----
 # Reverse Engineering Viral Content
 
 ## 🧠 Strategic Intelligence

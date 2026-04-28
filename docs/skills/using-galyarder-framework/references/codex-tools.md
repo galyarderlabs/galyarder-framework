@@ -119,5 +119,4 @@ the user to use the App's native controls:
 The agent can still run tests, stage files, and output suggested branch
 names, commit messages, and PR descriptions for the user to copy.
 
----
  2026 Galyarder Labs. Galyarder Framework.

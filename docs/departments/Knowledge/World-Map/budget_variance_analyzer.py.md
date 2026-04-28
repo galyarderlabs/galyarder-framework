@@ -1,9 +1,7 @@
----
 node_type: logic-engine
 silo: Legal-Finance
 degree: 0
 source: Legal-Finance/skills/financial-analyst/scripts/budget_variance_analyzer.py
----
 # budget_variance_analyzer.py
 
 ## 🧠 Strategic Intelligence

@@ -8,7 +8,6 @@ Tests single file, multiple files, drag-and-drop, and upload progress.
 - Accepted types: `{{acceptedMimeTypes}}` (e.g. image/jpeg, application/pdf)
 - Max file size: `{{maxFileSizeMb}}` MB
 
----
 
 ## TypeScript
 
@@ -87,7 +86,6 @@ test.describe('File Upload', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -135,5 +133,4 @@ test.describe('File Upload', () => {
 | Wrong type | Mime-type error shown |
 | Progress bar | Progressbar visible during upload |
 
----
  2026 Galyarder Labs. Galyarder Framework.

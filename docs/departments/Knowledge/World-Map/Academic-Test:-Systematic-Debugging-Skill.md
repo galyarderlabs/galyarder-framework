@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 0
 source: Engineering/skills/systematic-debugging/test-academic.md
----
 # Academic Test: Systematic Debugging Skill
 
 ## 🧠 Strategic Intelligence

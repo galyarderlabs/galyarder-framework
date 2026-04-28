@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/agents/obsidian-architect.md
----
 # :material-folder-zip: obsidian-architect
 
 ## 🧠 Strategic Intelligence

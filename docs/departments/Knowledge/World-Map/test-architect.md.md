@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Engineering
 degree: 2
 source: Engineering/skills/playwright-pro/agents/test-architect.md
----
 # test-architect.md
 
 ## 🧠 Strategic Intelligence

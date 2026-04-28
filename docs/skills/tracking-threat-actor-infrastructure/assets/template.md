@@ -46,5 +46,4 @@
 3. Monitor CT logs for new certificates matching tracked domains
 4. Set up passive DNS alerts for domain resolution changes
 
----
  2026 Galyarder Labs. Galyarder Framework.

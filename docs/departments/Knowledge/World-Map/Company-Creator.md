@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Product
 degree: 5
 source: Product/skills/company-creator/SKILL.md
----
 # Company Creator
 
 ## 🧠 Strategic Intelligence

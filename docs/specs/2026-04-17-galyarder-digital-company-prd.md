@@ -66,5 +66,4 @@ A script (`scripts/scaffold-company.sh`) to initialize the directory structure a
 ### 5.3 Karpathy Integration
 All reports must follow the "Think Before Coding" and "Goal-Driven Execution" principles, explicitly stating assumptions and verification steps.
 
----
  2026 Galyarder Labs. Galyarder Framework.

@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Infrastructure
 degree: 2
 source: Infrastructure/agents/release-manager.md
----
 # RELEASE MANAGER: LAUNCH COMMAND
 
 ## 🧠 Strategic Intelligence

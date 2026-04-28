@@ -1,9 +1,7 @@
----
 node_type: logic-engine
 silo: Legal-Finance
 degree: 0
 source: Legal-Finance/skills/financial-analyst/scripts/dcf_valuation.py
----
 # dcf_valuation.py
 
 ## 🧠 Strategic Intelligence

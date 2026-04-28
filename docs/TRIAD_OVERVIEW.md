@@ -2,7 +2,6 @@
 
 To build a high-scale Digital Company, you need three layers working in perfect symmetry: **Intelligence**, **Governance**, and **Presence**.
 
----
 
 ## 1. Galyarder Framework (Intelligence Layer)
 *The Brain and the Workforce.*
@@ -12,7 +11,6 @@ To build a high-scale Digital Company, you need three layers working in perfect 
 - **Function**: It is the logic engine. It defines *how* work is done (TDD, SEO, Security, etc.).
 - **Usage**: Runs inside your AI assistants (Claude, Gemini, Cursor) to give them institutional-grade capabilities.
 
----
 
 ## 2. Galyarder HQ (Governance Layer)
 *The Control Plane and the Office.*
@@ -22,7 +20,6 @@ To build a high-scale Digital Company, you need three layers working in perfect 
 - **Function**: It provides the Web UI to monitor task queues, review Obsidian reports, and govern agent activity across the entire empire.
 - **Usage**: A self-hosted web app that "listens" to your file system and integrates with Linear.
 
----
 
 ## 3. Galyarder Agent (Presence Layer)
 *The Entity and the Runtime.*
@@ -32,7 +29,6 @@ To build a high-scale Digital Company, you need three layers working in perfect 
 - **Function**: It provides persistent long-term memory, stable identity (faces/selfies), and multi-channel communication. It connects to your Google Workspace and handles proactive tasks.
 - **Usage**: A Python-based runtime that you run 24/7 (via systemd) to stay connected to your company.
 
----
 
 ## How They Work Together
 
@@ -61,4 +57,3 @@ To build a high-scale Digital Company, you need three layers working in perfect 
 
 **The Galyarder Triad is the ultimate 1-Man Army stack.** You provide the Vision; the Triad provides the Execution.
 
----

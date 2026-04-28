@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/monitoring-darkweb-sources/index.md
----
 # :material-folder-zip: monitoring-darkweb-sources
 
 ## 🧠 Strategic Intelligence

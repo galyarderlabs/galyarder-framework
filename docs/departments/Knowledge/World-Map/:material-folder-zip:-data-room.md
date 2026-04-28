@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/data-room/index.md
----
 # :material-folder-zip: data-room
 
 ## 🧠 Strategic Intelligence

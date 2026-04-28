@@ -2,7 +2,6 @@
 
 Permissive licenses allow maximum freedom for reuse, including in proprietary software.
 
----
 
 ## MIT License
 
@@ -43,7 +42,6 @@ SOFTWARE.
 - No patent grant (explicit)
 - Commercial use allowed
 
----
 
 ## Apache License 2.0
 
@@ -265,7 +263,6 @@ SOFTWARE.
 - No copyleft
 - Commercial use allowed
 
----
 
 ## BSD 2-Clause License ("Simplified BSD")
 
@@ -310,7 +307,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 - No patent grant
 - Commercial use allowed
 
----
 
 ## BSD 3-Clause License ("New BSD" / "Modified BSD")
 
@@ -358,7 +354,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 - No patent grant
 - Commercial use allowed
 
----
 
 ## ISC License
 
@@ -394,7 +389,6 @@ PERFORMANCE OF THIS SOFTWARE.
 - No patent grant
 - Commercial use allowed
 
----
 
 ## The Unlicense
 
@@ -438,7 +432,6 @@ For more information, please refer to <https://unlicense.org>
 - Maximum permissiveness
 - May have enforceability issues in some jurisdictions
 
----
 
 ## CC0 1.0 Universal (Public Domain Dedication)
 
@@ -487,5 +480,4 @@ purposes, all without asking permission.
 - No attribution required
 - No copyleft
 
----
  2026 Galyarder Labs. Galyarder Framework.

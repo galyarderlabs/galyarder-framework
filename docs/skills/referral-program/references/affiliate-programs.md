@@ -23,7 +23,6 @@ Detailed guidance for building and managing affiliate programs.
 - Works for: Motivating high performers
 - Example: "20% for 1-10 sales, 25% for 11-25, 30% for 26+"
 
----
 
 ## Cookie Duration
 
@@ -37,7 +36,6 @@ How long after click does affiliate get credit?
 | 60-90 days | Long sales cycles, enterprise |
 | Lifetime | Premium affiliate relationships |
 
----
 
 ## Affiliate Recruitment
 
@@ -66,7 +64,6 @@ Would you be open to learning more?
 [Your name]
 ```
 
----
 
 ## Affiliate Enablement
 
@@ -82,7 +79,6 @@ Provide affiliates with:
 - [ ] FAQ and objection handling
 - [ ] Payment terms and schedule
 
----
 
 ## Tools & Platforms
 
@@ -124,7 +120,6 @@ Consider:
 - Customization options
 - Price vs. program scale
 
----
 
 ## Fraud Prevention
 
@@ -155,5 +150,4 @@ Consider:
 - Cap lifetime rewards
 - Pay rewards in product credit (less attractive to fraudsters)
 
----
  2026 Galyarder Labs. Galyarder Framework.

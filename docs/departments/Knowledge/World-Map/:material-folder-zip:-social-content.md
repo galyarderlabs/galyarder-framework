@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/social-content/index.md
----
 # :material-folder-zip: social-content
 
 ## 🧠 Strategic Intelligence

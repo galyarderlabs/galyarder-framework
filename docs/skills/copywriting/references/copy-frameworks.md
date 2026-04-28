@@ -18,7 +18,6 @@ Headline formulas, page section types, and structural templates.
 **[Achieve outcome] in [timeframe]**
 > Get your tax refund in 10 days
 
----
 
 ### Problem-Focused
 
@@ -31,7 +30,6 @@ Headline formulas, page section types, and structural templates.
 **Stop [pain]. Start [pleasure].**
 > Stop chasing invoices. Start getting paid on time.
 
----
 
 ### Audience-Focused
 
@@ -44,7 +42,6 @@ Headline formulas, page section types, and structural templates.
 **You don't have to {skills or resources} to {achieve desirable outcome}**
 > With Ahrefs, you don't have to be an SEO pro to rank higher and get more traffic
 
----
 
 ### Differentiation-Focused
 
@@ -54,7 +51,6 @@ Headline formulas, page section types, and structural templates.
 **The [category] that [key differentiator]**
 > The CRM that updates itself
 
----
 
 ### Proof-Focused
 
@@ -64,7 +60,6 @@ Headline formulas, page section types, and structural templates.
 **{Key benefit of your product}**
 > Sound clear in online meetings
 
----
 
 ### Additional Formulas
 
@@ -92,7 +87,6 @@ Headline formulas, page section types, and structural templates.
 **The {adjective} {category} built for {audience}**
 > The lightweight CRM built for startups
 
----
 
 ## Landing Page Section Types
 
@@ -130,7 +124,6 @@ Headline formulas, page section types, and structural templates.
 - Repeat primary CTA
 - Risk reversal (guarantee, free trial)
 
----
 
 ### Supporting Sections
 
@@ -201,7 +194,6 @@ Headline formulas, page section types, and structural templates.
 - "4.9/5 rating"
 - "$2M saved for customers"
 
----
 
 ## Page Structure Templates
 
@@ -218,7 +210,6 @@ Headline formulas, page section types, and structural templates.
 
 This is a list, not a persuasive narrative.
 
----
 
 ### Varied, Engaging Page (Strong)
 
@@ -238,7 +229,6 @@ This is a list, not a persuasive narrative.
 
 This tells a story and addresses objections.
 
----
 
 ### Compact Landing Page
 
@@ -253,7 +243,6 @@ This tells a story and addresses objections.
 
 Good for ad landing pages where brevity matters.
 
----
 
 ### Enterprise/B2B Landing Page
 
@@ -272,7 +261,6 @@ Good for ad landing pages where brevity matters.
 
 Addresses enterprise buyer concerns.
 
----
 
 ### Product Launch Page
 
@@ -288,7 +276,6 @@ Addresses enterprise buyer concerns.
 
 Good for ProductHunt, launches, or announcements.
 
----
 
 ## Section Writing Tips
 
@@ -337,5 +324,4 @@ Avoid testimonials that just say:
 - "Love it!"
 - "Easy to use!"
 
----
  2026 Galyarder Labs. Galyarder Framework.

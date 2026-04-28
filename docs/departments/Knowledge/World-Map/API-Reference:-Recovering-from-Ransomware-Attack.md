@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/recovering-from-ransomware-attack/references/api-reference.md
----
 # API Reference: Recovering from Ransomware Attack
 
 ## 🧠 Strategic Intelligence

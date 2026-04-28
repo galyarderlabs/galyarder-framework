@@ -7,7 +7,6 @@ Tests editing an entity via form and inline edit interactions.
 - Existing entity ID: `{{entityId}}`, name: `{{originalEntityName}}`
 - App running at `{{baseUrl}}`
 
----
 
 ## TypeScript
 
@@ -83,7 +82,6 @@ test.describe('Update {{entityName}}', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -128,5 +126,4 @@ test.describe('Update {{entityName}}', () => {
 | Conflict | Concurrent edit  conflict error |
 | Escape cancel | Inline edit cancelled, original value restored |
 
----
  2026 Galyarder Labs. Galyarder Framework.

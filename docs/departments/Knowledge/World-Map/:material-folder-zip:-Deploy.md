@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/commands/deploy.md
----
 # :material-folder-zip: Deploy
 
 ## 🧠 Strategic Intelligence

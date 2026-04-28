@@ -2,7 +2,6 @@
 
 Comprehensive framework for establishing and maintaining consistent brand voice across all content.
 
----
 
 ## Table of Contents
 
@@ -18,7 +17,6 @@ Comprehensive framework for establishing and maintaining consistent brand voice 
 - [Inclusivity Guidelines](#10-inclusivity-guidelines)
 - [Quick Reference Checklist](#quick-reference-checklist)
 
----
 
 ## Brand Voice Framework
 
@@ -234,5 +232,4 @@ Before publishing any content, verify:
 - [ ] Accessible to all audiences
 - [ ] Proofread and fact-checked
 
----
  2026 Galyarder Labs. Galyarder Framework.

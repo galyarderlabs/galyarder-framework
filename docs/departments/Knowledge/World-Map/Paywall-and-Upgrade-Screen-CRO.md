@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Growth
 degree: 2
 source: Growth/skills/paywall-upgrade-cro/SKILL.md
----
 # Paywall and Upgrade Screen CRO
 
 ## 🧠 Strategic Intelligence

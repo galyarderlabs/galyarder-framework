@@ -8,7 +8,6 @@
 
 **Tech Stack:** `sed`, `grep`, `rtk` (for token economy).
 
----
 
 ### Task 1: Replace '@galyarder' scope with '@galyarder'
 
@@ -37,7 +36,6 @@ git add .
 git commit -m "refactor: replace @galyarder with @galyarder scope"
 ```
 
----
 
 ### Task 2: Replace lowercase 'galyarder' with 'galyarder' in branding contexts
 
@@ -68,7 +66,6 @@ git add .
 git commit -m "refactor: replace lowercase galyarder branding with galyarder"
 ```
 
----
 
 ### Task 3: Replace 'Galyarder' (Capitalized) with 'Galyarder'
 

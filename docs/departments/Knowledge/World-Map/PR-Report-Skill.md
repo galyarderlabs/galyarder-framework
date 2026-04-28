@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 2
 source: Engineering/skills/pr-report/SKILL.md
----
 # PR Report Skill
 
 ## 🧠 Strategic Intelligence

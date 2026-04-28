@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Product
 degree: 2
 source: Product/skills/executing-plans/SKILL.md
----
 # Executing Plans
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Security
 degree: 2
 source: Security/skills/mapping-mitre-attack-techniques/SKILL.md
----
 # Mapping MITRE ATT&CK Techniques
 
 ## 🧠 Strategic Intelligence

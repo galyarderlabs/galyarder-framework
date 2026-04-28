@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/seo-audit/index.md
----
 # :material-folder-zip: seo-audit
 
 ## 🧠 Strategic Intelligence

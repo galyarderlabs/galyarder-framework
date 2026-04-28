@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/subagent-driven-development/index.md
----
 # :material-folder-zip: subagent-driven-development
 
 ## 🧠 Strategic Intelligence

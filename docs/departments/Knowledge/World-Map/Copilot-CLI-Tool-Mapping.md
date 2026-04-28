@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/using-galyarder-framework/references/copilot-tools.md
----
 # Copilot CLI Tool Mapping
 
 ## 🧠 Strategic Intelligence

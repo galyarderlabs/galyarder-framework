@@ -2,7 +2,6 @@
 
 Copyleft licenses require derivative works to be distributed under the same (or compatible) license terms.
 
----
 
 ## GNU General Public License v3.0 (GPL-3.0)
 
@@ -76,7 +75,6 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ```
 
----
 
 ## GNU General Public License v2.0 (GPL-2.0)
 
@@ -115,7 +113,6 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 ```
 
----
 
 ## GNU Lesser General Public License v3.0 (LGPL-3.0)
 
@@ -139,7 +136,6 @@ The LGPL-3.0 consists of: GPL-3.0 + additional permissions at: https://www.gnu.o
 - Use **LGPL** for libraries you want proprietary software to use
 - Use **GPL** when you want to ensure all derivative works remain open source
 
----
 
 ## GNU Lesser General Public License v2.1 (LGPL-2.1)
 
@@ -156,7 +152,6 @@ Available at: https://www.gnu.org/licenses/lgpl-2.1.txt
 - Slightly different linking provisions
 - More established, widely understood
 
----
 
 ## GNU Affero General Public License v3.0 (AGPL-3.0)
 
@@ -194,7 +189,6 @@ means of facilitating copying of software.
 - When you want to prevent SaaS providers from using your code without contributing back
 - Often used with commercial dual-licensing strategy
 
----
 
 ## Mozilla Public License 2.0 (MPL-2.0)
 
@@ -209,7 +203,6 @@ Mozilla Public License Version 2.0
 ==================================
 
 1. Definitions
---------------
 
 1.1. "Contributor"
     means each individual or legal entity that creates, contributes to
@@ -291,7 +284,6 @@ Mozilla Public License Version 2.0
     ownership of such entity.
 
 2. License Grants and Conditions
---------------------------------
 
 2.1. Grants
 
@@ -328,7 +320,6 @@ License, v. 2.0. If a copy of the MPL was not distributed with this
 file, You can obtain one at https://mozilla.org/MPL/2.0/.
 ```
 
----
 
 ## Eclipse Public License 2.0 (EPL-2.0)
 
@@ -347,5 +338,4 @@ Available at: https://www.eclipse.org/legal/epl-2.0/
 - Commercial use allowed
 - Popular in Java ecosystem
 
----
  2026 Galyarder Labs. Galyarder Framework.

@@ -61,5 +61,4 @@ unencoded = [ch for ch in '<>"\'&/' if ch in resp.text]
 - DOM Invader: https://portswigger.net/burp/documentation/desktop/tools/dom-invader
 - Dalfox (CLI scanner): https://github.com/hahwul/dalfox
 
----
  2026 Galyarder Labs. Galyarder Framework.

@@ -7,7 +7,6 @@ Tests query, mutation, and subscription via Playwright's request API.
 - GraphQL endpoint: `{{graphqlEndpoint}}`
 - WebSocket endpoint for subscriptions: `{{graphqlWsEndpoint}}`
 
----
 
 ## TypeScript
 
@@ -120,7 +119,6 @@ test.describe('GraphQL API', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -173,5 +171,4 @@ test.describe('GraphQL API', () => {
 | Unauthenticated | UNAUTHENTICATED extension code |
 | Subscription | Real-time message via WebSocket |
 
----
  2026 Galyarder Labs. Galyarder Framework.

@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Engineering
 degree: 2
 source: Engineering/agents/e2e-runner.md
----
 # E2E Test Runner
 
 ## 🧠 Strategic Intelligence

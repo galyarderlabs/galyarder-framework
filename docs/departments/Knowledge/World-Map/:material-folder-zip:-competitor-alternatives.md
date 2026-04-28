@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/competitor-alternatives/index.md
----
 # :material-folder-zip: competitor-alternatives
 
 ## 🧠 Strategic Intelligence

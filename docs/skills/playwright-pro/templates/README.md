@@ -122,5 +122,4 @@ Templates are loaded by `/pw:generate` when it detects a matching scenario. You 
 | [screen-reader.md](accessibility/screen-reader.md) | ARIA labels, live regions |
 | [color-contrast.md](accessibility/color-contrast.md) | Contrast ratios |
 
----
  2026 Galyarder Labs. Galyarder Framework.

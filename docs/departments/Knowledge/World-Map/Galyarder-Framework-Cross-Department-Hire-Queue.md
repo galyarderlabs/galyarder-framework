@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/templates/Galyarder-Framework Cross-Department Hire Queue.md
----
 # Galyarder Framework Cross-Department Hire Queue
 
 ## 🧠 Strategic Intelligence

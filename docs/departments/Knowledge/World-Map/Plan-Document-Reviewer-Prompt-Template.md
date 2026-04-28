@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Product
 degree: 0
 source: Product/skills/writing-plans/plan-document-reviewer-prompt.md
----
 # Plan Document Reviewer Prompt Template
 
 ## 🧠 Strategic Intelligence

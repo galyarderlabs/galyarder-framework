@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Security
 degree: 2
 source: Security/skills/generating-threat-intelligence-reports/SKILL.md
----
 # Generating Threat Intelligence Reports
 
 ## 🧠 Strategic Intelligence

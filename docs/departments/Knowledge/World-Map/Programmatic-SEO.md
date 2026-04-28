@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Growth
 degree: 2
 source: Growth/skills/programmatic-seo/SKILL.md
----
 # Programmatic SEO
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/skills/open-source-license/references/selection/decision-tree.md
----
 # Open Source License Decision Tree
 
 ## 🧠 Strategic Intelligence

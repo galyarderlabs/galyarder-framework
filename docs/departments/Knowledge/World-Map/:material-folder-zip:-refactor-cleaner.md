@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/agents/refactor-cleaner.md
----
 # :material-folder-zip: refactor-cleaner
 
 ## 🧠 Strategic Intelligence

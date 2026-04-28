@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/release-changelog/index.md
----
 # :material-folder-zip: release-changelog
 
 ## 🧠 Strategic Intelligence

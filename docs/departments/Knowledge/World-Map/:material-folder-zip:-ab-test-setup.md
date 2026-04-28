@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/ab-test-setup/index.md
----
 # :material-folder-zip: ab-test-setup
 
 ## 🧠 Strategic Intelligence

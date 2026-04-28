@@ -2,7 +2,6 @@
 
 Ready-to-use templates for blog posts, social media, email marketing, video scripts, and content planning.
 
----
 
 ## Table of Contents
 
@@ -15,7 +14,6 @@ Ready-to-use templates for blog posts, social media, email marketing, video scri
 - [Content Repurposing Matrix](#7-content-repurposing-matrix)
 - [Quick-Start Checklists](#quick-start-checklists)
 
----
 
 ## Content Types & Templates
 
@@ -566,5 +564,4 @@ Original: Blog Post (2000 words)
 - [ ] Engaging hook in introduction
 - [ ] Clear conclusion and next steps
 
----
  2026 Galyarder Labs. Galyarder Framework.

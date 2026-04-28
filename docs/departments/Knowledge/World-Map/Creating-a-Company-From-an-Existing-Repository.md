@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/skills/company-creator/references/from-repo-guide.md
----
 # Creating a Company From an Existing Repository
 
 ## 🧠 Strategic Intelligence

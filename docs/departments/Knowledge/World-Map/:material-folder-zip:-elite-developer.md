@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 2
 source: docs/agents/elite-developer.md
----
 # :material-folder-zip: elite-developer
 
 ## 🧠 Strategic Intelligence

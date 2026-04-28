@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/agents/remotion-engineer.md
----
 # :material-folder-zip: remotion-engineer
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/executing-red-team-exercise/index.md
----
 # :material-folder-zip: executing-red-team-exercise
 
 ## 🧠 Strategic Intelligence

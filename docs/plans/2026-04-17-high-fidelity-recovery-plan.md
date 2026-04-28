@@ -5,7 +5,6 @@
 **Protocol:** Karpathy-Grade (Rigorous Thinking, Surgical Changes, Simplicity, Goal-Driven).
 **Hard Constraint:** ZERO emojis in the entire repository. Absolute consistency in "Galyarder Framework" (Product) and "Galyarder Labs" (Company).
 
----
 
 ## Phase 1: Absolute README Reconstruction
 
@@ -20,7 +19,6 @@ Establish the README as the primary, high-integrity gateway to the Galyarder Fra
 - **Action**: Integrate "Technical Integrity: The Karpathy Principles" and "Multi-Platform Conversion Engine" sections.
 - **Verification**  verify: All 12 tools are represented with unique, valid installation/integration steps.
 
----
 
 ## Phase 2: "Humans 2.0" Executive Layer Implementation
 
@@ -46,7 +44,6 @@ Rebuild the C-Suite personas into deterministic, high-expertise agents devoid of
 - **Expertise**: AI Token FinOps, GDPR/SOC2/ISO 42001 compliance, operational resilience.
 - **Protocol**: Zero-waste policy, legal risk mitigation.
 
----
 
 ## Phase 3: Technical Infrastructure & Engine Hardening
 
@@ -60,7 +57,6 @@ Implement the native bash engine for cross-platform portability.
 - **Action**: Rewrite `scripts/convert.sh` and `scripts/install.sh` in Bash to handle `.mdc` (Cursor), native skill bundles, and local rule bundles across supported platforms.
 - **Verification**  verify: `./scripts/install.sh --tool windsurf` generates correct artifacts.
 
----
 
 ## Phase 4: Global Normalization & Quality Audit
 
@@ -74,7 +70,6 @@ Perform a final "Absolute Zero" audit of the repository.
 - **Action**: Execute an absolute non-ASCII character removal script across all file types (.md, .json, .sh).
 - **Verification**  verify: `grep -rP '[^\x00-\x7f]'` returns zero matches.
 
----
 
 ## Success Criteria Checklist
 
@@ -84,4 +79,3 @@ Perform a final "Absolute Zero" audit of the repository.
 - [ ] Zero emojis remain in the entire codebase.
 - [ ] "Galyarder Framework" and "Galyarder Labs" naming is 100% correct.
 
----

@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 2
 source: Engineering/skills/finishing-a-development-branch/SKILL.md
----
 # Finishing a Development Branch
 
 ## 🧠 Strategic Intelligence

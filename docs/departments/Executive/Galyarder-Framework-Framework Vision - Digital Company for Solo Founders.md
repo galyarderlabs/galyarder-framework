@@ -32,5 +32,4 @@ The framework enforces rigid adherence to Karpathy's principles to eliminate AI 
 - **Cognitive Integrity**: Mandatory `sequentialthinking` and `context7` MCP loops.
 - **Durable Memory**: Every task results in a persistent markdown report.
 
----
 Copyright 2026 Galyarder Labs. Galyarder Framework. Executive Office.

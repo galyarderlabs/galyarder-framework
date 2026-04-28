@@ -7,7 +7,6 @@ Tests card form entry, validation, and payment processing.
 - Test card numbers: `{{testCardNumber}}` (success), `{{declinedCardNumber}}` (decline)
 - App running at `{{baseUrl}}`
 
----
 
 ## TypeScript
 
@@ -109,7 +108,6 @@ test.describe('Payment', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -147,5 +145,4 @@ test.describe('Payment', () => {
 | Expired card | Expiry error |
 | 3DS challenge | Modal completed, payment succeeds |
 
----
  2026 Galyarder Labs. Galyarder Framework.

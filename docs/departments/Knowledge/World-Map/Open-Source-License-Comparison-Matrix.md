@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/open-source-license/references/selection/comparison-matrix.md
----
 # Open Source License Comparison Matrix
 
 ## 🧠 Strategic Intelligence

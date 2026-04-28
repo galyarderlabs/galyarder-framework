@@ -58,5 +58,4 @@ End-to-end: image info -> PhotoRec recovery -> catalog -> sort.
 python agent.py /cases/evidence.dd /cases/recovered/ jpg,pdf,doc
 ```
 
----
  2026 Galyarder Labs. Galyarder Framework.

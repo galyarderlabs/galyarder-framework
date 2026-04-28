@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 2
 source: docs/GEMINI.md
----
 # Gemini CLI: Implementation Protocol
 
 ## 🧠 Strategic Intelligence

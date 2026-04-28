@@ -2,7 +2,6 @@
 
 NOTICE files are required for Apache-2.0 licensed projects and recommended for attribution in any project.
 
----
 
 ## What is a NOTICE File?
 
@@ -15,7 +14,6 @@ A NOTICE file contains:
 
 **When Recommended:** Any project using multiple open source components benefits from consolidated attribution.
 
----
 
 ## Basic NOTICE Template
 
@@ -29,7 +27,6 @@ This product includes software developed at
 [ORGANIZATION NAME] ([ORGANIZATION URL]).
 ```
 
----
 
 ## NOTICE with Third-Party Components
 
@@ -44,18 +41,14 @@ This product includes software developed at
 
 This product includes the following third-party components:
 
--------------------------------------------------------------------------
 [COMPONENT NAME] ([VERSION])
--------------------------------------------------------------------------
 Copyright [YEAR] [COMPONENT COPYRIGHT HOLDER]
 Licensed under [LICENSE NAME]
 [COMPONENT URL]
 
 [Include any specific attribution text required by the component]
 
--------------------------------------------------------------------------
 [NEXT COMPONENT NAME] ([VERSION])
--------------------------------------------------------------------------
 Copyright [YEAR] [COMPONENT COPYRIGHT HOLDER]
 Licensed under [LICENSE NAME]
 [COMPONENT URL]
@@ -63,7 +56,6 @@ Licensed under [LICENSE NAME]
 =========================================================================
 ```
 
----
 
 ## Example: Node.js Project NOTICE
 
@@ -78,27 +70,21 @@ Acme Corporation (https://acme.example.com).
 
 Third-Party Components:
 
--------------------------------------------------------------------------
 Express (4.18.2)
--------------------------------------------------------------------------
 Copyright (c) 2009-2014 TJ Holowaychuk <tj@vision-media.ca>
 Copyright (c) 2013-2014 Roman Shtylman <shtylman+expressjs@gmail.com>
 Copyright (c) 2014-2015 Douglas Christopher Wilson <doug@somethingdoug.com>
 Licensed under MIT
 https://expressjs.com/
 
--------------------------------------------------------------------------
 Lodash (4.17.21)
--------------------------------------------------------------------------
 Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
 Based on Underscore.js, copyright Jeremy Ashkenas,
 DocumentCloud and Investigative Reporters & Editors <http://underscorejs.org/>
 Licensed under MIT
 https://lodash.com/
 
--------------------------------------------------------------------------
 Apache Commons Lang (3.12.0)
--------------------------------------------------------------------------
 Apache Commons Lang
 Copyright 2001-2023 The Apache Software Foundation
 
@@ -110,7 +96,6 @@ https://commons.apache.org/proper/commons-lang/
 =========================================================================
 ```
 
----
 
 ## Example: Apache-2.0 Project NOTICE
 
@@ -141,7 +126,6 @@ licensed under the Apache License 2.0.
 =========================================================================
 ```
 
----
 
 ## Aggregating NOTICE Files
 
@@ -169,7 +153,6 @@ find $(python -c "import site; print(site.getsitepackages()[0])") \
   -name "NOTICE*" -type f 2>/dev/null
 ```
 
----
 
 ## THIRD-PARTY-LICENSES File
 
@@ -198,7 +181,6 @@ Package: [next-package]
 ================================================================================
 ```
 
----
 
 ## Attribution in User Interfaces
 
@@ -241,7 +223,6 @@ This application uses the following open source software:
 </ul>
 ```
 
----
 
 ## Generating Attribution Automatically
 
@@ -266,7 +247,6 @@ go-licenses csv ./... > third-party-licenses.csv
 go-licenses save ./... --save_path=./third-party-licenses
 ```
 
----
 
 ## Legal Notice Requirements by License
 
@@ -279,5 +259,4 @@ go-licenses save ./... --save_path=./third-party-licenses
 | LGPL-3.0 | No | Yes (copyright + license) |
 | MPL-2.0 | No | Yes (per file) |
 
----
  2026 Galyarder Labs. Galyarder Framework.

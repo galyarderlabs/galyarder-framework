@@ -47,5 +47,4 @@
 - Certificate Transparency: https://certificate.transparency.dev/
 - JARM: https://github.com/salesforce/jarm
 
----
  2026 Galyarder Labs. Galyarder Framework.

@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/referral-program/references/affiliate-programs.md
----
 # Affiliate Program Design
 
 ## 🧠 Strategic Intelligence

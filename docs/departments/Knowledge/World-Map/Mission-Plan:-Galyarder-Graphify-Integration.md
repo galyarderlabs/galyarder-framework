@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/plans/2026-04-19-galyarder-graphify.md
----
 # Mission Plan: Galyarder Graphify Integration
 
 ## 🧠 Strategic Intelligence

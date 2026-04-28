@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/agents/architect.md
----
 # :material-folder-zip: architect
 
 ## 🧠 Strategic Intelligence

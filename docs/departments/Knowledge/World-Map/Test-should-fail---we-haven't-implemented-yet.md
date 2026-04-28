@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Engineering
 degree: 2
 source: Engineering/agents/tdd-guide.md
----
 # Test should fail - we haven't implemented yet
 
 ## 🧠 Strategic Intelligence

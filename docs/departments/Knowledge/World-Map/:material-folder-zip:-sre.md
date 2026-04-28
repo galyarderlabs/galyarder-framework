@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/agents/sre.md
----
 # :material-folder-zip: sre
 
 ## 🧠 Strategic Intelligence

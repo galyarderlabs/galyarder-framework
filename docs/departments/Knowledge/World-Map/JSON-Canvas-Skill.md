@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Knowledge
 degree: 3
 source: Knowledge/skills/json-canvas/SKILL.md
----
 # JSON Canvas Skill
 
 ## 🧠 Strategic Intelligence

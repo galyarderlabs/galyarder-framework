@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Executive
 degree: 2
 source: Executive/skills/pitch-deck/SKILL.md
----
 # PITCH DECK: FUNDRAISING NARRATIVE COMMAND
 
 ## 🧠 Strategic Intelligence

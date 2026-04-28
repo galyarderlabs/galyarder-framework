@@ -6,7 +6,6 @@ Reference for choosing, modeling, and implementing a headless CMS for marketing 
 
 Use this when selecting a CMS for a new project, designing content models for marketing sites, setting up editorial workflows, or connecting CMS content to programmatic pages.
 
----
 
 ## Headless vs Traditional CMS
 
@@ -38,7 +37,6 @@ A headless CMS separates content management from presentation. Content is stored
 | Content reuse | Native | Manual |
 | Hosting flexibility | Any frontend | Platform-dependent |
 
----
 
 ## Content Modeling for Marketing
 
@@ -73,7 +71,6 @@ Every page-level content type needs:
 - `noIndex`  boolean for excluding from search
 - `structuredData`  optional JSON-LD override
 
----
 
 ## Editorial Workflows
 
@@ -105,7 +102,6 @@ Set up a preview route in your frontend (e.g., `/api/preview`) that authenticate
 
 Exact permission models vary by platform. Sanity uses role-based access. Contentful has space-level roles. Strapi has granular RBAC.
 
----
 
 ## Platform Comparison
 
@@ -151,7 +147,6 @@ Exact permission models vary by platform. Sanity uses role-based access. Content
 - **Builder.io**  Visual editor with headless backend, good for non-technical marketers
 - **Prismic**  Slice-based content modeling, strong Next.js integration
 
----
 
 ## Integration with Marketing Skills
 
@@ -171,7 +166,6 @@ URL structure, navigation hierarchy, and internal linking all depend on how cont
 
 Pull CMS content into email templates for consistent messaging across web and email. Case studies, testimonials, and blog posts can feed email nurture sequences. See **email-sequence** skill.
 
----
 
 ## Implementation Checklist
 
@@ -185,7 +179,6 @@ Pull CMS content into email templates for consistent messaging across web and em
 - [ ] Test content delivery performance (CDN, caching, ISR)
 - [ ] Plan migration strategy if moving from existing CMS
 
----
 
 ## Relevant Integration Guides
 
@@ -193,5 +186,4 @@ Pull CMS content into email templates for consistent messaging across web and em
 - [Contentful](../../../tools/integrations/contentful.md)  Delivery/Management APIs, publishing
 - [Strapi](../../../tools/integrations/strapi.md)  REST CRUD, filters, document API
 
----
  2026 Galyarder Labs. Galyarder Framework.

@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Legal-Finance
 degree: 2
 source: Legal-Finance/agents/legal-counsel.md
----
 # LEGAL COUNSEL: RISK COMMAND
 
 ## 🧠 Strategic Intelligence

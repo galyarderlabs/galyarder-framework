@@ -6,7 +6,6 @@ Tests wizard step navigation, validation per step, and final submission.
 - Form wizard at `{{baseUrl}}/{{wizardPath}}`
 - Steps: Step 1 (personal), Step 2 (details), Step 3 (review)
 
----
 
 ## TypeScript
 
@@ -88,7 +87,6 @@ test.describe('Multi-Step Form', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -136,5 +134,4 @@ test.describe('Multi-Step Form', () => {
 | Locked future step | Step 3 button disabled until step 2 done |
 | Browser back | History navigation preserves data |
 
----
  2026 Galyarder Labs. Galyarder Framework.

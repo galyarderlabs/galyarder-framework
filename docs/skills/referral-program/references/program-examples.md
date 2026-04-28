@@ -12,7 +12,6 @@ Real-world examples of successful referral programs.
 - Both parties benefit equally
 - Gamified with progress tracking
 
----
 
 ## Uber/Lyft
 
@@ -24,7 +23,6 @@ Real-world examples of successful referral programs.
 - Easy to share (code/link)
 - Triggered at natural moments
 
----
 
 ## Morning Brew
 
@@ -40,7 +38,6 @@ Real-world examples of successful referral programs.
 - Low cost relative to subscriber value
 - Built status/identity
 
----
 
 ## Notion
 
@@ -51,7 +48,6 @@ Real-world examples of successful referral programs.
 - Product naturally spreads in teams
 - Credit keeps users engaged
 
----
 
 ## Incentive Types Comparison
 
@@ -64,7 +60,6 @@ Real-world examples of successful referral programs.
 | Swag/gifts | Memorable, shareable | Logistics complexity | Brand-focused companies |
 | Charity donation | Feel-good | Lower personal motivation | Mission-driven brands |
 
----
 
 ## Incentive Sizing Framework
 
@@ -84,7 +79,6 @@ Max Referral Reward = (Customer LTV  Gross Margin) - Target CAC
 - B2B SaaS: $50-500 or 1-3 months free
 - Enterprise: Higher, often custom
 
----
 
 ## Viral Coefficient & Metrics
 
@@ -133,5 +127,4 @@ Program costs = Rewards paid + Tool costs + Management time
 - LTV of referred customers (often higher than average)
 - Payback period for referral rewards
 
----
  2026 Galyarder Labs. Galyarder Framework.

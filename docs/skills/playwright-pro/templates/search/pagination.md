@@ -7,7 +7,6 @@ Tests page navigation, items-per-page selector, and URL state.
 - At least `{{totalItemCount}}` items total
 - App running at `{{baseUrl}}`
 
----
 
 ## TypeScript
 
@@ -76,7 +75,6 @@ test.describe('Pagination', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -122,5 +120,4 @@ test.describe('Pagination', () => {
 | Last page next | Next button disabled |
 | Out-of-range | Graceful fallback |
 
----
  2026 Galyarder Labs. Galyarder Framework.

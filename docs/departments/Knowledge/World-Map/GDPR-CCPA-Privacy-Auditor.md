@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Legal-Finance
 degree: 2
 source: Legal-Finance/skills/gdpr-ccpa-privacy-auditor/SKILL.md
----
 # GDPR/CCPA Privacy Auditor
 
 ## 🧠 Strategic Intelligence

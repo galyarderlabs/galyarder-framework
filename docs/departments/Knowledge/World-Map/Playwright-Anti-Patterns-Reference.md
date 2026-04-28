@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 0
 source: Engineering/skills/playwright-pro/skills/review/anti-patterns.md
----
 # Playwright Anti-Patterns Reference
 
 ## 🧠 Strategic Intelligence

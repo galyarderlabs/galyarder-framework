@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Growth
 degree: 2
 source: Growth/agents/growth-strategist.md
----
 # THE GROWTH STRATEGIST: CMO PROTOCOL
 
 ## 🧠 Strategic Intelligence

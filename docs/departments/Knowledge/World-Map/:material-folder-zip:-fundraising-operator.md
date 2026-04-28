@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/agents/fundraising-operator.md
----
 # :material-folder-zip: fundraising-operator
 
 ## 🧠 Strategic Intelligence

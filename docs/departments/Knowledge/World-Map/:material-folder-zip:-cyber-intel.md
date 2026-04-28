@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/agents/cyber-intel.md
----
 # :material-folder-zip: cyber-intel
 
 ## 🧠 Strategic Intelligence

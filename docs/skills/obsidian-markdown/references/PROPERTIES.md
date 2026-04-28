@@ -3,7 +3,6 @@
 Properties use YAML frontmatter at the start of a note:
 
 ```yaml
----
 title: My Note Title
 date: 2024-01-15
 tags:
@@ -18,7 +17,6 @@ status: in-progress
 rating: 4.5
 completed: false
 due: 2024-02-01T14:30:00
----
 ```
 
 ## Property Types
@@ -53,12 +51,9 @@ Tags can contain: letters (any language), numbers (not first character), undersc
 In frontmatter:
 
 ```yaml
----
 tags:
   - tag1
   - nested/tag2
----
 ```
 
----
  2026 Galyarder Labs. Galyarder Framework.

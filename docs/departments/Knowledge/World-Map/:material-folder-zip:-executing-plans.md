@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/executing-plans/index.md
----
 # :material-folder-zip: executing-plans
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Executive
 degree: 2
 source: Executive/skills/using-galyarder-framework/SKILL.md
----
 # Using Skills
 
 ## 🧠 Strategic Intelligence

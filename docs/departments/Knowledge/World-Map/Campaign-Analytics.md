@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Growth
 degree: 2
 source: Growth/skills/campaign-analytics/SKILL.md
----
 # Campaign Analytics
 
 ## 🧠 Strategic Intelligence

@@ -172,5 +172,4 @@ When subtracting two dates, the result is a **Duration** type (not a number). Du
 |----------|-----------|-------------|
 | `matches()` | `regexp.matches(string): boolean` | Test if matches |
 
----
  2026 Galyarder Labs. Galyarder Framework.

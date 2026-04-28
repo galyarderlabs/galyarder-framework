@@ -1,9 +1,7 @@
----
 node_type: governance
 silo: Knowledge
 degree: 0
 source: Knowledge/commands/graph.md
----
 # Graph Command
 
 ## 🧠 Strategic Intelligence

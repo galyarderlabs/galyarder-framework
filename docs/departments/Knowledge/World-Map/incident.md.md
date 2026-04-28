@@ -1,9 +1,7 @@
----
 node_type: governance
 silo: Engineering
 degree: 2
 source: Engineering/commands/incident.md
----
 # incident.md
 
 ## 🧠 Strategic Intelligence

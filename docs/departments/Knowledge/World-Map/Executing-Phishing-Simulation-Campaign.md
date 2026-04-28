@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Security
 degree: 2
 source: Security/skills/executing-phishing-simulation-campaign/SKILL.md
----
 # Executing Phishing Simulation Campaign
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 2
 source: docs/WORKFLOW.md
----
 # Galyarder Framework: The Humans 3.0 Workflow
 
 ## 🧠 Strategic Intelligence

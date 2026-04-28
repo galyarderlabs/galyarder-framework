@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 0
 source: Engineering/skills/vercel-react-best-practices/rules/js-combine-iterations.md
----
 # js-combine-iterations.md
 
 ## 🧠 Strategic Intelligence

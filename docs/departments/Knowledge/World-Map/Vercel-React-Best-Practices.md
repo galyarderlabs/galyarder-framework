@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 2
 source: Engineering/skills/vercel-react-best-practices/SKILL.md
----
 # Vercel React Best Practices
 
 ## 🧠 Strategic Intelligence

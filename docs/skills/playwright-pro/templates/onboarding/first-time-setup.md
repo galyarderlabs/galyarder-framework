@@ -6,7 +6,6 @@ Tests initial configuration wizard and profile completion after registration.
 - Newly registered session via `{{newUserStorageStatePath}}`
 - App running at `{{baseUrl}}`
 
----
 
 ## TypeScript
 
@@ -87,7 +86,6 @@ test.describe('First-Time Setup', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -129,5 +127,4 @@ test.describe('First-Time Setup', () => {
 | Required field | Empty step blocked with error |
 | Skip on re-login | Setup not triggered again |
 
----
  2026 Galyarder Labs. Galyarder Framework.

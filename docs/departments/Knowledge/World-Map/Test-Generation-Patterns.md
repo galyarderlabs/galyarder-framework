@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 0
 source: Engineering/skills/playwright-pro/skills/generate/patterns.md
----
 # Test Generation Patterns
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/saas-finops-optimization/index.md
----
 # :material-folder-zip: saas-finops-optimization
 
 ## 🧠 Strategic Intelligence

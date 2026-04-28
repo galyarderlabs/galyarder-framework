@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/test-driven-development/index.md
----
 # :material-folder-zip: test-driven-development
 
 ## 🧠 Strategic Intelligence

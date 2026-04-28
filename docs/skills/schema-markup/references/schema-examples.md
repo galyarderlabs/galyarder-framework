@@ -26,7 +26,6 @@ For company/brand homepage or about page.
 }
 ```
 
----
 
 ## WebSite (with SearchAction)
 
@@ -49,7 +48,6 @@ For homepage, enables sitelinks search box.
 }
 ```
 
----
 
 ## Article / BlogPosting
 
@@ -84,7 +82,6 @@ For blog posts and news articles.
 }
 ```
 
----
 
 ## Product
 
@@ -118,7 +115,6 @@ For product pages (e-commerce or SaaS).
 }
 ```
 
----
 
 ## SoftwareApplication
 
@@ -144,7 +140,6 @@ For SaaS product pages and app landing pages.
 }
 ```
 
----
 
 ## FAQPage
 
@@ -175,7 +170,6 @@ For pages with frequently asked questions.
 }
 ```
 
----
 
 ## HowTo
 
@@ -211,7 +205,6 @@ For instructional content and tutorials.
 }
 ```
 
----
 
 ## BreadcrumbList
 
@@ -244,7 +237,6 @@ For any page with breadcrumb navigation.
 }
 ```
 
----
 
 ## LocalBusiness
 
@@ -282,7 +274,6 @@ For local business location pages.
 }
 ```
 
----
 
 ## Event
 
@@ -323,7 +314,6 @@ For event pages, webinars, conferences.
 }
 ```
 
----
 
 ## Multiple Schema Types
 
@@ -356,7 +346,6 @@ Combine multiple schema types using @graph.
 }
 ```
 
----
 
 ## Implementation Example (Next.js)
 
@@ -383,5 +372,4 @@ export default function ProductPage({ product }) {
 }
 ```
 
----
  2026 Galyarder Labs. Galyarder Framework.

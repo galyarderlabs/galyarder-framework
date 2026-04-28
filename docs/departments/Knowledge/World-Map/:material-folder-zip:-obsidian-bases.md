@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 5
 source: docs/skills/obsidian-bases/index.md
----
 # :material-folder-zip: obsidian-bases
 
 ## 🧠 Strategic Intelligence

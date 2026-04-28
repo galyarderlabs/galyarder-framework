@@ -1,9 +1,7 @@
----
 node_type: logic-engine
 silo: Legal-Finance
 degree: 0
 source: Legal-Finance/skills/financial-analyst/scripts/forecast_builder.py
----
 # forecast_builder.py
 
 ## 🧠 Strategic Intelligence

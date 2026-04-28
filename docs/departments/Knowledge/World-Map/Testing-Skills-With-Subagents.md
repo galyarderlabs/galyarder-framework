@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Executive
 degree: 1
 source: Executive/skills/writing-skills/testing-skills-with-subagents.md
----
 # Testing Skills With Subagents
 
 ## 🧠 Strategic Intelligence

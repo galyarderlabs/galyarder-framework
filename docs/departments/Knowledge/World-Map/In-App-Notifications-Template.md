@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/skills/playwright-pro/templates/notifications/in-app.md
----
 # In-App Notifications Template
 
 ## 🧠 Strategic Intelligence

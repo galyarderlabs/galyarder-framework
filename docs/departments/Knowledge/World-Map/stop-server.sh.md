@@ -1,9 +1,7 @@
----
 node_type: logic-engine
 silo: Executive
 degree: 0
 source: Executive/skills/brainstorming/scripts/stop-server.sh
----
 # stop-server.sh
 
 ## 🧠 Strategic Intelligence

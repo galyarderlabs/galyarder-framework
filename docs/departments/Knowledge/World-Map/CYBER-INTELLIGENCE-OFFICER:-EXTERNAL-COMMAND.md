@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Security
 degree: 2
 source: Security/agents/cyber-intel.md
----
 # CYBER-INTELLIGENCE OFFICER: EXTERNAL COMMAND
 
 ## 🧠 Strategic Intelligence

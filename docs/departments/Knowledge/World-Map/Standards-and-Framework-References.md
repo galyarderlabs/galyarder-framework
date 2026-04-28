@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/executing-red-team-engagement-planning/references/standards.md
----
 # Standards and Framework References
 
 ## 🧠 Strategic Intelligence

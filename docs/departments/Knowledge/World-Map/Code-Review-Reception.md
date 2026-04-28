@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 2
 source: Engineering/skills/receiving-code-review/SKILL.md
----
 # Code Review Reception
 
 ## 🧠 Strategic Intelligence

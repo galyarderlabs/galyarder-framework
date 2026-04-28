@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Security
 degree: 2
 source: Security/skills/recovering-from-ransomware-attack/SKILL.md
----
 # Recovering from Ransomware Attack
 
 ## 🧠 Strategic Intelligence

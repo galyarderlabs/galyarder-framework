@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/skills/playwright-pro/templates/checkout/apply-coupon.md
----
 # Apply Coupon Template
 
 ## 🧠 Strategic Intelligence

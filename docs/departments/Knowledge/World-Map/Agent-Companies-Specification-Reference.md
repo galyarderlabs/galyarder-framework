@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/skills/company-creator/references/companies-spec.md
----
 # Agent Companies Specification Reference
 
 ## 🧠 Strategic Intelligence

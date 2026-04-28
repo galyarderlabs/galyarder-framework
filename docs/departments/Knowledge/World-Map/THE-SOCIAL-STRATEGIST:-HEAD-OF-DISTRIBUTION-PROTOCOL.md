@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Growth
 degree: 2
 source: Growth/agents/social-strategist.md
----
 # THE SOCIAL STRATEGIST: HEAD OF DISTRIBUTION PROTOCOL
 
 ## 🧠 Strategic Intelligence

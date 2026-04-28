@@ -4,7 +4,6 @@ Words, phrases, and punctuation patterns commonly associated with AI-generated t
 
 Sources: Grammarly (2025), Microsoft 365 Life Hacks (2025), GPTHuman (2025), Walter Writes (2025), Textero (2025), Plagiarism Today (2025), Rolling Stone (2025), MDPI Blog (2025)
 
----
 
 ## Em Dashes: The Primary AI Tell
 
@@ -33,7 +32,6 @@ Em dashes are longer than hyphens (-) and are used for emphasis, interruptions, 
 - Reserve em dashes for rare, deliberate emphasis only
 - If you find yourself using more than one em dash per page, revise
 
----
 
 ## Overused Verbs
 
@@ -55,7 +53,6 @@ Em dashes are longer than hyphens (-) and are used for emphasis, interruptions, 
 | ascertain | find out, determine, establish |
 | elucidate | explain, clarify, make clear |
 
----
 
 ## Overused Adjectives
 
@@ -76,7 +73,6 @@ Em dashes are longer than hyphens (-) and are used for emphasis, interruptions, 
 | multifaceted | complex, varied, diverse |
 | holistic | complete, whole, comprehensive |
 
----
 
 ## Overused Transitions and Connectors
 
@@ -93,7 +89,6 @@ Em dashes are longer than hyphens (-) and are used for emphasis, interruptions, 
 | in the landscape of | in, within |
 | in today's [anything] | currently, now, today |
 
----
 
 ## Phrases That Signal AI Writing
 
@@ -130,7 +125,6 @@ Em dashes are longer than hyphens (-) and are used for emphasis, interruptions, 
 - "Think of [X] as [elaborate metaphor]..."
 - Starting sentences with "By" followed by a gerund: "By understanding X, you can Y..."
 
----
 
 ## Filler Words and Empty Intensifiers
 
@@ -159,7 +153,6 @@ These words often add nothing to meaning. Remove them or find specific alternati
 - undoubtedly
 - very
 
----
 
 ## Academic-Specific AI Tells
 
@@ -178,7 +171,6 @@ These words often add nothing to meaning. Remove them or find specific alternati
 | in terms of | regarding, for, about |
 | the fact that | that (or rewrite sentence) |
 
----
 
 ## How to Self-Check
 
@@ -189,5 +181,4 @@ These words often add nothing to meaning. Remove them or find specific alternati
 5. Ensure varied sentence lengths (not all similar length)
 6. Verify each intensifier adds genuine meaning
 
----
  2026 Galyarder Labs. Galyarder Framework.

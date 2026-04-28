@@ -7,7 +7,6 @@ Tests email/password login, social login, and remember me functionality.
 - Social provider configured (Google/GitHub)
 - App running at `{{baseUrl}}`
 
----
 
 ## TypeScript
 
@@ -74,7 +73,6 @@ test.describe('Login', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -118,5 +116,4 @@ test.describe('Login', () => {
 | Empty form | Inline validation shown |
 | Locked account | Lockout message after N failures |
 
----
  2026 Galyarder Labs. Galyarder Framework.

@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Product
 degree: 2
 source: Product/agents/product-manager.md
----
 # THE PRODUCT MANAGER: HEAD OF PRODUCT PROTOCOL
 
 ## 🧠 Strategic Intelligence

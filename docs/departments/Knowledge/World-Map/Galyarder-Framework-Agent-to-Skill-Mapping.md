@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/templates/Galyarder-Framework Agent-to-Skill Mapping.md
----
 # Galyarder Framework Agent-to-Skill Mapping
 
 ## 🧠 Strategic Intelligence

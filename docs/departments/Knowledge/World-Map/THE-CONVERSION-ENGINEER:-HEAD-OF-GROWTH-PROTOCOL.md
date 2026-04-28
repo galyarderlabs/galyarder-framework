@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Growth
 degree: 2
 source: Growth/agents/conversion-engineer.md
----
 # THE CONVERSION ENGINEER: HEAD OF GROWTH PROTOCOL
 
 ## 🧠 Strategic Intelligence

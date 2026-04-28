@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Growth
 degree: 2
 source: Growth/skills/ab-test-setup/SKILL.md
----
 # A/B Test Setup
 
 ## 🧠 Strategic Intelligence

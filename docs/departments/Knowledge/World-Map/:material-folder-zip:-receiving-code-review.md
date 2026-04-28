@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/receiving-code-review/index.md
----
 # :material-folder-zip: receiving-code-review
 
 ## 🧠 Strategic Intelligence

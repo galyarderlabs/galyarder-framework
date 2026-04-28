@@ -48,7 +48,6 @@ Comprehensive list of A/B tests and experiments organized by page type.
 | Footer optimization | Clearer secondary conversions |
 | Exit intent popup | Capture abandoning visitors |
 
----
 
 ## Pricing Page Experiments
 
@@ -94,7 +93,6 @@ Comprehensive list of A/B tests and experiments organized by page type.
 | Review scores | G2/Capterra ratings |
 | Case study snippet | Specific pricing/value results |
 
----
 
 ## Demo Request Page Experiments
 
@@ -131,7 +129,6 @@ Comprehensive list of A/B tests and experiments organized by page type.
 | Calendar integration | Inline booking vs. external link |
 | Qualification routing | Self-serve for some, sales for others |
 
----
 
 ## Resource/Blog Page Experiments
 
@@ -157,7 +154,6 @@ Comprehensive list of A/B tests and experiments organized by page type.
 | Topic bundles | Grouped resources by theme |
 | Download tracking | Gate some, track engagement |
 
----
 
 ## Landing Page Experiments
 
@@ -190,7 +186,6 @@ Comprehensive list of A/B tests and experiments organized by page type.
 | Section ordering | Most important content first |
 | Footer removal | Eliminate navigation |
 
----
 
 ## Feature Page Experiments
 
@@ -214,7 +209,6 @@ Comprehensive list of A/B tests and experiments organized by page type.
 | Pricing mention | Connect to relevant plan |
 | Case study link | Feature-specific success story |
 
----
 
 ## Cross-Page Experiments
 
@@ -238,5 +232,4 @@ Comprehensive list of A/B tests and experiments organized by page type.
 | CTA in nav | Always-visible conversion path |
 | Breadcrumbs | Navigation clarity |
 
----
  2026 Galyarder Labs. Galyarder Framework.

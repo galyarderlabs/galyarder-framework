@@ -13,7 +13,6 @@
 | Last Modified | [DATE] |
 | Engagement ID | RT-[ORG]-[YYYYMMDD] |
 
----
 
 ## 1. Engagement Overview
 
@@ -36,7 +35,6 @@
 | SOC Manager | | | |
 | Red Team Lead | | | |
 
----
 
 ## 2. Scope Definition
 
@@ -75,7 +73,6 @@
 - [ ] No social engineering of executives
 - [ ] Custom: [SPECIFY]
 
----
 
 ## 3. Threat Profile
 
@@ -103,7 +100,6 @@
 ### 3.3 ATT&CK Navigator Layer
 [Attach exported JSON layer file]
 
----
 
 ## 4. Attack Plan
 
@@ -163,7 +159,6 @@
 |----------|------------|-------------------|------------|
 | | | | |
 
----
 
 ## 5. Infrastructure Requirements
 
@@ -183,7 +178,6 @@
 | WiFi Adapter | | |
 | Lock Pick Set | | |
 
----
 
 ## 6. Communication Plan
 
@@ -203,7 +197,6 @@
 - **Activation Method:** [DESCRIBE]
 - **Response Time:** [X minutes]
 
----
 
 ## 7. Legal Authorization
 
@@ -223,7 +216,6 @@ as described in this document against [ORGANIZATION NAME] assets.
 - [ ] Get-Out-of-Jail Letters (physical testing)
 - [ ] Insurance Certificate
 
----
 
 ## 8. Reporting
 
@@ -246,7 +238,6 @@ as described in this document against [ORGANIZATION NAME] assets.
 7. Recommendations
 8. Appendices (Evidence, Tool List, IOCs)
 
----
 
 ## Appendix A: Engagement Checklist
 
@@ -278,5 +269,4 @@ as described in this document against [ORGANIZATION NAME] assets.
 - [ ] Evidence securely archived
 - [ ] Infrastructure decommissioned
 
----
  2026 Galyarder Labs. Galyarder Framework.

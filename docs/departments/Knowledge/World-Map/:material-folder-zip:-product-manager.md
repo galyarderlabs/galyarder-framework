@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/agents/product-manager.md
----
 # :material-folder-zip: product-manager
 
 ## 🧠 Strategic Intelligence

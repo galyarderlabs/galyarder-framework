@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 4
 source: docs/skills/content-strategy/index.md
----
 # :material-folder-zip: content-strategy
 
 ## 🧠 Strategic Intelligence

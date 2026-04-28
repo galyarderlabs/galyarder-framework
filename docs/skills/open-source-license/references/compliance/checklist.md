@@ -4,7 +4,6 @@
 
 Complete this checklist before distributing software that contains open source components.
 
----
 
 ## 1. Inventory & Identification
 
@@ -34,7 +33,6 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
      1. [Step]  verify: [check]
      2. [Step]  verify: [check]
 
----
 
 ## 2. Compatibility Analysis
 
@@ -51,7 +49,6 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 - [ ] Plan for resolution (remove, replace, relicense, isolate)
 - [ ] Obtain alternative licenses if needed
 
----
 
 ## 3. Attribution Requirements
 
@@ -75,7 +72,6 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 - [ ] Add "modified by" notices where required
 - [ ] Keep changelog of modifications for copyleft code
 
----
 
 ## 4. Source Code Obligations
 
@@ -105,7 +101,6 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 - [ ] Provide source for modified MPL files
 - [ ] Can combine with other licenses at file boundaries
 
----
 
 ## 5. Distribution Requirements
 
@@ -129,7 +124,6 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 - [ ] Provide source code access to network users
 - [ ] Include "About" or similar page with OSS notices
 
----
 
 ## 6. Documentation
 
@@ -146,7 +140,6 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 - [ ] Provide clear instructions for obtaining source code
 - [ ] Include license information in product documentation
 
----
 
 ## 7. Ongoing Compliance
 
@@ -163,7 +156,6 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 - [ ] Review license changes in dependency updates
 - [ ] Update notices and attributions as needed
 
----
 
 ## License-Specific Checklists
 
@@ -213,7 +205,6 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 - [ ] Include license notices
 - [ ] Can use different license for new files
 
----
 
 ## Red Flags to Watch For
 
@@ -228,5 +219,4 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 - [ ] Copyright notices being stripped
 - [ ] Modifications not documented
 
----
  2026 Galyarder Labs. Galyarder Framework.

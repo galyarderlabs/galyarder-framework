@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/agents/e2e-runner.md
----
 # :material-folder-zip: e2e-runner
 
 ## 🧠 Strategic Intelligence

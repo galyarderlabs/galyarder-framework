@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/commands/build-fix.md
----
 # :material-folder-zip: Build Fix
 
 ## 🧠 Strategic Intelligence

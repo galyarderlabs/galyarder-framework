@@ -2,7 +2,6 @@
 
 License headers should be placed at the top of source files to indicate copyright and licensing.
 
----
 
 ## When to Use Source Headers
 
@@ -20,7 +19,6 @@ License headers should be placed at the top of source files to indicate copyrigh
 - Small personal projects
 - MIT/BSD with clear LICENSE file
 
----
 
 ## MIT License Header
 
@@ -54,7 +52,6 @@ License headers should be placed at the top of source files to indicate copyrigh
 // SOFTWARE.
 ```
 
----
 
 ## Apache-2.0 License Header
 
@@ -83,7 +80,6 @@ License headers should be placed at the top of source files to indicate copyrigh
 // SPDX-License-Identifier: Apache-2.0
 ```
 
----
 
 ## BSD-3-Clause Header
 
@@ -123,7 +119,6 @@ License headers should be placed at the top of source files to indicate copyrigh
 // POSSIBILITY OF SUCH DAMAGE.
 ```
 
----
 
 ## GPL-3.0 Header
 
@@ -154,7 +149,6 @@ License headers should be placed at the top of source files to indicate copyrigh
 // SPDX-License-Identifier: GPL-3.0-or-later
 ```
 
----
 
 ## LGPL-3.0 Header
 
@@ -176,7 +170,6 @@ License headers should be placed at the top of source files to indicate copyrigh
 // along with this library; if not, see <https://www.gnu.org/licenses/>.
 ```
 
----
 
 ## AGPL-3.0 Header
 
@@ -198,7 +191,6 @@ License headers should be placed at the top of source files to indicate copyrigh
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ```
 
----
 
 ## MPL-2.0 Header
 
@@ -220,7 +212,6 @@ License headers should be placed at the top of source files to indicate copyrigh
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 ```
 
----
 
 ## Language-Specific Comment Syntax
 
@@ -286,7 +277,6 @@ Module docstring can also contain license info.
 # SPDX-License-Identifier: MIT
 ```
 
----
 
 ## SPDX License Identifiers
 
@@ -313,7 +303,6 @@ Use SPDX identifiers for machine-readable license specification:
 // SPDX-License-Identifier: MIT OR Apache-2.0
 ```
 
----
 
 ## Preserving Headers in Minification
 
@@ -370,5 +359,4 @@ module.exports = {
 };
 ```
 
----
  2026 Galyarder Labs. Galyarder Framework.

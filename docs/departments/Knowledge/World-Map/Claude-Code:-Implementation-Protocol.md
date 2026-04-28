@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 2
 source: docs/CLAUDE.md
----
 # Claude Code: Implementation Protocol
 
 ## 🧠 Strategic Intelligence

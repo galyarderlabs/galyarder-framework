@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/email-marketing-bible/index.md
----
 # :material-folder-zip: email-marketing-bible
 
 ## 🧠 Strategic Intelligence

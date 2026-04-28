@@ -1,9 +1,7 @@
----
 node_type: governance
 silo: Security
 degree: 2
 source: Security/commands/cybersecurity.md
----
 # cybersecurity.md
 
 ## 🧠 Strategic Intelligence

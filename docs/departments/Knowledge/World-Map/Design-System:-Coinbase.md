@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/design/design-md-coinbase.md
----
 # Design System: Coinbase
 
 ## 🧠 Strategic Intelligence

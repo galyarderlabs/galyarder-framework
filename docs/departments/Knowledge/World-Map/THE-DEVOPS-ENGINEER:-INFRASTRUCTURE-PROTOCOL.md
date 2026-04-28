@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Infrastructure
 degree: 2
 source: Infrastructure/agents/devops-engineer.md
----
 # THE DEVOPS ENGINEER: INFRASTRUCTURE PROTOCOL
 
 ## 🧠 Strategic Intelligence

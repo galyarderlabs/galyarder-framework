@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/referral-program/index.md
----
 # :material-folder-zip: referral-program
 
 ## 🧠 Strategic Intelligence

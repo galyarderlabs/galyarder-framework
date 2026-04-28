@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 2
 source: Engineering/skills/subagent-driven-development/SKILL.md
----
 # Subagent-Driven Development
 
 ## 🧠 Strategic Intelligence

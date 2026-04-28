@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Growth
 degree: 2
 source: Growth/skills/schema-markup/SKILL.md
----
 # Schema Markup & Structured Data
 
 ## 🧠 Strategic Intelligence

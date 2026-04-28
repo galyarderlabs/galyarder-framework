@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Legal-Finance
 degree: 2
 source: Legal-Finance/agents/finops-manager.md
----
 # FINOPS MANAGER: PROFIT COMMAND
 
 ## 🧠 Strategic Intelligence

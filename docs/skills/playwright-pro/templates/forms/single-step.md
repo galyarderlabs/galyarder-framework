@@ -6,7 +6,6 @@ Tests simple form submission with success and validation scenarios.
 - Authenticated session via `{{authStorageStatePath}}`
 - Form at `{{baseUrl}}/{{formPath}}`
 
----
 
 ## TypeScript
 
@@ -77,7 +76,6 @@ test.describe('Single-Step Form  {{formName}}', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -123,5 +121,4 @@ test.describe('Single-Step Form  {{formName}}', () => {
 | Server 500 | Generic error alert |
 | Double submit | Button disabled after first click |
 
----
  2026 Galyarder Labs. Galyarder Framework.

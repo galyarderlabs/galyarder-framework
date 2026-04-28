@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Product
 degree: 2
 source: Product/skills/writing-plans/SKILL.md
----
 # Writing Plans
 
 ## 🧠 Strategic Intelligence

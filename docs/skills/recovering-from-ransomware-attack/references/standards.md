@@ -19,5 +19,4 @@
 - T1558.001: Golden Ticket (must reset krbtgt)
 - T1098: Account Manipulation (check for backdoor accounts)
 
----
  2026 Galyarder Labs. Galyarder Framework.

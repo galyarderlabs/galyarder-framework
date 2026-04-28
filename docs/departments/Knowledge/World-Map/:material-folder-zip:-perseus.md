@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/agents/perseus.md
----
 # :material-folder-zip: perseus
 
 ## 🧠 Strategic Intelligence

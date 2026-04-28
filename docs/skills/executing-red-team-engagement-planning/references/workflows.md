@@ -189,5 +189,4 @@ Track throughout engagement:
 - Credentials harvested count
 ```
 
----
  2026 Galyarder Labs. Galyarder Framework.

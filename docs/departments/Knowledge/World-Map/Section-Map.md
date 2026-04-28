@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/doc-maintenance/references/section-map.md
----
 # Section Map
 
 ## 🧠 Strategic Intelligence

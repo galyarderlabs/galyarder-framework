@@ -375,5 +375,4 @@ Measure a company's market value relative to financial metrics.
 6. **Peer comparison** - Compare against direct competitors, not just broad Standards
 7. **Watch for manipulation** - Revenue recognition changes, off-balance-sheet items, and one-time adjustments can distort ratios
 
----
  2026 Galyarder Labs. Galyarder Framework.

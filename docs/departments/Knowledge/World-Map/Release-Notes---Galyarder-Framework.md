@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/RELEASE-NOTES.md
----
 # Release Notes - Galyarder Framework
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/vercel-react-best-practices/index.md
----
 # :material-folder-zip: vercel-react-best-practices
 
 ## 🧠 Strategic Intelligence

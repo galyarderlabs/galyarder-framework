@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 55
 source: docs/design/index.md
----
 # Design System Specifications
 
 ## 🧠 Strategic Intelligence

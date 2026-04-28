@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 2
 source: docs/skills/obsidian-markdown/references/EMBEDS.md
----
 # Embeds Reference
 
 ## 🧠 Strategic Intelligence

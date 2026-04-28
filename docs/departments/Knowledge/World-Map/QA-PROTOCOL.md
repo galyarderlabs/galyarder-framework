@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Engineering
 degree: 2
 source: Engineering/agents/qa-automation-engineer.md
----
 # QA PROTOCOL
 
 ## 🧠 Strategic Intelligence

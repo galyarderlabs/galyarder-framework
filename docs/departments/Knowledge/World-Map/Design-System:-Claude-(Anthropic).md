@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/design/design-md-claude.md
----
 # Design System: Claude (Anthropic)
 
 ## 🧠 Strategic Intelligence

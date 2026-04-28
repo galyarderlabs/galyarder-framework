@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/pr-report/index.md
----
 # :material-folder-zip: pr-report
 
 ## 🧠 Strategic Intelligence

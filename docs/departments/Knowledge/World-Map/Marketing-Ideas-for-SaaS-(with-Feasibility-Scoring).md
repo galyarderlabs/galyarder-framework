@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Growth
 degree: 2
 source: Growth/skills/marketing-ideas/SKILL.md
----
 # Marketing Ideas for SaaS (with Feasibility Scoring)
 
 ## 🧠 Strategic Intelligence

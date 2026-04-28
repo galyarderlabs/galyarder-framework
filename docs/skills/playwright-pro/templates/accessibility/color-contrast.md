@@ -7,7 +7,6 @@ Tests contrast ratios, color-blind safe palettes, and focus indicator visibility
 - axe-playwright installed: `npm i -D @axe-core/playwright`
 - Page under test: `{{baseUrl}}/{{pagePath}}`
 
----
 
 ## TypeScript
 
@@ -103,7 +102,6 @@ test.describe('Color Contrast', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -161,5 +159,4 @@ test.describe('Color Contrast', () => {
 | Color-only info | Badges have text or aria-label |
 | Full axe scan | WCAG 2.1 AA complete scan |
 
----
  2026 Galyarder Labs. Galyarder Framework.

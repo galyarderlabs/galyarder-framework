@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/finance-based-pricing-advisor/index.md
----
 # :material-folder-zip: finance-based-pricing-advisor
 
 ## 🧠 Strategic Intelligence

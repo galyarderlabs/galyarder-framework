@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/using-galyarder-framework/index.md
----
 # :material-folder-zip: using-galyarder-framework
 
 ## 🧠 Strategic Intelligence

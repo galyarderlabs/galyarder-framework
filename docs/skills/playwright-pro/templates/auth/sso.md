@@ -7,7 +7,6 @@ Tests SSO redirect flow, IdP callback handling, and attribute mapping.
 - Test IdP with user `{{ssoUsername}}`
 - App running at `{{baseUrl}}`
 
----
 
 ## TypeScript
 
@@ -71,7 +70,6 @@ test.describe('SSO', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -114,5 +112,4 @@ test.describe('SSO', () => {
 | Invalid state | CSRF protection rejects tampered callback |
 | First login | Auto-provisions account on initial SSO |
 
----
  2026 Galyarder Labs. Galyarder Framework.

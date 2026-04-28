@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 0
 source: Engineering/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md
----
 # rendering-usetransition-loading.md
 
 ## 🧠 Strategic Intelligence

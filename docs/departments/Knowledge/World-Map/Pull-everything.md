@@ -1,9 +1,7 @@
----
 node_type: core-hukum
 silo: Root
 degree: 1
 source: README.md
----
 # Pull everything
 
 ## 🧠 Strategic Intelligence

@@ -7,7 +7,6 @@ Tests account deletion flow with confirmation and data warning.
 - Disposable test account (deletion is irreversible)
 - Settings at `{{baseUrl}}/settings/account`
 
----
 
 ## TypeScript
 
@@ -89,7 +88,6 @@ test.describe('Account Delete', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -135,5 +133,4 @@ test.describe('Account Delete', () => {
 | Server error | Deletion fails  error alert |
 | Data export | Export link offered in dialog |
 
----
  2026 Galyarder Labs. Galyarder Framework.

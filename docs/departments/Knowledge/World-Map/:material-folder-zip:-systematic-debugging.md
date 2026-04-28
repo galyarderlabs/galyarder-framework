@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/systematic-debugging/index.md
----
 # :material-folder-zip: systematic-debugging
 
 ## 🧠 Strategic Intelligence

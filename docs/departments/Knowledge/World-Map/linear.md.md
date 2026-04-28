@@ -1,9 +1,7 @@
----
 node_type: governance
 silo: Product
 degree: 2
 source: Product/commands/linear.md
----
 # linear.md
 
 ## 🧠 Strategic Intelligence

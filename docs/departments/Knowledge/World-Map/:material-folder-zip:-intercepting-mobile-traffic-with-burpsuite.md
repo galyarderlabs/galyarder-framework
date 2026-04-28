@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/intercepting-mobile-traffic-with-burpsuite/index.md
----
 # :material-folder-zip: intercepting-mobile-traffic-with-burpsuite
 
 ## 🧠 Strategic Intelligence

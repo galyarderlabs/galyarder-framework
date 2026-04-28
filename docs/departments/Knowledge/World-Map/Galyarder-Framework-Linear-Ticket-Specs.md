@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/templates/Galyarder-Framework Linear Ticket Specs.md
----
 # Galyarder Framework Linear Ticket Specs
 
 ## 🧠 Strategic Intelligence

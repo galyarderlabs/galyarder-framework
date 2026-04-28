@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/board-update/index.md
----
 # :material-folder-zip: board-update
 
 ## 🧠 Strategic Intelligence

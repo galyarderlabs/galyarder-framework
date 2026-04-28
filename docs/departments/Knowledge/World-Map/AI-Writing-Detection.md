@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/seo-audit/references/ai-writing-detection.md
----
 # AI Writing Detection
 
 ## 🧠 Strategic Intelligence

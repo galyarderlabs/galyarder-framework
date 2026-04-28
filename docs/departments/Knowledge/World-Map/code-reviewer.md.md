@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Engineering
 degree: 2
 source: Engineering/agents/code-reviewer.md
----
 # code-reviewer.md
 
 ## 🧠 Strategic Intelligence

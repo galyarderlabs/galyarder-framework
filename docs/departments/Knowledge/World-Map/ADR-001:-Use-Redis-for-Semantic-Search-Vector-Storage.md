@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Engineering
 degree: 2
 source: Engineering/agents/architect.md
----
 # ADR-001: Use Redis for Semantic Search Vector Storage
 
 ## 🧠 Strategic Intelligence

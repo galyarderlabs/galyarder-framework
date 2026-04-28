@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 6
 source: docs/skills/company-creator/index.md
----
 # :material-folder-zip: company-creator
 
 ## 🧠 Strategic Intelligence

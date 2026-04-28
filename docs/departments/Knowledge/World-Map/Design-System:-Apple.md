@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/design/design-md-apple.md
----
 # Design System: Apple
 
 ## 🧠 Strategic Intelligence

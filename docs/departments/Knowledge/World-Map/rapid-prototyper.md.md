@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Product
 degree: 2
 source: Product/agents/rapid-prototyper.md
----
 # rapid-prototyper.md
 
 ## 🧠 Strategic Intelligence

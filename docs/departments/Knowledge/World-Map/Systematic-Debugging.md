@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 2
 source: Engineering/skills/systematic-debugging/SKILL.md
----
 # Systematic Debugging
 
 ## 🧠 Strategic Intelligence

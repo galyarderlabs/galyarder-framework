@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Growth
 degree: 2
 source: Growth/skills/competitor-alternatives/SKILL.md
----
 # Competitor & Alternative Pages
 
 ## 🧠 Strategic Intelligence

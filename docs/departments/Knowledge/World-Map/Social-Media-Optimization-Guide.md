@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/content-creator/references/social_media_optimization.md
----
 # Social Media Optimization Guide
 
 ## 🧠 Strategic Intelligence

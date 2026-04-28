@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/programmatic-seo/index.md
----
 # :material-folder-zip: programmatic-seo
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: governance
 silo: Engineering
 degree: 2
 source: Engineering/commands/e2e.md
----
 # e2e.md
 
 ## 🧠 Strategic Intelligence

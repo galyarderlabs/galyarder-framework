@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/skills/campaign-analytics/references/funnel-optimization-framework.md
----
 # Funnel Optimization Framework
 
 ## 🧠 Strategic Intelligence

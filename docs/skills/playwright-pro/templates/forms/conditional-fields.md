@@ -7,7 +7,6 @@ Tests show/hide fields based on selection and correct validation of visible fiel
 - Trigger field: `{{triggerField}}` (e.g. country, type selector)
 - Conditional field shown when value is `{{triggerValue}}`
 
----
 
 ## TypeScript
 
@@ -76,7 +75,6 @@ test.describe('Conditional Fields', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -119,5 +117,4 @@ test.describe('Conditional Fields', () => {
 | Clear on hide | Value cleared when field hidden |
 | Radio trigger | Radio button controls field visibility |
 
----
  2026 Galyarder Labs. Galyarder Framework.

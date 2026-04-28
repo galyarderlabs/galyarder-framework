@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/TRIAD_OVERVIEW.md
----
 # The Galyarder Triad: Complete Ecosystem Overview
 
 ## 🧠 Strategic Intelligence

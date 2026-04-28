@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Security
 degree: 2
 source: Security/skills/executing-active-directory-attack-simulation/SKILL.md
----
 # Executing Active Directory Attack Simulation
 
 ## 🧠 Strategic Intelligence

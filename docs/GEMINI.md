@@ -35,4 +35,3 @@ Gemini CLI provides native support for the Galyarder workforce commands:
 - `/marketing`: Launch growth, SEO, and conversion optimization swarms.
 - `/review`: Invoke the principal-level code reviewer.
 
----

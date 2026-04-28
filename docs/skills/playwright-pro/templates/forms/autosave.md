@@ -7,7 +7,6 @@ Tests auto-save draft functionality and draft restoration on revisit.
 - Form with autosave at `{{baseUrl}}/{{formPath}}`
 - Autosave interval: `{{autosaveIntervalMs}}` ms
 
----
 
 ## TypeScript
 
@@ -85,7 +84,6 @@ test.describe('Autosave', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -134,5 +132,4 @@ test.describe('Autosave', () => {
 | Cleared on submit | No draft banner after successful submit |
 | Network failure | Save-failed message shown |
 
----
  2026 Galyarder Labs. Galyarder Framework.

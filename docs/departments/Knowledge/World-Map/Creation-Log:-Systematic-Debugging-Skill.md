@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 0
 source: Engineering/skills/systematic-debugging/CREATION-LOG.md
----
 # Creation Log: Systematic Debugging Skill
 
 ## 🧠 Strategic Intelligence

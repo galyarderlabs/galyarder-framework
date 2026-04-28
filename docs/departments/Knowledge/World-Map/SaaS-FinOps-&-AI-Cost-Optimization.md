@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Legal-Finance
 degree: 2
 source: Legal-Finance/skills/saas-finops-optimization/SKILL.md
----
 # SaaS FinOps & AI Cost Optimization
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/tracking-threat-actor-infrastructure/index.md
----
 # :material-folder-zip: tracking-threat-actor-infrastructure
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Growth
 degree: 2
 source: Growth/skills/analytics-tracking/SKILL.md
----
 # Analytics Tracking & Measurement Strategy
 
 ## 🧠 Strategic Intelligence

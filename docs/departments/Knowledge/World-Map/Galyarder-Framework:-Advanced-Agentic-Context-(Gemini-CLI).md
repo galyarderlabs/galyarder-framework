@@ -1,9 +1,7 @@
----
 node_type: core-hukum
 silo: Root
 degree: 314
 source: GEMINI.md
----
 # Galyarder Framework: Advanced Agentic Context (Gemini CLI)
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/skills/playwright-pro/templates/checkout/add-to-cart.md
----
 # Add to Cart Template
 
 ## 🧠 Strategic Intelligence

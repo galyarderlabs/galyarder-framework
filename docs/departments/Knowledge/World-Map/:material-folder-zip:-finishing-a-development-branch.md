@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/finishing-a-development-branch/index.md
----
 # :material-folder-zip: finishing-a-development-branch
 
 ## 🧠 Strategic Intelligence

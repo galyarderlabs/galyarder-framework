@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/investigating-phishing-email-incident/references/api-reference.md
----
 # API Reference: Investigating Phishing Email Incident
 
 ## 🧠 Strategic Intelligence

@@ -9,7 +9,6 @@ Get the Galyarder Framework (Intelligence), Galyarder HQ (Control Plane), and Ga
 - Git installed
 - A project where you want to deploy (e.g., `~/projects/my-startup`)
 
----
 
 ## Phase 1: Initialize the Intelligence (Framework)
 
@@ -42,7 +41,6 @@ cd ~/galyarder-framework
 ./scripts/setup-cli.sh
 ```
 
----
 
 ## Phase 2: Establish the Presence (Galyarder Agent)
 
@@ -57,7 +55,6 @@ g-agent onboard
 g-agent gateway
 ```
 
----
 
 ## Phase 3: Initialize Your Project HQ
 
@@ -73,7 +70,6 @@ galyarder scaffold
 galyarder deploy --tool galyarder-agent
 ```
 
----
 
 ## Phase 4: Launch the Control Plane (Galyarder HQ)
 
@@ -91,7 +87,6 @@ npm run dev
 
 The dashboard will be available at: **http://localhost:3100**
 
----
 
 ## How to Link the Triad
 
@@ -104,7 +99,6 @@ To connect a project in the dashboard:
 2. Click **"Connect Project"**.
 3. Point it to your project directory (`~/projects/my-startup`).
 
----
 
 ## Troubleshooting
 
@@ -114,4 +108,3 @@ Ensure `~/.local/bin` is in your PATH. Run `source ~/.zshrc` (or `.bashrc`) afte
 ### No agents detected
 Ensure you have run `galyarder scaffold` inside your project directory. Both Agent and HQ rely on the `docs/departments/` structure.
 
----

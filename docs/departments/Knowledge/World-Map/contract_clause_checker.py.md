@@ -1,9 +1,7 @@
----
 node_type: logic-engine
 silo: Legal-Finance
 degree: 0
 source: Legal-Finance/skills/contract-and-proposal-writer/scripts/contract_clause_checker.py
----
 # contract_clause_checker.py
 
 ## 🧠 Strategic Intelligence

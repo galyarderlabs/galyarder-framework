@@ -2,7 +2,6 @@
 
 Reusable content block patterns optimized for answer engines and AI citation.
 
----
 
 ## Answer Engine Optimization (AEO) Patterns
 
@@ -164,7 +163,6 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
      1. [Step]  verify: [check]
      2. [Step]  verify: [check]
 
----
 
 ## Generative Engine Optimization (GEO) Patterns
 
@@ -237,7 +235,6 @@ Evidence supporting this includes:
 [Concluding statement connecting evidence to actionable insight].
 ```
 
----
 
 ## Domain-Specific GEO Tactics
 
@@ -273,7 +270,6 @@ Different content domains benefit from different authority signals.
 - Add percentage changes and timeframes
 - Quote recognized thought leaders
 
----
 
 ## Voice Search Optimization
 
@@ -294,5 +290,4 @@ Voice queries are conversational and question-based. Optimize for these patterns
 - Include local context where relevant
 - Structure for single spoken response
 
----
  2026 Galyarder Labs. Galyarder Framework.

@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Growth
 degree: 2
 source: Growth/skills/revenue-architect/SKILL.md
----
 # THE REVENUE ARCHITECT: CHIEF REVENUE OFFICER (CRO) PROTOCOL
 
 ## 🧠 Strategic Intelligence

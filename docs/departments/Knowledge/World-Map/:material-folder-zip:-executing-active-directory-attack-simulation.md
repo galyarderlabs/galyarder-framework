@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/executing-active-directory-attack-simulation/index.md
----
 # :material-folder-zip: executing-active-directory-attack-simulation
 
 ## 🧠 Strategic Intelligence

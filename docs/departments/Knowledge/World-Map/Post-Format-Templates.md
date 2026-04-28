@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/social-content/references/post-templates.md
----
 # Post Format Templates
 
 ## 🧠 Strategic Intelligence

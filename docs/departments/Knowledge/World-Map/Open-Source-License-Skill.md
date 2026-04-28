@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Legal-Finance
 degree: 2
 source: Legal-Finance/skills/open-source-license/SKILL.md
----
 # Open Source License Skill
 
 ## 🧠 Strategic Intelligence

@@ -1,13 +1,10 @@
----
 title: "graph | Galyarder Framework"
 description: "Rebuild the Galyarder Knowledge Graph and Obsidian World Map. Essential for structural RAG and multi-platform synchronization."
----
 
 # :material-folder-zip: graph
 
 <p class="domain-label">Knowledge Command</p>
 
----
 
 # Graph Command
 
@@ -27,5 +24,4 @@ User: /graph Rebuild the neural map for the current project.
 Agent: [Scanning 8 Silos] -> [Generating [[wikilinks]]] -> [Exporting graph.json] -> Done.
 ```
 
----
 **Protocol**: Mandatory execution after major architectural changes or repository restructuring.

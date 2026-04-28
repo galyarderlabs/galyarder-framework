@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/recovering-deleted-files-with-photorec/index.md
----
 # :material-folder-zip: recovering-deleted-files-with-photorec
 
 ## 🧠 Strategic Intelligence

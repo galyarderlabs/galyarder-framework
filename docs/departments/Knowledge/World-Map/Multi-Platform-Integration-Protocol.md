@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/INTEGRATION.md
----
 # Multi-Platform Integration Protocol
 
 ## 🧠 Strategic Intelligence

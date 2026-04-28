@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/gdpr-ccpa-privacy-auditor/index.md
----
 # :material-folder-zip: gdpr-ccpa-privacy-auditor
 
 ## 🧠 Strategic Intelligence

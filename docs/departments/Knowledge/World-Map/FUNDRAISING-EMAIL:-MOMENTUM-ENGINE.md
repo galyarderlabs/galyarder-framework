@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Executive
 degree: 2
 source: Executive/skills/fundraising-email/SKILL.md
----
 # FUNDRAISING EMAIL: MOMENTUM ENGINE
 
 ## 🧠 Strategic Intelligence

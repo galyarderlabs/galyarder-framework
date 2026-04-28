@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Executive
 degree: 2
 source: Executive/skills/accelerator-application/SKILL.md
----
 # ACCELERATOR APPLICATION: PROGRAM ENTRY PROTOCOL
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 9
 source: docs/skills/obsidian-markdown/index.md
----
 # :material-folder-zip: obsidian-markdown
 
 ## 🧠 Strategic Intelligence

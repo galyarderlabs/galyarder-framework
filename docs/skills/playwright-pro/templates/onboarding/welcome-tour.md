@@ -7,7 +7,6 @@ Tests step-by-step onboarding tour, skip, and completion behaviour.
 - Tour has `{{tourStepCount}}` steps
 - App running at `{{baseUrl}}`
 
----
 
 ## TypeScript
 
@@ -84,7 +83,6 @@ test.describe('Welcome Tour', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -127,5 +125,4 @@ test.describe('Welcome Tour', () => {
 | Tooltip target | Tour highlights correct element |
 | Close button |  closes tour |
 
----
  2026 Galyarder Labs. Galyarder Framework.

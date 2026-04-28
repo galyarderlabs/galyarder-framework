@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/agents/rapid-prototyper.md
----
 # :material-folder-zip: rapid-prototyper
 
 ## 🧠 Strategic Intelligence

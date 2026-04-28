@@ -45,4 +45,3 @@ Claude Code supports instant mission triggers via slash commands:
 | `/cybersecurity` | Security | Advanced offensive/defensive security audit. |
 | `/review` | Engineering | Principal-level code quality and security review. |
 
----

@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/design/design-md-sentry.md
----
 # Design System: Sentry
 
 ## 🧠 Strategic Intelligence

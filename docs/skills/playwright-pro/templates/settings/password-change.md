@@ -7,7 +7,6 @@ Tests current password verification, new password validation, and success flow.
 - Current password: `{{currentPassword}}`
 - New password: `{{newPassword}}`
 
----
 
 ## TypeScript
 
@@ -92,7 +91,6 @@ test.describe('Password Change', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -142,5 +140,4 @@ test.describe('Password Change', () => {
 | Same as current | Reuse blocked with error |
 | Strength meter | Meter aria-valuenow updates on input |
 
----
  2026 Galyarder Labs. Galyarder Framework.

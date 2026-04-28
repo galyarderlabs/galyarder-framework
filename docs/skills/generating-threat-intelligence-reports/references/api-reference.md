@@ -79,5 +79,4 @@ The agent produces two files:
 1. `{type}_report_{date}.md` - Rendered Markdown report with TLP headers
 2. `report_meta.json` - Metadata including validation errors and quality issues
 
----
  2026 Galyarder Labs. Galyarder Framework.

@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 0
 source: Engineering/skills/systematic-debugging/condition-based-waiting.md
----
 # Condition-Based Waiting
 
 ## 🧠 Strategic Intelligence

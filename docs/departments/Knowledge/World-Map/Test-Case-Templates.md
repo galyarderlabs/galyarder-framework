@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 55
 source: docs/skills/playwright-pro/templates/README.md
----
 # Test Case Templates
 
 ## 🧠 Strategic Intelligence

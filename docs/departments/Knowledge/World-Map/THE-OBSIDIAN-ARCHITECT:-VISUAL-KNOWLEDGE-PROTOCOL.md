@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Knowledge
 degree: 2
 source: Knowledge/agents/obsidian-architect.md
----
 # THE OBSIDIAN ARCHITECT: VISUAL KNOWLEDGE PROTOCOL
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 0
 source: Engineering/skills/vercel-react-best-practices/rules/rendering-activity.md
----
 # rendering-activity.md
 
 ## 🧠 Strategic Intelligence

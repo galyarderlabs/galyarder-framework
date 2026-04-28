@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/gdpr-compliance/index.md
----
 # :material-folder-zip: gdpr-compliance
 
 ## 🧠 Strategic Intelligence

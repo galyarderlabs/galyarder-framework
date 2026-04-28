@@ -7,7 +7,6 @@
 ## 1. Objective
 Transform Galyarder Framework from a collection of static files into a **Self-Mapping Knowledge Graph**. Implement structural RAG to reduce token consumption by 70% and provide high-fidelity visual intelligence in Obsidian.
 
----
 
 ## 2. Architecture: The 4-Phase Ascension
 
@@ -32,7 +31,6 @@ Transform Galyarder Framework from a collection of static files into a **Self-Ma
 - **Integration**: Update "Mandatory Protocols" in every agent.
 - **Rule**: Agents must read `docs/reports/KNOWLEDGE_GRAPH_SUMMARY.md` before performing any high-volume search (grep/glob).
 
----
 
 ## 3. Vertical Slices (Tracer Bullets)
 
@@ -41,7 +39,6 @@ Transform Galyarder Framework from a collection of static files into a **Self-Ma
 - [ ] **Slice 3**: Export to Obsidian format with automatic Wikilink generation.
 - [ ] **Slice 4**: Global protocol injection of lazy Neural Link lookup guidance.
 
----
 
 ## 4. Technical Guardrails
 
@@ -50,5 +47,4 @@ Transform Galyarder Framework from a collection of static files into a **Self-Ma
 - **Hard Rule**: No external database. The Graph must be local and file-system persistent.
 - **Branding**: Output artifacts must follow the "Professional Anomaly" tone.
 
----
 **Mandat**: Sesuai perintah Founder ("Sikatlah gaskeun"), operasi ini resmi dimulai.

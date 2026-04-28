@@ -1,9 +1,7 @@
----
 node_type: governance
 silo: Executive
 degree: 2
 source: Executive/personas/galyarder-cfo-coo.md
----
 # galyarder-cfo-coo.md
 
 ## 🧠 Strategic Intelligence

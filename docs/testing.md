@@ -101,9 +101,7 @@ Test 8: No extra features added...
 =========================================
 
 Usage Breakdown:
-----------------------------------------------------------------------------------------------------
 Agent           Description                          Msgs      Input     Output      Cache     Cost
-----------------------------------------------------------------------------------------------------
 main            Main session (coordinator)             34         27      3,996  1,213,703 $   4.09
 3380c209        implementing Task 1: Create Add Function     1          2        787     24,989 $   0.09
 34b00fde        implementing Task 2: Create Multiply Function     1          4        644     25,114 $   0.09
@@ -112,7 +110,6 @@ main            Main session (coordinator)             34         27      3,996 
 5f017a42        a code reviewer. Review Task 2...               1          6        504     22,949 $   0.08
 a6b7fbe4        a code reviewer. Review Task 1...               1          6        515     22,534 $   0.08
 f15837c0        reviewing whether an implementation matches...   1          6        416     22,485 $   0.07
-----------------------------------------------------------------------------------------------------
 
 TOTALS:
   Total messages:         41

@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Growth
 degree: 2
 source: Growth/agents/sales-engineer.md
----
 # sales-engineer.md
 
 ## 🧠 Strategic Intelligence

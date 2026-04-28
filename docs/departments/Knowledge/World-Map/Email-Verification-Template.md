@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/skills/playwright-pro/templates/onboarding/email-verification.md
----
 # Email Verification Template
 
 ## 🧠 Strategic Intelligence

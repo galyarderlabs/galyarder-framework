@@ -2,7 +2,6 @@
 
 Pre-built workflow configurations for lead scoring, nurturing, and assignment.
 
----
 
 ## Table of Contents
 
@@ -12,7 +11,6 @@ Pre-built workflow configurations for lead scoring, nurturing, and assignment.
 - [Partner Lead Tracking](#partner-lead-tracking)
 - [Nurture Sequences](#nurture-sequences)
 
----
 
 ## Campaign Tracking Setup
 
@@ -35,7 +33,6 @@ utm_term={keyword}         // [for paid search only]
 
 **Validation:** Verify UTM parameters appear in HubSpot contact records after test submission.
 
----
 
 ## Lead Scoring Configuration
 
@@ -65,7 +62,6 @@ Settings  Marketing  Lead Scoring
 
 **Validation:** Test lead scoring by creating a test contact and triggering each action.
 
----
 
 ## MQL to SQL Workflow
 
@@ -99,7 +95,6 @@ Required (all must be true):
 
 **Validation:** Test workflow with a sample lead. Verify notifications trigger correctly.
 
----
 
 ## Partner Lead Tracking
 
@@ -130,7 +125,6 @@ Create custom report: Marketing  Reports  Create Report
 
 **Validation:** Submit test lead with partner UTM. Verify property populates and routing works.
 
----
 
 ## Nurture Sequences
 
@@ -167,5 +161,4 @@ Configure deal properties to capture:
 
 **Use data to inform:** Product roadmap, pricing adjustments, competitive positioning.
 
----
  2026 Galyarder Labs. Galyarder Framework.

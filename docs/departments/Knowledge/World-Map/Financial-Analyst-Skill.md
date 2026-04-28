@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Legal-Finance
 degree: 2
 source: Legal-Finance/skills/financial-analyst/SKILL.md
----
 # Financial Analyst Skill
 
 ## 🧠 Strategic Intelligence

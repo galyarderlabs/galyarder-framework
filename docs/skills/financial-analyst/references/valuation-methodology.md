@@ -245,5 +245,4 @@ Always present results as a range, not a single point estimate.
 7. **Confirmation bias** - Don't work backward from a desired conclusion
 8. **Ignoring dilution** - Use fully diluted shares (treasury stock method for options)
 
----
  2026 Galyarder Labs. Galyarder Framework.

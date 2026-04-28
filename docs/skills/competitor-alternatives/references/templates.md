@@ -12,7 +12,6 @@ Start every page with a quick summary for scanners:
 Choose [Competitor] if [their ideal use case]. Choose [You] if [your ideal use case].
 ```
 
----
 
 ## Paragraph Comparison (Not Just Tables)
 
@@ -30,7 +29,6 @@ This means [benefit], though [honest tradeoff].
 Teams who [specific need] often find this more effective.
 ```
 
----
 
 ## Feature Comparison Section
 
@@ -52,7 +50,6 @@ Go beyond checkmarks:
 **Bottom line**: Choose [Competitor] if [scenario]. Choose [You] if [scenario].
 ```
 
----
 
 ## Pricing Comparison Section
 
@@ -77,7 +74,6 @@ add-ons, implementation]. [Competitor] charges extra for [X], while
 $X/year while [Your product] costs $Y/year, with [key differences in what you get].
 ```
 
----
 
 ## Service & Support Comparison
 
@@ -100,7 +96,6 @@ $X/year while [Your product] costs $Y/year, with [key differences in what you ge
 response time, dedicated CSM, implementation help].
 ```
 
----
 
 ## Who It's For Section
 
@@ -126,7 +121,6 @@ response time, dedicated CSM, implementation help].
 **Ideal [Your product] customer**: [Persona description in 1-2 sentences]
 ```
 
----
 
 ## Migration Section
 
@@ -155,7 +149,6 @@ We offer [migration support details]:
 >  [Name], [Role] at [Company]
 ```
 
----
 
 ## Social Proof Section
 
@@ -177,7 +170,6 @@ Focus on switchers:
 - [Company] reduced [metric] by [amount]
 ```
 
----
 
 ## Comparison Table Best Practices
 
@@ -211,5 +203,4 @@ Group features into meaningful categories:
 | Ease of use |  |  | [Brief note] |
 | Feature depth |  |  | [Brief note] |
 
----
  2026 Galyarder Labs. Galyarder Framework.

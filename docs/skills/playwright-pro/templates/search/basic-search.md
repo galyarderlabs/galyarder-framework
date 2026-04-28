@@ -6,7 +6,6 @@ Tests search input, query submission, and results display.
 - At least one indexed item matching `{{searchQuery}}`
 - App running at `{{baseUrl}}`
 
----
 
 ## TypeScript
 
@@ -74,7 +73,6 @@ test.describe('Basic Search', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -117,5 +115,4 @@ test.describe('Basic Search', () => {
 | No results | Empty state message |
 | Special chars | XSS input handled, no script execution |
 
----
  2026 Galyarder Labs. Galyarder Framework.

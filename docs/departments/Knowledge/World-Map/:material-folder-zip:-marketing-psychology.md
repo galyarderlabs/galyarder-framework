@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/marketing-psychology/index.md
----
 # :material-folder-zip: marketing-psychology
 
 ## 🧠 Strategic Intelligence

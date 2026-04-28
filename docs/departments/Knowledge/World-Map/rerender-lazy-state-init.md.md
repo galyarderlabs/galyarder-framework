@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 0
 source: Engineering/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md
----
 # rerender-lazy-state-init.md
 
 ## 🧠 Strategic Intelligence

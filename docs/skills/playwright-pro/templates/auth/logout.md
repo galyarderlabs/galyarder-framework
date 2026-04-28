@@ -6,7 +6,6 @@ Tests logout from navigation, session cleanup, and redirect behaviour.
 - Authenticated session (use `storageState` or login fixture)
 - App running at `{{baseUrl}}`
 
----
 
 ## TypeScript
 
@@ -67,7 +66,6 @@ test.describe('Logout', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -111,5 +109,4 @@ test.describe('Logout', () => {
 | Stale session | Already-expired session handled gracefully |
 | Multi-tab | Logout invalidates other open tabs |
 
----
  2026 Galyarder Labs. Galyarder Framework.

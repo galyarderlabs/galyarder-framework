@@ -5,7 +5,6 @@
 **Date:** [Start Date] - [End Date]
 **Status:** [Planning / Running / Complete / Inconclusive]
 
----
 
 ## Hypothesis
 
@@ -13,7 +12,6 @@
 **then** [Y will happen],
 **because** [rationale based on data or insight].
 
----
 
 ## Test Design
 
@@ -30,7 +28,6 @@
 | **Confidence Level** | [95% or 99%] |
 | **Expected Duration** | [X days/weeks based on traffic and sample size] |
 
----
 
 ## Targeting
 
@@ -42,7 +39,6 @@
 | **Geography** | [Regions included] |
 | **Exclusions** | [Who is excluded and why] |
 
----
 
 ## Results
 
@@ -64,7 +60,6 @@
 | [Metric 2] | | | % | [Yes/No] |
 | [Metric 3] | | | % | [Yes/No] |
 
----
 
 ## Segment Analysis
 
@@ -76,7 +71,6 @@
 | Returning Visitors | % | % | % | |
 | [Custom Segment] | % | % | % | |
 
----
 
 ## Revenue Impact Estimate
 
@@ -87,7 +81,6 @@
 | **Projected Additional Conversions** | [X] |
 | **Confidence in Estimate** | [High/Medium/Low] |
 
----
 
 ## Decision
 
@@ -101,7 +94,6 @@
 - [ ] [Step 3: e.g., Monitor for X days post-implementation]
 - [ ] [Step 4: e.g., Document learnings in knowledge base]
 
----
 
 ## Learnings
 
@@ -114,7 +106,6 @@
 1. [Next test idea based on results]
 2. [Next test idea based on results]
 
----
 
 ## Quality Checks
 
@@ -125,9 +116,7 @@
 - [ ] No sample ratio mismatch (SRM) detected
 - [ ] Results reviewed by at least 2 team members
 
----
 
 *Template from campaign-analytics skill. Statistical significance calculations require external tools (e.g., online calculators or scipy).*
 
----
  2026 Galyarder Labs. Galyarder Framework.

@@ -35,7 +35,6 @@
 - **Department:** Legal-Finance, Knowledge.
 - **Responsibilities:** Compliance, budget efficiency, operational reliability.
 
----
 
 ## Department Structure
 
@@ -62,7 +61,6 @@
 - Capital risks
 - Narrative gaps
 
----
 
 ### 2. Product
 **Department Heads:** `product-manager`, `planner`
@@ -83,7 +81,6 @@
 - Tradeoffs and scope risk
 - Priority decisions
 
----
 
 ### 3. Engineering
 **Department Heads:** `super-architect`, `architect`, `elite-developer`
@@ -113,7 +110,6 @@
 - `receiving-code-review` - Review response
 - `finishing-a-development-branch` - Branch completion
 
----
 
 ### 4. Security
 **Department Heads:** `security-guardian`, `perseus`
@@ -134,7 +130,6 @@
 - `executing-active-directory-attack-simulation` - AD security
 - `investigating-phishing-email-incident` - Phishing analysis
 
----
 
 ### 5. Growth
 **Department Heads:** `growth-strategist`, `growth-engineer`
@@ -163,7 +158,6 @@
 - `analytics-tracking` - Event tracking
 - `ab-test-setup` - A/B testing
 
----
 
 ### 6. Infrastructure / Operations
 **Department Heads:** `devops-engineer`, `release-manager`
@@ -175,7 +169,6 @@
 - `release-manager` - Versioning, changelogs, launches
 - `experimentation-engineer` - A/B test infrastructure
 
----
 
 ### 7. Legal / Finance
 **Department Heads:** `legal-counsel`, `finops-manager`
@@ -195,7 +188,6 @@
 - `saas-finops-optimization` - Cloud cost optimization
 - `finance-based-pricing-advisor` - Pricing strategy
 
----
 
 ### 8. Knowledge / Documentation
 **Department Head:** `obsidian-architect`
@@ -209,7 +201,6 @@
 - `json-canvas` - Visual mapping
 - `defuddle` - Content extraction
 
----
 
 ## Operating Principles
 
@@ -225,5 +216,4 @@
    - **Goal-Driven**: Loop until verified via tests-first.
 7. **Task Tracking:** All work strictly visible in project-scoped Linear issues.
 
----
 Copyright 2026 Galyarder Labs. Galyarder Framework. Executive Office.

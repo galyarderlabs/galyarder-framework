@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/competitor-alternatives/references/templates.md
----
 # Section Templates for Competitor Pages
 
 ## 🧠 Strategic Intelligence

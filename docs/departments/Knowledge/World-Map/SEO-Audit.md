@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Growth
 degree: 2
 source: Growth/skills/seo-audit/SKILL.md
----
 # SEO Audit
 
 ## 🧠 Strategic Intelligence

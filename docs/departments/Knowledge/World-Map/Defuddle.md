@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Knowledge
 degree: 2
 source: Knowledge/skills/defuddle/SKILL.md
----
 # Defuddle
 
 ## 🧠 Strategic Intelligence

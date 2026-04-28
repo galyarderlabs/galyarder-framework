@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/skills/json-canvas/references/EXAMPLES.md
----
 # JSON Canvas Complete Examples
 
 ## 🧠 Strategic Intelligence

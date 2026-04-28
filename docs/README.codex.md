@@ -102,10 +102,8 @@ mkdir -p ~/.agents/skills/my-skill
 Create `~/.agents/skills/my-skill/SKILL.md`:
 
 ```markdown
----
 name: my-skill
 description: Use when [condition] - [what it does]
----
 
 # My Skill
 

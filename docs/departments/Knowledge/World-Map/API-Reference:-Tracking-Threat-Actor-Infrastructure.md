@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/tracking-threat-actor-infrastructure/references/api-reference.md
----
 # API Reference: Tracking Threat Actor Infrastructure
 
 ## 🧠 Strategic Intelligence

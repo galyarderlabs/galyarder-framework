@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/company-creator/references/example-company.md
----
 # example-company.md
 
 ## 🧠 Strategic Intelligence

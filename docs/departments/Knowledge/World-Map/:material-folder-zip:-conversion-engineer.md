@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/agents/conversion-engineer.md
----
 # :material-folder-zip: conversion-engineer
 
 ## 🧠 Strategic Intelligence

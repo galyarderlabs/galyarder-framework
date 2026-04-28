@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/iso-42001-ai-governance/index.md
----
 # :material-folder-zip: iso-42001-ai-governance
 
 ## 🧠 Strategic Intelligence

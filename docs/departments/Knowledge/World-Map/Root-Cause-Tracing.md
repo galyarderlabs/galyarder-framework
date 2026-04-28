@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 1
 source: Engineering/skills/systematic-debugging/root-cause-tracing.md
----
 # Root Cause Tracing
 
 ## 🧠 Strategic Intelligence

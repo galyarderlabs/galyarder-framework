@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Legal-Finance
 degree: 2
 source: Legal-Finance/skills/gdpr-compliance/SKILL.md
----
 # GDPR Compliance
 
 ## 🧠 Strategic Intelligence

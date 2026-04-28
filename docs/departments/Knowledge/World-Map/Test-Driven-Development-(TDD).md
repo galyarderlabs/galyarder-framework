@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 2
 source: Engineering/skills/test-driven-development/SKILL.md
----
 # Test-Driven Development (TDD)
 
 ## 🧠 Strategic Intelligence

@@ -6,7 +6,6 @@ Tests success, error, and warning toasts with auto-dismiss and manual close.
 - Authenticated session via `{{authStorageStatePath}}`
 - App running at `{{baseUrl}}`
 
----
 
 ## TypeScript
 
@@ -90,7 +89,6 @@ test.describe('Toast Messages', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -138,5 +136,4 @@ test.describe('Toast Messages', () => {
 | Stacked toasts | Multiple alerts visible simultaneously |
 | Accessible | role=alert or role=status present |
 
----
  2026 Galyarder Labs. Galyarder Framework.

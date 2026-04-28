@@ -205,4 +205,3 @@ Architectural guardrails to make execution provable: gated testing ladder, test-
 - Removed all Dashboard CI workflows (Docker, e2e, release-smoke).
 - Migrated dashboard logic to a separate repository; local hooks must be re-pointed to `@galyarderlabs/galyarder-hq`.
 
----

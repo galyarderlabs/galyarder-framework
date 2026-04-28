@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Security
 degree: 2
 source: Security/agents/security-guardian.md
----
 # THE SECURITY GUARDIAN: CISO PROTOCOL
 
 ## 🧠 Strategic Intelligence

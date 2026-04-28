@@ -7,7 +7,6 @@ Tests the success page and order details after checkout.
 - Authenticated session via `{{authStorageStatePath}}`
 - App running at `{{baseUrl}}`
 
----
 
 ## TypeScript
 
@@ -67,7 +66,6 @@ test.describe('Order Confirmation', () => {
 });
 ```
 
----
 
 ## JavaScript
 
@@ -107,5 +105,4 @@ test.describe('Order Confirmation', () => {
 | Unauthorized | Other user's order  403 |
 | Cart cleared | Cart count = 0 after checkout |
 
----
  2026 Galyarder Labs. Galyarder Framework.

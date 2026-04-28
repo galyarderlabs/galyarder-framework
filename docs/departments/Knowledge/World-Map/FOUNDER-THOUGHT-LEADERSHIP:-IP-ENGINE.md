@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Executive
 degree: 2
 source: Executive/skills/founder-thought-leadership/SKILL.md
----
 # FOUNDER THOUGHT LEADERSHIP: IP ENGINE
 
 ## 🧠 Strategic Intelligence

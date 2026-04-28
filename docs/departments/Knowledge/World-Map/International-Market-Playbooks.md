@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 2
 source: docs/skills/marketing-demand-acquisition/references/international-playbooks.md
----
 # International Market Playbooks
 
 ## 🧠 Strategic Intelligence

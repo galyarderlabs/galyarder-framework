@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 0
 source: Engineering/skills/requesting-code-review/code-reviewer.md
----
 # Code Review Agent
 
 ## 🧠 Strategic Intelligence

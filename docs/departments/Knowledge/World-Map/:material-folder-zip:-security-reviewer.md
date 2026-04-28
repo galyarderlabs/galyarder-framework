@@ -1,9 +1,7 @@
----
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/agents/security-reviewer.md
----
 # :material-folder-zip: security-reviewer
 
 ## 🧠 Strategic Intelligence

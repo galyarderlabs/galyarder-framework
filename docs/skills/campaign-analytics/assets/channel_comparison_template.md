@@ -4,13 +4,11 @@
 **Compared Against:** [Previous period / Industry Standards / Both]
 **Prepared By:** [Name]
 
----
 
 ## Summary
 
 [1-2 sentence overview: which channels are performing best, which need attention, and the overall channel mix health.]
 
----
 
 ## Channel Scorecard
 
@@ -33,7 +31,6 @@
 - D: Below low Standard on 1+ key metrics
 - F: Underperforming on multiple metrics or unprofitable
 
----
 
 ## Channel Deep Dives
 
@@ -66,11 +63,9 @@
 1. [Specific action for this channel]
 2. [Specific action for this channel]
 
----
 
 [Repeat deep dive section for each channel]
 
----
 
 ## Attribution View
 
@@ -84,7 +79,6 @@ How each channel is valued under different attribution models:
 
 **Insight:** [Which channels are over/undervalued by single-touch models?]
 
----
 
 ## Funnel Performance by Channel
 
@@ -100,7 +94,6 @@ How each channel is valued under different attribution models:
 **Best Funnel:** [Channel with highest overall conversion rate]
 **Biggest Bottleneck:** [Channel + stage transition with worst drop-off]
 
----
 
 ## Budget Allocation Analysis
 
@@ -123,7 +116,6 @@ How each channel is valued under different attribution models:
 | Aggressive growth | $ | % | +% |
 | Cost optimization | $ | % | +% |
 
----
 
 ## Competitive Context
 
@@ -134,7 +126,6 @@ How each channel is valued under different attribution models:
 | Paid vs Organic Split | [X/X]% | [X/X]% | |
 | Digital vs Traditional | [X/X]% | [X/X]% | |
 
----
 
 ## Recommendations
 
@@ -153,9 +144,7 @@ How each channel is valued under different attribution models:
 1. **[Action]** -- [Expected impact], [Owner]
 2. **[Action]** -- [Expected impact], [Owner]
 
----
 
 *Template from campaign-analytics skill. Populate with data from attribution_analyzer.py, funnel_analyzer.py, and campaign_roi_calculator.py.*
 
----
  2026 Galyarder Labs. Galyarder Framework.

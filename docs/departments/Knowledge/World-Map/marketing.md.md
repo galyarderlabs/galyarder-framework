@@ -1,9 +1,7 @@
----
 node_type: governance
 silo: Growth
 degree: 2
 source: Growth/commands/marketing.md
----
 # marketing.md
 
 ## 🧠 Strategic Intelligence

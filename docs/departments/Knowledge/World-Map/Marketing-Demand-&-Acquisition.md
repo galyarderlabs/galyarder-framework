@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Growth
 degree: 10
 source: Growth/skills/marketing-demand-acquisition/SKILL.md
----
 # Marketing Demand & Acquisition
 
 ## 🧠 Strategic Intelligence

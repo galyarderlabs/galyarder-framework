@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Knowledge
 degree: 4
 source: Knowledge/skills/obsidian-bases/SKILL.md
----
 # Obsidian Bases Skill
 
 ## 🧠 Strategic Intelligence

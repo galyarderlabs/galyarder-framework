@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Security
 degree: 2
 source: Security/skills/tracking-threat-actor-infrastructure/SKILL.md
----
 # Tracking Threat Actor Infrastructure
 
 ## 🧠 Strategic Intelligence

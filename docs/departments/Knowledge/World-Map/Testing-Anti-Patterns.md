@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Engineering
 degree: 0
 source: Engineering/skills/test-driven-development/testing-anti-patterns.md
----
 # Testing Anti-Patterns
 
 ## 🧠 Strategic Intelligence

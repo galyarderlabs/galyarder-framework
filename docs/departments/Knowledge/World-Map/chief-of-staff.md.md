@@ -1,9 +1,7 @@
----
 node_type: agent
 silo: Executive
 degree: 2
 source: Executive/agents/chief-of-staff.md
----
 # chief-of-staff.md
 
 ## 🧠 Strategic Intelligence

@@ -1,9 +1,7 @@
----
 node_type: skill
 silo: Executive
 degree: 0
 source: Executive/skills/brainstorming/visual-companion.md
----
 # Visual Companion Guide
 
 ## 🧠 Strategic Intelligence
