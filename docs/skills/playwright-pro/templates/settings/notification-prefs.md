@@ -6,6 +6,7 @@ Tests toggling notification channels and saving preferences.
 - Authenticated session via `{{authStorageStatePath}}`
 - Settings page at `{{baseUrl}}/settings/notifications`
 
+---
 
 ## TypeScript
 
@@ -86,6 +87,7 @@ test.describe('Notification Preferences', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -136,4 +138,5 @@ test.describe('Notification Preferences', () => {
 | Save error | Server error  error alert |
 | Unsubscribe all | Confirmation dialog before all disabled |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

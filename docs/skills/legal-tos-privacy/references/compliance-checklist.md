@@ -46,6 +46,7 @@ Applies if: Processing personal data of EU/EEA/UK residents, regardless of compa
 - [ ] **Granular Control** - Users must be able to accept/reject by category
 - [ ] **No Cookie Walls** - Cannot force consent for service access (with exceptions)
 
+---
 
 ## CCPA/CPRA (California)
 
@@ -87,6 +88,7 @@ If collecting any, must allow limiting use:
 - Health information
 - Sex life/sexual orientation
 
+---
 
 ## LGPD (Brazil)
 
@@ -114,6 +116,7 @@ Applies if: Processing personal data in Brazil, or of individuals in Brazil, or 
   - Review of automated decisions
 - [ ] **DPO Contact** - If appointed, must provide contact
 
+---
 
 ## COPPA (United States - Children)
 
@@ -143,6 +146,7 @@ Applies if: Website/service directed at children under 13, OR has actual knowled
 
 If complying with FTC-approved self-regulatory program, may qualify for safe harbor.
 
+---
 
 ## CAN-SPAM (United States - Email)
 
@@ -158,6 +162,7 @@ Applies if: Sending commercial email messages.
 - [ ] **Honor Opt-Outs** - Process requests within 10 business days
 - [ ] **Monitor Third Parties** - Responsible for compliance even if hiring others
 
+---
 
 ## CASL (Canada - Email)
 
@@ -170,6 +175,7 @@ Applies if: Sending commercial electronic messages to Canadian recipients.
 - [ ] **Unsubscribe Mechanism** - Must be included and honored within 10 business days
 - [ ] **Record Keeping** - Proof of consent must be maintained
 
+---
 
 ## PCI DSS (Payment Card Industry)
 
@@ -190,6 +196,7 @@ Applies if: Storing, processing, or transmitting cardholder data.
 - [ ] Describe how payment data is protected
 - [ ] Note that card data is processed by certified payment processor
 
+---
 
 ## Additional Industry-Specific
 
@@ -216,6 +223,7 @@ If handling student education records:
 - [ ] Annual notification of rights
 - [ ] Access and amendment rights
 
+---
 
 ## Compliance Verification Matrix
 
@@ -233,6 +241,7 @@ Use this matrix to track compliance across jurisdictions:
 | Breach notification | 72 hours | ASAP | Reasonable time | GDPR most specific |
 | Fines | Up to 4% global revenue | Up to $7,500/violation | Up to 2% revenue | |
 
+---
 
 ## Essential Protective Clauses
 
@@ -268,4 +277,5 @@ certain rights under the CCPA/CPRA. Nothing in this Privacy Policy is intended
 to limit any rights you have under applicable law.
 ```
 
+---
  2026 Galyarder Labs. Galyarder Framework.

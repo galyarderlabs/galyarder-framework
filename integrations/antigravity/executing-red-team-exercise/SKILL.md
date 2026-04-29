@@ -3,7 +3,7 @@ name: "executing-red-team-exercise"
 description: "Executes comprehensive red team exercises that simulate real-world adversary operations against an organization's people, processes, and technology. The red team operates with stealth as a primary objective, employing the full attack lifecycle from initial reconnaissance through objective completion while testing the organization's detection and response capabilities. This differs from penetration testing by focusing on adversary emulation rather than vulnerability identification. Activates for requests involving red team exercise, adversary simulation, adversary emulation, or full-scope offensive security assessment."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

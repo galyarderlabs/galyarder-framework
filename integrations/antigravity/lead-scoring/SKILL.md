@@ -3,7 +3,7 @@ name: "lead-scoring"
 description: "Lead Qualification And Scoring Specialist. Use to define ICP filters, score inbound and outbound leads, and improve pipeline focus for a founder-led sales motion."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

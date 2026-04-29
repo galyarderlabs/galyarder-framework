@@ -2,6 +2,7 @@
 
 Market-specific tactics for EU, US, and Canada expansion.
 
+---
 
 ## Table of Contents
 
@@ -11,6 +12,7 @@ Market-specific tactics for EU, US, and Canada expansion.
 - [Budget Allocation by Region](#budget-allocation-by-region)
 - [Localization Checklist](#localization-checklist)
 
+---
 
 ## EU Market Entry
 
@@ -57,6 +59,7 @@ Market-specific tactics for EU, US, and Canada expansion.
 
 **Validation:** Test landing pages with EU VPN. Verify consent flows work correctly.
 
+---
 
 ## US Market Entry
 
@@ -96,6 +99,7 @@ Market-specific tactics for EU, US, and Canada expansion.
 
 **Validation:** US-based speed test. Payment processing in USD functional.
 
+---
 
 ## Canada Market Entry
 
@@ -128,6 +132,7 @@ Market-specific tactics for EU, US, and Canada expansion.
 
 **Validation:** French Quebec landing page tested. CAD pricing displays correctly.
 
+---
 
 ## Budget Allocation by Region
 
@@ -155,6 +160,7 @@ Expand regional budget when:
 - MQLSQL rate > regional Standard
 - Sales team has regional capacity
 
+---
 
 ## Localization Checklist
 
@@ -193,4 +199,5 @@ Expand regional budget when:
 
 **Validation:** Native speaker review of all localized content before launch.
 
+---
  2026 Galyarder Labs. Galyarder Framework.

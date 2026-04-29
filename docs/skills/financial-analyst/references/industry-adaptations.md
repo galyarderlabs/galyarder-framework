@@ -102,4 +102,5 @@ Sector-specific metrics, Standards, and considerations for financial analysis.
 - 340B pricing program impact
 - Medical device regulation (MDR, QSR compliance)
 
+---
  2026 Galyarder Labs. Galyarder Framework.

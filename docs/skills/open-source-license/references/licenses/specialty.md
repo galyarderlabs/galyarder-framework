@@ -2,6 +2,7 @@
 
 Licenses with specific use cases or unique characteristics.
 
+---
 
 ## Creative Commons Licenses
 
@@ -75,6 +76,7 @@ Under the following terms:
 
 **Warning:** CC-BY-NC is NOT OSI-approved and NOT considered open source because it restricts commercial use.
 
+---
 
 ## WTFPL (Do What The F*ck You Want To Public License)
 
@@ -106,6 +108,7 @@ Under the following terms:
 - May have enforceability concerns in professional contexts
 - Not recommended for serious projects
 
+---
 
 ## Artistic License 2.0
 
@@ -119,6 +122,7 @@ Under the following terms:
 - Requires renaming modified versions or clearly marking changes
 - Used primarily in Perl ecosystem
 
+---
 
 ## Boost Software License 1.0 (BSL-1.0)
 
@@ -160,6 +164,7 @@ DEALINGS IN THE SOFTWARE.
 - Simple and short
 - Popular in C++ community
 
+---
 
 ## zlib License
 
@@ -200,6 +205,7 @@ freely, subject to the following restrictions:
 - Acknowledgment appreciated but not required
 - Popular in game development
 
+---
 
 ## PostgreSQL License
 
@@ -237,6 +243,7 @@ SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 - Very liberal
 - Used specifically by PostgreSQL project
 
+---
 
 ## Dual Licensing
 
@@ -262,6 +269,7 @@ You may choose either license to govern your use of this software.
 SPDX-License-Identifier: MIT OR Apache-2.0
 ```
 
+---
 
 ## Non-OSS "Source Available" Licenses
 
@@ -293,4 +301,5 @@ SPDX-License-Identifier: MIT OR Apache-2.0
 
 **These licenses are mentioned for awareness only. They are not recommended for true open source projects.**
 
+---
  2026 Galyarder Labs. Galyarder Framework.

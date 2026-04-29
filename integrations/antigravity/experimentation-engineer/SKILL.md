@@ -3,7 +3,7 @@ name: "experimentation-engineer"
 description: "Use when a feature launch needs experiment design, test sequencing, rollout guardrails, and measurement logic before exposure to users."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

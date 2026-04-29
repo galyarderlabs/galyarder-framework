@@ -45,4 +45,5 @@ Use the `fundraising-operator` role plus the founder-oriented skills when the ta
 
 Do not inject this layer into ordinary coding, debugging, or architecture work unless the user is clearly working on startup-building tasks.
 
+---
  2026 Galyarder Labs. Galyarder Framework.

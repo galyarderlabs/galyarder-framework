@@ -3,7 +3,7 @@ name: "pricing-strategy"
 description: "Use when pricing, packaging, plan structure, or monetization tradeoffs need to be evaluated against positioning, conversion, and margin."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

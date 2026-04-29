@@ -7,6 +7,7 @@ Tests role-based access control: admin vs user permissions and forbidden pages.
 - Regular user: `{{userUsername}}` / `{{userPassword}}`
 - App running at `{{baseUrl}}`
 
+---
 
 ## TypeScript
 
@@ -88,6 +89,7 @@ test.describe('RBAC  Role Elevation', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -129,4 +131,5 @@ test.describe('RBAC  Regular User', () => {
 | API 403 | Backend enforces role on API routes |
 | Role elevation | Promoted user gains new access immediately |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

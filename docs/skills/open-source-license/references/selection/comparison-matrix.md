@@ -19,6 +19,7 @@
 
 *Commercial use allowed but copyleft obligations apply
 
+---
 
 ## Detailed Feature Comparison
 
@@ -60,6 +61,7 @@
 | AGPL-3.0 |  Limited |  None |  |  Retaliation |
 | MPL-2.0 |  Limited |  None |  No grant |  Retaliation |
 
+---
 
 ## Copyleft Strength Comparison
 
@@ -84,6 +86,7 @@ Unlicense  MIT  BSD  Apache  MPL  LGPL  EPL  GPL  AGPL
 | Strong (GPL) | Entire program | Must be GPL | Static/dynamic triggers copyleft |
 | Network (AGPL) | Entire program + SaaS | Must be AGPL | Network use triggers copyleft |
 
+---
 
 ## Use Case Recommendations
 
@@ -132,6 +135,7 @@ Best for:
 - SDKs and frameworks
 - Code meant to be embedded
 
+---
 
 ## Corporate Acceptance
 
@@ -162,4 +166,5 @@ Best for:
 - Elastic License
 - Any "Commons Clause"
 
+---
  2026 Galyarder Labs. Galyarder Framework.

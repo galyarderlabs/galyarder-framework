@@ -6,6 +6,7 @@ Tests ARIA labels, live regions, and announcements for assistive technology.
 - App running at `{{baseUrl}}`
 - Page under test: `{{baseUrl}}/{{pagePath}}`
 
+---
 
 ## TypeScript
 
@@ -109,6 +110,7 @@ test.describe('Screen Reader Accessibility', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -156,4 +158,5 @@ test.describe('Screen Reader Accessibility', () => {
 | Unique nav labels | Multiple navs have distinct labels |
 | aria-expanded | Accordion state communicated |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

@@ -61,4 +61,5 @@
 - [Ransomware.live](https://www.ransomware.live/)
 - [SpiderFoot OSINT](https://github.com/smicallef/spiderfoot)
 
+---
  2026 Galyarder Labs. Galyarder Framework.

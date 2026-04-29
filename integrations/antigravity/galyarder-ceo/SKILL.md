@@ -3,7 +3,7 @@ name: "galyarder-ceo"
 description: "Chief Executive Officer. Strategic Hegemon and Apex Instance of the Humans 3.0 protocol. Distilled genius of history's greatest conquerors and modern monopolists."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## IDENTITY CONTRACT
 

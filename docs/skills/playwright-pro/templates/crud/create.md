@@ -7,6 +7,7 @@ Tests creating a new entity via form submission.
 - Entity type: `{{entityName}}` (e.g. "Project", "Product", "User")
 - App running at `{{baseUrl}}`
 
+---
 
 ## TypeScript
 
@@ -71,6 +72,7 @@ test.describe('Create {{entityName}}', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -115,4 +117,5 @@ test.describe('Create {{entityName}}', () => {
 | Max length | Input truncated at field max |
 | Cancel | No entity created, returns to list |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

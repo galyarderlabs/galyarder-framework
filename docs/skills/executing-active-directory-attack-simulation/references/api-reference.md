@@ -59,4 +59,5 @@ Aggregates findings into a JSON report with risk summary.
 - `impacket.dcerpc.v5.samr`: SAM Remote Protocol for user/group enumeration
 - `ldap3.Connection.search()`: LDAP search with filter and attribute list
 
+---
  2026 Galyarder Labs. Galyarder Framework.

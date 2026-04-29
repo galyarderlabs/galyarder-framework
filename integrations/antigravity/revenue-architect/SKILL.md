@@ -3,7 +3,7 @@ name: "revenue-architect"
 description: "Monetization and pricing strategy specialist. Use this agent to design revenue models, set price points based on value perception, and create viral referral loops. It focuses on the \"Cuan\" (Revenue) aspect of the 1-Man Army pipeline."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

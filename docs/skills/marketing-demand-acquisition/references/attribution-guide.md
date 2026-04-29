@@ -2,6 +2,7 @@
 
 Multi-touch attribution setup, analysis, and reporting.
 
+---
 
 ## Table of Contents
 
@@ -11,6 +12,7 @@ Multi-touch attribution setup, analysis, and reporting.
 - [Reporting Dashboards](#reporting-dashboards)
 - [A/B Testing Framework](#ab-testing-framework)
 
+---
 
 ## Attribution Models
 
@@ -33,6 +35,7 @@ For Series A hybrid motion:
 
 **Rationale:** Balances discovery and closing influence.
 
+---
 
 ## HubSpot Attribution Setup
 
@@ -69,6 +72,7 @@ Create: Marketing  Reports  Create Report
 
 **Validation:** Run report for past 90 days. Verify all channels appear with data.
 
+---
 
 ## Google Analytics Configuration
 
@@ -108,6 +112,7 @@ pricing_view     (pricing page visit)
 
 **Validation:** Real-time report shows events firing. Conversion events marked correctly.
 
+---
 
 ## Reporting Dashboards
 
@@ -143,6 +148,7 @@ pricing_view     (pricing page visit)
 
 **Validation:** Dashboard shows last 7 days data. All metrics calculating correctly.
 
+---
 
 ## A/B Testing Framework
 
@@ -210,4 +216,5 @@ Series A: 4-6 tests per month
 
 **Validation:** Test reaches statistical significance before declaring winner.
 
+---
  2026 Galyarder Labs. Galyarder Framework.

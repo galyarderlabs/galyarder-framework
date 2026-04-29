@@ -3,7 +3,7 @@ name: "support-lead"
 description: "Use when support operations, launch fallout, repeated customer issues, or triage ownership need a structured response layer."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

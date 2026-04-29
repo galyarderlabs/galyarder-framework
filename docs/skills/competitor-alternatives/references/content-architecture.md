@@ -14,6 +14,7 @@ competitor_data/
  ...
 ```
 
+---
 
 ## Competitor Data Template
 
@@ -93,6 +94,7 @@ migration_from:
   time_estimate: "1-3 days for small team"
 ```
 
+---
 
 ## Your Product Data
 
@@ -115,6 +117,7 @@ not_ideal_for:
   - [Who should use something else]
 ```
 
+---
 
 ## Page Generation
 
@@ -131,6 +134,7 @@ Each page pulls from centralized data:
 - Consistent accuracy across pages
 - Easier to maintain at scale
 
+---
 
 ## Index Page Structure
 
@@ -161,6 +165,7 @@ Looking to switch? See how [Your Product] compares to the tools you're evaluatin
 - **[Monday Alternative](/alternatives/monday)**  Better for teams who need [Z]
 ```
 
+---
 
 ### Vs Comparisons Index
 
@@ -175,6 +180,7 @@ Looking to switch? See how [Your Product] compares to the tools you're evaluatin
 4. Brief methodology note
 5. CTA
 
+---
 
 ### Index Page Best Practices
 
@@ -201,6 +207,7 @@ Looking to switch? See how [Your Product] compares to the tools you're evaluatin
 - Number of pages/comparisons available
 - Quick filters if you have many comparisons
 
+---
 
 ## Footer Navigation
 
@@ -255,4 +262,5 @@ Footer
 - Match column headers to your URL structure (e.g., "vs" column  `/vs/` URLs)
 - Consider mobile: columns may stack, so order by priority
 
+---
  2026 Galyarder Labs. Galyarder Framework.

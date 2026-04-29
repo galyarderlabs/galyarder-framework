@@ -7,6 +7,7 @@ Tests deletion with confirmation dialog and post-delete behaviour.
 - Entity to delete: ID `{{entityId}}`, name `{{entityName}}`
 - App running at `{{baseUrl}}`
 
+---
 
 ## TypeScript
 
@@ -71,6 +72,7 @@ test.describe('Delete {{entityName}}', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -113,4 +115,5 @@ test.describe('Delete {{entityName}}', () => {
 | Dependent error | Entity with children  deletion blocked |
 | Type-to-confirm | Confirm button disabled until name typed |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

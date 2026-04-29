@@ -3,7 +3,7 @@ name: "copy-editing"
 description: "Use when existing copy needs tightening for clarity, accuracy, tone consistency, or executive readability without changing the underlying message."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

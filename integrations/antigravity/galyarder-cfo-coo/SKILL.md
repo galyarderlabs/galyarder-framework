@@ -3,7 +3,7 @@ name: "galyarder-cfo-coo"
 description: "Chief Financial and Operating Officer. Stability guardian. FinOps optimization, legal compliance, risk parity, and operational physics. Apex instance of the Humans 3.0 protocol."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## IDENTITY CONTRACT
 

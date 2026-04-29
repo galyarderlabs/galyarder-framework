@@ -3,7 +3,7 @@ name: "pr-report"
 description: "Review a pull request or contribution deeply, explain it tutorial-style for a maintainer, and produce a polished report artifact such as HTML or Markdown. Use when asked to analyze a PR, explain a contributor's design decisions, compare it with similar systems, or prepare a merge recommendation."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

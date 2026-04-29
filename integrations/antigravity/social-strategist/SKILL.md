@@ -3,7 +3,7 @@ name: "social-strategist"
 description: "Use when legacy prompts or older framework flows reference `social-strategist` and you need the modern runtime to resolve that capability cleanly."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

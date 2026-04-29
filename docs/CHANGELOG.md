@@ -2,10 +2,6 @@
 
 All notable changes to Galyarder Framework will be documented in this file.
 
-## [1.9.8] - 2026-04-27
-### Fixed
-- **Gemini Agent Tool Schema**: Corrected agent frontmatter to use the required `tools` key instead of the unrecognized `allowed-tools`. Standardized tool names to native Gemini CLI identifiers (`read_file`, `grep_search`, etc.) to fix validation failures.
-
 ## [1.9.7] - 2026-04-22
 ### Fixed
 - **Legacy Purge**: Permanently removed all legacy "Paperclip" references from Agent Adapter documentation, manifests, and skill logic. Standardized all packages under the `@galyarder` scope.
@@ -205,3 +201,5 @@ Architectural guardrails to make execution provable: gated testing ladder, test-
 - Removed all Dashboard CI workflows (Docker, e2e, release-smoke).
 - Migrated dashboard logic to a separate repository; local hooks must be re-pointed to `@galyarderlabs/galyarder-hq`.
 
+---
+© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.

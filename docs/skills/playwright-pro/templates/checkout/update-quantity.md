@@ -6,6 +6,7 @@ Tests increasing, decreasing, and removing items from cart.
 - Cart with at least one item: `{{productName}}` (quantity 2)
 - App running at `{{baseUrl}}`
 
+---
 
 ## TypeScript
 
@@ -79,6 +80,7 @@ test.describe('Update Cart Quantity', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -122,4 +124,5 @@ test.describe('Update Cart Quantity', () => {
 | Min quantity | Decrease button disabled at 1 |
 | Stock cap | Input clamped to available stock |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

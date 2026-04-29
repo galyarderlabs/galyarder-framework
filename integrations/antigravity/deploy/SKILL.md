@@ -3,7 +3,7 @@ name: "deploy"
 description: "Infrastructure and CI/CD specialist. Automates deployments to Vercel, Docker, or AWS."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

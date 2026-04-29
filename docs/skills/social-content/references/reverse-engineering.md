@@ -168,6 +168,7 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
      1. [Step]  verify: [check]
      2. [Step]  verify: [check]
 
+---
 
 ## The Formula
 
@@ -190,4 +191,5 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 - [ ] Built template library from patterns
 - [ ] Set up tracking for your own content performance
 
+---
  2026 Galyarder Labs. Galyarder Framework.

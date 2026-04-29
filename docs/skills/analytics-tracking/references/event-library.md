@@ -37,6 +37,7 @@ Comprehensive list of events to track by business type and context.
 | newsletter_subscribed | Email list signup | source, list_name |
 | trial_started | Free trial began | plan, source |
 
+---
 
 ## Product/App Events
 
@@ -74,6 +75,7 @@ Comprehensive list of events to track by business type and context.
 | support_contacted | Support request made | contact_method, issue_type |
 | feedback_submitted | User feedback given | feedback_type, rating |
 
+---
 
 ## Monetization Events
 
@@ -100,6 +102,7 @@ Comprehensive list of events to track by business type and context.
 | subscription_renewed | Renewed | plan, value |
 | billing_updated | Payment method changed | - |
 
+---
 
 ## E-commerce Events
 
@@ -141,6 +144,7 @@ Comprehensive list of events to track by business type and context.
 | refund_completed | Refund processed | transaction_id, value |
 | review_submitted | Product reviewed | product_id, rating |
 
+---
 
 ## B2B / SaaS Specific Events
 
@@ -172,6 +176,7 @@ Comprehensive list of events to track by business type and context.
 | account_churned | Account closed | reason, tenure, mrr_lost |
 | account_reactivated | Returned customer | previous_tenure, new_plan |
 
+---
 
 ## Event Properties (Parameters)
 
@@ -218,6 +223,7 @@ time_on_page: 45
 session_duration: 300
 ```
 
+---
 
 ## Funnel Event Sequences
 
@@ -244,4 +250,5 @@ session_duration: 300
 6. payment_info_entered
 7. purchase_completed
 
+---
  2026 Galyarder Labs. Galyarder Framework.

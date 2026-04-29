@@ -3,7 +3,7 @@ name: "design-md-linear.app"
 description: "Design system reference for design md linear.app."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 
 # Design System: Linear

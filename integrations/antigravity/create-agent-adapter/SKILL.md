@@ -3,7 +3,7 @@ name: "create-agent-adapter"
 description: "Technical guide for creating a new Galyarder Framework agent adapter. Use when building a new adapter package, adding support for a new AI coding tool (e.g. a new CLI agent, API-based agent, or custom process), or when modifying the adapter system. Covers the required interfaces, module structure, registration points, and conventions derived from the existing claude-local and codex-local adapters."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

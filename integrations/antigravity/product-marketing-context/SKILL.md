@@ -3,7 +3,7 @@ name: "product-marketing-context"
 description: "Use when GTM, sales, growth, or launch work needs a canonical product-marketing context document instead of ad hoc assumptions."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

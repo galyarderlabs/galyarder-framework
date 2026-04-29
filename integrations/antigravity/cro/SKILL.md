@@ -3,7 +3,7 @@ name: "cro"
 description: "Conversion Rate Optimization specialist. Optimizes onboarding, paywalls, and signup flows."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

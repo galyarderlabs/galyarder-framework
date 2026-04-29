@@ -4,11 +4,13 @@
 **Prepared By:** [Name]
 **Date:** [Report Date]
 
+---
 
 ## Executive Summary
 
 [2-3 sentence summary of overall campaign performance, key wins, and areas of concern.]
 
+---
 
 ## Portfolio Overview
 
@@ -24,6 +26,7 @@
 | Blended CPA | $ | $ | % |
 | Blended CPL | $ | $ | % |
 
+---
 
 ## Channel Performance
 
@@ -36,6 +39,7 @@
 | Organic | $ | $ | % | x | $ | | |
 | **Total** | **$** | **$** | **%** | **x** | **$** | | |
 
+---
 
 ## Top Performing Campaigns
 
@@ -70,6 +74,7 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
      1. [Step]  verify: [check]
      2. [Step]  verify: [check]
 
+---
 
 ## Underperforming Campaigns
 
@@ -85,6 +90,7 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 - **Standard Comparison:** [How it compares to Standards]
 - **Recommended Action:** [Specific action to take]
 
+---
 
 ## Attribution Analysis
 
@@ -96,6 +102,7 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 
 **Key Insight:** [What does the attribution analysis tell us about channel value that single-model analysis would miss?]
 
+---
 
 ## Funnel Analysis
 
@@ -111,6 +118,7 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 **Primary Bottleneck:** [Stage transition with largest drop-off]
 **Recommended Focus:** [What to optimize next]
 
+---
 
 ## Budget Allocation Recommendations
 
@@ -122,6 +130,7 @@ Based on this period's performance data:
 | [Channel] | [X]% ($[X]) | [X]% ($[X]) | [Reason] |
 | [Channel] | [X]% ($[X]) | [X]% ($[X]) | [Reason] |
 
+---
 
 ## Action Items
 
@@ -132,6 +141,7 @@ Based on this period's performance data:
 | Medium | [Action] | [Name] | [Date] | [Impact] |
 | Low | [Action] | [Name] | [Date] | [Impact] |
 
+---
 
 ## Next Period Goals
 
@@ -142,7 +152,9 @@ Based on this period's performance data:
 | CPA | $[X] | $[X] | [How] |
 | Lead Volume | [X] | [X] | [How] |
 
+---
 
 *Report generated using campaign-analytics toolkit. Data source: [Source system/platform].*
 
+---
  2026 Galyarder Labs. Galyarder Framework.
