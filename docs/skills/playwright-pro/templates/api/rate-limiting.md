@@ -8,6 +8,7 @@ Tests rate limit headers, 429 response, and Retry-After handling.
 - Rate limit: `{{rateLimit}}` requests per `{{rateLimitWindow}}`
 - API base: `{{apiBaseUrl}}`
 
+---
 
 ## TypeScript
 
@@ -99,6 +100,7 @@ test.describe('Rate Limiting', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -149,4 +151,5 @@ test.describe('Rate Limiting', () => {
 | Per-user bucket | Exhausted user doesn't affect others |
 | Window reset | Clock advanced  limit resets |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

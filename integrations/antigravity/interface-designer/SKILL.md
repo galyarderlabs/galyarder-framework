@@ -3,7 +3,7 @@ name: "interface-designer"
 description: "Use when a product flow needs interface structure, component planning, interaction details, or screen-level UX shaping before implementation."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

@@ -2,6 +2,7 @@
 
 Complete check matrices for cloud security posture management across AWS, Azure, and GCP. Each check includes finding condition, severity, MITRE ATT&CK technique, and remediation guidance.
 
+---
 
 ## AWS IAM Checks
 
@@ -19,6 +20,7 @@ Complete check matrices for cloud security posture management across AWS, Azure,
 | Data exfil on wildcard | `s3:GetObject` on `Resource: *` | High | T1530 | Restrict to specific bucket ARNs |
 | Secrets exfil on wildcard | `secretsmanager:GetSecretValue` on `Resource: *` | High | T1552 | Restrict to specific secret ARNs |
 
+---
 
 ## AWS S3 Checks
 
@@ -33,6 +35,7 @@ Complete check matrices for cloud security posture management across AWS, Azure,
 | Versioning disabled | VersioningConfiguration = Suspended or absent | Medium | T1485 | Enable versioning to protect against ransomware deletion |
 | Access logging disabled | LoggingEnabled absent | Low | T1530 | Enable server access logging for audit trail |
 
+---
 
 ## AWS Security Group Checks
 
@@ -48,6 +51,7 @@ Complete check matrices for cloud security posture management across AWS, Azure,
 | Redis open | Port 6379 from 0.0.0.0/0 or ::/0 | High | T1190 | Move Redis to private subnet; allow only from app tier SG |
 | Elasticsearch open | Port 9200 from 0.0.0.0/0 or ::/0 | High | T1190 | Move to private subnet; use VPC endpoint |
 
+---
 
 ## Azure Checks
 
@@ -64,6 +68,7 @@ Complete check matrices for cloud security posture management across AWS, Azure,
 | MFA not required for admin | Entra ID | Global Administrator without MFA enforcement | Critical | Enforce MFA via Conditional Access for all privileged roles |
 | PIM not used for privileged roles | Entra ID | Standing assignment to privileged role (not eligible) | High | Migrate to PIM eligible assignments with JIT activation |
 
+---
 
 ## GCP Checks
 
@@ -79,6 +84,7 @@ Complete check matrices for cloud security posture management across AWS, Azure,
 | Default service account used | Compute Engine | Instance using the default compute service account | Medium | Create dedicated service accounts with minimal required scopes |
 | Serial port access enabled | Compute Engine | `metadata.serial-port-enable` = true | Medium | Disable serial port access; use OS Login instead |
 
+---
 
 ## IaC Check Matrix
 
@@ -102,4 +108,5 @@ Complete check matrices for cloud security posture management across AWS, Azure,
 | NetworkPolicy | Missing | No NetworkPolicy defined for namespace | Add default-deny ingress/egress policy |
 | Secret | Type | Credentials in ConfigMap instead of Secret | Move to Kubernetes Secrets or external secrets manager |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

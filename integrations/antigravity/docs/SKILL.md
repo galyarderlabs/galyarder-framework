@@ -3,7 +3,7 @@ name: "docs"
 description: "Documentation and codemap specialist. Generates codemaps, updates READMEs, and syncs documentation with the source code."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

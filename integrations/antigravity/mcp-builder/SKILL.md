@@ -3,7 +3,7 @@ name: "mcp-builder"
 description: "MCP integration orchestrator. Use PROACTIVELY when the framework needs a new MCP-backed workflow, connector surface, or toolchain integration."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

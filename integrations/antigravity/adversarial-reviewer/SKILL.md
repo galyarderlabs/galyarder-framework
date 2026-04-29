@@ -3,7 +3,7 @@ name: "adversarial-reviewer"
 description: "Use when a plan, feature, or launch needs an explicit adversarial pass to find weak assumptions, abuse cases, or strategic blind spots before execution."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

@@ -2,6 +2,7 @@
 
 A stage-by-stage guide to diagnosing and improving marketing and sales funnel performance. Use this framework alongside the funnel_analyzer.py tool to identify bottlenecks and implement targeted optimizations.
 
+---
 
 ## The Standard Marketing Funnel
 
@@ -21,6 +22,7 @@ A stage-by-stage guide to diagnosing and improving marketing and sales funnel pe
 
 Each transition between stages represents a conversion point. The funnel analyzer measures these transitions and identifies where the largest drop-offs occur.
 
+---
 
 ## Stage-by-Stage Optimization
 
@@ -52,6 +54,7 @@ Each transition between stages represents a conversion point. The funnel analyze
 - Cost per engagement
 - Brand lift (if measured)
 
+---
 
 ### Stage 2: Interest to Consideration
 
@@ -84,6 +87,7 @@ Each transition between stages represents a conversion point. The funnel analyze
 - Time on page
 - Form abandonment rate
 
+---
 
 ### Stage 3: Consideration to Intent
 
@@ -116,6 +120,7 @@ Each transition between stages represents a conversion point. The funnel analyze
 - Email engagement rates (nurture sequences)
 - Content engagement (case studies, comparisons)
 
+---
 
 ### Stage 4: Intent to Purchase
 
@@ -150,6 +155,7 @@ Each transition between stages represents a conversion point. The funnel analyze
 - Win rate (B2B)
 - Average order value
 
+---
 
 ### Stage 5: Purchase to Retention
 
@@ -183,6 +189,7 @@ Each transition between stages represents a conversion point. The funnel analyze
 - Expansion revenue
 - Churn rate and reasons
 
+---
 
 ## Bottleneck Diagnosis Framework
 
@@ -227,6 +234,7 @@ Score = (Impact + Confidence + Ease) / 3
 
 Prioritize fixes with the highest ICE score.
 
+---
 
 ## Funnel Math and Revenue Impact
 
@@ -251,6 +259,7 @@ Revenue Impact = Current_Revenue * (1 / Current_Conversion_Rate) * Improvement_P
 
 **Key insight:** Improvements at the top of the funnel have a multiplied effect on downstream stages. But improvements at the bottom of the funnel convert to revenue faster.
 
+---
 
 ## Common Anti-Patterns
 
@@ -285,6 +294,7 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
      1. [Step]  verify: [check]
      2. [Step]  verify: [check]
 
+---
 
 ## Segment Comparison Best Practices
 
@@ -295,6 +305,7 @@ When using the funnel analyzer's segment comparison feature:
 3. **Look for stage-specific differences**: Two segments may have similar overall rates but different bottlenecks
 4. **Use insights to inform targeting**: If one segment converts better at a specific stage, understand why and apply those lessons
 
+---
 
 ## Recommended Review Cadence
 
@@ -306,4 +317,5 @@ When using the funnel analyzer's segment comparison feature:
 | Strategic funnel review | Quarterly | Funnel structure, stage definitions, Standard updates |
 | Annual funnel redesign | Annually | Stage definitions, measurement methodology, tool updates |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

@@ -3,7 +3,7 @@ name: "doc-updater"
 description: "Use when documentation, READMEs, release notes, or operating docs have drifted from the current shipped behavior and need synchronized updates."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

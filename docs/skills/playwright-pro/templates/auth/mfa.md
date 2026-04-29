@@ -8,6 +8,7 @@ Tests 2FA TOTP code entry, backup codes, and MFA enrollment flow.
 - Backup code: `{{backupCode}}`
 - App running at `{{baseUrl}}`
 
+---
 
 ## TypeScript
 
@@ -75,6 +76,7 @@ test.describe('MFA', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -122,4 +124,5 @@ test.describe('MFA', () => {
 | Expired code | Clock-advanced token rejected |
 | MFA enrollment | QR shown  token verified  backup codes displayed |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

@@ -4,6 +4,7 @@
 
 Use this decision tree to help users choose the right license. Ask questions in order and follow the branches.
 
+---
 
 ## Primary Decision Flow
 
@@ -21,6 +22,7 @@ Use this decision tree to help users choose the right license. Ask questions in 
 **D) Not sure / want guidance**
  Go to [Guided Questions](#guided-questions)
 
+---
 
 ## Permissive Path
 
@@ -47,6 +49,7 @@ Use this decision tree to help users choose the right license. Ask questions in 
 - MIT for simplicity
 - Apache-2.0 for patent protection
 
+---
 
 ## Copyleft Path
 
@@ -80,6 +83,7 @@ Use this decision tree to help users choose the right license. Ask questions in 
 - Classic GPL, widely used
 - Examples: Linux kernel, Git, BusyBox
 
+---
 
 ## Commercial Path
 
@@ -100,6 +104,7 @@ Use this decision tree to help users choose the right license. Ask questions in 
 - Maximum adoption = more potential customers
 - Monetize through support, hosting, enterprise features
 
+---
 
 ## Guided Questions
 
@@ -163,6 +168,7 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
      1. [Step]  verify: [check]
      2. [Step]  verify: [check]
 
+---
 
 ## Quick Recommendation Summary
 
@@ -177,6 +183,7 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 | Public domain equivalent | Unlicense or CC0 |
 | Documentation/content | CC-BY-4.0 |
 
+---
 
 ## Red Flags to Avoid
 
@@ -190,6 +197,7 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 - **License proliferation** - Stick to well-known licenses
 - **Mixing incompatible licenses** - See compatibility matrix
 
+---
 
 ## Final Checklist
 
@@ -202,4 +210,5 @@ Before finalizing your license choice:
 - [ ] Is the license OSI-approved? (if open source is important)
 - [ ] Have you consulted legal counsel for commercial projects?
 
+---
  2026 Galyarder Labs. Galyarder Framework.

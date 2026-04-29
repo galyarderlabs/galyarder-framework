@@ -62,5 +62,8 @@ Regulatory compliance, token FinOps, and cost arbitrage.
 Memory preservation and visual logic mapping.
 - **obsidian-architect**: Knowledge base and departmental reporting lead.
 
+---
 **Protocol Enforcement**: Every agent listed above is hardcoded with the mandatory 1-Man Army Protocols including SequentialThinking, Context7, and the Iron Law of TDD.
 
+---
+© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.

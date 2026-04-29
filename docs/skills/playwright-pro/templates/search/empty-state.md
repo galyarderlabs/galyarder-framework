@@ -6,6 +6,7 @@ Tests no-results messaging and clear-filters behaviour.
 - App running at `{{baseUrl}}`
 - Query that returns no results: `{{emptySearchQuery}}`
 
+---
 
 ## TypeScript
 
@@ -70,6 +71,7 @@ test.describe('Empty State', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -106,4 +108,5 @@ test.describe('Empty State', () => {
 | Network error | Error state distinct from no-results |
 | Last item deleted | Empty state shown after deletion |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

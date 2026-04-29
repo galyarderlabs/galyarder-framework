@@ -3,7 +3,7 @@ name: "launch-strategy"
 description: "Use when a release needs launch framing, sequencing, channel choices, and rollout logic across product, growth, and support."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

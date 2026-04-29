@@ -3,7 +3,7 @@ name: "ab-test-setup"
 description: "Structured guide for setting up A/B tests with mandatory gates for hypothesis, metrics, and execution readiness."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

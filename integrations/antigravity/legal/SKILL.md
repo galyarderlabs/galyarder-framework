@@ -3,7 +3,7 @@ name: "legal"
 description: "Generate TOS/Privacy policies, audit GDPR compliance, and review licenses."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

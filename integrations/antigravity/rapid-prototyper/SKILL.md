@@ -3,7 +3,7 @@ name: "rapid-prototyper"
 description: "Ultra-fast proof-of-concept and MVP specialist. Use this agent when you need to validate an idea quickly  working prototype before the meeting's over. Pragmatic, speed-focused, validation-oriented. Ships in days, not weeks."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

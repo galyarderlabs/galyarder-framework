@@ -3,7 +3,7 @@ name: "contract-and-proposal-writer"
 description: "Generate production-ready business documents including freelance contracts, project proposals, SOWs, NDAs, and MSAs with jurisdiction-aware clauses. Covers US (Delaware), EU (GDPR), UK, and DACH (German law) legal frameworks. Includes contract templates, clause libraries, and DOCX conversion. Use when starting client engagements, writing proposals, drafting partnership agreements, or needing GDPR-compliant data processing addenda."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

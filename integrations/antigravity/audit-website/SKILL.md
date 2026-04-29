@@ -3,7 +3,7 @@ name: "audit-website"
 description: "Use when a website needs a broad audit covering UX, conversion, content, SEO, technical correctness, and information hierarchy before changes are planned."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

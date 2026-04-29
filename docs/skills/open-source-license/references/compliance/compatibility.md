@@ -4,6 +4,7 @@
 
 License compatibility determines whether code under different licenses can be combined in the same project. Incompatibility means the combined work cannot legally be distributed.
 
+---
 
 ## Compatibility Matrix
 
@@ -23,6 +24,7 @@ License compatibility determines whether code under different licenses can be co
 *GPL-2.0 and GPL-3.0 are only compatible if "or later" clause is used
 **MPL-2.0 has explicit GPL compatibility provisions
 
+---
 
 ## Key Compatibility Rules
 
@@ -62,6 +64,7 @@ MPL-2.0 code can coexist with other licenses:
 - Other files can be any license
 - Explicit secondary license provision for GPL compatibility
 
+---
 
 ## Common Compatibility Scenarios
 
@@ -123,6 +126,7 @@ Your SaaS Platform
 - Release your modifications as AGPL-3.0
 - Provide source to users accessing via network
 
+---
 
 ## Resolving Incompatibilities
 
@@ -149,6 +153,7 @@ Contact the copyright holder to negotiate alternative licensing.
 
 GPL has an exception for system libraries (libc, etc.)
 
+---
 
 ## Dual-Licensed Dependencies
 
@@ -164,6 +169,7 @@ You choose ONE:
 
 SPDX expression: Use `OR` for choice, `AND` for both required.
 
+---
 
 ## Checking Compatibility Programmatically
 
@@ -188,6 +194,7 @@ SPDX expression: Use `OR` for choice, `AND` for both required.
 5. **Snyk** - Security + license scanning
 6. **WhiteSource/Mend** - Enterprise compliance
 
+---
 
 ## License Compatibility Flowchart
 
@@ -223,4 +230,5 @@ SPDX expression: Use `OR` for choice, `AND` for both required.
                              
 ```
 
+---
  2026 Galyarder Labs. Galyarder Framework.

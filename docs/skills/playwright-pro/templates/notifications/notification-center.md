@@ -7,6 +7,7 @@ Tests full notification list, filtering, and bulk clear.
 - Mix of read/unread notifications seeded
 - App running at `{{baseUrl}}`
 
+---
 
 ## TypeScript
 
@@ -83,6 +84,7 @@ test.describe('Notification Center', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -125,4 +127,5 @@ test.describe('Notification Center', () => {
 | Empty state | No-notifications message post-clear |
 | Source link | Click navigates away from center |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

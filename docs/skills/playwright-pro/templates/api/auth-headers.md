@@ -8,6 +8,7 @@ Tests token authentication, expired token handling, and token refresh flow.
 - Refresh token: `{{refreshToken}}`
 - API base: `{{apiBaseUrl}}`
 
+---
 
 ## TypeScript
 
@@ -94,6 +95,7 @@ test.describe('API Auth Headers', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -145,4 +147,5 @@ test.describe('API Auth Headers', () => {
 | Cookie auth | Session cookie accepted |
 | Revoked token | 401 for revoked token |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

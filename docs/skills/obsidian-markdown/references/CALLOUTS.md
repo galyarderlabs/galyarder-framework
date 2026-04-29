@@ -57,4 +57,5 @@
 }
 ```
 
+---
  2026 Galyarder Labs. Galyarder Framework.

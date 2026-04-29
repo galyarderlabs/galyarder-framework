@@ -3,7 +3,7 @@ name: "galyarder-specialist"
 description: "Use when the founder needs a single orchestrator to route work across multiple departments, synthesize specialist output, or translate an ambiguous business request into a concrete execution path."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

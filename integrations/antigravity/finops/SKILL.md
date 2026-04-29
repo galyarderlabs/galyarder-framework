@@ -3,7 +3,7 @@ name: "finops"
 description: "Audit cloud costs, optimize API token usage, and evaluate pricing models."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

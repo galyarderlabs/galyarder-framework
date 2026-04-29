@@ -7,6 +7,7 @@ Tests live data via WebSocket or polling, connection handling, and reconnection.
 - Dashboard with live data at `{{baseUrl}}/dashboard`
 - WebSocket endpoint: `{{wsEndpoint}}`
 
+---
 
 ## TypeScript
 
@@ -93,6 +94,7 @@ test.describe('Realtime Updates', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -140,4 +142,5 @@ test.describe('Realtime Updates', () => {
 | Auto-reconnect | Reconnects after close |
 | Stale data | Warning shown while disconnected |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

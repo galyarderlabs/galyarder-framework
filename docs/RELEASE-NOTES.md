@@ -9,6 +9,7 @@ This release finalizes the "Galyarder Standard" by permanently purging all legac
 - **Branding Sterilization**: Conducted a recursive audit to ensure 100% Galyarder identity.
 - **Agent Adapter Fix**: Updated the `create-agent-adapter` skill to reflect the new standardized types.
 
+---
 
 ## [v1.9.0] - 2026-04-22
 ### The Unified CLI & NPM Era
@@ -27,6 +28,7 @@ galyarder help
 galyarder smoke
 ```
 
+---
 
 ## [v1.8.17] - 2026-04-19
 ### Operational Realignment
@@ -36,6 +38,7 @@ Updated the core operational sequence and command protocols to explicitly incorp
 - **Mermaid Sequence Update**: Injected the Neural Link into the "Operational Sequence" to show automated dependency auditing before strategic planning.
 - **Protocol Expansion**: Added "Mapping" as Phase II of the 1-Man Army Command Protocol, ensuring all missions begin with a neural dependency audit.
 
+---
 
 ## [v1.8.16] - 2026-04-19
 
@@ -52,6 +55,7 @@ This patch removes the temporary compatibility source layer and keeps the restor
 bash scripts/smoke.sh
 ```
 
+---
 
 ## [v1.8.13] - 2026-04-20
 ### Runtime Compatibility Recovery
@@ -70,6 +74,7 @@ python3 scripts/build_root_extension_surface.py --output-root .marketplace/full
 bash scripts/smoke.sh
 ```
 
+---
 
 ## [v1.8.12] - 2026-04-20
 ### Claude Bundle Autodiscovery Fix
@@ -84,6 +89,7 @@ This patch removes the full bundle's explicit component-path overrides and lets 
 bash scripts/smoke.sh
 ```
 
+---
 
 ## [v1.8.11] - 2026-04-20
 ### Claude Bundle Manifest Shape Fix
@@ -98,6 +104,7 @@ This patch fixes the last Claude Code marketplace schema mismatch in the all-in-
 bash scripts/smoke.sh
 ```
 
+---
 
 ## [v1.8.10] - 2026-04-20
 ### Claude Manifest Repair + Persona Parity
@@ -115,6 +122,7 @@ python3 scripts/build_root_extension_surface.py --output-root .marketplace/full
 bash scripts/smoke.sh
 ```
 
+---
 
 ## [v1.8.9] - 2026-04-20
 ### Copilot Persona Identity Fix
@@ -131,6 +139,7 @@ python3 scripts/build_root_extension_surface.py --output-root .marketplace/full
 bash scripts/smoke.sh
 ```
 
+---
 
 ## [v1.8.8] - 2026-04-19
 ### Gemini Agent Tool Mapping Fix
@@ -147,6 +156,7 @@ python3 scripts/build_root_extension_surface.py --output-root .marketplace/full
 bash scripts/smoke.sh
 ```
 
+---
 
 ## [v1.8.7] - 2026-04-19
 ### Gemini Schema + Design Skill Fix
@@ -164,6 +174,7 @@ python3 scripts/build_root_extension_surface.py --output-root .marketplace/full
 bash scripts/smoke.sh
 ```
 
+---
 
 ## [v1.8.6] - 2026-04-19
 ### Canonical Root Runtime
@@ -181,6 +192,7 @@ bash scripts/convert.sh --tool all
 bash scripts/smoke.sh
 ```
 
+---
 
 ## [v1.8.5] - 2026-04-19
 ### Root Extension Surface
@@ -197,6 +209,7 @@ python3 scripts/build_root_extension_surface.py
 bash scripts/smoke.sh
 ```
 
+---
 
 ## [v1.8.4] - 2026-04-19
 ### Host Bundle Repair
@@ -215,6 +228,7 @@ python3 scripts/build_host_bundle.py
 bash scripts/smoke.sh
 ```
 
+---
 
 ## [v1.8.3] - 2026-04-19
 ### Packaging Recovery & Lazy Neural Link
@@ -237,6 +251,7 @@ Expected outcome:
 - No broken symlinks detected
 - Full marketplace bundle is present and scoped
 
+---
 
 ## [v1.8.2] - 2026-04-19
 ### Ecosystem Broadcast: The Neural Link
@@ -247,6 +262,7 @@ Officially broadcasted the Galyarder Neural Link capability across all 14 platfo
 - **Executive Awareness**: `chief-of-staff` and `galyarder-specialist` are now programmed to orchestrate map rebuilding after major architectural shifts.
 - **Global Manifest Bump**: All 21 marketplace and plugin manifests have been bumped to v1.8.2 to ensure the ecosystem picks up the new capabilities.
 
+---
 
 ## [v1.8.1] - 2026-04-19
 ### Final Audit & Path Hardening
@@ -259,6 +275,7 @@ A critical patch following the Humans 3.0 deep audit to ensure 100% logic integr
 - **OpenCode Repair**: Fixed Silo discovery and tool mapping in the OpenCode native plugin.
 - **Clean Registry**: Permanently purged all low-value hidden directories (`.autoresearch`, `.agents`).
 
+---
 
 ## [v1.8.0] - 2026-04-19
 ### Summary
@@ -300,3 +317,5 @@ rtk npm run test:unit && rtk npm run test:contract && rtk npm run test:e2e
 #### Migration
 [View Full Migration Guide](MIGRATION.md)
 
+---
+© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.

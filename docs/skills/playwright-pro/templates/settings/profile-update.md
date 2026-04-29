@@ -7,6 +7,7 @@ Tests updating name, email, and avatar in user profile settings.
 - Current name: `{{currentName}}`, email: `{{currentEmail}}`
 - Test avatar image: `{{avatarFilePath}}`
 
+---
 
 ## TypeScript
 
@@ -83,6 +84,7 @@ test.describe('Profile Update', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -127,4 +129,5 @@ test.describe('Profile Update', () => {
 | Taken email | Duplicate error shown |
 | Nav update | Navigation reflects new name |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

@@ -49,6 +49,7 @@ Variables capture dynamic values.
 - RegEx tables
 - Constants
 
+---
 
 ## Naming Conventions
 
@@ -75,6 +76,7 @@ JS - Current Timestamp
 LT - Campaign Source Map
 ```
 
+---
 
 ## Data Layer Patterns
 
@@ -184,6 +186,7 @@ dataLayer.push({
 });
 ```
 
+---
 
 ## Common Tag Configurations
 
@@ -244,6 +247,7 @@ dataLayer.push({
 
 **Trigger:** Custom Event - form_submitted
 
+---
 
 ## Preview and Debug
 
@@ -276,6 +280,7 @@ dataLayer.push({
 - Look for duplicate tags
 - Check tag firing options
 
+---
 
 ## Workspaces and Versioning
 
@@ -303,6 +308,7 @@ v15: Added purchase conversion tracking
 - Tested: Chrome, Safari, Mobile
 ```
 
+---
 
 ## Consent Management
 
@@ -330,6 +336,7 @@ function grantConsent() {
 2. Configure consent for each tag
 3. Tags respect consent state automatically
 
+---
 
 ## Advanced Patterns
 
@@ -372,4 +379,5 @@ function() {
 }
 ```
 
+---
  2026 Galyarder Labs. Galyarder Framework.

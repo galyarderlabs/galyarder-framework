@@ -3,7 +3,7 @@ name: "systematic-debugging"
 description: "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes"
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

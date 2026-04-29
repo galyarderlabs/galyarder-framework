@@ -3,7 +3,7 @@ name: "report"
 description: "Generate test report. Use when user says \"test report\", \"results summary\", \"test status\", \"show results\", \"test dashboard\", or \"how did tests go\"."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

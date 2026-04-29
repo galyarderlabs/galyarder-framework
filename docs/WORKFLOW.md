@@ -11,6 +11,7 @@ Every phase of the workflow is governed by the 1-Man Army Global Protocols:
 4. **Technical Integrity (Karpathy)**: Think Before Coding, Simplicity First, Surgical Changes, and Goal-Driven Execution.
 5. **The Obsidian Loop**: Every task must result in a durable markdown report saved to the relevant department folder in `docs/departments/` via the **MemoryStore Interface**.
 
+---
 
 ## Operational Modes
 
@@ -22,6 +23,7 @@ To maintain high velocity without sacrificing institutional-grade quality, the f
    - **Constraint**: Requires a post-mortem ticket in Linear and a patch release note.
 3. **EXPERIMENT Mode**: Timeboxed, throwaway code for rapid validation. TDD is optional. Code is quarantined and cannot be merged to `main`.
 
+---
 
 ## The Gating Ladder (Audit Standard)
 
@@ -31,6 +33,7 @@ Every mission in `BUILD` or `INCIDENT` mode must pass through the following veri
 2. **Gate 2: Contract Test**: Interface-level verification of the structural exchange format (JSON schema/payload) between agents and tools. Location: `tests/contract/`.
 3. **Gate 3: E2E/Smoke**: Golden path verification in a live or simulated environment (e.g., via BrowserOS).
 
+---
 
 ## Phase 1: Market Intelligence & Discovery (The "Why")
 
@@ -96,6 +99,9 @@ Once the code is merged:
 3. **Programmatic Distribution**: The `remotion-engineer` generates data-driven marketing and changelog videos.
 4. **Memetic Warfare**: Engineer social distribution threads and transition the Linear ticket to "Done".
 
+---
 
 **Core Rule**: Never skip phases (unless explicitly in INCIDENT or EXPERIMENT mode). Every change must trace to a verified request and conclude with a durable report. Information flows up; Vision flows down.
 
+---
+Copyright 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.

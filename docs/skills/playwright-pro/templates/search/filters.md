@@ -7,6 +7,7 @@ Tests category filter, price range, and checkbox filters.
 - Category `{{filterCategory}}` with items
 - App running at `{{baseUrl}}`
 
+---
 
 ## TypeScript
 
@@ -84,6 +85,7 @@ test.describe('Search Filters', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -125,4 +127,5 @@ test.describe('Search Filters', () => {
 | Clear all | All filters removed at once |
 | No-results combo | Filter combination yields empty state |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

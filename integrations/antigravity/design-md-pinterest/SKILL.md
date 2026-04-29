@@ -3,7 +3,7 @@ name: "design-md-pinterest"
 description: "Design system reference for design md pinterest."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 
 # Design System: Pinterest

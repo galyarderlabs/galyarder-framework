@@ -3,7 +3,7 @@ name: "board-deck-builder"
 description: "Use when leadership needs a board or investor deck structure assembled from product, growth, finance, and execution updates."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

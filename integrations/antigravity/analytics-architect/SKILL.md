@@ -3,7 +3,7 @@ name: "analytics-architect"
 description: "Use when the work needs analytics architecture, event planning, KPI design, attribution boundaries, or instrumentation review across product and growth."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

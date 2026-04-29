@@ -51,4 +51,5 @@ Copilot CLI supports persistent async shell sessions, which have no direct Claud
 | `fetch_copilot_cli_documentation` | Look up Copilot CLI documentation |
 | GitHub MCP tools (`github-mcp-server-*`) | Native GitHub API access (issues, PRs, code search) |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

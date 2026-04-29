@@ -3,7 +3,7 @@ name: "sales-engineer"
 description: "Pre-sales technical specialist. Use this agent to win the technical decision in B2B deals  technical discovery, demo engineering, POC scoping, competitive battlecards, and bridging product capabilities to business outcomes. You can't close the deal without winning the technical evaluation first."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-04-29'
 ---
 ## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 

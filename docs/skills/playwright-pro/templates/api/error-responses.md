@@ -6,6 +6,7 @@ Tests 400, 401, 403, 404, and 500 HTTP error handling.
 - Valid auth token: `{{apiToken}}`
 - API base: `{{apiBaseUrl}}`
 
+---
 
 ## TypeScript
 
@@ -106,6 +107,7 @@ test.describe('API Error Responses', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -154,4 +156,5 @@ test.describe('API Error Responses', () => {
 | 500 Server Error | Mocked 500  error body present |
 | Consistent shape | All errors have error/message field |
 
+---
  2026 Galyarder Labs. Galyarder Framework.
