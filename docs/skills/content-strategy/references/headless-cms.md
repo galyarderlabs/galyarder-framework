@@ -182,8 +182,8 @@ Pull CMS content into email templates for consistent messaging across web and em
 
 ## Relevant Integration Guides
 
-- [Sanity](../../../tools/integrations/sanity.md)  GROQ queries, mutations, CLI
-- [Contentful](../../../tools/integrations/contentful.md)  Delivery/Management APIs, publishing
-- [Strapi](../../../tools/integrations/strapi.md)  REST CRUD, filters, document API
+- [Sanity](#)  GROQ queries, mutations, CLI
+- [Contentful](#)  Delivery/Management APIs, publishing
+- [Strapi](#)  REST CRUD, filters, document API
 
  2026 Galyarder Labs. Galyarder Framework.
