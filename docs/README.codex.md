@@ -89,7 +89,7 @@ Codex adapter is responsible only for mapping those roles onto Codex-native
 subagent capabilities.
 
 For the exact Codex mapping, see
-[`skills/using-references/codex-tools.md`](../skills/using-references/codex-tools.md).
+[`skills/using-references/codex-tools.md`](#).
 
 ### Personal Skills
 
