@@ -1,46 +1,34 @@
-# Galyarder Framework: Advanced Agentic Context (Gemini CLI)
+# GEMINI.md — Galyarder Framework
 
-# BOOTSTRAP: Load core system intelligence
-@AGENTS.md
-@WORKFLOW.md
+Gemini CLI agents working in this repository must treat `AGENTS.md` as the canonical root instruction file.
 
-Load behavior must stay department-scoped. Use the selected extension's personas,
-agents, commands, and skills; do not rely on root-level monolithic rule files.
+## Bootstrap
 
-## 1. THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
+Load in order:
 
-Every operation within this session is governed by the Humans 3.0 logic gate. You are hardcoded to enforce:
+1. `AGENTS.md`
+2. `WORKFLOW.md` when present and relevant to the task
+3. The specific agent, skill, command, department, or integration file being changed
 
-### Operational Modes
-- **BUILD (Default)**: Heavy ceremony. Requires PRD, Blueprinting, and full TDD gating.
-- **INCIDENT**: Emergency hotfix mode. Bypasses planning but requires post-mortem and 48h conversion to BUILD.
-- **EXPERIMENT**: Timeboxed spike. No tests required; code must be quarantined.
+Use native Gemini file tools for surgical reads and replacements. Do not rewrite existing files wholesale unless the task explicitly requires a full replacement.
 
-### Mandatory Loop
-1. **Traceability**: All computational labor must occur within a project-scoped Linear issue.
-2. **Cognitive Integrity**: Explicit `sequentialthinking` MCP loop before any high-impact action.
-3. **Technical Integrity**: Think Before Coding, Simplicity First, Surgical Changes, and Goal-Driven Execution (Karpathy).
-4. **Validation**: Real-time fetch of official references via `context7`.
-5. **Token Economy**: Mandatory use of the `rtk` proxy for all terminal operations.
-6. **Persistence**: Every task must result in a durable markdown report in `docs/departments/` (The Obsidian Loop).
+## Product Identity
 
-## 2. SYSTEM BOOTLOADER
-- **Logic Source**: @Executive/skills/using-galyarder-framework/SKILL.md
-- **Native Tools**: ALWAYS use native tools (`read_file`, `replace`).
-- **Surgical Execution**: Do NOT use `write_file` or `cat` for existing files. Use `replace` for targeted edits. Read files surgically via `start_line` and `end_line`.
+Galyarder Framework is the Intelligence Layer for **Autonomous Goal Integration (AGI)** inside Galyarder Labs.
 
-## 3. HOST-SPECIFIC REQUIREMENTS (Antigravity)
-- **Sandbox**: Must be set to **OFF**. 
-- **Reason**: Access to the `rtk` binary and departmental workspace folders requires privileged file-system interaction.
+- AGI means Autonomous Goal Integration.
+- Agentic companies and AI-native builders are valid Framework contexts when tied to real workflows, agents, skills, tests, audits, and execution proof.
+- Do not frame the project as artificial general intelligence.
+- Do not reduce the project to a prompt pack.
+- Preserve the 1-Man Army operator context and verification-first execution model.
 
-## 4. OPERATIONAL COMMAND TRIGGERS
-- `/graph`: Rebuild the Galyarder Neural Link and synchronize the Obsidian World Map.
-- `/tdd`: Trigger the Engineering Test-Driven Development workflow.
-- `/plan`: Initiate PRD and architecture blueprinting via Vertical Slices.
-- `/marketing`: Launch growth, SEO, and conversion optimization swarms.
-- `/cybersecurity`: Conduct advanced offensive/defensive security audits.
-- `/incident`: Switch to INCIDENT mode for emergency hotfixes.
-- `/experiment`: Switch to EXPERIMENT mode for rapid spike validation.
+## Gemini-Specific Execution
+
+- Keep behavior department-scoped.
+- Preserve Gemini extension install/update/uninstall compatibility.
+- Do not let Gemini-specific instructions contradict Framework identity or agent verification rules.
+- Verify with the relevant package command before claiming completion.
 
 ---
-© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.
+
+© 2026 Galyarder Labs. Galyarder Framework.
