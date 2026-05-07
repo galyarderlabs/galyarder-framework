@@ -3,6 +3,8 @@
 # BOOTSTRAP: Load core system intelligence
 @AGENTS.md
 @WORKFLOW.md
+@docs/galyarder-labs/BRAND.md
+@docs/galyarder-labs/DESIGN.md
 
 Load behavior must stay department-scoped. Use the selected extension's personas,
 agents, commands, and skills; do not rely on root-level monolithic rule files.
