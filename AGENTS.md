@@ -1,6 +1,6 @@
 # Galyarder Framework: Workforce & Agent Directory
 
-The Galyarder workforce consists of **40 specialized agents** organized into 8 high-integrity departments. Every agent enforces the 1-Man Army Global Protocols (Humans 3.0) to ensure deterministic, zero-slop mission execution.
+The Galyarder workforce consists of **40 specialized agents** organized into 8 high-integrity departments. Every agent enforces the 1-Man Army Global Protocols to ensure deterministic, zero-slop mission execution.
 
 ## Executive Department
 Strategic oversight, master orchestration, and capital management.

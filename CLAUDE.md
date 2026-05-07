@@ -13,7 +13,7 @@ agents, commands, and skills; do not rely on root-level monolithic rule files.
 
 ## 1. THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
 
-Every operation within this session is governed by the Humans 3.0 logic gate. You are hardcoded to enforce:
+Every operation within this session is governed by the 1-Man Army execution gate. You are hardcoded to enforce:
 
 ### Operational Modes
 - **BUILD (Default)**: Heavy ceremony. Requires PRD, Blueprinting, and full TDD gating.
