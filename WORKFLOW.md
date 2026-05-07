@@ -1,6 +1,6 @@
-# Galyarder Framework: The Humans 3.0 Workflow
+# Galyarder Framework: The 1-Man Army Workflow
 
-Code without distribution is worthless. Development without validation is chaos. The Galyarder Framework enforces a deterministic, high-rigor sequence modeled after the Humans 3.0 protocol: the distillation of humanity's apex strategic minds, stripped of emotional overhead and executed with mathematical precision.
+Code without distribution is unfinished. Development without validation is chaos. The Galyarder Framework enforces a deterministic, high-rigor sequence for Autonomous Goal Integration: converting high-level operator intent into plans, implementation, tests, audits, and distribution with explicit proof gates.
 
 ## The Foundation: Global Mandatory Protocols
 
@@ -71,7 +71,7 @@ Once the PRD and Linear tickets are approved:
 
 With the blueprint finalized:
 1. **Linear Transition**: Set the ticket to "In Progress".
-2. **Deterministic Implementation**: The `elite-developer` implements vertical slices using the Humans 3.0 protocol.
+2. **Deterministic Implementation**: The `elite-developer` implements vertical slices using the 1-Man Army protocol.
 3. **Iron Law of TDD**: Implement failing tests (Red), prove they fail for the right reason, then pass (Green), then refactor.
 4. **Security Hardening**: Run offensive audits via `perseus` on authentication and data-handling logic.
 
