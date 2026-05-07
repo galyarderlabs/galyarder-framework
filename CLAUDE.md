@@ -5,6 +5,8 @@ This guide defines the high-integrity integration of Galyarder Framework within 
 # BOOTSTRAP: Load core system intelligence
 @AGENTS.md
 @WORKFLOW.md
+@BRAND.md
+@DESIGN.md
 @docs/galyarder-labs/BRAND.md
 @docs/galyarder-labs/DESIGN.md
 
