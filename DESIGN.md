@@ -9,7 +9,7 @@ For Labs-level canon, read:
 - [`docs/galyarder-labs/DESIGN.md`](./docs/galyarder-labs/DESIGN.md)
 - [`docs/galyarder-labs/BRAND.md`](./docs/galyarder-labs/BRAND.md)
 
-This file governs Framework documentation surfaces, developer-facing UI, generated assets, agent/skill directories, command references, and workflow visualizations.
+This file governs Framework documentation surfaces, developer-facing UI, generated assets, agent/skill/command directories, scaffolded department workspaces, command references, and workflow visualizations.
 
 ---
 
@@ -62,6 +62,8 @@ Use Labs design canon where relevant:
 
 - Dream for public landing/README hero assets,
 - Machine for developer docs, CLI flows, workflow diagrams, agent directories, and proof surfaces.
+
+Framework extension surfaces should use `agents/`, `skills/`, `commands/`, `personas/`, and `integrations/`. Scaffolded user workspaces may still use `docs/departments/*` as the Digital HQ surface. Do not design around legacy extension bundles such as `.marketplace/full/`.
 
 Framework should bias toward Machine:
 

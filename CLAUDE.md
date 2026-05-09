@@ -10,8 +10,9 @@ This guide defines the high-integrity integration of Galyarder Framework within 
 @docs/galyarder-labs/BRAND.md
 @docs/galyarder-labs/DESIGN.md
 
-Load behavior must stay department-scoped. Use the selected plugin's personas,
-agents, commands, and skills; do not rely on root-level monolithic rule files.
+Load behavior must stay department-scoped while reading the selected plugin's `personas/`,
+`agents/`, `commands/`, and `skills/` surfaces. Do not rely on root-level monolithic rule files
+or legacy extension bundle paths such as `.marketplace/full/`. Project reports may still write to scaffolded `docs/departments/*` folders.
 
 ---
 

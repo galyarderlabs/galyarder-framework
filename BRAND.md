@@ -20,6 +20,8 @@ This file governs Framework positioning, copy, public developer language, and ag
 
 It turns high-level operator intent into structured execution through agents, skills, commands, SOPs, workflow protocols, tests, audits, and distribution loops.
 
+Framework extension source lives in `agents/`, `skills/`, `commands/`, `personas/`, and `integrations/`. Department language is a logical routing taxonomy for the framework runtime and also maps to scaffolded `docs/departments/*` workspaces in user projects.
+
 Framework implements:
 
 > **Autonomous Goal Integration (AGI)**
