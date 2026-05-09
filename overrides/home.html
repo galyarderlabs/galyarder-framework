@@ -1,0 +1,86 @@
+{% extends "main.html" %}
+
+{% block tabs %}
+  {{ super() }}
+
+  {% if "home" in page.meta.template %}
+    <style>
+      /* --- PAPERCLIP ZERO-GAP STICKY OVERRIDE --- */
+      
+      .md-container {
+        padding-top: 0 !important;
+      }
+      
+      /* The Header: Fixed position to avoid pushing content down */
+      .md-header {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: transparent !important;
+      }
+
+      .md-header__inner {
+        margin-top: 1.5rem !important;
+        background: rgba(255, 255, 255, 0.1) !important;
+        backdrop-filter: blur(20px) saturate(180%) !important;
+        -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2) !important;
+        border-radius: 100px !important;
+      }
+
+      [data-md-color-scheme="slate"] .md-header__inner {
+        background: rgba(13, 17, 23, 0.2) !important;
+        border-color: rgba(255, 255, 255, 0.05) !important;
+      }
+      
+      /* Hero: Start at absolute top 0 */
+      .paperclip-hero {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        z-index: 1;
+        border: none !important;
+      }
+
+      /* Force hide any remaining layout lines on home */
+      [data-md-color-scheme="slate"] .md-main__inner,
+      [data-md-color-scheme="slate"] article {
+        border: none !important;
+        box-shadow: none !important;
+      }
+
+      /* Ensure tabs also float correctly if active */
+      .md-tabs {
+        position: fixed !important;
+        top: 5rem !important;
+        width: 100%;
+        z-index: 999;
+      }
+    </style>
+
+    <section class="paperclip-hero">
+      <div class="paperclip-image-container">
+        <img src="{{ 'assets/header.webp' | url }}" alt="Galyarder Framework" draggable="false">
+        <div class="paperclip-mask"></div>
+      </div>
+      <div class="paperclip-inner md-grid">
+        <div class="paperclip-content" style="margin-top: -10.5rem;">
+          <h1>Galyarder Framework</h1>
+          <p class="paperclip-subtitle">
+            Advanced Agentic Orchestration for the 1-Man Army. Implementing Autonomous Goal Integration (AGI).
+          </p>
+          <div class="paperclip-actions">
+            <a href="QUICK_START/" title="Get started" class="md-button md-button--primary">
+              Get started
+            </a>
+            <a href="WORKFLOW/" title="Workflow" class="md-button">
+              Workflow
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  {% endif %}
+{% endblock %}

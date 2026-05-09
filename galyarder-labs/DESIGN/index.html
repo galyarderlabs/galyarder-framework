@@ -1,0 +1,2672 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Advanced Agentic Orchestration for the 1-Man Army. Implementing Autonomous Goal Integration (AGI).">
+      
+      
+      
+        <link rel="canonical" href="https://galyarderlabs.github.io/galyarder-framework/galyarder-labs/DESIGN/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/logo.webp">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>DESIGN.md — Galyarder Labs Final Design System - Galyarder Framework</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../styles/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+  <style>
+    body, input { font-family: "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif }
+    h1, .md-typeset h1 { font-family: "Newsreader", serif; font-weight: 500; }
+  </style>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#designmd-galyarder-labs-final-design-system" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Galyarder Framework" class="md-header__button md-logo" aria-label="Galyarder Framework" data-md-component="logo">
+      
+  <img src="../../assets/logo.webp" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Galyarder Framework
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              DESIGN.md — Galyarder Labs Final Design System
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Use system preference"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Use system preference" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/galyarderlabs/galyarder-framework" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    galyarderlabs/galyarder-framework
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../QUICK_START/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Quick Start
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../TRIAD_OVERVIEW/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Triad Ecosystem
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../UNIFIED_PLATFORM/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Unified Platform
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../WORKFLOW/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Humans 3.0 Workflow
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../ORG_CHART/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Org Chart
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../INTEGRATION/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Multi-Platform
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../MIGRATION/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Migration
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../AGENTS/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Agent Directory
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../agents/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Specialized Agents
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../skills/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Strategic Skills
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../commands/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Slash Commands
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../design/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Design Specs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../testing/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Testing
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../CLAUDE/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Claude Rules
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../GEMINI/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Gemini Rules
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../INTEGRATION_COMPLETE/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Integration Checklist
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../CHANGELOG/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Changelog
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../RELEASE-NOTES/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Release Notes
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Galyarder Framework" class="md-nav__button md-logo" aria-label="Galyarder Framework" data-md-component="logo">
+      
+  <img src="../../assets/logo.webp" alt="logo">
+
+    </a>
+    Galyarder Framework
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/galyarderlabs/galyarder-framework" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    galyarderlabs/galyarder-framework
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../QUICK_START/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TRIAD_OVERVIEW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Triad Ecosystem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UNIFIED_PLATFORM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unified Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WORKFLOW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Humans 3.0 Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ORG_CHART/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Org Chart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../INTEGRATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi-Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MIGRATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AGENTS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent Directory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Specialized Agents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strategic Skills
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Slash Commands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design Specs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CLAUDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claude Rules
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GEMINI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gemini Rules
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../INTEGRATION_COMPLETE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integration Checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RELEASE-NOTES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Release Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-three-visual-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Three Visual Layers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Three Visual Layers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#layer-1-dream" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer 1 — Dream
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer-2-airlock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer 2 — Airlock
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer-3-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer 3 — Machine
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-color-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Color Rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Color Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Law
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#brand-colors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Brand Colors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semantic-colors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semantic Colors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#surface-colors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Surface Colors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forbidden-color-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Forbidden Color Patterns
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-typography-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Typography Rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Typography Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#marketing-typography" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Marketing Typography
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#product-typography" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Product Typography
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mono-typography" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mono Typography
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-layout-spacing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Layout &amp; Spacing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Layout &amp; Spacing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dream-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dream Layout
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#airlock-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Airlock Layout
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machine-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Machine Layout
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-imagery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Imagery
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Imagery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#keep" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keep
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Avoid
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-texture-atmosphere" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Texture &amp; Atmosphere
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-component-style" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Component Style
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Component Style">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#buttons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Buttons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cards
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inputs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#badges" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Badges
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#glass" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Glass
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#terminal-cards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Terminal Cards
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-product-surface-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Product Surface Rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Product Surface Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#galyarder-ledger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Galyarder Ledger
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#galyarder-hq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Galyarder HQ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#galyarder-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Galyarder Framework
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#galyarder-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Galyarder Agent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-agent-workforce-inside-ledger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-Agent Workforce inside Ledger
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="G-Agent Workforce inside Ledger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#g-agent-cfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-Agent CFO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-agent-sales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-Agent Sales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-agent-accountant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-Agent Accountant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-agent-auditor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-Agent Auditor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tax-optimizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tax Optimizer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-pipeline-surfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Development Pipeline Surfaces
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Motion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-accessibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Accessibility
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-pitch-deck-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Pitch Deck Rules
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-brand-board-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Brand Board Rules
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-do-dont" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Do / Don’t
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14. Do / Don’t">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dont" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Don’t
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-implementation-notes-for-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Implementation Notes for Agents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-qa-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. QA Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/galyarderlabs/galyarder-framework/edit/main/docs/galyarder-labs/DESIGN.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="designmd-galyarder-labs-final-design-system">DESIGN.md — Galyarder Labs Final Design System<a class="headerlink" href="#designmd-galyarder-labs-final-design-system" title="Permanent link">&para;</a></h1>
+<p>This is the single canonical visual and product design source of truth for Galyarder Labs and the Galyarder product ecosystem.</p>
+<p>It is designed for humans and agents. The YAML front matter provides machine-readable tokens. The markdown body explains the design logic, product surface rules, and quality bar.</p>
+<p>The core experience model is:</p>
+<blockquote>
+<p><strong>Dream → Airlock → Machine</strong></p>
+</blockquote>
+<hr />
+<h2 id="1-overview">1. Overview<a class="headerlink" href="#1-overview" title="Permanent link">&para;</a></h2>
+<p>Galyarder has one identity expressed through three visual layers.</p>
+<ul>
+<li><strong>Dream:</strong> public-facing luminous invitation.</li>
+<li><strong>Airlock:</strong> transition layer that preserves brand continuity before operational density.</li>
+<li><strong>Machine:</strong> authenticated product layer where work becomes structured, governed, audited, and executed.</li>
+</ul>
+<p>The system exists to prevent two failures:</p>
+<ol>
+<li>A beautiful brand that never proves the machine.</li>
+<li>A powerful product that loses the emotional identity of the brand.</li>
+</ol>
+<p>The design must move the user from wonder to trust.</p>
+<hr />
+<h2 id="2-three-visual-layers">2. Three Visual Layers<a class="headerlink" href="#2-three-visual-layers" title="Permanent link">&para;</a></h2>
+<h3 id="layer-1-dream">Layer 1 — Dream<a class="headerlink" href="#layer-1-dream" title="Permanent link">&para;</a></h3>
+<p>Use for:</p>
+<ul>
+<li>landing pages,</li>
+<li>hero sections,</li>
+<li>social covers,</li>
+<li>pitch openers,</li>
+<li>manifesto pages,</li>
+<li>public brand campaigns.</li>
+</ul>
+<p>Feeling:</p>
+<ul>
+<li>calm,</li>
+<li>luminous,</li>
+<li>editorial,</li>
+<li>human,</li>
+<li>spacious,</li>
+<li>threshold-like,</li>
+<li>premium,</li>
+<li>quietly powerful.</li>
+</ul>
+<p>Allowed:</p>
+<ul>
+<li>editorial serif,</li>
+<li>lone figure,</li>
+<li>luminous mist,</li>
+<li>violet/gold identity accents,</li>
+<li>spacious negative space,</li>
+<li>cinematic composition.</li>
+</ul>
+<p>Forbidden:</p>
+<ul>
+<li>crypto coins,</li>
+<li>robot heads,</li>
+<li>cyberpunk clutter,</li>
+<li>red danger palettes,</li>
+<li>generic AI neon,</li>
+<li>decorative node webs,</li>
+<li>excessive HUD graphics.</li>
+</ul>
+<h3 id="layer-2-airlock">Layer 2 — Airlock<a class="headerlink" href="#layer-2-airlock" title="Permanent link">&para;</a></h3>
+<p>Use for:</p>
+<ul>
+<li>login,</li>
+<li>signup,</li>
+<li>loading,</li>
+<li>onboarding,</li>
+<li>post-auth bridge,</li>
+<li>product switch moments,</li>
+<li>critical identity confirmations.</li>
+</ul>
+<p>Purpose:</p>
+<p>The Airlock prevents conceptual whiplash. Users should not be thrown from luminous public brand into cold operational density without a decompression moment.</p>
+<p>Required elements:</p>
+<ul>
+<li>GS mark or Galyarder lockup,</li>
+<li>Violet Identity Glow <code>#8A00FF</code>,</li>
+<li>restrained Soft Gold threshold trace <code>#F1C77A</code>,</li>
+<li>minimal status phrase,</li>
+<li>1–2 second transition,</li>
+<li>reduced motion alternative.</li>
+</ul>
+<p>Example status phrases:</p>
+<ul>
+<li>Preparing command layer.</li>
+<li>Loading operational context.</li>
+<li>Restoring agent state.</li>
+<li>Synchronizing ledger evidence.</li>
+<li>Opening the machine.</li>
+</ul>
+<p>Forbidden:</p>
+<ul>
+<li>fake boot noise,</li>
+<li>hacker terminal theatrics,</li>
+<li>red alert animations,</li>
+<li>long cinematic loading delays,</li>
+<li>heavy grain behind small text.</li>
+</ul>
+<h3 id="layer-3-machine">Layer 3 — Machine<a class="headerlink" href="#layer-3-machine" title="Permanent link">&para;</a></h3>
+<p>Use for:</p>
+<ul>
+<li>Ledger,</li>
+<li>HQ,</li>
+<li>Framework,</li>
+<li>Agent,</li>
+<li>dashboards,</li>
+<li>workforce views,</li>
+<li>reports,</li>
+<li>admin,</li>
+<li>settings,</li>
+<li>billing,</li>
+<li>audit surfaces.</li>
+</ul>
+<p>Feeling:</p>
+<ul>
+<li>operational,</li>
+<li>monochrome,</li>
+<li>semantic,</li>
+<li>dense but readable,</li>
+<li>institutional,</li>
+<li>audit-ready,</li>
+<li>high-signal,</li>
+<li>trusted before beautiful.</li>
+</ul>
+<p>Allowed:</p>
+<ul>
+<li>neutral surfaces,</li>
+<li>strict hierarchy,</li>
+<li>semantic status colors,</li>
+<li>data density,</li>
+<li>structured tables,</li>
+<li>agent state indicators,</li>
+<li>audit trails,</li>
+<li>command panels.</li>
+</ul>
+<p>Forbidden:</p>
+<ul>
+<li>decorative violet/gold flooding,</li>
+<li>glass fantasy dashboards,</li>
+<li>overuse of glow,</li>
+<li>monospace walls,</li>
+<li>unreadable density,</li>
+<li>marketing poetry in operational flows.</li>
+</ul>
+<hr />
+<h2 id="3-color-rules">3. Color Rules<a class="headerlink" href="#3-color-rules" title="Permanent link">&para;</a></h2>
+<h3 id="core-law">Core Law<a class="headerlink" href="#core-law" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Brand colors are identity.
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Semantic colors are information.
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Surface colors are structure.
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Do not mix them.
+</code></pre></div>
+<h3 id="brand-colors">Brand Colors<a class="headerlink" href="#brand-colors" title="Permanent link">&para;</a></h3>
+<p>Use Galyarder Violet and Soft Gold for:</p>
+<ul>
+<li>logo,</li>
+<li>identity glow,</li>
+<li>auth,</li>
+<li>Airlock,</li>
+<li>splash,</li>
+<li>brand-level milestones,</li>
+<li>payment success,</li>
+<li>premium identity moments.</li>
+</ul>
+<p>Do not use them for:</p>
+<ul>
+<li>KPI deltas,</li>
+<li>warning badges,</li>
+<li>error states,</li>
+<li>report status,</li>
+<li>chart semantics,</li>
+<li>default dashboard buttons,</li>
+<li>operational severity.</li>
+</ul>
+<h3 id="semantic-colors">Semantic Colors<a class="headerlink" href="#semantic-colors" title="Permanent link">&para;</a></h3>
+<p>Use semantic colors only when information state requires it.</p>
+<table>
+<thead>
+<tr>
+<th>Meaning</th>
+<th style="text-align: right;">Light</th>
+<th style="text-align: right;">Dark</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Info / action</td>
+<td style="text-align: right;"><code>#3b82f6</code></td>
+<td style="text-align: right;"><code>#b4c5ff</code></td>
+<td>active neutral state, primary operational action</td>
+</tr>
+<tr>
+<td>Success</td>
+<td style="text-align: right;"><code>#10b981</code></td>
+<td style="text-align: right;"><code>#86efac</code></td>
+<td>positive outcome, completed task, healthy state</td>
+</tr>
+<tr>
+<td>Warning</td>
+<td style="text-align: right;"><code>#eab308</code></td>
+<td style="text-align: right;"><code>#fdba74</code></td>
+<td>review-needed, budget caution, ambiguous state</td>
+</tr>
+<tr>
+<td>Error</td>
+<td style="text-align: right;"><code>#ef4444</code></td>
+<td style="text-align: right;"><code>#fca5a5</code></td>
+<td>failed, destructive, blocked, risky state</td>
+</tr>
+</tbody>
+</table>
+<h3 id="surface-colors">Surface Colors<a class="headerlink" href="#surface-colors" title="Permanent link">&para;</a></h3>
+<p>Product surfaces should rely on neutral hierarchy. Color is not decoration inside the Machine.</p>
+<h3 id="forbidden-color-patterns">Forbidden Color Patterns<a class="headerlink" href="#forbidden-color-patterns" title="Permanent link">&para;</a></h3>
+<ul>
+<li>violet KPI numbers,</li>
+<li>gold warning badges,</li>
+<li>green Matrix UI,</li>
+<li>red dystopian brand world,</li>
+<li>rainbow neon,</li>
+<li>crypto-gold overload,</li>
+<li>full-screen violet floods,</li>
+<li>ad-hoc gold or blue variants without token registration.</li>
+</ul>
+<hr />
+<h2 id="4-typography-rules">4. Typography Rules<a class="headerlink" href="#4-typography-rules" title="Permanent link">&para;</a></h2>
+<h3 id="marketing-typography">Marketing Typography<a class="headerlink" href="#marketing-typography" title="Permanent link">&para;</a></h3>
+<p>Marketing may use editorial serif for hero moments, manifesto openers, and premium brand statements.</p>
+<p>Recommended:</p>
+<ul>
+<li>Cormorant Garamond,</li>
+<li>Libre Baskerville,</li>
+<li>Georgia,</li>
+<li>Canela,</li>
+<li>Editorial New,</li>
+<li>New York.</li>
+</ul>
+<h3 id="product-typography">Product Typography<a class="headerlink" href="#product-typography" title="Permanent link">&para;</a></h3>
+<p>Product uses sans-serif.</p>
+<p>Recommended:</p>
+<ul>
+<li>Inter,</li>
+<li>Satoshi,</li>
+<li>Geist,</li>
+<li>system-ui.</li>
+</ul>
+<p>Use product sans for:</p>
+<ul>
+<li>dashboards,</li>
+<li>Ledger,</li>
+<li>HQ,</li>
+<li>Framework UI,</li>
+<li>Agent UI,</li>
+<li>reports,</li>
+<li>admin,</li>
+<li>settings,</li>
+<li>billing,</li>
+<li>docs.</li>
+</ul>
+<h3 id="mono-typography">Mono Typography<a class="headerlink" href="#mono-typography" title="Permanent link">&para;</a></h3>
+<p>Mono is for machine-readable details only:</p>
+<ul>
+<li>hashes,</li>
+<li>IDs,</li>
+<li>logs,</li>
+<li>ledger references,</li>
+<li>code,</li>
+<li>commands,</li>
+<li>technical labels.</li>
+</ul>
+<p>Hard rule:</p>
+<blockquote>
+<p>Do not create a monospace military wall. Monospace is a tool, not the product personality.</p>
+</blockquote>
+<hr />
+<h2 id="5-layout-spacing">5. Layout &amp; Spacing<a class="headerlink" href="#5-layout-spacing" title="Permanent link">&para;</a></h2>
+<h3 id="dream-layout">Dream Layout<a class="headerlink" href="#dream-layout" title="Permanent link">&para;</a></h3>
+<ul>
+<li>large negative space,</li>
+<li>editorial asymmetry,</li>
+<li>left-weighted lockups,</li>
+<li>human figure small against vast structure,</li>
+<li>threshold or horizon in depth,</li>
+<li>few words with high impact,</li>
+<li>generous breathing room.</li>
+</ul>
+<h3 id="airlock-layout">Airlock Layout<a class="headerlink" href="#airlock-layout" title="Permanent link">&para;</a></h3>
+<ul>
+<li>centered identity,</li>
+<li>minimal copy,</li>
+<li>soft glow,</li>
+<li>no operational density yet,</li>
+<li>one clear progress/status signal.</li>
+</ul>
+<h3 id="machine-layout">Machine Layout<a class="headerlink" href="#machine-layout" title="Permanent link">&para;</a></h3>
+<ul>
+<li>clear scan path,</li>
+<li>strong grid,</li>
+<li>responsive density,</li>
+<li>mobile-native cards,</li>
+<li>desktop tables where useful,</li>
+<li>no fake complexity,</li>
+<li>data legible before decorative.</li>
+</ul>
+<hr />
+<h2 id="6-imagery">6. Imagery<a class="headerlink" href="#6-imagery" title="Permanent link">&para;</a></h2>
+<h3 id="keep">Keep<a class="headerlink" href="#keep" title="Permanent link">&para;</a></h3>
+<ul>
+<li>lone figure,</li>
+<li>threshold,</li>
+<li>architecture,</li>
+<li>mist,</li>
+<li>path,</li>
+<li>vault,</li>
+<li>horizon,</li>
+<li>luminous portal,</li>
+<li>quiet control room,</li>
+<li>future archive,</li>
+<li>institutional surfaces.</li>
+</ul>
+<h3 id="avoid">Avoid<a class="headerlink" href="#avoid" title="Permanent link">&para;</a></h3>
+<ul>
+<li>robot heads,</li>
+<li>crypto coins,</li>
+<li>random nodes,</li>
+<li>generic HUD,</li>
+<li>over-scratched film damage,</li>
+<li>red sci-fi,</li>
+<li>weapons/military literalism,</li>
+<li>AI stock imagery,</li>
+<li>faces as default universal brand hero.</li>
+</ul>
+<hr />
+<h2 id="7-texture-atmosphere">7. Texture &amp; Atmosphere<a class="headerlink" href="#7-texture-atmosphere" title="Permanent link">&para;</a></h2>
+<p>Texture must be subtle.</p>
+<p>Rules:</p>
+<ul>
+<li>Grain should be light and atmospheric, not dirty.</li>
+<li>Scratch overlays are rare, not default.</li>
+<li>Do not place small text over heavy grain.</li>
+<li>Do not use top-left flare on every slide.</li>
+<li>Do not reduce legibility for mood.</li>
+<li>Do not use visual complexity to fake intelligence.</li>
+</ul>
+<hr />
+<h2 id="8-component-style">8. Component Style<a class="headerlink" href="#8-component-style" title="Permanent link">&para;</a></h2>
+<h3 id="buttons">Buttons<a class="headerlink" href="#buttons" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Product primary buttons use operational primary color, not brand gold.</li>
+<li>Marketing CTAs may use restrained brand identity treatment.</li>
+<li>Destructive actions must use semantic error treatment.</li>
+</ul>
+<h3 id="cards">Cards<a class="headerlink" href="#cards" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Dream cards may be glassy and atmospheric.</li>
+<li>Machine cards should use neutral containers, borders, and hierarchy.</li>
+<li>Admin cards should be severe and low-decoration.</li>
+</ul>
+<h3 id="inputs">Inputs<a class="headerlink" href="#inputs" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Clear labels.</li>
+<li>High contrast.</li>
+<li>Visible focus states.</li>
+<li>No decorative placeholder-only UI.</li>
+</ul>
+<h3 id="badges">Badges<a class="headerlink" href="#badges" title="Permanent link">&para;</a></h3>
+<p>Badges must be semantic or structural.</p>
+<p>Allowed examples:</p>
+<ul>
+<li><code>Active</code></li>
+<li><code>Review Needed</code></li>
+<li><code>Blocked</code></li>
+<li><code>Synced</code></li>
+<li><code>Budget Limit</code></li>
+<li><code>Approval Required</code></li>
+<li><code>Read-only</code></li>
+</ul>
+<p>Forbidden:</p>
+<ul>
+<li>badges that use violet/gold purely to look branded,</li>
+<li>badges that communicate status with color alone.</li>
+</ul>
+<h3 id="glass">Glass<a class="headerlink" href="#glass" title="Permanent link">&para;</a></h3>
+<p>Glass is allowed for:</p>
+<ul>
+<li>Airlock,</li>
+<li>overlays,</li>
+<li>floating sheets,</li>
+<li>identity moments,</li>
+<li>public hero previews.</li>
+</ul>
+<p>Glass is not the core product surface language.</p>
+<h3 id="terminal-cards">Terminal Cards<a class="headerlink" href="#terminal-cards" title="Permanent link">&para;</a></h3>
+<p>Terminal cards are allowed only for:</p>
+<ul>
+<li>logs,</li>
+<li>commands,</li>
+<li>build output,</li>
+<li>code execution,</li>
+<li>Framework technical states.</li>
+</ul>
+<p>They must not become the entire product aesthetic.</p>
+<hr />
+<h2 id="9-product-surface-rules">9. Product Surface Rules<a class="headerlink" href="#9-product-surface-rules" title="Permanent link">&para;</a></h2>
+<p>These surface rules are hard gates for human designers and AI design agents. If a screen fits multiple surfaces, obey the strictest applicable rule and preserve Dream → Airlock → Machine.</p>
+<table>
+<thead>
+<tr>
+<th>Surface</th>
+<th>Required behavior</th>
+<th>Rejected behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Landing</td>
+<td>Dream layer: luminous, calm, editorial, spacious, readable, threshold-like, with restrained violet/gold identity accents and clear product proof direction.</td>
+<td>Generic AI landing pages, crypto spectacle, robot heads, decorative node webs, unreadable cinematic texture, or product claims with no evidence direction.</td>
+</tr>
+<tr>
+<td>Auth</td>
+<td>Airlock layer: identity continuity, GS mark or Galyarder lockup, Violet Identity Glow, Soft Gold threshold trace, minimal form friction, visible security/focus states.</td>
+<td>Cold generic login, hacker boot screens, long cinematic delay, heavy grain behind form fields, or brand colors used as validation/error semantics.</td>
+</tr>
+<tr>
+<td>Airlock</td>
+<td>Transition layer: 1–2 second decompression, minimal status phrase, reduced-motion alternative, calm bridge from Dream to Machine.</td>
+<td>Hard-cut from marketing into dense product UI, fake terminal noise, red-alert animation, or motion that hides system state.</td>
+</tr>
+<tr>
+<td>Dashboard</td>
+<td>Machine layer: trusted before beautiful, neutral surfaces, semantic status, clear scan path, command state, evidence and workflow visibility.</td>
+<td>Calling HQ a dashboard, using marketing glow/gradient as product chrome, vanity KPIs without proof, or generic SaaS bento clutter.</td>
+</tr>
+<tr>
+<td>Ledger</td>
+<td>Operational financial workspace with ledger state transitions, evidence, G-Agent workforce status, review-needed states, guarded execution, reports, and audit readiness.</td>
+<td>Bookkeeping toy aesthetics, warung/Excel replacement framing, decorative crypto visuals, cute G-Agent avatars, or unreviewed permanent state changes.</td>
+</tr>
+<tr>
+<td>HQ</td>
+<td>Strategic Command Interface with org charts, departments, reporting lines, goals, budgets, token costs, hard stops, approval gates, rollback, and multi-company isolation.</td>
+<td>Reducing HQ to chat, generic dashboards, micromanagement noise, or command surfaces without budget/approval visibility.</td>
+</tr>
+<tr>
+<td>Framework</td>
+<td>Intelligence Layer for Autonomous Goal Integration with blueprints, tickets, SOPs, skills/templates, workflows, agent runtime, TDD/tests, audits, execution proof, and tool integrations.</td>
+<td>Prompt-pack aesthetics, vague AGI claims, hiding tests/audits, or treating the public developer-facing framework as only internal.</td>
+</tr>
+<tr>
+<td>Agent</td>
+<td>Continuity Layer with persistent memory, local profile, values, voice, visual identity, channel presence, scheduled jobs, and continuity records.</td>
+<td>Generic chatbot UI, confusing Galyarder Agent with Ledger G-Agents, implying the human is replaced, or relying only on message bubbles.</td>
+</tr>
+<tr>
+<td>Workforce</td>
+<td>Machine layer: role-based G-Agent activity, state, assignments, outputs, guardrails, review queues, escalation, and evidence. Agents should feel operational and alive, not cute.</td>
+<td>Mascot companions, toy assistants, unbounded autonomy, hidden guardrails, or status communicated by color alone.</td>
+</tr>
+<tr>
+<td>Reports</td>
+<td>Clean, export-ready, audit-ready, high-contrast, print-safe, with source references, evidence trail, timestamps, and clear assumptions.</td>
+<td>Cinematic backgrounds, glow, heavy texture, tiny type, decorative charts, or claims detached from source/evidence.</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>Severe, non-decorative, permission-aware, log-forward, destructive-action-safe, with clear ownership, audit trail, and rollback context.</td>
+<td>Marketing visuals, glass fantasy, violet/gold decoration, playful tone, hidden destructive risk, or ambiguous permissions.</td>
+</tr>
+<tr>
+<td>Settings</td>
+<td>Quiet, structured, reversible, searchable where needed, with visible defaults, account boundaries, permissions, billing, integrations, and data controls.</td>
+<td>Decorative settings panels, unclear save state, hidden critical controls, or mixing identity colors with error/success states.</td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>Mobile-native density: cards over cramped tables, thumb-safe actions, persistent command context, readable type, accessible focus, and reduced motion.</td>
+<td>Desktop dashboard squeezed into mobile, tiny tables, hover-only controls, cinematic effects that reduce clarity, or hidden review/approval states.</td>
+</tr>
+<tr>
+<td>Pitch deck</td>
+<td>Dream may open the story, but proof slides must be clean, diagrammatic, readable, and show architecture, product workflows, pipeline status, guardrails, and trust model.</td>
+<td>Pure cinematic mythology, repeated flare template, heavy grain behind body copy, or future pipeline sold as current product.</td>
+</tr>
+<tr>
+<td>Brand board</td>
+<td>Atmospheric direction plus precise implementation tokens: separate core tokens from effect tokens and convert mood into colors, spacing, components, and surface rules.</td>
+<td>Treating concept art as product UI, overriding canonical hexes, unregistered color drift, or letting inspiration replace specification.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="galyarder-ledger">Galyarder Ledger<a class="headerlink" href="#galyarder-ledger" title="Permanent link">&para;</a></h3>
+<p>Purpose: turn fragmented operational input into agent-assisted, ledger-backed execution.</p>
+<p>Design should emphasize:</p>
+<ul>
+<li>operational clarity,</li>
+<li>transaction/state transitions,</li>
+<li>evidence visibility,</li>
+<li>report generation,</li>
+<li>G-Agent workforce status,</li>
+<li>review-needed states,</li>
+<li>guarded autonomy,</li>
+<li>audit readiness.</li>
+</ul>
+<p>Avoid:</p>
+<ul>
+<li>bookkeeping toy aesthetics,</li>
+<li>generic finance dashboard templates,</li>
+<li>decorative crypto visuals,</li>
+<li>making G-Agents look like cute companions.</li>
+</ul>
+<h3 id="galyarder-hq">Galyarder HQ<a class="headerlink" href="#galyarder-hq" title="Permanent link">&para;</a></h3>
+<p>Purpose: command and govern autonomous company systems.</p>
+<p>Design should emphasize:</p>
+<ul>
+<li>org charts,</li>
+<li>departments,</li>
+<li>reporting lines,</li>
+<li>goal assignment,</li>
+<li>task queues,</li>
+<li>budget hard stops,</li>
+<li>approval gates,</li>
+<li>rollback,</li>
+<li>multi-company portfolio isolation.</li>
+</ul>
+<p>HQ should feel like the highest-level command surface.</p>
+<p>Avoid:</p>
+<ul>
+<li>calling it a dashboard,</li>
+<li>micromanagement UI,</li>
+<li>single-chat assistant patterns,</li>
+<li>lack of budget/approval visibility.</li>
+</ul>
+<h3 id="galyarder-framework">Galyarder Framework<a class="headerlink" href="#galyarder-framework" title="Permanent link">&para;</a></h3>
+<p>Purpose: turn high-level business vision into deterministic implementation through Autonomous Goal Integration.</p>
+<p>Design should emphasize:</p>
+<ul>
+<li>blueprints,</li>
+<li>project tickets,</li>
+<li>SOPs,</li>
+<li>skills/templates,</li>
+<li>agent runtime,</li>
+<li>workflows,</li>
+<li>TDD/test status,</li>
+<li>audit output,</li>
+<li>distribution workflows,</li>
+<li>integration with tools such as Claude Code, Gemini CLI, Cursor, and CLI contexts where relevant.</li>
+</ul>
+<p>Avoid:</p>
+<ul>
+<li>prompt-pack aesthetics,</li>
+<li>vague AGI claims,</li>
+<li>treating the Framework as only internal if it is public/developer-facing,</li>
+<li>hiding execution proof.</li>
+</ul>
+<h3 id="galyarder-agent">Galyarder Agent<a class="headerlink" href="#galyarder-agent" title="Permanent link">&para;</a></h3>
+<p>Purpose: persistent digital identity and continuity across channels.</p>
+<p>Design should emphasize:</p>
+<ul>
+<li>memory profile,</li>
+<li>local profile,</li>
+<li>values,</li>
+<li>voice,</li>
+<li>visual identity,</li>
+<li>channel presence,</li>
+<li>scheduled/recurring jobs,</li>
+<li>continuity records,</li>
+<li>multimodal responses.</li>
+</ul>
+<p>Agent may feel more human than Ledger/HQ, but must not become a toy chatbot.</p>
+<p>Avoid:</p>
+<ul>
+<li>confusing Galyarder Agent with Ledger G-Agents,</li>
+<li>making it a generic assistant,</li>
+<li>implying it replaces the human,</li>
+<li>relying only on chat UI.</li>
+</ul>
+<h3 id="g-agent-workforce-inside-ledger">G-Agent Workforce inside Ledger<a class="headerlink" href="#g-agent-workforce-inside-ledger" title="Permanent link">&para;</a></h3>
+<p>G-Agents are role-based operational workers, not persistent identity products.</p>
+<h4 id="g-agent-cfo">G-Agent CFO<a class="headerlink" href="#g-agent-cfo" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Macro operational and financial oversight.</li>
+<li>Input: omnichannel operational data and integrated ledger data.</li>
+<li>Output: strategic/executive summaries and analysis.</li>
+<li>Guardrail: cannot authorize major capital movement without manual operator approval.</li>
+</ul>
+<h4 id="g-agent-sales">G-Agent Sales<a class="headerlink" href="#g-agent-sales" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Manages AR, collections, revenue-oriented follow-up.</li>
+<li>Input: sales documents and communication channels.</li>
+<li>Output: financial entries, conversion reports, follow-up drafts.</li>
+<li>Guardrail: cannot finalize deals or permanently change ledger state without review-needed approval.</li>
+</ul>
+<h4 id="g-agent-accountant">G-Agent Accountant<a class="headerlink" href="#g-agent-accountant" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Converts messy operational input into clean financial structure.</li>
+<li>Input: documents, receipts, voice, chat text.</li>
+<li>Output: financial state transitions and integrated ledger records.</li>
+<li>Guardrail: ambiguous entries must trigger confirmation/revision.</li>
+</ul>
+<h4 id="g-agent-auditor">G-Agent Auditor<a class="headerlink" href="#g-agent-auditor" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Ensures traceability and auditability.</li>
+<li>Input: state transitions, other agent reports, ledger state.</li>
+<li>Output: audit-readiness reports and evidence visibility.</li>
+<li>Guardrail: read-only oversight; can flag anomalies but cannot hide or modify history.</li>
+</ul>
+<h4 id="tax-optimizer">Tax Optimizer<a class="headerlink" href="#tax-optimizer" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Simulates and plans financial/tax efficiency.</li>
+<li>Input: ledger records and historical operations.</li>
+<li>Output: tax strategy, expense ratios, risk visibility.</li>
+<li>Guardrail: provides proposals only; authoritative filing/execution stays behind command approval.</li>
+</ul>
+<h3 id="development-pipeline-surfaces">Development Pipeline Surfaces<a class="headerlink" href="#development-pipeline-surfaces" title="Permanent link">&para;</a></h3>
+<p>When designing pipeline pages, use restrained pipeline treatment:</p>
+<ul>
+<li>show product as in development,</li>
+<li>do not imply live availability,</li>
+<li>focus on layer, problem, and promise,</li>
+<li>avoid pricing, CTA, or onboarding unless status changes.</li>
+</ul>
+<hr />
+<h2 id="10-motion">10. Motion<a class="headerlink" href="#10-motion" title="Permanent link">&para;</a></h2>
+<p>Motion must explain state, not decorate the interface.</p>
+<p>Allowed motion:</p>
+<ul>
+<li>Airlock transition,</li>
+<li>loading state,</li>
+<li>agent activity state,</li>
+<li>command submission,</li>
+<li>approval gate,</li>
+<li>report generated,</li>
+<li>error/failure explanation,</li>
+<li>budget hard-stop warning,</li>
+<li>sync complete.</li>
+</ul>
+<p>Rules:</p>
+<ul>
+<li>Reduced motion support is required.</li>
+<li>No cyberpunk flicker.</li>
+<li>No fake hacker boot sequence.</li>
+<li>No long cinematic delay.</li>
+<li>No motion that hides system state.</li>
+</ul>
+<hr />
+<h2 id="11-accessibility">11. Accessibility<a class="headerlink" href="#11-accessibility" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Maintain readable contrast for all text.</li>
+<li>Do not put small text over heavy texture.</li>
+<li>Semantic color must be supported by labels/icons, not color alone.</li>
+<li>Focus states must be visible.</li>
+<li>Motion must be reducible.</li>
+<li>Product density must remain scannable.</li>
+<li>Reports must print/export cleanly.</li>
+</ul>
+<hr />
+<h2 id="12-pitch-deck-rules">12. Pitch Deck Rules<a class="headerlink" href="#12-pitch-deck-rules" title="Permanent link">&para;</a></h2>
+<p>The pitch deck must not become pure cinematic mythology.</p>
+<p>Rules:</p>
+<ul>
+<li>Cinematic slides: max 30–40%.</li>
+<li>Proof slides: clean, diagrammatic, readable.</li>
+<li>Architecture slides: no small text over noisy background.</li>
+<li>Product proof slides are required.</li>
+<li>Every slide must either create belief or show proof.</li>
+<li>No repeated flare template across every slide.</li>
+<li>No heavy grain behind body copy.</li>
+</ul>
+<p>Required proof slides:</p>
+<ul>
+<li>product architecture,</li>
+<li>current public products,</li>
+<li>Ledger workflow,</li>
+<li>HQ command workflow,</li>
+<li>Framework execution workflow,</li>
+<li>Agent continuity workflow,</li>
+<li>pipeline with clear status,</li>
+<li>business/use-case proof,</li>
+<li>guardrails and trust model.</li>
+</ul>
+<hr />
+<h2 id="13-brand-board-rules">13. Brand Board Rules<a class="headerlink" href="#13-brand-board-rules" title="Permanent link">&para;</a></h2>
+<p>The brand board can be atmospheric, but implementation specs must be precise.</p>
+<p>Rules:</p>
+<ul>
+<li>Separate core tokens from effect tokens.</li>
+<li>Effect colors are for glow/illustration only.</li>
+<li>Do not let visual inspiration override canonical hex values.</li>
+<li>Do not treat concept art as product UI.</li>
+<li>Convert mood into tokens, spacing, components, and surface rules before implementation.</li>
+</ul>
+<hr />
+<h2 id="14-do-dont">14. Do / Don’t<a class="headerlink" href="#14-do-dont" title="Permanent link">&para;</a></h2>
+<h3 id="do">Do<a class="headerlink" href="#do" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Make the future feel inviting.</li>
+<li>Make the product feel trusted.</li>
+<li>Use violet as identity.</li>
+<li>Use gold as threshold.</li>
+<li>Show the machine behind the myth.</li>
+<li>Use semantic colors for meaning.</li>
+<li>Use neutral surfaces for structure.</li>
+<li>Keep the user in command.</li>
+<li>Show evidence, guardrails, and state.</li>
+</ul>
+<h3 id="dont">Don’t<a class="headerlink" href="#dont" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Make every screen cinematic.</li>
+<li>Make product UI poetic.</li>
+<li>Use crypto visual clichés.</li>
+<li>Use monospace everywhere.</li>
+<li>Use decorative color as information.</li>
+<li>Create hard visual whiplash.</li>
+<li>Hide proof behind atmosphere.</li>
+<li>Make agents feel like toys.</li>
+<li>Present future pipeline as active product.</li>
+</ul>
+<hr />
+<h2 id="15-implementation-notes-for-agents">15. Implementation Notes for Agents<a class="headerlink" href="#15-implementation-notes-for-agents" title="Permanent link">&para;</a></h2>
+<p>When generating screens:</p>
+<ul>
+<li>Use <strong>Dream</strong> for marketing/public pages.</li>
+<li>Use <strong>Airlock</strong> for auth/loading/onboarding/post-login transition.</li>
+<li>Use <strong>Machine</strong> for authenticated product surfaces.</li>
+<li>Use Ledger rules for financial execution surfaces.</li>
+<li>Use HQ rules for command/governance surfaces.</li>
+<li>Use Framework rules for developer/implementation surfaces.</li>
+<li>Use Agent rules for continuity/identity surfaces.</li>
+<li>Use pipeline rules for future products.</li>
+</ul>
+<p>When uncertain, choose:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>trust over spectacle
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>proof over poetry
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>semantic clarity over brand decoration
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>operator command over passive assistant behavior
+</code></pre></div>
+<hr />
+<h2 id="16-qa-checklist">16. QA Checklist<a class="headerlink" href="#16-qa-checklist" title="Permanent link">&para;</a></h2>
+<p>Before shipping UI, answer:</p>
+<ul>
+<li>Does this preserve Galyarder identity?</li>
+<li>Does this avoid conceptual whiplash?</li>
+<li>Does this use Dream, Airlock, or Machine correctly?</li>
+<li>Does this keep product trust above decoration?</li>
+<li>Does this use semantic colors only for meaning?</li>
+<li>Does this avoid generic AI/Web3/SaaS aesthetics?</li>
+<li>Does this distinguish Galyarder Agent from Ledger G-Agents?</li>
+<li>Does this show product proof, not just mythology?</li>
+<li>Does this avoid overpromising pipeline products?</li>
+<li>Does this make the user feel more capable and in command?</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/galyarderlabs/galyarder-framework" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      <div class="md-copyright">
+        
+          <div class="md-copyright__highlight">
+            © 2026 Galyarder Labs.
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.path", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

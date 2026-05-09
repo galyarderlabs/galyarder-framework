@@ -1,0 +1,2196 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Advanced Agentic Orchestration for the 1-Man Army. Implementing Autonomous Goal Integration (AGI).">
+      
+      
+      
+        <link rel="canonical" href="https://galyarderlabs.github.io/galyarder-framework/galyarder-labs/AGENTS/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/logo.webp">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>AGENTS.md — Galyarder Labs Agent Instructions - Galyarder Framework</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../styles/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+  <style>
+    body, input { font-family: "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif }
+    h1, .md-typeset h1 { font-family: "Newsreader", serif; font-weight: 500; }
+  </style>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#agentsmd-galyarder-labs-agent-instructions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Galyarder Framework" class="md-header__button md-logo" aria-label="Galyarder Framework" data-md-component="logo">
+      
+  <img src="../../assets/logo.webp" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Galyarder Framework
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              AGENTS.md — Galyarder Labs Agent Instructions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Use system preference"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Use system preference" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/galyarderlabs/galyarder-framework" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    galyarderlabs/galyarder-framework
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../QUICK_START/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Quick Start
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../TRIAD_OVERVIEW/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Triad Ecosystem
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../UNIFIED_PLATFORM/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Unified Platform
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../WORKFLOW/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Humans 3.0 Workflow
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../ORG_CHART/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Org Chart
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../INTEGRATION/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Multi-Platform
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../MIGRATION/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Migration
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../AGENTS/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Agent Directory
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../agents/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Specialized Agents
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../skills/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Strategic Skills
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../commands/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Slash Commands
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../design/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Design Specs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../testing/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Testing
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../CLAUDE/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Claude Rules
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../GEMINI/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Gemini Rules
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../INTEGRATION_COMPLETE/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Integration Checklist
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../CHANGELOG/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Changelog
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../RELEASE-NOTES/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Release Notes
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Galyarder Framework" class="md-nav__button md-logo" aria-label="Galyarder Framework" data-md-component="logo">
+      
+  <img src="../../assets/logo.webp" alt="logo">
+
+    </a>
+    Galyarder Framework
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/galyarderlabs/galyarder-framework" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    galyarderlabs/galyarder-framework
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../QUICK_START/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TRIAD_OVERVIEW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Triad Ecosystem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UNIFIED_PLATFORM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unified Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WORKFLOW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Humans 3.0 Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ORG_CHART/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Org Chart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../INTEGRATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi-Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MIGRATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AGENTS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent Directory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Specialized Agents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strategic Skills
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Slash Commands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design Specs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CLAUDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claude Rules
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GEMINI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gemini Rules
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../INTEGRATION_COMPLETE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integration Checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RELEASE-NOTES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Release Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-project-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Project Context
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-required-reading-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Required Reading Order
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-product-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Product Hierarchy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-required-brand-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Required Brand Rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Required Brand Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#we-say-never-say" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        We Say / Never Say
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-required-design-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Required Design Rules
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-ui-implementation-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. UI Implementation Rules
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-copywriting-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Copywriting Rules
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-product-specific-build-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Product-Specific Build Rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Product-Specific Build Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#galyarder-ledger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Galyarder Ledger
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#galyarder-hq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Galyarder HQ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#galyarder-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Galyarder Framework
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#galyarder-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Galyarder Agent
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-ledger-g-agent-workforce-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Ledger G-Agent Workforce Rules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Ledger G-Agent Workforce Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#g-agent-cfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-Agent CFO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-agent-sales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-Agent Sales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-agent-accountant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-Agent Accountant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-agent-auditor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-Agent Auditor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tax-optimizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tax Optimizer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-public-exposure-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Public Exposure Rules
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-dev-environment-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Dev Environment Tips
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-testing-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Testing Instructions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-pr-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. PR Instructions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-rejection-gates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Rejection Gates
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-agent-final-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Agent Final Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#long-term-knowledge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Long-term Knowledge
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Long-term Knowledge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decision
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gotcha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gotcha
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pattern
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preference
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/galyarderlabs/galyarder-framework/edit/main/docs/galyarder-labs/AGENTS.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="agentsmd-galyarder-labs-agent-instructions">AGENTS.md — Galyarder Labs Agent Instructions<a class="headerlink" href="#agentsmd-galyarder-labs-agent-instructions" title="Permanent link">&para;</a></h1>
+<p>This file is the canonical execution guide for coding agents, design agents, documentation agents, and automation agents working on Galyarder Labs or any Galyarder product.</p>
+<p>Before editing UI, product copy, brand copy, navigation, onboarding, reports, admin, billing, product architecture, or agent workflows, read:</p>
+<ol>
+<li><a href="../"><code>README.md</code></a></li>
+<li><a href="../BRAND/"><code>BRAND.md</code></a></li>
+<li><a href="../DESIGN/"><code>DESIGN.md</code></a></li>
+</ol>
+<p>The project doctrine is:</p>
+<blockquote>
+<p><strong>Dream → Airlock → Machine</strong><br />
+<strong>Intent becomes infrastructure.</strong></p>
+</blockquote>
+<p>Do not build against generic SaaS assumptions. Do not invent a different brand.</p>
+<hr />
+<h2 id="1-project-context">1. Project Context<a class="headerlink" href="#1-project-context" title="Permanent link">&para;</a></h2>
+<p>Galyarder Labs is not a generic AI SaaS product. It is an autonomous execution infrastructure brand.</p>
+<p>The current public infrastructure suite:</p>
+<table>
+<thead>
+<tr>
+<th>Product</th>
+<th>Role</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Galyarder Ledger</td>
+<td>Autonomous Financial Workspace / Ledger Layer</td>
+<td>active production / public / P0</td>
+</tr>
+<tr>
+<td>Galyarder HQ</td>
+<td>Strategic Command Interface / Command Layer</td>
+<td>active production / public / P0</td>
+</tr>
+<tr>
+<td>Galyarder Framework</td>
+<td>Intelligence Layer for Autonomous Goal Integration</td>
+<td>active production / public developer-facing / P0</td>
+</tr>
+<tr>
+<td>Galyarder Agent</td>
+<td>Continuity Layer / persistent digital entity</td>
+<td>active / public / P1</td>
+</tr>
+</tbody>
+</table>
+<p>Development pipeline:</p>
+<table>
+<thead>
+<tr>
+<th>Product</th>
+<th>Role</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Galyarder Vault</td>
+<td>security, key management, asset sovereignty, verifiable trust</td>
+<td>in progress / future / internal pipeline / P2</td>
+</tr>
+<tr>
+<td>Galyarder OS</td>
+<td>unifying Human Intent Layer</td>
+<td>future / internal pipeline / P2</td>
+</tr>
+<tr>
+<td>Galyarder Alpha</td>
+<td>market intelligence protocol</td>
+<td>future / internal pipeline / P2</td>
+</tr>
+<tr>
+<td>Galyarder Quant</td>
+<td>systematic trading and DeFi yield automation</td>
+<td>future / internal pipeline / P2</td>
+</tr>
+<tr>
+<td>Galyarder Wallet</td>
+<td>multi-chain risk visibility</td>
+<td>future / internal pipeline / P2</td>
+</tr>
+<tr>
+<td>Galyarder Mind</td>
+<td>decision tracking and pre-mortem analysis</td>
+<td>future / internal pipeline / P2</td>
+</tr>
+</tbody>
+</table>
+<p>The user is not a passive consumer. The user is a serious operator, founder, builder, researcher, creator, technical strategist, 1-Man Army, or small elite team that needs leverage without bureaucracy.</p>
+<hr />
+<h2 id="2-required-reading-order">2. Required Reading Order<a class="headerlink" href="#2-required-reading-order" title="Permanent link">&para;</a></h2>
+<p>Agents must not treat these files as optional context. They are execution gates.</p>
+<ol>
+<li>Read <a href="../"><code>README.md</code></a> first to understand the repository, product map, and canonical documentation structure.</li>
+<li>Read <a href="../BRAND/"><code>BRAND.md</code></a> before writing or editing public copy, product copy, brand copy, onboarding copy, navigation labels, reports, product claims, or product architecture.</li>
+<li>Read <a href="../DESIGN/"><code>DESIGN.md</code></a> before changing UI, layouts, colors, typography, motion, components, dashboards, auth, onboarding, reports, admin, billing, settings, or product screens.</li>
+<li>Read this <code>AGENTS.md</code> before executing coding, design, documentation, automation, or agent workflow work.</li>
+</ol>
+<p>If these documents conflict, stop and resolve the contradiction before shipping. Do not guess a new brand direction.</p>
+<hr />
+<h2 id="3-product-hierarchy">3. Product Hierarchy<a class="headerlink" href="#3-product-hierarchy" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Galyarder Labs
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── Galyarder Ledger
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│   ├── G-Agent CFO
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│   ├── G-Agent Sales
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│   ├── G-Agent Accountant
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│   ├── G-Agent Auditor
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│   └── Tax Optimizer
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>├── Galyarder HQ
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>├── Galyarder Framework
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>├── Galyarder Agent
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>└── Development Pipeline
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    ├── Galyarder Vault
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    ├── Galyarder OS
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    ├── Galyarder Alpha
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    ├── Galyarder Quant
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    ├── Galyarder Wallet
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    └── Galyarder Mind
+</code></pre></div>
+<p>Naming rules:</p>
+<ul>
+<li>Use <strong>Galyarder Agent</strong> only for the persistent digital entity / continuity layer.</li>
+<li>Use <strong>G-Agent</strong> only for role-based workforce agents inside Galyarder Ledger.</li>
+<li>Do not confuse Galyarder Agent with G-Agent CFO, G-Agent Sales, G-Agent Accountant, G-Agent Auditor, or Tax Optimizer.</li>
+<li>Formal contexts should use the full product name.</li>
+<li>Short names are allowed after context is established: Labs, Ledger, HQ, Framework, Agent, Vault, OS, Alpha, Quant, Wallet, Mind.</li>
+</ul>
+<hr />
+<h2 id="4-required-brand-rules">4. Required Brand Rules<a class="headerlink" href="#4-required-brand-rules" title="Permanent link">&para;</a></h2>
+<p>Agents must preserve these rules:</p>
+<ul>
+<li>Lead with human intent, continuity, execution, ownership, command, and operator leverage.</li>
+<li>Do not describe the product as an AI wrapper.</li>
+<li>Do not describe Galyarder Agent as a chatbot.</li>
+<li>Do not describe Galyarder HQ as a dashboard.</li>
+<li>Do not describe Galyarder Framework as a prompt pack.</li>
+<li>Do not describe Galyarder Ledger as bookkeeping software, a warung app, or an Excel replacement.</li>
+<li>Do not lead public-facing copy with Web3, crypto, blockchain, tokens, or speculation language.</li>
+<li>Do not use SMB/Enterprise as primary emotional segmentation.</li>
+<li>Use operator-native language: operator, builder, 1-Man Army, agent workforce, command layer, ledger-backed execution, institutional power for the single operator.</li>
+<li>Every major claim must connect to product behavior, workflow visibility, agent capability, auditability, evidence, ledger state, command state, memory state, or measurable outcome.</li>
+<li>Never promise effortless success or fully autonomous execution with no risk.</li>
+<li>Never make the user feel replaced, passive, or inferior.</li>
+<li>Never present development pipeline products as currently live unless their status has been updated in <code>BRAND.md</code>.</li>
+</ul>
+<h3 id="we-say-never-say">We Say / Never Say<a class="headerlink" href="#we-say-never-say" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>We Say</th>
+<th>Never Say</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>autonomous execution infrastructure</td>
+<td>AI wrapper</td>
+</tr>
+<tr>
+<td>operator</td>
+<td>SMB user</td>
+</tr>
+<tr>
+<td>1-Man Army</td>
+<td>small business customer</td>
+</tr>
+<tr>
+<td>institutional-grade capability</td>
+<td>enterprise SaaS solution</td>
+</tr>
+<tr>
+<td>cryptographic ownership</td>
+<td>crypto app</td>
+</tr>
+<tr>
+<td>ledger-backed execution</td>
+<td>bookkeeping chatbot</td>
+</tr>
+<tr>
+<td>G-Agent workforce</td>
+<td>AI assistant toy</td>
+</tr>
+<tr>
+<td>Strategic Command Interface</td>
+<td>dashboard</td>
+</tr>
+<tr>
+<td>Galyarder Agent</td>
+<td>chatbot persona</td>
+</tr>
+<tr>
+<td>Autonomous Goal Integration</td>
+<td>artificial general intelligence claim</td>
+</tr>
+<tr>
+<td>guarded autonomy</td>
+<td>fully autonomous with no risk</td>
+</tr>
+<tr>
+<td>evidence trail</td>
+<td>guaranteed truth</td>
+</tr>
+<tr>
+<td>development pipeline</td>
+<td>available product if not released</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-required-design-rules">5. Required Design Rules<a class="headerlink" href="#5-required-design-rules" title="Permanent link">&para;</a></h2>
+<p>Use the correct layer.</p>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Surfaces</th>
+<th>Required Feeling</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dream</td>
+<td>landing, marketing, social, pitch openers, public brand pages</td>
+<td>luminous, editorial, calm, spacious, threshold-like</td>
+</tr>
+<tr>
+<td>Airlock</td>
+<td>auth, loading, onboarding, post-login transition</td>
+<td>GS logo, violet identity glow, soft gold threshold, 1–2 second decompression</td>
+</tr>
+<tr>
+<td>Machine</td>
+<td>Ledger, HQ, Framework, Agent, dashboard, Workforce, Reports, Admin, Settings, Billing</td>
+<td>operational, monochrome, semantic, dense but readable, trusted</td>
+</tr>
+</tbody>
+</table>
+<p>Rules:</p>
+<ul>
+<li>Never hard-cut from dreamy marketing into cold dashboard without Airlock.</li>
+<li>Violet and gold are brand identity colors, not operational status colors.</li>
+<li>Semantic colors are only for meaning: info, success, warning, error.</li>
+<li>Product UI must feel trusted before it feels beautiful.</li>
+<li>Admin surfaces must be severe and non-decorative.</li>
+<li>Reports must be clean and export-ready.</li>
+<li>Workforce surfaces must show agent state, activity, outputs, and guardrails.</li>
+<li>HQ surfaces must show structure, budgets, approval gates, reporting lines, and command history.</li>
+<li>Framework surfaces must show blueprints, tickets, SOPs, agent runtime, tests, audits, and execution proof.</li>
+<li>Agent surfaces must show memory, identity, channel presence, continuity records, and recurring jobs without becoming generic chat UI.</li>
+<li>Do not use heavy grain behind small text.</li>
+<li>Do not use monospace everywhere.</li>
+<li>Do not overuse glass, glow, gradients, or cinematic texture in product surfaces.</li>
+</ul>
+<hr />
+<h2 id="6-ui-implementation-rules">6. UI Implementation Rules<a class="headerlink" href="#6-ui-implementation-rules" title="Permanent link">&para;</a></h2>
+<p>When implementing UI, preserve the correct experience layer:</p>
+<ul>
+<li><strong>Dream:</strong> public marketing, landing, social, pitch openers, and public brand pages. Use luminous editorial restraint and proof direction.</li>
+<li><strong>Airlock:</strong> auth, loading, onboarding, and post-login bridge. Use GS mark or Galyarder lockup, Violet Identity Glow, Soft Gold threshold trace, and 1–2 second decompression with reduced-motion support.</li>
+<li><strong>Machine:</strong> Ledger, HQ, Framework, Agent, dashboard, workforce, reports, admin, settings, billing, and authenticated product surfaces. Use neutral structure, semantic color, operational hierarchy, evidence visibility, and audit-ready state.</li>
+</ul>
+<p>Implementation rules:</p>
+<ul>
+<li>Use canonical tokens from <code>DESIGN.md</code>; do not invent colors, fonts, spacing scales, radii, glow treatments, or component variants without updating <code>DESIGN.md</code>.</li>
+<li>Use violet and gold only for identity, threshold, auth, splash, and restrained brand moments.</li>
+<li>Use semantic colors only for information state: info, success, warning, error.</li>
+<li>Use neutral surfaces for product structure.</li>
+<li>Product UI must be trusted before beautiful.</li>
+<li>Admin must be severe and non-decorative.</li>
+<li>Reports must be clean, export-ready, and evidence-forward.</li>
+<li>Workforce must show agent state, activity, outputs, review queues, and guardrails.</li>
+<li>Mobile must be mobile-native; do not squeeze desktop tables into small screens.</li>
+<li>Do not use marketing visuals, cinematic texture, or brand-gradient flooding inside product dashboards.</li>
+</ul>
+<hr />
+<h2 id="7-copywriting-rules">7. Copywriting Rules<a class="headerlink" href="#7-copywriting-rules" title="Permanent link">&para;</a></h2>
+<p>Copy must preserve operator command and proof-backed positioning.</p>
+<ul>
+<li>Lead with human intent, continuity, execution, ownership, command, and operator leverage.</li>
+<li>Use operator-native audience language: operator, builder, founder, researcher, creator, technical strategist, 1-Man Army, small elite team.</li>
+<li>Tie every major claim to product behavior, workflow visibility, agent capability, auditability, evidence, ledger state, command state, memory state, or measurable outcome.</li>
+<li>State future/pipeline products as pipeline only unless <code>BRAND.md</code> has been updated.</li>
+<li>Keep product copy concrete and operational; reserve poetic language for Dream surfaces.</li>
+<li>Do not call Galyarder Ledger bookkeeping software, a warung app, or an Excel replacement.</li>
+<li>Do not call Galyarder HQ a dashboard.</li>
+<li>Do not call Galyarder Framework a prompt pack.</li>
+<li>Do not call Galyarder Agent a chatbot.</li>
+<li>Do not lead public copy with Web3, crypto, blockchain, tokens, speculation, generic AI, SMB, Enterprise SaaS, or fully autonomous no-risk promises.</li>
+<li>Do not sterilize controlled product-truth terms. <code>agentic companies</code>, <code>AI-native companies</code>, <code>AGI</code> as Autonomous Goal Integration, <code>digital entities</code>, <code>cryptographic ownership</code>, <code>verifiable control</code>, <code>blockchain anchoring</code>, <code>key policy</code>, and <code>guarded autonomy</code> are allowed when tied to real product behavior, proof, or architecture.</li>
+<li>Avoid contaminated categories as headlines; use precise primitives as proof.</li>
+</ul>
+<hr />
+<h2 id="8-product-specific-build-rules">8. Product-Specific Build Rules<a class="headerlink" href="#8-product-specific-build-rules" title="Permanent link">&para;</a></h2>
+<h3 id="galyarder-ledger">Galyarder Ledger<a class="headerlink" href="#galyarder-ledger" title="Permanent link">&para;</a></h3>
+<p>Build Ledger as an operational financial workspace.</p>
+<p>Must show:</p>
+<ul>
+<li>omnichannel operational input,</li>
+<li>ledger state transitions,</li>
+<li>evidence visibility,</li>
+<li>G-Agent workforce activity,</li>
+<li>review-needed states,</li>
+<li>guarded execution,</li>
+<li>report/audit output.</li>
+</ul>
+<p>Do not build it as a bookkeeping app or generic fintech dashboard.</p>
+<h3 id="galyarder-hq">Galyarder HQ<a class="headerlink" href="#galyarder-hq" title="Permanent link">&para;</a></h3>
+<p>Build HQ as the Strategic Command Interface.</p>
+<p>Must show:</p>
+<ul>
+<li>org charts,</li>
+<li>departments,</li>
+<li>reporting lines,</li>
+<li>goals/tasks assigned down hierarchy,</li>
+<li>budget and token cost tracking,</li>
+<li>hard stops,</li>
+<li>approval gates,</li>
+<li>rollback/version control,</li>
+<li>multi-company portfolio isolation.</li>
+</ul>
+<p>Do not reduce HQ to a chat UI or dashboard.</p>
+<h3 id="galyarder-framework">Galyarder Framework<a class="headerlink" href="#galyarder-framework" title="Permanent link">&para;</a></h3>
+<p>Build Framework as a public/developer-facing Intelligence Layer.</p>
+<p>Must show:</p>
+<ul>
+<li>intent extraction,</li>
+<li>strategic blueprinting,</li>
+<li>autonomous implementation,</li>
+<li>SOPs/skills/templates,</li>
+<li>workflows,</li>
+<li>agent runtime,</li>
+<li>TDD/tests,</li>
+<li>audit output,</li>
+<li>distribution/market workflow,</li>
+<li>integration with developer/AI tools when relevant.</li>
+</ul>
+<p>Clarify that AGI means Autonomous Goal Integration.</p>
+<h3 id="galyarder-agent">Galyarder Agent<a class="headerlink" href="#galyarder-agent" title="Permanent link">&para;</a></h3>
+<p>Build Agent as the Continuity Layer.</p>
+<p>Must show:</p>
+<ul>
+<li>persistent memory,</li>
+<li>local profile files,</li>
+<li>values,</li>
+<li>voice,</li>
+<li>visual identity,</li>
+<li>omnichannel presence,</li>
+<li>scheduled jobs,</li>
+<li>continuity records.</li>
+</ul>
+<p>Do not confuse it with role-based Ledger G-Agents.</p>
+<hr />
+<h2 id="9-ledger-g-agent-workforce-rules">9. Ledger G-Agent Workforce Rules<a class="headerlink" href="#9-ledger-g-agent-workforce-rules" title="Permanent link">&para;</a></h2>
+<h3 id="g-agent-cfo">G-Agent CFO<a class="headerlink" href="#g-agent-cfo" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Job: macro financial and operational oversight.</li>
+<li>Inputs: omnichannel operational data and ledger data.</li>
+<li>Outputs: executive summaries, strategic analysis.</li>
+<li>Guardrail: cannot authorize major capital movement without manual operator approval.</li>
+</ul>
+<h3 id="g-agent-sales">G-Agent Sales<a class="headerlink" href="#g-agent-sales" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Job: AR, collections, revenue-oriented follow-up.</li>
+<li>Inputs: sales documents and communication channels.</li>
+<li>Outputs: financial entries, conversion reports, follow-up drafts.</li>
+<li>Guardrail: cannot finalize deals or permanently change ledger state without review-needed approval.</li>
+</ul>
+<h3 id="g-agent-accountant">G-Agent Accountant<a class="headerlink" href="#g-agent-accountant" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Job: turn messy operational input into clean financial structure.</li>
+<li>Inputs: documents, receipts, voice, chat text.</li>
+<li>Outputs: financial state transitions and integrated ledger records.</li>
+<li>Guardrail: ambiguous entries must trigger confirmation/revision.</li>
+</ul>
+<h3 id="g-agent-auditor">G-Agent Auditor<a class="headerlink" href="#g-agent-auditor" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Job: traceability, auditability, anomaly detection.</li>
+<li>Inputs: state transitions, agent reports, ledger state.</li>
+<li>Outputs: audit-readiness reports and evidence visibility.</li>
+<li>Guardrail: read-only oversight; can flag anomalies but cannot hide or rewrite history.</li>
+</ul>
+<h3 id="tax-optimizer">Tax Optimizer<a class="headerlink" href="#tax-optimizer" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Job: simulate and plan financial/tax efficiency.</li>
+<li>Inputs: ledger records and historical operations.</li>
+<li>Outputs: tax strategy proposals, expense ratio analysis, risk visibility.</li>
+<li>Guardrail: proposes only; authoritative filing/execution stays behind command approval.</li>
+</ul>
+<hr />
+<h2 id="10-public-exposure-rules">10. Public Exposure Rules<a class="headerlink" href="#10-public-exposure-rules" title="Permanent link">&para;</a></h2>
+<p>Public website may show now:</p>
+<ul>
+<li>Galyarder Ledger</li>
+<li>Galyarder HQ</li>
+<li>Galyarder Framework</li>
+<li>Galyarder Agent</li>
+<li>The Infrastructure Suite for 1-Man Army autonomous execution</li>
+</ul>
+<p>Public website may mention as development pipeline only:</p>
+<ul>
+<li>Galyarder Vault</li>
+<li>Galyarder OS</li>
+<li>Galyarder Alpha</li>
+<li>Galyarder Quant</li>
+<li>Galyarder Wallet</li>
+<li>Galyarder Mind</li>
+</ul>
+<p>Internal only:</p>
+<ul>
+<li>Galyarder Alpha Room</li>
+<li>founder portfolio / legacy archives</li>
+</ul>
+<p>Technical-only, not high-level marketing:</p>
+<ul>
+<li>MCP details,</li>
+<li>Context7 / SequentialThinking specifics,</li>
+<li>AST details,</li>
+<li>backend architecture internals,</li>
+<li>Python agent internals.</li>
+</ul>
+<hr />
+<h2 id="11-dev-environment-tips">11. Dev Environment Tips<a class="headerlink" href="#11-dev-environment-tips" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Use <code>pnpm dlx turbo run where &lt;project_name&gt;</code> to jump to a package instead of scanning with <code>ls</code>.</li>
+<li>Run <code>pnpm install --filter &lt;project_name&gt;</code> to add the package to your workspace so Vite, ESLint, and TypeScript can see it.</li>
+<li>Use <code>pnpm create vite@latest &lt;project_name&gt; -- --template react-ts</code> to spin up a new React + Vite package with TypeScript checks ready.</li>
+<li>Check the <code>name</code> field inside each package's <code>package.json</code> to confirm the right package name; skip the top-level one when targeting a package.</li>
+<li>Do not introduce UI libraries or brand tokens that conflict with <code>DESIGN.md</code>.</li>
+<li>Before adding new colors, typography, spacing, radii, or component variants, check <code>DESIGN.md</code>.</li>
+</ul>
+<hr />
+<h2 id="12-testing-instructions">12. Testing Instructions<a class="headerlink" href="#12-testing-instructions" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Find the CI plan in <code>.github/workflows</code>.</li>
+<li>Run <code>pnpm turbo run test --filter &lt;project_name&gt;</code> to run every check defined for that package.</li>
+<li>From the package root you can usually call <code>pnpm test</code>.</li>
+<li>To focus on one step, add the Vitest pattern: <code>pnpm vitest run -t "&lt;test name&gt;"</code>.</li>
+<li>Fix test, lint, and type errors until the whole suite is green.</li>
+<li>After moving files or changing imports, run <code>pnpm lint --filter &lt;project_name&gt;</code>.</li>
+<li>Add or update tests for changed behavior.</li>
+<li>For UI/copy changes, verify the screen complies with <code>BRAND.md</code> and <code>DESIGN.md</code>.</li>
+</ul>
+<hr />
+<h2 id="13-pr-instructions">13. PR Instructions<a class="headerlink" href="#13-pr-instructions" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Title format: <code>[&lt;project_name&gt;] &lt;Title&gt;</code>.</li>
+<li>Always run <code>pnpm lint</code> and <code>pnpm test</code> before committing.</li>
+<li>Include a short compliance note for UI/copy/product changes:</li>
+<li>Brand layer used: Dream / Airlock / Machine.</li>
+<li>Product affected: Ledger / HQ / Framework / Agent / Pipeline.</li>
+<li>Proof preserved: evidence, ledger state, command state, memory state, audit trail, or test output.</li>
+<li>Do not merge UI changes that violate Dream → Airlock → Machine.</li>
+<li>Do not merge public copy that sells future pipeline as current product.</li>
+<li>Do not merge product changes that confuse Galyarder Agent with Ledger G-Agents.</li>
+</ul>
+<hr />
+<h2 id="14-rejection-gates">14. Rejection Gates<a class="headerlink" href="#14-rejection-gates" title="Permanent link">&para;</a></h2>
+<p>These are hard gates, not cosmetic checklist items. If one P0 gate fails, the work is not accepted.</p>
+<p>Reject the work if:</p>
+<ul>
+<li>UI, copy, product architecture, navigation, onboarding, reports, admin, billing, or agent workflow violates <code>BRAND.md</code>.</li>
+<li>UI, layout, color, typography, motion, component behavior, report design, admin design, or product surface violates <code>DESIGN.md</code>.</li>
+<li>The agent invents a product name, product status, capability, proof claim, pricing claim, launch claim, or roadmap claim not supported by canonical docs.</li>
+<li>Public copy leads with crypto, Web3, blockchain, tokens, speculation, generic AI wrapper language, chatbot language, SMB language, or Enterprise SaaS positioning.</li>
+<li>Controlled product-truth terms are removed merely to sound safer, causing the brand to collapse into generic corporate SaaS.</li>
+<li>Galyarder HQ is reduced to a dashboard or chat UI.</li>
+<li>Galyarder Ledger is reduced to bookkeeping software, a warung app, or an Excel replacement.</li>
+<li>Galyarder Framework is reduced to a prompt pack or vague artificial-general-intelligence claim.</li>
+<li>Galyarder Agent is reduced to a chatbot or confused with Ledger G-Agents.</li>
+<li>A dashboard, admin screen, report, settings screen, or product workspace uses Dream/marketing visuals as its core surface language.</li>
+<li>Violet/gold are used as warning, error, KPI, or generic operational status colors.</li>
+<li>Future pipeline products are presented as launched/current products.</li>
+<li>Major claims lack proof direction through behavior, workflow, ledger state, command state, memory state, evidence, audit trail, tests, or measurable output.</li>
+<li>Required lint, test, type, build, or package-specific verification fails.</li>
+</ul>
+<hr />
+<h2 id="15-agent-final-checklist">15. Agent Final Checklist<a class="headerlink" href="#15-agent-final-checklist" title="Permanent link">&para;</a></h2>
+<p>Before completing a task, verify:</p>
+<ul>
+<li>Did I read the relevant sections of <code>BRAND.md</code> and <code>DESIGN.md</code>?</li>
+<li>Did I use the correct product terminology?</li>
+<li>Did I avoid banned language?</li>
+<li>Did I avoid crypto/Web3 as the public headline unless working in technical/pipeline context?</li>
+<li>Did I preserve user command rather than replacing the user?</li>
+<li>Did I use semantic colors only for meaning?</li>
+<li>Did I avoid overusing glass, glow, grain, monospace, and cinematic effects?</li>
+<li>Did I include proof direction for major claims?</li>
+<li>Did I avoid overpromising development pipeline products?</li>
+<li>Did I distinguish Galyarder Agent from G-Agents?</li>
+</ul>
+<!-- This section is maintained by the coding agent via lore (https://github.com/BYK/loreai) -->
+<h2 id="long-term-knowledge">Long-term Knowledge<a class="headerlink" href="#long-term-knowledge" title="Permanent link">&para;</a></h2>
+<h3 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h3>
+<!-- lore:019dfc8a-34af-76c0-b5e9-8404ff99e9ec -->
+<ul>
+<li><strong>Galyarder product hierarchy and naming</strong>: Do not universalize copy rules across repos. Labs owns active Ledger/HQ/Framework/Agent; future/internal Vault/OS/Alpha/Quant/Wallet/Mind. Targets: Ledger=financial ops + G-Agent workforce/runtime; Framework=AGI as Autonomous Goal Integration + 1-Man Army; HQ=agentic-company control plane with org/budget/approval/heartbeat; Agent=persistent digital entity; Labs=public front door. Vault=Ownership/Security Layer, not Web3 headline. 24/7/never-sleeps wording is allowed only with real runtime/hosting/cost/review gates.</li>
+</ul>
+<h3 id="decision">Decision<a class="headerlink" href="#decision" title="Permanent link">&para;</a></h3>
+<!-- lore:019dfc8a-34a2-78ff-8911-642c58acde7b -->
+<ul>
+<li><strong>Final docs are P0 hard gates</strong>: Canonical Labs docs are P0 gates; child repo docs stay project-native. Remove active deprecated framing; changelog/release notes may keep it only as clearly historical. Prefer one source of truth: delete redundant Labs mirror files after updating references to BRAND.md/DESIGN.md/canonical docs; only keep a pointer/mirror when link breakage is unavoidable. Final docs may be non-git, so repo commits/pushes are separate.</li>
+</ul>
+<h3 id="gotcha">Gotcha<a class="headerlink" href="#gotcha" title="Permanent link">&para;</a></h3>
+<!-- lore:019dfc8a-34d9-73e3-a3dc-1960fcc8c751 -->
+<ul>
+<li><strong>AGENTS.md must reject brand-breaking work</strong>: AGENTS.md is canonical; AGENT.md is only a legacy alias/redirect. It should define README→BRAND→DESIGN order, UI/copy/product rules, pnpm/turbo checks, PR instructions, and reject invented claims, failed checks, internal doctrine leaks, dashboard-marketing visuals, launched pipeline products, Agent/G-Agent confusion, Humans 3.0, deterministic certainty, self-evolving/autonomous-brain claims, and hype-label AI/Web3/crypto/sovereignty framing. Do not ban product-true primitives or operational truths: cryptography/blockchain anchoring and 24/7/never-sleeps language are allowed when bounded by runtime, cost, approval, and review gates.</li>
+</ul>
+<!-- lore:019dfc8a-34ce-72ea-813e-7b8598915782 -->
+<ul>
+<li><strong>BRAND.md canonical structure requirements</strong>: BRAND.md acceptance requires front matter: name Galyarder Labs, tagline Empowering Human Intent., version 1, language en, type master, architecture branded-house. It must include 16 Strategy/Voice/Visual sections, product tree, public exposure rules, We Say/Never Say, claim guardrails, Future Pipeline wording, and Controlled Terms. Ban category-led Web3/Crypto/AI hype as public positioning, but keep product-true primitives: cryptography, signatures, key policy, blockchain anchoring, multi-sig, non-custodial/verifiable control, and guarded autonomy.</li>
+</ul>
+<!-- lore:019dfc8a-34d3-7fe1-beb3-bfa68013ef37 -->
+<ul>
+<li><strong>DESIGN.md machine-readable surface gates</strong>: DESIGN.md must have valid YAML tokens for colors, typography, spacing, radius, and motion, plus rationale, accessibility, motion, and QA. It also needs explicit surface rules for Landing, Auth, Airlock, Dashboard, Ledger, HQ, Framework, Agent, Workforce, Reports, Admin, Settings, Mobile, Pitch deck, and Brand board.</li>
+</ul>
+<h3 id="pattern">Pattern<a class="headerlink" href="#pattern" title="Permanent link">&para;</a></h3>
+<!-- lore:019dfc8a-34c5-76b9-bf3c-da57beedb4d1 -->
+<ul>
+<li><strong>Color and typography separation</strong>: Design law: brand colors are identity, semantic colors information, surface colors structure—do not mix. Violet/gold are for logo, brand, auth, threshold moments, not KPIs/warnings/errors; product UI uses sans, display serif stays marketing, mono only for hashes, IDs, logs, code, and ledger refs.</li>
+</ul>
+<!-- lore:019dfc8a-34bd-77d2-932e-d18241a8f642 -->
+<ul>
+<li><strong>Dream-Airlock-Machine UI boundaries</strong>: Dream/Airlock/Machine is internal operating/design doctrine, not public copy. Keep the terms in BRAND.md, DESIGN.md, AGENTS.md, and internal specs; public surfaces should follow the magnetic-but-controlled tone in [[019dfc8a-34b4-7478-aff7-3af23bc8be7e]] without naming the doctrine. Dream = marketing threshold, Airlock = auth/onboarding decompression, Machine = authenticated operational console.</li>
+</ul>
+<h3 id="preference">Preference<a class="headerlink" href="#preference" title="Permanent link">&para;</a></h3>
+<!-- lore:019dfc8a-34b4-7478-aff7-3af23bc8be7e -->
+<ul>
+<li><strong>Operator-native proof-backed copy</strong>: Front-door/org README copy should be decisive, high-agency, and proof-backed, not corporate-safe. “Negative” means scammy/hype category framing (Web3/crypto/AI/sovereignty as market labels), not technical primitives: cryptography, signatures, keys, blockchain anchoring, multi-sig, and non-custodial control are allowed when product-true. Strong claims like 24/7 or never-sleeps are allowed only when tied to real runtime, cost, approval, review, and failure-mode limits.</li>
+</ul>
+<!-- End lore-managed section -->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/galyarderlabs/galyarder-framework" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      <div class="md-copyright">
+        
+          <div class="md-copyright__highlight">
+            © 2026 Galyarder Labs.
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.path", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
