@@ -258,7 +258,6 @@ TOOLS="antigravity cursor kilocode windsurf opencode augment claude-code codex g
 [[ "$TOOL" != "all" ]] && TOOLS="$TOOL"
 
 python3 "${SCRIPT_DIR}/build_root_extension_surface.py"
-python3 "${SCRIPT_DIR}/build_root_extension_surface.py" --output-root "${REPO_ROOT}/.marketplace/full"
 
 SKILLS_TMP="$(mktemp)"
 ( cd "$REPO_ROOT"
@@ -338,14 +337,6 @@ done < "$SKILLS_TMP"
 rm -f "$SKILLS_TMP"
 
 for t in $TOOLS; do write_tool_readme "$t" "$(get_converted "$t")"; done
-
-if [[ " $TOOLS " == *" gemini "* ]] && [[ "$OUT_BASE" == "${REPO_ROOT}/integrations" ]]; then
-  python3 "${SCRIPT_DIR}/build_gemini_bundle.py"
-fi
-
-if [[ "$OUT_BASE" == "${REPO_ROOT}/integrations" ]]; then
-  python3 "${SCRIPT_DIR}/build_host_bundle.py"
-fi
 
 echo; info "Conversion summary"
 for t in $TOOLS; do echo "  ${t}: $(get_converted "$t") converted, $(get_skipped "$t") skipped"; done

@@ -5,7 +5,6 @@ trust_level = "trusted"
 trust_level = "trusted"
 repo_integration = true
 sync_interval = "1h"
-manifest_path = ".codex-plugin/plugin.json"
 
 [commands]
 analytics = "Design tracking schemas, audit event implementations, and define KPIs."

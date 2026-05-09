@@ -52,3 +52,6 @@ tests/release-smoke/playwright-report/
 .superset/
 .claude/worktrees/
 site/
+
+# Local model/cache artifacts
+local_cache/

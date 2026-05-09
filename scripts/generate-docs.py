@@ -199,12 +199,16 @@ def generate():
     # Special Case: Design System Grid
     design_idx = "# Design System Specifications\n\nElite UI specifications to enforce aesthetic law.\n\n"
     design_idx += '<div class="grid cards" markdown>\n\n'
-    design_src = REPO_ROOT / "Growth" / "design"
+    design_src = REPO_ROOT / "skills"
     if design_src.exists():
-        for f in sorted(design_src.glob("*.md")):
-            shutil.copy(f, DOCS_DIR / "design" / f.name)
-            title = f.stem.replace("design-md-", "").title()
-            design_idx += f"-   **[{title}]({f.name})**\n\n    ---\n\n    Institutional-grade design law.\n\n"
+        for skill_dir in sorted(design_src.glob("design-md-*")):
+            skill_file = skill_dir / "SKILL.md"
+            if not skill_file.exists():
+                continue
+            output_name = f"{skill_dir.name}.md"
+            shutil.copy(skill_file, DOCS_DIR / "design" / output_name)
+            title = skill_dir.name.replace("design-md-", "").replace("-", " ").replace(".", " ").title()
+            design_idx += f"-   **[{title}]({output_name})**\n\n    ---\n\n    Institutional-grade design law.\n\n"
     design_idx += "</div>"
     with open(DOCS_DIR / "design/index.md", "w", encoding="utf-8") as f: f.write(design_idx)
 
