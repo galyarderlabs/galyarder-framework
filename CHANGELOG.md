@@ -2,6 +2,11 @@
 
 All notable changes to Galyarder Framework will be documented in this file.
 
+## [1.9.9] - 2026-05-09
+### Changed
+- **Canonical Extension Surface**: Removed redundant generated extension surfaces and aligned marketplace, Codex, package, and smoke-test contracts around the canonical `agents/`, `skills/`, `commands/`, `personas/`, and `integrations/` runtime source.
+- **Scaffold Surface Clarity**: Clarified that root departments are workflow taxonomy while `galyarder scaffold` still generates `docs/departments/*` Digital HQ workspaces for user projects.
+
 ## [1.9.7] - 2026-04-22
 ### Fixed
 - **Legacy Purge**: Permanently removed all legacy "Paperclip" references from Agent Adapter documentation, manifests, and skill logic. Standardized all packages under the `@galyarder` scope.

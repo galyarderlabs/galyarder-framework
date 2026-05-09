@@ -1,6 +1,6 @@
 {
   "name": "galyarder-framework",
-  "version": "1.9.8",
+  "version": "1.9.9",
   "description": "Galyarder Framework: High-Integrity Intelligence Layer for AI Agents",
   "main": "index.js",
   "bin": {

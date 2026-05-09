@@ -2,6 +2,11 @@
 
 All notable changes to Galyarder Framework will be documented in this file.
 
+## [1.9.9] - 2026-05-09
+### Changed
+- **Canonical Extension Surface**: Removed redundant generated extension surfaces and aligned marketplace, Codex, package, and smoke-test contracts around the canonical `agents/`, `skills/`, `commands/`, `personas/`, and `integrations/` runtime source.
+- **Scaffold Surface Clarity**: Clarified that root departments are workflow taxonomy while `galyarder scaffold` still generates `docs/departments/*` Digital HQ workspaces for user projects.
+
 ## [1.9.8] - 2026-04-27
 ### Fixed
 - **Gemini Agent Tool Schema**: Corrected agent frontmatter to use the required `tools` key instead of the unrecognized `allowed-tools`. Standardized tool names to native Gemini CLI identifiers (`read_file`, `grep_search`, etc.) to fix validation failures.

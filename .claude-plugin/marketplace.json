@@ -9,14 +9,14 @@
   "repository": "https://github.com/galyarderlabs/galyarder-framework",
   "metadata": {
     "description": "Galyarder Framework: The Humans 3.0 protocol for autonomous workforce orchestration.",
-    "version": "1.9.8"
+    "version": "1.9.9"
   },
   "plugins": [
     {
       "name": "galyarder-framework",
       "source": ".",
       "description": "Complete Galyarder Framework runtime using canonical agents/, skills/, and commands/ directories.",
-      "version": "1.9.8",
+      "version": "1.9.9",
       "category": "framework"
     }
   ]

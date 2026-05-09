@@ -1,5 +1,17 @@
 # Release Notes - Galyarder Framework
 
+## [v1.9.9] - 2026-05-09
+### Canonical Runtime Surface Cleanup
+This release completes the cleanup from duplicate generated extension folders to the canonical framework runtime source while preserving scaffolded Digital HQ department workspaces for user projects.
+
+#### Highlights
+- **Extension Source Canonicalization**: Marketplace and package metadata now point at the canonical root runtime instead of generated bundle folders.
+- **Codex Integration Cleanup**: Codex no longer depends on the removed `.codex-plugin` manifest path.
+- **Smoke Test Realignment**: The release gate now verifies `agents/`, `skills/`, `commands/`, and `integrations/` instead of legacy physical department roots.
+- **Department Semantics Clarified**: Brand, design, Claude, Gemini, and agent docs now distinguish extension source directories from scaffolded `docs/departments/*` project workspaces.
+
+---
+
 ## [v1.9.7] - 2026-04-22
 ### Legacy Branding Purge
 This release finalizes the "Galyarder Standard" by permanently purging all legacy "Paperclip" references from the framework's documentation, manifests, and internal logic.
