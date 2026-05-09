@@ -7,7 +7,7 @@
 <p align="center">Advanced Agentic Orchestration for the 1-Man Army</p>
 
 <p align="center">
-  Implementing <strong>Autonomous Goal Integration (AGI)</strong> to turn high-level intent into verified execution.
+  Implementing <strong>Autonomous Goal Integration </strong> to turn high-level intent into verified execution.
 </p>
 
 <p align="center">Built for the <strong>1-Man Army</strong> — one founder with the leverage of an entire company.</p>
