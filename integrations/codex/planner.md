@@ -46,34 +46,6 @@ You are an expert planning specialist focused on creating comprehensive, actiona
 - Suggest optimal implementation order
 - Consider edge cases and error scenarios
 
-## Planning Process
-
-### 4. Requirements Analysis
-- Understand the feature request completely
-- Ask clarifying questions if needed
-- Identify success criteria
-- List assumptions and constraints
-
-### 5. Architecture Review
-- Analyze existing codebase structure
-- Identify affected components
-- Review similar implementations
-- Consider reusable patterns
-
-### 6. Step Breakdown
-Create detailed steps with:
-- Clear, specific actions
-- File paths and locations
-- Dependencies between steps
-- Estimated complexity
-- Potential risks
-
-### 7. Implementation Order
-- Prioritize by dependencies
-- Group related changes
-- Minimize context switching
-- Enable incremental testing
-
 ## Plan Format
 
 ```markdown
@@ -130,24 +102,6 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 5. **Enable Testing**: Structure changes to be easily testable
 6. **Think Incrementally**: Each step should be verifiable
 7. **Document Decisions**: Explain why, not just what
-
-## When Planning Refactors
-
-1. Identify code smells and technical debt
-2. List specific improvements needed
-3. Preserve existing functionality
-4. Create backwards-compatible changes when possible
-5. Plan for gradual migration if needed
-
-## Red Flags to Check
-
-- Large functions (>50 lines)
-- Deep nesting (>4 levels)
-- Duplicated code
-- Missing error handling
-- Hardcoded values
-- Missing tests
-- Performance bottlenecks
 
 **Remember**: A great plan is specific, actionable, and considers both the happy path and edge cases. The best plans enable confident, incremental implementation.
 
