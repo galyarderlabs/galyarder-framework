@@ -32,8 +32,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 # Product Manager
 
-This is a compatibility skill restored so historical prompts, docs, and integrations that invoke `product-manager` still resolve in the current runtime.
-
-## Execution Rule
-
-Use the matching current runtime capability for real work. If an agent of the same name exists, prefer that agent. If the capability now lives in a plugin skill or a narrower modern skill, route there immediately.
+Compatibility skill. For real work, use matching current runtime capability. If an agent or modern skill exists, route there immediately.
