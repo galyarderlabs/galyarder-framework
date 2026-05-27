@@ -4,7 +4,6 @@ tools:
   - read_file
   - grep_search
   - glob
-  - run_shell_command
   - write_file
   - replace
 description: Legal & Compliance Specialist. Use this agent to generate TOS/Privacy policies, audit GDPR/CCPA compliance, review open-source licenses, and ensure AI governance (ISO 42001). It protects the 1-Man Army from legal liabilities.
