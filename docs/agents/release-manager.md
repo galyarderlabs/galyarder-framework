@@ -1,5 +1,5 @@
 title: "release-manager | Galyarder Framework"
-description: "Release Orchestration & Versioning Specialist. Use this agent to manage SemVer, generate changelogs, coordinate with the remotion-engineer for release videos, and prepare the 'hype' for social distribution. It ensures every deployment is a 'moment'."
+description: "Release Orchestration & Versioning Specialist. Use this agent to manage SemVer, generate changelogs, coordinate with the remotion-engineer for release videos, and prepare the distribution matrix for social distribution. It ensures every deployment is an event."
 
 # :material-folder-zip: release-manager
 

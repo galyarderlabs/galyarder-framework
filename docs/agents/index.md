@@ -132,7 +132,7 @@ Discover the high-integrity workforce and protocols designed for autonomous orch
 -   **[release-manager](release-manager.md)**
 
 
-    Release Orchestration & Versioning Specialist. Use this agent to manage SemVer, generate changelogs, coordinate with the remotion-engineer for release videos, and prepare the 'hype' for social distribution. It ensures every deployment is a 'moment'.
+    Release Orchestration & Versioning Specialist. Use this agent to manage SemVer, generate changelogs, coordinate with the remotion-engineer for release videos, and prepare the distribution matrix for social distribution. It ensures every deployment is an event.
 
 -   **[sre](sre.md)**
 
