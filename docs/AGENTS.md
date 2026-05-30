@@ -25,7 +25,7 @@ Architectural determinism, high-integrity implementation, and testing factory.
 ## Growth Department
 Acquisition, conversion, behavioral arbitrage, and aesthetic law.
 - **growth-strategist**: CMO specialist for SEO, CRO, and Marketing Psychology.
-- **growth-engineer**: Engineering-as-Marketing lead. Builds viral referral loops and programmatic SEO.
+- **growth-engineer**: Engineering-as-Marketing lead. Builds compounding referral loops and programmatic SEO.
 - **conversion-engineer**: CRO and funnel optimization specialist.
 - **retention-specialist**: LTV and engagement lead. Designs activation and nurture sequences.
 - **social-strategist**: Distribution and hype management lead.
