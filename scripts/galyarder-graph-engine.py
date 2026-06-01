@@ -10,7 +10,7 @@ from collections import defaultdict
 # Galyarder Graphify Engine v2.0 - "Apex Fidelity"
 # Purpose: High-integrity deterministic extraction and semantic inference.
 
-REPO_ROOT = Path(__file__).parent.parent
+REPO_ROOT = Path(__file__).resolve().parent.parent
 DOCS_DIR = REPO_ROOT / "docs"
 OUTPUT_FILE = REPO_ROOT / "docs" / "graph.json"
 SILOS = ["Executive", "Engineering", "Growth", "Security", "Product", "Infrastructure", "Legal-Finance", "Knowledge"]
