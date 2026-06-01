@@ -1,3 +1,8 @@
+---
+name: design-md-supabase
+description: "Design system reference for design md supabase."
+---
+
 # Design System: Supabase
 
 ## 1. Visual Theme & Atmosphere

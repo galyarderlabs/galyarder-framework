@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/legal-tos-privacy/references/compliance-checklist.md
+---
 # Jurisdiction-Specific Compliance Requirements
 
 ## 🧠 Strategic Intelligence

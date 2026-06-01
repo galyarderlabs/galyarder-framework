@@ -2,7 +2,7 @@
 
 **Issue:** GAL-36
 **Phase:** 1 (Implementation)
-**Protocol:** Karpathy-Grade
+**Protocol:** technical integrity-Grade
 
 ## 1. Summary of Strategy
 Establish the organizational and physical infrastructure for the Galyarder Framework Digital Enterprise. This plan follows a tracer-bullet approach: first the "Gedung Kantor" (Folders), then the "SOP" (Agent updates), then the "Staffing" (Personas).

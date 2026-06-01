@@ -1,3 +1,8 @@
+---
+name: design-md-raycast
+description: "Design system reference for design md raycast."
+---
+
 # Design System: Raycast
 
 ## 1. Visual Theme & Atmosphere

@@ -8,6 +8,7 @@ Tests archiving an entity, viewing archived items, and restoring them.
 - Archived entity: ID `{{archivedEntityId}}`
 - App running at `{{baseUrl}}`
 
+---
 
 ## TypeScript
 
@@ -69,6 +70,7 @@ test.describe('Soft Delete  Archive & Restore', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -110,4 +112,5 @@ test.describe('Soft Delete  Archive & Restore', () => {
 | Edit disabled | Archived entity cannot be edited |
 | Permanent delete | Hard-delete of archived entity |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

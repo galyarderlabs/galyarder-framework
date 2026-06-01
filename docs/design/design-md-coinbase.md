@@ -1,3 +1,8 @@
+---
+name: design-md-coinbase
+description: "Design system reference for design md coinbase."
+---
+
 # Design System: Coinbase
 
 ## 1. Visual Theme & Atmosphere

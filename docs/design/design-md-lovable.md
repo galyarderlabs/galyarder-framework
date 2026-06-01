@@ -1,3 +1,8 @@
+---
+name: design-md-lovable
+description: "Design system reference for design md lovable."
+---
+
 # Design System: Lovable
 
 ## 1. Visual Theme & Atmosphere

@@ -4,6 +4,7 @@ Transitional phrases to guide readers through your content. Good signposting imp
 
 Adapted from: University of Manchester Academic Phrasebank (2023), Plain English Campaign, web content best practices
 
+---
 
 ## Previewing Content Structure
 
@@ -17,6 +18,7 @@ Use to orient readers and set expectations:
 - Let's break this down step by step.
 - The sections below explain...
 
+---
 
 ## Introducing a New Topic
 
@@ -27,6 +29,7 @@ Use to orient readers and set expectations:
 - Another key factor is...
 - X is worth exploring because...
 
+---
 
 ## Referring Back
 
@@ -39,6 +42,7 @@ Use to connect ideas and reinforce key points:
 - Going back to X,...
 - Earlier, we explained that...
 
+---
 
 ## Moving Between Sections
 
@@ -49,6 +53,7 @@ Use to connect ideas and reinforce key points:
 - Now that you understand X, here's Y.
 - That brings us to...
 
+---
 
 ## Indicating Addition
 
@@ -63,6 +68,7 @@ Use to connect ideas and reinforce key points:
 
 **Note:** Use "moreover" and "furthermore" sparingly. They can sound AI-generated when overused.
 
+---
 
 ## Indicating Contrast
 
@@ -75,6 +81,7 @@ Use to connect ideas and reinforce key points:
 - While X is true, Y...
 - Despite this,...
 
+---
 
 ## Indicating Similarity
 
@@ -85,6 +92,7 @@ Use to connect ideas and reinforce key points:
 - This mirrors...
 - The same applies to...
 
+---
 
 ## Indicating Cause and Effect
 
@@ -97,6 +105,7 @@ Use to connect ideas and reinforce key points:
 - The outcome?...
 - Here's what happens:...
 
+---
 
 ## Giving Examples
 
@@ -110,6 +119,7 @@ Use to connect ideas and reinforce key points:
 - Like when...
 - Say you want to...
 
+---
 
 ## Emphasising Key Points
 
@@ -121,6 +131,7 @@ Use to connect ideas and reinforce key points:
 - This is critical:...
 - The bottom line?...
 
+---
 
 ## Providing Evidence
 
@@ -145,6 +156,7 @@ Use when citing sources, data, or expert opinions:
 - The numbers confirm...
 - This aligns with findings from...
 
+---
 
 ## Summarising Sections
 
@@ -156,6 +168,7 @@ Use when citing sources, data, or expert opinions:
 - Let's pull this together:...
 - Quick summary:...
 
+---
 
 ## Concluding Content
 
@@ -169,6 +182,7 @@ Use when citing sources, data, or expert opinions:
 
 **Note:** Avoid "In conclusion" at the start of a paragraph. It's overused and signals AI writing.
 
+---
 
 ## Question-Based Transitions
 
@@ -182,6 +196,7 @@ Useful for conversational tone and featured snippet optimization:
 - Wondering where to start?
 - Still not sure? Here's the breakdown.
 
+---
 
 ## List Introductions
 
@@ -194,6 +209,7 @@ For numbered lists and step-by-step content:
 - Key things to consider:
 - The main factors are:
 
+---
 
 ## Hedging Language
 
@@ -208,6 +224,7 @@ For claims that need qualification or aren't absolute:
 - this can help
 - many experts believe
 
+---
 
 ## Best Practice Guidelines
 
@@ -218,6 +235,7 @@ For claims that need qualification or aren't absolute:
 5. **Keep it natural**: Read aloud; if it sounds forced, simplify
 6. **Front-load key info**: Put the important word or phrase early in the transition
 
+---
 
 ## Transitions to Avoid (AI Tells)
 
@@ -233,4 +251,5 @@ These phrases are overused in AI-generated content:
 
 See the seo-audit skill's `references/ai-writing-detection.md` for a complete list of AI writing tells.
 
+---
  2026 Galyarder Labs. Galyarder Framework.

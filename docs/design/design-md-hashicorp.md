@@ -1,3 +1,8 @@
+---
+name: design-md-hashicorp
+description: "Design system reference for design md hashicorp."
+---
+
 # Design System: HashiCorp
 
 ## 1. Visual Theme & Atmosphere

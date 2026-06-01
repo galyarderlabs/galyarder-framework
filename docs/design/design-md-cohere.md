@@ -1,3 +1,8 @@
+---
+name: design-md-cohere
+description: "Design system reference for design md cohere."
+---
+
 # Design System: Cohere
 
 ## 1. Visual Theme & Atmosphere

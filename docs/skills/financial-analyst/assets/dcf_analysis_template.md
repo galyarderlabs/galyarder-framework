@@ -179,7 +179,9 @@
 
 [Final paragraph with investment recommendation rationale, key upside catalysts, and primary risks to monitor.]
 
+---
 
 *Analysis generated using Financial Analyst Skill - DCF Valuation Model*
 
+---
  2026 Galyarder Labs. Galyarder Framework.

@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/tracking-threat-actor-infrastructure/references/standards.md
+---
 # Standards and Frameworks Reference
 
 ## 🧠 Strategic Intelligence

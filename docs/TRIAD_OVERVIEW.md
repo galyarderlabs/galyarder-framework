@@ -1,59 +1,56 @@
-# The Galyarder Triad: Complete Ecosystem Overview
+# Galyarder Stack: Framework, Agent, HQ, and Ledger
 
-To build a high-scale Digital Company, you need three layers working in perfect symmetry: **Intelligence**, **Governance**, and **Presence**.
+The Galyarder ecosystem is an agentic-company stack. Each layer has a different job: intelligence, continuity, command, and financial execution.
 
+## 1. Galyarder Framework — Intelligence Layer
 
-## 1. Galyarder Framework (Intelligence Layer)
-*The Brain and the Workforce.*
+- **Repository:** [galyarder-framework](https://github.com/galyarderlabs/galyarder-framework)
+- **Role:** Provides specialized agents, skills, commands, SOPs, and review gates.
+- **Function:** Defines how work is planned, routed, executed, verified, and documented.
+- **Usage:** Runs inside AI assistants and coding tools such as Claude Code, Gemini CLI, Cursor, Hermes Agent, OpenClaw, Codex-style setups, and OpenCode-style setups.
 
-- **Repository**: [galyarder-framework](https://github.com/galyarderlabs/galyarder-framework)
-- **Role**: Provides the 40 specialized agents and 132 skills (SOPs) that execute missions with mathematical precision (Humans 3.0).
-- **Function**: It is the logic engine. It defines *how* work is done (TDD, SEO, Security, etc.).
-- **Usage**: Runs inside your AI assistants (Claude, Gemini, Cursor) to give them institutional-grade capabilities.
+## 2. Galyarder Agent — Continuity Layer
 
+- **Repository:** [galyarder-agent](https://github.com/galyarderlabs/galyarder-agent)
+- **Role:** Gives the framework an interface across chat, CLI, email, and other channels.
+- **Function:** Provides memory, profile identity, tools, scheduled jobs, and multi-channel communication.
+- **Usage:** Runs as a local or server-side runtime that keeps the operator connected to the agentic company.
 
-## 2. Galyarder HQ (Governance Layer)
-*The Control Plane and the Office.*
+## 3. Galyarder HQ — Command Layer
 
-- **Repository**: [galyarder-hq](https://github.com/galyarderlabs/galyarder-hq)
-- **Role**: A master governance dashboard for solo founders managing multiple projects.
-- **Function**: It provides the Web UI to monitor task queues, review Obsidian reports, and govern agent activity across the entire empire.
-- **Usage**: A self-hosted web app that "listens" to your file system and integrates with Linear.
+- **Repository:** [galyarder-hq](https://github.com/galyarderlabs/galyarder-hq)
+- **Role:** Provides operating visibility and governance.
+- **Function:** Shows projects, goals, reports, departments, task queues, approvals, and agent activity.
+- **Usage:** A self-hosted web app that reads project state and gives the operator a command surface.
 
+## 4. Galyarder Ledger — Financial Execution Layer
 
-## 3. Galyarder Agent (Presence Layer)
-*The Entity and the Runtime.*
+- **Role:** Turns operational and financial work into agent-assisted, ledger-backed execution.
+- **Function:** Preserves financial evidence, approvals, reports, and role-based G-Agent workflows.
+- **Usage:** Used when finance, sales, accounting, audit, tax, and evidence visibility need structured state.
 
-- **Repository**: [galyarder-agent](https://github.com/galyarderlabs/galyarder-agent)
-- **Role**: A self-evolving assistant runtime that lives where you live (Telegram, WhatsApp, CLI).
-- **Function**: It provides persistent long-term memory, stable identity (faces/selfies), and multi-channel communication. It connects to your Google Workspace and handles proactive tasks.
-- **Usage**: A Python-based runtime that you run 24/7 (via systemd) to stay connected to your company.
-
-
-## How They Work Together
+## How they work together
 
 ```text
-[ YOU ] 
-   |
-   | (Intent via WhatsApp/Telegram)
-   v
-[ GALYARDER AGENT ] <--- (Powered by) ---> [ GALYARDER FRAMEWORK ]
-   (The Entity)                               (The Intelligence)
-         |                                           |
-         | (Saves Reports & Progress)                |
-         v                                           v
-                 [ DIGITAL HEADQUARTERS ]
-                    (Linear / Obsidian)
-                           |
-                           | (Visualized & Governed by)
-                           v
-                    [ GALYARDER HQ ]
-                     (Control Plane)
+[ Operator Intent ]
+        |
+        v
+[ Galyarder Agent ] <---- uses ----> [ Galyarder Framework ]
+  continuity, tools, channels          agents, skills, commands
+        |                                      |
+        | writes reports / evidence           | produces plans / artifacts
+        v                                      v
+[ Project Operating Structure ] ----> [ Galyarder HQ ]
+  docs, issues, decisions, reports       goals, approvals, visibility
+        |
+        v
+[ Galyarder Ledger ]
+  finance, approvals, evidence, reports
 ```
 
-1.  **Framework** makes your agents smart.
-2.  **Agent** gives your smart logic a "body" and a way to talk to you.
-3.  **HQ** gives you a "dashboard" to make sure everything is scaling correctly.
+1. **Framework** gives agents the operating logic.
+2. **Agent** gives that logic continuity and a communication surface.
+3. **HQ** gives the operator visibility and control.
+4. **Ledger** gives financial and operational work evidence-backed state.
 
-**The Galyarder Triad is the ultimate 1-Man Army stack.** You provide the Vision; the Triad provides the Execution.
-
+The goal is not to make the operator passive. The goal is to make company execution structured, inspectable, and easier to govern.

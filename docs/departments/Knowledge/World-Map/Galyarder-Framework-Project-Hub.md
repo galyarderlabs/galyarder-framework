@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 17
 source: docs/templates/Galyarder-Framework Project Hub.md
+---
 # Galyarder Framework Project Hub
 
 ## 🧠 Strategic Intelligence

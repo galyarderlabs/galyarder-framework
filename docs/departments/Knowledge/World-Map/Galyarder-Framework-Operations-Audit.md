@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/templates/Galyarder-Framework Operations Audit.md
+---
 # Galyarder Framework Operations Audit
 
 ## 🧠 Strategic Intelligence

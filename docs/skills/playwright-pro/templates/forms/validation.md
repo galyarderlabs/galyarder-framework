@@ -5,6 +5,7 @@ Tests required fields, format validation, and inline error messages.
 ## Prerequisites
 - Form at `{{baseUrl}}/{{formPath}}`
 
+---
 
 ## TypeScript
 
@@ -87,6 +88,7 @@ test.describe('Form Validation', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -138,4 +140,5 @@ test.describe('Form Validation', () => {
 | aria-describedby | Error programmatically linked to field |
 | Max length | Exceeded length  error shown |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

@@ -10,47 +10,43 @@ For Labs-level canon, read:
 - [`docs/galyarder-labs/DESIGN.md`](./docs/galyarder-labs/DESIGN.md)
 - [`docs/galyarder-labs/AGENTS.md`](./docs/galyarder-labs/AGENTS.md)
 
-This file governs Framework positioning, copy, public developer language, and agent/skill ecosystem framing.
+This file governs Framework positioning, public developer language, documentation copy, and agent/skill ecosystem framing.
 
 ---
 
 ## Product Definition
 
-**Galyarder Framework** is the Intelligence Layer for the 1-Man Army.
+**Galyarder Framework is an open-source Agentic Company Framework and Intelligence Layer.**
 
-It turns high-level operator intent into structured execution through agents, skills, commands, SOPs, workflow protocols, tests, audits, and distribution loops.
+It turns high-level founder/operator intent into coordinated execution through agents, skills, commands, SOPs, workflow protocols, review gates, tests, audits, documentation, and distribution loops.
 
-Framework extension source lives in `agents/`, `skills/`, `commands/`, `personas/`, and `integrations/`. Department language is a logical routing taxonomy for the framework runtime and also maps to scaffolded `docs/departments/*` workspaces in user projects.
+Framework extension source lives in `agents/`, `skills/`, `commands`, `personas/`, and `integrations/`. Department language is a logical routing taxonomy for the framework runtime and maps to scaffolded project operating workspaces such as `docs/departments/*` in user projects.
 
-Framework implements:
-
-> **Autonomous Goal Integration (AGI)**
-
-In this repo, **AGI means Autonomous Goal Integration**, not artificial general intelligence.
+The internal execution primitive is **Autonomous Goal Integration**: the process of converting a goal into routed, governed, verified work. Do not present this as an artificial-general-intelligence claim.
 
 ---
 
 ## Positioning
 
-Use:
+Lead with:
 
+- open-source Agentic Company Framework,
 - Intelligence Layer,
-- Autonomous Goal Integration,
-- advanced agentic orchestration,
-- 1-Man Army operating protocol,
-- high-integrity workforce,
+- founder/operator intent → coordinated execution,
+- human-directed autonomous workflows,
 - agents, skills, commands, departments, SOPs,
-- deterministic implementation support,
-- proof through tests, audits, reports, and shipped artifacts.
+- review gates and evidence contracts,
+- proof through tests, audits, reports, releases, and shipped artifacts.
 
 Do not reduce Framework to:
 
-- prompt pack,
-- AI wrapper,
-- generic agent bundle,
-- artificial general intelligence claim,
-- “magic automation,”
-- vague productivity toolkit.
+- a prompt pack,
+- an AI wrapper,
+- a generic agent bundle,
+- a vague productivity toolkit,
+- artificial-general-intelligence branding,
+- magic automation,
+- spectacle language with no operating proof.
 
 ---
 
@@ -58,16 +54,18 @@ Do not reduce Framework to:
 
 Framework is for:
 
-- solo founders,
+- founders,
+- solo operators,
 - builders,
 - engineering operators,
+- researchers,
+- creators,
 - technical strategists,
-- agent-tool users,
-- teams that need repeatable high-integrity execution.
+- small teams that need repeatable execution without company-level bureaucracy.
 
 The emotional promise:
 
-> One operator can command a serious execution workforce without becoming a corporation.
+> One serious operator can coordinate company-grade execution without surrendering command.
 
 ---
 
@@ -78,14 +76,15 @@ Framework provides:
 - specialized agents,
 - production-ready skills,
 - command triggers,
-- department structure,
+- department routing,
 - implementation workflows,
 - TDD / verification protocols,
-- audit and security patterns,
-- distribution and growth workflows,
-- host integrations for tools such as Claude Code, Gemini CLI, OpenCode, Codex, and related agent environments.
+- security and audit patterns,
+- documentation and release workflows,
+- growth, finance, legal, product, strategy, and operations workflows,
+- host integrations for tools such as Claude Code, Gemini CLI, Cursor, Hermes Agent, OpenClaw, Codex-style setups, OpenCode-style setups, and related agent environments.
 
-Claims must connect to concrete artifacts: agent files, skill files, commands, install flows, tests, changelogs, releases, or docs.
+Claims must connect to concrete artifacts: agent files, skill files, command files, install flows, docs, generated project structure, tests, changelogs, workflow runs, or releases.
 
 ---
 
@@ -93,24 +92,28 @@ Claims must connect to concrete artifacts: agent files, skill files, commands, i
 
 Allowed when accurate:
 
-- AGI as Autonomous Goal Integration,
+- agentic company framework,
+- Intelligence Layer,
+- Autonomous Goal Integration as an internal execution term,
 - agentic orchestration,
 - autonomous implementation,
-- 1-Man Army,
-- high-integrity workforce,
-- deterministic execution,
-- institutional-grade output,
+- human-directed execution,
+- governed execution,
+- evidence-backed workflows,
+- institutional-grade capability,
 - self-mapping knowledge graph,
 - agent runtime,
 - SOPs and skills.
 
-Avoid:
+Avoid as public posture:
 
-- AGI without expansion,
-- sentient system claims,
+- unexpanded Autonomous Goal Integration abbreviation,
+- artificial-general-intelligence implication,
+- fake consciousness claims,
 - self-evolving artificial brain language,
-- fully autonomous no-risk promises,
-- effortless success framing.
+- no-risk full autonomy promises,
+- effortless success framing,
+- edgy spectacle terms that are not backed by product behavior.
 
 ---
 
@@ -122,6 +125,7 @@ Framework inherits Galyarder Labs doctrine:
 - operator remains in command,
 - proof over mythology,
 - strong technical language is allowed when product-true,
-- contaminated hype labels must not replace precise primitives.
+- contaminated hype labels must not replace precise primitives,
+- major claims should connect to workflow visibility, agent capability, auditability, evidence, command state, memory state, or measurable output.
 
-Framework-specific copy should be sharper and more technical than Labs marketing copy because this is a developer-facing Intelligence Layer.
+Framework-specific copy can be sharper and more technical than Labs marketing copy because this is the developer-facing Intelligence Layer, but it must remain concrete, inspectable, and human-directed.

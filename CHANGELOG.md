@@ -5,7 +5,7 @@ All notable changes to Galyarder Framework will be documented in this file.
 ## [1.9.9] - 2026-05-09
 ### Changed
 - **Canonical Extension Surface**: Removed redundant generated extension surfaces and aligned marketplace, Codex, package, and smoke-test contracts around the canonical `agents/`, `skills/`, `commands/`, `personas/`, and `integrations/` runtime source.
-- **Scaffold Surface Clarity**: Clarified that root departments are workflow taxonomy while `galyarder scaffold` still generates `docs/departments/*` Digital HQ workspaces for user projects.
+- **Scaffold Surface Clarity**: Clarified that root departments are workflow taxonomy while `galyarder scaffold` still generates `docs/departments/*` project operating workspace workspaces for user projects.
 
 ## [1.9.7] - 2026-04-22
 ### Fixed
@@ -39,7 +39,7 @@ All notable changes to Galyarder Framework will be documented in this file.
 ## [1.8.17] - 2026-04-19
 ### Changed
 - **Operational Sequence**: Enhanced the Mermaid diagram in `README.md` to include the **Neural Link** dependency audit phase.
-- **Command Protocol**: Updated the "1-Man Army Command Protocol" table to include **Neural Mapping** as Phase II.
+- **Command Protocol**: Updated the "agentic-company command protocol" table to include **Neural Mapping** as Phase II.
 
 ## [1.8.16] - 2026-04-19
 
@@ -161,12 +161,12 @@ Architectural guardrails to make execution provable: gated testing ladder, test-
 - **Sync Suite**: Added/updated sync + docs generation scripts (see `/scripts`).
 ### Changed
 - Repo structure flattened; removed legacy `framework/` directory.
-- `WORKFLOW.md` updated for Humans 3.0 hierarchy + gating + modes.
+- `WORKFLOW.md` updated for human-directed execution hierarchy + gating + modes.
 - Branding standardized: “Galyarder Framework” vs “Galyarder Labs”.
 ### Fixed
 - Non-ASCII purge for terminal compatibility.
 - Linear scoping hardened to enforce project-scoped operations.
-- Global Karpathy protocol integrated across agents/skills (think-first, simplicity-first, surgical changes, goal-driven execution).
+- technical integrity protocol integrated across agents/skills (think-first, simplicity-first, surgical changes, goal-driven execution).
 ### Breaking Changes
 - Removed `framework/` subdirectory; paths have changed accordingly.
 - Any workflows/scripts referencing old paths must be updated.

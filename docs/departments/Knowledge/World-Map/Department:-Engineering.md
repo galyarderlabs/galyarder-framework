@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/departments/Engineering/README.md
+---
 # Department: Engineering
 
 ## 🧠 Strategic Intelligence

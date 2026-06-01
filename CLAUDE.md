@@ -1,54 +1,27 @@
-# Claude Code: Implementation Protocol
+# Claude Code Integration — Galyarder Framework
 
-This guide defines the high-integrity integration of Galyarder Framework within the **Claude Code** (Anthropic) environment.
+This guide explains how Claude Code should use Galyarder Framework as an agentic-company operating layer.
 
-# BOOTSTRAP: Load core system intelligence
-@AGENTS.md
-@WORKFLOW.md
-@BRAND.md
-@DESIGN.md
-@docs/galyarder-labs/BRAND.md
-@docs/galyarder-labs/DESIGN.md
+## Operating Gate
 
-Load behavior must stay department-scoped while reading the selected plugin's `personas/`,
-`agents/`, `commands/`, and `skills/` surfaces. Do not rely on root-level monolithic rule files
-or legacy extension bundle paths such as `.marketplace/full/`. Project reports may still write to scaffolded `docs/departments/*` folders.
+Every Claude Code session should follow this order:
 
----
+1. **Understand intent** — restate the operator goal and constraints.
+2. **Inspect before editing** — read the relevant files, docs, tests, and runtime state.
+3. **Route the work** — choose the correct department, agent, skill, command, or tool path.
+4. **Plan non-trivial changes** — define the smallest viable implementation slice and proof gate.
+5. **Execute surgically** — preserve unrelated code and useful technical content.
+6. **Verify before completion** — run the proving command/check and report evidence.
+7. **Persist useful results** — leave docs, tests, reports, PR notes, or decisions when the work needs continuity.
 
-## 1. THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
+## Technical Integrity
 
-Every operation within this session is governed by the 1-Man Army execution gate. You are hardcoded to enforce:
+- Think before coding.
+- Prefer simple, inspectable changes over speculative architecture.
+- Keep edits scoped to the requested outcome.
+- Use tests, builds, lint, logs, rendered output, or live checks as completion proof.
+- Do not claim success from confidence alone.
 
-### Operational Modes
-- **BUILD (Default)**: Heavy ceremony. Requires PRD, Blueprinting, and full TDD gating.
-- **INCIDENT**: Emergency hotfix mode. Bypasses planning but requires post-mortem and 48h conversion to BUILD.
-- **EXPERIMENT**: Timeboxed spike. No tests required; code must be quarantined.
+## Human-Directed Execution
 
-### Mandatory Loop
-1. **Traceability**: All computational labor must occur within a project-scoped Linear issue.
-2. **Cognitive Integrity**: Explicit `sequentialthinking` MCP loop before any high-impact action.
-3. **Technical Integrity**: Think Before Coding, Simplicity First, Surgical Changes, and Goal-Driven Execution (Karpathy).
-4. **Validation**: Real-time fetch of official references via `context7`.
-5. **Token Economy**: Mandatory use of the `rtk` proxy for all terminal operations.
-6. **Persistence**: Every task must result in a durable markdown report in `docs/departments/` (The Obsidian Loop).
-
----
-
-## 2. Command Triggers
-
-Claude Code supports instant mission triggers via slash commands:
-
-| Command | Department | Mission |
-| :--- | :--- | :--- |
-| `/graph` | Knowledge | Rebuild the Galyarder Neural Link and Obsidian Map. |
-| `/tdd` | Engineering | Strict Test-Driven Development workflow. |
-| `/plan` | Product | Vertical Slice (Tracer Bullet) architecture mapping. |
-| `/marketing` | Growth | CRO audit and behavioral copywriting. |
-| `/cybersecurity` | Security | Advanced offensive/defensive security audit. |
-| `/review` | Engineering | Principal-level code review. |
-| `/incident` | Engineering | Switch to INCIDENT mode for hotfixes. |
-| `/experiment` | Product | Switch to EXPERIMENT mode for spikes. |
-
----
-© 2026 Galyarder Labs. Galyarder Framework.
+Claude Code can implement, refactor, test, document, and review. The human operator remains the source of intent and approval for external, public, financial, security-sensitive, or irreversible actions.

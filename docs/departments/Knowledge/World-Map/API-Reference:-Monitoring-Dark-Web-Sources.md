@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/monitoring-darkweb-sources/references/api-reference.md
+---
 # API Reference: Monitoring Dark Web Sources
 
 ## 🧠 Strategic Intelligence

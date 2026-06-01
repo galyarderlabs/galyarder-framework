@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/competitor-alternatives/references/content-architecture.md
+---
 # Content Architecture for Competitor Pages
 
 ## 🧠 Strategic Intelligence

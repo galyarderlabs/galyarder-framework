@@ -1,3 +1,8 @@
+---
+name: design-md-claude
+description: "Design system reference for design md claude."
+---
+
 # Design System: Claude (Anthropic)
 
 ## 1. Visual Theme & Atmosphere

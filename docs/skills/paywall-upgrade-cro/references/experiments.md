@@ -18,6 +18,7 @@ Comprehensive list of A/B tests and experiments for paywall optimization.
 - Banner reminder vs. modal prompt
 - Exit-intent on free plan pages
 
+---
 
 ## Paywall Design Experiments
 
@@ -42,6 +43,7 @@ Comprehensive list of A/B tests and experiments for paywall optimization.
 - Animated vs. static paywall
 - Progress visualization (what they've accomplished)
 
+---
 
 ## Pricing Presentation Experiments
 
@@ -66,6 +68,7 @@ Comprehensive list of A/B tests and experiments for paywall optimization.
 - Bundle discount for annual commitment
 - Referral discount for social proof
 
+---
 
 ## Copy & Messaging Experiments
 
@@ -90,6 +93,7 @@ Comprehensive list of A/B tests and experiments for paywall optimization.
 - Address specific objections based on feature gated
 - Add chat/support option on paywall
 
+---
 
 ## Trial & Conversion Experiments
 
@@ -114,6 +118,7 @@ Comprehensive list of A/B tests and experiments for paywall optimization.
 - Quarterly plan option alongside monthly/annual
 - Team invite flow for solo-to-team conversion
 
+---
 
 ## Personalization Experiments
 
@@ -131,6 +136,7 @@ Comprehensive list of A/B tests and experiments for paywall optimization.
 - Role-based feature highlighting
 - Traffic source-based messaging
 
+---
 
 ## Frequency & UX Experiments
 
@@ -148,4 +154,5 @@ Comprehensive list of A/B tests and experiments for paywall optimization.
 - Exit survey on dismiss
 - Friendly vs. neutral decline copy
 
+---
  2026 Galyarder Labs. Galyarder Framework.

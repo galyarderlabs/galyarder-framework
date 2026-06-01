@@ -1,3 +1,8 @@
+---
+name: design-md-elevenlabs
+description: "Design system reference for design md elevenlabs."
+---
+
 # Design System: ElevenLabs
 
 ## 1. Visual Theme & Atmosphere

@@ -1,6 +1,6 @@
 # Claude Code: Implementation Protocol
 
-This guide defines the high-integrity integration of Galyarder Framework within the **Claude Code** (Anthropic) environment.
+This guide defines the agentic-company integration of Galyarder Framework within the **Claude Code** (Anthropic) environment.
 
 ## 1. Installation
 
@@ -26,7 +26,7 @@ Or install departments selectively:
 
 ## 2. Mandatory Protocols
 
-Every session in Claude Code is governed by the **Humans 3.0** logic gate. The agent is hardcoded to execute the following sequence:
+Every session in Claude Code is governed by the **agentic company** logic gate. The agent is hardcoded to execute the following sequence:
 
 - **RTK Shield**: All shell commands must be proxied via `rtk` (e.g., `rtk npm test`).
 - **Linear Traceability**: All labor must be linked to a project-scoped ticket.

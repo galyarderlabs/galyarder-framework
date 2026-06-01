@@ -7,6 +7,7 @@ Tests reset request, setting a new password, and expired link handling.
 - Reset link / token available in test environment (`{{resetToken}}`)
 - App running at `{{baseUrl}}`
 
+---
 
 ## TypeScript
 
@@ -78,6 +79,7 @@ test.describe('Password Reset', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -126,4 +128,5 @@ test.describe('Password Reset', () => {
 | Passwords mismatch | Inline validation error |
 | Weak password | Strength requirement error |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

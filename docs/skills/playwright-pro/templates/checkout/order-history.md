@@ -7,6 +7,7 @@ Tests listing orders, viewing order details, and pagination.
 - At least `{{orderCount}}` orders seeded for user
 - App running at `{{baseUrl}}`
 
+---
 
 ## TypeScript
 
@@ -76,6 +77,7 @@ test.describe('Order History', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -116,4 +118,5 @@ test.describe('Order History', () => {
 | Empty state | No-orders message with CTA |
 | Reorder | Previous order items added to cart |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/design/design-md-mistral.ai.md
+---
 # Design System: Mistral AI
 
 ## 🧠 Strategic Intelligence

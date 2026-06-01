@@ -63,7 +63,7 @@ Every agent/skill must include a mandate:
 ### 5.2 Company Scaffolder
 A script (`scripts/scaffold-company.sh`) to initialize the directory structure and register the project in Linear automatically.
 
-### 5.3 Karpathy Integration
+### 5.3 technical integrity Integration
 All reports must follow the "Think Before Coding" and "Goal-Driven Execution" principles, explicitly stating assumptions and verification steps.
 
  2026 Galyarder Labs. Galyarder Framework.

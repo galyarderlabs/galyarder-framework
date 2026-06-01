@@ -152,8 +152,8 @@ Here's what happened..."
 
 ### 6. CONVERT  Turn Attention into Action
 
-### 7. Technical Integrity: The Karpathy Principles
-Combat AI slop through rigid adherence to the four principles of Andrej Karpathy:
+### 7. Technical Integrity: The technical integrity principles
+Combat AI slop through rigid adherence to the four principles of Andrej technical integrity:
 
 ### 8. Corporate Reporting: The Obsidian Loop
 Durable memory is mandatory. Every task must result in a persistent artifact:
@@ -168,6 +168,7 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
      1. [Step]  verify: [check]
      2. [Step]  verify: [check]
 
+---
 
 ## The Formula
 
@@ -190,4 +191,5 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 - [ ] Built template library from patterns
 - [ ] Set up tracking for your own content performance
 
+---
  2026 Galyarder Labs. Galyarder Framework.

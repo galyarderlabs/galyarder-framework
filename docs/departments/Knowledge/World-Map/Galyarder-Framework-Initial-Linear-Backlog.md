@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/templates/Galyarder-Framework Initial Linear Backlog.md
+---
 # Galyarder Framework Initial Linear Backlog
 
 ## 🧠 Strategic Intelligence

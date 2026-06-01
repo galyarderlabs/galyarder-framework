@@ -4,6 +4,7 @@ Ready-to-use LICENSE file templates. Replace placeholders with actual values.
 
 **IMPORTANT:** Always use the canonical text exactly as shown. Never modify the license terms.
 
+---
 
 ## MIT License
 
@@ -37,6 +38,7 @@ SOFTWARE.
 - `[YEAR]`  Current year or range (e.g., "2024" or "2020-2024")
 - `[FULLNAME]`  Copyright holder name (person or organization)
 
+---
 
 ## Apache License 2.0
 
@@ -235,6 +237,7 @@ SOFTWARE.
    limitations under the License.
 ```
 
+---
 
 ## BSD 3-Clause License
 
@@ -271,6 +274,7 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
+---
 
 ## ISC License
 
@@ -294,6 +298,7 @@ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 ```
 
+---
 
 ## The Unlicense
 
@@ -326,6 +331,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 For more information, please refer to <https://unlicense.org>
 ```
 
+---
 
 ## MPL-2.0 (Mozilla Public License)
 
@@ -335,6 +341,7 @@ For full text, see: https://www.mozilla.org/en-US/MPL/2.0/
 
 Include the full canonical text from Mozilla's website.
 
+---
 
 ## GPL/LGPL/AGPL
 
@@ -346,6 +353,7 @@ For these licenses, download the canonical text from:
 
 **IMPORTANT:** Never modify GPL/LGPL/AGPL text. Use exactly as provided by GNU.
 
+---
 
 ## Dual License Template
 
@@ -364,4 +372,5 @@ Then include both license texts in separate files:
 - `LICENSE-MIT`
 - `LICENSE-APACHE`
 
+---
  2026 Galyarder Labs. Galyarder Framework.

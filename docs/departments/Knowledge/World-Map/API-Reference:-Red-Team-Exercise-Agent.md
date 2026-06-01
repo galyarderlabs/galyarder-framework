@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/executing-red-team-exercise/references/api-reference.md
+---
 # API Reference: Red Team Exercise Agent
 
 ## 🧠 Strategic Intelligence

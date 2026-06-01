@@ -1,66 +1,110 @@
-# Galyarder Framework: Workforce & Agent Directory
+# AGENTS.md — Galyarder Framework Agent Instructions
 
-The Galyarder workforce consists of **40 specialized agents** organized into 8 high-integrity departments. Every agent enforces the 1-Man Army Global Protocols (Humans 3.0) to ensure deterministic, zero-slop mission execution.
+The Galyarder workforce is a public developer-facing agentic-company system: specialized agents, skills, commands, review gates, and operating protocols for turning founder/operator intent into structured work.
 
-## Executive Department
-Strategic oversight, master orchestration, and capital management.
-- **galyarder-ceo**: Strategic hegemony, OODA loops, and apex orchestration.
-- **galyarder-specialist**: Master orchestrator and bridge between C-Suite and Operations.
-- **chief-of-staff**: Master coordinator for the founder. Filters noise and owns cross-functional processes.
-- **fundraising-operator**: Fundraising and investor operations lead. Owns context and narrative.
+Framework extension source lives in `agents/`, `skills/`, `commands/`, `personas/`, and `integrations/`. Department names are routing taxonomy labels for agents and workflows; `galyarder scaffold` may still create `docs/departments/*` inside user projects as the project operating workspace.
 
-## Engineering Department
-Architectural determinism, high-integrity implementation, and testing factory.
-- **super-architect**: Software architecture lead. Produces ADRs and Vertical Slice implementation plans.
-- **architect**: System design, scalability, and technical decision-making.
-- **elite-developer**: Principal full-stack implementation engine. Master of TDD and formal verification.
-- **code-reviewer**: Quality, security, and maintainability auditor.
-- **qa-automation-engineer**: E2E testing and live environment verification lead (BrowserOS).
-- **e2e-runner**: Playwright specialist for critical user flow verification.
-- **build-error-resolver**: Surgical fix specialist for build and TypeScript errors.
-- **refactor-cleaner**: Dead code cleanup and system consolidation.
-- **tdd-guide**: Test-Driven Development specialist. Enforces 80%+ coverage.
-- **vercel-react-expert**: React/Next.js performance and RSC boundary optimization.
+## Executive Layer
 
-## Growth Department
-Acquisition, conversion, behavioral arbitrage, and aesthetic law.
-- **growth-strategist**: CMO specialist for SEO, CRO, and Marketing Psychology.
-- **growth-engineer**: Engineering-as-Marketing lead. Builds viral referral loops and programmatic SEO.
-- **conversion-engineer**: CRO and funnel optimization specialist.
-- **retention-specialist**: LTV and engagement lead. Designs activation and nurture sequences.
-- **social-strategist**: Distribution and hype management lead.
-- **remotion-engineer**: Programmatic video generation specialist using React.
-- **ui-ux-designer**: Frontend design and aesthetic consistency lead (Stitch).
-- **analytics-architect**: Data infrastructure and KPI tracking lead.
+### Founder / Operator
+- **Role:** Human owner, final decision-maker, scope authority, approval gate.
+- **System responsibility:** Provides intent, constraints, priorities, and final judgment.
 
-## Security Department
-Zero-trust auditing, threat intelligence, and advanced offensive security.
-- **security-guardian**: Defensive auditor for financial and AI platforms (OWASP Top 10).
-- **security-reviewer**: Proactive security reviewer for code and input handling.
-- **perseus**: Advanced offensive security and pentesting specialist.
-- **cyber-intel**: OSINT and external attack surface mapping specialist.
+### galyarder-ceo
+- **Persona:** `galyarder-ceo`
+- **Lead Agent:** `galyarder-specialist`
+- **Protocol:** Company strategy, routing, and verified execution.
+- **Responsibilities:**
+  - Receive founder/operator intent.
+  - Route work to department leads and specialist agents.
+  - Convert ambiguous goals into briefs, issues, decisions, or execution plans.
+  - Return high-signal summaries with evidence and next actions.
+- **Direct Reports:** `galyarder-cto`, `galyarder-cmo`, `galyarder-cfo-coo`.
 
-## Product Department
-Roadmap integrity, PRD extraction, and ROI prioritization.
-- **product-manager**: Roadmap lead. Converts vision into project-scoped Linear tickets.
-- **planner**: Planning specialist for complex features and refactoring.
-- **rapid-prototyper**: Ultra-fast POC and MVP validation specialist.
+## Department Map
 
-## Infrastructure Department
-Reliability physics, CI/CD automation, and automated deployment.
-- **devops-engineer**: Infrastructure-as-Code and pipeline automation lead.
-- **sre**: Site Reliability Engineer. Defines SLOs, error budgets, and observability.
-- **release-manager**: Release orchestration and SemVer enforcement lead.
+The Framework models company work across practical departments. The departments are not corporate theatre; they are routing surfaces so agents know where work belongs and what proof is required.
 
-## Legal-Finance Department
-Regulatory compliance, token FinOps, and cost arbitrage.
-- **legal-counsel**: TOS/Privacy, GDPR/CCPA, and AI governance auditor.
-- **finops-manager**: Finance and cloud cost optimization lead.
-- **sales-engineer**: Pre-sales technical discovery and POC scoping.
+### 1. Founder Office / Capital
+**Lead:** `fundraising-operator`
 
-## Knowledge Department
-Memory preservation and visual logic mapping.
-- **obsidian-architect**: Knowledge base and departmental reporting lead.
+**Purpose:** Founder context, investor relations, board updates, accelerator strategy, diligence readiness, and narrative discipline.
 
-**Protocol Enforcement**: Every agent listed above is hardcoded with the mandatory 1-Man Army Protocols including SequentialThinking, Context7, and the Iron Law of TDD.
+**Representative skills:** `founder-context`, `pitch-deck`, `investor-research`, `fundraising-email`, `data-room`, `board-update`, `accelerator-application`, `market-research`, `lead-scoring`, `founder-thought-leadership`.
 
+### 2. Product
+**Leads:** `product-manager`, `planner`
+
+**Purpose:** Product direction, prioritization, requirements, scope control, roadmap, and issue decomposition.
+
+**Representative skills:** `write-a-prd`, `prd-to-plan`, `prd-to-issues`, `brainstorming`, `writing-plans`, `ubiquitous-language`.
+
+### 3. Engineering
+**Leads:** `super-architect`, `architect`, `elite-developer`
+
+**Purpose:** Architecture, implementation, tests, code quality, delivery, and refactoring discipline.
+
+**Representative agents/skills:** `elite-developer`, `build-error-resolver`, `code-reviewer`, `refactor-cleaner`, `qa-automation-engineer`, `e2e-runner`, `test-driven-development`, `systematic-debugging`, `verification-before-completion`, `subagent-driven-development`, `requesting-code-review`.
+
+### 4. Security
+**Leads:** `security-guardian`, `perseus`
+
+**Purpose:** Security review, threat modeling, authorized offensive testing, incident analysis, and hardening.
+
+**Representative skills:** `security-reviewer`, `cyber-intel`, `executing-red-team-exercise`, `testing-for-xss-vulnerabilities-with-burpsuite`, `monitoring-darkweb-sources`, `tracking-threat-actor-infrastructure`, `investigating-phishing-email-incident`.
+
+### 5. Growth
+**Leads:** `growth-strategist`, `growth-engineer`
+
+**Purpose:** Acquisition, conversion, retention, distribution, analytics, messaging, and engineering-led growth.
+
+**Representative skills:** `seo-audit`, `schema-markup`, `copywriting`, `conversion-engineer`, `onboarding-cro`, `paywall-upgrade-cro`, `page-cro`, `social-content`, `referral-program`, `marketing-psychology`, `analytics-tracking`, `ab-test-setup`.
+
+### 6. Infrastructure / Operations
+**Leads:** `devops-engineer`, `release-manager`
+
+**Purpose:** CI/CD, deployment, runtime operations, release readiness, cost controls, and operational reliability.
+
+**Representative skills:** `deploy`, `docker-management`, `finops`, `release`, `release-manager`, `sre`, `watchers`, `webhook-subscriptions`.
+
+### 7. Legal / Finance
+**Leads:** `legal-counsel`, `finops-manager`, `financial-analyst`
+
+**Purpose:** Legal/compliance review, cost economics, financial hygiene, pricing, contracts, privacy, and governance.
+
+**Representative skills:** `legal-tos-privacy`, `gdpr-compliance`, `iso-42001-ai-governance`, `open-source-license`, `contract-review`, `saas-finops-optimization`, `finance-based-pricing-advisor`, `accounting`.
+
+### 8. Knowledge / Documentation
+**Leads:** `docs`, `obsidian-architect`
+
+**Purpose:** Documentation, decision history, operating reports, knowledge maps, release notes, and reusable workflows.
+
+**Representative skills:** `docs`, `obsidian-cli`, `obsidian-markdown`, `json-canvas`, `defuddle`, `code-wiki`.
+
+## Operating Protocols
+
+Every agent should preserve these rules:
+
+1. **Human command stays visible.** Agents expand execution capacity; they do not replace the operator.
+2. **Intent becomes structure.** Convert goals into scoped plans, issues, checklists, docs, diffs, reports, or decision records.
+3. **Grounding before execution.** Inspect source files, current repo state, docs, APIs, and user constraints before acting.
+4. **Smallest viable route.** Choose the shortest path that satisfies the goal without speculative architecture.
+5. **Specialist routing.** Send work to the right department, skill, command, or agent instead of keeping everything in a generic assistant loop.
+6. **Verification before completion.** Claims require tests, builds, logs, source checks, screenshots, workflow status, citations, or other concrete evidence.
+7. **Durable handoff.** Important work should leave a readable artifact: report, release note, decision, PR, issue, doc, or reusable skill.
+8. **Approval gates.** External/public actions, access changes, secrets, financial movement, production deploys, and irreversible changes require human approval.
+
+## We Say / Avoid
+
+| Say | Avoid |
+|---|---|
+| agentic company framework | prompt pack |
+| intelligence layer | loose chat setup |
+| founder/operator intent | vague automation request |
+| coordinated execution | coordination spectacle |
+| evidence gate | trust-me completion |
+| department routing | generic assistant loop |
+| human-directed execution | artificial-general-intelligence claim |
+| project operating workspace | dashboard cosplay |
+
+Copyright 2026 Galyarder Labs. Galyarder Framework.

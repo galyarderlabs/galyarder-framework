@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/templates/Galyarder-Department-Reports/Engineering Report Template.md
+---
 # Engineering Report Template
 
 ## 🧠 Strategic Intelligence

@@ -44,6 +44,7 @@ Use Google's predefined events when possible for enhanced reporting:
 
 Reference: https://support.google.com/analytics/answer/9267735
 
+---
 
 ## Custom Events
 
@@ -122,6 +123,7 @@ dataLayer.push({
 });
 ```
 
+---
 
 ## Conversions Setup
 
@@ -146,6 +148,7 @@ gtag('event', 'purchase', {
 
 Or set default value in GA4 Admin when marking conversion.
 
+---
 
 ## Custom Dimensions and Metrics
 
@@ -178,6 +181,7 @@ Or set default value in GA4 Admin when marking conversion.
 | Content Author | Event | author | Blog post author |
 | Product Category | Item | item_category | E-commerce category |
 
+---
 
 ## Audiences
 
@@ -205,6 +209,7 @@ Admin > Data display > Audiences
 - Purchase event
 - For exclusion or lookalike
 
+---
 
 ## Debugging
 
@@ -239,6 +244,7 @@ Reports > Real-time
 - Event name doesn't match
 - Counting method (once vs. every)
 
+---
 
 ## Data Quality
 
@@ -266,6 +272,7 @@ Admin > Data streams > [Stream] > Configure tag settings
 - Session timeout (default 30 min)
 - Engaged session duration (10 sec default)
 
+---
 
 ## Integration with Google Ads
 
@@ -282,4 +289,5 @@ Audiences created in GA4 can be used in Google Ads for:
 - Customer match
 - Similar audiences
 
+---
  2026 Galyarder Labs. Galyarder Framework.

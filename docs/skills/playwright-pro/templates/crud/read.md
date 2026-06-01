@@ -7,6 +7,7 @@ Tests viewing entity details and list view with correct data display.
 - Seeded entity with ID `{{entityId}}` and name `{{entityName}}`
 - App running at `{{baseUrl}}`
 
+---
 
 ## TypeScript
 
@@ -70,6 +71,7 @@ test.describe('Read {{entityName}}', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -114,4 +116,5 @@ test.describe('Read {{entityName}}', () => {
 | Loading  data | Skeleton hidden, data visible after load |
 | Empty list | No-results state with call to action |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

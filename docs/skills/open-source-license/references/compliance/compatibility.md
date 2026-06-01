@@ -4,6 +4,7 @@
 
 License compatibility determines whether code under different licenses can be combined in the same project. Incompatibility means the combined work cannot legally be distributed.
 
+---
 
 ## Compatibility Matrix
 
@@ -23,6 +24,7 @@ License compatibility determines whether code under different licenses can be co
 *GPL-2.0 and GPL-3.0 are only compatible if "or later" clause is used
 **MPL-2.0 has explicit GPL compatibility provisions
 
+---
 
 ## Key Compatibility Rules
 
@@ -62,6 +64,7 @@ MPL-2.0 code can coexist with other licenses:
 - Other files can be any license
 - Explicit secondary license provision for GPL compatibility
 
+---
 
 ## Common Compatibility Scenarios
 
@@ -71,10 +74,10 @@ Typical dependencies are MIT-licensed.
 
 ```
 Your App (MIT/Apache/Proprietary)
- express (MIT) 
- lodash (MIT) 
- react (MIT) 
- moment (MIT) 
+ express (MIT)
+ lodash (MIT)
+ react (MIT)
+ moment (MIT)
 ```
 
 **Result:** No compatibility issues. You can use any license.
@@ -83,8 +86,8 @@ Your App (MIT/Apache/Proprietary)
 
 ```
 Your App (???)
- express (MIT) 
- readline-sync (GPL-3.0) 
+ express (MIT)
+ readline-sync (GPL-3.0)
 ```
 
 **Result:** Your entire app must be GPL-3.0 or compatible.
@@ -116,13 +119,14 @@ Your Proprietary App
 
 ```
 Your SaaS Platform
- Grafana (AGPL-3.0) 
+ Grafana (AGPL-3.0)
 ```
 
 **Result:** If you modify Grafana, you must:
 - Release your modifications as AGPL-3.0
 - Provide source to users accessing via network
 
+---
 
 ## Resolving Incompatibilities
 
@@ -149,6 +153,7 @@ Contact the copyright holder to negotiate alternative licensing.
 
 GPL has an exception for system libraries (libc, etc.)
 
+---
 
 ## Dual-Licensed Dependencies
 
@@ -164,6 +169,7 @@ You choose ONE:
 
 SPDX expression: Use `OR` for choice, `AND` for both required.
 
+---
 
 ## Checking Compatibility Programmatically
 
@@ -188,39 +194,41 @@ SPDX expression: Use `OR` for choice, `AND` for both required.
 5. **Snyk** - Security + license scanning
 6. **WhiteSource/Mend** - Enterprise compliance
 
+---
 
 ## License Compatibility Flowchart
 
 ```
-                    
-                     Is dependency   
-                     permissive?     
-                    
-                             
-              
+
+                     Is dependency
+                     permissive?
+
+
+
                YES                         NO
-                                          
-              
-     Can use with               Is it LGPL?     
-     any license               
-                       
-                                 
+
+
+     Can use with               Is it LGPL?
+     any license
+
+
                                   YES             NO
-                                                 
-                                 
+
+
                                Can link if    Is it GPL/AGPL
-                               dynamic +      
-                               replaceable           
-                                   
+                               dynamic +
+                               replaceable
+
                                                   YES     NO
-                                                          
-                                        
-                                        Must use same Check       
-                                        license for   specific   
-                                        derivative    license    
-                                        
-                                                       
-                             
+
+
+                                        Must use same Check
+                                        license for   specific
+                                        derivative    license
+
+
+
 ```
 
+---
  2026 Galyarder Labs. Galyarder Framework.

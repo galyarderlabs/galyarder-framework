@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/templates/Galyarder-Framework Import Adapt Reject Rubric.md
+---
 # Galyarder Framework Import Adapt Reject Rubric
 
 ## 🧠 Strategic Intelligence

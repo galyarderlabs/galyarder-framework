@@ -278,4 +278,5 @@ Map each scenario to specific driver values:
 - **Maintenance CapEx vs growth CapEx** distinction
 - **Utilization rates** driving unit cost projections
 
+---
  2026 Galyarder Labs. Galyarder Framework.

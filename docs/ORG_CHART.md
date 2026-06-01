@@ -9,7 +9,7 @@
 ### galyarder-ceo (Chief Executive Officer)
 - **Persona:** `galyarder-ceo`
 - **Lead Agent:** `galyarder-specialist`
-- **Protocol:** **Humans 3.0** (Deterministic Strategy & Apex Logic)
+- **Protocol:** Agentic company strategy and verified execution
 - **Responsibilities:**
   - Receive founder intent
   - Delegate to Department Heads (CTO, CMO, CFO/COO)
@@ -19,19 +19,19 @@
 
 ### galyarder-cto (Chief Technology Officer)
 - **Persona:** `galyarder-cto`
-- **Protocol:** **Humans 3.0** (Technical Determinism & Formal Verification)
+- **Protocol:** Technical architecture, implementation quality, and verification
 - **Department:** Engineering, Product, Security.
 - **Responsibilities:** Technical integrity, architecture oversight, security posture.
 
 ### galyarder-cmo (Chief Marketing Officer)
 - **Persona:** `galyarder-cmo`
-- **Protocol:** **Humans 3.0** (Behavioral Heuristics & Memetic Warfare)
+- **Protocol:** Growth strategy, positioning, analytics, and distribution
 - **Department:** Growth.
 - **Responsibilities:** Distribution, revenue (cuan), market visibility.
 
 ### galyarder-cfo-coo (Chief Financial & Operating Officer)
 - **Persona:** `galyarder-cfo-coo`
-- **Protocol:** **Humans 3.0** (Antifragility & Operational Thermodynamics)
+- **Protocol:** Operations, finance, compliance, and reliability
 - **Department:** Legal-Finance, Knowledge.
 - **Responsibilities:** Compliance, budget efficiency, operational reliability.
 
@@ -147,7 +147,7 @@
 **Team Members (Skills):**
 - `seo-audit` - SEO analysis
 - `schema-markup` - Schema.org implementation
-- `copywriting` - High-signal copy
+- `copywriting` - Clear conversion and product copy
 - `onboarding-cro` - Onboarding optimization
 - `paywall-upgrade-cro` - Paywall optimization
 - `page-cro` - Landing page CRO
@@ -206,14 +206,14 @@
 
 1. **Clear Ownership:** Every task has one agent owner.
 2. **The Obsidian Loop:** Every task must result in a persistent report in `docs/departments/`.
-3. **Cognitive Integrity:** MANDATORY use of `sequentialthinking` and `context7` MCP tools before action.
-4. **Upward Synthesis:** Information flows up from Skills -> Agents -> C-Suite -> Founder.
-5. **Downward Delegation:** Vision flows down from Founder -> C-Suite -> Agents -> Skills.
-6. **Technical Integrity (Karpathy):** 
+3. **Grounding before execution:** use source files, docs, current state, and relevant tool checks before action.
+4. **Upward synthesis:** information flows from skills and agents into reports, decisions, and operator summaries.
+5. **Downward delegation:** founder intent becomes routed work through departments, agents, skills, and commands.
+6. **Technical Integrity:**
    - **Think Before Coding**: STOP & ASK if uncertain.
    - **Simplicity First**: Minimum code, no speculative abstractions.
    - **Surgical Changes**: Touch only what you must.
    - **Goal-Driven**: Loop until verified via tests-first.
-7. **Task Tracking:** All work strictly visible in project-scoped Linear issues.
+7. **Task tracking:** important work should be visible in a scoped issue, plan, report, or decision record.
 
 Copyright 2026 Galyarder Labs. Galyarder Framework. Executive Office.

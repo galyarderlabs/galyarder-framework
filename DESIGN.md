@@ -22,7 +22,7 @@ It should feel:
 - technical,
 - structured,
 - inspectable,
-- high-integrity,
+- evidence-backed,
 - execution-oriented,
 - serious but not sterile,
 - powerful without fake complexity.
@@ -50,7 +50,7 @@ Do not make Framework look like:
 - a prompt pack,
 - generic docs template,
 - neon hacker console,
-- vague AGI splash page,
+- vague Autonomous Goal Integration splash page,
 - AI mascot gallery,
 - decorative bento grid without execution proof.
 
@@ -63,7 +63,7 @@ Use Labs design canon where relevant:
 - Dream for public landing/README hero assets,
 - Machine for developer docs, CLI flows, workflow diagrams, agent directories, and proof surfaces.
 
-Framework extension surfaces should use `agents/`, `skills/`, `commands/`, `personas/`, and `integrations/`. Scaffolded user workspaces may still use `docs/departments/*` as the Digital HQ surface. Do not design around legacy extension bundles such as `.marketplace/full/`.
+Framework extension surfaces should use `agents/`, `skills/`, `commands/`, `personas/`, and `integrations/`. Scaffolded user workspaces may still use `docs/departments/*` as the project operating workspace surface. Do not design around legacy extension bundles such as `.marketplace/full/`.
 
 Framework should bias toward Machine:
 
@@ -141,7 +141,7 @@ Reject diagrams that are only decorative node webs.
 
 Before shipping Framework UI/docs visuals, verify:
 
-- AGI is expanded as Autonomous Goal Integration,
+- Autonomous Goal Integration is expanded as Autonomous Goal Integration,
 - execution proof is visible,
 - agent/skill/command structure is inspectable,
 - tests/audits are not hidden,

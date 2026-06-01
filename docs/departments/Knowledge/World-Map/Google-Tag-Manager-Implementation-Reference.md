@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/analytics-tracking/references/gtm-implementation.md
+---
 # Google Tag Manager Implementation Reference
 
 ## 🧠 Strategic Intelligence

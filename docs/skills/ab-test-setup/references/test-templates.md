@@ -85,6 +85,7 @@ We'll know this is true when [metrics].
 - [ ] Calendar hold for analysis date
 ```
 
+---
 
 ## Results Documentation Template
 
@@ -181,6 +182,7 @@ We'll know this is true when [metrics].
 - **Business impact**: [Revenue, conversions, etc.]
 ```
 
+---
 
 ## Test Repository Entry Template
 
@@ -194,6 +196,7 @@ For tracking all tests in a central location:
 | 003 | Signup form fields | Signup | 2/1-2/14 | Completion | Inconclusive | +2% | [Link] |
 ```
 
+---
 
 ## Quick Test Brief Template
 
@@ -210,6 +213,7 @@ For simple tests that don't need full documentation:
 **Learnings**: [Key takeaway]
 ```
 
+---
 
 ## Stakeholder Update Template
 
@@ -232,6 +236,7 @@ For simple tests that don't need full documentation:
 - [Date]: Implementation (if winner)
 ```
 
+---
 
 ## Experiment Prioritization Scorecard
 
@@ -248,6 +253,7 @@ For deciding which tests to run:
 
 Scoring: 1-5 (5 = best)
 
+---
 
 ## Hypothesis Bank Template
 
@@ -261,4 +267,5 @@ For collecting test ideas:
 | H3 | Signup | Drop-off at email | Social login will increase completion | Medium | Backlog |
 ```
 
+---
  2026 Galyarder Labs. Galyarder Framework.

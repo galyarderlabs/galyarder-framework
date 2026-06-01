@@ -2,7 +2,7 @@
 
 ## [v1.9.9] - 2026-05-09
 ### Canonical Runtime Surface Cleanup
-This release completes the cleanup from duplicate generated extension folders to the canonical framework runtime source while preserving scaffolded Digital HQ department workspaces for user projects.
+This release completes the cleanup from duplicate generated extension folders to the canonical framework runtime source while preserving scaffolded project operating workspace department workspaces for user projects.
 
 #### Highlights
 - **Extension Source Canonicalization**: Marketplace and package metadata now point at the canonical root runtime instead of generated bundle folders.
@@ -48,7 +48,7 @@ Updated the core operational sequence and command protocols to explicitly incorp
 
 #### Highlights
 - **Mermaid Sequence Update**: Injected the Neural Link into the "Operational Sequence" to show automated dependency auditing before strategic planning.
-- **Protocol Expansion**: Added "Mapping" as Phase II of the 1-Man Army Command Protocol, ensuring all missions begin with a neural dependency audit.
+- **Protocol Expansion**: Added "Mapping" as Phase II of the agentic-company command protocol, ensuring all missions begin with a neural dependency audit.
 
 ---
 
@@ -278,11 +278,11 @@ Officially broadcasted the Galyarder Neural Link capability across all 14 platfo
 
 ## [v1.8.1] - 2026-04-19
 ### Final Audit & Path Hardening
-A critical patch following the Humans 3.0 deep audit to ensure 100% logic integrity across all 14 platforms.
+A critical patch following the human-directed execution deep audit to ensure 100% logic integrity across all 14 platforms.
 
 #### Fixes & Improvements
 - **Global Path Eradication**: Removed all legacy hardcoded references to `.agents/`, `.claude/`, and `framework/` subdirectories inside agent logic files.
-- **Strategic Re-Routing**: Re-pointed all memory dependencies (Founder Context, Product Context) to the new high-integrity `docs/departments/` structure.
+- **Strategic Re-Routing**: Re-pointed all memory dependencies (Founder Context, Product Context) to the new evidence-backed `docs/departments/` structure.
 - **Conversion Consistency**: Re-generated all 207 assets across 14 tools to ensure zero "ghost directory" instructions.
 - **OpenCode Repair**: Fixed Silo discovery and tool mapping in the OpenCode native plugin.
 - **Clean Registry**: Permanently purged all low-value hidden directories (`.autoresearch`, `.agents`).

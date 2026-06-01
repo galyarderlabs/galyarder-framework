@@ -7,6 +7,7 @@ Tests GET, POST, PUT, and DELETE API endpoints directly via Playwright's request
 - Base API URL: `{{apiBaseUrl}}`
 - Test entity endpoint: `/{{entityName}}s`
 
+---
 
 ## TypeScript
 
@@ -101,6 +102,7 @@ test.describe('REST CRUD  /{{entityName}}s', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -149,4 +151,5 @@ test.describe('REST CRUD  /{{entityName}}s', () => {
 | POST validation | Missing field  422 + errors |
 | GET 404 | Non-existent ID  404 |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

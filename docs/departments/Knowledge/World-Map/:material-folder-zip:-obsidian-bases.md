@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 5
 source: docs/skills/obsidian-bases/index.md
+---
 # :material-folder-zip: obsidian-bases
 
 ## 🧠 Strategic Intelligence
@@ -15,8 +17,8 @@ It has a connectivity degree of **5**.
 - [[Functions-Reference]] (structural_reference | 1.0)
 - [[MyBase.base]] (semantic_link | 0.9)
 - [[MyBase.base#View-Name]] (semantic_link | 0.9)
-- [[Claude-Code:-Implementation-Protocol]] (enforces_protocol | 0.8)
-- [[Galyarder-Framework:-Advanced-Agentic-Context-(Gemini-CLI)]] (uses_proxy | 0.8)
+- [[Claude-Code-Integration-—-Galyarder-Framework]] (enforces_protocol | 0.8)
+- [[Gemini-CLI-Integration-—-Galyarder-Framework]] (uses_proxy | 0.8)
 
 ### Informed By:
 - [[Galyarder-Framework:-Skills]] (structural_reference | 1.0)

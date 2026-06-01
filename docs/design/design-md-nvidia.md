@@ -1,3 +1,8 @@
+---
+name: design-md-nvidia
+description: "Design system reference for design md nvidia."
+---
+
 # Design System: NVIDIA
 
 ## 1. Visual Theme & Atmosphere

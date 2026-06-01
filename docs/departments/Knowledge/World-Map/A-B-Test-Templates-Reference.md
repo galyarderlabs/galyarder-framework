@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/ab-test-setup/references/test-templates.md
+---
 # A/B Test Templates Reference
 
 ## 🧠 Strategic Intelligence

@@ -69,4 +69,5 @@
 | Custom protocol | Wireshark + custom Frida hooks | Wireshark + custom Frida hooks |
 | VPN tunnel | iptables redirect on rooted device | Not feasible without jailbreak |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

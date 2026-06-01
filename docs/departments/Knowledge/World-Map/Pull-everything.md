@@ -1,14 +1,13 @@
+---
 node_type: core-hukum
 silo: Root
-degree: 1
+degree: 0
 source: README.md
+---
 # Pull everything
 
 ## 🧠 Strategic Intelligence
 This entity is a **core-hukum** within the **Root** silo. 
-It has a connectivity degree of **1**.
+It has a connectivity degree of **0**.
 
 ## 🔗 Neural Links
-
-### Directing To:
-- [[Claude-Code:-Implementation-Protocol]] (enforces_protocol | 0.8)

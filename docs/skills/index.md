@@ -1,495 +1,1226 @@
 # Galyarder Framework: Skills
 
-Discover the high-integrity workforce and protocols designed for autonomous orchestration.
+Discover the agentic company workforce, commands, and operating protocols designed for human-directed execution.
 
-## :material-folder-zip: Engineering Department
-
-<div class="grid cards" markdown>
-
--   **[create-agent-adapter](create-agent-adapter/index.md)**
-
-
-    >
-
--   **[finishing-a-development-branch](finishing-a-development-branch/index.md)**
-
-
-    Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides completion of development work by presenting structured options for merge, PR, or cleanup
-
--   **[playwright-pro](playwright-pro/index.md)**
-
-
-    Production-grade Playwright testing toolkit. Use when the user mentions Playwright tests, end-to-end testing, browser automation, fixing flaky tests, test migration, CI/CD testing, or test suites. Generate tests, fix flaky failures, migrate from Cypress/Selenium, sync with TestRail, run on BrowserStack. 55 templates, 3 agents, smart reporting.
-
--   **[pr-report](pr-report/index.md)**
-
-
-    >
-
--   **[receiving-code-review](receiving-code-review/index.md)**
-
-
-    Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation
-
--   **[requesting-code-review](requesting-code-review/index.md)**
-
-
-    Use when completing tasks, implementing major features, or before merging to verify work meets requirements
-
--   **[subagent-driven-development](subagent-driven-development/index.md)**
-
-
-    Use when executing implementation plans with independent tasks in the current session
-
--   **[systematic-debugging](systematic-debugging/index.md)**
-
-
-    Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes
-
--   **[test-driven-development](test-driven-development/index.md)**
-
-
-    Use when implementing any feature or bugfix, before writing implementation code
-
--   **[vercel-react-best-practices](vercel-react-best-practices/index.md)**
-
-
-    React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.
-
--   **[verification-before-completion](verification-before-completion/index.md)**
-
-
-    Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always
-
-</div>
-
-## :material-folder-zip: Executive Department
-
-<div class="grid cards" markdown>
-
--   **[accelerator-application](accelerator-application/index.md)**
-
-
-    Accelerator Application Specialist. Use to shortlist startup programs, draft applications, prepare founder videos, and rehearse accelerator interviews with a disciplined founder narrative.
-
--   **[board-update](board-update/index.md)**
-
-
-    Investor And Board Communication Specialist. Use to draft monthly investor updates, quarterly board decks, and high-signal stakeholder communications that surface wins, misses, risks, and asks clearly.
-
--   **[brainstorming](brainstorming/index.md)**
-
-
-    You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.
-
--   **[data-room](data-room/index.md)**
-
-
-    Due Diligence Data Room Specialist. Use to prepare, audit, and organize fundraising materials for investor diligence before or after a term sheet.
-
--   **[founder-context](founder-context/index.md)**
-
-
-    Founder Operating Context. Use to create or update the canonical founder/startup context document so every fundraising, growth, product, and recruiting workflow runs on concrete company facts instead of generic assumptions.
-
--   **[founder-thought-leadership](founder-thought-leadership/index.md)**
-
-
-    Founder Brand And Thought Leadership Specialist. Use to define founder IP territory, create content systems for X and LinkedIn, and turn founder experience into audience, distribution, and credibility.
-
--   **[fundraising-email](fundraising-email/index.md)**
-
-
-    Investor Email Specialist. Use to write fundraising outreach, warm intro blurbs, follow-ups, investor updates, and close-the-loop emails with founder-grade brevity and specificity.
-
--   **[galyarder-specialist](galyarder-specialist/index.md)**
-
-
-    Use when the founder needs a single orchestrator to route work across multiple departments, synthesize specialist output, or translate an ambiguous business request into a concrete execution path.
-
--   **[investor-research](investor-research/index.md)**
-
-
-    Investor Targeting Specialist. Use to identify, qualify, and tier investors for a round based on stage, sector, geography, check size, and portfolio fit.
-
--   **[lead-scoring](lead-scoring/index.md)**
-
-
-    Lead Qualification And Scoring Specialist. Use to define ICP filters, score inbound and outbound leads, and improve pipeline focus for a founder-led sales motion.
-
--   **[market-research](market-research/index.md)**
-
-
-    Market Research Specialist. Use to analyze target markets, ICP segments, demand patterns, competitive terrain, and strategic whitespace for founder decisions.
-
--   **[pitch-deck](pitch-deck/index.md)**
-
-
-    Fundraising Pitch Deck Specialist. Use to build, review, or restructure a founder deck for pre-seed through Series A, with a clear narrative arc, investor-grade slide logic, and explicit asks.
-
--   **[using-galyarder-framework](using-galyarder-framework/index.md)**
-
-
-    Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before ANY response including clarifying questions
-
--   **[writing-skills](writing-skills/index.md)**
-
-
-    Use when creating new skills, editing existing skills, or verifying skills work before deployment
-
-</div>
-
-## :material-folder-zip: Growth Department
+## :material-folder-zip: framework Department
 
 <div class="grid cards" markdown>
 
 -   **[ab-test-setup](ab-test-setup/index.md)**
 
+    ---
 
     Structured guide for setting up A/B tests with mandatory gates for hypothesis, metrics, and execution readiness.
 
+-   **[accelerator-application](accelerator-application/index.md)**
+
+    ---
+
+    Accelerator Application Specialist. Use to shortlist startup programs, draft applications, prepare founder videos, and rehearse accelerator interviews with a disciplined founder narrative.
+
+-   **[accounting](accounting/index.md)**
+
+    ---
+
+    Use this skill when the user needs to set up bookkeeping, track revenue and expenses, prepare for taxes, choose accounting software, understand SaaS revenue recognition, or manage the financial operations of their bootstrapped business. Covers bookkeeping setup, tax preparation, accounting tools, and financial hygiene for the agentic company.
+
+-   **[adversarial-reviewer](adversarial-reviewer/index.md)**
+
+    ---
+
+    Use when a plan, feature, or launch needs an explicit adversarial pass to find weak assumptions, abuse cases, or strategic blind spots before execution.
+
+-   **[analytics-architect](analytics-architect/index.md)**
+
+    ---
+
+    Use when the work needs analytics architecture, event planning, KPI design, attribution boundaries, or instrumentation review across product and growth.
+
 -   **[analytics-tracking](analytics-tracking/index.md)**
 
+    ---
 
     Design, audit, and improve analytics tracking systems that produce reliable, decision-ready data.
 
+-   **[architect](architect/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `architect` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[audit-website](audit-website/index.md)**
+
+    ---
+
+    Use when a website needs a broad audit covering UX, conversion, content, SEO, technical correctness, and information hierarchy before changes are planned.
+
+-   **[board-deck-builder](board-deck-builder/index.md)**
+
+    ---
+
+    Use when leadership needs a board or investor deck structure assembled from product, growth, finance, and execution updates.
+
+-   **[board-update](board-update/index.md)**
+
+    ---
+
+    Investor And Board Communication Specialist. Use to draft monthly investor updates, quarterly board decks, and high-signal stakeholder communications that surface wins, misses, risks, and asks clearly.
+
+-   **[brainstorming](brainstorming/index.md)**
+
+    ---
+
+    You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.
+
+-   **[build-error-resolver](build-error-resolver/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `build-error-resolver` and you need the modern runtime to resolve that capability cleanly.
+
 -   **[campaign-analytics](campaign-analytics/index.md)**
 
+    ---
 
     Analyzes campaign performance with multi-touch attribution, funnel conversion analysis, and ROI calculation for marketing optimization. Use when analyzing marketing campaigns, ad performance, attribution models, conversion rates, or calculating marketing ROI, ROAS, CPA, and campaign metrics across channels.
 
+-   **[cloud-security](cloud-security/index.md)**
+
+    ---
+
+    Use when assessing cloud infrastructure for security misconfigurations, IAM privilege escalation paths, S3 public exposure, open security group rules, or IaC security gaps. Covers AWS, Azure, and GCP posture assessment with MITRE ATT&CK mapping.
+
+-   **[code-review-expert](code-review-expert/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `code-review-expert` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[code-reviewer](code-reviewer/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `code-reviewer` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[company-creator](company-creator/index.md)**
+
+    ---
+
+    >
+
 -   **[competitor-alternatives](competitor-alternatives/index.md)**
 
+    ---
 
     You are an expert in creating competitor comparison and alternative pages. Your goal is to build pages that rank for competitive search terms, provide genuine value to evaluators, and position your product effectively.
 
 -   **[content-creator](content-creator/index.md)**
 
+    ---
 
     Deprecated redirect skill that routes legacy 'content creator' requests to the correct specialist. Use when a user invokes 'content creator', asks to write a blog post, article, guide, or brand voice analysis (routes to content-production), or asks to plan content, build a topic cluster, or create a content calendar (routes to content-strategy). Does not handle requests directly  identifies user intent and redirects to content-production for writing/SEO/brand-voice tasks or content-strategy for planning tasks.
 
 -   **[content-strategy](content-strategy/index.md)**
 
+    ---
 
     Plan a content strategy, topic clusters, editorial roadmap, and content mix for traffic, authority, and lead generation. Use when deciding what to publish, what topics to prioritize, or how to structure a content program.
 
--   **[copywriting](copywriting/index.md)**
-
-
-    Write rigorous, conversion-focused marketing copy for landing pages and emails. Enforces brief confirmation and strict no-fabrication rules.
-
--   **[email-marketing-bible](email-marketing-bible/index.md)**
-
-
-    >
-
--   **[marketing-demand-acquisition](marketing-demand-acquisition/index.md)**
-
-
-    Creates demand generation campaigns, optimizes paid ad spend across LinkedIn, Google, and Meta, develops SEO strategies, and structures partnership programs for Series A+ startups scaling internationally. Use when planning marketing strategy, growth marketing, advertising campaigns, PPC optimization, lead generation, pipeline generation, or startup marketing budgets. Covers multi-channel acquisition (Google Ads, LinkedIn Ads, Meta Ads), CAC analysis, MQL/SQL workflows, attribution modeling, technical SEO, and co-marketing partnerships for hybrid PLG/Sales-Led motions in EU/US/Canada markets.
-
--   **[marketing-ideas](marketing-ideas/index.md)**
-
-
-    Provide proven marketing strategies and growth ideas for SaaS and software products, prioritized using a marketing feasibility scoring system.
-
--   **[marketing-psychology](marketing-psychology/index.md)**
-
-
-    Apply behavioral science and mental models to revenue (cuan) decisions, prioritized using a psychological leverage and feasibility scoring system.
-
--   **[onboarding-cro](onboarding-cro/index.md)**
-
-
-    You are an expert in user onboarding and activation. Your goal is to help users reach their \'aha moment\' as quickly as possible and establish habits that lead to long-term retention.
-
--   **[page-cro](page-cro/index.md)**
-
-
-    Analyze and optimize individual pages for conversion performance.
-
--   **[paywall-upgrade-cro](paywall-upgrade-cro/index.md)**
-
-
-    You are an expert in in-app paywalls and upgrade flows. Your goal is to convert free users to paid, or upgrade users to higher tiers, at moments when they've experienced enough value to justify the commitment.
-
--   **[programmatic-seo](programmatic-seo/index.md)**
-
-
-    Design and evaluate programmatic SEO strategies for creating SEO-driven pages at scale using templates and structured data.
-
--   **[referral-program](referral-program/index.md)**
-
-
-    You are an expert in viral growth and referral marketing with access to referral program data and third-party tools. Your goal is to help design and optimize programs that turn customers into Revenue (Cuan) engines.
-
--   **[revenue-architect](revenue-architect/index.md)**
-
-
-    Specialized skill unit for Galyarder Framework orchestration.
-
--   **[schema-markup](schema-markup/index.md)**
-
-
-    Design, validate, and optimize schema.org structured data for eligibility, correctness, and measurable SEO impact.
-
--   **[seo-audit](seo-audit/index.md)**
-
-
-    Diagnose and audit SEO issues affecting crawlability, indexation, rankings, and organic performance.
-
--   **[social-content](social-content/index.md)**
-
-
-    You are an expert social media strategist with direct access to a scheduling platform that publishes to all major social networks. Your goal is to help create engaging content that builds audience, drives engagement, and supports business goals.
-
-</div>
-
-## :material-folder-zip: Infrastructure Department
-
-<div class="grid cards" markdown>
-
--   **[release](release/index.md)**
-
-
-    >
-
--   **[release-changelog](release-changelog/index.md)**
-
-
-    >
-
-</div>
-
-## :material-folder-zip: Knowledge Department
-
-<div class="grid cards" markdown>
-
--   **[defuddle](defuddle/index.md)**
-
-
-    Extract clean markdown content from web pages using Defuddle CLI, removing clutter and navigation to save tokens. Use instead of WebFetch when the user provides a URL to read or analyze, for online documentation, articles, blog posts, or any standard web page. Do NOT use for URLs ending in .md  those are already markdown, use WebFetch directly.
-
--   **[doc-maintenance](doc-maintenance/index.md)**
-
-
-    >
-
--   **[json-canvas](json-canvas/index.md)**
-
-
-    Create and edit JSON Canvas files (.canvas) with nodes, edges, groups, and connections. Use when working with .canvas files, creating visual canvases, mind maps, flowcharts, or when the user mentions Canvas files in Obsidian.
-
--   **[obsidian-bases](obsidian-bases/index.md)**
-
-
-    Create and edit Obsidian Bases (.base files) with views, filters, formulas, and summaries. Use when working with .base files, creating database-like views of notes, or when the user mentions Bases, table views, card views, filters, or formulas in Obsidian.
-
--   **[obsidian-cli](obsidian-cli/index.md)**
-
-
-    Interact with Obsidian vaults using the Obsidian CLI to read, create, search, and manage notes, tasks, properties, and more. Also supports plugin and theme development with commands to reload plugins, run JavaScript, capture errors, take screenshots, and inspect the DOM. Use when the user asks to interact with their Obsidian vault, manage notes, search vault content, perform vault operations from the command line, or develop and debug Obsidian plugins and themes.
-
--   **[obsidian-markdown](obsidian-markdown/index.md)**
-
-
-    Create and edit Obsidian Flavored Markdown with wikilinks, embeds, callouts, properties, and other Obsidian-specific syntax. Use when working with .md files in Obsidian, or when the user mentions wikilinks, callouts, frontmatter, tags, embeds, or Obsidian notes.
-
-</div>
-
-## :material-folder-zip: Legal-Finance Department
-
-<div class="grid cards" markdown>
-
--   **[accounting](accounting/index.md)**
-
-
-    Use this skill when the user needs to set up bookkeeping, track revenue and expenses, prepare for taxes, choose accounting software, understand SaaS revenue recognition, or manage the financial operations of their bootstrapped business. Covers bookkeeping setup, tax preparation, accounting tools, and financial hygiene for the 1-Man Army.
-
 -   **[contract-and-proposal-writer](contract-and-proposal-writer/index.md)**
 
+    ---
 
     >
 
 -   **[contract-review](contract-review/index.md)**
 
+    ---
 
     Analyze and red-flag contracts systematically, identifying risks, unfavorable terms, and negotiation opportunities
 
--   **[finance-based-pricing-advisor](finance-based-pricing-advisor/index.md)**
+-   **[conversion-engineer](conversion-engineer/index.md)**
 
+    ---
 
-    Evaluate pricing changes using ARPU, conversion, churn risk, NRR, and payback. Use when deciding whether a pricing move should ship.
+    Use when legacy prompts or older framework flows reference `conversion-engineer` and you need the modern runtime to resolve that capability cleanly.
 
--   **[financial-analyst](financial-analyst/index.md)**
+-   **[copy-editing](copy-editing/index.md)**
 
+    ---
 
-    Performs financial ratio analysis, DCF valuation, budget variance analysis, and rolling forecast construction for strategic decision-making. Use when analyzing financial statements, building valuation models, assessing budget variances, or constructing financial projections and forecasts. Also applicable when users mention financial modeling, cash flow analysis, company valuation, financial projections, or spreadsheet analysis.
+    Use when existing copy needs tightening for clarity, accuracy, tone consistency, or executive readability without changing the underlying message.
 
--   **[gdpr-ccpa-privacy-auditor](gdpr-ccpa-privacy-auditor/index.md)**
+-   **[copywriting](copywriting/index.md)**
 
+    ---
 
-    Audits web applications to ensure declared privacy policies match actual technical data collection practices. Use to identify discrepancies in cookie usage, tracking scripts, and user data handling.
+    Write rigorous, conversion-focused marketing copy for landing pages and emails. Enforces brief confirmation and strict no-fabrication rules.
 
--   **[gdpr-compliance](gdpr-compliance/index.md)**
+-   **[create-agent-adapter](create-agent-adapter/index.md)**
 
-
-    Implement GDPR data protection requirements. Configure consent management, data subject rights, and privacy by design. Use when processing EU personal data.
-
--   **[iso-42001-ai-governance](iso-42001-ai-governance/index.md)**
-
-
-    AI governance audit using ISO 42001 standard. Ensures AI systems are developed and deployed responsibly with risk management, ethics, security, transparency, and compliance best practices.
-
--   **[legal-advisor](legal-advisor/index.md)**
-
-
-    Draft privacy policies, terms of service, disclaimers, and legal notices. Creates GDPR-compliant texts, cookie policies, and data processing agreements.
-
--   **[legal-tos-privacy](legal-tos-privacy/index.md)**
-
-
-    Create bulletproof Terms of Service and Privacy Policy documents for SaaS applications. Infers company information from codebase/marketing site, conducts comprehensive audits, drafts documents, then asks user ONLY for missing details at the end. Minimizes user interaction. Use when the user needs to draft, review, or update legal documents (ToS, Terms of Service, Privacy Policy, legal pages). Triggers on requests for legal documents, terms drafting, privacy policy creation, 'cover our bases legally', liability protection, or legal compliance for software products.
-
--   **[open-source-license](open-source-license/index.md)**
-
-
-    Open Source License guidance, selection, compliance review, and drafting. Use this skill when users ask about choosing open source licenses, checking license compatibility, reviewing projects for OSS compliance, generating LICENSE/NOTICE files, or understanding specific license terms. Triggers include questions about MIT, Apache, GPL, BSD, LGPL, AGPL, copyleft, permissive licenses, license compatibility, SPDX identifiers, or any OSS licensing topic.
-
--   **[saas-finops-optimization](saas-finops-optimization/index.md)**
-
-
-    Optimize cloud and AI costs for modern SaaS stacks (Vercel, Supabase, Neon, Stripe, and AI APIs). Covers token efficiency, serverless database scaling, edge function optimization, and burn rate monitoring. Use when planning infrastructure, investigating high bills, or auditing API usage.
-
-</div>
-
-## :material-folder-zip: Product Department
-
-<div class="grid cards" markdown>
-
--   **[company-creator](company-creator/index.md)**
-
+    ---
 
     >
 
--   **[executing-plans](executing-plans/index.md)**
+-   **[cyber-intel](cyber-intel/index.md)**
 
+    ---
 
-    Use when you have a written implementation plan to execute in a separate session with review checkpoints
+    Use when legacy prompts or older framework flows reference `cyber-intel` and you need the modern runtime to resolve that capability cleanly.
 
--   **[prd-to-issues](prd-to-issues/index.md)**
+-   **[data-room](data-room/index.md)**
 
+    ---
 
-    Break a PRD into independently-grabbable GitHub issues using tracer-bullet vertical slices. Use when user wants to convert a PRD to issues, create implementation tickets, or break down a PRD into work items.
+    Due Diligence Data Room Specialist. Use to prepare, audit, and organize fundraising materials for investor diligence before or after a term sheet.
 
--   **[prd-to-plan](prd-to-plan/index.md)**
+-   **[decision-logger](decision-logger/index.md)**
 
+    ---
 
-    Turn a PRD into a multi-phase implementation plan using tracer-bullet vertical slices, saved as a local Markdown file in ./plans/. Use when user wants to break down a PRD, create an implementation plan, plan phases from a PRD, or mentions 'tracer bullets'.
+    Use when important product, technical, or founder decisions need to be captured as durable context with rationale, tradeoffs, and follow-up implications.
 
--   **[ubiquitous-language](ubiquitous-language/index.md)**
+-   **[defuddle](defuddle/index.md)**
 
+    ---
 
-    Extract a DDD-style ubiquitous language glossary from the current conversation, flagging ambiguities and proposing canonical terms. Saves to UBIQUITOUS_LANGUAGE.md. Use when user wants to define domain terms, build a glossary, harden terminology, create a ubiquitous language, or mentions 'domain model' or 'DDD'.
+    Extract clean markdown content from web pages using Defuddle CLI, removing clutter and navigation to save tokens. Use instead of WebFetch when the user provides a URL to read or analyze, for online documentation, articles, blog posts, or any standard web page. Do NOT use for URLs ending in .md  those are already markdown, use WebFetch directly.
 
--   **[write-a-prd](write-a-prd/index.md)**
+-   **[design-md-airbnb](design-md-airbnb/index.md)**
 
+    ---
 
-    Create a PRD through user interview, codebase exploration, and module design, then submit as a GitHub issue. Use when user wants to write a PRD, create a product requirements document, or plan a new feature.
+    Design system reference for design md airbnb.
 
--   **[writing-plans](writing-plans/index.md)**
+-   **[design-md-airtable](design-md-airtable/index.md)**
 
+    ---
 
-    Use when you have a spec or requirements for a multi-step task, before touching code
+    Design system reference for design md airtable.
 
-</div>
+-   **[design-md-apple](design-md-apple/index.md)**
 
-## :material-folder-zip: Security Department
+    ---
 
-<div class="grid cards" markdown>
+    Design system reference for design md apple.
 
--   **[cloud-security](cloud-security/index.md)**
+-   **[design-md-bmw](design-md-bmw/index.md)**
 
+    ---
 
-    Use when assessing cloud infrastructure for security misconfigurations, IAM privilege escalation paths, S3 public exposure, open security group rules, or IaC security gaps. Covers AWS, Azure, and GCP posture assessment with MITRE ATT&CK mapping.
+    Design system reference for design md bmw.
+
+-   **[design-md-cal](design-md-cal/index.md)**
+
+    ---
+
+    Design system reference for design md cal.
+
+-   **[design-md-claude](design-md-claude/index.md)**
+
+    ---
+
+    Design system reference for design md claude.
+
+-   **[design-md-clay](design-md-clay/index.md)**
+
+    ---
+
+    Design system reference for design md clay.
+
+-   **[design-md-clickhouse](design-md-clickhouse/index.md)**
+
+    ---
+
+    Design system reference for design md clickhouse.
+
+-   **[design-md-cohere](design-md-cohere/index.md)**
+
+    ---
+
+    Design system reference for design md cohere.
+
+-   **[design-md-coinbase](design-md-coinbase/index.md)**
+
+    ---
+
+    Design system reference for design md coinbase.
+
+-   **[design-md-composio](design-md-composio/index.md)**
+
+    ---
+
+    Design system reference for design md composio.
+
+-   **[design-md-cursor](design-md-cursor/index.md)**
+
+    ---
+
+    Design system reference for design md cursor.
+
+-   **[design-md-elevenlabs](design-md-elevenlabs/index.md)**
+
+    ---
+
+    Design system reference for design md elevenlabs.
+
+-   **[design-md-expo](design-md-expo/index.md)**
+
+    ---
+
+    Design system reference for design md expo.
+
+-   **[design-md-figma](design-md-figma/index.md)**
+
+    ---
+
+    Design system reference for design md figma.
+
+-   **[design-md-framer](design-md-framer/index.md)**
+
+    ---
+
+    Design system reference for design md framer.
+
+-   **[design-md-hashicorp](design-md-hashicorp/index.md)**
+
+    ---
+
+    Design system reference for design md hashicorp.
+
+-   **[design-md-ibm](design-md-ibm/index.md)**
+
+    ---
+
+    Design system reference for design md ibm.
+
+-   **[design-md-intercom](design-md-intercom/index.md)**
+
+    ---
+
+    Design system reference for design md intercom.
+
+-   **[design-md-kraken](design-md-kraken/index.md)**
+
+    ---
+
+    Design system reference for design md kraken.
+
+-   **[design-md-linear.app](design-md-linear.app/index.md)**
+
+    ---
+
+    Design system reference for design md linear.app.
+
+-   **[design-md-lovable](design-md-lovable/index.md)**
+
+    ---
+
+    Design system reference for design md lovable.
+
+-   **[design-md-minimax](design-md-minimax/index.md)**
+
+    ---
+
+    Design system reference for design md minimax.
+
+-   **[design-md-mintlify](design-md-mintlify/index.md)**
+
+    ---
+
+    Design system reference for design md mintlify.
+
+-   **[design-md-miro](design-md-miro/index.md)**
+
+    ---
+
+    Design system reference for design md miro.
+
+-   **[design-md-mistral.ai](design-md-mistral.ai/index.md)**
+
+    ---
+
+    Design system reference for design md mistral.ai.
+
+-   **[design-md-mongodb](design-md-mongodb/index.md)**
+
+    ---
+
+    Design system reference for design md mongodb.
+
+-   **[design-md-notion](design-md-notion/index.md)**
+
+    ---
+
+    Design system reference for design md notion.
+
+-   **[design-md-nvidia](design-md-nvidia/index.md)**
+
+    ---
+
+    Design system reference for design md nvidia.
+
+-   **[design-md-ollama](design-md-ollama/index.md)**
+
+    ---
+
+    Design system reference for design md ollama.
+
+-   **[design-md-opencode.ai](design-md-opencode.ai/index.md)**
+
+    ---
+
+    Design system reference for design md opencode.ai.
+
+-   **[design-md-pinterest](design-md-pinterest/index.md)**
+
+    ---
+
+    Design system reference for design md pinterest.
+
+-   **[design-md-posthog](design-md-posthog/index.md)**
+
+    ---
+
+    Design system reference for design md posthog.
+
+-   **[design-md-raycast](design-md-raycast/index.md)**
+
+    ---
+
+    Design system reference for design md raycast.
+
+-   **[design-md-replicate](design-md-replicate/index.md)**
+
+    ---
+
+    Design system reference for design md replicate.
+
+-   **[design-md-resend](design-md-resend/index.md)**
+
+    ---
+
+    Design system reference for design md resend.
+
+-   **[design-md-revolut](design-md-revolut/index.md)**
+
+    ---
+
+    Design system reference for design md revolut.
+
+-   **[design-md-runwayml](design-md-runwayml/index.md)**
+
+    ---
+
+    Design system reference for design md runwayml.
+
+-   **[design-md-sanity](design-md-sanity/index.md)**
+
+    ---
+
+    Design system reference for design md sanity.
+
+-   **[design-md-sentry](design-md-sentry/index.md)**
+
+    ---
+
+    Design system reference for design md sentry.
+
+-   **[design-md-spacex](design-md-spacex/index.md)**
+
+    ---
+
+    Design system reference for design md spacex.
+
+-   **[design-md-spotify](design-md-spotify/index.md)**
+
+    ---
+
+    Design system reference for design md spotify.
+
+-   **[design-md-stripe](design-md-stripe/index.md)**
+
+    ---
+
+    Design system reference for design md stripe.
+
+-   **[design-md-supabase](design-md-supabase/index.md)**
+
+    ---
+
+    Design system reference for design md supabase.
+
+-   **[design-md-superhuman](design-md-superhuman/index.md)**
+
+    ---
+
+    Design system reference for design md superhuman.
+
+-   **[design-md-together.ai](design-md-together.ai/index.md)**
+
+    ---
+
+    Design system reference for design md together.ai.
+
+-   **[design-md-uber](design-md-uber/index.md)**
+
+    ---
+
+    Design system reference for design md uber.
+
+-   **[design-md-vercel](design-md-vercel/index.md)**
+
+    ---
+
+    Design system reference for design md vercel.
+
+-   **[design-md-voltagent](design-md-voltagent/index.md)**
+
+    ---
+
+    Design system reference for design md voltagent.
+
+-   **[design-md-warp](design-md-warp/index.md)**
+
+    ---
+
+    Design system reference for design md warp.
+
+-   **[design-md-webflow](design-md-webflow/index.md)**
+
+    ---
+
+    Design system reference for design md webflow.
+
+-   **[design-md-wise](design-md-wise/index.md)**
+
+    ---
+
+    Design system reference for design md wise.
+
+-   **[design-md-x.ai](design-md-x.ai/index.md)**
+
+    ---
+
+    Design system reference for design md x.ai.
+
+-   **[design-md-zapier](design-md-zapier/index.md)**
+
+    ---
+
+    Design system reference for design md zapier.
+
+-   **[devops-engineer](devops-engineer/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `devops-engineer` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[dispatching-parallel-agents](dispatching-parallel-agents/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `dispatching-parallel-agents` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[doc-maintenance](doc-maintenance/index.md)**
+
+    ---
+
+    >
+
+-   **[doc-updater](doc-updater/index.md)**
+
+    ---
+
+    Use when documentation, READMEs, release notes, or operating docs have drifted from the current shipped behavior and need synchronized updates.
+
+-   **[e2e-runner](e2e-runner/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `e2e-runner` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[elite-developer](elite-developer/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `elite-developer` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[email-marketing-bible](email-marketing-bible/index.md)**
+
+    ---
+
+    >
+
+-   **[engineering](engineering/index.md)**
+
+    ---
+
+    Consolidated Galyarder Framework Engineering intelligence bundle.
 
 -   **[eradicating-malware-from-infected-systems](eradicating-malware-from-infected-systems/index.md)**
 
+    ---
 
     Systematically remove malware, backdoors, and attacker persistence mechanisms from infected systems while ensuring complete eradication and preventing re-infection.
 
 -   **[executing-active-directory-attack-simulation](executing-active-directory-attack-simulation/index.md)**
 
+    ---
 
     >
 
 -   **[executing-phishing-simulation-campaign](executing-phishing-simulation-campaign/index.md)**
 
+    ---
 
     >
 
+-   **[executing-plans](executing-plans/index.md)**
+
+    ---
+
+    Use when you have a written implementation plan to execute in a separate session with review checkpoints
+
 -   **[executing-red-team-engagement-planning](executing-red-team-engagement-planning/index.md)**
 
+    ---
 
     Red team engagement planning is the foundational phase that defines scope, objectives, rules of engagement (ROE), threat model selection, and operational timelines before any offensive testing begins.
 
 -   **[executing-red-team-exercise](executing-red-team-exercise/index.md)**
 
+    ---
 
     >
+
+-   **[executive](executive/index.md)**
+
+    ---
+
+    Consolidated Galyarder Framework Executive intelligence bundle.
+
+-   **[experimentation-engineer](experimentation-engineer/index.md)**
+
+    ---
+
+    Use when a feature launch needs experiment design, test sequencing, rollout guardrails, and measurement logic before exposure to users.
+
+-   **[finance-based-pricing-advisor](finance-based-pricing-advisor/index.md)**
+
+    ---
+
+    Evaluate pricing changes using ARPU, conversion, churn risk, NRR, and payback. Use when deciding whether a pricing move should ship.
+
+-   **[financial-analyst](financial-analyst/index.md)**
+
+    ---
+
+    Performs financial ratio analysis, DCF valuation, budget variance analysis, and rolling forecast construction for strategic decision-making. Use when analyzing financial statements, building valuation models, assessing budget variances, or constructing financial projections and forecasts. Also applicable when users mention financial modeling, cash flow analysis, company valuation, financial projections, or spreadsheet analysis.
+
+-   **[finishing-a-development-branch](finishing-a-development-branch/index.md)**
+
+    ---
+
+    Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides completion of development work by presenting structured options for merge, PR, or cleanup
+
+-   **[finops-manager](finops-manager/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `finops-manager` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[founder-context](founder-context/index.md)**
+
+    ---
+
+    Founder Operating Context. Use to create or update the canonical founder/startup context document so every fundraising, growth, product, and recruiting workflow runs on concrete company facts instead of generic assumptions.
+
+-   **[founder-thought-leadership](founder-thought-leadership/index.md)**
+
+    ---
+
+    Founder Brand And Thought Leadership Specialist. Use to define founder IP territory, create content systems for X and LinkedIn, and turn founder experience into audience, distribution, and credibility.
+
+-   **[full](full/index.md)**
+
+    ---
+
+    Consolidated Galyarder Framework Full intelligence bundle.
+
+-   **[fundraising-email](fundraising-email/index.md)**
+
+    ---
+
+    Investor Email Specialist. Use to write fundraising outreach, warm intro blurbs, follow-ups, investor updates, and close-the-loop emails with founder-grade brevity and specificity.
+
+-   **[galyarder](galyarder/index.md)**
+
+    ---
+
+    Consolidated Galyarder Framework Galyarder intelligence bundle.
+
+-   **[galyarder-specialist](galyarder-specialist/index.md)**
+
+    ---
+
+    Use when the founder needs a single orchestrator to route work across multiple departments, synthesize specialist output, or translate an ambiguous business request into a concrete execution path.
+
+-   **[gdpr-ccpa-privacy-auditor](gdpr-ccpa-privacy-auditor/index.md)**
+
+    ---
+
+    Audits web applications to ensure declared privacy policies match actual technical data collection practices. Use to identify discrepancies in cookie usage, tracking scripts, and user data handling.
+
+-   **[gdpr-compliance](gdpr-compliance/index.md)**
+
+    ---
+
+    Implement GDPR data protection requirements. Configure consent management, data subject rights, and privacy by design. Use when processing EU personal data.
 
 -   **[generating-threat-intelligence-reports](generating-threat-intelligence-reports/index.md)**
 
+    ---
 
     >
+
+-   **[growth](growth/index.md)**
+
+    ---
+
+    Consolidated Galyarder Framework Growth intelligence bundle.
+
+-   **[growth-engineer](growth-engineer/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `growth-engineer` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[growth-strategist](growth-strategist/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `growth-strategist` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[infrastructure](infrastructure/index.md)**
+
+    ---
+
+    Consolidated Galyarder Framework Infrastructure intelligence bundle.
 
 -   **[intercepting-mobile-traffic-with-burpsuite](intercepting-mobile-traffic-with-burpsuite/index.md)**
 
+    ---
 
     >
+
+-   **[interface-designer](interface-designer/index.md)**
+
+    ---
+
+    Use when a product flow needs interface structure, component planning, interaction details, or screen-level UX shaping before implementation.
 
 -   **[investigating-phishing-email-incident](investigating-phishing-email-incident/index.md)**
 
+    ---
 
     >
+
+-   **[investor-research](investor-research/index.md)**
+
+    ---
+
+    Investor Targeting Specialist. Use to identify, qualify, and tier investors for a round based on stage, sector, geography, check size, and portfolio fit.
+
+-   **[iso-42001-ai-governance](iso-42001-ai-governance/index.md)**
+
+    ---
+
+    AI governance audit using ISO 42001 standard. Ensures AI systems are developed and deployed responsibly with risk management, ethics, security, transparency, and compliance best practices.
+
+-   **[json-canvas](json-canvas/index.md)**
+
+    ---
+
+    Create and edit JSON Canvas files (.canvas) with nodes, edges, groups, and connections. Use when working with .canvas files, creating visual canvases, mind maps, flowcharts, or when the user mentions Canvas files in Obsidian.
+
+-   **[knowledge](knowledge/index.md)**
+
+    ---
+
+    Consolidated Galyarder Framework Knowledge intelligence bundle.
+
+-   **[launch-strategy](launch-strategy/index.md)**
+
+    ---
+
+    Use when a release needs launch framing, sequencing, channel choices, and rollout logic across product, growth, and support.
+
+-   **[lead-scoring](lead-scoring/index.md)**
+
+    ---
+
+    Lead Qualification And Scoring Specialist. Use to define ICP filters, score inbound and outbound leads, and improve pipeline focus for a founder-led sales motion.
+
+-   **[legal-advisor](legal-advisor/index.md)**
+
+    ---
+
+    Draft privacy policies, terms of service, disclaimers, and legal notices. Creates GDPR-compliant texts, cookie policies, and data processing agreements.
+
+-   **[legal-counsel](legal-counsel/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `legal-counsel` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[legal-finance](legal-finance/index.md)**
+
+    ---
+
+    Consolidated Galyarder Framework Legal-finance intelligence bundle.
+
+-   **[legal-tos-privacy](legal-tos-privacy/index.md)**
+
+    ---
+
+    Create bulletproof Terms of Service and Privacy Policy documents for SaaS applications. Infers company information from codebase/marketing site, conducts comprehensive audits, drafts documents, then asks user ONLY for missing details at the end. Minimizes user interaction. Use when the user needs to draft, review, or update legal documents (ToS, Terms of Service, Privacy Policy, legal pages). Triggers on requests for legal documents, terms drafting, privacy policy creation, 'cover our bases legally', liability protection, or legal compliance for software products.
 
 -   **[mapping-mitre-attack-techniques](mapping-mitre-attack-techniques/index.md)**
 
+    ---
 
     >
+
+-   **[market-research](market-research/index.md)**
+
+    ---
+
+    Market Research Specialist. Use to analyze target markets, ICP segments, demand patterns, competitive terrain, and strategic whitespace for founder decisions.
+
+-   **[marketing-demand-acquisition](marketing-demand-acquisition/index.md)**
+
+    ---
+
+    Creates demand generation campaigns, optimizes paid ad spend across LinkedIn, Google, and Meta, develops SEO strategies, and structures partnership programs for Series A+ startups scaling internationally. Use when planning marketing strategy, growth marketing, advertising campaigns, PPC optimization, lead generation, pipeline generation, or startup marketing budgets. Covers multi-channel acquisition (Google Ads, LinkedIn Ads, Meta Ads), CAC analysis, MQL/SQL workflows, attribution modeling, technical SEO, and co-marketing partnerships for hybrid PLG/Sales-Led motions in EU/US/Canada markets.
+
+-   **[marketing-ideas](marketing-ideas/index.md)**
+
+    ---
+
+    Provide proven marketing strategies and growth ideas for SaaS and software products, prioritized using a marketing feasibility scoring system.
+
+-   **[marketing-psychology](marketing-psychology/index.md)**
+
+    ---
+
+    Apply behavioral science and mental models to revenue (cuan) decisions, prioritized using a psychological leverage and feasibility scoring system.
 
 -   **[monitoring-darkweb-sources](monitoring-darkweb-sources/index.md)**
 
+    ---
 
     >
+
+-   **[obsidian-bases](obsidian-bases/index.md)**
+
+    ---
+
+    Create and edit Obsidian Bases (.base files) with views, filters, formulas, and summaries. Use when working with .base files, creating database-like views of notes, or when the user mentions Bases, table views, card views, filters, or formulas in Obsidian.
+
+-   **[obsidian-cli](obsidian-cli/index.md)**
+
+    ---
+
+    Interact with Obsidian vaults using the Obsidian CLI to read, create, search, and manage notes, tasks, properties, and more. Also supports plugin and theme development with commands to reload plugins, run JavaScript, capture errors, take screenshots, and inspect the DOM. Use when the user asks to interact with their Obsidian vault, manage notes, search vault content, perform vault operations from the command line, or develop and debug Obsidian plugins and themes.
+
+-   **[obsidian-markdown](obsidian-markdown/index.md)**
+
+    ---
+
+    Create and edit Obsidian Flavored Markdown with wikilinks, embeds, callouts, properties, and other Obsidian-specific syntax. Use when working with .md files in Obsidian, or when the user mentions wikilinks, callouts, frontmatter, tags, embeds, or Obsidian notes.
+
+-   **[onboarding-cro](onboarding-cro/index.md)**
+
+    ---
+
+    You are an expert in user onboarding and activation. Your goal is to help users reach their \'aha moment\' as quickly as possible and establish habits that lead to long-term retention.
+
+-   **[open-source-license](open-source-license/index.md)**
+
+    ---
+
+    Open Source License guidance, selection, compliance review, and drafting. Use this skill when users ask about choosing open source licenses, checking license compatibility, reviewing projects for OSS compliance, generating LICENSE/NOTICE files, or understanding specific license terms. Triggers include questions about MIT, Apache, GPL, BSD, LGPL, AGPL, copyleft, permissive licenses, license compatibility, SPDX identifiers, or any OSS licensing topic.
+
+-   **[page-cro](page-cro/index.md)**
+
+    ---
+
+    Analyze and optimize individual pages for conversion performance.
+
+-   **[paywall-upgrade-cro](paywall-upgrade-cro/index.md)**
+
+    ---
+
+    You are an expert in in-app paywalls and upgrade flows. Your goal is to convert free users to paid, or upgrade users to higher tiers, at moments when they've experienced enough value to justify the commitment.
+
+-   **[perseus](perseus/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `perseus` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[pitch-deck](pitch-deck/index.md)**
+
+    ---
+
+    Fundraising Pitch Deck Specialist. Use to build, review, or restructure a founder deck for pre-seed through Series A, with a clear narrative arc, investor-grade slide logic, and explicit asks.
+
+-   **[planner](planner/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `planner` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[playwright-pro](playwright-pro/index.md)**
+
+    ---
+
+    Production-grade Playwright testing toolkit. Use when the user mentions Playwright tests, end-to-end testing, browser automation, fixing flaky tests, test migration, CI/CD testing, or test suites. Generate tests, fix flaky failures, migrate from Cypress/Selenium, sync with TestRail, run on BrowserStack. 55 templates, 3 agents, smart reporting.
+
+-   **[pr-report](pr-report/index.md)**
+
+    ---
+
+    >
+
+-   **[pr-review-expert](pr-review-expert/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `pr-review-expert` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[prd-to-issues](prd-to-issues/index.md)**
+
+    ---
+
+    Break a PRD into independently-grabbable GitHub issues using tracer-bullet vertical slices. Use when user wants to convert a PRD to issues, create implementation tickets, or break down a PRD into work items.
+
+-   **[prd-to-plan](prd-to-plan/index.md)**
+
+    ---
+
+    Turn a PRD into a multi-phase implementation plan using tracer-bullet vertical slices, saved as a local Markdown file in ./plans/. Use when user wants to break down a PRD, create an implementation plan, plan phases from a PRD, or mentions 'tracer bullets'.
+
+-   **[pricing-strategy](pricing-strategy/index.md)**
+
+    ---
+
+    Use when pricing, packaging, plan structure, or monetization tradeoffs need to be evaluated against positioning, conversion, and margin.
+
+-   **[product](product/index.md)**
+
+    ---
+
+    Consolidated Galyarder Framework Product intelligence bundle.
+
+-   **[product-manager](product-manager/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `product-manager` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[product-marketing-context](product-marketing-context/index.md)**
+
+    ---
+
+    Use when GTM, sales, growth, or launch work needs a canonical product-marketing context document instead of ad hoc assumptions.
 
 -   **[profiling-threat-actor-groups](profiling-threat-actor-groups/index.md)**
 
+    ---
 
     >
 
+-   **[programmatic-seo](programmatic-seo/index.md)**
+
+    ---
+
+    Design and evaluate programmatic SEO strategies for creating SEO-driven pages at scale using templates and structured data.
+
+-   **[qa-automation-engineer](qa-automation-engineer/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `qa-automation-engineer` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[receiving-code-review](receiving-code-review/index.md)**
+
+    ---
+
+    Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation
+
 -   **[recovering-deleted-files-with-photorec](recovering-deleted-files-with-photorec/index.md)**
 
+    ---
 
     Recover deleted files from disk images and storage media using PhotoRec's file signature-based carving engine regardless of file system damage.
 
 -   **[recovering-from-ransomware-attack](recovering-from-ransomware-attack/index.md)**
 
+    ---
 
     >
+
+-   **[refactor-cleaner](refactor-cleaner/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `refactor-cleaner` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[referral-program](referral-program/index.md)**
+
+    ---
+
+    You are an expert in viral growth and referral marketing with access to referral program data and third-party tools. Your goal is to help design and optimize programs that turn customers into Revenue (Cuan) engines.
+
+-   **[release](release/index.md)**
+
+    ---
+
+    >
+
+-   **[release-changelog](release-changelog/index.md)**
+
+    ---
+
+    >
+
+-   **[release-manager](release-manager/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `release-manager` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[remotion-best-practices](remotion-best-practices/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `remotion-best-practices` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[remotion-engineer](remotion-engineer/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `remotion-engineer` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[requesting-code-review](requesting-code-review/index.md)**
+
+    ---
+
+    Use when completing tasks, implementing major features, or before merging to verify work meets requirements
+
+-   **[retention-specialist](retention-specialist/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `retention-specialist` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[revenue-architect](revenue-architect/index.md)**
+
+    ---
+
+    Specialized skill unit for Galyarder Framework orchestration.
 
 -   **[reverse-engineering-malware-with-ghidra](reverse-engineering-malware-with-ghidra/index.md)**
 
+    ---
 
     >
 
+-   **[runbook-generator](runbook-generator/index.md)**
+
+    ---
+
+    Use when an operational workflow, release procedure, incident pattern, or support process needs to be captured as a repeatable runbook.
+
+-   **[saas-finops-optimization](saas-finops-optimization/index.md)**
+
+    ---
+
+    Optimize cloud and AI costs for modern SaaS stacks (Vercel, Supabase, Neon, Stripe, and AI APIs). Covers token efficiency, serverless database scaling, edge function optimization, and burn rate monitoring. Use when planning infrastructure, investigating high bills, or auditing API usage.
+
+-   **[schema-markup](schema-markup/index.md)**
+
+    ---
+
+    Design, validate, and optimize schema.org structured data for eligibility, correctness, and measurable SEO impact.
+
+-   **[security](security/index.md)**
+
+    ---
+
+    Consolidated Galyarder Framework Security intelligence bundle.
+
+-   **[security-guardian](security-guardian/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `security-guardian` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[security-reviewer](security-reviewer/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `security-reviewer` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[seo-audit](seo-audit/index.md)**
+
+    ---
+
+    Diagnose and audit SEO issues affecting crawlability, indexation, rankings, and organic performance.
+
+-   **[signup-flow-cro](signup-flow-cro/index.md)**
+
+    ---
+
+    Use when signup or onboarding conversion needs targeted analysis of friction, motivation, guardrails, and experiment opportunities.
+
+-   **[social-content](social-content/index.md)**
+
+    ---
+
+    You are an expert social media strategist with direct access to a scheduling platform that publishes to all major social networks. Your goal is to help create engaging content that builds audience, drives engagement, and supports business goals.
+
+-   **[social-strategist](social-strategist/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `social-strategist` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[subagent-driven-development](subagent-driven-development/index.md)**
+
+    ---
+
+    Use when executing implementation plans with independent tasks in the current session
+
+-   **[super-architect](super-architect/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `super-architect` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[support-lead](support-lead/index.md)**
+
+    ---
+
+    Use when support operations, launch fallout, repeated customer issues, or triage ownership need a structured response layer.
+
+-   **[systematic-debugging](systematic-debugging/index.md)**
+
+    ---
+
+    Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes
+
+-   **[tdd-guide](tdd-guide/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `tdd-guide` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[test-driven-development](test-driven-development/index.md)**
+
+    ---
+
+    Use when implementing any feature or bugfix, before writing implementation code
+
 -   **[tracking-threat-actor-infrastructure](tracking-threat-actor-infrastructure/index.md)**
 
+    ---
 
     Threat actor infrastructure tracking involves monitoring and mapping adversary-controlled assets including command-and-control (C2) servers, phishing domains, exploit kit hosts, bulletproof hosting, a
 
+-   **[ubiquitous-language](ubiquitous-language/index.md)**
+
+    ---
+
+    Extract a DDD-style ubiquitous language glossary from the current conversation, flagging ambiguities and proposing canonical terms. Saves to UBIQUITOUS_LANGUAGE.md. Use when user wants to define domain terms, build a glossary, harden terminology, create a ubiquitous language, or mentions 'domain model' or 'DDD'.
+
+-   **[ui-ux-designer](ui-ux-designer/index.md)**
+
+    ---
+
+    Use when user experience, visual flow, interaction quality, or interface coherence needs a dedicated design-oriented pass.
+
+-   **[using-galyarder-agent-framework](using-galyarder-agent-framework/index.md)**
+
+    ---
+
+    Use when legacy prompts or old framework sessions refer to the pre-rebrand Galyarder Agent Framework operating guide and need the modern equivalent behavior.
+
+-   **[using-galyarder-framework](using-galyarder-framework/index.md)**
+
+    ---
+
+    Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before ANY response including clarifying questions
+
+-   **[using-git-worktrees](using-git-worktrees/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `using-git-worktrees` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[validating-backup-integrity-for-recovery](validating-backup-integrity-for-recovery/index.md)**
+
+    ---
+
+    Use when recovery planning requires verification that backups are restorable, complete, and safe to trust before an incident or recovery event.
+
+-   **[vercel-react-best-practices](vercel-react-best-practices/index.md)**
+
+    ---
+
+    React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.
+
+-   **[vercel-react-expert](vercel-react-expert/index.md)**
+
+    ---
+
+    Use when legacy prompts or older framework flows reference `vercel-react-expert` and you need the modern runtime to resolve that capability cleanly.
+
+-   **[verification-before-completion](verification-before-completion/index.md)**
+
+    ---
+
+    Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always
+
+-   **[web-design-guidelines](web-design-guidelines/index.md)**
+
+    ---
+
+    Use when website or web app UI work needs practical design guidance for hierarchy, layout, readability, responsiveness, and interaction quality.
+
+-   **[write-a-prd](write-a-prd/index.md)**
+
+    ---
+
+    Create a PRD through user interview, codebase exploration, and module design, then submit as a GitHub issue. Use when user wants to write a PRD, create a product requirements document, or plan a new feature.
+
+-   **[writing-plans](writing-plans/index.md)**
+
+    ---
+
+    Use when you have a spec or requirements for a multi-step task, before touching code
+
+-   **[writing-skills](writing-skills/index.md)**
+
+    ---
+
+    Use when creating new skills, editing existing skills, or verifying skills work before deployment
+
 -   **[xss-testing-burpsuite](testing-for-xss-vulnerabilities-with-burpsuite/index.md)**
 
+    ---
 
     Identifying and validating cross-site scripting vulnerabilities using Burp Suite's scanner, intruder, and repeater tools during authorized security assessments.
 

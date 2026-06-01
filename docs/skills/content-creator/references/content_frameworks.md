@@ -2,6 +2,7 @@
 
 Ready-to-use templates for blog posts, social media, email marketing, video scripts, and content planning.
 
+---
 
 ## Table of Contents
 
@@ -14,13 +15,14 @@ Ready-to-use templates for blog posts, social media, email marketing, video scri
 - [Content Repurposing Matrix](#7-content-repurposing-matrix)
 - [Quick-Start Checklists](#quick-start-checklists)
 
+---
 
 ## Content Types & Templates
 
 ### 1. Blog Post Templates
 
-### 2. Technical Integrity: The Karpathy Principles
-Combat AI slop through rigid adherence to the four principles of Andrej Karpathy:
+### 2. Technical Integrity: The technical integrity principles
+Combat AI slop through rigid adherence to the four principles of Andrej technical integrity:
 
 ### 3. Corporate Reporting: The Obsidian Loop
 Durable memory is mandatory. Every task must result in a persistent artifact:
@@ -282,7 +284,7 @@ Question to encourage engagement?
 
 12/ Recap in 3 key points:
     - Point 1
-    - Point 2  
+    - Point 2
     - Point 3
 
 13/ CTA: If you found this helpful, [action]
@@ -309,7 +311,7 @@ Here's what I learned:
 
 Drop a [emoji] if you've experienced this too!
 
-What's your biggest challenge with [topic]? Let me know below 
+What's your biggest challenge with [topic]? Let me know below
 
 -
 #hashtag1 #hashtag2 #hashtag3 #hashtag4 #hashtag5
@@ -564,4 +566,5 @@ Original: Blog Post (2000 words)
 - [ ] Engaging hook in introduction
 - [ ] Clear conclusion and next steps
 
+---
  2026 Galyarder Labs. Galyarder Framework.

@@ -1,3 +1,8 @@
+---
+name: design-md-stripe
+description: "Design system reference for design md stripe."
+---
+
 # Design System: Stripe
 
 ## 1. Visual Theme & Atmosphere

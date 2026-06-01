@@ -7,6 +7,7 @@ Tests chart visibility, interactive tooltips, and legend behaviour.
 - Dashboard with charts at `{{baseUrl}}/dashboard`
 - Chart library: `{{chartLibrary}}` (e.g. Chart.js, Recharts, D3)
 
+---
 
 ## TypeScript
 
@@ -84,6 +85,7 @@ test.describe('Chart Rendering', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -128,4 +130,5 @@ test.describe('Chart Rendering', () => {
 | No-data state | Empty dataset  no-data message |
 | Accessible label | aria-label present on chart element |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

@@ -1,12 +1,14 @@
+---
 node_type: documentation
 silo: docs
-degree: 55
+degree: 54
 source: docs/design/index.md
+---
 # Design System Specifications
 
 ## 🧠 Strategic Intelligence
 This entity is a **documentation** within the **docs** silo. 
-It has a connectivity degree of **55**.
+It has a connectivity degree of **54**.
 
 ## 🔗 Neural Links
 
@@ -65,6 +67,3 @@ It has a connectivity degree of **55**.
 - [[Design-System:-Wise]] (structural_reference | 1.0)
 - [[Design-System:-xAI]] (structural_reference | 1.0)
 - [[Design-System:-Zapier]] (structural_reference | 1.0)
-
-### Informed By:
-- [[Welcome-to-Galyarder-Framework]] (structural_reference | 1.0)

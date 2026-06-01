@@ -2,6 +2,7 @@
 
 Platform-specific best practices, algorithm factors, content optimization strategies, and analytics frameworks.
 
+---
 
 ## Table of Contents
 
@@ -22,6 +23,7 @@ Platform-specific best practices, algorithm factors, content optimization strate
 - [Tool Stack Recommendations](#tool-stack-recommendations)
 - [Compliance & Best Practices](#compliance--best-practices)
 
+---
 
 ## Platform-Specific Best Practices
 
@@ -39,7 +41,7 @@ Platform-specific best practices, algorithm factors, content optimization strate
 
 #### Optimization Tips
 - First 2 lines are crucial (shown in preview)
-- Use emoji sparingly for visual breaks 
+- Use emoji sparingly for visual breaks
 - Include 3-5 relevant hashtags
 - Tag people and companies when relevant
 - Native video gets 5x more engagement
@@ -339,4 +341,5 @@ Sunday: Curated Content/Rest
 - Monitor brand mentions
 - Establish posting permissions
 
+---
  2026 Galyarder Labs. Galyarder Framework.

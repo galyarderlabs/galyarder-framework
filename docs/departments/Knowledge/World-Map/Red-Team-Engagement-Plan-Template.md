@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/executing-red-team-engagement-planning/assets/template.md
+---
 # Red Team Engagement Plan Template
 
 ## 🧠 Strategic Intelligence

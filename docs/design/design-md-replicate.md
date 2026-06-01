@@ -1,3 +1,8 @@
+---
+name: design-md-replicate
+description: "Design system reference for design md replicate."
+---
+
 # Design System: Replicate
 
 ## 1. Visual Theme & Atmosphere

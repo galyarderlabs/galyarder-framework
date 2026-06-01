@@ -1,85 +1,79 @@
-# Quick Start: The Galyarder Ecosystem
+# Quick Start: Agentic Company Setup
 
-Get the Galyarder Framework (Intelligence), Galyarder HQ (Control Plane), and Galyarder Agent (Presence) working together in under 10 minutes.
+Get Galyarder Framework, Galyarder Agent, and Galyarder HQ working together as an agentic-company stack.
 
 ## Prerequisites
 
-- Python 3.11+ (for Agent)
-- Node.js 20+ (for HQ/Dashboard)
+- Python 3.11+ for Galyarder Agent
+- Node.js 20+ for Galyarder HQ and the Framework CLI
 - Git installed
-- A project where you want to deploy (e.g., `~/projects/my-startup`)
+- A project where you want to deploy the operating structure, such as `~/projects/my-startup`
 
+## Phase 1: Install the Intelligence Layer
 
-## Phase 1: Initialize the Intelligence (Framework)
+Bootstrap Galyarder Framework with the global CLI.
 
-Bootstrap your system with the global Galyarder CLI.
+### Option A: NPM (recommended)
 
-### Option A: NPM (Recommended)
-Install directly from the global registry to get all commands instantly.
 ```bash
 npm install -g galyarder-framework
 ```
 
-### Option B: Skills.sh (Agentic)
-Pull specific intelligence bundles directly into your agent environment.
+### Option B: Skills.sh
+
+Pull all intelligence bundles, or install a department bundle only.
+
 ```bash
 # Pull everything
 npx skills add galyarderlabs/galyarder-framework --skill full
 
-# Or pull by department (engineering, growth, security, etc.)
+# Or pull by department
 npx skills add galyarderlabs/galyarder-framework --skill engineering
 ```
 
-### Option C: Git Clone
-For developers who want to stay on the bleeding edge of the source.
-```bash
-# 1. Clone the logic library
-git clone https://github.com/galyarderlabs/galyarder-framework.git ~/galyarder-framework
+### Option C: Git clone
 
-# 2. Setup global CLI
+Use the source directly when you want to inspect, modify, or contribute.
+
+```bash
+git clone https://github.com/galyarderlabs/galyarder-framework.git ~/galyarder-framework
 cd ~/galyarder-framework
 ./scripts/setup-cli.sh
 ```
 
+## Phase 2: Deploy the Framework into a project
 
-## Phase 2: Establish the Presence (Galyarder Agent)
-
-Deploy your physical assistant runtime.
-
-```bash
-# 1. Install via one-liner (Debian/Ubuntu example)
-curl -fsSL https://raw.githubusercontent.com/galyarderlabs/galyarder-agent/main/deploy/debian/install.sh | bash
-
-# 2. Initialize
-g-agent onboard
-g-agent gateway
-```
-
-
-## Phase 3: Initialize Your Project HQ
-
-Establish your specific project's digital headquarters.
+Create the project operating structure and deploy agent rules, skills, and commands to the tool you use.
 
 ```bash
 cd ~/projects/my-startup
 
-# 1. Build the Digital HQ structure
+# Create department/report/planning structure
 galyarder scaffold
 
-# 2. Inject Intelligence into your Agent
-galyarder deploy --tool galyarder-agent
+# Deploy to a target tool
+# Available: cursor, windsurf, kilocode, augment, openclaw, hermes, antigravity, galyarder-agent
+galyarder deploy --tool <name>
 ```
 
+## Phase 3: Add the Continuity Layer (Galyarder Agent)
 
-## Phase 4: Launch the Control Plane (Galyarder HQ)
-
-Deploy the governance dashboard to monitor your empire.
+Galyarder Agent gives the framework an interface: memory, channels, tool access, and recurring jobs.
 
 ```bash
-# 1. Clone the Control Plane
-git clone https://github.com/galyarderlabs/galyarder-hq.git ~/galyarder-hq
+# Debian/Ubuntu example
+curl -fsSL https://raw.githubusercontent.com/galyarderlabs/galyarder-agent/main/deploy/debian/install.sh | bash
 
-# 2. Start the Dashboard
+g-agent onboard
+g-agent gateway
+```
+
+## Phase 4: Add the Command Layer (Galyarder HQ)
+
+Galyarder HQ gives you visibility over departments, goals, reports, and agent activity.
+
+```bash
+git clone https://github.com/galyarderlabs/galyarder-hq.git ~/galyarder-hq
 cd ~/galyarder-hq
 npm install
 npm run dev
@@ -87,24 +81,25 @@ npm run dev
 
 The dashboard will be available at: **http://localhost:3100**
 
+## How the stack connects
 
-## How to Link the Triad
+1. **Galyarder Framework** provides the agents, skills, commands, and workflow protocols.
+2. **Galyarder Agent** gives those protocols memory, channels, and tool access.
+3. **Galyarder HQ** reads the project structure and shows goals, reports, and operating state.
+4. **Galyarder Ledger** can be added where finance, approvals, and evidence need ledger-backed execution.
 
-1.  **Galyarder Agent** talks to you on WhatsApp/Telegram.
-2.  **Galyarder Framework** provides the SOPs when the Agent performs tasks.
-3.  **Galyarder HQ** discovers the project and shows you the visual status.
+To connect a project in HQ:
 
-To connect a project in the dashboard:
-1. Open http://localhost:3100
-2. Click **"Connect Project"**.
-3. Point it to your project directory (`~/projects/my-startup`).
-
+1. Open `http://localhost:3100`.
+2. Click **Connect Project**.
+3. Point it to your project directory, such as `~/projects/my-startup`.
 
 ## Troubleshooting
 
 ### Commands not found
-Ensure `~/.local/bin` is in your PATH. Run `source ~/.zshrc` (or `.bashrc`) after running the setup script.
+
+Ensure `~/.local/bin` or your npm global bin directory is in your PATH. Restart your shell after setup.
 
 ### No agents detected
-Ensure you have run `galyarder scaffold` inside your project directory. Both Agent and HQ rely on the `docs/departments/` structure.
 
+Run `galyarder scaffold` inside the project directory, then deploy the framework to your target tool with `galyarder deploy --tool <name>`.

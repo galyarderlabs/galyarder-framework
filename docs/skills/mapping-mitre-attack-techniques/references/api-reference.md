@@ -65,4 +65,5 @@
 - [ATT&CK Navigator](https://mitre-attack.github.io/attack-navigator/)
 - [D3FEND](https://d3fend.mitre.org/)
 
+---
  2026 Galyarder Labs. Galyarder Framework.

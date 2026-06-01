@@ -1,3 +1,8 @@
+---
+name: design-md-kraken
+description: "Design system reference for design md kraken."
+---
+
 # Design System: Kraken
 
 ## 1. Visual Theme & Atmosphere

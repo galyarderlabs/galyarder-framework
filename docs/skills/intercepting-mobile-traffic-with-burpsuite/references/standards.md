@@ -39,4 +39,5 @@
 | CWE-352 | Cross-Site Request Forgery | Check for anti-CSRF tokens in requests |
 | CWE-613 | Insufficient Session Expiration | Test token validity after logout |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/intercepting-mobile-traffic-with-burpsuite/references/standards.md
+---
 # Standards Reference: Mobile Traffic Interception with Burp Suite
 
 ## 🧠 Strategic Intelligence

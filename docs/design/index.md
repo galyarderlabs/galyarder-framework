@@ -1,277 +1,331 @@
 # Design System Specifications
 
-Elite UI specifications to enforce aesthetic law.
+Production-grade interface specifications for consistent agent-generated product surfaces.
 
 <div class="grid cards" markdown>
 
 -   **[Airbnb](design-md-airbnb.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Airtable](design-md-airtable.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Apple](design-md-apple.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Bmw](design-md-bmw.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Cal](design-md-cal.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Claude](design-md-claude.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Clay](design-md-clay.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Clickhouse](design-md-clickhouse.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Cohere](design-md-cohere.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Coinbase](design-md-coinbase.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Composio](design-md-composio.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Cursor](design-md-cursor.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Elevenlabs](design-md-elevenlabs.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Expo](design-md-expo.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Figma](design-md-figma.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Framer](design-md-framer.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Hashicorp](design-md-hashicorp.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Ibm](design-md-ibm.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Intercom](design-md-intercom.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Kraken](design-md-kraken.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
--   **[Linear.App](design-md-linear.app.md)**
+-   **[Linear App](design-md-linear.app.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Lovable](design-md-lovable.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Minimax](design-md-minimax.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Mintlify](design-md-mintlify.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Miro](design-md-miro.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
--   **[Mistral.Ai](design-md-mistral.ai.md)**
+-   **[Mistral Ai](design-md-mistral.ai.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Mongodb](design-md-mongodb.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Notion](design-md-notion.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Nvidia](design-md-nvidia.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Ollama](design-md-ollama.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
--   **[Opencode.Ai](design-md-opencode.ai.md)**
+-   **[Opencode Ai](design-md-opencode.ai.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Pinterest](design-md-pinterest.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Posthog](design-md-posthog.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Raycast](design-md-raycast.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Replicate](design-md-replicate.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Resend](design-md-resend.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Revolut](design-md-revolut.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Runwayml](design-md-runwayml.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Sanity](design-md-sanity.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Sentry](design-md-sentry.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Spacex](design-md-spacex.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Spotify](design-md-spotify.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Stripe](design-md-stripe.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Supabase](design-md-supabase.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Superhuman](design-md-superhuman.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
--   **[Together.Ai](design-md-together.ai.md)**
+-   **[Together Ai](design-md-together.ai.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Uber](design-md-uber.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Vercel](design-md-vercel.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Voltagent](design-md-voltagent.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Warp](design-md-warp.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Webflow](design-md-webflow.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Wise](design-md-wise.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
--   **[X.Ai](design-md-x.ai.md)**
+-   **[X Ai](design-md-x.ai.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 -   **[Zapier](design-md-zapier.md)**
 
+    ---
 
-    Institutional-grade design law.
+    Evidence-backed design specification.
 
 </div>

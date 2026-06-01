@@ -1,5 +1,5 @@
 site_name: Galyarder Framework
-site_description: "Advanced Agentic Orchestration for the 1-Man Army. Implementing Autonomous Goal Integration (AGI)."
+site_description: "Open-source Agentic Company Framework for turning founder intent into coordinated execution across engineering, product, growth, finance, sales, security, docs, operations, and strategy."
 site_url: https://galyarderlabs.github.io/galyarder-framework/
 repo_url: https://github.com/galyarderlabs/galyarder-framework
 repo_name: galyarderlabs/galyarder-framework
@@ -55,7 +55,7 @@ nav:
   - Quick Start: QUICK_START.md
   - Triad Ecosystem: TRIAD_OVERVIEW.md
   - Unified Platform: UNIFIED_PLATFORM.md
-  - Humans 3.0 Workflow: WORKFLOW.md
+  - Agentic Company Workflow: WORKFLOW.md
   - Org Chart: ORG_CHART.md
   - Multi-Platform: INTEGRATION.md
   - Migration: MIGRATION.md
@@ -70,6 +70,17 @@ nav:
   - Integration Checklist: INTEGRATION_COMPLETE.md
   - Changelog: CHANGELOG.md
   - Release Notes: RELEASE-NOTES.md
+
+exclude_docs: |
+  README.codex.md
+  README.opencode.md
+  KNOWLEDGE_GRAPH_SUMMARY.md
+  departments/**
+  galyarder-labs/**
+  plans/**
+  reports/**
+  specs/**
+  templates/**
 
 markdown_extensions:
   - admonition

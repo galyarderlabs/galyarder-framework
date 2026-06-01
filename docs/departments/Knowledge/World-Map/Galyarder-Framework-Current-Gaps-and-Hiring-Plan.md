@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/templates/Galyarder-Framework Current Gaps and Hiring Plan.md
+---
 # Galyarder Framework Current Gaps and Hiring Plan
 
 ## 🧠 Strategic Intelligence

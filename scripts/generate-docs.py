@@ -21,6 +21,48 @@ ICONS = {
     "default": "material-folder-zip"
 }
 
+
+PUBLIC_DOC_REPLACEMENTS = [
+    (r"THE 1-MAN ARMY GLOBAL PROTOCOLS \(MANDATORY\)", "AGENTIC COMPANY OPERATING PROTOCOLS"),
+    (r"1-Man Army Global Protocols", "agentic company operating protocols"),
+    (r"1-Man Army Command Protocol", "agentic-company command protocol"),
+    (r"1-Man Army", "agentic company"),
+    (r"Humans 3\.0", "human-directed execution"),
+    (r"zero[- ]slop", "verified-output"),
+    (r"Digital HQ", "project operating workspace"),
+    (r"Global Karpathy protocol", "technical integrity protocol"),
+    (r"Karpathy Principles", "technical integrity principles"),
+    (r"\bKarpathy\b", "technical integrity"),
+    (r"high-integrity", "evidence-backed"),
+    (r"High-integrity", "Evidence-backed"),
+    (r"\bAGI\b", "Agentic Company Framework"),
+    (r"Autonomous Goal Integration", "Open-source Agentic Company Framework"),
+    (r"\bswarms\b", "workflows"),
+    (r"\bSwarms\b", "Workflows"),
+    (r"\bswarm\b", "workflow"),
+    (r"\bEmpire\b", "Company"),
+    (r"\bempire\b", "company"),
+    (r"\bsentient\b", "persistent"),
+    (r"\bSentient\b", "Persistent"),
+]
+
+
+def sanitize_public_copy(text):
+    """Rewrite older runtime/source language into public docs positioning.
+
+    The source packages may retain historical/internal names, but MkDocs output should
+    present Framework as a human-directed Agentic Company Framework / Intelligence Layer.
+    """
+    for pattern, replacement in PUBLIC_DOC_REPLACEMENTS:
+        text = re.sub(pattern, replacement, text)
+    # Keep the internal term, but never leave the public docs sounding like an
+    # artificial-general-intelligence claim.
+    text = text.replace(
+        "Open-source Agentic Company Framework means Open-source Agentic Company Framework",
+        "Open-source Agentic Company Framework means turning goals into governed execution",
+    )
+    return text
+
 def prettify(name):
     # Fix double names and kebab-case
     name = name.replace("-", " ").replace("_", " ").title()
@@ -41,8 +83,8 @@ class Asset:
 
     def parse(self):
         with open(self.src_path, "r", encoding="utf-8") as f:
-            raw = f.read()
-        
+            raw = sanitize_public_copy(f.read())
+
         # 1. Extract Frontmatter
         fm_match = re.search(r"^---\s*\n(.*?)\n---", raw, re.DOTALL)
         if fm_match:
@@ -62,7 +104,7 @@ class Asset:
                 self.title = h1_match.group(1).strip()
                 # Remove the H1 from content to avoid double headers
                 self.content = re.sub(r"^# .*", "", self.content, count=1, flags=re.MULTILINE).strip()
-        
+
         if not self.title or self.title == "|":
             self.title = prettify(self.name)
 
@@ -70,7 +112,7 @@ class Asset:
         if self.description == "|" or not self.description:
             clean_content = re.sub(r"##.*", "", self.content, flags=re.DOTALL).strip()
             # Remove protocol headers from description preview
-            clean_content = re.sub(r"## THE 1-MAN ARMY GLOBAL PROTOCOLS.*?\n---", "", clean_content, flags=re.DOTALL).strip()
+            clean_content = re.sub(r"## (THE 1-MAN ARMY GLOBAL PROTOCOLS|AGENTIC COMPANY OPERATING PROTOCOLS).*?\n---", "", clean_content, flags=re.DOTALL).strip()
             lines = [l for l in clean_content.split("\n") if l.strip() and not l.startswith("#") and not l.startswith(">")]
             if lines:
                 self.description = lines[0][:200].strip().rstrip(".") + "..."
@@ -99,91 +141,105 @@ description: "{self.description}"
 
 def generate():
     print("🚀 Executing Professional Portal Synchronization...")
-    
+
     # Clean output directories
     for d in ["agents", "skills", "commands", "design"]:
         target = DOCS_DIR / d
         if target.exists(): shutil.rmtree(target)
         target.mkdir(parents=True, exist_ok=True)
 
-    # 0. Sync Core Files from Root and Fix Internal Links
-    print("[*] Syncing all core markdown files...")
-    for f in REPO_ROOT.glob("*.md"):
-        # Skip temporary, oversized, or platform-specific raw instructions
-        if f.name in ["README.md", "README_GOOD.md", "README_CURRENT.md", "CLAUDE.md", "GEMINI.md"]: continue
-        
+    # 0. Sync selected core files from root and fix internal links.
+    print("[*] Syncing selected core markdown files...")
+    sync_core_files = {"AGENTS.md", "CHANGELOG.md", "RELEASE-NOTES.md", "WORKFLOW.md"}
+    for name in sorted(sync_core_files):
+        f = REPO_ROOT / name
+        if not f.exists():
+            continue
         with open(f, 'r', encoding='utf-8') as src:
-            content = src.read()
-        
-        # FIX: Remove "docs/" from relative links because they are now in the docs/ folder
+            content = sanitize_public_copy(src.read())
+
+        # FIX: Remove "docs/" from relative links because these files are
+        # copied into docs/. Keep the captured path, not a control character.
         content = re.sub(r'\(docs/([^)]+\.md)\)', r'(\1)', content)
-        
+
         dest = DOCS_DIR / f.name
         with open(dest, 'w', encoding='utf-8') as out:
             out.write(content)
         print(f"  - Synchronized and repaired: {f.name}")
 
-    # Discovery
-    silos = {}
+    # Discovery: v1.9.9 uses canonical root-level agents/, skills/, and commands/.
+    # Older plugin-silo discovery is retained as fallback for nested marketplace bundles.
+    silos = {
+        "framework": {
+            "icon": ICONS["default"],
+            "label": "Framework",
+            "path": REPO_ROOT,
+        }
+    }
     for item in REPO_ROOT.iterdir():
         if item.is_dir() and (item / ".claude-plugin" / "plugin.json").exists():
             with open(item / ".claude-plugin" / "plugin.json", "r") as f:
                 manifest = json.load(f)
                 cat = manifest.get("category", "default")
-                silos[item.name] = {"icon": ICONS.get(cat, ICONS["default"]), "label": item.name}
+                silos[item.name] = {
+                    "icon": ICONS.get(cat, ICONS["default"]),
+                    "label": item.name,
+                    "path": item,
+                }
 
     inventory = {"agents": {}, "skills": {}, "commands": {}}
 
     for silo_name, info in silos.items():
-        silo_path = REPO_ROOT / silo_name
-        
+        silo_path = info["path"]
+
         # 1. Agents
         agent_src = silo_path / "agents"
         if agent_src.exists():
-            for f in agent_src.glob("*.md"):
-                if f.name == "README.md": continue
+            for f in sorted(agent_src.glob("*.md")):
+                if f.name == "README.md":
+                    continue
                 a = Asset(f, "agent")
                 out_path = DOCS_DIR / "agents" / f.name
                 with open(out_path, "w", encoding="utf-8") as out:
                     out.write(a.generate_page(info["icon"], info["label"]))
-                if silo_name not in inventory["agents"]: inventory["agents"][silo_name] = []
-                inventory["agents"][silo_name].append((a.title, f"{f.name}", a.description))
+                inventory["agents"].setdefault(silo_name, []).append((a.title, f"{f.name}", a.description))
 
         # 2. Commands
         cmd_src = silo_path / "commands"
         if cmd_src.exists():
-            for f in cmd_src.glob("*.md"):
+            for f in sorted(cmd_src.glob("*.md")):
                 c = Asset(f, "command")
                 out_path = DOCS_DIR / "commands" / f.name
                 with open(out_path, "w", encoding="utf-8") as out:
                     out.write(c.generate_page(info["icon"], info["label"]))
-                if silo_name not in inventory["commands"]: inventory["commands"][silo_name] = []
-                inventory["commands"][silo_name].append((f"/{c.name}", f"{f.name}", c.description))
+                inventory["commands"].setdefault(silo_name, []).append((f"/{c.name}", f"{f.name}", c.description))
 
         # 3. Skills
         skill_src = silo_path / "skills"
         if skill_src.exists():
-            for skill_folder in skill_src.iterdir():
-                if not skill_folder.is_dir(): continue
+            for skill_folder in sorted(skill_src.iterdir()):
+                if not skill_folder.is_dir():
+                    continue
                 skill_md = skill_folder / "SKILL.md"
-                if skill_md.exists():
-                    s = Asset(skill_md, "skill")
-                    dest_folder = DOCS_DIR / "skills" / skill_folder.name
-                    dest_folder.mkdir(exist_ok=True)
-                    with open(dest_folder / "index.md", "w", encoding="utf-8") as out:
-                        out.write(s.generate_page(info["icon"], info["label"]))
-                    for sub in ["references", "assets", "templates"]:
-                        if (skill_folder / sub).exists():
-                            shutil.copytree(skill_folder / sub, dest_folder / sub, dirs_exist_ok=True)
-                    
-                    if silo_name not in inventory["skills"]: inventory["skills"][silo_name] = []
-                    inventory["skills"][silo_name].append((s.title, f"{skill_folder.name}/index.md", s.description))
+                if not skill_md.exists():
+                    continue
+                s = Asset(skill_md, "skill")
+                dest_folder = DOCS_DIR / "skills" / skill_folder.name
+                dest_folder.mkdir(exist_ok=True)
+                with open(dest_folder / "index.md", "w", encoding="utf-8") as out:
+                    out.write(s.generate_page(info["icon"], info["label"]))
+                for sub in ["references", "assets", "templates"]:
+                    if (skill_folder / sub).exists():
+                        shutil.copytree(skill_folder / sub, dest_folder / sub, dirs_exist_ok=True)
+                        for copied in (dest_folder / sub).rglob("*.md"):
+                            copied.write_text(sanitize_public_copy(copied.read_text(encoding="utf-8", errors="replace")), encoding="utf-8")
+                inventory["skills"].setdefault(silo_name, []).append((s.title, f"{skill_folder.name}/index.md", s.description))
 
     # 4. Generate High-Density Grid Landing Pages
     for category in ["agents", "skills", "commands"]:
         idx_content = f"# Galyarder Framework: {category.title()}\n\n"
-        idx_content += "Discover the high-integrity workforce and protocols designed for autonomous orchestration.\n\n"
-        
+        idx_content += "Discover the agentic company workforce, commands, and operating protocols designed for human-directed execution.\n\n"
+
         for silo_name in sorted(inventory[category].keys()):
             info = silos[silo_name]
             mk_icon = f":{info['icon'].replace('/', '-')}:"
@@ -192,12 +248,12 @@ def generate():
             for title, link, desc in sorted(inventory[category][silo_name]):
                 idx_content += f"-   **[{title}]({link})**\n\n    ---\n\n    {desc}\n\n"
             idx_content += "</div>\n\n"
-            
+
         with open(DOCS_DIR / category / "index.md", "w", encoding="utf-8") as f:
             f.write(idx_content)
 
     # Special Case: Design System Grid
-    design_idx = "# Design System Specifications\n\nElite UI specifications to enforce aesthetic law.\n\n"
+    design_idx = "# Design System Specifications\n\nProduction-grade interface specifications for consistent agent-generated product surfaces.\n\n"
     design_idx += '<div class="grid cards" markdown>\n\n'
     design_src = REPO_ROOT / "skills"
     if design_src.exists():
@@ -207,8 +263,10 @@ def generate():
                 continue
             output_name = f"{skill_dir.name}.md"
             shutil.copy(skill_file, DOCS_DIR / "design" / output_name)
+            design_page = DOCS_DIR / "design" / output_name
+            design_page.write_text(sanitize_public_copy(design_page.read_text(encoding="utf-8", errors="replace")), encoding="utf-8")
             title = skill_dir.name.replace("design-md-", "").replace("-", " ").replace(".", " ").title()
-            design_idx += f"-   **[{title}]({output_name})**\n\n    ---\n\n    Institutional-grade design law.\n\n"
+            design_idx += f"-   **[{title}]({output_name})**\n\n    ---\n\n    Evidence-backed design specification.\n\n"
     design_idx += "</div>"
     with open(DOCS_DIR / "design/index.md", "w", encoding="utf-8") as f: f.write(design_idx)
 

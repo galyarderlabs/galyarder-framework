@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/templates/Galyarder-Framework Knowledge Audit.md
+---
 # Galyarder Framework Knowledge Audit
 
 ## 🧠 Strategic Intelligence

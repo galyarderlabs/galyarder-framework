@@ -8,6 +8,7 @@ Tests email verification link, resend flow, and expired token handling.
 - Expired token: `{{expiredVerificationToken}}`
 - App running at `{{baseUrl}}`
 
+---
 
 ## TypeScript
 
@@ -69,6 +70,7 @@ test.describe('Email Verification', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -115,4 +117,5 @@ test.describe('Email Verification', () => {
 | Invalid token | Generic error heading |
 | Already verified | "Already verified" with login link |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

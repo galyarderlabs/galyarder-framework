@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/open-source-license/references/licenses/copyleft.md
+---
 # Copyleft Open Source Licenses
 
 ## 🧠 Strategic Intelligence

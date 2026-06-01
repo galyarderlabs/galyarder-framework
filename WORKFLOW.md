@@ -1,107 +1,97 @@
-# Galyarder Framework: The 1-Man Army Workflow
+# Galyarder Framework: Agentic Company Workflow
 
-Code without distribution is unfinished. Development without validation is chaos. The Galyarder Framework enforces a deterministic, high-rigor sequence for Autonomous Goal Integration: converting high-level operator intent into plans, implementation, tests, audits, and distribution with explicit proof gates.
+The workflow turns founder/operator intent into reviewed work across departments. It is designed for software, product, growth, finance, sales, documentation, legal, security, operations, and strategy. Coding is one surface area; the framework is broader than coding.
 
-## The Foundation: Global Mandatory Protocols
+## Foundation Protocols
 
-Every phase of the workflow is governed by the 1-Man Army Global Protocols:
-1. **Token Economy**: Mandatory use of the `rtk` proxy for all terminal operations.
-2. **Traceability**: All computational labor must occur within a project-scoped Linear issue via the **IssueTracker Interface**.
-3. **Cognitive Integrity**: Explicit Scratchpad Reasoning and `sequentialthinking` MCP loop before any high-impact action.
-4. **Technical Integrity (Karpathy)**: Think Before Coding, Simplicity First, Surgical Changes, and Goal-Driven Execution.
-5. **The Obsidian Loop**: Every task must result in a durable markdown report saved to the relevant department folder in `docs/departments/` via the **MemoryStore Interface**.
+Every workflow should keep these operating constraints visible:
+
+1. **Traceability** — work maps to a scoped issue, brief, plan, decision, report, or PR.
+2. **Grounding** — agents inspect the repo, source docs, user context, and relevant APIs before acting.
+3. **Routing** — work moves to the correct department, agent, skill, command, or tool path.
+4. **Planning** — non-trivial work gets a blueprint with constraints, risks, success criteria, and proof gates.
+5. **Verification** — completion claims require tests, builds, reviews, citations, screenshots, logs, workflow runs, or other evidence.
+6. **Persistence** — useful results become durable artifacts: docs, reports, release notes, campaigns, financial models, decision logs, or reusable skills.
+7. **Human approval** — public, external, financial, irreversible, access, or production-sensitive actions require the operator's approval.
 
 ---
 
 ## Operational Modes
 
-To maintain high velocity without sacrificing institutional-grade quality, the framework operates in three distinct modes. You must explicitly declare your mode:
-
-1. **BUILD Mode (Default)**: The standard path. High ceremony, rigid architectural blueprinting, and full TDD gating. Used for 90% of development.
-2. **INCIDENT Mode**: Emergency protocol for hotfixes. Bypasses the PRD and Blueprinting phases for speed. 
-   - **Governance**: Hotfixes MUST be converted into a proper `BUILD` follow-up within 48 hours to clean up technical debt.
-   - **Constraint**: Requires a post-mortem ticket in Linear and a patch release note.
-3. **EXPERIMENT Mode**: Timeboxed, throwaway code for rapid validation. TDD is optional. Code is quarantined and cannot be merged to `main`.
+| Mode | Use case | Rules |
+| :--- | :--- | :--- |
+| **BUILD** | Normal product, docs, growth, finance, or engineering work | Use planning, implementation, review, and verification gates. |
+| **INCIDENT** | Urgent breakage or production risk | Move faster, document the incident, and create follow-up cleanup work. |
+| **EXPERIMENT** | Timeboxed exploration or prototype | Keep it reversible, mark assumptions, and avoid merging throwaway work into stable paths. |
 
 ---
 
-## The Gating Ladder (Audit Standard)
+## Verification Ladder
 
-Every mission in `BUILD` or `INCIDENT` mode must pass through the following verification gates before the Obsidian Loop concludes:
+Use the cheapest proof that actually verifies the claim.
 
-1. **Gate 1: Unit Test**: Logic-level verification. Must prove **Test Oracle / Negative Control** (test fails for the correct reason via mutation/variant) before passing.
-2. **Gate 2: Contract Test**: Interface-level verification of the structural exchange format (JSON schema/payload) between agents and tools. Location: `tests/contract/`.
-3. **Gate 3: E2E/Smoke**: Golden path verification in a live or simulated environment (e.g., via BrowserOS).
-
----
-
-## Phase 1: Market Intelligence & Discovery (The "Why")
-
-**Executive Oversight:** `galyarder-ceo`, `galyarder-cmo`
-**Agents:** `product-manager`, `growth-strategist`
-**Skills:** `brainstorming`, `write-a-prd`, `competitor-alternatives`, `linear-ticket-management`
-
-*(Bypassed in INCIDENT and EXPERIMENT modes)*
-
-Before a single line of code is written:
-1. **Intent Extraction**: The CEO clarifies the business intent and strategic advantage.
-2. **Market Mapping**: The CMO analyzes the competitive landscape and identifies cognitive arbitrage opportunities.
-3. **Requirement Locking**: Requirements are solidified in a PRD. Define the `ubiquitous-language`.
-4. **Linear Epic Initialization**: Parse the PRD into project-scoped Linear tickets. Assign complexity and ROI.
-
-## Phase 2: Architecture & Blueprinting (The "Blueprint")
-
-**Executive Oversight:** `galyarder-cto`
-**Agents:** `super-architect`, `interface-designer`
-**Skills:** `prd-to-plan`, `design-an-interface`
-
-*(Bypassed in INCIDENT and EXPERIMENT modes)*
-
-Once the PRD and Linear tickets are approved:
-1. **System Design**: The CTO oversees the drafting of the system architecture (DB Schema, API Contracts).
-2. **Context Versioning**: Agents MUST use `context7` to verify version metadata against local dependencies before designing interfaces.
-3. **Architecture Decision Records (ADR)**: Document the "Why" behind every major technical choice.
-4. **Vertical Slicing**: Break work down into Tracer Bullets in a `plan.md`. Every slice must cut through all layers (DB -> UI) and be independently verifiable.
-
-## Phase 3: Execution & Testing (The "Factory")
-
-**Executive Oversight:** `galyarder-cto`
-**Agents:** `elite-developer`, `ui-ux-designer`, `security-guardian`, `perseus`
-**Skills:** `subagent-driven-development`, `test-driven-development`, `systematic-debugging`
-
-With the blueprint finalized:
-1. **Linear Transition**: Set the ticket to "In Progress".
-2. **Deterministic Implementation**: The `elite-developer` implements vertical slices using the 1-Man Army protocol.
-3. **Iron Law of TDD**: Implement failing tests (Red), prove they fail for the right reason, then pass (Green), then refactor.
-4. **Security Hardening**: Run offensive audits via `perseus` on authentication and data-handling logic.
-
-## Phase 4: Integration, Compliance & QA (The "Gatekeeper")
-
-**Executive Oversight:** `galyarder-cfo-coo`, `galyarder-cto`
-**Agents:** `devops-engineer`, `qa-automation-engineer`, `legal-counsel`
-**Skills:** `requesting-code-review`, `finishing-a-development-branch`, `devops-deployment`, `verification-before-completion`
-
-After the feature is built:
-1. **Live Audit**: The `qa-automation-engineer` uses **BrowserOS** to verify the live build and ensure zero regressions.
-2. **Hardening**: Ensure implementation follows least privilege and web-input hygiene.
-3. **Zero Waste Verification**: Ensure no orphaned code, speculative abstractions, or hardcoded secrets exist.
-4. **CI/CD Deployment**: Establish IaC (Docker/Terraform) and automated deployment pipelines.
-
-## Phase 5: Marketing, Video & Distribution (The Growth)
-
-**Executive Oversight:** `galyarder-cmo`
-**Agents:** `growth-strategist`, `remotion-engineer`, `social-strategist`
-**Skills:** `seo-audit`, `schema-markup`, `copywriting`, `video-generation`, `social-content`
-
-Once the code is merged:
-1. **Cognitive Messaging**: Write high-signal marketing copy based on behavioral heuristics.
-2. **SEO Topography**: Inject Schema.org markup and update programmatic SEO topic clusters.
-3. **Programmatic Distribution**: The `remotion-engineer` generates data-driven marketing and changelog videos.
-4. **Memetic Warfare**: Engineer social distribution threads and transition the Linear ticket to "Done".
+1. **Logic-level checks**: unit tests, schema validation, lint, typecheck, calculations, or static scans.
+2. **Interface checks**: API contracts, CLI output, generated files, markdown/docs rendering, or tool-response shape.
+3. **System checks**: smoke tests, browser tests, workflow runs, deploy checks, or live artifact verification.
+4. **Human review gates**: approval for public posts, external sends, security changes, production deploys, account access, and irreversible actions.
 
 ---
 
-**Core Rule**: Never skip phases (unless explicitly in INCIDENT or EXPERIMENT mode). Every change must trace to a verified request and conclude with a durable report. Information flows up; Vision flows down.
+## Phase 1: Intent and Context
 
----
-Copyright 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.
+**Typical owners:** `galyarder-ceo`, `galyarder-cmo`, `product-manager`, `growth-strategist`
+
+**Common skills:** `brainstorming`, `write-a-prd`, `competitor-alternatives`, `market-research`, `founder-context`
+
+1. Clarify the operator's goal and the real outcome.
+2. Identify the buyer, user, stakeholder, system, or workflow affected.
+3. Define success criteria, constraints, assumptions, risks, and kill conditions.
+4. Create a PRD, issue, planning note, or short execution brief when needed.
+
+## Phase 2: Architecture and Blueprinting
+
+**Typical owners:** `galyarder-cto`, `super-architect`, `architect`, `planner`
+
+**Common skills:** `prd-to-plan`, `writing-plans`, `ubiquitous-language`, `design-an-interface`
+
+1. Inspect the current codebase, docs, data, or workflow surface.
+2. Pull current official references for APIs and platform behavior.
+3. Choose the smallest viable implementation path.
+4. Break work into vertical slices or domain-specific deliverables.
+5. Write decisions as ADRs, plans, or reviewable notes when the tradeoff matters.
+
+## Phase 3: Specialist Execution
+
+**Typical owners:** `elite-developer`, `ui-ux-designer`, `security-guardian`, `legal-counsel`, `financial-analyst`, `growth-engineer`, `sales-engineer`
+
+**Common skills:** `subagent-driven-development`, `test-driven-development`, `systematic-debugging`, `copywriting`, `financial-analyst`, `legal-tos-privacy`, `social-content`
+
+1. Move the active issue, brief, or task into progress.
+2. Execute through the correct specialist, command, tool, or subagent.
+3. Keep changes scoped to the outcome.
+4. Preserve useful technical content instead of replacing it with generic messaging.
+5. Leave enough context for another maintainer to inspect the result.
+
+## Phase 4: Review, Compliance, and QA
+
+**Typical owners:** `qa-automation-engineer`, `code-reviewer`, `security-reviewer`, `devops-engineer`, `legal-counsel`, `galyarder-cfo-coo`
+
+**Common skills:** `requesting-code-review`, `verification-before-completion`, `security-reviewer`, `devops-engineer`, `gdpr-ccpa-privacy-auditor`
+
+1. Run the relevant test, build, lint, render, security, or source-verification checks.
+2. Review for overreach, unsafe automation, secrets, fragile assumptions, and unverified claims.
+3. Confirm external/public actions are approved before sending, posting, inviting, deploying, or changing access.
+4. Record evidence and blockers instead of hiding uncertainty.
+
+## Phase 5: Distribution and Memory
+
+**Typical owners:** `galyarder-cmo`, `docs`, `social-strategist`, `release-manager`, `obsidian-architect`
+
+**Common skills:** `seo-audit`, `schema-markup`, `copywriting`, `social-content`, `docs`, `release-manager`, `obsidian`
+
+1. Prepare release notes, documentation, launch copy, or a distribution plan when the work is meant to ship.
+2. Save reusable knowledge into docs, skills, decisions, or reports.
+3. Update the issue/task state and name the evidence used.
+4. Hand the final decision back to the operator when public, external, financial, or irreversible action is involved.
+
+**Core rule:** do not call work complete until the relevant artifact exists and the verification path has been exercised.

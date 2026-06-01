@@ -1,6 +1,6 @@
 # Galyarder Migration Guide: v1.7.x -> v1.8.0
 
-Version 1.8.0 introduces a high-integrity flattening of the repository structure. The legacy `framework/` subdirectory has been removed to reduce path depth and improve tool compatibility.
+Version 1.8.0 introduces a compatibility-focused flattening of the repository structure. The legacy `framework/` subdirectory has been removed to reduce path depth and improve tool compatibility.
 
 ## Path Mapping (Mechanical Migration)
 
@@ -16,7 +16,7 @@ If you have custom scripts or local references, update them according to this ma
 | `skills/` | `[Department]/skills/` |
 | `.claude/marketplace.json` | `.claude-plugin/marketplace.json` |
 
-## v1.8.15 -> v1.8.16 (The Zero-Slop Hardening)
+## v1.8.15 -> v1.8.16 (Context Loading Hardening)
 
 ### 1. Aider Decommission
 The `integrations/aider` directory and the 2MB+ `CONVENTIONS.md` monolith have been permanently purged. If you previously relied on Aider, we recommend transitioning to **Claude Code** or **Gemini CLI** for superior context handling.
@@ -71,7 +71,7 @@ We have consolidated all separate shell scripts into a single, high-fidelity Nod
 | `galyarder-convert` | `galyarder convert` |
 
 ### 3. Departmental Infrastructure
-The number of mandatory departments has been finalized to 8. If your Digital HQ was scaffolded before v1.9.5, you may be missing the **Infrastructure** department.
+The number of mandatory departments has been finalized to 8. If your project operating workspace was scaffolded before v1.9.5, you may be missing the **Infrastructure** department.
 
 **To fix:**
 ```bash

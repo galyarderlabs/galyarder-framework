@@ -39,6 +39,7 @@
 
 **Responsible:** [Owner] | **Target Date:** [Date]
 
+---
 
 ### [Variance Item 2]
 
@@ -54,6 +55,7 @@
 
 **Responsible:** [Owner] | **Target Date:** [Date]
 
+---
 
 ## Department Performance
 
@@ -115,7 +117,9 @@ Based on current variances, the full-year forecast is adjusted as follows:
 | 2 | [Action description] | [Name] | [Date] | [Open/In Progress/Complete] |
 | 3 | [Action description] | [Name] | [Date] | [Open/In Progress/Complete] |
 
+---
 
 *Report generated using Financial Analyst Skill - Budget Variance Analyzer*
 
+---
  2026 Galyarder Labs. Galyarder Framework.

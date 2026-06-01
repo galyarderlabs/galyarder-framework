@@ -1,7 +1,7 @@
 {
   "name": "galyarder-framework",
   "version": "1.9.9",
-  "description": "Galyarder Framework: High-Integrity Intelligence Layer for AI Agents",
+  "description": "Open-source Agentic Company Framework and Intelligence Layer for human-directed AI execution",
   "main": "index.js",
   "bin": {
     "galyarder": "bin/galyarder.js",
@@ -21,7 +21,12 @@
     "ai",
     "agents",
     "intelligence-layer",
-    "mcp"
+    "mcp",
+    "agentic-company",
+    "human-directed-execution",
+    "autonomous-agents",
+    "skills",
+    "commands"
   ],
   "author": "Galyarder Labs",
   "license": "MIT",

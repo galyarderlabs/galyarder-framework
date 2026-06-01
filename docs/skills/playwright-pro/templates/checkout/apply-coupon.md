@@ -8,6 +8,7 @@ Tests valid coupon code, invalid code, and expired coupon handling.
 - Expired coupon: `{{expiredCouponCode}}`
 - App running at `{{baseUrl}}`
 
+---
 
 ## TypeScript
 
@@ -77,6 +78,7 @@ test.describe('Apply Coupon', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -120,4 +122,5 @@ test.describe('Apply Coupon', () => {
 | Category restriction | Coupon not applicable error |
 | Empty field | Apply button disabled |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

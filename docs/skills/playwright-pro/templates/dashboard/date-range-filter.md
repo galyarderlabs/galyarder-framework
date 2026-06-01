@@ -6,6 +6,7 @@ Tests date picker interaction, preset ranges, and data refresh on selection.
 - Authenticated session via `{{authStorageStatePath}}`
 - Dashboard at `{{baseUrl}}/dashboard`
 
+---
 
 ## TypeScript
 
@@ -86,6 +87,7 @@ test.describe('Date Range Filter', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -133,4 +135,5 @@ test.describe('Date Range Filter', () => {
 | Invalid range | End before start  apply disabled |
 | URL persistence | Range in URL survives reload |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

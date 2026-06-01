@@ -1,74 +1,80 @@
-# Galyarder Ecosystem: The Unified Platform
+# Galyarder Ecosystem: Unified Agentic Company Platform
 
-The Galyarder ecosystem is designed as a modular, distributed platform where **Intelligence** (Framework) and **Governance** (HQ) work in perfect symmetry to automate the 1-Man Army.
+The Galyarder ecosystem is a modular agentic-company platform where Framework, Agent, HQ, and Ledger work together without forcing everything into one monolithic app.
 
-## The Vision
+## The vision
 
-**One unified environment** where you can:
-1.  **Orchestrate**: Create and manage multiple digital companies via **Galyarder HQ**.
-2.  **Execute**: Hire 40+ specialized agents from the **Galyarder Framework**.
-3.  **Audit**: Monitor progress, review Obsidian reports, and track Linear tickets from a single web dashboard.
-4.  **Scale**: Run agents across any host (Claude, Gemini, Cursor) while maintaining a central source of truth.
+One coordinated environment where you can:
 
+1. **Structure work** with Framework agents, skills, commands, and review protocols.
+2. **Stay connected** through Galyarder Agent's memory, channels, and tools.
+3. **Govern execution** through Galyarder HQ's goals, approvals, departments, reports, and operating visibility.
+4. **Preserve evidence** through Ledger-backed finance and operational records where needed.
+5. **Scale across projects** while keeping a shared execution model.
 
-## Distributed Architecture
+## Distributed architecture
 
 ```text
-       [ GALYARDER HQ ] (Web UI)
-           (Control Plane)
-  _________________ | _________________
-  |                 |                 |
-[ Project A ]     [ Project B ]     [ Project C ]
-  (Digital HQ)      (Digital HQ)      (Digital HQ)
-      |                 |                 |
-                        |
-            [ GALYARDER FRAMEWORK ]
-              (Intelligence Layer)
+       [ GALYARDER HQ ]
+       command and visibility
+  ______________|________________
+  |             |               |
+[ Project A ] [ Project B ] [ Project C ]
+  docs/issues   docs/issues     docs/issues
+      |              |              |
+      |       [ GALYARDER FRAMEWORK ]
+      |        intelligence layer
+      |              |
+      +------ [ GALYARDER AGENT ]
+              continuity and tools
 ```
 
-1.  **Galyarder Framework**: Provides the logic, agent profiles, and elite SOPs.
-2.  **Digital HQ**: Every project initialized via `galyarder scaffold` becomes an indexable entity.
-3.  **Galyarder HQ (Web UI)**: Discovers these projects on your local or remote file system and provides the governance interface.
+1. **Galyarder Framework** provides the agent profiles, skills, commands, and operating protocols.
+2. **Project Operating Structure** is created by `galyarder scaffold` so each project has a place for plans, reports, departments, and decisions.
+3. **Galyarder HQ** discovers and displays the operating state.
+4. **Galyarder Agent** connects the workflow to real channels and tools.
+5. **Galyarder Ledger** can be added for financial execution, approvals, and evidence-heavy work.
 
+## Implementation protocol
 
-## Implementation Protocol
+### 1. Intelligence injection
 
-### 1. Intelligence Injection
-The framework acts as the "Software" for your AI assistants. By installing the framework, you give your agents the protocols needed to produce institutional-grade work.
+Install Framework to give your agents reusable operating protocols instead of one-off prompts.
 
-### 2. Digital Headquarters (Scaffolding)
-By running `galyarder scaffold` in your project root, you create the **Universal Schema** that Galyarder HQ uses for discovery:
-- `docs/departments/`: Strategic memory.
-- `docs/plans/`: Execution blueprints.
-- `docs/reports/`: Executive summaries.
+### 2. Project scaffolding
 
-### 3. HQ Discovery Loop
-Galyarder HQ is built to "listen" to your file system. It parses your project's Digital HQ structure to:
-- Map the Org Chart based on active reports.
-- Visualize the mission status via Linear integration.
-- Archive decisions and milestones for long-term memory.
+Run `galyarder scaffold` in your project root to create a structure HQ and agents can read:
 
+- `docs/departments/`: department reports and durable operating knowledge.
+- `docs/plans/`: execution blueprints and implementation plans.
+- `docs/reports/`: status updates, audit notes, release reports, and decision summaries.
 
-## User Experience
+### 3. HQ discovery loop
 
-### Standalone (Framework only):
-1. Chat with your AI assistant.
-2. Manually read Obsidian reports to check progress.
-3. Use the terminal to track tickets.
+Galyarder HQ reads the project structure to:
 
-### Unified (Framework + HQ):
-1. Open the Galyarder HQ dashboard.
-2. View your entire 1-Man Empire at a glance.
-3. See which agents are active, which tickets are blocked, and read historical reports in a high-fidelity web UI.
-4. Switch between projects (Ledger, SaaS, API) instantly without losing context.
+- map active work by department;
+- show blocked or completed work;
+- surface reports and decisions;
+- connect project state back to goals, approvals, and operating history.
 
+## User experience
+
+### Standalone Framework
+
+1. Work through your AI assistant or coding tool.
+2. Use Framework commands and skills for planning, implementation, review, docs, and release.
+3. Read generated plans, reports, and diffs directly in the project.
+
+### Framework + Agent + HQ
+
+1. Talk to Galyarder Agent through the configured channel.
+2. Let Framework route the work to the right specialist workflow.
+3. Open Galyarder HQ to inspect goals, reports, departments, approvals, and activity.
+4. Add Ledger when the workflow needs finance, sales, accounting, audit, tax, approvals, or evidence-backed records.
 
 ## Conclusion
 
-The Unified Platform is not a monolithic piece of software, but a **coordinated ecosystem**. 
+The unified platform keeps each layer clear. Framework defines how work is done. Agent gives it continuity. HQ gives it command visibility. Ledger gives financial execution an evidence trail.
 
-- **Framework** builds the product.
-- **HQ** manages the business.
-
-Together, they provide the asymmetric leverage required for a solo founder to operate with the efficiency of a 100-person organization.
-
+Together, they turn loose AI-agent usage into structured agentic company execution.

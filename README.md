@@ -52,7 +52,6 @@ A typical mission follows the same path whether the work is engineering, marketi
 5. **Verification** — tests, reviews, source checks, audits, and evidence gates are run before completion claims.
 6. **Reporting** — the result is written back as a useful artifact: code diff, docs, launch plan, security note, financial model, campaign, decision log, or operational report.
 
-Internally, Galyarder calls this **Autonomous Goal Integration**: turning goals into governed execution. It is not an artificial general intelligence claim.
 
 ---
 

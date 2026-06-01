@@ -6,6 +6,7 @@ Tests signup form submission, validation, and post-registration flow.
 - Unique test email for each run: `{{newUserEmail}}`
 - App running at `{{baseUrl}}`
 
+---
 
 ## TypeScript
 
@@ -81,6 +82,7 @@ test.describe('Registration', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -128,4 +130,5 @@ test.describe('Registration', () => {
 | Password mismatch | Confirm error |
 | Already authed | Redirected to dashboard |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

@@ -1,22 +1,22 @@
 # Multi-Platform Integration Protocol
 
-Galyarder Framework is a host-agnostic logic library compatible with institutional-grade AI orchestration tools.
+Galyarder Framework is a host-agnostic logic library for agentic company execution across AI tools.
 
 ## Supported Platforms
 
-The framework is surgically converted for the following environments:
+The framework is converted for the following environments:
 
 1.  **Galyarder Agent**: Native identity and memory layer.
-2.  **Galyarder HQ**: Central control plane for swarm orchestration.
+2.  **Galyarder HQ**: Command layer for goals, departments, approvals, and operating visibility.
 3.  **Claude Code**: Advanced CLI marketplace integration.
 4.  **Cursor**: IDE-native `.mdc` rule sets.
 5.  **Gemini CLI**: Official extension repository support.
 6.  **OpenAI Codex CLI**: Direct instruction-based logic.
 7.  **Windsurf**: Native plugin architecture.
 8.  **OpenCode**: Specialized plugin ecosystem.
-9.  **Hermes Agent**: High-integrity autonomous orchestration.
+9.  **Hermes Agent**: Local-first autonomous assistant runtime.
 10. **OpenClaw**: Distributed agentic logic.
-11. **Kilo Code**: Enterprise-grade coding assistant.
+11. **Kilo Code**: Coding assistant integration.
 12. **Augment**: Performance-optimized AI workflow.
 13. **Antigravity**: System-level skill injection.
 
@@ -40,7 +40,7 @@ For cloud-native orchestrators, use the standard plugin protocol:
 
 ### Gemini CLI
 ```bash
-# High-fidelity installation
+# Install
 gemini extensions install https://github.com/galyarderlabs/galyarder-framework
 
 # Life-cycle management
@@ -61,11 +61,11 @@ Silo/
 └── gemini-extension.json # Gemini CLI manifest
 ```
 
-## Zero-Slop Standard
+## Context loading standard
 
-Following the Humans 3.0 protocol, all legacy context-bloat tools (e.g., Aider monoliths) have been purged. This ensures:
-- **100% Context Integrity**: 0% compression on 1M token models.
-- **Deterministic Loads**: Only the required instructions are loaded into the agent's memory.
+Legacy context-bloat patterns have been removed so agents load only what they need. This keeps:
+- **Context integrity**: lower noise and less unnecessary prompt surface.
+- **Deterministic loads**: only the required instructions are loaded into the agent context.
 
 ## Conversion Engine
 

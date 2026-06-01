@@ -1,3 +1,8 @@
+---
+name: design-md-pinterest
+description: "Design system reference for design md pinterest."
+---
+
 # Design System: Pinterest
 
 ## 1. Visual Theme & Atmosphere

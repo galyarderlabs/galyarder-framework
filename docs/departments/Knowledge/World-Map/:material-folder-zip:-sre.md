@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/agents/sre.md
+---
 # :material-folder-zip: sre
 
 ## 🧠 Strategic Intelligence
@@ -11,8 +13,8 @@ It has a connectivity degree of **3**.
 ## 🔗 Neural Links
 
 ### Directing To:
-- [[Claude-Code:-Implementation-Protocol]] (enforces_protocol | 0.8)
-- [[Galyarder-Framework:-Advanced-Agentic-Context-(Gemini-CLI)]] (uses_proxy | 0.8)
+- [[Claude-Code-Integration-—-Galyarder-Framework]] (enforces_protocol | 0.8)
+- [[Gemini-CLI-Integration-—-Galyarder-Framework]] (uses_proxy | 0.8)
 
 ### Informed By:
 - [[Galyarder-Framework:-Agents]] (structural_reference | 1.0)

@@ -2,13 +2,13 @@
 
 **Issue:** GAL-36 (Remediation)
 **Strategic Goal:** Restore repository integrity, implement multi-platform support for 12+ tools, and establish a high-authority executive persona layer.
-**Protocol:** Karpathy-Grade (Rigorous Thinking, Surgical Changes, Simplicity, Goal-Driven).
+**Protocol:** technical integrity-Grade (Rigorous Thinking, Surgical Changes, Simplicity, Goal-Driven).
 **Hard Constraint:** ZERO emojis in the entire repository. Absolute consistency in "Galyarder Framework" (Product) and "Galyarder Labs" (Company).
 
 
 ## Phase 1: Absolute README Reconstruction
 
-Establish the README as the primary, high-integrity gateway to the Galyarder Framework.
+Establish the README as the primary, evidence-backed gateway to the Galyarder Framework.
 
 ### Step 1.1: Structural Restoration
 - **Action**: Overwrite `README.md` with the exact original text provided by the user.
@@ -16,7 +16,7 @@ Establish the README as the primary, high-integrity gateway to the Galyarder Fra
 
 ### Step 1.2: Surgical Multi-Platform Augmentation
 - **Action**: Append installation instructions for all missing platforms: OpenAI Codex, OpenClaw, Hermes Agent, Windsurf, Kilo Code, Augment, and Antigravity.
-- **Action**: Integrate "Technical Integrity: The Karpathy Principles" and "Multi-Platform Conversion Engine" sections.
+- **Action**: Integrate "Technical Integrity: The technical integrity principles" and "Multi-Platform Conversion Engine" sections.
 - **Verification**  verify: All 12 tools are represented with unique, valid installation/integration steps.
 
 

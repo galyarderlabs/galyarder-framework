@@ -4,18 +4,18 @@
     "name": "Galyarder Labs",
     "url": "https://galyarderlabs.app"
   },
-  "description": "Apex Digital Enterprise OS with canonical runtime agents, commands, and skills.",
+  "description": "Open-source Agentic Company Framework with canonical runtime agents, commands, skills, and review gates.",
   "homepage": "https://galyarderlabs.github.io/galyarder-framework/",
   "repository": "https://github.com/galyarderlabs/galyarder-framework",
   "metadata": {
-    "description": "Galyarder Framework: The Humans 3.0 protocol for autonomous workforce orchestration.",
+    "description": "Galyarder Framework: Intelligence Layer for human-directed agentic company execution.",
     "version": "1.9.9"
   },
   "plugins": [
     {
       "name": "galyarder-framework",
       "source": ".",
-      "description": "Complete Galyarder Framework runtime using canonical agents/, skills/, and commands/ directories.",
+      "description": "Complete Galyarder Framework runtime using canonical agents/, skills/, commands/, and integrations/ directories.",
       "version": "1.9.9",
       "category": "framework"
     }

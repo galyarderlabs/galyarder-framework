@@ -1,3 +1,8 @@
+---
+name: design-md-clay
+description: "Design system reference for design md clay."
+---
+
 # Design System: Clay
 
 ## 1. Visual Theme & Atmosphere

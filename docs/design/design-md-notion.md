@@ -1,3 +1,8 @@
+---
+name: design-md-notion
+description: "Design system reference for design md notion."
+---
+
 # Design System: Notion
 
 ## 1. Visual Theme & Atmosphere

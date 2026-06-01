@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/templates/Galyarder-Department-Reports/Founder Office Report Template.md
+---
 # Founder Office Report Template
 
 ## 🧠 Strategic Intelligence

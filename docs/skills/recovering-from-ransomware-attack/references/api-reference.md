@@ -54,4 +54,5 @@
 - NIST SP 1800-26: https://www.nccoe.nist.gov/data-integrity-recovering-ransomware
 - NoMoreRansom: https://www.nomoreransom.org/
 
+---
  2026 Galyarder Labs. Galyarder Framework.

@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/onboarding-cro/references/experiments.md
+---
 # Onboarding Experiment Ideas
 
 ## 🧠 Strategic Intelligence

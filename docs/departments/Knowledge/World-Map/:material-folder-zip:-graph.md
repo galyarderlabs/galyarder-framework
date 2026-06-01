@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/commands/graph.md
+---
 # :material-folder-zip: graph
 
 ## 🧠 Strategic Intelligence

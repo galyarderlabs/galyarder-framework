@@ -17,12 +17,12 @@ Transform Galyarder Framework from a collection of static files into a **Self-Ma
     - **Doc Links**: Markdown `[[wikilinks]]` and relative `(paths.md)`.
     - **Departmental Boundaries**: Auto-cluster files by Silo.
 
-### Phase 2: The Semantic Bridge (Humans 3.0 Logic)
+### Phase 2: The Semantic Bridge (human-directed execution Logic)
 - **Tool**: Specialist agent `obsidian-architect`.
 - **Function**: Analyze non-structural assets (READMEs, Diagrams, Transcripts).
 - **Output**: Inject "INFERRED" edges into the graph (e.g., `Code Logic -> Strategic Goal`).
 
-### Phase 3: The Obsidian Visualization (Digital HQ 2.0)
+### Phase 3: The Obsidian Visualization (project operating workspace 2.0)
 - **Output Path**: `docs/departments/Knowledge/World-Map/`.
 - **Function**: Convert `graph.json` into a browsable vault of interconnected markdown files.
 - **Value**: Enable native Obsidian Graph View for real-time visual strategy.

@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/open-source-license/references/templates/notice-files.md
+---
 # NOTICE File Templates
 
 ## 🧠 Strategic Intelligence

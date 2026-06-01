@@ -2,6 +2,7 @@
 
 Comprehensive framework for establishing and maintaining consistent brand voice across all content.
 
+---
 
 ## Table of Contents
 
@@ -17,6 +18,7 @@ Comprehensive framework for establishing and maintaining consistent brand voice 
 - [Inclusivity Guidelines](#10-inclusivity-guidelines)
 - [Quick Reference Checklist](#quick-reference-checklist)
 
+---
 
 ## Brand Voice Framework
 
@@ -186,8 +188,8 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 - **Write Report**: Upon completion, save a summary/artifact to the relevant department in `docs/departments/` (e.g., `Engineering/`, `Growth/`).
 - **Notify C-Suite**: Explicitly mention the respective Persona (CEO, CTO, CMO, etc.) that the report is ready for review.
 - **Traceability**: Link the report to the corresponding Linear ticket.
-### 10. Technical Integrity: The Karpathy Principles
-Combat AI slop through rigid adherence to the four principles of Andrej Karpathy:
+### 10. Technical Integrity: The technical integrity principles
+Combat AI slop through rigid adherence to the four principles of Andrej technical integrity:
 
 1. **Think Before Coding**: Don't guess. **If uncertain, STOP and ASK.** State assumptions explicitly. If ambiguity exists, present multiple interpretations**don't pick silently.** Push back if a simpler approach exists.
 2. **Simplicity First**: Implement the minimum code that solves the problem. **No speculative abstractions.** If 200 lines could be 50, **rewrite it.** No "configurability" unless requested.
@@ -232,4 +234,5 @@ Before publishing any content, verify:
 - [ ] Accessible to all audiences
 - [ ] Proofread and fact-checked
 
+---
  2026 Galyarder Labs. Galyarder Framework.

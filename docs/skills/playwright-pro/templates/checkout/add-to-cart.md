@@ -7,6 +7,7 @@ Tests adding items to cart and quantity updates.
 - Product: ID `{{productId}}`, name `{{productName}}`, price `{{productPrice}}`
 - App running at `{{baseUrl}}`
 
+---
 
 ## TypeScript
 
@@ -69,6 +70,7 @@ test.describe('Add to Cart', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -109,4 +111,5 @@ test.describe('Add to Cart', () => {
 | Quantity exceeds stock | Error alert |
 | Cart drawer | Slide-in cart opens showing added item |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

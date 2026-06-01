@@ -6,6 +6,7 @@ Tests loading state, skeleton screens, and data display after fetch.
 - Authenticated session via `{{authStorageStatePath}}`
 - Dashboard at `{{baseUrl}}/dashboard`
 
+---
 
 ## TypeScript
 
@@ -80,6 +81,7 @@ test.describe('Dashboard Data Loading', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -125,4 +127,5 @@ test.describe('Dashboard Data Loading', () => {
 | Retry success | Second request succeeds after failure |
 | Slow network | Skeleton persists during delay |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

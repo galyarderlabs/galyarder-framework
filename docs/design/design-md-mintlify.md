@@ -1,3 +1,8 @@
+---
+name: design-md-mintlify
+description: "Design system reference for design md mintlify."
+---
+
 # Design System: Mintlify
 
 ## 1. Visual Theme & Atmosphere

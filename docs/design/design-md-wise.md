@@ -1,3 +1,8 @@
+---
+name: design-md-wise
+description: "Design system reference for design md wise."
+---
+
 # Design System: Wise
 
 ## 1. Visual Theme & Atmosphere

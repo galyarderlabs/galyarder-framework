@@ -1,3 +1,8 @@
+---
+name: design-md-mistral.ai
+description: "Design system reference for design md mistral.ai."
+---
+
 # Design System: Mistral AI
 
 ## 1. Visual Theme & Atmosphere

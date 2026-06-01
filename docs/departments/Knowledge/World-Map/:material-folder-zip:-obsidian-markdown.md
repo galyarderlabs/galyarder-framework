@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 9
 source: docs/skills/obsidian-markdown/index.md
+---
 # :material-folder-zip: obsidian-markdown
 
 ## 🧠 Strategic Intelligence
@@ -34,8 +36,8 @@ It has a connectivity degree of **9**.
 - [[Algorithm-Notes#Sorting]] (semantic_link | 0.9)
 - [[Architecture-Diagram.png|600]] (semantic_link | 0.9)
 - [[Meeting-Notes-2024-01-10#Decisions]] (semantic_link | 0.9)
-- [[Claude-Code:-Implementation-Protocol]] (enforces_protocol | 0.8)
-- [[Galyarder-Framework:-Advanced-Agentic-Context-(Gemini-CLI)]] (uses_proxy | 0.8)
+- [[Claude-Code-Integration-—-Galyarder-Framework]] (enforces_protocol | 0.8)
+- [[Gemini-CLI-Integration-—-Galyarder-Framework]] (uses_proxy | 0.8)
 
 ### Informed By:
 - [[Galyarder-Framework:-Skills]] (structural_reference | 1.0)

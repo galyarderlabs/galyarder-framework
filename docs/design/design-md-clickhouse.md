@@ -1,3 +1,8 @@
+---
+name: design-md-clickhouse
+description: "Design system reference for design md clickhouse."
+---
+
 # Design System: ClickHouse
 
 ## 1. Visual Theme & Atmosphere

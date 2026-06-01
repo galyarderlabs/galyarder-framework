@@ -6,6 +6,7 @@ Tests sorting results by name, date, and price.
 - Search results for `{{searchQuery}}` with multiple items
 - App running at `{{baseUrl}}`
 
+---
 
 ## TypeScript
 
@@ -83,6 +84,7 @@ test.describe('Search Sorting', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -128,4 +130,5 @@ test.describe('Search Sorting', () => {
 | Sort + filter | Sort param persists when filter applied |
 | Default sort | Relevance selected by default |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

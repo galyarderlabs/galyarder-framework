@@ -38,6 +38,7 @@ Detailed strategies for each major social platform.
 - Document posts (carousels) get strong reach
 - Polls drive engagement but don't build authority
 
+---
 
 ## Twitter/X
 
@@ -73,6 +74,7 @@ Detailed strategies for each major social platform.
 - Engagement in first 30 min matters
 - Twitter Blue/Premium may boost reach
 
+---
 
 ## Instagram
 
@@ -108,6 +110,7 @@ Detailed strategies for each major social platform.
 - Consistency matters more than perfection
 - Use all features (polls, questions, etc.)
 
+---
 
 ## TikTok
 
@@ -137,6 +140,7 @@ Detailed strategies for each major social platform.
 - Use trending sounds
 - Post consistently to train algorithm
 
+---
 
 ## Facebook
 
@@ -158,4 +162,5 @@ Detailed strategies for each major social platform.
 - Ignoring comments
 - Cross-posting from other platforms without adaptation
 
+---
  2026 Galyarder Labs. Galyarder Framework.

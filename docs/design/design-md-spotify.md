@@ -1,3 +1,8 @@
+---
+name: design-md-spotify
+description: "Design system reference for design md spotify."
+---
+
 # Design System: Spotify
 
 ## 1. Visual Theme & Atmosphere

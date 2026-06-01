@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/page-cro/references/experiments.md
+---
 # Page CRO Experiment Ideas
 
 ## 🧠 Strategic Intelligence

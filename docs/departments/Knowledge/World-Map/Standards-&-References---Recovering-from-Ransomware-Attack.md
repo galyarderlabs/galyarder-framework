@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/recovering-from-ransomware-attack/references/standards.md
+---
 # Standards & References - Recovering from Ransomware Attack
 
 ## 🧠 Strategic Intelligence

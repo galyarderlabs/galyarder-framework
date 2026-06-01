@@ -1,3 +1,8 @@
+---
+name: design-md-x.ai
+description: "Design system reference for design md x.ai."
+---
+
 # Design System: xAI
 
 ## 1. Visual Theme & Atmosphere

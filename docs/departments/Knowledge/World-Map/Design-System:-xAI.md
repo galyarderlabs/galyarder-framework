@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/design/design-md-x.ai.md
+---
 # Design System: xAI
 
 ## 🧠 Strategic Intelligence

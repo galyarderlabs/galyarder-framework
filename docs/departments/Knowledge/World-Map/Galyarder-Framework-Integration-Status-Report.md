@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/templates/Galyarder-Framework Integration Status Report.md
+---
 # Galyarder Framework Integration Status Report
 
 ## 🧠 Strategic Intelligence

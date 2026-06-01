@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 1
 source: docs/templates/Galyarder-Framework Linear Import Pack.md
+---
 # Galyarder Framework Linear Import Pack
 
 ## 🧠 Strategic Intelligence

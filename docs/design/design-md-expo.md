@@ -1,3 +1,8 @@
+---
+name: design-md-expo
+description: "Design system reference for design md expo."
+---
+
 # Design System: Expo
 
 ## 1. Visual Theme & Atmosphere

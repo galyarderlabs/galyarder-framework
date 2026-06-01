@@ -1,6 +1,6 @@
 # Gemini CLI: Implementation Protocol
 
-This guide defines the high-integrity integration of Galyarder Framework within the **Gemini CLI** (Google) environment.
+This guide defines the agentic-company integration of Galyarder Framework within the **Gemini CLI** (Google) environment.
 
 ## 1. Installation
 
@@ -12,7 +12,7 @@ gemini extensions install https://github.com/galyarderlabs/galyarder-framework
 
 ## 2. Mandatory Protocols
 
-Gemini CLI operates as a high-fidelity instance of the **Humans 3.0** protocol. The environment is configured to enforce:
+Gemini CLI operates as a high-fidelity instance of the **agentic company** protocol. The environment is configured to enforce:
 
 - **Token Economy**: Mandatory use of the `rtk` prefix for terminal efficiency.
 - **Cognitive Integrity**: Recursive internal reasoning via `sequentialthinking`.
@@ -32,6 +32,6 @@ Gemini CLI provides native support for the Galyarder workforce commands:
 
 - `/tdd`: Trigger the Engineering Test-Driven Development loop.
 - `/plan`: Initiate PRD and architecture blueprinting.
-- `/marketing`: Launch growth, SEO, and conversion optimization swarms.
+- `/marketing`: Launch growth, SEO, and conversion optimization workflows.
 - `/review`: Invoke the principal-level code reviewer.
 

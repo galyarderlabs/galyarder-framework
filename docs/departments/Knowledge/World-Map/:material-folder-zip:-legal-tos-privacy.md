@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 3
 source: docs/skills/legal-tos-privacy/index.md
+---
 # :material-folder-zip: legal-tos-privacy
 
 ## 🧠 Strategic Intelligence
@@ -29,8 +31,8 @@ It has a connectivity degree of **3**.
 - [[VARIABLE]] (semantic_link | 0.9)
 - [[VARIABLE]] (semantic_link | 0.9)
 - [[...]] (semantic_link | 0.9)
-- [[Claude-Code:-Implementation-Protocol]] (enforces_protocol | 0.8)
-- [[Galyarder-Framework:-Advanced-Agentic-Context-(Gemini-CLI)]] (uses_proxy | 0.8)
+- [[Claude-Code-Integration-—-Galyarder-Framework]] (enforces_protocol | 0.8)
+- [[Gemini-CLI-Integration-—-Galyarder-Framework]] (uses_proxy | 0.8)
 
 ### Informed By:
 - [[Galyarder-Framework:-Skills]] (structural_reference | 1.0)

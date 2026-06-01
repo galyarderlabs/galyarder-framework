@@ -7,6 +7,7 @@ Tests auto-logout after inactivity and session refresh behaviour.
 - Session timeout configured to `{{sessionTimeoutMs}}` ms in test env
 - App running at `{{baseUrl}}`
 
+---
 
 ## TypeScript
 
@@ -68,6 +69,7 @@ test.describe('Session Timeout', () => {
 });
 ```
 
+---
 
 ## JavaScript
 
@@ -110,4 +112,5 @@ test.describe('Session Timeout', () => {
 | Auto-logout | Inactivity past timeout  /login |
 | 401 from API | Re-auth dialog shown when backend rejects request |
 
+---
  2026 Galyarder Labs. Galyarder Framework.

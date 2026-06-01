@@ -1,51 +1,25 @@
-# Galyarder Framework: Advanced Agentic Context (Gemini CLI)
+# Gemini CLI Integration — Galyarder Framework
 
-# BOOTSTRAP: Load core system intelligence
-@AGENTS.md
-@WORKFLOW.md
-@BRAND.md
-@DESIGN.md
-@docs/galyarder-labs/BRAND.md
-@docs/galyarder-labs/DESIGN.md
+Gemini CLI should use Galyarder Framework as an agentic-company operating layer: intent intake, department routing, specialist execution, verification, and durable reporting.
 
-Load behavior must stay department-scoped while reading the selected extension's `personas/`,
-`agents/`, `commands/`, and `skills/` surfaces. Do not rely on root-level monolithic rule files
-or legacy extension bundle paths such as `.marketplace/full/`. Project reports may still write to scaffolded `docs/departments/*` folders.
+## Operating Gate
 
-## 1. THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
+1. Ground the request in current files and docs.
+2. Route work to the right framework surface: product, engineering, growth, finance/legal, security, infrastructure, documentation, or strategy.
+3. Create a compact plan for non-trivial work.
+4. Execute the smallest viable change.
+5. Verify with tests, builds, rendered output, source checks, or live workflow status.
+6. Report the artifact, evidence, risk, and next decision.
 
-Every operation within this session is governed by the 1-Man Army execution gate. You are hardcoded to enforce:
+## Useful Commands
 
-### Operational Modes
-- **BUILD (Default)**: Heavy ceremony. Requires PRD, Blueprinting, and full TDD gating.
-- **INCIDENT**: Emergency hotfix mode. Bypasses planning but requires post-mortem and 48h conversion to BUILD.
-- **EXPERIMENT**: Timeboxed spike. No tests required; code must be quarantined.
+- `/plan`: create an execution plan.
+- `/review`: review code, docs, or architecture.
+- `/docs`: update documentation and source-aligned guides.
+- `/release`: prepare changelog, release notes, and readiness checks.
+- `/marketing`: produce growth, SEO, conversion, or distribution work.
+- `/security`: run security review or threat-modeling workflow.
 
-### Mandatory Loop
-1. **Traceability**: All computational labor must occur within a project-scoped Linear issue.
-2. **Cognitive Integrity**: Explicit `sequentialthinking` MCP loop before any high-impact action.
-3. **Technical Integrity**: Think Before Coding, Simplicity First, Surgical Changes, and Goal-Driven Execution (Karpathy).
-4. **Validation**: Real-time fetch of official references via `context7`.
-5. **Token Economy**: Mandatory use of the `rtk` proxy for all terminal operations.
-6. **Persistence**: Every task must result in a durable markdown report in `docs/departments/` (The Obsidian Loop).
+## Boundary
 
-## 2. SYSTEM BOOTLOADER
-- **Logic Source**: @Executive/skills/using-galyarder-framework/SKILL.md
-- **Native Tools**: ALWAYS use native tools (`read_file`, `replace`).
-- **Surgical Execution**: Do NOT use `write_file` or `cat` for existing files. Use `replace` for targeted edits. Read files surgically via `start_line` and `end_line`.
-
-## 3. HOST-SPECIFIC REQUIREMENTS (Antigravity)
-- **Sandbox**: Must be set to **OFF**. 
-- **Reason**: Access to the `rtk` binary and departmental workspace folders requires privileged file-system interaction.
-
-## 4. OPERATIONAL COMMAND TRIGGERS
-- `/graph`: Rebuild the Galyarder Neural Link and synchronize the Obsidian World Map.
-- `/tdd`: Trigger the Engineering Test-Driven Development workflow.
-- `/plan`: Initiate PRD and architecture blueprinting via Vertical Slices.
-- `/marketing`: Launch growth, SEO, and conversion optimization swarms.
-- `/cybersecurity`: Conduct advanced offensive/defensive security audits.
-- `/incident`: Switch to INCIDENT mode for emergency hotfixes.
-- `/experiment`: Switch to EXPERIMENT mode for rapid spike validation.
-
----
-© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.
+Do not present Framework as artificial general intelligence or a magic autonomous system. It is a human-directed Intelligence Layer for coordinated, evidence-backed execution.

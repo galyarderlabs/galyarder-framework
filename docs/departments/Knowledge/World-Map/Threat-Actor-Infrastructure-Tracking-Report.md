@@ -1,7 +1,9 @@
+---
 node_type: documentation
 silo: docs
 degree: 0
 source: docs/skills/tracking-threat-actor-infrastructure/assets/template.md
+---
 # Threat Actor Infrastructure Tracking Report
 
 ## 🧠 Strategic Intelligence

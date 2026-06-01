@@ -1,3 +1,8 @@
+---
+name: design-md-resend
+description: "Design system reference for design md resend."
+---
+
 # Design System: Resend
 
 ## 1. Visual Theme & Atmosphere
