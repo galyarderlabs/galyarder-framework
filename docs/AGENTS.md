@@ -28,7 +28,7 @@ Acquisition, conversion, behavioral arbitrage, and aesthetic law.
 - **growth-engineer**: Engineering-as-Marketing lead. Builds viral referral loops and programmatic SEO.
 - **conversion-engineer**: CRO and funnel optimization specialist.
 - **retention-specialist**: LTV and engagement lead. Designs activation and nurture sequences.
-- **social-strategist**: Distribution and hype management lead.
+- **social-strategist**: Distribution and market positioning lead.
 - **remotion-engineer**: Programmatic video generation specialist using React.
 - **ui-ux-designer**: Frontend design and aesthetic consistency lead (Stitch).
 - **analytics-architect**: Data infrastructure and KPI tracking lead.
