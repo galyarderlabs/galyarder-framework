@@ -4,138 +4,173 @@
 
 <h1 align="center">Galyarder Framework</h1>
 
-<p align="center">Advanced Agentic Orchestration for the 1-Man Army</p>
+<p align="center"><strong>Open-source Agentic Company Framework.</strong></p>
 
 <p align="center">
-  Implementing <strong>Autonomous Goal Integration (AGI)</strong> to turn high-level intent into verified execution.
+  Turn founder intent into coordinated execution across engineering, product, growth, sales, finance, legal, security, documentation, operations, and strategy.
 </p>
 
-<p align="center">Built for the <strong>1-Man Army</strong> — one founder with the leverage of an entire company.</p>
+<p align="center">
+  Galyarder Framework is the Intelligence Layer of the Galyarder ecosystem: skills, agents, commands, review gates, and operating protocols for building an agentic company that remains inspectable, testable, and human-directed.
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/galyarder-framework"><img alt="npm version" src="https://img.shields.io/npm/v/galyarder-framework?style=for-the-badge&logo=npm&logoColor=white&color=8A00FF"></a>
+  <a href="https://www.npmjs.com/package/galyarder-framework"><img alt="npm downloads" src="https://img.shields.io/npm/dm/galyarder-framework?style=for-the-badge&logo=npm&logoColor=white&color=4F2DA8"></a>
+  <a href="https://github.com/galyarderlabs/galyarder-framework/actions/workflows/deploy-docs.yml"><img alt="docs deployment" src="https://img.shields.io/github/actions/workflow/status/galyarderlabs/galyarder-framework/deploy-docs.yml?branch=main&label=docs&style=for-the-badge&logo=githubactions&logoColor=white&color=6F7DFF"></a>
+  <a href="https://github.com/galyarderlabs/galyarder-framework/security/code-scanning"><img alt="CodeQL" src="https://img.shields.io/github/actions/workflow/status/galyarderlabs/galyarder-framework/codeql.yml?branch=main&label=CodeQL&style=for-the-badge&logo=github&logoColor=white&color=0D172A"></a>
+  <a href="https://github.com/galyarderlabs/galyarder-framework/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/github/license/galyarderlabs/galyarder-framework?style=for-the-badge&color=F1C77A"></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/galyarderlabs/galyarder-framework"><img alt="GitHub stars" src="https://img.shields.io/github/stars/galyarderlabs/galyarder-framework?style=flat-square&logo=github&color=8A00FF"></a>
+  <a href="https://github.com/galyarderlabs/galyarder-framework/forks"><img alt="GitHub forks" src="https://img.shields.io/github/forks/galyarderlabs/galyarder-framework?style=flat-square&logo=github&color=4F2DA8"></a>
+  <img alt="agentic company framework" src="https://img.shields.io/badge/agentic%20company-framework-8A00FF?style=flat-square">
+  <img alt="human directed" src="https://img.shields.io/badge/human--directed-execution-F1C77A?style=flat-square">
+</p>
+
+---
+
+## What it is
+
+Most AI-agent setups stop at chat or code generation. They can help with a task, but the work often stays loose: no durable scope, no department routing, no review gates, no audit trail, and no consistent way to move from strategy to implementation.
+
+Galyarder Framework packages the missing operating layer. It gives autonomous agents a structured way to receive intent, route work to the right domain, produce plans, execute through tools, verify output, write reports, and hand control back to the operator.
+
+It is not a kanban board, a prompt pack, or another coding agent. It is a framework for turning high-level operator intent into governed company execution.
 
 ---
 
 ## How it works
 
-It starts from the moment you fire up your autonomous assistant (Galyarder Agent, OpenClaw, Hermes, or Claude Code). As soon as the framework sees that you're initiating a mission, it *doesn't* just jump into trying to execute tasks. Instead, it steps back and analyzes the high-level business intent behind your request. 
+A typical mission follows the same path whether the work is engineering, marketing, finance, sales, documentation, legal, security, or strategy.
 
-Once it's teased a comprehensive strategy out of the conversation, it presents it to you in structured segments short enough to actually verify and digest. 
+1. **Intent intake** — the operator describes a goal in plain language.
+2. **Routing** — the framework maps the goal to the right department, agent, skill, command, and tool path.
+3. **Blueprinting** — the agent turns the goal into a scoped plan, ticket, checklist, or execution brief.
+4. **Implementation** — work is delegated to specialized agents, commands, and external tools where appropriate.
+5. **Verification** — tests, reviews, source checks, audits, and evidence gates are run before completion claims.
+6. **Reporting** — the result is written back as a useful artifact: code diff, docs, launch plan, security note, financial model, campaign, decision log, or operational report.
 
-After you've signed off on the direction, your agent puts together a mission-critical execution plan that's designed for deterministic precision. It emphasizes institutional-grade verification, lean operations (YAGNI), and systematic accuracy, ensuring every action provides maximum leverage toward your goal. 
-
-Next up, once you say "go", it launches a *subagent-driven-orchestration* process, routing each engineering task through the host's available delegation model while preserving the same review and orchestration workflow. 
-
-This is **Autonomous Goal Integration (AGI)** in action: the transition from high-level operator intent into deterministic execution.
-
-In this framework, AGI doesn't mean "sentient machines" or artificial general intelligence. It means an execution system capable of taking high-level business goals and orchestrating the lifecycle—from requirement extraction and high-integrity implementation to operational auditing and market distribution—through explicit protocols, tools, tests, and review gates. It's the practical realization of the **1-Man Army**: one founder providing the vision, while the framework provides structured autonomous implementation support.
+Internally, Galyarder calls this **Autonomous Goal Integration**: turning goals into governed execution. It is not an artificial general intelligence claim.
 
 ---
 
-### The AGI Lifecycle
+## Agentic company lifecycle
 
-Galyarder Framework bridges the gap between high-level intent and ground-level execution through a deterministic 5-stage process:
+Galyarder Framework bridges the gap between intent and execution through a repeatable operating loop:
 
-1.  **Intent Extraction**: Distilling business goals into project-scoped Linear tickets and tactical specifications.
-2.  **Strategic Blueprinting**: Mission design via formal verification and Vertical Slice (Tracer Bullet) implementation plans.
-3.  **Autonomous Implementation**: Clinical execution via 40+ specialized logic engines and high-fidelity institutional standards.
-4.  **Operational Auditing**: Automated live-environment verification and zero-trust security hardening.
-5.  **Autonomous Distribution**: Programmatic asset generation and behavioral-targeted market deployment.
+1. **Intent Extraction** — distill business goals into scoped specifications, tickets, or working briefs.
+2. **Strategic Blueprinting** — design the mission with constraints, risks, success criteria, and execution sequence.
+3. **Specialist Execution** — route work through domain agents, skills, commands, and tool adapters.
+4. **Operational Auditing** — verify work through tests, security checks, source review, build checks, or evidence contracts.
+5. **Distribution & Memory** — turn completed work into docs, release notes, reports, campaigns, decisions, and reusable knowledge.
 
 ---
 
 ## What you get
 
-A high-integrity workforce in a single repository:
+A multi-domain agentic company kit in one repository:
 
-- **40 Specialized Agents**: Engineering, Growth, Security, Product, and Legal experts.
-- **Galyarder Neural Link**: Self-mapping knowledge graph with deterministic AST parsing and semantic inference.
-- **132 Production-Ready Skills**: SOPs for TDD, SEO, CRO, FinOps, and more.
-- **54 Design Specifications**: Elite UI specs (SuperHuman, Bmw, Apple) to enforce aesthetic law.
-- **20+ Slash Commands**: Instant orchestration triggers (e.g., `/tdd`, `/review`, `/marketing`).
-- **Universal Compatibility**: Native support for Galyarder Agent, Claude Code, Gemini CLI, OpenClaw, Hermes Agent, and 9 other platforms.
+- **40+ specialized agents** across executive, engineering, growth, product, security, infrastructure, legal-finance, and knowledge work.
+- **Department-based routing** so tasks move to the right specialist instead of staying in a generic assistant loop.
+- **Production-ready skills and SOPs** for TDD, code review, SEO, CRO, FinOps, security review, documentation, release management, and more.
+- **Slash commands** for common workflows such as `/tdd`, `/review`, `/marketing`, `/seo`, `/legal`, `/finops`, `/incident`, `/release`, and `/docs`.
+- **Galyarder Neural Link** for repository mapping, dependency awareness, and knowledge-graph-oriented project context.
+- **Design specifications** for consistent UI and product surfaces when agents produce frontend or brand-facing work.
+- **Cross-tool compatibility** for Galyarder Agent, Claude Code, Gemini CLI, OpenClaw, Hermes Agent, Cursor, Windsurf, KiloCode, Augment, Antigravity, Codex-style installs, and OpenCode-style installs.
 
 ---
 
-## Usage: The High-Integrity Protocol
+## Usage: governed execution protocol
 
-Galyarder Framework does not merely execute; it orchestrates. Every mission follows a non-negotiable sequence of high-fidelity protocols to ensure zero-slop output.
+Galyarder Framework does not ask the agent to “just do the task.” It gives the task a route, a plan, and a verification contract.
 
-### 1. Operational Sequence
+### 1. Operational sequence
 
 ```mermaid
 sequenceDiagram
-    participant F as Founder (You)
-    participant CEO as Galyarder CEO
-    participant Graph as Neural Link (v2.0)
-    participant MCP as MCP (Think/Context7)
+    participant F as Founder / Operator
+    participant CEO as Strategic Router
+    participant Graph as Neural Link
+    participant MCP as MCP / Source Tools
     participant Agent as Specialist Agent
-    participant RTK as RTK (Terminal)
-    participant Docs as Reporting (Linear/Obsidian)
+    participant RTK as Terminal / Tool Proxy
+    participant Docs as Reports / Decisions
 
-    F->>CEO: Initiates High-Level Goal
-    CEO->>Docs: Checks Linear Project / Creates Issue
-    CEO->>Graph: Query Knowledge Graph (AST/Semantic)
-    Graph-->>CEO: Structural Awareness & Dependencies
-    CEO->>MCP: Invokes sequentialthinking
-    MCP-->>CEO: Structured Strategic Plan
-    CEO->>Agent: Dispatches Mission to Specialist Swarm
-    Agent->>MCP: Invokes context7 (Official Docs)
-    MCP-->>Agent: Institutional-Grade Reference
-    Agent->>RTK: Surgical Execution via RTK Proxy
-    RTK-->>Agent: Verified Output
-    Agent->>Graph: Triggers /graph (Self-Mapping)
-    Agent->>Docs: Saves Artifact to docs/departments/
-    Docs-->>F: High-Signal Executive Report
+    F->>CEO: Initiates high-level goal
+    CEO->>Docs: Checks roadmap / creates issue or brief
+    CEO->>Graph: Queries project structure and dependencies
+    Graph-->>CEO: Structural context and risk signals
+    CEO->>MCP: Fetches official docs or source references
+    MCP-->>CEO: Grounded context
+    CEO->>Agent: Routes mission to specialist workflow
+    Agent->>MCP: Pulls task-specific references
+    MCP-->>Agent: Implementation context
+    Agent->>RTK: Executes through tools, commands, or code changes
+    RTK-->>Agent: Output, logs, tests, or artifacts
+    Agent->>Graph: Updates project knowledge when needed
+    Agent->>Docs: Writes report, diff notes, decision, or release artifact
+    Docs-->>F: Reviewable output with evidence
 ```
 
-### 2. The 1-Man Army Command Protocol
+### 2. Command protocol
 
-| Phase | Category | Action | Mandatory Tool | Outcome |
+| Phase | Category | Action | Typical tool | Outcome |
 | :--- | :--- | :--- | :--- | :--- |
-| **I** | **Traceability** | Alignment with Roadmap | **Linear** | Project-scoped issue locked & tracked. |
-| **II** | **Mapping** | Neural Dependency Audit | **Neural Link** | Self-mapping graph with AST awareness. |
-| **III** | **Cognition** | Socratic Deconstruction | **SequentialThinking** | 8-phase logic map with risk mitigation. |
-| **IV** | **Validation** | Official Reference Fetch | **Context7** | 100% accurate API & best practice alignment. |
-| **V** | **Execution** | Token-Efficient Actions | **RTK Proxy** | Surgical changes with verified TDD tests. |
-| **VI** | **Persistence** | Durable Memory Storage | **Obsidian** | Report pushed to Dept folder & C-Suite. |
+| **I** | **Traceability** | Align with roadmap or create a scoped issue | Linear / GitHub / local docs | Work has a named target. |
+| **II** | **Mapping** | Inspect repo, dependencies, and prior knowledge | Neural Link / search tools | Agent knows the system before changing it. |
+| **III** | **Planning** | Break the goal into steps and risks | Planning skill / sequential reasoning | Execution path is reviewable. |
+| **IV** | **Grounding** | Fetch source docs and current references | Context7 / web / file tools | Claims and API usage are source-aligned. |
+| **V** | **Execution** | Make the change or produce the artifact | CLI / editor / subagent / workflow tool | Work is created with minimal unnecessary surface area. |
+| **VI** | **Verification** | Run tests, reviews, scans, or evidence checks | Test/build/security/docs tools | Completion is backed by output, not confidence. |
+| **VII** | **Persistence** | Save the result where future work can use it | Docs / Obsidian / changelog / issue comment | Knowledge and decisions survive the session. |
 
 ---
 
-## The Intelligence Layer of the Galyarder Ecosystem
+## The Intelligence Layer of the Galyarder ecosystem
 
-Galyarder Framework is the underlying **brain** designed to power the next generation of autonomous entities.
+Galyarder Framework is one layer in a larger autonomous execution system:
 
--   **[Galyarder Agent](https://github.com/galyarderlabs/galyarder-agent)**: The **Entity**. Digital personas with recursive long-term memory, stable visual identity, and universal presence.
--   **[Galyarder HQ](https://github.com/galyarderlabs/galyarder-hq)**: The **Control Plane**. Master governance for orchestrating swarms and maintaining operational control.
--   **Galyarder Framework**: The **Intelligence**. The specialized workforce and elite SOPs.
+- **[Galyarder Agent](https://github.com/galyarderlabs/galyarder-agent)** — the continuity and interface layer: memory, identity, channel presence, and tool access.
+- **[Galyarder HQ](https://github.com/galyarderlabs/galyarder-hq)** — the command layer: company structure, goals, budgets, approval gates, reporting lines, and operational control.
+- **Galyarder Framework** — the intelligence layer: agents, skills, commands, review gates, and execution protocols.
+- **Galyarder Ledger** — the financial execution layer: agent-assisted, ledger-backed finance and operational evidence.
+
+Framework can be used on its own, but it is designed to fit into an agentic-company stack where intent, execution, evidence, memory, and command stay connected.
 
 ---
 
-## Installation: The Digital Company Protocol
+## Installation
 
-Follow this sequence to transform any directory into a high-integrity Digital Company.
-
-### Step 1: Global CLI Installation (One-Time)
+### Step 1: Global CLI installation
 
 Bootstrap the framework and link the core commands to your system's PATH.
 
-#### Option A: NPM (Recommended)
-Install directly from the global registry. This automatically links all `galyarder` commands.
+#### Option A: NPM (recommended)
+
+Install directly from the global registry. This links the `galyarder` command and companion utilities.
+
 ```bash
 npm install -g galyarder-framework
 ```
 
-#### Option B: Skills.sh (Agentic)
-Pull specific intelligence bundles directly into your agent environment.
+#### Option B: Skills.sh
+
+Pull the full framework or a specific department bundle into an agent environment.
+
 ```bash
 # Pull everything
 npx skills add galyarderlabs/galyarder-framework --skill full
 
-# Or pull by department (engineering, growth, security, etc.)
+# Or pull by department, such as engineering, growth, security, product, or finance
 npx skills add galyarderlabs/galyarder-framework --skill engineering
 ```
 
-#### Option C: Git Clone
-For developers who want to stay on the bleeding edge of the source.
+#### Option C: Git clone
+
+Use the source directly when you want to inspect, modify, or contribute to the framework.
+
 ```bash
 # 1. Clone the intelligence layer
 git clone https://github.com/galyarderlabs/galyarder-framework.git ~/galyarder-framework
@@ -145,103 +180,122 @@ cd ~/galyarder-framework
 ./scripts/setup-cli.sh
 ```
 
-### Step 2: Initialize & Deploy (Per Project)
+### Step 2: Initialize and deploy per project
 
-Navigate to **your specific project** (e.g., `~/projects/my-app`) and deploy the workforce.
+Navigate to the project where you want to install the operating structure.
 
 ```bash
-# 1. Initialize Digital Headquarters
+# 1. Initialize the project operating structure
 galyarder scaffold
 
-# 2. Deploy Agents to your mission environment
+# 2. Deploy agents, rules, skills, and commands to your target tool
 # Available: cursor, windsurf, kilocode, augment, openclaw, hermes, antigravity, galyarder-agent
 galyarder deploy --tool <name>
 ```
 
 ---
 
-## Managed & Autonomous Options
+## Managed and autonomous options
 
-#### A. Official Marketplaces
-*Recommended for rapid integration with cloud orchestrators.*
+### A. Official marketplaces
 
-- **Claude Code / Copilot CLI**:
-  ```bash
-  # 1. Add the Galyarder Marketplace
-  /plugin marketplace add galyarderlabs/galyarder-framework
+Recommended when your coding environment supports plugin marketplaces or managed extensions.
 
-  # 2. Install the full bundle
-  /plugin install galyarder-framework@galyarderlabs-marketplace
+#### Claude Code / Copilot CLI
 
-  # OR install departments selectively (9 available)
-  /plugin install executive-dept@galyarderlabs-marketplace
-  /plugin install engineering-dept@galyarderlabs-marketplace
-  # ... (growth, security, product, infrastructure, legal-finance, knowledge)
-  ```
+```bash
+# 1. Add the Galyarder Marketplace
+/plugin marketplace add galyarderlabs/galyarder-framework
 
-- **Gemini CLI**:
-  ```bash
-  # Install
-  gemini extensions install https://github.com/galyarderlabs/galyarder-framework
+# 2. Install the full bundle
+/plugin install galyarder-framework@galyarderlabs-marketplace
 
-  # Update
-  gemini extensions update galyarder-framework
+# Or install departments selectively
+/plugin install executive-dept@galyarderlabs-marketplace
+/plugin install engineering-dept@galyarderlabs-marketplace
+# ...growth, security, product, infrastructure, legal-finance, knowledge
+```
 
-  # Uninstall
-  gemini extensions uninstall galyarder-framework
-  ```
+#### Gemini CLI
 
-  Note: The framework uses a **Universal Plugin Architecture**. All assets are unified into `agents/`, `skills/`, and `commands/` for 100% compatibility across Google, Anthropic, and Microsoft environments.
+```bash
+# Install
+gemini extensions install https://github.com/galyarderlabs/galyarder-framework
 
-#### B. Autonomous Directives (Codex / OpenCode)
-*For tools that can autonomously fetch logic via direct instructions.*
+# Update
+gemini extensions update galyarder-framework
 
-- **OpenAI Codex**:
-  Tell Codex: `Fetch and follow instructions from https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/main/.codex/INSTALL.md`
+# Uninstall
+gemini extensions uninstall galyarder-framework
+```
 
-- **OpenCode**:
-  Tell OpenCode: `Fetch and follow instructions from https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/main/.opencode/INSTALL.md`
+The framework uses a universal plugin structure. Assets are organized into `agents/`, `skills/`, `commands/`, `personas/`, and `integrations/` so the same operating logic can be adapted across Google, Anthropic, Microsoft, OpenAI, and local-agent environments.
 
----
+### B. Autonomous directives for Codex and OpenCode
 
-## Philosophy
+For tools that can fetch instructions directly, point them at the install guides.
 
-- **Verified Logic** — Output is a liability until it is systematically verified.
-- **Context Economy** — RTK proxy usage is mandatory to maintain high-signal communication.
-- **Math Over Magic** — Base decisions on empirical data, ROI, and institutional probability.
-- **Goal to Market** — A mission is not complete until it achieves market-ready status.
+#### OpenAI Codex
 
----
+```text
+Fetch and follow instructions from https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/main/.codex/INSTALL.md
+```
 
-## Technical Integrity: The Karpathy Principles
+#### OpenCode
 
-The framework enforces rigid adherence to the Karpathy Principles to eliminate slop:
-
-- **Think Before Coding**: Mandatory `sequentialthinking` and `context7` MCP loops before any implementation.
-- **Simplicity First**: Minimum effort to solve the objective. Zero speculative abstractions.
-- **Surgical Changes**: Touch only what is necessary. Perfect alignment with existing infrastructure.
-- **Goal-Driven Execution**: Empirical verification via a mission-first methodology.
+```text
+Fetch and follow instructions from https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/main/.opencode/INSTALL.md
+```
 
 ---
 
-## Digital Infrastructure: 8 High-Integrity Silos
+## Core principles
 
-The workforce is organized into specialized departments:
+- **Human command first** — agents expand the operator's ability to act; they do not remove judgment or approval.
+- **Ground before action** — inspect the repo, source docs, context, and constraints before making changes.
+- **Smallest useful change** — solve the stated objective without speculative abstractions.
+- **Evidence before completion** — tests, diffs, screenshots, logs, citations, or reports must back completion claims.
+- **Reusable operating knowledge** — useful work should leave behind docs, skills, commands, tests, or decision records.
+- **Goal to distribution** — a mission is not complete until the result can be reviewed, shipped, published, or used.
 
-- **Executive**: Strategic oversight and master orchestration.
-- **Engineering**: Deterministic implementation and TDD factory.
-- **Growth**: Behavioral arbitrage, marketing engineering, and design systems.
-- **Security**: Professional auditing and advanced offensive security.
-- **Product**: Roadmap integrity and strategic extraction.
-- **Infrastructure**: Reliability physics and automated deployment.
-- **Legal-Finance**: Regulatory compliance and token FinOps.
-- **Knowledge**: Memory preservation and visual logic mapping.
+---
+
+## Technical integrity
+
+The framework encourages a disciplined engineering loop:
+
+- **Think before coding** — use planning, source lookup, and explicit constraints before implementation.
+- **Use official references** — fetch current docs for APIs, libraries, and platform behavior before relying on memory.
+- **Prefer simple systems** — use the smallest architecture that satisfies the objective and can be maintained.
+- **Make surgical changes** — touch only the files required for the outcome unless a broader refactor is intentional.
+- **Verify the real path** — run tests, builds, lint, browser checks, security scans, or workflow-specific proof before calling work done.
+
+---
+
+## Departments
+
+The framework organizes work into domain departments. These are routing surfaces for agents, skills, commands, and reports; `galyarder scaffold` may create `docs/departments/*` in a project as the output surface.
+
+- **Executive** — strategy, prioritization, company direction, founder context, and decision logs.
+- **Engineering** — architecture, implementation, TDD, code review, refactoring, and release readiness.
+- **Product** — requirements, roadmaps, PRDs, experiments, product strategy, and user needs.
+- **Growth** — marketing, content, SEO, CRO, analytics, campaigns, retention, and revenue workflows.
+- **Sales** — technical sales, lead scoring, outreach assets, demos, qualification, and customer-facing material.
+- **Finance / Legal** — financial analysis, pricing, contracts, compliance, privacy, and operating-risk review.
+- **Security** — security review, threat modeling, secure automation, incident handling, and red-team planning.
+- **Infrastructure** — deployment, reliability, observability, FinOps, CI/CD, and operational runbooks.
+- **Knowledge** — documentation, Obsidian-style knowledge work, memory, diagrams, and durable reports.
 
 ---
 
 ## What we are building next
 
-We are currently engineering the next evolution of autonomous infrastructure, including cross-repo empire orchestration and automated revenue generation swarms.
+The next phase is to make the framework more concrete as an agentic-company operating layer:
+
+- cleaner department bundles for engineering, product, growth, sales, finance, legal, security, docs, and operations;
+- stronger examples that show a goal becoming a plan, issue, implementation, test, audit, and release artifact;
+- safer Codex/OpenCode-style install and review workflows;
+- better consolidation of open PRs into a smaller set of maintained release tracks.
 
 👉 **[Join the Galyarder Early Access Waitlist](https://galyarderlabs.app/en#early-access)**
 
@@ -256,4 +310,5 @@ We are currently engineering the next evolution of autonomous infrastructure, in
 </p>
 
 ---
-© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.
+
+© 2026 Galyarder Labs. Galyarder Framework. Agentic company execution infrastructure.
