@@ -1,14 +1,14 @@
 ---
 node_type: documentation
 silo: docs
-degree: 204
+degree: 150
 source: docs/skills/index.md
 ---
 # Galyarder Framework: Skills
 
 ## 🧠 Strategic Intelligence
 This entity is a **documentation** within the **docs** silo. 
-It has a connectivity degree of **204**.
+It has a connectivity degree of **150**.
 
 ## 🔗 Neural Links
 
@@ -43,60 +43,6 @@ It has a connectivity degree of **204**.
 - [[:material-folder-zip:-data-room]] (structural_reference | 1.0)
 - [[:material-folder-zip:-decision-logger]] (structural_reference | 1.0)
 - [[:material-folder-zip:-defuddle]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-airbnb]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-airtable]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-apple]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-bmw]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-cal]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-claude]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-clay]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-clickhouse]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-cohere]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-coinbase]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-composio]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-cursor]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-elevenlabs]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-expo]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-figma]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-framer]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-hashicorp]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-ibm]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-intercom]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-kraken]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-linear.app]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-lovable]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-minimax]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-mintlify]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-miro]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-mistral.ai]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-mongodb]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-notion]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-nvidia]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-ollama]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-opencode.ai]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-pinterest]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-posthog]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-raycast]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-replicate]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-resend]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-revolut]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-runwayml]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-sanity]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-sentry]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-spacex]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-spotify]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-stripe]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-supabase]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-superhuman]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-together.ai]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-uber]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-vercel]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-voltagent]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-warp]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-webflow]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-wise]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-x.ai]] (structural_reference | 1.0)
-- [[:material-folder-zip:-design-md-zapier]] (structural_reference | 1.0)
 - [[:material-folder-zip:-devops-engineer]] (structural_reference | 1.0)
 - [[:material-folder-zip:-dispatching-parallel-agents]] (structural_reference | 1.0)
 - [[:material-folder-zip:-doc-maintenance]] (structural_reference | 1.0)

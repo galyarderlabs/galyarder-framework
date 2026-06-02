@@ -793,6 +793,446 @@
       "degree": 10,
       "strategic": false
     },
+    "docs/design/design-md-airbnb.md": {
+      "title": "Design System: Airbnb",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-airtable.md": {
+      "title": "Design System: Airtable",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-apple.md": {
+      "title": "Design System: Apple",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-bmw.md": {
+      "title": "Design System: BMW",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-cal.md": {
+      "title": "Design System: Cal.com",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-claude.md": {
+      "title": "Design System: Claude (Anthropic)",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-clay.md": {
+      "title": "Design System: Clay",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-clickhouse.md": {
+      "title": "Design System: ClickHouse",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-cohere.md": {
+      "title": "Design System: Cohere",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-coinbase.md": {
+      "title": "Design System: Coinbase",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-composio.md": {
+      "title": "Design System: Composio",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-cursor.md": {
+      "title": "Design System: Cursor",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-elevenlabs.md": {
+      "title": "Design System: ElevenLabs",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-expo.md": {
+      "title": "Design System: Expo",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-figma.md": {
+      "title": "Design System: Figma",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-framer.md": {
+      "title": "Design System: Framer",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-hashicorp.md": {
+      "title": "Design System: HashiCorp",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-ibm.md": {
+      "title": "Design System: IBM",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-intercom.md": {
+      "title": "Design System: Intercom",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-kraken.md": {
+      "title": "Design System: Kraken",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-linear.app.md": {
+      "title": "Design System: Linear",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-lovable.md": {
+      "title": "Design System: Lovable",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-minimax.md": {
+      "title": "Design System: MiniMax",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-mintlify.md": {
+      "title": "Design System: Mintlify",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-miro.md": {
+      "title": "Design System: Miro",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-mistral.ai.md": {
+      "title": "Design System: Mistral AI",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-mongodb.md": {
+      "title": "Design System: MongoDB",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-notion.md": {
+      "title": "Design System: Notion",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-nvidia.md": {
+      "title": "Design System: NVIDIA",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-ollama.md": {
+      "title": "Design System: Ollama",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-opencode.ai.md": {
+      "title": "Design System: OpenCode",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-pinterest.md": {
+      "title": "Design System: Pinterest",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-posthog.md": {
+      "title": "Design System: PostHog",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-raycast.md": {
+      "title": "Design System: Raycast",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-replicate.md": {
+      "title": "Design System: Replicate",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-resend.md": {
+      "title": "Design System: Resend",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-revolut.md": {
+      "title": "Design System: Revolut",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-runwayml.md": {
+      "title": "Design System: Runway",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-sanity.md": {
+      "title": "Design System: Sanity",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-sentry.md": {
+      "title": "Design System: Sentry",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-spacex.md": {
+      "title": "Design System: SpaceX",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-spotify.md": {
+      "title": "Design System: Spotify",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-stripe.md": {
+      "title": "Design System: Stripe",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-supabase.md": {
+      "title": "Design System: Supabase",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-superhuman.md": {
+      "title": "Design System: Superhuman",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-together.ai.md": {
+      "title": "Design System: Together AI",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-uber.md": {
+      "title": "Design System: Uber",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-vercel.md": {
+      "title": "Design System: Vercel",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-voltagent.md": {
+      "title": "Design System: VoltAgent",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-warp.md": {
+      "title": "Design System: Warp",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-webflow.md": {
+      "title": "Design System: Webflow",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-wise.md": {
+      "title": "Design System: Wise",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-x.ai.md": {
+      "title": "Design System: xAI",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/design-md-zapier.md": {
+      "title": "Design System: Zapier",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 1,
+      "strategic": true
+    },
+    "docs/design/index.md": {
+      "title": "Design System Specifications",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 54,
+      "strategic": true
+    },
     "docs/agents/analytics-architect.md": {
       "title": ":material-folder-zip: analytics-architect",
       "category": "documentation",
@@ -1166,7 +1606,7 @@
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
-      "degree": 204,
+      "degree": 150,
       "strategic": false
     },
     "docs/skills/ab-test-setup/index.md": {
@@ -1607,438 +2047,6 @@
       "silo": "docs",
       "community": "docs",
       "degree": 3,
-      "strategic": false
-    },
-    "docs/skills/design-md-airbnb/index.md": {
-      "title": ":material-folder-zip: design-md-airbnb",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-airtable/index.md": {
-      "title": ":material-folder-zip: design-md-airtable",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-apple/index.md": {
-      "title": ":material-folder-zip: design-md-apple",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-bmw/index.md": {
-      "title": ":material-folder-zip: design-md-bmw",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-cal/index.md": {
-      "title": ":material-folder-zip: design-md-cal",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-claude/index.md": {
-      "title": ":material-folder-zip: design-md-claude",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-clay/index.md": {
-      "title": ":material-folder-zip: design-md-clay",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-clickhouse/index.md": {
-      "title": ":material-folder-zip: design-md-clickhouse",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-cohere/index.md": {
-      "title": ":material-folder-zip: design-md-cohere",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-coinbase/index.md": {
-      "title": ":material-folder-zip: design-md-coinbase",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-composio/index.md": {
-      "title": ":material-folder-zip: design-md-composio",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-cursor/index.md": {
-      "title": ":material-folder-zip: design-md-cursor",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-elevenlabs/index.md": {
-      "title": ":material-folder-zip: design-md-elevenlabs",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-expo/index.md": {
-      "title": ":material-folder-zip: design-md-expo",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-figma/index.md": {
-      "title": ":material-folder-zip: design-md-figma",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-framer/index.md": {
-      "title": ":material-folder-zip: design-md-framer",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-hashicorp/index.md": {
-      "title": ":material-folder-zip: design-md-hashicorp",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-ibm/index.md": {
-      "title": ":material-folder-zip: design-md-ibm",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-intercom/index.md": {
-      "title": ":material-folder-zip: design-md-intercom",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-kraken/index.md": {
-      "title": ":material-folder-zip: design-md-kraken",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-linear.app/index.md": {
-      "title": ":material-folder-zip: design-md-linear.app",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-lovable/index.md": {
-      "title": ":material-folder-zip: design-md-lovable",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-minimax/index.md": {
-      "title": ":material-folder-zip: design-md-minimax",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-mintlify/index.md": {
-      "title": ":material-folder-zip: design-md-mintlify",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-miro/index.md": {
-      "title": ":material-folder-zip: design-md-miro",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-mistral.ai/index.md": {
-      "title": ":material-folder-zip: design-md-mistral.ai",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-mongodb/index.md": {
-      "title": ":material-folder-zip: design-md-mongodb",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-notion/index.md": {
-      "title": ":material-folder-zip: design-md-notion",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-nvidia/index.md": {
-      "title": ":material-folder-zip: design-md-nvidia",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-ollama/index.md": {
-      "title": ":material-folder-zip: design-md-ollama",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-opencode.ai/index.md": {
-      "title": ":material-folder-zip: design-md-opencode.ai",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-pinterest/index.md": {
-      "title": ":material-folder-zip: design-md-pinterest",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-posthog/index.md": {
-      "title": ":material-folder-zip: design-md-posthog",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-raycast/index.md": {
-      "title": ":material-folder-zip: design-md-raycast",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-replicate/index.md": {
-      "title": ":material-folder-zip: design-md-replicate",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-resend/index.md": {
-      "title": ":material-folder-zip: design-md-resend",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-revolut/index.md": {
-      "title": ":material-folder-zip: design-md-revolut",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-runwayml/index.md": {
-      "title": ":material-folder-zip: design-md-runwayml",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-sanity/index.md": {
-      "title": ":material-folder-zip: design-md-sanity",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-sentry/index.md": {
-      "title": ":material-folder-zip: design-md-sentry",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-spacex/index.md": {
-      "title": ":material-folder-zip: design-md-spacex",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-spotify/index.md": {
-      "title": ":material-folder-zip: design-md-spotify",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-stripe/index.md": {
-      "title": ":material-folder-zip: design-md-stripe",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-supabase/index.md": {
-      "title": ":material-folder-zip: design-md-supabase",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-superhuman/index.md": {
-      "title": ":material-folder-zip: design-md-superhuman",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-together.ai/index.md": {
-      "title": ":material-folder-zip: design-md-together.ai",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-uber/index.md": {
-      "title": ":material-folder-zip: design-md-uber",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-vercel/index.md": {
-      "title": ":material-folder-zip: design-md-vercel",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-voltagent/index.md": {
-      "title": ":material-folder-zip: design-md-voltagent",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-warp/index.md": {
-      "title": ":material-folder-zip: design-md-warp",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-webflow/index.md": {
-      "title": ":material-folder-zip: design-md-webflow",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-wise/index.md": {
-      "title": ":material-folder-zip: design-md-wise",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-x.ai/index.md": {
-      "title": ":material-folder-zip: design-md-x.ai",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": false
-    },
-    "docs/skills/design-md-zapier/index.md": {
-      "title": ":material-folder-zip: design-md-zapier",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
       "strategic": false
     },
     "docs/skills/devops-engineer/index.md": {
@@ -4248,446 +4256,6 @@
       "community": "docs",
       "degree": 22,
       "strategic": false
-    },
-    "docs/design/design-md-airbnb.md": {
-      "title": "Design System: Airbnb",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-airtable.md": {
-      "title": "Design System: Airtable",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-apple.md": {
-      "title": "Design System: Apple",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-bmw.md": {
-      "title": "Design System: BMW",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-cal.md": {
-      "title": "Design System: Cal.com",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-claude.md": {
-      "title": "Design System: Claude (Anthropic)",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-clay.md": {
-      "title": "Design System: Clay",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-clickhouse.md": {
-      "title": "Design System: ClickHouse",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-cohere.md": {
-      "title": "Design System: Cohere",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-coinbase.md": {
-      "title": "Design System: Coinbase",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-composio.md": {
-      "title": "Design System: Composio",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-cursor.md": {
-      "title": "Design System: Cursor",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-elevenlabs.md": {
-      "title": "Design System: ElevenLabs",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-expo.md": {
-      "title": "Design System: Expo",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-figma.md": {
-      "title": "Design System: Figma",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-framer.md": {
-      "title": "Design System: Framer",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-hashicorp.md": {
-      "title": "Design System: HashiCorp",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-ibm.md": {
-      "title": "Design System: IBM",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-intercom.md": {
-      "title": "Design System: Intercom",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-kraken.md": {
-      "title": "Design System: Kraken",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-linear.app.md": {
-      "title": "Design System: Linear",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-lovable.md": {
-      "title": "Design System: Lovable",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-minimax.md": {
-      "title": "Design System: MiniMax",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-mintlify.md": {
-      "title": "Design System: Mintlify",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-miro.md": {
-      "title": "Design System: Miro",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-mistral.ai.md": {
-      "title": "Design System: Mistral AI",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-mongodb.md": {
-      "title": "Design System: MongoDB",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-notion.md": {
-      "title": "Design System: Notion",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-nvidia.md": {
-      "title": "Design System: NVIDIA",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-ollama.md": {
-      "title": "Design System: Ollama",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-opencode.ai.md": {
-      "title": "Design System: OpenCode",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-pinterest.md": {
-      "title": "Design System: Pinterest",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-posthog.md": {
-      "title": "Design System: PostHog",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-raycast.md": {
-      "title": "Design System: Raycast",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-replicate.md": {
-      "title": "Design System: Replicate",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-resend.md": {
-      "title": "Design System: Resend",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-revolut.md": {
-      "title": "Design System: Revolut",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-runwayml.md": {
-      "title": "Design System: Runway",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-sanity.md": {
-      "title": "Design System: Sanity",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-sentry.md": {
-      "title": "Design System: Sentry",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-spacex.md": {
-      "title": "Design System: SpaceX",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-spotify.md": {
-      "title": "Design System: Spotify",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-stripe.md": {
-      "title": "Design System: Stripe",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-supabase.md": {
-      "title": "Design System: Supabase",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-superhuman.md": {
-      "title": "Design System: Superhuman",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-together.ai.md": {
-      "title": "Design System: Together AI",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-uber.md": {
-      "title": "Design System: Uber",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-vercel.md": {
-      "title": "Design System: Vercel",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-voltagent.md": {
-      "title": "Design System: VoltAgent",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-warp.md": {
-      "title": "Design System: Warp",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-webflow.md": {
-      "title": "Design System: Webflow",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-wise.md": {
-      "title": "Design System: Wise",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-x.ai.md": {
-      "title": "Design System: xAI",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/design-md-zapier.md": {
-      "title": "Design System: Zapier",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 1,
-      "strategic": true
-    },
-    "docs/design/index.md": {
-      "title": "Design System Specifications",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 54,
-      "strategic": true
     }
   },
   "edges": [
@@ -5102,6 +4670,330 @@
     {
       "source": "docs/galyarder-labs/README.md",
       "target": "docs/galyarder-labs/AGENT.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-airbnb.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-airtable.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-apple.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-bmw.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-cal.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-claude.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-clay.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-clickhouse.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-cohere.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-coinbase.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-composio.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-cursor.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-elevenlabs.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-expo.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-figma.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-framer.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-hashicorp.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-ibm.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-intercom.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-kraken.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-linear.app.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-lovable.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-minimax.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-mintlify.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-miro.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-mistral.ai.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-mongodb.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-notion.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-nvidia.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-ollama.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-opencode.ai.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-pinterest.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-posthog.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-raycast.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-replicate.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-resend.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-revolut.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-runwayml.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-sanity.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-sentry.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-spacex.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-spotify.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-stripe.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-supabase.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-superhuman.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-together.ai.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-uber.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-vercel.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-voltagent.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-warp.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-webflow.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-wise.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-x.ai.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/design/index.md",
+      "target": "docs/design/design-md-zapier.md",
       "type": "structural_reference",
       "confidence": 1.0
     },
@@ -6098,330 +5990,6 @@
     {
       "source": "docs/skills/index.md",
       "target": "docs/skills/defuddle/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-airbnb/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-airtable/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-apple/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-bmw/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-cal/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-claude/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-clay/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-clickhouse/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-cohere/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-coinbase/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-composio/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-cursor/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-elevenlabs/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-expo/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-figma/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-framer/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-hashicorp/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-ibm/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-intercom/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-kraken/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-linear.app/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-lovable/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-minimax/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-mintlify/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-miro/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-mistral.ai/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-mongodb/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-notion/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-nvidia/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-ollama/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-opencode.ai/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-pinterest/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-posthog/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-raycast/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-replicate/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-resend/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-revolut/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-runwayml/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-sanity/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-sentry/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-spacex/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-spotify/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-stripe/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-supabase/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-superhuman/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-together.ai/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-uber/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-vercel/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-voltagent/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-warp/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-webflow/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-wise/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-x.ai/index.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/skills/index.md",
-      "target": "docs/skills/design-md-zapier/index.md",
       "type": "structural_reference",
       "confidence": 1.0
     },
@@ -9832,330 +9400,6 @@
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-airbnb.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-airtable.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-apple.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-bmw.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-cal.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-claude.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-clay.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-clickhouse.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-cohere.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-coinbase.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-composio.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-cursor.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-elevenlabs.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-expo.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-figma.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-framer.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-hashicorp.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-ibm.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-intercom.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-kraken.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-linear.app.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-lovable.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-minimax.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-mintlify.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-miro.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-mistral.ai.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-mongodb.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-notion.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-nvidia.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-ollama.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-opencode.ai.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-pinterest.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-posthog.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-raycast.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-replicate.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-resend.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-revolut.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-runwayml.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-sanity.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-sentry.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-spacex.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-spotify.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-stripe.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-supabase.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-superhuman.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-together.ai.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-uber.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-vercel.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-voltagent.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-warp.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-webflow.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-wise.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-x.ai.md",
-      "type": "structural_reference",
-      "confidence": 1.0
-    },
-    {
-      "source": "docs/design/index.md",
-      "target": "docs/design/design-md-zapier.md",
-      "type": "structural_reference",
-      "confidence": 1.0
     }
   ],
   "summary": {
@@ -10189,7 +9433,7 @@
           "category": "documentation",
           "silo": "docs",
           "community": "docs",
-          "degree": 204,
+          "degree": 150,
           "strategic": false
         }
       ],
