@@ -116,8 +116,8 @@ plugins = manifest.get('plugins', [])
 if len(plugins) != 1:
     raise SystemExit(f"Marketplace must expose one canonical root plugin, found {len(plugins)}")
 plugin = plugins[0]
-if plugin.get('name') != 'galyarder-framework':
-    raise SystemExit("Marketplace plugin name must be galyarder-framework")
+if plugin.get('name') not in ('galyarder-framework', '@galyarderlabs/galyarder-framework'):
+    raise SystemExit("Marketplace plugin name must be galyarder-framework or @galyarderlabs/galyarder-framework")
 source = plugin.get('source')
 if source not in ('.', './'):
     raise SystemExit(f"Marketplace source must point at canonical repo root, got {source!r}")
