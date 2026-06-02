@@ -3,7 +3,7 @@ name: "fundraising-email"
 description: "Investor Email Specialist. Use to write fundraising outreach, warm intro blurbs, follow-ups, investor updates, and close-the-loop emails with founder-grade brevity and specificity."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-06-02'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

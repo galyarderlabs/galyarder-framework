@@ -3,7 +3,7 @@ name: "copywriting"
 description: "Write rigorous, conversion-focused marketing copy for landing pages and emails. Enforces brief confirmation and strict no-fabrication rules."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-06-02'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

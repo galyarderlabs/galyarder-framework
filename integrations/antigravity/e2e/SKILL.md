@@ -3,7 +3,7 @@ name: "e2e"
 description: "End-to-end testing specialist using Playwright. Generates and runs user journey tests."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-06-02'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

@@ -3,7 +3,7 @@ name: "founder-context"
 description: "Founder Operating Context. Use to create or update the canonical founder/startup context document so every fundraising, growth, product, and recruiting workflow runs on concrete company facts instead of generic assumptions."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-06-02'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

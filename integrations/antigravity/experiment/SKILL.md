@@ -3,7 +3,7 @@ name: "experiment"
 description: "EXPERIMENT MODE: Timeboxed, throwaway code for rapid validation. Bypasses TDD requirements. Code must be quarantined and cannot be merged to main."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-06-02'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

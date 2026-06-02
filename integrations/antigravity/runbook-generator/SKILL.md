@@ -3,7 +3,7 @@ name: "runbook-generator"
 description: "Use when an operational workflow, release procedure, incident pattern, or support process needs to be captured as a repeatable runbook."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-06-02'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

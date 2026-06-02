@@ -3,7 +3,7 @@ name: "validating-backup-integrity-for-recovery"
 description: "Use when recovery planning requires verification that backups are restorable, complete, and safe to trust before an incident or recovery event."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-06-02'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

@@ -3,7 +3,7 @@ name: "signup-flow-cro"
 description: "Use when signup or onboarding conversion needs targeted analysis of friction, motivation, guardrails, and experiment opportunities."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-06-02'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

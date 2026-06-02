@@ -9,7 +9,6 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
-PERSONA_DIRS = [REPO_ROOT / "personas"]
 AGENT_DIRS = [REPO_ROOT / "agents"]
 SKILL_DIRS = [REPO_ROOT / "skills"]
 COMMAND_DIRS = [REPO_ROOT / "commands"]
@@ -138,13 +137,11 @@ def build_surface(output_root: Path) -> None:
     agents_dir = output_root / "agents"
     skills_dir = output_root / "skills"
     commands_dir = output_root / "commands"
-    personas_dir = output_root / "personas"
 
-    for path in (agents_dir, skills_dir, commands_dir, personas_dir):
+    for path in (agents_dir, skills_dir, commands_dir):
         ensure_empty_dir(path)
 
-    copy_unique_agent_markdown(PERSONA_DIRS, personas_dir)
-    copy_unique_agent_markdown(PERSONA_DIRS + AGENT_DIRS, agents_dir)
+    copy_unique_agent_markdown(AGENT_DIRS, agents_dir)
     copy_unique_markdown(COMMAND_DIRS, commands_dir)
     copy_unique_skill_dirs(SKILL_DIRS, skills_dir)
 

@@ -3,7 +3,7 @@ name: "executing-plans"
 description: "Use when you have a written implementation plan to execute in a separate session with review checkpoints"
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-06-02'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

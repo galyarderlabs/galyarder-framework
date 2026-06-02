@@ -70,8 +70,8 @@ for root, _, files in os.walk('.'):
         continue
     for f in files:
         if f.endswith('.md'):
-            # Only target agents, commands, personas, and SKILL.md files
-            if 'agents' in root or 'personas' in root or 'commands' in root or f == 'SKILL.md':
+            # Only target agents, commands, and SKILL.md files
+            if 'agents' in root or 'commands' in root or f == 'SKILL.md':
                 files_to_process.append(os.path.join(root, f))
 
 for f_path in files_to_process:

@@ -3,7 +3,7 @@ name: "video"
 description: "Programmatic video generation specialist using React and Remotion."
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-06-02'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

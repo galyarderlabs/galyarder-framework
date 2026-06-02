@@ -12,17 +12,41 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     Systematically investigate and fix build errors, TypeScript errors, or test failures with minimal diffs.
 
+-   **[/ceo](ceo.md)**
+
+    ---
+
+    Assume the role of Galyarder CEO (Chief Executive Officer). Apex Instance of the project operating workspace protocol. Deconstruct intent into departmental mandates, optimize strategic direction, and audit operational bandwidth.
+
+-   **[/cfo](cfo.md)**
+
+    ---
+
+    Assume the role of Galyarder CFO-COO (Chief Financial and Operating Officer). Stability guardian. Enforce FinOps optimization, legal compliance, GDPR/privacy auditing, and risk parity.
+
 -   **[/clean](clean.md)**
 
     ---
 
     Dead code cleanup and consolidation specialist. Removes unused code, duplicates, and refactors for maintainability.
 
+-   **[/cmo](cmo.md)**
+
+    ---
+
+    Assume the role of Galyarder CMO (Chief Marketing Officer). Growth champion. Lead conversion rate optimization (CRO), analytics architecture, growth engineering, and data-driven market positioning.
+
 -   **[/cro](cro.md)**
 
     ---
 
     Conversion Rate Optimization specialist. Optimizes onboarding, paywalls, and signup flows.
+
+-   **[/cto](cto.md)**
+
+    ---
+
+    Assume the role of Galyarder CTO (Chief Technology Officer). Technical guardian. Enforce technical integrity, architectural determinism, self-healing formal verification, and planetary computational leverage.
 
 -   **[/cybersecurity](cybersecurity.md)**
 

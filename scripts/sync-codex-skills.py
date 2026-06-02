@@ -6,7 +6,6 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).parent.parent
 SKILLS_SRC = REPO_ROOT / "skills"
 AGENTS_SRC = REPO_ROOT / "agents"
-PERSONAS_SRC = REPO_ROOT / "personas"
 DESIGN_SRC = REPO_ROOT / "design"
 COMMANDS_SRC = REPO_ROOT / "commands"
 
@@ -19,7 +18,7 @@ def sync():
     SKILLS_DEST.mkdir(parents=True, exist_ok=True)
     
     # Process all sources
-    for src_dir in [SKILLS_SRC, AGENTS_SRC, PERSONAS_SRC, DESIGN_SRC, COMMANDS_SRC]:
+    for src_dir in [SKILLS_SRC, AGENTS_SRC, DESIGN_SRC, COMMANDS_SRC]:
         if not src_dir.exists(): continue
         for item in src_dir.rglob("SKILL.md"):
             name = item.parent.name

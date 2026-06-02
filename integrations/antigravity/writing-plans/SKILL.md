@@ -3,7 +3,7 @@ name: "writing-plans"
 description: "Use when you have a spec or requirements for a multi-step task, before touching code"
 risk: low
 source: internal
-date_added: '2026-04-20'
+date_added: '2026-06-02'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

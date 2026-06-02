@@ -261,7 +261,7 @@ python3 "${SCRIPT_DIR}/build_root_extension_surface.py"
 
 SKILLS_TMP="$(mktemp)"
 ( cd "$REPO_ROOT"
-  for d in agents personas commands; do
+  for d in agents commands; do
     if [ -d "$d" ]; then
       find "$d" -maxdepth 1 -type f -name "*.md" -not -path './.git/*' | sort
     fi
