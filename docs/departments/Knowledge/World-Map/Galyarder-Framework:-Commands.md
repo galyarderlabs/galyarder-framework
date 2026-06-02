@@ -1,21 +1,25 @@
 ---
 node_type: documentation
 silo: docs
-degree: 22
+degree: 26
 source: docs/commands/index.md
 ---
 # Galyarder Framework: Commands
 
 ## 🧠 Strategic Intelligence
 This entity is a **documentation** within the **docs** silo. 
-It has a connectivity degree of **22**.
+It has a connectivity degree of **26**.
 
 ## 🔗 Neural Links
 
 ### Directing To:
 - [[:material-folder-zip:-Build-Fix]] (structural_reference | 1.0)
+- [[:material-folder-zip:-galyarder-ceo]] (structural_reference | 1.0)
+- [[:material-folder-zip:-galyarder-cfo-coo]] (structural_reference | 1.0)
 - [[:material-folder-zip:-Clean]] (structural_reference | 1.0)
+- [[:material-folder-zip:-galyarder-cmo]] (structural_reference | 1.0)
 - [[:material-folder-zip:-Cro]] (structural_reference | 1.0)
+- [[:material-folder-zip:-galyarder-cto]] (structural_reference | 1.0)
 - [[:material-folder-zip:-Cybersecurity]] (structural_reference | 1.0)
 - [[:material-folder-zip:-Deploy]] (structural_reference | 1.0)
 - [[:material-folder-zip:-Docs]] (structural_reference | 1.0)

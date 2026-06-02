@@ -1,14 +1,14 @@
 ---
 node_type: core-hukum
 silo: Root
-degree: 222
+degree: 226
 source: GEMINI.md
 ---
 # Gemini CLI Integration — Galyarder Framework
 
 ## 🧠 Strategic Intelligence
 This entity is a **core-hukum** within the **Root** silo. 
-It has a connectivity degree of **222**.
+It has a connectivity degree of **226**.
 
 ## 🔗 Neural Links
 
@@ -216,8 +216,12 @@ It has a connectivity degree of **222**.
 - [[:material-folder-zip:-writing-plans]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-writing-skills]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-Build-Fix]] (uses_proxy | 0.8)
+- [[:material-folder-zip:-galyarder-ceo]] (uses_proxy | 0.8)
+- [[:material-folder-zip:-galyarder-cfo-coo]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-Clean]] (uses_proxy | 0.8)
+- [[:material-folder-zip:-galyarder-cmo]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-Cro]] (uses_proxy | 0.8)
+- [[:material-folder-zip:-galyarder-cto]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-Cybersecurity]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-Deploy]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-Docs]] (uses_proxy | 0.8)

@@ -1,14 +1,14 @@
 ---
 node_type: core-hukum
 silo: Root
-degree: 242
+degree: 246
 source: CLAUDE.md
 ---
 # Claude Code Integration — Galyarder Framework
 
 ## 🧠 Strategic Intelligence
 This entity is a **core-hukum** within the **Root** silo. 
-It has a connectivity degree of **242**.
+It has a connectivity degree of **246**.
 
 ## 🔗 Neural Links
 
@@ -235,8 +235,12 @@ It has a connectivity degree of **242**.
 - [[:material-folder-zip:-writing-plans]] (enforces_protocol | 0.8)
 - [[:material-folder-zip:-writing-skills]] (enforces_protocol | 0.8)
 - [[:material-folder-zip:-Build-Fix]] (enforces_protocol | 0.8)
+- [[:material-folder-zip:-galyarder-ceo]] (enforces_protocol | 0.8)
+- [[:material-folder-zip:-galyarder-cfo-coo]] (enforces_protocol | 0.8)
 - [[:material-folder-zip:-Clean]] (enforces_protocol | 0.8)
+- [[:material-folder-zip:-galyarder-cmo]] (enforces_protocol | 0.8)
 - [[:material-folder-zip:-Cro]] (enforces_protocol | 0.8)
+- [[:material-folder-zip:-galyarder-cto]] (enforces_protocol | 0.8)
 - [[:material-folder-zip:-Cybersecurity]] (enforces_protocol | 0.8)
 - [[:material-folder-zip:-Deploy]] (enforces_protocol | 0.8)
 - [[:material-folder-zip:-Docs]] (enforces_protocol | 0.8)

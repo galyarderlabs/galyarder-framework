@@ -2,7 +2,7 @@
 node_type: documentation
 silo: docs
 degree: 3
-source: docs/agents/galyarder-cto.md
+source: docs/commands/cto.md
 ---
 # :material-folder-zip: galyarder-cto
 
@@ -18,3 +18,4 @@ It has a connectivity degree of **3**.
 
 ### Informed By:
 - [[Galyarder-Framework:-Agents]] (structural_reference | 1.0)
+- [[Galyarder-Framework:-Commands]] (structural_reference | 1.0)

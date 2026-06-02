@@ -38,7 +38,7 @@
       "category": "core-hukum",
       "silo": "Root",
       "community": "Root",
-      "degree": 242,
+      "degree": 246,
       "strategic": true
     },
     "GEMINI.md": {
@@ -46,7 +46,7 @@
       "category": "core-hukum",
       "silo": "Root",
       "community": "Root",
-      "degree": 222,
+      "degree": 226,
       "strategic": true
     },
     "BRAND.md": {
@@ -4089,6 +4089,22 @@
       "degree": 3,
       "strategic": false
     },
+    "docs/commands/ceo.md": {
+      "title": ":material-folder-zip: galyarder-ceo",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3,
+      "strategic": false
+    },
+    "docs/commands/cfo.md": {
+      "title": ":material-folder-zip: galyarder-cfo-coo",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3,
+      "strategic": false
+    },
     "docs/commands/clean.md": {
       "title": ":material-folder-zip: Clean",
       "category": "documentation",
@@ -4097,8 +4113,24 @@
       "degree": 3,
       "strategic": false
     },
+    "docs/commands/cmo.md": {
+      "title": ":material-folder-zip: galyarder-cmo",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3,
+      "strategic": false
+    },
     "docs/commands/cro.md": {
       "title": ":material-folder-zip: Cro",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 3,
+      "strategic": false
+    },
+    "docs/commands/cto.md": {
+      "title": ":material-folder-zip: galyarder-cto",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -4254,7 +4286,7 @@
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
-      "degree": 22,
+      "degree": 26,
       "strategic": false
     }
   },
@@ -9042,6 +9074,30 @@
       "confidence": 0.8
     },
     {
+      "source": "docs/commands/ceo.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/commands/ceo.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/commands/cfo.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/commands/cfo.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
       "source": "docs/commands/clean.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
@@ -9054,6 +9110,18 @@
       "confidence": 0.8
     },
     {
+      "source": "docs/commands/cmo.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/commands/cmo.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
       "source": "docs/commands/cro.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
@@ -9061,6 +9129,18 @@
     },
     {
       "source": "docs/commands/cro.md",
+      "target": "GEMINI.md",
+      "type": "uses_proxy",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/commands/cto.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/commands/cto.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -9277,13 +9357,37 @@
     },
     {
       "source": "docs/commands/index.md",
+      "target": "docs/commands/ceo.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/commands/index.md",
+      "target": "docs/commands/cfo.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/commands/index.md",
       "target": "docs/commands/clean.md",
       "type": "structural_reference",
       "confidence": 1.0
     },
     {
       "source": "docs/commands/index.md",
+      "target": "docs/commands/cmo.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/commands/index.md",
       "target": "docs/commands/cro.md",
+      "type": "structural_reference",
+      "confidence": 1.0
+    },
+    {
+      "source": "docs/commands/index.md",
+      "target": "docs/commands/cto.md",
       "type": "structural_reference",
       "confidence": 1.0
     },
@@ -9411,7 +9515,7 @@
           "category": "core-hukum",
           "silo": "Root",
           "community": "Root",
-          "degree": 242,
+          "degree": 246,
           "strategic": true
         }
       ],
@@ -9422,7 +9526,7 @@
           "category": "core-hukum",
           "silo": "Root",
           "community": "Root",
-          "degree": 222,
+          "degree": 226,
           "strategic": true
         }
       ],
