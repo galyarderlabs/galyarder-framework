@@ -3,7 +3,7 @@ import os
 import shutil
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).parent.parent
+REPO_ROOT = Path(__file__).resolve().parent.parent
 SKILLS_SRC = REPO_ROOT / "skills"
 AGENTS_SRC = REPO_ROOT / "agents"
 PERSONAS_SRC = REPO_ROOT / "personas"
@@ -22,11 +22,13 @@ def sync():
     for src_dir in [SKILLS_SRC, AGENTS_SRC, PERSONAS_SRC, DESIGN_SRC, COMMANDS_SRC]:
         if not src_dir.exists(): continue
         for item in src_dir.rglob("SKILL.md"):
+            if not item.is_file(): continue
             name = item.parent.name
             dest = SKILLS_DEST / name
             if not dest.exists():
                 os.symlink(item.parent, dest)
         for item in src_dir.glob("*.md"):
+            if not item.is_file(): continue
             if item.name == "README.md" or item.name == "SKILL.md": continue
             name = item.stem
             dest = SKILLS_DEST / name
