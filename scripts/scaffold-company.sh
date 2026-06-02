@@ -10,6 +10,7 @@ RAW_URL="https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/mai
 REAL_PATH=$(readlink -f "${BASH_SOURCE[0]}")
 SCRIPT_DIR="$(cd "$(dirname "$REAL_PATH")" && pwd)"
 LOCAL_TEMPLATE_DIR="$SCRIPT_DIR/../docs/templates"
+LOCAL_DESIGN_DIR="$SCRIPT_DIR/../docs/design"
 
 echo "🚀 Initializing Galyarder Framework Digital Headquarters in $(pwd)..."
 
@@ -18,6 +19,7 @@ mkdir -p docs/specs
 mkdir -p docs/plans
 mkdir -p docs/reports
 mkdir -p docs/templates
+mkdir -p docs/design
 
 # 2. Departmental Structure
 DEPARTMENTS=("Executive" "Product" "Engineering" "Growth" "Security" "Infrastructure" "Legal-Finance" "Knowledge")
@@ -57,6 +59,11 @@ if [ -d "$LOCAL_TEMPLATE_DIR" ]; then
     cp "$LOCAL_TEMPLATE_DIR"/*Legal-Finance* docs/departments/Legal-Finance/ 2>/dev/null || true
     cp "$LOCAL_TEMPLATE_DIR"/*Knowledge* docs/departments/Knowledge/ 2>/dev/null || true
     cp "$LOCAL_TEMPLATE_DIR"/*Operations* docs/departments/Infrastructure/ 2>/dev/null || true
+    
+    if [ -d "$LOCAL_DESIGN_DIR" ]; then
+        echo "    (Seeding design specifications from: $LOCAL_DESIGN_DIR)"
+        cp "$LOCAL_DESIGN_DIR"/design-md-*.md docs/design/ 2>/dev/null || true
+    fi
 else
     echo "    (Local source not found. Fetching from Galyarder GitHub...)"
     seed_remote "Galyarder-Framework Founder Office Audit.md" "docs/departments/Executive"
