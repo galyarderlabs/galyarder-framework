@@ -15,7 +15,7 @@ if [ -d "$legacy_skills_dir" ]; then
 fi
 
 # Read using-galyarder-framework content
-bootstrap_skill_path="${PLUGIN_ROOT}/skills/using-SKILL.md"
+bootstrap_skill_path="${PLUGIN_ROOT}/skills/using-galyarder-framework/SKILL.md"
 bootstrap_content=$(cat "$bootstrap_skill_path" 2>&1 || echo "Error reading bootstrap skill")
 
 # Escape string for JSON embedding
