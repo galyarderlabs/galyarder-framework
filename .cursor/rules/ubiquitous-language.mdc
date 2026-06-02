@@ -3,7 +3,7 @@ description: "Extract a DDD-style ubiquitous language glossary from the current 
 globs: 
 alwaysApply: false
 ---
-## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
+## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Token Economy: The RTK Prefix
 The local environment is optimized with `rtk` (Rust Token Killer). Always use the `rtk` prefix for shell commands (e.g., `rtk npm test`) to minimize token consumption.
@@ -19,8 +19,8 @@ No cognitive labor happens outside of a tracked ticket. You operate exclusively 
 ### 3. Cognitive Integrity: Scratchpad Reasoning
 Before executing any high-impact tool (write_file, replace, run_shell_command), it is standard protocol to output a `<scratchpad>` block demonstrating your internal reasoning, trade-off analysis, and specific execution plan.
 
-### 4. Technical Integrity: The Karpathy Principles
-Combat AI slop through rigid adherence to the four principles of Andrej Karpathy:
+### 4. Technical Integrity: The industry experts Principles
+Combat AI slop through rigid adherence to the four principles of Andrej industry experts:
 1. **Think Before Coding**: Don't guess. **If uncertain, STOP and ASK.** State assumptions explicitly. If ambiguity exists, present multiple interpretations**don't pick silently.** Push back if a simpler approach exists.
 2. **Simplicity First**: Implement the minimum code that solves the problem. **No speculative abstractions.** If 200 lines could be 50, **rewrite it.** No "configurability" unless requested.
 3. **Surgical Changes**: Touch **ONLY** what is necessary. Every changed line must trace to the request. Don't "improve" adjacent code or refactor things that aren't broken. Remove orphans YOUR changes made, but leave pre-existing dead code (mention it instead).

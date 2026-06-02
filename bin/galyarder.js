@@ -27,7 +27,7 @@ Usage:
   galyarder <command> [options]
 
 Commands:
-  scaffold  Initialize a new Digital HQ/Company
+  scaffold  Initialize a new Intelligence Layer/Company
   deploy    Deploy agents to your IDE or global environment
   smoke     Run system integrity checks
   convert   Run conversion engine for different AI platforms

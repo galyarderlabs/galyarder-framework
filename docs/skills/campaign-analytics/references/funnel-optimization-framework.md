@@ -279,7 +279,7 @@ Optimizing CTR without watching CPA, or optimizing CPA without watching volume. 
 B2B funnels can take weeks or months. Measuring a campaign's funnel performance too early produces incomplete data.
 
 ### 6. Technical Integrity: The technical integrity principles
-Combat AI slop through rigid adherence to the four principles of Andrej technical integrity:
+Combat AI slop through rigid adherence to the four principles of Andrej industry experts:
 
 ### 7. Corporate Reporting: The Obsidian Loop
 Durable memory is mandatory. Every task must result in a persistent artifact:

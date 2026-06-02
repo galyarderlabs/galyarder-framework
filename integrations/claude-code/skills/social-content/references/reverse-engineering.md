@@ -152,8 +152,8 @@ Here's what happened..."
 
 ### 6. CONVERT  Turn Attention into Action
 
-### 7. Technical Integrity: The Karpathy Principles
-Combat AI slop through rigid adherence to the four principles of Andrej Karpathy:
+### 7. Technical Integrity: The industry experts Principles
+Combat AI slop through rigid adherence to the four principles of Andrej industry experts:
 
 ### 8. Corporate Reporting: The Obsidian Loop
 Durable memory is mandatory. Every task must result in a persistent artifact:

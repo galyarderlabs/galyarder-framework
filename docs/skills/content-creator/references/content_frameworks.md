@@ -22,7 +22,7 @@ Ready-to-use templates for blog posts, social media, email marketing, video scri
 ### 1. Blog Post Templates
 
 ### 2. Technical Integrity: The technical integrity principles
-Combat AI slop through rigid adherence to the four principles of Andrej technical integrity:
+Combat AI slop through rigid adherence to the four principles of Andrej industry experts:
 
 ### 3. Corporate Reporting: The Obsidian Loop
 Durable memory is mandatory. Every task must result in a persistent artifact:
@@ -284,7 +284,7 @@ Question to encourage engagement?
 
 12/ Recap in 3 key points:
     - Point 1
-    - Point 2
+    - Point 2  
     - Point 3
 
 13/ CTA: If you found this helpful, [action]
@@ -311,7 +311,7 @@ Here's what I learned:
 
 Drop a [emoji] if you've experienced this too!
 
-What's your biggest challenge with [topic]? Let me know below
+What's your biggest challenge with [topic]? Let me know below 
 
 -
 #hashtag1 #hashtag2 #hashtag3 #hashtag4 #hashtag5

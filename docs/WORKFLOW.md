@@ -1,4 +1,4 @@
-# Galyarder Framework: Agentic Company Workflow
+# Galyarder Framework: agentic company Workflow
 
 The workflow turns founder/operator intent into reviewed work across departments. It is designed for software, product, growth, finance, sales, documentation, legal, security, operations, and strategy. Coding is one surface area; the framework is broader than coding.
 

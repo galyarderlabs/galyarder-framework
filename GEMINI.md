@@ -23,3 +23,8 @@ Gemini CLI should use Galyarder Framework as an agentic-company operating layer:
 ## Boundary
 
 Do not present Framework as artificial general intelligence or a magic autonomous system. It is a human-directed Intelligence Layer for coordinated, evidence-backed execution.
+
+## Operational & Communication Integrity
+
+1. **Strict Professional Output**: All commits, pull request titles/descriptions, changelogs, release notes, and documentation must be written in a clean, professional, clinical enterprise tone.
+2. **No Meta-Disclaimers**: Do **NOT** mention, write about, or reference any meta-discussions regarding "removing slang", "fixing edgy phrasing", or "purging alay/unprofessional words" in official repository records. Deliver the professional work directly without meta-explanations.

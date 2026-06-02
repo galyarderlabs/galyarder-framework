@@ -19,7 +19,7 @@ Complete this checklist before distributing software that contains open source c
 ### 1.2 License Classification
 
 ### 1. Technical Integrity: The technical integrity principles
-Combat AI slop through rigid adherence to the four principles of Andrej technical integrity:
+Combat AI slop through rigid adherence to the four principles of Andrej industry experts:
 
 ### 2. Corporate Reporting: The Obsidian Loop
 Durable memory is mandatory. Every task must result in a persistent artifact:

@@ -581,7 +581,7 @@ These surface rules are hard gates for human designers and AI design agents. If 
 | Dashboard | Machine layer: trusted before beautiful, neutral surfaces, semantic status, clear scan path, command state, evidence and workflow visibility. | Calling HQ a dashboard, using marketing glow/gradient as product chrome, vanity KPIs without proof, or generic SaaS bento clutter. |
 | Ledger | Operational financial workspace with ledger state transitions, evidence, G-Agent workforce status, review-needed states, guarded execution, reports, and audit readiness. | Bookkeeping toy aesthetics, warung/Excel replacement framing, decorative crypto visuals, cute G-Agent avatars, or unreviewed permanent state changes. |
 | HQ | Strategic Command Interface with org charts, departments, reporting lines, goals, budgets, token costs, hard stops, approval gates, rollback, and multi-company isolation. | Reducing HQ to chat, generic dashboards, micromanagement noise, or command surfaces without budget/approval visibility. |
-| Framework | Intelligence Layer for Autonomous Goal Integration with blueprints, tickets, SOPs, skills/templates, workflows, agent runtime, TDD/tests, audits, execution proof, and tool integrations. | Prompt-pack aesthetics, vague AGI claims, hiding tests/audits, or treating the public developer-facing framework as only internal. |
+| Framework | Intelligence Layer for Open-source Agentic Company Framework with blueprints, tickets, SOPs, skills/templates, workflows, agent runtime, TDD/tests, audits, execution proof, and tool integrations. | Prompt-pack aesthetics, vague Agentic Company Framework claims, hiding tests/audits, or treating the public developer-facing framework as only internal. |
 | Agent | Continuity Layer with persistent memory, local profile, values, voice, visual identity, channel presence, scheduled jobs, and continuity records. | Generic chatbot UI, confusing Galyarder Agent with Ledger G-Agents, implying the human is replaced, or relying only on message bubbles. |
 | Workforce | Machine layer: role-based G-Agent activity, state, assignments, outputs, guardrails, review queues, escalation, and evidence. Agents should feel operational and alive, not cute. | Mascot companions, toy assistants, unbounded autonomy, hidden guardrails, or status communicated by color alone. |
 | Reports | Clean, export-ready, audit-ready, high-contrast, print-safe, with source references, evidence trail, timestamps, and clear assumptions. | Cinematic backgrounds, glow, heavy texture, tiny type, decorative charts, or claims detached from source/evidence. |
@@ -640,7 +640,7 @@ Avoid:
 
 ### Galyarder Framework
 
-Purpose: turn high-level business vision into deterministic implementation through Autonomous Goal Integration.
+Purpose: turn high-level business vision into deterministic implementation through Open-source Agentic Company Framework.
 
 Design should emphasize:
 
@@ -658,7 +658,7 @@ Design should emphasize:
 Avoid:
 
 - prompt-pack aesthetics,
-- vague AGI claims,
+- vague Agentic Company Framework claims,
 - treating the Framework as only internal if it is public/developer-facing,
 - hiding execution proof.
 

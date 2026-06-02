@@ -152,8 +152,8 @@ Answer these questions to narrow down your choice:
 | Yes, but must stay open | LGPL-3.0 |
 | No, standalone application | Any license appropriate |
 
-### 6. Technical Integrity: The Karpathy Principles
-Combat AI slop through rigid adherence to the four principles of Andrej Karpathy:
+### 6. Technical Integrity: The industry experts Principles
+Combat AI slop through rigid adherence to the four principles of Andrej industry experts:
 
 ### 7. Corporate Reporting: The Obsidian Loop
 Durable memory is mandatory. Every task must result in a persistent artifact:

@@ -6,7 +6,7 @@ Galyarder Labs builds autonomous execution infrastructure that turns human inten
 
 The operating doctrine is:
 
-> **Dream → Airlock → Machine**  
+> **Dream → Airlock → Machine**
 > **Intent becomes infrastructure.**
 
 Galyarder Labs is the luminous invitation. The product suite is the machinery behind it.
@@ -63,32 +63,32 @@ Galyarder Labs
 
 ### Galyarder Ledger
 
-**Layer:** Ledger Layer  
-**Status:** active production / public / P0  
+**Layer:** Ledger Layer
+**Status:** active production / public / P0
 **Definition:** an Autonomous Financial Workspace for agent-assisted, audit-ready financial execution.
 
 Ledger turns fragmented operational work into structured state transitions, ledger-backed records, reporting, and evidence visibility.
 
 ### Galyarder HQ
 
-**Layer:** Command Layer  
-**Status:** active production / public / P0  
+**Layer:** Command Layer
+**Status:** active production / public / P0
 **Definition:** a Strategic Command Interface for building structure, setting goals, assigning work, and orchestrating autonomous company systems from a high-fidelity control plane.
 
 HQ prevents agent babysitting by giving operators org charts, reporting lines, budgets, approval gates, rollback controls, and multi-company command.
 
 ### Galyarder Framework
 
-**Layer:** Intelligence Layer  
-**Status:** active production / public and developer-facing / P0  
-**Definition:** an elite engineering protocol for the 1-Man Army, implementing **Autonomous Goal Integration** to convert high-level business vision into deterministic execution.
+**Layer:** Intelligence Layer
+**Status:** active production / public and developer-facing / P0
+**Definition:** an elite engineering protocol for the agentic company, implementing **Open-source Agentic Company Framework** to convert high-level business vision into deterministic execution.
 
-In this repository, **AGI means Autonomous Goal Integration**, not a claim of artificial general intelligence.
+In this repository, **Agentic Company Framework means Open-source Agentic Company Framework**, not a claim of artificial general intelligence.
 
 ### Galyarder Agent
 
-**Layer:** Continuity Layer  
-**Status:** active / public / P1  
+**Layer:** Continuity Layer
+**Status:** active / public / P1
 **Definition:** a persistent digital entity with recursive memory, values, voice, local profile, visual identity, and cross-channel presence.
 
 Galyarder Agent is not the same as a Ledger G-Agent. Galyarder Agent is a persistent identity layer. Ledger G-Agents are role-based operational workforce agents inside Ledger.
@@ -142,7 +142,7 @@ Public website may show:
 - Galyarder HQ
 - Galyarder Framework
 - Galyarder Agent
-- The Infrastructure Suite for 1-Man Army autonomous execution
+- The Infrastructure Suite for agentic company autonomous execution
 
 Public website may mention only as future pipeline:
 
@@ -173,7 +173,7 @@ Technical-only, not high-level marketing:
 - Lead with human intent, continuity, execution, ownership, and operator leverage.
 - Do not call the product an AI wrapper, chatbot, bookkeeping app, Excel replacement, warung app, generic SaaS dashboard, or crypto-hype app.
 - Do not lead public-facing copy with Web3, crypto, blockchain, tokens, or speculation language.
-- Use operator-native language: operator, builder, 1-Man Army, agent workforce, command layer, ledger-backed execution, institutional power for the single operator.
+- Use operator-native language: operator, builder, agentic company, agent workforce, command layer, ledger-backed execution, institutional power for the single operator.
 - Every major claim must connect to product behavior, workflow visibility, agent capability, auditability, evidence, ledger state, or measurable outcome.
 
 ---

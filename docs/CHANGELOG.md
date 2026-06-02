@@ -2,6 +2,12 @@
 
 All notable changes to Galyarder Framework will be documented in this file.
 
+## [2.0.0] - 2026-06-02
+### Changed
+- **Unified agentic company Standard**: Completed a full repository alignment with the clinical, structured "agentic company Framework" and "project operating workspace" design paradigms.
+- **Enterprise-Grade Personas & Policies**: Updated and synchronized all executive personas (`galyarder-ceo`, `galyarder-cto`, `galyarder-cmo`, `galyarder-cfo-coo`), commands, rules, and skills to enforce professional, deterministic, and evidence-backed execution.
+- **NPM Package Deployment Automation**: Introduced a secure GitHub Actions workflow for automated NPM publishing.
+
 ## [1.9.9] - 2026-05-09
 ### Changed
 - **Canonical Extension Surface**: Removed redundant generated extension surfaces and aligned marketplace, Codex, package, and smoke-test contracts around the canonical `agents/`, `skills/`, `commands/`, `personas/`, and `integrations/` runtime source.

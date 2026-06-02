@@ -10,7 +10,7 @@ Before editing UI, product copy, brand copy, navigation, onboarding, reports, ad
 
 The project doctrine is:
 
-> **Dream → Airlock → Machine**  
+> **Dream → Airlock → Machine**
 > **Intent becomes infrastructure.**
 
 Do not build against generic SaaS assumptions. Do not invent a different brand.
@@ -27,7 +27,7 @@ The current public infrastructure suite:
 |---|---|---|
 | Galyarder Ledger | Autonomous Financial Workspace / Ledger Layer | active production / public / P0 |
 | Galyarder HQ | Strategic Command Interface / Command Layer | active production / public / P0 |
-| Galyarder Framework | Intelligence Layer for Autonomous Goal Integration | active production / public developer-facing / P0 |
+| Galyarder Framework | Intelligence Layer for Open-source Agentic Company Framework | active production / public developer-facing / P0 |
 | Galyarder Agent | Continuity Layer / persistent digital entity | active / public / P1 |
 
 Development pipeline:
@@ -41,7 +41,7 @@ Development pipeline:
 | Galyarder Wallet | multi-chain risk visibility | future / internal pipeline / P2 |
 | Galyarder Mind | decision tracking and pre-mortem analysis | future / internal pipeline / P2 |
 
-The user is not a passive consumer. The user is a serious operator, founder, builder, researcher, creator, technical strategist, 1-Man Army, or small elite team that needs leverage without bureaucracy.
+The user is not a passive consumer. The user is a serious operator, founder, builder, researcher, creator, technical strategist, agentic company, or small elite team that needs leverage without bureaucracy.
 
 ---
 
@@ -102,7 +102,7 @@ Agents must preserve these rules:
 - Do not describe Galyarder Ledger as bookkeeping software, a warung app, or an Excel replacement.
 - Do not lead public-facing copy with Web3, crypto, blockchain, tokens, or speculation language.
 - Do not use SMB/Enterprise as primary emotional segmentation.
-- Use operator-native language: operator, builder, 1-Man Army, agent workforce, command layer, ledger-backed execution, institutional power for the single operator.
+- Use operator-native language: operator, builder, agentic company, agent workforce, command layer, ledger-backed execution, institutional power for the single operator.
 - Every major claim must connect to product behavior, workflow visibility, agent capability, auditability, evidence, ledger state, command state, memory state, or measurable outcome.
 - Never promise effortless success or fully autonomous execution with no risk.
 - Never make the user feel replaced, passive, or inferior.
@@ -114,14 +114,14 @@ Agents must preserve these rules:
 |---|---|
 | autonomous execution infrastructure | AI wrapper |
 | operator | SMB user |
-| 1-Man Army | small business customer |
+| agentic company | small business customer |
 | institutional-grade capability | enterprise SaaS solution |
 | cryptographic ownership | crypto app |
 | ledger-backed execution | bookkeeping chatbot |
 | G-Agent workforce | AI assistant toy |
 | Strategic Command Interface | dashboard |
 | Galyarder Agent | chatbot persona |
-| Autonomous Goal Integration | artificial general intelligence claim |
+| Open-source Agentic Company Framework | artificial general intelligence claim |
 | guarded autonomy | fully autonomous with no risk |
 | evidence trail | guaranteed truth |
 | development pipeline | available product if not released |
@@ -184,7 +184,7 @@ Implementation rules:
 Copy must preserve operator command and proof-backed positioning.
 
 - Lead with human intent, continuity, execution, ownership, command, and operator leverage.
-- Use operator-native audience language: operator, builder, founder, researcher, creator, technical strategist, 1-Man Army, small elite team.
+- Use operator-native audience language: operator, builder, founder, researcher, creator, technical strategist, agentic company, small elite team.
 - Tie every major claim to product behavior, workflow visibility, agent capability, auditability, evidence, ledger state, command state, memory state, or measurable outcome.
 - State future/pipeline products as pipeline only unless `BRAND.md` has been updated.
 - Keep product copy concrete and operational; reserve poetic language for Dream surfaces.
@@ -193,7 +193,7 @@ Copy must preserve operator command and proof-backed positioning.
 - Do not call Galyarder Framework a prompt pack.
 - Do not call Galyarder Agent a chatbot.
 - Do not lead public copy with Web3, crypto, blockchain, tokens, speculation, generic AI, SMB, Enterprise SaaS, or fully autonomous no-risk promises.
-- Do not sterilize controlled product-truth terms. `agentic companies`, `AI-native companies`, `AGI` as Autonomous Goal Integration, `digital entities`, `cryptographic ownership`, `verifiable control`, `blockchain anchoring`, `key policy`, and `guarded autonomy` are allowed when tied to real product behavior, proof, or architecture.
+- Do not sterilize controlled product-truth terms. `agentic companies`, `AI-native companies`, `Agentic Company Framework` as Open-source Agentic Company Framework, `digital entities`, `cryptographic ownership`, `verifiable control`, `blockchain anchoring`, `key policy`, and `guarded autonomy` are allowed when tied to real product behavior, proof, or architecture.
 - Avoid contaminated categories as headlines; use precise primitives as proof.
 
 ---
@@ -251,7 +251,7 @@ Must show:
 - distribution/market workflow,
 - integration with developer/AI tools when relevant.
 
-Clarify that AGI means Autonomous Goal Integration.
+Clarify that Agentic Company Framework means Open-source Agentic Company Framework.
 
 ### Galyarder Agent
 
@@ -319,7 +319,7 @@ Public website may show now:
 - Galyarder HQ
 - Galyarder Framework
 - Galyarder Agent
-- The Infrastructure Suite for 1-Man Army autonomous execution
+- The Infrastructure Suite for agentic company autonomous execution
 
 Public website may mention as development pipeline only:
 
@@ -427,7 +427,7 @@ Before completing a task, verify:
 ### Architecture
 
 <!-- lore:019dfc8a-34af-76c0-b5e9-8404ff99e9ec -->
-* **Galyarder product hierarchy and naming**: Keep product tree consistent: Labs owns active public Ledger, HQ, Framework, and Agent; future/internal Vault, OS, Alpha, Quant, Wallet, and Mind. Canonical product language: HQ = Strategic Command Interface/command layer for AI-native companies; Framework AGI = Autonomous Goal Integration, not artificial general intelligence; Agent = persistent digital entity; G-Agent = Ledger role-based workforce only.
+* **Galyarder product hierarchy and naming**: Keep product tree consistent: Labs owns active public Ledger, HQ, Framework, and Agent; future/internal Vault, OS, Alpha, Quant, Wallet, and Mind. Canonical product language: HQ = Strategic Command Interface/command layer for AI-native companies; Framework Agentic Company Framework = Open-source Agentic Company Framework, not artificial general intelligence; Agent = persistent digital entity; G-Agent = Ledger role-based workforce only.
 
 ### Decision
 
@@ -437,10 +437,10 @@ Before completing a task, verify:
 ### Gotcha
 
 <!-- lore:019dfc8a-34d9-73e3-a3dc-1960fcc8c751 -->
-* **AGENTS.md must reject brand-breaking work**: AGENTS.md is canonical; AGENT.md is only a legacy alias and must be an exact copy/short redirect. Include README→BRAND→DESIGN reading order, UI/copy/product rules, pnpm lint/test/turbo commands, PR instructions, and rejection gates for invented claims, failed checks, internal doctrine leaks, dashboard marketing visuals, launched pipeline products, and cheap category-led AI/Web3/crypto/sovereignty hype. Do not reject controlled product-true terms like AI-native, agentic companies, Autonomous Goal Integration, or cryptographic assurance.
+* **AGENTS.md must reject brand-breaking work**: AGENTS.md is canonical; AGENT.md is only a legacy alias and must be an exact copy/short redirect. Include README→BRAND→DESIGN reading order, UI/copy/product rules, pnpm lint/test/turbo commands, PR instructions, and rejection gates for invented claims, failed checks, internal doctrine leaks, dashboard marketing visuals, launched pipeline products, and cheap category-led AI/Web3/crypto/sovereignty hype. Do not reject controlled product-true terms like AI-native, agentic companies, Open-source Agentic Company Framework, or cryptographic assurance.
 
 <!-- lore:019dfc8a-34ce-72ea-813e-7b8598915782 -->
-* **BRAND.md canonical structure requirements**: BRAND.md acceptance requires front matter: name Galyarder Labs, tagline Empowering Human Intent., version 1, language en, type master, architecture branded-house. It must include 16 Strategy/Voice/Visual sections, product tree, public exposure rules, We Say/Never Say, claim guardrails, Future Pipeline wording, plus explicit Controlled Terms. Allow product-true terms like agentic companies, AI-native companies, Autonomous Goal Integration, digital entities, cryptographic ownership, verifiable control, blockchain anchoring, key policy, and guarded autonomy. Ban category-led Web3/Crypto/AI hype; use precise primitives only as proof/mechanism.
+* **BRAND.md canonical structure requirements**: BRAND.md acceptance requires front matter: name Galyarder Labs, tagline Empowering Human Intent., version 1, language en, type master, architecture branded-house. It must include 16 Strategy/Voice/Visual sections, product tree, public exposure rules, We Say/Never Say, claim guardrails, Future Pipeline wording, plus explicit Controlled Terms. Allow product-true terms like agentic companies, AI-native companies, Open-source Agentic Company Framework, digital entities, cryptographic ownership, verifiable control, blockchain anchoring, key policy, and guarded autonomy. Ban category-led Web3/Crypto/AI hype; use precise primitives only as proof/mechanism.
 
 <!-- lore:019dfc8a-34d3-7fe1-beb3-bfa68013ef37 -->
 * **DESIGN.md machine-readable surface gates**: DESIGN.md must have valid YAML tokens for colors, typography, spacing, radius, and motion, plus rationale, accessibility, motion, and QA. It also needs explicit surface rules for Landing, Auth, Airlock, Dashboard, Ledger, HQ, Framework, Agent, Workforce, Reports, Admin, Settings, Mobile, Pitch deck, and Brand board.
@@ -456,5 +456,5 @@ Before completing a task, verify:
 ### Preference
 
 <!-- lore:019dfc8a-34b4-7478-aff7-3af23bc8be7e -->
-* **Operator-native proof-backed copy**: For public/org README copy, do not sterilize Galyarder into safe corporate SaaS. Provide one decisive 8–12 line GitHub-front-door version that feels calm, magnetic, high-agency, mysterious, and proof-backed. Controlled terms like agentic companies, AI-native companies, AGI (Autonomous Goal Integration), digital entities, cryptographic ownership, and guarded autonomy are allowed when product-true; reject cheap hype, contaminated category-led positioning, sovereignty/freedom shouting, catalogs, and internal doctrine leaks like \[\[019dfc8a-34bd-77d2-932e-d18241a8f642]].
+* **Operator-native proof-backed copy**: For public/org README copy, do not sterilize Galyarder into safe corporate SaaS. Provide one decisive 8–12 line GitHub-front-door version that feels calm, magnetic, high-agency, mysterious, and proof-backed. Controlled terms like agentic companies, AI-native companies, Agentic Company Framework (Open-source Agentic Company Framework), digital entities, cryptographic ownership, and guarded autonomy are allowed when product-true; reject cheap hype, contaminated category-led positioning, sovereignty/freedom shouting, catalogs, and internal doctrine leaks like \[\[019dfc8a-34bd-77d2-932e-d18241a8f642]].
 <!-- End lore-managed section -->

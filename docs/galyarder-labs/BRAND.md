@@ -15,7 +15,7 @@ Galyarder Labs is the parent infrastructure brand. Galyarder Ledger, Galyarder H
 
 The final brand doctrine is:
 
-> **Dream → Airlock → Machine**  
+> **Dream → Airlock → Machine**
 > **Human intent becomes infrastructure.**
 
 ---
@@ -95,7 +95,7 @@ Galyarder Labs
 |---|---|---:|---|---:|---|
 | Galyarder Ledger | Ledger Layer | active production | public | P0 | Turn fragmented operational work into agent-assisted, audit-ready financial execution. |
 | Galyarder HQ | Command Layer | active production | public | P0 | Orchestrate the autonomous ecosystem from a high-fidelity control plane. |
-| Galyarder Framework | Intelligence Layer | active production | public / developer-facing | P0 | Advanced agentic orchestration for the 1-Man Army through Autonomous Goal Integration. |
+| Galyarder Framework | Intelligence Layer | active production | public / developer-facing | P0 | Advanced agentic orchestration for the agentic company through Open-source Agentic Company Framework. |
 | Galyarder Agent | Continuity Layer | active | public | P1 | Persistent digital entities with recursive memory, values, voice, and visual identity across channels. |
 
 ### Development Pipeline
@@ -117,7 +117,7 @@ Public-facing brand and product copy may show only the current public infrastruc
 - Galyarder HQ,
 - Galyarder Framework,
 - Galyarder Agent,
-- the infrastructure suite for 1-Man Army autonomous execution.
+- the infrastructure suite for agentic company autonomous execution.
 
 Public-facing copy may mention these only as future pipeline or development pipeline products unless their status is formally changed in this document:
 
@@ -134,7 +134,7 @@ Internal-only surfaces may reference Galyarder Alpha Room and founder portfolio 
 
 - **Ledger** is the first product anchor and the finance/operations execution layer.
 - **HQ** is the command plane that creates structure, assigns goals, enforces budgets, and governs autonomous systems.
-- **Framework** is the intelligence and engineering protocol powering deterministic agentic execution for the 1-Man Army.
+- **Framework** is the intelligence and engineering protocol powering deterministic agentic execution for the agentic company.
 - **Agent** is the continuity layer: persistent identity, memory, voice, values, and cross-channel presence.
 - **Vault** sits beneath Ledger as ownership/security infrastructure for keys, multi-sig, and verifiable trust.
 - **Wallet** analyzes distributed asset exposure and risk across chains.
@@ -154,7 +154,7 @@ Supporting category language:
 - human intent infrastructure,
 - agent-assisted execution systems,
 - ledger-backed operational systems,
-- command infrastructure for the 1-Man Army,
+- command infrastructure for the agentic company,
 - persistent memory and ownership infrastructure,
 - institutional-grade capability for the single operator.
 
@@ -174,9 +174,9 @@ It gives operators org charts, departments, reporting lines, goal assignment, bu
 
 #### Galyarder Framework
 
-**Galyarder Framework is an elite engineering protocol and Intelligence Layer for the 1-Man Army.**
+**Galyarder Framework is an elite engineering protocol and Intelligence Layer for the agentic company.**
 
-It implements **Autonomous Goal Integration** to turn high-level business vision into strategic blueprints, project tickets, code execution, tests, audits, and distribution workflows. In this brand system, AGI means Autonomous Goal Integration, not artificial general intelligence.
+It implements **Open-source Agentic Company Framework** to turn high-level business vision into strategic blueprints, project tickets, code execution, tests, audits, and distribution workflows. In this brand system, Agentic Company Framework means Open-source Agentic Company Framework, not artificial general intelligence.
 
 #### Galyarder Agent
 
@@ -205,7 +205,7 @@ Galyarder is differentiated by:
 3. **Command plane** — HQ gives structure, budgets, approval gates, reporting lines, and multi-company governance.
 4. **Ledger-backed evidence** — operations produce traceable records, state transitions, reports, and proof.
 5. **Persistent identity** — Galyarder Agent preserves memory, values, voice, and presence beyond a single session.
-6. **Autonomous Goal Integration** — Framework turns vision into deterministic implementation through SOPs, skills, workflows, and agent runtime.
+6. **Open-source Agentic Company Framework** — Framework turns vision into deterministic implementation through SOPs, skills, workflows, and agent runtime.
 7. **Cryptographic ownership** — Vault/Wallet extend the ecosystem toward sovereignty, key management, and verifiable trust without leading public copy with speculation.
 
 ### NOT-list
@@ -232,8 +232,8 @@ Galyarder is not:
 
 ### Archetype
 
-**Primary archetype:** The Architect  
-**Secondary archetypes:** The Sage, The Operator, The Explorer  
+**Primary archetype:** The Architect
+**Secondary archetypes:** The Sage, The Operator, The Explorer
 **Shadow to avoid:** The Prophet without proof
 
 Galyarder should feel like a calm architect of future infrastructure. It can be visionary, but it must always show how vision becomes structure.
@@ -288,7 +288,7 @@ Human intent should not disappear because attention, memory, time, energy, capit
 
 - **Galyarder Ledger:** turn fragmented operational work into agent-assisted, audit-ready financial execution.
 - **Galyarder HQ:** orchestrate the autonomous ecosystem from one high-fidelity control plane.
-- **Galyarder Framework:** convert high-level business vision into deterministic implementation through Autonomous Goal Integration.
+- **Galyarder Framework:** convert high-level business vision into deterministic implementation through Open-source Agentic Company Framework.
 - **Galyarder Agent:** preserve memory, identity, values, voice, and presence across sessions and channels.
 - **Galyarder Vault:** provide sovereignty, secure key management, asset security, and verifiable trust.
 - **Galyarder OS:** unify Galyarder infrastructure into one human intent layer.
@@ -312,7 +312,7 @@ Galyarder does not sterilize product-truth language. Strong terms are allowed wh
 Allowed when product-true:
 
 - **agentic companies** and **AI-native companies** for HQ/company-system contexts with structure, budgets, reporting lines, approval gates, and command history,
-- **AGI** only as **Autonomous Goal Integration** for Framework contexts with intent extraction, blueprints, tickets, SOPs, runtime, tests, audits, and execution proof,
+- **Agentic Company Framework** only as **Open-source Agentic Company Framework** for Framework contexts with intent extraction, blueprints, tickets, SOPs, runtime, tests, audits, and execution proof,
 - **digital entities** for Galyarder Agent contexts with memory, identity, voice, visual presence, channel presence, and continuity records,
 - **agent workforce**, **agent runtime**, and **guarded autonomy** when tied to agent state, outputs, review-needed queues, budgets, approvals, rollback, or auditability,
 - **cryptographic ownership**, **verifiable control**, **key policy**, **multi-sig**, **blockchain anchoring**, and **non-custodial controls** when used as technical proof or ownership/security mechanism.
@@ -324,14 +324,14 @@ Avoid contaminated labels as headlines.
 Use precise primitives as proof.
 ```
 
-Public headline should not be “Web3 company,” “crypto app,” “AI wrapper,” or “AGI lab.” Product and technical copy may name the underlying primitives when they explain how trust, ownership, autonomy, memory, or execution actually works.
+Public headline should not be “Web3 company,” “crypto app,” “AI wrapper,” or “Agentic Company Framework lab.” Product and technical copy may name the underlying primitives when they explain how trust, ownership, autonomy, memory, or execution actually works.
 
 ### Boundaries
 
 - Do not lead public-facing copy with Web3, crypto, blockchain, tokens, or speculation.
 - Do not erase the ownership/security infrastructure; express it through cryptographic ownership, verifiable control, key policy, blockchain anchoring, sovereignty, and capital rails when those mechanisms are product-true.
 - Do not use SMB or Enterprise as the primary emotional segmentation.
-- Do not call users “small businesses” when the real audience is operators, builders, founders, and 1-Man Army systems architects.
+- Do not call users “small businesses” when the real audience is operators, builders, founders, and agentic company systems architects.
 - Do not call Ledger a bookkeeping app.
 - Do not call HQ a dashboard.
 - Do not call Framework a prompt pack.
@@ -429,11 +429,11 @@ Do not blur these terms.
 
 - Command the autonomous company.
 - Structure, assign, govern, and execute.
-- One control plane for the 1-Man Army.
+- One control plane for the agentic company.
 
 #### Galyarder Framework
 
-- Autonomous Goal Integration for the 1-Man Army.
+- Open-source Agentic Company Framework for the agentic company.
 - From vision to deterministic execution.
 - Elite SOPs, agents, and workflows for builders who move alone.
 
@@ -553,7 +553,7 @@ Product one-liners:
 
 1. Ledger-backed execution for operators who cannot afford operational fog.
 2. Command the autonomous company.
-3. Vision becomes implementation through Autonomous Goal Integration.
+3. Vision becomes implementation through Open-source Agentic Company Framework.
 4. A digital entity that does not reset when the session ends.
 5. Sovereignty is not a mood. It is infrastructure.
 6. Signal over noise. Evidence over belief.
@@ -568,14 +568,14 @@ Galyarder Labs builds autonomous execution infrastructure for high-agency operat
 
 ### Instagram
 
-A luminous threshold into autonomous execution.  
-Intent becomes infrastructure.  
+A luminous threshold into autonomous execution.
+Intent becomes infrastructure.
 Dream → Airlock → Machine.
 
 ### X
 
-Autonomous execution infrastructure for the 1-Man Army.  
-Ledger. HQ. Framework. Agent.  
+Autonomous execution infrastructure for the agentic company.
+Ledger. HQ. Framework. Agent.
 Intent becomes infrastructure.
 
 ### Website
@@ -605,14 +605,14 @@ Empowering Human Intent.
 |---|---|
 | autonomous execution infrastructure | AI wrapper |
 | operator | SMB user |
-| 1-Man Army | small business user |
+| agentic company | small business user |
 | institutional-grade capability | enterprise SaaS solution |
 | cryptographic ownership | crypto app |
 | ledger-backed execution | bookkeeping chatbot |
 | G-Agent workforce | AI assistant toy |
 | Galyarder Agent | chatbot persona |
 | Strategic Command Interface | dashboard |
-| Autonomous Goal Integration | artificial general intelligence claim |
+| Open-source Agentic Company Framework | artificial general intelligence claim |
 | guarded autonomy | fully autonomous with no risk |
 | evidence trail | guaranteed truth |
 | development pipeline | live product if not released |

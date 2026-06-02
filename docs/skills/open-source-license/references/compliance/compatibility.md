@@ -74,10 +74,10 @@ Typical dependencies are MIT-licensed.
 
 ```
 Your App (MIT/Apache/Proprietary)
- express (MIT)
- lodash (MIT)
- react (MIT)
- moment (MIT)
+ express (MIT) 
+ lodash (MIT) 
+ react (MIT) 
+ moment (MIT) 
 ```
 
 **Result:** No compatibility issues. You can use any license.
@@ -86,8 +86,8 @@ Your App (MIT/Apache/Proprietary)
 
 ```
 Your App (???)
- express (MIT)
- readline-sync (GPL-3.0)
+ express (MIT) 
+ readline-sync (GPL-3.0) 
 ```
 
 **Result:** Your entire app must be GPL-3.0 or compatible.
@@ -119,7 +119,7 @@ Your Proprietary App
 
 ```
 Your SaaS Platform
- Grafana (AGPL-3.0)
+ Grafana (AGPL-3.0) 
 ```
 
 **Result:** If you modify Grafana, you must:
@@ -199,35 +199,35 @@ SPDX expression: Use `OR` for choice, `AND` for both required.
 ## License Compatibility Flowchart
 
 ```
-
-                     Is dependency
-                     permissive?
-
-
-
+                    
+                     Is dependency   
+                     permissive?     
+                    
+                             
+              
                YES                         NO
-
-
-     Can use with               Is it LGPL?
-     any license
-
-
+                                          
+              
+     Can use with               Is it LGPL?     
+     any license               
+                       
+                                 
                                   YES             NO
-
-
+                                                 
+                                 
                                Can link if    Is it GPL/AGPL
-                               dynamic +
-                               replaceable
-
+                               dynamic +      
+                               replaceable           
+                                   
                                                   YES     NO
-
-
-                                        Must use same Check
-                                        license for   specific
-                                        derivative    license
-
-
-
+                                                          
+                                        
+                                        Must use same Check       
+                                        license for   specific   
+                                        derivative    license    
+                                        
+                                                       
+                             
 ```
 
 ---

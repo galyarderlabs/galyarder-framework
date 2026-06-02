@@ -18,7 +18,7 @@ It has a connectivity degree of **222**.
 - [[Gemini-CLI:-Implementation-Protocol]] (uses_proxy | 0.8)
 - [[Release-Notes---Galyarder-Framework]] (uses_proxy | 0.8)
 - [[Legacy-Purge:-Removing-Galyarder-Branding]] (uses_proxy | 0.8)
-- [[Galyarder-Framework-Vision:-The-Humans-3.0-Protocol]] (uses_proxy | 0.8)
+- [[Galyarder-Framework-Vision:-The-human-directed-execution-Protocol]] (uses_proxy | 0.8)
 - [[Galyarder-Framework-Vision:-The-human-directed-execution-Protocol]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-analytics-architect]] (uses_proxy | 0.8)
 - [[:material-folder-zip:-architect]] (uses_proxy | 0.8)

@@ -38,7 +38,7 @@
       "category": "core-hukum",
       "silo": "Root",
       "community": "Root",
-      "degree": 240,
+      "degree": 242,
       "strategic": true
     },
     "GEMINI.md": {
@@ -210,7 +210,7 @@
       "strategic": false
     },
     "docs/WORKFLOW.md": {
-      "title": "Galyarder Framework: Agentic Company Workflow",
+      "title": "Galyarder Framework: agentic company Workflow",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -273,14 +273,6 @@
       "degree": 1,
       "strategic": false
     },
-    "docs/departments/Executive/README.md": {
-      "title": "Department: Executive",
-      "category": "documentation",
-      "silo": "docs",
-      "community": "docs",
-      "degree": 0,
-      "strategic": false
-    },
     "docs/departments/Executive/Galyarder Founder Office Audit - Galyarder Standard.md": {
       "title": "Galyarder Framework Founder Office Audit",
       "category": "documentation",
@@ -330,15 +322,15 @@
       "strategic": false
     },
     "docs/departments/Executive/Galyarder-Framework-Framework Vision - Digital Company for Solo Founders.md": {
-      "title": "Galyarder Framework Vision: The Humans 3.0 Protocol",
+      "title": "Galyarder Framework Vision: The human-directed execution Protocol",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
-      "degree": 1,
+      "degree": 2,
       "strategic": false
     },
-    "docs/departments/Product/README.md": {
-      "title": "Department: Product",
+    "docs/departments/Executive/README.md": {
+      "title": "Department: Executive",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -361,8 +353,8 @@
       "degree": 0,
       "strategic": false
     },
-    "docs/departments/Engineering/README.md": {
-      "title": "Department: Engineering",
+    "docs/departments/Product/README.md": {
+      "title": "Department: Product",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -385,8 +377,8 @@
       "degree": 0,
       "strategic": false
     },
-    "docs/departments/Growth/README.md": {
-      "title": "Department: Growth",
+    "docs/departments/Engineering/README.md": {
+      "title": "Department: Engineering",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -409,8 +401,8 @@
       "degree": 0,
       "strategic": false
     },
-    "docs/departments/Security/README.md": {
-      "title": "Department: Security",
+    "docs/departments/Growth/README.md": {
+      "title": "Department: Growth",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -433,8 +425,8 @@
       "degree": 0,
       "strategic": false
     },
-    "docs/departments/Legal-Finance/README.md": {
-      "title": "Department: Legal-Finance",
+    "docs/departments/Security/README.md": {
+      "title": "Department: Security",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -457,8 +449,8 @@
       "degree": 0,
       "strategic": false
     },
-    "docs/departments/Knowledge/README.md": {
-      "title": "Department: Knowledge",
+    "docs/departments/Legal-Finance/README.md": {
+      "title": "Department: Legal-Finance",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -475,6 +467,14 @@
     },
     "docs/departments/Knowledge/Galyarder-Framework Knowledge Audit.md": {
       "title": "Galyarder Framework Knowledge Audit",
+      "category": "documentation",
+      "silo": "docs",
+      "community": "docs",
+      "degree": 0,
+      "strategic": false
+    },
+    "docs/departments/Knowledge/README.md": {
+      "title": "Department: Knowledge",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -774,7 +774,7 @@
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
-      "degree": 8,
+      "degree": 9,
       "strategic": false
     },
     "docs/galyarder-labs/BRAND.md": {
@@ -4831,6 +4831,12 @@
     },
     {
       "source": "docs/departments/Executive/Galyarder-Framework-Framework Vision - Digital Company for Solo Founders.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
+    },
+    {
+      "source": "docs/departments/Executive/Galyarder-Framework-Framework Vision - Digital Company for Solo Founders.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -5062,6 +5068,12 @@
       "target": "docs/galyarder-labs/DESIGN.md",
       "type": "structural_reference",
       "confidence": 1.0
+    },
+    {
+      "source": "docs/galyarder-labs/AGENTS.md",
+      "target": "CLAUDE.md",
+      "type": "enforces_protocol",
+      "confidence": 0.8
     },
     {
       "source": "docs/galyarder-labs/README.md",
@@ -10155,7 +10167,7 @@
           "category": "core-hukum",
           "silo": "Root",
           "community": "Root",
-          "degree": 240,
+          "degree": 242,
           "strategic": true
         }
       ],

@@ -224,8 +224,8 @@ description: Use when you wrote code before tests, when tempted to test after, o
 
 Add symptoms of ABOUT to violate.
 
-### 5. Technical Integrity: The Karpathy Principles
-Combat AI slop through rigid adherence to the four principles of Andrej Karpathy:
+### 5. Technical Integrity: The industry experts Principles
+Combat AI slop through rigid adherence to the four principles of Andrej industry experts:
 
 ### 6. Corporate Reporting: The Obsidian Loop
 Durable memory is mandatory. Every task must result in a persistent artifact:

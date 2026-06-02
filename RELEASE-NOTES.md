@@ -1,5 +1,16 @@
 # Release Notes - Galyarder Framework
 
+## [v2.0.0] - 2026-06-02
+### The Agentic Company & Enterprise Paradigm
+A major paradigm shift transitioning Galyarder Framework into a clinical, corporate-oriented **Agentic Company Framework** and **Intelligence Layer**.
+
+#### Highlights
+- **Unified Agentic Company Standard**: Completed a full repository alignment with the clinical, structured "Agentic Company Framework" and "Intelligence Layer" design paradigms.
+- **Enterprise-Grade Personas & Policies**: Updated and synchronized all executive personas (`galyarder-ceo`, `galyarder-cto`, `galyarder-cmo`, `galyarder-cfo-coo`), commands, rules, and skills to enforce professional, deterministic, and evidence-backed execution.
+- **NPM Package Deployment Automation**: Introduced a secure GitHub Actions workflow for automated NPM publishing.
+
+---
+
 ## [v1.9.9] - 2026-05-09
 ### Canonical Runtime Surface Cleanup
 This release completes the cleanup from duplicate generated extension folders to the canonical framework runtime source while preserving scaffolded project operating workspace department workspaces for user projects.
