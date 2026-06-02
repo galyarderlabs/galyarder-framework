@@ -5,7 +5,7 @@ import shutil
 import json
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).parent.parent
+REPO_ROOT = Path(__file__).resolve().parent.parent
 DOCS_DIR = REPO_ROOT / "docs"
 
 # Global icons for auto-discovered domains (MkDocs Material syntax: :material-icon-name:)
