@@ -143,7 +143,7 @@ def generate():
     print("🚀 Executing Professional Portal Synchronization...")
 
     # Clean output directories
-    for d in ["agents", "skills", "commands", "design"]:
+    for d in ["agents", "skills", "commands"]:
         target = DOCS_DIR / d
         if target.exists(): shutil.rmtree(target)
         target.mkdir(parents=True, exist_ok=True)
@@ -255,17 +255,11 @@ def generate():
     # Special Case: Design System Grid
     design_idx = "# Design System Specifications\n\nProduction-grade interface specifications for consistent agent-generated product surfaces.\n\n"
     design_idx += '<div class="grid cards" markdown>\n\n'
-    design_src = REPO_ROOT / "skills"
+    design_src = DOCS_DIR / "design"
     if design_src.exists():
-        for skill_dir in sorted(design_src.glob("design-md-*")):
-            skill_file = skill_dir / "SKILL.md"
-            if not skill_file.exists():
-                continue
-            output_name = f"{skill_dir.name}.md"
-            shutil.copy(skill_file, DOCS_DIR / "design" / output_name)
-            design_page = DOCS_DIR / "design" / output_name
-            design_page.write_text(sanitize_public_copy(design_page.read_text(encoding="utf-8", errors="replace")), encoding="utf-8")
-            title = skill_dir.name.replace("design-md-", "").replace("-", " ").replace(".", " ").title()
+        for design_file in sorted(design_src.glob("design-md-*.md")):
+            output_name = design_file.name
+            title = design_file.stem.replace("design-md-", "").replace("-", " ").replace(".", " ").title()
             design_idx += f"-   **[{title}]({output_name})**\n\n    ---\n\n    Evidence-backed design specification.\n\n"
     design_idx += "</div>"
     with open(DOCS_DIR / "design/index.md", "w", encoding="utf-8") as f: f.write(design_idx)
