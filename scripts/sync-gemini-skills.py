@@ -3,7 +3,7 @@ import os
 import shutil
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).parent.parent
+REPO_ROOT = Path(__file__).resolve().parent.parent
 GEMINI_SRC = REPO_ROOT / "integrations" / "gemini" / "skills"
 
 GEMINI_DIR = REPO_ROOT / ".gemini"
