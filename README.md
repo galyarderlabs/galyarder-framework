@@ -7,10 +7,6 @@
 <p align="center"><strong>Open-source Agentic Company Framework.</strong></p>
 
 <p align="center">
-  Turn founder intent into coordinated execution across engineering, product, growth, sales, finance, legal, security, documentation, operations, and strategy.
-</p>
-
-<p align="center">
   Galyarder Framework is the Intelligence Layer of the Galyarder ecosystem: skills, agents, commands, review gates, and operating protocols for building an agentic company that remains inspectable, testable, and human-directed.
 </p>
 
