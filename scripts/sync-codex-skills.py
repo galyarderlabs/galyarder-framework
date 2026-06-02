@@ -3,7 +3,7 @@ import os
 import shutil
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).parent.parent
+REPO_ROOT = Path(__file__).resolve().parent.parent
 SKILLS_SRC = REPO_ROOT / "skills"
 AGENTS_SRC = REPO_ROOT / "agents"
 DESIGN_SRC = REPO_ROOT / "design"
