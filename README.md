@@ -16,15 +16,11 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/galyarder-framework"><img alt="npm version" src="https://img.shields.io/npm/v/galyarder-framework?style=for-the-badge&logo=npm&logoColor=white&color=8A00FF"></a>
-  <a href="https://www.npmjs.com/package/galyarder-framework"><img alt="npm downloads" src="https://img.shields.io/npm/dm/galyarder-framework?style=for-the-badge&logo=npm&logoColor=white&color=4F2DA8"></a>
   <a href="https://github.com/galyarderlabs/galyarder-framework/actions/workflows/deploy-docs.yml"><img alt="docs deployment" src="https://img.shields.io/github/actions/workflow/status/galyarderlabs/galyarder-framework/deploy-docs.yml?branch=main&label=docs&style=for-the-badge&logo=githubactions&logoColor=white&color=6F7DFF"></a>
-  <a href="https://github.com/galyarderlabs/galyarder-framework/security/code-scanning"><img alt="CodeQL" src="https://img.shields.io/github/actions/workflow/status/galyarderlabs/galyarder-framework/codeql.yml?branch=main&label=CodeQL&style=for-the-badge&logo=github&logoColor=white&color=0D172A"></a>
   <a href="https://github.com/galyarderlabs/galyarder-framework/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/github/license/galyarderlabs/galyarder-framework?style=for-the-badge&color=F1C77A"></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/galyarderlabs/galyarder-framework"><img alt="GitHub stars" src="https://img.shields.io/github/stars/galyarderlabs/galyarder-framework?style=flat-square&logo=github&color=8A00FF"></a>
-  <a href="https://github.com/galyarderlabs/galyarder-framework/forks"><img alt="GitHub forks" src="https://img.shields.io/github/forks/galyarderlabs/galyarder-framework?style=flat-square&logo=github&color=4F2DA8"></a>
   <img alt="agentic company framework" src="https://img.shields.io/badge/agentic%20company-framework-8A00FF?style=flat-square">
   <img alt="human directed" src="https://img.shields.io/badge/human--directed-execution-F1C77A?style=flat-square">
 </p>
