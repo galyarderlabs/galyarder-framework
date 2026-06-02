@@ -83,7 +83,7 @@ The Framework models company work across practical departments. The departments 
 
 ## Operating Protocols
 
-Every agent should preserve these rules:
+ Every agent should preserve these rules:
 
 1. **Human command stays visible.** Agents expand execution capacity; they do not replace the operator.
 2. **Intent becomes structure.** Convert goals into scoped plans, issues, checklists, docs, diffs, reports, or decision records.
@@ -93,6 +93,22 @@ Every agent should preserve these rules:
 6. **Verification before completion.** Claims require tests, builds, logs, source checks, screenshots, workflow status, citations, or other concrete evidence.
 7. **Durable handoff.** Important work should leave a readable artifact: report, release note, decision, PR, issue, doc, or reusable skill.
 8. **Approval gates.** External/public actions, access changes, secrets, financial movement, production deploys, and irreversible changes require human approval.
+9. **Communication & Operational Integrity.** Write all public-facing text (commits, pull request descriptions, changelogs, release notes, and documentation) in a clean, professional, clinical enterprise tone. Do **NOT** include meta-commentary, justifications, or discussions regarding "removing slang", "fixing edgy phrasing", or "purging alay words" in official repository records. Deliver the professional work directly without meta-explanations.
+
+---
+
+## Purpose, Scope, and Future Direction (What, Why, and Where)
+
+### What it is
+Galyarder Framework is an **Open-source Agentic Company Framework** and **Intelligence Layer**. It provides a human-directed organizational structure for AI-native companies, modeling computational work across corporate departments, specialized roles, standardized skills, and durable Obsidian-aligned markdown documentation loops.
+
+### Why it is built (Purpose)
+The framework is designed to turn high-level founder/operator intent into high-fidelity, deterministic, and audited deliverables (verified source code, product requirement documents, security threat models, and marketing/growth pipelines) with zero speculative bloat and high resource efficiency.
+
+### Where it is going (Direction)
+Galyarder is evolving into a standardized, globally distributed edge-runtime operating system (Galyarder OS) powering self-evolving digital enterprises. Future versions will expand NPM-based modularity, CLI capability sync, advanced cross-department routing, and deep multi-agent workflow orchestration.
+
+---
 
 ## We Say / Avoid
 

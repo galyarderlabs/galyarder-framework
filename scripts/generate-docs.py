@@ -23,15 +23,15 @@ ICONS = {
 
 
 PUBLIC_DOC_REPLACEMENTS = [
-    (r"THE 1-MAN ARMY GLOBAL PROTOCOLS \(MANDATORY\)", "AGENTIC COMPANY OPERATING PROTOCOLS"),
-    (r"1-Man Army Global Protocols", "agentic company operating protocols"),
-    (r"1-Man Army Command Protocol", "agentic-company command protocol"),
-    (r"1-Man Army", "agentic company"),
+    (r"THE Agentic Company Framework GLOBAL PROTOCOLS \(MANDATORY\)", "AGENTIC COMPANY OPERATING PROTOCOLS"),
+    (r"Agentic Company Global Protocols", "agentic company operating protocols"),
+    (r"Agentic Company Command Protocol", "agentic-company command protocol"),
+    (r"Agentic Company", "agentic company"),
     (r"Humans 3\.0", "human-directed execution"),
     (r"zero[- ]slop", "verified-output"),
-    (r"Digital HQ", "project operating workspace"),
-    (r"Global Karpathy protocol", "technical integrity protocol"),
-    (r"Karpathy Principles", "technical integrity principles"),
+    (r"Intelligence Layer", "project operating workspace"),
+    (r"Global industry experts protocol", "technical integrity protocol"),
+    (r"industry experts Principles", "technical integrity principles"),
     (r"\bKarpathy\b", "technical integrity"),
     (r"high-integrity", "evidence-backed"),
     (r"High-integrity", "Evidence-backed"),
@@ -112,7 +112,7 @@ class Asset:
         if self.description == "|" or not self.description:
             clean_content = re.sub(r"##.*", "", self.content, flags=re.DOTALL).strip()
             # Remove protocol headers from description preview
-            clean_content = re.sub(r"## (THE 1-MAN ARMY GLOBAL PROTOCOLS|AGENTIC COMPANY OPERATING PROTOCOLS).*?\n---", "", clean_content, flags=re.DOTALL).strip()
+            clean_content = re.sub(r"## (THE Agentic Company Framework GLOBAL PROTOCOLS|AGENTIC COMPANY OPERATING PROTOCOLS).*?\n---", "", clean_content, flags=re.DOTALL).strip()
             lines = [l for l in clean_content.split("\n") if l.strip() and not l.startswith("#") and not l.startswith(">")]
             if lines:
                 self.description = lines[0][:200].strip().rstrip(".") + "..."

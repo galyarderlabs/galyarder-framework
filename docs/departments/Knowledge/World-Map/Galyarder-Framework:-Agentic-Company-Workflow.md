@@ -1,13 +1,13 @@
 ---
-node_type: documentation
-silo: docs
+node_type: core-hukum
+silo: Root
 degree: 0
-source: docs/WORKFLOW.md
+source: WORKFLOW.md
 ---
 # Galyarder Framework: Agentic Company Workflow
 
 ## 🧠 Strategic Intelligence
-This entity is a **documentation** within the **docs** silo. 
+This entity is a **core-hukum** within the **Root** silo. 
 It has a connectivity degree of **0**.
 
 ## 🔗 Neural Links

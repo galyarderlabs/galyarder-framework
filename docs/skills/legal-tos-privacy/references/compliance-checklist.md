@@ -248,32 +248,32 @@ Use this matrix to track compliance across jurisdictions:
 ### Jurisdiction-Neutral Liability Cap
 
 ```
-TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL [COMPANY]
-BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE
+TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL [COMPANY] 
+BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE 
 DAMAGES WHATSOEVER ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF THE SERVICE.
 ```
 
 ### Consumer Rights Acknowledgment
 
 ```
-Nothing in these Terms shall limit or exclude any rights you may have under
+Nothing in these Terms shall limit or exclude any rights you may have under 
 applicable consumer protection laws that cannot be lawfully limited or excluded.
 ```
 
 ### Severability with Reformation
 
 ```
-If any provision of these Terms is found to be unenforceable or invalid, that
-provision will be limited or eliminated to the minimum extent necessary so that
+If any provision of these Terms is found to be unenforceable or invalid, that 
+provision will be limited or eliminated to the minimum extent necessary so that 
 these Terms will otherwise remain in full force and effect and enforceable.
 ```
 
 ### Jurisdiction-Specific Rights Preservation
 
 ```
-If you are a resident of the European Economic Area, you have certain data
-protection rights under the GDPR. If you are a California resident, you have
-certain rights under the CCPA/CPRA. Nothing in this Privacy Policy is intended
+If you are a resident of the European Economic Area, you have certain data 
+protection rights under the GDPR. If you are a California resident, you have 
+certain rights under the CCPA/CPRA. Nothing in this Privacy Policy is intended 
 to limit any rights you have under applicable law.
 ```
 

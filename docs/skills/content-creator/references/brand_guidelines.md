@@ -189,7 +189,7 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 - **Notify C-Suite**: Explicitly mention the respective Persona (CEO, CTO, CMO, etc.) that the report is ready for review.
 - **Traceability**: Link the report to the corresponding Linear ticket.
 ### 10. Technical Integrity: The technical integrity principles
-Combat AI slop through rigid adherence to the four principles of Andrej technical integrity:
+Combat AI slop through rigid adherence to the four principles of Andrej industry experts:
 
 1. **Think Before Coding**: Don't guess. **If uncertain, STOP and ASK.** State assumptions explicitly. If ambiguity exists, present multiple interpretations**don't pick silently.** Push back if a simpler approach exists.
 2. **Simplicity First**: Implement the minimum code that solves the problem. **No speculative abstractions.** If 200 lines could be 50, **rewrite it.** No "configurability" unless requested.

@@ -1,5 +1,56 @@
 # Release Notes - Galyarder Framework
 
+## [v2.0.0] - 2026-06-02
+### The Agentic Company & Enterprise Paradigm
+Galyarder Framework v2.0.0 represents a complete architectural evolution, transitioning the framework from personal agent configurations into a clinical, enterprise-ready **Agentic Company Framework** and **Intelligence Layer**. This major release coordinates and standardizes all specialized personas, commands, skills, and integrations around robust, professional operating protocols.
+
+#### Release Statistics
+* **Files Modified**: 2,887 files (Comprehensive global codebase alignment)
+* **Codebase Volume**: ~107,660 additions and ~15,850 deletions
+
+---
+
+### Key Architectural Upgrades
+
+#### 1. Unified Agentic Company Standard
+* **Core Definition**: Re-anchored Galyarder's positioning as an Open-source Agentic Company Framework and human-directed Intelligence Layer, deprecating all loose automation concepts.
+* **Deterministic Operating Protocols**: Established strict operational boundaries:
+  * **BUILD Mode**: Enforces rigid Test-Driven Development (TDD) and deconstruction of tasks via the IssueTracker Interface (Linear).
+  * **INCIDENT Mode**: A governed hotfix protocol requiring post-mortem checklists and patch documentation.
+  * **EXPERIMENT Mode**: Safe quarantine protocols for timeboxed exploratory code.
+
+#### 2. Enterprise-Grade Executive Personas
+Refactored all primary executive and operational agent configurations under `personas/` and `.cursor/rules/`:
+* **`galyarder-ceo`**: Operates as the definitive instance of the Intelligence Layer protocol, executing "Verified Output Policies" and professional "industry experts Principles" to optimize capital allocation and vertical-slice execution.
+* **`galyarder-cto`**: Anchored around architectural determinism, self-healing formal verification, and token-efficiency metrics (reducing LLM overhead through rtk caching).
+* **`galyarder-cmo`**: Refocused entirely on data-driven growth engineering, Conversion Rate Optimization (CRO), and deterministic market metrics.
+* **`galyarder-cfo-coo`**: Aligned with operational antifragility and strict finops practices for LLM token usage.
+
+#### 3. Standardized Skill Suites & Verification Gates
+Refactored hundreds of skill instruction files (`skills/*/SKILL.md`) to establish clinical, modular execution:
+* **Evidence Gates**: All Keahlian/Skill modules now mandate rigorous local verification (automated tests, syntax checks, lints, and builds) before handoff to the human operator.
+* **Token Optimization**: Standardized execution paths to leverage the `rtk` (Rust Token Killer) terminal proxy, yielding 60-90% token savings across developer shell operations.
+
+#### 4. Automatic CI/CD & NPM Package Distribution
+* **Workflow Automation**: Implemented `.github/workflows/publish-npm.yml` to orchestrate secure public releases.
+* **Release Flow**: The GitHub Actions runner automatically detects published releases, validates semantic versioning in `package.json`, runs regression tests, and publishes the package to the official NPM registry with public provenance (`--provenance --access public`).
+
+#### 5. Graph Engine & Portal Synchronization
+* **Dependency Analysis**: Regenerated the global framework dependency matrix using `scripts/galyarder-graph-engine.py`, mapping 586 active nodes and 911 edges in `docs/graph.json`.
+* **Portal Sync**: Re-synchronized all portal markdown files via `scripts/generate-docs.py` and consolidated skill manifests under `skills.json` via `scripts/sync-skills-manifest.py`.
+
+---
+
+## Verification & Installation
+To update your environment to the new Agentic Company Standard:
+```bash
+npm install -g galyarder-framework@2.0.0
+galyarder help
+galyarder smoke
+```
+
+---
+
 ## [v1.9.9] - 2026-05-09
 ### Canonical Runtime Surface Cleanup
 This release completes the cleanup from duplicate generated extension folders to the canonical framework runtime source while preserving scaffolded project operating workspace department workspaces for user projects.

@@ -237,9 +237,9 @@ Footer
     vs Airtable                Airtable Alternative       Monday vs Asana
     vs Monday                  Monday Alternative         Notion vs Monday
     vs Asana                   Asana Alternative          ...
-    vs Clickup                 Clickup Alternative        View all
-    ...                        ...
-    View all                  View all
+    vs Clickup                 Clickup Alternative        View all 
+    ...                        ...                    
+    View all                  View all              
 ```
 
 **Guidelines**:

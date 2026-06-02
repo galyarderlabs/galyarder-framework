@@ -9,14 +9,14 @@
   "repository": "https://github.com/galyarderlabs/galyarder-framework",
   "metadata": {
     "description": "Galyarder Framework: Intelligence Layer for human-directed agentic company execution.",
-    "version": "1.9.9"
+    "version": "2.0.0"
   },
   "plugins": [
     {
-      "name": "galyarder-framework",
+      "name": "@galyarderlabs/galyarder-framework",
       "source": ".",
       "description": "Complete Galyarder Framework runtime using canonical agents/, skills/, commands/, and integrations/ directories.",
-      "version": "1.9.9",
+      "version": "2.0.0",
       "category": "framework"
     }
   ]

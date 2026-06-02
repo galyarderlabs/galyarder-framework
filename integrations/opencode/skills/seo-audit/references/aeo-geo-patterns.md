@@ -148,8 +148,8 @@ Use for "Best [X]", "Top [X]", "[Number] ways to [X]" queries.
 [Why it's included in 2-3 sentences with specific benefits]
 ```
 
-### 4. Technical Integrity: The Karpathy Principles
-Combat AI slop through rigid adherence to the four principles of Andrej Karpathy:
+### 4. Technical Integrity: The industry experts Principles
+Combat AI slop through rigid adherence to the four principles of Andrej industry experts:
 
 ### 5. Corporate Reporting: The Obsidian Loop
 Durable memory is mandatory. Every task must result in a persistent artifact:

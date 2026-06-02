@@ -10,7 +10,7 @@ This bundle contains 17 high-integrity SOPs for the Security department.
 
 ---
 ## SKILL: cloud-security
-## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
+## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Operational Modes & Traceability
 No cognitive labor occurs outside of a defined mode. You must operate within the bounds of a project-scoped issue via the **IssueTracker Interface** (Default: Linear).
@@ -18,7 +18,7 @@ No cognitive labor occurs outside of a defined mode. You must operate within the
 - **INCIDENT Mode**: Bypass planning for hotfixes. Requires post-mortem ticket and patch release note.
 - **EXPERIMENT Mode**: Timeboxed, throwaway code for validation. No tests required, but code must be quarantined.
 
-### 2. Cognitive & Technical Integrity (The Karpathy Principles)
+### 2. Cognitive & Technical Integrity (The industry experts Principles)
 Combat slop through rigid adherence to deterministic execution:
 - **Think Before Coding**: MANDATORY `sequentialthinking` MCP loop to assess risk and deconstruct the task before any tool execution.
 - **Neural Link Lookup (Lazy)**: Use `docs/graph.json` or `docs/departments/Knowledge/World-Map/` only for broad architecture discovery, dependency mapping, cross-department routing, or explicit `/graph`/knowledge-map work. Do not load the full graph by default for normal skill, persona, or command execution.
@@ -391,7 +391,7 @@ aws s3api get-bucket-policy --bucket "${BUCKET}" | jq '.Policy | fromjson' | \
 
 ---
 ## SKILL: eradicating-malware-from-infected-systems
-## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
+## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Operational Modes & Traceability
 No cognitive labor occurs outside of a defined mode. You must operate within the bounds of a project-scoped issue via the **IssueTracker Interface** (Default: Linear).
@@ -399,7 +399,7 @@ No cognitive labor occurs outside of a defined mode. You must operate within the
 - **INCIDENT Mode**: Bypass planning for hotfixes. Requires post-mortem ticket and patch release note.
 - **EXPERIMENT Mode**: Timeboxed, throwaway code for validation. No tests required, but code must be quarantined.
 
-### 2. Cognitive & Technical Integrity (The Karpathy Principles)
+### 2. Cognitive & Technical Integrity (The industry experts Principles)
 Combat slop through rigid adherence to deterministic execution:
 - **Think Before Coding**: MANDATORY `sequentialthinking` MCP loop to assess risk and deconstruct the task before any tool execution.
 - **Neural Link Lookup (Lazy)**: Use `docs/graph.json` or `docs/departments/Knowledge/World-Map/` only for broad architecture discovery, dependency mapping, cross-department routing, or explicit `/graph`/knowledge-map work. Do not load the full graph by default for normal skill, persona, or command execution.
@@ -632,7 +632,7 @@ yara -r malware_rules/specific_family.yar C:\ 2>/dev/null
 
 ---
 ## SKILL: executing-active-directory-attack-simulation
-## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
+## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Operational Modes & Traceability
 No cognitive labor occurs outside of a defined mode. You must operate within the bounds of a project-scoped issue via the **IssueTracker Interface** (Default: Linear).
@@ -640,7 +640,7 @@ No cognitive labor occurs outside of a defined mode. You must operate within the
 - **INCIDENT Mode**: Bypass planning for hotfixes. Requires post-mortem ticket and patch release note.
 - **EXPERIMENT Mode**: Timeboxed, throwaway code for validation. No tests required, but code must be quarantined.
 
-### 2. Cognitive & Technical Integrity (The Karpathy Principles)
+### 2. Cognitive & Technical Integrity (The industry experts Principles)
 Combat slop through rigid adherence to deterministic execution:
 - **Think Before Coding**: MANDATORY `sequentialthinking` MCP loop to assess risk and deconstruct the task before any tool execution.
 - **Neural Link Lookup (Lazy)**: Use `docs/graph.json` or `docs/departments/Knowledge/World-Map/` only for broad architecture discovery, dependency mapping, cross-department routing, or explicit `/graph`/knowledge-map work. Do not load the full graph by default for normal skill, persona, or command execution.
@@ -826,7 +826,7 @@ could access all 5,000 user accounts, 800 computer objects, and all data within 
 
 ---
 ## SKILL: executing-phishing-simulation-campaign
-## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
+## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Operational Modes & Traceability
 No cognitive labor occurs outside of a defined mode. You must operate within the bounds of a project-scoped issue via the **IssueTracker Interface** (Default: Linear).
@@ -834,7 +834,7 @@ No cognitive labor occurs outside of a defined mode. You must operate within the
 - **INCIDENT Mode**: Bypass planning for hotfixes. Requires post-mortem ticket and patch release note.
 - **EXPERIMENT Mode**: Timeboxed, throwaway code for validation. No tests required, but code must be quarantined.
 
-### 2. Cognitive & Technical Integrity (The Karpathy Principles)
+### 2. Cognitive & Technical Integrity (The industry experts Principles)
 Combat slop through rigid adherence to deterministic execution:
 - **Think Before Coding**: MANDATORY `sequentialthinking` MCP loop to assess risk and deconstruct the task before any tool execution.
 - **Neural Link Lookup (Lazy)**: Use `docs/graph.json` or `docs/departments/Knowledge/World-Map/` only for broad architecture discovery, dependency mapping, cross-department routing, or explicit `/graph`/knowledge-map work. Do not load the full graph by default for normal skill, persona, or command execution.
@@ -1030,7 +1030,7 @@ Analyze campaign results and produce the assessment report:
 
 ---
 ## SKILL: executing-red-team-engagement-planning
-## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
+## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Operational Modes & Traceability
 No cognitive labor occurs outside of a defined mode. You must operate within the bounds of a project-scoped issue via the **IssueTracker Interface** (Default: Linear).
@@ -1038,7 +1038,7 @@ No cognitive labor occurs outside of a defined mode. You must operate within the
 - **INCIDENT Mode**: Bypass planning for hotfixes. Requires post-mortem ticket and patch release note.
 - **EXPERIMENT Mode**: Timeboxed, throwaway code for validation. No tests required, but code must be quarantined.
 
-### 2. Cognitive & Technical Integrity (The Karpathy Principles)
+### 2. Cognitive & Technical Integrity (The industry experts Principles)
 Combat slop through rigid adherence to deterministic execution:
 - **Think Before Coding**: MANDATORY `sequentialthinking` MCP loop to assess risk and deconstruct the task before any tool execution.
 - **Neural Link Lookup (Lazy)**: Use `docs/graph.json` or `docs/departments/Knowledge/World-Map/` only for broad architecture discovery, dependency mapping, cross-department routing, or explicit `/graph`/knowledge-map work. Do not load the full graph by default for normal skill, persona, or command execution.
@@ -1195,7 +1195,7 @@ Map organizational threats using MITRE ATT&CK Navigator to select relevant adver
 
 ---
 ## SKILL: executing-red-team-exercise
-## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
+## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Operational Modes & Traceability
 No cognitive labor occurs outside of a defined mode. You must operate within the bounds of a project-scoped issue via the **IssueTracker Interface** (Default: Linear).
@@ -1203,7 +1203,7 @@ No cognitive labor occurs outside of a defined mode. You must operate within the
 - **INCIDENT Mode**: Bypass planning for hotfixes. Requires post-mortem ticket and patch release note.
 - **EXPERIMENT Mode**: Timeboxed, throwaway code for validation. No tests required, but code must be quarantined.
 
-### 2. Cognitive & Technical Integrity (The Karpathy Principles)
+### 2. Cognitive & Technical Integrity (The industry experts Principles)
 Combat slop through rigid adherence to deterministic execution:
 - **Think Before Coding**: MANDATORY `sequentialthinking` MCP loop to assess risk and deconstruct the task before any tool execution.
 - **Neural Link Lookup (Lazy)**: Use `docs/graph.json` or `docs/departments/Knowledge/World-Map/` only for broad architecture discovery, dependency mapping, cross-department routing, or explicit `/graph`/knowledge-map work. Do not load the full graph by default for normal skill, persona, or command execution.
@@ -1392,7 +1392,7 @@ Convert red team findings into defensive improvements:
 
 ---
 ## SKILL: generating-threat-intelligence-reports
-## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
+## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Operational Modes & Traceability
 No cognitive labor occurs outside of a defined mode. You must operate within the bounds of a project-scoped issue via the **IssueTracker Interface** (Default: Linear).
@@ -1400,7 +1400,7 @@ No cognitive labor occurs outside of a defined mode. You must operate within the
 - **INCIDENT Mode**: Bypass planning for hotfixes. Requires post-mortem ticket and patch release note.
 - **EXPERIMENT Mode**: Timeboxed, throwaway code for validation. No tests required, but code must be quarantined.
 
-### 2. Cognitive & Technical Integrity (The Karpathy Principles)
+### 2. Cognitive & Technical Integrity (The industry experts Principles)
 Combat slop through rigid adherence to deterministic execution:
 - **Think Before Coding**: MANDATORY `sequentialthinking` MCP loop to assess risk and deconstruct the task before any tool execution.
 - **Neural Link Lookup (Lazy)**: Use `docs/graph.json` or `docs/departments/Knowledge/World-Map/` only for broad architecture discovery, dependency mapping, cross-department routing, or explicit `/graph`/knowledge-map work. Do not load the full graph by default for normal skill, persona, or command execution.
@@ -1549,7 +1549,7 @@ Before dissemination, apply these checks:
 
 ---
 ## SKILL: intercepting-mobile-traffic-with-burpsuite
-## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
+## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Operational Modes & Traceability
 No cognitive labor occurs outside of a defined mode. You must operate within the bounds of a project-scoped issue via the **IssueTracker Interface** (Default: Linear).
@@ -1557,7 +1557,7 @@ No cognitive labor occurs outside of a defined mode. You must operate within the
 - **INCIDENT Mode**: Bypass planning for hotfixes. Requires post-mortem ticket and patch release note.
 - **EXPERIMENT Mode**: Timeboxed, throwaway code for validation. No tests required, but code must be quarantined.
 
-### 2. Cognitive & Technical Integrity (The Karpathy Principles)
+### 2. Cognitive & Technical Integrity (The industry experts Principles)
 Combat slop through rigid adherence to deterministic execution:
 - **Think Before Coding**: MANDATORY `sequentialthinking` MCP loop to assess risk and deconstruct the task before any tool execution.
 - **Neural Link Lookup (Lazy)**: Use `docs/graph.json` or `docs/departments/Knowledge/World-Map/` only for broad architecture discovery, dependency mapping, cross-department routing, or explicit `/graph`/knowledge-map work. Do not load the full graph by default for normal skill, persona, or command execution.
@@ -1755,7 +1755,7 @@ android sslpinning disable
 
 ---
 ## SKILL: investigating-phishing-email-incident
-## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
+## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Operational Modes & Traceability
 No cognitive labor occurs outside of a defined mode. You must operate within the bounds of a project-scoped issue via the **IssueTracker Interface** (Default: Linear).
@@ -1763,7 +1763,7 @@ No cognitive labor occurs outside of a defined mode. You must operate within the
 - **INCIDENT Mode**: Bypass planning for hotfixes. Requires post-mortem ticket and patch release note.
 - **EXPERIMENT Mode**: Timeboxed, throwaway code for validation. No tests required, but code must be quarantined.
 
-### 2. Cognitive & Technical Integrity (The Karpathy Principles)
+### 2. Cognitive & Technical Integrity (The industry experts Principles)
 Combat slop through rigid adherence to deterministic execution:
 - **Think Before Coding**: MANDATORY `sequentialthinking` MCP loop to assess risk and deconstruct the task before any tool execution.
 - **Neural Link Lookup (Lazy)**: Use `docs/graph.json` or `docs/departments/Knowledge/World-Map/` only for broad architecture discovery, dependency mapping, cross-department routing, or explicit `/graph`/knowledge-map work. Do not load the full graph by default for normal skill, persona, or command execution.
@@ -2061,7 +2061,7 @@ Status:       RESOLVED  No evidence of lateral movement post-compromise
 
 ---
 ## SKILL: mapping-mitre-attack-techniques
-## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
+## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Operational Modes & Traceability
 No cognitive labor occurs outside of a defined mode. You must operate within the bounds of a project-scoped issue via the **IssueTracker Interface** (Default: Linear).
@@ -2069,7 +2069,7 @@ No cognitive labor occurs outside of a defined mode. You must operate within the
 - **INCIDENT Mode**: Bypass planning for hotfixes. Requires post-mortem ticket and patch release note.
 - **EXPERIMENT Mode**: Timeboxed, throwaway code for validation. No tests required, but code must be quarantined.
 
-### 2. Cognitive & Technical Integrity (The Karpathy Principles)
+### 2. Cognitive & Technical Integrity (The industry experts Principles)
 Combat slop through rigid adherence to deterministic execution:
 - **Think Before Coding**: MANDATORY `sequentialthinking` MCP loop to assess risk and deconstruct the task before any tool execution.
 - **Neural Link Lookup (Lazy)**: Use `docs/graph.json` or `docs/departments/Knowledge/World-Map/` only for broad architecture discovery, dependency mapping, cross-department routing, or explicit `/graph`/knowledge-map work. Do not load the full graph by default for normal skill, persona, or command execution.
@@ -2214,7 +2214,7 @@ Summarize coverage by tactic category (Initial Access, Execution, Persistence, e
 
 ---
 ## SKILL: monitoring-darkweb-sources
-## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
+## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Operational Modes & Traceability
 No cognitive labor occurs outside of a defined mode. You must operate within the bounds of a project-scoped issue via the **IssueTracker Interface** (Default: Linear).
@@ -2222,7 +2222,7 @@ No cognitive labor occurs outside of a defined mode. You must operate within the
 - **INCIDENT Mode**: Bypass planning for hotfixes. Requires post-mortem ticket and patch release note.
 - **EXPERIMENT Mode**: Timeboxed, throwaway code for validation. No tests required, but code must be quarantined.
 
-### 2. Cognitive & Technical Integrity (The Karpathy Principles)
+### 2. Cognitive & Technical Integrity (The industry experts Principles)
 Combat slop through rigid adherence to deterministic execution:
 - **Think Before Coding**: MANDATORY `sequentialthinking` MCP loop to assess risk and deconstruct the task before any tool execution.
 - **Neural Link Lookup (Lazy)**: Use `docs/graph.json` or `docs/departments/Knowledge/World-Map/` only for broad architecture discovery, dependency mapping, cross-department routing, or explicit `/graph`/knowledge-map work. Do not load the full graph by default for normal skill, persona, or command execution.
@@ -2359,7 +2359,7 @@ For each dark web finding:
 
 ---
 ## SKILL: profiling-threat-actor-groups
-## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
+## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Operational Modes & Traceability
 No cognitive labor occurs outside of a defined mode. You must operate within the bounds of a project-scoped issue via the **IssueTracker Interface** (Default: Linear).
@@ -2367,7 +2367,7 @@ No cognitive labor occurs outside of a defined mode. You must operate within the
 - **INCIDENT Mode**: Bypass planning for hotfixes. Requires post-mortem ticket and patch release note.
 - **EXPERIMENT Mode**: Timeboxed, throwaway code for validation. No tests required, but code must be quarantined.
 
-### 2. Cognitive & Technical Integrity (The Karpathy Principles)
+### 2. Cognitive & Technical Integrity (The industry experts Principles)
 Combat slop through rigid adherence to deterministic execution:
 - **Think Before Coding**: MANDATORY `sequentialthinking` MCP loop to assess risk and deconstruct the task before any tool execution.
 - **Neural Link Lookup (Lazy)**: Use `docs/graph.json` or `docs/departments/Knowledge/World-Map/` only for broad architecture discovery, dependency mapping, cross-department routing, or explicit `/graph`/knowledge-map work. Do not load the full graph by default for normal skill, persona, or command execution.
@@ -2502,7 +2502,7 @@ Classify TLP:AMBER for internal distribution; seek ISAC approval before external
 
 ---
 ## SKILL: recovering-deleted-files-with-photorec
-## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
+## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Operational Modes & Traceability
 No cognitive labor occurs outside of a defined mode. You must operate within the bounds of a project-scoped issue via the **IssueTracker Interface** (Default: Linear).
@@ -2510,7 +2510,7 @@ No cognitive labor occurs outside of a defined mode. You must operate within the
 - **INCIDENT Mode**: Bypass planning for hotfixes. Requires post-mortem ticket and patch release note.
 - **EXPERIMENT Mode**: Timeboxed, throwaway code for validation. No tests required, but code must be quarantined.
 
-### 2. Cognitive & Technical Integrity (The Karpathy Principles)
+### 2. Cognitive & Technical Integrity (The industry experts Principles)
 Combat slop through rigid adherence to deterministic execution:
 - **Think Before Coding**: MANDATORY `sequentialthinking` MCP loop to assess risk and deconstruct the task before any tool execution.
 - **Neural Link Lookup (Lazy)**: Use `docs/graph.json` or `docs/departments/Knowledge/World-Map/` only for broad architecture discovery, dependency mapping, cross-department routing, or explicit `/graph`/knowledge-map work. Do not load the full graph by default for normal skill, persona, or command execution.
@@ -2753,7 +2753,7 @@ PhotoRec Recovery Summary:
 
 ---
 ## SKILL: recovering-from-ransomware-attack
-## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
+## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Operational Modes & Traceability
 No cognitive labor occurs outside of a defined mode. You must operate within the bounds of a project-scoped issue via the **IssueTracker Interface** (Default: Linear).
@@ -2761,7 +2761,7 @@ No cognitive labor occurs outside of a defined mode. You must operate within the
 - **INCIDENT Mode**: Bypass planning for hotfixes. Requires post-mortem ticket and patch release note.
 - **EXPERIMENT Mode**: Timeboxed, throwaway code for validation. No tests required, but code must be quarantined.
 
-### 2. Cognitive & Technical Integrity (The Karpathy Principles)
+### 2. Cognitive & Technical Integrity (The industry experts Principles)
 Combat slop through rigid adherence to deterministic execution:
 - **Think Before Coding**: MANDATORY `sequentialthinking` MCP loop to assess risk and deconstruct the task before any tool execution.
 - **Neural Link Lookup (Lazy)**: Use `docs/graph.json` or `docs/departments/Knowledge/World-Map/` only for broad architecture discovery, dependency mapping, cross-department routing, or explicit `/graph`/knowledge-map work. Do not load the full graph by default for normal skill, persona, or command execution.
@@ -3074,7 +3074,7 @@ Throughout: SOC monitoring on high alert
 
 ---
 ## SKILL: reverse-engineering-malware-with-ghidra
-## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
+## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Operational Modes & Traceability
 No cognitive labor occurs outside of a defined mode. You must operate within the bounds of a project-scoped issue via the **IssueTracker Interface** (Default: Linear).
@@ -3082,7 +3082,7 @@ No cognitive labor occurs outside of a defined mode. You must operate within the
 - **INCIDENT Mode**: Bypass planning for hotfixes. Requires post-mortem ticket and patch release note.
 - **EXPERIMENT Mode**: Timeboxed, throwaway code for validation. No tests required, but code must be quarantined.
 
-### 2. Cognitive & Technical Integrity (The Karpathy Principles)
+### 2. Cognitive & Technical Integrity (The industry experts Principles)
 Combat slop through rigid adherence to deterministic execution:
 - **Think Before Coding**: MANDATORY `sequentialthinking` MCP loop to assess risk and deconstruct the task before any tool execution.
 - **Neural Link Lookup (Lazy)**: Use `docs/graph.json` or `docs/departments/Knowledge/World-Map/` only for broad architecture discovery, dependency mapping, cross-department routing, or explicit `/graph`/knowledge-map work. Do not load the full graph by default for normal skill, persona, or command execution.
@@ -3375,7 +3375,7 @@ RC4 Key Material: [see encryption details above]
 
 ---
 ## SKILL: testing-for-xss-vulnerabilities-with-burpsuite
-## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
+## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Operational Modes & Traceability
 No cognitive labor occurs outside of a defined mode. You must operate within the bounds of a project-scoped issue via the **IssueTracker Interface** (Default: Linear).
@@ -3383,7 +3383,7 @@ No cognitive labor occurs outside of a defined mode. You must operate within the
 - **INCIDENT Mode**: Bypass planning for hotfixes. Requires post-mortem ticket and patch release note.
 - **EXPERIMENT Mode**: Timeboxed, throwaway code for validation. No tests required, but code must be quarantined.
 
-### 2. Cognitive & Technical Integrity (The Karpathy Principles)
+### 2. Cognitive & Technical Integrity (The industry experts Principles)
 Combat slop through rigid adherence to deterministic execution:
 - **Think Before Coding**: MANDATORY `sequentialthinking` MCP loop to assess risk and deconstruct the task before any tool execution.
 - **Neural Link Lookup (Lazy)**: Use `docs/graph.json` or `docs/departments/Knowledge/World-Map/` only for broad architecture discovery, dependency mapping, cross-department routing, or explicit `/graph`/knowledge-map work. Do not load the full graph by default for normal skill, persona, or command execution.
@@ -3707,7 +3707,7 @@ A WAF blocks common XSS patterns and CSP restricts inline scripts. Discover a JS
 
 ---
 ## SKILL: tracking-threat-actor-infrastructure
-## THE 1-MAN ARMY GLOBAL PROTOCOLS (MANDATORY)
+## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Operational Modes & Traceability
 No cognitive labor occurs outside of a defined mode. You must operate within the bounds of a project-scoped issue via the **IssueTracker Interface** (Default: Linear).
@@ -3715,7 +3715,7 @@ No cognitive labor occurs outside of a defined mode. You must operate within the
 - **INCIDENT Mode**: Bypass planning for hotfixes. Requires post-mortem ticket and patch release note.
 - **EXPERIMENT Mode**: Timeboxed, throwaway code for validation. No tests required, but code must be quarantined.
 
-### 2. Cognitive & Technical Integrity (The Karpathy Principles)
+### 2. Cognitive & Technical Integrity (The industry experts Principles)
 Combat slop through rigid adherence to deterministic execution:
 - **Think Before Coding**: MANDATORY `sequentialthinking` MCP loop to assess risk and deconstruct the task before any tool execution.
 - **Neural Link Lookup (Lazy)**: Use `docs/graph.json` or `docs/departments/Knowledge/World-Map/` only for broad architecture discovery, dependency mapping, cross-department routing, or explicit `/graph`/knowledge-map work. Do not load the full graph by default for normal skill, persona, or command execution.

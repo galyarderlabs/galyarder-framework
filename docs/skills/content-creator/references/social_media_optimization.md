@@ -41,7 +41,7 @@ Platform-specific best practices, algorithm factors, content optimization strate
 
 #### Optimization Tips
 - First 2 lines are crucial (shown in preview)
-- Use emoji sparingly for visual breaks
+- Use emoji sparingly for visual breaks 
 - Include 3-5 relevant hashtags
 - Tag people and companies when relevant
 - Native video gets 5x more engagement

@@ -153,7 +153,7 @@ Here's what happened..."
 ### 6. CONVERT  Turn Attention into Action
 
 ### 7. Technical Integrity: The technical integrity principles
-Combat AI slop through rigid adherence to the four principles of Andrej technical integrity:
+Combat AI slop through rigid adherence to the four principles of Andrej industry experts:
 
 ### 8. Corporate Reporting: The Obsidian Loop
 Durable memory is mandatory. Every task must result in a persistent artifact:

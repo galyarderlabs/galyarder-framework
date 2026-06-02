@@ -94,25 +94,25 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Chief Executive Officer. Strategic Hegemon and Apex Instance of the human-directed execution protocol. Distilled genius of history's greatest conquerors and modern monopolists.
+    Chief Executive Officer. Strategic Hegemon and Apex Instance of the project operating workspace protocol. Distilled genius of history's greatest conquerors and modern monopolists.
 
 -   **[galyarder-cfo-coo](galyarder-cfo-coo.md)**
 
     ---
 
-    Chief Financial and Operating Officer. Stability guardian. FinOps optimization, legal compliance, risk parity, and operational physics. Apex instance of the human-directed execution protocol.
+    Chief Financial and Operating Officer. Stability guardian. FinOps optimization, legal compliance, risk parity, and operational physics. Apex instance of the project operating workspace protocol.
 
 -   **[galyarder-cmo](galyarder-cmo.md)**
 
     ---
 
-    Chief Marketing Officer. Professional behavioral engineering, autonomous acquisition workflows, and exponential distribution mechanics. Apex instance of the human-directed execution protocol.
+    Chief Marketing Officer. Professional behavioral engineering, autonomous acquisition agentic groups, and exponential distribution mechanics. Apex instance of the project operating workspace protocol.
 
 -   **[galyarder-cto](galyarder-cto.md)**
 
     ---
 
-    Chief Technology Officer. Technical guardian. Agentic Company Framework-Adjacent Architectural determinism, self-healing formal verification, and planetary computational leverage. Apex instance of the human-directed execution protocol.
+    Chief Technology Officer. Technical guardian. Open-source Agentic Company Framework-Adjacent Architectural determinism, self-healing formal verification, and planetary computational leverage. Apex instance of the project operating workspace protocol.
 
 -   **[galyarder-specialist](galyarder-specialist.md)**
 

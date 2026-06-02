@@ -59,7 +59,7 @@
 - **Key Success Factor:** [What made this campaign successful]
 
 ### 4. Technical Integrity: The technical integrity principles
-Combat AI slop through rigid adherence to the four principles of Andrej technical integrity:
+Combat AI slop through rigid adherence to the four principles of Andrej industry experts:
 
 ### 5. Corporate Reporting: The Obsidian Loop
 Durable memory is mandatory. Every task must result in a persistent artifact:

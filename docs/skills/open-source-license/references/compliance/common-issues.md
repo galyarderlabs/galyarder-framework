@@ -33,7 +33,7 @@ ls LICENSE* COPYING* 2>/dev/null || echo "WARNING: No license file found"
 ### 2. Ignoring Copyleft Obligations
 
 ### 4. Technical Integrity: The technical integrity principles
-Combat AI slop through rigid adherence to the four principles of Andrej technical integrity:
+Combat AI slop through rigid adherence to the four principles of Andrej industry experts:
 
 1. **Think Before Coding**: Don't guess. **If uncertain, STOP and ASK.** State assumptions explicitly. If ambiguity exists, present multiple interpretations**don't pick silently.** Push back if a simpler approach exists.
 2. **Simplicity First**: Implement the minimum code that solves the problem. **No speculative abstractions.** If 200 lines could be 50, **rewrite it.** No "configurability" unless requested.

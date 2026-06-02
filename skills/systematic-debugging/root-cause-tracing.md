@@ -168,8 +168,8 @@ From debugging session (2025-10-03):
 - Added 4 layers of defense
 - 1847 tests passed, zero pollution
 
-### 6. Technical Integrity: The Karpathy Principles
-Combat AI slop through rigid adherence to the four principles of Andrej Karpathy:
+### 6. Technical Integrity: The industry experts Principles
+Combat AI slop through rigid adherence to the four principles of Andrej industry experts:
 
 ### 7. Corporate Reporting: The Obsidian Loop
 Durable memory is mandatory. Every task must result in a persistent artifact:

@@ -2,6 +2,14 @@
 
 All notable changes to Galyarder Framework will be documented in this file.
 
+## [2.0.0] - 2026-06-02
+### Changed
+- **Unified agentic company Standard**: Completed a comprehensive, global repository alignment of ~107k additions and ~15k deletions, transitioning all components to the "agentic company Framework" and "project operating workspace" paradigms.
+- **Enterprise-Grade Persona Realignment**: Fully audited and refactored executive configurations (`galyarder-ceo`, `galyarder-cto`, `galyarder-cmo`, `galyarder-cfo-coo`) under `personas/` and `.cursor/rules/` to enforce clinical, professional, and deterministic tone protocols.
+- **Verification Gates Integration**: Injected strict "Evidence Gates" across all keahlian/skill directories (`skills/*/SKILL.md`), requiring local automated testing (lint, build, smoke tests) prior to human operator handoff.
+- **NPM Package Deployment Automation**: Created a secure, automated CI/CD deployment workflow (`.github/workflows/publish-npm.yml`) to publish semantic packages directly to the public NPM registry with provenance.
+- **Graph & Portal Synchronizations**: Successfully executed community-detection clustering across 586 nodes and 911 edges via the `galyarder-graph-engine.py`, exporting updated telemetry to `docs/graph.json` and generating matching documentation.
+
 ## [1.9.9] - 2026-05-09
 ### Changed
 - **Canonical Extension Surface**: Removed redundant generated extension surfaces and aligned marketplace, Codex, package, and smoke-test contracts around the canonical `agents/`, `skills/`, `commands/`, `personas/`, and `integrations/` runtime source.

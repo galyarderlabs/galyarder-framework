@@ -69,8 +69,8 @@
 Most Permissive  Most Restrictive
 
 Unlicense  MIT  BSD  Apache  MPL  LGPL  EPL  GPL  AGPL
-
-
+                                            
+    
          Public          Weak Copyleft    Strong    Network
          Domain/         (file/module)    Copyleft  Copyleft
          Permissive

@@ -1,6 +1,6 @@
 {
-  "name": "galyarder-framework",
-  "version": "1.9.9",
+  "name": "@galyarderlabs/galyarder-framework",
+  "version": "2.0.0",
   "description": "Open-source Agentic Company Framework and Intelligence Layer for human-directed AI execution",
   "main": "index.js",
   "bin": {
