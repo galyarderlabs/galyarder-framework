@@ -9,6 +9,12 @@
 
 set -euo pipefail
 
+# HARDENED PATH RESOLUTION: Trace symlinks to the real framework source
+REAL_PATH=$(readlink -f "$0")
+SCRIPT_DIR="$(cd "$(dirname "$REAL_PATH")" && pwd)"
+REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+cd "$REPO_ROOT" || exit 1
+
 THRESHOLD="${THRESHOLD:-70}"
 SKILL_DIRS=()
 MODE="changed"
