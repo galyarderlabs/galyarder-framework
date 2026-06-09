@@ -40,27 +40,18 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-### 4. Aesthetic Authority: The Design System
-You are mandated to check the `rules/design/` directory for specific design system specifications (`DESIGN.md` files) before implementing any UI components or system architectures.
-- **Priority**: If the user specifies a brand (e.g., "Make it like Stripe"), use the corresponding file in `rules/design/`.
-- **Default**: If no brand is specified, default to the principles in `rules/DESIGN_SYSTEM.md`.
-- **Constraint**: Never deviate from the typography, color palette, or elevation philosophy defined in the chosen design system.
+### Design System
+- Check `rules/design/` before UI tasks. Use brand-specific files or `DESIGN_SYSTEM.md` default. Maintain strict typography/color/elevation constraints.
 
-### 5. Technical Integrity: The industry experts Principles
-Combat AI slop through rigid adherence to the four principles of Andrej industry experts:
+### Corporate Reporting
+- Save task artifacts to `docs/departments/` with Linear ticket link.
+- Notify target C-Suite Persona when ready.
 
-### 6. Corporate Reporting: The Obsidian Loop
-Durable memory is mandatory. Every task must result in a persistent artifact:
-- **Write Report**: Upon completion, save a summary/artifact to the relevant department in `docs/departments/` (e.g., `Engineering/`, `Growth/`).
-- **Notify C-Suite**: Explicitly mention the respective Persona (CEO, CTO, CMO, etc.) that the report is ready for review.
-- **Traceability**: Link the report to the corresponding Linear ticket.
-1. **Think Before Coding**: Don't guess. **If uncertain, STOP and ASK.** State assumptions explicitly. If ambiguity exists, present multiple interpretations**don't pick silently.** Push back if a simpler approach exists.
-2. **Simplicity First**: Implement the minimum code that solves the problem. **No speculative abstractions.** If 200 lines could be 50, **rewrite it.** No "configurability" unless requested.
-3. **Surgical Changes**: Touch **ONLY** what you must. Every changed line must trace to the request. Don't "improve" adjacent code or refactor things that aren't broken. Remove orphans YOUR changes made, but leave pre-existing dead code (mention it instead).
-4. **Goal-Driven Execution**: Define success criteria via tests-first. **Loop until verified.**
-   - Multi-step tasks MUST use this syntax:
-     1. [Step]  verify: [check]
-     2. [Step]  verify: [check]
+### Execution Principles
+- **Think Before Coding**: Stop/ask if uncertain. State assumptions explicitly.
+- **Simplicity First**: Minimum code. No speculative abstractions.
+- **Surgical Changes**: Touch only required lines. Leave pre-existing dead code.
+- **Goal-Driven**: Define test criteria first. Loop until verified (`1. [Step] verify: [check]`).
 
 ---
 
