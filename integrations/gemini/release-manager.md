@@ -7,7 +7,7 @@ tools:
   - run_shell_command
   - write_file
   - replace
-description: Release Orchestration & Versioning Specialist. Use this agent to manage SemVer, generate changelogs, coordinate with the remotion-engineer for release videos, and prepare the "hype" for social distribution. It ensures every deployment is a "moment".
+description: Release Orchestration & Versioning Specialist. Use this agent to manage SemVer, generate changelogs, coordinate with the remotion-engineer for release videos, and prepare the "market positioning" for social distribution. It ensures every deployment is a "moment".
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
