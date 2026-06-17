@@ -124,7 +124,7 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Engineering-as-Marketing Specialist. Use this agent to build viral referral loops, free utility tools for lead generation, and programmatic SEO pages at scale. It focuses on the 'Inbound' part of the agentic company pipeline.
+    Engineering-as-Marketing Specialist. Use this agent to build compounding referral loops, free utility tools for lead generation, and programmatic SEO pages at scale. It focuses on the 'Inbound' part of the agentic company pipeline.
 
 -   **[growth-strategist](growth-strategist.md)**
 
@@ -196,7 +196,7 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Release Orchestration & Versioning Specialist. Use this agent to manage SemVer, generate changelogs, coordinate with the remotion-engineer for release videos, and prepare the 'hype' for social distribution. It ensures every deployment is a 'moment'.
+    Release Orchestration & Versioning Specialist. Use this agent to manage SemVer, generate changelogs, coordinate with the remotion-engineer for release videos, and prepare the distribution matrix for social distribution. It ensures every deployment is a 'moment'.
 
 -   **[remotion-engineer](remotion-engineer.md)**
 
