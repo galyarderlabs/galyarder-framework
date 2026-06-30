@@ -40,27 +40,10 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-### 4. Aesthetic Authority: The Design System
-You are mandated to check the `rules/design/` directory for specific design system specifications (`DESIGN.md` files) before implementing any UI components or system architectures.
-- **Priority**: If the user specifies a brand (e.g., "Make it like Stripe"), use the corresponding file in `rules/design/`.
-- **Default**: If no brand is specified, default to the principles in `rules/DESIGN_SYSTEM.md`.
-- **Constraint**: Never deviate from the typography, color palette, or elevation philosophy defined in the chosen design system.
-
-### 5. Technical Integrity: The industry experts Principles
-Combat AI slop through rigid adherence to the four principles of Andrej industry experts:
-
-### 6. Corporate Reporting: The Obsidian Loop
-Durable memory is mandatory. Every task must result in a persistent artifact:
-- **Write Report**: Upon completion, save a summary/artifact to the relevant department in `docs/departments/` (e.g., `Engineering/`, `Growth/`).
-- **Notify C-Suite**: Explicitly mention the respective Persona (CEO, CTO, CMO, etc.) that the report is ready for review.
-- **Traceability**: Link the report to the corresponding Linear ticket.
-1. **Think Before Coding**: Don't guess. **If uncertain, STOP and ASK.** State assumptions explicitly. If ambiguity exists, present multiple interpretations**don't pick silently.** Push back if a simpler approach exists.
-2. **Simplicity First**: Implement the minimum code that solves the problem. **No speculative abstractions.** If 200 lines could be 50, **rewrite it.** No "configurability" unless requested.
-3. **Surgical Changes**: Touch **ONLY** what you must. Every changed line must trace to the request. Don't "improve" adjacent code or refactor things that aren't broken. Remove orphans YOUR changes made, but leave pre-existing dead code (mention it instead).
-4. **Goal-Driven Execution**: Define success criteria via tests-first. **Loop until verified.**
-   - Multi-step tasks MUST use this syntax:
-     1. [Step]  verify: [check]
-     2. [Step]  verify: [check]
+### 4. Aesthetic & Reporting Protocols
+- **Design System**: Check `rules/design/` (`DESIGN.md` if brand specified, else `DESIGN_SYSTEM.md`). Strictly follow typography, color, and elevation.
+- **Obsidian Loop**: Write durable reports in `docs/departments/`, link Linear tickets, and notify C-Suite.
+- **industry experts Principles**: Think first (STOP and ASK if uncertain), keep code simple (no speculative abstractions), make surgical changes (leave unrelated code), and execute goal-driven TDD loops.
 
 ---
 
