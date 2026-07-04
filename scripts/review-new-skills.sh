@@ -9,6 +9,11 @@
 
 set -euo pipefail
 
+# HARDENED PATH RESOLUTION: Trace symlinks to the real framework source
+REAL_PATH=$(readlink -f "$0")
+SCRIPT_DIR="$(cd "$(dirname "$REAL_PATH")" && pwd)"
+REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+
 THRESHOLD="${THRESHOLD:-70}"
 SKILL_DIRS=()
 MODE="changed"
@@ -46,7 +51,7 @@ if [ "$MODE" = "all" ]; then
   while IFS= read -r f; do
     dir=$(dirname "$f")
     SKILL_DIRS+=("$dir")
-  done < <(find . -name SKILL.md -not -path './.codex/*' -not -path './.gemini/*' -not -path './docs/*' -not -path './eval-workspace/*' -not -path './medium/*' -not -path '*/assets/*' -maxdepth 3 | sed 's|^\./||' | sort)
+  done < <(find "$REPO_ROOT" -name SKILL.md -not -path '*/.codex/*' -not -path '*/.gemini/*' -not -path '*/docs/*' -not -path '*/eval-workspace/*' -not -path '*/medium/*' -not -path '*/assets/*' -maxdepth 3 | sed "s|^$REPO_ROOT/||" | sort)
 elif [ "$MODE" = "changed" ] && [ ${#SKILL_DIRS[@]} -eq 0 ]; then
   echo "Detecting changed skills vs origin/dev..."
   CHANGED=$(git diff --name-only origin/dev...HEAD 2>/dev/null || git diff --name-only HEAD~1 2>/dev/null || echo "")
@@ -130,7 +135,7 @@ except:
   fi
 
   # 2. Structure validation
-  STRUCT_SCORE=$(python3 engineering/skill-tester/scripts/skill_validator.py "$skill_dir" --json 2>&1 | python3 -c "
+  STRUCT_SCORE=$(python3 "$REPO_ROOT/engineering/skill-tester/scripts/skill_validator.py" "$skill_dir" --json 2>&1 | python3 -c "
 import sys, json
 try:
     d = json.load(sys.stdin)
@@ -142,7 +147,7 @@ except:
 
   # 3. Script testing
   if [ -d "$skill_dir/scripts" ] && ls "$skill_dir/scripts/"*.py >/dev/null 2>&1; then
-    SCRIPT_RESULT=$(python3 engineering/skill-tester/scripts/script_tester.py "$skill_dir" --json 2>&1 | python3 -c "
+    SCRIPT_RESULT=$(python3 "$REPO_ROOT/engineering/skill-tester/scripts/script_tester.py" "$skill_dir" --json 2>&1 | python3 -c "
 import sys, json
 text = sys.stdin.read()
 try:
@@ -156,7 +161,7 @@ except:
   fi
 
   # 4. Security audit
-  SEC_RESULT=$(python3 engineering/skill-security-auditor/scripts/skill_security_auditor.py "$skill_dir" --strict --json 2>&1 | python3 -c "
+  SEC_RESULT=$(python3 "$REPO_ROOT/engineering/skill-security-auditor/scripts/skill_security_auditor.py" "$skill_dir" --strict --json 2>&1 | python3 -c "
 import sys, json
 try:
     d = json.load(sys.stdin)
