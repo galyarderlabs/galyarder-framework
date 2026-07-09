@@ -3,6 +3,11 @@
 # Verifies canonical runtime integrity, manifest parity, and structural health.
 set -euo pipefail
 
+# HARDENED PATH RESOLUTION: Trace symlinks to the real framework source
+REAL_PATH=$(readlink -f "$0")
+SCRIPT_DIR="$(cd "$(dirname "$REAL_PATH")" && pwd)"
+cd "$SCRIPT_DIR/.." || exit 1
+
 echo "🚀 Starting Galyarder Smoke Test..."
 
 # Detect if we are in the Framework Source or a Project HQ.
