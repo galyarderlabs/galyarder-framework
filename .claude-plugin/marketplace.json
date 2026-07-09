@@ -8,15 +8,15 @@
   "homepage": "https://galyarderlabs.github.io/galyarder-framework/",
   "repository": "https://github.com/galyarderlabs/galyarder-framework",
   "metadata": {
-    "description": "Galyarder Framework: Intelligence Layer for human-directed agentic company execution.",
-    "version": "2.0.0"
+    "description": "Galyarder Framework: The Humans 3.0 protocol for autonomous workforce orchestration.",
+    "version": "1.8.1"
   },
   "plugins": [
     {
       "name": "@galyarderlabs/galyarder-framework",
       "source": ".",
-      "description": "Complete Galyarder Framework runtime using canonical agents/, skills/, commands/, and integrations/ directories.",
-      "version": "2.0.0",
+      "description": "Complete Galyarder Framework runtime using canonical agents/, skills/, and commands/ directories.",
+      "version": "1.8.1",
       "category": "framework"
     }
   ]
