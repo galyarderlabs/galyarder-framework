@@ -126,6 +126,139 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     Plan a content strategy, topic clusters, editorial roadmap, and content mix for traffic, authority, and lead generation. Use when deciding what to publish, what topics to prioritize, or how to structure a content program.
 
+-   **[copywriting](copywriting/index.md)**
+
+
+    Write rigorous, conversion-focused marketing copy for landing pages and emails. Enforces brief confirmation and strict no-fabrication rules.
+
+-   **[email-marketing-bible](email-marketing-bible/index.md)**
+
+
+    >
+
+-   **[marketing-demand-acquisition](marketing-demand-acquisition/index.md)**
+
+
+    Creates demand generation campaigns, optimizes paid ad spend across LinkedIn, Google, and Meta, develops SEO strategies, and structures partnership programs for Series A+ startups scaling internationally. Use when planning marketing strategy, growth marketing, advertising campaigns, PPC optimization, lead generation, pipeline generation, or startup marketing budgets. Covers multi-channel acquisition (Google Ads, LinkedIn Ads, Meta Ads), CAC analysis, MQL/SQL workflows, attribution modeling, technical SEO, and co-marketing partnerships for hybrid PLG/Sales-Led motions in EU/US/Canada markets.
+
+-   **[marketing-ideas](marketing-ideas/index.md)**
+
+
+    Provide proven marketing strategies and growth ideas for SaaS and software products, prioritized using a marketing feasibility scoring system.
+
+-   **[marketing-psychology](marketing-psychology/index.md)**
+
+
+    Apply behavioral science and mental models to revenue (cuan) decisions, prioritized using a psychological leverage and feasibility scoring system.
+
+-   **[onboarding-cro](onboarding-cro/index.md)**
+
+
+    You are an expert in user onboarding and activation. Your goal is to help users reach their \'aha moment\' as quickly as possible and establish habits that lead to long-term retention.
+
+-   **[page-cro](page-cro/index.md)**
+
+
+    Analyze and optimize individual pages for conversion performance.
+
+-   **[paywall-upgrade-cro](paywall-upgrade-cro/index.md)**
+
+
+    You are an expert in in-app paywalls and upgrade flows. Your goal is to convert free users to paid, or upgrade users to higher tiers, at moments when they've experienced enough value to justify the commitment.
+
+-   **[programmatic-seo](programmatic-seo/index.md)**
+
+
+    Design and evaluate programmatic SEO strategies for creating SEO-driven pages at scale using templates and structured data.
+
+-   **[referral-program](referral-program/index.md)**
+
+
+    You are an expert in compounding growth and referral marketing with access to referral program data and third-party tools. Your goal is to help design and optimize programs that turn customers into Revenue (Cuan) engines.
+
+-   **[revenue-architect](revenue-architect/index.md)**
+
+
+    Specialized skill unit for Galyarder Framework orchestration.
+
+-   **[schema-markup](schema-markup/index.md)**
+
+
+    Design, validate, and optimize schema.org structured data for eligibility, correctness, and measurable SEO impact.
+
+-   **[seo-audit](seo-audit/index.md)**
+
+
+    Diagnose and audit SEO issues affecting crawlability, indexation, rankings, and organic performance.
+
+-   **[social-content](social-content/index.md)**
+
+
+    You are an expert social media strategist with direct access to a scheduling platform that publishes to all major social networks. Your goal is to help create engaging content that builds audience, drives engagement, and supports business goals.
+
+</div>
+
+## :material-folder-zip: Infrastructure Department
+
+<div class="grid cards" markdown>
+
+-   **[release](release/index.md)**
+
+
+    >
+
+-   **[release-changelog](release-changelog/index.md)**
+
+
+    >
+
+</div>
+
+## :material-folder-zip: Knowledge Department
+
+<div class="grid cards" markdown>
+
+-   **[defuddle](defuddle/index.md)**
+
+
+    Extract clean markdown content from web pages using Defuddle CLI, removing clutter and navigation to save tokens. Use instead of WebFetch when the user provides a URL to read or analyze, for online documentation, articles, blog posts, or any standard web page. Do NOT use for URLs ending in .md  those are already markdown, use WebFetch directly.
+
+-   **[doc-maintenance](doc-maintenance/index.md)**
+
+
+    >
+
+-   **[json-canvas](json-canvas/index.md)**
+
+
+    Create and edit JSON Canvas files (.canvas) with nodes, edges, groups, and connections. Use when working with .canvas files, creating visual canvases, mind maps, flowcharts, or when the user mentions Canvas files in Obsidian.
+
+-   **[obsidian-bases](obsidian-bases/index.md)**
+
+
+    Create and edit Obsidian Bases (.base files) with views, filters, formulas, and summaries. Use when working with .base files, creating database-like views of notes, or when the user mentions Bases, table views, card views, filters, or formulas in Obsidian.
+
+-   **[obsidian-cli](obsidian-cli/index.md)**
+
+
+    Interact with Obsidian vaults using the Obsidian CLI to read, create, search, and manage notes, tasks, properties, and more. Also supports plugin and theme development with commands to reload plugins, run JavaScript, capture errors, take screenshots, and inspect the DOM. Use when the user asks to interact with their Obsidian vault, manage notes, search vault content, perform vault operations from the command line, or develop and debug Obsidian plugins and themes.
+
+-   **[obsidian-markdown](obsidian-markdown/index.md)**
+
+
+    Create and edit Obsidian Flavored Markdown with wikilinks, embeds, callouts, properties, and other Obsidian-specific syntax. Use when working with .md files in Obsidian, or when the user mentions wikilinks, callouts, frontmatter, tags, embeds, or Obsidian notes.
+
+</div>
+
+## :material-folder-zip: Legal-Finance Department
+
+<div class="grid cards" markdown>
+
+-   **[accounting](accounting/index.md)**
+
+
+    Use this skill when the user needs to set up bookkeeping, track revenue and expenses, prepare for taxes, choose accounting software, understand SaaS revenue recognition, or manage the financial operations of their bootstrapped business. Covers bookkeeping setup, tax preparation, accounting tools, and financial hygiene for the 1-Man Army.
+
 -   **[contract-and-proposal-writer](contract-and-proposal-writer/index.md)**
 
     ---

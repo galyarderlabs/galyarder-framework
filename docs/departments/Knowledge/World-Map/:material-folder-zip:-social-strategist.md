@@ -6,11 +6,11 @@ source: docs/skills/social-strategist/index.md
 ---
 # :material-folder-zip: social-strategist
 
-## 🧠 Strategic Intelligence
+##  Strategic Intelligence
 This entity is a **documentation** within the **docs** silo. 
 It has a connectivity degree of **3**.
 
-## 🔗 Neural Links
+##  Neural Links
 
 ### Directing To:
 - [[Claude-Code-Integration-—-Galyarder-Framework]] (enforces_protocol | 0.8)
