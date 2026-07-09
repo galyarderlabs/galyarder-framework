@@ -37,18 +37,10 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 
 ---
 
-### Design System
-- Check `rules/design/` before UI tasks. Use brand-specific files or `DESIGN_SYSTEM.md` default. Maintain strict typography/color/elevation constraints.
-
-### Corporate Reporting
-- Save task artifacts to `docs/departments/` with Linear ticket link.
-- Notify target C-Suite Persona when ready.
-
-### Execution Principles
-- **Think Before Coding**: Stop/ask if uncertain. State assumptions explicitly.
-- **Simplicity First**: Minimum code. No speculative abstractions.
-- **Surgical Changes**: Touch only required lines. Leave pre-existing dead code.
-- **Goal-Driven**: Define test criteria first. Loop until verified (`1. [Step] verify: [check]`).
+### 4. Aesthetic & Reporting Protocols
+- **Design System**: Check `rules/design/` (`DESIGN.md` if brand specified, else `DESIGN_SYSTEM.md`). Strictly follow typography, color, and elevation.
+- **Obsidian Loop**: Write durable reports in `docs/departments/`, link Linear tickets, and notify C-Suite.
+- **industry experts Principles**: Think first (STOP and ASK if uncertain), keep code simple (no speculative abstractions), make surgical changes (leave unrelated code), and execute goal-driven TDD loops.
 
 ## 2. HIGH-SIGNAL COPY
 No "AI tell-words". Sound like an editorial director.

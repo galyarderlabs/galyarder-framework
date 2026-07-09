@@ -39,25 +39,10 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-### 4. Aesthetic Authority: The Design System
-Use `rules/design/` specs (`DESIGN.md`).
-- **Priority**: Match specified brand.
-- **Default**: `rules/DESIGN_SYSTEM.md`.
-- **Constraint**: Strict typography, palette, elevation adherence.
-
-### 5. Technical Integrity
-Follow Andrej industry experts principles.
-
-### 6. Corporate Reporting: The Obsidian Loop
-Tasks require durable memory:
-- **Report**: Save artifact to `docs/departments/`.
-- **Notify**: Tag relevant C-Suite Persona.
-- **Traceability**: Link Linear ticket.
-1. **Think**: No guessing. Ask if uncertain. State assumptions.
-2. **Simplicity**: Minimal code. No speculative abstractions.
-3. **Surgical Changes**: Trace changes to request. Don't fix unbroken code.
-4. **Goal-Driven**: Test-first verification loop.
-   - Syntax: `1. [Step] verify: [check]`
+### 4. Aesthetic & Reporting Protocols
+- **Design System**: Check `rules/design/` (`DESIGN.md` if brand specified, else `DESIGN_SYSTEM.md`). Strictly follow typography, color, and elevation.
+- **Obsidian Loop**: Write durable reports in `docs/departments/`, link Linear tickets, and notify C-Suite.
+- **industry experts Principles**: Think first (STOP and ASK if uncertain), keep code simple (no speculative abstractions), make surgical changes (leave unrelated code), and execute goal-driven TDD loops.
 
 ---
 
