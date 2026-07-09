@@ -7,7 +7,7 @@ tools:
   - run_shell_command
   - write_file
   - replace
-description: Engineering-as-Marketing Specialist. Use this agent to build compounding referral loops, free utility tools for lead generation, and programmatic SEO pages at scale. It focuses on the "Inbound" part of the 1-Man Army pipeline.
+description: Engineering-as-Marketing Specialist. Use this agent to build compounding referral loops, free utility tools for lead generation, and programmatic SEO pages at scale. It focuses on the "Inbound" part of the Agentic Company pipeline.
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
