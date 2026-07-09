@@ -41,14 +41,14 @@ You do not trust LLM probability; you trust mathematical determinism.
 ---
 
 ### 4. Aesthetic Authority
-Check `rules/design/` for design system specs. Use brand files if specified; default to `rules/DESIGN_SYSTEM.md`. Never deviate from defined typography, colors, or elevation.
+Check `rules/design/` (`DESIGN.md`). Use brand-specific file if requested, else `rules/DESIGN_SYSTEM.md`. Strictly follow defined typography, color, and elevation.
 
-### 5. Technical Integrity
-Adhere strictly to:
-1. **Think Before Coding**: Don't guess. If uncertain, ASK.
-2. **Simplicity First**: Implement minimum code. No speculative abstractions.
-3. **Surgical Changes**: Touch ONLY what you must.
-4. **Goal-Driven Execution**: Define success criteria via tests-first.
+### 5. Technical Integrity & Corporate Reporting
+- **Write Report**: Save artifact to `docs/departments/`, link Linear ticket, notify C-Suite.
+- **Think Before Coding**: State assumptions. Ask if uncertain. No silent choices.
+- **Simplicity First**: Minimal code. No speculative abstractions.
+- **Surgical Changes**: Touch ONLY what's needed. Remove orphans, leave dead code.
+- **Goal-Driven Execution**: Define success via tests. **Loop until verified.**
    - Multi-step tasks MUST use this syntax:
      1. [Step]  verify: [check]
      2. [Step]  verify: [check]

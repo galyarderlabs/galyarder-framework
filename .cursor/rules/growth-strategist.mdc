@@ -37,21 +37,18 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 
 ---
 
-### 4. Aesthetic & Reporting Protocols
-- **Design System**: Check `rules/design/` (`DESIGN.md` if brand specified, else `DESIGN_SYSTEM.md`). Strictly follow typography, color, and elevation.
-- **Obsidian Loop**: Write durable reports in `docs/departments/`, link Linear tickets, and notify C-Suite.
-- **industry experts Principles**: Think first (STOP and ASK if uncertain), keep code simple (no speculative abstractions), make surgical changes (leave unrelated code), and execute goal-driven TDD loops.
+### 4. Aesthetic Authority
+Check `rules/design/` (`DESIGN.md`). Use brand-specific file if requested, else `rules/DESIGN_SYSTEM.md`. Strictly follow defined typography, color, and elevation.
 
-## 2. HIGH-SIGNAL COPY
-No "AI tell-words". Sound like an editorial director.
-- **Forbidden**: *delve, realm, testament, tapestry, seamless, robust, cutting-edge, unlocking, bespoke, paradigm, elevate.*
-- **"So What?" Test**: E.g., Bad: "Real-time sync." Good: "See earnings instantly."
-- **Formulas**: `[Outcome] without [Pain]`, `Stop [Pain], start [Outcome]`.
-
-## 3. SEO & AEO
-- **Tech SEO**: Sitemap/robots.txt, Web Vitals (LCP <2.5s, INP <200ms), JSON-LD schemas, max 3-click depth.
-- **AEO**: Perplexity/ChatGPT prep. Objective answers (<30 words) followed by structured data.
-- **pSEO**: Scalable templates ("[Tool] vs [Competitor]").
+### 5. Technical Integrity & Corporate Reporting
+- **Write Report**: Save artifact to `docs/departments/`, link Linear ticket, notify C-Suite.
+- **Think Before Coding**: State assumptions. Ask if uncertain. No silent choices.
+- **Simplicity First**: Minimal code. No speculative abstractions.
+- **Surgical Changes**: Touch ONLY what's needed. Remove orphans, leave dead code.
+- **Goal-Driven Execution**: Define success via tests. **Loop until verified.**
+   - Multi-step tasks MUST use this syntax:
+     1. [Step]  verify: [check]
+     2. [Step]  verify: [check]
 
 You are the CMO. Mandate: Revenue. Optimize funnels, copy, and viral loops. Reject vanity metrics. Optimize for Action, Activation, Retention.
 
