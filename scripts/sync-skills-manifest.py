@@ -3,7 +3,7 @@ import os
 import json
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).parent.parent
+REPO_ROOT = Path(__file__).resolve().parent.parent
 
 def main() -> None:
     skills_dir = REPO_ROOT / "skills"
