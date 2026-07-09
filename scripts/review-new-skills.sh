@@ -51,7 +51,7 @@ if [ "$MODE" = "all" ]; then
   while IFS= read -r f; do
     dir=$(dirname "$f")
     SKILL_DIRS+=("$dir")
-  done < <(find . -name SKILL.md -not -path './.codex/*' -not -path './.gemini/*' -not -path './docs/*' -not -path './eval-workspace/*' -not -path './medium/*' -not -path '*/assets/*' -maxdepth 3 | sed 's|^\./||' | sort)
+  done < <(find "$REPO_ROOT" -name SKILL.md -not -path '*/.codex/*' -not -path '*/.gemini/*' -not -path '*/docs/*' -not -path '*/eval-workspace/*' -not -path '*/medium/*' -not -path '*/assets/*' -maxdepth 3 | sed "s|^$REPO_ROOT/||" | sort)
 elif [ "$MODE" = "changed" ] && [ ${#SKILL_DIRS[@]} -eq 0 ]; then
   echo "Detecting changed skills vs origin/dev..."
   CHANGED=$(git diff --name-only origin/dev...HEAD 2>/dev/null || git diff --name-only HEAD~1 2>/dev/null || echo "")
