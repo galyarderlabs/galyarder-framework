@@ -6,9 +6,16 @@ Framework extension source lives in `agents/`, `skills/`, `commands/`, `personas
 
 ## Executive Layer
 
-### Founder / Operator
-- **Role:** Human owner, final decision-maker, scope authority, approval gate.
-- **System responsibility:** Provides intent, constraints, priorities, and final judgment.
+## Growth Department
+Acquisition, conversion, behavioral arbitrage, and aesthetic law.
+- **growth-strategist**: CMO specialist for SEO, CRO, and Marketing Psychology.
+- **growth-engineer**: Engineering-as-Marketing lead. Builds viral referral loops and programmatic SEO.
+- **conversion-engineer**: CRO and funnel optimization specialist.
+- **retention-specialist**: LTV and engagement lead. Designs activation and nurture sequences.
+- **social-strategist**: Distribution and market positioning lead.
+- **remotion-engineer**: Programmatic video generation specialist using React.
+- **ui-ux-designer**: Frontend design and aesthetic consistency lead (Stitch).
+- **analytics-architect**: Data infrastructure and KPI tracking lead.
 
 ### galyarder-ceo
 - **Persona:** `galyarder-ceo`

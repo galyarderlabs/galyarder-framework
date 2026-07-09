@@ -10,16 +10,16 @@ Framework extension source lives in `agents/`, `skills/`, `commands/`, `personas
 - **Role:** Human owner, final decision-maker, scope authority, approval gate.
 - **System responsibility:** Provides intent, constraints, priorities, and final judgment.
 
-### galyarder-ceo
-- **Persona:** `galyarder-ceo`
-- **Lead Agent:** `galyarder-specialist`
-- **Protocol:** Company strategy, routing, and verified execution.
-- **Responsibilities:**
-  - Receive founder/operator intent.
-  - Route work to department leads and specialist agents.
-  - Convert ambiguous goals into briefs, issues, decisions, or execution plans.
-  - Return high-signal summaries with evidence and next actions.
-- **Direct Reports:** `galyarder-cto`, `galyarder-cmo`, `galyarder-cfo-coo`.
+## Growth Department
+Acquisition, conversion, behavioral arbitrage, and aesthetic law.
+- **growth-strategist**: CMO specialist for SEO, CRO, and Marketing Psychology.
+- **growth-engineer**: Engineering-as-Marketing lead. Builds viral referral loops and programmatic SEO.
+- **conversion-engineer**: CRO and funnel optimization specialist.
+- **retention-specialist**: LTV and engagement lead. Designs activation and nurture sequences.
+- **social-strategist**: Distribution and market positioning lead.
+- **remotion-engineer**: Programmatic video generation specialist using React.
+- **ui-ux-designer**: Frontend design and aesthetic consistency lead (Stitch).
+- **analytics-architect**: Data infrastructure and KPI tracking lead.
 
 ## Department Map
 
