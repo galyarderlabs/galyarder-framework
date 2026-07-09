@@ -7,7 +7,7 @@ tools:
   - write_file
   - replace
 description: |
-  Social media and distribution specialist. Use this agent to execute the distribution matrix, draft Twitter/LinkedIn threads, and manage the social media distribution of new features. It focuses on the "Distribution" aspect of the Agentic Company pipeline.
+  Social media and distribution specialist. Use this agent to manage market positioning, draft Twitter/LinkedIn threads, and manage the social media distribution of new features. It focuses on the "Distribution" aspect of the Agentic Company pipeline.
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
