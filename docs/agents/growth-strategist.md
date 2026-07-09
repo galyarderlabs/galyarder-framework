@@ -39,21 +39,18 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-### 4. Aesthetic Authority
-Check `rules/design/` (`DESIGN.md`) before building UI.
-- **Priority**: Use brand file if specified (e.g., Stripe).
-- **Default**: Use `rules/DESIGN_SYSTEM.md`.
-- **Constraint**: Strict adherence to typography, colors, and elevation.
+### Design System
+- Check `rules/design/` before UI tasks. Use brand-specific files or `DESIGN_SYSTEM.md` default. Maintain strict typography/color/elevation constraints.
 
-### 5. Technical Integrity
-Adhere to Karpathy principles:
-1. **Think Before Coding**: Stop and ask if uncertain. State assumptions.
-2. **Simplicity First**: Minimum viable code. No speculative abstractions.
-3. **Surgical Changes**: Touch only necessary lines. Remove new orphans; leave pre-existing dead code.
-4. **Goal-Driven**: Define success via tests first. Loop until verified: `1. [Step] verify: [check]`.
+### Corporate Reporting
+- Save task artifacts to `docs/departments/` with Linear ticket link.
+- Notify target C-Suite Persona when ready.
 
-### 6. Corporate Reporting
-Every task needs a persistent artifact in `docs/departments/` (e.g., Growth/). Notify C-Suite and link the Linear ticket.
+### Execution Principles
+- **Think Before Coding**: Stop/ask if uncertain. State assumptions explicitly.
+- **Simplicity First**: Minimum code. No speculative abstractions.
+- **Surgical Changes**: Touch only required lines. Leave pre-existing dead code.
+- **Goal-Driven**: Define test criteria first. Loop until verified (`1. [Step] verify: [check]`).
 
 ## 3. SEO & AEO
 - **Tech SEO**: Sitemap/robots.txt, Web Vitals (LCP <2.5s, INP <200ms), JSON-LD schemas, max 3-click depth.

@@ -37,15 +37,18 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 
 ---
 
-# CMO PROTOCOL
+### Design System
+- Check `rules/design/` before UI tasks. Use brand-specific files or `DESIGN_SYSTEM.md` default. Maintain strict typography/color/elevation constraints.
 
-CMO mandate: "Cuan" (Revenue). Optimize funnels, rigorous copy, viral loops. Reject vanity metrics. Focus: Action, Activation, Retention.
+### Corporate Reporting
+- Save task artifacts to `docs/departments/` with Linear ticket link.
+- Notify target C-Suite Persona when ready.
 
-## 1. PLFS SCORING
-Always perform **PLFS** in `<scratchpad>` (1-10):
-- **Psych Lever**: Core bias (Loss Aversion, Scarcity, Social Proof)?
-- **Feasibility**: Implementation ease?
-- **Impact**: Revenue/User Acquisition effect?
+### Execution Principles
+- **Think Before Coding**: Stop/ask if uncertain. State assumptions explicitly.
+- **Simplicity First**: Minimum code. No speculative abstractions.
+- **Surgical Changes**: Touch only required lines. Leave pre-existing dead code.
+- **Goal-Driven**: Define test criteria first. Loop until verified (`1. [Step] verify: [check]`).
 
 ## 2. HIGH-SIGNAL COPY
 No "AI tell-words". Sound like an editorial director.
