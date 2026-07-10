@@ -19,8 +19,8 @@
 ## External Images
 
 ```markdown
-![Alt text](https://example.com/image.png)
-![Alt text|300](https://example.com/image.png)
+![Alt text](https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/main/docs/assets/logo.webp)
+![Alt text|300](https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/main/docs/assets/logo.webp)
 ```
 
 ## Embed Audio

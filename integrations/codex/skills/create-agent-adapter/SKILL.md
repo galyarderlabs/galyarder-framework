@@ -210,7 +210,7 @@ packages/adapters/<name>/
 ```json
 {
   "name": "@galyarder/adapter-<name>",
-  "version": "0.0.1",
+  "version": "1.8.1",
   "private": true,
   "type": "module",
   "exports": {
