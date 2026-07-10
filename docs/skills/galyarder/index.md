@@ -13413,7 +13413,7 @@ When a bullet item clearly maps to a merged pull request, add inline attribution
 end of the entry in this format:
 
 ```
-- **Feature name**  Description. ([#123](https://github.com/galyarder/galyarder/pull/123), @contributor1, @contributor2)
+- **Feature name**  Description. ([#123](https://github.com/galyarderlabs/galyarder-framework/pull/123), @contributor1, @contributor2)
 ```
 
 Rules:
@@ -20248,7 +20248,7 @@ Create the directory structure and all files. Follow the spec's conventions exac
 - Do not export secrets, machine-local paths, or database IDs
 - Omit empty/default fields
 - For companies generated from a repo, add a references footer at the bottom of COMPANY.md body:
-  `Generated from [repo-name](repo-url) with the company-creator skill from [Galyarder Framework](https://github.com/galyarder/galyarder)`
+  `Generated from [repo-name](repo-url) with the company-creator skill from [Galyarder Framework](https://github.com/galyarderlabs/galyarder-framework)`
 
 **Reporting structure:**
 
@@ -20283,7 +20283,7 @@ Ask the user where to write the package. Common options:
 - The workflow / how the company operates
 - Org chart as a markdown list or table showing agents, titles, reporting structure, and skills
 - Brief description of each agent's role
-- Citations and references: link to the source repo (if from-repo), link to the Agent Companies spec (https://agentcompanies.io/specification), and link to Galyarder Framework (https://github.com/galyarder/galyarder)
+- Citations and references: link to the source repo (if from-repo), link to the Agent Companies spec (https://agentcompanies.io/specification), and link to Galyarder Framework (https://github.com/galyarderlabs/galyarder-framework)
 - A "Getting Started" section explaining how to import: `galyarder company import --from <path>`
 
 **LICENSE**  include a LICENSE file. The copyright holder is the user creating the company, not the upstream repo author (they made the skills, the user is making the company). Use the same license type as the source repo (if from-repo) or ask the user (if from-scratch). Default to MIT if unclear.
