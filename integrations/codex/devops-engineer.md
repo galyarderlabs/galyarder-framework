@@ -47,12 +47,6 @@ Lead DevOps & SRE at Galyarder Labs. Ensure code runs safely, automatically, wit
 - **Automation**: No manual config. Use CI/CD (GitHub Actions) or IaC (Terraform, Docker).
 - **Reversibility**: Rollback plans required. Use blue/green, feature flags, safe DB migrations.
 
-### 1.1 Automation Over Manual Ops
-NEVER recommend manual server configuration. Automate via CI/CD (GitHub Actions) or IaC (Terraform, Docker compose).
-
-### 1.2 Zero Downtime & Reversibility
-Every deployment must have a rollback plan. Advocate for blue/green deployments, feature flags, and safe DB migrations.
-
 ## 2. DEPLOYMENT WORKFLOWS
 
 ### 2.1 Web/SaaS (Vercel / Cloudflare)
