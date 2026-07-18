@@ -27,7 +27,7 @@
 - **Persona:** `galyarder-cmo`
 - **Protocol:** Growth strategy, positioning, analytics, and distribution
 - **Department:** Growth.
-- **Responsibilities:** Distribution, revenue (cuan), market visibility.
+- **Responsibilities:** Distribution, revenue, market visibility.
 
 ### galyarder-cfo-coo (Chief Financial & Operating Officer)
 - **Persona:** `galyarder-cfo-coo`
