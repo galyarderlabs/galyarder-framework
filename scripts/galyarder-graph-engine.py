@@ -15,6 +15,37 @@ DOCS_DIR = REPO_ROOT / "docs"
 OUTPUT_FILE = REPO_ROOT / "docs" / "graph.json"
 SILOS = ["Executive", "Engineering", "Growth", "Security", "Product", "Infrastructure", "Legal-Finance", "Knowledge"]
 
+# Windows/NTFS forbids these characters in a path segment, and a colon anywhere in
+# a tracked path makes `git checkout` fail on Windows (issues #198 and #203).
+INVALID_PATH_CHARS = re.compile(r'[<>:"/\\|?*\x00-\x1f]')
+ICON_SHORTCODE = re.compile(r'^(:[a-z0-9\-]+:)+')
+RESERVED_NAMES = {"CON", "PRN", "AUX", "NUL"} | {f"COM{i}" for i in range(1, 10)} | {f"LPT{i}" for i in range(1, 10)}
+
+
+def sanitize_path_segment(name, fallback="untitled"):
+    """Return a filename that is valid on Windows, macOS and Linux."""
+    value = ICON_SHORTCODE.sub("", name or "")
+    value = re.sub(r"\s*->\s*", "-to-", value)
+    value = INVALID_PATH_CHARS.sub("-", value)
+    value = value.strip().strip("-").rstrip(" .")
+    if not value:
+        value = fallback
+    if value.split(".")[0].upper() in RESERVED_NAMES:
+        value = f"{value}-file"
+    return value
+
+
+def unique_node_name(base, used):
+    """Return a name that stays unique on case-insensitive filesystems."""
+    candidate = base
+    counter = 2
+    while candidate.lower() in used:
+        candidate = f"{base}-{counter}"
+        counter += 1
+    used.add(candidate.lower())
+    return candidate
+
+
 class GalyarderNeuralLink:
     def __init__(self):
         self.nodes = {}  # rel_path -> metadata
@@ -143,9 +174,20 @@ class GalyarderNeuralLink:
         map_dir = REPO_ROOT / "docs" / "departments" / "Knowledge" / "World-Map"
         if map_dir.exists(): shutil.rmtree(map_dir)
         map_dir.mkdir(parents=True, exist_ok=True)
-        
+
+        # Deterministic, platform-safe filenames. Sorting keeps the "-2" suffixes
+        # stable between runs, which matters for the case-only differences that
+        # already exist in the docs (e.g. "Release.md" vs "release.md").
+        used_names = set()
+        node_names = {}
+        for rel_path in sorted(self.nodes):
+            base = sanitize_path_segment(self.nodes[rel_path]["title"].replace(" ", "-"))
+            if base == "untitled":
+                base = sanitize_path_segment(Path(rel_path).stem)
+            node_names[rel_path] = unique_node_name(base, used_names)
+
         for rel_path, meta in self.nodes.items():
-            node_name = meta["title"].replace("/", "-").replace(" ", "-")
+            node_name = node_names[rel_path]
             content = f"""---
 node_type: {meta['category']}
 silo: {meta['silo']}
@@ -167,15 +209,21 @@ It has a connectivity degree of **{meta['degree']}**.
                 content += "\n### Directing To:\n"
                 for e in outgoing:
                     target_meta = self.nodes.get(e["target"])
-                    target_name = target_meta["title"] if target_meta else e["target"]
-                    content += f"- [[{target_name.replace(' ', '-')}]] ({e['type']} | {e['confidence']})\n"
+                    target_name = node_names.get(
+                        e["target"],
+                        sanitize_path_segment(target_meta["title"] if target_meta else e["target"]),
+                    )
+                    content += f"- [[{target_name}]] ({e['type']} | {e['confidence']})\n"
             
             if incoming:
                 content += "\n### Informed By:\n"
                 for e in incoming:
                     source_meta = self.nodes.get(e["source"])
-                    source_name = source_meta["title"] if source_meta else e["source"]
-                    content += f"- [[{source_name.replace(' ', '-')}]] ({e['type']} | {e['confidence']})\n"
+                    source_name = node_names.get(
+                        e["source"],
+                        sanitize_path_segment(source_meta["title"] if source_meta else e["source"]),
+                    )
+                    content += f"- [[{source_name}]] ({e['type']} | {e['confidence']})\n"
 
             with open(map_dir / f"{node_name}.md", "w", encoding="utf-8") as f:
                 f.write(content)

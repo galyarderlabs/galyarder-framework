@@ -16,5 +16,5 @@ It has a connectivity degree of **2**.
 - [[Other-Note]] (semantic_link | 0.9)
 
 ### Informed By:
-- [[:material-folder-zip:-obsidian-markdown]] (structural_reference | 1.0)
-- [[:material-folder-zip:-obsidian-markdown]] (structural_reference | 1.0)
+- [[obsidian-markdown]] (structural_reference | 1.0)
+- [[obsidian-markdown]] (structural_reference | 1.0)
