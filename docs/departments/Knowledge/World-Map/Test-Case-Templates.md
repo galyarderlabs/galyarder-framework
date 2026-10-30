@@ -26,7 +26,7 @@ It has a connectivity degree of **55**.
 - [[Update-Entity-Template]] (structural_reference | 1.0)
 - [[Delete-Entity-Template]] (structural_reference | 1.0)
 - [[Bulk-Operations-Template]] (structural_reference | 1.0)
-- [[Soft-Delete-(Archive/Restore)-Template]] (structural_reference | 1.0)
+- [[Soft-Delete-(Archive-Restore)-Template]] (structural_reference | 1.0)
 - [[Add-to-Cart-Template]] (structural_reference | 1.0)
 - [[Update-Cart-Quantity-Template]] (structural_reference | 1.0)
 - [[Apply-Coupon-Template]] (structural_reference | 1.0)
