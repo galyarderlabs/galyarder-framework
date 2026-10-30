@@ -1,6 +1,6 @@
 {
   "name": "galyarder-framework",
-  "description": "Humans 3.0 Protocol: Advanced Agentic Orchestration for the 1-Man Army. Implementing Autonomous Goal Integration (AGI) to power self-evolving digital enterprises.",
+  "description": "Open-source agentic company framework: skills, agents, commands, review gates, and operating protocols for AI coding agents, kept inspectable, testable, and human-directed.",
   "version": "1.8.1",
   "author": "Galyarder Labs",
   "homepage": "https://galyarderlabs.github.io/galyarder-framework/",
