@@ -13,5 +13,5 @@ It has a connectivity degree of **2**.
 ## 🔗 Neural Links
 
 ### Informed By:
-- [[:material-folder-zip:-obsidian-bases]] (structural_reference | 1.0)
-- [[:material-folder-zip:-obsidian-bases]] (structural_reference | 1.0)
+- [[obsidian-bases]] (structural_reference | 1.0)
+- [[obsidian-bases]] (structural_reference | 1.0)
