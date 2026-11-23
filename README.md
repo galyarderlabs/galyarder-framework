@@ -2,10 +2,6 @@
   <img src="docs/assets/social-preview.png" width="600" alt="Galyarder Framework">
 </p>
 
-<h1 align="center">Galyarder Framework</h1>
-
-<p align="center"><strong>Open-source agent skills, commands, and integrations.</strong></p>
-
 <p align="center">
   Galyarder Framework packages skills, agents, commands, review gates, and operating protocols for AI coding agents, kept inspectable, testable, and human-directed.
 </p>
