@@ -1,7 +1,7 @@
 {
-  "name": "galyarder-framework",
-  "version": "2.0.0",
-  "description": "Galyarder Framework: High-Integrity Intelligence Layer for AI Agents",
+  "name": "forge-anything",
+  "version": "3.0.0",
+  "description": "Forge anything with AI agents.",
   "main": "index.js",
   "bin": {
     "galyarder": "bin/galyarder.js",
@@ -16,23 +16,25 @@
     "sync": "python3 scripts/galyarder-graph-engine.py && python3 scripts/generate-docs.py && python3 scripts/sync-skills-manifest.py"
   },
   "keywords": [
-    "galyarder",
-    "framework",
-    "ai",
-    "agents",
-    "intelligence-layer",
+    "forge-anything",
     "mcp",
-    "agentic-company",
-    "human-directed-execution",
-    "autonomous-agents",
+    "model-context-protocol",
+    "ai-agents",
+    "agent-skills",
     "skills",
-    "commands"
+    "commands",
+    "claude-code",
+    "codex",
+    "cursor",
+    "opencode",
+    "hermes",
+    "rust"
   ],
   "author": "Galyarder Labs",
   "license": "GPL-3.0-or-later",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/galyarderlabs/galyarder-framework.git"
+    "url": "git+https://github.com/galyarderlabs/forge-anything.git"
   },
   "engines": {
     "node": ">=16.0.0"
