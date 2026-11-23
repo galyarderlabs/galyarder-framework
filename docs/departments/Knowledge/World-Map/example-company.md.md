@@ -17,4 +17,4 @@ It has a connectivity degree of **3**.
 - [[Gemini-CLI-Integration-—-Galyarder-Framework]] (uses_proxy | 0.8)
 
 ### Informed By:
-- [[:material-folder-zip:-company-creator]] (structural_reference | 1.0)
+- [[company-creator]] (structural_reference | 1.0)

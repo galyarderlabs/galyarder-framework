@@ -1,0 +1,18 @@
+name: repo-hygiene
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  windows-safe-paths:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check that every tracked path is Windows-safe
+        run: python3 scripts/check-windows-paths.py

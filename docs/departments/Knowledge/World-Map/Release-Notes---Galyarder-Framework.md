@@ -13,6 +13,6 @@ It has a connectivity degree of **3**.
 ## 🔗 Neural Links
 
 ### Directing To:
-- [[Galyarder-Migration-Guide:-v1.7.x-->-v1.8.0]] (structural_reference | 1.0)
+- [[Galyarder-Migration-Guide--v1.7.x--to--v1.8.0]] (structural_reference | 1.0)
 - [[Claude-Code-Integration-—-Galyarder-Framework]] (enforces_protocol | 0.8)
 - [[Gemini-CLI-Integration-—-Galyarder-Framework]] (uses_proxy | 0.8)

@@ -13,4 +13,4 @@ It has a connectivity degree of **1**.
 ## 🔗 Neural Links
 
 ### Informed By:
-- [[:material-folder-zip:-json-canvas]] (structural_reference | 1.0)
+- [[json-canvas]] (structural_reference | 1.0)
