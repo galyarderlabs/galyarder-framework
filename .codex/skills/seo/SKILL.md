@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/commands/seo.md
+../../../commands/seo.md

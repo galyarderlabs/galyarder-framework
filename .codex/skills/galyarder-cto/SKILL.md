@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/galyarder-cto.md
+../../../agents/galyarder-cto.md

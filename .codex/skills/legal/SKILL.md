@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/commands/legal.md
+../../../commands/legal.md

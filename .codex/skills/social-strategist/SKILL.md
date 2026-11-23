@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/social-strategist.md
+../../../agents/social-strategist.md

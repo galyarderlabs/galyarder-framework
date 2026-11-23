@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/obsidian-architect.md
+../../../agents/obsidian-architect.md

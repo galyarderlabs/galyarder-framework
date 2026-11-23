@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/security-reviewer.md
+../../../agents/security-reviewer.md

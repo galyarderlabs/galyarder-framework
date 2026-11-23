@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/conversion-engineer.md
+../../../agents/conversion-engineer.md

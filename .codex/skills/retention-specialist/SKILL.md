@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/retention-specialist.md
+../../../agents/retention-specialist.md

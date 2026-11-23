@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/commands/build-fix.md
+../../../commands/build-fix.md

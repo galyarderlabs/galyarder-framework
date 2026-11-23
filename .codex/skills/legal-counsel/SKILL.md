@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/legal-counsel.md
+../../../agents/legal-counsel.md

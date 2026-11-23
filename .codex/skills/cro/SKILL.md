@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/commands/cro.md
+../../../commands/cro.md

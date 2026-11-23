@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/remotion-engineer.md
+../../../agents/remotion-engineer.md

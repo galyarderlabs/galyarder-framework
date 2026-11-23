@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/commands/incident.md
+../../../commands/incident.md

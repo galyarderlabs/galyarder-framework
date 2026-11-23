@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/perseus.md
+../../../agents/perseus.md

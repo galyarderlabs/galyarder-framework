@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/commands/linear.md
+../../../commands/linear.md

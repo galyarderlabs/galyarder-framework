@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/support-lead.md
+../../../agents/support-lead.md

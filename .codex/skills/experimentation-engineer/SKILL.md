@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/experimentation-engineer.md
+../../../agents/experimentation-engineer.md

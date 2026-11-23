@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/ui-ux-designer.md
+../../../agents/ui-ux-designer.md

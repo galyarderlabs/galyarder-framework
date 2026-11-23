@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/code-reviewer.md
+../../../agents/code-reviewer.md

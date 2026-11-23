@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/commands/deploy.md
+../../../commands/deploy.md

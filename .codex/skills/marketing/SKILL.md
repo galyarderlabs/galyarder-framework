@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/commands/marketing.md
+../../../commands/marketing.md

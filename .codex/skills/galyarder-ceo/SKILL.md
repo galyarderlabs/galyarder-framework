@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/galyarder-ceo.md
+../../../agents/galyarder-ceo.md

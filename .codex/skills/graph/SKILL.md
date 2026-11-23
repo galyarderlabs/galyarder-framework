@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/commands/graph.md
+../../../commands/graph.md

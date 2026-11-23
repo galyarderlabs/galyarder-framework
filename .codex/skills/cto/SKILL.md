@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/commands/cto.md
+../../../commands/cto.md

@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/qa-automation-engineer.md
+../../../agents/qa-automation-engineer.md

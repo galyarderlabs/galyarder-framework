@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/super-architect.md
+../../../agents/super-architect.md

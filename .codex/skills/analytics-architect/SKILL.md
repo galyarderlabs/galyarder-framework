@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/analytics-architect.md
+../../../agents/analytics-architect.md

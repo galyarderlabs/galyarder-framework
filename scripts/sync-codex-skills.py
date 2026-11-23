@@ -29,7 +29,7 @@ def sync():
                 name = item.parent.name
                 dest = SKILLS_DEST / name
                 if not dest.exists():
-                    os.symlink(item.parent, dest)
+                    os.symlink(os.path.relpath(item.parent, dest.parent), dest)
             for item in src_dir.glob("*.md"):
                 if not item.is_file():
                     continue
@@ -39,7 +39,7 @@ def sync():
                 dest = SKILLS_DEST / name
                 dest.mkdir(exist_ok=True)
                 if not (dest / "SKILL.md").exists():
-                    os.symlink(item, dest / "SKILL.md")
+                    os.symlink(os.path.relpath(item, dest), dest / "SKILL.md")
 
         print(f"Codex skills synced to {SKILLS_DEST}")
     except OSError as e:

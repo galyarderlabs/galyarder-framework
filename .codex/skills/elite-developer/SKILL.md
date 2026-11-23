@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/elite-developer.md
+../../../agents/elite-developer.md

@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/mcp-builder.md
+../../../agents/mcp-builder.md

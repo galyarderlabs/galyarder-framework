@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/security-guardian.md
+../../../agents/security-guardian.md

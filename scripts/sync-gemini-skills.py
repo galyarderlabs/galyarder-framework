@@ -24,7 +24,7 @@ def sync():
                 shutil.rmtree(dest)
             else:
                 dest.unlink()
-        os.symlink(item, dest)
+        os.symlink(os.path.relpath(item, dest.parent), dest)
 
     print(f"Gemini skills synced from {GEMINI_SRC} to {SKILLS_DEST}")
 

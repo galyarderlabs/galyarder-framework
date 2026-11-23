@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/tdd-guide.md
+../../../agents/tdd-guide.md

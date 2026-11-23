@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/commands/cfo.md
+../../../commands/cfo.md

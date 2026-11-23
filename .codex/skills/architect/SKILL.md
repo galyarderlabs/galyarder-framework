@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/architect.md
+../../../agents/architect.md

@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/devops-engineer.md
+../../../agents/devops-engineer.md

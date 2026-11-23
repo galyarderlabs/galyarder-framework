@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/commands/video.md
+../../../commands/video.md

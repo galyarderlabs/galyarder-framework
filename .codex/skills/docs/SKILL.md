@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/commands/docs.md
+../../../commands/docs.md

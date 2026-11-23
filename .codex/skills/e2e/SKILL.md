@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/commands/e2e.md
+../../../commands/e2e.md

@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/vercel-react-expert.md
+../../../agents/vercel-react-expert.md

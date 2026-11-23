@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/commands/cybersecurity.md
+../../../commands/cybersecurity.md

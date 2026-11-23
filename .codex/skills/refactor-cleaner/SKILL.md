@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/refactor-cleaner.md
+../../../agents/refactor-cleaner.md

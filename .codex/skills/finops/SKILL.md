@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/commands/finops.md
+../../../commands/finops.md

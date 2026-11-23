@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/product-manager.md
+../../../agents/product-manager.md

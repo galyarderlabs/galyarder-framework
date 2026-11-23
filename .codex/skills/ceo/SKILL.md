@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/commands/ceo.md
+../../../commands/ceo.md

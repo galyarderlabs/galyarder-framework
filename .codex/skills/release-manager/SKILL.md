@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/release-manager.md
+../../../agents/release-manager.md

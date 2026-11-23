@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/growth-strategist.md
+../../../agents/growth-strategist.md

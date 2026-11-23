@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/growth-engineer.md
+../../../agents/growth-engineer.md

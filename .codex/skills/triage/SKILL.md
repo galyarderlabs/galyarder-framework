@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/commands/triage.md
+../../../commands/triage.md

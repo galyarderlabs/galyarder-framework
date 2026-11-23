@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/cyber-intel.md
+../../../agents/cyber-intel.md

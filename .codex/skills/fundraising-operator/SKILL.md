@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/fundraising-operator.md
+../../../agents/fundraising-operator.md

@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/planner.md
+../../../agents/planner.md

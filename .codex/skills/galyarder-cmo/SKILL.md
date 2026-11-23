@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/galyarder-cmo.md
+../../../agents/galyarder-cmo.md

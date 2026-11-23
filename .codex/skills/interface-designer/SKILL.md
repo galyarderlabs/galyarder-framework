@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/agents/interface-designer.md
+../../../agents/interface-designer.md

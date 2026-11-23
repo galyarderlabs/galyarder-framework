@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/commands/plan.md
+../../../commands/plan.md

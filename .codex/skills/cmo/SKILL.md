@@ -1,1 +1,1 @@
-/home/hatch/workspace/galyarder-framework/commands/cmo.md
+../../../commands/cmo.md
