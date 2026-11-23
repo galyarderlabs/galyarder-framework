@@ -25,53 +25,6 @@ Using an AI agent shouldn't be just generating code, and the agent shouldn't be 
 
 The full workflow, with the five phases in detail, is in [docs/WORKFLOW.md](docs/WORKFLOW.md).
 
-## Features
-
-The work is routed by department, so the agent always knows where a job belongs and what proof it needs.
-
-| Department | Lead | Owns |
-|---|---|---|
-| Founder Office / Capital | fundraising-operator | Founder context, investor relations, board updates, diligence, narrative |
-| Product | product-manager, planner | Direction, prioritization, requirements, scope, roadmap, issue decomposition |
-| Engineering | super-architect, architect, elite-developer | Architecture, implementation, tests, code quality, delivery, refactoring |
-| Security | security-guardian, perseus | Security review, threat modeling, authorized offensive testing, incident analysis, hardening |
-| Growth | growth-strategist, growth-engineer | Acquisition, conversion, retention, distribution, analytics, messaging |
-| Infrastructure / Operations | devops-engineer, release-manager | CI/CD, deployment, runtime operations, release readiness, cost controls |
-| Legal / Finance | legal-counsel, finops-manager, financial-analyst | Legal and compliance, cost economics, pricing, contracts, privacy, governance |
-| Knowledge / Documentation | docs, obsidian-architect | Documentation, decision history, operating reports, knowledge maps, release notes |
-
-It plugs into Claude Code, Cursor, Gemini CLI, OpenAI Codex, Windsurf, OpenCode, Hermes Agent, OpenClaw, Kilo Code, Augment, Antigravity, Galyarder Agent, and Galyarder HQ — see [Integration](docs/INTEGRATION.md).
-
-One source, generated everywhere: the skills, agents, and commands live once in `skills/`, `agents/`, and `commands/`, and the mirrors for each tool are generated from them. No copies to drift.
-
-## Usage
-
-**Scaffold a project.**
-Your project gets the department, report, and planning structure.
-
-| Do this | To |
-|---|---|
-| `galyarder scaffold` | Create the operating structure in your project |
-| `galyarder deploy --tool <name>` | Deploy the rules, skills, and commands to your tool (cursor, windsurf, kilocode, augment, openclaw, hermes, antigravity, galyarder-agent) |
-
-**Check it works.**
-
-| Do this | To |
-|---|---|
-| `galyarder smoke` | Run the 8-point smoke test; green before anything ships |
-| `galyarder convert` | Regenerate the host mirrors from the canonical skills, agents, and commands |
-| `galyarder sync` | Sync the Codex skills from the canonical source |
-
-**Add the other layers.**
-The framework is the intelligence; the Agent and HQ complete the stack.
-
-| Do this | To |
-|---|---|
-| Add Galyarder Agent (`g-agent onboard`, `g-agent gateway`) | Memory, channels, tool access, and recurring jobs |
-| Add Galyarder HQ (clone galyarder-hq, `npm install`, `npm run dev`) | Visibility over departments, goals, reports, and agent activity |
-
-The full how-to is in the [quick start](docs/QUICK_START.md) and the [workflow](docs/WORKFLOW.md).
-
 ## Rules
 
 - Human-directed: public, financial, and production actions need a human's approval.
@@ -79,36 +32,17 @@ The full how-to is in the [quick start](docs/QUICK_START.md) and the [workflow](
 - Tests before fixes: nothing ships unverified.
 - Ship it: the loop ends at distribution, not at a draft.
 
-## Requirements
+## Install
 
-- **Node.js 20+** for the Framework CLI and Galyarder HQ.
-- **Python 3.11+** for Galyarder Agent.
-- **Git** installed.
-- A project where you want to deploy the operating structure, such as `~/projects/my-startup`.
+```sh
+npm install -g galyarder-framework
+```
 
-## Installation
+Or pull just the skills you need:
 
-1. Install the framework, one of three ways:
-
-   ```sh
-   npm install -g galyarder-framework
-   ```
-
-   Or pull just the skills you need:
-
-   ```sh
-   npx skills add galyarderlabs/galyarder-framework --skill full
-   ```
-
-   Or clone the source, to inspect, modify, or contribute:
-
-   ```sh
-   git clone https://github.com/galyarderlabs/galyarder-framework.git ~/galyarder-framework
-   cd ~/galyarder-framework
-   ./scripts/setup-cli.sh
-   ```
-
-2. Run the same command again to update; your setup stays as you set it.
+```sh
+npx skills add galyarderlabs/galyarder-framework --skill full
+```
 
 Step by step, including local install and other tools, is in [docs/QUICK_START.md](docs/QUICK_START.md).
 
