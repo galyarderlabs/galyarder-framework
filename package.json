@@ -29,7 +29,7 @@
     "commands"
   ],
   "author": "Galyarder Labs",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/galyarderlabs/galyarder-framework.git"

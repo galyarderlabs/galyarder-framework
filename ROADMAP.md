@@ -45,7 +45,7 @@ Parts of this are still thin or inconsistent:
 - **No hosted cloud service.** The framework is a local, inspectable set of files. There is no plan to turn it into a managed SaaS.
 - **No autonomous execution without approval.** Human command is a core principle. Public, financial, irreversible, or production-sensitive actions keep a human gate.
 - **No model training or fine-tuning.** This layer routes and governs work; it does not train models.
-- **No closed or source-available license.** The project is MIT and stays that way.
+- **No closed or source-available license.** The project is GPL-3.0-or-later and stays that way.
 - **No replacement for a project tracker.** The framework routes and verifies work; it is not a kanban board or a PM tool.
 
 ## How to follow along

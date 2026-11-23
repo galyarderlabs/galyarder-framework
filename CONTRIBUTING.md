@@ -87,15 +87,15 @@ a generated file to make it pass.
 - When `main` moves on, rebase on it rather than merging it in.
 - Your commits keep your name. What ships is credited in the changelog
   ("Thanks to @you").
-- By contributing you agree that your work is licensed under the MIT
-  License, like the rest of Galyarder Framework.
+- By contributing you agree that your work is licensed under the GNU
+  General Public License v3.0 or later, like the rest of Forge Anything.
 
 ## Releasing
 
 1. Move the `[Unreleased]` notes in `CHANGELOG.md` under a new version
    and date, and set that version in `package.json` (the single source
    of the version).
-2. Commit, then tag and push: `git tag -a v2.0.1 -m "Galyarder Framework
+2. Commit, then tag and push: `git tag -a v2.0.1 -m "Forge Anything
    2.0.1"` and `git push origin main v2.0.1`.
 3. The publish-npm workflow publishes the tagged source to npm, and the
    deploy-docs workflow deploys the docs site.

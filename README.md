@@ -5,7 +5,7 @@
 Forge anything with AI agents.
 
 [![npm version](https://img.shields.io/npm/v/galyarder-framework.svg)](https://www.npmjs.com/package/galyarder-framework)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![License: GPL-3.0-or-later](https://img.shields.io/badge/license-GPL--3.0--or--later-blue.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/galyarderlabs/forge-anything.svg)](https://github.com/galyarderlabs/forge-anything)
 [![Smoke test](https://github.com/galyarderlabs/forge-anything/actions/workflows/smoke-test.yml/badge.svg)](https://github.com/galyarderlabs/forge-anything/actions/workflows/smoke-test.yml)
 ![Node.js 20+](https://img.shields.io/badge/Node.js-20%2B-green.svg)
@@ -78,7 +78,7 @@ Forge Anything is free and always will be. If it makes your agents work the righ
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+Forge Anything is free software: you can redistribute it and/or modify it under the terms of the [GNU General Public License](LICENSE) as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU General Public License](LICENSE) for more details.
 
 ---
 
