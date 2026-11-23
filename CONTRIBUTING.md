@@ -33,6 +33,8 @@ Security problems go privately to the maintainer; see
   approval.
 - **Smallest viable route.** The shortest path that satisfies the goal,
   without speculative architecture.
+- **Use official references.** Fetch current docs for APIs, libraries,
+  and platform behavior before relying on memory.
 
 ## Building
 

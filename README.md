@@ -11,7 +11,7 @@ Essential skills for the full lifecycle of an AI agent, in one place — from go
 ![Node.js 20+](https://img.shields.io/badge/Node.js-20%2B-green.svg)
 [![Sponsor](https://img.shields.io/badge/sponsor-support-ff69b4?logo=githubsponsors)](https://github.com/sponsors/galyarderlabs)
 
-Using an AI agent shouldn't be just generating code, and the agent shouldn't be confused. This is the right way to work: rules and a workflow, simple as that. The best skills, unified in one place — in your company, and in your life.
+Using an AI agent shouldn't be just generating code, and the agent shouldn't be confused. It is not a kanban board, a prompt pack, or another coding agent. This is the right way to work: rules and a workflow, simple as that. The best skills, unified in one place — in your company, and in your life.
 
 </div>
 
