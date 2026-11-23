@@ -1,17 +1,17 @@
 <div align="center">
 
-![Galyarder Framework](docs/assets/social-preview.png)
+![Forge Anything](docs/assets/social-preview.png)
 
-Essential skills for the full lifecycle of an AI agent, in one place — from goal to shipped.
+MCP tools + essential skills for AI agents to forge anything — in your company, and in your life.
 
 [![npm version](https://img.shields.io/npm/v/galyarder-framework.svg)](https://www.npmjs.com/package/galyarder-framework)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/galyarderlabs/galyarder-framework.svg)](https://github.com/galyarderlabs/galyarder-framework)
-[![Smoke test](https://github.com/galyarderlabs/galyarder-framework/actions/workflows/smoke-test.yml/badge.svg)](https://github.com/galyarderlabs/galyarder-framework/actions/workflows/smoke-test.yml)
+[![GitHub stars](https://img.shields.io/github/stars/galyarderlabs/forge-anything.svg)](https://github.com/galyarderlabs/forge-anything)
+[![Smoke test](https://github.com/galyarderlabs/forge-anything/actions/workflows/smoke-test.yml/badge.svg)](https://github.com/galyarderlabs/forge-anything/actions/workflows/smoke-test.yml)
 ![Node.js 20+](https://img.shields.io/badge/Node.js-20%2B-green.svg)
 [![Sponsor](https://img.shields.io/badge/sponsor-support-ff69b4?logo=githubsponsors)](https://github.com/sponsors/galyarderlabs)
 
-Using an AI agent shouldn't be just generating code, and the agent shouldn't be confused. It is not a kanban board, a prompt pack, or another AI agent. This is the right way to work: rules and a workflow, simple as that. The best skills, unified in one place — in your company, and in your life.
+Using an AI agent shouldn't be just generating code, and the agent shouldn't be confused. Forge Anything gives the agent tools that do the work — write code, run commands, generate images and video — plus the essential skills for how to use them, and a scaffold that starts a tidy repo. Even a regular chatbot can add the MCP and forge anything. It is not a kanban board, a prompt pack, or another AI agent. This is the right way to work: rules and a workflow, simple as that. The best tools and skills, unified in one place — in your company, and in your life.
 
 </div>
 
@@ -41,7 +41,7 @@ npm install -g galyarder-framework
 Or pull just the skills you need:
 
 ```sh
-npx skills add galyarderlabs/galyarder-framework --skill full
+npx skills add galyarderlabs/forge-anything --skill full
 ```
 
 Step by step, including local install and other tools, is in [docs/QUICK_START.md](docs/QUICK_START.md).
@@ -70,11 +70,11 @@ problems privately as described in [SECURITY.md](SECURITY.md).
 
 ## Support
 
-Galyarder Framework is free and always will be. If it makes your agents work the right way, you can [sponsor Galyarder Labs on GitHub](https://github.com/sponsors/galyarderlabs). A star, a bug report or telling a friend helps just as much.
+Forge Anything is free and always will be. If it makes your agents work the right way, you can [sponsor Galyarder Labs on GitHub](https://github.com/sponsors/galyarderlabs). A star, a bug report or telling a friend helps just as much.
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=galyarderlabs/galyarder-framework&type=Date)](https://star-history.com/#galyarderlabs/galyarder-framework&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=galyarderlabs/forge-anything&type=Date)](https://star-history.com/#galyarderlabs/forge-anything&Date)
 
 ## License
 
@@ -84,6 +84,6 @@ MIT. See [LICENSE](LICENSE).
 
 <div align="center">
 
-[![Give Galyarder Framework a star](https://img.shields.io/github/stars/galyarderlabs/galyarder-framework?style=social)](https://github.com/galyarderlabs/galyarder-framework)
+[![Give Forge Anything a star](https://img.shields.io/github/stars/galyarderlabs/forge-anything?style=social)](https://github.com/galyarderlabs/forge-anything)
 
 </div>

@@ -1,8 +1,8 @@
-site_name: Galyarder Framework
-site_description: "Open-source Agentic Company Framework for turning founder intent into coordinated execution across engineering, product, growth, finance, sales, security, docs, operations, and strategy."
-site_url: https://galyarderlabs.github.io/galyarder-framework/
-repo_url: https://github.com/galyarderlabs/galyarder-framework
-repo_name: galyarderlabs/galyarder-framework
+site_name: Forge Anything
+site_description: "MCP tools + essential skills for AI agents to forge anything — in your company, and in your life."
+site_url: https://galyarderlabs.github.io/forge-anything/
+repo_url: https://github.com/galyarderlabs/forge-anything
+repo_name: galyarderlabs/forge-anything
 edit_uri: edit/main/docs/
 
 theme:
@@ -105,7 +105,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/galyarderlabs/galyarder-framework
+      link: https://github.com/galyarderlabs/forge-anything
 
 copyright: "© 2026 Galyarder Labs."
 
