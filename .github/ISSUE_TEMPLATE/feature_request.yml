@@ -1,0 +1,22 @@
+name: Feature request
+description: Suggest a skill, agent, command, or host
+labels: [enhancement]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What would you like?
+      description: A new skill, agent, command, host, or a change to the workflow?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is it useful?
+    validations:
+      required: true
+  - type: textarea
+    id: how
+    attributes:
+      label: How should it work?
+      description: "Which department it belongs to, which phase of the loop it fits, and what it does."

@@ -9,6 +9,7 @@ Essential skills for the full lifecycle of an AI agent, in one place — from go
 [![GitHub stars](https://img.shields.io/github/stars/galyarderlabs/galyarder-framework.svg)](https://github.com/galyarderlabs/galyarder-framework)
 [![Smoke test](https://github.com/galyarderlabs/galyarder-framework/actions/workflows/smoke-test.yml/badge.svg)](https://github.com/galyarderlabs/galyarder-framework/actions/workflows/smoke-test.yml)
 ![Node.js 20+](https://img.shields.io/badge/Node.js-20%2B-green.svg)
+[![Sponsor](https://img.shields.io/badge/sponsor-support-ff69b4?logo=githubsponsors)](https://github.com/sponsors/galyarderlabs)
 
 Using an AI agent shouldn't be just generating code, and the agent shouldn't be confused. This is the right way to work: rules and a workflow, simple as that. The best skills, unified in one place — in your company, and in your life.
 
@@ -58,6 +59,8 @@ Your project gets the department, report, and planning structure.
 | Do this | To |
 |---|---|
 | `galyarder smoke` | Run the 8-point smoke test; green before anything ships |
+| `galyarder convert` | Regenerate the host mirrors from the canonical skills, agents, and commands |
+| `galyarder sync` | Sync the Codex skills from the canonical source |
 
 **Add the other layers.**
 The framework is the intelligence; the Agent and HQ complete the stack.
@@ -125,11 +128,19 @@ Step by step, including local install and other tools, is in [docs/QUICK_START.m
 
 ## Contributing
 
-Bug reports, ideas and pull requests are welcome. See the [issues](https://github.com/galyarderlabs/galyarder-framework/issues) and [pull requests](https://github.com/galyarderlabs/galyarder-framework/pulls), and [CHANGELOG.md](CHANGELOG.md) for what changed.
+Bug reports, ideas and pull requests are welcome. See
+[CONTRIBUTING.md](CONTRIBUTING.md) for how to build, test and send changes,
+and [CHANGELOG.md](CHANGELOG.md) for what changed. Everyone taking part
+follows the [Code of Conduct](CODE_OF_CONDUCT.md); please report security
+problems privately as described in [SECURITY.md](SECURITY.md).
 
 ## Support
 
 Galyarder Framework is free and always will be. If it makes your agents work the right way, you can [sponsor Galyarder Labs on GitHub](https://github.com/sponsors/galyarderlabs). A star, a bug report or telling a friend helps just as much.
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=galyarderlabs/galyarder-framework&type=Date)](https://star-history.com/#galyarderlabs/galyarder-framework&Date)
 
 ## License
 
