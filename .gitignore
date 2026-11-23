@@ -55,3 +55,6 @@ site/
 
 # Local model/cache artifacts
 local_cache/
+
+# Rust build output
+target/

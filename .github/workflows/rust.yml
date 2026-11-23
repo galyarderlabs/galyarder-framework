@@ -1,0 +1,87 @@
+name: rust
+
+# Rust scaffold (crates/forge-scaffold): format, lint, build, test, and the
+# scaffold end-to-end check. The crate has no external dependencies, so the
+# build needs no registry cache and stays offline-friendly.
+#
+# Toolchain is pinned to 1.85, the crate's MSRV (edition 2024). If the code
+# uses a newer feature, this job fails first.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  rust:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: crates/forge-scaffold
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust 1.85 (MSRV)
+        uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: "1.85"
+          components: rustfmt, clippy
+
+      - name: Check formatting
+        run: cargo fmt --check
+
+      - name: Lint (clippy, warnings are errors)
+        run: cargo clippy --all-targets -- -D warnings
+
+      - name: Build
+        run: cargo build --locked
+
+      - name: Test (unit + scaffold e2e acceptance, issue #212)
+        run: cargo test --locked
+
+  scaffold-e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust 1.85 (MSRV)
+        uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: "1.85"
+
+      - name: Build the scaffold binary (release)
+        run: cargo build --release --locked
+        working-directory: crates/forge-scaffold
+
+      - name: Scaffold into an empty folder
+        run: |
+          ./crates/forge-scaffold/target/release/forge-scaffold \
+            --source "$GITHUB_WORKSPACE" --name ci-proof /tmp/forge-scaffold-proof
+
+      - name: Verify the scaffolded repo
+        run: |
+          set -euo pipefail
+          OUT=/tmp/forge-scaffold-proof
+          test "$(ls "$OUT/skills" | wc -l)" -eq 38
+          test "$(ls "$OUT/agents" | wc -l)" -eq 18
+          test "$(ls "$OUT/commands" | wc -l)" -eq 25
+          test -f "$OUT/README.md"
+          test -f "$OUT/AGENTS.md"
+          test -f "$OUT/WORKFLOW.md"
+          test -f "$OUT/skills.json"
+          test -f "$OUT/skills/forge/SKILL.md"
+          test -f "$OUT/agents/forge-ceo.md"
+          test -f "$OUT/.claude-plugin/marketplace.json"
+          test -f "$OUT/gemini-extension.json"
+          test -f "$OUT/.cursor/rules/forge.mdc"
+          test -f "$OUT/docs/departments/Executive/README.md"
+          test -f "$OUT/docs/departments/Knowledge/README.md"
+          # No old product name anywhere in the scaffolded repo.
+          if grep -rio "galyarder framework\|galyarder-framework" "$OUT" | head -1 | grep -q .; then
+            echo "scaffolded repo still names the old product" >&2
+            exit 1
+          fi
+          echo "scaffold e2e: OK ($(find "$OUT" -type f | wc -l) files)"

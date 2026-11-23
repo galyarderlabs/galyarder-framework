@@ -1,0 +1,14 @@
+[package]
+name = "forge-scaffold"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Scaffold a tidy Forge Anything repo into a folder."
+license = "GPL-3.0-or-later"
+
+[[bin]]
+name = "forge-scaffold"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = "s"
