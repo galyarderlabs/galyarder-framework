@@ -1,0 +1,17 @@
+[package]
+name = "forge"
+version = "3.0.2"
+edition = "2024"
+rust-version = "1.85"
+description = "Forge Anything CLI: the forge command, in Rust."
+license = "GPL-3.0-or-later"
+
+[[bin]]
+name = "forge"
+path = "src/main.rs"
+
+[dependencies]
+forge-scaffold = { path = "../forge-scaffold" }
+
+[profile.release]
+opt-level = "s"

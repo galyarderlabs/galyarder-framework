@@ -67,15 +67,16 @@ pub fn resolve(explicit: Option<&Path>) -> Result<PathBuf, String> {
         }
     }
 
-    // 4. Next to the executable (installed layouts).
+    // 4. Walk up from the executable's directory (installed layouts, and
+    // binaries built inside a checkout, e.g. crates/forge/target/debug/).
     if let Ok(exe) = env::current_exe() {
         if let Some(exe_dir) = exe.parent() {
-            for candidate in [exe_dir.join(".."), exe_dir.join("../..")] {
-                if let Ok(canon) = candidate.canonicalize() {
-                    if is_source(&canon) {
-                        return Ok(canon);
-                    }
+            let mut dir: Option<&Path> = Some(exe_dir);
+            while let Some(d) = dir {
+                if is_source(d) {
+                    return Ok(d.to_path_buf());
                 }
+                dir = d.parent();
             }
         }
     }

@@ -1,10 +1,11 @@
 name: rust
 
-# Rust scaffold (crates/forge-scaffold): format, lint, build, test, and the
-# scaffold end-to-end check. The crate has no external dependencies, so the
-# build needs no registry cache and stays offline-friendly.
+# Rust crates (crates/forge-scaffold, crates/forge): format, lint, build,
+# test, and the end-to-end checks. Both crates have no external
+# dependencies (forge-scaffold is std-only; forge depends on it by path),
+# so the build needs no registry cache and stays offline-friendly.
 #
-# Toolchain is pinned to 1.85, the crate's MSRV (edition 2024). If the code
+# Toolchain is pinned to 1.85, the crates' MSRV (edition 2024). If the code
 # uses a newer feature, this job fails first.
 
 on:
@@ -18,9 +19,12 @@ permissions:
 jobs:
   rust:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        crate: [forge-scaffold, forge]
     defaults:
       run:
-        working-directory: crates/forge-scaffold
+        working-directory: crates/${{ matrix.crate }}
     steps:
       - uses: actions/checkout@v4
 
@@ -39,7 +43,7 @@ jobs:
       - name: Build
         run: cargo build --locked
 
-      - name: Test (unit + scaffold e2e acceptance, issue #212)
+      - name: Test (unit + e2e acceptance)
         run: cargo test --locked
 
   scaffold-e2e:
@@ -85,3 +89,44 @@ jobs:
             exit 1
           fi
           echo "scaffold e2e: OK ($(find "$OUT" -type f | wc -l) files)"
+
+  forge-e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust 1.85 (MSRV)
+        uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: "1.85"
+
+      - name: Build the forge CLI (release)
+        run: cargo build --release --locked
+        working-directory: crates/forge
+
+      - name: Help and version match the JS CLI byte-for-byte
+        run: |
+          set -euo pipefail
+          FORGE=./crates/forge/target/release/forge
+          "$FORGE" --help > /tmp/forge-rs-help.txt
+          node bin/forge.js --help > /tmp/forge-js-help.txt
+          diff /tmp/forge-rs-help.txt /tmp/forge-js-help.txt
+          "$FORGE" --version > /tmp/forge-rs-ver.txt
+          node bin/forge.js --version > /tmp/forge-js-ver.txt
+          diff /tmp/forge-rs-ver.txt /tmp/forge-js-ver.txt
+          echo "forge help/version parity: OK"
+
+      - name: Scaffold through the forge CLI
+        run: |
+          set -euo pipefail
+          ./crates/forge/target/release/forge scaffold --name ci-proof /tmp/forge-cli-proof
+          test "$(ls /tmp/forge-cli-proof/skills | wc -l)" -eq 38
+          test "$(ls /tmp/forge-cli-proof/agents | wc -l)" -eq 18
+          test "$(ls /tmp/forge-cli-proof/commands | wc -l)" -eq 25
+          test -f /tmp/forge-cli-proof/README.md
+          echo "forge scaffold: OK"
+
+      - name: Smoke through the forge CLI
+        run: |
+          ./crates/forge/target/release/forge smoke | tee /tmp/forge-smoke.txt
+          grep -q "SMOKE TEST PASSED" /tmp/forge-smoke.txt
