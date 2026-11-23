@@ -16,3 +16,6 @@ jobs:
 
       - name: Run audit-grade smoke test
         run: bash scripts/smoke.sh
+
+      - name: Check plugin manifest versions
+        run: python3 scripts/sync-plugin-version.py --check

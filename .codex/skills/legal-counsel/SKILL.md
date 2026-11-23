@@ -1,1 +1,0 @@
-../../../agents/legal-counsel.md

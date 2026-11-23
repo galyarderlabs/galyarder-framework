@@ -1,1 +1,0 @@
-../../../agents/forge-cmo.md

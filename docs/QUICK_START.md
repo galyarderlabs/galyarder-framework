@@ -52,6 +52,8 @@ forge scaffold
 forge deploy --tool <name>
 ```
 
+Native plugin harnesses (Claude Code, OMP/Pi, Codex, Cursor, Antigravity, OpenCode, Copilot CLI, Hermes) are installed through each harness's own plugin manager, not through `forge deploy`. See [docs/INTEGRATION.md](INTEGRATION.md).
+
 ## Phase 3: Add the Continuity Layer (Forge Agent)
 
 Forge Agent gives the framework an interface: memory, channels, tool access, and recurring jobs.

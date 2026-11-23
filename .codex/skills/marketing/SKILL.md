@@ -1,1 +1,0 @@
-../../../commands/marketing.md

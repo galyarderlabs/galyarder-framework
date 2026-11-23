@@ -4,21 +4,18 @@ Forge Anything is a host-agnostic logic library for agentic company execution ac
 
 ## Supported Platforms
 
-The framework is converted for the following environments:
+The framework ships native plugins for these harnesses:
 
-1.  **Forge Agent**: Native identity and memory layer.
-2.  **Forge HQ**: Command layer for goals, departments, approvals, and operating visibility.
-3.  **Claude Code**: Advanced CLI marketplace integration.
-4.  **Cursor**: IDE-native `.mdc` rule sets.
-5.  **Gemini CLI**: Official extension repository support.
-6.  **OpenAI Codex CLI**: Direct instruction-based logic. See [Forge Anything for Codex](README.codex.md).
-7.  **Windsurf**: Native plugin architecture.
-8.  **OpenCode**: Specialized plugin ecosystem. See [Forge Anything for OpenCode](README.opencode.md).
-9.  **Hermes Agent**: Local-first autonomous assistant runtime.
-10. **OpenClaw**: Distributed agentic logic.
-11. **Kilo Code**: Coding assistant integration.
-12. **Augment**: Performance-optimized AI workflow.
-13. **Antigravity**: System-level skill injection.
+1.  **Claude Code**: Advanced CLI marketplace integration.
+2.  **OMP/Pi (Oh My Pi)**: Native Pi extension; OMP is a fork of Pi.
+3.  **OpenAI Codex**: Native plugin; Codex reads the root `skills/` directly. See [Forge Anything for Codex](README.codex.md).
+4.  **Cursor**: Native plugin (portable root `plugin.json`).
+5.  **Antigravity**: Native plugin.
+6.  **OpenCode**: Specialized plugin ecosystem. See [Forge Anything for OpenCode](README.opencode.md).
+7.  **GitHub Copilot CLI**: Native plugin (portable root `plugin.json`).
+8.  **Hermes Agent**: Local-first autonomous assistant runtime. Hermes is our own agent, always a target.
+
+Forge Agent (native identity and memory layer) and Forge HQ (command layer for goals, departments, approvals, and operating visibility) are the framework's own layers, not external harnesses.
 
 ## Official Marketplace Integration
 
@@ -38,27 +35,21 @@ For cloud-native orchestrators, use the standard plugin protocol:
    /plugin install engineering-dept@galyarderlabs-marketplace
    ```
 
-### Gemini CLI
-```bash
-# Install
-gemini extensions install https://github.com/galyarderlabs/forge-anything
-
-# Life-cycle management
-gemini extensions update forge-anything
-gemini extensions uninstall forge-anything
-```
-
 ## Command Silo Structure (Universal Architecture)
 
-The repository is organized into 8 departments. To ensure compatibility with Google (Gemini), Anthropic (Claude), and Microsoft (Copilot), all assets are mapped to a flat tripartite structure:
+The repository is organized into 8 departments. All assets are mapped to a flat structure that every supported harness can read:
 
 ```text
 Silo/
 ├── agents/             # Personas + Specialized Agents
 ├── skills/             # Strategic SOPs + Aesthetic Design
 ├── commands/           # Rapid orchestration triggers
+├── plugin.json         # Portable plugin manifest (Claude Code, Codex, Cursor, Copilot CLI)
 ├── .claude-plugin/     # Claude Code manifest
-└── gemini-extension.json # Gemini CLI manifest
+├── .codex-plugin/      # Codex manifest
+├── .antigravity-plugin/ # Antigravity manifest
+├── .hermes-plugin/     # Hermes manifest
+└── .pi/                # Pi/OMP extension
 ```
 
 ## Context loading standard
@@ -69,10 +60,9 @@ Legacy context-bloat patterns have been removed so agents load only what they ne
 
 ## Conversion Engine
 
-To maintain parity across all 14 platforms, use the Forge conversion engine:
+To maintain parity across all supported platforms, use the Forge conversion engine:
 
 ```bash
 # Full recursive conversion
 forge deploy --tool all
 ```
-

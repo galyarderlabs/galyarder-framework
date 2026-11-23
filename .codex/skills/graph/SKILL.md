@@ -1,1 +1,0 @@
-../../../commands/graph.md

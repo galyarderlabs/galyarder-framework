@@ -42,7 +42,6 @@ body:
       options:
         - Claude Code
         - OpenAI Codex CLI
-        - Gemini CLI
         - Cursor
         - Windsurf
         - OpenCode

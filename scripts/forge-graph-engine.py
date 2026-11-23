@@ -66,7 +66,7 @@ class ForgeNeuralLink:
             if "design/" in rel_path or "personas/" in rel_path:
                 strategic = True
             if rel_path.count('/') == 0 and rel_path.endswith('.md'):
-                strategic = True # Root hukum files (CLAUDE, GEMINI, etc)
+                strategic = True # Root hukum files (CLAUDE, etc)
 
             self.nodes[rel_path] = {
                 "title": title,
@@ -154,8 +154,6 @@ class ForgeNeuralLink:
         # 3. Protocol Adherence (Pass 3 Simulation: Inference)
         if "human-directed execution" in content or "technical integrity" in content:
             self.add_edge(rel_src, "CLAUDE.md", "enforces_protocol", 0.8)
-        if "rtk" in content:
-            self.add_edge(rel_src, "GEMINI.md", "uses_proxy", 0.8)
 
     def run_clustering(self):
         """Pass 3: Community Detection (Clustering by Edge Density)"""

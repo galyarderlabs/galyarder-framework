@@ -3,7 +3,7 @@
     "homepage": "https://galyarderlabs.github.io/forge-anything/",
     "metadata": {
         "description": "Forge anything with AI agents, kept inspectable, testable, and human-directed.",
-        "version": "2.0.0"
+        "version": "3.0.2"
     },
     "name": "forge-anything-marketplace",
     "owner": {
@@ -16,7 +16,7 @@
             "description": "Complete Forge Anything runtime using canonical agents/, skills/, and commands/ directories.",
             "name": "@galyarderlabs/forge-anything",
             "source": ".",
-            "version": "2.0.0"
+            "version": "3.0.2"
         }
     ],
     "repository": "https://github.com/galyarderlabs/forge-anything"

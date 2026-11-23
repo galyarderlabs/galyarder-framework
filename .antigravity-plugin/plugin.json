@@ -1,0 +1,25 @@
+{
+    "author": {
+        "name": "Galyarder Labs",
+        "url": "https://galyarderlabs.app"
+    },
+    "category": "Developer Tools",
+    "description": "Forge anything with AI agents.",
+    "displayName": "Forge Anything",
+    "homepage": "https://github.com/galyarderlabs/forge-anything",
+    "keywords": [
+        "skills",
+        "forge-anything",
+        "ai-agents",
+        "workflow",
+        "agents"
+    ],
+    "license": "GPL-3.0-or-later",
+    "name": "forge-anything",
+    "repository": "https://github.com/galyarderlabs/forge-anything",
+    "suggestedPrompts": [
+        "Help me forge something with AI agents",
+        "Plan and build this with the Forge Anything workflow"
+    ],
+    "version": "3.0.2"
+}

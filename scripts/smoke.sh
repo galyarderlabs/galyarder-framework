@@ -12,7 +12,7 @@ echo "🚀 Starting Forge Smoke Test..."
 
 # Detect if we are in the Framework Source or a Project HQ.
 IS_SOURCE=false
-if [ -f "gemini-extension.json" ] && [ -d "agents" ] && [ -d "skills" ] && [ -d "commands" ]; then
+if [ -f "plugin.json" ] && [ -d "agents" ] && [ -d "skills" ] && [ -d "commands" ]; then
     IS_SOURCE=true
     echo "[*] Detected: Forge Anything Source Environment"
 else
@@ -64,21 +64,48 @@ fi
 # 4. Framework Source specific checks
 if [ "$IS_SOURCE" = true ]; then
     echo "[4/8] Verifying Manifest Parity..."
-    ROOT_VERSION=$(python3 - <<'PY'
+    python3 - <<'PY'
 import json
-print(json.load(open('gemini-extension.json'))['version'])
+import re
+import sys
+from pathlib import Path
+
+package_version = json.load(open('package.json'))['version']
+
+# Every manifest version must equal package.json. Comparing manifests
+# against each other is not enough: two stale manifests agree with each
+# other and the drift goes unnoticed.
+checks = [
+    ('plugin.json', lambda d: [d['version']]),
+    ('.claude-plugin/plugin.json', lambda d: [d['version']]),
+    ('.codex-plugin/plugin.json', lambda d: [d['version']]),
+    ('.antigravity-plugin/plugin.json', lambda d: [d['version']]),
+    ('.claude-plugin/marketplace.json',
+     lambda d: [d['metadata']['version']] + [p['version'] for p in d.get('plugins', [])]),
+]
+failed = False
+for rel, extract in checks:
+    data = json.load(open(rel))
+    for version in extract(data):
+        status = "OK" if version == package_version else "MISMATCH"
+        print(f"  {rel}: {version} ({status})")
+        if version != package_version:
+            failed = True
+
+yaml_text = Path('.hermes-plugin/plugin.yaml').read_text()
+match = re.search(r'^version:\s*(.+)$', yaml_text, re.MULTILINE)
+yaml_version = match.group(1).strip() if match else None
+status = "OK" if yaml_version == package_version else "MISMATCH"
+print(f"  .hermes-plugin/plugin.yaml: {yaml_version} ({status})")
+if yaml_version != package_version:
+    failed = True
+
+if failed:
+    print(f"❌ Error: Manifest versions must all equal package.json v{package_version}.")
+    print("Run `python3 scripts/sync-plugin-version.py` to re-sync.")
+    sys.exit(1)
+print(f"✅ All manifest versions locked at v{package_version}.")
 PY
-)
-    MARKETPLACE_VERSION=$(python3 - <<'PY'
-import json
-print(json.load(open('.claude-plugin/marketplace.json'))['metadata']['version'])
-PY
-)
-    if [ "$ROOT_VERSION" != "$MARKETPLACE_VERSION" ]; then
-        echo "❌ Error: Version mismatch ($ROOT_VERSION != $MARKETPLACE_VERSION)"
-        exit 1
-    fi
-    echo "✅ Versioning locked at v${ROOT_VERSION}."
 
     echo "[5/8] Checking monolith-free boot policy..."
     if [ -e "CONVENTIONS.md" ] || [ -e "docs/CONVENTIONS.md" ] || [ -e "integrations/aider" ]; then

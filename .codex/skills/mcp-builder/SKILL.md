@@ -1,1 +1,0 @@
-../../../agents/mcp-builder.md

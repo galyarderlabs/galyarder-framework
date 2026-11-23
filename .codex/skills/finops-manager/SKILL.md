@@ -1,1 +1,0 @@
-../../../agents/finops-manager.md

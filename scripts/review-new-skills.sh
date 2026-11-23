@@ -51,7 +51,7 @@ if [ "$MODE" = "all" ]; then
   while IFS= read -r f; do
     dir=$(dirname "$f")
     SKILL_DIRS+=("$dir")
-  done < <(find "$REPO_ROOT" -name SKILL.md -not -path '*/.codex/*' -not -path '*/.gemini/*' -not -path '*/docs/*' -not -path '*/eval-workspace/*' -not -path '*/medium/*' -not -path '*/assets/*' -maxdepth 3 | sed "s|^$REPO_ROOT/||" | sort)
+  done < <(find "$REPO_ROOT" -name SKILL.md -not -path '*/.codex/*' -not -path '*/docs/*' -not -path '*/eval-workspace/*' -not -path '*/medium/*' -not -path '*/assets/*' -maxdepth 3 | sed "s|^$REPO_ROOT/||" | sort)
 elif [ "$MODE" = "changed" ] && [ ${#SKILL_DIRS[@]} -eq 0 ]; then
   echo "Detecting changed skills vs origin/dev..."
   CHANGED=$(git diff --name-only origin/dev...HEAD 2>/dev/null || git diff --name-only HEAD~1 2>/dev/null || echo "")
@@ -63,7 +63,7 @@ elif [ "$MODE" = "changed" ] && [ ${#SKILL_DIRS[@]} -eq 0 ]; then
   while IFS= read -r file; do
     dir=$(echo "$file" | cut -d'/' -f1-2)
     case "$dir" in
-      .github/*|.claude/*|.codex/*|.gemini/*|docs/*|scripts/*|commands/*|standards/*|eval-workspace/*|medium/*) continue ;;
+      .github/*|.claude/*|.codex/*|docs/*|scripts/*|commands/*|standards/*|eval-workspace/*|medium/*) continue ;;
     esac
     if [ -f "$dir/SKILL.md" ] && [[ ! " ${SEEN[*]:-} " =~ " $dir " ]]; then
       SKILL_DIRS+=("$dir")

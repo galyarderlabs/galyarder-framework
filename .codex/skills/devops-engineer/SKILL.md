@@ -1,1 +1,0 @@
-../../../agents/devops-engineer.md

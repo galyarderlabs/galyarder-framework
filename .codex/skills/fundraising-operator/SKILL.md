@@ -1,1 +1,0 @@
-../../../agents/fundraising-operator.md

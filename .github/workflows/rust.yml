@@ -81,7 +81,6 @@ jobs:
           # No per-host copies or manifests in the scaffolded repo.
           test ! -e "$OUT/.claude-plugin"
           test ! -e "$OUT/.cursor"
-          test ! -e "$OUT/gemini-extension.json"
           test -f "$OUT/docs/departments/Executive/README.md"
           test -f "$OUT/docs/departments/Knowledge/README.md"
           # No old product name anywhere in the scaffolded repo.

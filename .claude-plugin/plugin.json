@@ -1,0 +1,16 @@
+{
+    "author": {
+        "name": "Galyarder Labs",
+        "url": "https://galyarderlabs.app"
+    },
+    "commands": [
+        "./commands"
+    ],
+    "description": "Forge anything with AI agents.",
+    "homepage": "https://github.com/galyarderlabs/forge-anything",
+    "license": "GPL-3.0-or-later",
+    "name": "forge-anything",
+    "repository": "https://github.com/galyarderlabs/forge-anything",
+    "skills": "./skills",
+    "version": "3.0.2"
+}

@@ -1,1 +1,0 @@
-../../../agents/forge-cfo-coo.md

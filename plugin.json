@@ -1,0 +1,25 @@
+{
+    "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+    "author": {
+        "name": "Galyarder Labs",
+        "url": "https://galyarderlabs.app"
+    },
+    "description": "Forge anything with AI agents.",
+    "homepage": "https://github.com/galyarderlabs/forge-anything",
+    "keywords": [
+        "skills",
+        "forge-anything",
+        "ai-agents",
+        "mcp",
+        "claude-code",
+        "codex",
+        "cursor",
+        "opencode",
+        "hermes",
+        "rust"
+    ],
+    "license": "GPL-3.0-or-later",
+    "name": "forge-anything",
+    "repository": "https://github.com/galyarderlabs/forge-anything",
+    "version": "3.0.2"
+}

@@ -1,1 +1,0 @@
-../../../agents/vercel-react-expert.md

@@ -2,7 +2,7 @@
 # Usage:
 #   ./scripts/convert.sh [--tool <name>] [--out <dir>] [--help]
 #
-# Tools: antigravity, cursor, kilocode, windsurf, opencode, augment, claude-code, codex, gemini, openclaw, hermes, all
+# Tools: antigravity, kilocode, windsurf, opencode, augment, claude-code, codex, openclaw, hermes, all
 # Default: all
 
 set -euo pipefail
@@ -33,7 +33,7 @@ Usage:
   ./scripts/convert.sh [--tool <name>] [--out <dir>] [--help]
 
 Tools:
-  antigravity, cursor, kilocode, windsurf, opencode, augment, claude-code, codex, gemini, openclaw, hermes, all
+  antigravity, kilocode, windsurf, opencode, augment, claude-code, codex, openclaw, hermes, all
 
 Defaults:
   --tool all
@@ -43,7 +43,7 @@ USAGE
 
 is_valid_tool() {
   case "$1" in
-    antigravity|cursor|kilocode|windsurf|opencode|augment|claude-code|codex|gemini|openclaw|hermes|forge-agent|all) return 0 ;;
+    antigravity|kilocode|windsurf|opencode|augment|claude-code|codex|openclaw|hermes|forge-agent|all) return 0 ;;
     *) return 1 ;;
   esac
 }
@@ -65,14 +65,14 @@ yaml_quote() {
 }
 
 init_count_vars() {
-  converted_antigravity=0; converted_cursor=0; converted_kilocode=0
+  converted_antigravity=0; converted_kilocode=0
   converted_windsurf=0; converted_opencode=0; converted_augment=0; converted_claudecode=0
-  converted_codex=0; converted_gemini=0; converted_openclaw=0; converted_hermes=0
+  converted_codex=0; converted_openclaw=0; converted_hermes=0
   converted_forgeagent=0
   
-  skipped_antigravity=0; skipped_cursor=0; skipped_kilocode=0
+  skipped_antigravity=0; skipped_kilocode=0
   skipped_windsurf=0; skipped_opencode=0; skipped_augment=0; skipped_claudecode=0
-  skipped_codex=0; skipped_gemini=0; skipped_openclaw=0; skipped_hermes=0
+  skipped_codex=0; skipped_openclaw=0; skipped_hermes=0
   skipped_forgeagent=0
 }
 
@@ -80,14 +80,12 @@ inc_converted() {
   local t="$1"
   case "$t" in
     antigravity) converted_antigravity=$((converted_antigravity + 1)) ;;
-    cursor) converted_cursor=$((converted_cursor + 1)) ;;
     kilocode) converted_kilocode=$((converted_kilocode + 1)) ;;
     windsurf) converted_windsurf=$((converted_windsurf + 1)) ;;
     opencode) converted_opencode=$((converted_opencode + 1)) ;;
     augment) converted_augment=$((converted_augment + 1)) ;;
     claude-code) converted_claudecode=$((converted_claudecode + 1)) ;;
     codex) converted_codex=$((converted_codex + 1)) ;;
-    gemini) converted_gemini=$((converted_gemini + 1)) ;;
     openclaw) converted_openclaw=$((converted_openclaw + 1)) ;;
     hermes) converted_hermes=$((converted_hermes + 1)) ;;
     forge-agent) converted_forgeagent=$((converted_forgeagent + 1)) ;;
@@ -98,14 +96,12 @@ inc_skipped() {
   local t="$1"
   case "$t" in
     antigravity) skipped_antigravity=$((skipped_antigravity + 1)) ;;
-    cursor) skipped_cursor=$((skipped_cursor + 1)) ;;
     kilocode) skipped_kilocode=$((skipped_kilocode + 1)) ;;
     windsurf) skipped_windsurf=$((skipped_windsurf + 1)) ;;
     opencode) skipped_opencode=$((skipped_opencode + 1)) ;;
     augment) skipped_augment=$((skipped_augment + 1)) ;;
     claude-code) skipped_claudecode=$((skipped_claudecode + 1)) ;;
     codex) skipped_codex=$((skipped_codex + 1)) ;;
-    gemini) skipped_gemini=$((skipped_gemini + 1)) ;;
     openclaw) skipped_openclaw=$((skipped_openclaw + 1)) ;;
     hermes) skipped_hermes=$((skipped_hermes + 1)) ;;
     forge-agent) skipped_forgeagent=$((skipped_forgeagent + 1)) ;;
@@ -116,14 +112,12 @@ get_converted() {
   local t="$1"
   case "$t" in
     antigravity) echo "$converted_antigravity" ;;
-    cursor) echo "$converted_cursor" ;;
     kilocode) echo "$converted_kilocode" ;;
     windsurf) echo "$converted_windsurf" ;;
     opencode) echo "$converted_opencode" ;;
     augment) echo "$converted_augment" ;;
     claude-code) echo "$converted_claudecode" ;;
     codex) echo "$converted_codex" ;;
-    gemini) echo "$converted_gemini" ;;
     openclaw) echo "$converted_openclaw" ;;
     hermes) echo "$converted_hermes" ;;
     forge-agent) echo "$converted_forgeagent" ;;
@@ -134,14 +128,12 @@ get_skipped() {
   local t="$1"
   case "$t" in
     antigravity) echo "$skipped_antigravity" ;;
-    cursor) echo "$skipped_cursor" ;;
     kilocode) echo "$skipped_kilocode" ;;
     windsurf) echo "$skipped_windsurf" ;;
     opencode) echo "$skipped_opencode" ;;
     augment) echo "$skipped_augment" ;;
     claude-code) echo "$skipped_claudecode" ;;
     codex) echo "$skipped_codex" ;;
-    gemini) echo "$skipped_gemini" ;;
     openclaw) echo "$skipped_openclaw" ;;
     hermes) echo "$skipped_hermes" ;;
     forge-agent) echo "$skipped_forgeagent" ;;
@@ -213,10 +205,10 @@ copy_supporting_dirs() {
 
 tool_title() {
   case "$1" in
-    antigravity) echo "Antigravity" ;; cursor) echo "Cursor" ;;
+    antigravity) echo "Antigravity" ;;
     kilocode) echo "Kilo Code" ;; windsurf) echo "Windsurf" ;; opencode) echo "OpenCode" ;;
     augment) echo "Augment" ;; claude-code) echo "Claude Code" ;; codex) echo "OpenAI Codex" ;;
-    gemini) echo "Gemini CLI" ;; openclaw) echo "OpenClaw" ;; hermes) echo "Hermes Agent" ;;
+    openclaw) echo "OpenClaw" ;; hermes) echo "Hermes Agent" ;;
     forge-agent) echo "Forge Agent" ;;
   esac
 }
@@ -228,9 +220,6 @@ write_tool_readme() {
     antigravity)
       format_line='Directory skill bundles: `SKILL.md` plus copied `scripts/`, `references/`, `templates/`.'
       manual_install='Copy each folder to `~/.gemini/antigravity/skills/`.' ;;
-    cursor)
-      format_line='Flat Cursor rules: `.cursor/rules/<name>.mdc`.'
-      manual_install='Copy `integrations/cursor/rules/*.mdc` into `.cursor/rules/`.' ;;
     *)
       format_line='Native Markdown assets.'
       manual_install='Copy assets to the required tool directory.' ;;
@@ -254,7 +243,7 @@ done
 
 if ! is_valid_tool "$TOOL"; then err "Invalid --tool: ${TOOL}"; usage; exit 1; fi
 
-TOOLS="antigravity cursor kilocode windsurf opencode augment claude-code codex gemini openclaw hermes forge-agent"
+TOOLS="antigravity kilocode windsurf opencode augment claude-code codex openclaw hermes forge-agent"
 [[ "$TOOL" != "all" ]] && TOOLS="$TOOL"
 
 python3 "${SCRIPT_DIR}/build_root_extension_surface.py"
@@ -273,7 +262,7 @@ SKILLS_TMP="$(mktemp)"
 
 for t in $TOOLS; do
   rm -rf "${OUT_BASE}/${t}"; mkdir -p "${OUT_BASE}/${t}"
-  [[ "$t" =~ ^(cursor|kilocode|augment|openclaw|hermes)$ ]] && mkdir -p "${OUT_BASE}/${t}/rules"
+  [[ "$t" =~ ^(kilocode|augment|openclaw|hermes)$ ]] && mkdir -p "${OUT_BASE}/${t}/rules"
   [[ "$t" =~ ^(windsurf|opencode|forge-agent)$ ]] && mkdir -p "${OUT_BASE}/${t}/skills"
 done
 
@@ -282,7 +271,6 @@ init_count_vars
 while IFS= read -r rel_path; do
   # Skip plugin manifests
   [[ "$rel_path" =~ plugin.json$ ]] && continue
-  [[ "$rel_path" =~ gemini-extension.json$ ]] && continue
   
   src="${REPO_ROOT}/${rel_path#./}"; src_dir="$(dirname "$src")"
 
@@ -308,9 +296,6 @@ while IFS= read -r rel_path; do
         out_dir="${OUT_BASE}/antigravity/${safe_name}"; mkdir -p "$out_dir"
         { echo "---"; echo "name: $(yaml_quote "$name")"; echo "description: $(yaml_quote "$description")"; echo "risk: low"; echo "source: internal"; echo "date_added: '${TODAY}'"; echo "---"; cat "$body_tmp"; } > "${out_dir}/SKILL.md"
         copy_supporting_dirs "$src_dir" "$out_dir" ;;
-      cursor)
-        out_file="${OUT_BASE}/cursor/rules/${safe_name}.mdc"
-        { echo "---"; echo "description: $(yaml_quote "$description")"; echo "globs:"; echo "alwaysApply: false"; echo "---"; cat "$body_tmp"; } > "$out_file" ;;
       kilocode|augment)
         out_file="${OUT_BASE}/${t}/rules/${safe_name}.md"
         { echo "---"; echo "description: $(yaml_quote "$description")"; echo "---"; cat "$body_tmp"; } > "$out_file" ;;
@@ -321,7 +306,7 @@ while IFS= read -r rel_path; do
       openclaw|hermes)
         out_file="${OUT_BASE}/${t}/rules/${safe_name}.md"
         { echo "# ${name}"; echo "> ${description}"; echo; cat "$body_tmp"; } > "$out_file" ;;
-      claude-code|codex|gemini)
+      claude-code|codex)
         if [[ "$(basename "$src")" == "SKILL.md" ]]; then
             mkdir -p "${OUT_BASE}/${t}/skills/${safe_name}"; cp "$src" "${OUT_BASE}/${t}/skills/${safe_name}/SKILL.md"; copy_supporting_dirs "$src_dir" "${OUT_BASE}/${t}/skills/${safe_name}"
         else

@@ -2,7 +2,7 @@
 # Usage:
 #   ./scripts/install.sh [--tool <name>] [--target <dir>] [--help]
 #
-# Tools: antigravity, cursor, kilocode, windsurf, opencode, augment, claude-code, codex, gemini, openclaw, hermes, forge-agent, all
+# Tools: antigravity, cursor, kilocode, windsurf, opencode, augment, claude-code, codex, openclaw, hermes, forge-agent, all
 # Default: all
 
 set -euo pipefail
@@ -32,7 +32,7 @@ Usage:
   ./scripts/install.sh [--tool <name>] [--target <dir>] [--help]
 
 Tools:
-  antigravity, cursor, kilocode, windsurf, opencode, augment, claude-code, codex, gemini, openclaw, hermes, forge-agent, all
+  antigravity, cursor, kilocode, windsurf, opencode, augment, claude-code, codex, openclaw, hermes, forge-agent, all
 
 Defaults:
   --tool all
@@ -52,7 +52,7 @@ done
 info "Running Forge Anything conversion engine..."
 "${SCRIPT_DIR}/convert.sh" --tool "$TOOL"
 
-TOOLS="antigravity cursor kilocode windsurf opencode augment claude-code codex gemini openclaw hermes forge-agent"
+TOOLS="antigravity cursor kilocode windsurf opencode augment claude-code codex openclaw hermes forge-agent"
 [[ "$TOOL" != "all" ]] && TOOLS="$TOOL"
 
 for t in $TOOLS; do
@@ -105,21 +105,6 @@ for t in $TOOLS; do
                 cp -R "$item" "${DEST}/"
             done
             ok "Installed Windsurf skills to ${DEST}." ;;
-        gemini)
-            if [ -n "$TARGET_DIR" ]; then
-                DEST="${TARGET_DIR}/.gemini/skills"
-            else
-                DEST="${HOME}/.gemini/skills"
-            fi
-            mkdir -p "$DEST"
-            for item in "${SRC_DIR}/skills/"*; do
-                [ -e "$item" ] || continue
-                name=$(basename "$item")
-                rm -rf "${DEST}/${name}"
-                cp -R "$item" "${DEST}/"
-            done
-            ok "Installed Gemini skills to ${DEST}."
-            ;;
         opencode)
             DEST="${HOME}/.opencode/plugins"
             mkdir -p "$DEST"

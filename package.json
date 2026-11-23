@@ -30,6 +30,14 @@
   ],
   "author": "Galyarder Labs",
   "license": "GPL-3.0-or-later",
+  "pi": {
+    "extensions": [
+      "./.pi/extensions/forge-anything.ts"
+    ],
+    "skills": [
+      "./skills"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/galyarderlabs/forge-anything.git"
@@ -48,7 +56,6 @@
     "AGENTS.md",
     "CHANGELOG.md",
     "RELEASE-NOTES.md",
-    "WORKFLOW.md",
-    "gemini-extension.json"
+    "WORKFLOW.md"
   ]
 }

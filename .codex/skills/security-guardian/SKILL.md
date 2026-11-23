@@ -1,1 +1,0 @@
-../../../agents/security-guardian.md

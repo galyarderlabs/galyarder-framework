@@ -1,0 +1,29 @@
+{
+    "author": {
+        "name": "Galyarder Labs",
+        "url": "https://galyarderlabs.app"
+    },
+    "description": "Forge anything with AI agents.",
+    "homepage": "https://github.com/galyarderlabs/forge-anything",
+    "interface": {
+        "capabilities": [
+            "Interactive",
+            "Read",
+            "Write"
+        ],
+        "category": "Developer Tools",
+        "defaultPrompt": [
+            "Help me forge something with AI agents.",
+            "Plan and build this with the Forge Anything workflow."
+        ],
+        "developerName": "Galyarder Labs",
+        "displayName": "Forge Anything",
+        "longDescription": "Forge Anything gives AI agents the rules and workflow to work the right way: goal, plan, build, verify, ship. Skills cover the full lifecycle, in your company and in your life.",
+        "shortDescription": "Essential skills and workflows for AI agents: goal, plan, build, verify, ship."
+    },
+    "license": "GPL-3.0-or-later",
+    "name": "forge-anything",
+    "repository": "https://github.com/galyarderlabs/forge-anything",
+    "skills": "./skills/",
+    "version": "3.0.2"
+}

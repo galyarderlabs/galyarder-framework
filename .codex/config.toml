@@ -1,11 +1,3 @@
-[projects."/home/galyarder"]
-trust_level = "trusted"
-
-[projects."/home/galyarder/projects/forge-anything"]
-trust_level = "trusted"
-repo_integration = true
-sync_interval = "1h"
-
 [commands]
 analytics = "Design tracking schemas, audit event implementations, and define KPIs."
 brainstorm = "Socratic design refinement. Explore user intent, requirements, and design alternatives before implementation."

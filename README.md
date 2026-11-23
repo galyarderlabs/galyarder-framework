@@ -50,6 +50,8 @@ npm install -g forge-anything
 npx skills add galyarderlabs/forge-anything --skill full
 ```
 
+Native plugins cover Claude Code, OMP/Pi, Codex, Cursor, Antigravity, OpenCode, Copilot CLI, and Hermes; see [docs/INTEGRATION.md](docs/INTEGRATION.md).
+
 Step by step, including local install and other tools, is in [docs/QUICK_START.md](docs/QUICK_START.md).
 
 ## Documentation
