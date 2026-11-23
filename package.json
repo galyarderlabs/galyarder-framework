@@ -49,12 +49,9 @@
     "skills",
     "AGENTS.md",
     "CHANGELOG.md",
-    "CLAUDE.md",
-    "GEMINI.md",
     "RELEASE-NOTES.md",
     "WORKFLOW.md",
     "gemini-extension.json",
-    "mkdocs.yml",
     "bin"
   ]
 }

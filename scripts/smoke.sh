@@ -29,8 +29,8 @@ if [ "$IS_SOURCE" = true ]; then
             exit 1
         fi
     done
-    if [ ! -f "AGENTS.md" ] || [ ! -f "CLAUDE.md" ] || [ ! -f "GEMINI.md" ]; then
-        echo "❌ Error: Root boot files are missing."
+    if [ ! -f "AGENTS.md" ]; then
+        echo "❌ Error: Root boot file AGENTS.md is missing."
         exit 1
     fi
     echo "✅ Canonical root runtime surface is present."
@@ -83,11 +83,6 @@ PY
     echo "[5/8] Checking monolith-free boot policy..."
     if [ -e "CONVENTIONS.md" ] || [ -e "docs/CONVENTIONS.md" ] || [ -e "integrations/aider" ]; then
         echo "❌ Error: Monolithic CONVENTIONS/Aider artifacts must not exist in the framework runtime surface."
-        exit 1
-    fi
-    if grep -n '@CONVENTIONS\.md' CLAUDE.md GEMINI.md >/tmp/galyarder-eager-conventions.txt; then
-        cat /tmp/galyarder-eager-conventions.txt
-        echo "❌ Error: Root boot files must not reference CONVENTIONS.md."
         exit 1
     fi
     echo "✅ Root boot is canonical-runtime scoped and monolith-free."
