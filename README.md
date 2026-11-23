@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  Essential skills for the full lifecycle of an AI agent, in one place — from goal to shipped.
+  Galyarder Framework packages skills, agents, commands, review gates, and operating protocols for AI coding agents, kept inspectable, testable, and human-directed.
 </p>
 
 <p align="center">
@@ -21,23 +21,37 @@
 
 ## What it is
 
-Most AI-agent setups stop at generating code. The agent writes something, but nobody checks the scope, nobody routes the work, nobody verifies the result, and nothing survives the session.
+Most AI-agent setups stop at chat or code generation. They can help with a task, but the work often stays loose: no durable scope, no department routing, no review gates, no audit trail, and no consistent way to move from strategy to implementation.
 
-Galyarder Framework is the operating layer that fixes that. It gives the agent rules and a workflow: take the goal, route it to the right specialist, make a plan, do the work, check the result, and ship it. That is the whole job.
+Galyarder Framework packages the missing operating layer. It gives agents a structured way to receive intent, route work to the right domain, produce plans, execute through tools, verify output, write reports, and hand control back to the operator.
 
-It is not a prompt pack, a kanban board, or another coding agent. It is how operator intent becomes work a company can trust.
+It is not a kanban board, a prompt pack, or another coding agent. It is a framework for turning high-level operator intent into governed company execution.
 
 ---
 
 ## How it works
 
-Every mission follows the same five steps, whatever the domain:
+A typical mission follows the same path whether the work is engineering, marketing, finance, sales, documentation, legal, security, or strategy.
 
-1. **Goal** — the operator describes what they want in plain language.
-2. **Route** — the framework sends it to the right department, agent, and skill.
-3. **Plan** — the agent turns the goal into a scoped plan with steps and risks.
-4. **Do** — specialists execute through tools, commands, and code.
-5. **Check** — tests, reviews, and evidence gates run before anything is called done. Then the result is shipped and written down: a report, diff, doc, decision log, or release.
+1. **Intent intake** — the operator describes a goal in plain language.
+2. **Routing** — the framework maps the goal to the right department, agent, skill, command, and tool path.
+3. **Blueprinting** — the agent turns the goal into a scoped plan, ticket, checklist, or execution brief.
+4. **Implementation** — work is delegated to specialized agents, commands, and external tools where appropriate.
+5. **Verification** — tests, reviews, source checks, audits, and evidence gates are run before completion claims.
+6. **Reporting** — the result is written back as a useful artifact: code diff, docs, launch plan, security note, financial model, campaign, decision log, or operational report.
+
+
+---
+
+## Agentic company lifecycle
+
+Galyarder Framework bridges the gap between intent and execution through a repeatable operating loop:
+
+1. **Intent Extraction** — distill business goals into scoped specifications, tickets, or working briefs.
+2. **Strategic Blueprinting** — design the mission with constraints, risks, success criteria, and execution sequence.
+3. **Specialist Execution** — route work through domain agents, skills, commands, and tool adapters.
+4. **Operational Auditing** — verify work through tests, security checks, source review, build checks, or evidence contracts.
+5. **Distribution & Memory** — turn completed work into docs, release notes, reports, campaigns, decisions, and reusable knowledge.
 
 ---
 
@@ -45,9 +59,9 @@ Every mission follows the same five steps, whatever the domain:
 
 A multi-domain kit in one repository:
 
-- **Specialized agents** across executive, engineering, growth, product, security, infrastructure, legal-finance, and knowledge work.
-- **Department routing** so tasks move to the right specialist instead of staying in a generic assistant loop.
-- **Skills and SOPs** for TDD, code review, SEO, CRO, FinOps, security review, documentation, release management, and more.
+- **40+ specialized agents** across executive, engineering, growth, product, security, infrastructure, legal-finance, and knowledge work.
+- **Department-based routing** so tasks move to the right specialist instead of staying in a generic assistant loop.
+- **Production-ready skills and SOPs** for TDD, code review, SEO, CRO, FinOps, security review, documentation, release management, and more.
 - **Slash commands** for common workflows such as `/tdd`, `/review`, `/marketing`, `/seo`, `/legal`, `/finops`, `/incident`, `/release`, and `/docs`.
 - **Galyarder Neural Link** for repository mapping, dependency awareness, and knowledge-graph-oriented project context.
 - **Design specifications** for consistent UI and product surfaces when agents produce frontend or brand-facing work.
@@ -55,20 +69,39 @@ A multi-domain kit in one repository:
 
 ---
 
-## Rules
+## Usage: governed execution protocol
 
-- **Human first** — agents expand what the operator can do; they do not replace judgment or approval.
-- **Look before you change** — inspect the repo, docs, and constraints before touching anything.
-- **Smallest useful change** — solve the stated goal, nothing speculative.
-- **Proof before done** — tests, diffs, logs, or reports back every completion claim.
-- **Ship it** — a mission is not done until the result is reviewed, shipped, published, or used. Distribution is the end of the loop.
-- **Leave something behind** — useful work ends as a doc, skill, command, test, or decision record.
+Galyarder Framework does not ask the agent to “just do the task.” It gives the task a route, a plan, and a verification contract.
 
----
+### 1. Operational sequence
 
-## The protocol
+```mermaid
+sequenceDiagram
+    participant F as Founder / Operator
+    participant CEO as Strategic Router
+    participant Graph as Neural Link
+    participant MCP as MCP / Source Tools
+    participant Agent as Specialist Agent
+    participant RTK as Terminal / Tool Proxy
+    participant Docs as Reports / Decisions
 
-Galyarder Framework does not ask the agent to "just do the task." It gives the task a route, a plan, and a verification contract.
+    F->>CEO: Initiates high-level goal
+    CEO->>Docs: Checks roadmap / creates issue or brief
+    CEO->>Graph: Queries project structure and dependencies
+    Graph-->>CEO: Structural context and risk signals
+    CEO->>MCP: Fetches official docs or source references
+    MCP-->>CEO: Grounded context
+    CEO->>Agent: Routes mission to specialist workflow
+    Agent->>MCP: Pulls task-specific references
+    MCP-->>Agent: Implementation context
+    Agent->>RTK: Executes through tools, commands, or code changes
+    RTK-->>Agent: Output, logs, tests, or artifacts
+    Agent->>Graph: Updates project knowledge when needed
+    Agent->>Docs: Writes report, diff notes, decision, or release artifact
+    Docs-->>F: Reviewable output with evidence
+```
+
+### 2. Command protocol
 
 | Phase | Category | Action | Typical tool | Outcome |
 | :--- | :--- | :--- | :--- | :--- |
@@ -81,6 +114,7 @@ Galyarder Framework does not ask the agent to "just do the task." It gives the t
 | **VII** | **Persistence** | Save the result where future work can use it | Docs / Obsidian / changelog / issue comment | Knowledge and decisions survive the session. |
 
 ---
+
 
 ## Installation
 
@@ -190,6 +224,29 @@ Fetch and follow instructions from https://raw.githubusercontent.com/galyarderla
 
 ---
 
+## Core principles
+
+- **Human command first** — agents expand the operator's ability to act; they do not remove judgment or approval.
+- **Ground before action** — inspect the repo, source docs, context, and constraints before making changes.
+- **Smallest useful change** — solve the stated objective without speculative abstractions.
+- **Evidence before completion** — tests, diffs, screenshots, logs, citations, or reports must back completion claims.
+- **Reusable operating knowledge** — useful work should leave behind docs, skills, commands, tests, or decision records.
+- **Goal to distribution** — a mission is not complete until the result can be reviewed, shipped, published, or used.
+
+---
+
+## Technical integrity
+
+The framework encourages a disciplined engineering loop:
+
+- **Think before coding** — use planning, source lookup, and explicit constraints before implementation.
+- **Use official references** — fetch current docs for APIs, libraries, and platform behavior before relying on memory.
+- **Prefer simple systems** — use the smallest architecture that satisfies the objective and can be maintained.
+- **Make surgical changes** — touch only the files required for the outcome unless a broader refactor is intentional.
+- **Verify the real path** — run tests, builds, lint, browser checks, security scans, or workflow-specific proof before calling work done.
+
+---
+
 ## Departments
 
 The framework organizes work into domain departments. These are routing surfaces for agents, skills, commands, and reports; `galyarder scaffold` may create `docs/departments/*` in a project as the output surface.
@@ -213,7 +270,7 @@ The next phase is to make the framework more concrete as an agentic-company oper
 - cleaner department bundles for engineering, product, growth, sales, finance, legal, security, docs, and operations;
 - stronger examples that show a goal becoming a plan, issue, implementation, test, audit, and release artifact;
 - safer Codex/OpenCode-style install and review workflows;
-- fewer, sharper skills — cut the 149 down to the ones that earn their keep.
+- better consolidation of open PRs into a smaller set of maintained release tracks.
 
 ---
 
@@ -224,3 +281,5 @@ The next phase is to make the framework more concrete as an agentic-company oper
     <img src="https://api.star-history.com/svg?repos=galyarderlabs/galyarder-framework&type=Date" alt="Star History Chart">
   </a>
 </p>
+
+
