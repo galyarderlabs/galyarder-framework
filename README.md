@@ -4,7 +4,8 @@
 
 Forge anything with AI agents.
 
-[![npm version](https://img.shields.io/npm/v/galyarder-framework.svg)](https://www.npmjs.com/package/galyarder-framework)
+[![npm version](https://img.shields.io/npm/v/forge-anything.svg)](https://www.npmjs.com/package/forge-anything)
+[![npm downloads](https://img.shields.io/npm/dm/forge-anything.svg)](https://www.npmjs.com/package/forge-anything)
 [![License: GPL-3.0-or-later](https://img.shields.io/badge/license-GPL--3.0--or--later-blue.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/galyarderlabs/forge-anything.svg)](https://github.com/galyarderlabs/forge-anything)
 [![Smoke test](https://github.com/galyarderlabs/forge-anything/actions/workflows/smoke-test.yml/badge.svg)](https://github.com/galyarderlabs/forge-anything/actions/workflows/smoke-test.yml)
@@ -36,7 +37,7 @@ The full workflow, with the five phases in detail, is in [docs/WORKFLOW.md](docs
 ## Install
 
 ```sh
-npm install -g galyarder-framework
+npm install -g forge-anything
 ```
 
 Or pull just the skills you need:
