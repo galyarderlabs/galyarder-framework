@@ -78,9 +78,10 @@ jobs:
           test -f "$OUT/skills.json"
           test -f "$OUT/skills/forge/SKILL.md"
           test -f "$OUT/agents/forge-ceo.md"
-          test -f "$OUT/.claude-plugin/marketplace.json"
-          test -f "$OUT/gemini-extension.json"
-          test -f "$OUT/.cursor/rules/forge.mdc"
+          # No per-host copies or manifests in the scaffolded repo.
+          test ! -e "$OUT/.claude-plugin"
+          test ! -e "$OUT/.cursor"
+          test ! -e "$OUT/gemini-extension.json"
           test -f "$OUT/docs/departments/Executive/README.md"
           test -f "$OUT/docs/departments/Knowledge/README.md"
           # No old product name anywhere in the scaffolded repo.
@@ -104,17 +105,17 @@ jobs:
         run: cargo build --release --locked
         working-directory: crates/forge
 
-      - name: Help and version match the JS CLI byte-for-byte
+      - name: Help lists the commands; version matches package.json
         run: |
           set -euo pipefail
           FORGE=./crates/forge/target/release/forge
-          "$FORGE" --help > /tmp/forge-rs-help.txt
-          node bin/forge.js --help > /tmp/forge-js-help.txt
-          diff /tmp/forge-rs-help.txt /tmp/forge-js-help.txt
-          "$FORGE" --version > /tmp/forge-rs-ver.txt
-          node bin/forge.js --version > /tmp/forge-js-ver.txt
-          diff /tmp/forge-rs-ver.txt /tmp/forge-js-ver.txt
-          echo "forge help/version parity: OK"
+          "$FORGE" --help | grep -q "Forge Anything CLI"
+          for cmd in scaffold deploy smoke convert sync version help; do
+            "$FORGE" --help | grep -q "  $cmd"
+          done
+          PKG_VERSION=$(python3 -c "import json; print(json.load(open('package.json'))['version'])")
+          test "$("$FORGE" --version)" = "Forge Anything v$PKG_VERSION"
+          echo "forge help/version: OK"
 
       - name: Scaffold through the forge CLI
         run: |

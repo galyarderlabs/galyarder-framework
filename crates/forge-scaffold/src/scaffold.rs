@@ -7,14 +7,11 @@
 //! - `commands/` — all slash commands
 //! - `docs/` — specs, plans, reports, templates, design, and the 8
 //!   departments with a README and an audit template each
-//! - `.claude-plugin/marketplace.json`, `gemini-extension.json` — host
-//!   manifests so Claude Code and Gemini discover `skills/` directly
-//! - `.cursor/rules/<curated>.mdc` — Cursor rules for the curated skills
 //!
-//! Other hosts (Codex, OpenCode, Windsurf, KiloCode, Antigravity, OpenClaw,
-//! Hermes) read `skills/` directly, so no separate copy is needed for them.
-//! The full `integrations/` tree stays in the Forge Anything repo itself;
-//! the scaffold ships only what a new project needs to work.
+//! No per-host copies or manifests: any agent or host reads `skills/` and
+//! `agents/` straight from the project folder. The full `integrations/`
+//! tree stays in the Forge Anything repo itself; the scaffold ships only
+//! what a new project needs to work.
 
 use crate::curated;
 use std::fs;
@@ -26,7 +23,6 @@ pub struct Summary {
     pub skills: usize,
     pub agents: usize,
     pub commands: usize,
-    pub cursor_rules: usize,
     pub design_specs: usize,
     pub files: usize,
 }
@@ -170,32 +166,6 @@ pub fn scaffold(
         }
     }
 
-    // --- Host integrations ----------------------------------------------
-    // Claude Code + Gemini manifests point at ./skills/, ./agents/ and
-    // ./commands/, which the scaffold just created, so copy them as-is.
-    copy_file(
-        source.join(".claude-plugin/marketplace.json"),
-        target.join(".claude-plugin/marketplace.json"),
-        &mut s,
-    )?;
-    copy_file(
-        source.join("gemini-extension.json"),
-        target.join("gemini-extension.json"),
-        &mut s,
-    )?;
-    // Cursor reads .mdc rules; copy the curated skills' rules.
-    let cursor_src = source.join(".cursor/rules");
-    let cursor_dst = target.join(".cursor/rules");
-    if cursor_src.is_dir() {
-        for skill in curated::CURATED_SKILLS {
-            let src = cursor_src.join(format!("{skill}.mdc"));
-            if src.is_file() {
-                copy_file(src, cursor_dst.join(format!("{skill}.mdc")), &mut s)?;
-                s.cursor_rules += 1;
-            }
-        }
-    }
-
     Ok(s)
 }
 
@@ -221,12 +191,8 @@ fn readme(project_name: &str) -> String {
          - `AGENTS.md` — the operating rules. `WORKFLOW.md` — the workflow.\n\
          - `skills.json` — the manifest of the skills in this repo.\n\
          \n\
-         ## Hosts\n\
-         \n\
-         Claude Code and Gemini discover `skills/` through\n\
-         `.claude-plugin/marketplace.json` and `gemini-extension.json`. Cursor\n\
-         uses `.cursor/rules/`. Codex, OpenCode, Windsurf and the other hosts\n\
-         read `skills/` directly.\n\
+         Any agent or host reads `skills/` and `agents/` straight from this\n\
+         folder; there are no per-host copies or manifests to keep in sync.\n\
          \n\
          ## Working here\n\
          \n\

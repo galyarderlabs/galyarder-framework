@@ -4,7 +4,7 @@ Forge Anything is the Intelligence Layer of the Galyarder ecosystem: a set of ag
 
 ## Where it is now
 
-The framework ships a large, real surface. The canonical runtime lives at the repo root in `agents/` (45 agents), `skills/` (149 skills), `commands/` (25 commands), and `integrations/` (12 host surfaces: Claude Code, Cursor, Gemini CLI, Codex, OpenCode, Windsurf, KiloCode, Augment, Antigravity, OpenClaw, Hermes, and Forge Agent). A Node CLI (`bin/forge.js`) handles `scaffold`, `deploy`, `smoke`, and `convert`. The docs site (mkdocs-material) is generated into `docs/`, and `skills.json` lists the skill manifest.
+The framework ships a large, real surface. The canonical runtime lives at the repo root in `agents/` (45 agents), `skills/` (149 skills), `commands/` (25 commands), and `integrations/` (12 host surfaces: Claude Code, Cursor, Gemini CLI, Codex, OpenCode, Windsurf, KiloCode, Augment, Antigravity, OpenClaw, Hermes, and Forge Agent). A Rust CLI (`crates/forge`, binary `forge`) handles `scaffold`, `deploy`, `smoke`, and `convert`. The docs site (mkdocs-material) is generated into `docs/`, and `skills.json` lists the skill manifest.
 
 Parts of this are still thin or inconsistent:
 

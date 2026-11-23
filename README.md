@@ -37,13 +37,16 @@ The full workflow, with the five phases in detail, is in [docs/WORKFLOW.md](docs
 
 ## Install
 
+The `forge` CLI is Rust. From a checkout:
+
 ```sh
-npm install -g forge-anything
+cargo install --path crates/forge
 ```
 
-Or pull just the skills you need:
+Or get just the skills, without the CLI:
 
 ```sh
+npm install -g forge-anything
 npx skills add galyarderlabs/forge-anything --skill full
 ```
 

@@ -4,8 +4,6 @@
   "description": "Forge anything with AI agents.",
   "main": "index.js",
   "bin": {
-    "forge": "bin/forge.js",
-    "f-scaffold": "scripts/scaffold-company.sh",
     "f-deploy": "scripts/install.sh",
     "f-smoke": "scripts/smoke.sh",
     "f-convert": "scripts/convert.sh"
@@ -51,7 +49,6 @@
     "CHANGELOG.md",
     "RELEASE-NOTES.md",
     "WORKFLOW.md",
-    "gemini-extension.json",
-    "bin"
+    "gemini-extension.json"
   ]
 }

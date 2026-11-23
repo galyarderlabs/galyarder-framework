@@ -5,40 +5,36 @@ Get Forge Anything, Forge Agent, and Forge HQ working together as an agentic-com
 ## Prerequisites
 
 - Python 3.11+ for Forge Agent
-- Node.js 20+ for Forge HQ and the Framework CLI
+- Rust 1.85+ for the Forge Anything CLI (`forge`)
+- Node.js 20+ for Forge HQ
 - Git installed
 - A project where you want to deploy the operating structure, such as `~/projects/my-startup`
 
-## Phase 1: Install the Intelligence Layer
+## Phase 1: Install the CLI
 
-Bootstrap Forge Anything with the global CLI.
-
-### Option A: NPM (recommended)
-
-```bash
-npm install -g forge-anything
-```
-
-### Option B: Skills.sh
-
-Pull all intelligence bundles, or install a department bundle only.
-
-```bash
-# Pull everything
-npx skills add galyarderlabs/forge-anything --skill full
-
-# Or pull by department
-npx skills add galyarderlabs/forge-anything --skill engineering
-```
-
-### Option C: Git clone
-
-Use the source directly when you want to inspect, modify, or contribute.
+The `forge` CLI is Rust. Clone the repo and run the setup script (it builds
+the CLI and links it into your PATH):
 
 ```bash
 git clone https://github.com/galyarderlabs/forge-anything.git ~/forge-anything
 cd ~/forge-anything
 ./scripts/setup-cli.sh
+```
+
+Or install the binary with cargo, from a checkout:
+
+```bash
+cargo install --path crates/forge
+```
+
+Just the skills, without the CLI, are on npm:
+
+```bash
+npm install -g forge-anything
+npx skills add galyarderlabs/forge-anything --skill full
+
+# Or pull by department
+npx skills add galyarderlabs/forge-anything --skill engineering
 ```
 
 ## Phase 2: Deploy the Framework into a project

@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Forge Anything: CLI Setup
-# Purpose: Link framework scripts to a global PATH for effortless cross-project use.
+# Purpose: Build the Rust forge CLI and link it (plus the framework scripts)
+# to a global PATH for effortless cross-project use.
 
 set -e
 
@@ -12,17 +13,26 @@ FRAMEWORK_DIR="$(cd "$(dirname "$REAL_PATH")/.." && pwd)"
 BIN_DIR="$HOME/.local/bin"
 mkdir -p "$BIN_DIR"
 
-echo "🚀 Linking Forge Anything to global PATH..."
+echo "Linking Forge Anything to global PATH..."
 
-# Create symbolic links with absolute paths to the source repo
-ln -sf "$FRAMEWORK_DIR/bin/forge.js" "$BIN_DIR/forge"
-ln -sf "$FRAMEWORK_DIR/scripts/scaffold-company.sh" "$BIN_DIR/g-scaffold"
-ln -sf "$FRAMEWORK_DIR/scripts/install.sh" "$BIN_DIR/g-deploy"
-ln -sf "$FRAMEWORK_DIR/scripts/smoke.sh" "$BIN_DIR/g-smoke"
-ln -sf "$FRAMEWORK_DIR/scripts/convert.sh" "$BIN_DIR/g-convert"
+# Build the Rust CLI (no external dependencies, so this works offline),
+# then link the release binary. cargo is usually on PATH after a rustup
+# install; fall back to the standard rustup location if it is not.
+if ! command -v cargo >/dev/null 2>&1; then
+    if [ -x "$HOME/.cargo/bin/cargo" ]; then
+        export PATH="$HOME/.cargo/bin:$PATH"
+    else
+        echo "[!] cargo is required to build the forge CLI. Install Rust: https://rustup.rs" >&2
+        exit 1
+    fi
+fi
+cargo build --release --locked --manifest-path "$FRAMEWORK_DIR/crates/forge/Cargo.toml"
+ln -sf "$FRAMEWORK_DIR/crates/forge/target/release/forge" "$BIN_DIR/forge"
 
-# Hidden internal link used by install.sh
-ln -sf "$FRAMEWORK_DIR/scripts/convert.sh" "$BIN_DIR/convert.sh"
+# Direct script shortcuts (the forge CLI delegates to these same scripts).
+ln -sf "$FRAMEWORK_DIR/scripts/install.sh" "$BIN_DIR/f-deploy"
+ln -sf "$FRAMEWORK_DIR/scripts/smoke.sh" "$BIN_DIR/f-smoke"
+ln -sf "$FRAMEWORK_DIR/scripts/convert.sh" "$BIN_DIR/f-convert"
 
 # Verify PATH
 if [[ ":$PATH:" != *":$BIN_DIR:"* ]]; then
@@ -41,18 +51,18 @@ if [[ ":$PATH:" != *":$BIN_DIR:"* ]]; then
         echo "" >> "$RC_FILE"
         echo "# Forge Anything CLI" >> "$RC_FILE"
         echo "export PATH=\"\$PATH:$BIN_DIR\"" >> "$RC_FILE"
-        echo "✅ Path added. Please run: source $RC_FILE"
+        echo "Path added. Please run: source $RC_FILE"
     else
         echo "Please add 'export PATH=\"\$PATH:$BIN_DIR\"' to your shell configuration manually."
     fi
 else
-    echo "✅ Forge CLI is already in your PATH."
+    echo "Forge CLI is already in your PATH."
 fi
 
 echo "---"
-echo "✅ CLI Setup Complete."
+echo "CLI Setup Complete."
 echo "Commands now available globally:"
-echo "  - forge <cmd> : Main Framework CLI (Recommended)"
-echo "  - g-scaffold      : Initialize Intelligence Layer"
-echo "  - g-deploy        : Deploy agents to your IDE/Host"
-echo "  - g-smoke         : Verify system integrity"
+echo "  - forge <cmd> : Main Forge Anything CLI (Rust)"
+echo "  - forge scaffold  : Initialize a new Forge Anything project"
+echo "  - f-deploy        : Deploy agents to your IDE/Host"
+echo "  - f-smoke         : Verify system integrity"

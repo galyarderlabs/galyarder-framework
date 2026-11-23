@@ -1,9 +1,8 @@
-//! Parity tests for the Rust `forge` CLI against the JS CLI (`bin/forge.js`).
+//! Behavior tests for the Rust `forge` CLI.
 //!
 //! The help text, version output, no-args behavior and unknown-command
-//! handling must be byte-identical to the JS CLI. `scaffold` must produce a
-//! ready repo through the CLI, and `smoke` must run the repo's smoke test.
-//! The JS-comparison tests skip gracefully when `node` is not installed.
+//! handling are asserted directly. `scaffold` must produce a ready repo
+//! through the CLI, and `smoke` must run the repo's smoke test.
 
 use std::fs;
 use std::path::PathBuf;
@@ -21,13 +20,19 @@ fn forge_bin() -> String {
     env!("CARGO_BIN_EXE_forge").to_string()
 }
 
-/// True when `node` runs (needed to compare against the JS CLI).
-fn node_available() -> bool {
-    Command::new("node")
-        .arg("--version")
-        .output()
-        .map(|o| o.status.success())
-        .unwrap_or(false)
+/// The version in the source checkout's package.json.
+fn package_version() -> String {
+    let text = fs::read_to_string(repo_root().join("package.json")).expect("read package.json");
+    let key = "\"version\"";
+    let at = text.find(key).expect("package.json has a version");
+    let rest = &text[at + key.len()..];
+    let after_colon = rest.trim_start().strip_prefix(':').expect("version colon");
+    let after_quote = after_colon
+        .trim_start()
+        .strip_prefix('"')
+        .expect("version quote");
+    let end = after_quote.find('"').expect("version closing quote");
+    after_quote[..end].to_string()
 }
 
 fn run_forge(args: &[&str]) -> std::process::Output {
@@ -38,43 +43,32 @@ fn run_forge(args: &[&str]) -> std::process::Output {
         .expect("run forge")
 }
 
-fn run_js(args: &[&str]) -> std::process::Output {
-    Command::new("node")
-        .arg(repo_root().join("bin/forge.js"))
-        .args(args)
-        .current_dir(repo_root())
-        .output()
-        .expect("run node bin/forge.js")
+#[test]
+fn help_lists_the_commands() {
+    let out = run_forge(&["--help"]);
+    assert!(out.status.success());
+    let text = String::from_utf8_lossy(&out.stdout);
+    assert!(text.starts_with("\nForge Anything CLI v"));
+    assert!(text.contains("Forge anything with AI agents."));
+    assert!(text.contains("forge <command> [options]"));
+    for cmd in [
+        "scaffold", "deploy", "smoke", "convert", "sync", "version", "help",
+    ] {
+        assert!(text.contains(cmd), "help lists {cmd}");
+    }
+    assert!(text.contains("forge scaffold"));
+    assert!(text.contains("forge deploy --tool gemini"));
+    assert!(text.contains("forge smoke"));
 }
 
 #[test]
-fn help_is_byte_identical_to_js() {
-    if !node_available() {
-        eprintln!("node not available; skipping JS parity check");
-        return;
-    }
-    let rust = run_forge(&["--help"]);
-    let js = run_js(&["--help"]);
-    assert!(rust.status.success());
+fn version_matches_package_json() {
+    let out = run_forge(&["--version"]);
+    assert!(out.status.success());
+    let text = String::from_utf8_lossy(&out.stdout);
     assert_eq!(
-        rust.stdout, js.stdout,
-        "help output differs from the JS CLI"
-    );
-    assert_eq!(rust.stderr, js.stderr);
-}
-
-#[test]
-fn version_is_byte_identical_to_js() {
-    if !node_available() {
-        eprintln!("node not available; skipping JS parity check");
-        return;
-    }
-    let rust = run_forge(&["--version"]);
-    let js = run_js(&["--version"]);
-    assert!(rust.status.success());
-    assert_eq!(
-        rust.stdout, js.stdout,
-        "version output differs from the JS CLI"
+        text.trim(),
+        format!("Forge Anything v{}", package_version())
     );
 }
 
@@ -85,11 +79,6 @@ fn no_args_shows_help() {
     let text = String::from_utf8_lossy(&out.stdout);
     assert!(text.contains("Forge Anything CLI"));
     assert!(text.contains("forge <command> [options]"));
-    for cmd in [
-        "scaffold", "deploy", "smoke", "convert", "sync", "version", "help",
-    ] {
-        assert!(text.contains(cmd), "help lists {cmd}");
-    }
 }
 
 #[test]
@@ -132,6 +121,10 @@ fn scaffold_through_cli_produces_a_ready_repo() {
     assert_eq!(fs::read_dir(target.join("skills")).unwrap().count(), 38);
     assert_eq!(fs::read_dir(target.join("agents")).unwrap().count(), 18);
     assert_eq!(fs::read_dir(target.join("commands")).unwrap().count(), 25);
+    // No per-host copies or manifests in the scaffolded repo.
+    assert!(!target.join(".claude-plugin").exists());
+    assert!(!target.join(".cursor").exists());
+    assert!(!target.join("gemini-extension.json").exists());
     let _ = fs::remove_dir_all(&tmp);
 }
 

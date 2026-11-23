@@ -1,10 +1,9 @@
 //! The Forge Anything version the CLI reports.
 //!
 //! The source of truth is the `package.json` in the Forge Anything source
-//! checkout (the same file the JS CLI read). The CLI resolves the source the
-//! same way the scaffold does, and falls back to the crate version when no
-//! `package.json` can be found, so `--help` and `--version` still work for a
-//! standalone binary.
+//! checkout. The CLI resolves the source the same way the scaffold does,
+//! and falls back to the crate version when no `package.json` can be found,
+//! so `--help` and `--version` still work for a standalone binary.
 
 use forge_scaffold::source;
 use std::env;

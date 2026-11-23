@@ -94,7 +94,7 @@ fn run() -> Result<(), (u8, String)> {
 
     println!(
         "scaffolded {} into '{}': {} skills, {} agents, {} commands, \
-         {} cursor rules, {} design specs, {} files total",
+         {} design specs, {} files total",
         if name.is_empty() {
             target
                 .file_name()
@@ -107,7 +107,6 @@ fn run() -> Result<(), (u8, String)> {
         summary.skills,
         summary.agents,
         summary.commands,
-        summary.cursor_rules,
         summary.design_specs,
         summary.files,
     );
@@ -141,8 +140,9 @@ const HELP: &str = "forge-scaffold: drop a tidy Forge Anything repo into a folde
        --version        Show the version\n\
      \n\
      The scaffolded repo gets the docs structure, the 8 departments with\n\
-     their audit templates, the curated skills and agents, all slash\n\
-     commands, and the host manifests (Claude Code, Gemini, Cursor).\n\
+     their audit templates, the curated skills and agents, and all slash\n\
+     commands. Any agent or host reads `skills/` and `agents/` straight\n\
+     from the project folder.\n\
      \n\
      Source resolution: --source, FORGE_SOURCE, then walking up from the\n\
      current directory, then next to the executable. A source checkout\n\

@@ -2,8 +2,10 @@
 //!
 //! Runs the built `forge-scaffold` binary into an empty temp dir, using the
 //! repo checkout as `--source`, and asserts the result is a ready repo:
-//! the structure, the docs, the curated skills + agents, the commands, and
-//! the integrations, with no manual copying afterwards.
+//! the structure, the docs, the curated skills + agents and the commands,
+//! with no manual copying afterwards. Any agent or host reads `skills/` and
+//! `agents/` straight from the project folder, so there are no per-host
+//! copies or manifests to assert.
 
 use forge_scaffold::curated;
 use std::fs;
@@ -144,12 +146,20 @@ fn scaffold_produces_a_ready_repo() {
         .collect();
     assert!(!design_specs.is_empty(), "design specs seeded");
 
-    // Host integrations.
-    assert_file(&target.join(".claude-plugin/marketplace.json"));
-    assert_file(&target.join("gemini-extension.json"));
-    for skill in curated::CURATED_SKILLS {
-        assert_file(&target.join(".cursor/rules").join(format!("{skill}.mdc")));
-    }
+    // No per-host copies or manifests: skills/ and agents/ are read
+    // straight from the project folder.
+    assert!(
+        !target.join(".claude-plugin").exists(),
+        "no host manifest is scaffolded"
+    );
+    assert!(
+        !target.join(".cursor").exists(),
+        "no Cursor rules are scaffolded"
+    );
+    assert!(
+        !target.join("gemini-extension.json").exists(),
+        "no host manifest is scaffolded"
+    );
 
     // The scaffolded README names the project and points at the rules.
     let readme = fs::read_to_string(target.join("README.md")).expect("read README");

@@ -18,12 +18,9 @@ forge-scaffold [OPTIONS] <target-dir>
 - `commands/` — all slash commands
 - `docs/` — specs, plans, reports, templates, design, and the 8 departments
   (`docs/departments/<Dept>/`), each with a README and an audit template
-- `.claude-plugin/marketplace.json`, `gemini-extension.json` — host manifests
-  so Claude Code and Gemini discover `skills/` directly
-- `.cursor/rules/<skill>.mdc` — Cursor rules for the curated skills
 
-Other hosts (Codex, OpenCode, Windsurf, KiloCode, Antigravity, OpenClaw,
-Hermes) read `skills/` directly, so no separate copy is needed for them.
+No per-host copies or manifests: any agent or host reads `skills/` and
+`agents/` straight from the project folder.
 
 ## Source
 
@@ -37,7 +34,7 @@ contains `skills/forge/SKILL.md` and `agents/forge-ceo.md`.
 cargo run -p forge-scaffold -- my-project
 
 # Anywhere, with an explicit source:
-forge-scaffold --source ~/workspace/galyarder-framework my-project
+forge-scaffold --source ~/workspace/forge-anything my-project
 ```
 
 ## Options
@@ -62,15 +59,14 @@ cargo test            # unit tests + the e2e acceptance test (issue #212)
 
 The e2e test (`tests/scaffold_e2e.rs`) runs the built binary into an empty
 temp dir and asserts the result is a ready repo: structure, docs, curated
-skills + agents, commands, integrations, and no "Galyarder Framework"
-product name in the output.
+skills + agents and commands, no per-host copies or manifests, and no trace
+of the previous product name in the output.
 
 Minimum Rust: 1.85 (edition 2024). No external dependencies; the crate is
 standard-library only, so `cargo build` stays fast and offline-friendly.
 
 ## Status
 
-Replaces the shell scaffold (`scripts/scaffold-company.sh`, invoked by the
-JS `forge scaffold` command). The JS CLI still ships the shell scaffold;
-wiring it to this binary is the distribution step, once the binary is
-published alongside the npm package.
+This is the scaffold `forge scaffold` runs. The shell scaffold and the JS
+CLI it was invoked from are gone; the `forge` CLI (crate `forge`) calls
+this binary directly.

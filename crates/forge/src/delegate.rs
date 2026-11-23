@@ -2,10 +2,9 @@
 //!
 //! This is the transitional layer: the CLI surface is Rust, while the
 //! `deploy`, `smoke`, `convert` and `sync` implementations are still the
-//! existing scripts. Each script is run exactly the way the JS CLI ran it:
-//! `bash <script> <args...>` (or `python3 <script> <args...>` for `.py`),
-//! with inherited stdio and environment, and the CLI exits with the
-//! script's exit code.
+//! existing scripts. Each script is run as `bash <script> <args...>` (or
+//! `python3 <script> <args...>` for `.py`), with inherited stdio and
+//! environment, and the CLI exits with the script's exit code.
 
 use std::path::Path;
 use std::process::{Command, ExitCode};

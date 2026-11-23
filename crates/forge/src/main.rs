@@ -1,6 +1,6 @@
 //! `forge`: the Forge Anything CLI, in Rust.
 //!
-//! Replaces `bin/forge.js`. Same interface, same help text, same exit codes:
+//! The interface, help text and exit codes:
 //!
 //! ```text
 //! forge <command> [options]
@@ -17,12 +17,12 @@
 //! `scaffold` runs the native Rust scaffold (`forge-scaffold`). The other
 //! commands still run the repo's scripts (`scripts/install.sh`,
 //! `scripts/smoke.sh`, `scripts/convert.sh`, `scripts/sync-codex-skills.py`)
-//! with the arguments passed through, exactly as the JS CLI did, and the CLI
-//! exits with the script's exit code. Reimplementing those in Rust is the
-//! follow-up; the CLI surface is Rust now.
+//! with the arguments passed through, and the CLI exits with the script's
+//! exit code. Reimplementing those in Rust is the follow-up; the CLI
+//! surface is Rust now.
 //!
-//! The version comes from the source checkout's `package.json` (the same
-//! file the JS CLI read), falling back to the crate version.
+//! The version comes from the source checkout's `package.json`, falling
+//! back to the crate version.
 
 mod delegate;
 mod version;
@@ -75,9 +75,7 @@ fn run() -> Result<ExitCode, (u8, String)> {
 }
 
 /// `forge scaffold [dir] [--name <name>] [--force] [--source <dir>]`.
-/// No dir means the current directory, matching the JS CLI (which scaffolded
-/// into the working directory). Unlike the JS CLI, a dir argument is honored
-/// instead of ignored.
+/// No dir means the current directory; a dir argument is honored.
 fn run_scaffold(args: &[String]) -> Result<ExitCode, (u8, String)> {
     let mut target: Option<PathBuf> = None;
     let mut source: Option<PathBuf> = None;
@@ -145,12 +143,11 @@ fn run_scaffold(args: &[String]) -> Result<ExitCode, (u8, String)> {
     };
     println!(
         "scaffolded {display_name} into '{}': {} skills, {} agents, {} commands, \
-         {} cursor rules, {} design specs, {} files total",
+         {} design specs, {} files total",
         target.display(),
         summary.skills,
         summary.agents,
         summary.commands,
-        summary.cursor_rules,
         summary.design_specs,
         summary.files,
     );
@@ -187,8 +184,7 @@ fn take_string(args: &[String], i: usize, flag: &str) -> Result<String, (u8, Str
         .ok_or_else(|| (1, format!("{flag} needs a value")))
 }
 
-/// The help text, byte-identical to the JS CLI's output (including the
-/// leading blank line and the trailing spaces).
+/// The help text (leading blank line and trailing spaces included).
 fn help_text() -> String {
     let v = version::version();
     format!(
