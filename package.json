@@ -1,6 +1,6 @@
 {
   "name": "forge-anything",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Forge anything with AI agents.",
   "main": "index.js",
   "bin": {
