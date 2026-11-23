@@ -11,6 +11,7 @@ Forge anything with AI agents.
 [![Smoke test](https://github.com/galyarderlabs/forge-anything/actions/workflows/smoke-test.yml/badge.svg)](https://github.com/galyarderlabs/forge-anything/actions/workflows/smoke-test.yml)
 ![Node.js 20+](https://img.shields.io/badge/Node.js-20%2B-green.svg)
 ![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue.svg)
+![Rust](https://img.shields.io/badge/Rust-orange.svg)
 [![Sponsor](https://img.shields.io/badge/sponsor-support-ff69b4?logo=githubsponsors)](https://github.com/sponsors/galyarderlabs)
 
 Using an AI agent shouldn't be just generating code, and the agent shouldn't be confused. Forge Anything gives the agent tools that do the work, the skills to use them right, and a scaffold to start clean, so even a regular chatbot can add the MCP and forge anything. It is not a kanban board, a prompt pack, or another AI agent. This is the right way to work: rules and a workflow, simple as that, in your company, and in your life.
@@ -81,11 +82,3 @@ Forge Anything is free and always will be. If it makes your agents work the righ
 ## License
 
 Forge Anything is free software: you can redistribute it and/or modify it under the terms of the [GNU General Public License](LICENSE) as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU General Public License](LICENSE) for more details.
-
----
-
-<div align="center">
-
-[![Give Forge Anything a star](https://img.shields.io/github/stars/galyarderlabs/forge-anything?style=social)](https://github.com/galyarderlabs/forge-anything)
-
-</div>
