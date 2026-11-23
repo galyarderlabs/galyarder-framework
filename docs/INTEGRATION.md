@@ -11,9 +11,9 @@ The framework is converted for the following environments:
 3.  **Claude Code**: Advanced CLI marketplace integration.
 4.  **Cursor**: IDE-native `.mdc` rule sets.
 5.  **Gemini CLI**: Official extension repository support.
-6.  **OpenAI Codex CLI**: Direct instruction-based logic.
+6.  **OpenAI Codex CLI**: Direct instruction-based logic. See [Galyarder Framework for Codex](README.codex.md).
 7.  **Windsurf**: Native plugin architecture.
-8.  **OpenCode**: Specialized plugin ecosystem.
+8.  **OpenCode**: Specialized plugin ecosystem. See [Galyarder Framework for OpenCode](README.opencode.md).
 9.  **Hermes Agent**: Local-first autonomous assistant runtime.
 10. **OpenClaw**: Distributed agentic logic.
 11. **Kilo Code**: Coding assistant integration.
