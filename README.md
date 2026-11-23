@@ -11,17 +11,17 @@ Forge anything with AI agents.
 ![Node.js 20+](https://img.shields.io/badge/Node.js-20%2B-green.svg)
 [![Sponsor](https://img.shields.io/badge/sponsor-support-ff69b4?logo=githubsponsors)](https://github.com/sponsors/galyarderlabs)
 
-Using an AI agent shouldn't be just generating code, and the agent shouldn't be confused. Forge Anything gives the agent tools that do the work, the skills to use them right, and a scaffold to start clean — even a regular chatbot can add the MCP and forge anything. It is not a kanban board, a prompt pack, or another AI agent — this is the right way to work: rules and a workflow, simple as that, in your company, and in your life.
+Using an AI agent shouldn't be just generating code, and the agent shouldn't be confused. Forge Anything gives the agent tools that do the work, the skills to use them right, and a scaffold to start clean, so even a regular chatbot can add the MCP and forge anything. It is not a kanban board, a prompt pack, or another AI agent. This is the right way to work: rules and a workflow, simple as that, in your company, and in your life.
 
 </div>
 
 ## How it works
 
-1. **Goal** — say what you want, in plain words.
-2. **Plan** — the work is routed to the right department and planned.
-3. **Build** — the agent does the work, with tests before anything ships.
-4. **Verify** — every claim is checked against evidence before it counts.
-5. **Ship** — the work goes out. Distribution is where the loop ends.
+1. **Goal**: say what you want, in plain words.
+2. **Plan**: the work is routed to the right department and planned.
+3. **Build**: the agent does the work, with tests before anything ships.
+4. **Verify**: every claim is checked against evidence before it counts.
+5. **Ship**: the work goes out. Distribution is where the loop ends.
 
 The full workflow, with the five phases in detail, is in [docs/WORKFLOW.md](docs/WORKFLOW.md).
 
@@ -48,17 +48,17 @@ Step by step, including local install and other tools, is in [docs/QUICK_START.m
 
 ## Documentation
 
-- [Quick start](docs/QUICK_START.md) — install and first run
-- [Workflow](docs/WORKFLOW.md) — the five phases, in full
-- [Integration](docs/INTEGRATION.md) — the tools it plugs into
-- [Codex guide](docs/README.codex.md) — using it with OpenAI Codex
-- [OpenCode guide](docs/README.opencode.md) — using it with OpenCode
-- [Departments](docs/departments/) — the departments and what each owns
-- [Agents](docs/agents/) — the personas that do the work
-- [Skills](docs/skills/) — the full skill list
-- [Commands](docs/commands/) — the shortcuts
-- [Roadmap](ROADMAP.md) — what we are building next
-- [Changelog](CHANGELOG.md) — what changed
+- [Quick start](docs/QUICK_START.md): install and first run
+- [Workflow](docs/WORKFLOW.md): the five phases, in full
+- [Integration](docs/INTEGRATION.md): the tools it plugs into
+- [Codex guide](docs/README.codex.md): using it with OpenAI Codex
+- [OpenCode guide](docs/README.opencode.md): using it with OpenCode
+- [Departments](docs/departments/): the departments and what each owns
+- [Agents](docs/agents/): the personas that do the work
+- [Skills](docs/skills/): the full skill list
+- [Commands](docs/commands/): the shortcuts
+- [Roadmap](ROADMAP.md): what we are building next
+- [Changelog](CHANGELOG.md): what changed
 
 ## Contributing
 
