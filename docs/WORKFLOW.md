@@ -2,6 +2,38 @@
 
 The workflow turns founder/operator intent into reviewed work across departments. It is designed for software, product, growth, finance, sales, documentation, legal, security, operations, and strategy. Coding is one surface area; the framework is broader than coding.
 
+## Operational sequence
+
+The sequence below shows who talks to whom, in order, across the five phases. The founder sets intent, the router grounds it in knowledge and references, the specialist executes through tools, and the result returns as reviewable evidence.
+
+```mermaid
+sequenceDiagram
+    participant F as Founder / Operator
+    participant CEO as Strategic Router
+    participant Graph as Knowledge Graph
+    participant MCP as MCP Tools
+    participant Agent as Specialist Agent
+    participant Tools
+    participant Docs as Reports / Decisions
+
+    F->>CEO: Initiates high-level goal
+    CEO->>Docs: Checks roadmap / creates issue or brief
+    CEO->>Graph: Queries project structure and dependencies
+    Graph-->>CEO: Structural context and risk signals
+    CEO->>MCP: Fetches official docs or source references
+    MCP-->>CEO: Grounded context
+    CEO->>Agent: Routes mission to specialist workflow
+    Agent->>MCP: Pulls task-specific references
+    MCP-->>Agent: Implementation context
+    Agent->>Tools: Executes through tools, commands, or code changes
+    Tools-->>Agent: Output, logs, tests, or artifacts
+    Agent->>Graph: Updates project knowledge when needed
+    Agent->>Docs: Writes report, diff notes, decision, or release artifact
+    Docs-->>F: Reviewable output with evidence
+```
+
+---
+
 ## Foundation Protocols
 
 Every workflow should keep these operating constraints visible:
