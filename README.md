@@ -115,18 +115,6 @@ sequenceDiagram
 
 ---
 
-## How it fits with the other repositories
-
-Galyarder Framework is one piece of a larger stack:
-
-- **[Galyarder Agent](https://github.com/galyarderlabs/galyarder-agent)** — the continuity and interface layer: memory, identity, channel presence, and tool access.
-- **[Galyarder HQ](https://github.com/galyarderlabs/galyarder-hq)** — the command layer: company structure, goals, budgets, approval gates, reporting lines, and operational control.
-- **Galyarder Framework** — agents, skills, commands, review gates, and execution protocols.
-- **Galyarder Ledger** — the financial execution layer: agent-assisted, ledger-backed finance and operational evidence.
-
-Framework can be used on its own, but it is designed to fit alongside the other repositories so that intent, execution, evidence, memory, and command stay connected.
-
----
 
 ## Installation
 
@@ -284,8 +272,6 @@ The next phase is to make the framework more concrete as an agentic-company oper
 - safer Codex/OpenCode-style install and review workflows;
 - better consolidation of open PRs into a smaller set of maintained release tracks.
 
-👉 **[Join the Galyarder Early Access Waitlist](https://galyarderlabs.app/en#early-access)**
-
 ---
 
 ## Star History
@@ -296,6 +282,4 @@ The next phase is to make the framework more concrete as an agentic-company oper
   </a>
 </p>
 
----
 
-© 2026 Galyarder Labs. Galyarder Framework. Skills, commands, and integrations for AI coding agents.
