@@ -39,4 +39,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command is powered by the `galyarder-framework:doc-updater` skill.
+**Note**: This command is powered by the `galyarder-framework:doc-maintenance` skill.

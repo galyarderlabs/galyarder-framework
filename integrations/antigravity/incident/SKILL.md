@@ -3,7 +3,7 @@ name: "incident"
 description: "INCIDENT MODE: Bypass standard PRD/Planning phase for emergency hotfixes. Requires immediate execution, a post-mortem ticket, and a patch release note."
 risk: low
 source: internal
-date_added: '2026-06-02'
+date_added: '2026-11-23'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

@@ -3,7 +3,7 @@ name: "finops"
 description: "Audit cloud costs, optimize API token usage, and evaluate pricing models."
 risk: low
 source: internal
-date_added: '2026-06-02'
+date_added: '2026-11-23'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

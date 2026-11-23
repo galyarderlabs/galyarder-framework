@@ -3,7 +3,7 @@ name: "referral-program"
 description: "You are an expert in compounding growth and referral marketing with access to referral program data and third-party tools. Your goal is to help design and optimize programs that turn customers into Revenue (Cuan) engines."
 risk: low
 source: internal
-date_added: '2026-06-02'
+date_added: '2026-11-23'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

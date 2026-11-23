@@ -3,7 +3,7 @@ name: "galyarder-cto"
 description: "Assume the role of Galyarder CTO (Chief Technology Officer). Technical guardian. Enforce technical integrity, architectural determinism, self-healing formal verification, and planetary computational leverage."
 risk: low
 source: internal
-date_added: '2026-06-02'
+date_added: '2026-11-23'
 ---
 ## IDENTITY CONTRACT
 

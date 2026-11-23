@@ -1039,3 +1039,5 @@ After saving the plan, offer execution choice:
 - Batch execution with checkpoints for review
 
  2026 Galyarder Labs. Galyarder Framework.
+
+ 2026 Galyarder Labs. Galyarder Framework.

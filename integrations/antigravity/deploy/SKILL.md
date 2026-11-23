@@ -3,7 +3,7 @@ name: "deploy"
 description: "Infrastructure and CI/CD specialist. Automates deployments to Vercel, Docker, or AWS."
 risk: low
 source: internal
-date_added: '2026-06-02'
+date_added: '2026-11-23'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
@@ -34,4 +34,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 - **Durable Memory**: Every mission concludes with an audit log and persistent markdown artifact saved via the **MemoryStore Interface** (Default: Obsidian `docs/departments/`).
 
 
-**Note**: This command is powered by the `galyarder-framework:devops-deployment` skill.
+**Note**: This command dispatches the `galyarder-framework:devops-engineer` agent.

@@ -3,7 +3,7 @@ name: "fundraising-operator"
 description: "Fundraising and investor operations specialist. Owns founder context, pitch narrative, investor targeting, investor communication, diligence readiness, and board-update hygiene for the Agentic Company founder."
 risk: low
 source: internal
-date_added: '2026-06-02'
+date_added: '2026-11-23'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

@@ -6,6 +6,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SKILLS_SRC = REPO_ROOT / "skills"
 AGENTS_SRC = REPO_ROOT / "agents"
+PERSONAS_SRC = REPO_ROOT / "personas"
 DESIGN_SRC = REPO_ROOT / "design"
 COMMANDS_SRC = REPO_ROOT / "commands"
 
@@ -13,38 +14,27 @@ CODEX_DIR = REPO_ROOT / ".codex"
 SKILLS_DEST = CODEX_DIR / "skills"
 
 def sync():
-    if SKILLS_DEST.exists():
-        shutil.rmtree(SKILLS_DEST)
-    SKILLS_DEST.mkdir(parents=True, exist_ok=True)
-    
-    # Process all sources
-    for src_dir in [SKILLS_SRC, AGENTS_SRC, PERSONAS_SRC, DESIGN_SRC, COMMANDS_SRC]:
-        if not src_dir.exists(): continue
-        for item in src_dir.rglob("SKILL.md"):
-            if not item.is_file(): continue
-            name = item.parent.name
-            dest = SKILLS_DEST / name
-            if not dest.exists():
-                os.symlink(item.parent, dest)
-        for item in src_dir.glob("*.md"):
-            if not item.is_file(): continue
-            if item.name == "README.md" or item.name == "SKILL.md": continue
-            name = item.stem
-            dest = SKILLS_DEST / name
-            dest.mkdir(exist_ok=True)
-            if not (dest / "SKILL.md").exists():
-                os.symlink(item, dest / "SKILL.md")
+    try:
+        if SKILLS_DEST.exists():
+            shutil.rmtree(SKILLS_DEST)
+        SKILLS_DEST.mkdir(parents=True, exist_ok=True)
 
         # Process all sources
         for src_dir in [SKILLS_SRC, AGENTS_SRC, PERSONAS_SRC, DESIGN_SRC, COMMANDS_SRC]:
-            if not src_dir.exists(): continue
+            if not src_dir.exists():
+                continue
             for item in src_dir.rglob("SKILL.md"):
+                if not item.is_file():
+                    continue
                 name = item.parent.name
                 dest = SKILLS_DEST / name
                 if not dest.exists():
                     os.symlink(item.parent, dest)
             for item in src_dir.glob("*.md"):
-                if item.name == "README.md" or item.name == "SKILL.md": continue
+                if not item.is_file():
+                    continue
+                if item.name in ("README.md", "SKILL.md"):
+                    continue
                 name = item.stem
                 dest = SKILLS_DEST / name
                 dest.mkdir(exist_ok=True)

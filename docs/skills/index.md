@@ -24,41 +24,11 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     Use this skill when the user needs to set up bookkeeping, track revenue and expenses, prepare for taxes, choose accounting software, understand SaaS revenue recognition, or manage the financial operations of their bootstrapped business. Covers bookkeeping setup, tax preparation, accounting tools, and financial hygiene for the agentic company.
 
--   **[adversarial-reviewer](adversarial-reviewer/index.md)**
-
-    ---
-
-    Use when a plan, feature, or launch needs an explicit adversarial pass to find weak assumptions, abuse cases, or strategic blind spots before execution.
-
--   **[analytics-architect](analytics-architect/index.md)**
-
-    ---
-
-    Use when the work needs analytics architecture, event planning, KPI design, attribution boundaries, or instrumentation review across product and growth.
-
 -   **[analytics-tracking](analytics-tracking/index.md)**
 
     ---
 
     Design, audit, and improve analytics tracking systems that produce reliable, decision-ready data.
-
--   **[architect](architect/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `architect` and you need the modern runtime to resolve that capability cleanly.
-
--   **[audit-website](audit-website/index.md)**
-
-    ---
-
-    Use when a website needs a broad audit covering UX, conversion, content, SEO, technical correctness, and information hierarchy before changes are planned.
-
--   **[board-deck-builder](board-deck-builder/index.md)**
-
-    ---
-
-    Use when leadership needs a board or investor deck structure assembled from product, growth, finance, and execution updates.
 
 -   **[board-update](board-update/index.md)**
 
@@ -72,12 +42,6 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.
 
--   **[build-error-resolver](build-error-resolver/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `build-error-resolver` and you need the modern runtime to resolve that capability cleanly.
-
 -   **[campaign-analytics](campaign-analytics/index.md)**
 
     ---
@@ -89,18 +53,6 @@ Discover the agentic company workforce, commands, and operating protocols design
     ---
 
     Use when assessing cloud infrastructure for security misconfigurations, IAM privilege escalation paths, S3 public exposure, open security group rules, or IaC security gaps. Covers AWS, Azure, and GCP posture assessment with MITRE ATT&CK mapping.
-
--   **[code-review-expert](code-review-expert/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `code-review-expert` and you need the modern runtime to resolve that capability cleanly.
-
--   **[code-reviewer](code-reviewer/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `code-reviewer` and you need the modern runtime to resolve that capability cleanly.
 
 -   **[company-creator](company-creator/index.md)**
 
@@ -118,146 +70,13 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Deprecated redirect skill that routes legacy 'content creator' requests to the correct specialist. Use when a user invokes 'content creator', asks to write a blog post, article, guide, or brand voice analysis (routes to content-production), or asks to plan content, build a topic cluster, or create a content calendar (routes to content-strategy). Does not handle requests directly  identifies user intent and redirects to content-production for writing/SEO/brand-voice tasks or content-strategy for planning tasks.
+    Deprecated redirect skill that routes legacy 'content creator' requests to the correct specialist. Use when a user invokes 'content creator', asks to write a blog post, article, guide, or brand voice analysis (routes to copywriting), or asks to plan content, build a topic cluster, or create a content calendar (routes to content-strategy). Does not handle requests directly  identifies user intent and redirects to copywriting for writing/brand-voice tasks, to seo-audit for SEO tasks, or content-strategy for planning tasks.
 
 -   **[content-strategy](content-strategy/index.md)**
 
     ---
 
     Plan a content strategy, topic clusters, editorial roadmap, and content mix for traffic, authority, and lead generation. Use when deciding what to publish, what topics to prioritize, or how to structure a content program.
-
--   **[copywriting](copywriting/index.md)**
-
-
-    Write rigorous, conversion-focused marketing copy for landing pages and emails. Enforces brief confirmation and strict no-fabrication rules.
-
--   **[email-marketing-bible](email-marketing-bible/index.md)**
-
-
-    >
-
--   **[marketing-demand-acquisition](marketing-demand-acquisition/index.md)**
-
-
-    Creates demand generation campaigns, optimizes paid ad spend across LinkedIn, Google, and Meta, develops SEO strategies, and structures partnership programs for Series A+ startups scaling internationally. Use when planning marketing strategy, growth marketing, advertising campaigns, PPC optimization, lead generation, pipeline generation, or startup marketing budgets. Covers multi-channel acquisition (Google Ads, LinkedIn Ads, Meta Ads), CAC analysis, MQL/SQL workflows, attribution modeling, technical SEO, and co-marketing partnerships for hybrid PLG/Sales-Led motions in EU/US/Canada markets.
-
--   **[marketing-ideas](marketing-ideas/index.md)**
-
-
-    Provide proven marketing strategies and growth ideas for SaaS and software products, prioritized using a marketing feasibility scoring system.
-
--   **[marketing-psychology](marketing-psychology/index.md)**
-
-
-    Apply behavioral science and mental models to revenue (cuan) decisions, prioritized using a psychological leverage and feasibility scoring system.
-
--   **[onboarding-cro](onboarding-cro/index.md)**
-
-
-    You are an expert in user onboarding and activation. Your goal is to help users reach their \'aha moment\' as quickly as possible and establish habits that lead to long-term retention.
-
--   **[page-cro](page-cro/index.md)**
-
-
-    Analyze and optimize individual pages for conversion performance.
-
--   **[paywall-upgrade-cro](paywall-upgrade-cro/index.md)**
-
-
-    You are an expert in in-app paywalls and upgrade flows. Your goal is to convert free users to paid, or upgrade users to higher tiers, at moments when they've experienced enough value to justify the commitment.
-
--   **[programmatic-seo](programmatic-seo/index.md)**
-
-
-    Design and evaluate programmatic SEO strategies for creating SEO-driven pages at scale using templates and structured data.
-
--   **[referral-program](referral-program/index.md)**
-
-
-    You are an expert in compounding growth and referral marketing with access to referral program data and third-party tools. Your goal is to help design and optimize programs that turn customers into Revenue (Cuan) engines.
-
--   **[revenue-architect](revenue-architect/index.md)**
-
-
-    Specialized skill unit for Galyarder Framework orchestration.
-
--   **[schema-markup](schema-markup/index.md)**
-
-
-    Design, validate, and optimize schema.org structured data for eligibility, correctness, and measurable SEO impact.
-
--   **[seo-audit](seo-audit/index.md)**
-
-
-    Diagnose and audit SEO issues affecting crawlability, indexation, rankings, and organic performance.
-
--   **[social-content](social-content/index.md)**
-
-
-    You are an expert social media strategist with direct access to a scheduling platform that publishes to all major social networks. Your goal is to help create engaging content that builds audience, drives engagement, and supports business goals.
-
-</div>
-
-## :material-folder-zip: Infrastructure Department
-
-<div class="grid cards" markdown>
-
--   **[release](release/index.md)**
-
-
-    >
-
--   **[release-changelog](release-changelog/index.md)**
-
-
-    >
-
-</div>
-
-## :material-folder-zip: Knowledge Department
-
-<div class="grid cards" markdown>
-
--   **[defuddle](defuddle/index.md)**
-
-
-    Extract clean markdown content from web pages using Defuddle CLI, removing clutter and navigation to save tokens. Use instead of WebFetch when the user provides a URL to read or analyze, for online documentation, articles, blog posts, or any standard web page. Do NOT use for URLs ending in .md  those are already markdown, use WebFetch directly.
-
--   **[doc-maintenance](doc-maintenance/index.md)**
-
-
-    >
-
--   **[json-canvas](json-canvas/index.md)**
-
-
-    Create and edit JSON Canvas files (.canvas) with nodes, edges, groups, and connections. Use when working with .canvas files, creating visual canvases, mind maps, flowcharts, or when the user mentions Canvas files in Obsidian.
-
--   **[obsidian-bases](obsidian-bases/index.md)**
-
-
-    Create and edit Obsidian Bases (.base files) with views, filters, formulas, and summaries. Use when working with .base files, creating database-like views of notes, or when the user mentions Bases, table views, card views, filters, or formulas in Obsidian.
-
--   **[obsidian-cli](obsidian-cli/index.md)**
-
-
-    Interact with Obsidian vaults using the Obsidian CLI to read, create, search, and manage notes, tasks, properties, and more. Also supports plugin and theme development with commands to reload plugins, run JavaScript, capture errors, take screenshots, and inspect the DOM. Use when the user asks to interact with their Obsidian vault, manage notes, search vault content, perform vault operations from the command line, or develop and debug Obsidian plugins and themes.
-
--   **[obsidian-markdown](obsidian-markdown/index.md)**
-
-
-    Create and edit Obsidian Flavored Markdown with wikilinks, embeds, callouts, properties, and other Obsidian-specific syntax. Use when working with .md files in Obsidian, or when the user mentions wikilinks, callouts, frontmatter, tags, embeds, or Obsidian notes.
-
-</div>
-
-## :material-folder-zip: Legal-Finance Department
-
-<div class="grid cards" markdown>
-
--   **[accounting](accounting/index.md)**
-
-
-    Use this skill when the user needs to set up bookkeeping, track revenue and expenses, prepare for taxes, choose accounting software, understand SaaS revenue recognition, or manage the financial operations of their bootstrapped business. Covers bookkeeping setup, tax preparation, accounting tools, and financial hygiene for the 1-Man Army.
 
 -   **[contract-and-proposal-writer](contract-and-proposal-writer/index.md)**
 
@@ -271,18 +90,6 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     Analyze and red-flag contracts systematically, identifying risks, unfavorable terms, and negotiation opportunities
 
--   **[conversion-engineer](conversion-engineer/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `conversion-engineer` and you need the modern runtime to resolve that capability cleanly.
-
--   **[copy-editing](copy-editing/index.md)**
-
-    ---
-
-    Use when existing copy needs tightening for clarity, accuracy, tone consistency, or executive readability without changing the underlying message.
-
 -   **[copywriting](copywriting/index.md)**
 
     ---
@@ -295,23 +102,11 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     >
 
--   **[cyber-intel](cyber-intel/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `cyber-intel` and you need the modern runtime to resolve that capability cleanly.
-
 -   **[data-room](data-room/index.md)**
 
     ---
 
     Due Diligence Data Room Specialist. Use to prepare, audit, and organize fundraising materials for investor diligence before or after a term sheet.
-
--   **[decision-logger](decision-logger/index.md)**
-
-    ---
-
-    Use when important product, technical, or founder decisions need to be captured as durable context with rationale, tradeoffs, and follow-up implications.
 
 -   **[defuddle](defuddle/index.md)**
 
@@ -319,41 +114,11 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     Extract clean markdown content from web pages using Defuddle CLI, removing clutter and navigation to save tokens. Use instead of WebFetch when the user provides a URL to read or analyze, for online documentation, articles, blog posts, or any standard web page. Do NOT use for URLs ending in .md  those are already markdown, use WebFetch directly.
 
--   **[devops-engineer](devops-engineer/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `devops-engineer` and you need the modern runtime to resolve that capability cleanly.
-
--   **[dispatching-parallel-agents](dispatching-parallel-agents/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `dispatching-parallel-agents` and you need the modern runtime to resolve that capability cleanly.
-
 -   **[doc-maintenance](doc-maintenance/index.md)**
 
     ---
 
     >
-
--   **[doc-updater](doc-updater/index.md)**
-
-    ---
-
-    Use when documentation, READMEs, release notes, or operating docs have drifted from the current shipped behavior and need synchronized updates.
-
--   **[e2e-runner](e2e-runner/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `e2e-runner` and you need the modern runtime to resolve that capability cleanly.
-
--   **[elite-developer](elite-developer/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `elite-developer` and you need the modern runtime to resolve that capability cleanly.
 
 -   **[email-marketing-bible](email-marketing-bible/index.md)**
 
@@ -409,12 +174,6 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     Consolidated Galyarder Framework Executive intelligence bundle.
 
--   **[experimentation-engineer](experimentation-engineer/index.md)**
-
-    ---
-
-    Use when a feature launch needs experiment design, test sequencing, rollout guardrails, and measurement logic before exposure to users.
-
 -   **[finance-based-pricing-advisor](finance-based-pricing-advisor/index.md)**
 
     ---
@@ -432,12 +191,6 @@ Discover the agentic company workforce, commands, and operating protocols design
     ---
 
     Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides completion of development work by presenting structured options for merge, PR, or cleanup
-
--   **[finops-manager](finops-manager/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `finops-manager` and you need the modern runtime to resolve that capability cleanly.
 
 -   **[founder-context](founder-context/index.md)**
 
@@ -499,18 +252,6 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     Consolidated Galyarder Framework Growth intelligence bundle.
 
--   **[growth-engineer](growth-engineer/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `growth-engineer` and you need the modern runtime to resolve that capability cleanly.
-
--   **[growth-strategist](growth-strategist/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `growth-strategist` and you need the modern runtime to resolve that capability cleanly.
-
 -   **[infrastructure](infrastructure/index.md)**
 
     ---
@@ -522,12 +263,6 @@ Discover the agentic company workforce, commands, and operating protocols design
     ---
 
     >
-
--   **[interface-designer](interface-designer/index.md)**
-
-    ---
-
-    Use when a product flow needs interface structure, component planning, interaction details, or screen-level UX shaping before implementation.
 
 -   **[investigating-phishing-email-incident](investigating-phishing-email-incident/index.md)**
 
@@ -559,12 +294,6 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     Consolidated Galyarder Framework Knowledge intelligence bundle.
 
--   **[launch-strategy](launch-strategy/index.md)**
-
-    ---
-
-    Use when a release needs launch framing, sequencing, channel choices, and rollout logic across product, growth, and support.
-
 -   **[lead-scoring](lead-scoring/index.md)**
 
     ---
@@ -576,12 +305,6 @@ Discover the agentic company workforce, commands, and operating protocols design
     ---
 
     Draft privacy policies, terms of service, disclaimers, and legal notices. Creates GDPR-compliant texts, cookie policies, and data processing agreements.
-
--   **[legal-counsel](legal-counsel/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `legal-counsel` and you need the modern runtime to resolve that capability cleanly.
 
 -   **[legal-finance](legal-finance/index.md)**
 
@@ -673,23 +396,11 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     You are an expert in in-app paywalls and upgrade flows. Your goal is to convert free users to paid, or upgrade users to higher tiers, at moments when they've experienced enough value to justify the commitment.
 
--   **[perseus](perseus/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `perseus` and you need the modern runtime to resolve that capability cleanly.
-
 -   **[pitch-deck](pitch-deck/index.md)**
 
     ---
 
     Fundraising Pitch Deck Specialist. Use to build, review, or restructure a founder deck for pre-seed through Series A, with a clear narrative arc, investor-grade slide logic, and explicit asks.
-
--   **[planner](planner/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `planner` and you need the modern runtime to resolve that capability cleanly.
 
 -   **[playwright-pro](playwright-pro/index.md)**
 
@@ -703,12 +414,6 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     >
 
--   **[pr-review-expert](pr-review-expert/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `pr-review-expert` and you need the modern runtime to resolve that capability cleanly.
-
 -   **[prd-to-issues](prd-to-issues/index.md)**
 
     ---
@@ -721,29 +426,11 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     Turn a PRD into a multi-phase implementation plan using tracer-bullet vertical slices, saved as a local Markdown file in ./plans/. Use when user wants to break down a PRD, create an implementation plan, plan phases from a PRD, or mentions 'tracer bullets'.
 
--   **[pricing-strategy](pricing-strategy/index.md)**
-
-    ---
-
-    Use when pricing, packaging, plan structure, or monetization tradeoffs need to be evaluated against positioning, conversion, and margin.
-
 -   **[product](product/index.md)**
 
     ---
 
     Consolidated Galyarder Framework Product intelligence bundle.
-
--   **[product-manager](product-manager/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `product-manager` and you need the modern runtime to resolve that capability cleanly.
-
--   **[product-marketing-context](product-marketing-context/index.md)**
-
-    ---
-
-    Use when GTM, sales, growth, or launch work needs a canonical product-marketing context document instead of ad hoc assumptions.
 
 -   **[profiling-threat-actor-groups](profiling-threat-actor-groups/index.md)**
 
@@ -756,12 +443,6 @@ Discover the agentic company workforce, commands, and operating protocols design
     ---
 
     Design and evaluate programmatic SEO strategies for creating SEO-driven pages at scale using templates and structured data.
-
--   **[qa-automation-engineer](qa-automation-engineer/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `qa-automation-engineer` and you need the modern runtime to resolve that capability cleanly.
 
 -   **[receiving-code-review](receiving-code-review/index.md)**
 
@@ -781,17 +462,11 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     >
 
--   **[refactor-cleaner](refactor-cleaner/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `refactor-cleaner` and you need the modern runtime to resolve that capability cleanly.
-
 -   **[referral-program](referral-program/index.md)**
 
     ---
 
-    You are an expert in viral growth and referral marketing with access to referral program data and third-party tools. Your goal is to help design and optimize programs that turn customers into Revenue (Cuan) engines.
+    You are an expert in compounding growth and referral marketing with access to referral program data and third-party tools. Your goal is to help design and optimize programs that turn customers into Revenue (Cuan) engines.
 
 -   **[release](release/index.md)**
 
@@ -805,35 +480,11 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     >
 
--   **[release-manager](release-manager/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `release-manager` and you need the modern runtime to resolve that capability cleanly.
-
--   **[remotion-best-practices](remotion-best-practices/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `remotion-best-practices` and you need the modern runtime to resolve that capability cleanly.
-
--   **[remotion-engineer](remotion-engineer/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `remotion-engineer` and you need the modern runtime to resolve that capability cleanly.
-
 -   **[requesting-code-review](requesting-code-review/index.md)**
 
     ---
 
     Use when completing tasks, implementing major features, or before merging to verify work meets requirements
-
--   **[retention-specialist](retention-specialist/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `retention-specialist` and you need the modern runtime to resolve that capability cleanly.
 
 -   **[revenue-architect](revenue-architect/index.md)**
 
@@ -846,12 +497,6 @@ Discover the agentic company workforce, commands, and operating protocols design
     ---
 
     >
-
--   **[runbook-generator](runbook-generator/index.md)**
-
-    ---
-
-    Use when an operational workflow, release procedure, incident pattern, or support process needs to be captured as a repeatable runbook.
 
 -   **[saas-finops-optimization](saas-finops-optimization/index.md)**
 
@@ -871,29 +516,11 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     Consolidated Galyarder Framework Security intelligence bundle.
 
--   **[security-guardian](security-guardian/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `security-guardian` and you need the modern runtime to resolve that capability cleanly.
-
--   **[security-reviewer](security-reviewer/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `security-reviewer` and you need the modern runtime to resolve that capability cleanly.
-
 -   **[seo-audit](seo-audit/index.md)**
 
     ---
 
     Diagnose and audit SEO issues affecting crawlability, indexation, rankings, and organic performance.
-
--   **[signup-flow-cro](signup-flow-cro/index.md)**
-
-    ---
-
-    Use when signup or onboarding conversion needs targeted analysis of friction, motivation, guardrails, and experiment opportunities.
 
 -   **[social-content](social-content/index.md)**
 
@@ -901,41 +528,17 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     You are an expert social media strategist with direct access to a scheduling platform that publishes to all major social networks. Your goal is to help create engaging content that builds audience, drives engagement, and supports business goals.
 
--   **[social-strategist](social-strategist/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `social-strategist` and you need the modern runtime to resolve that capability cleanly.
-
 -   **[subagent-driven-development](subagent-driven-development/index.md)**
 
     ---
 
     Use when executing implementation plans with independent tasks in the current session
 
--   **[super-architect](super-architect/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `super-architect` and you need the modern runtime to resolve that capability cleanly.
-
--   **[support-lead](support-lead/index.md)**
-
-    ---
-
-    Use when support operations, launch fallout, repeated customer issues, or triage ownership need a structured response layer.
-
 -   **[systematic-debugging](systematic-debugging/index.md)**
 
     ---
 
     Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes
-
--   **[tdd-guide](tdd-guide/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `tdd-guide` and you need the modern runtime to resolve that capability cleanly.
 
 -   **[test-driven-development](test-driven-development/index.md)**
 
@@ -955,35 +558,11 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     Extract a DDD-style ubiquitous language glossary from the current conversation, flagging ambiguities and proposing canonical terms. Saves to UBIQUITOUS_LANGUAGE.md. Use when user wants to define domain terms, build a glossary, harden terminology, create a ubiquitous language, or mentions 'domain model' or 'DDD'.
 
--   **[ui-ux-designer](ui-ux-designer/index.md)**
-
-    ---
-
-    Use when user experience, visual flow, interaction quality, or interface coherence needs a dedicated design-oriented pass.
-
--   **[using-galyarder-agent-framework](using-galyarder-agent-framework/index.md)**
-
-    ---
-
-    Use when legacy prompts or old framework sessions refer to the pre-rebrand Galyarder Agent Framework operating guide and need the modern equivalent behavior.
-
 -   **[using-galyarder-framework](using-galyarder-framework/index.md)**
 
     ---
 
     Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before ANY response including clarifying questions
-
--   **[using-git-worktrees](using-git-worktrees/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `using-git-worktrees` and you need the modern runtime to resolve that capability cleanly.
-
--   **[validating-backup-integrity-for-recovery](validating-backup-integrity-for-recovery/index.md)**
-
-    ---
-
-    Use when recovery planning requires verification that backups are restorable, complete, and safe to trust before an incident or recovery event.
 
 -   **[vercel-react-best-practices](vercel-react-best-practices/index.md)**
 
@@ -991,23 +570,11 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.
 
--   **[vercel-react-expert](vercel-react-expert/index.md)**
-
-    ---
-
-    Use when legacy prompts or older framework flows reference `vercel-react-expert` and you need the modern runtime to resolve that capability cleanly.
-
 -   **[verification-before-completion](verification-before-completion/index.md)**
 
     ---
 
     Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always
-
--   **[web-design-guidelines](web-design-guidelines/index.md)**
-
-    ---
-
-    Use when website or web app UI work needs practical design guidance for hierarchy, layout, readability, responsiveness, and interaction quality.
 
 -   **[write-a-prd](write-a-prd/index.md)**
 

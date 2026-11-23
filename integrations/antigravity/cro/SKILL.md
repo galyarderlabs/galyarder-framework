@@ -3,7 +3,7 @@ name: "cro"
 description: "Conversion Rate Optimization specialist. Optimizes onboarding, paywalls, and signup flows."
 risk: low
 source: internal
-date_added: '2026-06-02'
+date_added: '2026-11-23'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

@@ -3,7 +3,7 @@ name: "marketing-psychology"
 description: "Apply behavioral science and mental models to revenue (cuan) decisions, prioritized using a psychological leverage and feasibility scoring system."
 risk: low
 source: internal
-date_added: '2026-06-02'
+date_added: '2026-11-23'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
@@ -245,7 +245,7 @@ If ethical risk > leverage  **do not recommend**
 ## 8. Integration with Other Skills
 
 * **page-cro**  Apply psychology to layout & hierarchy
-* **copywriting / copy-editing**  Translate models into language
+* **copywriting**  Translate models into language
 * **popup-cro**  Triggers, urgency, interruption ethics
 * **pricing-strategy**  Anchoring, relativity, loss framing
 * **ab-test-setup**  Validate psychological hypotheses

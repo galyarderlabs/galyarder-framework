@@ -3,7 +3,7 @@ name: "growth"
 description: "Consolidated Galyarder Framework Growth intelligence bundle."
 risk: low
 source: internal
-date_added: '2026-06-02'
+date_added: '2026-11-23'
 ---
 
 # GALYARDER GROWTH BUNDLE
@@ -1713,32 +1713,33 @@ When operating this skill for your human partner:
 
 | You want to... | Use this instead |
 |----------------|-----------------|
-| **Write** a blog post, article, or guide | [content-production](../content-production/) |
+| **Write** a blog post, article, or guide | [copywriting](../copywriting/) |
 | **Plan** what content to create, topic clusters, calendar | [content-strategy](../content-strategy/) |
-| **Analyze brand voice** | [content-production](../content-production/) (includes `brand_voice_analyzer.py`) |
-| **Optimize SEO** for existing content | [content-production](../content-production/) (includes `seo_optimizer.py`) |
+| **Analyze brand voice** | [copywriting](../copywriting/) |
+| **Optimize SEO** for existing content | [seo-audit](../seo-audit/) |
 | **Create social media content** | [social-content](../social-content/) |
 
 ## Why the Change
 
 The original `content-creator` tried to do everything: planning, writing, SEO, social, brand voice. That made it a jack of all trades. The specialist skills do each job better:
 
-- **content-production**  Full pipeline: research  brief  draft  optimize  publish. Includes all Python tools from the original content-creator.
+- **copywriting**  Writing: brief  draft  brand voice.
+- **seo-audit**  SEO: optimize existing content for search.
 - **content-strategy**  Strategic planning: topic clusters, keyword research, content calendars, prioritization frameworks.
 
 ## Proactive Triggers
 
-- **User asks "content creator"**  Route to content-production (most likely intent is writing).
+- **User asks "content creator"**  Route to copywriting (most likely intent is writing).
 - **User asks "content plan" or "what should I write"**  Route to content-strategy.
 
 ## Output Artifacts
 
 | When you ask for... | Routed to... |
 |---------------------|-------------|
-| "Write a blog post" | content-production |
+| "Write a blog post" | copywriting |
 | "Content calendar" | content-strategy |
-| "Brand voice analysis" | content-production (`brand_voice_analyzer.py`) |
-| "SEO optimization" | content-production (`seo_optimizer.py`) |
+| "Brand voice analysis" | copywriting |
+| "SEO optimization" | seo-audit |
 
 ## Communication
 
@@ -1746,10 +1747,11 @@ This is a redirect skill. Route the user to the correct specialist  don't attemp
 
 ## Related Skills
 
-- **content-production**: Full content execution pipeline (successor).
+- **copywriting**: Writing and brand voice (successor).
+- **seo-audit**: SEO optimization (successor).
 - **content-strategy**: Content planning and topic selection (successor).
 - **content-humanizer**: Post-processing AI content to sound authentic.
-- **marketing-context**: Foundation context that both successors read.
+- **marketing-context**: Foundation context the successors read.
 
  2026 Galyarder Labs. Galyarder Framework.
 
@@ -3678,7 +3680,7 @@ If ethical risk > leverage  **do not recommend**
 ## 8. Integration with Other Skills
 
 * **page-cro**  Apply psychology to layout & hierarchy
-* **copywriting / copy-editing**  Translate models into language
+* **copywriting**  Translate models into language
 * **popup-cro**  Triggers, urgency, interruption ethics
 * **pricing-strategy**  Anchoring, relativity, loss framing
 * **ab-test-setup**  Validate psychological hypotheses
@@ -5466,7 +5468,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Referral & Affiliate Programs
 
 You are the Referral Program Specialist at Galyarder Labs.
-You are an expert in viral growth and referral marketing with access to referral program data and third-party tools. Your goal is to help design and optimize programs that turn customers into Revenue (Cuan) engines.
+You are an expert in compounding growth and referral marketing with access to referral program data and third-party tools. Your goal is to help design and optimize programs that turn customers into Revenue (Cuan) engines.
 
 ## Before Starting
 
@@ -7791,5 +7793,7 @@ If you need more context:
 
 ## When to Use
 This skill is applicable to execute the workflow or actions described in the overview.
+
+ 2026 Galyarder Labs. Galyarder Framework.
 
  2026 Galyarder Labs. Galyarder Framework.

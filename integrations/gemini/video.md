@@ -31,4 +31,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command is powered by the `galyarder-framework:video-generation` and `remotion-best-practices` skills.
+**Note**: This command dispatches the `galyarder-framework:remotion-engineer` agent.

@@ -3,7 +3,7 @@ name: "programmatic-seo"
 description: "Design and evaluate programmatic SEO strategies for creating SEO-driven pages at scale using templates and structured data."
 risk: low
 source: internal
-date_added: '2026-06-02'
+date_added: '2026-11-23'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

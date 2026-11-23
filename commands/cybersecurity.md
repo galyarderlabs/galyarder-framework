@@ -31,4 +31,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command leverages the `gemini-cli-security` suite of specialized testing skills.
+**Note**: This command dispatches the `galyarder-framework:security-reviewer` agent with the security skills.

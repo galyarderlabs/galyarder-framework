@@ -1,0 +1,1 @@
+/home/hatch/workspace/galyarder-framework/agents/build-error-resolver.md

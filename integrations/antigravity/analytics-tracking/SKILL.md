@@ -3,7 +3,7 @@ name: "analytics-tracking"
 description: "Design, audit, and improve analytics tracking systems that produce reliable, decision-ready data."
 risk: low
 source: internal
-date_added: '2026-06-02'
+date_added: '2026-11-23'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

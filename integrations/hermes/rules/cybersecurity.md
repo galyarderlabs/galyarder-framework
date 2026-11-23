@@ -30,4 +30,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 - **Durable Memory**: Every mission concludes with an audit log and persistent markdown artifact saved via the **MemoryStore Interface** (Default: Obsidian `docs/departments/`).
 
 
-**Note**: This command leverages the `gemini-cli-security` suite of specialized testing skills.
+**Note**: This command dispatches the `galyarder-framework:security-reviewer` agent with the security skills.

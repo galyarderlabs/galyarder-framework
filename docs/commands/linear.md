@@ -39,4 +39,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command is powered by the `galyarder-framework:linear-ticket-management` skill.
+**Note**: This command is powered by the `galyarder-framework:prd-to-issues` skill.

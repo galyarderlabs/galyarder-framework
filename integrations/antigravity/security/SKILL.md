@@ -3,7 +3,7 @@ name: "security"
 description: "Consolidated Galyarder Framework Security intelligence bundle."
 risk: low
 source: internal
-date_added: '2026-06-02'
+date_added: '2026-11-23'
 ---
 
 # GALYARDER SECURITY BUNDLE
@@ -3951,5 +3951,7 @@ def build_infrastructure_timeline(indicators):
 - [crt.sh Certificate Transparency](https://crt.sh/)
 - [PassiveTotal API](https://api.passivetotal.org/api/docs/)
 - [JARM Fingerprinting](https://github.com/salesforce/jarm)
+
+ 2026 Galyarder Labs. Galyarder Framework.
 
  2026 Galyarder Labs. Galyarder Framework.

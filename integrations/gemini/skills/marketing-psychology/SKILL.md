@@ -258,7 +258,7 @@ If ethical risk > leverage  **do not recommend**
 ## 8. Integration with Other Skills
 
 * **page-cro**  Apply psychology to layout & hierarchy
-* **copywriting / copy-editing**  Translate models into language
+* **copywriting**  Translate models into language
 * **popup-cro**  Triggers, urgency, interruption ethics
 * **pricing-strategy**  Anchoring, relativity, loss framing
 * **ab-test-setup**  Validate psychological hypotheses

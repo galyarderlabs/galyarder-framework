@@ -65,7 +65,7 @@ The Framework models company work across practical departments. The departments 
 
 **Purpose:** CI/CD, deployment, runtime operations, release readiness, cost controls, and operational reliability.
 
-**Representative skills:** `deploy`, `docker-management`, `finops`, `release`, `release-manager`, `sre`, `watchers`, `webhook-subscriptions`.
+**Representative skills:** `release`.
 
 ### 7. Legal / Finance
 **Leads:** `legal-counsel`, `finops-manager`, `financial-analyst`

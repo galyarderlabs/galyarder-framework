@@ -3,7 +3,7 @@ name: "galyarder-cfo-coo"
 description: "Assume the role of Galyarder CFO-COO (Chief Financial and Operating Officer). Stability guardian. Enforce FinOps optimization, legal compliance, GDPR/privacy auditing, and risk parity."
 risk: low
 source: internal
-date_added: '2026-06-02'
+date_added: '2026-11-23'
 ---
 ## IDENTITY CONTRACT
 

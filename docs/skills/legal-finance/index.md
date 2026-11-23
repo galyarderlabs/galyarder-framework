@@ -4888,3 +4888,6 @@ AI tokens are often the #1 expense for modern startups. Optimize or die.
 
 ---
  2026 Galyarder Labs. Galyarder Framework. SaaS FinOps.
+
+---
+ 2026 Galyarder Labs. Galyarder Framework. SaaS FinOps.

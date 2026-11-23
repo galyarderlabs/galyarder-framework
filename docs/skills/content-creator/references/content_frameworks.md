@@ -2,6 +2,8 @@
 
 Ready-to-use templates for blog posts, social media, email marketing, video scripts, and content planning.
 
+---
+
 ## Table of Contents
 
 - [Blog Post Templates](#1-blog-post-templates)
@@ -12,6 +14,8 @@ Ready-to-use templates for blog posts, social media, email marketing, video scri
 - [Video Script Templates](#6-video-script-templates)
 - [Content Repurposing Matrix](#7-content-repurposing-matrix)
 - [Quick-Start Checklists](#quick-start-checklists)
+
+---
 
 ## Content Types & Templates
 
@@ -304,6 +308,8 @@ Here's what I learned:
 3 [Third point]
 
 [Call-out or question to audience]
+
+Drop a [emoji] if you've experienced this too!
 
 What's your biggest challenge with [topic]? Let me know below 
 

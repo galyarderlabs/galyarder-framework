@@ -3,7 +3,7 @@ name: "schema-markup"
 description: "Design, validate, and optimize schema.org structured data for eligibility, correctness, and measurable SEO impact."
 risk: low
 source: internal
-date_added: '2026-06-02'
+date_added: '2026-11-23'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

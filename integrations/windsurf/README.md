@@ -4,7 +4,7 @@ This directory contains converted Galyarder Framework assets for **Windsurf**.
 
 ## Included Assets
 
-- **228** assets.
+- **173** assets.
 
 ## Format
 

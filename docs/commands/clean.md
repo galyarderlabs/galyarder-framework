@@ -39,4 +39,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command is powered by the `galyarder-framework:improve-codebase-architecture` skill.
+**Note**: This command dispatches the `galyarder-framework:refactor-cleaner` agent.

@@ -3,7 +3,7 @@ name: "knowledge"
 description: "Consolidated Galyarder Framework Knowledge intelligence bundle."
 risk: low
 source: internal
-date_added: '2026-06-02'
+date_added: '2026-11-23'
 ---
 
 # GALYARDER KNOWLEDGE BUNDLE
@@ -1455,5 +1455,7 @@ Reviewed in [[Meeting Notes 2024-01-10#Decisions]].
 - [Embed files](https://help.obsidian.md/embeds)
 - [Callouts](https://help.obsidian.md/callouts)
 - [Properties](https://help.obsidian.md/properties)
+
+ 2026 Galyarder Labs. Galyarder Framework.
 
  2026 Galyarder Labs. Galyarder Framework.

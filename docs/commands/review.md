@@ -39,4 +39,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command is powered by the `galyarder-framework:requesting-code-review` and `code-review-expert` skills.
+**Note**: This command is powered by the `galyarder-framework:requesting-code-review` skill and the `galyarder-framework:code-reviewer` agent.

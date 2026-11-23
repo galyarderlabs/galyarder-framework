@@ -3,7 +3,7 @@ name: "writing-skills"
 description: "Use when creating new skills, editing existing skills, or verifying skills work before deployment"
 risk: low
 source: internal
-date_added: '2026-06-02'
+date_added: '2026-11-23'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

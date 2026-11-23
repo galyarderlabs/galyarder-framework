@@ -3,7 +3,7 @@ name: "build-fix"
 description: "Systematically investigate and fix build errors, TypeScript errors, or test failures with minimal diffs."
 risk: low
 source: internal
-date_added: '2026-06-02'
+date_added: '2026-11-23'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

@@ -3,7 +3,7 @@ name: "test-driven-development"
 description: "Use when implementing any feature or bugfix, before writing implementation code"
 risk: low
 source: internal
-date_added: '2026-06-02'
+date_added: '2026-11-23'
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

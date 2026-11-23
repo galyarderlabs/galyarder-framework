@@ -1,6 +1,7 @@
 ---
 title: "referral-program | Galyarder Framework"
 description: "You are an expert in compounding growth and referral marketing with access to referral program data and third-party tools. Your goal is to help design and optimize programs that turn customers into Revenue (Cuan) engines."
+---
 
 # :material-folder-zip: referral-program
 

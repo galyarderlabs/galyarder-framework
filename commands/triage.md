@@ -31,4 +31,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command is powered by the `galyarder-framework:triage-issue` skill.
+**Note**: This command is powered by the `galyarder-framework:systematic-debugging` skill.
