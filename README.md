@@ -17,6 +17,15 @@ Using an AI agent shouldn't be just generating code, and the agent shouldn't be 
 
 ## How it works
 
+```mermaid
+flowchart LR
+    Goal --> Plan
+    Plan --> Build
+    Build --> Verify
+    Verify --> Ship
+    Ship --> Goal
+```
+
 1. **Goal** — say what you want, in plain words.
 2. **Plan** — the work is routed to the right department and planned.
 3. **Build** — the agent does the work, with tests before anything ships.
