@@ -1,4 +1,4 @@
-# Galyarder Framework: agentic company Workflow
+# Forge Anything: agentic company Workflow
 
 The workflow turns founder/operator intent into reviewed work across departments. It is designed for software, product, growth, finance, sales, documentation, legal, security, operations, and strategy. Coding is one surface area; the framework is broader than coding.
 
@@ -71,7 +71,7 @@ Use the cheapest proof that actually verifies the claim.
 
 ## Phase 1: Intent and Context
 
-**Typical owners:** `galyarder-ceo`, `galyarder-cmo`, `product-manager`, `growth-strategist`
+**Typical owners:** `forge-ceo`, `forge-cmo`, `product-manager`, `growth-strategist`
 
 **Common skills:** `brainstorming`, `write-a-prd`, `competitor-alternatives`, `market-research`, `founder-context`
 
@@ -82,7 +82,7 @@ Use the cheapest proof that actually verifies the claim.
 
 ## Phase 2: Architecture and Blueprinting
 
-**Typical owners:** `galyarder-cto`, `super-architect`, `architect`, `planner`
+**Typical owners:** `forge-cto`, `super-architect`, `architect`, `planner`
 
 **Common skills:** `prd-to-plan`, `writing-plans`, `ubiquitous-language`, `design-an-interface`
 
@@ -106,7 +106,7 @@ Use the cheapest proof that actually verifies the claim.
 
 ## Phase 4: Review, Compliance, and QA
 
-**Typical owners:** `qa-automation-engineer`, `code-reviewer`, `security-reviewer`, `devops-engineer`, `legal-counsel`, `galyarder-cfo-coo`
+**Typical owners:** `qa-automation-engineer`, `code-reviewer`, `security-reviewer`, `devops-engineer`, `legal-counsel`, `forge-cfo-coo`
 
 **Common skills:** `requesting-code-review`, `verification-before-completion`, `security-reviewer`, `devops-engineer`, `gdpr-ccpa-privacy-auditor`
 
@@ -117,7 +117,7 @@ Use the cheapest proof that actually verifies the claim.
 
 ## Phase 5: Distribution and Memory
 
-**Typical owners:** `galyarder-cmo`, `docs`, `social-strategist`, `release-manager`, `obsidian-architect`
+**Typical owners:** `forge-cmo`, `docs`, `social-strategist`, `release-manager`, `obsidian-architect`
 
 **Common skills:** `seo-audit`, `schema-markup`, `copywriting`, `social-content`, `docs`, `release-manager`, `obsidian`
 

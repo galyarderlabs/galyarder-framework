@@ -116,4 +116,4 @@ Reference by number from the parent PRD:
 
 Do NOT close or modify the parent PRD issue.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

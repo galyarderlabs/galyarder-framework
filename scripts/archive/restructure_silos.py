@@ -7,9 +7,9 @@ REPO_ROOT = os.getcwd()
 # Mapping configuration based on ORG_CHART.md
 MAPPING = {
     "Executive": {
-        "personas": ["galyarder-ceo.md", "galyarder-cto.md", "galyarder-cmo.md", "galyarder-cfo-coo.md"],
-        "agents": ["galyarder-specialist.md", "fundraising-operator.md", "chief-of-staff.md"],
-        "skills": ["using-galyarder-framework", "writing-skills", "brainstorming", "founder-context", "pitch-deck", "investor-research", "fundraising-email", "data-room", "board-update", "accelerator-application", "market-research", "lead-scoring", "founder-thought-leadership"]
+        "personas": ["forge-ceo.md", "forge-cto.md", "forge-cmo.md", "forge-cfo-coo.md"],
+        "agents": ["forge-specialist.md", "fundraising-operator.md", "chief-of-staff.md"],
+        "skills": ["using-forge-anything", "writing-skills", "brainstorming", "founder-context", "pitch-deck", "investor-research", "fundraising-email", "data-room", "board-update", "accelerator-application", "market-research", "lead-scoring", "founder-thought-leadership"]
     },
     "Engineering": {
         "agents": ["elite-developer.md", "architect.md", "super-architect.md", "qa-automation-engineer.md", "code-reviewer.md", "build-error-resolver.md", "refactor-cleaner.md", "vercel-react-expert.md", "e2e-runner.md", "tdd-guide.md"],
@@ -92,8 +92,8 @@ def generate_manifests():
     for dept in MAPPING.keys():
         # Plugin.json
         plugin = {
-            "name": f"galyarder-{dept.lower()}",
-            "description": f"{dept} Department for Galyarder Framework. Includes specialized agents, skills, and tools.",
+            "name": f"forge-{dept.lower()}",
+            "description": f"{dept} Department for Forge Anything. Includes specialized agents, skills, and tools.",
             "version": "1.7.0",
             "author": {"name": "Galyarder Labs", "email": "hello@galyarderlabs.app"},
             "personas": "./personas/" if os.path.isdir(os.path.join(dept, "personas")) else None,
@@ -109,8 +109,8 @@ def generate_manifests():
             
         # Gemini-extension.json
         gemini = {
-            "name": f"galyarder-{dept.lower()}",
-            "description": f"{dept} Department for Galyarder Framework.",
+            "name": f"forge-{dept.lower()}",
+            "description": f"{dept} Department for Forge Anything.",
             "version": "1.7.0",
             "personas": "./personas/" if os.path.isdir(os.path.join(dept, "personas")) else None,
             "agents": "./agents/" if os.path.isdir(os.path.join(dept, "agents")) else None,

@@ -115,4 +115,4 @@ From debugging session (2025-10-03):
 - No more race conditions
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

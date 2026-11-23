@@ -130,4 +130,4 @@
 *Template from campaign-analytics skill. Statistical significance calculations require external tools (e.g., online calculators or scipy).*
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

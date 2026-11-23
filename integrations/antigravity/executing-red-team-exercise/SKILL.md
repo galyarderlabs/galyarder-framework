@@ -196,4 +196,4 @@ Convert red team findings into defensive improvements:
 4. Deploy memory-scanning EDR capability to detect process injection
 ```
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

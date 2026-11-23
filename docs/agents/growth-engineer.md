@@ -1,5 +1,5 @@
 ---
-title: "growth-engineer | Galyarder Framework"
+title: "growth-engineer | Forge Anything"
 description: "Engineering-as-Marketing Specialist. Use this agent to build compounding referral loops, free utility tools for lead generation, and programmatic SEO pages at scale. It focuses on the 'Inbound' part of the agentic company pipeline."
 ---
 
@@ -63,4 +63,4 @@ You are the Growth Engineer at Galyarder Labs. You don't just market products; y
 - **`programmatic-seo`**: Use to scale SEO pages via templates.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework. Growth Engineer.
+ 2026 Galyarder Labs. Forge Anything. Growth Engineer.

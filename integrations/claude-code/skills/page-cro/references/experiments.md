@@ -239,4 +239,4 @@ Comprehensive list of A/B tests and experiments organized by page type.
 | Breadcrumbs | Navigation clarity |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

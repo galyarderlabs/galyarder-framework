@@ -1,5 +1,5 @@
 ---
-title: "cyber-intel | Galyarder Framework"
+title: "cyber-intel | Forge Anything"
 description: "External Threat & Intel Specialist. Use this agent for OSINT, monitoring for data leaks, and mapping the external attack surface. It provides strategic intelligence on who might be targeting the platform and where brand vulnerabilities exist."
 ---
 
@@ -66,4 +66,4 @@ You are the Cyber-Intelligence Officer at Galyarder Labs. While others look at t
 - **`mapping-mitre-attack-techniques`**: Categorize threat behaviors into the ATT&CK framework.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework. Cyber-Intelligence Officer.
+ 2026 Galyarder Labs. Forge Anything. Cyber-Intelligence Officer.

@@ -1,5 +1,5 @@
 ---
-title: "legal-advisor | Galyarder Framework"
+title: "legal-advisor | Forge Anything"
 description: "Draft privacy policies, terms of service, disclaimers, and legal notices. Creates GDPR-compliant texts, cookie policies, and data processing agreements."
 ---
 
@@ -102,4 +102,4 @@ Always include disclaimer: "This is a template for informational purposes. Consu
 Focus on comprehensiveness, clarity, and regulatory compliance while maintaining readability.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

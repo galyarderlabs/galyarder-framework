@@ -91,7 +91,7 @@ digraph process {
     "Read plan, extract all tasks with full text, note context, create TodoWrite" [shape=box];
     "More tasks remain?" [shape=diamond];
     "Dispatch final code reviewer subagent for entire implementation" [shape=box];
-    "Use galyarder-framework:finishing-a-development-branch" [shape=box style=filled fillcolor=lightgreen];
+    "Use forge-anything:finishing-a-development-branch" [shape=box style=filled fillcolor=lightgreen];
 
     "Read plan, extract all tasks with full text, note context, create TodoWrite" -> "Dispatch implementer subagent (./implementer-prompt.md)";
     "Dispatch implementer subagent (./implementer-prompt.md)" -> "Implementer subagent asks questions?";
@@ -110,7 +110,7 @@ digraph process {
     "Mark task complete in TodoWrite" -> "More tasks remain?";
     "More tasks remain?" -> "Dispatch implementer subagent (./implementer-prompt.md)" [label="yes"];
     "More tasks remain?" -> "Dispatch final code reviewer subagent for entire implementation" [label="no"];
-    "Dispatch final code reviewer subagent for entire implementation" -> "Use galyarder-framework:finishing-a-development-branch";
+    "Dispatch final code reviewer subagent for entire implementation" -> "Use forge-anything:finishing-a-development-branch";
 }
 ```
 
@@ -309,15 +309,15 @@ Done!
 ## Integration
 
 **Required workflow skills:**
-- **galyarder-framework:using-git-worktrees** - REQUIRED: Set up isolated workspace before starting
-- **galyarder-framework:writing-plans** - Creates the plan this skill executes
-- **galyarder-framework:requesting-code-review** - Code review template for reviewer subagents
-- **galyarder-framework:finishing-a-development-branch** - Complete development after all tasks
+- **forge-anything:using-git-worktrees** - REQUIRED: Set up isolated workspace before starting
+- **forge-anything:writing-plans** - Creates the plan this skill executes
+- **forge-anything:requesting-code-review** - Code review template for reviewer subagents
+- **forge-anything:finishing-a-development-branch** - Complete development after all tasks
 
 **Subagents should use:**
-- **galyarder-framework:test-driven-development** - Subagents follow TDD for each task
+- **forge-anything:test-driven-development** - Subagents follow TDD for each task
 
 **Alternative workflow:**
-- **galyarder-framework:executing-plans** - Use for parallel session instead of same-session execution
+- **forge-anything:executing-plans** - Use for parallel session instead of same-session execution
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

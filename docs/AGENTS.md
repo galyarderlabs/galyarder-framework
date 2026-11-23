@@ -1,8 +1,8 @@
-# AGENTS.md — Galyarder Framework Agent Instructions
+# AGENTS.md — Forge Anything Agent Instructions
 
-The Galyarder workforce is a public developer-facing agentic-company system: specialized agents, skills, commands, review gates, and operating protocols for turning founder/operator intent into structured work.
+The Forge Anything workforce is a public developer-facing agentic-company system: specialized agents, skills, commands, review gates, and operating protocols for turning founder/operator intent into structured work.
 
-Framework extension source lives in `agents/`, `skills/`, `commands/`, `personas/`, and `integrations/`. Department names are routing taxonomy labels for agents and workflows; `galyarder scaffold` may still create `docs/departments/*` inside user projects as the project operating workspace.
+Framework extension source lives in `agents/`, `skills/`, `commands/`, `personas/`, and `integrations/`. Department names are routing taxonomy labels for agents and workflows; `forge scaffold` may still create `docs/departments/*` inside user projects as the project operating workspace.
 
 ## Executive Layer
 
@@ -100,13 +100,13 @@ The Framework models company work across practical departments. The departments 
 ## Purpose, Scope, and Future Direction (What, Why, and Where)
 
 ### What it is
-Galyarder Framework is an **Open-source agentic company Framework** and **project operating workspace**. It provides a human-directed organizational structure for AI-native companies, modeling computational work across corporate departments, specialized roles, standardized skills, and durable Obsidian-aligned markdown documentation loops.
+Forge Anything is an **Open-source agentic company Framework** and **project operating workspace**. It provides a human-directed organizational structure for AI-native companies, modeling computational work across corporate departments, specialized roles, standardized skills, and durable Obsidian-aligned markdown documentation loops.
 
 ### Why it is built (Purpose)
 The framework is designed to turn high-level founder/operator intent into high-fidelity, deterministic, and audited deliverables (verified source code, product requirement documents, security threat models, and marketing/growth pipelines) with zero speculative bloat and high resource efficiency.
 
 ### Where it is going (Direction)
-Galyarder is evolving into a standardized, globally distributed edge-runtime operating system (Galyarder OS) powering self-evolving digital enterprises. Future versions will expand NPM-based modularity, CLI capability sync, advanced cross-department routing, and deep multi-agent workflow orchestration.
+Future versions will expand NPM-based modularity, CLI capability sync, advanced cross-department routing, and deep multi-agent workflow orchestration.
 
 ---
 
@@ -123,4 +123,4 @@ Galyarder is evolving into a standardized, globally distributed edge-runtime ope
 | human-directed execution | artificial-general-intelligence claim |
 | project operating workspace | dashboard cosplay |
 
-Copyright 2026 Galyarder Labs. Galyarder Framework.
+Copyright 2026 Galyarder Labs. Forge Anything.

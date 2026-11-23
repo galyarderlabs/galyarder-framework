@@ -119,4 +119,4 @@ test.describe('Login', () => {
 | Locked account | Lockout message after N failures |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

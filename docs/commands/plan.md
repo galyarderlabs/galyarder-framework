@@ -1,5 +1,5 @@
 ---
-title: "Plan | Galyarder Framework"
+title: "Plan | Forge Anything"
 description: "Restate requirements, assess risks, and create a step-by-step implementation plan with Vertical Slices (Tracer Bullets)."
 ---
 
@@ -39,4 +39,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command is powered by the `galyarder-framework:writing-plans` and `prd-to-plan` skills.
+**Note**: This command is powered by the `forge-anything:writing-plans` and `prd-to-plan` skills.

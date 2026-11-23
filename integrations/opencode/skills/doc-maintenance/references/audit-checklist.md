@@ -16,12 +16,12 @@ against the change summary from git history.
 - [ ] Items reflect current priorities (cross-check with recent PRs)
 
 ### Quickstart
-- [ ] `npx galyarder onboard` command is correct
+- [ ] `npx forge onboard` command is correct
 - [ ] Manual install steps are accurate (clone URL, commands)
 - [ ] Prerequisites (Node version, pnpm version) are current
 - [ ] Server URL and port are correct
 
-### "What is Galyarder Framework" section
+### "What is Forge Anything" section
 - [ ] High-level description is accurate
 - [ ] Step table (Define goal / Hire team / Approve and run) is correct
 
@@ -30,11 +30,11 @@ against the change summary from git history.
 - [ ] No removed adapters still listed
 - [ ] Logos and labels match current adapter names
 
-### "Galyarder Framework is right for you if"
+### "Forge Anything is right for you if"
 - [ ] Use cases are still accurate
 - [ ] No claims about capabilities that don't exist
 
-### "Why Galyarder Framework is special"
+### "Why Forge Anything is special"
 - [ ] Technical claims are accurate (atomic execution, governance, etc.)
 - [ ] No features listed that were removed or significantly changed
 

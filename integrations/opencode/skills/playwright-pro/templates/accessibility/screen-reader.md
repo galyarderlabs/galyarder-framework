@@ -159,4 +159,4 @@ test.describe('Screen Reader Accessibility', () => {
 | aria-expanded | Accordion state communicated |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -69,4 +69,4 @@ But:
 Which do you choose? Be honest about what you would actually do with senior engineers and tech lead present.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

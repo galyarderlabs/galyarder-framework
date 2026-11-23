@@ -1,5 +1,5 @@
 ---
-title: "Video | Galyarder Framework"
+title: "Video | Forge Anything"
 description: "Programmatic video generation specialist using React and Remotion."
 ---
 
@@ -39,4 +39,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command dispatches the `galyarder-framework:remotion-engineer` agent.
+**Note**: This command dispatches the `forge-anything:remotion-engineer` agent.

@@ -110,4 +110,4 @@ Are all vulnerabilities fixed, and are regression tests added to prove the explo
 If YES, finalize the audit report and close the issue.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -49,4 +49,4 @@ This new approach is more efficient because:
 - It returns early when a difference is found
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

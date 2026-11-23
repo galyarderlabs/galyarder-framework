@@ -313,4 +313,4 @@ Quick review - key concerns only:
 - **Time to Value**: 30-60 min per contract
 - **Prerequisites**: Contract access, business context
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

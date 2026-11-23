@@ -123,4 +123,4 @@ Templates are loaded by `/pw:generate` when it detects a matching scenario. You 
 | [color-contrast.md](accessibility/color-contrast.md) | Contrast ratios |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

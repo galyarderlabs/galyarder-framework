@@ -63,4 +63,4 @@ You are the Release Manager at Galyarder Labs. You don't just "deploy"; you "lau
 - **`writing-skills`**: Use to draft professional release notes.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework. Release Manager.
+ 2026 Galyarder Labs. Forge Anything. Release Manager.

@@ -60,4 +60,4 @@ Aggregates findings into a JSON report with risk summary.
 - `ldap3.Connection.search()`: LDAP search with filter and attribute list
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

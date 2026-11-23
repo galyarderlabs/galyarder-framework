@@ -1,5 +1,5 @@
 ---
-title: "Tdd | Galyarder Framework"
+title: "Tdd | Forge Anything"
 description: "Enforce test-driven development workflow. Scaffold interfaces, generate tests FIRST, then implement minimal code to pass. Ensure 80%+ coverage."
 ---
 
@@ -39,4 +39,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command is powered by the `galyarder-framework:test-driven-development` skill.
+**Note**: This command is powered by the `forge-anything:test-driven-development` skill.

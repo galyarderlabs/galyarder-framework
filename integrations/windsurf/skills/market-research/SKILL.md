@@ -67,4 +67,4 @@ Produce:
 - Avoid fake precision when the data is weak.
 - Tie every conclusion back to product, GTM, or fundraising consequences.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

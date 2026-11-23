@@ -1,6 +1,6 @@
 # Windsurf Integration
 
-This directory contains converted Galyarder Framework assets for **Windsurf**.
+This directory contains converted Forge Anything assets for **Windsurf**.
 
 ## Included Assets
 

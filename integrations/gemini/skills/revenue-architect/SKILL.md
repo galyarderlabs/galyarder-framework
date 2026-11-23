@@ -73,4 +73,4 @@ A Agentic Company scales through word of mouth. You design referral systems that
 If YES, finalize the revenue plan.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -1,36 +1,36 @@
-# Galyarder Framework - Organization Chart
+# Forge Anything - Organization Chart
 
 ## Executive Layer
 
 ### Founder (Human)
 - **Role:** Owner, Principal, Final Decision Maker
-- **Direct Reports:** galyarder-ceo
+- **Direct Reports:** forge-ceo
 
-### galyarder-ceo (Chief Executive Officer)
-- **Persona:** `galyarder-ceo`
-- **Lead Agent:** `galyarder-specialist`
+### forge-ceo (Chief Executive Officer)
+- **Persona:** `forge-ceo`
+- **Lead Agent:** `forge-specialist`
 - **Protocol:** Agentic company strategy and verified execution
 - **Responsibilities:**
   - Receive founder intent
   - Delegate to Department Heads (CTO, CMO, CFO/COO)
   - Enforce the **Obsidian Loop** (Reporting)
   - Provide high-signal executive summaries
-- **Direct Reports:** galyarder-cto, galyarder-cmo, galyarder-cfo-coo
+- **Direct Reports:** forge-cto, forge-cmo, forge-cfo-coo
 
-### galyarder-cto (Chief Technology Officer)
-- **Persona:** `galyarder-cto`
+### forge-cto (Chief Technology Officer)
+- **Persona:** `forge-cto`
 - **Protocol:** Technical architecture, implementation quality, and verification
 - **Department:** Engineering, Product, Security.
 - **Responsibilities:** Technical integrity, architecture oversight, security posture.
 
-### galyarder-cmo (Chief Marketing Officer)
-- **Persona:** `galyarder-cmo`
+### forge-cmo (Chief Marketing Officer)
+- **Persona:** `forge-cmo`
 - **Protocol:** Growth strategy, positioning, analytics, and distribution
 - **Department:** Growth.
 - **Responsibilities:** Distribution, revenue (cuan), market visibility.
 
-### galyarder-cfo-coo (Chief Financial & Operating Officer)
-- **Persona:** `galyarder-cfo-coo`
+### forge-cfo-coo (Chief Financial & Operating Officer)
+- **Persona:** `forge-cfo-coo`
 - **Protocol:** Operations, finance, compliance, and reliability
 - **Department:** Legal-Finance, Knowledge.
 - **Responsibilities:** Compliance, budget efficiency, operational reliability.
@@ -216,4 +216,4 @@
    - **Goal-Driven**: Loop until verified via tests-first.
 7. **Task tracking:** important work should be visible in a scoped issue, plan, report, or decision record.
 
-Copyright 2026 Galyarder Labs. Galyarder Framework. Executive Office.
+Copyright 2026 Galyarder Labs. Forge Anything. Executive Office.

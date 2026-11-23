@@ -148,4 +148,4 @@ test.describe('API Auth Headers', () => {
 | Revoked token | 401 for revoked token |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

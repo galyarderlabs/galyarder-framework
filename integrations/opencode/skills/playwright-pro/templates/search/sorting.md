@@ -131,4 +131,4 @@ test.describe('Search Sorting', () => {
 | Default sort | Relevance selected by default |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

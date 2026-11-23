@@ -1,5 +1,5 @@
 ---
-title: "Deploy | Galyarder Framework"
+title: "Deploy | Forge Anything"
 description: "Infrastructure and CI/CD specialist. Automates deployments to Vercel, Docker, or AWS."
 ---
 
@@ -39,4 +39,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command dispatches the `galyarder-framework:devops-engineer` agent.
+**Note**: This command dispatches the `forge-anything:devops-engineer` agent.

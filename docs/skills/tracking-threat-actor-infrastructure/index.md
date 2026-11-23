@@ -1,5 +1,5 @@
 ---
-title: "tracking-threat-actor-infrastructure | Galyarder Framework"
+title: "tracking-threat-actor-infrastructure | Forge Anything"
 description: "Threat actor infrastructure tracking involves monitoring and mapping adversary-controlled assets including command-and-control (C2) servers, phishing domains, exploit kit hosts, bulletproof hosting, a"
 ---
 
@@ -313,4 +313,4 @@ def build_infrastructure_timeline(indicators):
 - [JARM Fingerprinting](https://github.com/salesforce/jarm)
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

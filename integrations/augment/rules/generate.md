@@ -168,4 +168,4 @@ If it fails:
 - Test run result
 - Coverage note: what behaviors are now tested
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -152,4 +152,4 @@ Each rule file contains:
 
 For the complete guide with all rules expanded: `AGENTS.md`
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

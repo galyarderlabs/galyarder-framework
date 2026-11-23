@@ -193,4 +193,4 @@ could access all 5,000 user accounts, 800 computer objects, and all data within 
 6. Deploy Microsoft Defender for Identity to detect Kerberoasting and DCSync attacks
 ```
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

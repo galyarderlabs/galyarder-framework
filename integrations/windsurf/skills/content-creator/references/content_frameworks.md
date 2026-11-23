@@ -567,4 +567,4 @@ Original: Blog Post (2000 words)
 - [ ] Clear conclusion and next steps
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

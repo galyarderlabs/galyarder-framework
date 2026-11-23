@@ -17,4 +17,4 @@ It has a connectivity degree of **1**.
 - [[wikilinks]] (semantic_link | 0.9)
 
 ### Informed By:
-- [[Galyarder-Framework--Commands]] (structural_reference | 1.0)
+- [[Forge-Anything--Commands]] (structural_reference | 1.0)

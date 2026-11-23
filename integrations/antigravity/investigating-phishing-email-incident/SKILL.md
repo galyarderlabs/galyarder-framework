@@ -305,4 +305,4 @@ Containment:
 Status:       RESOLVED  No evidence of lateral movement post-compromise
 ```
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Galyarder Framework RTK Wrapper
+# Forge Anything RTK Wrapper
 REAL_RTK="/home/linuxbrew/.linuxbrew/bin/rtk"
 if [ -f "$REAL_RTK" ]; then
     "$REAL_RTK" "$@"

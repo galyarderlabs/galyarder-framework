@@ -8,7 +8,7 @@ Generate tests, fix flaky failures, migrate from Cypress/Selenium, sync with Tes
 
 ```bash
 # Claude Code plugin
-claude plugin install pw@Galyarder Framework
+claude plugin install pw@Forge Anything
 
 # Or load directly
 claude --plugin-dir ./engineering-team/playwright-pro
@@ -133,4 +133,4 @@ Based on battle-tested patterns from production test suites. Includes curated gu
 MIT
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

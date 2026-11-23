@@ -2,7 +2,7 @@
 # Usage:
 #   ./scripts/install.sh [--tool <name>] [--target <dir>] [--help]
 #
-# Tools: antigravity, cursor, kilocode, windsurf, opencode, augment, claude-code, codex, gemini, openclaw, hermes, galyarder-agent, all
+# Tools: antigravity, cursor, kilocode, windsurf, opencode, augment, claude-code, codex, gemini, openclaw, hermes, forge-agent, all
 # Default: all
 
 set -euo pipefail
@@ -32,7 +32,7 @@ Usage:
   ./scripts/install.sh [--tool <name>] [--target <dir>] [--help]
 
 Tools:
-  antigravity, cursor, kilocode, windsurf, opencode, augment, claude-code, codex, gemini, openclaw, hermes, galyarder-agent, all
+  antigravity, cursor, kilocode, windsurf, opencode, augment, claude-code, codex, gemini, openclaw, hermes, forge-agent, all
 
 Defaults:
   --tool all
@@ -49,10 +49,10 @@ while [[ $# -gt 0 ]]; do
 done
 
 # 1. Run Conversion (Point to the absolute path of sibling script)
-info "Running Galyarder Framework conversion engine..."
+info "Running Forge Anything conversion engine..."
 "${SCRIPT_DIR}/convert.sh" --tool "$TOOL"
 
-TOOLS="antigravity cursor kilocode windsurf opencode augment claude-code codex gemini openclaw hermes galyarder-agent"
+TOOLS="antigravity cursor kilocode windsurf opencode augment claude-code codex gemini openclaw hermes forge-agent"
 [[ "$TOOL" != "all" ]] && TOOLS="$TOOL"
 
 for t in $TOOLS; do
@@ -76,7 +76,7 @@ for t in $TOOLS; do
                 cp -R "$item" "${DEST}/"
             done
             ok "Linked skills to Antigravity global directory." ;;
-        galyarder-agent)
+        forge-agent)
             DEST="${HOME}/.g-agent/skills"
             mkdir -p "$DEST"
             # Surgical overwrite to prevent dir-vs-file conflicts
@@ -86,7 +86,7 @@ for t in $TOOLS; do
                 rm -rf "${DEST}/${name}"
                 cp -R "$item" "${DEST}/"
             done
-            ok "Installed Galyarder Agent skills to ${DEST}." ;;
+            ok "Installed Forge Agent skills to ${DEST}." ;;
         cursor)
             if [ -n "$TARGET_DIR" ]; then
                 mkdir -p "${TARGET_DIR}/.cursor/rules"
@@ -140,4 +140,4 @@ for t in $TOOLS; do
     esac
 done
 
-ok "Galyarder Framework installation process complete."
+ok "Forge Anything installation process complete."

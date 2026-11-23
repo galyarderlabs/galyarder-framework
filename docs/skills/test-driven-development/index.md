@@ -1,5 +1,5 @@
 ---
-title: "test-driven-development | Galyarder Framework"
+title: "test-driven-development | Forge Anything"
 description: "Use when implementing any feature or bugfix, before writing implementation code"
 ---
 
@@ -408,4 +408,4 @@ Otherwise  not TDD
 No exceptions without your human partner's permission.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

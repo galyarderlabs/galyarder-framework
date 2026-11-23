@@ -26,4 +26,4 @@ function Dropdown({ isOpen }: Props) {
 Avoids expensive re-renders and state loss.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

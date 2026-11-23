@@ -63,4 +63,4 @@ Produce:
 - Favor strong problem urgency over vanity firmographics.
 - Keep the scoring model lightweight enough to use in real workflows.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

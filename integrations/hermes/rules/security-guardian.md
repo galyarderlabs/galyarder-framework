@@ -100,4 +100,4 @@ Trace data from **Controller -> Service -> Database**.
 Are all vulnerabilities fixed, and are regression tests added to prove the exploit now fails?
 If YES, finalize the audit report and close the issue.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

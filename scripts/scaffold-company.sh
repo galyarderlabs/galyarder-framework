@@ -1,18 +1,18 @@
 #!/bin/bash
 
-# Galyarder Framework: Company Scaffolder
+# Forge Anything: Company Scaffolder
 # Purpose: Initialize the hierarchical directory structure for a Digital Enterprise.
 # This script can be run locally or via:
-# curl -sSL https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/main/scripts/scaffold-company.sh | bash
+# curl -sSL https://raw.githubusercontent.com/galyarderlabs/forge-anything/main/scripts/scaffold-company.sh | bash
 
-RAW_URL="https://raw.githubusercontent.com/galyarderlabs/galyarder-framework/main/docs/templates"
+RAW_URL="https://raw.githubusercontent.com/galyarderlabs/forge-anything/main/docs/templates"
 # HARDENED PATH RESOLUTION: Trace symlinks to the real framework source
 REAL_PATH=$(readlink -f "${BASH_SOURCE[0]}")
 SCRIPT_DIR="$(cd "$(dirname "$REAL_PATH")" && pwd)"
 LOCAL_TEMPLATE_DIR="$SCRIPT_DIR/../docs/templates"
 LOCAL_DESIGN_DIR="$SCRIPT_DIR/../docs/design"
 
-echo "🚀 Initializing Galyarder Framework Digital Headquarters in $(pwd)..."
+echo "🚀 Initializing Forge Anything Digital Headquarters in $(pwd)..."
 
 # 1. Base Directories
 mkdir -p docs/specs
@@ -33,7 +33,7 @@ for DEPT in "${DEPARTMENTS[@]}"; do
         echo "# Department: $DEPT" > "$DEPT_PATH/README.md"
         echo "This directory contains persistent reports and strategic memory for the $DEPT department." >> "$DEPT_PATH/README.md"
         echo "---" >> "$DEPT_PATH/README.md"
-        echo "Copyright 2026 Galyarder Labs. Galyarder Framework." >> "$DEPT_PATH/README.md"
+        echo "Copyright 2026 Galyarder Labs. Forge Anything." >> "$DEPT_PATH/README.md"
     fi
 done
 
@@ -65,16 +65,16 @@ if [ -d "$LOCAL_TEMPLATE_DIR" ]; then
         cp "$LOCAL_DESIGN_DIR"/design-md-*.md docs/design/ 2>/dev/null || true
     fi
 else
-    echo "    (Local source not found. Fetching from Galyarder GitHub...)"
-    seed_remote "Galyarder-Framework Founder Office Audit.md" "docs/departments/Executive"
-    seed_remote "Galyarder-Framework Product Audit.md" "docs/departments/Product"
-    seed_remote "Galyarder-Framework Engineering Audit.md" "docs/departments/Engineering"
-    seed_remote "Galyarder-Framework Growth Audit.md" "docs/departments/Growth"
-    seed_remote "Galyarder-Framework Security Audit.md" "docs/departments/Security"
-    seed_remote "Galyarder-Framework Operations Audit.md" "docs/departments/Infrastructure"
-    seed_remote "Galyarder-Framework Legal-Finance Audit.md" "docs/departments/Legal-Finance"
-    seed_remote "Galyarder-Framework Knowledge Audit.md" "docs/departments/Knowledge"
-    seed_remote "Galyarder-Framework Decision Log Template.md" "docs/reports"
+    echo "    (Local source not found. Fetching from Galyarder Labs GitHub...)"
+    seed_remote "Forge-Anything Founder Office Audit.md" "docs/departments/Executive"
+    seed_remote "Forge-Anything Product Audit.md" "docs/departments/Product"
+    seed_remote "Forge-Anything Engineering Audit.md" "docs/departments/Engineering"
+    seed_remote "Forge-Anything Growth Audit.md" "docs/departments/Growth"
+    seed_remote "Forge-Anything Security Audit.md" "docs/departments/Security"
+    seed_remote "Forge-Anything Operations Audit.md" "docs/departments/Infrastructure"
+    seed_remote "Forge-Anything Legal-Finance Audit.md" "docs/departments/Legal-Finance"
+    seed_remote "Forge-Anything Knowledge Audit.md" "docs/departments/Knowledge"
+    seed_remote "Forge-Anything Decision Log Template.md" "docs/reports"
 fi
 
 echo "✅ Company structure initialized at docs/departments/"

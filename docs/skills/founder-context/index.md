@@ -1,5 +1,5 @@
 ---
-title: "founder-context | Galyarder Framework"
+title: "founder-context | Forge Anything"
 description: "Founder Operating Context. Use to create or update the canonical founder/startup context document so every fundraising, growth, product, and recruiting workflow runs on concrete company facts instead of generic assumptions."
 ---
 
@@ -136,4 +136,4 @@ Create or update `docs/departments/Executive/founder-context.md` in the project 
 - Downstream founder skills should read this first before producing output.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

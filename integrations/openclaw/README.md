@@ -1,6 +1,6 @@
 # OpenClaw Integration
 
-This directory contains converted Galyarder Framework assets for **OpenClaw**.
+This directory contains converted Forge Anything assets for **OpenClaw**.
 
 ## Included Assets
 

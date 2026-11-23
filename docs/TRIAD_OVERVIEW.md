@@ -1,29 +1,29 @@
-# Galyarder Stack: Framework, Agent, HQ, and Ledger
+# Forge Anything Stack: Framework, Agent, HQ, and Ledger
 
 The Galyarder ecosystem is an agentic-company stack. Each layer has a different job: intelligence, continuity, command, and financial execution.
 
-## 1. Galyarder Framework — Intelligence Layer
+## 1. Forge Anything — Intelligence Layer
 
-- **Repository:** [galyarder-framework](https://github.com/galyarderlabs/galyarder-framework)
+- **Repository:** [forge-anything](https://github.com/galyarderlabs/forge-anything)
 - **Role:** Provides specialized agents, skills, commands, SOPs, and review gates.
 - **Function:** Defines how work is planned, routed, executed, verified, and documented.
 - **Usage:** Runs inside AI assistants and coding tools such as Claude Code, Gemini CLI, Cursor, Hermes Agent, OpenClaw, Codex-style setups, and OpenCode-style setups.
 
-## 2. Galyarder Agent — Continuity Layer
+## 2. Forge Agent — Continuity Layer
 
-- **Repository:** [galyarder-agent](https://github.com/galyarderlabs/galyarder-agent)
+- **Repository:** [forge-agent](https://github.com/galyarderlabs/forge-agent)
 - **Role:** Gives the framework an interface across chat, CLI, email, and other channels.
 - **Function:** Provides memory, profile identity, tools, scheduled jobs, and multi-channel communication.
 - **Usage:** Runs as a local or server-side runtime that keeps the operator connected to the agentic company.
 
-## 3. Galyarder HQ — Command Layer
+## 3. Forge HQ — Command Layer
 
-- **Repository:** [galyarder-hq](https://github.com/galyarderlabs/galyarder-hq)
+- **Repository:** [forge-hq](https://github.com/galyarderlabs/forge-hq)
 - **Role:** Provides operating visibility and governance.
 - **Function:** Shows projects, goals, reports, departments, task queues, approvals, and agent activity.
 - **Usage:** A self-hosted web app that reads project state and gives the operator a command surface.
 
-## 4. Galyarder Ledger — Financial Execution Layer
+## 4. Forge Ledger — Financial Execution Layer
 
 - **Role:** Turns operational and financial work into agent-assisted, ledger-backed execution.
 - **Function:** Preserves financial evidence, approvals, reports, and role-based G-Agent workflows.
@@ -35,16 +35,16 @@ The Galyarder ecosystem is an agentic-company stack. Each layer has a different 
 [ Operator Intent ]
         |
         v
-[ Galyarder Agent ] <---- uses ----> [ Galyarder Framework ]
+[ Forge Agent ] <---- uses ----> [ Forge Anything ]
   continuity, tools, channels          agents, skills, commands
         |                                      |
         | writes reports / evidence           | produces plans / artifacts
         v                                      v
-[ Project Operating Structure ] ----> [ Galyarder HQ ]
+[ Project Operating Structure ] ----> [ Forge HQ ]
   docs, issues, decisions, reports       goals, approvals, visibility
         |
         v
-[ Galyarder Ledger ]
+[ Forge Ledger ]
   finance, approvals, evidence, reports
 ```
 

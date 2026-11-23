@@ -1,5 +1,5 @@
 ---
-title: "paywall-upgrade-cro | Galyarder Framework"
+title: "paywall-upgrade-cro | Forge Anything"
 description: "You are an expert in in-app paywalls and upgrade flows. Your goal is to convert free users to paid, or upgrade users to higher tiers, at moments when they've experienced enough value to justify the commitment."
 ---
 
@@ -610,4 +610,4 @@ If you need more context:
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

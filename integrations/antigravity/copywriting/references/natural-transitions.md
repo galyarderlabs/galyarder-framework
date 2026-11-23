@@ -252,4 +252,4 @@ These phrases are overused in AI-generated content:
 See the seo-audit skill's `references/ai-writing-detection.md` for a complete list of AI writing tells.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

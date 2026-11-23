@@ -1,5 +1,5 @@
 ---
-title: "monitoring-darkweb-sources | Galyarder Framework"
+title: "monitoring-darkweb-sources | Forge Anything"
 description: ">"
 ---
 
@@ -150,4 +150,4 @@ For each dark web finding:
 - **No evidence preservation**: Dark web content disappears rapidly. Capture timestamped evidence immediately upon discovery using commercial service exports.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

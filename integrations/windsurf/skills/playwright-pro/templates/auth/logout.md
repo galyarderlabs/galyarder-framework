@@ -112,4 +112,4 @@ test.describe('Logout', () => {
 | Multi-tab | Logout invalidates other open tabs |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

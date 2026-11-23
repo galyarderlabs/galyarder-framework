@@ -31,4 +31,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command is powered by the `galyarder-framework:seo-audit` and `schema-markup` skills.
+**Note**: This command is powered by the `forge-anything:seo-audit` and `schema-markup` skills.

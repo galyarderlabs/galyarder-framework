@@ -226,4 +226,4 @@ Reviewed in [[Meeting Notes 2024-01-10#Decisions]].
 - [Properties](https://help.obsidian.md/properties)
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -312,4 +312,4 @@ def build_infrastructure_timeline(indicators):
 - [JARM Fingerprinting](https://github.com/salesforce/jarm)
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

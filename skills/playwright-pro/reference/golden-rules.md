@@ -12,4 +12,4 @@
 10. **Mock external services only**  never mock your own app; mock third-party APIs, payment gateways, email
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

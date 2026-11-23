@@ -23,24 +23,24 @@ hide:
 
 ## Open-source Agentic Company Framework
 
-Galyarder Framework is the Intelligence Layer for building an agentic company: a structured way to turn founder intent into coordinated execution across engineering, product, growth, sales, finance, legal, security, documentation, operations, and strategy.
+Forge Anything is the Intelligence Layer for building an agentic company: a structured way to turn founder intent into coordinated execution across engineering, product, growth, sales, finance, legal, security, documentation, operations, and strategy.
 
 It is not a kanban board, a prompt pack, or another coding agent. It gives autonomous agents the operating protocols, skills, commands, review gates, and department structure needed to move from a goal to a reviewed artifact.
 
 ---
 
-## 1. The Galyarder stack
+## 1. The Forge Anything stack
 
-1. **[Galyarder Framework](https://github.com/galyarderlabs/galyarder-framework)**: The **Intelligence Layer** — agents, skills, commands, review gates, and workflow protocols.
-2. **[Galyarder Agent](https://github.com/galyarderlabs/galyarder-agent)**: The **Continuity Layer** — memory, identity, channel presence, and tool access.
-3. **[Galyarder HQ](https://github.com/galyarderlabs/galyarder-hq)**: The **Command Layer** — goals, departments, approval gates, budgets, reports, and operating visibility.
-4. **Galyarder Ledger**: The **Financial Execution Layer** — agent-assisted finance and ledger-backed operational evidence.
+1. **[Forge Anything](https://github.com/galyarderlabs/forge-anything)**: The **Intelligence Layer** — agents, skills, commands, review gates, and workflow protocols.
+2. **[Forge Agent](https://github.com/galyarderlabs/forge-agent)**: The **Continuity Layer** — memory, identity, channel presence, and tool access.
+3. **[Forge HQ](https://github.com/galyarderlabs/forge-hq)**: The **Command Layer** — goals, departments, approval gates, budgets, reports, and operating visibility.
+4. **Forge Ledger**: The **Financial Execution Layer** — agent-assisted finance and ledger-backed operational evidence.
 
 ---
 
 ## 2. Agentic company execution loop
 
-**[Launch Interactive Neural Map (Galyarder World Map)](assets/graph-visualizer.html)**
+**[Launch Interactive Neural Map (Forge World Map)](assets/graph-visualizer.html)**
 
 1. **Intent Intake** — capture the founder/operator goal.
 2. **Department Routing** — choose the right agent, skill, command, and tool path.

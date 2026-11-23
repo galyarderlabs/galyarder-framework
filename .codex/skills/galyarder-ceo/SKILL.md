@@ -1,1 +1,0 @@
-../../../agents/galyarder-ceo.md

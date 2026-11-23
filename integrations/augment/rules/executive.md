@@ -1,8 +1,8 @@
 ---
-description: "Consolidated Galyarder Framework Executive intelligence bundle."
+description: "Consolidated Forge Anything Executive intelligence bundle."
 ---
 
-# GALYARDER EXECUTIVE BUNDLE
+# FORGE EXECUTIVE BUNDLE
 
 This bundle contains 14 high-integrity SOPs for the Executive department.
 
@@ -71,7 +71,7 @@ Produce:
 - Lead with traction and velocity where available.
 - Use clear language, not accelerator cosplay jargon.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: board-update
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -149,7 +149,7 @@ Use this skill when the founder needs to communicate progress, misses, risk, or 
 For emails: ready-to-send markdown.
 For decks: one section per slide with headline, evidence, and board question answered.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: brainstorming
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -342,7 +342,7 @@ A question about a UI topic is not automatically a visual question. "What does p
 If they agree to the companion, read the detailed guide before proceeding:
 `skills/brainstorming/visual-companion.md`
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: data-room
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -421,7 +421,7 @@ Produce:
 - suggested folder structure
 - what to share pre-term-sheet vs post-term-sheet
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: founder-context
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -549,7 +549,7 @@ Create or update `docs/departments/Executive/founder-context.md` in the project 
 - Update it when new information materially changes the operating picture.
 - Downstream founder skills should read this first before producing output.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: founder-thought-leadership
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -615,7 +615,7 @@ Produce:
 - Use earned insights, numbers, and concrete lessons.
 - Optimize for relevance and inbound conversations, not just impressions.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: fundraising-email
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -691,9 +691,9 @@ Before finalizing, verify:
 3. Is there at least one concrete personalization detail where relevant?
 4. Could a busy investor scan this in under a minute?
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
-## SKILL: galyarder-specialist
+## SKILL: forge-specialist
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Operational Modes & Traceability
@@ -723,7 +723,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 - **Durable Memory**: Every mission concludes with an audit log and persistent markdown artifact saved via the **MemoryStore Interface** (Default: Obsidian `docs/departments/`).
 
 
-# Galyarder Specialist
+# Forge Specialist
 
 Use this as the founder-office orchestration layer when one department is too narrow for the request.
 
@@ -744,11 +744,11 @@ Use this as the founder-office orchestration layer when one department is too na
 
 ## Routing Rules
 
-- For strategy, market direction, or founder-office judgment, hand up to `galyarder-ceo`.
+- For strategy, market direction, or founder-office judgment, hand up to `forge-ceo`.
 - For product shaping and scoping, use `product-manager` or `planner`.
 - For implementation and architecture, use `architect`, `super-architect`, `elite-developer`, and `tdd-guide`.
 - For GTM, copy, CRO, and distribution, use `growth-strategist`, `growth-engineer`, `conversion-engineer`, or `social-strategist`.
-- For finance, compliance, and risk, use `galyarder-cfo-coo`, `finops-manager`, or `legal-counsel`.
+- For finance, compliance, and risk, use `forge-cfo-coo`, `finops-manager`, or `legal-counsel`.
 - For security and adversarial work, use `security-guardian`, `security-reviewer`, `perseus`, or `cyber-intel`.
 
 ## Output Shape
@@ -852,7 +852,7 @@ Produce:
 4. Conflict list
 5. Research gaps / unverified facts
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: lead-scoring
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -917,7 +917,7 @@ Produce:
 - Favor strong problem urgency over vanity firmographics.
 - Keep the scoring model lightweight enough to use in real workflows.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: market-research
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -985,7 +985,7 @@ Produce:
 - Avoid fake precision when the data is weak.
 - Tie every conclusion back to product, GTM, or fundraising consequences.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: pitch-deck
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -1073,9 +1073,9 @@ Before finalizing, verify:
 2. Is traction framed with concrete numbers and timeframes?
 3. Is the ask explicit: amount, milestones, and why now?
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
-## SKILL: using-galyarder-framework
+## SKILL: using-forge-anything
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 
 ### 1. Operational Modes & Traceability
@@ -1119,10 +1119,10 @@ This is not negotiable. This is not optional. You cannot rationalize your way ou
 
 ## Instruction Priority
 
-Galyarder Framework skills override default system prompt behavior, but **user instructions always take precedence**:
+Forge Anything skills override default system prompt behavior, but **user instructions always take precedence**:
 
 1. **User's explicit instructions** (CLAUDE.md, GEMINI.md, AGENTS.md, direct requests)  highest priority
-2. **Galyarder Framework skills**  override default system behavior where they conflict
+2. **Forge Anything skills**  override default system behavior where they conflict
 3. **Default system prompt**  lowest priority
 
 If CLAUDE.md, GEMINI.md, or AGENTS.md says "don't use TDD" and a skill says "always use TDD," follow the user's instructions. The user is in control.
@@ -1153,7 +1153,7 @@ For peak "Agentic Company" efficiency, we recommend the following MCP servers:
 
 # Using Skills
 
-You are the Using Galyarder Framework Specialist at Galyarder Labs.
+You are the Using Forge Anything Specialist at Galyarder Labs.
 ## The Rule
 
 **Invoke relevant or requested skills BEFORE any response or action.** Even a 1% chance a skill might apply means that you should invoke the skill to check. If an invoked skill turns out to be wrong for the situation, you don't need to use it.
@@ -1227,7 +1227,7 @@ The skill itself tells you which.
 
 ## Expansion Layers
 
-Some parts of Galyarder Framework are optional expansion paths, not mandatory base workflow.
+Some parts of Forge Anything are optional expansion paths, not mandatory base workflow.
 
 - **Foundation layer**: RTK, Linear, orchestration discipline, verification, TDD, debugging, and the core engineering / growth / security roles.
 - **Expansion layer**: domain-specific stacks such as Obsidian workflows or founder-facing capital workflows.
@@ -1240,7 +1240,7 @@ Do not treat this founder layer as mandatory for every task. Use it when the tas
 
 Instructions say WHAT, not HOW. "Add X" or "Fix Y" doesn't mean skip workflows.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: writing-skills
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -1285,7 +1285,7 @@ You write test cases (pressure scenarios with subagents), watch them fail (basel
 
 **Core principle:** If you didn't watch an agent fail without the skill, you don't know if the skill teaches the right thing.
 
-**REQUIRED BACKGROUND:** You MUST understand galyarder-framework:test-driven-development before using this skill. That skill defines the fundamental RED-GREEN-REFACTOR cycle. This skill adapts TDD to documentation.
+**REQUIRED BACKGROUND:** You MUST understand forge-anything:test-driven-development before using this skill. That skill defines the fundamental RED-GREEN-REFACTOR cycle. This skill adapts TDD to documentation.
 
 **Official guidance:** For Anthropic's official skill authoring best practices, see anthropic-best-practices.md. This document provides additional patterns and guidelines that complement the TDD-focused approach in this skill.
 
@@ -1546,8 +1546,8 @@ wc -w skills/path/SKILL.md
 **When writing documentation that references other skills:**
 
 Use skill name only, with explicit requirement markers:
--  Good: `**REQUIRED SUB-SKILL:** Use galyarder-framework:test-driven-development`
--  Good: `**REQUIRED BACKGROUND:** You MUST understand galyarder-framework:systematic-debugging`
+-  Good: `**REQUIRED SUB-SKILL:** Use forge-anything:test-driven-development`
+-  Good: `**REQUIRED BACKGROUND:** You MUST understand forge-anything:systematic-debugging`
 -  Bad: `See skills/testing/test-driven-development` (unclear if required)
 -  Bad: `@skills/testing/test-driven-development/SKILL.md` (force-loads, burns context)
 
@@ -1656,7 +1656,7 @@ Edit skill without testing? Same violation.
 - Don't "adapt" while running tests
 - Delete means delete
 
-**REQUIRED BACKGROUND:** The galyarder-framework:test-driven-development skill explains why this matters. Same principles apply to documentation.
+**REQUIRED BACKGROUND:** The forge-anything:test-driven-development skill explains why this matters. Same principles apply to documentation.
 
 ## Testing All Skill Types
 
@@ -1920,6 +1920,6 @@ Same benefits: Better quality, fewer surprises, bulletproof results.
 
 If you follow TDD for code, follow it for skills. It's the same discipline applied to documentation.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

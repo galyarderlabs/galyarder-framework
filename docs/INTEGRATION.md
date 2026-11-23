@@ -1,19 +1,19 @@
 # Multi-Platform Integration Protocol
 
-Galyarder Framework is a host-agnostic logic library for agentic company execution across AI tools.
+Forge Anything is a host-agnostic logic library for agentic company execution across AI tools.
 
 ## Supported Platforms
 
 The framework is converted for the following environments:
 
-1.  **Galyarder Agent**: Native identity and memory layer.
-2.  **Galyarder HQ**: Command layer for goals, departments, approvals, and operating visibility.
+1.  **Forge Agent**: Native identity and memory layer.
+2.  **Forge HQ**: Command layer for goals, departments, approvals, and operating visibility.
 3.  **Claude Code**: Advanced CLI marketplace integration.
 4.  **Cursor**: IDE-native `.mdc` rule sets.
 5.  **Gemini CLI**: Official extension repository support.
-6.  **OpenAI Codex CLI**: Direct instruction-based logic. See [Galyarder Framework for Codex](README.codex.md).
+6.  **OpenAI Codex CLI**: Direct instruction-based logic. See [Forge Anything for Codex](README.codex.md).
 7.  **Windsurf**: Native plugin architecture.
-8.  **OpenCode**: Specialized plugin ecosystem. See [Galyarder Framework for OpenCode](README.opencode.md).
+8.  **OpenCode**: Specialized plugin ecosystem. See [Forge Anything for OpenCode](README.opencode.md).
 9.  **Hermes Agent**: Local-first autonomous assistant runtime.
 10. **OpenClaw**: Distributed agentic logic.
 11. **Kilo Code**: Coding assistant integration.
@@ -27,12 +27,12 @@ For cloud-native orchestrators, use the standard plugin protocol:
 ### Claude Code & Copilot CLI
 1. **Connect Marketplace**:
    ```bash
-   /plugin marketplace add galyarderlabs/galyarder-framework
+   /plugin marketplace add galyarderlabs/forge-anything
    ```
 2. **Install Asset**:
    ```bash
    # Full Intelligence Bundle
-   /plugin install galyarder-framework@galyarderlabs-marketplace
+   /plugin install forge-anything@galyarderlabs-marketplace
 
    # Selective Department (e.g., Engineering)
    /plugin install engineering-dept@galyarderlabs-marketplace
@@ -41,11 +41,11 @@ For cloud-native orchestrators, use the standard plugin protocol:
 ### Gemini CLI
 ```bash
 # Install
-gemini extensions install https://github.com/galyarderlabs/galyarder-framework
+gemini extensions install https://github.com/galyarderlabs/forge-anything
 
 # Life-cycle management
-gemini extensions update galyarder-framework
-gemini extensions uninstall galyarder-framework
+gemini extensions update forge-anything
+gemini extensions uninstall forge-anything
 ```
 
 ## Command Silo Structure (Universal Architecture)
@@ -69,10 +69,10 @@ Legacy context-bloat patterns have been removed so agents load only what they ne
 
 ## Conversion Engine
 
-To maintain parity across all 14 platforms, use the Galyarder conversion engine:
+To maintain parity across all 14 platforms, use the Forge conversion engine:
 
 ```bash
 # Full recursive conversion
-galyarder deploy --tool all
+forge deploy --tool all
 ```
 

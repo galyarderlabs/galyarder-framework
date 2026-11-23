@@ -31,4 +31,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command is powered by the `galyarder-framework:verification-before-completion` and `systematic-debugging` skills.
+**Note**: This command is powered by the `forge-anything:verification-before-completion` and `systematic-debugging` skills.

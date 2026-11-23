@@ -397,4 +397,4 @@ procedures, liability limitations, or data processing practices.
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

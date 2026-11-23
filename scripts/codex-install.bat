@@ -1,6 +1,6 @@
 @echo off
 REM
-REM Codex Installation Script for Galyarder Framework (Windows)
+REM Codex Installation Script for Forge Anything (Windows)
 REM
 REM Installs skills from this repository to your local Codex skills directory.
 REM Uses direct copy (no symlinks) for Windows compatibility.
@@ -52,7 +52,7 @@ goto :show_help
 :run_mode
 echo.
 echo ========================================
-echo   Galyarder Framework - Codex Installer
+echo   Forge Anything - Codex Installer
 echo   (Windows Version)
 echo ========================================
 echo.
@@ -115,7 +115,7 @@ goto :end
 
 :show_help
 echo.
-echo Codex Installation Script for Galyarder Framework (Windows)
+echo Codex Installation Script for Forge Anything (Windows)
 echo.
 echo Usage:
 echo   scripts\codex-install.bat [--all ^| --skill ^<name^>]

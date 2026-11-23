@@ -109,4 +109,4 @@ test.describe('Empty State', () => {
 | Last item deleted | Empty state shown after deletion |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

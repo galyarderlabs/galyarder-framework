@@ -122,4 +122,4 @@ All four layers were necessary. During testing, each layer caught bugs the other
 **Don't stop at one validation point.** Add checks at every layer.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

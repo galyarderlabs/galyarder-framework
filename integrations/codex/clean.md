@@ -31,4 +31,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command dispatches the `galyarder-framework:refactor-cleaner` agent.
+**Note**: This command dispatches the `forge-anything:refactor-cleaner` agent.

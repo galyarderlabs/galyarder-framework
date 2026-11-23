@@ -1,5 +1,5 @@
 ---
-title: "Triage | Galyarder Framework"
+title: "Triage | Forge Anything"
 description: "Triage a bug or issue. Explore the codebase to find root cause, then create a fix plan."
 ---
 
@@ -39,4 +39,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command is powered by the `galyarder-framework:systematic-debugging` skill.
+**Note**: This command is powered by the `forge-anything:systematic-debugging` skill.

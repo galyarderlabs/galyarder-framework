@@ -1,5 +1,5 @@
 ---
-title: "code-reviewer | Galyarder Framework"
+title: "code-reviewer | Forge Anything"
 description: "Expert code review specialist. Proactively reviews code for quality, security, and maintainability. Use immediately after writing or modifying code. MUST BE USED for all code changes."
 ---
 
@@ -77,4 +77,4 @@ Approval Criteria:
 Project Guidelines: Follow project-specific configuration (e.g. MANY SMALL FILES, immutability, RLS policies, custom CLAUDE.md rules).
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

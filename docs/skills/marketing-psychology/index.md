@@ -1,5 +1,5 @@
 ---
-title: "marketing-psychology | Galyarder Framework"
+title: "marketing-psychology | Forge Anything"
 description: "Apply behavioral science and mental models to revenue (cuan) decisions, prioritized using a psychological leverage and feasibility scoring system."
 ---
 
@@ -295,4 +295,4 @@ Before responding, confirm:
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -293,4 +293,4 @@ You can layer multiple playbooks:
 - **Glossary + Translations**: Multi-language educational content
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

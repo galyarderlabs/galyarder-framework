@@ -1,5 +1,5 @@
 ---
-title: "investor-research | Galyarder Framework"
+title: "investor-research | Forge Anything"
 description: "Investor Targeting Specialist. Use to identify, qualify, and tier investors for a round based on stage, sector, geography, check size, and portfolio fit."
 ---
 
@@ -94,4 +94,4 @@ Produce:
 5. Research gaps / unverified facts
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

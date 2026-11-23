@@ -1,5 +1,5 @@
 ---
-title: "legal-tos-privacy | Galyarder Framework"
+title: "legal-tos-privacy | Forge Anything"
 description: "Create bulletproof Terms of Service and Privacy Policy documents for SaaS applications. Infers company information from codebase/marketing site, conducts comprehensive audits, drafts documents, then asks user ONLY for missing details at the end. Minimizes user interaction. Use when the user needs to draft, review, or update legal documents (ToS, Terms of Service, Privacy Policy, legal pages). Triggers on requests for legal documents, terms drafting, privacy policy creation, 'cover our bases legally', liability protection, or legal compliance for software products."
 ---
 
@@ -548,4 +548,4 @@ Deliver final documents in this structure:
 7. **Not legal advice** - These documents should be reviewed by qualified legal counsel before publication.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

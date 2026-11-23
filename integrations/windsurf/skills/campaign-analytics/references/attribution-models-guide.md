@@ -285,4 +285,4 @@ When models disagree significantly on a channel's value:
 - Bizible/Marketo B2B attribution best practices
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

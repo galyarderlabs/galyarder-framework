@@ -139,4 +139,4 @@ test.describe('Notification Preferences', () => {
 | Unsubscribe all | Confirmation dialog before all disabled |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

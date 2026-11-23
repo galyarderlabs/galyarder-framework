@@ -1,5 +1,5 @@
 # graph
-> Rebuild the Galyarder Knowledge Graph and Obsidian World Map. Essential for structural RAG and multi-platform synchronization.
+> Rebuild the Forge Knowledge Graph and Obsidian World Map. Essential for structural RAG and multi-platform synchronization.
 
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

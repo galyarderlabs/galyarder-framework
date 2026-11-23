@@ -1,5 +1,5 @@
 ---
-title: "investigating-phishing-email-incident | Galyarder Framework"
+title: "investigating-phishing-email-incident | Forge Anything"
 description: ">"
 ---
 
@@ -311,4 +311,4 @@ Status:       RESOLVED  No evidence of lateral movement post-compromise
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

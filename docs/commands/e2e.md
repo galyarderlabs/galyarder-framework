@@ -1,5 +1,5 @@
 ---
-title: "E2E | Galyarder Framework"
+title: "E2E | Forge Anything"
 description: "End-to-end testing specialist using Playwright. Generates and runs user journey tests."
 ---
 
@@ -39,4 +39,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command is powered by the `galyarder-framework:verification-before-completion` and `systematic-debugging` skills.
+**Note**: This command is powered by the `forge-anything:verification-before-completion` and `systematic-debugging` skills.

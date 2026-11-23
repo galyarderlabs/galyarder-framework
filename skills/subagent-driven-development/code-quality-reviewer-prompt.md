@@ -8,7 +8,7 @@ Use this template when dispatching a code quality reviewer subagent.
 
 ```
 Dispatch code-reviewer subagent:
-  On hosts with named agent dispatch, use `galyarder-framework:code-reviewer`
+  On hosts with named agent dispatch, use `forge-anything:code-reviewer`
   On hosts without named agent dispatch, use the native subagent mechanism with
   the filled template at requesting-code-review/code-reviewer.md
 
@@ -28,4 +28,4 @@ Dispatch code-reviewer subagent:
 **Code reviewer returns:** Strengths, Issues (Critical/Important/Minor), Assessment
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -279,4 +279,4 @@ as described in this document against [ORGANIZATION NAME] assets.
 - [ ] Infrastructure decommissioned
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

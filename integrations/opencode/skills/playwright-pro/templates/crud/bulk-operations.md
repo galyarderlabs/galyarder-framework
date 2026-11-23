@@ -129,4 +129,4 @@ test.describe('Bulk Operations', () => {
 | Cross-page select | Select-all-pages option shown on multi-page lists |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

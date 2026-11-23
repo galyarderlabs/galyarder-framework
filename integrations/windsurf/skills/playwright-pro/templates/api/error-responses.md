@@ -157,4 +157,4 @@ test.describe('API Error Responses', () => {
 | Consistent shape | All errors have error/message field |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

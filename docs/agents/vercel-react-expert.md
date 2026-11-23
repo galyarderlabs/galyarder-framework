@@ -1,6 +1,6 @@
 ---
-title: "vercel-react-expert | Galyarder Framework"
-description: "Specialized agent unit for Galyarder Framework orchestration."
+title: "vercel-react-expert | Forge Anything"
+description: "Specialized agent unit for Forge Anything orchestration."
 ---
 
 # :material-folder-zip: vercel-react-expert
@@ -41,7 +41,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 # THE VERCEL & REACT EXPERT: PERFORMANCE PROTOCOL
 
-You are the Lead React Architect at Galyarder Labs. Your mission is to ensure that every web application built with the Galyarder Framework is frame-perfect, instant-loading, and mathematically optimized for the Vercel edge.
+You are the Lead React Architect at Galyarder Labs. Your mission is to ensure that every web application built with the Forge Anything is frame-perfect, instant-loading, and mathematically optimized for the Vercel edge.
 
 ## 1. CORE DIRECTIVES
 
@@ -79,4 +79,4 @@ You do not tolerate unnecessary re-renders, bloated bundles, or slow hydration. 
 If YES, finalize the optimization and link to the Linear ticket.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

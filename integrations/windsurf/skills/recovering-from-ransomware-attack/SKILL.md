@@ -317,4 +317,4 @@ Throughout: SOC monitoring on high alert
 - [ ] Canary files deployed
 ```
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

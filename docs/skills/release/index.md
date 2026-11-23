@@ -1,5 +1,5 @@
 ---
-title: "release | Galyarder Framework"
+title: "release | Forge Anything"
 description: ">"
 ---
 
@@ -41,7 +41,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 # Release Coordination Skill
 
-Run the full Galyarder Framework maintainer release workflow, not just an npm publish.
+Run the full Forge Anything maintainer release workflow, not just an npm publish.
 
 This skill coordinates:
 
@@ -71,7 +71,7 @@ Before proceeding, verify all of the following:
 4. The candidate SHA has passed the verification gate or is about to.
 5. If manifests changed, the CI-owned `pnpm-lock.yaml` refresh is already merged on `master`.
 6. npm publish rights are available through GitHub trusted publishing, or through local npm auth for emergency/manual use.
-7. If running through Galyarder Framework, you have issue context for status updates and follow-up task creation.
+7. If running through Forge Anything, you have issue context for status updates and follow-up task creation.
 
 If any precondition fails, stop and report the blocker.
 
@@ -86,7 +86,7 @@ Collect these inputs up front:
 
 ## Step 0  Release Model
 
-Galyarder Framework now uses a commit-driven release model:
+Forge Anything now uses a commit-driven release model:
 
 1. every push to `master` publishes a canary automatically
 2. canaries use `YYYY.MDD.P-canary.N`
@@ -121,7 +121,7 @@ Useful commands:
 ```bash
 git tag --list 'v*' --sort=-version:refname | head -1
 git log --oneline --no-merges
-npm view galyarder@canary version
+npm view forge-anything@canary version
 ```
 
 ## Step 2  Draft the Stable Changelog
@@ -168,7 +168,7 @@ Confirm:
 Useful checks:
 
 ```bash
-npm view galyarder@canary version
+npm view forge-anything@canary version
 git tag --list 'canary/v*' --sort=-version:refname | head -5
 ```
 
@@ -177,13 +177,13 @@ git tag --list 'canary/v*' --sort=-version:refname | head -5
 Run:
 
 ```bash
-GALYARDERAI_VERSION=canary ./scripts/docker-onboard-smoke.sh
+FORGEAI_VERSION=canary ./scripts/docker-onboard-smoke.sh
 ```
 
 Useful isolated variant:
 
 ```bash
-HOST_PORT=3232 DATA_DIR=./data/release-smoke-canary GALYARDERAI_VERSION=canary ./scripts/docker-onboard-smoke.sh
+HOST_PORT=3232 DATA_DIR=./data/release-smoke-canary FORGEAI_VERSION=canary ./scripts/docker-onboard-smoke.sh
 ```
 
 Confirm:
@@ -243,7 +243,7 @@ Create or verify follow-up work for:
 
 - website changelog publishing
 - launch post / social announcement
-- release summary in Galyarder Framework issue context
+- release summary in Forge Anything issue context
 
 These should reference the stable release, not the canary.
 

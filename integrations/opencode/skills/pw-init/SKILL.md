@@ -226,4 +226,4 @@ Confirm what was created:
 - npm scripts added
 - How to run: `npx playwright test` or `npm run test:e2e`
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

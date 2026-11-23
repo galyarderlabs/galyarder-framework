@@ -1,6 +1,6 @@
 ---
-title: "full | Galyarder Framework"
-description: "Consolidated Galyarder Framework Full intelligence bundle."
+title: "full | Forge Anything"
+description: "Consolidated Forge Anything Full intelligence bundle."
 ---
 
 # :material-folder-zip: full
@@ -9,7 +9,7 @@ description: "Consolidated Galyarder Framework Full intelligence bundle."
 
 ---
 
-# GALYARDER FULL BUNDLE
+# FORGE FULL BUNDLE
 
 This bundle contains 89 evidence-backed SOPs for the Full department.
 
@@ -62,7 +62,7 @@ packages/adapters/<name>/
       build-config.ts   # CreateConfigValues -> adapterConfig JSON for agent creation form
     cli/
       index.ts          # CLI exports: formatStdoutEvent
-      format-event.ts   # Colored terminal output for `galyarder run --watch`
+      format-event.ts   # Colored terminal output for `forge run --watch`
   package.json
   tsconfig.json
 ```
@@ -77,9 +77,9 @@ Three separate registries consume adapter modules:
 
 ---
 
-## 2. Shared Types (`@galyarder/adapter-utils`)
+## 2. Shared Types (`@forge-anything/adapter-utils`)
 
-All adapter interfaces live in `packages/adapter-utils/src/types.ts`. Import from `@galyarder/adapter-utils` (types) or `@galyarder/adapter-utils/server-utils` (runtime helpers).
+All adapter interfaces live in `packages/adapter-utils/src/types.ts`. Import from `@forge-anything/adapter-utils` (types) or `@forge-anything/adapter-utils/server-utils` (runtime helpers).
 
 ### Core Interfaces
 
@@ -110,7 +110,7 @@ interface AdapterExecutionResult {
   costUsd?: number | null;
   resultJson?: Record<string, unknown> | null;
   summary?: string | null;        // Human-readable summary of what the agent did
-  clearSession?: boolean;         // true = tell Galyarder Framework to forget the stored session
+  clearSession?: boolean;         // true = tell Forge Anything to forget the stored session
 }
 
 interface AdapterSessionCodec {
@@ -218,7 +218,7 @@ packages/adapters/<name>/
 
 ```json
 {
-  "name": "@galyarder/adapter-<name>",
+  "name": "@forge-anything/adapter-<name>",
   "version": "0.0.1",
   "private": true,
   "type": "module",
@@ -229,7 +229,7 @@ packages/adapters/<name>/
     "./cli": "./src/cli/index.ts"
   },
   "dependencies": {
-    "@galyarder/adapter-utils": "workspace:*",
+    "@forge-anything/adapter-utils": "workspace:*",
     "picocolors": "^1.1.1"
   },
   "devDependencies": {
@@ -264,7 +264,7 @@ export const agentConfigurationDoc = `# my_agent agent configuration
 
 **Writing `agentConfigurationDoc` as routing logic:**
 
-The `agentConfigurationDoc` is read by LLM agents (including Galyarder Framework agents that create other agents). Write it as **routing logic**, not marketing copy. Include concrete "use when" and "don't use when" guidance so an LLM can decide whether this adapter is appropriate for a given task.
+The `agentConfigurationDoc` is read by LLM agents (including Forge Anything agents that create other agents). Write it as **routing logic**, not marketing copy. Include concrete "use when" and "don't use when" guidance so an LLM can decide whether this adapter is appropriate for a given task.
 
 ```ts
 export const agentConfigurationDoc = `# my_agent agent configuration
@@ -297,8 +297,8 @@ This is the most important file. It receives an `AdapterExecutionContext` and mu
 
 **Required behavior:**
 
-1. **Read config**  extract typed values from `ctx.config` using helpers (`asString`, `asNumber`, `asBoolean`, `asStringArray`, `parseObject` from `@galyarder/adapter-utils/server-utils`)
-2. **Build environment**  call `buildGalyarderEnv(agent)` then layer in `GALYARDER_RUN_ID`, context vars (`GALYARDER_TASK_ID`, `GALYARDER_WAKE_REASON`, `GALYARDER_WAKE_COMMENT_ID`, `GALYARDER_APPROVAL_ID`, `GALYARDER_APPROVAL_STATUS`, `GALYARDER_LINKED_ISSUE_IDS`), user env overrides, and auth token
+1. **Read config**  extract typed values from `ctx.config` using helpers (`asString`, `asNumber`, `asBoolean`, `asStringArray`, `parseObject` from `@forge-anything/adapter-utils/server-utils`)
+2. **Build environment**  call `buildForgeEnv(agent)` then layer in `FORGE_RUN_ID`, context vars (`FORGE_TASK_ID`, `FORGE_WAKE_REASON`, `FORGE_WAKE_COMMENT_ID`, `FORGE_APPROVAL_ID`, `FORGE_APPROVAL_STATUS`, `FORGE_LINKED_ISSUE_IDS`), user env overrides, and auth token
 3. **Resolve session**  check `runtime.sessionParams` / `runtime.sessionId` for an existing session; validate it's compatible (e.g. same cwd); decide whether to resume or start fresh
 4. **Render prompt**  use `renderTemplate(template, data)` with the template variables: `agentId`, `companyId`, `runId`, `company`, `agent`, `run`, `context`
 5. **Call onMeta**  emit adapter invocation metadata before spawning the process
@@ -311,17 +311,17 @@ This is the most important file. It receives an `AdapterExecutionContext` and mu
 
 | Variable | Source |
 |----------|--------|
-| `GALYARDER_AGENT_ID` | `agent.id` |
-| `GALYARDER_COMPANY_ID` | `agent.companyId` |
-| `GALYARDER_API_URL` | Server's own URL |
-| `GALYARDER_RUN_ID` | Current run id |
-| `GALYARDER_TASK_ID` | `context.taskId` or `context.issueId` |
-| `GALYARDER_WAKE_REASON` | `context.wakeReason` |
-| `GALYARDER_WAKE_COMMENT_ID` | `context.wakeCommentId` or `context.commentId` |
-| `GALYARDER_APPROVAL_ID` | `context.approvalId` |
-| `GALYARDER_APPROVAL_STATUS` | `context.approvalStatus` |
-| `GALYARDER_LINKED_ISSUE_IDS` | `context.issueIds` (comma-separated) |
-| `GALYARDER_API_KEY` | `authToken` (if no explicit key in config) |
+| `FORGE_AGENT_ID` | `agent.id` |
+| `FORGE_COMPANY_ID` | `agent.companyId` |
+| `FORGE_API_URL` | Server's own URL |
+| `FORGE_RUN_ID` | Current run id |
+| `FORGE_TASK_ID` | `context.taskId` or `context.issueId` |
+| `FORGE_WAKE_REASON` | `context.wakeReason` |
+| `FORGE_WAKE_COMMENT_ID` | `context.wakeCommentId` or `context.commentId` |
+| `FORGE_APPROVAL_ID` | `context.approvalId` |
+| `FORGE_APPROVAL_STATUS` | `context.approvalStatus` |
+| `FORGE_LINKED_ISSUE_IDS` | `context.issueIds` (comma-separated) |
+| `FORGE_API_KEY` | `authToken` (if no explicit key in config) |
 
 #### `server/parse.ts`  Output Parser
 
@@ -427,7 +427,7 @@ The component must support both `create` mode (using `values`/`set`) and `edit` 
 
 #### `cli/format-event.ts`  Terminal Formatter
 
-Pretty-prints stdout lines for `galyarder run --watch`. Use `picocolors` for coloring.
+Pretty-prints stdout lines for `forge run --watch`. Use `picocolors` for coloring.
 
 ```ts
 import pc from "picocolors";
@@ -448,15 +448,15 @@ After creating the adapter package, register it in all three consumers:
 ### 4.1 Server Registry (`server/src/adapters/registry.ts`)
 
 ```ts
-import { execute as myExecute, sessionCodec as mySessionCodec } from "@galyarder/adapter-my-agent/server";
-import { agentConfigurationDoc as myDoc, models as myModels } from "@galyarder/adapter-my-agent";
+import { execute as myExecute, sessionCodec as mySessionCodec } from "@forge-anything/adapter-my-agent/server";
+import { agentConfigurationDoc as myDoc, models as myModels } from "@forge-anything/adapter-my-agent";
 
 const myAgentAdapter: ServerAdapterModule = {
   type: "my_agent",
   execute: myExecute,
   sessionCodec: mySessionCodec,
   models: myModels,
-  supportsLocalAgentJwt: true,  // true if agent can use Galyarder Framework API
+  supportsLocalAgentJwt: true,  // true if agent can use Forge Anything API
   agentConfigurationDoc: myDoc,
 };
 
@@ -480,9 +480,9 @@ With `ui/src/adapters/my-agent/index.ts`:
 
 ```ts
 import type { UIAdapterModule } from "../types";
-import { parseMyAgentStdoutLine } from "@galyarder/adapter-my-agent/ui";
+import { parseMyAgentStdoutLine } from "@forge-anything/adapter-my-agent/ui";
 import { MyAgentConfigFields } from "./config-fields";
-import { buildMyAgentConfig } from "@galyarder/adapter-my-agent/ui";
+import { buildMyAgentConfig } from "@forge-anything/adapter-my-agent/ui";
 
 export const myAgentUIAdapter: UIAdapterModule = {
   type: "my_agent",
@@ -496,7 +496,7 @@ export const myAgentUIAdapter: UIAdapterModule = {
 ### 4.3 CLI Registry (`cli/src/adapters/registry.ts`)
 
 ```ts
-import { printMyAgentStreamEvent } from "@galyarder/adapter-my-agent/cli";
+import { printMyAgentStreamEvent } from "@forge-anything/adapter-my-agent/cli";
 
 const myAgentCLIAdapter: CLIAdapterModule = {
   type: "my_agent",
@@ -520,7 +520,7 @@ Sessions allow agents to maintain conversation context across runs. The system i
 - `sessionCodec.deserialize()` converts stored params back for the next run
 - `sessionCodec.getDisplayId()` extracts a human-readable session ID for the UI
 - **cwd-aware resume**: if the session was created in a different cwd than the current config, skip resuming (prevents cross-project session contamination)
-- **Unknown session retry**: if resume fails with a "session not found" error, retry with a fresh session and return `clearSession: true` so Galyarder Framework wipes the stale session
+- **Unknown session retry**: if resume fails with a "session not found" error, retry with a fresh session and return `clearSession: true` so Forge Anything wipes the stale session
 
 If the agent runtime supports any form of context compaction or conversation compression (e.g. Claude Code's automatic context management, or Codex's `previous_response_id` chaining), lean on it. Adapters that support session resume get compaction for free  the agent runtime handles context window management internally across resumes.
 
@@ -545,7 +545,7 @@ if (sessionId && !proc.timedOut && exitCode !== 0 && isUnknownSessionError(outpu
 
 ## 6. Server-Utils Helpers
 
-Import from `@galyarder/adapter-utils/server-utils`:
+Import from `@forge-anything/adapter-utils/server-utils`:
 
 | Helper | Purpose |
 |--------|---------|
@@ -556,7 +556,7 @@ Import from `@galyarder/adapter-utils/server-utils`:
 | `parseObject(val)` | Safe `Record<string, unknown>` extraction |
 | `parseJson(str)` | Safe JSON.parse returning `Record` or null |
 | `renderTemplate(tmpl, data)` | `{{path.to.value}}` template rendering |
-| `buildGalyarderEnv(agent)` | Standard `GALYARDER_*` env vars |
+| `buildForgeEnv(agent)` | Standard `FORGE_*` env vars |
 | `redactEnvForLogs(env)` | Redact sensitive keys for onMeta |
 | `ensureAbsoluteDirectory(cwd)` | Validate cwd exists and is absolute |
 | `ensureCommandResolvable(cmd, cwd, env)` | Validate command is in PATH |
@@ -569,7 +569,7 @@ Import from `@galyarder/adapter-utils/server-utils`:
 
 ### Naming
 - Adapter type: `snake_case` (e.g. `claude_local`, `codex_local`)
-- Package name: `@galyarder/adapter-<kebab-name>`
+- Package name: `@forge-anything/adapter-<kebab-name>`
 - Package directory: `packages/adapters/<kebab-name>/`
 
 ### Config Parsing
@@ -580,7 +580,7 @@ Import from `@galyarder/adapter-utils/server-utils`:
 ### Prompt Templates
 - Support `promptTemplate` for every run
 - Use `renderTemplate()` with the standard variable set
-- Default prompt: `"You are agent {{agent.id}} ({{agent.name}}). Continue your Galyarder Framework work."`
+- Default prompt: `"You are agent {{agent.id}} ({{agent.name}}). Continue your Forge Anything work."`
 
 ### Error Handling
 - Differentiate timeout vs process error vs parse failure
@@ -593,17 +593,17 @@ Import from `@galyarder/adapter-utils/server-utils`:
 - Call `onMeta(...)` before spawning to record invocation details
 - Use `redactEnvForLogs()` when including env in meta
 
-### Galyarder Framework Skills Injection
+### Forge Anything Skills Injection
 
-Galyarder Framework ships shared skills (in the repo's top-level `skills/` directory) that agents need at runtime  things like the `galyarder` API skill and the `galyarder-create-agent` workflow skill. Each adapter is responsible for making these skills discoverable by its agent runtime **without polluting the agent's working directory**.
+Forge Anything ships shared skills (in the repo's top-level `skills/` directory) that agents need at runtime  things like the `forge` API skill and the `forge-create-agent` workflow skill. Each adapter is responsible for making these skills discoverable by its agent runtime **without polluting the agent's working directory**.
 
-**The constraint:** never copy or symlink skills into the agent's `cwd`. The cwd is the user's project checkout  writing `.claude/skills/` or any other files into it would contaminate the repo with Galyarder Framework internals, break git status, and potentially leak into commits.
+**The constraint:** never copy or symlink skills into the agent's `cwd`. The cwd is the user's project checkout  writing `.claude/skills/` or any other files into it would contaminate the repo with Forge Anything internals, break git status, and potentially leak into commits.
 
 **The pattern:** create a clean, isolated location for skills and tell the agent runtime to look there.
 
 **How claude-local does it:**
 
-1. At execution time, create a fresh tmpdir: `mkdtemp("galyarder-skills-")`
+1. At execution time, create a fresh tmpdir: `mkdtemp("forge-skills-")`
 2. Inside it, create `.claude/skills/` (the directory structure Claude Code expects)
 3. Symlink each skill directory from the repo's `skills/` into the tmpdir's `.claude/skills/`
 4. Pass the tmpdir to Claude Code via `--add-dir <tmpdir>`  this makes Claude Code discover the skills as if they were registered in that directory, without touching the agent's actual cwd
@@ -612,14 +612,14 @@ Galyarder Framework ships shared skills (in the repo's top-level `skills/` direc
 ```ts
 // From claude-local execute.ts
 async function buildSkillsDir(): Promise<string> {
-  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "galyarder-skills-"));
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "forge-skills-"));
   const target = path.join(tmp, ".claude", "skills");
   await fs.mkdir(target, { recursive: true });
-  const entries = await fs.readdir(GALYARDER_SKILLS_DIR, { withFileTypes: true });
+  const entries = await fs.readdir(FORGE_SKILLS_DIR, { withFileTypes: true });
   for (const entry of entries) {
     if (entry.isDirectory()) {
       await fs.symlink(
-        path.join(GALYARDER_SKILLS_DIR, entry.name),
+        path.join(FORGE_SKILLS_DIR, entry.name),
         path.join(target, entry.name),
       );
     }
@@ -636,7 +636,7 @@ args.push("--add-dir", skillsDir);
 
 **How codex-local does it:**
 
-Codex has a global personal skills directory (`$CODEX_HOME/skills` or `~/.codex/skills`). The adapter symlinks Galyarder Framework skills there if they don't already exist. This is acceptable because it's the agent tool's own config directory, not the user's project.
+Codex has a global personal skills directory (`$CODEX_HOME/skills` or `~/.codex/skills`). The adapter symlinks Forge Anything skills there if they don't already exist. This is acceptable because it's the agent tool's own config directory, not the user's project.
 
 ```ts
 // From codex-local execute.ts
@@ -659,15 +659,15 @@ async function ensureCodexSkillsInjected(onLog) {
 3. **Acceptable: env var**  if the runtime reads a skills/plugin path from an environment variable, point it at the repo's `skills/` directory directly.
 4. **Last resort: prompt injection**  if the runtime has no plugin system, include skill content in the prompt template itself. This uses tokens but avoids filesystem side effects entirely.
 
-**Skills as loaded procedures, not prompt bloat.** The Galyarder Framework skills (like `galyarder` and `galyarder-create-agent`) are designed as on-demand procedures: the agent sees skill metadata (name + description) in its context, but only loads the full SKILL.md content when it decides to invoke a skill. This keeps the base prompt small. When writing `agentConfigurationDoc` or prompt templates for your adapter, do not inline skill content  let the agent runtime's skill discovery do the work. The descriptions in each SKILL.md frontmatter act as routing logic: they tell the agent when to load the full skill, not what the skill contains.
+**Skills as loaded procedures, not prompt bloat.** The Forge Anything skills (like `forge` and `forge-create-agent`) are designed as on-demand procedures: the agent sees skill metadata (name + description) in its context, but only loads the full SKILL.md content when it decides to invoke a skill. This keeps the base prompt small. When writing `agentConfigurationDoc` or prompt templates for your adapter, do not inline skill content  let the agent runtime's skill discovery do the work. The descriptions in each SKILL.md frontmatter act as routing logic: they tell the agent when to load the full skill, not what the skill contains.
 
-**Explicit vs. fuzzy skill invocation.** For production workflows where reliability matters (e.g. an agent that must always call the Galyarder Framework API to report status), use explicit instructions in the prompt template: "Use the galyarder skill to report your progress." Fuzzy routing (letting the model decide based on description matching) is fine for exploratory tasks but unreliable for mandatory procedures.
+**Explicit vs. fuzzy skill invocation.** For production workflows where reliability matters (e.g. an agent that must always call the Forge Anything API to report status), use explicit instructions in the prompt template: "Use the forge skill to report your progress." Fuzzy routing (letting the model decide based on description matching) is fine for exploratory tasks but unreliable for mandatory procedures.
 
 ---
 
 ## 8. Security Considerations
 
-Adapters sit at the boundary between Galyarder Framework's orchestration layer and arbitrary agent execution. This is a high-risk surface.
+Adapters sit at the boundary between Forge Anything's orchestration layer and arbitrary agent execution. This is a high-risk surface.
 
 ### Treat Agent Output as Untrusted
 
@@ -677,7 +677,7 @@ The agent process runs LLM-driven code that reads external files, fetches URLs, 
 
 Never put secrets (API keys, tokens) into prompt templates or config fields that flow through the LLM. Instead, inject them as environment variables that the agent's tools can read directly:
 
-- `GALYARDER_API_KEY` is injected by the server into the process environment, not the prompt
+- `FORGE_API_KEY` is injected by the server into the process environment, not the prompt
 - User-provided secrets in `config.env` are passed as env vars, redacted in `onMeta` logs
 - The `redactEnvForLogs()` helper automatically masks any key matching `/(key|token|secret|password|authorization|cookie)/i`
 
@@ -687,7 +687,7 @@ This follows the "sidecar injection" pattern: the model never sees the real secr
 
 If your agent runtime supports network access controls (sandboxing, allowlists), configure them in the adapter:
 
-- Prefer minimal allowlists over open internet access. An agent that only needs to call the Galyarder Framework API and GitHub should not have access to arbitrary hosts.
+- Prefer minimal allowlists over open internet access. An agent that only needs to call the Forge Anything API and GitHub should not have access to arbitrary hosts.
 - Skills + network = amplified risk. A skill that teaches the agent to make HTTP requests combined with unrestricted network access creates an exfiltration path. Constrain one or the other.
 - If the runtime supports layered policies (org-level defaults + per-request overrides), wire the org-level policy into the adapter config and let per-agent config narrow further.
 
@@ -979,7 +979,7 @@ git worktree remove <worktree-path>
 - **using-git-worktrees** - Cleans up worktree created by that skill
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: playwright-pro
@@ -1016,10 +1016,10 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Playwright Pro
 
 You are the Playwright Pro Specialist at Galyarder Labs.
-Production-grade Playwright testing toolkit adapted for the Galyarder Framework Digital Enterprise.
+Production-grade Playwright testing toolkit adapted for the Forge Anything Digital Enterprise.
 
-##  Galyarder Framework Operating Procedures (MANDATORY)
-When operating this skill for your human partner within the Galyarder Framework, you MUST adhere to these rules:
+##  Forge Anything Operating Procedures (MANDATORY)
+When operating this skill for your human partner within the Forge Anything, you MUST adhere to these rules:
 1. **Token Economy (RTK):** Prefix test execution commands with `rtk` (e.g., `rtk npx playwright test`) to minimize token consumption.
 2. **Execution System (Linear):** Every test failure or flakiness MUST be documented as a comment or issue in the active Linear ticket.
 3. **Strategic Memory (Obsidian):** After a major test suite execution, submit a summary to `super-architect` or `elite-developer` for inclusion in the weekly **Engineering Report** at `[VAULT_ROOT]//Department-Reports/Engineering/`.
@@ -1143,7 +1143,7 @@ See `reference/` directory for:
 See `templates/README.md` for the full template index.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: pr-report
@@ -1614,7 +1614,7 @@ Verify. Question. Then implement.
 No performative agreement. Technical rigor always.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: requesting-code-review
@@ -1652,7 +1652,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 You are the Requesting Code Review Specialist at Galyarder Labs.
 Dispatch a code-reviewer subagent to catch issues before they cascade. On hosts
-with named agent dispatch, use `galyarder-framework:code-reviewer`
+with named agent dispatch, use `forge-anything:code-reviewer`
 directly. On hosts without named agent dispatch, use the platform's native
 subagent mechanism with the reviewer prompt/template. The reviewer gets
 precisely crafted context for evaluation  never your session's history. This
@@ -1686,7 +1686,7 @@ HEAD_SHA=$(git rev-parse HEAD)
 Use the host's subagent mechanism and fill the template at
 `requesting-code-review/code-reviewer.md`.
 
-- Hosts with named agent dispatch: use `galyarder-framework:code-reviewer`
+- Hosts with named agent dispatch: use `forge-anything:code-reviewer`
 - Hosts without named agent dispatch: read the template, fill placeholders, and
   dispatch a native subagent with that content
 
@@ -1762,7 +1762,7 @@ You: [Fix progress indicators]
 See template at: requesting-code-review/code-reviewer.md
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: subagent-driven-development
@@ -1855,7 +1855,7 @@ digraph process {
     "Read plan, extract all tasks with full text, note context, create TodoWrite" [shape=box];
     "More tasks remain?" [shape=diamond];
     "Dispatch final code reviewer subagent for entire implementation" [shape=box];
-    "Use galyarder-framework:finishing-a-development-branch" [shape=box style=filled fillcolor=lightgreen];
+    "Use forge-anything:finishing-a-development-branch" [shape=box style=filled fillcolor=lightgreen];
 
     "Read plan, extract all tasks with full text, note context, create TodoWrite" -> "Dispatch implementer subagent (./implementer-prompt.md)";
     "Dispatch implementer subagent (./implementer-prompt.md)" -> "Implementer subagent asks questions?";
@@ -1874,7 +1874,7 @@ digraph process {
     "Mark task complete in TodoWrite" -> "More tasks remain?";
     "More tasks remain?" -> "Dispatch implementer subagent (./implementer-prompt.md)" [label="yes"];
     "More tasks remain?" -> "Dispatch final code reviewer subagent for entire implementation" [label="no"];
-    "Dispatch final code reviewer subagent for entire implementation" -> "Use galyarder-framework:finishing-a-development-branch";
+    "Dispatch final code reviewer subagent for entire implementation" -> "Use forge-anything:finishing-a-development-branch";
 }
 ```
 
@@ -2073,19 +2073,19 @@ Done!
 ## Integration
 
 **Required workflow skills:**
-- **galyarder-framework:using-git-worktrees** - REQUIRED: Set up isolated workspace before starting
-- **galyarder-framework:writing-plans** - Creates the plan this skill executes
-- **galyarder-framework:requesting-code-review** - Code review template for reviewer subagents
-- **galyarder-framework:finishing-a-development-branch** - Complete development after all tasks
+- **forge-anything:using-git-worktrees** - REQUIRED: Set up isolated workspace before starting
+- **forge-anything:writing-plans** - Creates the plan this skill executes
+- **forge-anything:requesting-code-review** - Code review template for reviewer subagents
+- **forge-anything:finishing-a-development-branch** - Complete development after all tasks
 
 **Subagents should use:**
-- **galyarder-framework:test-driven-development** - Subagents follow TDD for each task
+- **forge-anything:test-driven-development** - Subagents follow TDD for each task
 
 **Alternative workflow:**
-- **galyarder-framework:executing-plans** - Use for parallel session instead of same-session execution
+- **forge-anything:executing-plans** - Use for parallel session instead of same-session execution
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: systematic-debugging
@@ -2293,7 +2293,7 @@ You MUST complete each phase before proceeding to the next.
    - Automated test if possible
    - One-off test script if no framework
    - MUST have before fixing
-   - Use the `galyarder-framework:test-driven-development` skill for writing proper failing tests
+   - Use the `forge-anything:test-driven-development` skill for writing proper failing tests
 
 2. **Implement Single Fix**
    - Address the root cause identified
@@ -2401,8 +2401,8 @@ These techniques are part of systematic debugging and available in this director
 - **`condition-based-waiting.md`** - Replace arbitrary timeouts with condition polling
 
 **Related skills:**
-- **galyarder-framework:test-driven-development** - For creating failing test case (Phase 4, Step 1)
-- **galyarder-framework:verification-before-completion** - Verify fix worked before claiming success
+- **forge-anything:test-driven-development** - For creating failing test case (Phase 4, Step 1)
+- **forge-anything:verification-before-completion** - Verify fix worked before claiming success
 
 ## Real-World Impact
 
@@ -2413,7 +2413,7 @@ From debugging sessions:
 - New bugs introduced: Near zero vs common
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: test-driven-development
@@ -2816,7 +2816,7 @@ Otherwise  not TDD
 No exceptions without your human partner's permission.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: vercel-react-best-practices
@@ -2969,7 +2969,7 @@ Each rule file contains:
 For the complete guide with all rules expanded: `AGENTS.md`
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: verification-before-completion
@@ -3140,7 +3140,7 @@ Run the command. Read the output. THEN claim the result.
 This is non-negotiable.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: accelerator-application
@@ -3209,7 +3209,7 @@ Produce:
 - Use clear language, not accelerator cosplay jargon.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: board-update
@@ -3290,7 +3290,7 @@ For emails: ready-to-send markdown.
 For decks: one section per slide with headline, evidence, and board question answered.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: brainstorming
@@ -3486,7 +3486,7 @@ If they agree to the companion, read the detailed guide before proceeding:
 `skills/brainstorming/visual-companion.md`
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: data-room
@@ -3568,7 +3568,7 @@ Produce:
 - what to share pre-term-sheet vs post-term-sheet
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: founder-context
@@ -3699,7 +3699,7 @@ Create or update `docs/departments/Executive/founder-context.md` in the project 
 - Downstream founder skills should read this first before producing output.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: founder-thought-leadership
@@ -3768,7 +3768,7 @@ Produce:
 - Optimize for relevance and inbound conversations, not just impressions.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: fundraising-email
@@ -3847,10 +3847,10 @@ Before finalizing, verify:
 4. Could a busy investor scan this in under a minute?
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
-## SKILL: galyarder-specialist
+## SKILL: forge-specialist
 ## AGENTIC COMPANY OPERATING PROTOCOLS
 
 ### 1. Operational Modes & Traceability
@@ -3881,7 +3881,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-# Galyarder Specialist
+# Forge Specialist
 
 Use this as the founder-office orchestration layer when one department is too narrow for the request.
 
@@ -3902,12 +3902,12 @@ Use this as the founder-office orchestration layer when one department is too na
 
 ## Routing Rules
 
-- For strategy, market direction, or founder-office judgment, hand up to `galyarder-ceo`.
+- For strategy, market direction, or founder-office judgment, hand up to `forge-ceo`.
 - For coordination and operational follow-through, use `chief-of-staff`.
 - For product shaping and scoping, use `product-manager` or `planner`.
 - For implementation and architecture, use `architect`, `super-architect`, `elite-developer`, and `tdd-guide`.
 - For GTM, copy, CRO, and distribution, use `growth-strategist`, `growth-engineer`, `conversion-engineer`, or `social-strategist`.
-- For finance, compliance, and risk, use `galyarder-cfo-coo`, `finops-manager`, or `legal-counsel`.
+- For finance, compliance, and risk, use `forge-cfo-coo`, `finops-manager`, or `legal-counsel`.
 - For security and adversarial work, use `security-guardian`, `security-reviewer`, `perseus`, or `cyber-intel`.
 
 ## Output Shape
@@ -4014,7 +4014,7 @@ Produce:
 5. Research gaps / unverified facts
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: lead-scoring
@@ -4082,7 +4082,7 @@ Produce:
 - Keep the scoring model lightweight enough to use in real workflows.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: market-research
@@ -4153,7 +4153,7 @@ Produce:
 - Tie every conclusion back to product, GTM, or fundraising consequences.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: pitch-deck
@@ -4244,10 +4244,10 @@ Before finalizing, verify:
 3. Is the ask explicit: amount, milestones, and why now?
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
-## SKILL: using-galyarder-framework
+## SKILL: using-forge-anything
 ## AGENTIC COMPANY OPERATING PROTOCOLS
 
 ### 1. Operational Modes & Traceability
@@ -4292,10 +4292,10 @@ This is not negotiable. This is not optional. You cannot rationalize your way ou
 
 ## Instruction Priority
 
-Galyarder Framework skills override default system prompt behavior, but **user instructions always take precedence**:
+Forge Anything skills override default system prompt behavior, but **user instructions always take precedence**:
 
 1. **User's explicit instructions** (CLAUDE.md, GEMINI.md, AGENTS.md, direct requests)  highest priority
-2. **Galyarder Framework skills**  override default system behavior where they conflict
+2. **Forge Anything skills**  override default system behavior where they conflict
 3. **Default system prompt**  lowest priority
 
 If CLAUDE.md, GEMINI.md, or AGENTS.md says "don't use TDD" and a skill says "always use TDD," follow the user's instructions. The user is in control.
@@ -4326,7 +4326,7 @@ For peak "agentic company" efficiency, we recommend the following MCP servers:
 
 # Using Skills
 
-You are the Using Galyarder Framework Specialist at Galyarder Labs.
+You are the Using Forge Anything Specialist at Galyarder Labs.
 ## The Rule
 
 **Invoke relevant or requested skills BEFORE any response or action.** Even a 1% chance a skill might apply means that you should invoke the skill to check. If an invoked skill turns out to be wrong for the situation, you don't need to use it.
@@ -4400,7 +4400,7 @@ The skill itself tells you which.
 
 ## Expansion Layers
 
-Some parts of Galyarder Framework are optional expansion paths, not mandatory base workflow.
+Some parts of Forge Anything are optional expansion paths, not mandatory base workflow.
 
 - **Foundation layer**: RTK, Linear, orchestration discipline, verification, TDD, debugging, and the core engineering / growth / security roles.
 - **Expansion layer**: domain-specific stacks such as Obsidian workflows or founder-facing capital workflows.
@@ -4414,7 +4414,7 @@ Do not treat this founder layer as mandatory for every task. Use it when the tas
 Instructions say WHAT, not HOW. "Add X" or "Fix Y" doesn't mean skip workflows.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: writing-skills
@@ -4461,7 +4461,7 @@ You write test cases (pressure scenarios with subagents), watch them fail (basel
 
 **Core principle:** If you didn't watch an agent fail without the skill, you don't know if the skill teaches the right thing.
 
-**REQUIRED BACKGROUND:** You MUST understand galyarder-framework:test-driven-development before using this skill. That skill defines the fundamental RED-GREEN-REFACTOR cycle. This skill adapts TDD to documentation.
+**REQUIRED BACKGROUND:** You MUST understand forge-anything:test-driven-development before using this skill. That skill defines the fundamental RED-GREEN-REFACTOR cycle. This skill adapts TDD to documentation.
 
 **Official guidance:** For Anthropic's official skill authoring best practices, see anthropic-best-practices.md. This document provides additional patterns and guidelines that complement the TDD-focused approach in this skill.
 
@@ -4724,8 +4724,8 @@ wc -w skills/path/SKILL.md
 **When writing documentation that references other skills:**
 
 Use skill name only, with explicit requirement markers:
--  Good: `**REQUIRED SUB-SKILL:** Use galyarder-framework:test-driven-development`
--  Good: `**REQUIRED BACKGROUND:** You MUST understand galyarder-framework:systematic-debugging`
+-  Good: `**REQUIRED SUB-SKILL:** Use forge-anything:test-driven-development`
+-  Good: `**REQUIRED BACKGROUND:** You MUST understand forge-anything:systematic-debugging`
 -  Bad: `See skills/testing/test-driven-development` (unclear if required)
 -  Bad: `@skills/testing/test-driven-development/SKILL.md` (force-loads, burns context)
 
@@ -4834,7 +4834,7 @@ Edit skill without testing? Same violation.
 - Don't "adapt" while running tests
 - Delete means delete
 
-**REQUIRED BACKGROUND:** The galyarder-framework:test-driven-development skill explains why this matters. Same principles apply to documentation.
+**REQUIRED BACKGROUND:** The forge-anything:test-driven-development skill explains why this matters. Same principles apply to documentation.
 
 ## Testing All Skill Types
 
@@ -5099,7 +5099,7 @@ Same benefits: Better quality, fewer surprises, bulletproof results.
 If you follow TDD for code, follow it for skills. It's the same discipline applied to documentation.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: ab-test-setup
@@ -5366,7 +5366,7 @@ that is the signal to **slow down and re-check the design**.
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: analytics-tracking
@@ -5800,7 +5800,7 @@ Analytics that violate trust undermine optimization.
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: campaign-analytics
@@ -5837,7 +5837,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Campaign Analytics
 
 You are the Campaign Analytics Specialist at Galyarder Labs.
-##  Galyarder Framework Operating Procedures (MANDATORY)
+##  Forge Anything Operating Procedures (MANDATORY)
 When executing this skill for your human partner during Phase 5 (Growth):
 1. **Token Economy (RTK):** Process large analytics exports using `rtk` mediated scripts to minimize token overhead.
 2. **Execution System (Linear):** Update Linear issues with actual performance data (ROI, CPA, CVR) once a campaign milestone is reached.
@@ -6057,7 +6057,7 @@ Calculates comprehensive ROI metrics with industry Standarding:
 - **paid-ads**: For optimizing ad spend based on analytics findings.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: competitor-alternatives
@@ -6842,7 +6842,7 @@ If you need more context:
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: content-creator
@@ -6879,7 +6879,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Content Creator  Redirected
 
 You are the Content Creator Specialist at Galyarder Labs.
-##  Galyarder Framework Operating Procedures (MANDATORY)
+##  Forge Anything Operating Procedures (MANDATORY)
 When operating this skill for your human partner:
 1. **Token Economy (RTK):** Use `rtk` to fetch industry news or trending topics for content inspiration while keeping token costs low.
 2. **Strategic Memory (Obsidian):** Summarize content distribution success and audience growth for the `social-strategist` to include in the **Growth Report** at `[VAULT_ROOT]//Department-Reports/Growth/`.
@@ -6929,7 +6929,7 @@ This is a redirect skill. Route the user to the correct specialist  don't attemp
 - **marketing-context**: Foundation context the successors read.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: content-strategy
@@ -7330,7 +7330,7 @@ Visual or structured representation of how content interconnects.
 - **social-content**: For social media content
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: copywriting
@@ -7608,7 +7608,7 @@ rewrite it until it feels obvious.
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: email-marketing-bible
@@ -8104,7 +8104,7 @@ Also covers: Agency, Healthcare, Financial, Real Estate, Travel, Education, Reta
 > Methodology: https://emailmarketingskill.com/appendix-d-methodology/
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: marketing-demand-acquisition
@@ -8141,7 +8141,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Marketing Demand & Acquisition
 
 You are the Marketing Demand Acquisition Specialist at Galyarder Labs.
-##  Galyarder Framework Operating Procedures (MANDATORY)
+##  Forge Anything Operating Procedures (MANDATORY)
 When executing this skill for your human partner during Phase 5 (Growth):
 1. **Token Economy (RTK):** Use `rtk` wrapped commands to query keyword data or scan competitor domains.
 2. **Execution System (Linear):** Every acquisition campaign MUST be tracked as a Linear Initiative. Sub-tasks represent ad-sets or content pieces.
@@ -8432,7 +8432,7 @@ Required:
 - **campaign-analytics**: For measuring demand gen effectiveness.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: marketing-ideas
@@ -8688,7 +8688,7 @@ Use these biases when scoring:
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: marketing-psychology
@@ -8978,7 +8978,7 @@ Before responding, confirm:
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: onboarding-cro
@@ -9446,7 +9446,7 @@ If you need more context:
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: page-cro
@@ -9820,7 +9820,7 @@ Fix fundamentals first.
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: paywall-upgrade-cro
@@ -10425,7 +10425,7 @@ If you need more context:
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: programmatic-seo
@@ -10805,7 +10805,7 @@ If triggered, **halt indexing or roll back**:
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: referral-program
@@ -11442,7 +11442,7 @@ If you need more context:
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: revenue-architect
@@ -11514,7 +11514,7 @@ A agentic company scales through word of mouth. You design referral systems that
 If YES, finalize the revenue plan.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: schema-markup
@@ -11903,7 +11903,7 @@ Where and how to add it
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: seo-audit
@@ -12418,7 +12418,7 @@ Use these skills **only after the audit is complete** and findings are accepted.
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: social-content
@@ -13260,7 +13260,7 @@ If you need more context:
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: release-changelog
@@ -13296,11 +13296,11 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 # Release Changelog Skill
 
-Generate the user-facing changelog for the **stable** Galyarder Framework release.
+Generate the user-facing changelog for the **stable** Forge Anything release.
 
 ## Versioning Model
 
-Galyarder Framework uses **calendar versioning (calver)**:
+Forge Anything uses **calendar versioning (calver)**:
 
 - Stable releases: `YYYY.MDD.P` (e.g. `2026.318.0`)
 - Canary releases: `YYYY.MDD.P-canary.N` (e.g. `2026.318.1-canary.0`)
@@ -13415,7 +13415,7 @@ When a bullet item clearly maps to a merged pull request, add inline attribution
 end of the entry in this format:
 
 ```
-- **Feature name**  Description. ([#123](https://github.com/galyarder/galyarder/pull/123), @contributor1, @contributor2)
+- **Feature name**  Description. ([#123](https://github.com/galyarderlabs/forge-anything/pull/123), @contributor1, @contributor2)
 ```
 
 Rules:
@@ -13514,7 +13514,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 # Release Coordination Skill
 
-Run the full Galyarder Framework maintainer release workflow, not just an npm publish.
+Run the full Forge Anything maintainer release workflow, not just an npm publish.
 
 This skill coordinates:
 
@@ -13544,7 +13544,7 @@ Before proceeding, verify all of the following:
 4. The candidate SHA has passed the verification gate or is about to.
 5. If manifests changed, the CI-owned `pnpm-lock.yaml` refresh is already merged on `master`.
 6. npm publish rights are available through GitHub trusted publishing, or through local npm auth for emergency/manual use.
-7. If running through Galyarder Framework, you have issue context for status updates and follow-up task creation.
+7. If running through Forge Anything, you have issue context for status updates and follow-up task creation.
 
 If any precondition fails, stop and report the blocker.
 
@@ -13559,7 +13559,7 @@ Collect these inputs up front:
 
 ## Step 0  Release Model
 
-Galyarder Framework now uses a commit-driven release model:
+Forge Anything now uses a commit-driven release model:
 
 1. every push to `master` publishes a canary automatically
 2. canaries use `YYYY.MDD.P-canary.N`
@@ -13594,7 +13594,7 @@ Useful commands:
 ```bash
 git tag --list 'v*' --sort=-version:refname | head -1
 git log --oneline --no-merges
-npm view galyarder@canary version
+npm view forge-anything@canary version
 ```
 
 ## Step 2  Draft the Stable Changelog
@@ -13641,7 +13641,7 @@ Confirm:
 Useful checks:
 
 ```bash
-npm view galyarder@canary version
+npm view forge-anything@canary version
 git tag --list 'canary/v*' --sort=-version:refname | head -5
 ```
 
@@ -13650,13 +13650,13 @@ git tag --list 'canary/v*' --sort=-version:refname | head -5
 Run:
 
 ```bash
-GALYARDERAI_VERSION=canary ./scripts/docker-onboard-smoke.sh
+FORGEAI_VERSION=canary ./scripts/docker-onboard-smoke.sh
 ```
 
 Useful isolated variant:
 
 ```bash
-HOST_PORT=3232 DATA_DIR=./data/release-smoke-canary GALYARDERAI_VERSION=canary ./scripts/docker-onboard-smoke.sh
+HOST_PORT=3232 DATA_DIR=./data/release-smoke-canary FORGEAI_VERSION=canary ./scripts/docker-onboard-smoke.sh
 ```
 
 Confirm:
@@ -13716,7 +13716,7 @@ Create or verify follow-up work for:
 
 - website changelog publishing
 - launch post / social announcement
-- release summary in Galyarder Framework issue context
+- release summary in Forge Anything issue context
 
 These should reference the stable release, not the canary.
 
@@ -13823,7 +13823,7 @@ defuddle parse <url> -p domain
 | `-p <name>` | Specific metadata property |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: doc-maintenance
@@ -13978,7 +13978,7 @@ git commit -m "docs: update documentation for accuracy
 
 - [list each fix briefly]
 
-Co-Authored-By: Galyarder Framework <noreply@galyarder.ing>"
+Co-Authored-By: Forge Anything <noreply@forge-anything.ing>"
 
 git push -u origin "$BRANCH"
 
@@ -14323,7 +14323,7 @@ See [references/EXAMPLES.md](references/EXAMPLES.md) for full canvas examples in
 - [JSON Canvas GitHub](https://github.com/obsidianmd/jsoncanvas)
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: obsidian-bases
@@ -14852,7 +14852,7 @@ formulas:
 - [Complete Functions Reference](references/FUNCTIONS_REFERENCE.md)
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: obsidian-cli
@@ -14990,7 +14990,7 @@ obsidian dev:mobile on
 Run `obsidian help` to see additional developer commands including CDP and debugger controls.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: obsidian-markdown
@@ -15218,7 +15218,7 @@ Reviewed in [[Meeting Notes 2024-01-10#Decisions]].
 - [Properties](https://help.obsidian.md/properties)
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: accounting
@@ -15523,7 +15523,7 @@ Review quarterly. Less important at early stage, but needed for:
 - **pricing**  Set pricing that supports healthy unit economics
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: contract-and-proposal-writer
@@ -16002,7 +16002,7 @@ python scripts/contract_comparison_analyzer.py contract_v1.json contract_v2.json
 - **revenue-operations** -- Contract values and payment schedules feed into pipeline forecasting and revenue recognition
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: contract-review
@@ -16327,7 +16327,7 @@ Quick review - key concerns only:
 - **Prerequisites**: Contract access, business context
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: finance-based-pricing-advisor
@@ -17110,7 +17110,7 @@ For topics NOT covered here, see future `pricing-strategy-suite`:
 - Pricing scenarios from `research/finance/Finance for Product Managers.md`
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: financial-analyst
@@ -17147,9 +17147,9 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Financial Analyst Skill
 
 You are the Financial Analyst Specialist at Galyarder Labs.
-##  Galyarder Framework Operating Procedures (MANDATORY)
+##  Forge Anything Operating Procedures (MANDATORY)
 When operating this skill for your human partner:
-1. **Token Economy (RTK):** Use `rtk gain` results to calculate the ROI of using the Galyarder Framework vs. raw agent calls.
+1. **Token Economy (RTK):** Use `rtk gain` results to calculate the ROI of using the Forge Anything vs. raw agent calls.
 2. **Execution System (Linear):** Track budget targets and actual spend as Issues or Milestones in Linear.
 3. **Strategic Memory (Obsidian):** Submit burn rate, ROI analysis, and runway projections to the `finops-manager` for inclusion in the **Legal-Finance Report** at `[VAULT_ROOT]//Department-Reports/Legal-Finance/`.
 
@@ -17296,7 +17296,7 @@ All scripts accept JSON input files. See `assets/sample_financial_data.json` for
 **None** - All scripts use Python standard library only (`math`, `statistics`, `json`, `argparse`, `datetime`). No numpy, pandas, or scipy required.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: gdpr-ccpa-privacy-auditor
@@ -17354,7 +17354,7 @@ The `gdpr-ccpa-privacy-auditor` is a transparency tool. It helps companies ensur
 - **Source Code Privacy**: If providing `source_code_path`, ensure the environment is secure and the code is not transmitted externally.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: gdpr-compliance
@@ -17939,7 +17939,7 @@ gdpr_compliance_checklist:
 - Regularly audit data flows to discover shadow processing or undocumented data stores
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: iso-42001-ai-governance
@@ -19189,7 +19189,7 @@ ISO 42001 aligns with major AI regulations:
 **Remember**: ISO 42001 is about building trustworthy AI systems through systematic risk management and governance. It's not a barrier to innovationit's a framework for responsible innovation that protects both organizations and the people affected by AI.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: legal-advisor
@@ -19286,7 +19286,7 @@ Always include disclaimer: "This is a template for informational purposes. Consu
 Focus on comprehensiveness, clarity, and regulatory compliance while maintaining readability.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: legal-tos-privacy
@@ -19829,7 +19829,7 @@ Deliver final documents in this structure:
 7. **Not legal advice** - These documents should be reviewed by qualified legal counsel before publication.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: open-source-license
@@ -20011,7 +20011,7 @@ When reviewing compliance:
 4. Provide specific remediation steps
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: saas-finops-optimization
@@ -20093,7 +20093,7 @@ AI tokens are often the #1 expense for modern startups. Optimize or die.
 4. **Action Plan**: Provide a prioritized list of "Quick Wins" (high savings, low effort).
 
 ---
- 2026 Galyarder Labs. Galyarder Framework. SaaS FinOps.
+ 2026 Galyarder Labs. Forge Anything. SaaS FinOps.
 
 ---
 ## SKILL: company-creator
@@ -20237,20 +20237,20 @@ Create the directory structure and all files. Follow the spec's conventions exac
     <slug>/TASK.md        (if tasks are needed)
  skills/
     <slug>/SKILL.md       (if custom skills are needed)
- .galyarder.yaml            (Galyarder Framework vendor extension)
+ .forge.yaml            (Forge Anything vendor extension)
 ```
 
 **Rules:**
 
 - Slugs must be URL-safe, lowercase, hyphenated
 - COMPANY.md gets `schema: agentcompanies/v1` - other files inherit it
-- Agent instructions go in the AGENTS.md body, not in .galyarder.yaml
+- Agent instructions go in the AGENTS.md body, not in .forge.yaml
 - Skills referenced by shortname in AGENTS.md resolve to `skills/<shortname>/SKILL.md`
 - For external skills, use `sources` with `usage: referenced` (see spec section 12)
 - Do not export secrets, machine-local paths, or database IDs
 - Omit empty/default fields
 - For companies generated from a repo, add a references footer at the bottom of COMPANY.md body:
-  `Generated from [repo-name](repo-url) with the company-creator skill from [Galyarder Framework](https://github.com/galyarder/galyarder)`
+  `Generated from [repo-name](repo-url) with the company-creator skill from [Forge Anything](https://github.com/galyarderlabs/forge-anything)`
 
 **Reporting structure:**
 
@@ -20285,8 +20285,8 @@ Ask the user where to write the package. Common options:
 - The workflow / how the company operates
 - Org chart as a markdown list or table showing agents, titles, reporting structure, and skills
 - Brief description of each agent's role
-- Citations and references: link to the source repo (if from-repo), link to the Agent Companies spec (https://agentcompanies.io/specification), and link to Galyarder Framework (https://github.com/galyarder/galyarder)
-- A "Getting Started" section explaining how to import: `galyarder company import --from <path>`
+- Citations and references: link to the source repo (if from-repo), link to the Agent Companies spec (https://agentcompanies.io/specification), and link to Forge Anything (https://github.com/galyarderlabs/forge-anything)
+- A "Getting Started" section explaining how to import: `forge company import --from <path>`
 
 **LICENSE**  include a LICENSE file. The copyright holder is the user creating the company, not the upstream repo author (they made the skills, the user is making the company). Use the same license type as the source repo (if from-repo) or ask the user (if from-scratch). Default to MIT if unclear.
 
@@ -20300,15 +20300,15 @@ Write all files, then give a brief summary:
 - Projects and tasks if any
 - The output path
 
-## .galyarder.yaml Guidelines
+## .forge.yaml Guidelines
 
-The `.galyarder.yaml` file is the Galyarder Framework vendor extension. It configures adapters and env inputs per agent.
+The `.forge.yaml` file is the Forge Anything vendor extension. It configures adapters and env inputs per agent.
 
 ### Adapter Rules
 
-**Do not specify an adapter unless the repo or user context warrants it.** If you don't know what adapter the user wants, omit the adapter block entirely  Galyarder Framework will use its default. Specifying an unknown adapter type causes an import error.
+**Do not specify an adapter unless the repo or user context warrants it.** If you don't know what adapter the user wants, omit the adapter block entirely  Forge Anything will use its default. Specifying an unknown adapter type causes an import error.
 
-Galyarder Framework's supported adapter types (these are the ONLY valid values):
+Forge Anything's supported adapter types (these are the ONLY valid values):
 - `claude_local`  Claude Code CLI
 - `codex_local`  Codex CLI
 - `opencode_local`  OpenCode CLI
@@ -20331,7 +20331,7 @@ Only set an adapter when:
 
 Example with adapter (only when warranted):
 ```yaml
-schema: galyarder/v1
+schema: forge/v1
 agents:
   release-engineer:
     adapter:
@@ -20347,7 +20347,7 @@ agents:
 
 Example  only agents with actual overrides appear:
 ```yaml
-schema: galyarder/v1
+schema: forge/v1
 agents:
   release-engineer:
     inputs:
@@ -20357,7 +20357,7 @@ agents:
           requirement: optional
 ```
 
-In this example, only `release-engineer` appears because it needs `GH_TOKEN`. The other agents (ceo, cto, etc.) have no overrides, so they are omitted entirely from `.galyarder.yaml`.
+In this example, only `release-engineer` appears because it needs `GH_TOKEN`. The other agents (ceo, cto, etc.) have no overrides, so they are omitted entirely from `.forge.yaml`.
 
 ## External Skill References
 
@@ -20424,7 +20424,7 @@ Load plan, review critically, execute all tasks, report when complete.
 
 **Announce at start:** "I'm using the executing-plans skill to implement this plan."
 
-**Note:** Tell your human partner that Galyarder Framework works much better with access to subagents. The quality of its work will be significantly higher if run on a platform with subagent support (such as Claude Code or Codex). If subagents are available, use galyarder-framework:subagent-driven-development instead of this skill.
+**Note:** Tell your human partner that Forge Anything works much better with access to subagents. The quality of its work will be significantly higher if run on a platform with subagent support (such as Claude Code or Codex). If subagents are available, use forge-anything:subagent-driven-development instead of this skill.
 
 ## The Process
 
@@ -20446,7 +20446,7 @@ For each task:
 
 After all tasks complete and verified:
 - Announce: "I'm using the finishing-a-development-branch skill to complete this work."
-- **REQUIRED SUB-SKILL:** Use galyarder-framework:finishing-a-development-branch
+- **REQUIRED SUB-SKILL:** Use forge-anything:finishing-a-development-branch
 - Follow that skill to verify tests, present options, execute choice
 
 ## When to Stop and Ask for Help
@@ -20478,12 +20478,12 @@ After all tasks complete and verified:
 ## Integration
 
 **Required workflow skills:**
-- **galyarder-framework:using-git-worktrees** - REQUIRED: Set up isolated workspace before starting
-- **galyarder-framework:writing-plans** - Creates the plan this skill executes
-- **galyarder-framework:finishing-a-development-branch** - Complete development after all tasks
+- **forge-anything:using-git-worktrees** - REQUIRED: Set up isolated workspace before starting
+- **forge-anything:writing-plans** - Creates the plan this skill executes
+- **forge-anything:finishing-a-development-branch** - Complete development after all tasks
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: prd-to-issues
@@ -20603,7 +20603,7 @@ Reference by number from the parent PRD:
 Do NOT close or modify the parent PRD issue.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: prd-to-plan
@@ -20742,7 +20742,7 @@ A concise description of this vertical slice. Describe the end-to-end behavior, 
 </plan-template>
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: ubiquitous-language
@@ -20858,7 +20858,7 @@ After writing the file, state:
 > I've written/updated `UBIQUITOUS_LANGUAGE.md`. From this point forward I will use these terms consistently. If I drift from this language or you notice a term that should be added, let me know.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: write-a-prd
@@ -20964,7 +20964,7 @@ Any further notes about the feature.
 </prd-template>
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: writing-plans
@@ -21045,7 +21045,7 @@ This structure informs the task decomposition. Each task should produce self-con
 ```markdown
 # [Feature Name] Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use galyarder-framework:subagent-driven-development (recommended) or galyarder-framework:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use forge-anything:subagent-driven-development (recommended) or forge-anything:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** [One sentence describing what this builds]
 
@@ -21140,15 +21140,15 @@ After saving the plan, offer execution choice:
 **Which approach?"**
 
 **If Subagent-Driven chosen:**
-- **REQUIRED SUB-SKILL:** Use galyarder-framework:subagent-driven-development
+- **REQUIRED SUB-SKILL:** Use forge-anything:subagent-driven-development
 - Fresh subagent per task + two-stage review
 
 **If Inline Execution chosen:**
-- **REQUIRED SUB-SKILL:** Use galyarder-framework:executing-plans
+- **REQUIRED SUB-SKILL:** Use forge-anything:executing-plans
 - Batch execution with checkpoints for review
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: cloud-security
@@ -21185,7 +21185,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Cloud Security
 
 You are the Cloud Security Specialist at Galyarder Labs.
-##  Galyarder Framework Operating Procedures (MANDATORY)
+##  Forge Anything Operating Procedures (MANDATORY)
 When executing this skill to protect your human partner's infrastructure (Phase 4):
 1. **Token Economy (RTK):** Gather cloud configuration data using `rtk` mediated CLI calls to minimize token usage.
 2. **Execution System (Linear):** Every "Critical" or "High" finding must be converted into a Linear Issue with the `Security` label.
@@ -21529,7 +21529,7 @@ aws s3api get-bucket-policy --bucket "${BUCKET}" | jq '.Policy | fromjson' | \
 | [security-pen-testing](../security-pen-testing/SKILL.md) | Cloud posture findings feed into the infrastructure security section of pen test assessments |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: eradicating-malware-from-infected-systems
@@ -21770,7 +21770,7 @@ yara -r malware_rules/specific_family.yar C:\ 2>/dev/null
 - Systems cleared for recovery phase
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: executing-active-directory-attack-simulation
@@ -21964,7 +21964,7 @@ could access all 5,000 user accounts, 800 computer objects, and all data within 
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: executing-phishing-simulation-campaign
@@ -22168,7 +22168,7 @@ Analyze campaign results and produce the assessment report:
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: executing-red-team-engagement-planning
@@ -22333,7 +22333,7 @@ Map organizational threats using MITRE ATT&CK Navigator to select relevant adver
 - building-red-team-infrastructure-with-redirectors
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: executing-red-team-exercise
@@ -22530,7 +22530,7 @@ Convert red team findings into defensive improvements:
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: generating-threat-intelligence-reports
@@ -22687,7 +22687,7 @@ Before dissemination, apply these checks:
 - **Over-classification**: Applying TLP:RED to information that could be TLP:GREEN impedes community sharing and limits defensive value across the sector.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: intercepting-mobile-traffic-with-burpsuite
@@ -22893,7 +22893,7 @@ android sslpinning disable
 - **VPN-based apps**: Apps using VPN tunnels bypass device proxy settings. May need iptables rules on a rooted device to redirect traffic.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: investigating-phishing-email-incident
@@ -23199,7 +23199,7 @@ Status:       RESOLVED  No evidence of lateral movement post-compromise
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: mapping-mitre-attack-techniques
@@ -23352,7 +23352,7 @@ Summarize coverage by tactic category (Initial Access, Execution, Persistence, e
 - **Not mapping to adversary groups**: Generic coverage maps don't distinguish between techniques used by APTs targeting your sector vs. commodity malware.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: monitoring-darkweb-sources
@@ -23497,7 +23497,7 @@ For each dark web finding:
 - **No evidence preservation**: Dark web content disappears rapidly. Capture timestamped evidence immediately upon discovery using commercial service exports.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: profiling-threat-actor-groups
@@ -23640,7 +23640,7 @@ Classify TLP:AMBER for internal distribution; seek ISAC approval before external
 - **Profile staleness**: Adversary TTPs evolve. Profiles not updated quarterly may miss technique changes, new malware, or targeting shifts.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: recovering-deleted-files-with-photorec
@@ -23891,7 +23891,7 @@ PhotoRec Recovery Summary:
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: recovering-from-ransomware-attack
@@ -24212,7 +24212,7 @@ Throughout: SOC monitoring on high alert
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: reverse-engineering-malware-with-ghidra
@@ -24513,7 +24513,7 @@ RC4 Key Material: [see encryption details above]
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: testing-for-xss-vulnerabilities-with-burpsuite
@@ -24845,7 +24845,7 @@ A WAF blocks common XSS patterns and CSP restricts inline scripts. Discover a JS
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: tracking-threat-actor-infrastructure
@@ -25153,7 +25153,7 @@ def build_infrastructure_timeline(indicators):
 - [JARM Fingerprinting](https://github.com/salesforce/jarm)
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

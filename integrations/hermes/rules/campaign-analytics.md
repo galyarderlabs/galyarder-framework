@@ -33,7 +33,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Campaign Analytics
 
 You are the Campaign Analytics Specialist at Galyarder Labs.
-##  Galyarder Framework Operating Procedures (MANDATORY)
+##  Forge Anything Operating Procedures (MANDATORY)
 When executing this skill for your human partner during Phase 5 (Growth):
 1. **Token Economy (RTK):** Process large analytics exports using `rtk` mediated scripts to minimize token overhead.
 2. **Execution System (Linear):** Update Linear issues with actual performance data (ROI, CPA, CVR) once a campaign milestone is reached.
@@ -244,4 +244,4 @@ Calculates comprehensive ROI metrics with industry Standarding:
 - **marketing-ops**: For routing insights to the right execution skill.
 - **paid-ads**: For optimizing ad spend based on analytics findings.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

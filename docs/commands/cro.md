@@ -1,5 +1,5 @@
 ---
-title: "Cro | Galyarder Framework"
+title: "Cro | Forge Anything"
 description: "Conversion Rate Optimization specialist. Optimizes onboarding, paywalls, and signup flows."
 ---
 
@@ -39,4 +39,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command is powered by the `galyarder-framework:onboarding-cro` and `paywall-upgrade-cro` skills.
+**Note**: This command is powered by the `forge-anything:onboarding-cro` and `paywall-upgrade-cro` skills.

@@ -49,4 +49,4 @@ Task tool (general-purpose):
 **Reviewer returns:** Status, Issues (if any), Recommendations
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

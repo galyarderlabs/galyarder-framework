@@ -156,4 +156,4 @@ If previous reports exist in `test-reports/`:
 - Next action recommendation (fix failures or celebrate green)
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

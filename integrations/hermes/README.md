@@ -1,6 +1,6 @@
 # Hermes Agent Integration
 
-This directory contains converted Galyarder Framework assets for **Hermes Agent**.
+This directory contains converted Forge Anything assets for **Hermes Agent**.
 
 ## Included Assets
 

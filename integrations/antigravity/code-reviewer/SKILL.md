@@ -71,4 +71,4 @@ Approval Criteria:
 
 Project Guidelines: Follow project-specific configuration (e.g. MANY SMALL FILES, immutability, RLS policies, custom CLAUDE.md rules).
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

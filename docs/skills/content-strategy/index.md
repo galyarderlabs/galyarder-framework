@@ -1,5 +1,5 @@
 ---
-title: "content-strategy | Galyarder Framework"
+title: "content-strategy | Forge Anything"
 description: "Plan a content strategy, topic clusters, editorial roadmap, and content mix for traffic, authority, and lead generation. Use when deciding what to publish, what topics to prioritize, or how to structure a content program."
 ---
 
@@ -406,4 +406,4 @@ Visual or structured representation of how content interconnects.
 - **social-content**: For social media content
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

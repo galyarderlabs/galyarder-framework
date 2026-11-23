@@ -94,4 +94,4 @@
 5. **Traces instead of screenshots**  richer debugging artifacts
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

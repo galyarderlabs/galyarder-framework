@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Install galyarder-framework skills into Antigravity's global skills directory
+# Install forge-anything skills into Antigravity's global skills directory
 # Usage: ./scripts/antigravity-install.sh
 
 set -euo pipefail
@@ -10,7 +10,7 @@ REAL_PATH=$(readlink -f "$0")
 SCRIPT_DIR="$(cd "$(dirname "$REAL_PATH")" && pwd)"
 REPO_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 
-echo "Installing Galyarder Framework Workforce into Antigravity..."
+echo "Installing Forge Anything Workforce into Antigravity..."
 
 # Find all SKILL.md files and install each skill
 installed=0
@@ -27,4 +27,4 @@ while IFS= read -r skill_md; do
 done < <(find "$REPO_DIR/skills" -name "SKILL.md" -not -path "*/.git/*")
 
 echo "Done. Installed $installed skill(s) into Antigravity."
-echo "Antigravity now has direct access to the Galyarder Framework Workforce."
+echo "Antigravity now has direct access to the Forge Anything Workforce."

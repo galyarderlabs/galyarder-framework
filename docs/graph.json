@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "nodes": {
     "RELEASE-NOTES.md": {
-      "title": "Release Notes - Galyarder Framework",
+      "title": "Release Notes - Forge Anything",
       "category": "core-hukum",
       "silo": "Root",
       "community": "Root",
@@ -10,7 +10,7 @@
       "strategic": true
     },
     "WORKFLOW.md": {
-      "title": "Galyarder Framework: Agentic Company Workflow",
+      "title": "Forge Anything: Agentic Company Workflow",
       "category": "core-hukum",
       "silo": "Root",
       "community": "Root",
@@ -26,7 +26,7 @@
       "strategic": true
     },
     "AGENTS.md": {
-      "title": "AGENTS.md \u2014 Galyarder Framework Agent Instructions",
+      "title": "AGENTS.md \u2014 Forge Anything Agent Instructions",
       "category": "core-hukum",
       "silo": "Root",
       "community": "Root",
@@ -34,7 +34,7 @@
       "strategic": true
     },
     "CLAUDE.md": {
-      "title": "Claude Code Integration \u2014 Galyarder Framework",
+      "title": "Claude Code Integration \u2014 Forge Anything",
       "category": "core-hukum",
       "silo": "Root",
       "community": "Root",
@@ -42,7 +42,7 @@
       "strategic": true
     },
     "GEMINI.md": {
-      "title": "Gemini CLI Integration \u2014 Galyarder Framework",
+      "title": "Gemini CLI Integration \u2014 Forge Anything",
       "category": "core-hukum",
       "silo": "Root",
       "community": "Root",
@@ -50,7 +50,7 @@
       "strategic": true
     },
     "BRAND.md": {
-      "title": "BRAND.md \u2014 Galyarder Framework Brand",
+      "title": "BRAND.md \u2014 Forge Anything Brand",
       "category": "core-hukum",
       "silo": "Root",
       "community": "Root",
@@ -58,7 +58,7 @@
       "strategic": true
     },
     "DESIGN.md": {
-      "title": "DESIGN.md \u2014 Galyarder Framework Design",
+      "title": "DESIGN.md \u2014 Forge Anything Design",
       "category": "core-hukum",
       "silo": "Root",
       "community": "Root",
@@ -98,7 +98,7 @@
       "strategic": false
     },
     "docs/INTEGRATION_COMPLETE.md": {
-      "title": "Integration Checklist: Galyarder Triad Complete",
+      "title": "Integration Checklist: Forge Triad Complete",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -122,7 +122,7 @@
       "strategic": false
     },
     "docs/MIGRATION.md": {
-      "title": "Galyarder Migration Guide: v1.7.x -> v1.8.0",
+      "title": "Forge Anything Migration Guide: v1.7.x -> v1.8.0",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -130,7 +130,7 @@
       "strategic": false
     },
     "docs/ORG_CHART.md": {
-      "title": "Galyarder Framework - Organization Chart",
+      "title": "Forge Anything - Organization Chart",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -146,7 +146,7 @@
       "strategic": false
     },
     "docs/README.codex.md": {
-      "title": "Galyarder Framework for Codex",
+      "title": "Forge Anything for Codex",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -154,7 +154,7 @@
       "strategic": false
     },
     "docs/README.opencode.md": {
-      "title": "Galyarder Framework for OpenCode",
+      "title": "Forge Anything for OpenCode",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -162,7 +162,7 @@
       "strategic": false
     },
     "docs/testing.md": {
-      "title": "Testing Galyarder Framework Skills",
+      "title": "Testing Forge Anything Skills",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -170,7 +170,7 @@
       "strategic": false
     },
     "docs/TRIAD_OVERVIEW.md": {
-      "title": "Galyarder Stack: Framework, Agent, HQ, and Ledger",
+      "title": "Forge Anything Stack: Framework, Agent, HQ, and Ledger",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -186,7 +186,7 @@
       "strategic": false
     },
     "docs/AGENTS.md": {
-      "title": "AGENTS.md \u2014 Galyarder Framework Agent Instructions",
+      "title": "AGENTS.md \u2014 Forge Anything Agent Instructions",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -202,7 +202,7 @@
       "strategic": false
     },
     "docs/RELEASE-NOTES.md": {
-      "title": "Release Notes - Galyarder Framework",
+      "title": "Release Notes - Forge Anything",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -210,7 +210,7 @@
       "strategic": false
     },
     "docs/WORKFLOW.md": {
-      "title": "Galyarder Framework: agentic company Workflow",
+      "title": "Forge Anything: agentic company Workflow",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -225,8 +225,8 @@
       "degree": 0,
       "strategic": false
     },
-    "docs/specs/2026-04-17-galyarder-digital-company-prd.md": {
-      "title": "PRD: Galyarder Framework Digital Enterprise (Hierarchy & Reporting Chain)",
+    "docs/specs/2026-04-17-forge-digital-company-prd.md": {
+      "title": "PRD: Forge Anything Digital Enterprise (Hierarchy & Reporting Chain)",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -234,15 +234,15 @@
       "strategic": false
     },
     "docs/plans/2025-05-15-legacy-branding-purge.md": {
-      "title": "Legacy Purge: Removing Galyarder Branding",
+      "title": "Legacy Purge: Removing Old Branding",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 1,
       "strategic": false
     },
-    "docs/plans/2026-04-17-galyarder-digital-company-plan.md": {
-      "title": "Plan: Galyarder Framework Digital Enterprise (Hierarchy & Reporting Chain)",
+    "docs/plans/2026-04-17-forge-digital-company-plan.md": {
+      "title": "Plan: Forge Anything Digital Enterprise (Hierarchy & Reporting Chain)",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -250,79 +250,79 @@
       "strategic": false
     },
     "docs/plans/2026-04-17-high-fidelity-recovery-plan.md": {
-      "title": "Plan: Galyarder Framework - High-Fidelity Recovery & \"Humans 2.0\" Transformation",
+      "title": "Plan: Forge Anything - High-Fidelity Recovery & \"Humans 2.0\" Transformation",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 1,
       "strategic": false
     },
-    "docs/plans/2026-04-19-galyarder-graphify.md": {
-      "title": "Mission Plan: Galyarder Graphify Integration",
+    "docs/plans/2026-04-19-forge-graphify.md": {
+      "title": "Mission Plan: Forge Graphify Integration",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 1,
       "strategic": false
     },
-    "docs/reports/Galyarder-Framework Decision Log Template.md": {
-      "title": "Galyarder Framework Decision Log Template",
+    "docs/reports/Forge-Anything Decision Log Template.md": {
+      "title": "Forge Anything Decision Log Template",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 1,
       "strategic": false
     },
-    "docs/departments/Executive/Galyarder Founder Office Audit - Galyarder Standard.md": {
-      "title": "Galyarder Framework Founder Office Audit",
+    "docs/departments/Executive/Forge Founder Office Audit - Forge Standard.md": {
+      "title": "Forge Anything Founder Office Audit",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 1,
       "strategic": false
     },
-    "docs/departments/Executive/Galyarder Founder Report Templates.md": {
-      "title": "Galyarder Framework Founder Report Templates",
+    "docs/departments/Executive/Forge Founder Report Templates.md": {
+      "title": "Forge Anything Founder Report Templates",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 1,
       "strategic": false
     },
-    "docs/departments/Executive/Galyarder Framework Vision - Digital Company for Solo Founders.md": {
-      "title": "Galyarder Framework Vision - Digital Enterprise for Solo Founders",
+    "docs/departments/Executive/Forge Anything Vision - Digital Company for Solo Founders.md": {
+      "title": "Forge Anything Vision - Digital Enterprise for Solo Founders",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 0,
       "strategic": false
     },
-    "docs/departments/Executive/Galyarder-Framework Founder Office Audit.md": {
-      "title": "Galyarder Framework Founder Office Audit",
+    "docs/departments/Executive/Forge-Anything Founder Office Audit.md": {
+      "title": "Forge Anything Founder Office Audit",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 0,
       "strategic": false
     },
-    "docs/departments/Executive/Galyarder-Framework Founder Report Templates.md": {
-      "title": "Galyarder Framework Founder Report Templates",
+    "docs/departments/Executive/Forge-Anything Founder Report Templates.md": {
+      "title": "Forge Anything Founder Report Templates",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 0,
       "strategic": false
     },
-    "docs/departments/Executive/Galyarder-Framework Framework Vision - Digital Company for Solo Founders.md": {
-      "title": "Galyarder Framework Vision - Digital Enterprise for Solo Founders",
+    "docs/departments/Executive/Forge-Anything Framework Vision - Digital Company for Solo Founders.md": {
+      "title": "Forge Anything Vision - Digital Enterprise for Solo Founders",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 0,
       "strategic": false
     },
-    "docs/departments/Executive/Galyarder-Framework-Framework Vision - Digital Company for Solo Founders.md": {
-      "title": "Galyarder Framework Vision: The human-directed execution Protocol",
+    "docs/departments/Executive/Forge-Anything-Framework Vision - Digital Company for Solo Founders.md": {
+      "title": "Forge Anything Vision: The human-directed execution Protocol",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -337,16 +337,16 @@
       "degree": 0,
       "strategic": false
     },
-    "docs/departments/Product/Galyarder Product Audit - Galyarder Standard.md": {
-      "title": "Galyarder Framework Product Audit",
+    "docs/departments/Product/Forge Product Audit - Forge Standard.md": {
+      "title": "Forge Anything Product Audit",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 1,
       "strategic": false
     },
-    "docs/departments/Product/Galyarder-Framework Product Audit.md": {
-      "title": "Galyarder Framework Product Audit",
+    "docs/departments/Product/Forge-Anything Product Audit.md": {
+      "title": "Forge Anything Product Audit",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -361,16 +361,16 @@
       "degree": 0,
       "strategic": false
     },
-    "docs/departments/Engineering/Galyarder Engineering Audit - Galyarder Standard.md": {
-      "title": "Galyarder Framework Engineering Audit",
+    "docs/departments/Engineering/Forge Engineering Audit - Forge Standard.md": {
+      "title": "Forge Anything Engineering Audit",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 1,
       "strategic": false
     },
-    "docs/departments/Engineering/Galyarder-Framework Engineering Audit.md": {
-      "title": "Galyarder Framework Engineering Audit",
+    "docs/departments/Engineering/Forge-Anything Engineering Audit.md": {
+      "title": "Forge Anything Engineering Audit",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -385,16 +385,16 @@
       "degree": 0,
       "strategic": false
     },
-    "docs/departments/Growth/Galyarder Growth Audit - Galyarder Standard.md": {
-      "title": "Galyarder Framework Growth Audit",
+    "docs/departments/Growth/Forge Growth Audit - Forge Standard.md": {
+      "title": "Forge Anything Growth Audit",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 1,
       "strategic": false
     },
-    "docs/departments/Growth/Galyarder-Framework Growth Audit.md": {
-      "title": "Galyarder Framework Growth Audit",
+    "docs/departments/Growth/Forge-Anything Growth Audit.md": {
+      "title": "Forge Anything Growth Audit",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -409,16 +409,16 @@
       "degree": 0,
       "strategic": false
     },
-    "docs/departments/Security/Galyarder Security Audit - Galyarder Standard.md": {
-      "title": "Galyarder Framework Security Audit",
+    "docs/departments/Security/Forge Security Audit - Forge Standard.md": {
+      "title": "Forge Anything Security Audit",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 1,
       "strategic": false
     },
-    "docs/departments/Security/Galyarder-Framework Security Audit.md": {
-      "title": "Galyarder Framework Security Audit",
+    "docs/departments/Security/Forge-Anything Security Audit.md": {
+      "title": "Forge Anything Security Audit",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -433,16 +433,16 @@
       "degree": 0,
       "strategic": false
     },
-    "docs/departments/Legal-Finance/Galyarder Legal-Finance Audit - Galyarder Standard.md": {
-      "title": "Galyarder Framework Legal-Finance Audit",
+    "docs/departments/Legal-Finance/Forge Legal-Finance Audit - Forge Standard.md": {
+      "title": "Forge Anything Legal-Finance Audit",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 0,
       "strategic": false
     },
-    "docs/departments/Legal-Finance/Galyarder-Framework Legal-Finance Audit.md": {
-      "title": "Galyarder Framework Legal-Finance Audit",
+    "docs/departments/Legal-Finance/Forge-Anything Legal-Finance Audit.md": {
+      "title": "Forge Anything Legal-Finance Audit",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -457,16 +457,16 @@
       "degree": 0,
       "strategic": false
     },
-    "docs/departments/Knowledge/Galyarder Knowledge Audit - Galyarder Standard.md": {
-      "title": "Galyarder Framework Knowledge Audit",
+    "docs/departments/Knowledge/Forge Knowledge Audit - Forge Standard.md": {
+      "title": "Forge Anything Knowledge Audit",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 1,
       "strategic": false
     },
-    "docs/departments/Knowledge/Galyarder-Framework Knowledge Audit.md": {
-      "title": "Galyarder Framework Knowledge Audit",
+    "docs/departments/Knowledge/Forge-Anything Knowledge Audit.md": {
+      "title": "Forge Anything Knowledge Audit",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -481,199 +481,199 @@
       "degree": 0,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Agent-to-Skill Mapping.md": {
-      "title": "Galyarder Framework Agent-to-Skill Mapping",
+    "docs/templates/Forge-Anything Agent-to-Skill Mapping.md": {
+      "title": "Forge Anything Agent-to-Skill Mapping",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 0,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Cross-Department Hire Queue.md": {
-      "title": "Galyarder Framework Cross-Department Hire Queue",
+    "docs/templates/Forge-Anything Cross-Department Hire Queue.md": {
+      "title": "Forge Anything Cross-Department Hire Queue",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 0,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Current Gaps and Hiring Plan.md": {
-      "title": "Galyarder Framework Current Gaps and Hiring Plan",
+    "docs/templates/Forge-Anything Current Gaps and Hiring Plan.md": {
+      "title": "Forge Anything Current Gaps and Hiring Plan",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 1,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Decision Log Template.md": {
-      "title": "Galyarder Framework Decision Log Template",
+    "docs/templates/Forge-Anything Decision Log Template.md": {
+      "title": "Forge Anything Decision Log Template",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 0,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Department Map.md": {
-      "title": "Galyarder Framework Department Map",
+    "docs/templates/Forge-Anything Department Map.md": {
+      "title": "Forge Anything Department Map",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 1,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Engineering Audit.md": {
-      "title": "Galyarder Framework Engineering Audit",
+    "docs/templates/Forge-Anything Engineering Audit.md": {
+      "title": "Forge Anything Engineering Audit",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 0,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Founder Office Audit.md": {
-      "title": "Galyarder Framework Founder Office Audit",
+    "docs/templates/Forge-Anything Founder Office Audit.md": {
+      "title": "Forge Anything Founder Office Audit",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 0,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Founder Report Templates.md": {
-      "title": "Galyarder Framework Founder Report Templates",
+    "docs/templates/Forge-Anything Founder Report Templates.md": {
+      "title": "Forge Anything Founder Report Templates",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 0,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Framework Vision - Digital Company for Solo Founders.md": {
-      "title": "Galyarder Framework Vision - Digital Enterprise for Solo Founders",
+    "docs/templates/Forge-Anything Framework Vision - Digital Company for Solo Founders.md": {
+      "title": "Forge Anything Vision - Digital Enterprise for Solo Founders",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 0,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework-Framework Vision - Digital Company for Solo Founders.md": {
-      "title": "Galyarder Framework Vision: The human-directed execution Protocol",
+    "docs/templates/Forge-Anything-Framework Vision - Digital Company for Solo Founders.md": {
+      "title": "Forge Anything Vision: The human-directed execution Protocol",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 2,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Growth Audit.md": {
-      "title": "Galyarder Framework Growth Audit",
+    "docs/templates/Forge-Anything Growth Audit.md": {
+      "title": "Forge Anything Growth Audit",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 0,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Import Adapt Reject Rubric.md": {
-      "title": "Galyarder Framework Import Adapt Reject Rubric",
+    "docs/templates/Forge-Anything Import Adapt Reject Rubric.md": {
+      "title": "Forge Anything Import Adapt Reject Rubric",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 1,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Initial Linear Backlog.md": {
-      "title": "Galyarder Framework Initial Linear Backlog",
+    "docs/templates/Forge-Anything Initial Linear Backlog.md": {
+      "title": "Forge Anything Initial Linear Backlog",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 1,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Integration Status Report.md": {
-      "title": "Galyarder Framework Integration Status Report",
+    "docs/templates/Forge-Anything Integration Status Report.md": {
+      "title": "Forge Anything Integration Status Report",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 0,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Knowledge Audit.md": {
-      "title": "Galyarder Framework Knowledge Audit",
+    "docs/templates/Forge-Anything Knowledge Audit.md": {
+      "title": "Forge Anything Knowledge Audit",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 0,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Legal-Finance Audit.md": {
-      "title": "Galyarder Framework Legal-Finance Audit",
+    "docs/templates/Forge-Anything Legal-Finance Audit.md": {
+      "title": "Forge Anything Legal-Finance Audit",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 0,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Linear Import Pack.md": {
-      "title": "Galyarder Framework Linear Import Pack",
+    "docs/templates/Forge-Anything Linear Import Pack.md": {
+      "title": "Forge Anything Linear Import Pack",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 1,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Linear Operating Model.md": {
-      "title": "Galyarder Framework Linear Operating Model",
+    "docs/templates/Forge-Anything Linear Operating Model.md": {
+      "title": "Forge Anything Linear Operating Model",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 1,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Linear Ticket Specs.md": {
-      "title": "Galyarder Framework Linear Ticket Specs",
+    "docs/templates/Forge-Anything Linear Ticket Specs.md": {
+      "title": "Forge Anything Linear Ticket Specs",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 1,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Milestone Summary Template.md": {
-      "title": "Galyarder Framework Milestone Summary Template",
+    "docs/templates/Forge-Anything Milestone Summary Template.md": {
+      "title": "Forge Anything Milestone Summary Template",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 1,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Operations Audit.md": {
-      "title": "Galyarder Framework Operations Audit",
+    "docs/templates/Forge-Anything Operations Audit.md": {
+      "title": "Forge Anything Operations Audit",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 1,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Product Audit.md": {
-      "title": "Galyarder Framework Product Audit",
+    "docs/templates/Forge-Anything Product Audit.md": {
+      "title": "Forge Anything Product Audit",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 0,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Project Hub.md": {
-      "title": "Galyarder Framework Project Hub",
+    "docs/templates/Forge-Anything Project Hub.md": {
+      "title": "Forge Anything Project Hub",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 17,
       "strategic": false
     },
-    "docs/templates/Galyarder-Framework Security Audit.md": {
-      "title": "Galyarder Framework Security Audit",
+    "docs/templates/Forge-Anything Security Audit.md": {
+      "title": "Forge Anything Security Audit",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 0,
       "strategic": false
     },
-    "docs/templates/Galyarder-Department-Reports/Engineering Report Template.md": {
+    "docs/templates/Forge-Department-Reports/Engineering Report Template.md": {
       "title": "Engineering Report Template",
       "category": "documentation",
       "silo": "docs",
@@ -681,7 +681,7 @@
       "degree": 1,
       "strategic": false
     },
-    "docs/templates/Galyarder-Department-Reports/Founder Office Report Template.md": {
+    "docs/templates/Forge-Department-Reports/Founder Office Report Template.md": {
       "title": "Founder Office Report Template",
       "category": "documentation",
       "silo": "docs",
@@ -689,7 +689,7 @@
       "degree": 1,
       "strategic": false
     },
-    "docs/templates/Galyarder-Department-Reports/Growth Report Template.md": {
+    "docs/templates/Forge-Department-Reports/Growth Report Template.md": {
       "title": "Growth Report Template",
       "category": "documentation",
       "silo": "docs",
@@ -697,7 +697,7 @@
       "degree": 1,
       "strategic": false
     },
-    "docs/templates/Galyarder-Department-Reports/Knowledge Report Template.md": {
+    "docs/templates/Forge-Department-Reports/Knowledge Report Template.md": {
       "title": "Knowledge Report Template",
       "category": "documentation",
       "silo": "docs",
@@ -705,7 +705,7 @@
       "degree": 1,
       "strategic": false
     },
-    "docs/templates/Galyarder-Department-Reports/Legal-Finance Report Template.md": {
+    "docs/templates/Forge-Department-Reports/Legal-Finance Report Template.md": {
       "title": "Legal-Finance Report Template",
       "category": "documentation",
       "silo": "docs",
@@ -713,7 +713,7 @@
       "degree": 0,
       "strategic": false
     },
-    "docs/templates/Galyarder-Department-Reports/Operations Report Template.md": {
+    "docs/templates/Forge-Department-Reports/Operations Report Template.md": {
       "title": "Operations Report Template",
       "category": "documentation",
       "silo": "docs",
@@ -721,7 +721,7 @@
       "degree": 1,
       "strategic": false
     },
-    "docs/templates/Galyarder-Department-Reports/Product Report Template.md": {
+    "docs/templates/Forge-Department-Reports/Product Report Template.md": {
       "title": "Product Report Template",
       "category": "documentation",
       "silo": "docs",
@@ -729,7 +729,7 @@
       "degree": 1,
       "strategic": false
     },
-    "docs/templates/Galyarder-Department-Reports/Security Report Template.md": {
+    "docs/templates/Forge-Department-Reports/Security Report Template.md": {
       "title": "Security Report Template",
       "category": "documentation",
       "silo": "docs",
@@ -737,15 +737,15 @@
       "degree": 1,
       "strategic": false
     },
-    "docs/templates/Galyarder-Department-Reports/Galyarder Linear Seed From Galyarder Structure.md": {
-      "title": "Galyarder Framework Linear Seed From Galyarder Framework Structure",
+    "docs/templates/Forge-Department-Reports/Forge Linear Seed From Forge Structure.md": {
+      "title": "Forge Anything Linear Seed From Forge Anything Structure",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 0,
       "strategic": false
     },
-    "docs/templates/Galyarder-Department-Reports/Department Report Index.md": {
+    "docs/templates/Forge-Department-Reports/Department Report Index.md": {
       "title": "Department Report Index",
       "category": "documentation",
       "silo": "docs",
@@ -1345,40 +1345,40 @@
       "degree": 3,
       "strategic": false
     },
-    "docs/agents/galyarder-ceo.md": {
-      "title": ":material-folder-zip: galyarder-ceo",
+    "docs/agents/forge-ceo.md": {
+      "title": ":material-folder-zip: forge-ceo",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 3,
       "strategic": false
     },
-    "docs/agents/galyarder-cfo-coo.md": {
-      "title": ":material-folder-zip: galyarder-cfo-coo",
+    "docs/agents/forge-cfo-coo.md": {
+      "title": ":material-folder-zip: forge-cfo-coo",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 3,
       "strategic": false
     },
-    "docs/agents/galyarder-cmo.md": {
-      "title": ":material-folder-zip: galyarder-cmo",
+    "docs/agents/forge-cmo.md": {
+      "title": ":material-folder-zip: forge-cmo",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 3,
       "strategic": false
     },
-    "docs/agents/galyarder-cto.md": {
-      "title": ":material-folder-zip: galyarder-cto",
+    "docs/agents/forge-cto.md": {
+      "title": ":material-folder-zip: forge-cto",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 3,
       "strategic": false
     },
-    "docs/agents/galyarder-specialist.md": {
-      "title": ":material-folder-zip: galyarder-specialist",
+    "docs/agents/forge-specialist.md": {
+      "title": ":material-folder-zip: forge-specialist",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -1594,7 +1594,7 @@
       "strategic": false
     },
     "docs/agents/index.md": {
-      "title": "Galyarder Framework: Agents",
+      "title": "Forge Anything: Agents",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -1602,7 +1602,7 @@
       "strategic": false
     },
     "docs/skills/index.md": {
-      "title": "Galyarder Framework: Skills",
+      "title": "Forge Anything: Skills",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -2401,16 +2401,16 @@
       "degree": 3,
       "strategic": false
     },
-    "docs/skills/galyarder/index.md": {
-      "title": ":material-folder-zip: galyarder",
+    "docs/skills/forge/index.md": {
+      "title": ":material-folder-zip: forge",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 3,
       "strategic": false
     },
-    "docs/skills/galyarder-specialist/index.md": {
-      "title": ":material-folder-zip: galyarder-specialist",
+    "docs/skills/forge-specialist/index.md": {
+      "title": ":material-folder-zip: forge-specialist",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -3969,23 +3969,23 @@
       "degree": 3,
       "strategic": false
     },
-    "docs/skills/using-galyarder-agent-framework/index.md": {
-      "title": ":material-folder-zip: using-galyarder-agent-framework",
+    "docs/skills/using-forge-agent-framework/index.md": {
+      "title": ":material-folder-zip: using-forge-agent-framework",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 3,
       "strategic": false
     },
-    "docs/skills/using-galyarder-framework/index.md": {
-      "title": ":material-folder-zip: using-galyarder-framework",
+    "docs/skills/using-forge-anything/index.md": {
+      "title": ":material-folder-zip: using-forge-anything",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
       "degree": 3,
       "strategic": false
     },
-    "docs/skills/using-galyarder-framework/references/gemini-tools.md": {
+    "docs/skills/using-forge-anything/references/gemini-tools.md": {
       "title": "Gemini CLI Tool Mapping",
       "category": "documentation",
       "silo": "docs",
@@ -3993,7 +3993,7 @@
       "degree": 0,
       "strategic": false
     },
-    "docs/skills/using-galyarder-framework/references/codex-tools.md": {
+    "docs/skills/using-forge-anything/references/codex-tools.md": {
       "title": "Codex Tool Mapping",
       "category": "documentation",
       "silo": "docs",
@@ -4001,7 +4001,7 @@
       "degree": 0,
       "strategic": false
     },
-    "docs/skills/using-galyarder-framework/references/copilot-tools.md": {
+    "docs/skills/using-forge-anything/references/copilot-tools.md": {
       "title": "Copilot CLI Tool Mapping",
       "category": "documentation",
       "silo": "docs",
@@ -4090,7 +4090,7 @@
       "strategic": false
     },
     "docs/commands/ceo.md": {
-      "title": ":material-folder-zip: galyarder-ceo",
+      "title": ":material-folder-zip: forge-ceo",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -4098,7 +4098,7 @@
       "strategic": false
     },
     "docs/commands/cfo.md": {
-      "title": ":material-folder-zip: galyarder-cfo-coo",
+      "title": ":material-folder-zip: forge-cfo-coo",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -4114,7 +4114,7 @@
       "strategic": false
     },
     "docs/commands/cmo.md": {
-      "title": ":material-folder-zip: galyarder-cmo",
+      "title": ":material-folder-zip: forge-cmo",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -4130,7 +4130,7 @@
       "strategic": false
     },
     "docs/commands/cto.md": {
-      "title": ":material-folder-zip: galyarder-cto",
+      "title": ":material-folder-zip: forge-cto",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -4282,7 +4282,7 @@
       "strategic": false
     },
     "docs/commands/index.md": {
-      "title": "Galyarder Framework: Commands",
+      "title": "Forge Anything: Commands",
       "category": "documentation",
       "silo": "docs",
       "community": "docs",
@@ -4400,7 +4400,7 @@
       "confidence": 0.8
     },
     {
-      "source": "docs/specs/2026-04-17-galyarder-digital-company-prd.md",
+      "source": "docs/specs/2026-04-17-forge-digital-company-prd.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
@@ -4412,7 +4412,7 @@
       "confidence": 0.8
     },
     {
-      "source": "docs/plans/2026-04-17-galyarder-digital-company-plan.md",
+      "source": "docs/plans/2026-04-17-forge-digital-company-plan.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
@@ -4424,176 +4424,176 @@
       "confidence": 0.8
     },
     {
-      "source": "docs/plans/2026-04-19-galyarder-graphify.md",
+      "source": "docs/plans/2026-04-19-forge-graphify.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/departments/Executive/Galyarder-Framework-Framework Vision - Digital Company for Solo Founders.md",
+      "source": "docs/departments/Executive/Forge-Anything-Framework Vision - Digital Company for Solo Founders.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/departments/Executive/Galyarder-Framework-Framework Vision - Digital Company for Solo Founders.md",
+      "source": "docs/departments/Executive/Forge-Anything-Framework Vision - Digital Company for Solo Founders.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
     },
     {
-      "source": "docs/templates/Galyarder-Framework-Framework Vision - Digital Company for Solo Founders.md",
+      "source": "docs/templates/Forge-Anything-Framework Vision - Digital Company for Solo Founders.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/templates/Galyarder-Framework-Framework Vision - Digital Company for Solo Founders.md",
+      "source": "docs/templates/Forge-Anything-Framework Vision - Digital Company for Solo Founders.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
     },
     {
-      "source": "docs/templates/Galyarder-Framework Project Hub.md",
-      "target": "docs/templates/Galyarder-Framework Department Map.md",
+      "source": "docs/templates/Forge-Anything Project Hub.md",
+      "target": "docs/templates/Forge-Anything Department Map.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Framework Project Hub.md",
-      "target": "docs/templates/Galyarder-Framework Current Gaps and Hiring Plan.md",
+      "source": "docs/templates/Forge-Anything Project Hub.md",
+      "target": "docs/templates/Forge-Anything Current Gaps and Hiring Plan.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Framework Project Hub.md",
-      "target": "docs/departments/Executive/Galyarder Founder Report Templates.md",
+      "source": "docs/templates/Forge-Anything Project Hub.md",
+      "target": "docs/departments/Executive/Forge Founder Report Templates.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Framework Project Hub.md",
-      "target": "docs/templates/Galyarder-Framework Linear Operating Model.md",
+      "source": "docs/templates/Forge-Anything Project Hub.md",
+      "target": "docs/templates/Forge-Anything Linear Operating Model.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Framework Project Hub.md",
-      "target": "docs/templates/Galyarder-Framework Initial Linear Backlog.md",
+      "source": "docs/templates/Forge-Anything Project Hub.md",
+      "target": "docs/templates/Forge-Anything Initial Linear Backlog.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Framework Project Hub.md",
-      "target": "docs/templates/Galyarder-Framework Linear Ticket Specs.md",
+      "source": "docs/templates/Forge-Anything Project Hub.md",
+      "target": "docs/templates/Forge-Anything Linear Ticket Specs.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Framework Project Hub.md",
-      "target": "docs/templates/Galyarder-Framework Linear Import Pack.md",
+      "source": "docs/templates/Forge-Anything Project Hub.md",
+      "target": "docs/templates/Forge-Anything Linear Import Pack.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Framework Project Hub.md",
-      "target": "docs/reports/Galyarder-Framework Decision Log Template.md",
+      "source": "docs/templates/Forge-Anything Project Hub.md",
+      "target": "docs/reports/Forge-Anything Decision Log Template.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Framework Project Hub.md",
-      "target": "docs/templates/Galyarder-Framework Milestone Summary Template.md",
+      "source": "docs/templates/Forge-Anything Project Hub.md",
+      "target": "docs/templates/Forge-Anything Milestone Summary Template.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Framework Project Hub.md",
-      "target": "docs/departments/Engineering/Galyarder Engineering Audit - Galyarder Standard.md",
+      "source": "docs/templates/Forge-Anything Project Hub.md",
+      "target": "docs/departments/Engineering/Forge Engineering Audit - Forge Standard.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Framework Project Hub.md",
-      "target": "docs/departments/Growth/Galyarder Growth Audit - Galyarder Standard.md",
+      "source": "docs/templates/Forge-Anything Project Hub.md",
+      "target": "docs/departments/Growth/Forge Growth Audit - Forge Standard.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Framework Project Hub.md",
-      "target": "docs/departments/Executive/Galyarder Founder Office Audit - Galyarder Standard.md",
+      "source": "docs/templates/Forge-Anything Project Hub.md",
+      "target": "docs/departments/Executive/Forge Founder Office Audit - Forge Standard.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Framework Project Hub.md",
-      "target": "docs/departments/Product/Galyarder Product Audit - Galyarder Standard.md",
+      "source": "docs/templates/Forge-Anything Project Hub.md",
+      "target": "docs/departments/Product/Forge Product Audit - Forge Standard.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Framework Project Hub.md",
-      "target": "docs/templates/Galyarder-Framework Operations Audit.md",
+      "source": "docs/templates/Forge-Anything Project Hub.md",
+      "target": "docs/templates/Forge-Anything Operations Audit.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Framework Project Hub.md",
-      "target": "docs/departments/Security/Galyarder Security Audit - Galyarder Standard.md",
+      "source": "docs/templates/Forge-Anything Project Hub.md",
+      "target": "docs/departments/Security/Forge Security Audit - Forge Standard.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Framework Project Hub.md",
-      "target": "docs/departments/Knowledge/Galyarder Knowledge Audit - Galyarder Standard.md",
+      "source": "docs/templates/Forge-Anything Project Hub.md",
+      "target": "docs/departments/Knowledge/Forge Knowledge Audit - Forge Standard.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Framework Project Hub.md",
-      "target": "docs/templates/Galyarder-Framework Import Adapt Reject Rubric.md",
+      "source": "docs/templates/Forge-Anything Project Hub.md",
+      "target": "docs/templates/Forge-Anything Import Adapt Reject Rubric.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Department-Reports/Department Report Index.md",
-      "target": "docs/templates/Galyarder-Department-Reports/Founder Office Report Template.md",
+      "source": "docs/templates/Forge-Department-Reports/Department Report Index.md",
+      "target": "docs/templates/Forge-Department-Reports/Founder Office Report Template.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Department-Reports/Department Report Index.md",
-      "target": "docs/templates/Galyarder-Department-Reports/Product Report Template.md",
+      "source": "docs/templates/Forge-Department-Reports/Department Report Index.md",
+      "target": "docs/templates/Forge-Department-Reports/Product Report Template.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Department-Reports/Department Report Index.md",
-      "target": "docs/templates/Galyarder-Department-Reports/Engineering Report Template.md",
+      "source": "docs/templates/Forge-Department-Reports/Department Report Index.md",
+      "target": "docs/templates/Forge-Department-Reports/Engineering Report Template.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Department-Reports/Department Report Index.md",
-      "target": "docs/templates/Galyarder-Department-Reports/Security Report Template.md",
+      "source": "docs/templates/Forge-Department-Reports/Department Report Index.md",
+      "target": "docs/templates/Forge-Department-Reports/Security Report Template.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Department-Reports/Department Report Index.md",
-      "target": "docs/templates/Galyarder-Department-Reports/Growth Report Template.md",
+      "source": "docs/templates/Forge-Department-Reports/Department Report Index.md",
+      "target": "docs/templates/Forge-Department-Reports/Growth Report Template.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Department-Reports/Department Report Index.md",
-      "target": "docs/templates/Galyarder-Department-Reports/Operations Report Template.md",
+      "source": "docs/templates/Forge-Department-Reports/Department Report Index.md",
+      "target": "docs/templates/Forge-Department-Reports/Operations Report Template.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
     {
-      "source": "docs/templates/Galyarder-Department-Reports/Department Report Index.md",
-      "target": "docs/templates/Galyarder-Department-Reports/Knowledge Report Template.md",
+      "source": "docs/templates/Forge-Department-Reports/Department Report Index.md",
+      "target": "docs/templates/Forge-Department-Reports/Knowledge Report Template.md",
       "type": "semantic_link",
       "confidence": 0.9
     },
@@ -5198,61 +5198,61 @@
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/galyarder-ceo.md",
+      "source": "docs/agents/forge-ceo.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/galyarder-ceo.md",
+      "source": "docs/agents/forge-ceo.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/galyarder-cfo-coo.md",
+      "source": "docs/agents/forge-cfo-coo.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/galyarder-cfo-coo.md",
+      "source": "docs/agents/forge-cfo-coo.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/galyarder-cmo.md",
+      "source": "docs/agents/forge-cmo.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/galyarder-cmo.md",
+      "source": "docs/agents/forge-cmo.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/galyarder-cto.md",
+      "source": "docs/agents/forge-cto.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/galyarder-cto.md",
+      "source": "docs/agents/forge-cto.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/galyarder-specialist.md",
+      "source": "docs/agents/forge-specialist.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/agents/galyarder-specialist.md",
+      "source": "docs/agents/forge-specialist.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -5655,31 +5655,31 @@
     },
     {
       "source": "docs/agents/index.md",
-      "target": "docs/agents/galyarder-ceo.md",
+      "target": "docs/agents/forge-ceo.md",
       "type": "structural_reference",
       "confidence": 1.0
     },
     {
       "source": "docs/agents/index.md",
-      "target": "docs/agents/galyarder-cfo-coo.md",
+      "target": "docs/agents/forge-cfo-coo.md",
       "type": "structural_reference",
       "confidence": 1.0
     },
     {
       "source": "docs/agents/index.md",
-      "target": "docs/agents/galyarder-cmo.md",
+      "target": "docs/agents/forge-cmo.md",
       "type": "structural_reference",
       "confidence": 1.0
     },
     {
       "source": "docs/agents/index.md",
-      "target": "docs/agents/galyarder-cto.md",
+      "target": "docs/agents/forge-cto.md",
       "type": "structural_reference",
       "confidence": 1.0
     },
     {
       "source": "docs/agents/index.md",
-      "target": "docs/agents/galyarder-specialist.md",
+      "target": "docs/agents/forge-specialist.md",
       "type": "structural_reference",
       "confidence": 1.0
     },
@@ -6171,13 +6171,13 @@
     },
     {
       "source": "docs/skills/index.md",
-      "target": "docs/skills/galyarder/index.md",
+      "target": "docs/skills/forge/index.md",
       "type": "structural_reference",
       "confidence": 1.0
     },
     {
       "source": "docs/skills/index.md",
-      "target": "docs/skills/galyarder-specialist/index.md",
+      "target": "docs/skills/forge-specialist/index.md",
       "type": "structural_reference",
       "confidence": 1.0
     },
@@ -6669,13 +6669,13 @@
     },
     {
       "source": "docs/skills/index.md",
-      "target": "docs/skills/using-galyarder-agent-framework/index.md",
+      "target": "docs/skills/using-forge-agent-framework/index.md",
       "type": "structural_reference",
       "confidence": 1.0
     },
     {
       "source": "docs/skills/index.md",
-      "target": "docs/skills/using-galyarder-framework/index.md",
+      "target": "docs/skills/using-forge-anything/index.md",
       "type": "structural_reference",
       "confidence": 1.0
     },
@@ -7460,25 +7460,25 @@
       "confidence": 0.8
     },
     {
-      "source": "docs/skills/galyarder/index.md",
+      "source": "docs/skills/forge/index.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/skills/galyarder/index.md",
+      "source": "docs/skills/forge/index.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
     },
     {
-      "source": "docs/skills/galyarder-specialist/index.md",
+      "source": "docs/skills/forge-specialist/index.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/skills/galyarder-specialist/index.md",
+      "source": "docs/skills/forge-specialist/index.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -8930,25 +8930,25 @@
       "confidence": 0.8
     },
     {
-      "source": "docs/skills/using-galyarder-agent-framework/index.md",
+      "source": "docs/skills/using-forge-agent-framework/index.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/skills/using-galyarder-agent-framework/index.md",
+      "source": "docs/skills/using-forge-agent-framework/index.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
     },
     {
-      "source": "docs/skills/using-galyarder-framework/index.md",
+      "source": "docs/skills/using-forge-anything/index.md",
       "target": "CLAUDE.md",
       "type": "enforces_protocol",
       "confidence": 0.8
     },
     {
-      "source": "docs/skills/using-galyarder-framework/index.md",
+      "source": "docs/skills/using-forge-anything/index.md",
       "target": "GEMINI.md",
       "type": "uses_proxy",
       "confidence": 0.8
@@ -9511,7 +9511,7 @@
       [
         "CLAUDE.md",
         {
-          "title": "Claude Code Integration \u2014 Galyarder Framework",
+          "title": "Claude Code Integration \u2014 Forge Anything",
           "category": "core-hukum",
           "silo": "Root",
           "community": "Root",
@@ -9522,7 +9522,7 @@
       [
         "GEMINI.md",
         {
-          "title": "Gemini CLI Integration \u2014 Galyarder Framework",
+          "title": "Gemini CLI Integration \u2014 Forge Anything",
           "category": "core-hukum",
           "silo": "Root",
           "community": "Root",
@@ -9533,7 +9533,7 @@
       [
         "docs/skills/index.md",
         {
-          "title": "Galyarder Framework: Skills",
+          "title": "Forge Anything: Skills",
           "category": "documentation",
           "silo": "docs",
           "community": "docs",

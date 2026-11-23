@@ -1,12 +1,12 @@
 ---
 name: "legal-finance"
-description: "Consolidated Galyarder Framework Legal-finance intelligence bundle."
+description: "Consolidated Forge Anything Legal-finance intelligence bundle."
 risk: low
 source: internal
 date_added: '2026-11-23'
 ---
 
-# GALYARDER LEGAL-FINANCE BUNDLE
+# FORGE LEGAL-FINANCE BUNDLE
 
 This bundle contains 12 high-integrity SOPs for the Legal-finance department.
 
@@ -302,7 +302,7 @@ Review quarterly. Less important at early stage, but needed for:
 - **legal**  Business entity formation and legal compliance
 - **pricing**  Set pricing that supports healthy unit economics
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: contract-and-proposal-writer
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -762,7 +762,7 @@ python scripts/contract_comparison_analyzer.py contract_v1.json contract_v2.json
 - **pricing-strategy** -- When proposal pricing needs strategic positioning against competitors or market rates
 - **revenue-operations** -- Contract values and payment schedules feed into pipeline forecasting and revenue recognition
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: contract-review
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -1077,7 +1077,7 @@ Quick review - key concerns only:
 - **Time to Value**: 30-60 min per contract
 - **Prerequisites**: Contract access, business context
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: finance-based-pricing-advisor
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -1826,7 +1826,7 @@ For topics NOT covered here, see future `pricing-strategy-suite`:
 - Adapted from `research/finance/Finance_For_PMs.Putting_It_Together_Synthesis.md` (Decision Framework #3)
 - Pricing scenarios from `research/finance/Finance for Product Managers.md`
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: financial-analyst
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -1861,9 +1861,9 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Financial Analyst Skill
 
 You are the Financial Analyst Specialist at Galyarder Labs.
-##  Galyarder Framework Operating Procedures (MANDATORY)
+##  Forge Anything Operating Procedures (MANDATORY)
 When operating this skill for your human partner:
-1. **Token Economy (RTK):** Use `rtk gain` results to calculate the ROI of using the Galyarder Framework vs. raw agent calls.
+1. **Token Economy (RTK):** Use `rtk gain` results to calculate the ROI of using the Forge Anything vs. raw agent calls.
 2. **Execution System (Linear):** Track budget targets and actual spend as Issues or Milestones in Linear.
 3. **Strategic Memory (Obsidian):** Submit burn rate, ROI analysis, and runway projections to the `finops-manager` for inclusion in the **Legal-Finance Report** at `[VAULT_ROOT]//Department-Reports/Legal-Finance/`.
 
@@ -2009,7 +2009,7 @@ All scripts accept JSON input files. See `assets/sample_financial_data.json` for
 
 **None** - All scripts use Python standard library only (`math`, `statistics`, `json`, `argparse`, `datetime`). No numpy, pandas, or scipy required.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: gdpr-ccpa-privacy-auditor
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -2064,7 +2064,7 @@ The `gdpr-ccpa-privacy-auditor` is a transparency tool. It helps companies ensur
 - **Passive Scanning**: When scanning URLs, it acts like a standard browser.
 - **Source Code Privacy**: If providing `source_code_path`, ensure the environment is secure and the code is not transmitted externally.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: gdpr-compliance
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -2646,7 +2646,7 @@ gdpr_compliance_checklist:
 - Train all staff who handle personal data, not just the IT and legal teams
 - Regularly audit data flows to discover shadow processing or undocumented data stores
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: iso-42001-ai-governance
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -3851,7 +3851,7 @@ ISO 42001 aligns with major AI regulations:
 
 **Remember**: ISO 42001 is about building trustworthy AI systems through systematic risk management and governance. It's not a barrier to innovationit's a framework for responsible innovation that protects both organizations and the people affected by AI.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: legal-advisor
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -3945,7 +3945,7 @@ Always include disclaimer: "This is a template for informational purposes. Consu
 
 Focus on comprehensiveness, clarity, and regulatory compliance while maintaining readability.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: legal-tos-privacy
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -4482,7 +4482,7 @@ Deliver final documents in this structure:
 
 7. **Not legal advice** - These documents should be reviewed by qualified legal counsel before publication.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: open-source-license
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -4660,7 +4660,7 @@ When reviewing compliance:
 3. Flag any issues with severity (critical/warning/info)
 4. Provide specific remediation steps
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: saas-finops-optimization
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -4739,6 +4739,6 @@ AI tokens are often the #1 expense for modern startups. Optimize or die.
 3. **Waste Detection**: Identify unused environments or over-provisioned database instances.
 4. **Action Plan**: Provide a prioritized list of "Quick Wins" (high savings, low effort).
 
- 2026 Galyarder Labs. Galyarder Framework. SaaS FinOps.
+ 2026 Galyarder Labs. Forge Anything. SaaS FinOps.
 
- 2026 Galyarder Labs. Galyarder Framework. SaaS FinOps.
+ 2026 Galyarder Labs. Forge Anything. SaaS FinOps.

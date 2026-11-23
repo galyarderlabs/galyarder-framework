@@ -68,4 +68,4 @@ defuddle parse <url> -p domain
 | (none) | HTML |
 | `-p <name>` | Specific metadata property |
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

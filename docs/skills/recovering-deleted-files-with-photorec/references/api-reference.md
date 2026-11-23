@@ -59,4 +59,4 @@ python agent.py /cases/evidence.dd /cases/recovered/ jpg,pdf,doc
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

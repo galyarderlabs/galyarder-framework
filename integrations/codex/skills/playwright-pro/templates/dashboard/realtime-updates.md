@@ -143,4 +143,4 @@ test.describe('Realtime Updates', () => {
 | Stale data | Warning shown while disconnected |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

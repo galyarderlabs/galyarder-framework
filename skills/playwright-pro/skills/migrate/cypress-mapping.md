@@ -79,4 +79,4 @@
 | `retries: { runMode: 2 }` | `retries: 2` |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

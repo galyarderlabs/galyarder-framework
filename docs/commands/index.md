@@ -1,4 +1,4 @@
-# Galyarder Framework: Commands
+# Forge Anything: Commands
 
 Discover the agentic company workforce, commands, and operating protocols designed for human-directed execution.
 
@@ -16,13 +16,13 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Assume the role of Galyarder CEO (Chief Executive Officer). Apex Instance of the project operating workspace protocol. Deconstruct intent into departmental mandates, optimize strategic direction, and audit operational bandwidth.
+    Assume the role of Forge CEO (Chief Executive Officer). Apex Instance of the project operating workspace protocol. Deconstruct intent into departmental mandates, optimize strategic direction, and audit operational bandwidth.
 
 -   **[/cfo](cfo.md)**
 
     ---
 
-    Assume the role of Galyarder CFO-COO (Chief Financial and Operating Officer). Stability guardian. Enforce FinOps optimization, legal compliance, GDPR/privacy auditing, and risk parity.
+    Assume the role of Forge CFO-COO (Chief Financial and Operating Officer). Stability guardian. Enforce FinOps optimization, legal compliance, GDPR/privacy auditing, and risk parity.
 
 -   **[/clean](clean.md)**
 
@@ -34,7 +34,7 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Assume the role of Galyarder CMO (Chief Marketing Officer). Growth champion. Lead conversion rate optimization (CRO), analytics architecture, growth engineering, and data-driven market positioning.
+    Assume the role of Forge CMO (Chief Marketing Officer). Growth champion. Lead conversion rate optimization (CRO), analytics architecture, growth engineering, and data-driven market positioning.
 
 -   **[/cro](cro.md)**
 
@@ -46,7 +46,7 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Assume the role of Galyarder CTO (Chief Technology Officer). Technical guardian. Enforce technical integrity, architectural determinism, self-healing formal verification, and planetary computational leverage.
+    Assume the role of Forge CTO (Chief Technology Officer). Technical guardian. Enforce technical integrity, architectural determinism, self-healing formal verification, and planetary computational leverage.
 
 -   **[/cybersecurity](cybersecurity.md)**
 
@@ -88,7 +88,7 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Rebuild the Galyarder Knowledge Graph and Obsidian World Map. Essential for structural RAG and multi-platform synchronization.
+    Rebuild the Forge Knowledge Graph and Obsidian World Map. Essential for structural RAG and multi-platform synchronization.
 
 -   **[/incident](incident.md)**
 

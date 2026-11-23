@@ -131,4 +131,4 @@ MIT  use it however you want.
 *Built by [George Hartley](https://x.com/GTHartley). Follow for updates.*
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

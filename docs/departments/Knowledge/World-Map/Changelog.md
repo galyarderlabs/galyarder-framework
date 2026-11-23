@@ -13,4 +13,4 @@ It has a connectivity degree of **1**.
 ## 🔗 Neural Links
 
 ### Directing To:
-- [[Claude-Code-Integration-—-Galyarder-Framework]] (enforces_protocol | 0.8)
+- [[Claude-Code-Integration-—-Forge-Anything]] (enforces_protocol | 0.8)

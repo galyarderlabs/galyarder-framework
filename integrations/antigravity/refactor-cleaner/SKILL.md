@@ -334,4 +334,4 @@ After cleanup session:
 
 **Remember**: Dead code is technical debt. Regular cleanup keeps the codebase maintainable and fast. But safety first - never remove code without understanding why it exists.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

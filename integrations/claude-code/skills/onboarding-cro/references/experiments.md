@@ -248,4 +248,4 @@ For all experiments, measure:
 | Support requests | Volume during onboarding |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

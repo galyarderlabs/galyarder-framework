@@ -1,5 +1,5 @@
 ---
-title: "founder-thought-leadership | Galyarder Framework"
+title: "founder-thought-leadership | Forge Anything"
 description: "Founder Brand And Thought Leadership Specialist. Use to define founder IP territory, create content systems for X and LinkedIn, and turn founder experience into audience, distribution, and credibility."
 ---
 
@@ -74,4 +74,4 @@ Produce:
 - Optimize for relevance and inbound conversations, not just impressions.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

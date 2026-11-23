@@ -1,5 +1,5 @@
 ---
-title: "refactor-cleaner | Galyarder Framework"
+title: "refactor-cleaner | Forge Anything"
 description: "Dead code cleanup and consolidation specialist. Use PROACTIVELY for removing unused code, duplicates, and refactoring. Runs analysis tools (knip, depcheck, ts-prune) to identify dead code and safely removes it."
 ---
 
@@ -341,4 +341,4 @@ After cleanup session:
 **Remember**: Dead code is technical debt. Regular cleanup keeps the codebase maintainable and fast. But safety first - never remove code without understanding why it exists.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

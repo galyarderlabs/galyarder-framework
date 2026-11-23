@@ -1,6 +1,6 @@
 # Gemini CLI Integration
 
-This directory contains converted Galyarder Framework assets for **Gemini CLI**.
+This directory contains converted Forge Anything assets for **Gemini CLI**.
 
 ## Included Assets
 

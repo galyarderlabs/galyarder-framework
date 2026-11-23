@@ -217,4 +217,4 @@ Series A: 4-6 tests per month
 **Validation:** Test reaches statistical significance before declaring winner.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -62,4 +62,4 @@ unencoded = [ch for ch in '<>"\'&/' if ch in resp.text]
 - Dalfox (CLI scanner): https://github.com/hahwul/dalfox
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

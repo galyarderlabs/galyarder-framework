@@ -118,4 +118,4 @@ test.describe('Basic Search', () => {
 | Special chars | XSS input handled, no script execution |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

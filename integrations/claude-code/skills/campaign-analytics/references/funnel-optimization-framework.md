@@ -318,4 +318,4 @@ When using the funnel analyzer's segment comparison feature:
 | Annual funnel redesign | Annually | Stage definitions, measurement methodology, tool updates |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

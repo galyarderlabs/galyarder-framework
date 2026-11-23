@@ -28,4 +28,4 @@ npx svgo --precision=1 --multipass icon.svg
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

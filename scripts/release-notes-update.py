@@ -3,7 +3,7 @@ import sys
 
 CHANGELOG_HEADER = """## [1.9.7] - 2026-04-22
 ### Fixed
-- **Legacy Purge**: Permanently removed all legacy "Paperclip" references from Agent Adapter documentation, manifests, and skill logic. Standardized all packages under the `@galyarder` scope.
+- **Legacy Purge**: Permanently removed all legacy "Paperclip" references from Agent Adapter documentation, manifests, and skill logic. Standardized all packages under the `@forge-anything` scope.
 
 ## [1.9.6] - 2026-04-22
 ### Changed
@@ -11,7 +11,7 @@ CHANGELOG_HEADER = """## [1.9.7] - 2026-04-22
 
 ## [1.9.5] - 2026-04-22
 ### Fixed
-- **Infrastructure Mismatch**: Added the missing `Infrastructure` department to the `galyarder scaffold` command to ensure full architectural parity with system smoke tests.
+- **Infrastructure Mismatch**: Added the missing `Infrastructure` department to the `forge scaffold` command to ensure full architectural parity with system smoke tests.
 
 ## [1.9.4] - 2026-04-22
 ### Added
@@ -23,40 +23,40 @@ CHANGELOG_HEADER = """## [1.9.7] - 2026-04-22
 
 ## [1.9.2] - 2026-04-22
 ### Fixed
-- **NPM Registry Preparation**: Adjusted installation links to favor the official `galyarder-framework` package name and optimized package size via `.npmignore`.
+- **NPM Registry Preparation**: Adjusted installation links to favor the official `forge-anything` package name and optimized package size via `.npmignore`.
 
 ## [1.9.0] - 2026-04-22
 ### Added
-- **Unified Framework CLI**: Implemented the `galyarder` Node.js CLI to consolidate all shell scripts into a single, high-fidelity entry point.
+- **Unified Framework CLI**: Implemented the `forge` Node.js CLI to consolidate all shell scripts into a single, high-fidelity entry point.
 - **NPM Distribution**: Transformed the framework into a first-class NPM package for global installation.
 """
 
 RELEASE_NOTES_HEADER = """## [v1.9.7] - 2026-04-22
 ### Legacy Branding Purge
-This release finalizes the "Galyarder Standard" by permanently purging all legacy "Paperclip" references from the framework's documentation, manifests, and internal logic.
+This release finalizes the "Forge Standard" by permanently purging all legacy "Paperclip" references from the framework's documentation, manifests, and internal logic.
 
 #### Highlights
-- **Universal Refactor**: Replaced `@paperclipai` scope with `@galyarder` across all files.
-- **Branding Sterilization**: Conducted a recursive audit to ensure 100% Galyarder identity.
+- **Universal Refactor**: Replaced `@paperclipai` scope with `@forge-anything` across all files.
+- **Branding Sterilization**: Conducted a recursive audit to ensure 100% Forge Anything identity.
 - **Agent Adapter Fix**: Updated the `create-agent-adapter` skill to reflect the new standardized types.
 
 ---
 
 ## [v1.9.0] - 2026-04-22
 ### The Unified CLI & NPM Era
-A major architectural shift transitioning Galyarder Framework from a "Script-First" repository to a globally distributed "Package-First" intelligence layer.
+A major architectural shift transitioning Forge Anything from a "Script-First" repository to a globally distributed "Package-First" intelligence layer.
 
 #### Highlights
-- **Unified CLI**: All commands consolidated under the `galyarder` binary (e.g., `galyarder scaffold`, `galyarder deploy`).
-- **NPM Distribution**: Official support for `npm install -g galyarder-framework`.
+- **Unified CLI**: All commands consolidated under the `forge` binary (e.g., `forge scaffold`, `forge deploy`).
+- **NPM Distribution**: Official support for `npm install -g forge-anything`.
 - **Skills.sh Support**: First-class integration with `npx skills add` for departmental and full-framework injection.
 - **Infrastructure Parity**: Finalized the 8-department structure including the mandatory `Infrastructure` silo.
 
 #### Verification
 ```bash
-npm install -g galyarder-framework
-galyarder help
-galyarder smoke
+npm install -g forge-anything
+forge help
+forge smoke
 ```
 
 ---

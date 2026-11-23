@@ -72,4 +72,4 @@ Design features, evaluate trade-offs, recommend patterns, identify bottlenecks, 
 - **Scalability**: 10K (Current) -> 100K (Redis/CDN) -> 1M (Microservices) -> 10M (Event-Driven/Multi-Region).
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

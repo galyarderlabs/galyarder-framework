@@ -1,5 +1,5 @@
 ---
-title: "seo-audit | Galyarder Framework"
+title: "seo-audit | Forge Anything"
 description: "Diagnose and audit SEO issues affecting crawlability, indexation, rankings, and organic performance."
 ---
 
@@ -520,4 +520,4 @@ Use these skills **only after the audit is complete** and findings are accepted.
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

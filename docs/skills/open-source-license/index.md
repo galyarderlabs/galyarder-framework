@@ -1,5 +1,5 @@
 ---
-title: "open-source-license | Galyarder Framework"
+title: "open-source-license | Forge Anything"
 description: "Open Source License guidance, selection, compliance review, and drafting. Use this skill when users ask about choosing open source licenses, checking license compatibility, reviewing projects for OSS compliance, generating LICENSE/NOTICE files, or understanding specific license terms. Triggers include questions about MIT, Apache, GPL, BSD, LGPL, AGPL, copyleft, permissive licenses, license compatibility, SPDX identifiers, or any OSS licensing topic."
 ---
 
@@ -187,4 +187,4 @@ When reviewing compliance:
 4. Provide specific remediation steps
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

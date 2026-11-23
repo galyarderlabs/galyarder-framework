@@ -1,6 +1,6 @@
 # Augment Integration
 
-This directory contains converted Galyarder Framework assets for **Augment**.
+This directory contains converted Forge Anything assets for **Augment**.
 
 ## Included Assets
 

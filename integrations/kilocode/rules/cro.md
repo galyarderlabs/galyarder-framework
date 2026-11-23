@@ -30,4 +30,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 - **Durable Memory**: Every mission concludes with an audit log and persistent markdown artifact saved via the **MemoryStore Interface** (Default: Obsidian `docs/departments/`).
 
 
-**Note**: This command is powered by the `galyarder-framework:onboarding-cro` and `paywall-upgrade-cro` skills.
+**Note**: This command is powered by the `forge-anything:onboarding-cro` and `paywall-upgrade-cro` skills.

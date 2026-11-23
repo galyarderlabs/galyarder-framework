@@ -129,4 +129,4 @@ test.describe('Update {{entityName}}', () => {
 | Escape cancel | Inline edit cancelled, original value restored |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

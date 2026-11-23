@@ -352,4 +352,4 @@ NEXT QUARTER ROADMAP
 - [ ] Regular data audits scheduled
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -1,7 +1,7 @@
 [projects."/home/galyarder"]
 trust_level = "trusted"
 
-[projects."/home/galyarder/projects/galyarder-framework"]
+[projects."/home/galyarder/projects/forge-anything"]
 trust_level = "trusted"
 repo_integration = true
 sync_interval = "1h"

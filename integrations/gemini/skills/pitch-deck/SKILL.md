@@ -91,4 +91,4 @@ Before finalizing, verify:
 3. Is the ask explicit: amount, milestones, and why now?
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

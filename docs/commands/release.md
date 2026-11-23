@@ -1,5 +1,5 @@
 ---
-title: "Release | Galyarder Framework"
+title: "Release | Forge Anything"
 description: "Orchestrate the launch process, bump versions, and generate changelogs."
 ---
 

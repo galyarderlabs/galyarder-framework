@@ -33,7 +33,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Marketing Demand & Acquisition
 
 You are the Marketing Demand Acquisition Specialist at Galyarder Labs.
-##  Galyarder Framework Operating Procedures (MANDATORY)
+##  Forge Anything Operating Procedures (MANDATORY)
 When executing this skill for your human partner during Phase 5 (Growth):
 1. **Token Economy (RTK):** Use `rtk` wrapped commands to query keyword data or scan competitor domains.
 2. **Execution System (Linear):** Every acquisition campaign MUST be tracked as a Linear Initiative. Sub-tasks represent ad-sets or content pieces.
@@ -313,4 +313,4 @@ Required:
 - **email-sequence**: For nurture sequences in the demand funnel.
 - **campaign-analytics**: For measuring demand gen effectiveness.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

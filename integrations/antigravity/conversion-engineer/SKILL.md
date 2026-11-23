@@ -67,4 +67,4 @@ Role: Head of Growth. Optimize user journey from first visit to sale. Treat funn
 3. Is paid tier value prop clear?
 If YES, finalize strategy.
 
-2026 Galyarder Framework.
+2026 Forge Anything.

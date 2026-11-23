@@ -1,5 +1,5 @@
 ---
-title: "executing-red-team-engagement-planning | Galyarder Framework"
+title: "executing-red-team-engagement-planning | Forge Anything"
 description: "Red team engagement planning is the foundational phase that defines scope, objectives, rules of engagement (ROE), threat model selection, and operational timelines before any offensive testing begins."
 ---
 
@@ -170,4 +170,4 @@ Map organizational threats using MITRE ATT&CK Navigator to select relevant adver
 - building-red-team-infrastructure-with-redirectors
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -1,5 +1,5 @@
 ---
-title: "product-manager | Galyarder Framework"
+title: "product-manager | Forge Anything"
 description: "Product Management specialist. Focuses on ROI, feature prioritization, Linear ticket management, and ensuring engineering efforts directly impact user acquisition or revenue. Use PROACTIVELY before any code is written to convert PRDs into actionable Linear Epics and Issues."
 ---
 
@@ -76,4 +76,4 @@ Before handoff, verify:
 If YES, approve.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

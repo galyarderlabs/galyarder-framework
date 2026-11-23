@@ -193,4 +193,4 @@ For testing localhost or staging behind firewall:
 - Links to BrowserStack dashboard for video/screenshots
 - Any browser-specific failures highlighted
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

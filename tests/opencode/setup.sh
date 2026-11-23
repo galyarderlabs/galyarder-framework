@@ -16,24 +16,24 @@ export OPENCODE_CONFIG_DIR="$TEST_HOME/.config/opencode"
 # Standard install layout:
 #   $OPENCODE_CONFIG_DIR/              package root
 #   $OPENCODE_CONFIG_DIR/skills/       skills dir (../../skills from plugin)
-#   $OPENCODE_CONFIG_DIR/.opencode/plugins/galyarder-framework.js  plugin file
-#   $OPENCODE_CONFIG_DIR/plugins/galyarder-framework.js    symlink OpenCode reads
+#   $OPENCODE_CONFIG_DIR/.opencode/plugins/forge-anything.js  plugin file
+#   $OPENCODE_CONFIG_DIR/plugins/forge-anything.js    symlink OpenCode reads
 
-GALYARDER_DIR="$OPENCODE_CONFIG_DIR/galyarder-framework"
-GALYARDER_SKILLS_DIR="$GALYARDER_DIR/skills"
-GALYARDER_PLUGIN_FILE="$GALYARDER_DIR/.opencode/plugins/galyarder-framework.js"
+FORGE_DIR="$OPENCODE_CONFIG_DIR/forge-anything"
+FORGE_SKILLS_DIR="$FORGE_DIR/skills"
+FORGE_PLUGIN_FILE="$FORGE_DIR/.opencode/plugins/forge-anything.js"
 
 # Install skills
-mkdir -p "$GALYARDER_DIR"
-cp -r "$REPO_ROOT/skills" "$GALYARDER_DIR/"
+mkdir -p "$FORGE_DIR"
+cp -r "$REPO_ROOT/skills" "$FORGE_DIR/"
 
 # Install plugin
-mkdir -p "$(dirname "$GALYARDER_PLUGIN_FILE")"
-cp "$REPO_ROOT/.opencode/plugins/galyarder-framework.js" "$GALYARDER_PLUGIN_FILE"
+mkdir -p "$(dirname "$FORGE_PLUGIN_FILE")"
+cp "$REPO_ROOT/.opencode/plugins/forge-anything.js" "$FORGE_PLUGIN_FILE"
 
 # Register plugin via symlink (what OpenCode actually reads)
 mkdir -p "$OPENCODE_CONFIG_DIR/plugins"
-ln -sf "$GALYARDER_PLUGIN_FILE" "$OPENCODE_CONFIG_DIR/plugins/galyarder-framework.js"
+ln -sf "$FORGE_PLUGIN_FILE" "$OPENCODE_CONFIG_DIR/plugins/forge-anything.js"
 
 # Create test skills in different locations for testing
 
@@ -67,10 +67,10 @@ EOF
 
 echo "Setup complete: $TEST_HOME"
 echo "OPENCODE_CONFIG_DIR:  $OPENCODE_CONFIG_DIR"
-echo "Galyarder Framework dir:      $GALYARDER_DIR"
-echo "Skills dir:           $GALYARDER_SKILLS_DIR"
-echo "Plugin file:          $GALYARDER_PLUGIN_FILE"
-echo "Plugin registered at: $OPENCODE_CONFIG_DIR/plugins/galyarder-framework.js"
+echo "Forge Anything dir:      $FORGE_DIR"
+echo "Skills dir:           $FORGE_SKILLS_DIR"
+echo "Plugin file:          $FORGE_PLUGIN_FILE"
+echo "Plugin registered at: $OPENCODE_CONFIG_DIR/plugins/forge-anything.js"
 echo "Test project at:      $TEST_HOME/test-project"
 
 # Helper function for cleanup (call from tests or trap)
@@ -83,6 +83,6 @@ cleanup_test_env() {
 # Export for use in tests
 export -f cleanup_test_env
 export REPO_ROOT
-export GALYARDER_DIR
-export GALYARDER_SKILLS_DIR
-export GALYARDER_PLUGIN_FILE
+export FORGE_DIR
+export FORGE_SKILLS_DIR
+export FORGE_PLUGIN_FILE

@@ -250,4 +250,4 @@ PhotoRec Recovery Summary:
   Hash Manifest:    /cases/case-2024-001/recovered/recovered_hashes.txt
 ```
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

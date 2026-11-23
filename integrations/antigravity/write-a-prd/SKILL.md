@@ -105,4 +105,4 @@ Any further notes about the feature.
 
 </prd-template>
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

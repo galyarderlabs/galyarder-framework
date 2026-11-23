@@ -169,4 +169,4 @@ Run the command. Read the output. THEN claim the result.
 This is non-negotiable.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

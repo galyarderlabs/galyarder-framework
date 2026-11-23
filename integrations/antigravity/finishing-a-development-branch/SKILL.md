@@ -231,4 +231,4 @@ git worktree remove <worktree-path>
 **Pairs with:**
 - **using-git-worktrees** - Cleans up worktree created by that skill
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

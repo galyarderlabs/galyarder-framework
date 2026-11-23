@@ -284,4 +284,4 @@ Code from Stack Overflow has specific license terms that are often ignored.
 7. **Upstream engagement** - Contribute back to avoid divergence
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

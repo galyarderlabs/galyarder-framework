@@ -109,4 +109,4 @@ Complete check matrices for cloud security posture management across AWS, Azure,
 | Secret | Type | Credentials in ConfigMap instead of Secret | Move to Kubernetes Secrets or external secrets manager |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

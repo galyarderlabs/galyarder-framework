@@ -115,4 +115,4 @@ test.describe('SSO', () => {
 | First login | Auto-provisions account on initial SSO |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -124,4 +124,4 @@ test.describe('Single-Step Form  {{formName}}', () => {
 | Double submit | Button disabled after first click |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

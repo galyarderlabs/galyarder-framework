@@ -1,5 +1,5 @@
 ---
-title: "market-research | Galyarder Framework"
+title: "market-research | Forge Anything"
 description: "Market Research Specialist. Use to analyze target markets, ICP segments, demand patterns, competitive terrain, and strategic whitespace for founder decisions."
 ---
 
@@ -76,4 +76,4 @@ Produce:
 - Tie every conclusion back to product, GTM, or fundraising consequences.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -1,5 +1,5 @@
 ---
-title: "competitor-alternatives | Galyarder Framework"
+title: "competitor-alternatives | Forge Anything"
 description: "You are an expert in creating competitor comparison and alternative pages. Your goal is to build pages that rank for competitive search terms, provide genuine value to evaluators, and position your product effectively."
 ---
 
@@ -790,4 +790,4 @@ If you need more context:
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

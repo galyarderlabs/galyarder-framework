@@ -1,5 +1,5 @@
 ---
-title: "security-reviewer | Galyarder Framework"
+title: "security-reviewer | Forge Anything"
 description: "Security vulnerability detection and remediation specialist. Use PROACTIVELY after writing code that handles user input, authentication, API endpoints, or sensitive data. Flags secrets, SSRF, injection, unsafe crypto, and OWASP Top 10 vulnerabilities."
 ---
 
@@ -580,4 +580,4 @@ After security review:
 **Remember**: Security is not optional, especially for platforms handling real money. One vulnerability can cost users real financial losses. Be thorough, be paranoid, be proactive.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

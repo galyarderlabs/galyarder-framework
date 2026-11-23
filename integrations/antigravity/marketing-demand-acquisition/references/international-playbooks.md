@@ -200,4 +200,4 @@ Expand regional budget when:
 **Validation:** Native speaker review of all localized content before launch.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

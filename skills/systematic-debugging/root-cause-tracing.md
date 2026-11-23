@@ -185,4 +185,4 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
      2. [Step]  verify: [check]
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

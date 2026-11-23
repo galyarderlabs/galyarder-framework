@@ -130,4 +130,4 @@ If yes, apply all fixes using `Edit` tool.
 - Actionable fix list
 - Coverage gaps identified (pages/features with no tests)
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

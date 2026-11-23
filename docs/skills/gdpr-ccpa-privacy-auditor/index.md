@@ -1,5 +1,5 @@
 ---
-title: "gdpr-ccpa-privacy-auditor | Galyarder Framework"
+title: "gdpr-ccpa-privacy-auditor | Forge Anything"
 description: "Audits web applications to ensure declared privacy policies match actual technical data collection practices. Use to identify discrepancies in cookie usage, tracking scripts, and user data handling."
 ---
 
@@ -63,4 +63,4 @@ The `gdpr-ccpa-privacy-auditor` is a transparency tool. It helps companies ensur
 - **Source Code Privacy**: If providing `source_code_path`, ensure the environment is secure and the code is not transmitted externally.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

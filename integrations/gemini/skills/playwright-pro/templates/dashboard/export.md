@@ -146,4 +146,4 @@ test.describe('Export', () => {
 | Empty dataset | No-data warning shown |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

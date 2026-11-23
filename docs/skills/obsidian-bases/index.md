@@ -1,5 +1,5 @@
 ---
-title: "obsidian-bases | Galyarder Framework"
+title: "obsidian-bases | Forge Anything"
 description: "Create and edit Obsidian Bases (.base files) with views, filters, formulas, and summaries. Use when working with .base files, creating database-like views of notes, or when the user mentions Bases, table views, card views, filters, or formulas in Obsidian."
 ---
 
@@ -534,4 +534,4 @@ formulas:
 - [Complete Functions Reference](references/FUNCTIONS_REFERENCE.md)
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

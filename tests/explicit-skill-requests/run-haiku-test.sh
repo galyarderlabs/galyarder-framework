@@ -8,7 +8,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PLUGIN_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
 
 TIMESTAMP=$(date +%s)
-OUTPUT_DIR="/tmp/galyarder-framework-tests/${TIMESTAMP}/explicit-skill-requests/haiku"
+OUTPUT_DIR="/tmp/forge-anything-tests/${TIMESTAMP}/explicit-skill-requests/haiku"
 mkdir -p "$OUTPUT_DIR"
 
 PROJECT_DIR="$OUTPUT_DIR/project"

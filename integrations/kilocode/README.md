@@ -1,6 +1,6 @@
 # Kilo Code Integration
 
-This directory contains converted Galyarder Framework assets for **Kilo Code**.
+This directory contains converted Forge Anything assets for **Kilo Code**.
 
 ## Included Assets
 

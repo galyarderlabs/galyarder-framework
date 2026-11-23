@@ -125,4 +125,4 @@ test.describe('In-App Notifications', () => {
 | Outside click | Dropdown closes |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

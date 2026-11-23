@@ -1,5 +1,5 @@
 ---
-title: "security-guardian | Galyarder Framework"
+title: "security-guardian | Forge Anything"
 description: "Security vulnerability detection and remediation specialist. Audits code for OWASP Top 10, IDOR, SSRF, and injection. Enforces zero trust and secure data handling for financial and AI platforms. Contains full knowledge of security reviewer and audit checklists."
 ---
 
@@ -110,4 +110,4 @@ Are all vulnerabilities fixed, and are regression tests added to prove the explo
 If YES, finalize the audit report and close the issue.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

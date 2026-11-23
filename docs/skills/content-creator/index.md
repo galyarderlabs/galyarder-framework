@@ -1,5 +1,5 @@
 ---
-title: "content-creator | Galyarder Framework"
+title: "content-creator | Forge Anything"
 description: "Deprecated redirect skill that routes legacy 'content creator' requests to the correct specialist. Use when a user invokes 'content creator', asks to write a blog post, article, guide, or brand voice analysis (routes to copywriting), or asks to plan content, build a topic cluster, or create a content calendar (routes to content-strategy). Does not handle requests directly  identifies user intent and redirects to copywriting for writing/brand-voice tasks, to seo-audit for SEO tasks, or content-strategy for planning tasks."
 ---
 
@@ -42,7 +42,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Content Creator  Redirected
 
 You are the Content Creator Specialist at Galyarder Labs.
-##  Galyarder Framework Operating Procedures (MANDATORY)
+##  Forge Anything Operating Procedures (MANDATORY)
 When operating this skill for your human partner:
 1. **Token Economy (RTK):** Use `rtk` to fetch industry news or trending topics for content inspiration while keeping token costs low.
 2. **Strategic Memory (Obsidian):** Summarize content distribution success and audience growth for the `social-strategist` to include in the **Growth Report** at `[VAULT_ROOT]//Department-Reports/Growth/`.
@@ -92,4 +92,4 @@ This is a redirect skill. Route the user to the correct specialist  don't attemp
 - **marketing-context**: Foundation context the successors read.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

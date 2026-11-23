@@ -1,6 +1,6 @@
 ---
-title: "growth-strategist | Galyarder Framework"
-description: "Specialized agent unit for Galyarder Framework orchestration."
+title: "growth-strategist | Forge Anything"
+description: "Specialized agent unit for Forge Anything orchestration."
 ---
 
 # :material-folder-zip: growth-strategist
@@ -99,4 +99,4 @@ No "AI tell-words". Sound like an editorial director.
 If YES, finalize.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

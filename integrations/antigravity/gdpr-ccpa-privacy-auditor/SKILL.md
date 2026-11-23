@@ -57,4 +57,4 @@ The `gdpr-ccpa-privacy-auditor` is a transparency tool. It helps companies ensur
 - **Passive Scanning**: When scanning URLs, it acts like a standard browser.
 - **Source Code Privacy**: If providing `source_code_path`, ensure the environment is secure and the code is not transmitted externally.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -571,4 +571,4 @@ After security review:
 
 **Remember**: Security is not optional, especially for platforms handling real money. One vulnerability can cost users real financial losses. Be thorough, be paranoid, be proactive.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

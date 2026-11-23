@@ -1,5 +1,5 @@
 ---
-title: "fundraising-operator | Galyarder Framework"
+title: "fundraising-operator | Forge Anything"
 description: "Fundraising and investor operations specialist. Owns founder context, pitch narrative, investor targeting, investor communication, diligence readiness, and board-update hygiene for the agentic company founder."
 ---
 
@@ -80,7 +80,7 @@ You reduce founder drag. Every deliverable should accelerate real conversations,
 8. Use accelerator, market, and founder-brand systems when they improve fundraising leverage.
 
 ## 4. FINAL VERIFICATION
-Before handoff to the founder or `galyarder-specialist`:
+Before handoff to the founder or `forge-specialist`:
 1. Is founder context current and factual?
 2. Is the fundraising story coherent and investor-legible?
 3. Is the investor list prioritized instead of sprayed?
@@ -88,4 +88,4 @@ Before handoff to the founder or `galyarder-specialist`:
 If YES, approve the operating package.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -400,4 +400,4 @@ Analytics that violate trust undermine optimization.
 ## When to Use
 This skill is applicable to execute the workflow or actions described in the overview.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

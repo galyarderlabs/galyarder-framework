@@ -108,4 +108,4 @@ test.describe('Order Confirmation', () => {
 | Cart cleared | Cart count = 0 after checkout |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

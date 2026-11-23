@@ -119,4 +119,4 @@ When encountering a bug:
 *Purpose: Reference example for skill extraction and bulletproofing*
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

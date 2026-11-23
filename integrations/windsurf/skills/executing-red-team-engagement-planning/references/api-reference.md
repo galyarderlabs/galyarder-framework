@@ -90,4 +90,4 @@ bloodhound-python -d corp.local -u user -p pass -c all
 | Recommendations | Prioritized remediation |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

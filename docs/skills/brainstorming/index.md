@@ -1,5 +1,5 @@
 ---
-title: "brainstorming | Galyarder Framework"
+title: "brainstorming | Forge Anything"
 description: "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation."
 ---
 
@@ -201,4 +201,4 @@ If they agree to the companion, read the detailed guide before proceeding:
 `skills/brainstorming/visual-companion.md`
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

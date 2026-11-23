@@ -2,7 +2,7 @@
 node_type: documentation
 silo: docs
 degree: 0
-source: docs/templates/Galyarder-Department-Reports/Legal-Finance Report Template.md
+source: docs/templates/Forge-Department-Reports/Legal-Finance Report Template.md
 ---
 # Legal-Finance Report Template
 

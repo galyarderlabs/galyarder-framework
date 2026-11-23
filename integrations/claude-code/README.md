@@ -1,6 +1,6 @@
 # Claude Code Integration
 
-This directory contains converted Galyarder Framework assets for **Claude Code**.
+This directory contains converted Forge Anything assets for **Claude Code**.
 
 ## Included Assets
 

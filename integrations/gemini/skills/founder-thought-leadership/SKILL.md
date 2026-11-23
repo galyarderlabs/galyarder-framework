@@ -69,4 +69,4 @@ Produce:
 - Optimize for relevance and inbound conversations, not just impressions.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

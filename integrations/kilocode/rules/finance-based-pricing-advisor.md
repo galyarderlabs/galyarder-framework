@@ -747,4 +747,4 @@ For topics NOT covered here, see future `pricing-strategy-suite`:
 - Adapted from `research/finance/Finance_For_PMs.Putting_It_Together_Synthesis.md` (Decision Framework #3)
 - Pricing scenarios from `research/finance/Finance for Product Managers.md`
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

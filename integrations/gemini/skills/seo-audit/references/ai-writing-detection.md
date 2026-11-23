@@ -190,4 +190,4 @@ These words often add nothing to meaning. Remove them or find specific alternati
 6. Verify each intensifier adds genuine meaning
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

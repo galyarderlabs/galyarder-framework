@@ -39,4 +39,4 @@ function SearchInput({ onSearch }: { onSearch: (q: string) => void }) {
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

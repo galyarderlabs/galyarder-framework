@@ -132,4 +132,4 @@ test.describe('RBAC  Regular User', () => {
 | Role elevation | Promoted user gains new access immediately |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

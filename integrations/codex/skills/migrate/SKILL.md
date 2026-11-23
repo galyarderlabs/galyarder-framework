@@ -165,4 +165,4 @@ Ask user before deleting anything.
 - Before/after comparison of test run results
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -1,5 +1,5 @@
 ---
-title: "email-marketing-bible | Galyarder Framework"
+title: "email-marketing-bible | Forge Anything"
 description: ">"
 ---
 
@@ -501,4 +501,4 @@ Also covers: Agency, Healthcare, Financial, Real Estate, Travel, Education, Reta
 > Methodology: https://emailmarketingskill.com/appendix-d-methodology/
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

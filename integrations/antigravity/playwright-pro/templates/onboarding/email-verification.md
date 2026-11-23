@@ -118,4 +118,4 @@ test.describe('Email Verification', () => {
 | Already verified | "Already verified" with login link |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

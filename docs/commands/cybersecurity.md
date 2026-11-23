@@ -1,5 +1,5 @@
 ---
-title: "Cybersecurity | Galyarder Framework"
+title: "Cybersecurity | Forge Anything"
 description: "Perform an advanced offensive security audit and attack simulation on the current features."
 ---
 
@@ -39,4 +39,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command dispatches the `galyarder-framework:security-reviewer` agent with the security skills.
+**Note**: This command dispatches the `forge-anything:security-reviewer` agent with the security skills.

@@ -118,4 +118,4 @@ test.describe('Create {{entityName}}', () => {
 | Cancel | No entity created, returns to list |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

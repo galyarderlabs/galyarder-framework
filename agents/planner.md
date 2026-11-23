@@ -78,4 +78,4 @@ You are a planning specialist. Create actionable implementation plans.
 
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

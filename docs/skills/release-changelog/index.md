@@ -1,5 +1,5 @@
 ---
-title: "release-changelog | Galyarder Framework"
+title: "release-changelog | Forge Anything"
 description: ">"
 ---
 
@@ -41,11 +41,11 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 # Release Changelog Skill
 
-Generate the user-facing changelog for the **stable** Galyarder Framework release.
+Generate the user-facing changelog for the **stable** Forge Anything release.
 
 ## Versioning Model
 
-Galyarder Framework uses **calendar versioning (calver)**:
+Forge Anything uses **calendar versioning (calver)**:
 
 - Stable releases: `YYYY.MDD.P` (e.g. `2026.318.0`)
 - Canary releases: `YYYY.MDD.P-canary.N` (e.g. `2026.318.1-canary.0`)
@@ -160,7 +160,7 @@ When a bullet item clearly maps to a merged pull request, add inline attribution
 end of the entry in this format:
 
 ```
-- **Feature name**  Description. ([#123](https://github.com/galyarder/galyarder/pull/123), @contributor1, @contributor2)
+- **Feature name**  Description. ([#123](https://github.com/galyarderlabs/forge-anything/pull/123), @contributor1, @contributor2)
 ```
 
 Rules:

@@ -75,4 +75,4 @@ function SearchResults() {
 Reference: [useTransition](https://react.dev/reference/react/useTransition)
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

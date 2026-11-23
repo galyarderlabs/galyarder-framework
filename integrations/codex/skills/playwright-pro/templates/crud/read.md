@@ -117,4 +117,4 @@ test.describe('Read {{entityName}}', () => {
 | Empty list | No-results state with call to action |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

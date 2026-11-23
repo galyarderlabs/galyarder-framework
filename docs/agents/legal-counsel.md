@@ -1,5 +1,5 @@
 ---
-title: "legal-counsel | Galyarder Framework"
+title: "legal-counsel | Forge Anything"
 description: "Legal & Compliance Specialist. Use this agent to generate TOS/Privacy policies, audit GDPR/CCPA compliance, review open-source licenses, and ensure AI governance (ISO 42001). It protects the agentic company from legal liabilities."
 ---
 
@@ -69,4 +69,4 @@ You are the General Counsel at Galyarder Labs. Your mission is to mitigate risk 
 - **`contract-review`**: Automated analysis of service agreements.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework. Legal Counsel.
+ 2026 Galyarder Labs. Forge Anything. Legal Counsel.

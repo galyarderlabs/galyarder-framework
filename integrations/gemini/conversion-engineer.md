@@ -74,4 +74,4 @@ Role: Head of Growth. Optimize user journey from first visit to sale. Treat funn
 If YES, finalize strategy.
 
 ---
-2026 Galyarder Framework.
+2026 Forge Anything.

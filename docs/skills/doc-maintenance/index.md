@@ -1,5 +1,5 @@
 ---
-title: "doc-maintenance | Galyarder Framework"
+title: "doc-maintenance | Forge Anything"
 description: ">"
 ---
 
@@ -160,7 +160,7 @@ git commit -m "docs: update documentation for accuracy
 
 - [list each fix briefly]
 
-Co-Authored-By: Galyarder Framework <noreply@galyarder.ing>"
+Co-Authored-By: Forge Anything <noreply@forge-anything.ing>"
 
 git push -u origin "$BRANCH"
 

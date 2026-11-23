@@ -194,4 +194,4 @@ Pull CMS content into email templates for consistent messaging across web and em
 - [Strapi](../../../tools/integrations/strapi.md)  REST CRUD, filters, document API
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

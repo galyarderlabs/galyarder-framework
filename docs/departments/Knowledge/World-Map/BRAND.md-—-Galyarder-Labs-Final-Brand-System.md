@@ -13,8 +13,8 @@ It has a connectivity degree of **7**.
 ## 🔗 Neural Links
 
 ### Informed By:
-- [[BRAND.md-—-Galyarder-Framework-Brand]] (structural_reference | 1.0)
-- [[DESIGN.md-—-Galyarder-Framework-Design]] (structural_reference | 1.0)
+- [[BRAND.md-—-Forge-Anything-Brand]] (structural_reference | 1.0)
+- [[DESIGN.md-—-Forge-Anything-Design]] (structural_reference | 1.0)
 - [[AGENTS.md-—-Galyarder-Labs-Agent-Instructions]] (structural_reference | 1.0)
 - [[AGENTS.md-—-Galyarder-Labs-Agent-Instructions]] (structural_reference | 1.0)
 - [[AGENTS.md-—-Galyarder-Labs-Agent-Instructions]] (structural_reference | 1.0)

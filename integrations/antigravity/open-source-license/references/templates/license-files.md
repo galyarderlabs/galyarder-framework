@@ -373,4 +373,4 @@ Then include both license texts in separate files:
 - `LICENSE-APACHE`
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

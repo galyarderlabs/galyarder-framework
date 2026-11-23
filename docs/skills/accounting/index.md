@@ -1,5 +1,5 @@
 ---
-title: "accounting | Galyarder Framework"
+title: "accounting | Forge Anything"
 description: "Use this skill when the user needs to set up bookkeeping, track revenue and expenses, prepare for taxes, choose accounting software, understand SaaS revenue recognition, or manage the financial operations of their bootstrapped business. Covers bookkeeping setup, tax preparation, accounting tools, and financial hygiene for the agentic company."
 ---
 
@@ -310,4 +310,4 @@ Review quarterly. Less important at early stage, but needed for:
 - **pricing**  Set pricing that supports healthy unit economics
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

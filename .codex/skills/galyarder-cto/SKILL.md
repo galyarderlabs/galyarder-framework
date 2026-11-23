@@ -1,1 +1,0 @@
-../../../agents/galyarder-cto.md

@@ -54,4 +54,4 @@ mitmproxy2har output.flow > capture.har
 - mitmproxy: https://docs.mitmproxy.org/stable/
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

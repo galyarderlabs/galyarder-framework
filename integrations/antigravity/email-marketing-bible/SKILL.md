@@ -480,4 +480,4 @@ Also covers: Agency, Healthcare, Financial, Real Estate, Travel, Education, Reta
 > Marketing calendar: https://emailmarketingskill.com/appendix-c-calendar/
 > Methodology: https://emailmarketingskill.com/appendix-d-methodology/
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

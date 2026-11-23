@@ -1,5 +1,5 @@
 ---
-title: "ab-test-setup | Galyarder Framework"
+title: "ab-test-setup | Forge Anything"
 description: "Structured guide for setting up A/B tests with mandatory gates for hypothesis, metrics, and execution readiness."
 ---
 
@@ -272,4 +272,4 @@ that is the signal to **slow down and re-check the design**.
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

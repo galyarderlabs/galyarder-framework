@@ -116,4 +116,4 @@ test.describe('Delete {{entityName}}', () => {
 | Type-to-confirm | Confirm button disabled until name typed |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

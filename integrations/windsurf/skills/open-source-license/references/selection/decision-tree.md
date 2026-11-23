@@ -211,4 +211,4 @@ Before finalizing your license choice:
 - [ ] Have you consulted legal counsel for commercial projects?
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

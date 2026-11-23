@@ -79,4 +79,4 @@ Before finalizing, verify:
 4. Could a busy investor scan this in under a minute?
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

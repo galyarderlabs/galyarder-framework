@@ -157,4 +157,4 @@ Based on this period's performance data:
 *Report generated using campaign-analytics toolkit. Data source: [Source system/platform].*
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

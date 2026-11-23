@@ -259,4 +259,4 @@ OVERALL SEO SCORE: 87/100 (Good)
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

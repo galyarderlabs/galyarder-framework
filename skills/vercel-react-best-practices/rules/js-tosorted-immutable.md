@@ -57,4 +57,4 @@ const sorted = [...items].sort((a, b) => a.value - b.value)
 - `.with()` - immutable element replacement
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

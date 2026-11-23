@@ -21,11 +21,11 @@ fi
 
 # Get the directory where this script lives
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-# Get the galyarder-framework plugin root (two levels up)
+# Get the forge-anything plugin root (two levels up)
 PLUGIN_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
 
 TIMESTAMP=$(date +%s)
-OUTPUT_DIR="/tmp/galyarder-framework-tests/${TIMESTAMP}/explicit-skill-requests/${SKILL_NAME}"
+OUTPUT_DIR="/tmp/forge-anything-tests/${TIMESTAMP}/explicit-skill-requests/${SKILL_NAME}"
 mkdir -p "$OUTPUT_DIR"
 
 # Read prompt from file

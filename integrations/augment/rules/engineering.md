@@ -1,8 +1,8 @@
 ---
-description: "Consolidated Galyarder Framework Engineering intelligence bundle."
+description: "Consolidated Forge Anything Engineering intelligence bundle."
 ---
 
-# GALYARDER ENGINEERING BUNDLE
+# FORGE ENGINEERING BUNDLE
 
 This bundle contains 11 high-integrity SOPs for the Engineering department.
 
@@ -53,7 +53,7 @@ packages/adapters/<name>/
       build-config.ts   # CreateConfigValues -> adapterConfig JSON for agent creation form
     cli/
       index.ts          # CLI exports: formatStdoutEvent
-      format-event.ts   # Colored terminal output for `galyarder run --watch`
+      format-event.ts   # Colored terminal output for `forge run --watch`
   package.json
   tsconfig.json
 ```
@@ -67,9 +67,9 @@ Three separate registries consume adapter modules:
 | CLI | `cli/src/adapters/registry.ts` | `CLIAdapterModule` |
 
 
-## 2. Shared Types (`@galyarder/adapter-utils`)
+## 2. Shared Types (`@forge-anything/adapter-utils`)
 
-All adapter interfaces live in `packages/adapter-utils/src/types.ts`. Import from `@galyarder/adapter-utils` (types) or `@galyarder/adapter-utils/server-utils` (runtime helpers).
+All adapter interfaces live in `packages/adapter-utils/src/types.ts`. Import from `@forge-anything/adapter-utils` (types) or `@forge-anything/adapter-utils/server-utils` (runtime helpers).
 
 ### Core Interfaces
 
@@ -100,7 +100,7 @@ interface AdapterExecutionResult {
   costUsd?: number | null;
   resultJson?: Record<string, unknown> | null;
   summary?: string | null;        // Human-readable summary of what the agent did
-  clearSession?: boolean;         // true = tell Galyarder Framework to forget the stored session
+  clearSession?: boolean;         // true = tell Forge Anything to forget the stored session
 }
 
 interface AdapterSessionCodec {
@@ -206,7 +206,7 @@ packages/adapters/<name>/
 
 ```json
 {
-  "name": "@galyarder/adapter-<name>",
+  "name": "@forge-anything/adapter-<name>",
   "version": "0.0.1",
   "private": true,
   "type": "module",
@@ -217,7 +217,7 @@ packages/adapters/<name>/
     "./cli": "./src/cli/index.ts"
   },
   "dependencies": {
-    "@galyarder/adapter-utils": "workspace:*",
+    "@forge-anything/adapter-utils": "workspace:*",
     "picocolors": "^1.1.1"
   },
   "devDependencies": {
@@ -252,7 +252,7 @@ export const agentConfigurationDoc = `# my_agent agent configuration
 
 **Writing `agentConfigurationDoc` as routing logic:**
 
-The `agentConfigurationDoc` is read by LLM agents (including Galyarder Framework agents that create other agents). Write it as **routing logic**, not marketing copy. Include concrete "use when" and "don't use when" guidance so an LLM can decide whether this adapter is appropriate for a given task.
+The `agentConfigurationDoc` is read by LLM agents (including Forge Anything agents that create other agents). Write it as **routing logic**, not marketing copy. Include concrete "use when" and "don't use when" guidance so an LLM can decide whether this adapter is appropriate for a given task.
 
 ```ts
 export const agentConfigurationDoc = `# my_agent agent configuration
@@ -285,8 +285,8 @@ This is the most important file. It receives an `AdapterExecutionContext` and mu
 
 **Required behavior:**
 
-1. **Read config**  extract typed values from `ctx.config` using helpers (`asString`, `asNumber`, `asBoolean`, `asStringArray`, `parseObject` from `@galyarder/adapter-utils/server-utils`)
-2. **Build environment**  call `buildGalyarderEnv(agent)` then layer in `GALYARDER_RUN_ID`, context vars (`GALYARDER_TASK_ID`, `GALYARDER_WAKE_REASON`, `GALYARDER_WAKE_COMMENT_ID`, `GALYARDER_APPROVAL_ID`, `GALYARDER_APPROVAL_STATUS`, `GALYARDER_LINKED_ISSUE_IDS`), user env overrides, and auth token
+1. **Read config**  extract typed values from `ctx.config` using helpers (`asString`, `asNumber`, `asBoolean`, `asStringArray`, `parseObject` from `@forge-anything/adapter-utils/server-utils`)
+2. **Build environment**  call `buildForgeEnv(agent)` then layer in `FORGE_RUN_ID`, context vars (`FORGE_TASK_ID`, `FORGE_WAKE_REASON`, `FORGE_WAKE_COMMENT_ID`, `FORGE_APPROVAL_ID`, `FORGE_APPROVAL_STATUS`, `FORGE_LINKED_ISSUE_IDS`), user env overrides, and auth token
 3. **Resolve session**  check `runtime.sessionParams` / `runtime.sessionId` for an existing session; validate it's compatible (e.g. same cwd); decide whether to resume or start fresh
 4. **Render prompt**  use `renderTemplate(template, data)` with the template variables: `agentId`, `companyId`, `runId`, `company`, `agent`, `run`, `context`
 5. **Call onMeta**  emit adapter invocation metadata before spawning the process
@@ -299,17 +299,17 @@ This is the most important file. It receives an `AdapterExecutionContext` and mu
 
 | Variable | Source |
 |----------|--------|
-| `GALYARDER_AGENT_ID` | `agent.id` |
-| `GALYARDER_COMPANY_ID` | `agent.companyId` |
-| `GALYARDER_API_URL` | Server's own URL |
-| `GALYARDER_RUN_ID` | Current run id |
-| `GALYARDER_TASK_ID` | `context.taskId` or `context.issueId` |
-| `GALYARDER_WAKE_REASON` | `context.wakeReason` |
-| `GALYARDER_WAKE_COMMENT_ID` | `context.wakeCommentId` or `context.commentId` |
-| `GALYARDER_APPROVAL_ID` | `context.approvalId` |
-| `GALYARDER_APPROVAL_STATUS` | `context.approvalStatus` |
-| `GALYARDER_LINKED_ISSUE_IDS` | `context.issueIds` (comma-separated) |
-| `GALYARDER_API_KEY` | `authToken` (if no explicit key in config) |
+| `FORGE_AGENT_ID` | `agent.id` |
+| `FORGE_COMPANY_ID` | `agent.companyId` |
+| `FORGE_API_URL` | Server's own URL |
+| `FORGE_RUN_ID` | Current run id |
+| `FORGE_TASK_ID` | `context.taskId` or `context.issueId` |
+| `FORGE_WAKE_REASON` | `context.wakeReason` |
+| `FORGE_WAKE_COMMENT_ID` | `context.wakeCommentId` or `context.commentId` |
+| `FORGE_APPROVAL_ID` | `context.approvalId` |
+| `FORGE_APPROVAL_STATUS` | `context.approvalStatus` |
+| `FORGE_LINKED_ISSUE_IDS` | `context.issueIds` (comma-separated) |
+| `FORGE_API_KEY` | `authToken` (if no explicit key in config) |
 
 #### `server/parse.ts`  Output Parser
 
@@ -415,7 +415,7 @@ The component must support both `create` mode (using `values`/`set`) and `edit` 
 
 #### `cli/format-event.ts`  Terminal Formatter
 
-Pretty-prints stdout lines for `galyarder run --watch`. Use `picocolors` for coloring.
+Pretty-prints stdout lines for `forge run --watch`. Use `picocolors` for coloring.
 
 ```ts
 import pc from "picocolors";
@@ -435,15 +435,15 @@ After creating the adapter package, register it in all three consumers:
 ### 4.1 Server Registry (`server/src/adapters/registry.ts`)
 
 ```ts
-import { execute as myExecute, sessionCodec as mySessionCodec } from "@galyarder/adapter-my-agent/server";
-import { agentConfigurationDoc as myDoc, models as myModels } from "@galyarder/adapter-my-agent";
+import { execute as myExecute, sessionCodec as mySessionCodec } from "@forge-anything/adapter-my-agent/server";
+import { agentConfigurationDoc as myDoc, models as myModels } from "@forge-anything/adapter-my-agent";
 
 const myAgentAdapter: ServerAdapterModule = {
   type: "my_agent",
   execute: myExecute,
   sessionCodec: mySessionCodec,
   models: myModels,
-  supportsLocalAgentJwt: true,  // true if agent can use Galyarder Framework API
+  supportsLocalAgentJwt: true,  // true if agent can use Forge Anything API
   agentConfigurationDoc: myDoc,
 };
 
@@ -467,9 +467,9 @@ With `ui/src/adapters/my-agent/index.ts`:
 
 ```ts
 import type { UIAdapterModule } from "../types";
-import { parseMyAgentStdoutLine } from "@galyarder/adapter-my-agent/ui";
+import { parseMyAgentStdoutLine } from "@forge-anything/adapter-my-agent/ui";
 import { MyAgentConfigFields } from "./config-fields";
-import { buildMyAgentConfig } from "@galyarder/adapter-my-agent/ui";
+import { buildMyAgentConfig } from "@forge-anything/adapter-my-agent/ui";
 
 export const myAgentUIAdapter: UIAdapterModule = {
   type: "my_agent",
@@ -483,7 +483,7 @@ export const myAgentUIAdapter: UIAdapterModule = {
 ### 4.3 CLI Registry (`cli/src/adapters/registry.ts`)
 
 ```ts
-import { printMyAgentStreamEvent } from "@galyarder/adapter-my-agent/cli";
+import { printMyAgentStreamEvent } from "@forge-anything/adapter-my-agent/cli";
 
 const myAgentCLIAdapter: CLIAdapterModule = {
   type: "my_agent",
@@ -506,7 +506,7 @@ Sessions allow agents to maintain conversation context across runs. The system i
 - `sessionCodec.deserialize()` converts stored params back for the next run
 - `sessionCodec.getDisplayId()` extracts a human-readable session ID for the UI
 - **cwd-aware resume**: if the session was created in a different cwd than the current config, skip resuming (prevents cross-project session contamination)
-- **Unknown session retry**: if resume fails with a "session not found" error, retry with a fresh session and return `clearSession: true` so Galyarder Framework wipes the stale session
+- **Unknown session retry**: if resume fails with a "session not found" error, retry with a fresh session and return `clearSession: true` so Forge Anything wipes the stale session
 
 If the agent runtime supports any form of context compaction or conversation compression (e.g. Claude Code's automatic context management, or Codex's `previous_response_id` chaining), lean on it. Adapters that support session resume get compaction for free  the agent runtime handles context window management internally across resumes.
 
@@ -530,7 +530,7 @@ if (sessionId && !proc.timedOut && exitCode !== 0 && isUnknownSessionError(outpu
 
 ## 6. Server-Utils Helpers
 
-Import from `@galyarder/adapter-utils/server-utils`:
+Import from `@forge-anything/adapter-utils/server-utils`:
 
 | Helper | Purpose |
 |--------|---------|
@@ -541,7 +541,7 @@ Import from `@galyarder/adapter-utils/server-utils`:
 | `parseObject(val)` | Safe `Record<string, unknown>` extraction |
 | `parseJson(str)` | Safe JSON.parse returning `Record` or null |
 | `renderTemplate(tmpl, data)` | `{{path.to.value}}` template rendering |
-| `buildGalyarderEnv(agent)` | Standard `GALYARDER_*` env vars |
+| `buildForgeEnv(agent)` | Standard `FORGE_*` env vars |
 | `redactEnvForLogs(env)` | Redact sensitive keys for onMeta |
 | `ensureAbsoluteDirectory(cwd)` | Validate cwd exists and is absolute |
 | `ensureCommandResolvable(cmd, cwd, env)` | Validate command is in PATH |
@@ -553,7 +553,7 @@ Import from `@galyarder/adapter-utils/server-utils`:
 
 ### Naming
 - Adapter type: `snake_case` (e.g. `claude_local`, `codex_local`)
-- Package name: `@galyarder/adapter-<kebab-name>`
+- Package name: `@forge-anything/adapter-<kebab-name>`
 - Package directory: `packages/adapters/<kebab-name>/`
 
 ### Config Parsing
@@ -564,7 +564,7 @@ Import from `@galyarder/adapter-utils/server-utils`:
 ### Prompt Templates
 - Support `promptTemplate` for every run
 - Use `renderTemplate()` with the standard variable set
-- Default prompt: `"You are agent {{agent.id}} ({{agent.name}}). Continue your Galyarder Framework work."`
+- Default prompt: `"You are agent {{agent.id}} ({{agent.name}}). Continue your Forge Anything work."`
 
 ### Error Handling
 - Differentiate timeout vs process error vs parse failure
@@ -577,17 +577,17 @@ Import from `@galyarder/adapter-utils/server-utils`:
 - Call `onMeta(...)` before spawning to record invocation details
 - Use `redactEnvForLogs()` when including env in meta
 
-### Galyarder Framework Skills Injection
+### Forge Anything Skills Injection
 
-Galyarder Framework ships shared skills (in the repo's top-level `skills/` directory) that agents need at runtime  things like the `galyarder` API skill and the `galyarder-create-agent` workflow skill. Each adapter is responsible for making these skills discoverable by its agent runtime **without polluting the agent's working directory**.
+Forge Anything ships shared skills (in the repo's top-level `skills/` directory) that agents need at runtime  things like the `forge` API skill and the `forge-create-agent` workflow skill. Each adapter is responsible for making these skills discoverable by its agent runtime **without polluting the agent's working directory**.
 
-**The constraint:** never copy or symlink skills into the agent's `cwd`. The cwd is the user's project checkout  writing `.claude/skills/` or any other files into it would contaminate the repo with Galyarder Framework internals, break git status, and potentially leak into commits.
+**The constraint:** never copy or symlink skills into the agent's `cwd`. The cwd is the user's project checkout  writing `.claude/skills/` or any other files into it would contaminate the repo with Forge Anything internals, break git status, and potentially leak into commits.
 
 **The pattern:** create a clean, isolated location for skills and tell the agent runtime to look there.
 
 **How claude-local does it:**
 
-1. At execution time, create a fresh tmpdir: `mkdtemp("galyarder-skills-")`
+1. At execution time, create a fresh tmpdir: `mkdtemp("forge-skills-")`
 2. Inside it, create `.claude/skills/` (the directory structure Claude Code expects)
 3. Symlink each skill directory from the repo's `skills/` into the tmpdir's `.claude/skills/`
 4. Pass the tmpdir to Claude Code via `--add-dir <tmpdir>`  this makes Claude Code discover the skills as if they were registered in that directory, without touching the agent's actual cwd
@@ -596,14 +596,14 @@ Galyarder Framework ships shared skills (in the repo's top-level `skills/` direc
 ```ts
 // From claude-local execute.ts
 async function buildSkillsDir(): Promise<string> {
-  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "galyarder-skills-"));
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "forge-skills-"));
   const target = path.join(tmp, ".claude", "skills");
   await fs.mkdir(target, { recursive: true });
-  const entries = await fs.readdir(GALYARDER_SKILLS_DIR, { withFileTypes: true });
+  const entries = await fs.readdir(FORGE_SKILLS_DIR, { withFileTypes: true });
   for (const entry of entries) {
     if (entry.isDirectory()) {
       await fs.symlink(
-        path.join(GALYARDER_SKILLS_DIR, entry.name),
+        path.join(FORGE_SKILLS_DIR, entry.name),
         path.join(target, entry.name),
       );
     }
@@ -620,7 +620,7 @@ args.push("--add-dir", skillsDir);
 
 **How codex-local does it:**
 
-Codex has a global personal skills directory (`$CODEX_HOME/skills` or `~/.codex/skills`). The adapter symlinks Galyarder Framework skills there if they don't already exist. This is acceptable because it's the agent tool's own config directory, not the user's project.
+Codex has a global personal skills directory (`$CODEX_HOME/skills` or `~/.codex/skills`). The adapter symlinks Forge Anything skills there if they don't already exist. This is acceptable because it's the agent tool's own config directory, not the user's project.
 
 ```ts
 // From codex-local execute.ts
@@ -643,14 +643,14 @@ async function ensureCodexSkillsInjected(onLog) {
 3. **Acceptable: env var**  if the runtime reads a skills/plugin path from an environment variable, point it at the repo's `skills/` directory directly.
 4. **Last resort: prompt injection**  if the runtime has no plugin system, include skill content in the prompt template itself. This uses tokens but avoids filesystem side effects entirely.
 
-**Skills as loaded procedures, not prompt bloat.** The Galyarder Framework skills (like `galyarder` and `galyarder-create-agent`) are designed as on-demand procedures: the agent sees skill metadata (name + description) in its context, but only loads the full SKILL.md content when it decides to invoke a skill. This keeps the base prompt small. When writing `agentConfigurationDoc` or prompt templates for your adapter, do not inline skill content  let the agent runtime's skill discovery do the work. The descriptions in each SKILL.md frontmatter act as routing logic: they tell the agent when to load the full skill, not what the skill contains.
+**Skills as loaded procedures, not prompt bloat.** The Forge Anything skills (like `forge` and `forge-create-agent`) are designed as on-demand procedures: the agent sees skill metadata (name + description) in its context, but only loads the full SKILL.md content when it decides to invoke a skill. This keeps the base prompt small. When writing `agentConfigurationDoc` or prompt templates for your adapter, do not inline skill content  let the agent runtime's skill discovery do the work. The descriptions in each SKILL.md frontmatter act as routing logic: they tell the agent when to load the full skill, not what the skill contains.
 
-**Explicit vs. fuzzy skill invocation.** For production workflows where reliability matters (e.g. an agent that must always call the Galyarder Framework API to report status), use explicit instructions in the prompt template: "Use the galyarder skill to report your progress." Fuzzy routing (letting the model decide based on description matching) is fine for exploratory tasks but unreliable for mandatory procedures.
+**Explicit vs. fuzzy skill invocation.** For production workflows where reliability matters (e.g. an agent that must always call the Forge Anything API to report status), use explicit instructions in the prompt template: "Use the forge skill to report your progress." Fuzzy routing (letting the model decide based on description matching) is fine for exploratory tasks but unreliable for mandatory procedures.
 
 
 ## 8. Security Considerations
 
-Adapters sit at the boundary between Galyarder Framework's orchestration layer and arbitrary agent execution. This is a high-risk surface.
+Adapters sit at the boundary between Forge Anything's orchestration layer and arbitrary agent execution. This is a high-risk surface.
 
 ### Treat Agent Output as Untrusted
 
@@ -660,7 +660,7 @@ The agent process runs LLM-driven code that reads external files, fetches URLs, 
 
 Never put secrets (API keys, tokens) into prompt templates or config fields that flow through the LLM. Instead, inject them as environment variables that the agent's tools can read directly:
 
-- `GALYARDER_API_KEY` is injected by the server into the process environment, not the prompt
+- `FORGE_API_KEY` is injected by the server into the process environment, not the prompt
 - User-provided secrets in `config.env` are passed as env vars, redacted in `onMeta` logs
 - The `redactEnvForLogs()` helper automatically masks any key matching `/(key|token|secret|password|authorization|cookie)/i`
 
@@ -670,7 +670,7 @@ This follows the "sidecar injection" pattern: the model never sees the real secr
 
 If your agent runtime supports network access controls (sandboxing, allowlists), configure them in the adapter:
 
-- Prefer minimal allowlists over open internet access. An agent that only needs to call the Galyarder Framework API and GitHub should not have access to arbitrary hosts.
+- Prefer minimal allowlists over open internet access. An agent that only needs to call the Forge Anything API and GitHub should not have access to arbitrary hosts.
 - Skills + network = amplified risk. A skill that teaches the agent to make HTTP requests combined with unrestricted network access creates an exfiltration path. Constrain one or the other.
 - If the runtime supports layered policies (org-level defaults + per-request overrides), wire the org-level policy into the adapter config and let per-agent config narrow further.
 
@@ -956,7 +956,7 @@ git worktree remove <worktree-path>
 **Pairs with:**
 - **using-git-worktrees** - Cleans up worktree created by that skill
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: playwright-pro
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -991,10 +991,10 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Playwright Pro
 
 You are the Playwright Pro Specialist at Galyarder Labs.
-Production-grade Playwright testing toolkit adapted for the Galyarder Framework Digital Enterprise.
+Production-grade Playwright testing toolkit adapted for the Forge Anything Digital Enterprise.
 
-##  Galyarder Framework Operating Procedures (MANDATORY)
-When operating this skill for your human partner within the Galyarder Framework, you MUST adhere to these rules:
+##  Forge Anything Operating Procedures (MANDATORY)
+When operating this skill for your human partner within the Forge Anything, you MUST adhere to these rules:
 1. **Token Economy (RTK):** Prefix test execution commands with `rtk` (e.g., `rtk npx playwright test`) to minimize token consumption.
 2. **Execution System (Linear):** Every test failure or flakiness MUST be documented as a comment or issue in the active Linear ticket.
 3. **Strategic Memory (Obsidian):** After a major test suite execution, submit a summary to `super-architect` or `elite-developer` for inclusion in the weekly **Engineering Report** at `[VAULT_ROOT]//Department-Reports/Engineering/`.
@@ -1116,7 +1116,7 @@ See `reference/` directory for:
 
 See `templates/README.md` for the full template index.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: pr-report
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -1582,7 +1582,7 @@ Verify. Question. Then implement.
 
 No performative agreement. Technical rigor always.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: requesting-code-review
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -1618,7 +1618,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 You are the Requesting Code Review Specialist at Galyarder Labs.
 Dispatch a code-reviewer subagent to catch issues before they cascade. On hosts
-with named agent dispatch, use `galyarder-framework:code-reviewer`
+with named agent dispatch, use `forge-anything:code-reviewer`
 directly. On hosts without named agent dispatch, use the platform's native
 subagent mechanism with the reviewer prompt/template. The reviewer gets
 precisely crafted context for evaluation  never your session's history. This
@@ -1652,7 +1652,7 @@ HEAD_SHA=$(git rev-parse HEAD)
 Use the host's subagent mechanism and fill the template at
 `requesting-code-review/code-reviewer.md`.
 
-- Hosts with named agent dispatch: use `galyarder-framework:code-reviewer`
+- Hosts with named agent dispatch: use `forge-anything:code-reviewer`
 - Hosts without named agent dispatch: read the template, fill placeholders, and
   dispatch a native subagent with that content
 
@@ -1727,7 +1727,7 @@ You: [Fix progress indicators]
 
 See template at: requesting-code-review/code-reviewer.md
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: subagent-driven-development
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -1818,7 +1818,7 @@ digraph process {
     "Read plan, extract all tasks with full text, note context, create TodoWrite" [shape=box];
     "More tasks remain?" [shape=diamond];
     "Dispatch final code reviewer subagent for entire implementation" [shape=box];
-    "Use galyarder-framework:finishing-a-development-branch" [shape=box style=filled fillcolor=lightgreen];
+    "Use forge-anything:finishing-a-development-branch" [shape=box style=filled fillcolor=lightgreen];
 
     "Read plan, extract all tasks with full text, note context, create TodoWrite" -> "Dispatch implementer subagent (./implementer-prompt.md)";
     "Dispatch implementer subagent (./implementer-prompt.md)" -> "Implementer subagent asks questions?";
@@ -1837,7 +1837,7 @@ digraph process {
     "Mark task complete in TodoWrite" -> "More tasks remain?";
     "More tasks remain?" -> "Dispatch implementer subagent (./implementer-prompt.md)" [label="yes"];
     "More tasks remain?" -> "Dispatch final code reviewer subagent for entire implementation" [label="no"];
-    "Dispatch final code reviewer subagent for entire implementation" -> "Use galyarder-framework:finishing-a-development-branch";
+    "Dispatch final code reviewer subagent for entire implementation" -> "Use forge-anything:finishing-a-development-branch";
 }
 ```
 
@@ -2036,18 +2036,18 @@ Done!
 ## Integration
 
 **Required workflow skills:**
-- **galyarder-framework:using-git-worktrees** - REQUIRED: Set up isolated workspace before starting
-- **galyarder-framework:writing-plans** - Creates the plan this skill executes
-- **galyarder-framework:requesting-code-review** - Code review template for reviewer subagents
-- **galyarder-framework:finishing-a-development-branch** - Complete development after all tasks
+- **forge-anything:using-git-worktrees** - REQUIRED: Set up isolated workspace before starting
+- **forge-anything:writing-plans** - Creates the plan this skill executes
+- **forge-anything:requesting-code-review** - Code review template for reviewer subagents
+- **forge-anything:finishing-a-development-branch** - Complete development after all tasks
 
 **Subagents should use:**
-- **galyarder-framework:test-driven-development** - Subagents follow TDD for each task
+- **forge-anything:test-driven-development** - Subagents follow TDD for each task
 
 **Alternative workflow:**
-- **galyarder-framework:executing-plans** - Use for parallel session instead of same-session execution
+- **forge-anything:executing-plans** - Use for parallel session instead of same-session execution
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: systematic-debugging
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -2253,7 +2253,7 @@ You MUST complete each phase before proceeding to the next.
    - Automated test if possible
    - One-off test script if no framework
    - MUST have before fixing
-   - Use the `galyarder-framework:test-driven-development` skill for writing proper failing tests
+   - Use the `forge-anything:test-driven-development` skill for writing proper failing tests
 
 2. **Implement Single Fix**
    - Address the root cause identified
@@ -2361,8 +2361,8 @@ These techniques are part of systematic debugging and available in this director
 - **`condition-based-waiting.md`** - Replace arbitrary timeouts with condition polling
 
 **Related skills:**
-- **galyarder-framework:test-driven-development** - For creating failing test case (Phase 4, Step 1)
-- **galyarder-framework:verification-before-completion** - Verify fix worked before claiming success
+- **forge-anything:test-driven-development** - For creating failing test case (Phase 4, Step 1)
+- **forge-anything:verification-before-completion** - Verify fix worked before claiming success
 
 ## Real-World Impact
 
@@ -2372,7 +2372,7 @@ From debugging sessions:
 - First-time fix rate: 95% vs 40%
 - New bugs introduced: Near zero vs common
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: test-driven-development
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -2772,7 +2772,7 @@ Otherwise  not TDD
 
 No exceptions without your human partner's permission.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: vercel-react-best-practices
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -2922,7 +2922,7 @@ Each rule file contains:
 
 For the complete guide with all rules expanded: `AGENTS.md`
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: verification-before-completion
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -3090,6 +3090,6 @@ Run the command. Read the output. THEN claim the result.
 
 This is non-negotiable.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

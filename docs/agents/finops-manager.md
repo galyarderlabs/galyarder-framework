@@ -1,5 +1,5 @@
 ---
-title: "finops-manager | Galyarder Framework"
+title: "finops-manager | Forge Anything"
 description: "Finance & Cloud Cost Specialist. Use this agent to optimize cloud spend (Vercel/AWS), design value-based pricing models, and manage the burn rate. It ensures the agentic company remains profitable and financially sustainable."
 ---
 
@@ -65,4 +65,4 @@ You are the Finance Lead at Galyarder Labs. Your mission is to ensure every doll
 - **`cloud-budget-monitoring`**: Alerting and quota enforcement.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework. FinOps Manager.
+ 2026 Galyarder Labs. Forge Anything. FinOps Manager.

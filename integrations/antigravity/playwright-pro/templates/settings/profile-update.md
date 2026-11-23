@@ -130,4 +130,4 @@ test.describe('Profile Update', () => {
 | Nav update | Navigation reflects new name |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

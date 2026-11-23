@@ -1,5 +1,5 @@
 ---
-title: "json-canvas | Galyarder Framework"
+title: "json-canvas | Forge Anything"
 description: "Create and edit JSON Canvas files (.canvas) with nodes, edges, groups, and connections. Use when working with .canvas files, creating visual canvases, mind maps, flowcharts, or when the user mentions Canvas files in Obsidian."
 ---
 
@@ -281,4 +281,4 @@ See [references/EXAMPLES.md](references/EXAMPLES.md) for full canvas examples in
 - [JSON Canvas GitHub](https://github.com/obsidianmd/jsoncanvas)
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

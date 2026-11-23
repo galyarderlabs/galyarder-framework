@@ -1,5 +1,5 @@
 ---
-title: "e2e-runner | Galyarder Framework"
+title: "e2e-runner | Forge Anything"
 description: "End-to-end testing specialist using Playwright. Use PROACTIVELY for generating, maintaining, and running E2E tests. Manages test journeys, quarantines flaky tests, uploads artifacts (screenshots, videos, traces), and ensures critical user flows work."
 ---
 
@@ -743,4 +743,4 @@ After E2E test run:
 **Remember**: E2E tests are your last line of defense before production. They catch integration issues that unit tests miss. Invest time in making them stable, fast, and comprehensive. For Example Project, focus especially on financial flows - one bug could cost users real money.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

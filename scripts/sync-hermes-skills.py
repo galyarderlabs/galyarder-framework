@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-sync-hermes-skills.py  Install galyarder-framework into Hermes Agent.
+sync-hermes-skills.py  Install forge-anything into Hermes Agent.
 
 Hermes Agent (https://github.com/NousResearch/hermes-agent) discovers skills
 from ~/.hermes/skills/. This script creates symlinks from our repo's skill
@@ -17,7 +17,7 @@ Usage:
     python scripts/sync-hermes-skills.py --copy             # copy instead of symlink
 
 Hermes skill directory: ~/.hermes/skills/
-Our skills land under:  ~/.hermes/skills/galyarder-framework/<domain>/<skill-name>/
+Our skills land under:  ~/.hermes/skills/forge-anything/<domain>/<skill-name>/
 """
 from __future__ import annotations
 
@@ -30,7 +30,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 HERMES_SKILLS_DIR = Path.home() / ".hermes" / "skills"
-TARGET_SUBDIR = "galyarder-framework"  # namespace to avoid collisions with Hermes built-in skills
+TARGET_SUBDIR = "forge-anything"  # namespace to avoid collisions with Hermes built-in skills
 
 # Domain directories that contain skills (each subdirectory with a SKILL.md)
 DOMAIN_DIRS = [
@@ -116,7 +116,7 @@ def sync_skill(skill, target_root, use_copy, verbose, dry_run):
 def write_index(target_root, skills):
     """Write a skills-index.json for quick lookup."""
     index = {
-        "source": "galyarder-framework",
+        "source": "forge-anything",
         "total_skills": len(skills),
         "domains": {},
     }
@@ -137,7 +137,7 @@ def write_index(target_root, skills):
 
 def main():
     p = argparse.ArgumentParser(
-        description="Sync galyarder-framework into Hermes Agent (~/.hermes/skills/).",
+        description="Sync forge-anything into Hermes Agent (~/.hermes/skills/).",
         epilog="Both tools use the agentskills.io SKILL.md standard. No format conversion needed.",
     )
     p.add_argument(

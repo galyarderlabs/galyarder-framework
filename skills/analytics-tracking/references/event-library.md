@@ -251,4 +251,4 @@ session_duration: 300
 7. purchase_completed
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

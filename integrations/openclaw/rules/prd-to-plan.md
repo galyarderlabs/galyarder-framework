@@ -132,4 +132,4 @@ A concise description of this vertical slice. Describe the end-to-end behavior, 
 <!-- Repeat for each phase -->
 </plan-template>
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

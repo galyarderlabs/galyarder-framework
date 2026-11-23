@@ -4,16 +4,16 @@
   "description": "Forge anything with AI agents.",
   "main": "index.js",
   "bin": {
-    "galyarder": "bin/galyarder.js",
-    "g-scaffold": "scripts/scaffold-company.sh",
-    "g-deploy": "scripts/install.sh",
-    "g-smoke": "scripts/smoke.sh",
-    "g-convert": "scripts/convert.sh"
+    "forge": "bin/forge.js",
+    "f-scaffold": "scripts/scaffold-company.sh",
+    "f-deploy": "scripts/install.sh",
+    "f-smoke": "scripts/smoke.sh",
+    "f-convert": "scripts/convert.sh"
   },
   "scripts": {
     "test": "rtk ./scripts/smoke.sh",
     "install-cli": "./scripts/setup-cli.sh",
-    "sync": "python3 scripts/galyarder-graph-engine.py && python3 scripts/generate-docs.py && python3 scripts/sync-skills-manifest.py"
+    "sync": "python3 scripts/forge-graph-engine.py && python3 scripts/generate-docs.py && python3 scripts/sync-skills-manifest.py"
   },
   "keywords": [
     "forge-anything",

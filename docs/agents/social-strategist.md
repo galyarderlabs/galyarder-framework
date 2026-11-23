@@ -1,6 +1,6 @@
 ---
-title: "social-strategist | Galyarder Framework"
-description: "Specialized agent unit for Galyarder Framework orchestration."
+title: "social-strategist | Forge Anything"
+description: "Specialized agent unit for Forge Anything orchestration."
 ---
 
 # :material-folder-zip: social-strategist
@@ -84,4 +84,4 @@ Design tailored content:
 If YES, finalize the distribution plan.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

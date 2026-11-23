@@ -1,5 +1,5 @@
 ---
-title: "Build Fix | Galyarder Framework"
+title: "Build Fix | Forge Anything"
 description: "Systematically investigate and fix build errors, TypeScript errors, or test failures with minimal diffs."
 ---
 
@@ -39,4 +39,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command is powered by the `galyarder-framework:systematic-debugging` skill.
+**Note**: This command is powered by the `forge-anything:systematic-debugging` skill.

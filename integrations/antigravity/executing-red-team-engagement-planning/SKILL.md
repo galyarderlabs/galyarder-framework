@@ -164,4 +164,4 @@ Map organizational threats using MITRE ATT&CK Navigator to select relevant adver
 - performing-assumed-breach-red-team-exercise
 - building-red-team-infrastructure-with-redirectors
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

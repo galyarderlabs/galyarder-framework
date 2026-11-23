@@ -792,4 +792,4 @@ For topics NOT covered here, see future `pricing-strategy-suite`:
 - Pricing scenarios from `research/finance/Finance for Product Managers.md`
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

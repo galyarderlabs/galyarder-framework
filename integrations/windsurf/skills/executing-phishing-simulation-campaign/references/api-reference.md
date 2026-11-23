@@ -55,4 +55,4 @@ Calculates click rate, submission rate, and report rate from campaign timeline e
 | `/api/groups/` | POST | Create target groups |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

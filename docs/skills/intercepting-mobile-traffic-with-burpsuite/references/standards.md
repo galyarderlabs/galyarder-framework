@@ -40,4 +40,4 @@
 | CWE-613 | Insufficient Session Expiration | Test token validity after logout |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

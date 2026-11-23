@@ -137,4 +137,4 @@ test.describe('Multi-Step Form', () => {
 | Browser back | History navigation preserves data |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

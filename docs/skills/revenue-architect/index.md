@@ -1,6 +1,6 @@
 ---
-title: "revenue-architect | Galyarder Framework"
-description: "Specialized skill unit for Galyarder Framework orchestration."
+title: "revenue-architect | Forge Anything"
+description: "Specialized skill unit for Forge Anything orchestration."
 ---
 
 # :material-folder-zip: revenue-architect
@@ -77,4 +77,4 @@ A agentic company scales through word of mouth. You design referral systems that
 If YES, finalize the revenue plan.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

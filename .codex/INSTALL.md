@@ -1,6 +1,6 @@
-# Installing Galyarder Framework for Codex
+# Installing Forge Anything for Codex
 
-Enable galyarder-framework skills in Codex via native skill discovery. Just clone and symlink.
+Enable forge-anything skills in Codex via native skill discovery. Just clone and symlink.
 
 ## Prerequisites
 
@@ -8,52 +8,52 @@ Enable galyarder-framework skills in Codex via native skill discovery. Just clon
 
 ## Installation
 
-1. **Clone the galyarder-framework repository:**
+1. **Clone the forge-anything repository:**
    ```bash
-   git clone https://github.com/galyarderlabs/galyarder-framework.git ~/.codex/galyarder-framework
+   git clone https://github.com/galyarderlabs/forge-anything.git ~/.codex/forge-anything
    ```
 
 2. **Create the skills symlink:**
    ```bash
    mkdir -p ~/.agents/skills
-   ln -s ~/.codex/skills ~/.agents/skills/galyarder-framework
+   ln -s ~/.codex/skills ~/.agents/skills/forge-anything
    ```
 
    **Windows (PowerShell):**
    ```powershell
    New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.agents\skills"
-   cmd /c mklink /J "$env:USERPROFILE\.agents\skills\galyarder-framework" "$env:USERPROFILE\.codex\galyarder-framework\skills"
+   cmd /c mklink /J "$env:USERPROFILE\.agents\skills\forge-anything" "$env:USERPROFILE\.codex\forge-anything\skills"
    ```
 
 3. **Restart Codex** (quit and relaunch the CLI) to discover the skills.
 
 ## Migrating from old bootstrap
 
-If you installed galyarder-framework before native skill discovery, you need to:
+If you installed forge-anything before native skill discovery, you need to:
 
 1. **Update the repo:**
    ```bash
-   cd ~/.codex/galyarder-framework && git pull
+   cd ~/.codex/forge-anything && git pull
    ```
 
 2. **Create the skills symlink** (step 2 above)  this is the new discovery mechanism.
 
-3. **Remove the old bootstrap block** from `~/.codex/AGENTS.md`  any block referencing `galyarder-framework-codex bootstrap` is no longer needed.
+3. **Remove the old bootstrap block** from `~/.codex/AGENTS.md`  any block referencing `forge-anything-codex bootstrap` is no longer needed.
 
 4. **Restart Codex.**
 
 ## Verify
 
 ```bash
-ls -la ~/.agents/skills/galyarder-framework
+ls -la ~/.agents/skills/forge-anything
 ```
 
-You should see a symlink (or junction on Windows) pointing to your galyarder-framework skills directory.
+You should see a symlink (or junction on Windows) pointing to your forge-anything skills directory.
 
 ## Updating
 
 ```bash
-cd ~/.codex/galyarder-framework && git pull
+cd ~/.codex/forge-anything && git pull
 ```
 
 Skills update instantly through the symlink.
@@ -61,7 +61,7 @@ Skills update instantly through the symlink.
 ## Uninstalling
 
 ```bash
-rm ~/.agents/skills/galyarder-framework
+rm ~/.agents/skills/forge-anything
 ```
 
-Optionally delete the clone: `rm -rf ~/.codex/galyarder-framework`.
+Optionally delete the clone: `rm -rf ~/.codex/forge-anything`.

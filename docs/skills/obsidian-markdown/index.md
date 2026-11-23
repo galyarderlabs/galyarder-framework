@@ -1,5 +1,5 @@
 ---
-title: "obsidian-markdown | Galyarder Framework"
+title: "obsidian-markdown | Forge Anything"
 description: "Create and edit Obsidian Flavored Markdown with wikilinks, embeds, callouts, properties, and other Obsidian-specific syntax. Use when working with .md files in Obsidian, or when the user mentions wikilinks, callouts, frontmatter, tags, embeds, or Obsidian notes."
 ---
 
@@ -233,4 +233,4 @@ Reviewed in [[Meeting Notes 2024-01-10#Decisions]].
 - [Properties](https://help.obsidian.md/properties)
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

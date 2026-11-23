@@ -40,4 +40,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-2026 Galyarder Labs. Galyarder Framework.
+2026 Galyarder Labs. Forge Anything.

@@ -81,4 +81,4 @@ For emails: ready-to-send markdown.
 For decks: one section per slide with headline, evidence, and board question answered.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

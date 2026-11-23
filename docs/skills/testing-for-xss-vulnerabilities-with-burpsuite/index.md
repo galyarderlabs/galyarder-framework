@@ -1,5 +1,5 @@
 ---
-title: "xss-testing-burpsuite | Galyarder Framework"
+title: "xss-testing-burpsuite | Forge Anything"
 description: "Identifying and validating cross-site scripting vulnerabilities using Burp Suite's scanner, intruder, and repeater tools during authorized security assessments."
 ---
 
@@ -337,4 +337,4 @@ A WAF blocks common XSS patterns and CSP restricts inline scripts. Discover a JS
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

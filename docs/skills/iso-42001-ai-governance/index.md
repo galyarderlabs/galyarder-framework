@@ -1,5 +1,5 @@
 ---
-title: "iso-42001-ai-governance | Galyarder Framework"
+title: "iso-42001-ai-governance | Forge Anything"
 description: "AI governance audit using ISO 42001 standard. Ensures AI systems are developed and deployed responsibly with risk management, ethics, security, transparency, and compliance best practices."
 ---
 
@@ -1255,4 +1255,4 @@ ISO 42001 aligns with major AI regulations:
 **Remember**: ISO 42001 is about building trustworthy AI systems through systematic risk management and governance. It's not a barrier to innovationit's a framework for responsible innovation that protects both organizations and the people affected by AI.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -1,5 +1,5 @@
 ---
-title: "receiving-code-review | Galyarder Framework"
+title: "receiving-code-review | Forge Anything"
 description: "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation"
 ---
 
@@ -250,4 +250,4 @@ Verify. Question. Then implement.
 No performative agreement. Technical rigor always.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

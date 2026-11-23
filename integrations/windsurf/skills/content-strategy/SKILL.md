@@ -387,4 +387,4 @@ Visual or structured representation of how content interconnects.
 - **email-sequence**: For email-based content
 - **social-content**: For social media content
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

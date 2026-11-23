@@ -1,5 +1,5 @@
 ---
-title: "experimentation-engineer | Galyarder Framework"
+title: "experimentation-engineer | Forge Anything"
 description: "Experimentation and A/B testing orchestrator. Use PROACTIVELY when a launch needs test design, guardrails, metrics, and rollout logic before exposure to users."
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "finishing-a-development-branch | Galyarder Framework"
+title: "finishing-a-development-branch | Forge Anything"
 description: "Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides completion of development work by presenting structured options for merge, PR, or cleanup"
 ---
 
@@ -237,4 +237,4 @@ git worktree remove <worktree-path>
 - **using-git-worktrees** - Cleans up worktree created by that skill
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

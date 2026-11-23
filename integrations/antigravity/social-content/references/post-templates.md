@@ -171,4 +171,4 @@ The first line determines whether anyone reads the rest.
 - "[Authority figure] taught me [lesson]."
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

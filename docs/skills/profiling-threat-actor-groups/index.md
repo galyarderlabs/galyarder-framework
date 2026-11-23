@@ -1,5 +1,5 @@
 ---
-title: "profiling-threat-actor-groups | Galyarder Framework"
+title: "profiling-threat-actor-groups | Forge Anything"
 description: ">"
 ---
 
@@ -148,4 +148,4 @@ Classify TLP:AMBER for internal distribution; seek ISAC approval before external
 - **Profile staleness**: Adversary TTPs evolve. Profiles not updated quarterly may miss technique changes, new malware, or targeting shifts.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

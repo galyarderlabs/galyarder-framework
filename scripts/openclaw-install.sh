@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Install galyarder-framework into OpenClaw's workspace skills directory
+# Install forge-anything into OpenClaw's workspace skills directory
 # Usage: ./scripts/openclaw-install.sh [--dry-run]
 
 set -euo pipefail

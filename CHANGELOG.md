@@ -1,23 +1,23 @@
 # Changelog
 
-All notable changes to Galyarder Framework will be documented in this file.
+All notable changes to Forge Anything will be documented in this file.
 
 ## [2.0.0] - 2026-06-02
 ### Changed
 - **Unified Agentic Company Standard**: Completed a comprehensive, global repository alignment of ~107k additions and ~15k deletions, transitioning all components to the "Agentic Company Framework" and "Intelligence Layer" paradigms.
-- **Enterprise-Grade Persona Realignment**: Fully audited and refactored executive configurations (`galyarder-ceo`, `galyarder-cto`, `galyarder-cmo`, `galyarder-cfo-coo`) under `personas/` and `.cursor/rules/` to enforce clinical, professional, and deterministic tone protocols.
+- **Enterprise-Grade Persona Realignment**: Fully audited and refactored executive configurations (`forge-ceo`, `forge-cto`, `forge-cmo`, `forge-cfo-coo`) under `personas/` and `.cursor/rules/` to enforce clinical, professional, and deterministic tone protocols.
 - **Verification Gates Integration**: Injected strict "Evidence Gates" across all keahlian/skill directories (`skills/*/SKILL.md`), requiring local automated testing (lint, build, smoke tests) prior to human operator handoff.
 - **NPM Package Deployment Automation**: Created a secure, automated CI/CD deployment workflow (`.github/workflows/publish-npm.yml`) to publish semantic packages directly to the public NPM registry with provenance.
-- **Graph & Portal Synchronizations**: Successfully executed community-detection clustering across 586 nodes and 911 edges via the `galyarder-graph-engine.py`, exporting updated telemetry to `docs/graph.json` and generating matching documentation.
+- **Graph & Portal Synchronizations**: Successfully executed community-detection clustering across 586 nodes and 911 edges via the `forge-graph-engine.py`, exporting updated telemetry to `docs/graph.json` and generating matching documentation.
 
 ## [1.9.9] - 2026-05-09
 ### Changed
 - **Canonical Extension Surface**: Removed redundant generated extension surfaces and aligned marketplace, Codex, package, and smoke-test contracts around the canonical `agents/`, `skills/`, `commands/`, `personas/`, and `integrations/` runtime source.
-- **Scaffold Surface Clarity**: Clarified that root departments are workflow taxonomy while `galyarder scaffold` still generates `docs/departments/*` project operating workspace workspaces for user projects.
+- **Scaffold Surface Clarity**: Clarified that root departments are workflow taxonomy while `forge scaffold` still generates `docs/departments/*` project operating workspace workspaces for user projects.
 
 ## [1.9.7] - 2026-04-22
 ### Fixed
-- **Legacy Purge**: Permanently removed all legacy "Paperclip" references from Agent Adapter documentation, manifests, and skill logic. Standardized all packages under the `@galyarder` scope.
+- **Legacy Purge**: Permanently removed all legacy "Paperclip" references from Agent Adapter documentation, manifests, and skill logic. Standardized all packages under the `@forge-anything` scope.
 
 ## [1.9.6] - 2026-04-22
 ### Changed
@@ -25,7 +25,7 @@ All notable changes to Galyarder Framework will be documented in this file.
 
 ## [1.9.5] - 2026-04-22
 ### Fixed
-- **Infrastructure Mismatch**: Added the missing `Infrastructure` department to the `galyarder scaffold` command to ensure full architectural parity with system smoke tests.
+- **Infrastructure Mismatch**: Added the missing `Infrastructure` department to the `forge scaffold` command to ensure full architectural parity with system smoke tests.
 
 ## [1.9.4] - 2026-04-22
 ### Added
@@ -37,11 +37,11 @@ All notable changes to Galyarder Framework will be documented in this file.
 
 ## [1.9.2] - 2026-04-22
 ### Fixed
-- **NPM Registry Preparation**: Adjusted installation links to favor the official `galyarder-framework` package name and optimized package size via `.npmignore`.
+- **NPM Registry Preparation**: Adjusted installation links to favor the official `forge-anything` package name and optimized package size via `.npmignore`.
 
 ## [1.9.0] - 2026-04-22
 ### Added
-- **Unified Framework CLI**: Implemented the `galyarder` Node.js CLI to consolidate all shell scripts into a single, high-fidelity entry point.
+- **Unified Framework CLI**: Implemented the `forge` Node.js CLI to consolidate all shell scripts into a single, high-fidelity entry point.
 - **NPM Distribution**: Transformed the framework into a first-class NPM package for global installation.
 
 ## [1.8.17] - 2026-04-19
@@ -61,7 +61,7 @@ All notable changes to Galyarder Framework will be documented in this file.
 ### Added
 - **Compatibility Runtime Layer**: Added `Compat/agents` and `Compat/skills` as a source layer for generated root and marketplace runtime surfaces so legacy assets can exist without re-fragmenting department ownership.
 ### Fixed
-- **Missing Agent Restore**: Restored missing runtime agents including `galyarder-specialist`, `analytics-architect`, `doc-updater`, `experimentation-engineer`, `interface-designer`, `mcp-builder`, `revenue-architect`, `support-lead`, and `ui-ux-designer`.
+- **Missing Agent Restore**: Restored missing runtime agents including `forge-specialist`, `analytics-architect`, `doc-updater`, `experimentation-engineer`, `interface-designer`, `mcp-builder`, `revenue-architect`, `support-lead`, and `ui-ux-designer`.
 - **Missing Skill Restore**: Restored legacy compatibility skills and orchestration wrappers so historical prompts, docs, and host registries resolve cleanly again.
 - **Runtime Parity Audit**: Rebuilt root and full-bundle surfaces until historical canonical agents, personas, skills, and subagents all resolve with zero missing entries in the parity audit.
 
@@ -76,12 +76,12 @@ All notable changes to Galyarder Framework will be documented in this file.
 ## [1.8.10] - 2026-04-20
 ### Fixed
 - **Claude Marketplace Manifest Schema**: Full bundle and departmental Claude plugin manifests now use an object-shaped `author` field and no longer ship the unsupported `personas` key, fixing marketplace install validation failures.
-- **Executive Persona Identity Parity**: `galyarder-cfo-coo`, `galyarder-cmo`, and `galyarder-cto` now carry the same host-aware identity contract as `galyarder-ceo`, so Copilot-style hosts stop collapsing them to the platform default persona.
+- **Executive Persona Identity Parity**: `forge-cfo-coo`, `forge-cmo`, and `forge-cto` now carry the same host-aware identity contract as `forge-ceo`, so Copilot-style hosts stop collapsing them to the platform default persona.
 - **Skill Name Length**: Shortened the canonical XSS Burp Suite skill name to `xss-testing-burpsuite`, keeping prefixed host registries under the 64-character limit.
 
 ## [1.8.9] - 2026-04-20
 ### Fixed
-- **Copilot Persona Identity**: `galyarder-ceo` now includes an explicit identity contract so hosts that preserve their own platform identity still answer as the Galyarder CEO persona running inside the host, instead of collapsing to a plain "I am just Copilot" response.
+- **Copilot Persona Identity**: `forge-ceo` now includes an explicit identity contract so hosts that preserve their own platform identity still answer as the Forge CEO persona running inside the host, instead of collapsing to a plain "I am just Copilot" response.
 
 ## [1.8.8] - 2026-04-19
 ### Fixed
@@ -125,7 +125,7 @@ All notable changes to Galyarder Framework will be documented in this file.
 
 ## [1.8.3] - 2026-04-19
 ### Added
-- **Bundle Install Path**: Added a top-level `galyarder-framework` marketplace bundle so all 8 departments can be installed as one package.
+- **Bundle Install Path**: Added a top-level `forge-anything` marketplace bundle so all 8 departments can be installed as one package.
 ### Changed
 - **Neural Link Policy**: Re-scoped Neural Link / World-Map access to lazy lookup. Agents, personas, and commands now load graph context only for architecture discovery, cross-department routing, or explicit `/graph` work.
 - **Boot Surface**: Root operating context is department-scoped and monolith-free instead of dragging full-world context into normal execution.
@@ -170,7 +170,7 @@ Architectural guardrails to make execution provable: gated testing ladder, test-
 ### Changed
 - Repo structure flattened; removed legacy `framework/` directory.
 - `WORKFLOW.md` updated for human-directed execution hierarchy + gating + modes.
-- Branding standardized: “Galyarder Framework” vs “Galyarder Labs”.
+- Branding standardized: “Forge Anything” vs “Galyarder Labs”.
 ### Fixed
 - Non-ASCII purge for terminal compatibility.
 - Linear scoping hardened to enforce project-scoped operations.
@@ -205,14 +205,14 @@ Architectural guardrails to make execution provable: gated testing ladder, test-
 
 ### Changed
 - Separated Framework from Dashboard into independent repos
-- Dashboard moved to [Galyarder Framework HQ](https://github.com/galyarderlabs/galyarder-hq)
+- Dashboard moved to [Forge Anything HQ](https://github.com/galyarderlabs/forge-hq)
 - Framework is now standalone - agents and skills at root level
 - Updated README to reflect standalone Framework positioning
 - Fixed all symlinks for Antigravity, Codex, and OpenCode
 
 ### Breaking Changes
 - Removed all Dashboard CI workflows (Docker, e2e, release-smoke).
-- Migrated dashboard logic to a separate repository; local hooks must be re-pointed to `@galyarderlabs/galyarder-hq`.
+- Migrated dashboard logic to a separate repository; local hooks must be re-pointed to `@galyarderlabs/forge-hq`.
 
 ---
-© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.
+© 2026 Galyarder Labs. Forge Anything. Engineering. Marketing. Distribution.

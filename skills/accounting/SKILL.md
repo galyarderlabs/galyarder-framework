@@ -303,4 +303,4 @@ Review quarterly. Less important at early stage, but needed for:
 - **pricing**  Set pricing that supports healthy unit economics
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

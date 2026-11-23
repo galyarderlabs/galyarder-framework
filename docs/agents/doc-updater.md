@@ -1,5 +1,5 @@
 ---
-title: "doc-updater | Galyarder Framework"
+title: "doc-updater | Forge Anything"
 description: "Documentation maintenance orchestrator. Use PROACTIVELY when shipped behavior, commands, or agent surfaces have drifted from docs and release artifacts."
 ---
 

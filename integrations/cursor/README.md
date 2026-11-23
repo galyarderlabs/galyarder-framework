@@ -1,6 +1,6 @@
 # Cursor Integration
 
-This directory contains converted Galyarder Framework assets for **Cursor**.
+This directory contains converted Forge Anything assets for **Cursor**.
 
 ## Included Assets
 

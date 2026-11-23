@@ -137,4 +137,4 @@ obsidian dev:mobile on
 
 Run `obsidian help` to see additional developer commands including CDP and debugger controls.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

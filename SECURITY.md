@@ -30,19 +30,19 @@ and the published package carry the same number.
 
 ## What leaves your computer
 
-Galyarder Framework is Markdown and scripts, with no server of its own and
+Forge Anything is Markdown and scripts, with no server of its own and
 no telemetry. It connects to the network only for these:
 
 | What | Where to | What is sent |
 |---|---|---|
-| Install from npm | The npm registry (`registry.npmjs.org`) | A plain download of the package, when you run `npm install -g galyarder-framework` |
+| Install from npm | The npm registry (`registry.npmjs.org`) | A plain download of the package, when you run `npm install -g forge-anything` |
 | Install from source | GitHub (`github.com`, `raw.githubusercontent.com`) | A plain clone or download, when you run `git clone` or the scaffold's template fetch |
 | Install from skills.sh | The skills.sh service | A plain download of the bundles you pick, when you run `npx skills add` |
 | Docs site | GitHub Pages | A plain visit, when you open the docs |
 
 The skills, when run by an agent, may call the services they describe —
 each skill says so in its own file, and the agent runs them only under
-your approval. The CLI (`galyarder`) runs local scripts only: it never
+your approval. The CLI (`forge`) runs local scripts only: it never
 sends anything anywhere on its own.
 
 ## What stays on your computer

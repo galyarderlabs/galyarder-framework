@@ -1,5 +1,5 @@
 ---
-title: "Linear | Galyarder Framework"
+title: "Linear | Forge Anything"
 description: "Project Management specialist. Converts PRDs into actionable Linear Epics and Issues."
 ---
 
@@ -39,4 +39,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command is powered by the `galyarder-framework:prd-to-issues` skill.
+**Note**: This command is powered by the `forge-anything:prd-to-issues` skill.

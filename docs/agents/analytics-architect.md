@@ -1,5 +1,5 @@
 ---
-title: "analytics-architect | Galyarder Framework"
+title: "analytics-architect | Forge Anything"
 description: "Analytics and measurement orchestrator. Use PROACTIVELY when a feature, funnel, or growth workflow needs event design, KPI definition, attribution structure, or analytics QA across product and GTM."
 ---
 

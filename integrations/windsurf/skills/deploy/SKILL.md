@@ -31,4 +31,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 - **Durable Memory**: Every mission concludes with an audit log and persistent markdown artifact saved via the **MemoryStore Interface** (Default: Obsidian `docs/departments/`).
 
 
-**Note**: This command dispatches the `galyarder-framework:devops-engineer` agent.
+**Note**: This command dispatches the `forge-anything:devops-engineer` agent.

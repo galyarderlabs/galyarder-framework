@@ -1,6 +1,6 @@
 # Claude Code Skills Tests
 
-Automated tests for galyarder-framework skills using Claude Code CLI.
+Automated tests for forge-anything skills using Claude Code CLI.
 
 ## Overview
 
@@ -9,7 +9,7 @@ This test suite verifies that skills are loaded correctly and Claude follows the
 ## Requirements
 
 - Claude Code CLI installed and in PATH (`claude --version` should work)
-- Local galyarder-framework plugin installed (see main README for installation)
+- Local forge-anything plugin installed (see main README for installation)
 
 ## Running Tests
 

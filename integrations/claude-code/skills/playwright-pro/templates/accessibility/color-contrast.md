@@ -162,4 +162,4 @@ test.describe('Color Contrast', () => {
 | Full axe scan | WCAG 2.1 AA complete scan |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -259,4 +259,4 @@ Campaign Standards fluctuate by season. Apply these adjustment factors to normal
 - Use Standards to justify cutting channels without understanding their full-funnel role
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

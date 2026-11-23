@@ -1,9 +1,9 @@
 ---
 name: knowledge
-description: "Consolidated Galyarder Framework Knowledge intelligence bundle."
+description: "Consolidated Forge Anything Knowledge intelligence bundle."
 ---
 
-# GALYARDER KNOWLEDGE BUNDLE
+# FORGE KNOWLEDGE BUNDLE
 
 This bundle contains 6 high-integrity SOPs for the Knowledge department.
 
@@ -79,7 +79,7 @@ defuddle parse <url> -p domain
 | `-p <name>` | Specific metadata property |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: doc-maintenance
@@ -234,7 +234,7 @@ git commit -m "docs: update documentation for accuracy
 
 - [list each fix briefly]
 
-Co-Authored-By: Galyarder Framework <noreply@galyarder.ing>"
+Co-Authored-By: Forge Anything <noreply@forge-anything.ing>"
 
 git push -u origin "$BRANCH"
 
@@ -579,7 +579,7 @@ See [references/EXAMPLES.md](references/EXAMPLES.md) for full canvas examples in
 - [JSON Canvas GitHub](https://github.com/obsidianmd/jsoncanvas)
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: obsidian-bases
@@ -1108,7 +1108,7 @@ formulas:
 - [Complete Functions Reference](references/FUNCTIONS_REFERENCE.md)
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: obsidian-cli
@@ -1246,7 +1246,7 @@ obsidian dev:mobile on
 Run `obsidian help` to see additional developer commands including CDP and debugger controls.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: obsidian-markdown
@@ -1474,7 +1474,7 @@ Reviewed in [[Meeting Notes 2024-01-10#Decisions]].
 - [Properties](https://help.obsidian.md/properties)
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

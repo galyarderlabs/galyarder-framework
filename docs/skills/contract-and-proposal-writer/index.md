@@ -1,5 +1,5 @@
 ---
-title: "contract-and-proposal-writer | Galyarder Framework"
+title: "contract-and-proposal-writer | Forge Anything"
 description: ">"
 ---
 
@@ -484,4 +484,4 @@ python scripts/contract_comparison_analyzer.py contract_v1.json contract_v2.json
 - **revenue-operations** -- Contract values and payment schedules feed into pipeline forecasting and revenue recognition
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

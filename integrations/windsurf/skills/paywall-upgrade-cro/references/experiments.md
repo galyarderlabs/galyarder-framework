@@ -155,4 +155,4 @@ Comprehensive list of A/B tests and experiments for paywall optimization.
 - Friendly vs. neutral decline copy
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

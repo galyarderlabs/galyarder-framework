@@ -99,4 +99,4 @@ Both components share the same promise, so only one fetch occurs. Layout renders
 **Trade-off:** Faster initial paint vs potential layout shift. Choose based on your UX priorities.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

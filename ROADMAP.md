@@ -1,10 +1,10 @@
-# Galyarder Framework — Roadmap
+# Forge Anything — Roadmap
 
-Galyarder Framework is the Intelligence Layer of the Galyarder ecosystem: a set of agents, skills, commands, review gates, and operating protocols that turn a founder's intent into structured, reviewable work. It is for solo founders and small teams who run several AI agents across engineering, product, growth, finance, security, and docs, and who need that work to be routed, verified, and written down instead of lost in a chat thread. The problem it addresses is the gap between a goal and a trustworthy artifact: most agent setups stop at chat, and the work that follows has no durable scope, no routing, no review gate, and no audit trail.
+Forge Anything is the Intelligence Layer of the Galyarder ecosystem: a set of agents, skills, commands, review gates, and operating protocols that turn a founder's intent into structured, reviewable work. It is for solo founders and small teams who run several AI agents across engineering, product, growth, finance, security, and docs, and who need that work to be routed, verified, and written down instead of lost in a chat thread. The problem it addresses is the gap between a goal and a trustworthy artifact: most agent setups stop at chat, and the work that follows has no durable scope, no routing, no review gate, and no audit trail.
 
 ## Where it is now
 
-The framework ships a large, real surface. The canonical runtime lives at the repo root in `agents/` (45 agents), `skills/` (149 skills), `commands/` (25 commands), and `integrations/` (12 host surfaces: Claude Code, Cursor, Gemini CLI, Codex, OpenCode, Windsurf, KiloCode, Augment, Antigravity, OpenClaw, Hermes, and Galyarder Agent). A Node CLI (`bin/galyarder.js`) handles `scaffold`, `deploy`, `smoke`, and `convert`. The docs site (mkdocs-material) is generated into `docs/`, and `skills.json` lists the skill manifest.
+The framework ships a large, real surface. The canonical runtime lives at the repo root in `agents/` (45 agents), `skills/` (149 skills), `commands/` (25 commands), and `integrations/` (12 host surfaces: Claude Code, Cursor, Gemini CLI, Codex, OpenCode, Windsurf, KiloCode, Augment, Antigravity, OpenClaw, Hermes, and Forge Agent). A Node CLI (`bin/forge.js`) handles `scaffold`, `deploy`, `smoke`, and `convert`. The docs site (mkdocs-material) is generated into `docs/`, and `skills.json` lists the skill manifest.
 
 Parts of this are still thin or inconsistent:
 
@@ -50,4 +50,4 @@ Parts of this are still thin or inconsistent:
 
 ## How to follow along
 
-Read the docs site at https://galyarderlabs.github.io/galyarder-framework/ and the `docs/` directory in the repo. Watch the pull requests and releases on GitHub for what is landing. Open an issue for a concrete bug or a scoped proposal, and send a pull request against `main`. Because the project is small and early, a clear, well-scoped issue is the fastest way to get a change reviewed.
+Read the docs site at https://galyarderlabs.github.io/forge-anything/ and the `docs/` directory in the repo. Watch the pull requests and releases on GitHub for what is landing. Open an issue for a concrete bug or a scoped proposal, and send a pull request against `main`. Because the project is small and early, a clear, well-scoped issue is the fastest way to get a change reviewed.

@@ -1,5 +1,5 @@
 ---
-title: "incident | Galyarder Framework"
+title: "incident | Forge Anything"
 description: "INCIDENT MODE: Bypass standard PRD/Planning phase for emergency hotfixes. Requires immediate execution, a post-mortem ticket, and a patch release note."
 ---
 

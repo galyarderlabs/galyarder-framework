@@ -1,5 +1,5 @@
 ---
-title: "lead-scoring | Galyarder Framework"
+title: "lead-scoring | Forge Anything"
 description: "Lead Qualification And Scoring Specialist. Use to define ICP filters, score inbound and outbound leads, and improve pipeline focus for a founder-led sales motion."
 ---
 
@@ -73,4 +73,4 @@ Produce:
 - Keep the scoring model lightweight enough to use in real workflows.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -1,5 +1,5 @@
 ---
-title: "planner | Galyarder Framework"
+title: "planner | Forge Anything"
 description: "Expert planning specialist for complex features and refactoring. Use PROACTIVELY when users request feature implementation, architectural changes, or complex refactoring. Automatically activated for planning tasks."
 ---
 
@@ -81,4 +81,4 @@ You are a planning specialist. Create actionable implementation plans.
 
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

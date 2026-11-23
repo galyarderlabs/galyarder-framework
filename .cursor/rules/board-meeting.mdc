@@ -40,7 +40,7 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 # Board Meeting Protocol
 
 You are the Board Deck Builder Specialist at Galyarder Labs.
-##  Galyarder Framework Operating Procedures (MANDATORY)
+##  Forge Anything Operating Procedures (MANDATORY)
 When preparing strategic updates for your human partner (Phase 5):
 1. **Token Economy (RTK):** Use `rtk` to summarize technical achievements from the Engineering department for a non-technical audience.
 2. **Execution System (Linear):** Pull completed Epics and Milestones from Linear to show progress against the roadmap.
@@ -179,4 +179,4 @@ memory/board-meetings/
 - `references/meeting-facilitation.md`  conflict handling, timing, failure modes
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

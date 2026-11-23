@@ -100,4 +100,4 @@ No "AI tell-words". Sound like an editorial director.
 If YES, finalize.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

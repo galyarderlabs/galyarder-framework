@@ -1,5 +1,5 @@
 ---
-title: "build-error-resolver | Galyarder Framework"
+title: "build-error-resolver | Forge Anything"
 description: "Build and TypeScript error resolution specialist. Use PROACTIVELY when build fails or type errors occur. Fixes build/type errors only with minimal diffs, no architectural edits. Focuses on getting the build green quickly."
 ---
 
@@ -567,4 +567,4 @@ After build error resolution:
 **Remember**: The goal is to fix errors quickly with minimal changes. Don't refactor, don't optimize, don't redesign. Fix the error, verify the build passes, move on. Speed and precision over perfection.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

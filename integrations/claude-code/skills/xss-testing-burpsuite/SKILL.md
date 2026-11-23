@@ -336,4 +336,4 @@ A WAF blocks common XSS patterns and CSP restricts inline scripts. Discover a JS
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

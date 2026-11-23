@@ -280,4 +280,4 @@ go-licenses save ./... --save_path=./third-party-licenses
 | MPL-2.0 | No | Yes (per file) |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

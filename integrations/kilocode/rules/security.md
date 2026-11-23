@@ -1,8 +1,8 @@
 ---
-description: "Consolidated Galyarder Framework Security intelligence bundle."
+description: "Consolidated Forge Anything Security intelligence bundle."
 ---
 
-# GALYARDER SECURITY BUNDLE
+# FORGE SECURITY BUNDLE
 
 This bundle contains 17 high-integrity SOPs for the Security department.
 
@@ -40,7 +40,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Cloud Security
 
 You are the Cloud Security Specialist at Galyarder Labs.
-##  Galyarder Framework Operating Procedures (MANDATORY)
+##  Forge Anything Operating Procedures (MANDATORY)
 When executing this skill to protect your human partner's infrastructure (Phase 4):
 1. **Token Economy (RTK):** Gather cloud configuration data using `rtk` mediated CLI calls to minimize token usage.
 2. **Execution System (Linear):** Every "Critical" or "High" finding must be converted into a Linear Issue with the `Security` label.
@@ -372,7 +372,7 @@ aws s3api get-bucket-policy --bucket "${BUCKET}" | jq '.Policy | fromjson' | \
 | [red-team](../red-team/SKILL.md) | Red team exercises specifically test exploitability of cloud misconfigurations found in posture assessment |
 | [security-pen-testing](../security-pen-testing/SKILL.md) | Cloud posture findings feed into the infrastructure security section of pen test assessments |
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: eradicating-malware-from-infected-systems
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -610,7 +610,7 @@ yara -r malware_rules/specific_family.yar C:\ 2>/dev/null
 - Post-eradication validation scan results
 - Systems cleared for recovery phase
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: executing-active-directory-attack-simulation
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -801,7 +801,7 @@ could access all 5,000 user accounts, 800 computer objects, and all data within 
 6. Deploy Microsoft Defender for Identity to detect Kerberoasting and DCSync attacks
 ```
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: executing-phishing-simulation-campaign
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -1002,7 +1002,7 @@ Analyze campaign results and produce the assessment report:
 5. Schedule quarterly phishing simulations to track improvement
 ```
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: executing-red-team-engagement-planning
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -1164,7 +1164,7 @@ Map organizational threats using MITRE ATT&CK Navigator to select relevant adver
 - performing-assumed-breach-red-team-exercise
 - building-red-team-infrastructure-with-redirectors
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: executing-red-team-exercise
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -1358,7 +1358,7 @@ Convert red team findings into defensive improvements:
 4. Deploy memory-scanning EDR capability to detect process injection
 ```
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: generating-threat-intelligence-reports
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -1512,7 +1512,7 @@ Before dissemination, apply these checks:
 - **Stale intelligence**: Publishing a report on a threat campaign that was resolved 2 weeks ago creates alarm without utility. Include freshness dating on all claims.
 - **Over-classification**: Applying TLP:RED to information that could be TLP:GREEN impedes community sharing and limits defensive value across the sector.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: intercepting-mobile-traffic-with-burpsuite
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -1715,7 +1715,7 @@ android sslpinning disable
 - **Non-HTTP protocols**: Burp Suite only handles HTTP/HTTPS. Use Wireshark for WebSocket, MQTT, gRPC, or custom binary protocols.
 - **VPN-based apps**: Apps using VPN tunnels bypass device proxy settings. May need iptables rules on a rooted device to redirect traffic.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: investigating-phishing-email-incident
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -2018,7 +2018,7 @@ Containment:
 Status:       RESOLVED  No evidence of lateral movement post-compromise
 ```
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: mapping-mitre-attack-techniques
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -2168,7 +2168,7 @@ Summarize coverage by tactic category (Initial Access, Execution, Persistence, e
 - **Static mapping without updates**: ATT&CK releases major versions annually. Coverage maps go stale as techniques are added, revised, or deprecated.
 - **Not mapping to adversary groups**: Generic coverage maps don't distinguish between techniques used by APTs targeting your sector vs. commodity malware.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: monitoring-darkweb-sources
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -2310,7 +2310,7 @@ For each dark web finding:
 - **Inadequate legal review**: Dark web monitoring must be reviewed by legal counsel  passive monitoring is generally lawful but active participation in criminal markets is not.
 - **No evidence preservation**: Dark web content disappears rapidly. Capture timestamped evidence immediately upon discovery using commercial service exports.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: profiling-threat-actor-groups
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -2450,7 +2450,7 @@ Classify TLP:AMBER for internal distribution; seek ISAC approval before external
 - **Neglecting insider and criminal groups**: Overemphasis on nation-state APTs while ignoring ransomware groups (Cl0p, LockBit, ALPHV) which represent higher probability threats for most organizations.
 - **Profile staleness**: Adversary TTPs evolve. Profiles not updated quarterly may miss technique changes, new malware, or targeting shifts.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: recovering-deleted-files-with-photorec
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -2698,7 +2698,7 @@ PhotoRec Recovery Summary:
   Hash Manifest:    /cases/case-2024-001/recovered/recovered_hashes.txt
 ```
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: recovering-from-ransomware-attack
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -3016,7 +3016,7 @@ Throughout: SOC monitoring on high alert
 - [ ] Canary files deployed
 ```
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: reverse-engineering-malware-with-ghidra
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -3314,7 +3314,7 @@ Campaign ID:      campaign_2025_q3
 RC4 Key Material: [see encryption details above]
 ```
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: testing-for-xss-vulnerabilities-with-burpsuite
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -3643,7 +3643,7 @@ A WAF blocks common XSS patterns and CSP restricts inline scripts. Discover a JS
 5. Add X-Content-Type-Options: nosniff header
 ```
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: tracking-threat-actor-infrastructure
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -3948,6 +3948,6 @@ def build_infrastructure_timeline(indicators):
 - [PassiveTotal API](https://api.passivetotal.org/api/docs/)
 - [JARM Fingerprinting](https://github.com/salesforce/jarm)
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

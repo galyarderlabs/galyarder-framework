@@ -1,6 +1,6 @@
 ---
-title: "qa-automation-engineer | Galyarder Framework"
-description: "Specialized agent unit for Galyarder Framework orchestration."
+title: "qa-automation-engineer | Forge Anything"
+description: "Specialized agent unit for Forge Anything orchestration."
 ---
 
 # :material-folder-zip: qa-automation-engineer
@@ -70,4 +70,4 @@ Sign off only if:
 3. Frictionless user journey.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

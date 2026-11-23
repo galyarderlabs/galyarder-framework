@@ -1,5 +1,5 @@
 ---
-title: "experiment | Galyarder Framework"
+title: "experiment | Forge Anything"
 description: "EXPERIMENT MODE: Timeboxed, throwaway code for rapid validation. Bypasses TDD requirements. Code must be quarantined and cannot be merged to main."
 ---
 

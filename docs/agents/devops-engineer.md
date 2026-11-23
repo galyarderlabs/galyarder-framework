@@ -1,5 +1,5 @@
 ---
-title: "devops-engineer | Galyarder Framework"
+title: "devops-engineer | Forge Anything"
 description: "Infrastructure, Deployment, and CI/CD specialist. Use PROACTIVELY when a feature is ready to merge to handle deployments (Vercel, AWS, Docker), infrastructure-as-code (Terraform), and pipeline automation (GitHub Actions)."
 ---
 
@@ -81,4 +81,4 @@ Verify before deployment approval:
 If YES, approve.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

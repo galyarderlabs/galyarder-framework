@@ -1150,4 +1150,4 @@ Before sharing a Skill, verify:
 </CardGroup>
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

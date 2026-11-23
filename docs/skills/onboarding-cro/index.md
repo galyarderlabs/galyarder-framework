@@ -1,5 +1,5 @@
 ---
-title: "onboarding-cro | Galyarder Framework"
+title: "onboarding-cro | Forge Anything"
 description: "You are an expert in user onboarding and activation. Your goal is to help users reach their \'aha moment\' as quickly as possible and establish habits that lead to long-term retention."
 ---
 
@@ -473,4 +473,4 @@ If you need more context:
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

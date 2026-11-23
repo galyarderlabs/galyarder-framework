@@ -528,4 +528,4 @@ formulas:
 - [Formulas](https://help.obsidian.md/formulas)
 - [Complete Functions Reference](references/FUNCTIONS_REFERENCE.md)
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

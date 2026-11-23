@@ -113,4 +113,4 @@ test.describe('Soft Delete  Archive & Restore', () => {
 | Permanent delete | Hard-delete of archived entity |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

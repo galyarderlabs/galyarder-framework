@@ -1,5 +1,5 @@
 ---
-title: "gdpr-compliance | Galyarder Framework"
+title: "gdpr-compliance | Forge Anything"
 description: "Implement GDPR data protection requirements. Configure consent management, data subject rights, and privacy by design. Use when processing EU personal data."
 ---
 
@@ -590,4 +590,4 @@ gdpr_compliance_checklist:
 - Regularly audit data flows to discover shadow processing or undocumented data stores
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

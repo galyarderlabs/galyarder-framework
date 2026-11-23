@@ -1,5 +1,5 @@
 #!/bin/bash
-# Galyarder Framework: Audit-Grade Smoke Test
+# Forge Anything: Audit-Grade Smoke Test
 # Verifies canonical runtime integrity, manifest parity, and structural health.
 set -euo pipefail
 
@@ -8,13 +8,13 @@ REAL_PATH=$(readlink -f "$0")
 SCRIPT_DIR="$(cd "$(dirname "$REAL_PATH")" && pwd)"
 cd "$SCRIPT_DIR/.." || exit 1
 
-echo "🚀 Starting Galyarder Smoke Test..."
+echo "🚀 Starting Forge Smoke Test..."
 
 # Detect if we are in the Framework Source or a Project HQ.
 IS_SOURCE=false
 if [ -f "gemini-extension.json" ] && [ -d "agents" ] && [ -d "skills" ] && [ -d "commands" ]; then
     IS_SOURCE=true
-    echo "[*] Detected: Galyarder Framework Source Environment"
+    echo "[*] Detected: Forge Anything Source Environment"
 else
     echo "[*] Detected: Target Project Environment"
 fi
@@ -47,10 +47,10 @@ fi
 
 # 2. Path & Script Awareness
 echo "[2/8] Verifying CLI Accessibility..."
-if command -v galyarder >/dev/null 2>&1; then
+if command -v forge >/dev/null 2>&1; then
     echo "✅ CLI command is reachable."
 else
-    echo "⚠️ Warning: 'galyarder' not in PATH."
+    echo "⚠️ Warning: 'forge' not in PATH."
 fi
 
 # 3. Documentation/HQ Readiness
@@ -58,7 +58,7 @@ echo "[3/8] Checking Workspace Maturity..."
 if [ -d "docs/departments" ]; then
     echo "✅ Intelligence Layer structure exists."
 else
-    echo "⚠️ Warning: Intelligence Layer not initialized. Run 'galyarder scaffold'."
+    echo "⚠️ Warning: Intelligence Layer not initialized. Run 'forge scaffold'."
 fi
 
 # 4. Framework Source specific checks
@@ -91,8 +91,8 @@ PY
     if grep -R -n -E --exclude='graph.json' --exclude='smoke.sh' \
         'Check the Map First|God Nodes|MUST read `docs/graph\.json`' \
         agents skills commands scripts docs integrations \
-        >/tmp/galyarder-mandatory-graph.txt; then
-        sed -n '1,40p' /tmp/galyarder-mandatory-graph.txt
+        >/tmp/forge-mandatory-graph.txt; then
+        sed -n '1,40p' /tmp/forge-mandatory-graph.txt
         echo "❌ Error: Neural Link/World-Map access must be lazy, not mandatory for normal execution."
         exit 1
     fi

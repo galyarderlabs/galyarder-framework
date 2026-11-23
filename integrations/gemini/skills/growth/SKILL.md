@@ -1,9 +1,9 @@
 ---
 name: growth
-description: "Consolidated Galyarder Framework Growth intelligence bundle."
+description: "Consolidated Forge Anything Growth intelligence bundle."
 ---
 
-# GALYARDER GROWTH BUNDLE
+# FORGE GROWTH BUNDLE
 
 This bundle contains 20 high-integrity SOPs for the Growth department.
 
@@ -273,7 +273,7 @@ that is the signal to **slow down and re-check the design**.
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: analytics-tracking
@@ -707,7 +707,7 @@ Analytics that violate trust undermine optimization.
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: campaign-analytics
@@ -744,7 +744,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Campaign Analytics
 
 You are the Campaign Analytics Specialist at Galyarder Labs.
-##  Galyarder Framework Operating Procedures (MANDATORY)
+##  Forge Anything Operating Procedures (MANDATORY)
 When executing this skill for your human partner during Phase 5 (Growth):
 1. **Token Economy (RTK):** Process large analytics exports using `rtk` mediated scripts to minimize token overhead.
 2. **Execution System (Linear):** Update Linear issues with actual performance data (ROI, CPA, CVR) once a campaign milestone is reached.
@@ -964,7 +964,7 @@ Calculates comprehensive ROI metrics with industry Standarding:
 - **paid-ads**: For optimizing ad spend based on analytics findings.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: competitor-alternatives
@@ -1749,7 +1749,7 @@ If you need more context:
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: content-creator
@@ -1786,7 +1786,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Content Creator  Redirected
 
 You are the Content Creator Specialist at Galyarder Labs.
-##  Galyarder Framework Operating Procedures (MANDATORY)
+##  Forge Anything Operating Procedures (MANDATORY)
 When operating this skill for your human partner:
 1. **Token Economy (RTK):** Use `rtk` to fetch industry news or trending topics for content inspiration while keeping token costs low.
 2. **Strategic Memory (Obsidian):** Summarize content distribution success and audience growth for the `social-strategist` to include in the **Growth Report** at `[VAULT_ROOT]//Department-Reports/Growth/`.
@@ -1836,7 +1836,7 @@ This is a redirect skill. Route the user to the correct specialist  don't attemp
 - **marketing-context**: Foundation context the successors read.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: content-strategy
@@ -2237,7 +2237,7 @@ Visual or structured representation of how content interconnects.
 - **social-content**: For social media content
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: copywriting
@@ -2515,7 +2515,7 @@ rewrite it until it feels obvious.
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: email-marketing-bible
@@ -3011,7 +3011,7 @@ Also covers: Agency, Healthcare, Financial, Real Estate, Travel, Education, Reta
 > Methodology: https://emailmarketingskill.com/appendix-d-methodology/
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: marketing-demand-acquisition
@@ -3048,7 +3048,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Marketing Demand & Acquisition
 
 You are the Marketing Demand Acquisition Specialist at Galyarder Labs.
-##  Galyarder Framework Operating Procedures (MANDATORY)
+##  Forge Anything Operating Procedures (MANDATORY)
 When executing this skill for your human partner during Phase 5 (Growth):
 1. **Token Economy (RTK):** Use `rtk` wrapped commands to query keyword data or scan competitor domains.
 2. **Execution System (Linear):** Every acquisition campaign MUST be tracked as a Linear Initiative. Sub-tasks represent ad-sets or content pieces.
@@ -3339,7 +3339,7 @@ Required:
 - **campaign-analytics**: For measuring demand gen effectiveness.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: marketing-ideas
@@ -3595,7 +3595,7 @@ Use these biases when scoring:
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: marketing-psychology
@@ -3885,7 +3885,7 @@ Before responding, confirm:
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: onboarding-cro
@@ -4353,7 +4353,7 @@ If you need more context:
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: page-cro
@@ -4727,7 +4727,7 @@ Fix fundamentals first.
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: paywall-upgrade-cro
@@ -5332,7 +5332,7 @@ If you need more context:
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: programmatic-seo
@@ -5712,7 +5712,7 @@ If triggered, **halt indexing or roll back**:
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: referral-program
@@ -6349,7 +6349,7 @@ If you need more context:
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: revenue-architect
@@ -6421,7 +6421,7 @@ A Agentic Company scales through word of mouth. You design referral systems that
 If YES, finalize the revenue plan.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: schema-markup
@@ -6810,7 +6810,7 @@ Where and how to add it
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: seo-audit
@@ -7325,7 +7325,7 @@ Use these skills **only after the audit is complete** and findings are accepted.
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: social-content
@@ -8167,7 +8167,7 @@ If you need more context:
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

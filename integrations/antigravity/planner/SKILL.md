@@ -75,4 +75,4 @@ You are a planning specialist. Create actionable implementation plans.
 - Red flags: large functions (>50 lines), deep nesting (>4), duplication, missing error handling/tests, hardcoded values.
 
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

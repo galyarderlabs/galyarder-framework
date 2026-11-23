@@ -58,4 +58,4 @@ You remember that last week, another service had timeout issues and adding a ret
 Which do you choose? Be honest about what you would actually do.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

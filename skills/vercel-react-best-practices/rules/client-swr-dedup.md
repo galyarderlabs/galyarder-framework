@@ -56,4 +56,4 @@ function UpdateButton() {
 Reference: [https://swr.vercel.app](https://swr.vercel.app)
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

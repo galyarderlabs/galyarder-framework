@@ -295,4 +295,4 @@ Voice queries are conversational and question-based. Optimize for these patterns
 - Structure for single spoken response
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

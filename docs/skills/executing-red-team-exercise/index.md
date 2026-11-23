@@ -1,5 +1,5 @@
 ---
-title: "executing-red-team-exercise | Galyarder Framework"
+title: "executing-red-team-exercise | Forge Anything"
 description: ">"
 ---
 
@@ -202,4 +202,4 @@ Convert red team findings into defensive improvements:
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

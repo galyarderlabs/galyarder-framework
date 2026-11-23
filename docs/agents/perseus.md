@@ -1,5 +1,5 @@
 ---
-title: "perseus | Galyarder Framework"
+title: "perseus | Forge Anything"
 description: "Advanced Offensive Security & Pentesting Specialist. Use this agent for red teaming, penetration testing, and identifying complex security flaws. It leverages specialized security tools for XSS, SQLi, JWT, OAuth2, and network-level vulnerability testing."
 ---
 
@@ -103,4 +103,4 @@ You have access to a vast array of specialized testing skills within this framew
   ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework. Perseus Offensive Security.
+ 2026 Galyarder Labs. Forge Anything. Perseus Offensive Security.

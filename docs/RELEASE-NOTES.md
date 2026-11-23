@@ -1,8 +1,8 @@
-# Release Notes - Galyarder Framework
+# Release Notes - Forge Anything
 
 ## [v2.0.0] - 2026-06-02
 ### The agentic company & Enterprise Paradigm
-Galyarder Framework v2.0.0 represents a complete architectural evolution, transitioning the framework from personal agent configurations into a clinical, enterprise-ready **agentic company Framework** and **project operating workspace**. This major release coordinates and standardizes all specialized personas, commands, skills, and integrations around robust, professional operating protocols.
+Forge Anything v2.0.0 represents a complete architectural evolution, transitioning the framework from personal agent configurations into a clinical, enterprise-ready **agentic company Framework** and **project operating workspace**. This major release coordinates and standardizes all specialized personas, commands, skills, and integrations around robust, professional operating protocols.
 
 #### Release Statistics
 * **Files Modified**: 2,887 files (Comprehensive global codebase alignment)
@@ -13,7 +13,7 @@ Galyarder Framework v2.0.0 represents a complete architectural evolution, transi
 ### Key Architectural Upgrades
 
 #### 1. Unified agentic company Standard
-* **Core Definition**: Re-anchored Galyarder's positioning as an Open-source agentic company Framework and human-directed project operating workspace, deprecating all loose automation concepts.
+* **Core Definition**: Re-anchored Forge Anything's positioning as an Open-source agentic company Framework and human-directed project operating workspace, deprecating all loose automation concepts.
 * **Deterministic Operating Protocols**: Established strict operational boundaries:
   * **BUILD Mode**: Enforces rigid Test-Driven Development (TDD) and deconstruction of tasks via the IssueTracker Interface (Linear).
   * **INCIDENT Mode**: A governed hotfix protocol requiring post-mortem checklists and patch documentation.
@@ -21,10 +21,10 @@ Galyarder Framework v2.0.0 represents a complete architectural evolution, transi
 
 #### 2. Enterprise-Grade Executive Personas
 Refactored all primary executive and operational agent configurations under `personas/` and `.cursor/rules/`:
-* **`galyarder-ceo`**: Operates as the definitive instance of the project operating workspace protocol, executing "Verified Output Policies" and professional "technical integrity principles" to optimize capital allocation and vertical-slice execution.
-* **`galyarder-cto`**: Anchored around architectural determinism, self-healing formal verification, and token-efficiency metrics (reducing LLM overhead through rtk caching).
-* **`galyarder-cmo`**: Refocused entirely on data-driven growth engineering, Conversion Rate Optimization (CRO), and deterministic market metrics.
-* **`galyarder-cfo-coo`**: Aligned with operational antifragility and strict finops practices for LLM token usage.
+* **`forge-ceo`**: Operates as the definitive instance of the project operating workspace protocol, executing "Verified Output Policies" and professional "technical integrity principles" to optimize capital allocation and vertical-slice execution.
+* **`forge-cto`**: Anchored around architectural determinism, self-healing formal verification, and token-efficiency metrics (reducing LLM overhead through rtk caching).
+* **`forge-cmo`**: Refocused entirely on data-driven growth engineering, Conversion Rate Optimization (CRO), and deterministic market metrics.
+* **`forge-cfo-coo`**: Aligned with operational antifragility and strict finops practices for LLM token usage.
 
 #### 3. Standardized Skill Suites & Verification Gates
 Refactored hundreds of skill instruction files (`skills/*/SKILL.md`) to establish clinical, modular execution:
@@ -36,7 +36,7 @@ Refactored hundreds of skill instruction files (`skills/*/SKILL.md`) to establis
 * **Release Flow**: The GitHub Actions runner automatically detects published releases, validates semantic versioning in `package.json`, runs regression tests, and publishes the package to the official NPM registry with public provenance (`--provenance --access public`).
 
 #### 5. Graph Engine & Portal Synchronization
-* **Dependency Analysis**: Regenerated the global framework dependency matrix using `scripts/galyarder-graph-engine.py`, mapping 586 active nodes and 911 edges in `docs/graph.json`.
+* **Dependency Analysis**: Regenerated the global framework dependency matrix using `scripts/forge-graph-engine.py`, mapping 586 active nodes and 911 edges in `docs/graph.json`.
 * **Portal Sync**: Re-synchronized all portal markdown files via `scripts/generate-docs.py` and consolidated skill manifests under `skills.json` via `scripts/sync-skills-manifest.py`.
 
 ---
@@ -44,9 +44,9 @@ Refactored hundreds of skill instruction files (`skills/*/SKILL.md`) to establis
 ## Verification & Installation
 To update your environment to the new agentic company Standard:
 ```bash
-npm install -g galyarder-framework@2.0.0
-galyarder help
-galyarder smoke
+npm install -g forge-anything@2.0.0
+forge help
+forge smoke
 ```
 
 ---
@@ -65,37 +65,37 @@ This release completes the cleanup from duplicate generated extension folders to
 
 ## [v1.9.7] - 2026-04-22
 ### Legacy Branding Purge
-This release finalizes the "Galyarder Standard" by permanently purging all legacy "Paperclip" references from the framework's documentation, manifests, and internal logic.
+This release finalizes the "Forge Standard" by permanently purging all legacy "Paperclip" references from the framework's documentation, manifests, and internal logic.
 
 #### Highlights
-- **Universal Refactor**: Replaced `@paperclipai` scope with `@galyarder` across all files.
-- **Branding Sterilization**: Conducted a recursive audit to ensure 100% Galyarder identity.
+- **Universal Refactor**: Replaced `@paperclipai` scope with `@forge-anything` across all files.
+- **Branding Sterilization**: Conducted a recursive audit to ensure 100% Forge Anything identity.
 - **Agent Adapter Fix**: Updated the `create-agent-adapter` skill to reflect the new standardized types.
 
 ---
 
 ## [v1.9.0] - 2026-04-22
 ### The Unified CLI & NPM Era
-A major architectural shift transitioning Galyarder Framework from a "Script-First" repository to a globally distributed "Package-First" intelligence layer.
+A major architectural shift transitioning Forge Anything from a "Script-First" repository to a globally distributed "Package-First" intelligence layer.
 
 #### Highlights
-- **Unified CLI**: All commands consolidated under the `galyarder` binary (e.g., `galyarder scaffold`, `galyarder deploy`).
-- **NPM Distribution**: Official support for `npm install -g galyarder-framework`.
+- **Unified CLI**: All commands consolidated under the `forge` binary (e.g., `forge scaffold`, `forge deploy`).
+- **NPM Distribution**: Official support for `npm install -g forge-anything`.
 - **Skills.sh Support**: First-class integration with `npx skills add` for departmental and full-framework injection.
 - **Infrastructure Parity**: Finalized the 8-department structure including the mandatory `Infrastructure` silo.
 
 #### Verification
 ```bash
-npm install -g galyarder-framework
-galyarder help
-galyarder smoke
+npm install -g forge-anything
+forge help
+forge smoke
 ```
 
 ---
 
 ## [v1.8.17] - 2026-04-19
 ### Operational Realignment
-Updated the core operational sequence and command protocols to explicitly incorporate the **Galyarder Neural Link** as a foundational mapping phase.
+Updated the core operational sequence and command protocols to explicitly incorporate the **Forge Neural Link** as a foundational mapping phase.
 
 #### Highlights
 - **Mermaid Sequence Update**: Injected the Neural Link into the "Operational Sequence" to show automated dependency auditing before strategic planning.
@@ -126,7 +126,7 @@ This patch restores the legacy runtime assets that had fallen out of the canonic
 
 #### Highlights
 - **Compat Source Layer**: Added `Compat/agents` and `Compat/skills`, and wired the root surface builder to include them in generated runtime outputs.
-- **Agent Recovery**: Restored the missing founder-office and specialist agent surfaces, including `galyarder-specialist` and several historical orchestration agents.
+- **Agent Recovery**: Restored the missing founder-office and specialist agent surfaces, including `forge-specialist` and several historical orchestration agents.
 - **Skill Recovery**: Restored missing compatibility skills and legacy entrypoints so older prompts, docs, and registries can still resolve their intended capability names.
 - **Parity Audit Clean**: Historical canonical runtime audit now reports zero missing agents, personas, skills, or subagents.
 
@@ -176,7 +176,7 @@ This patch closes the remaining host packaging gaps that were still breaking Cla
 #### Highlights
 - **Claude Manifest Schema Fix**: Full bundle and department plugin manifests now match Claude's validator expectations for `author` and no longer emit an unsupported `personas` key.
 - **Executive Identity Contract Parity**: CFO/COO, CMO, and CTO now export the same host-aware identity contract as CEO in generated root and marketplace agent surfaces.
-- **Shorter XSS Skill Name**: The Burp Suite XSS skill now exports as `xss-testing-burpsuite`, avoiding host registries that prepend `galyarder-framework:` and exceed a 64-character skill-name limit.
+- **Shorter XSS Skill Name**: The Burp Suite XSS skill now exports as `xss-testing-burpsuite`, avoiding host registries that prepend `forge-anything:` and exceed a 64-character skill-name limit.
 
 #### Verification
 ```bash
@@ -192,7 +192,7 @@ bash scripts/smoke.sh
 This patch tightens the CEO persona instructions for hosts like GitHub Copilot CLI that tend to reassert their platform identity.
 
 #### Highlights
-- **Identity Contract**: `galyarder-ceo` now explicitly answers as the Galyarder CEO persona running inside the active host runtime.
+- **Identity Contract**: `forge-ceo` now explicitly answers as the Forge CEO persona running inside the active host runtime.
 - **Deflation Guard**: Blocks fallback answers like "I'm just Copilot" unless the user is explicitly asking about the host/platform distinction.
 
 #### Verification
@@ -299,7 +299,7 @@ This release hardens the framework for real marketplace installs: lighter boot c
 
 #### Highlights
 - **Lazy Neural Link**: World-Map / graph context is now fetched only when the task actually needs architecture discovery, dependency mapping, or explicit `/graph` work.
-- **Full Marketplace Bundle**: Added `galyarder-framework` as a top-level bundle so all 8 departments can be installed together instead of one by one.
+- **Full Marketplace Bundle**: Added `forge-anything` as a top-level bundle so all 8 departments can be installed together instead of one by one.
 - **Installer Repair**: Removed broken nested skill symlinks that were producing `ENOENT realpath` failures during plugin install.
 - **Aider Purge**: Deleted the old `CONVENTIONS.md` monolith and removed Aider integration exports from generated packages.
 - **Integration Rebuild**: Re-generated all supported tool packages so the lighter load policy lands everywhere consistently.
@@ -318,11 +318,11 @@ Expected outcome:
 
 ## [v1.8.2] - 2026-04-19
 ### Ecosystem Broadcast: The Neural Link
-Officially broadcasted the Galyarder Neural Link capability across all 14 platforms and executive agents.
+Officially broadcasted the Forge Neural Link capability across all 14 platforms and executive agents.
 
 #### Highlights
 - **Command Broadcast**: The `/graph` command is now natively recognized across Claude Code, Gemini CLI, and other integrations.
-- **Executive Awareness**: `chief-of-staff` and `galyarder-specialist` are now programmed to orchestrate map rebuilding after major architectural shifts.
+- **Executive Awareness**: `chief-of-staff` and `forge-specialist` are now programmed to orchestrate map rebuilding after major architectural shifts.
 - **Global Manifest Bump**: All 21 marketplace and plugin manifests have been bumped to v1.8.2 to ensure the ecosystem picks up the new capabilities.
 
 ---
@@ -381,4 +381,4 @@ rtk npm run test:unit && rtk npm run test:contract && rtk npm run test:e2e
 [View Full Migration Guide](MIGRATION.md)
 
 ---
-© 2026 Galyarder Labs. Galyarder Framework. Engineering. Marketing. Distribution.
+© 2026 Galyarder Labs. Forge Anything. Engineering. Marketing. Distribution.

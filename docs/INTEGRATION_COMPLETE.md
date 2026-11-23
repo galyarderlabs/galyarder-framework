@@ -1,9 +1,9 @@
-# Integration Checklist: Galyarder Triad Complete
+# Integration Checklist: Forge Triad Complete
 
 This checklist defines a working agentic-company setup: **Agent (Continuity)**, **Framework (Intelligence)**, and **HQ (Command)** connected to the same project.
 
 
-## Phase 1: Continuity Layer (Galyarder Agent)
+## Phase 1: Continuity Layer (Forge Agent)
 *Ensuring the agent can communicate, remember, and use tools inside the project environment.*
 
 - [ ] **Runtime Connectivity**: `g-agent status` returns `operational` and all configured channels (WhatsApp/Telegram) are live.
@@ -12,20 +12,20 @@ This checklist defines a working agentic-company setup: **Agent (Continuity)**, 
 - [ ] **Proactive Pulse**: Proactive jobs (e.g., daily_brief) are enabled for the project directory.
 
 
-## Phase 2: Intelligence Layer (Galyarder Framework)
+## Phase 2: Intelligence Layer (Forge Anything)
 *Injecting agents, skills, commands, and operating protocols into the local environment.*
 
-- [ ] **Project Structure Initialization**: `galyarder scaffold` has been executed in the project root.
+- [ ] **Project Structure Initialization**: `forge scaffold` has been executed in the project root.
 - [ ] **Protocol Injection**: agents, skills, and commands are deployed for the selected host tool.
-- [ ] **Local CLI Link**: `galyarder deploy` is available in the system PATH and points to the correct source repo.
+- [ ] **Local CLI Link**: `forge deploy` is available in the system PATH and points to the correct source repo.
 - [ ] **Asset Transformation**: 200+ assets have been successfully converted for the specific host (e.g., `.mdc` for Cursor or native skill bundles for CLI agents).
-- [ ] **Smoke Test Verified**: `galyarder smoke` returns a full Green state for the project.
+- [ ] **Smoke Test Verified**: `forge smoke` returns a full Green state for the project.
 
 
-## Phase 3: Command Layer (Galyarder HQ)
+## Phase 3: Command Layer (Forge HQ)
 *Connecting the project to the command and visibility surface.*
 
-- [ ] **Project Discovery**: Galyarder HQ dashboard has successfully indexed the project directory.
+- [ ] **Project Discovery**: Forge HQ dashboard has successfully indexed the project directory.
 - [ ] **Linear Synchronization**: Dashboard correctly visualizes the project's Linear tickets and milestone progress.
 - [ ] **Obsidian Loop**: Departmental reports in `docs/departments/` are readable and indexed by the HQ search engine.
 - [ ] **Audit Trail**: Every mission execution result (TDD logs, security scans) is visible in the HQ activity feed.
@@ -48,6 +48,6 @@ This checklist defines a working agentic-company setup: **Agent (Continuity)**, 
 | **Protocol Adherence** | [Verified / Needs Work] |
 | **Runtime Ownership** | [Local / Hosted / Hybrid] |
 
-**Authorized by:** `galyarder-ceo`
-**Verified by:** `galyarder-specialist`
+**Authorized by:** `forge-ceo`
+**Verified by:** `forge-specialist`
 

@@ -31,4 +31,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command is powered by the `galyarder-framework:copywriting`, `seo-audit`, and `marketing-psychology` skills.
+**Note**: This command is powered by the `forge-anything:copywriting`, `seo-audit`, and `marketing-psychology` skills.

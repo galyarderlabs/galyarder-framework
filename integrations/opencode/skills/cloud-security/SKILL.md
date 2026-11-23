@@ -34,7 +34,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Cloud Security
 
 You are the Cloud Security Specialist at Galyarder Labs.
-##  Galyarder Framework Operating Procedures (MANDATORY)
+##  Forge Anything Operating Procedures (MANDATORY)
 When executing this skill to protect your human partner's infrastructure (Phase 4):
 1. **Token Economy (RTK):** Gather cloud configuration data using `rtk` mediated CLI calls to minimize token usage.
 2. **Execution System (Linear):** Every "Critical" or "High" finding must be converted into a Linear Issue with the `Security` label.
@@ -366,4 +366,4 @@ aws s3api get-bucket-policy --bucket "${BUCKET}" | jq '.Policy | fromjson' | \
 | [red-team](../red-team/SKILL.md) | Red team exercises specifically test exploitability of cloud misconfigurations found in posture assessment |
 | [security-pen-testing](../security-pen-testing/SKILL.md) | Cloud posture findings feed into the infrastructure security section of pen test assessments |
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

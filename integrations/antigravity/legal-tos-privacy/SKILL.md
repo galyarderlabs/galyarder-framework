@@ -539,4 +539,4 @@ Deliver final documents in this structure:
 
 7. **Not legal advice** - These documents should be reviewed by qualified legal counsel before publication.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

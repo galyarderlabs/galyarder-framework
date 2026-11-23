@@ -38,4 +38,4 @@ function MessageList({ messages }: { messages: Message[] }) {
 For 1000 messages, browser skips layout/paint for ~990 off-screen items (10 faster initial render).
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

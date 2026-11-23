@@ -51,4 +51,4 @@ const [user, config, profile] = await Promise.all([
 Reference: [https://github.com/shuding/better-all](https://github.com/shuding/better-all)
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

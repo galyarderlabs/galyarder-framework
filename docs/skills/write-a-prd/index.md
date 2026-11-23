@@ -1,5 +1,5 @@
 ---
-title: "write-a-prd | Galyarder Framework"
+title: "write-a-prd | Forge Anything"
 description: "Create a PRD through user interview, codebase exploration, and module design, then submit as a GitHub issue. Use when user wants to write a PRD, create a product requirements document, or plan a new feature."
 ---
 
@@ -111,4 +111,4 @@ Any further notes about the feature.
 </prd-template>
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

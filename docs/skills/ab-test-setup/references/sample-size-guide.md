@@ -268,4 +268,4 @@ If days < 7: Easy to run, consider running longer anyway
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

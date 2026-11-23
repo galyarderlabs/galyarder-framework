@@ -1,5 +1,5 @@
 ---
-title: "tdd-guide | Galyarder Framework"
+title: "tdd-guide | Forge Anything"
 description: "Test-Driven Development specialist enforcing write-tests-first methodology. Use PROACTIVELY when writing new features, fixing bugs, or refactoring code. Ensures 80%+ test coverage."
 ---
 
@@ -316,4 +316,4 @@ npm test -- --coverage --ci
 **Remember**: No code without tests. Tests are not optional. They are the safety net that enables confident refactoring, rapid development, and production reliability.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

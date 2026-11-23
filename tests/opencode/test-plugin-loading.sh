@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Test: Plugin Loading
-# Verifies that the galyarder-framework plugin loads correctly in OpenCode
+# Verifies that the forge-anything plugin loads correctly in OpenCode
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
@@ -13,7 +13,7 @@ source "$SCRIPT_DIR/setup.sh"
 # Trap to cleanup on exit
 trap cleanup_test_env EXIT
 
-plugin_link="$OPENCODE_CONFIG_DIR/plugins/galyarder-framework.js"
+plugin_link="$OPENCODE_CONFIG_DIR/plugins/forge-anything.js"
 
 # Test 1: Verify plugin file exists and is registered
 echo "Test 1: Checking plugin registration..."
@@ -34,26 +34,26 @@ fi
 
 # Test 2: Verify skills directory is populated
 echo "Test 2: Checking skills directory..."
-skill_count=$(find "$GALYARDER_SKILLS_DIR" -name "SKILL.md" | wc -l)
+skill_count=$(find "$FORGE_SKILLS_DIR" -name "SKILL.md" | wc -l)
 if [ "$skill_count" -gt 0 ]; then
     echo "  [PASS] Found $skill_count skills"
 else
-    echo "  [FAIL] No skills found in $GALYARDER_SKILLS_DIR"
+    echo "  [FAIL] No skills found in $FORGE_SKILLS_DIR"
     exit 1
 fi
 
-# Test 3: Check using-galyarder-framework skill exists (critical for bootstrap)
-echo "Test 3: Checking using-galyarder-framework skill (required for bootstrap)..."
-if [ -f "$GALYARDER_SKILLS_DIR/using-SKILL.md" ]; then
-    echo "  [PASS] using-galyarder-framework skill exists"
+# Test 3: Check using-forge-anything skill exists (critical for bootstrap)
+echo "Test 3: Checking using-forge-anything skill (required for bootstrap)..."
+if [ -f "$FORGE_SKILLS_DIR/using-SKILL.md" ]; then
+    echo "  [PASS] using-forge-anything skill exists"
 else
-    echo "  [FAIL] using-galyarder-framework skill not found (required for bootstrap)"
+    echo "  [FAIL] using-forge-anything skill not found (required for bootstrap)"
     exit 1
 fi
 
 # Test 4: Verify plugin JavaScript syntax (basic check)
 echo "Test 4: Checking plugin JavaScript syntax..."
-if node --check "$GALYARDER_PLUGIN_FILE" 2>/dev/null; then
+if node --check "$FORGE_PLUGIN_FILE" 2>/dev/null; then
     echo "  [PASS] Plugin JavaScript syntax is valid"
 else
     echo "  [FAIL] Plugin has JavaScript syntax errors"
@@ -62,7 +62,7 @@ fi
 
 # Test 5: Verify bootstrap text does not reference a hardcoded skills path
 echo "Test 5: Checking bootstrap does not advertise a wrong skills path..."
-if grep -q 'configDir}/skills/' "$GALYARDER_PLUGIN_FILE"; then
+if grep -q 'configDir}/skills/' "$FORGE_PLUGIN_FILE"; then
     echo "  [FAIL] Plugin still references old configDir skills path"
     exit 1
 else

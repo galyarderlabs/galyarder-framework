@@ -279,4 +279,4 @@ Map each scenario to specific driver values:
 - **Utilization rates** driving unit cost projections
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

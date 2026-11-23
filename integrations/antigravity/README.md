@@ -1,6 +1,6 @@
 # Antigravity Integration
 
-This directory contains converted Galyarder Framework assets for **Antigravity**.
+This directory contains converted Forge Anything assets for **Antigravity**.
 
 ## Included Assets
 

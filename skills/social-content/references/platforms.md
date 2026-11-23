@@ -163,4 +163,4 @@ Detailed strategies for each major social platform.
 - Cross-posting from other platforms without adaptation
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -48,4 +48,4 @@ Compares executed vs. detected techniques. Outputs detection rate and missed tec
 - Locally cached as `attack_enterprise.json` after first download
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

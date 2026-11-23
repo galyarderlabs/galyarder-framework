@@ -139,4 +139,4 @@ test.describe('Toast Messages', () => {
 | Accessible | role=alert or role=status present |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

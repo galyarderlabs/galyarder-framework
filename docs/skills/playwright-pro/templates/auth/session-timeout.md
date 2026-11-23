@@ -113,4 +113,4 @@ test.describe('Session Timeout', () => {
 | 401 from API | Re-auth dialog shown when backend rejects request |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

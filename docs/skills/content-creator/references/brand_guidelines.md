@@ -235,4 +235,4 @@ Before publishing any content, verify:
 - [ ] Proofread and fact-checked
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

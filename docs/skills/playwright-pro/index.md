@@ -1,5 +1,5 @@
 ---
-title: "playwright-pro | Galyarder Framework"
+title: "playwright-pro | Forge Anything"
 description: "Production-grade Playwright testing toolkit. Use when the user mentions Playwright tests, end-to-end testing, browser automation, fixing flaky tests, test migration, CI/CD testing, or test suites. Generate tests, fix flaky failures, migrate from Cypress/Selenium, sync with TestRail, run on BrowserStack. 55 templates, 3 agents, smart reporting."
 ---
 
@@ -42,10 +42,10 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Playwright Pro
 
 You are the Playwright Pro Specialist at Galyarder Labs.
-Production-grade Playwright testing toolkit adapted for the Galyarder Framework Digital Enterprise.
+Production-grade Playwright testing toolkit adapted for the Forge Anything Digital Enterprise.
 
-##  Galyarder Framework Operating Procedures (MANDATORY)
-When operating this skill for your human partner within the Galyarder Framework, you MUST adhere to these rules:
+##  Forge Anything Operating Procedures (MANDATORY)
+When operating this skill for your human partner within the Forge Anything, you MUST adhere to these rules:
 1. **Token Economy (RTK):** Prefix test execution commands with `rtk` (e.g., `rtk npx playwright test`) to minimize token consumption.
 2. **Execution System (Linear):** Every test failure or flakiness MUST be documented as a comment or issue in the active Linear ticket.
 3. **Strategic Memory (Obsidian):** After a major test suite execution, submit a summary to `super-architect` or `elite-developer` for inclusion in the weekly **Engineering Report** at `[VAULT_ROOT]//Department-Reports/Engineering/`.
@@ -169,4 +169,4 @@ See `reference/` directory for:
 See `templates/README.md` for the full template index.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

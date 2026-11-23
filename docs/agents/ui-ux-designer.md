@@ -1,5 +1,5 @@
 ---
-title: "ui-ux-designer | Galyarder Framework"
+title: "ui-ux-designer | Forge Anything"
 description: "User experience and interface design specialist. Use PROACTIVELY when layout, flow clarity, interaction polish, or visual system quality will determine whether the product feels coherent and usable."
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "finance-based-pricing-advisor | Galyarder Framework"
+title: "finance-based-pricing-advisor | Forge Anything"
 description: "Evaluate pricing changes using ARPU, conversion, churn risk, NRR, and payback. Use when deciding whether a pricing move should ship."
 ---
 
@@ -788,4 +788,4 @@ For topics NOT covered here, see future `pricing-strategy-suite`:
 - Pricing scenarios from `research/finance/Finance for Product Managers.md`
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

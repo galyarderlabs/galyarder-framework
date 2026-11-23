@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reporting! Security problems go privately to the maintainer instead; see [SECURITY.md](https://github.com/galyarderlabs/galyarder-framework/blob/main/SECURITY.md).
+        Thanks for reporting! Security problems go privately to the maintainer instead; see [SECURITY.md](https://github.com/galyarderlabs/forge-anything/blob/main/SECURITY.md).
   - type: textarea
     id: what-happened
     attributes:
@@ -31,7 +31,7 @@ body:
     id: framework-version
     attributes:
       label: Framework version
-      description: The output of `npm view galyarder-framework version`, or the git commit.
+      description: The output of `npm view forge-anything version`, or the git commit.
       placeholder: 2.0.0
     validations:
       required: true
@@ -51,7 +51,7 @@ body:
         - Kilo Code
         - Augment
         - Antigravity
-        - Galyarder Agent
+        - Forge Agent
         - Other
     validations:
       required: true
@@ -69,7 +69,7 @@ body:
   - type: textarea
     id: smoke
     attributes:
-      label: Output of `galyarder smoke`
+      label: Output of `forge smoke`
       render: text
   - type: textarea
     id: logs

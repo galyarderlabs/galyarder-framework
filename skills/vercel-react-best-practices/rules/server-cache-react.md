@@ -76,4 +76,4 @@ Use `React.cache()` to deduplicate these operations across your component tree.
 Reference: [React.cache documentation](https://react.dev/reference/react/cache)
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

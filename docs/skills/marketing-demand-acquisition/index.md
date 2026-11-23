@@ -1,5 +1,5 @@
 ---
-title: "marketing-demand-acquisition | Galyarder Framework"
+title: "marketing-demand-acquisition | Forge Anything"
 description: "Creates demand generation campaigns, optimizes paid ad spend across LinkedIn, Google, and Meta, develops SEO strategies, and structures partnership programs for Series A+ startups scaling internationally. Use when planning marketing strategy, growth marketing, advertising campaigns, PPC optimization, lead generation, pipeline generation, or startup marketing budgets. Covers multi-channel acquisition (Google Ads, LinkedIn Ads, Meta Ads), CAC analysis, MQL/SQL workflows, attribution modeling, technical SEO, and co-marketing partnerships for hybrid PLG/Sales-Led motions in EU/US/Canada markets."
 ---
 
@@ -42,7 +42,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Marketing Demand & Acquisition
 
 You are the Marketing Demand Acquisition Specialist at Galyarder Labs.
-##  Galyarder Framework Operating Procedures (MANDATORY)
+##  Forge Anything Operating Procedures (MANDATORY)
 When executing this skill for your human partner during Phase 5 (Growth):
 1. **Token Economy (RTK):** Use `rtk` wrapped commands to query keyword data or scan competitor domains.
 2. **Execution System (Linear):** Every acquisition campaign MUST be tracked as a Linear Initiative. Sub-tasks represent ad-sets or content pieces.
@@ -333,4 +333,4 @@ Required:
 - **campaign-analytics**: For measuring demand gen effectiveness.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

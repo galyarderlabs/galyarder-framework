@@ -1,22 +1,22 @@
 # Quick Start: Agentic Company Setup
 
-Get Galyarder Framework, Galyarder Agent, and Galyarder HQ working together as an agentic-company stack.
+Get Forge Anything, Forge Agent, and Forge HQ working together as an agentic-company stack.
 
 ## Prerequisites
 
-- Python 3.11+ for Galyarder Agent
-- Node.js 20+ for Galyarder HQ and the Framework CLI
+- Python 3.11+ for Forge Agent
+- Node.js 20+ for Forge HQ and the Framework CLI
 - Git installed
 - A project where you want to deploy the operating structure, such as `~/projects/my-startup`
 
 ## Phase 1: Install the Intelligence Layer
 
-Bootstrap Galyarder Framework with the global CLI.
+Bootstrap Forge Anything with the global CLI.
 
 ### Option A: NPM (recommended)
 
 ```bash
-npm install -g galyarder-framework
+npm install -g forge-anything
 ```
 
 ### Option B: Skills.sh
@@ -25,10 +25,10 @@ Pull all intelligence bundles, or install a department bundle only.
 
 ```bash
 # Pull everything
-npx skills add galyarderlabs/galyarder-framework --skill full
+npx skills add galyarderlabs/forge-anything --skill full
 
 # Or pull by department
-npx skills add galyarderlabs/galyarder-framework --skill engineering
+npx skills add galyarderlabs/forge-anything --skill engineering
 ```
 
 ### Option C: Git clone
@@ -36,8 +36,8 @@ npx skills add galyarderlabs/galyarder-framework --skill engineering
 Use the source directly when you want to inspect, modify, or contribute.
 
 ```bash
-git clone https://github.com/galyarderlabs/galyarder-framework.git ~/galyarder-framework
-cd ~/galyarder-framework
+git clone https://github.com/galyarderlabs/forge-anything.git ~/forge-anything
+cd ~/forge-anything
 ./scripts/setup-cli.sh
 ```
 
@@ -49,32 +49,32 @@ Create the project operating structure and deploy agent rules, skills, and comma
 cd ~/projects/my-startup
 
 # Create department/report/planning structure
-galyarder scaffold
+forge scaffold
 
 # Deploy to a target tool
-# Available: cursor, windsurf, kilocode, augment, openclaw, hermes, antigravity, galyarder-agent
-galyarder deploy --tool <name>
+# Available: cursor, windsurf, kilocode, augment, openclaw, hermes, antigravity, forge-agent
+forge deploy --tool <name>
 ```
 
-## Phase 3: Add the Continuity Layer (Galyarder Agent)
+## Phase 3: Add the Continuity Layer (Forge Agent)
 
-Galyarder Agent gives the framework an interface: memory, channels, tool access, and recurring jobs.
+Forge Agent gives the framework an interface: memory, channels, tool access, and recurring jobs.
 
 ```bash
 # Debian/Ubuntu example
-curl -fsSL https://raw.githubusercontent.com/galyarderlabs/galyarder-agent/main/deploy/debian/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/galyarderlabs/forge-agent/main/deploy/debian/install.sh | bash
 
 g-agent onboard
 g-agent gateway
 ```
 
-## Phase 4: Add the Command Layer (Galyarder HQ)
+## Phase 4: Add the Command Layer (Forge HQ)
 
-Galyarder HQ gives you visibility over departments, goals, reports, and agent activity.
+Forge HQ gives you visibility over departments, goals, reports, and agent activity.
 
 ```bash
-git clone https://github.com/galyarderlabs/galyarder-hq.git ~/galyarder-hq
-cd ~/galyarder-hq
+git clone https://github.com/galyarderlabs/forge-hq.git ~/forge-hq
+cd ~/forge-hq
 npm install
 npm run dev
 ```
@@ -83,10 +83,10 @@ The dashboard will be available at: **http://localhost:3100**
 
 ## How the stack connects
 
-1. **Galyarder Framework** provides the agents, skills, commands, and workflow protocols.
-2. **Galyarder Agent** gives those protocols memory, channels, and tool access.
-3. **Galyarder HQ** reads the project structure and shows goals, reports, and operating state.
-4. **Galyarder Ledger** can be added where finance, approvals, and evidence need ledger-backed execution.
+1. **Forge Anything** provides the agents, skills, commands, and workflow protocols.
+2. **Forge Agent** gives those protocols memory, channels, and tool access.
+3. **Forge HQ** reads the project structure and shows goals, reports, and operating state.
+4. **Forge Ledger** can be added where finance, approvals, and evidence need ledger-backed execution.
 
 To connect a project in HQ:
 
@@ -102,4 +102,4 @@ Ensure `~/.local/bin` or your npm global bin directory is in your PATH. Restart 
 
 ### No agents detected
 
-Run `galyarder scaffold` inside the project directory, then deploy the framework to your target tool with `galyarder deploy --tool <name>`.
+Run `forge scaffold` inside the project directory, then deploy the framework to your target tool with `forge deploy --tool <name>`.

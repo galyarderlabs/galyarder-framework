@@ -14,8 +14,8 @@ It has a connectivity degree of **3**.
 
 ### Directing To:
 - [[-"$ext"-==-"jpg"-]] (semantic_link | 0.9)
-- [[Claude-Code-Integration-—-Galyarder-Framework]] (enforces_protocol | 0.8)
-- [[Gemini-CLI-Integration-—-Galyarder-Framework]] (uses_proxy | 0.8)
+- [[Claude-Code-Integration-—-Forge-Anything]] (enforces_protocol | 0.8)
+- [[Gemini-CLI-Integration-—-Forge-Anything]] (uses_proxy | 0.8)
 
 ### Informed By:
-- [[Galyarder-Framework--Skills]] (structural_reference | 1.0)
+- [[Forge-Anything--Skills]] (structural_reference | 1.0)

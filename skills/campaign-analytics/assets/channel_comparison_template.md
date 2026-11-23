@@ -158,4 +158,4 @@ How each channel is valued under different attribution models:
 *Template from campaign-analytics skill. Populate with data from attribution_analyzer.py, funnel_analyzer.py, and campaign_roi_calculator.py.*
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

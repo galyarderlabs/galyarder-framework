@@ -24,4 +24,4 @@ items.filter(item => allowedIds.has(item.id))
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

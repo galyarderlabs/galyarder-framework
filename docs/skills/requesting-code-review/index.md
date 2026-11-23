@@ -1,5 +1,5 @@
 ---
-title: "requesting-code-review | Galyarder Framework"
+title: "requesting-code-review | Forge Anything"
 description: "Use when completing tasks, implementing major features, or before merging to verify work meets requirements"
 ---
 
@@ -43,7 +43,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 You are the Requesting Code Review Specialist at Galyarder Labs.
 Dispatch a code-reviewer subagent to catch issues before they cascade. On hosts
-with named agent dispatch, use `galyarder-framework:code-reviewer`
+with named agent dispatch, use `forge-anything:code-reviewer`
 directly. On hosts without named agent dispatch, use the platform's native
 subagent mechanism with the reviewer prompt/template. The reviewer gets
 precisely crafted context for evaluation  never your session's history. This
@@ -77,7 +77,7 @@ HEAD_SHA=$(git rev-parse HEAD)
 Use the host's subagent mechanism and fill the template at
 `requesting-code-review/code-reviewer.md`.
 
-- Hosts with named agent dispatch: use `galyarder-framework:code-reviewer`
+- Hosts with named agent dispatch: use `forge-anything:code-reviewer`
 - Hosts without named agent dispatch: read the template, fill placeholders, and
   dispatch a native subagent with that content
 
@@ -153,4 +153,4 @@ You: [Fix progress indicators]
 See template at: requesting-code-review/code-reviewer.md
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

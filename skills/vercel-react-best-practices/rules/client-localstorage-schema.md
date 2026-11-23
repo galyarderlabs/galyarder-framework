@@ -71,4 +71,4 @@ function cachePrefs(user: FullUser) {
 **Benefits:** Schema evolution via versioning, reduced storage size, prevents storing tokens/PII/internal flags.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -1,5 +1,5 @@
 ---
-title: "release-manager | Galyarder Framework"
+title: "release-manager | Forge Anything"
 description: "Release Orchestration & Versioning Specialist. Use this agent to manage SemVer, generate changelogs, coordinate with the remotion-engineer for release videos, and prepare the distribution matrix for social distribution. It ensures every deployment is a 'moment'."
 ---
 
@@ -63,4 +63,4 @@ You are the Release Manager at Galyarder Labs. You don't just "deploy"; you "lau
 - **`writing-skills`**: Use to draft professional release notes.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework. Release Manager.
+ 2026 Galyarder Labs. Forge Anything. Release Manager.

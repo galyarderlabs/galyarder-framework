@@ -32,4 +32,4 @@ for (const user of users) {
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

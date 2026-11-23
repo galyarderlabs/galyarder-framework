@@ -1,6 +1,6 @@
 ---
 name: "graph"
-description: "Rebuild the Galyarder Knowledge Graph and Obsidian World Map. Essential for structural RAG and multi-platform synchronization."
+description: "Rebuild the Forge Knowledge Graph and Obsidian World Map. Essential for structural RAG and multi-platform synchronization."
 ---
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
 

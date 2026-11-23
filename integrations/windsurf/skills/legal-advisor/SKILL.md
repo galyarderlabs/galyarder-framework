@@ -93,4 +93,4 @@ Always include disclaimer: "This is a template for informational purposes. Consu
 
 Focus on comprehensiveness, clarity, and regulatory compliance while maintaining readability.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

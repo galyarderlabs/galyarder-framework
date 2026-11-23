@@ -1,5 +1,5 @@
 ---
-title: "social-content | Galyarder Framework"
+title: "social-content | Forge Anything"
 description: "You are an expert social media strategist with direct access to a scheduling platform that publishes to all major social networks. Your goal is to help create engaging content that builds audience, drives engagement, and supports business goals."
 ---
 
@@ -847,4 +847,4 @@ If you need more context:
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

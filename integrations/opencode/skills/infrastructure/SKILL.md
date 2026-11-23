@@ -1,9 +1,9 @@
 ---
 name: "infrastructure"
-description: "Consolidated Galyarder Framework Infrastructure intelligence bundle."
+description: "Consolidated Forge Anything Infrastructure intelligence bundle."
 ---
 
-# GALYARDER INFRASTRUCTURE BUNDLE
+# FORGE INFRASTRUCTURE BUNDLE
 
 This bundle contains 2 high-integrity SOPs for the Infrastructure department.
 
@@ -40,11 +40,11 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 # Release Changelog Skill
 
-Generate the user-facing changelog for the **stable** Galyarder Framework release.
+Generate the user-facing changelog for the **stable** Forge Anything release.
 
 ## Versioning Model
 
-Galyarder Framework uses **calendar versioning (calver)**:
+Forge Anything uses **calendar versioning (calver)**:
 
 - Stable releases: `YYYY.MDD.P` (e.g. `2026.318.0`)
 - Canary releases: `YYYY.MDD.P-canary.N` (e.g. `2026.318.1-canary.0`)
@@ -159,7 +159,7 @@ When a bullet item clearly maps to a merged pull request, add inline attribution
 end of the entry in this format:
 
 ```
-- **Feature name**  Description. ([#123](https://github.com/galyarder/galyarder/pull/123), @contributor1, @contributor2)
+- **Feature name**  Description. ([#123](https://github.com/galyarderlabs/forge-anything/pull/123), @contributor1, @contributor2)
 ```
 
 Rules:
@@ -256,7 +256,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 # Release Coordination Skill
 
-Run the full Galyarder Framework maintainer release workflow, not just an npm publish.
+Run the full Forge Anything maintainer release workflow, not just an npm publish.
 
 This skill coordinates:
 
@@ -286,7 +286,7 @@ Before proceeding, verify all of the following:
 4. The candidate SHA has passed the verification gate or is about to.
 5. If manifests changed, the CI-owned `pnpm-lock.yaml` refresh is already merged on `master`.
 6. npm publish rights are available through GitHub trusted publishing, or through local npm auth for emergency/manual use.
-7. If running through Galyarder Framework, you have issue context for status updates and follow-up task creation.
+7. If running through Forge Anything, you have issue context for status updates and follow-up task creation.
 
 If any precondition fails, stop and report the blocker.
 
@@ -301,7 +301,7 @@ Collect these inputs up front:
 
 ## Step 0  Release Model
 
-Galyarder Framework now uses a commit-driven release model:
+Forge Anything now uses a commit-driven release model:
 
 1. every push to `master` publishes a canary automatically
 2. canaries use `YYYY.MDD.P-canary.N`
@@ -336,7 +336,7 @@ Useful commands:
 ```bash
 git tag --list 'v*' --sort=-version:refname | head -1
 git log --oneline --no-merges
-npm view galyarder@canary version
+npm view forge-anything@canary version
 ```
 
 ## Step 2  Draft the Stable Changelog
@@ -383,7 +383,7 @@ Confirm:
 Useful checks:
 
 ```bash
-npm view galyarder@canary version
+npm view forge-anything@canary version
 git tag --list 'canary/v*' --sort=-version:refname | head -5
 ```
 
@@ -392,13 +392,13 @@ git tag --list 'canary/v*' --sort=-version:refname | head -5
 Run:
 
 ```bash
-GALYARDERAI_VERSION=canary ./scripts/docker-onboard-smoke.sh
+FORGEAI_VERSION=canary ./scripts/docker-onboard-smoke.sh
 ```
 
 Useful isolated variant:
 
 ```bash
-HOST_PORT=3232 DATA_DIR=./data/release-smoke-canary GALYARDERAI_VERSION=canary ./scripts/docker-onboard-smoke.sh
+HOST_PORT=3232 DATA_DIR=./data/release-smoke-canary FORGEAI_VERSION=canary ./scripts/docker-onboard-smoke.sh
 ```
 
 Confirm:
@@ -458,7 +458,7 @@ Create or verify follow-up work for:
 
 - website changelog publishing
 - launch post / social announcement
-- release summary in Galyarder Framework issue context
+- release summary in Forge Anything issue context
 
 These should reference the stable release, not the canary.
 
@@ -497,7 +497,7 @@ When the skill completes, provide:
 
 # Release Coordination Skill
 
-Run the full Galyarder Framework maintainer release workflow, not just an npm publish.
+Run the full Forge Anything maintainer release workflow, not just an npm publish.
 
 This skill coordinates:
 
@@ -527,7 +527,7 @@ Before proceeding, verify all of the following:
 4. The candidate SHA has passed the verification gate or is about to.
 5. If manifests changed, the CI-owned `pnpm-lock.yaml` refresh is already merged on `master`.
 6. npm publish rights are available through GitHub trusted publishing, or through local npm auth for emergency/manual use.
-7. If running through Galyarder Framework, you have issue context for status updates and follow-up task creation.
+7. If running through Forge Anything, you have issue context for status updates and follow-up task creation.
 
 If any precondition fails, stop and report the blocker.
 
@@ -542,7 +542,7 @@ Collect these inputs up front:
 
 ## Step 0  Release Model
 
-Galyarder Framework now uses a commit-driven release model:
+Forge Anything now uses a commit-driven release model:
 
 1. every push to `master` publishes a canary automatically
 2. canaries use `YYYY.MDD.P-canary.N`
@@ -577,7 +577,7 @@ Useful commands:
 ```bash
 git tag --list 'v*' --sort=-version:refname | head -1
 git log --oneline --no-merges
-npm view galyarder@canary version
+npm view forge-anything@canary version
 ```
 
 ## Step 2  Draft the Stable Changelog
@@ -624,7 +624,7 @@ Confirm:
 Useful checks:
 
 ```bash
-npm view galyarder@canary version
+npm view forge-anything@canary version
 git tag --list 'canary/v*' --sort=-version:refname | head -5
 ```
 
@@ -633,13 +633,13 @@ git tag --list 'canary/v*' --sort=-version:refname | head -5
 Run:
 
 ```bash
-GALYARDERAI_VERSION=canary ./scripts/docker-onboard-smoke.sh
+FORGEAI_VERSION=canary ./scripts/docker-onboard-smoke.sh
 ```
 
 Useful isolated variant:
 
 ```bash
-HOST_PORT=3232 DATA_DIR=./data/release-smoke-canary GALYARDERAI_VERSION=canary ./scripts/docker-onboard-smoke.sh
+HOST_PORT=3232 DATA_DIR=./data/release-smoke-canary FORGEAI_VERSION=canary ./scripts/docker-onboard-smoke.sh
 ```
 
 Confirm:
@@ -699,7 +699,7 @@ Create or verify follow-up work for:
 
 - website changelog publishing
 - launch post / social announcement
-- release summary in Galyarder Framework issue context
+- release summary in Forge Anything issue context
 
 These should reference the stable release, not the canary.
 

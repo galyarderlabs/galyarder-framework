@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Gemini CLI Installation Script for Galyarder Framework Library
+# Gemini CLI Installation Script for Forge Anything Library
 #
 # Sets up the workspace for Gemini CLI by generating symlinks and an index.
 #

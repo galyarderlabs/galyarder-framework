@@ -141,4 +141,4 @@ For each dark web finding:
 - **Inadequate legal review**: Dark web monitoring must be reviewed by legal counsel  passive monitoring is generally lawful but active participation in criminal markets is not.
 - **No evidence preservation**: Dark web content disappears rapidly. Capture timestamped evidence immediately upon discovery using commercial service exports.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

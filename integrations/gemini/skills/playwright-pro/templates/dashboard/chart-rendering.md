@@ -131,4 +131,4 @@ test.describe('Chart Rendering', () => {
 | Accessible label | aria-label present on chart element |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

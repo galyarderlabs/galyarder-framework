@@ -1,8 +1,8 @@
 # knowledge
-> Consolidated Galyarder Framework Knowledge intelligence bundle.
+> Consolidated Forge Anything Knowledge intelligence bundle.
 
 
-# GALYARDER KNOWLEDGE BUNDLE
+# FORGE KNOWLEDGE BUNDLE
 
 This bundle contains 6 high-integrity SOPs for the Knowledge department.
 
@@ -75,7 +75,7 @@ defuddle parse <url> -p domain
 | (none) | HTML |
 | `-p <name>` | Specific metadata property |
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: doc-maintenance
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -228,7 +228,7 @@ git commit -m "docs: update documentation for accuracy
 
 - [list each fix briefly]
 
-Co-Authored-By: Galyarder Framework <noreply@galyarder.ing>"
+Co-Authored-By: Forge Anything <noreply@forge-anything.ing>"
 
 git push -u origin "$BRANCH"
 
@@ -570,7 +570,7 @@ See [references/EXAMPLES.md](references/EXAMPLES.md) for full canvas examples in
 - [JSON Canvas Spec 1.0](https://jsoncanvas.org/spec/1.0/)
 - [JSON Canvas GitHub](https://github.com/obsidianmd/jsoncanvas)
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: obsidian-bases
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -1096,7 +1096,7 @@ formulas:
 - [Formulas](https://help.obsidian.md/formulas)
 - [Complete Functions Reference](references/FUNCTIONS_REFERENCE.md)
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: obsidian-cli
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -1231,7 +1231,7 @@ obsidian dev:mobile on
 
 Run `obsidian help` to see additional developer commands including CDP and debugger controls.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: obsidian-markdown
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -1452,6 +1452,6 @@ Reviewed in [[Meeting Notes 2024-01-10#Decisions]].
 - [Callouts](https://help.obsidian.md/callouts)
 - [Properties](https://help.obsidian.md/properties)
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

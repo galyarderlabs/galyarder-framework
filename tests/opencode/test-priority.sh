@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Test: Skill Priority Resolution
-# Verifies that skills are resolved with correct priority: project > personal > galyarder-framework
+# Verifies that skills are resolved with correct priority: project > personal > forge-anything
 # NOTE: These tests require OpenCode to be installed and configured
 set -euo pipefail
 
@@ -17,18 +17,18 @@ trap cleanup_test_env EXIT
 # Create same skill "priority-test" in all three locations with different markers
 echo "Setting up priority test fixtures..."
 
-# 1. Create in galyarder-framework location (lowest priority)
-mkdir -p "$GALYARDER_SKILLS_DIR/priority-test"
-cat > "$GALYARDER_SKILLS_DIR/priority-test/SKILL.md" <<'EOF'
+# 1. Create in forge-anything location (lowest priority)
+mkdir -p "$FORGE_SKILLS_DIR/priority-test"
+cat > "$FORGE_SKILLS_DIR/priority-test/SKILL.md" <<'EOF'
 ---
 name: priority-test
-description: Galyarder Framework version of priority test skill
+description: Forge Anything version of priority test skill
 ---
-# Priority Test Skill (Galyarder Framework Version)
+# Priority Test Skill (Forge Anything Version)
 
-This is the GALYARDER version of the priority test skill.
+This is the FORGE version of the priority test skill.
 
-PRIORITY_MARKER_GALYARDER_VERSION
+PRIORITY_MARKER_FORGE_VERSION
 EOF
 
 # 2. Create in personal location (medium priority)
@@ -65,10 +65,10 @@ echo "  Created priority-test skill in all three locations"
 echo ""
 echo "Test 1: Verifying test fixtures..."
 
-if [ -f "$GALYARDER_SKILLS_DIR/priority-test/SKILL.md" ]; then
-    echo "  [PASS] Galyarder Framework version exists"
+if [ -f "$FORGE_SKILLS_DIR/priority-test/SKILL.md" ]; then
+    echo "  [PASS] Forge Anything version exists"
 else
-    echo "  [FAIL] Galyarder Framework version missing"
+    echo "  [FAIL] Forge Anything version missing"
     exit 1
 fi
 
@@ -96,9 +96,9 @@ if ! command -v opencode &> /dev/null; then
     exit 0
 fi
 
-# Test 2: Test that personal overrides galyarder-framework
+# Test 2: Test that personal overrides forge-anything
 echo ""
-echo "Test 2: Testing personal > galyarder-framework priority..."
+echo "Test 2: Testing personal > forge-anything priority..."
 echo "  Running from outside project directory..."
 
 # Run from HOME (not in project) - should get personal version
@@ -112,19 +112,19 @@ output=$(timeout 60s opencode run --print-logs "Use the use_skill tool to load t
 }
 
 if echo "$output" | grep -qi "PRIORITY_MARKER_PERSONAL_VERSION"; then
-    echo "  [PASS] Personal version loaded (overrides galyarder-framework)"
-elif echo "$output" | grep -qi "PRIORITY_MARKER_GALYARDER_VERSION"; then
-    echo "  [FAIL] Galyarder Framework version loaded instead of personal"
+    echo "  [PASS] Personal version loaded (overrides forge-anything)"
+elif echo "$output" | grep -qi "PRIORITY_MARKER_FORGE_VERSION"; then
+    echo "  [FAIL] Forge Anything version loaded instead of personal"
     exit 1
 else
     echo "  [WARN] Could not verify priority marker in output"
     echo "  Output snippet:"
-    echo "$output" | grep -i "priority\|personal\|galyarder-framework" | head -10
+    echo "$output" | grep -i "priority\|personal\|forge-anything" | head -10
 fi
 
-# Test 3: Test that project overrides both personal and galyarder-framework
+# Test 3: Test that project overrides both personal and forge-anything
 echo ""
-echo "Test 3: Testing project > personal > galyarder-framework priority..."
+echo "Test 3: Testing project > personal > forge-anything priority..."
 echo "  Running from project directory..."
 
 # Run from project directory - should get project version
@@ -142,8 +142,8 @@ if echo "$output" | grep -qi "PRIORITY_MARKER_PROJECT_VERSION"; then
 elif echo "$output" | grep -qi "PRIORITY_MARKER_PERSONAL_VERSION"; then
     echo "  [FAIL] Personal version loaded instead of project"
     exit 1
-elif echo "$output" | grep -qi "PRIORITY_MARKER_GALYARDER_VERSION"; then
-    echo "  [FAIL] Galyarder Framework version loaded instead of project"
+elif echo "$output" | grep -qi "PRIORITY_MARKER_FORGE_VERSION"; then
+    echo "  [FAIL] Forge Anything version loaded instead of project"
     exit 1
 else
     echo "  [WARN] Could not verify priority marker in output"
@@ -151,12 +151,12 @@ else
     echo "$output" | grep -i "priority\|project\|personal" | head -10
 fi
 
-# Test 4: Test explicit galyarder-framework: prefix bypasses priority
+# Test 4: Test explicit forge-anything: prefix bypasses priority
 echo ""
-echo "Test 4: Testing galyarder-framework: prefix forces galyarder-framework version..."
+echo "Test 4: Testing forge-anything: prefix forces forge-anything version..."
 
 cd "$TEST_HOME/test-project"
-output=$(timeout 60s opencode run --print-logs "Use the use_skill tool to load galyarder-framework:priority-test specifically. Show me the exact content including any PRIORITY_MARKER text." 2>&1) || {
+output=$(timeout 60s opencode run --print-logs "Use the use_skill tool to load forge-anything:priority-test specifically. Show me the exact content including any PRIORITY_MARKER text." 2>&1) || {
     exit_code=$?
     if [ $exit_code -eq 124 ]; then
         echo "  [FAIL] OpenCode timed out after 60s"
@@ -164,10 +164,10 @@ output=$(timeout 60s opencode run --print-logs "Use the use_skill tool to load g
     fi
 }
 
-if echo "$output" | grep -qi "PRIORITY_MARKER_GALYARDER_VERSION"; then
-    echo "  [PASS] galyarder-framework: prefix correctly forces galyarder-framework version"
+if echo "$output" | grep -qi "PRIORITY_MARKER_FORGE_VERSION"; then
+    echo "  [PASS] forge-anything: prefix correctly forces forge-anything version"
 elif echo "$output" | grep -qi "PRIORITY_MARKER_PROJECT_VERSION\|PRIORITY_MARKER_PERSONAL_VERSION"; then
-    echo "  [FAIL] galyarder-framework: prefix did not force galyarder-framework version"
+    echo "  [FAIL] forge-anything: prefix did not force forge-anything version"
     exit 1
 else
     echo "  [WARN] Could not verify priority marker in output"

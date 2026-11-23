@@ -134,4 +134,4 @@ Program costs = Rewards paid + Tool costs + Management time
 - Payback period for referral rewards
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

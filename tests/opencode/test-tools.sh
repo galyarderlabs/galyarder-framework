@@ -36,8 +36,8 @@ output=$(timeout 60s opencode run --print-logs "Use the find_skills tool to list
 }
 
 # Check for expected patterns in output
-if echo "$output" | grep -qi "galyarder-framework:brainstorming\|galyarder-framework:using-galyarder-framework\|Available skills"; then
-    echo "  [PASS] find_skills tool discovered galyarder-framework skills"
+if echo "$output" | grep -qi "forge-anything:brainstorming\|forge-anything:using-forge-anything\|Available skills"; then
+    echo "  [PASS] find_skills tool discovered forge-anything skills"
 else
     echo "  [FAIL] find_skills did not return expected skills"
     echo "  Output was:"
@@ -76,12 +76,12 @@ else
     exit 1
 fi
 
-# Test 3: Test use_skill with galyarder-framework: prefix
+# Test 3: Test use_skill with forge-anything: prefix
 echo ""
-echo "Test 3: Testing use_skill with galyarder-framework: prefix..."
-echo "  Running opencode with galyarder-framework:brainstorming skill..."
+echo "Test 3: Testing use_skill with forge-anything: prefix..."
+echo "  Running opencode with forge-anything:brainstorming skill..."
 
-output=$(timeout 60s opencode run --print-logs "Use the use_skill tool to load galyarder-framework:brainstorming and tell me the first few lines of what you received." 2>&1) || {
+output=$(timeout 60s opencode run --print-logs "Use the use_skill tool to load forge-anything:brainstorming and tell me the first few lines of what you received." 2>&1) || {
     exit_code=$?
     if [ $exit_code -eq 124 ]; then
         echo "  [FAIL] OpenCode timed out after 60s"
@@ -92,9 +92,9 @@ output=$(timeout 60s opencode run --print-logs "Use the use_skill tool to load g
 
 # Check for expected content from brainstorming skill
 if echo "$output" | grep -qi "brainstorming\|Launching skill\|skill.*loaded"; then
-    echo "  [PASS] use_skill loaded galyarder-framework:brainstorming skill"
+    echo "  [PASS] use_skill loaded forge-anything:brainstorming skill"
 else
-    echo "  [FAIL] use_skill did not load galyarder-framework:brainstorming correctly"
+    echo "  [FAIL] use_skill did not load forge-anything:brainstorming correctly"
     echo "  Output was:"
     echo "$output" | head -50
     exit 1

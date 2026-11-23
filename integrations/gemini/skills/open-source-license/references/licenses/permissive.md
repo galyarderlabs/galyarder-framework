@@ -488,4 +488,4 @@ purposes, all without asking permission.
 - No copyleft
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

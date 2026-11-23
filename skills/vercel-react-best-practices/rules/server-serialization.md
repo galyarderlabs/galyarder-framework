@@ -38,4 +38,4 @@ function Profile({ name }: { name: string }) {
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

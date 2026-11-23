@@ -1,5 +1,5 @@
 ---
-title: "data-room | Galyarder Framework"
+title: "data-room | Forge Anything"
 description: "Due Diligence Data Room Specialist. Use to prepare, audit, and organize fundraising materials for investor diligence before or after a term sheet."
 ---
 
@@ -87,4 +87,4 @@ Produce:
 - what to share pre-term-sheet vs post-term-sheet
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

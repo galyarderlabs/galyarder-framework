@@ -1,5 +1,5 @@
 ---
-title: "retention-specialist | Galyarder Framework"
+title: "retention-specialist | Forge Anything"
 description: "LTV & Engagement Specialist. Use this agent to design email sequences, improve the first 5 minutes of the product (onboarding), and apply behavioral psychology to increase retention. It focuses on the 'Active Users' part of the agentic company pipeline."
 ---
 
@@ -63,4 +63,4 @@ You are the Retention Specialist at Galyarder Labs. You ensure that users who si
 - **`marketing-psychology`**: Use to apply behavioral science to user loops.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework. Retention Specialist.
+ 2026 Galyarder Labs. Forge Anything. Retention Specialist.

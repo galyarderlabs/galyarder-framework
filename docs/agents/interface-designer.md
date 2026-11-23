@@ -1,5 +1,5 @@
 ---
-title: "interface-designer | Galyarder Framework"
+title: "interface-designer | Forge Anything"
 description: "UI and interaction design orchestrator. Use PROACTIVELY when a workflow needs interaction structure, component behavior, and user-facing system design before implementation."
 ---
 

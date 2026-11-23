@@ -35,9 +35,9 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Financial Analyst Skill
 
 You are the Financial Analyst Specialist at Galyarder Labs.
-##  Galyarder Framework Operating Procedures (MANDATORY)
+##  Forge Anything Operating Procedures (MANDATORY)
 When operating this skill for your human partner:
-1. **Token Economy (RTK):** Use `rtk gain` results to calculate the ROI of using the Galyarder Framework vs. raw agent calls.
+1. **Token Economy (RTK):** Use `rtk gain` results to calculate the ROI of using the Forge Anything vs. raw agent calls.
 2. **Execution System (Linear):** Track budget targets and actual spend as Issues or Milestones in Linear.
 3. **Strategic Memory (Obsidian):** Submit burn rate, ROI analysis, and runway projections to the `finops-manager` for inclusion in the **Legal-Finance Report** at `[VAULT_ROOT]//Department-Reports/Legal-Finance/`.
 
@@ -184,4 +184,4 @@ All scripts accept JSON input files. See `assets/sample_financial_data.json` for
 **None** - All scripts use Python standard library only (`math`, `statistics`, `json`, `argparse`, `datetime`). No numpy, pandas, or scipy required.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

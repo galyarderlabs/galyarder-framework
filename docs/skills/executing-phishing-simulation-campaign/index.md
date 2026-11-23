@@ -1,5 +1,5 @@
 ---
-title: "executing-phishing-simulation-campaign | Galyarder Framework"
+title: "executing-phishing-simulation-campaign | Forge Anything"
 description: ">"
 ---
 
@@ -209,4 +209,4 @@ Analyze campaign results and produce the assessment report:
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

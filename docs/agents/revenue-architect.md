@@ -1,5 +1,5 @@
 ---
-title: "revenue-architect | Galyarder Framework"
+title: "revenue-architect | Forge Anything"
 description: "Monetization and pricing orchestrator. Use PROACTIVELY when the founder needs pricing, packaging, or revenue loop design tied to activation, retention, and margin."
 ---
 

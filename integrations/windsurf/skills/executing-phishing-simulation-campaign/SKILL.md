@@ -200,4 +200,4 @@ Analyze campaign results and produce the assessment report:
 5. Schedule quarterly phishing simulations to track improvement
 ```
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

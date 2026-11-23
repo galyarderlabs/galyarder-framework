@@ -7,33 +7,33 @@ The Galyarder ecosystem is a modular agentic-company platform where Framework, A
 One coordinated environment where you can:
 
 1. **Structure work** with Framework agents, skills, commands, and review protocols.
-2. **Stay connected** through Galyarder Agent's memory, channels, and tools.
-3. **Govern execution** through Galyarder HQ's goals, approvals, departments, reports, and operating visibility.
+2. **Stay connected** through Forge Agent's memory, channels, and tools.
+3. **Govern execution** through Forge HQ's goals, approvals, departments, reports, and operating visibility.
 4. **Preserve evidence** through Ledger-backed finance and operational records where needed.
 5. **Scale across projects** while keeping a shared execution model.
 
 ## Distributed architecture
 
 ```text
-       [ GALYARDER HQ ]
+       [ FORGE HQ ]
        command and visibility
   ______________|________________
   |             |               |
 [ Project A ] [ Project B ] [ Project C ]
   docs/issues   docs/issues     docs/issues
       |              |              |
-      |       [ GALYARDER FRAMEWORK ]
+      |       [ FORGE ANYTHING ]
       |        intelligence layer
       |              |
-      +------ [ GALYARDER AGENT ]
+      +------ [ FORGE AGENT ]
               continuity and tools
 ```
 
-1. **Galyarder Framework** provides the agent profiles, skills, commands, and operating protocols.
-2. **Project Operating Structure** is created by `galyarder scaffold` so each project has a place for plans, reports, departments, and decisions.
-3. **Galyarder HQ** discovers and displays the operating state.
-4. **Galyarder Agent** connects the workflow to real channels and tools.
-5. **Galyarder Ledger** can be added for financial execution, approvals, and evidence-heavy work.
+1. **Forge Anything** provides the agent profiles, skills, commands, and operating protocols.
+2. **Project Operating Structure** is created by `forge scaffold` so each project has a place for plans, reports, departments, and decisions.
+3. **Forge HQ** discovers and displays the operating state.
+4. **Forge Agent** connects the workflow to real channels and tools.
+5. **Forge Ledger** can be added for financial execution, approvals, and evidence-heavy work.
 
 ## Implementation protocol
 
@@ -43,7 +43,7 @@ Install Framework to give your agents reusable operating protocols instead of on
 
 ### 2. Project scaffolding
 
-Run `galyarder scaffold` in your project root to create a structure HQ and agents can read:
+Run `forge scaffold` in your project root to create a structure HQ and agents can read:
 
 - `docs/departments/`: department reports and durable operating knowledge.
 - `docs/plans/`: execution blueprints and implementation plans.
@@ -51,7 +51,7 @@ Run `galyarder scaffold` in your project root to create a structure HQ and agent
 
 ### 3. HQ discovery loop
 
-Galyarder HQ reads the project structure to:
+Forge HQ reads the project structure to:
 
 - map active work by department;
 - show blocked or completed work;
@@ -68,9 +68,9 @@ Galyarder HQ reads the project structure to:
 
 ### Framework + Agent + HQ
 
-1. Talk to Galyarder Agent through the configured channel.
+1. Talk to Forge Agent through the configured channel.
 2. Let Framework route the work to the right specialist workflow.
-3. Open Galyarder HQ to inspect goals, reports, departments, approvals, and activity.
+3. Open Forge HQ to inspect goals, reports, departments, approvals, and activity.
 4. Add Ledger when the workflow needs finance, sales, accounting, audit, tax, approvals, or evidence-backed records.
 
 ## Conclusion

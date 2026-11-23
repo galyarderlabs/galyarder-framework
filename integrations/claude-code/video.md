@@ -31,4 +31,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command dispatches the `galyarder-framework:remotion-engineer` agent.
+**Note**: This command dispatches the `forge-anything:remotion-engineer` agent.

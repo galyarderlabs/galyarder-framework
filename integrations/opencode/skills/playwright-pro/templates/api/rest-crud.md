@@ -152,4 +152,4 @@ test.describe('REST CRUD  /{{entityName}}s', () => {
 | GET 404 | Non-existent ID  404 |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

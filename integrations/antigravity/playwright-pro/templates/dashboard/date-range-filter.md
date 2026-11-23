@@ -136,4 +136,4 @@ test.describe('Date Range Filter', () => {
 | URL persistence | Range in URL survives reload |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

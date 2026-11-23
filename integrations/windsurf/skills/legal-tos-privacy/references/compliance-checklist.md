@@ -278,4 +278,4 @@ to limit any rights you have under applicable law.
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

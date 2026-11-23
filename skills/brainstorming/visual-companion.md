@@ -287,4 +287,4 @@ If the session used `--project-dir`, mockup files persist in `.brainstorm/` for 
 - Helper script (client-side): `scripts/helper.js`
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

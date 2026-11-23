@@ -1,6 +1,6 @@
 ---
-title: "conversion-engineer | Galyarder Framework"
-description: "Specialized agent unit for Galyarder Framework orchestration."
+title: "conversion-engineer | Forge Anything"
+description: "Specialized agent unit for Forge Anything orchestration."
 ---
 
 # :material-folder-zip: conversion-engineer
@@ -73,4 +73,4 @@ Role: Head of Growth. Optimize user journey from first visit to sale. Treat funn
 If YES, finalize strategy.
 
 ---
-2026 Galyarder Framework.
+2026 Forge Anything.

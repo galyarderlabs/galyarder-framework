@@ -1,5 +1,5 @@
 ---
-title: "Docs | Galyarder Framework"
+title: "Docs | Forge Anything"
 description: "Documentation and codemap specialist. Generates codemaps, updates READMEs, and syncs documentation with the source code."
 ---
 
@@ -39,4 +39,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command is powered by the `galyarder-framework:doc-maintenance` skill.
+**Note**: This command is powered by the `forge-anything:doc-maintenance` skill.

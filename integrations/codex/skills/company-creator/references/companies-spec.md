@@ -39,7 +39,7 @@ company-package/
  assets/
  scripts/
  references/
- .galyarder.yaml          (optional vendor extension)
+ .forge.yaml          (optional vendor extension)
 ```
 
 ## Common Frontmatter Fields

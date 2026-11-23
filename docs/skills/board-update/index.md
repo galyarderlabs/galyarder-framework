@@ -1,5 +1,5 @@
 ---
-title: "board-update | Galyarder Framework"
+title: "board-update | Forge Anything"
 description: "Investor And Board Communication Specialist. Use to draft monthly investor updates, quarterly board decks, and high-signal stakeholder communications that surface wins, misses, risks, and asks clearly."
 ---
 
@@ -86,4 +86,4 @@ For emails: ready-to-send markdown.
 For decks: one section per slide with headline, evidence, and board question answered.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -1,5 +1,5 @@
 ---
-title: "pitch-deck | Galyarder Framework"
+title: "pitch-deck | Forge Anything"
 description: "Fundraising Pitch Deck Specialist. Use to build, review, or restructure a founder deck for pre-seed through Series A, with a clear narrative arc, investor-grade slide logic, and explicit asks."
 ---
 
@@ -96,4 +96,4 @@ Before finalizing, verify:
 3. Is the ask explicit: amount, milestones, and why now?
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

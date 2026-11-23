@@ -1,14 +1,14 @@
 # Claude Code: Implementation Protocol
 
-This guide defines the agentic-company integration of Galyarder Framework within the **Claude Code** (Anthropic) environment.
+This guide defines the agentic-company integration of Forge Anything within the **Claude Code** (Anthropic) environment.
 
 ## 1. Installation
 
 Register the Galyarder Labs marketplace and install the complete framework:
 
 ```bash
-/plugin marketplace add galyarderlabs/galyarder-framework
-/plugin install galyarder-framework@galyarderlabs-marketplace
+/plugin marketplace add galyarderlabs/forge-anything
+/plugin install forge-anything@galyarderlabs-marketplace
 ```
 
 Or install departments selectively:

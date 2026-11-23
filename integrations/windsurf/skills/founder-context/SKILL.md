@@ -127,4 +127,4 @@ Create or update `docs/departments/Executive/founder-context.md` in the project 
 - Update it when new information materially changes the operating picture.
 - Downstream founder skills should read this first before producing output.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

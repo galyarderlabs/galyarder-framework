@@ -1,6 +1,6 @@
 ---
-title: "graph | Galyarder Framework"
-description: "Rebuild the Galyarder Knowledge Graph and Obsidian World Map. Essential for structural RAG and multi-platform synchronization."
+title: "graph | Forge Anything"
+description: "Rebuild the Forge Knowledge Graph and Obsidian World Map. Essential for structural RAG and multi-platform synchronization."
 ---
 
 # :material-folder-zip: graph

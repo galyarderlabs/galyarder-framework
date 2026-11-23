@@ -149,4 +149,4 @@ Before finalizing the architecture or plan:
 If YES, finalize the output and link to Linear.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

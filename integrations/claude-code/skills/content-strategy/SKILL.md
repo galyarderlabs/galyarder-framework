@@ -404,4 +404,4 @@ Visual or structured representation of how content interconnects.
 - **social-content**: For social media content
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

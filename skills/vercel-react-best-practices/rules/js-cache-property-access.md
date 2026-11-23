@@ -28,4 +28,4 @@ for (let i = 0; i < len; i++) {
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -138,4 +138,4 @@ Suggest:
 - Verification result (10/10 passes)
 - Prevention recommendation
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

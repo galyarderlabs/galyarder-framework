@@ -128,4 +128,4 @@ test.describe('Dashboard Data Loading', () => {
 | Slow network | Skeleton persists during delay |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

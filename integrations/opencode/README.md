@@ -1,6 +1,6 @@
 # OpenCode Integration
 
-This directory contains converted Galyarder Framework assets for **OpenCode**.
+This directory contains converted Forge Anything assets for **OpenCode**.
 
 ## Included Assets
 

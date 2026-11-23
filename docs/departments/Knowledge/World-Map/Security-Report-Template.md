@@ -2,7 +2,7 @@
 node_type: documentation
 silo: docs
 degree: 1
-source: docs/templates/Galyarder-Department-Reports/Security Report Template.md
+source: docs/templates/Forge-Department-Reports/Security Report Template.md
 ---
 # Security Report Template
 

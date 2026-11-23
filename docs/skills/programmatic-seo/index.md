@@ -1,5 +1,5 @@
 ---
-title: "programmatic-seo | Galyarder Framework"
+title: "programmatic-seo | Forge Anything"
 description: "Design and evaluate programmatic SEO strategies for creating SEO-driven pages at scale using templates and structured data."
 ---
 
@@ -385,4 +385,4 @@ If triggered, **halt indexing or roll back**:
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

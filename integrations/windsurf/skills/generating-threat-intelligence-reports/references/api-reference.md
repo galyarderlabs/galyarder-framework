@@ -80,4 +80,4 @@ The agent produces two files:
 2. `report_meta.json` - Metadata including validation errors and quality issues
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

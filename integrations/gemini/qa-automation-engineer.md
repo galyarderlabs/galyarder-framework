@@ -71,4 +71,4 @@ Sign off only if:
 3. Frictionless user journey.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -299,4 +299,4 @@ If TDD reveals you're testing mock behavior, you've gone wrong.
 Fix: Test real behavior or question why you're mocking at all.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

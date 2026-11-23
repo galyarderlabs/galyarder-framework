@@ -376,4 +376,4 @@ Measure a company's market value relative to financial metrics.
 7. **Watch for manipulation** - Revenue recognition changes, off-balance-sheet items, and one-time adjustments can distort ratios
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

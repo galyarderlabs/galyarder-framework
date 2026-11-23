@@ -13,4 +13,4 @@ It has a connectivity degree of **1**.
 ## 🔗 Neural Links
 
 ### Directing To:
-- [[Gemini-CLI-Integration-—-Galyarder-Framework]] (uses_proxy | 0.8)
+- [[Gemini-CLI-Integration-—-Forge-Anything]] (uses_proxy | 0.8)

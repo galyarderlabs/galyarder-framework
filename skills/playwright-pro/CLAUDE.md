@@ -84,4 +84,4 @@ Leverage Claude Code's built-in capabilities:
 - Test data: `test-data/` directory with JSON/factory files
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

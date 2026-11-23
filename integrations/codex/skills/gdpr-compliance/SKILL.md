@@ -587,4 +587,4 @@ gdpr_compliance_checklist:
 - Regularly audit data flows to discover shadow processing or undocumented data stores
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

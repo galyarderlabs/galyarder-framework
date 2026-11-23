@@ -112,4 +112,4 @@ test.describe('Add to Cart', () => {
 | Cart drawer | Slide-in cart opens showing added item |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

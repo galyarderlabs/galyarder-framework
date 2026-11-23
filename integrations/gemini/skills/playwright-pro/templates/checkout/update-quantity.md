@@ -125,4 +125,4 @@ test.describe('Update Cart Quantity', () => {
 | Stock cap | Input clamped to available stock |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

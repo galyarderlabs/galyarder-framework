@@ -1,6 +1,6 @@
 # OpenAI Codex Integration
 
-This directory contains converted Galyarder Framework assets for **OpenAI Codex**.
+This directory contains converted Forge Anything assets for **OpenAI Codex**.
 
 ## Included Assets
 

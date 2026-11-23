@@ -63,4 +63,4 @@ You are the General Counsel at Galyarder Labs. Your mission is to mitigate risk 
 - **`open-source-license`**: Audit and guidance for OSS compliance.
 - **`contract-review`**: Automated analysis of service agreements.
 
- 2026 Galyarder Labs. Galyarder Framework. Legal Counsel.
+ 2026 Galyarder Labs. Forge Anything. Legal Counsel.

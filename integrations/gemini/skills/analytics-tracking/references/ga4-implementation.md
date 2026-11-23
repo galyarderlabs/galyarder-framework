@@ -290,4 +290,4 @@ Audiences created in GA4 can be used in Google Ads for:
 - Similar audiences
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -14,4 +14,4 @@ Read the skill and answer these questions based SOLELY on what the skill says:
 Return your answers with direct quotes from the skill where applicable.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -135,4 +135,4 @@ test.describe('Autosave', () => {
 | Network failure | Save-failed message shown |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

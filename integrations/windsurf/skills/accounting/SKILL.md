@@ -292,4 +292,4 @@ Review quarterly. Less important at early stage, but needed for:
 - **legal**  Business entity formation and legal compliance
 - **pricing**  Set pricing that supports healthy unit economics
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

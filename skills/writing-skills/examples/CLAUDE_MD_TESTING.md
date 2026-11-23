@@ -189,4 +189,4 @@ For each variant:
 6. Iterate on winning variant to close holes
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

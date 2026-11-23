@@ -584,4 +584,4 @@ gdpr_compliance_checklist:
 - Train all staff who handle personal data, not just the IT and legal teams
 - Regularly audit data flows to discover shadow processing or undocumented data stores
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

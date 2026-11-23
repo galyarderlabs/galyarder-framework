@@ -1,4 +1,4 @@
-# Contributing to Galyarder Framework
+# Contributing to Forge Anything
 
 Thanks for helping! This guide covers how to build, test and send changes.
 By taking part you agree to the [Code of Conduct](CODE_OF_CONDUCT.md).
@@ -39,9 +39,9 @@ Security problems go privately to the maintainer; see
 ## Building
 
 ```sh
-git clone https://github.com/galyarderlabs/galyarder-framework.git
-cd galyarder-framework
-npm install                 # the CLI (galyarder)
+git clone https://github.com/galyarderlabs/forge-anything.git
+cd forge-anything
+npm install                 # the CLI (forge)
 ```
 
 Regenerate the derived surfaces after changing a skill, agent, command,

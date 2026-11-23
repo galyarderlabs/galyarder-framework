@@ -1,13 +1,13 @@
 # Gemini CLI: Implementation Protocol
 
-This guide defines the agentic-company integration of Galyarder Framework within the **Gemini CLI** (Google) environment.
+This guide defines the agentic-company integration of Forge Anything within the **Gemini CLI** (Google) environment.
 
 ## 1. Installation
 
 Install the full framework directly from the official repository:
 
 ```bash
-gemini extensions install https://github.com/galyarderlabs/galyarder-framework
+gemini extensions install https://github.com/galyarderlabs/forge-anything
 ```
 
 ## 2. Mandatory Protocols
@@ -28,7 +28,7 @@ To maintain peak performance and avoid sandbox restrictions, the following host 
 
 ## 4. Operational Commands
 
-Gemini CLI provides native support for the Galyarder workforce commands:
+Gemini CLI provides native support for the Forge Anything workforce commands:
 
 - `/tdd`: Trigger the Engineering Test-Driven Development loop.
 - `/plan`: Initiate PRD and architecture blueprinting.

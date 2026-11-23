@@ -92,4 +92,4 @@ No "AI tell-words". Sound like an editorial director.
 4. ROI clear in `<scratchpad>`?
 If YES, finalize.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

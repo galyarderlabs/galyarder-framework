@@ -1,8 +1,8 @@
 ---
-description: "Consolidated Galyarder Framework Product intelligence bundle."
+description: "Consolidated Forge Anything Product intelligence bundle."
 ---
 
-# GALYARDER PRODUCT BUNDLE
+# FORGE PRODUCT BUNDLE
 
 This bundle contains 7 high-integrity SOPs for the Product department.
 
@@ -147,20 +147,20 @@ Create the directory structure and all files. Follow the spec's conventions exac
     <slug>/TASK.md        (if tasks are needed)
  skills/
     <slug>/SKILL.md       (if custom skills are needed)
- .galyarder.yaml            (Galyarder Framework vendor extension)
+ .forge.yaml            (Forge Anything vendor extension)
 ```
 
 **Rules:**
 
 - Slugs must be URL-safe, lowercase, hyphenated
 - COMPANY.md gets `schema: agentcompanies/v1` - other files inherit it
-- Agent instructions go in the AGENTS.md body, not in .galyarder.yaml
+- Agent instructions go in the AGENTS.md body, not in .forge.yaml
 - Skills referenced by shortname in AGENTS.md resolve to `skills/<shortname>/SKILL.md`
 - For external skills, use `sources` with `usage: referenced` (see spec section 12)
 - Do not export secrets, machine-local paths, or database IDs
 - Omit empty/default fields
 - For companies generated from a repo, add a references footer at the bottom of COMPANY.md body:
-  `Generated from [repo-name](repo-url) with the company-creator skill from [Galyarder Framework](https://github.com/galyarder/galyarder)`
+  `Generated from [repo-name](repo-url) with the company-creator skill from [Forge Anything](https://github.com/galyarderlabs/forge-anything)`
 
 **Reporting structure:**
 
@@ -195,8 +195,8 @@ Ask the user where to write the package. Common options:
 - The workflow / how the company operates
 - Org chart as a markdown list or table showing agents, titles, reporting structure, and skills
 - Brief description of each agent's role
-- Citations and references: link to the source repo (if from-repo), link to the Agent Companies spec (https://agentcompanies.io/specification), and link to Galyarder Framework (https://github.com/galyarder/galyarder)
-- A "Getting Started" section explaining how to import: `galyarder company import --from <path>`
+- Citations and references: link to the source repo (if from-repo), link to the Agent Companies spec (https://agentcompanies.io/specification), and link to Forge Anything (https://github.com/galyarderlabs/forge-anything)
+- A "Getting Started" section explaining how to import: `forge company import --from <path>`
 
 **LICENSE**  include a LICENSE file. The copyright holder is the user creating the company, not the upstream repo author (they made the skills, the user is making the company). Use the same license type as the source repo (if from-repo) or ask the user (if from-scratch). Default to MIT if unclear.
 
@@ -210,15 +210,15 @@ Write all files, then give a brief summary:
 - Projects and tasks if any
 - The output path
 
-## .galyarder.yaml Guidelines
+## .forge.yaml Guidelines
 
-The `.galyarder.yaml` file is the Galyarder Framework vendor extension. It configures adapters and env inputs per agent.
+The `.forge.yaml` file is the Forge Anything vendor extension. It configures adapters and env inputs per agent.
 
 ### Adapter Rules
 
-**Do not specify an adapter unless the repo or user context warrants it.** If you don't know what adapter the user wants, omit the adapter block entirely  Galyarder Framework will use its default. Specifying an unknown adapter type causes an import error.
+**Do not specify an adapter unless the repo or user context warrants it.** If you don't know what adapter the user wants, omit the adapter block entirely  Forge Anything will use its default. Specifying an unknown adapter type causes an import error.
 
-Galyarder Framework's supported adapter types (these are the ONLY valid values):
+Forge Anything's supported adapter types (these are the ONLY valid values):
 - `claude_local`  Claude Code CLI
 - `codex_local`  Codex CLI
 - `opencode_local`  OpenCode CLI
@@ -241,7 +241,7 @@ Only set an adapter when:
 
 Example with adapter (only when warranted):
 ```yaml
-schema: galyarder/v1
+schema: forge/v1
 agents:
   release-engineer:
     adapter:
@@ -257,7 +257,7 @@ agents:
 
 Example  only agents with actual overrides appear:
 ```yaml
-schema: galyarder/v1
+schema: forge/v1
 agents:
   release-engineer:
     inputs:
@@ -267,7 +267,7 @@ agents:
           requirement: optional
 ```
 
-In this example, only `release-engineer` appears because it needs `GH_TOKEN`. The other agents (ceo, cto, etc.) have no overrides, so they are omitted entirely from `.galyarder.yaml`.
+In this example, only `release-engineer` appears because it needs `GH_TOKEN`. The other agents (ceo, cto, etc.) have no overrides, so they are omitted entirely from `.forge.yaml`.
 
 ## External Skill References
 
@@ -332,7 +332,7 @@ Load plan, review critically, execute all tasks, report when complete.
 
 **Announce at start:** "I'm using the executing-plans skill to implement this plan."
 
-**Note:** Tell your human partner that Galyarder Framework works much better with access to subagents. The quality of its work will be significantly higher if run on a platform with subagent support (such as Claude Code or Codex). If subagents are available, use galyarder-framework:subagent-driven-development instead of this skill.
+**Note:** Tell your human partner that Forge Anything works much better with access to subagents. The quality of its work will be significantly higher if run on a platform with subagent support (such as Claude Code or Codex). If subagents are available, use forge-anything:subagent-driven-development instead of this skill.
 
 ## The Process
 
@@ -354,7 +354,7 @@ For each task:
 
 After all tasks complete and verified:
 - Announce: "I'm using the finishing-a-development-branch skill to complete this work."
-- **REQUIRED SUB-SKILL:** Use galyarder-framework:finishing-a-development-branch
+- **REQUIRED SUB-SKILL:** Use forge-anything:finishing-a-development-branch
 - Follow that skill to verify tests, present options, execute choice
 
 ## When to Stop and Ask for Help
@@ -386,11 +386,11 @@ After all tasks complete and verified:
 ## Integration
 
 **Required workflow skills:**
-- **galyarder-framework:using-git-worktrees** - REQUIRED: Set up isolated workspace before starting
-- **galyarder-framework:writing-plans** - Creates the plan this skill executes
-- **galyarder-framework:finishing-a-development-branch** - Complete development after all tasks
+- **forge-anything:using-git-worktrees** - REQUIRED: Set up isolated workspace before starting
+- **forge-anything:writing-plans** - Creates the plan this skill executes
+- **forge-anything:finishing-a-development-branch** - Complete development after all tasks
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: prd-to-issues
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -507,7 +507,7 @@ Reference by number from the parent PRD:
 
 Do NOT close or modify the parent PRD issue.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: prd-to-plan
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -641,7 +641,7 @@ A concise description of this vertical slice. Describe the end-to-end behavior, 
 <!-- Repeat for each phase -->
 </plan-template>
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: ubiquitous-language
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -754,7 +754,7 @@ After writing the file, state:
 
 > I've written/updated `UBIQUITOUS_LANGUAGE.md`. From this point forward I will use these terms consistently. If I drift from this language or you notice a term that should be added, let me know.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: write-a-prd
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -857,7 +857,7 @@ Any further notes about the feature.
 
 </prd-template>
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: writing-plans
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -936,7 +936,7 @@ This structure informs the task decomposition. Each task should produce self-con
 ```markdown
 # [Feature Name] Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use galyarder-framework:subagent-driven-development (recommended) or galyarder-framework:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use forge-anything:subagent-driven-development (recommended) or forge-anything:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** [One sentence describing what this builds]
 
@@ -1030,13 +1030,13 @@ After saving the plan, offer execution choice:
 **Which approach?"**
 
 **If Subagent-Driven chosen:**
-- **REQUIRED SUB-SKILL:** Use galyarder-framework:subagent-driven-development
+- **REQUIRED SUB-SKILL:** Use forge-anything:subagent-driven-development
 - Fresh subagent per task + two-stage review
 
 **If Inline Execution chosen:**
-- **REQUIRED SUB-SKILL:** Use galyarder-framework:executing-plans
+- **REQUIRED SUB-SKILL:** Use forge-anything:executing-plans
 - Batch execution with checkpoints for review
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

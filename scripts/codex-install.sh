@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Codex Installation Script for Galyarder Framework Library
+# Codex Installation Script for Forge Anything Library
 #
 # Installs skills from this repository to your local Codex skills directory.
 # Follows symlinks to copy actual skill contents.
@@ -281,7 +281,7 @@ main() {
     # Banner
     echo ""
     echo "========================================"
-    echo "  Galyarder Framework - Codex Installer"
+    echo "  Forge Anything - Codex Installer"
     echo "========================================"
     echo ""
 

@@ -1,5 +1,5 @@
 ---
-title: "copywriting | Galyarder Framework"
+title: "copywriting | Forge Anything"
 description: "Write rigorous, conversion-focused marketing copy for landing pages and emails. Enforces brief confirmation and strict no-fabrication rules."
 ---
 
@@ -283,4 +283,4 @@ rewrite it until it feels obvious.
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -1,5 +1,5 @@
 ---
-title: "Review | Galyarder Framework"
+title: "Review | Forge Anything"
 description: "Perform a principal-level code review of the current changes against the PRD and Design System."
 ---
 
@@ -39,4 +39,4 @@ You do not trust LLM probability; you trust mathematical determinism.
 
 ---
 
-**Note**: This command is powered by the `galyarder-framework:requesting-code-review` skill and the `galyarder-framework:code-reviewer` agent.
+**Note**: This command is powered by the `forge-anything:requesting-code-review` skill and the `forge-anything:code-reviewer` agent.

@@ -59,4 +59,4 @@ Libraries commonly affected: `lucide-react`, `@mui/material`, `@mui/icons-materi
 Reference: [How we optimized package imports in Next.js](https://vercel.com/blog/how-we-optimized-package-imports-in-next-js)
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

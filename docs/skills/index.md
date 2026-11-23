@@ -1,4 +1,4 @@
-# Galyarder Framework: Skills
+# Forge Anything: Skills
 
 Discover the agentic company workforce, commands, and operating protocols designed for human-directed execution.
 
@@ -130,7 +130,7 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Consolidated Galyarder Framework Engineering intelligence bundle.
+    Consolidated Forge Anything Engineering intelligence bundle.
 
 -   **[eradicating-malware-from-infected-systems](eradicating-malware-from-infected-systems/index.md)**
 
@@ -172,7 +172,7 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Consolidated Galyarder Framework Executive intelligence bundle.
+    Consolidated Forge Anything Executive intelligence bundle.
 
 -   **[finance-based-pricing-advisor](finance-based-pricing-advisor/index.md)**
 
@@ -208,7 +208,7 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Consolidated Galyarder Framework Full intelligence bundle.
+    Consolidated Forge Anything Full intelligence bundle.
 
 -   **[fundraising-email](fundraising-email/index.md)**
 
@@ -216,13 +216,13 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     Investor Email Specialist. Use to write fundraising outreach, warm intro blurbs, follow-ups, investor updates, and close-the-loop emails with founder-grade brevity and specificity.
 
--   **[galyarder](galyarder/index.md)**
+-   **[forge](forge/index.md)**
 
     ---
 
-    Consolidated Galyarder Framework Galyarder intelligence bundle.
+    Consolidated Forge Anything intelligence bundle.
 
--   **[galyarder-specialist](galyarder-specialist/index.md)**
+-   **[forge-specialist](forge-specialist/index.md)**
 
     ---
 
@@ -250,13 +250,13 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Consolidated Galyarder Framework Growth intelligence bundle.
+    Consolidated Forge Anything Growth intelligence bundle.
 
 -   **[infrastructure](infrastructure/index.md)**
 
     ---
 
-    Consolidated Galyarder Framework Infrastructure intelligence bundle.
+    Consolidated Forge Anything Infrastructure intelligence bundle.
 
 -   **[intercepting-mobile-traffic-with-burpsuite](intercepting-mobile-traffic-with-burpsuite/index.md)**
 
@@ -292,7 +292,7 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Consolidated Galyarder Framework Knowledge intelligence bundle.
+    Consolidated Forge Anything Knowledge intelligence bundle.
 
 -   **[lead-scoring](lead-scoring/index.md)**
 
@@ -310,7 +310,7 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Consolidated Galyarder Framework Legal-finance intelligence bundle.
+    Consolidated Forge Anything Legal-finance intelligence bundle.
 
 -   **[legal-tos-privacy](legal-tos-privacy/index.md)**
 
@@ -430,7 +430,7 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Consolidated Galyarder Framework Product intelligence bundle.
+    Consolidated Forge Anything Product intelligence bundle.
 
 -   **[profiling-threat-actor-groups](profiling-threat-actor-groups/index.md)**
 
@@ -490,7 +490,7 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Specialized skill unit for Galyarder Framework orchestration.
+    Specialized skill unit for Forge Anything orchestration.
 
 -   **[reverse-engineering-malware-with-ghidra](reverse-engineering-malware-with-ghidra/index.md)**
 
@@ -514,7 +514,7 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Consolidated Galyarder Framework Security intelligence bundle.
+    Consolidated Forge Anything Security intelligence bundle.
 
 -   **[seo-audit](seo-audit/index.md)**
 
@@ -558,7 +558,7 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     Extract a DDD-style ubiquitous language glossary from the current conversation, flagging ambiguities and proposing canonical terms. Saves to UBIQUITOUS_LANGUAGE.md. Use when user wants to define domain terms, build a glossary, harden terminology, create a ubiquitous language, or mentions 'domain model' or 'DDD'.
 
--   **[using-galyarder-framework](using-galyarder-framework/index.md)**
+-   **[using-forge-anything](using-forge-anything/index.md)**
 
     ---
 

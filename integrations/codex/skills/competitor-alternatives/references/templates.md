@@ -212,4 +212,4 @@ Group features into meaningful categories:
 | Feature depth |  |  | [Brief note] |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

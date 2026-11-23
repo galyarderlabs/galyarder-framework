@@ -192,4 +192,4 @@ Durable memory is mandatory. Every task must result in a persistent artifact:
 - [ ] Set up tracking for your own content performance
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

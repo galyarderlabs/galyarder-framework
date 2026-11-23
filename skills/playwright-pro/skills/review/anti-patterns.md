@@ -182,4 +182,4 @@ Keep `test.describe()` to max 2 levels. More makes tests hard to find and mainta
 - No `test.describe()`  group related tests
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

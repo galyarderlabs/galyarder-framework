@@ -1,34 +1,34 @@
-# Galyarder Framework for OpenCode
+# Forge Anything for OpenCode
 
-Complete guide for using Galyarder Framework with [OpenCode.ai](https://opencode.ai).
+Complete guide for using Forge Anything with [OpenCode.ai](https://opencode.ai).
 
 ## Installation
 
-Add galyarder-framework to the `plugin` array in your `opencode.json` (global or project-level):
+Add forge-anything to the `plugin` array in your `opencode.json` (global or project-level):
 
 ```json
 {
-  "plugin": ["galyarder-framework@git+https://github.com/galyarderlabs/galyarder-framework.git"]
+  "plugin": ["forge-anything@git+https://github.com/galyarderlabs/forge-anything.git"]
 }
 ```
 
 Restart OpenCode. The plugin auto-installs via Bun and registers all skills automatically.
 
-Verify by asking: "Tell me about your galyarder-framework"
+Verify by asking: "Tell me about your forge-anything"
 
 ### Migrating from the old symlink-based install
 
-If you previously installed galyarder-framework using `git clone` and symlinks, remove the old setup:
+If you previously installed forge-anything using `git clone` and symlinks, remove the old setup:
 
 ```bash
 # Remove old symlinks
-rm -f ~/.config/opencode/plugins/galyarder-framework.js
-rm -rf ~/.config/opencode/skills/galyarder-framework
+rm -f ~/.config/opencode/plugins/forge-anything.js
+rm -rf ~/.config/opencode/skills/forge-anything
 
 # Optionally remove the cloned repo
-rm -rf ~/.config/opencode/galyarder-framework
+rm -rf ~/.config/opencode/forge-anything
 
-# Remove skills.paths from opencode.json if you added one for galyarder-framework
+# Remove skills.paths from opencode.json if you added one for forge-anything
 ```
 
 Then follow the installation steps above.
@@ -72,17 +72,17 @@ description: Use when [condition] - [what it does]
 
 Create project-specific skills in `.opencode/skills/` within your project.
 
-**Skill Priority:** Project skills > Personal skills > Galyarder Framework skills
+**Skill Priority:** Project skills > Personal skills > Forge Anything skills
 
 ## Updating
 
-Galyarder Framework updates automatically when you restart OpenCode. The plugin is re-installed from the git repository on each launch.
+Forge Anything updates automatically when you restart OpenCode. The plugin is re-installed from the git repository on each launch.
 
 To pin a specific version, use a branch or tag:
 
 ```json
 {
-  "plugin": ["galyarder-framework@git+https://github.com/galyarderlabs/galyarder-framework.git#v5.0.3"]
+  "plugin": ["forge-anything@git+https://github.com/galyarderlabs/forge-anything.git#v5.0.3"]
 }
 ```
 
@@ -90,8 +90,8 @@ To pin a specific version, use a branch or tag:
 
 The plugin does two things:
 
-1. **Injects bootstrap context** via the `experimental.chat.system.transform` hook, adding galyarder-framework awareness to every conversation.
-2. **Registers the skills directory** via the `config` hook, so OpenCode discovers all galyarder-framework skills without symlinks or manual config.
+1. **Injects bootstrap context** via the `experimental.chat.system.transform` hook, adding forge-anything awareness to every conversation.
+2. **Registers the skills directory** via the `config` hook, so OpenCode discovers all forge-anything skills without symlinks or manual config.
 
 ### Tool Mapping
 
@@ -106,7 +106,7 @@ Skills written for Claude Code are automatically adapted for OpenCode:
 
 ### Plugin not loading
 
-1. Check OpenCode logs: `opencode run --print-logs "hello" 2>&1 | grep -i galyarder-framework`
+1. Check OpenCode logs: `opencode run --print-logs "hello" 2>&1 | grep -i forge-anything`
 2. Verify the plugin line in your `opencode.json` is correct
 3. Make sure you're running a recent version of OpenCode
 
@@ -124,5 +124,5 @@ Skills written for Claude Code are automatically adapted for OpenCode:
 ## Getting Help
 
 - Report issues: https://github.com/galyarderlabs/issues
-- Main documentation: https://github.com/galyarderlabs/galyarder-framework
+- Main documentation: https://github.com/galyarderlabs/forge-anything
 - OpenCode docs: https://opencode.ai/docs/

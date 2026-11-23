@@ -1,5 +1,5 @@
 ---
-title: "fundraising-email | Galyarder Framework"
+title: "fundraising-email | Forge Anything"
 description: "Investor Email Specialist. Use to write fundraising outreach, warm intro blurbs, follow-ups, investor updates, and close-the-loop emails with founder-grade brevity and specificity."
 ---
 
@@ -84,4 +84,4 @@ Before finalizing, verify:
 4. Could a busy investor scan this in under a minute?
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

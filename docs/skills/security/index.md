@@ -1,6 +1,6 @@
 ---
-title: "security | Galyarder Framework"
-description: "Consolidated Galyarder Framework Security intelligence bundle."
+title: "security | Forge Anything"
+description: "Consolidated Forge Anything Security intelligence bundle."
 ---
 
 # :material-folder-zip: security
@@ -9,7 +9,7 @@ description: "Consolidated Galyarder Framework Security intelligence bundle."
 
 ---
 
-# GALYARDER SECURITY BUNDLE
+# FORGE SECURITY BUNDLE
 
 This bundle contains 17 evidence-backed SOPs for the Security department.
 
@@ -49,7 +49,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Cloud Security
 
 You are the Cloud Security Specialist at Galyarder Labs.
-##  Galyarder Framework Operating Procedures (MANDATORY)
+##  Forge Anything Operating Procedures (MANDATORY)
 When executing this skill to protect your human partner's infrastructure (Phase 4):
 1. **Token Economy (RTK):** Gather cloud configuration data using `rtk` mediated CLI calls to minimize token usage.
 2. **Execution System (Linear):** Every "Critical" or "High" finding must be converted into a Linear Issue with the `Security` label.
@@ -393,7 +393,7 @@ aws s3api get-bucket-policy --bucket "${BUCKET}" | jq '.Policy | fromjson' | \
 | [security-pen-testing](../security-pen-testing/SKILL.md) | Cloud posture findings feed into the infrastructure security section of pen test assessments |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: eradicating-malware-from-infected-systems
@@ -634,7 +634,7 @@ yara -r malware_rules/specific_family.yar C:\ 2>/dev/null
 - Systems cleared for recovery phase
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: executing-active-directory-attack-simulation
@@ -828,7 +828,7 @@ could access all 5,000 user accounts, 800 computer objects, and all data within 
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: executing-phishing-simulation-campaign
@@ -1032,7 +1032,7 @@ Analyze campaign results and produce the assessment report:
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: executing-red-team-engagement-planning
@@ -1197,7 +1197,7 @@ Map organizational threats using MITRE ATT&CK Navigator to select relevant adver
 - building-red-team-infrastructure-with-redirectors
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: executing-red-team-exercise
@@ -1394,7 +1394,7 @@ Convert red team findings into defensive improvements:
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: generating-threat-intelligence-reports
@@ -1551,7 +1551,7 @@ Before dissemination, apply these checks:
 - **Over-classification**: Applying TLP:RED to information that could be TLP:GREEN impedes community sharing and limits defensive value across the sector.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: intercepting-mobile-traffic-with-burpsuite
@@ -1757,7 +1757,7 @@ android sslpinning disable
 - **VPN-based apps**: Apps using VPN tunnels bypass device proxy settings. May need iptables rules on a rooted device to redirect traffic.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: investigating-phishing-email-incident
@@ -2063,7 +2063,7 @@ Status:       RESOLVED  No evidence of lateral movement post-compromise
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: mapping-mitre-attack-techniques
@@ -2216,7 +2216,7 @@ Summarize coverage by tactic category (Initial Access, Execution, Persistence, e
 - **Not mapping to adversary groups**: Generic coverage maps don't distinguish between techniques used by APTs targeting your sector vs. commodity malware.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: monitoring-darkweb-sources
@@ -2361,7 +2361,7 @@ For each dark web finding:
 - **No evidence preservation**: Dark web content disappears rapidly. Capture timestamped evidence immediately upon discovery using commercial service exports.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: profiling-threat-actor-groups
@@ -2504,7 +2504,7 @@ Classify TLP:AMBER for internal distribution; seek ISAC approval before external
 - **Profile staleness**: Adversary TTPs evolve. Profiles not updated quarterly may miss technique changes, new malware, or targeting shifts.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: recovering-deleted-files-with-photorec
@@ -2755,7 +2755,7 @@ PhotoRec Recovery Summary:
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: recovering-from-ransomware-attack
@@ -3076,7 +3076,7 @@ Throughout: SOC monitoring on high alert
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: reverse-engineering-malware-with-ghidra
@@ -3377,7 +3377,7 @@ RC4 Key Material: [see encryption details above]
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: testing-for-xss-vulnerabilities-with-burpsuite
@@ -3709,7 +3709,7 @@ A WAF blocks common XSS patterns and CSP restricts inline scripts. Discover a JS
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: tracking-threat-actor-infrastructure
@@ -4017,7 +4017,7 @@ def build_infrastructure_timeline(indicators):
 - [JARM Fingerprinting](https://github.com/salesforce/jarm)
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

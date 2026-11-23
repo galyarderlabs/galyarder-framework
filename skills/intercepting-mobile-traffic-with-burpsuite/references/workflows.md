@@ -70,4 +70,4 @@
 | VPN tunnel | iptables redirect on rooted device | Not feasible without jailbreak |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

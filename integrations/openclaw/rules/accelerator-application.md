@@ -64,4 +64,4 @@ Produce:
 - Lead with traction and velocity where available.
 - Use clear language, not accelerator cosplay jargon.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

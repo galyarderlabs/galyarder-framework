@@ -168,4 +168,4 @@ Configure deal properties to capture:
 **Use data to inform:** Product roadmap, pricing adjustments, competitive positioning.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

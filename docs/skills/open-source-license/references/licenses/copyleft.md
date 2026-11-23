@@ -348,4 +348,4 @@ Available at: https://www.eclipse.org/legal/epl-2.0/
 - Popular in Java ecosystem
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

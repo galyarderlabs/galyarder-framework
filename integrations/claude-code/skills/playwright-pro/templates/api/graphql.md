@@ -174,4 +174,4 @@ test.describe('GraphQL API', () => {
 | Subscription | Real-time message via WebSocket |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

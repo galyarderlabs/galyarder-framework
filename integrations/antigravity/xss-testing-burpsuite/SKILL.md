@@ -331,4 +331,4 @@ A WAF blocks common XSS patterns and CSP restricts inline scripts. Discover a JS
 5. Add X-Content-Type-Options: nosniff header
 ```
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

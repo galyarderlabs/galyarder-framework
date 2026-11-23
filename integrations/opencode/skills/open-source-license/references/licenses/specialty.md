@@ -302,4 +302,4 @@ SPDX-License-Identifier: MIT OR Apache-2.0
 **These licenses are mentioned for awareness only. They are not recommended for true open source projects.**
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

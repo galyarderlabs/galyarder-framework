@@ -1,4 +1,4 @@
-# Galyarder Migration Guide: v1.7.x -> v1.8.0
+# Forge Anything Migration Guide: v1.7.x -> v1.8.0
 
 Version 1.8.0 introduces a compatibility-focused flattening of the repository structure. The legacy `framework/` subdirectory has been removed to reduce path depth and improve tool compatibility.
 
@@ -50,25 +50,25 @@ This ensures that tools only see valid directories, preventing "Context Bloat" a
 
 ## v1.9.0+: The Unified CLI & NPM Era
 
-Version 1.9.0 represents a major architectural shift in how the Galyarder Framework is distributed and consumed. We have moved from a "Script-First" model to a "Package-First" model.
+Version 1.9.0 represents a major architectural shift in how the Forge Anything is distributed and consumed. We have moved from a "Script-First" model to a "Package-First" model.
 
 ### 1. Installation Method Migration
 Legacy users who cloned the repository manually should transition to the global NPM package for easier updates and path resolution.
 
 | Source Method | Command (New Standard) |
 | :--- | :--- |
-| **Git Clone** | `npm install -g galyarder-framework` |
-| **Direct Pull** | `npx skills add galyarderlabs/galyarder-framework --skill full` |
+| **Git Clone** | `npm install -g forge-anything` |
+| **Direct Pull** | `npx skills add galyarderlabs/forge-anything --skill full` |
 
 ### 2. Command Unification
-We have consolidated all separate shell scripts into a single, high-fidelity Node.js CLI. The old `galyarder-*` aliases are deprecated.
+We have consolidated all separate shell scripts into a single, high-fidelity Node.js CLI. The old `forge-*` aliases are deprecated.
 
 | Legacy Command | New CLI Command |
 | :--- | :--- |
-| `galyarder-deploy` | `galyarder deploy` |
-| `galyarder-scaffold` | `galyarder scaffold` |
-| `galyarder-smoke` | `galyarder smoke` |
-| `galyarder-convert` | `galyarder convert` |
+| `forge-deploy` | `forge deploy` |
+| `forge-scaffold` | `forge scaffold` |
+| `forge-smoke` | `forge smoke` |
+| `forge-convert` | `forge convert` |
 
 ### 3. Departmental Infrastructure
 The number of mandatory departments has been finalized to 8. If your project operating workspace was scaffolded before v1.9.5, you may be missing the **Infrastructure** department.
@@ -76,17 +76,17 @@ The number of mandatory departments has been finalized to 8. If your project ope
 **To fix:**
 ```bash
 # Update to latest framework
-npm install -g galyarder-framework
+npm install -g forge-anything
 
 # Re-run scaffold to inject missing departments/templates
-galyarder scaffold
+forge scaffold
 ```
 
 ### 4. Agentic Skill Injection
-You can now pull Galyarder intelligence directly into any agent environment using the `skills.sh` standard. This eliminates the need for manual file copying.
+You can now pull Forge Anything intelligence directly into any agent environment using the `skills.sh` standard. This eliminates the need for manual file copying.
 
 ```bash
-# Inject the complete Galyarder engineering brain
-npx skills add galyarderlabs/galyarder-framework --skill engineering
+# Inject the complete Forge Anything engineering brain
+npx skills add galyarderlabs/forge-anything --skill engineering
 ```
 

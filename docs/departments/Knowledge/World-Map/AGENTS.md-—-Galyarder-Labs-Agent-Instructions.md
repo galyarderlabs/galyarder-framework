@@ -19,9 +19,9 @@ It has a connectivity degree of **9**.
 - [[Galyarder-Labs]] (structural_reference | 1.0)
 - [[BRAND.md-—-Galyarder-Labs-Final-Brand-System]] (structural_reference | 1.0)
 - [[DESIGN.md-—-Galyarder-Labs-Final-Design-System]] (structural_reference | 1.0)
-- [[Claude-Code-Integration-—-Galyarder-Framework]] (enforces_protocol | 0.8)
+- [[Claude-Code-Integration-—-Forge-Anything]] (enforces_protocol | 0.8)
 
 ### Informed By:
-- [[BRAND.md-—-Galyarder-Framework-Brand]] (structural_reference | 1.0)
+- [[BRAND.md-—-Forge-Anything-Brand]] (structural_reference | 1.0)
 - [[Galyarder-Labs]] (structural_reference | 1.0)
 - [[Galyarder-Labs]] (structural_reference | 1.0)

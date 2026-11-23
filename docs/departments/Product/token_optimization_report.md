@@ -17,4 +17,4 @@ In pursuit of Context Economy, the `product-manager` agent instructions were ref
 - New file size: ~4326 bytes
 - **Reduction: ~15.0%**
 
-This optimization ensures a leaner context window during agent execution while maintaining full compliance with the Galyarder Framework standards.
+This optimization ensures a leaner context window during agent execution while maintaining full compliance with the Forge Anything standards.

@@ -1,5 +1,5 @@
 ---
-title: "Finops | Galyarder Framework"
+title: "Finops | Forge Anything"
 description: "Audit cloud costs, optimize API token usage, and evaluate pricing models."
 ---
 

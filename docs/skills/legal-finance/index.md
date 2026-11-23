@@ -1,6 +1,6 @@
 ---
-title: "legal-finance | Galyarder Framework"
-description: "Consolidated Galyarder Framework Legal-finance intelligence bundle."
+title: "legal-finance | Forge Anything"
+description: "Consolidated Forge Anything Legal-finance intelligence bundle."
 ---
 
 # :material-folder-zip: legal-finance
@@ -9,7 +9,7 @@ description: "Consolidated Galyarder Framework Legal-finance intelligence bundle
 
 ---
 
-# GALYARDER LEGAL-FINANCE BUNDLE
+# FORGE LEGAL-FINANCE BUNDLE
 
 This bundle contains 12 evidence-backed SOPs for the Legal-finance department.
 
@@ -317,7 +317,7 @@ Review quarterly. Less important at early stage, but needed for:
 - **pricing**  Set pricing that supports healthy unit economics
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: contract-and-proposal-writer
@@ -796,7 +796,7 @@ python scripts/contract_comparison_analyzer.py contract_v1.json contract_v2.json
 - **revenue-operations** -- Contract values and payment schedules feed into pipeline forecasting and revenue recognition
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: contract-review
@@ -1121,7 +1121,7 @@ Quick review - key concerns only:
 - **Prerequisites**: Contract access, business context
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: finance-based-pricing-advisor
@@ -1904,7 +1904,7 @@ For topics NOT covered here, see future `pricing-strategy-suite`:
 - Pricing scenarios from `research/finance/Finance for Product Managers.md`
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: financial-analyst
@@ -1941,9 +1941,9 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Financial Analyst Skill
 
 You are the Financial Analyst Specialist at Galyarder Labs.
-##  Galyarder Framework Operating Procedures (MANDATORY)
+##  Forge Anything Operating Procedures (MANDATORY)
 When operating this skill for your human partner:
-1. **Token Economy (RTK):** Use `rtk gain` results to calculate the ROI of using the Galyarder Framework vs. raw agent calls.
+1. **Token Economy (RTK):** Use `rtk gain` results to calculate the ROI of using the Forge Anything vs. raw agent calls.
 2. **Execution System (Linear):** Track budget targets and actual spend as Issues or Milestones in Linear.
 3. **Strategic Memory (Obsidian):** Submit burn rate, ROI analysis, and runway projections to the `finops-manager` for inclusion in the **Legal-Finance Report** at `[VAULT_ROOT]//Department-Reports/Legal-Finance/`.
 
@@ -2090,7 +2090,7 @@ All scripts accept JSON input files. See `assets/sample_financial_data.json` for
 **None** - All scripts use Python standard library only (`math`, `statistics`, `json`, `argparse`, `datetime`). No numpy, pandas, or scipy required.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: gdpr-ccpa-privacy-auditor
@@ -2148,7 +2148,7 @@ The `gdpr-ccpa-privacy-auditor` is a transparency tool. It helps companies ensur
 - **Source Code Privacy**: If providing `source_code_path`, ensure the environment is secure and the code is not transmitted externally.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: gdpr-compliance
@@ -2733,7 +2733,7 @@ gdpr_compliance_checklist:
 - Regularly audit data flows to discover shadow processing or undocumented data stores
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: iso-42001-ai-governance
@@ -3983,7 +3983,7 @@ ISO 42001 aligns with major AI regulations:
 **Remember**: ISO 42001 is about building trustworthy AI systems through systematic risk management and governance. It's not a barrier to innovationit's a framework for responsible innovation that protects both organizations and the people affected by AI.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: legal-advisor
@@ -4080,7 +4080,7 @@ Always include disclaimer: "This is a template for informational purposes. Consu
 Focus on comprehensiveness, clarity, and regulatory compliance while maintaining readability.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: legal-tos-privacy
@@ -4623,7 +4623,7 @@ Deliver final documents in this structure:
 7. **Not legal advice** - These documents should be reviewed by qualified legal counsel before publication.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: open-source-license
@@ -4805,7 +4805,7 @@ When reviewing compliance:
 4. Provide specific remediation steps
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ---
 ## SKILL: saas-finops-optimization
@@ -4887,7 +4887,7 @@ AI tokens are often the #1 expense for modern startups. Optimize or die.
 4. **Action Plan**: Provide a prioritized list of "Quick Wins" (high savings, low effort).
 
 ---
- 2026 Galyarder Labs. Galyarder Framework. SaaS FinOps.
+ 2026 Galyarder Labs. Forge Anything. SaaS FinOps.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework. SaaS FinOps.
+ 2026 Galyarder Labs. Forge Anything. SaaS FinOps.

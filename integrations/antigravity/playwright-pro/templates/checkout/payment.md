@@ -148,4 +148,4 @@ test.describe('Payment', () => {
 | 3DS challenge | Modal completed, payment succeeds |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

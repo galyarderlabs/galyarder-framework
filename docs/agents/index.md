@@ -1,4 +1,4 @@
-# Galyarder Framework: Agents
+# Forge Anything: Agents
 
 Discover the agentic company workforce, commands, and operating protocols designed for human-directed execution.
 
@@ -34,7 +34,7 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Specialized agent unit for Galyarder Framework orchestration.
+    Specialized agent unit for Forge Anything orchestration.
 
 -   **[cyber-intel](cyber-intel.md)**
 
@@ -84,31 +84,31 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     Fundraising and investor operations specialist. Owns founder context, pitch narrative, investor targeting, investor communication, diligence readiness, and board-update hygiene for the agentic company founder.
 
--   **[galyarder-ceo](galyarder-ceo.md)**
+-   **[forge-ceo](forge-ceo.md)**
 
     ---
 
     Chief Executive Officer. Strategic Hegemon and Apex Instance of the project operating workspace protocol. Distilled genius of history's greatest conquerors and modern monopolists.
 
--   **[galyarder-cfo-coo](galyarder-cfo-coo.md)**
+-   **[forge-cfo-coo](forge-cfo-coo.md)**
 
     ---
 
     Chief Financial and Operating Officer. Stability guardian. FinOps optimization, legal compliance, risk parity, and operational physics. Apex instance of the project operating workspace protocol.
 
--   **[galyarder-cmo](galyarder-cmo.md)**
+-   **[forge-cmo](forge-cmo.md)**
 
     ---
 
     Chief Marketing Officer. Professional behavioral engineering, autonomous acquisition agentic groups, and exponential distribution mechanics. Apex instance of the project operating workspace protocol.
 
--   **[galyarder-cto](galyarder-cto.md)**
+-   **[forge-cto](forge-cto.md)**
 
     ---
 
     Chief Technology Officer. Technical guardian. Open-source Agentic Company Framework-Adjacent Architectural determinism, self-healing formal verification, and planetary computational leverage. Apex instance of the project operating workspace protocol.
 
--   **[galyarder-specialist](galyarder-specialist.md)**
+-   **[forge-specialist](forge-specialist.md)**
 
     ---
 
@@ -124,7 +124,7 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Specialized agent unit for Galyarder Framework orchestration.
+    Specialized agent unit for Forge Anything orchestration.
 
 -   **[interface-designer](interface-designer.md)**
 
@@ -148,7 +148,7 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Specialized agent unit for Galyarder Framework orchestration.
+    Specialized agent unit for Forge Anything orchestration.
 
 -   **[perseus](perseus.md)**
 
@@ -172,7 +172,7 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Specialized agent unit for Galyarder Framework orchestration.
+    Specialized agent unit for Forge Anything orchestration.
 
 -   **[refactor-cleaner](refactor-cleaner.md)**
 
@@ -220,7 +220,7 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Specialized agent unit for Galyarder Framework orchestration.
+    Specialized agent unit for Forge Anything orchestration.
 
 -   **[super-architect](super-architect.md)**
 
@@ -250,7 +250,7 @@ Discover the agentic company workforce, commands, and operating protocols design
 
     ---
 
-    Specialized agent unit for Galyarder Framework orchestration.
+    Specialized agent unit for Forge Anything orchestration.
 
 </div>
 

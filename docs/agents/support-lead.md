@@ -1,5 +1,5 @@
 ---
-title: "support-lead | Galyarder Framework"
+title: "support-lead | Forge Anything"
 description: "Support and post-launch issue orchestration. Use PROACTIVELY when customer-facing problems, launch fallout, or support-system gaps need structured triage and response ownership."
 ---
 

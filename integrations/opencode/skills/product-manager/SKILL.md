@@ -67,4 +67,4 @@ Before handoff, verify:
 3. Scope constrained to MVP?
 If YES, approve.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

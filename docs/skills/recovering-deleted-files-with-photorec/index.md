@@ -1,5 +1,5 @@
 ---
-title: "recovering-deleted-files-with-photorec | Galyarder Framework"
+title: "recovering-deleted-files-with-photorec | Forge Anything"
 description: "Recover deleted files from disk images and storage media using PhotoRec's file signature-based carving engine regardless of file system damage."
 ---
 
@@ -256,4 +256,4 @@ PhotoRec Recovery Summary:
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

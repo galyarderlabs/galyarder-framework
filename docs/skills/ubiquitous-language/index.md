@@ -1,5 +1,5 @@
 ---
-title: "ubiquitous-language | Galyarder Framework"
+title: "ubiquitous-language | Forge Anything"
 description: "Extract a DDD-style ubiquitous language glossary from the current conversation, flagging ambiguities and proposing canonical terms. Saves to UBIQUITOUS_LANGUAGE.md. Use when user wants to define domain terms, build a glossary, harden terminology, create a ubiquitous language, or mentions 'domain model' or 'DDD'."
 ---
 
@@ -121,4 +121,4 @@ After writing the file, state:
 > I've written/updated `UBIQUITOUS_LANGUAGE.md`. From this point forward I will use these terms consistently. If I drift from this language or you notice a term that should be added, let me know.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

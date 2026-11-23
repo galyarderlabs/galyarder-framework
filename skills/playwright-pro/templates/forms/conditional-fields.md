@@ -120,4 +120,4 @@ test.describe('Conditional Fields', () => {
 | Radio trigger | Radio button controls field visibility |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

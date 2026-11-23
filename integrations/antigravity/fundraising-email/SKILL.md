@@ -78,4 +78,4 @@ Before finalizing, verify:
 3. Is there at least one concrete personalization detail where relevant?
 4. Could a busy investor scan this in under a minute?
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

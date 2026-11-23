@@ -205,4 +205,4 @@ could access all 5,000 user accounts, 800 computer objects, and all data within 
 ```
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -66,8 +66,8 @@ def sanitize_public_copy(text):
 def prettify(name):
     # Fix double names and kebab-case
     name = name.replace("-", " ").replace("_", " ").title()
-    if name.startswith("Galyarder"):
-        name = name.replace("Galyarder ", "")
+    if name.startswith("Forge"):
+        name = name.replace("Forge ", "")
     return name.strip()
 
 class Asset:
@@ -117,16 +117,16 @@ class Asset:
             if lines:
                 self.description = lines[0][:200].strip().rstrip(".") + "..."
             else:
-                self.description = f"Specialized {self.category} unit for Galyarder Framework orchestration."
+                self.description = f"Specialized {self.category} unit for Forge Anything orchestration."
 
         # Ensure title and desc are clean
-        self.title = self.title.replace("Galyarder ", "").strip()
+        self.title = self.title.replace("Forge ", "").strip()
         self.description = self.description.replace('"', "'").strip()
 
     def generate_page(self, icon, label):
         mk_icon = f":{icon}:"
         return f"""---
-title: "{self.title} | Galyarder Framework"
+title: "{self.title} | Forge Anything"
 description: "{self.description}"
 ---
 
@@ -237,7 +237,7 @@ def generate():
 
     # 4. Generate High-Density Grid Landing Pages
     for category in ["agents", "skills", "commands"]:
-        idx_content = f"# Galyarder Framework: {category.title()}\n\n"
+        idx_content = f"# Forge Anything: {category.title()}\n\n"
         idx_content += "Discover the agentic company workforce, commands, and operating protocols designed for human-directed execution.\n\n"
 
         for silo_name in sorted(inventory[category].keys()):

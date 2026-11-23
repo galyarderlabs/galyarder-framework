@@ -1,5 +1,5 @@
 ---
-title: "prd-to-plan | Galyarder Framework"
+title: "prd-to-plan | Forge Anything"
 description: "Turn a PRD into a multi-phase implementation plan using tracer-bullet vertical slices, saved as a local Markdown file in ./plans/. Use when user wants to break down a PRD, create an implementation plan, plan phases from a PRD, or mentions 'tracer bullets'."
 ---
 
@@ -144,4 +144,4 @@ A concise description of this vertical slice. Describe the end-to-end behavior, 
 </plan-template>
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

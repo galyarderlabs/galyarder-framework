@@ -1,12 +1,12 @@
 ---
 name: "growth"
-description: "Consolidated Galyarder Framework Growth intelligence bundle."
+description: "Consolidated Forge Anything Growth intelligence bundle."
 risk: low
 source: internal
 date_added: '2026-11-23'
 ---
 
-# GALYARDER GROWTH BUNDLE
+# FORGE GROWTH BUNDLE
 
 This bundle contains 20 high-integrity SOPs for the Growth department.
 
@@ -260,7 +260,7 @@ that is the signal to **slow down and re-check the design**.
 ## When to Use
 This skill is applicable to execute the workflow or actions described in the overview.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: analytics-tracking
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -658,7 +658,7 @@ Analytics that violate trust undermine optimization.
 ## When to Use
 This skill is applicable to execute the workflow or actions described in the overview.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: campaign-analytics
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -693,7 +693,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Campaign Analytics
 
 You are the Campaign Analytics Specialist at Galyarder Labs.
-##  Galyarder Framework Operating Procedures (MANDATORY)
+##  Forge Anything Operating Procedures (MANDATORY)
 When executing this skill for your human partner during Phase 5 (Growth):
 1. **Token Economy (RTK):** Process large analytics exports using `rtk` mediated scripts to minimize token overhead.
 2. **Execution System (Linear):** Update Linear issues with actual performance data (ROI, CPA, CVR) once a campaign milestone is reached.
@@ -904,7 +904,7 @@ Calculates comprehensive ROI metrics with industry Standarding:
 - **marketing-ops**: For routing insights to the right execution skill.
 - **paid-ads**: For optimizing ad spend based on analytics findings.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: competitor-alternatives
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -1669,7 +1669,7 @@ If you need more context:
 ## When to Use
 This skill is applicable to execute the workflow or actions described in the overview.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: content-creator
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -1704,7 +1704,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Content Creator  Redirected
 
 You are the Content Creator Specialist at Galyarder Labs.
-##  Galyarder Framework Operating Procedures (MANDATORY)
+##  Forge Anything Operating Procedures (MANDATORY)
 When operating this skill for your human partner:
 1. **Token Economy (RTK):** Use `rtk` to fetch industry news or trending topics for content inspiration while keeping token costs low.
 2. **Strategic Memory (Obsidian):** Summarize content distribution success and audience growth for the `social-strategist` to include in the **Growth Report** at `[VAULT_ROOT]//Department-Reports/Growth/`.
@@ -1753,7 +1753,7 @@ This is a redirect skill. Route the user to the correct specialist  don't attemp
 - **content-humanizer**: Post-processing AI content to sound authentic.
 - **marketing-context**: Foundation context the successors read.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: content-strategy
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -2141,7 +2141,7 @@ Visual or structured representation of how content interconnects.
 - **email-sequence**: For email-based content
 - **social-content**: For social media content
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: copywriting
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -2404,7 +2404,7 @@ rewrite it until it feels obvious.
 ## When to Use
 This skill is applicable to execute the workflow or actions described in the overview.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: email-marketing-bible
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -2882,7 +2882,7 @@ Also covers: Agency, Healthcare, Financial, Real Estate, Travel, Education, Reta
 > Marketing calendar: https://emailmarketingskill.com/appendix-c-calendar/
 > Methodology: https://emailmarketingskill.com/appendix-d-methodology/
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: marketing-demand-acquisition
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -2917,7 +2917,7 @@ You do not trust LLM probability; you trust mathematical determinism.
 # Marketing Demand & Acquisition
 
 You are the Marketing Demand Acquisition Specialist at Galyarder Labs.
-##  Galyarder Framework Operating Procedures (MANDATORY)
+##  Forge Anything Operating Procedures (MANDATORY)
 When executing this skill for your human partner during Phase 5 (Growth):
 1. **Token Economy (RTK):** Use `rtk` wrapped commands to query keyword data or scan competitor domains.
 2. **Execution System (Linear):** Every acquisition campaign MUST be tracked as a Linear Initiative. Sub-tasks represent ad-sets or content pieces.
@@ -3197,7 +3197,7 @@ Required:
 - **email-sequence**: For nurture sequences in the demand funnel.
 - **campaign-analytics**: For measuring demand gen effectiveness.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: marketing-ideas
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -3437,7 +3437,7 @@ Use these biases when scoring:
 ## When to Use
 This skill is applicable to execute the workflow or actions described in the overview.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: marketing-psychology
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -3709,7 +3709,7 @@ Before responding, confirm:
 ## When to Use
 This skill is applicable to execute the workflow or actions described in the overview.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: onboarding-cro
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -4158,7 +4158,7 @@ If you need more context:
 ## When to Use
 This skill is applicable to execute the workflow or actions described in the overview.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: page-cro
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -4501,7 +4501,7 @@ Fix fundamentals first.
 ## When to Use
 This skill is applicable to execute the workflow or actions described in the overview.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: paywall-upgrade-cro
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -5083,7 +5083,7 @@ If you need more context:
 ## When to Use
 This skill is applicable to execute the workflow or actions described in the overview.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: programmatic-seo
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -5433,7 +5433,7 @@ If triggered, **halt indexing or roll back**:
 ## When to Use
 This skill is applicable to execute the workflow or actions described in the overview.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: referral-program
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -6054,7 +6054,7 @@ If you need more context:
 ## When to Use
 This skill is applicable to execute the workflow or actions described in the overview.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: revenue-architect
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -6123,7 +6123,7 @@ A Agentic Company scales through word of mouth. You design referral systems that
 3. Is the monetization strategy aligned with the long-term roadmap?
 If YES, finalize the revenue plan.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: schema-markup
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -6479,7 +6479,7 @@ Where and how to add it
 ## When to Use
 This skill is applicable to execute the workflow or actions described in the overview.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: seo-audit
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -6969,7 +6969,7 @@ Use these skills **only after the audit is complete** and findings are accepted.
 ## When to Use
 This skill is applicable to execute the workflow or actions described in the overview.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
 ## SKILL: social-content
 ## THE Agentic Company Framework GLOBAL PROTOCOLS (MANDATORY)
@@ -7794,6 +7794,6 @@ If you need more context:
 ## When to Use
 This skill is applicable to execute the workflow or actions described in the overview.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.
 
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

@@ -43,7 +43,7 @@ USAGE
 
 is_valid_tool() {
   case "$1" in
-    antigravity|cursor|kilocode|windsurf|opencode|augment|claude-code|codex|gemini|openclaw|hermes|galyarder-agent|all) return 0 ;;
+    antigravity|cursor|kilocode|windsurf|opencode|augment|claude-code|codex|gemini|openclaw|hermes|forge-agent|all) return 0 ;;
     *) return 1 ;;
   esac
 }
@@ -68,12 +68,12 @@ init_count_vars() {
   converted_antigravity=0; converted_cursor=0; converted_kilocode=0
   converted_windsurf=0; converted_opencode=0; converted_augment=0; converted_claudecode=0
   converted_codex=0; converted_gemini=0; converted_openclaw=0; converted_hermes=0
-  converted_galyarderagent=0
+  converted_forgeagent=0
   
   skipped_antigravity=0; skipped_cursor=0; skipped_kilocode=0
   skipped_windsurf=0; skipped_opencode=0; skipped_augment=0; skipped_claudecode=0
   skipped_codex=0; skipped_gemini=0; skipped_openclaw=0; skipped_hermes=0
-  skipped_galyarderagent=0
+  skipped_forgeagent=0
 }
 
 inc_converted() {
@@ -90,7 +90,7 @@ inc_converted() {
     gemini) converted_gemini=$((converted_gemini + 1)) ;;
     openclaw) converted_openclaw=$((converted_openclaw + 1)) ;;
     hermes) converted_hermes=$((converted_hermes + 1)) ;;
-    galyarder-agent) converted_galyarderagent=$((converted_galyarderagent + 1)) ;;
+    forge-agent) converted_forgeagent=$((converted_forgeagent + 1)) ;;
   esac
 }
 
@@ -108,7 +108,7 @@ inc_skipped() {
     gemini) skipped_gemini=$((skipped_gemini + 1)) ;;
     openclaw) skipped_openclaw=$((skipped_openclaw + 1)) ;;
     hermes) skipped_hermes=$((skipped_hermes + 1)) ;;
-    galyarder-agent) skipped_galyarderagent=$((skipped_galyarderagent + 1)) ;;
+    forge-agent) skipped_forgeagent=$((skipped_forgeagent + 1)) ;;
   esac
 }
 
@@ -126,7 +126,7 @@ get_converted() {
     gemini) echo "$converted_gemini" ;;
     openclaw) echo "$converted_openclaw" ;;
     hermes) echo "$converted_hermes" ;;
-    galyarder-agent) echo "$converted_galyarderagent" ;;
+    forge-agent) echo "$converted_forgeagent" ;;
   esac
 }
 
@@ -144,7 +144,7 @@ get_skipped() {
     gemini) echo "$skipped_gemini" ;;
     openclaw) echo "$skipped_openclaw" ;;
     hermes) echo "$skipped_hermes" ;;
-    galyarder-agent) echo "$skipped_galyarderagent" ;;
+    forge-agent) echo "$skipped_forgeagent" ;;
   esac
 }
 
@@ -217,7 +217,7 @@ tool_title() {
     kilocode) echo "Kilo Code" ;; windsurf) echo "Windsurf" ;; opencode) echo "OpenCode" ;;
     augment) echo "Augment" ;; claude-code) echo "Claude Code" ;; codex) echo "OpenAI Codex" ;;
     gemini) echo "Gemini CLI" ;; openclaw) echo "OpenClaw" ;; hermes) echo "Hermes Agent" ;;
-    galyarder-agent) echo "Galyarder Agent" ;;
+    forge-agent) echo "Forge Agent" ;;
   esac
 }
 
@@ -237,7 +237,7 @@ write_tool_readme() {
   esac
   {
     printf '# %s Integration\n\n' "$(tool_title "$tool")"
-    printf 'This directory contains converted Galyarder Framework assets for **%s**.\n\n' "$(tool_title "$tool")"
+    printf 'This directory contains converted Forge Anything assets for **%s**.\n\n' "$(tool_title "$tool")"
     printf '## Included Assets\n\n- **%s** assets.\n\n' "$count"
     printf '## Format\n\n%s\n\n## Install\n\n```bash\n%s\n```\n' "$format_line" "$script_install"
   } > "${out_dir}/README.md"
@@ -254,7 +254,7 @@ done
 
 if ! is_valid_tool "$TOOL"; then err "Invalid --tool: ${TOOL}"; usage; exit 1; fi
 
-TOOLS="antigravity cursor kilocode windsurf opencode augment claude-code codex gemini openclaw hermes galyarder-agent"
+TOOLS="antigravity cursor kilocode windsurf opencode augment claude-code codex gemini openclaw hermes forge-agent"
 [[ "$TOOL" != "all" ]] && TOOLS="$TOOL"
 
 python3 "${SCRIPT_DIR}/build_root_extension_surface.py"
@@ -274,7 +274,7 @@ SKILLS_TMP="$(mktemp)"
 for t in $TOOLS; do
   rm -rf "${OUT_BASE}/${t}"; mkdir -p "${OUT_BASE}/${t}"
   [[ "$t" =~ ^(cursor|kilocode|augment|openclaw|hermes)$ ]] && mkdir -p "${OUT_BASE}/${t}/rules"
-  [[ "$t" =~ ^(windsurf|opencode|galyarder-agent)$ ]] && mkdir -p "${OUT_BASE}/${t}/skills"
+  [[ "$t" =~ ^(windsurf|opencode|forge-agent)$ ]] && mkdir -p "${OUT_BASE}/${t}/skills"
 done
 
 init_count_vars
@@ -314,7 +314,7 @@ while IFS= read -r rel_path; do
       kilocode|augment)
         out_file="${OUT_BASE}/${t}/rules/${safe_name}.md"
         { echo "---"; echo "description: $(yaml_quote "$description")"; echo "---"; cat "$body_tmp"; } > "$out_file" ;;
-      windsurf|opencode|galyarder-agent)
+      windsurf|opencode|forge-agent)
         out_dir="${OUT_BASE}/${t}/skills/${safe_name}"; mkdir -p "$out_dir"
         { echo "---"; echo "name: $(yaml_quote "$name")"; echo "description: $(yaml_quote "$description")"; echo "---"; cat "$body_tmp"; } > "${out_dir}/SKILL.md"
         copy_supporting_dirs "$src_dir" "$out_dir" ;;

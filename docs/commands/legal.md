@@ -1,5 +1,5 @@
 ---
-title: "Legal | Galyarder Framework"
+title: "Legal | Forge Anything"
 description: "Generate TOS/Privacy policies, audit GDPR compliance, and review licenses."
 ---
 

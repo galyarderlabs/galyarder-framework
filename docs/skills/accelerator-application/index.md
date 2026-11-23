@@ -1,5 +1,5 @@
 ---
-title: "accelerator-application | Galyarder Framework"
+title: "accelerator-application | Forge Anything"
 description: "Accelerator Application Specialist. Use to shortlist startup programs, draft applications, prepare founder videos, and rehearse accelerator interviews with a disciplined founder narrative."
 ---
 
@@ -74,4 +74,4 @@ Produce:
 - Use clear language, not accelerator cosplay jargon.
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

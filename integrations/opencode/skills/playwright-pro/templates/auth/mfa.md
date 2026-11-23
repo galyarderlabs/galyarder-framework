@@ -125,4 +125,4 @@ test.describe('MFA', () => {
 | MFA enrollment | QR shown  token verified  backup codes displayed |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

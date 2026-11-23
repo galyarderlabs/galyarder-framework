@@ -1,5 +1,5 @@
 ---
-title: "mcp-builder | Galyarder Framework"
+title: "mcp-builder | Forge Anything"
 description: "MCP integration orchestrator. Use PROACTIVELY when the framework needs a new MCP-backed workflow, connector surface, or toolchain integration."
 ---
 

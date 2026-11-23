@@ -93,4 +93,4 @@ Not directly applicable for planning phase - CVE/CWE references will be mapped d
 | CMMC | DoD contractor supply chain considerations |
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

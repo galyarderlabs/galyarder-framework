@@ -1,4 +1,4 @@
-# Installing Galyarder Framework for OpenCode
+# Installing Forge Anything for OpenCode
 
 ## Prerequisites
 
@@ -6,31 +6,31 @@
 
 ## Installation
 
-Add galyarder-framework to the `plugin` array in your `opencode.json` (global or project-level):
+Add forge-anything to the `plugin` array in your `opencode.json` (global or project-level):
 
 ```json
 {
-  "plugin": ["galyarder-framework@git+https://github.com/galyarderlabs/galyarder-framework.git"]
+  "plugin": ["forge-anything@git+https://github.com/galyarderlabs/forge-anything.git"]
 }
 ```
 
 Restart OpenCode. That's it  the plugin auto-installs and registers all skills.
 
-Verify by asking: "Tell me about your galyarder-framework"
+Verify by asking: "Tell me about your forge-anything"
 
 ## Migrating from the old symlink-based install
 
-If you previously installed galyarder-framework using `git clone` and symlinks, remove the old setup:
+If you previously installed forge-anything using `git clone` and symlinks, remove the old setup:
 
 ```bash
 # Remove old symlinks
-rm -f ~/.config/opencode/plugins/galyarder-framework.js
-rm -rf ~/.config/opencode/skills/galyarder-framework
+rm -f ~/.config/opencode/plugins/forge-anything.js
+rm -rf ~/.config/opencode/skills/forge-anything
 
 # Optionally remove the cloned repo
-rm -rf ~/.config/opencode/galyarder-framework
+rm -rf ~/.config/opencode/forge-anything
 
-# Remove skills.paths from opencode.json if you added one for galyarder-framework
+# Remove skills.paths from opencode.json if you added one for forge-anything
 ```
 
 Then follow the installation steps above.
@@ -46,13 +46,13 @@ use skill tool to load brainstorming
 
 ## Updating
 
-Galyarder Framework updates automatically when you restart OpenCode.
+Forge Anything updates automatically when you restart OpenCode.
 
 To pin a specific version:
 
 ```json
 {
-  "plugin": ["galyarder-framework@git+https://github.com/galyarderlabs/galyarder-framework.git#v5.0.3"]
+  "plugin": ["forge-anything@git+https://github.com/galyarderlabs/forge-anything.git#v5.0.3"]
 }
 ```
 
@@ -60,7 +60,7 @@ To pin a specific version:
 
 ### Plugin not loading
 
-1. Check logs: `opencode run --print-logs "hello" 2>&1 | grep -i galyarder-framework`
+1. Check logs: `opencode run --print-logs "hello" 2>&1 | grep -i forge-anything`
 2. Verify the plugin line in your `opencode.json`
 3. Make sure you're running a recent version of OpenCode
 

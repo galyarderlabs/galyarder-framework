@@ -62,4 +62,4 @@
 - [Microsoft Compliance Search](https://learn.microsoft.com/en-us/purview/ediscovery-content-search)
 
 ---
- 2026 Galyarder Labs. Galyarder Framework.
+ 2026 Galyarder Labs. Forge Anything.

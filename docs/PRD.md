@@ -1,4 +1,4 @@
-# Galyarder Framework — Product Requirements
+# Forge Anything — Product Requirements
 
 **Status**: Draft
 **Scope**: The Intelligence Layer — the agents, skills, commands, review gates, and operating protocols that turn operator intent into routed, verified, and documented work across departments.
@@ -7,14 +7,14 @@
 
 Most AI-agent setups stop at chat or code generation. An agent can help with a task, but the work around it stays loose. There is no durable scope for what was asked, no routing to the right specialist, no review gate before a result is called done, and no audit trail after the fact. A solo founder running several agents ends up as the only integration point: they re-explain context, judge quality by feel, and lose the reasoning behind decisions once the session ends.
 
-The missing piece is not another coding agent or a prompt pack. It is the operating layer around the work: a way to receive intent, route it to a domain, produce a plan, execute through tools, verify the result, and hand control back with evidence. Galyarder Framework packages that layer so the same protocol applies whether the work is engineering, growth, finance, legal, security, or documentation.
+The missing piece is not another coding agent or a prompt pack. It is the operating layer around the work: a way to receive intent, route it to a domain, produce a plan, execute through tools, verify the result, and hand control back with evidence. Forge Anything packages that layer so the same protocol applies whether the work is engineering, growth, finance, legal, security, or documentation.
 
 ## Who it is for
 
 - **Solo founders and small technical teams** running multiple AI agents across more than one function, who need the work to be structured and reviewable.
-- **Operators already using an agentic coding tool** (Claude Code, Cursor, Gemini CLI, Codex, OpenCode, Windsurf, KiloCode, Augment, Antigravity, OpenClaw, Hermes, or Galyarder Agent) who want reusable operating protocols instead of one-off prompts.
+- **Operators already using an agentic coding tool** (Claude Code, Cursor, Gemini CLI, Codex, OpenCode, Windsurf, KiloCode, Augment, Antigravity, OpenClaw, Hermes, or Forge Agent) who want reusable operating protocols instead of one-off prompts.
 - **Maintainers and contributors** who add skills, agents, and commands and need a clear contract for what a good addition looks like.
-- **Teams building on the wider Galyarder stack** who want the intelligence layer to connect cleanly to the continuity, command, and financial layers.
+- **Teams building on the wider Forge Anything stack** who want the intelligence layer to connect cleanly to the continuity, command, and financial layers.
 
 ## Goals
 
@@ -56,8 +56,8 @@ The missing piece is not another coding agent or a prompt pack. It is the operat
 
 ### Installation and distribution
 
-- **R11 — Multiple install paths.** Users should be able to install via npm, via the skills registry, or from source. `[implemented]` — `npm install -g galyarder-framework`, `npx skills add`, and `git clone` + `./scripts/setup-cli.sh`.
-- **R12 — Per-project scaffold and deploy.** A user should be able to scaffold an operating structure and deploy assets to a chosen host. `[implemented]` — `galyarder scaffold` and `galyarder deploy --tool <name>`.
+- **R11 — Multiple install paths.** Users should be able to install via npm, via the skills registry, or from source. `[implemented]` — `npm install -g forge-anything`, `npx skills add`, and `git clone` + `./scripts/setup-cli.sh`.
+- **R12 — Per-project scaffold and deploy.** A user should be able to scaffold an operating structure and deploy assets to a chosen host. `[implemented]` — `forge scaffold` and `forge deploy --tool <name>`.
 - **R13 — Host integrations stay thin.** Each supported host should be a thin adapter over the canonical runtime, not a fork of it. `[partial]` — 12 integration surfaces exist under `integrations/`, and copies can drift from the source.
 
 ### Verification and release
