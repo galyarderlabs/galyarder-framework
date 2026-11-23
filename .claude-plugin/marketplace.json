@@ -1,8 +1,8 @@
 {
-    "description": "MCP tools + essential skills for AI agents to forge anything.",
+    "description": "Forge anything with AI agents.",
     "homepage": "https://galyarderlabs.github.io/forge-anything/",
     "metadata": {
-        "description": "Forge Anything: MCP tools + essential skills for AI agents, kept inspectable, testable, and human-directed.",
+        "description": "Forge anything with AI agents, kept inspectable, testable, and human-directed.",
         "version": "2.0.0"
     },
     "name": "forge-anything-marketplace",

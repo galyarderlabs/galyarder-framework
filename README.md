@@ -2,7 +2,7 @@
 
 ![Forge Anything](docs/assets/social-preview.png)
 
-MCP tools + essential skills for AI agents to forge anything — in your company, and in your life.
+Forge anything with AI agents.
 
 [![npm version](https://img.shields.io/npm/v/galyarder-framework.svg)](https://www.npmjs.com/package/galyarder-framework)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
