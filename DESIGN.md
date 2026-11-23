@@ -1,149 +1,105 @@
-# DESIGN.md — Galyarder Framework Design
+# DESIGN.md — Forge Anything Design
 
 ## Status
 
-This is the product-specific design guide for **Galyarder Framework**.
+This is the product-specific design guide for **Forge Anything**.
 
-For Labs-level canon, read:
-
-- [`docs/galyarder-labs/DESIGN.md`](./docs/galyarder-labs/DESIGN.md)
-- [`docs/galyarder-labs/BRAND.md`](./docs/galyarder-labs/BRAND.md)
-
-This file governs Framework documentation surfaces, developer-facing UI, generated assets, agent/skill/command directories, scaffolded department workspaces, command references, and workflow visualizations.
-
----
+The reference is the README banner, `docs/assets/social-preview.png` (1280x640). That image is the design source of truth: every color, type choice, and image rule below comes from it. There is no logo mark yet; the banner carries the visual identity for now. The old purple Galyarder "G" logo is deleted and must not be reintroduced.
 
 ## Design Role
 
-Framework is the **Intelligence Layer**.
+Forge Anything is the tool that lets an AI agent forge anything: the agent gets the tools that do the work, the skills to use them right, and a scaffold to start clean, so even a regular chatbot can add the MCP and forge anything.
 
 It should feel:
 
-- technical,
-- structured,
-- inspectable,
-- evidence-backed,
-- execution-oriented,
-- serious but not sterile,
-- powerful without fake complexity.
-
----
+- warm,
+- crafted,
+- calm,
+- human,
+- clear,
+- made, not generated.
 
 ## Surface Rules
 
-Framework surfaces must show:
+Forge Anything surfaces must show:
 
 - agents,
 - skills,
 - commands,
-- departments,
 - workflows,
-- blueprints,
-- tickets,
-- tests,
-- audits,
-- runtime proof,
-- distribution artifacts.
+- the five phases (Goal, Plan, Build, Verify, Ship),
+- tests and evidence,
+- distribution (where the loop ends).
 
-Do not make Framework look like:
+Do not make Forge Anything look like:
 
 - a prompt pack,
 - generic docs template,
 - neon hacker console,
-- vague Autonomous Goal Integration splash page,
+- vague splash page,
 - AI mascot gallery,
-- decorative bento grid without execution proof.
-
----
+- decorative bento grid without execution proof,
+- the old violet-on-black Galyarder Framework look.
 
 ## Visual System
 
-Use Labs design canon where relevant:
+The banner sets the system:
 
-- Dream for public landing/README hero assets,
-- Machine for developer docs, CLI flows, workflow diagrams, agent directories, and proof surfaces.
-
-Framework extension surfaces should use `agents/`, `skills/`, `commands/`, `personas/`, and `integrations/`. Scaffolded user workspaces may still use `docs/departments/*` as the project operating workspace surface. Do not design around legacy extension bundles such as `.marketplace/full/`.
-
-Framework should bias toward Machine:
-
-- neutral structure,
-- clear hierarchy,
-- readable tables,
-- command blocks,
-- file-path clarity,
-- proof-first diagrams,
-- restrained accents.
-
----
+- Background: warm cream, soft and light, not white and not dark.
+- Figures: matte stone/clay figures, rounded, off-white, small in the frame.
+- Motif: a forge (small stone furnace with fire) and an anvil. The forge is the making: heat, hammer, craft.
+- Composition: a long table, figures working (magnifying glass, laptop, anvil, glowing case), warm natural light, calm and uncluttered. One scene, not a collage.
+- No violet, no purple, no neon. No mascot. No logo mark on the banner.
 
 ## Color Rules
 
-Follow Labs law:
+Sampled from `docs/assets/social-preview.png`:
 
 ```text
-Brand colors are identity.
-Semantic colors are information.
-Surface colors are structure.
+Background cream:  #f0e2c9 (dominant), #eddfc6, #eadac0
+Text charcoal:     #1b1b19 (near-black, for titles and body text)
+Stone taupe:       #c1af9e (figures), #a79279 (shadowed stone)
+Forge tan:         #daa770 (table and furnace stone)
+Fire amber:        #e99e41 (the forge flame, the only hot accent)
+Shadow brown:      #95856d (vignette and deep shadow)
 ```
 
-Use violet/gold for:
+Rules:
 
-- brand identity,
-- install/launch moments,
-- public hero accents,
-- restrained Framework identity marks.
-
-Use semantic colors only for:
-
-- pass/fail,
-- warnings,
-- errors,
-- coverage,
-- runtime state,
-- audit severity.
-
----
+- Cream is the surface. Charcoal is the text. Taupe is the material.
+- Fire amber is the accent and it is used sparingly: the forge flame, a launch moment, a single highlight. It is never a background and never a gradient wash.
+- Do not reintroduce violet or purple. The old logo color is gone with the logo.
 
 ## Typography
 
-Use sans-serif for docs and UI.
-Use mono only for:
+From the banner:
 
-- commands,
-- code,
-- paths,
-- hashes,
-- logs,
-- config snippets.
+- Hero/title: serif, bold, dark charcoal. The banner title "Forge Anything" is a classic serif.
+- Subtitle/body: sans-serif, regular, dark charcoal. The banner subtitle "in your company, and in your life." is sans-serif.
+- Mono only for: commands, code, paths, hashes, logs, config snippets.
 
-Do not turn the whole product into a monospace wall.
-
----
+Do not turn the whole product into a monospace wall. Do not set body text in serif.
 
 ## Diagram Rules
 
-Good Framework diagrams show:
+Good Forge Anything diagrams show:
 
-- intent extraction,
-- planning path,
+- the five phases (Goal, Plan, Build, Verify, Ship),
 - agent delegation,
-- test gates,
-- audit/report output,
-- distribution loop,
+- test gates and evidence checks,
+- distribution (where the loop ends),
 - source-of-truth files.
 
 Reject diagrams that are only decorative node webs.
 
----
-
 ## Quality Gate
 
-Before shipping Framework UI/docs visuals, verify:
+Before shipping Forge Anything UI/docs visuals, verify:
 
-- Autonomous Goal Integration is expanded as Autonomous Goal Integration,
+- the palette matches the banner (warm cream, charcoal, taupe, amber fire only),
+- no violet, no purple, no neon,
 - execution proof is visible,
 - agent/skill/command structure is inspectable,
-- tests/audits are not hidden,
+- tests and evidence are not hidden,
 - public-facing visuals do not imply artificial general intelligence,
-- Labs identity is present without overwhelming developer clarity.
+- the banner is the reference, not a mood board.
