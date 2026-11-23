@@ -11,7 +11,7 @@ Forge anything with AI agents.
 ![Node.js 20+](https://img.shields.io/badge/Node.js-20%2B-green.svg)
 [![Sponsor](https://img.shields.io/badge/sponsor-support-ff69b4?logo=githubsponsors)](https://github.com/sponsors/galyarderlabs)
 
-Using an AI agent shouldn't be just generating code, and the agent shouldn't be confused. Forge Anything gives the agent tools that do the work — write code, run commands, generate images and video — plus the essential skills for how to use them, and a scaffold that starts a tidy repo. Even a regular chatbot can add the MCP and forge anything. It is not a kanban board, a prompt pack, or another AI agent. This is the right way to work: rules and a workflow, simple as that. The best tools and skills, unified in one place — in your company, and in your life.
+Using an AI agent shouldn't be just generating code, and the agent shouldn't be confused. Forge Anything gives the agent tools that do the work, the skills to use them right, and a scaffold to start clean — even a regular chatbot can add the MCP and forge anything. It is not a kanban board, a prompt pack, or another AI agent — this is the right way to work: rules and a workflow, simple as that, in your company, and in your life.
 
 </div>
 
