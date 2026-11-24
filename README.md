@@ -79,6 +79,7 @@ Step by step, including local install and other tools, is in [docs/QUICK_START.m
 - [Departments](docs/departments/): the departments and what each owns
 - [Agents](agents/): the personas that do the work
 - [Skills](skills/): the full skill list
+- [Skill registry](docs/skill-registry.md): the essential-skill standard (Galih's v13 research), with a [review](docs/skill-registry-review.md) against the current skills
 - [Commands](commands/): the shortcuts
 - [Roadmap](ROADMAP.md): what we are building next
 - [Changelog](CHANGELOG.md): what changed

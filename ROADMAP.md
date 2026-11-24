@@ -15,7 +15,7 @@ thread.
 Forge Anything is at version 3.0.2. The repo is
 `galyarderlabs/forge-anything`, licensed GPL-3.0-or-later.
 
-The repo currently holds 99 skills, 41 agents, and 24 commands. That is
+The repo currently holds 100 skill directories (89 individual skills + 11 bundles), 41 agents, and 24 commands. That is
 the inventory as it stands, not a target. The direction is to curate down
 to essential only. The scaffold already ships the curated set (38 skills,
 18 agents, all 24 commands); the full set is long-term curation work.
@@ -75,7 +75,9 @@ What is not there yet:
 
 - **Skills curation, long term.** Bring the full set down to essential
   only, after everything is tidy. The scaffold already ships the curated
-  set; the rest of the repo is the work.
+  set; the rest of the repo is the work. The standard is the Essential
+  Skill Registry (`docs/skill-registry.md`), Galih's v13 research, with a
+  review against the current skills in `docs/skill-registry-review.md`.
 - **CHANGELOG and release notes for 3.0.0 and 3.0.2.** The changelog
   stops at 2.0.0. It needs entries for the rebrand, the GPL-3.0 license,
   the Rust scaffold and CLI, the plugin surface, the Hermes hook, the

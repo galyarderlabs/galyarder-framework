@@ -62,7 +62,7 @@ The missing piece is not another coding agent or a prompt pack. It is the operat
 - **R6 - Skill quality review.** New or changed skills should be reviewable against a quality bar before merge. `[partial]` - `scripts/review-new-skills.sh` exists but is not wired into CI.
 - **R7 - Slash commands for common workflows.** Common workflows should have commands (`/tdd`, `/review`, `/release`, and others). `[implemented]` - `commands/`.
 - **R8 - Specialty agents with clear roles.** Specialist agents should be documented with role and scope. `[implemented]` - `agents/`.
-- **R9 - Curation to essential only.** The scaffold ships a curated essential skill set; the full repo is long-term curation work to bring down to essential only. `[in progress]` - see `AGENTS.md` and `ROADMAP.md`.
+- **R9 - Curation to essential only.** The scaffold ships a curated essential skill set; the full repo is long-term curation work to bring down to essential only. `[in progress]` - see `AGENTS.md` and `ROADMAP.md`. The standard is `docs/skill-registry.md` (Galih's v13 research); the review against the current skills is `docs/skill-registry-review.md`.
 
 ### Installation and distribution
 
