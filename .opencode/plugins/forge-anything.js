@@ -39,9 +39,15 @@ export const ForgeAnythingPlugin = async ({ client, directory }) => {
   ];
 
   const getBootstrapContent = () => {
-    // Bootstrap always comes from Executive department
-    const skillPath = path.join(repoRoot, 'Executive', 'skills', 'using-forge-anything', 'SKILL.md');
-    if (!fs.existsSync(skillPath)) return null;
+    // Bootstrap always comes from the using-forge-anything skill. In a
+    // scaffolded project it lives under the Executive department; in this
+    // repo (and in the test install) skills sit at the repo root.
+    const candidates = [
+      path.join(repoRoot, 'Executive', 'skills', 'using-forge-anything', 'SKILL.md'),
+      path.join(repoRoot, 'skills', 'using-forge-anything', 'SKILL.md'),
+    ];
+    const skillPath = candidates.find((p) => fs.existsSync(p));
+    if (!skillPath) return null;
 
     const fullContent = fs.readFileSync(skillPath, 'utf8');
     const { content } = extractAndStripFrontmatter(fullContent);

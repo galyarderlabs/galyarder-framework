@@ -44,7 +44,7 @@ fi
 
 # Test 3: Check using-forge-anything skill exists (critical for bootstrap)
 echo "Test 3: Checking using-forge-anything skill (required for bootstrap)..."
-if [ -f "$FORGE_SKILLS_DIR/using-SKILL.md" ]; then
+if [ -f "$FORGE_SKILLS_DIR/using-forge-anything/SKILL.md" ]; then
     echo "  [PASS] using-forge-anything skill exists"
 else
     echo "  [FAIL] using-forge-anything skill not found (required for bootstrap)"
