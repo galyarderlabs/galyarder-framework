@@ -122,7 +122,7 @@ fn scaffold_produces_a_ready_repo() {
     let commands: Vec<_> = fs::read_dir(target.join("commands"))
         .expect("read commands")
         .collect();
-    assert_eq!(commands.len(), 24, "all 24 commands copied");
+    assert_eq!(commands.len(), 25, "all 25 commands copied");
 
     // Docs structure + departments.
     for d in ["specs", "plans", "reports", "templates", "design"] {

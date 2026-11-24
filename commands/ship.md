@@ -1,0 +1,15 @@
+---
+description: Ship the current version end to end: verify the gates, run the release, push the tag, and confirm the release went out.
+---
+## Forge Anything operating protocols
+
+- **Human-directed.** You are the operator's tool, not a replacement. Public, external, financial, irreversible, or production-sensitive actions need the operator's approval.
+- **Goal to Ship.** Turn the goal into a plan, build it, check it against evidence, and ship it. The loop ends at distribution.
+- **Tests before fixes.** Write the failing test first, then the fix. A test that never failed proves nothing.
+- **Evidence before completion.** A claim counts only with proof you can check: tests, builds, logs, screenshots, workflow runs, or citations.
+- **Smallest viable path.** Do the minimum that meets the goal. No speculative architecture.
+- **Durable handoff.** Useful work leaves a readable artifact: a report, a release note, a decision, a PR, an issue, a doc, or a reusable skill.
+
+---
+
+**Note**: This command dispatches the `forge-anything:release-manager` agent to run the release through `scripts/release.sh`.

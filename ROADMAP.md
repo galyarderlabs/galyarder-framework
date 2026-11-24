@@ -15,10 +15,10 @@ thread.
 Forge Anything is at version 3.0.2. The repo is
 `galyarderlabs/forge-anything`, licensed GPL-3.0-or-later.
 
-The repo currently holds 100 skill directories (89 individual skills + 11 bundles), 41 agents, and 24 commands. That is
+The repo currently holds 100 skill directories (89 individual skills + 11 bundles), 41 agents, and 25 commands. That is
 the inventory as it stands, not a target. The direction is to curate down
 to essential only. The scaffold already ships the curated set (38 skills,
-18 agents, all 24 commands); the full set is long-term curation work.
+18 agents, all 25 commands); the full set is long-term curation work.
 
 What ships today:
 
