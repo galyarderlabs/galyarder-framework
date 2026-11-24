@@ -14,7 +14,7 @@ The loop is Goal to Ship:
 4. **Verify**: every claim is checked against evidence before it counts.
 5. **Ship**: the work goes out. Distribution is where the loop ends.
 
-The full workflow is in `docs/WORKFLOW.md`.
+The full workflow is in `WORKFLOW.md`.
 
 ## What the system is made of
 - **Skills**: the rules the agents follow. The scaffold ships a curated essential set; the full repo holds the wider set, which is long-term curation work to bring down to essential only.

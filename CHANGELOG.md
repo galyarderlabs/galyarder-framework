@@ -2,9 +2,27 @@
 
 All notable changes to Forge Anything will be documented in this file.
 
+## [3.0.2] - 2026-11-23
+### Changed
+- **Distribution is plugin-only.** The package-registry distribution is dropped. Install the prebuilt `forge` CLI with the curl `install.sh` script, build it from source with cargo, or install just the skills with `npx skills add galyarderlabs/forge-anything`.
+- **Core docs rewritten to the current direction.** `AGENTS.md`, `WORKFLOW.md`, `ROADMAP.md`, and `docs/comparison.md` now describe Forge Anything as one system for AI agents, for work and for life, with the Goal to Ship loop ending at distribution.
+
+## [3.0.1] - 2026-11-23
+### Changed
+- **Version bump.** Release bookkeeping while distribution moved from the package registry to prebuilt binaries.
+
+## [3.0.0] - 2026-11-23
+### Changed
+- **Rebrand: Galyarder Framework becomes Forge Anything.** New name, new description ("Forge anything with AI agents."), and a matching logo and design direction.
+- **License: MIT becomes GPL-3.0-or-later.**
+- **Rust `forge` CLI replaces the old JavaScript CLI.** The CLI is written in Rust (`crates/forge`) with `scaffold`, `mcp`, `smoke`, `version`, and `help` subcommands.
+- **Rust scaffold replaces the shell scaffold.** `forge scaffold` (`crates/forge-scaffold`) drops a tidy project structure into a folder.
+- **Plugin and MCP distribution.** Everything installs through the harness plugin (Claude Code, OMP/Pi, Codex, Cursor, Antigravity, OpenCode, Copilot CLI, Hermes), and `forge mcp` serves the MCP server over stdio, local only, no network.
+- **Docs site removed.** The generated docs site is gone; the docs stay in the repo and the website comes back later as a plain landing page.
+
 ## [2.0.0] - 2026-06-02
 ### Changed
-- **Unified Agentic Company Standard**: Completed a comprehensive, global repository alignment of ~107k additions and ~15k deletions, transitioning all components to the "Agentic Company Framework" and "Intelligence Layer" paradigms.
+- **Unified agentic company Standard**: Completed a comprehensive, global repository alignment of ~107k additions and ~15k deletions, transitioning all components to the "agentic company Framework" and "project operating workspace" paradigms.
 - **Enterprise-Grade Persona Realignment**: Fully audited and refactored executive configurations (`forge-ceo`, `forge-cto`, `forge-cmo`, `forge-cfo-coo`) under `personas/` and `.cursor/rules/` to enforce clinical, professional, and deterministic tone protocols.
 - **Verification Gates Integration**: Injected strict "Evidence Gates" across all keahlian/skill directories (`skills/*/SKILL.md`), requiring local automated testing (lint, build, smoke tests) prior to human operator handoff.
 - **NPM Package Deployment Automation**: Created a secure, automated CI/CD deployment workflow (`.github/workflows/publish-npm.yml`) to publish semantic packages directly to the public NPM registry with provenance.

@@ -12,7 +12,7 @@ Using an AI agent should not be just generating code, and the agent should not b
 4. **Verify**: every claim is checked against evidence before it counts.
 5. **Ship**: the work goes out. Distribution is where the loop ends.
 
-The full workflow is in `docs/WORKFLOW.md`.
+The full workflow is in `WORKFLOW.md`.
 
 ## What is in this repo
 

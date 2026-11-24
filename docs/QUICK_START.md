@@ -64,10 +64,10 @@ Install Forge Anything into your harness through its own plugin manager, not thr
 ## How the pieces connect
 
 1. **Forge Anything** provides the agents, skills, commands, and workflow.
-2. **The `forge` CLI** scaffolds the project structure (`forge scaffold`), imports company packages (`forge company import`), and serves the MCP server (`forge mcp`).
+2. **The `forge` CLI** scaffolds the project structure (`forge scaffold`), imports company packages ([`forge company import`](company-import.md)), and serves the MCP server (`forge mcp`).
 3. **Your harness plugin** loads the skills, commands, and MCP server into the agent you already use.
 
-Work follows the Goal to Ship loop: goal, plan, build, verify, ship. See [docs/WORKFLOW.md](WORKFLOW.md).
+Work follows the Goal to Ship loop: goal, plan, build, verify, ship. See [WORKFLOW.md](../WORKFLOW.md).
 
 ## Troubleshooting
 
