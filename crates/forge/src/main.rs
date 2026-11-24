@@ -6,13 +6,16 @@
 //! forge <command> [options]
 //!
 //! scaffold  Initialize a new Forge Anything project (native Rust)
+//! company   Import an agent-company package into a project
 //! mcp       Run the Forge Anything MCP server on stdio
 //! smoke     Run system integrity checks
 //! version   Show current Forge Anything version
 //! help      Show this help message
 //! ```
 //!
-//! `scaffold` runs the native Rust scaffold (`forge-scaffold`). `mcp`
+//! `scaffold` runs the native Rust scaffold (`forge-scaffold`). `company
+//! import` copies an agent-company package (built by the company-creator
+//! skill) into `company/<slug>/` in a project. `mcp`
 //! runs the MCP server (tools: list_skills, read_skill, read_agent,
 //! read_command, scaffold) over JSON-RPC 2.0 on stdin/stdout. `smoke`
 //! still runs the repo's `scripts/smoke.sh` with the arguments passed
@@ -23,6 +26,7 @@
 //! The version comes from the source checkout's `package.json`, falling
 //! back to the crate version.
 
+mod company;
 mod delegate;
 mod json;
 mod mcp;
@@ -66,6 +70,7 @@ fn run() -> Result<ExitCode, (u8, String)> {
             Ok(ExitCode::from(0))
         }
         "scaffold" => run_scaffold(&rest),
+        "company" => company::run(&rest),
         "mcp" => Ok(mcp::run(&rest)),
         "smoke" => run_script_command(&command, &rest),
         _ => {
@@ -195,6 +200,7 @@ fn help_text() -> String {
          \n\
          Commands:\n\
          \x20 scaffold  Initialize a new Forge Anything project\n\
+         \x20 company   Import an agent-company package into a project\n\
          \x20 mcp       Run the Forge Anything MCP server on stdio\n\
          \x20 smoke     Run system integrity checks\n\
          \x20 version   Show current Forge Anything version\n\
@@ -202,6 +208,7 @@ fn help_text() -> String {
          \n\
          Examples:\n\
          \x20 forge scaffold\n\
+         \x20 forge company import --from ./my-company\n\
          \x20 forge mcp\n\
          \x20 forge smoke\n\
          \x20   \n"

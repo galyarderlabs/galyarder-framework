@@ -23,8 +23,9 @@ to essential only. The scaffold already ships the curated set (38 skills,
 What ships today:
 
 - **The `forge` CLI** (`crates/forge`, Rust). Subcommands: `scaffold`,
-  `mcp`, `smoke`, `version`, `help`. `forge scaffold` drops a tidy repo
-  into a folder. `forge mcp` runs the MCP server.
+  `company`, `mcp`, `smoke`, `version`, `help`. `forge scaffold` drops a tidy repo
+  into a folder. `forge company import` copies an agent-company package into
+  a project. `forge mcp` runs the MCP server.
 - **The MCP** (`forge mcp`). Five tools: `list_skills`, `read_skill`,
   `read_agent`, `read_command`, `scaffold`. Stdio, local only, no
   network. It is the distribution: install the MCP and a chatbot or an

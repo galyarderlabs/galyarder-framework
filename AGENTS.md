@@ -19,7 +19,7 @@ The full workflow is in `docs/WORKFLOW.md`.
 - `agents/`: the agents that do the work. The Forge agents coordinate the work, and each department has its lead agents.
 - `skills/`: the rules the agents follow. The scaffold ships a curated essential set; the full repo holds the wider set, which is long-term curation work to bring down to essential only.
 - `commands/`: the shortcuts.
-- `crates/forge`: the `forge` CLI, written in Rust. Subcommands: `scaffold`, `mcp`, `smoke`, `version`, `help`. `forge scaffold` drops a tidy repo into a folder. `forge mcp` runs the MCP server.
+- `crates/forge`: the `forge` CLI, written in Rust. Subcommands: `scaffold`, `company`, `mcp`, `smoke`, `version`, `help`. `forge scaffold` drops a tidy repo into a folder. `forge company import` copies an agent-company package into `company/<slug>/` in a project. `forge mcp` runs the MCP server.
 - The MCP (`forge mcp`): five tools (`list_skills`, `read_skill`, `read_agent`, `read_command`, `scaffold`), over stdio, local only, no network. It is the distribution: install the MCP and a chatbot or an agent gets the tools plus the workflow.
 - The harness plugins: Claude Code, OMP/Pi, Codex, Cursor, Antigravity, OpenCode, Copilot CLI, and Hermes. Everything installs via plugin, no manual setup. See `docs/INTEGRATION.md`.
 

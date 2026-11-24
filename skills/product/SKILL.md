@@ -27,7 +27,7 @@ Create agent company packages that conform to the Agent Companies specification.
 
 Spec references:
 
-- Normative spec: `docs/companies/companies-spec.md` (read this before generating files)
+- Normative spec: `references/companies-spec.md` (read this before generating files)
 - Web spec: https://agentcompanies.io/specification
 - Protocol site: https://agentcompanies.io/
 
@@ -105,7 +105,7 @@ For from-repo companies, infer the pattern from the repo's structure. If skills 
 Before generating any files, read the normative spec:
 
 ```
-docs/companies/companies-spec.md
+references/companies-spec.md
 ```
 
 Also read the quick reference: [references/companies-spec.md](references/companies-spec.md)
@@ -180,7 +180,7 @@ Ask the user where to write the package. Common options:
 - Org chart as a markdown list or table showing agents, titles, reporting structure, and skills
 - Brief description of each agent's role
 - Citations and references: link to the source repo (if from-repo), link to the Agent Companies spec (https://agentcompanies.io/specification), and link to Forge Anything (https://github.com/galyarderlabs/forge-anything)
-- A "Getting Started" section explaining how to import: `forge company import --from <path>`
+- A "Getting Started" section explaining how to import: `forge company import --from <path> [dir]`, which copies the package into `company/<slug>/` inside the target directory (no dir means the current directory). Add `--force` to overwrite an existing import.
 
 **LICENSE**  include a LICENSE file. The copyright holder is the user creating the company, not the upstream repo author (they made the skills, the user is making the company). Use the same license type as the source repo (if from-repo) or ask the user (if from-scratch). Default to MIT if unclear.
 
@@ -208,7 +208,6 @@ Forge Anything's supported adapter types (these are the ONLY valid values):
 - `opencode_local`  OpenCode CLI
 - `pi_local`  Pi CLI
 - `cursor`  Cursor
-- `gemini_local`  Gemini CLI
 - `openclaw_gateway`  OpenClaw gateway
 
 Only set an adapter when:

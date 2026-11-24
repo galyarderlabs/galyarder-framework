@@ -181,7 +181,7 @@ Ask the user where to write the package. Common options:
 - Org chart as a markdown list or table showing agents, titles, reporting structure, and skills
 - Brief description of each agent's role
 - Citations and references: link to the source repo (if from-repo), link to the Agent Companies spec (https://agentcompanies.io/specification), and link to Forge Anything (https://github.com/galyarderlabs/forge-anything)
-- A "Getting Started" section explaining how to import: `forge company import --from <path>`
+- A "Getting Started" section explaining how to import: `forge company import --from <path> [dir]`, which copies the package into `company/<slug>/` inside the target directory (no dir means the current directory). Add `--force` to overwrite an existing import.
 
 **LICENSE**  include a LICENSE file. The copyright holder is the user creating the company, not the upstream repo author (they made the skills, the user is making the company). Use the same license type as the source repo (if from-repo) or ask the user (if from-scratch). Default to MIT if unclear.
 
