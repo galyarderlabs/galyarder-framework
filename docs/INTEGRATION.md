@@ -35,6 +35,16 @@ For cloud-native orchestrators, use the standard plugin protocol:
    /plugin install engineering-dept@galyarderlabs-marketplace
    ```
 
+### Hermes Agent
+
+Install Forge Anything as a Hermes plugin from this repository:
+
+```bash
+hermes plugins install galyarderlabs/forge-anything --enable
+```
+
+Restart any active Hermes sessions after installing. The plugin registers all 99 skills with Hermes' native skill loader and injects the `using-forge-anything` bootstrap on the first turn via the `pre_llm_call` hook. Note: Hermes has no post-compaction hook, so a very long session that compacts over its first turn loses the bootstrap — start a fresh session if skills stop triggering.
+
 ## Command Silo Structure (Universal Architecture)
 
 The repository is organized into 8 departments. All assets are mapped to a flat structure that every supported harness can read:
