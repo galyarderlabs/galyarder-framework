@@ -197,6 +197,6 @@ Next steps:
   forge scaffold      Initialize a new Forge Anything project
   forge --version     Show the installed version
 
-Skills for your AI harness are installed separately (npm is skills-only):
-  npx skills add galyarderlabs/forge-anything --skill full
+Skills for your AI harness are installed separately:
+  npx skills add galyarderlabs/forge-anything
 EOF
