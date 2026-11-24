@@ -211,7 +211,7 @@ Calculates comprehensive ROI metrics with industry Standarding:
 | Guide | Location | Purpose |
 |-------|----------|---------|
 | Attribution Models Guide | `references/attribution-models-guide.md` | Deep dive into 5 models with formulas, pros/cons, selection criteria |
-| Campaign Metrics Standards | `references/campaign-metrics-Standards.md` | Industry Standards by channel and vertical for CTR, CPC, CPM, CPA, ROAS |
+| Campaign Metrics Standards | `references/campaign-metrics-benchmarks.md` | Industry Standards by channel and vertical for CTR, CPC, CPM, CPA, ROAS |
 | Funnel Optimization Framework | `references/funnel-optimization-framework.md` | Stage-by-stage optimization strategies, common bottlenecks, best practices |
 
 ---
