@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-# Forge Anything RTK Wrapper
-REAL_RTK="/home/linuxbrew/.linuxbrew/bin/rtk"
-if [ -f "$REAL_RTK" ]; then
-    "$REAL_RTK" "$@"
-else
-    # Fallback to whatever is in PATH
-    rtk "$@"
-fi
