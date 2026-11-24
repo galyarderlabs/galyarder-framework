@@ -19,8 +19,6 @@ forge <command> [options]
 cargo install --path crates/forge
 ```
 
-Or build it and link the release binary with `./scripts/setup-cli.sh`.
-
 ## Scaffold
 
 `scaffold` runs the native Rust scaffold (`forge-scaffold` crate). No dir
