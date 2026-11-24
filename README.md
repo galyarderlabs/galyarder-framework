@@ -18,16 +18,16 @@ Using an AI agent shouldn't be just generating code, and the agent shouldn't be 
 
 ## Why Forge Anything
 
-Left to itself, an AI agent takes the shortest path. It generates code, skips the spec, skips the tests, skips the review, and never reaches distribution. It gets confused about what to do next, because nothing tells it what comes after the code. The work ends at a draft, not at a shipped thing.
+Left to itself, an AI agent takes the shortest path and stops at a draft. It has no rules for what comes after the code, no clean place to start, no way to reach the tools and people it needs, and no way to ship. It gets confused about what to do next, and the work ends at a draft, not at a shipped thing.
 
-Forge Anything gives the agent opinionated rules and a workflow that ends at distribution. The agent gets the right rules for the work, the department to route it to, and the loop that carries it from a goal to a shipped result. It covers the whole company and life, not just code: product, growth, security, infrastructure, legal and finance, and knowledge, alongside engineering.
+Forge Anything is the whole system, not one piece. The rules and the workflow, the scaffold to start clean, the CLI to build, serve, and check, the MCP to carry it to any agent or chatbot, and the plugins to put it in the harness the agent already uses. One system, from a goal to a shipped result, in the company and in life.
 
-The workflows bake in the practices senior engineers actually use. Test-driven development means tests come before code. Systematic debugging means tracing the root cause before changing anything. Verification before completion means a claim counts only with proof you can check. Requesting code review means the work is reviewed before it merges, and release walks it through shipping. These are not abstract principles. They are the step-by-step workflows the agent follows, and the loop ends at distribution, so the work ships instead of sitting as a draft.
+It covers the whole company and life, not just code: product, growth, security, infrastructure, legal and finance, and knowledge, alongside engineering. The pieces fit together and the loop ends at distribution, so the work ships instead of sitting as a draft.
 
 ## How it works
 
 1. **Goal**: say what you want, in plain words.
-2. **Plan**: the work is routed to the right department and planned.
+2. **Plan**: the work gets a plan, with the rules and the workflow that fit it.
 3. **Build**: the agent does the work, with tests before anything ships.
 4. **Verify**: every claim is checked against evidence before it counts.
 5. **Ship**: the work goes out. Distribution is where the loop ends.
