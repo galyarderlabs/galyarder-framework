@@ -1,53 +1,117 @@
-# Forge Anything — Roadmap
+# Forge Anything: Roadmap
 
-Forge Anything is the Intelligence Layer of the Galyarder ecosystem: a set of agents, skills, commands, review gates, and operating protocols that turn a founder's intent into structured, reviewable work. It is for solo founders and small teams who run several AI agents across engineering, product, growth, finance, security, and docs, and who need that work to be routed, verified, and written down instead of lost in a chat thread. The problem it addresses is the gap between a goal and a trustworthy artifact: most agent setups stop at chat, and the work that follows has no durable scope, no routing, no review gate, and no audit trail.
+Forge anything with AI agents.
+
+Using an AI agent should not be just generating code, and the agent should
+not be confused. Forge Anything gives the agent the right rules and the
+workflow to do the work the right way, and the loop ends at distribution.
+It is for solo founders and small teams who run AI agents across
+engineering, product, growth, finance, security, and docs, and who need
+that work to be routed, verified, and shipped instead of lost in a chat
+thread.
 
 ## Where it is now
 
-The framework ships a large, real surface. The canonical runtime lives at the repo root in `agents/` (45 agents), `skills/` (149 skills), `commands/` (25 commands), and `integrations/` (12 host surfaces: Claude Code, Cursor, Gemini CLI, Codex, OpenCode, Windsurf, KiloCode, Augment, Antigravity, OpenClaw, Hermes, and Forge Agent). A Rust CLI (`crates/forge`, binary `forge`) handles `scaffold`, `deploy`, `smoke`, and `convert`. The docs site (mkdocs-material) is generated into `docs/`, and `skills.json` lists the skill manifest.
+Forge Anything is at version 3.0.2. The repo is
+`galyarderlabs/forge-anything`, licensed GPL-3.0-or-later.
 
-Parts of this are still thin or inconsistent:
+The repo currently holds 99 skills, 41 agents, and 25 commands. That is
+the inventory as it stands, not a target. The direction is to curate down
+to essential only. The scaffold already ships the curated set (38 skills,
+18 agents, all 25 commands); the full set is long-term curation work.
 
-- **Version numbers disagree.** `package.json` and `gemini-extension.json` both say `1.8.1`, `CHANGELOG.md` opens at `2.0.0`, the newest git tag is `v2.0.0`, but `v2.0.0` is still a **draft release** — the newest published release is `v1.9.9`.
-- **There is no PR test gate.** The only workflows are `deploy-docs.yml` and `publish-npm.yml`. The audit-grade `scripts/smoke.sh` exists but does not run on pull requests.
-- **The contribution surface is missing.** There is no `CONTRIBUTING.md`, no issue or PR templates, and no in-repo roadmap or PRD. This file is the first.
-- **The PR queue is mostly automated.** 36 pull requests are open, nearly all from the Palette/Bolt/Sentinel/Chronos bots, and they are not being consolidated into release tracks.
-- **Generated copies drift from source.** `docs/skills/` and `integrations/*` mirror the canonical `skills/`, so a change in one place can leave the others stale.
-- **Windows checkouts can fail.** 278 tracked files under `docs/departments/Knowledge/World-Map/` contain colons in their names, which is illegal on NTFS. One of these is tracked as issue #198.
-- **The extension manifest breaks the repo's own language rules.** `gemini-extension.json` describes the project as *"Humans 3.0 Protocol … self-evolving digital enterprises"*, wording that `AGENTS.md` explicitly rejects.
+What ships today:
+
+- **The `forge` CLI** (`crates/forge`, Rust). Subcommands: `scaffold`,
+  `mcp`, `smoke`, `version`, `help`. `forge scaffold` drops a tidy repo
+  into a folder. `forge mcp` runs the MCP server.
+- **The MCP** (`forge mcp`). Five tools: `list_skills`, `read_skill`,
+  `read_agent`, `read_command`, `scaffold`. Stdio, local only, no
+  network. It is the distribution: install the MCP and a chatbot or an
+  agent gets the tools plus the workflow.
+- **The harness plugins.** Native plugins for Claude Code, OMP/Pi,
+  Codex, Cursor, Antigravity, OpenCode, Copilot CLI, and Hermes.
+  Everything installs via plugin, no manual setup. See
+  `docs/INTEGRATION.md`.
+- **The install script.** `install.sh` downloads the prebuilt `forge`
+  binary from GitHub Releases and verifies its SHA256 checksum.
+- **Skills via npm and skills.sh.** `npx skills add
+  galyarderlabs/forge-anything` installs the skills. The npm package is
+  skills-only; the CLI is not in npm.
+- **CI.** Smoke test, Rust (fmt, clippy, build, test), repo hygiene, and
+  CodeQL run on pushes to main.
+
+What is not there yet:
+
+- **No release ships the prebuilt `forge` binary.** GitHub release
+  v3.0.0 exists, but it predates the release workflow and ships no
+  binary. The first release that ships the binary needs a version tag
+  push.
+- **No docs site.** The old docs site was removed; the old site URL is
+  404. The docs live in `docs/` in the repo. A plain landing page is
+  future work, not live.
+- **CHANGELOG.md is stale.** It stops at 2.0.0 and does not cover the
+  rebrand, the license change, or anything since.
 
 ## Now
 
-- **Make the version story single-source.** `package.json`, `gemini-extension.json`, `CHANGELOG.md`, git tags, and GitHub releases should agree, and one of them should be the authority. Today they diverge, which makes every install instruction uncertain. The draft `v2.0.0` release also needs a decision: publish it or retract it.
-- **Run the smoke test on every pull request.** `scripts/smoke.sh` already checks canonical runtime integrity and manifest parity. Wiring it into CI turns a manual habit into an enforced gate.
-- **Add a contribution guide.** A `CONTRIBUTING.md` that explains the canonical runtime layout, how to add a skill, and what proof a PR needs lowers the cost of outside help.
-- **Consolidate the open PR backlog.** Group the open bot PRs into a small number of reviewable tracks, merge what holds up, and close what does not. A 36-item queue with no triage hides real work.
-- **Fix Windows-unsafe paths.** Resolve the colon-containing filenames (278 of them; issue #198 reports the class) and add a guard so new ones cannot land.
-- **Correct the extension manifest copy.** Rewrite the `gemini-extension.json` description so it matches the terminology rules the rest of the repo already follows.
+- **Cut the first release with prebuilt binaries.** Push a version tag,
+  which triggers the release workflow to build the `forge` binary for
+  Linux, macOS, and Windows and attach it to a GitHub Release with
+  SHA256SUMS. This is the live proof that the curl install path works.
+- **Build the plain landing page.** A simple page that says what Forge
+  Anything is and how to install it. Not a docs site; that stays
+  removed.
+- **Verify the three install references that are not yet proven against
+  a live install.** OMP: whether the install ref wants the short name
+  `forge-anything` or the scoped name `@galyarderlabs/forge-anything`.
+  Copilot CLI: whether the marketplace name matches Claude Code.
+  Cursor: whether `forge-anything` is listed in the Cursor plugin
+  marketplace.
 
 ## Next
 
-- **Add a worked end-to-end example.** One mission shown from goal to plan, issue, implementation, test, audit, and release artifact. The README names this as a next step; it is the clearest way to prove the protocol is more than prose.
-- **Reconcile the `personas/` reference.** `AGENTS.md`, the changelog, and the v2.0.0 release notes describe `personas/` as canonical runtime, but the directory does not exist at the repo root. Either restore it or correct the references.
-- **Guard manifest and generated-surface parity in CI.** `skills.json`, `docs/skills/`, and `integrations/*` should be checked against `skills/` so drift is caught before merge.
-- **Add issue and PR templates.** A short template per type keeps new reports and contributions in the format the maintainers already use.
-- **Sharpen the department bundles.** Make `full`, `engineering`, `growth`, and the other bundles clearly describe what they pull, so `npx skills add` users know what they are getting.
+- **Skills curation, long term.** Bring the full set down to essential
+  only, after everything is tidy. The scaffold already ships the curated
+  set; the rest of the repo is the work.
+- **CHANGELOG and release notes for 3.0.0 and 3.0.2.** The changelog
+  stops at 2.0.0. It needs entries for the rebrand, the GPL-3.0 license,
+  the Rust scaffold and CLI, the plugin surface, the Hermes hook, the
+  integrations removal, and the distribution plus MCP build.
+- **Decide the leftover manual installer scripts.** `scripts/antigravity-install.sh`,
+  `scripts/openclaw-install.sh`, and `scripts/codex-install.bat` still
+  exist. They install skills by copying files, which the plugins already
+  do. Delete them or keep them; that is a call to make.
+- **Open issues.** #205 (a worked end-to-end mission example), #206
+  (the stale directory reference; the references are removed by
+  the AGENTS.md rewrite, so this can close once that lands), #207 (guard
+  manifest and generated-surface parity in CI), #19 (listing in
+  awesome-codex-plugins).
 
 ## Later
 
-- **Turn the evidence gates into checks, not instructions.** The v2.0.0 notes say every skill now requires local verification before handoff. The longer goal is to make that verifiable rather than aspirational, where a host can run it.
-- **Connect the knowledge graph to routing.** The graph engine already emits nodes and edges; the next step is letting routing read that structure so agents choose paths from real project shape.
-- **Broaden the protocol beyond coding.** The workflow is written for the whole company, not just engineering. Real examples in growth, finance, and legal would show whether that holds up.
-- **Keep the host surface honest.** As more hosts are added, the shared operating logic should stay in one place and each integration should stay a thin adapter.
+- **The MCP tool set grows toward the full coding-agent tool set.** The
+  MCP today has five tools. The direction, from the start, is for it to
+  carry the tools an agent needs to forge anything: file and code work,
+  system access, web, media, and the workflow itself. There is no fixed
+  feature list beyond that; the tool set grows as the need is proven.
 
 ## Not planned
 
-- **No hosted cloud service.** The framework is a local, inspectable set of files. There is no plan to turn it into a managed SaaS.
-- **No autonomous execution without approval.** Human command is a core principle. Public, financial, irreversible, or production-sensitive actions keep a human gate.
-- **No model training or fine-tuning.** This layer routes and governs work; it does not train models.
-- **No closed or source-available license.** The project is GPL-3.0-or-later and stays that way.
-- **No replacement for a project tracker.** The framework routes and verifies work; it is not a kanban board or a PM tool.
+- **No hosted cloud service.** Forge Anything is local, inspectable
+  files and a local binary. There is no plan to turn it into a managed
+  SaaS.
+- **No autonomous execution without approval.** Human command is a core
+  principle. Public, financial, irreversible, or production-sensitive
+  actions keep a human gate.
+- **No model training or fine-tuning.** This layer routes and governs
+  work; it does not train models.
+- **No license change.** The project is GPL-3.0-or-later and stays that
+  way.
 
 ## How to follow along
 
-Read the docs site at https://galyarderlabs.github.io/forge-anything/ and the `docs/` directory in the repo. Watch the pull requests and releases on GitHub for what is landing. Open an issue for a concrete bug or a scoped proposal, and send a pull request against `main`. Because the project is small and early, a clear, well-scoped issue is the fastest way to get a change reviewed.
+Read the README and the `docs/` directory in the repo. Watch the issues
+and releases on GitHub for what is landing. Open an issue for a concrete
+bug or a scoped proposal, and send a pull request against `main`. A clear,
+well-scoped issue is the fastest way to get a change reviewed.
