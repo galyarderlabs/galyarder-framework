@@ -2,7 +2,7 @@
     "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
     "author": {
         "name": "Galyarder Labs",
-        "url": "https://galyarderlabs.app"
+        "url": "https://galyarderlabs.com"
     },
     "description": "Forge anything with AI agents.",
     "homepage": "https://github.com/galyarderlabs/forge-anything",
