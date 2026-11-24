@@ -1,6 +1,6 @@
 {
     "description": "Forge anything with AI agents.",
-    "homepage": "https://galyarderlabs.github.io/forge-anything/",
+    "homepage": "https://github.com/galyarderlabs/forge-anything",
     "metadata": {
         "description": "Forge anything with AI agents, kept inspectable, testable, and human-directed.",
         "version": "3.0.2"

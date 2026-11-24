@@ -120,13 +120,13 @@ pub const DEPARTMENTS: &[&str] = &[
 /// Mirrors the shell scaffold's name-pattern mapping, made explicit.
 pub fn audit_template_for(department: &str) -> Option<&'static str> {
     match department {
-        "Executive" => Some("Forge-Anything Founder Office Audit.md"),
+        "Executive" => Some("Forge-Anything Executive Audit.md"),
         "Product" => Some("Forge-Anything Product Audit.md"),
         "Engineering" => Some("Forge-Anything Engineering Audit.md"),
         "Creative" => Some("Forge-Anything Creative Audit.md"),
         "Growth" => Some("Forge-Anything Growth Audit.md"),
         "Security" => Some("Forge-Anything Security Audit.md"),
-        "Infrastructure" => Some("Forge-Anything Operations Audit.md"),
+        "Infrastructure" => Some("Forge-Anything Infrastructure Audit.md"),
         "Finance" => Some("Forge-Anything Finance Audit.md"),
         "Legal" => Some("Forge-Anything Legal Audit.md"),
         "Knowledge" => Some("Forge-Anything Knowledge Audit.md"),
