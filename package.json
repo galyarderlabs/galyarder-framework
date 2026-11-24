@@ -23,7 +23,8 @@
     "cursor",
     "opencode",
     "hermes",
-    "rust"
+    "rust",
+    "pi-package"
   ],
   "author": "Galyarder Labs",
   "license": "GPL-3.0-or-later",

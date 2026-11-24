@@ -1,0 +1,12 @@
+{
+  "files": [
+    { "path": "package.json", "field": "version" },
+    { "path": "plugin.json", "field": "version" },
+    { "path": ".claude-plugin/plugin.json", "field": "version" },
+    { "path": ".codex-plugin/plugin.json", "field": "version" },
+    { "path": ".antigravity-plugin/plugin.json", "field": "version" },
+    { "path": ".claude-plugin/marketplace.json", "field": "metadata.version" },
+    { "path": ".claude-plugin/marketplace.json", "field": "plugins.0.version" }
+  ],
+  "audit": { "exclude": [] }
+}

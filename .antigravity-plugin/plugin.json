@@ -15,6 +15,7 @@
         "agents"
     ],
     "license": "GPL-3.0-or-later",
+    "logo": "assets/antigravity-logo.png",
     "name": "forge-anything",
     "repository": "https://github.com/galyarderlabs/forge-anything",
     "suggestedPrompts": [
