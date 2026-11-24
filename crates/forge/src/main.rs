@@ -6,20 +6,16 @@
 //! forge <command> [options]
 //!
 //! scaffold  Initialize a new Forge Anything project (native Rust)
-//! deploy    Deploy agents to your IDE or global environment
 //! smoke     Run system integrity checks
-//! convert   Run conversion engine for different AI platforms
-//! sync      Synchronize skills with your local environment
 //! version   Show current Forge Anything version
 //! help      Show this help message
 //! ```
 //!
-//! `scaffold` runs the native Rust scaffold (`forge-scaffold`). The other
-//! commands still run the repo's scripts (`scripts/install.sh`,
-//! `scripts/smoke.sh`, `scripts/convert.sh`, `scripts/sync-codex-skills.py`)
-//! with the arguments passed through, and the CLI exits with the script's
-//! exit code. Reimplementing those in Rust is the follow-up; the CLI
-//! surface is Rust now.
+//! `scaffold` runs the native Rust scaffold (`forge-scaffold`). `smoke`
+//! still runs the repo's `scripts/smoke.sh` with the arguments passed
+//! through, and the CLI exits with the script's exit code.
+//! Installation is via each harness's native plugin manifest, not through
+//! this CLI.
 //!
 //! The version comes from the source checkout's `package.json`, falling
 //! back to the crate version.
@@ -65,7 +61,7 @@ fn run() -> Result<ExitCode, (u8, String)> {
             Ok(ExitCode::from(0))
         }
         "scaffold" => run_scaffold(&rest),
-        "deploy" | "smoke" | "convert" | "sync" => run_script_command(&command, &rest),
+        "smoke" => run_script_command(&command, &rest),
         _ => {
             eprintln!("[ERR] Unknown command: {command}");
             print!("{}", help_text());
@@ -155,13 +151,10 @@ fn run_scaffold(args: &[String]) -> Result<ExitCode, (u8, String)> {
     Ok(ExitCode::from(0))
 }
 
-/// `forge deploy|smoke|convert|sync [args...]`: run the repo's script.
+/// `forge smoke [args...]`: run the repo's smoke-test script.
 fn run_script_command(command: &str, args: &[String]) -> Result<ExitCode, (u8, String)> {
     let script_name = match command {
-        "deploy" => "install.sh",
         "smoke" => "smoke.sh",
-        "convert" => "convert.sh",
-        "sync" => "sync-codex-skills.py",
         _ => unreachable!("command already matched"),
     };
     let src = rs_source::resolve(None).map_err(|e| (2, e))?;
@@ -196,16 +189,12 @@ fn help_text() -> String {
          \n\
          Commands:\n\
          \x20 scaffold  Initialize a new Forge Anything project\n\
-         \x20 deploy    Deploy agents to your IDE or global environment\n\
          \x20 smoke     Run system integrity checks\n\
-         \x20 convert   Run conversion engine for different AI platforms\n\
-         \x20 sync      Synchronize skills with your local environment\n\
          \x20 version   Show current Forge Anything version\n\
          \x20 help      Show this help message\n\
          \n\
          Examples:\n\
          \x20 forge scaffold\n\
-         \x20 forge deploy --tool gemini\n\
          \x20 forge smoke\n\
          \x20   \n"
     )

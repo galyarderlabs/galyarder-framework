@@ -109,7 +109,7 @@ jobs:
           set -euo pipefail
           FORGE=./crates/forge/target/release/forge
           "$FORGE" --help | grep -q "Forge Anything CLI"
-          for cmd in scaffold deploy smoke convert sync version help; do
+          for cmd in scaffold smoke version help; do
             "$FORGE" --help | grep -q "  $cmd"
           done
           PKG_VERSION=$(python3 -c "import json; print(json.load(open('package.json'))['version'])")

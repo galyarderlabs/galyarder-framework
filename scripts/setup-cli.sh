@@ -29,10 +29,8 @@ fi
 cargo build --release --locked --manifest-path "$FRAMEWORK_DIR/crates/forge/Cargo.toml"
 ln -sf "$FRAMEWORK_DIR/crates/forge/target/release/forge" "$BIN_DIR/forge"
 
-# Direct script shortcuts (the forge CLI delegates to these same scripts).
-ln -sf "$FRAMEWORK_DIR/scripts/install.sh" "$BIN_DIR/f-deploy"
+# Direct script shortcut (the forge CLI delegates to this same script).
 ln -sf "$FRAMEWORK_DIR/scripts/smoke.sh" "$BIN_DIR/f-smoke"
-ln -sf "$FRAMEWORK_DIR/scripts/convert.sh" "$BIN_DIR/f-convert"
 
 # Verify PATH
 if [[ ":$PATH:" != *":$BIN_DIR:"* ]]; then
@@ -64,5 +62,4 @@ echo "CLI Setup Complete."
 echo "Commands now available globally:"
 echo "  - forge <cmd> : Main Forge Anything CLI (Rust)"
 echo "  - forge scaffold  : Initialize a new Forge Anything project"
-echo "  - f-deploy        : Deploy agents to your IDE/Host"
 echo "  - f-smoke         : Verify system integrity"

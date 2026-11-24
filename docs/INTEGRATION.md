@@ -15,8 +15,6 @@ The framework ships native plugins for these harnesses:
 7.  **GitHub Copilot CLI**: Native plugin (portable root `plugin.json`).
 8.  **Hermes Agent**: Local-first autonomous assistant runtime. Hermes is our own agent, always a target.
 
-Forge Agent (native identity and memory layer) and Forge HQ (command layer for goals, departments, approvals, and operating visibility) are the framework's own layers, not external harnesses.
-
 ## Official Marketplace Integration
 
 For cloud-native orchestrators, use the standard plugin protocol:
@@ -67,12 +65,3 @@ Silo/
 Legacy context-bloat patterns have been removed so agents load only what they need. This keeps:
 - **Context integrity**: lower noise and less unnecessary prompt surface.
 - **Deterministic loads**: only the required instructions are loaded into the agent context.
-
-## Conversion Engine
-
-The Forge conversion engine generates the Forge Agent surface only. Every other harness uses its native plugin manifest, which reads the canonical `skills/`, `agents/`, and `commands/` directories directly — no generated copies.
-
-```bash
-# Generate the Forge Agent surface
-forge deploy --tool forge-agent
-```

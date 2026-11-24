@@ -1,10 +1,9 @@
-//! Run one of the repo's scripts on behalf of a CLI command.
+//! Run the repo's smoke-test script on behalf of the CLI.
 //!
 //! This is the transitional layer: the CLI surface is Rust, while the
-//! `deploy`, `smoke`, `convert` and `sync` implementations are still the
-//! existing scripts. Each script is run as `bash <script> <args...>` (or
-//! `python3 <script> <args...>` for `.py`), with inherited stdio and
-//! environment, and the CLI exits with the script's exit code.
+//! `smoke` implementation is still the existing script. The script is run
+//! as `bash <script> <args...>` with inherited stdio and environment, and
+//! the CLI exits with the script's exit code.
 
 use std::path::Path;
 use std::process::{Command, ExitCode};

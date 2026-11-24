@@ -51,7 +51,6 @@ or the header:
 python3 scripts/sync-skills-manifest.py     # skills.json
 python3 scripts/sync-bundles.py             # the 10 bundles
 python3 scripts/sync-global-protocols.py    # the header block
-bash scripts/convert.sh --tool all          # the host mirrors
 python3 scripts/generate-docs.py            # docs/AGENTS.md, CHANGELOG.md, RELEASE-NOTES.md, WORKFLOW.md
 ```
 
@@ -64,7 +63,7 @@ bash scripts/smoke.sh                      # the 8-point smoke test
 ```
 
 The smoke test checks the manifest parity (skills.json matches `skills/`),
-the bundles, the header block, the mirrors, and the marketplace manifest.
+the bundles, the header block, and the marketplace manifest.
 If it fails, fix the source and re-run the sync scripts — do not hand-edit
 a generated file to make it pass.
 

@@ -51,13 +51,10 @@ fn help_lists_the_commands() {
     assert!(text.starts_with("\nForge Anything CLI v"));
     assert!(text.contains("Forge anything with AI agents."));
     assert!(text.contains("forge <command> [options]"));
-    for cmd in [
-        "scaffold", "deploy", "smoke", "convert", "sync", "version", "help",
-    ] {
+    for cmd in ["scaffold", "smoke", "version", "help"] {
         assert!(text.contains(cmd), "help lists {cmd}");
     }
     assert!(text.contains("forge scaffold"));
-    assert!(text.contains("forge deploy --tool gemini"));
     assert!(text.contains("forge smoke"));
 }
 
@@ -89,6 +86,18 @@ fn unknown_command_exits_1_with_error_and_help() {
     assert!(err.contains("[ERR] Unknown command: bogus"));
     let text = String::from_utf8_lossy(&out.stdout);
     assert!(text.contains("Forge Anything CLI"));
+}
+
+#[test]
+fn removed_commands_are_unknown() {
+    // deploy/convert/sync were removed when the manual integrations went
+    // away; installation is via each harness's native plugin manifest.
+    for cmd in ["deploy", "convert", "sync"] {
+        let out = run_forge(&[cmd]);
+        assert_eq!(out.status.code(), Some(1), "{cmd} must exit 1");
+        let err = String::from_utf8_lossy(&out.stderr);
+        assert!(err.contains(&format!("[ERR] Unknown command: {cmd}")));
+    }
 }
 
 #[test]

@@ -22,7 +22,7 @@ fi
 # 1. Structural Verification
 echo "[1/8] Verifying Runtime Integrity..."
 if [ "$IS_SOURCE" = true ]; then
-    RUNTIME_DIRS=("agents" "skills" "commands" "integrations")
+    RUNTIME_DIRS=("agents" "skills" "commands")
     for dir in "${RUNTIME_DIRS[@]}"; do
         if [ ! -d "$dir" ]; then
             echo "❌ Error: Canonical runtime directory '$dir' is missing in source."
@@ -108,8 +108,8 @@ print(f"✅ All manifest versions locked at v{package_version}.")
 PY
 
     echo "[5/8] Checking monolith-free boot policy..."
-    if [ -e "CONVENTIONS.md" ] || [ -e "docs/CONVENTIONS.md" ] || [ -e "integrations/aider" ]; then
-        echo "❌ Error: Monolithic CONVENTIONS/Aider artifacts must not exist in the framework runtime surface."
+    if [ -e "CONVENTIONS.md" ] || [ -e "docs/CONVENTIONS.md" ]; then
+        echo "❌ Error: Monolithic CONVENTIONS artifacts must not exist in the framework runtime surface."
         exit 1
     fi
     echo "✅ Root boot is canonical-runtime scoped and monolith-free."
@@ -117,7 +117,7 @@ PY
     echo "[6/8] Checking lazy Neural Link policy..."
     if grep -R -n -E --exclude='graph.json' --exclude='smoke.sh' \
         'Check the Map First|God Nodes|MUST read `docs/graph\.json`' \
-        agents skills commands scripts docs integrations \
+        agents skills commands scripts docs \
         >/tmp/forge-mandatory-graph.txt; then
         sed -n '1,40p' /tmp/forge-mandatory-graph.txt
         echo "❌ Error: Neural Link/World-Map access must be lazy, not mandatory for normal execution."

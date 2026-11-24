@@ -9,10 +9,7 @@ forge <command> [options]
 | Command | What it does |
 | ------- | ------------ |
 | `scaffold [dir]` | Initialize a new Forge Anything project (native Rust) |
-| `deploy [args...]` | Deploy agents to your IDE or global environment |
 | `smoke [args...]` | Run system integrity checks |
-| `convert [args...]` | Run conversion engine for different AI platforms |
-| `sync [args...]` | Synchronize skills with your local environment |
 | `version` | Show current Forge Anything version |
 | `help` | Show this help message |
 
@@ -35,13 +32,12 @@ forge scaffold my-project      # scaffold into ./my-project
 forge scaffold --name acme --force my-project
 ```
 
-## The other commands
+## The other command
 
-`deploy`, `smoke`, `convert` and `sync` still run the repo's scripts
-(`scripts/install.sh`, `scripts/smoke.sh`, `scripts/convert.sh`,
-`scripts/sync-codex-skills.py`) with the arguments passed through, and the
-CLI exits with the script's exit code. Reimplementing those in Rust is the
-follow-up; the CLI surface is Rust now.
+`smoke` still runs the repo's script (`scripts/smoke.sh`) with the
+arguments passed through, and the CLI exits with the script's exit code.
+Installation is via each harness's native plugin manifest, not through
+this CLI.
 
 ## Version
 

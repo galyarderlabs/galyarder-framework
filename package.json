@@ -4,9 +4,7 @@
   "description": "Forge anything with AI agents.",
   "main": "index.js",
   "bin": {
-    "f-deploy": "scripts/install.sh",
-    "f-smoke": "scripts/smoke.sh",
-    "f-convert": "scripts/convert.sh"
+    "f-smoke": "scripts/smoke.sh"
   },
   "scripts": {
     "test": "rtk ./scripts/smoke.sh",
@@ -49,7 +47,6 @@
     "agents",
     "commands",
     "docs",
-    "integrations",
     "public",
     "scripts",
     "skills",
