@@ -1,6 +1,6 @@
 # Skill Registry Review vs Current Repo
 
-Maintainer review, 24 Nov 2026, repo HEAD `00b0080c`. This reviews Galih's Essential Skill Registry v13 (`skill-registry.md`) against the repo's current skills. It is a proposal record only: it does not add, delete, rename, or restructure anything. Curation decisions stay with Galih.
+Maintainer review, 24 Nov 2026, repo HEAD `a03af575`. This reviews Galih's Essential Skill Registry v14 (`skill-registry.md`): the v13 text verbatim plus the ronde-14 addendum. The v13 rows were reviewed at HEAD `00b0080c`; the ronde-14 rows are reviewed in the addendum at the end of this file. It is a proposal record only: it does not add, delete, rename, or restructure anything. Curation decisions stay with Galih.
 
 ## How to read this
 
@@ -22,6 +22,7 @@ Maintainer review, 24 Nov 2026, repo HEAD `00b0080c`. This reviews Galih's Essen
 - Repo individual skills: **89**. With at least partial registry coverage: **14**. Repo-only: **75**.
 - Scaffold curated set: **38 skills**. Of those, **12** map to a registry row (full or partial). The other 26 are repo-only homegrown skills.
 - Value comparisons where the registry pick is better than the repo's current skill for the same slot: **6**, plus **1** extra slot the repo does not cover at all (ai-seo). See Value comparisons.
+- Ronde-14 addendum: **14** new rows (6 A14 Trading, 2 A4 Sales/Negotiation, 4 A13 Experimentation/BI, 2 A12 Office). All 14 are Missing from the repo. Totals for v14: **90** rows, covered **3**, partial **4**, missing **83**.
 
 ## Row-by-row mapping
 
@@ -219,3 +220,53 @@ The registry derives departments from APQC PCF v7.4 (13 company categories) plus
 3. **Unverified registry claims (not re-checked here):** all install counts (441K, 346K, 289K, 245K, 73K, 5.0K), star counts (595, 226K+, 2.1K), the GRC 92%/53% benchmark, the CUAD grounding claim, and the "NOL GAP" status claim. URLs were checked; counts and benchmarks were not. Re-check them when a row is adopted.
 4. **Duplicate source, two slots:** the registry lists deanpeters product-manager-skills twice (A1 Strategist, A2 PM Lifecycle). One source, two value rows by design. The mapping counts it once per row, as the registry does.
 5. **Known gap inside the registry itself (A7 note):** performance goal-setting and psychological safety are still research (Locke & Latham, Edmondson). No marketplace skill was found for them. Recorded here, not fixed here.
+
+---
+
+## Ronde-14 addendum
+
+Reviewed 24 Nov 2026, repo HEAD `a03af575`. The registry's ronde-14 adds 14 rows (the message says 13 new slots; I count 14 distinct skill rows in the message text: 6 A14 + 2 A4 + 4 A13 + 2 A12). All 14 are Missing from the repo. Totals for v14: 90 rows, covered 3, partial 4, missing 83.
+
+### A14. Trading, Markets & On-chain (new department, all 6 Missing)
+
+| Registry row | Status | Repo skill | Note |
+|---|---|---|---|
+| agiprolabs/claude-trading-skills (68 skill) | Missing | - | No trading/on-chain skill in the repo. Closest is the registry's own A8 binance/coinbase row (exchange market data/custody), which the repo does not have either. Repo finance skills (accounting, financial-analyst, finance-based-pricing-advisor, saas-finops-optimization) are accounting/pricing/FinOps, not trading. |
+| tradermonty/claude-trading-skills (discipline gate) | Missing | - | No discipline-gate or trading-journal skill in the repo. |
+| truenorth-lj/crypto-project-security-skill | Missing | - | No DeFi/smart-contract audit skill in the repo. Repo security skills are AppSec/OWASP and offensive/threat-intel, not DeFi risk. |
+| ai-crypto-claude (zubair-trabzada, token research) | Missing | - | No token-research skill in the repo. |
+| redlabs-sc cryptocurrency-trader-skill (TA) | Missing | - | No technical-analysis skill in the repo. |
+| day-trader-skill (Jakeschincariol, Alpaca loop) | Missing | - | No broker-execution skill in the repo. The human-gate ("no order without yes") matches the repo's own approval-gate protocol in spirit, but there is no skill for it. |
+
+### A4. Sales/Negotiation (both Missing)
+
+| Registry row | Status | Repo skill | Note |
+|---|---|---|---|
+| Sales MBA (lancewc/sales-claude-skills) | Missing | - | Adjacent: marketing-demand-acquisition, lead-scoring (growth tactics). Not a B2B AE suite. The A4 row adam-paterson/skills (sales) is also missing, so the repo has no sales suite at all. |
+| negotiation (mikesmayer/claude-business-skills) | Missing | - | No negotiation skill in the repo. |
+
+### A13. Experimentation/BI (all 4 Missing)
+
+| Registry row | Status | Repo skill | Note |
+|---|---|---|---|
+| data-scientist (borghei, A/B + hypothesis testing) | Missing | - | Adjacent: ab-test-setup (growth tactic, setup only, not A/B design + hypothesis testing), experimentation-engineer agent, experiment command. No data-scientist skill. No URL in the ronde-14 message, so the source is unverified here. |
+| sql-queries (Anthropic, 5 dialects) | Missing | - | No SQL skill in the repo. No URL in the ronde-14 message, so the source is unverified here. |
+| dbt (dbt Labs) | Missing | - | No dbt skill in the repo. No URL and no value description in the ronde-14 message. |
+| data-analysis-skill (dongzhang84) | Missing | - | Adjacent: analytics-tracking, campaign-analytics, market-research. Not a multi-expert data-analysis skill. |
+
+### A12. Office (both Missing)
+
+| Registry row | Status | Repo skill | Note |
+|---|---|---|---|
+| meeting-notes (claude-office-skills) | Missing | - | Adjacent: doc-maintenance, doc-updater agent. Not meeting notes. No URL in the ronde-14 message, so the source is unverified here. |
+| email (analystacademy/claude-skills) | Missing | - | Adjacent: email-marketing-bible, fundraising-email (marketing/fundraising email). Not voice-profile email writing from the user's own emails. |
+
+### Taxonomy note: A14 has no repo department
+
+The registry now has 14 company departments (A1-A14) plus 16 life domains. The repo still has 10 departments. A14 Trading, Markets & On-chain joins A4 Operations, A5 Customer Success, A7 People/HR, A13 Cross-cutting, and all of B Life as registry sections with no repo department. The repo's Finance department covers cost, budgeting, accounting, financial state, and runway, not trading. If A14 rows are adopted later, they need a home: either a new 11th department (a Galih decision) or placement under Finance. This review proposes no placement. The A14 correction matters more than the other gaps because trading/on-chain is Galih's core domain (Galyarder Labs is finance + AI, and his own allocation is 50% BTC): the repo currently has zero trading coverage, while the registry's A8 finance rows (Stripe, Binance/Coinbase, openaccountant) are payments, exchange data, and accounting, not trading.
+
+### Flagged items (ronde-14)
+
+1. **Count discrepancy:** the ronde-14 message says 13 new slots, but lists 14 distinct skill rows. Recorded as 14 here. The difference is counting method, not content.
+2. **4 rows without a source URL in the ronde-14 message:** borghei data-scientist, sql-queries (Anthropic), dbt (dbt Labs), meeting-notes (claude-office-skills). Their sources are unverified until URLs are supplied. They should not be adopted on name alone.
+3. **Unverified registry claims (ronde-14):** the agiprolabs 68-skill count, the "production-grade B2B AE" claim for Sales MBA, the "lolos 3 audit" claim for meeting-notes, and the v14 totals (±85 rows / 260+ skills). URLs were checked (10 of 10 return HTTP 200); counts and claims were not.

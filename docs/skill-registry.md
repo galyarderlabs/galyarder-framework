@@ -1,5 +1,5 @@
 ---
-> **Maintainer note (this block is not part of Galih's registry text).** This is Galih's research registry, Essential Skill Registry v13, dated 24 Nov 2026. It is the auditable source for skill curation in this repo: every skill row names a real skill, a source URL, and a value reason, derived from APQC PCF v7.4 for the company side and WHOQOL 6 domains + PERMA for the life side. The registry text below is copied verbatim from Galih's research file; do not edit it in place. To iterate on it, propose a change as a row: real skill name + source URL + value reason, per the curation rules in the file. The review of this registry against the repo's current skills lives in [skill-registry-review.md](skill-registry-review.md).
+> **Maintainer note (this block is not part of Galih's registry text).** This is Galih's research registry, Essential Skill Registry v14, dated 24 Nov 2026. It is the auditable source for skill curation in this repo: every skill row names a real skill, a source URL, and a value reason, derived from APQC PCF v7.4 for the company side and WHOQOL 6 domains + PERMA for the life side. The v13 text below is copied verbatim from Galih's research file; do not edit it in place. The ronde-14 additions (A14 Trading, Markets & On-chain as a new department, plus Sales/Negotiation, Experimentation/BI, and Office rows) live in the addendum at the end of this file, summarized by the maintainer from the research agent's message Galih sent on 24 Nov 2026; the addendum is maintainer text, not his verbatim file. To iterate on it, propose a change as a row: real skill name + source URL + value reason, per the curation rules in the file. The review of this registry against the repo's current skills lives in [skill-registry-review.md](skill-registry-review.md).
 
 # Forge Foundation: Essential Skill Registry v13 — NOL GAP
 
@@ -195,3 +195,50 @@ Dasar riset: DBIR 2024 — 68% breach ada human element ([Verizon DBIR](https://
 | **Total essential terkurasi** | **±75 baris value / 190+ skill best-in-class** | Best-in-class per slot value, nol redundansi fungsi |
 
 *Legend: suite dihitung satu baris kalau fungsi intinya satu value chain. Angka install punya umur — cek ulang pas mau pakai. Versi: v13 (24 Nov 2026), setelah 13 ronde riset. v1-v12 documented in Forge knowledge.*
+---
+
+## Ronde-14 (v14) - addendum
+
+Catatan maintainer: bagian ini BUKAN teks verbatim Galih. Ini rangkuman dari pesan riset ronde-14 yang Galih kirim 24 Nov 2026 (teks agent research-nya), ditambahkan sebagai addendum supaya teks v13 di atas tetap utuh byte-identical. Isi tiap baris (nama skill, URL, alasan value) diambil dari pesan itu. Penempatan baris Sales/Negotiation, Experimentation/BI, dan Office ke seksi A4/A13/A12 adalah pilihan maintainer berdasarkan struktur registry yang ada; pesan ronde-14 tidak menamai seksi untuk ketiganya.
+
+**Yang berubah di v14:** kritiknya valid, trading/on-chain (domain inti Galyarder Labs) tidak pernah jadi departemen sendiri di v13. Ronde-14 membetulkan itu: **A14. Trading, Markets & On-chain** jadi departemen baru. Registry sekarang **v14: ±85 baris value / 260+ skill**, 14 departemen perusahaan + 16 domain life.
+
+### A14. Trading, Markets & On-chain (departemen baru)
+
+| Slot | Skill essential | Value | URL |
+|---|---|---|---|
+| Quant/DeFi suite | agiprolabs/claude-trading-skills, 68 skill | Market data, on-chain, backtesting, risk, tax, token-economics (vesting/supply) | [agiprolabs/claude-trading-skills](https://github.com/agiprolabs/claude-trading-skills) |
+| Discipline gate | tradermonty/claude-trading-skills | Checklist gate yang nge-block entry planless/oversized/revenge-risk, journal hasil | [tradermonty/claude-trading-skills](https://github.com/tradermonty/claude-trading-skills) |
+| DeFi risk audit | truenorth-lj/crypto-project-security-skill | Smart contract, governance keys, oracle design, incident history | [truenorth-lj/crypto-project-security-skill](https://github.com/truenorth-lj/crypto-project-security-skill) |
+| Token research | ai-crypto-claude (zubair-trabzada) | Multi-dimensi, jujur soal batasnya, bukan trading bot | [zubair-trabzada/ai-crypto-claude](https://github.com/zubair-trabzada/ai-crypto-claude) |
+| TA anti-halusinasi | redlabs-sc/ai-trading-claude-skills (cryptocurrency-trader-skill) | TA dengan hallucination prevention eksplisit | [redlabs-sc/ai-trading-claude-skills](https://github.com/redlabs-sc/ai-trading-claude-skills/tree/main/cryptocurrency-trader-skill) |
+| Eksekusi human-gate | day-trader-skill (Jakeschincariol) | Broker loop Alpaca, gak ada order tanpa "yes" lu | [Jakeschincariol/day-trader-skill](https://github.com/Jakeschincariol/day-trader-skill) |
+
+### Ronde-14: tambahan ke seksi yang sudah ada
+
+**A4. Operations & Delivery, Sales/Negotiation:**
+
+| Slot | Skill essential | Value | URL |
+|---|---|---|---|
+| Sales | Sales MBA (lancewc/sales-claude-skills) | Production-grade B2B AE | [lancewc/sales-claude-skills](https://github.com/lancewc/sales-claude-skills) |
+| Negotiation | negotiation (mikesmayer/claude-business-skills) | High-stakes/vendor pricing | [mikesmayer/claude-business-skills](https://github.com/mikesmayer/claude-business-skills/blob/main/negotiation/SKILL.md) |
+
+**A13. Cross-cutting, Experimentation/BI:**
+
+| Slot | Skill essential | Value | URL |
+|---|---|---|---|
+| Experimentation | data-scientist (borghei) | A/B test design + hypothesis testing | Tidak ada URL di pesan ronde-14 |
+| Data queries | sql-queries (Anthropic resmi) | 5 dialek | Tidak ada URL di pesan ronde-14 |
+| Data transform | dbt (dbt Labs resmi) | Tidak ada deskripsi value di pesan ronde-14 | Tidak ada URL di pesan ronde-14 |
+| Data analysis | data-analysis-skill (dongzhang84) | Multi-expert, output HTML report | [dongzhang84/data-analysis-skill](https://github.com/dongzhang84/data-analysis-skill) |
+
+**A12. Knowledge & Documents, Office:**
+
+| Slot | Skill essential | Value | URL |
+|---|---|---|---|
+| Meeting notes | meeting-notes (claude-office-skills) | Publisher yang sudah lolos 3 audit | Tidak ada URL di pesan ronde-14 |
+| Email | email (analystacademy/claude-skills) | Voice profile dari 3-5 email asli lu, bukan template generik | [analystacademy/claude-skills](https://github.com/analystacademy/claude-skills) |
+
+**Catatan hitungan:** pesan ronde-14 menyebut "13 slot value baru", tapi pesan itu sendiri memuat 14 baris skill yang berbeda (6 A14 + 2 Sales/Negotiation + 4 Experimentation/BI + 2 Office). Addendum ini mencatat 14 baris apa adanya. Selisih 1 itu soal cara menghitung, bukan soal isi.
+
+**URL check, 24 Nov 2026:** 10 dari 10 URL yang tercantum di pesan ronde-14 mengembalikan HTTP 200. 4 item (borghei data-scientist, sql-queries, dbt, meeting-notes) tidak punya URL di pesan itu, jadi belum bisa dicek.
