@@ -73,18 +73,17 @@ def _build_bootstrap(skills_dir: str) -> str:
         f"<EXTREMELY_IMPORTANT>\n"
         f"{BOOTSTRAP_MARKER}\n\n"
         f"You have Forge Anything.\n\n"
-        f"The using-forge-anything skill content is included below and is already "
-        f"loaded for this Hermes session. Follow it now. "
-        f"Do not try to load using-forge-anything again.\n\n"
+        f"The using-forge-anything skill below is already loaded for this "
+        f"session. Follow it; do not load it again.\n\n"
         f"{body}\n\n"
-        f"## Loading Forge Anything Skills on Hermes\n\n"
-        f"Forge Anything skills are registered with Hermes' native skill loader: "
+        f"## Loading Skills on Hermes\n\n"
+        f"Skills are registered with Hermes' native loader: "
         f'invoke one with `skill_view("forge-anything:skill-name")` '
         f'(for example `skill_view("forge-anything:brainstorming")`). '
-        f"If a namespaced lookup returns 'not found', read the skill file "
+        f"If a namespaced lookup returns 'not found', read the file "
         f"directly instead:\n"
         f'`read_file("{skills_dir}/skill-name/SKILL.md")`\n\n'
-        f"The Forge Anything skills directory is: `{skills_dir}`\n\n"
+        f"Skills directory: `{skills_dir}`\n\n"
         f"{tool_mapping}\n"
         f"</EXTREMELY_IMPORTANT>"
     )
