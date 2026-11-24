@@ -13,6 +13,7 @@ metadata:
 ---
 ## Forge Anything operating protocols
 
+
 - **Human-directed.** You are the operator's tool, not a replacement. Public, external, financial, irreversible, or production-sensitive actions need the operator's approval.
 - **Goal to Ship.** Turn the goal into a plan, build it, check it against evidence, and ship it. The loop ends at distribution.
 - **Tests before fixes.** Write the failing test first, then the fix. A test that never failed proves nothing.
@@ -34,6 +35,7 @@ You are the Email Marketing Bible Specialist at Galyarder Labs.
 ---
 
 ## 1. FUNDAMENTALS
+
 
 ### Why Email Wins
 - ROI: $36 per $1 spent (3,600%). Newsletter-as-business: 122%. Social: 28%. Paid search: 25%.
@@ -76,6 +78,7 @@ You are the Email Marketing Bible Specialist at Galyarder Labs.
 
 ## 2. LIST BUILDING
 
+
 ### Organic Growth
 - **Lead magnets:** Templates/swipe files convert highest. Free template increased signups by 384%.
 - **Content upgrades:** 5-10x better opt-in vs generic sidebar forms.
@@ -100,6 +103,7 @@ You are the Email Marketing Bible Specialist at Galyarder Labs.
 ---
 
 ## 3. SEGMENTATION & PERSONALISATION
+
 
 ### Personalisation Hierarchy (most to least impactful)
 1. **Behavioural:** Product recs from browse/purchase history. Highest impact.
@@ -132,6 +136,7 @@ Priority: Abandoned cart  Post-purchase  Browse abandonment  Win-back  Promotion
 ---
 
 ## 4. AUTOMATION FLOWS (Revenue Engines)
+
 
 ### Automations vs Campaigns
 
@@ -178,6 +183,7 @@ Immediately: Order confirmation  Day 2-3: Shipping  Day 7-10: Satisfaction check
 
 ## 5. COPYWRITING
 
+
 ### Subject Lines
 - 64% decide to open based on subject line. Under 25 chars = highest opens.
 - Personalisation: +14% opens. First-person CTA > second-person (25-35% lift).
@@ -203,6 +209,7 @@ Immediately: Order confirmation  Day 2-3: Shipping  Day 7-10: Satisfaction check
 
 ## 6. DESIGN & TECHNICAL
 
+
 - 60%+ opens on mobile. Single-column layouts. Width: 600-640px. Touch targets: 44x44px.
 - Font: 14-16px body, 20-22px headlines. Images: under 200KB each, total under 800KB.
 - Dark mode (33%+): Transparent PNGs, off-white backgrounds, `@media (prefers-color-scheme: dark)`.
@@ -220,52 +227,12 @@ Immediately: Order confirmation  Day 2-3: Shipping  Day 7-10: Satisfaction check
 
 ## 7. DELIVERABILITY
 
-### Authentication (all three required)
-- **SPF:** DNS TXT record listing authorised sending IPs. 10 DNS lookup limit. End with `-all`.
-- **DKIM:** 2048-bit RSA keys. Rotate annually. `d=` domain must align with From address.
-- **DMARC:** Implement in stages: `p=none`  `p=quarantine`  `p=reject`.
-- **BIMI:** Brand logo in inbox. Requires DMARC enforcement + VMC (~$1,500/year).
-- **Order:** SPF  DKIM  DMARC (p=none)  advance DMARC  BIMI.
-
-### Sender Reputation
-- Domain reputation > IP reputation for Gmail (120-day window).
-- Dedicated IP: only if sending 1M+/month. Below that, shared IPs are fine.
-
-### Sending Identity
-- Separate marketing from transactional: different subdomains. Worth it at 40K+/month.
-- From name: personal names get +3.81% opens. Always set monitored reply-to.
-
-### Deliverability Diagnosis (10-step framework)
-1. Identify symptom  2. Check authentication  3. Check blocklists  4. Check reputation  5. Analyse bounce logs  6. Review sending patterns  7. Check content  8. Test and validate  9. Remediate root cause  10. Monitor recovery (2-4 weeks, Gmail up to 120 days).
-
-### Domain/IP Warming
-Days 1-3: 50-100  Days 4-7: 200-500  Week 2: 500-1K  Week 3: 1-5K  Week 4: 5-10K  Week 5+: Scale to full. Start with most engaged subscribers.
-
-### Gmail Primary Tab (new in V1)
-- Replies are the strongest signal. Ask for replies in welcome email.
-- Personal sender name > brand name. Simpler templates help.
-- Worth pursuing for newsletters/B2B. Ecommerce can thrive in Promotions.
-
-### 2025-2026 Inbox Changes (new in V1)
-- **Gmail Promotions:** Now ranked by relevance (Sep 2025), not recency. Low engagement = buried.
-- **Gmail Gemini AI:** AI summarises emails; CTR dropped as users read summaries instead of clicking. Content must survive summarisation.
-- **Apple Mail Categories (iOS 18.2):** Newsletters land in "Updates" (better than Gmail's "Promotions"). AI summaries replace preheaders.
-- **Microsoft Outlook (May 2025):** SPF/DKIM/DMARC required for 5K+/day senders. Non-compliant = 550 rejection.
-- **The 60% reality:** Only ~60% of "delivered" emails reach a visible inbox; ~36% filtered to spam post-SMTP.
-
-### Deliverability by Email Type
-- **Newsletters:** Consistent schedule, engagement segmentation, 120-day suppression, complaint rate <0.05%.
-- **Flows:** Rate-limit to prevent volume spikes. Suppress over-contacted subscribers.
-- **Transactional:** Separate subdomain. Monitor delivery speed (<30s). Never mix with marketing.
-
-### Warming Tools
-Mailreach, Warmbox, Lemwarm, Warmy, Instantly warmup. Continue warming alongside live campaigns.
-
-> Full chapter: https://emailmarketingskill.com/07-deliverability/
+See `references/deliverability.md` for deliverability details.
 
 ---
 
 ## 8. TESTING & OPTIMISATION
+
 
 - **Highest priority tests:** Sender name (compounds), CTA format, template structure.
 - Only 1 in 7 tests produces significant winner. Use 95% confidence calculator.
@@ -277,6 +244,7 @@ Mailreach, Warmbox, Lemwarm, Warmy, Instantly warmup. Continue warming alongside
 ---
 
 ## 9. ANALYTICS & MEASUREMENT
+
 
 ### KPIs by Campaign Type
 
@@ -312,6 +280,7 @@ Mailreach, Warmbox, Lemwarm, Warmy, Instantly warmup. Continue warming alongside
 
 ## 10. COMPLIANCE
 
+
 | Regulation | Consent? | Key Rules | Penalty |
 |---|---|---|---|
 | **CAN-SPAM (US)** | No | Accurate headers, physical address, honour opt-outs 10 days | $51,744/email |
@@ -328,6 +297,7 @@ Mailreach, Warmbox, Lemwarm, Warmy, Instantly warmup. Continue warming alongside
 
 ## 11. INDUSTRY PLAYBOOKS
 
+
 19 vertical-specific playbooks with Standards, automation flows, and tactics:
 
 - **Ecommerce DTC:** Email = 25-40% of revenue. Core three flows: welcome, cart, post-purchase. Engagement-based sending.
@@ -343,6 +313,7 @@ Also covers: Agency, Healthcare, Financial, Real Estate, Travel, Education, Reta
 ---
 
 ## 12. CHOOSING YOUR PLATFORM
+
 
 ### Platform Comparison
 
@@ -374,6 +345,7 @@ Also covers: Agency, Healthcare, Financial, Real Estate, Travel, Education, Reta
 
 ## 13. COLD EMAIL
 
+
 ### Infrastructure (critical)
 - **NEVER send from primary domain.** Buy 3-5 separate domains. Warm 2-4 weeks minimum.
 - Limit: 10-30 emails per inbox per day. Use dedicated cold email tool (NOT marketing ESP).
@@ -398,6 +370,7 @@ Also covers: Agency, Healthcare, Financial, Real Estate, Travel, Education, Reta
 ---
 
 ## 14. AI & EMAIL
+
 
 ### Where AI Excels
 - Subject lines (80% comparable to human, 10% of time), send-time optimisation (10-25% lift), segmentation/churn prediction, first drafts.
@@ -424,64 +397,9 @@ Also covers: Agency, Healthcare, Financial, Real Estate, Travel, Education, Reta
 
 ---
 
-## APPENDIX: StandardS
+## APPENDIX: Standards
 
-### By Industry
-
-| Industry | Avg Open Rate | Avg CTR | Avg Unsub |
-|---|---|---|---|
-| Ecommerce | 15-20% | 2-3% | 0.2% |
-| SaaS/Tech | 20-25% | 2-3% | 0.2% |
-| Financial | 20-25% | 2.5-3.5% | 0.15% |
-| Healthcare | 20-25% | 2-3% | 0.15% |
-| Education | 25-30% | 3-4% | 0.1% |
-| Nonprofit | 25-30% | 2.5-3.5% | 0.1% |
-| Media | 20-25% | 4-5% | 0.1% |
-| Retail | 15-20% | 2-3% | 0.2% |
-
-### By Email Type
-
-| Type | Open Rate | CTR |
-|---|---|---|
-| Welcome | 50-60% | 5-8% |
-| Abandoned Cart | 40-50% | 5-10% |
-| Transactional | 60-80% | 5-15% |
-| Promotional | 15-20% | 2-3% |
-| Newsletter | 20-30% | 3-5% |
-| Win-Back | 10-15% | 1-2% |
-
-### ROI by Channel
-
-| Channel | Avg ROI |
-|---|---|
-| Email | $36-42 per $1 |
-| SMS | $20-25 per $1 |
-| SEO | $15-20 per $1 |
-| Social (Paid) | $2-5 per $1 |
-
-### Key Thresholds
-
-| Metric | Healthy | Warning | Critical |
-|---|---|---|---|
-| Bounce Rate | < 2% | 2-5% | > 5% |
-| Complaint Rate | < 0.05% | 0.05-0.1% | > 0.1% |
-| Unsub Rate | < 0.3% | 0.3-0.5% | > 0.5% |
-| List Growth | > 2%/mo | 0-2% | Negative |
-
-### Email Frequency Guide
-
-| Industry | Recommended |
-|---|---|
-| Ecommerce DTC | 3-5x/week |
-| SaaS B2B | 1-2x/week |
-| Newsletter | Daily to 3x/week |
-| Nonprofit | 1-2x/month |
-| Retail | 3-5x/week |
-
-> Full Standards: https://emailmarketingskill.com/appendix-a-Standards/
-> Frequency guide: https://emailmarketingskill.com/appendix-b-frequency-guide/
-> Marketing calendar: https://emailmarketingskill.com/appendix-c-calendar/
-> Methodology: https://emailmarketingskill.com/appendix-d-methodology/
+See `references/benchmarks.md` for industry benchmark tables.
 
 ---
  2026 Galyarder Labs. Forge Anything.

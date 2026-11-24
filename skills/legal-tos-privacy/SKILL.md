@@ -4,6 +4,7 @@ description: Create bulletproof Terms of Service and Privacy Policy documents fo
 ---
 ## Forge Anything operating protocols
 
+
 - **Human-directed.** You are the operator's tool, not a replacement. Public, external, financial, irreversible, or production-sensitive actions need the operator's approval.
 - **Goal to Ship.** Turn the goal into a plan, build it, check it against evidence, and ship it. The loop ends at distribution.
 - **Tests before fixes.** Write the failing test first, then the fix. A test that never failed proves nothing.
@@ -25,6 +26,7 @@ Generate comprehensive, legally protective Terms of Service and Privacy Policy d
 
 ## Reference Files
 
+
 - `references/legal-guide.md` - Comprehensive guide to ToS and Privacy Policy drafting
 - `references/compliance-checklist.md` - Jurisdiction-specific requirements (GDPR, CCPA, LGPD, COPPA, etc.)
 - `references/protective-clauses.md` - Ready-to-adapt legal clauses for common risk scenarios
@@ -32,6 +34,7 @@ Generate comprehensive, legally protective Terms of Service and Privacy Policy d
 Read these references as needed when drafting the actual documents.
 
 ## Critical Principle: Infer Everything Possible, Ask Only What's Missing
+
 
 **Minimize user interaction.** Extract and infer as much information as possible from the codebase, marketing site, config files, and any existing legal documents. Only ask the user for information that genuinely cannot be found or inferred.
 
@@ -44,6 +47,7 @@ Read these references as needed when drafting the actual documents.
 ---
 
 ## Phase 1: Codebase & Data Flow Audit
+
 
 Conduct exhaustive exploration to understand every aspect of data handling. **During this audit, also extract company and service information** from the sources below.
 
@@ -183,6 +187,7 @@ Search for: cookie, localStorage, sessionStorage, tracking, analytics, gtag, ga4
 
 ## Phase 2: Marketing Claims Audit
 
+
 Examine all public-facing materials for claims that must be addressed legally.
 
 ### 2.1 Feature Claims
@@ -223,6 +228,7 @@ Search for: GDPR, CCPA, HIPAA, SOC, ISO, compliant, certified, secure
 
 ## Phase 3: Risk Assessment
 
+
 Before drafting, identify highest-risk areas:
 
 ### 3.1 Liability Hotspots
@@ -253,6 +259,7 @@ Determine applicable regulations based on:
 - Industry-specific (HIPAA, PCI-DSS, etc.)
 
 ## Phase 4: Draft Terms of Service
+
 
 Use findings from audit to draft comprehensive ToS. See `references/legal-guide.md` for detailed section guidance.
 
@@ -344,51 +351,10 @@ Based on your audit findings, add clauses for:
 
 ## Phase 5: Draft Privacy Policy
 
-Create comprehensive privacy policy addressing all audit findings.
-
-### Required Sections Checklist
-
-Every Privacy Policy MUST include:
-
-- [ ] **Introduction** - Who you are, what this policy covers
-- [ ] **Information We Collect** - All categories from audit (be exhaustive)
-- [ ] **How We Collect Information** - Direct input, automated, third-party sources
-- [ ] **Why We Collect Information** - Purpose for each category, legal basis (GDPR)
-- [ ] **How We Use Information** - All uses discovered in audit
-- [ ] **Information Sharing** - All third parties from inventory
-- [ ] **Cookies & Tracking** - All cookies/pixels from audit
-- [ ] **Data Retention** - How long each category is kept
-- [ ] **Data Security** - Security measures from audit
-- [ ] **Your Rights** - Access, correction, deletion, portability, objection
-- [ ] **Children's Privacy** - COPPA compliance, age restrictions
-- [ ] **International Transfers** - Where data goes, safeguards
-- [ ] **California Rights** (if applicable) - CCPA/CPRA specific disclosures
-- [ ] **EU/UK Rights** (if applicable) - GDPR specific disclosures
-- [ ] **Policy Changes** - How updates are communicated
-- [ ] **Contact Information** - Privacy contact, DPO if required
-
-### Data Inventory Table
-
-Create a clear table of all data collected:
-
-| Data Category | Examples | Collection Method | Purpose | Legal Basis | Retention |
-|--------------|----------|-------------------|---------|-------------|-----------|
-| Account Info | Email, name | Registration form | Service delivery | Contract | Account lifetime |
-| Payment Data | Card details | Checkout | Billing | Contract | As required by law |
-| Usage Data | Pages viewed, features used | Automatic logging | Product improvement | Legitimate interest | 24 months |
-| Device Info | IP, browser, OS | Automatic | Security, support | Legitimate interest | 12 months |
-
-### Third-Party Disclosure Table
-
-List all third parties:
-
-| Service | Purpose | Data Shared | Privacy Policy |
-|---------|---------|-------------|----------------|
-| Stripe | Payments | Billing info | stripe.com/privacy |
-| AWS | Hosting | All data (processor) | aws.amazon.com/privacy |
-| Google Analytics | Analytics | Usage data, IP | policies.google.com/privacy |
+See `references/drafting-privacy-policy.md` for the privacy policy drafting checklist and tables.
 
 ## Phase 6: Verification Checklist
+
 
 Before finalizing, verify:
 
@@ -422,6 +388,7 @@ Before finalizing, verify:
 - [ ] Data practices match what code actually does
 
 ## Phase 7: Resolve Template Variables (FINAL STEP)
+
 
 After drafting both documents, scan for any remaining template variables. Template variables use the format `[[VARIABLE_NAME]]` (double brackets).
 
@@ -473,6 +440,7 @@ After receiving answers:
 
 ## Output Format
 
+
 ### During Drafting (Phases 4-5)
 
 Use `[[VARIABLE_NAME]]` syntax (double brackets) for any information you couldn't find during the audit. This makes variables easy to scan for in Phase 7.
@@ -506,6 +474,7 @@ Deliver final documents in this structure:
 ```
 
 ## Important Notes
+
 
 1. **Minimize user interaction** - Infer and extract as much as possible from the codebase. Only ask the user for information that genuinely cannot be found. Batch all questions into a single request at the end (Phase 7).
 

@@ -9,6 +9,7 @@ description: >
 ---
 ## Forge Anything operating protocols
 
+
 - **Human-directed.** You are the operator's tool, not a replacement. Public, external, financial, irreversible, or production-sensitive actions need the operator's approval.
 - **Goal to Ship.** Turn the goal into a plan, build it, check it against evidence, and ship it. The loop ends at distribution.
 - **Tests before fixes.** Write the failing test first, then the fix. A test that never failed proves nothing.
@@ -19,6 +20,7 @@ description: >
 ---
 
 ## 1. Architecture Overview
+
 
 ```
 packages/adapters/<name>/
@@ -51,122 +53,18 @@ Three separate registries consume adapter modules:
 
 ## 2. Shared Types (`@forge-anything/adapter-utils`)
 
-All adapter interfaces live in `packages/adapter-utils/src/types.ts`. Import from `@forge-anything/adapter-utils` (types) or `@forge-anything/adapter-utils/server-utils` (runtime helpers).
-
-### Core Interfaces
-
-```ts
-// The execute function signature  every adapter must implement this
-interface AdapterExecutionContext {
-  runId: string;
-  agent: AdapterAgent;          // { id, companyId, name, adapterType, adapterConfig }
-  runtime: AdapterRuntime;      // { sessionId, sessionParams, sessionDisplayId, taskKey }
-  config: Record<string, unknown>;  // The agent's adapterConfig blob
-  context: Record<string, unknown>; // Runtime context (taskId, wakeReason, approvalId, etc.)
-  onLog: (stream: "stdout" | "stderr", chunk: string) => Promise<void>;
-  onMeta?: (meta: AdapterInvocationMeta) => Promise<void>;
-  authToken?: string;
-}
-
-interface AdapterExecutionResult {
-  exitCode: number | null;
-  signal: string | null;
-  timedOut: boolean;
-  errorMessage?: string | null;
-  usage?: UsageSummary;           // { inputTokens, outputTokens, cachedInputTokens? }
-  sessionId?: string | null;      // Legacy  prefer sessionParams
-  sessionParams?: Record<string, unknown> | null;  // Opaque session state persisted between runs
-  sessionDisplayId?: string | null;
-  provider?: string | null;       // "anthropic", "openai", etc.
-  model?: string | null;
-  costUsd?: number | null;
-  resultJson?: Record<string, unknown> | null;
-  summary?: string | null;        // Human-readable summary of what the agent did
-  clearSession?: boolean;         // true = tell Forge Anything to forget the stored session
-}
-
-interface AdapterSessionCodec {
-  deserialize(raw: unknown): Record<string, unknown> | null;
-  serialize(params: Record<string, unknown> | null): Record<string, unknown> | null;
-  getDisplayId?(params: Record<string, unknown> | null): string | null;
-}
-```
-
-### Module Interfaces
-
-```ts
-// Server  registered in server/src/adapters/registry.ts
-interface ServerAdapterModule {
-  type: string;
-  execute(ctx: AdapterExecutionContext): Promise<AdapterExecutionResult>;
-  testEnvironment(ctx: AdapterEnvironmentTestContext): Promise<AdapterEnvironmentTestResult>;
-  sessionCodec?: AdapterSessionCodec;
-  supportsLocalAgentJwt?: boolean;
-  models?: { id: string; label: string }[];
-  agentConfigurationDoc?: string;
-}
-
-// UI  registered in ui/src/adapters/registry.ts
-interface UIAdapterModule {
-  type: string;
-  label: string;
-  parseStdoutLine: (line: string, ts: string) => TranscriptEntry[];
-  ConfigFields: ComponentType<AdapterConfigFieldsProps>;
-  buildAdapterConfig: (values: CreateConfigValues) => Record<string, unknown>;
-}
-
-// CLI  registered in cli/src/adapters/registry.ts
-interface CLIAdapterModule {
-  type: string;
-  formatStdoutEvent: (line: string, debug: boolean) => void;
-}
-```
+See `references/shared-types.md` for the full shared type definitions.
 
 ---
 
 ## 2.1 Adapter Environment Test Contract
 
-Every server adapter must implement `testEnvironment(...)`. This powers the board UI "Test environment" button in agent configuration.
-
-```ts
-type AdapterEnvironmentCheckLevel = "info" | "warn" | "error";
-type AdapterEnvironmentTestStatus = "pass" | "warn" | "fail";
-
-interface AdapterEnvironmentCheck {
-  code: string;
-  level: AdapterEnvironmentCheckLevel;
-  message: string;
-  detail?: string | null;
-  hint?: string | null;
-}
-
-interface AdapterEnvironmentTestResult {
-  adapterType: string;
-  status: AdapterEnvironmentTestStatus;
-  checks: AdapterEnvironmentCheck[];
-  testedAt: string; // ISO timestamp
-}
-
-interface AdapterEnvironmentTestContext {
-  companyId: string;
-  adapterType: string;
-  config: Record<string, unknown>; // runtime-resolved adapterConfig
-}
-```
-
-Guidelines:
-
-- Return structured diagnostics, never throw for expected findings.
-- Use `error` for invalid/unusable runtime setup (bad cwd, missing command, invalid URL).
-- Use `warn` for non-blocking but important situations.
-- Use `info` for successful checks and context.
-
-Severity policy is product-critical: warnings are not save blockers.  
-Example: for `claude_local`, detected `ANTHROPIC_API_KEY` must be a `warn`, not an `error`, because Claude can still run (it just uses API-key auth instead of subscription auth).
+See `references/environment-test-contract.md` for the environment test contract.
 
 ---
 
 ## 3. Step-by-Step: Creating a New Adapter
+
 
 ### 3.1 Create the Package
 
@@ -415,6 +313,7 @@ export function printMyAgentStreamEvent(raw: string, debug: boolean): void {
 
 ## 4. Registration Checklist
 
+
 After creating the adapter package, register it in all three consumers:
 
 ### 4.1 Server Registry (`server/src/adapters/registry.ts`)
@@ -482,40 +381,12 @@ const myAgentCLIAdapter: CLIAdapterModule = {
 
 ## 5. Session Management  Designing for Long Runs
 
-Sessions allow agents to maintain conversation context across runs. The system is **codec-based**  each adapter defines how to serialize/deserialize its session state.
-
-**Design for long runs from the start.** Treat session reuse as the default primitive, not an optimization to add later. An agent working on an issue may be woken dozens of times  for the initial assignment, approval callbacks, re-assignments, manual nudges. Each wake should resume the existing conversation so the agent retains full context about what it has already done, what files it has read, and what decisions it has made. Starting fresh each time wastes tokens on re-reading the same files and risks contradictory decisions.
-
-**Key concepts:**
-- `sessionParams` is an opaque `Record<string, unknown>` stored in the DB per task
-- The adapter's `sessionCodec.serialize()` converts execution result data to storable params
-- `sessionCodec.deserialize()` converts stored params back for the next run
-- `sessionCodec.getDisplayId()` extracts a human-readable session ID for the UI
-- **cwd-aware resume**: if the session was created in a different cwd than the current config, skip resuming (prevents cross-project session contamination)
-- **Unknown session retry**: if resume fails with a "session not found" error, retry with a fresh session and return `clearSession: true` so Forge Anything wipes the stale session
-
-If the agent runtime supports any form of context compaction or conversation compression (e.g. Claude Code's automatic context management, or Codex's `previous_response_id` chaining), lean on it. Adapters that support session resume get compaction for free  the agent runtime handles context window management internally across resumes.
-
-**Pattern** (from both claude-local and codex-local):
-
-```ts
-const canResumeSession =
-  runtimeSessionId.length > 0 &&
-  (runtimeSessionCwd.length === 0 || path.resolve(runtimeSessionCwd) === path.resolve(cwd));
-const sessionId = canResumeSession ? runtimeSessionId : null;
-
-// ... run attempt ...
-
-// If resume failed with unknown session, retry fresh
-if (sessionId && !proc.timedOut && exitCode !== 0 && isUnknownSessionError(output)) {
-  const retry = await runAttempt(null);
-  return toResult(retry, { clearSessionOnMissingSession: true });
-}
-```
+See `references/session-management.md` for session design for long runs.
 
 ---
 
 ## 6. Server-Utils Helpers
+
 
 Import from `@forge-anything/adapter-utils/server-utils`:
 
@@ -539,139 +410,18 @@ Import from `@forge-anything/adapter-utils/server-utils`:
 
 ## 7. Conventions and Patterns
 
-### Naming
-- Adapter type: `snake_case` (e.g. `claude_local`, `codex_local`)
-- Package name: `@forge-anything/adapter-<kebab-name>`
-- Package directory: `packages/adapters/<kebab-name>/`
-
-### Config Parsing
-- Never trust `config` values directly  always use `asString`, `asNumber`, etc.
-- Provide sensible defaults for every optional field
-- Document all fields in `agentConfigurationDoc`
-
-### Prompt Templates
-- Support `promptTemplate` for every run
-- Use `renderTemplate()` with the standard variable set
-- Default prompt: `"You are agent {{agent.id}} ({{agent.name}}). Continue your Forge Anything work."`
-
-### Error Handling
-- Differentiate timeout vs process error vs parse failure
-- Always populate `errorMessage` on failure
-- Include raw stdout/stderr in `resultJson` when parsing fails
-- Handle the agent CLI not being installed (command not found)
-
-### Logging
-- Call `onLog("stdout", ...)` and `onLog("stderr", ...)` for all process output  this feeds the real-time run viewer
-- Call `onMeta(...)` before spawning to record invocation details
-- Use `redactEnvForLogs()` when including env in meta
-
-### Forge Anything Skills Injection
-
-Forge Anything ships shared skills (in the repo's top-level `skills/` directory) that agents need at runtime  things like the `forge` API skill and the `forge-create-agent` workflow skill. Each adapter is responsible for making these skills discoverable by its agent runtime **without polluting the agent's working directory**.
-
-**The constraint:** never copy or symlink skills into the agent's `cwd`. The cwd is the user's project checkout  writing `.claude/skills/` or any other files into it would contaminate the repo with Forge Anything internals, break git status, and potentially leak into commits.
-
-**The pattern:** create a clean, isolated location for skills and tell the agent runtime to look there.
-
-**How claude-local does it:**
-
-1. At execution time, create a fresh tmpdir: `mkdtemp("forge-skills-")`
-2. Inside it, create `.claude/skills/` (the directory structure Claude Code expects)
-3. Symlink each skill directory from the repo's `skills/` into the tmpdir's `.claude/skills/`
-4. Pass the tmpdir to Claude Code via `--add-dir <tmpdir>`  this makes Claude Code discover the skills as if they were registered in that directory, without touching the agent's actual cwd
-5. Clean up the tmpdir in a `finally` block after the run completes
-
-```ts
-// From claude-local execute.ts
-async function buildSkillsDir(): Promise<string> {
-  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), "forge-skills-"));
-  const target = path.join(tmp, ".claude", "skills");
-  await fs.mkdir(target, { recursive: true });
-  const entries = await fs.readdir(FORGE_SKILLS_DIR, { withFileTypes: true });
-  for (const entry of entries) {
-    if (entry.isDirectory()) {
-      await fs.symlink(
-        path.join(FORGE_SKILLS_DIR, entry.name),
-        path.join(target, entry.name),
-      );
-    }
-  }
-  return tmp;
-}
-
-// In execute(): pass --add-dir to Claude Code
-const skillsDir = await buildSkillsDir();
-args.push("--add-dir", skillsDir);
-// ... run process ...
-// In finally: fs.rm(skillsDir, { recursive: true, force: true })
-```
-
-**How codex-local does it:**
-
-Codex has a global personal skills directory (`$CODEX_HOME/skills` or `~/.codex/skills`). The adapter symlinks Forge Anything skills there if they don't already exist. This is acceptable because it's the agent tool's own config directory, not the user's project.
-
-```ts
-// From codex-local execute.ts
-async function ensureCodexSkillsInjected(onLog) {
-  const skillsHome = path.join(codexHomeDir(), "skills");
-  await fs.mkdir(skillsHome, { recursive: true });
-  for (const entry of entries) {
-    const target = path.join(skillsHome, entry.name);
-    const existing = await fs.lstat(target).catch(() => null);
-    if (existing) continue;  // Don't overwrite user's own skills
-    await fs.symlink(source, target);
-  }
-}
-```
-
-**For a new adapter:** figure out how your agent runtime discovers skills/plugins, then choose the cleanest injection path:
-
-1. **Best: tmpdir + flag** (like claude-local)  if the runtime supports an "additional directory" flag, create a tmpdir, symlink skills in, pass the flag, clean up after. Zero side effects.
-2. **Acceptable: global config dir** (like codex-local)  if the runtime has a global skills/plugins directory separate from the project, symlink there. Skip existing entries to avoid overwriting user customizations.
-3. **Acceptable: env var**  if the runtime reads a skills/plugin path from an environment variable, point it at the repo's `skills/` directory directly.
-4. **Last resort: prompt injection**  if the runtime has no plugin system, include skill content in the prompt template itself. This uses tokens but avoids filesystem side effects entirely.
-
-**Skills as loaded procedures, not prompt bloat.** The Forge Anything skills (like `forge` and `forge-create-agent`) are designed as on-demand procedures: the agent sees skill metadata (name + description) in its context, but only loads the full SKILL.md content when it decides to invoke a skill. This keeps the base prompt small. When writing `agentConfigurationDoc` or prompt templates for your adapter, do not inline skill content  let the agent runtime's skill discovery do the work. The descriptions in each SKILL.md frontmatter act as routing logic: they tell the agent when to load the full skill, not what the skill contains.
-
-**Explicit vs. fuzzy skill invocation.** For production workflows where reliability matters (e.g. an agent that must always call the Forge Anything API to report status), use explicit instructions in the prompt template: "Use the forge skill to report your progress." Fuzzy routing (letting the model decide based on description matching) is fine for exploratory tasks but unreliable for mandatory procedures.
+See `references/conventions-and-patterns.md` for naming, config, prompt, error-handling, logging, and skills-injection conventions.
 
 ---
 
 ## 8. Security Considerations
 
-Adapters sit at the boundary between Forge Anything's orchestration layer and arbitrary agent execution. This is a high-risk surface.
-
-### Treat Agent Output as Untrusted
-
-The agent process runs LLM-driven code that reads external files, fetches URLs, and executes tools. Its output may be influenced by prompt injection from the content it processes. The adapter's parse layer is a trust boundary  validate everything, execute nothing.
-
-### Secret Injection via Environment, Not Prompts
-
-Never put secrets (API keys, tokens) into prompt templates or config fields that flow through the LLM. Instead, inject them as environment variables that the agent's tools can read directly:
-
-- `FORGE_API_KEY` is injected by the server into the process environment, not the prompt
-- User-provided secrets in `config.env` are passed as env vars, redacted in `onMeta` logs
-- The `redactEnvForLogs()` helper automatically masks any key matching `/(key|token|secret|password|authorization|cookie)/i`
-
-This follows the "sidecar injection" pattern: the model never sees the real secret value, but the tools it invokes can read it from the environment.
-
-### Network Access
-
-If your agent runtime supports network access controls (sandboxing, allowlists), configure them in the adapter:
-
-- Prefer minimal allowlists over open internet access. An agent that only needs to call the Forge Anything API and GitHub should not have access to arbitrary hosts.
-- Skills + network = amplified risk. A skill that teaches the agent to make HTTP requests combined with unrestricted network access creates an exfiltration path. Constrain one or the other.
-- If the runtime supports layered policies (org-level defaults + per-request overrides), wire the org-level policy into the adapter config and let per-agent config narrow further.
-
-### Process Isolation
-
-- CLI-based adapters inherit the server's user permissions. The `cwd` and `env` config determine what the agent process can access on the filesystem.
-- `dangerouslySkipPermissions` / `dangerouslyBypassApprovalsAndSandbox` flags exist for development convenience but must be documented as dangerous in `agentConfigurationDoc`. Production deployments should not use them.
-- Timeout and grace period (`timeoutSec`, `graceSec`) are safety rails  always enforce them. A runaway agent process without a timeout can consume unbounded resources.
+See `references/security-considerations.md` for security considerations for the adapter boundary.
 
 ---
 
 ## 9. TranscriptEntry Kinds Reference
+
 
 The UI run viewer displays these entry kinds:
 
@@ -692,6 +442,7 @@ The UI run viewer displays these entry kinds:
 
 ## 10. Testing
 
+
 Create tests in `server/src/__tests__/<adapter-name>-adapter.test.ts`. Test:
 
 1. **Output parsing**  feed sample stdout through your parser, verify structured output
@@ -702,6 +453,7 @@ Create tests in `server/src/__tests__/<adapter-name>-adapter.test.ts`. Test:
 ---
 
 ## 11. Minimal Adapter Checklist
+
 
 - [ ] `packages/adapters/<name>/package.json` with four exports (`.`, `./server`, `./ui`, `./cli`)
 - [ ] Root `index.ts` with `type`, `label`, `models`, `agentConfigurationDoc`

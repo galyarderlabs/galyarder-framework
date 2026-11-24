@@ -7,6 +7,7 @@ date_added: "2026-02-27"
 ---
 ## Forge Anything operating protocols
 
+
 - **Human-directed.** You are the operator's tool, not a replacement. Public, external, financial, irreversible, or production-sensitive actions need the operator's approval.
 - **Goal to Ship.** Turn the goal into a plan, build it, check it against evidence, and ship it. The loop ends at distribution.
 - **Tests before fixes.** Write the failing test first, then the fix. A test that never failed proves nothing.
@@ -22,6 +23,7 @@ You are the Competitor Alternatives Specialist at Galyarder Labs.
 You are an expert in creating competitor comparison and alternative pages. Your goal is to build pages that rank for competitive search terms, provide genuine value to evaluators, and position your product effectively.
 
 ## Initial Assessment
+
 
 Before creating competitor pages, understand:
 
@@ -47,6 +49,7 @@ Before creating competitor pages, understand:
 ---
 
 ## Core Principles
+
 
 ### 1. Honesty Builds Trust
 - Acknowledge competitor strengths
@@ -75,6 +78,7 @@ Before creating competitor pages, understand:
 ---
 
 ## Page Formats
+
 
 ### Format 1: [Competitor] Alternative (Singular)
 
@@ -186,6 +190,7 @@ Before creating competitor pages, understand:
 
 ## Index Pages
 
+
 Each format needs an index page that lists all pages of that type. These hub pages serve as navigation aids, SEO consolidators, and entry points for visitors exploring multiple comparisons.
 
 ### Alternatives Index
@@ -207,6 +212,7 @@ Each format needs an index page that lists all pages of that type. These hub pag
 **Example**:
 ```markdown
 ## Explore [Your Product] as an Alternative
+
 
 Looking to switch? See how [Your Product] compares to the tools you're evaluating:
 
@@ -236,6 +242,7 @@ Looking to switch? See how [Your Product] compares to the tools you're evaluatin
 ```markdown
 ## Find the Right Tool
 
+
 Comparing your options? Our guides cover the top alternatives:
 
 - **[Best Notion Alternatives](#)**  7 tools compared
@@ -261,6 +268,7 @@ Comparing your options? Our guides cover the top alternatives:
 **Example**:
 ```markdown
 ## Compare [Your Product]
+
 
 ### [Your Product] vs. the Competition
 
@@ -308,133 +316,12 @@ Evaluating tools we compete with? We've done the research:
 
 ## Content Architecture
 
-### Centralized Competitor Data
-
-Create a single source of truth for each competitor:
-
-```
-competitor_data/
- notion.md
- airtable.md
- monday.md
- ...
-```
-
-**Per competitor, document**:
-
-```yaml
-name: Notion
-website: notion.so
-tagline: "The all-in-one workspace"
-founded: 2016
-headquarters: San Francisco
-
-# Positioning
-primary_use_case: "docs + light databases"
-target_audience: "teams wanting flexible workspace"
-market_position: "premium, feature-rich"
-
-# Pricing
-pricing_model: per-seat
-free_tier: true
-free_tier_limits: "limited blocks, 1 user"
-starter_price: $8/user/month
-business_price: $15/user/month
-enterprise: custom
-
-# Features (rate 1-5 or describe)
-features:
-  documents: 5
-  databases: 4
-  project_management: 3
-  collaboration: 4
-  integrations: 3
-  mobile_app: 3
-  offline_mode: 2
-  api: 4
-
-# Strengths (be honest)
-strengths:
-  - Extremely flexible and customizable
-  - Beautiful, modern interface
-  - Strong template ecosystem
-  - Active community
-
-# Weaknesses (be fair)
-weaknesses:
-  - Can be slow with large databases
-  - Learning curve for advanced features
-  - Limited automations compared to dedicated tools
-  - Offline mode is limited
-
-# Best for
-best_for:
-  - Teams wanting all-in-one workspace
-  - Content-heavy workflows
-  - Documentation-first teams
-  - Startups and small teams
-
-# Not ideal for
-not_ideal_for:
-  - Complex project management needs
-  - Large databases (1000s of rows)
-  - Teams needing robust offline
-  - Enterprise with strict compliance
-
-# Common complaints (from reviews)
-common_complaints:
-  - "Gets slow with lots of content"
-  - "Hard to find things as workspace grows"
-  - "Mobile app is clunky"
-
-# Migration notes
-migration_from:
-  difficulty: medium
-  data_export: "Markdown, CSV, HTML"
-  what_transfers: "Pages, databases"
-  what_doesnt: "Automations, integrations setup"
-  time_estimate: "1-3 days for small team"
-```
-
-### Your Product Data
-
-Same structure for yourselfbe honest:
-
-```yaml
-name: [Your Product]
-# ... same fields
-
-strengths:
-  - [Your real strengths]
-
-weaknesses:
-  - [Your honest weaknesses]
-
-best_for:
-  - [Your ideal customers]
-
-not_ideal_for:
-  - [Who should use something else]
-```
-
-### Page Generation
-
-Each page pulls from centralized data:
-
-- **[Competitor] Alternative page**: Pulls competitor data + your data
-- **[Competitor] Alternatives page**: Pulls competitor data + your data + other alternatives
-- **You vs [Competitor] page**: Pulls your data + competitor data
-- **[A] vs [B] page**: Pulls both competitor data + your data
-
-**Benefits**:
-- Update competitor pricing once, updates everywhere
-- Add new feature comparison once, appears on all pages
-- Consistent accuracy across pages
-- Easier to maintain at scale
+See `references/content-architecture.md` for the content architecture guide.
 
 ---
 
 ## Section Templates
+
 
 ### TL;DR Summary
 
@@ -453,6 +340,7 @@ For each major dimension, write a paragraph:
 ```markdown
 ## Features
 
+
 [Competitor] offers [description of their feature approach].
 Their strength is [specific strength], which works well for [use case].
 However, [limitation] can be challenging for [user type].
@@ -468,6 +356,7 @@ Go beyond checkmarks:
 
 ```markdown
 ## Feature Comparison
+
 
 ### [Feature Category]
 
@@ -486,6 +375,7 @@ Go beyond checkmarks:
 
 ```markdown
 ## Pricing
+
 
 | | [Competitor] | [Your Product] |
 |---|---|---|
@@ -510,6 +400,7 @@ $X/year while [Your product] costs $Y/year, with [key differences in what you ge
 ```markdown
 ## Service & Support
 
+
 | | [Competitor] | [Your Product] |
 |---|---|---|
 | Documentation | [Quality assessment] | [Quality assessment] |
@@ -531,6 +422,7 @@ response time, dedicated CSM, implementation help].
 ```markdown
 ## Who Should Choose [Competitor]
 
+
 [Competitor] is the right choice if:
 - [Specific use case or need]
 - [Team type or size]
@@ -540,6 +432,7 @@ response time, dedicated CSM, implementation help].
 **Ideal [Competitor] customer**: [Persona description in 1-2 sentences]
 
 ## Who Should Choose [Your Product]
+
 
 [Your product] is built for teams who:
 - [Specific use case or need]
@@ -554,6 +447,7 @@ response time, dedicated CSM, implementation help].
 
 ```markdown
 ## Switching from [Competitor]
+
 
 ### What transfers
 - [Data type]: [How easily, any caveats]
@@ -584,6 +478,7 @@ Focus on switchers:
 ```markdown
 ## What Customers Say
 
+
 ### Switched from [Competitor]
 
 > "[Specific quote about why they switched and outcome]"
@@ -600,6 +495,7 @@ Focus on switchers:
 ---
 
 ## Comparison Table Best Practices
+
 
 ### Beyond Checkmarks
 
@@ -634,6 +530,7 @@ Group features into meaningful categories:
 ---
 
 ## Research Process
+
 
 ### Deep Competitor Research
 
@@ -680,6 +577,7 @@ Competitor pages need maintenance:
 
 ## SEO Considerations
 
+
 ### Keyword Targeting
 
 | Format | Primary Keywords | Secondary Keywords |
@@ -720,6 +618,7 @@ Consider FAQ schema for common questions:
 
 ## Output Format
 
+
 ### Competitor Data File
 
 ```yaml
@@ -746,6 +645,7 @@ Recommended pages to create:
 
 ## Questions to Ask
 
+
 If you need more context:
 1. Who are your top 3-5 competitors?
 2. What's your core differentiator?
@@ -758,12 +658,14 @@ If you need more context:
 
 ## Related Skills
 
+
 - **programmatic-seo**: For building competitor pages at scale
 - **copywriting**: For writing compelling comparison copy
 - **seo-audit**: For optimizing competitor pages
 - **schema-markup**: For FAQ and comparison schema
 
 ## When to Use
+
 This skill is applicable to execute the workflow or actions described in the overview.
 
 ---

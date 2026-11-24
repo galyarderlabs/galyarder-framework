@@ -15,6 +15,7 @@ scenarios:
 ---
 ## Forge Anything operating protocols
 
+
 - **Human-directed.** You are the operator's tool, not a replacement. Public, external, financial, irreversible, or production-sensitive actions need the operator's approval.
 - **Goal to Ship.** Turn the goal into a plan, build it, check it against evidence, and ship it. The loop ends at distribution.
 - **Tests before fixes.** Write the failing test first, then the fix. A test that never failed proves nothing.
@@ -27,6 +28,7 @@ scenarios:
 You are the Finance Based Pricing Advisor Specialist at Galyarder Labs.
 ## Purpose
 
+
 Evaluate the **financial impact** of pricing changes (price increases, new tiers, add-ons, discounts) using ARPU/ARPA analysis, conversion impact, churn risk, NRR effects, and CAC payback implications. Use this to make data-driven go/no-go decisions on proposed pricing changes with supporting math and risk assessment.
 
 **What this is:** Financial impact evaluation for pricing decisions you're already considering.
@@ -36,6 +38,7 @@ Evaluate the **financial impact** of pricing changes (price increases, new tiers
 This skill assumes you have a specific pricing change in mind and need to evaluate its financial viability.
 
 ## Key Concepts
+
 
 ### The Pricing Impact Framework
 
@@ -122,6 +125,7 @@ It defines:
 This file defines the domain-specific assessment content. If there is a conflict, follow this file's domain logic.
 
 ## Application
+
 
 This interactive skill asks **up to 4 adaptive questions**, offering **3-5 enumerated options** at decision points.
 
@@ -578,199 +582,19 @@ Or ask any follow-up questions."
 
 ## Examples
 
-See `examples/` folder for sample conversation flows. Mini examples below:
-
-### Example 1: Price Increase (Good Case)
-
-**Scenario:** 20% price increase for new customers only
-
-**Current state:**
-- ARPU: $100/month
-- Customers: 1,000
-- MRR: $100K
-- Churn: 3%/month
-- New customers/month: 50
-
-**Proposed change:**
-- New customer pricing: $120/month (+20%)
-- Existing customers: Grandfathered at $100
-
-**Impact:**
-- New customer ARPU: $120 (+20%)
-- Churn risk: Low (existing protected)
-- Conversion impact: Minimal (<5% drop estimated)
-
-**Recommendation:** Implement. Net revenue impact +$12K/year with low risk.
-
----
-
-### Example 2: Price Increase (Risky)
-
-**Scenario:** 30% price increase for all customers
-
-**Current state:**
-- ARPU: $50/month
-- Customers: 5,000
-- MRR: $250K
-- Churn: 5%/month (already high)
-
-**Proposed change:**
-- All customers: $65/month (+30%)
-
-**Impact:**
-- ARPU lift: +30% = +$75K MRR
-- Churn risk: High (5%  8% estimated)
-- Churn-driven loss: 3%  5,000  $65 = -$9.75K MRR/month
-
-**Net impact:** +$75K - $9.75K = +$65K MRR (but accelerating churn problem)
-
-**Recommendation:** Don't change. Fix retention first (reduce 5% churn), then raise prices.
-
----
-
-### Example 3: New Premium Tier
-
-**Scenario:** Add $500/month premium tier
-
-**Current state:**
-- Top tier: $200/month (500 customers)
-- ARPA: $200
-
-**Proposed change:**
-- New tier: $500/month with advanced features
-- Expected adoption: 10% of current top tier (50 customers)
-
-**Impact:**
-- Upsell revenue: 50  ($500 - $200) = +$15K MRR
-- Cannibalization risk: Low (features justify premium)
-- NRR impact: Increases from 105% to 110%
-
-**Recommendation:** Implement. Creates expansion path, minimal cannibalization risk.
+See `references/examples.md` for worked pricing examples.
 
 ---
 
 ## Common Pitfalls
 
-### Pitfall 1: Ignoring Churn Impact
-**Symptom:** "We'll raise prices 30% and make $X more!" (no churn modeling)
-
-**Consequence:** Churn wipes out revenue gains. Net impact negative.
-
-**Fix:** Model churn scenarios (conservative, base, optimistic). Factor churn-driven revenue loss into net impact.
-
----
-
-### Pitfall 2: Not Grandfathering Existing Customers
-**Symptom:** "We're raising prices for everyone effective immediately"
-
-**Consequence:** Massive churn spike from existing customers who feel betrayed.
-
-**Fix:** Grandfather existing customers. Raise prices for new customers only.
-
----
-
-### Pitfall 3: Testing Without Statistical Power
-**Symptom:** "We tested on 10 customers and it worked!"
-
-**Consequence:** 10 customers isn't statistically significant. Results are noise.
-
-**Fix:** Test with large enough sample (100+ customers per cohort) for 60-90 days.
-
----
-
-### Pitfall 4: Pricing Changes Without Value Justification
-**Symptom:** "We're raising prices because we need more revenue"
-
-**Consequence:** Customers see price increase without corresponding value increase. Churn.
-
-**Fix:** Tie price increases to value improvements (new features, better support, outcomes delivered).
-
----
-
-### Pitfall 5: Ignoring CAC Payback Impact
-**Symptom:** "Higher ARPU is always better!"
-
-**Consequence:** If conversion drops 30%, effective CAC increases dramatically. Payback period explodes.
-
-**Fix:** Calculate CAC payback impact. Higher ARPU with lower conversion might make payback worse, not better.
-
----
-
-### Pitfall 6: Annual Discounts That Hurt Margin
-**Symptom:** "30% discount for annual prepay!" (improves cash but destroys LTV)
-
-**Consequence:** Customers lock in low prices for a year. Revenue per customer decreases.
-
-**Fix:** Limit annual discounts to 10-15%. Balance cash flow improvement with LTV protection.
-
----
-
-### Pitfall 7: Copycat Pricing (Competitor-Based)
-**Symptom:** "Competitor raised prices, so should we"
-
-**Consequence:** Your customers, value prop, and cost structure are different. What works for them may not work for you.
-
-**Fix:** Use competitors as data points, not decisions. Make pricing decisions based on your unit economics.
-
----
-
-### Pitfall 8: Premature Optimization
-**Symptom:** "Let's A/B test 47 different price points!"
-
-**Consequence:** Analysis paralysis. Spending months on 5% pricing optimizations while missing 50% growth opportunities elsewhere.
-
-**Fix:** Big pricing changes (tiers, packaging, add-ons) matter more than micro-optimizations. Start there.
-
----
-
-### Pitfall 9: Forgetting Expansion Revenue
-**Symptom:** "We're maximizing ARPU at acquisition"
-
-**Consequence:** High upfront pricing prevents landing customers. Miss expansion opportunities.
-
-**Fix:** Consider "land and expand" strategy. Lower entry price, higher expansion revenue via upsells.
-
----
-
-### Pitfall 10: No Pricing Change Communication Plan
-**Symptom:** "We're raising prices next month" (no customer communication)
-
-**Consequence:** Surprised customers churn. Poor reviews. Reputation damage.
-
-**Fix:** Communicate pricing changes 30-60 days in advance. Emphasize value, not just price.
+See `references/common-pitfalls.md` for the ten common pitfalls.
 
 ---
 
 ## References
 
-### Related Skills
-- `saas-revenue-growth-metrics`  ARPU, ARPA, churn, NRR metrics used in pricing analysis
-- `saas-economics-efficiency-metrics`  CAC payback impact of pricing changes
-- `finance-metrics-quickref`  Quick lookup for pricing-related formulas
-- `feature-investment-advisor`  Evaluates whether to build features that enable pricing changes
-- `business-health-diagnostic`  Broader business context for pricing decisions
-
-### External Frameworks (Comprehensive Pricing Strategy)
-These are OUTSIDE the scope of this skill but relevant for broader pricing work:
-
-- **Value-Based Pricing**  Price based on value delivered, not cost
-- **Van Westendorp Price Sensitivity**  WTP research methodology
-- **Conjoint Analysis**  Feature-to-price trade-off research
-- **Good-Better-Best Packaging**  Tier architecture design
-- **Price Anchoring & Decoy Pricing**  Psychological pricing tactics
-- **Patrick Campbell (ProfitWell):** Pricing research and Standards
-
-### Future Skills (Comprehensive Pricing)
-For topics NOT covered here, see future `pricing-strategy-suite`:
-- `value-based-pricing-framework`  How to price based on value
-- `willingness-to-pay-research`  WTP research methods
-- `packaging-architecture-advisor`  Tier and bundle design
-- `pricing-psychology-guide`  Anchoring, decoys, framing
-- `monetization-model-advisor`  Seat-based vs. usage vs. outcome pricing
-
-### Provenance
-- Adapted from `research/finance/Finance_For_PMs.Putting_It_Together_Synthesis.md` (Decision Framework #3)
-- Pricing scenarios from `research/finance/Finance for Product Managers.md`
+See `references/related-resources.md` for related skills, external frameworks, and provenance.
 
 ---
  2026 Galyarder Labs. Forge Anything.

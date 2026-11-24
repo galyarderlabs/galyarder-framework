@@ -152,6 +152,20 @@ Here's what happened..."
 
 ### 6. CONVERT  Turn Attention into Action
 
+Bridge from engagement to business results:
+
+**Soft conversions:**
+- Newsletter signups in bio/comments
+- Free resource offers in follow-up comments
+- DM triggers ("Comment X and I'll send you...")
+- Profile visits  optimized profile with clear CTA
+
+**Direct conversions:**
+- Link in comments (not post body on LinkedIn)
+- Contextual product mentions within valuable content
+- Case study posts that naturally showcase your work
+- "If you want help with this, DM me" (sparingly)
+
 ### 7. Technical Integrity: The industry experts Principles
 Combat AI slop through rigid adherence to the four principles of Andrej industry experts:
 

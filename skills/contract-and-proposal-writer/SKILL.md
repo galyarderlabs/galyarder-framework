@@ -19,6 +19,7 @@ metadata:
 ---
 ## Forge Anything operating protocols
 
+
 - **Human-directed.** You are the operator's tool, not a replacement. Public, external, financial, irreversible, or production-sensitive actions need the operator's approval.
 - **Goal to Ship.** Turn the goal into a plan, build it, check it against evidence, and ship it. The loop ends at distribution.
 - **Tests before fixes.** Write the failing test first, then the fix. A test that never failed proves nothing.
@@ -37,6 +38,7 @@ You are the Contract And Proposal Writer Specialist at Galyarder Labs.
 
 ## Overview
 
+
 Generate professional, jurisdiction-aware business documents: freelance contracts, project proposals, statements of work, NDAs, and master service agreements. Outputs structured Markdown with conversion instructions for DOCX and PDF. Covers US (Delaware), EU (GDPR), UK, and DACH (German law) jurisdictions with clause libraries for each.
 
 **This is not a substitute for legal counsel.** Use these templates as strong starting points. Review with an attorney for engagements over $50K or involving complex IP, equity, or regulatory requirements.
@@ -44,6 +46,7 @@ Generate professional, jurisdiction-aware business documents: freelance contract
 ---
 
 ## Core Capabilities
+
 
 - Fixed-price and hourly development contracts
 - Monthly consulting retainer agreements
@@ -59,6 +62,7 @@ Generate professional, jurisdiction-aware business documents: freelance contract
 ---
 
 ## Workflow
+
 
 ### Step 1: Requirements Gathering
 
@@ -111,69 +115,12 @@ Before sending any generated document:
 
 ## Clause Library
 
-### Payment Terms
-
-| Model | Standard Terms | Risk Notes |
-|-------|---------------|------------|
-| Fixed-price | 50% upfront, 25% at beta, 25% at acceptance | Best for defined scope |
-| Hourly | Net-30, monthly invoicing | Requires time tracking |
-| Retainer | Monthly prepaid, 1st of month | Include overflow rate |
-| Milestone | Per-milestone invoicing | Define milestones precisely |
-| Revenue-share | Net-30 after month close, minimum threshold | Requires audit rights |
-
-**Late payment:** 1.5% per month (US standard), up to statutory maximum in EU/DACH.
-
-### Intellectual Property
-
-| Jurisdiction | Default IP Ownership | Key Requirement |
-|-------------|---------------------|-----------------|
-| US (Delaware) | Work-for-hire doctrine | Must be in writing, 9 qualifying categories |
-| EU | Author retains moral rights | Separate written assignment needed |
-| UK | Employer owns (if employee) | Contractor: explicit assignment required |
-| DACH (Germany) | Author retains Urheberrecht permanently | Must transfer Nutzungsrechte (usage rights) explicitly |
-
-**Pre-existing IP:** Always carve out pre-existing tools, libraries, and frameworks. Grant client a perpetual, royalty-free license to use pre-existing IP as embedded in deliverables.
-
-**Portfolio rights:** Developer retains right to display work in portfolio unless client requests confidentiality in writing within 30 days.
-
-### Liability
-
-| Risk Level | Cap | When to Use |
-|-----------|-----|-------------|
-| Standard | 1x total fees paid | Most projects |
-| High-risk | 3x total fees paid | Critical infrastructure, regulated industries |
-| Uncapped (mutual) | No cap, mutual indemnification | Enterprise partnerships |
-
-**Always exclude:** Indirect, incidental, and consequential damages (both parties).
-
-### Termination
-
-| Type | Notice Period | Financial Treatment |
-|------|-------------|-------------------|
-| For cause | 14-day cure period | Pay for work completed |
-| For convenience (client) | 30 days written notice | Pay for work completed + 10-20% of remaining value |
-| For convenience (either) | 30-60 days | Pay for work completed |
-| Immediate (material breach uncured) | 7 days post-notice | Pro-rata payment |
-
-### Confidentiality
-
-- Standard term: 3 years post-termination
-- Trade secrets: Perpetual (as long as information remains a trade secret)
-- Return/destruction: All confidential materials returned or certified destroyed within 30 days of termination
-- Exceptions: Publicly known, independently developed, received from third party, required by law
-
-### Dispute Resolution
-
-| Jurisdiction | Recommended Forum | Rules |
-|-------------|-------------------|-------|
-| US | Binding arbitration | AAA Commercial Rules, Delaware venue |
-| EU | ICC arbitration or local courts | ICC Rules, venue in capital of governing law |
-| UK | LCIA arbitration, London | LCIA Rules, English law |
-| DACH | DIS arbitration or Landgericht | DIS Rules, German law |
+See `references/clause-library.md` for the clause library.
 
 ---
 
 ## Jurisdiction-Specific Requirements
+
 
 ### US (Delaware)
 - Governing law: State of Delaware (most business-friendly)
@@ -206,10 +153,12 @@ Before sending any generated document:
 
 ## GDPR Data Processing Addendum (Template Block)
 
+
 Required for any EU/DACH engagement involving personal data:
 
 ```markdown
 ## DATA PROCESSING ADDENDUM (Art. 28 GDPR/DSGVO)
+
 
 Controller: [CLIENT LEGAL NAME]
 Processor: [SERVICE PROVIDER LEGAL NAME]
@@ -250,6 +199,7 @@ Transfers outside EEA: [ ] Standard Contractual Clauses [ ] Adequacy Decision [ 
 
 ## Project Proposal Template (Template P)
 
+
 ```markdown
 # PROJECT PROPOSAL
 
@@ -261,15 +211,19 @@ Transfers outside EEA: [ ] Standard Contractual Clauses [ ] Adequacy Decision [ 
 ---
 
 ## Executive Summary
+
 [2-3 sentences: what you will build, the business problem it solves, and the expected outcome]
 
 ## Understanding of Requirements
+
 [Demonstrate you understand the client's problem. Reference their specific situation, not generic boilerplate]
 
 ## Proposed Solution
+
 [Technical approach, architecture overview, technology choices with rationale]
 
 ## Scope of Work
+
 
 ### In Scope
 - [Deliverable 1: specific description]
@@ -285,6 +239,7 @@ Transfers outside EEA: [ ] Standard Contractual Clauses [ ] Adequacy Decision [ 
 
 ## Timeline
 
+
 | Phase | Deliverables | Duration | Dates |
 |-------|-------------|----------|-------|
 | Discovery | Requirements document, architecture plan | 1 week | [Dates] |
@@ -293,6 +248,7 @@ Transfers outside EEA: [ ] Standard Contractual Clauses [ ] Adequacy Decision [ 
 | Launch | Deployment, monitoring, handoff | 1 week | [Dates] |
 
 ## Investment
+
 
 | Item | Cost |
 |------|------|
@@ -308,9 +264,11 @@ Transfers outside EEA: [ ] Standard Contractual Clauses [ ] Adequacy Decision [ 
 - 25% upon final acceptance
 
 ## Why Us
+
 [2-3 concrete differentiators. Reference relevant experience, not just claims]
 
 ## Next Steps
+
 1. Review and approve this proposal
 2. Sign agreement (attached)
 3. Kick-off meeting within [5] business days
@@ -319,6 +277,7 @@ Transfers outside EEA: [ ] Standard Contractual Clauses [ ] Adequacy Decision [ 
 ---
 
 ## Document Conversion
+
 
 ```bash
 # Markdown to DOCX (basic)
@@ -340,6 +299,7 @@ done
 
 ## Common Pitfalls
 
+
 | Pitfall | Consequence | Prevention |
 |---------|-------------|------------|
 | Missing IP assignment language | Unclear ownership, disputes | Always include explicit IP clause per jurisdiction |
@@ -355,6 +315,7 @@ done
 
 ## Best Practices
 
+
 1. Use milestone payments over net-30 for projects over $10K -- reduces cash flow risk for both parties
 2. Always include a change order clause in fixed-price contracts
 3. For DACH: include Schriftformklausel (written form clause) explicitly
@@ -368,6 +329,7 @@ done
 
 ## Related Skills
 
+
 | Skill | Use When |
 |-------|----------|
 | **ceo-advisor** | Strategic decisions about partnerships and business models |
@@ -377,6 +339,7 @@ done
 ---
 
 ## Tool Reference
+
 
 ### 1. contract_clause_checker.py
 
@@ -431,6 +394,7 @@ python scripts/contract_comparison_analyzer.py contract_v1.json contract_v2.json
 
 ## Troubleshooting
 
+
 | Problem | Likely Cause | Solution |
 |---------|-------------|----------|
 | Placeholders left in final document | Rushed filling process | Use contract_clause_checker.py to scan for unfilled [BRACKETED] placeholders before sending |
@@ -444,6 +408,7 @@ python scripts/contract_comparison_analyzer.py contract_v1.json contract_v2.json
 
 ## Success Criteria
 
+
 - All [BRACKETED] placeholders filled before document delivery
 - Correct jurisdiction selected and consistent throughout (verified by contract_clause_checker.py)
 - Payment terms match engagement model with clear invoicing cadence
@@ -456,6 +421,7 @@ python scripts/contract_comparison_analyzer.py contract_v1.json contract_v2.json
 
 ## Scope & Limitations
 
+
 - **In scope:** Contract templates, proposal generation, clause libraries, jurisdiction-specific compliance, document comparison, cost estimation
 - **Out of scope:** Legal advice, contract negotiation strategy, litigation support, regulatory filings
 - **Not legal counsel:** These templates are starting points; review with an attorney for engagements over $50K or involving complex IP, equity, or regulatory requirements
@@ -465,6 +431,7 @@ python scripts/contract_comparison_analyzer.py contract_v1.json contract_v2.json
 ---
 
 ## Integration Points
+
 
 - **ceo-advisor** -- Strategic decisions about partnership structures and business models that drive contract type selection
 - **cfo-advisor** -- Financial terms, revenue recognition, and pricing strategy that inform payment schedule and margin targets
