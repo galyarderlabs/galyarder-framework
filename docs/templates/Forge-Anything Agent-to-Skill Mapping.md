@@ -251,7 +251,7 @@ Primary skills:
 - `experimentation-engineer`
 - `ab-test-setup`
 
-## Legal / Finance
+## Legal
 ### `legal-counsel`
 Primary skills:
 - `legal-tos-privacy`
@@ -265,6 +265,7 @@ Potential external upgrades:
 - terms-of-service
 - regulatory domain packs where relevant
 
+## Finance
 ### `finops-manager`
 Primary skills:
 - `finops-manager`

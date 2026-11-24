@@ -35,7 +35,7 @@ if [ "$IS_SOURCE" = true ]; then
     fi
     echo "✅ Canonical root runtime surface is present."
 else
-    DEPARTMENTS=("Executive" "Product" "Engineering" "Growth" "Security" "Infrastructure" "Legal-Finance" "Knowledge")
+    DEPARTMENTS=("Executive" "Product" "Engineering" "Creative" "Growth" "Security" "Infrastructure" "Finance" "Legal" "Knowledge")
     for dept in "${DEPARTMENTS[@]}"; do
         if [ ! -d "docs/departments/$dept" ]; then
             echo "❌ Error: Department '$dept' is missing in project."

@@ -34,11 +34,13 @@ The departments are how the work is organized, so agents know where work belongs
 1. **Executive**: founder context, investor relations, board updates, diligence readiness.
 2. **Product**: product direction, requirements, scope, roadmap, issue breakdown.
 3. **Engineering**: architecture, implementation, tests, code quality, delivery, refactoring.
-4. **Growth**: acquisition, conversion, retention, distribution, analytics, messaging.
-5. **Security**: security review, threat modeling, hardening, compliance basics.
-6. **Infrastructure**: CI/CD, deployment, runtime operations, release readiness.
-7. **Legal-Finance**: legal review, contracts, privacy, compliance, cost, financial hygiene.
-8. **Knowledge**: documentation, decision history, operating reports, reusable workflows.
+4. **Creative**: design, video, writing, images, branding, and content creation.
+5. **Growth**: acquisition, conversion, retention, distribution, analytics, messaging.
+6. **Security**: security review, threat modeling, hardening, compliance basics.
+7. **Infrastructure**: CI/CD, deployment, runtime operations, release readiness.
+8. **Finance**: cost, budgeting, accounting, financial state, and runway.
+9. **Legal**: legal review, contracts, privacy, compliance, and intellectual property.
+10. **Knowledge**: documentation, decision history, operating reports, reusable workflows.
 
 The coordinators are `forge-ceo`, `forge-cfo-coo`, `forge-cmo`, `forge-cto`, and `forge-specialist`, which handles work that does not fit one department.
 

@@ -106,29 +106,29 @@ Reports to founder:
 - quality status
 - blockers
 
-### 4. Security
+### 4. Creative
 Purpose:
-- security review
-- threat analysis
-- offensive and defensive posture
-- appsec confidence
+- design and visual identity
+- video creation
+- writing and copy quality
+- images and illustration
+- branding and voice
+- content creation and publishing
 
 Lead agents:
-- `security-guardian`
-- `security-reviewer`
-- `cyber-intel`
-- `perseus`
+- `ui-ux-designer`
+- `interface-designer`
 
 Key outputs:
-- threat findings
-- review reports
-- exploit / abuse-path analysis
-- remediation recommendations
+- design work
+- video and image assets
+- written content
+- brand guidance
 
 Reports to founder:
-- security posture
-- urgent risk
-- remediation priority
+- brand consistency
+- content quality
+- delivery status
 
 ### 5. Growth
 Purpose:
@@ -160,7 +160,31 @@ Reports to founder:
 - market response
 - leverage opportunities
 
-### 6. Infrastructure
+### 6. Security
+Purpose:
+- security review
+- threat analysis
+- offensive and defensive posture
+- appsec confidence
+
+Lead agents:
+- `security-guardian`
+- `security-reviewer`
+- `cyber-intel`
+- `perseus`
+
+Key outputs:
+- threat findings
+- review reports
+- exploit / abuse-path analysis
+- remediation recommendations
+
+Reports to founder:
+- security posture
+- urgent risk
+- remediation priority
+
+### 7. Infrastructure
 Purpose:
 - deployment
 - release management
@@ -183,29 +207,45 @@ Reports to founder:
 - infra risk
 - operational reliability
 
-### 7. Legal-Finance
+### 8. Finance
 Purpose:
-- legal protection
-- compliance
+- cost optimization
 - pricing economics
 - operational finance
 
-Lead agents:
-- `legal-counsel`
+Lead agent:
 - `finops-manager`
+
+Key outputs:
+- cost and margin guidance
+- pricing guidance
+- financial state
+
+Reports to founder:
+- financial risk
+- runway
+- cost drift
+
+### 9. Legal
+Purpose:
+- legal protection
+- compliance
+- intellectual property
+
+Lead agent:
+- `legal-counsel`
 
 Key outputs:
 - contract review
 - privacy / terms guidance
 - compliance checks
-- cost and margin guidance
+- license guidance
 
 Reports to founder:
 - legal risk
-- financial risk
 - compliance gaps
 
-### 8. Knowledge
+### 10. Knowledge
 Purpose:
 - preserve memory
 - maintain decision history

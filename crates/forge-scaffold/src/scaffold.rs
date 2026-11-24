@@ -181,7 +181,7 @@ fn readme(project_name: &str) -> String {
          \n\
          - `skills/` — the curated Forge Anything skills (reusable AI-agent\n\
          rules). `forge` is the entry point; the rest cover the core loop\n\
-         (plan, build, verify, ship) and the eight departments.\n\
+         (plan, build, verify, ship) and the ten departments.\n\
          - `agents/` — the Forge agents plus the lead role agent per\n\
          department.\n\
          - `commands/` — slash commands (`/plan`, `/docs`, `/release`, ...).\n\

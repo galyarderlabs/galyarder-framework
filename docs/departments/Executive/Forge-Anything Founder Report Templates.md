@@ -36,7 +36,7 @@ The full template set lives in `docs/templates/Forge-Anything Founder Report Tem
 - Risks:
 - Decisions needed:
 
-### Security
+### Creative
 - Status:
 - What changed:
 - Risks:
@@ -48,13 +48,25 @@ The full template set lives in `docs/templates/Forge-Anything Founder Report Tem
 - Risks:
 - Decisions needed:
 
+### Security
+- Status:
+- What changed:
+- Risks:
+- Decisions needed:
+
 ### Infrastructure
 - Status:
 - What changed:
 - Risks:
 - Decisions needed:
 
-### Legal-Finance
+### Finance
+- Status:
+- What changed:
+- Risks:
+- Decisions needed:
+
+### Legal
 - Status:
 - What changed:
 - Risks:

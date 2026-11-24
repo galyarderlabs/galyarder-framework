@@ -31,7 +31,7 @@
 ### forge-cfo-coo (Chief Financial & Operating Officer)
 - **Persona:** `forge-cfo-coo`
 - **Protocol:** Operations, finance, compliance, and reliability
-- **Department:** Legal-Finance, Knowledge.
+- **Department:** Finance, Legal, Knowledge.
 - **Responsibilities:** Compliance, budget efficiency, operational reliability.
 
 
@@ -110,25 +110,19 @@
 - `finishing-a-development-branch` - Branch completion
 
 
-### 4. Security
-**Department Heads:** `security-guardian`, `perseus`
+### 4. Creative
+**Department Heads:** `ui-ux-designer`, `interface-designer`
 
-**Purpose:** Security review, threat analysis, offensive/defensive posture
+**Purpose:** Design, video, writing, images, branding, and content creation
 
-**Senior Security:**
-- `security-guardian` - Security audits, OWASP
-- `security-reviewer` - Vulnerability detection
-- `perseus` - Offensive security, pentesting
-- `cyber-intel` - Threat intelligence
+**Senior Creative:**
+- `ui-ux-designer` - UI/UX design
+- `interface-designer` - Interface design
 
 **Team Members (Skills):**
-- `executing-red-team-exercise` - Red team operations
-- `testing-for-xss-vulnerabilities-with-burpsuite` - XSS testing
-- `monitoring-darkweb-sources` - Dark web monitoring
-- `tracking-threat-actor-infrastructure` - Threat tracking
-- `executing-active-directory-attack-simulation` - AD security
-- `investigating-phishing-email-incident` - Phishing analysis
-
+- `content-creator` - Content creation
+- `social-content` - Social media content
+- `writing-skills` - Writing craft
 
 ### 5. Growth
 **Department Heads:** `growth-strategist`, `growth-engineer`
@@ -157,7 +151,27 @@
 - `ab-test-setup` - A/B testing
 
 
-### 6. Infrastructure / Operations
+### 6. Security
+**Department Heads:** `security-guardian`, `perseus`
+
+**Purpose:** Security review, threat analysis, offensive/defensive posture
+
+**Senior Security:**
+- `security-guardian` - Security audits, OWASP
+- `security-reviewer` - Vulnerability detection
+- `perseus` - Offensive security, pentesting
+- `cyber-intel` - Threat intelligence
+
+**Team Members (Skills):**
+- `executing-red-team-exercise` - Red team operations
+- `testing-for-xss-vulnerabilities-with-burpsuite` - XSS testing
+- `monitoring-darkweb-sources` - Dark web monitoring
+- `tracking-threat-actor-infrastructure` - Threat tracking
+- `executing-active-directory-attack-simulation` - AD security
+- `investigating-phishing-email-incident` - Phishing analysis
+
+
+### 7. Infrastructure / Operations
 **Department Heads:** `devops-engineer`, `release-manager`
 
 **Purpose:** Deployment, release management, runtime operations, experimentation
@@ -168,14 +182,26 @@
 - `experimentation-engineer` - A/B test infrastructure
 
 
-### 7. Legal / Finance
-**Department Heads:** `legal-counsel`, `finops-manager`
+### 8. Finance
+**Department Head:** `finops-manager`
 
-**Purpose:** Legal protection, compliance, pricing economics, cost optimization
+**Purpose:** Cost optimization, pricing economics
+
+**Senior Advisors:**
+- `finops-manager` - Cloud cost, pricing strategy
+
+**Team Members (Skills):**
+- `saas-finops-optimization` - Cloud cost optimization
+- `finance-based-pricing-advisor` - Pricing strategy
+- `accounting` - Accounting and financial records
+
+### 9. Legal
+**Department Head:** `legal-counsel`
+
+**Purpose:** Legal protection, compliance
 
 **Senior Advisors:**
 - `legal-counsel` - TOS/Privacy, compliance
-- `finops-manager` - Cloud cost, pricing strategy
 
 **Team Members (Skills):**
 - `legal-tos-privacy` - Terms and privacy policies
@@ -183,11 +209,8 @@
 - `iso-42001-ai-governance` - AI governance
 - `open-source-license` - License review
 - `contract-review` - Contract analysis
-- `saas-finops-optimization` - Cloud cost optimization
-- `finance-based-pricing-advisor` - Pricing strategy
 
-
-### 8. Knowledge / Documentation
+### 10. Knowledge / Documentation
 **Department Head:** `obsidian-architect`
 
 **Purpose:** Memory preservation, decision history, visual maps, founder reports

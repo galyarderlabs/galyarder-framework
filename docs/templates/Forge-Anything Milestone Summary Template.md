@@ -14,7 +14,7 @@ They are strategic snapshots that explain what changed, why it matters, and what
 - YYYY-MM-DD
 
 ## Department
-- Executive / Product / Engineering / Growth / Security / Infrastructure / Legal-Finance / Knowledge
+- Executive / Product / Engineering / Creative / Growth / Security / Infrastructure / Finance / Legal / Knowledge
 
 ## What Happened
 - Describe the milestone clearly

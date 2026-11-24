@@ -34,7 +34,7 @@ Each report states the current state, what changed, the risks, and the decisions
 - Risks:
 - Decisions needed:
 
-### Security
+### Creative
 - Status:
 - What changed:
 - Risks:
@@ -46,13 +46,25 @@ Each report states the current state, what changed, the risks, and the decisions
 - Risks:
 - Decisions needed:
 
+### Security
+- Status:
+- What changed:
+- Risks:
+- Decisions needed:
+
 ### Infrastructure
 - Status:
 - What changed:
 - Risks:
 - Decisions needed:
 
-### Legal-Finance
+### Finance
+- Status:
+- What changed:
+- Risks:
+- Decisions needed:
+
+### Legal
 - Status:
 - What changed:
 - Risks:

@@ -13,7 +13,7 @@ A good decision log prevents repeated debates, preserves reasoning, and gives fu
 - YYYY-MM-DD
 
 ## Department
-- Executive / Product / Engineering / Growth / Security / Infrastructure / Legal-Finance / Knowledge
+- Executive / Product / Engineering / Creative / Growth / Security / Infrastructure / Finance / Legal / Knowledge
 
 ## Decision Owner
 - Agent:

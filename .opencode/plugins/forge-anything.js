@@ -34,8 +34,8 @@ export const ForgeAnythingPlugin = async ({ client, directory }) => {
   
   // High-Integrity Silo Discovery
   const SILOS = [
-    'Executive', 'Engineering', 'Growth', 'Security', 
-    'Product', 'Infrastructure', 'Legal-Finance', 'Knowledge'
+    'Executive', 'Engineering', 'Creative', 'Growth', 'Security', 
+    'Product', 'Infrastructure', 'Finance', 'Legal', 'Knowledge'
   ];
 
   const getBootstrapContent = () => {

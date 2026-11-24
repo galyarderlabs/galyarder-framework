@@ -113,7 +113,7 @@ This installs the skills into the harness of your choice (project or global scop
 
 ## Command Silo Structure (Universal Architecture)
 
-The repository is organized into 8 departments. All assets are mapped to a flat structure that every supported harness can read:
+The repository is organized into 10 departments. All assets are mapped to a flat structure that every supported harness can read:
 
 ```text
 Silo/

@@ -10,13 +10,13 @@ forge-scaffold [OPTIONS] <target-dir>
 ## What it creates
 
 - `README.md`, `AGENTS.md`, `WORKFLOW.md`, `.gitignore`, `skills.json`
-- `skills/` — the curated skills (see `src/curated.rs` for the list and the
+- `skills/`: the curated skills (see `src/curated.rs` for the list and the
   criteria: the core loop plus 1-6 per department, defensive/compliance
   security basics instead of the offensive/threat-intel niche, no bundle
   skills except the `forge` entry point)
-- `agents/` — the five Forge agents plus the lead role agent per department
-- `commands/` — all slash commands
-- `docs/` — specs, plans, reports, templates, design, and the 8 departments
+- `agents/`: the five Forge agents plus the lead role agent per department
+- `commands/`: all slash commands
+- `docs/`: specs, plans, reports, templates, design, and the 10 departments
   (`docs/departments/<Dept>/`), each with a README and an audit template
 
 No per-host copies or manifests: any agent or host reads `skills/` and

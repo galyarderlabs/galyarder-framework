@@ -3,7 +3,7 @@
 //! Criteria (see issue #212):
 //! - Reusable as an AI-agent rule (a real SKILL.md with clear instructions).
 //! - Covers the Forge Anything loop: goal -> plan -> build -> verify -> ship.
-//! - Covers each of the 8 departments, so the scaffolded repo works for any
+//! - Covers each of the 10 departments, so the scaffolded repo works for any
 //!   department out of the box.
 //! - Broadly useful, not niche. The ultra-specialized offensive / threat-intel
 //!   security skills (red team, malware reversing, darkweb monitoring) and the
@@ -57,9 +57,10 @@ pub const CURATED_SKILLS: &[&str] = &[
     "cloud-security",
     "gdpr-compliance",
     "open-source-license",
-    // Legal / Finance.
+    // Finance.
     "accounting",
     "financial-analyst",
+    // Legal.
     "contract-review",
     "legal-tos-privacy",
     // Knowledge / Documentation.
@@ -92,23 +93,26 @@ pub const CURATED_AGENTS: &[&str] = &[
     // Infrastructure / Operations.
     "devops-engineer",
     "release-manager",
-    // Legal / Finance.
-    "legal-counsel",
+    // Finance.
     "finops-manager",
+    // Legal.
+    "legal-counsel",
     // Knowledge / Documentation.
     "doc-updater",
     "obsidian-architect",
 ];
 
-/// The 8 departments, in the order the shell scaffold used.
+/// The 10 departments, in the order the shell scaffold used.
 pub const DEPARTMENTS: &[&str] = &[
     "Executive",
     "Product",
     "Engineering",
+    "Creative",
     "Growth",
     "Security",
     "Infrastructure",
-    "Legal-Finance",
+    "Finance",
+    "Legal",
     "Knowledge",
 ];
 
@@ -119,10 +123,12 @@ pub fn audit_template_for(department: &str) -> Option<&'static str> {
         "Executive" => Some("Forge-Anything Founder Office Audit.md"),
         "Product" => Some("Forge-Anything Product Audit.md"),
         "Engineering" => Some("Forge-Anything Engineering Audit.md"),
+        "Creative" => Some("Forge-Anything Creative Audit.md"),
         "Growth" => Some("Forge-Anything Growth Audit.md"),
         "Security" => Some("Forge-Anything Security Audit.md"),
         "Infrastructure" => Some("Forge-Anything Operations Audit.md"),
-        "Legal-Finance" => Some("Forge-Anything Legal-Finance Audit.md"),
+        "Finance" => Some("Forge-Anything Finance Audit.md"),
+        "Legal" => Some("Forge-Anything Legal Audit.md"),
         "Knowledge" => Some("Forge-Anything Knowledge Audit.md"),
         _ => None,
     }

@@ -29,7 +29,7 @@ You are the operator. You are the human owner, the final decision maker, and the
 
 ## Department map
 
-The eight departments are how the work is organized, so agents know where work belongs and what proof it needs. The scaffold creates these eight departments in a new repo.
+The ten departments are how the work is organized, so agents know where work belongs and what proof it needs. The scaffold creates these ten departments in a new repo.
 
 ### Forge core
 
@@ -61,7 +61,15 @@ Leads: `elite-developer`, `super-architect`.
 
 Skills: `test-driven-development`, `systematic-debugging`, `requesting-code-review`, `finishing-a-development-branch`, `release`, `create-agent-adapter`.
 
-### 4. Growth
+### 4. Creative
+
+Design, video, writing, images, branding, and content creation.
+
+Leads: `ui-ux-designer`, `interface-designer`.
+
+Skills: `content-creator`, `social-content`, `writing-skills`.
+
+### 5. Growth
 
 Acquisition, conversion, retention, distribution, analytics, and messaging.
 
@@ -69,7 +77,7 @@ Lead: `growth-strategist`.
 
 Skills: `seo-audit`, `copywriting`, `content-strategy`, `marketing-psychology`, `analytics-tracking`.
 
-### 5. Security
+### 6. Security
 
 Security review, threat modeling, hardening, and compliance basics. The scaffold carries the defensive and compliance basics only; the specialized offensive and threat-intel skills stay in the full repo.
 
@@ -77,7 +85,7 @@ Lead: `security-guardian`.
 
 Skills: `cloud-security`, `gdpr-compliance`, `open-source-license`.
 
-### 6. Infrastructure
+### 7. Infrastructure
 
 CI/CD, deployment, runtime operations, and release readiness.
 
@@ -85,15 +93,23 @@ Leads: `devops-engineer`, `release-manager`.
 
 Skills: `release`.
 
-### 7. Legal-Finance
+### 8. Finance
 
-Legal review, contracts, privacy, compliance, cost, and financial hygiene.
+Cost, budgeting, accounting, financial state, and runway.
 
-Leads: `legal-counsel`, `finops-manager`.
+Lead: `finops-manager`.
 
-Skills: `accounting`, `financial-analyst`, `contract-review`, `legal-tos-privacy`.
+Skills: `accounting`, `financial-analyst`.
 
-### 8. Knowledge
+### 9. Legal
+
+Legal review, contracts, privacy, compliance, and intellectual property.
+
+Lead: `legal-counsel`.
+
+Skills: `contract-review`, `legal-tos-privacy`.
+
+### 10. Knowledge
 
 Documentation, decision history, operating reports, and reusable workflows.
 

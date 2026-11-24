@@ -1,11 +1,11 @@
-# Legal-Finance Report Template
+# Legal Report Template
 
 ## Mission
-The Legal / Finance department exists to reduce legal, compliance, pricing, and financial blind spots that could damage the company.
+The Legal department exists to reduce legal and compliance blind spots that could damage the company.
 
 ## Report Template
 ```markdown
-# Legal-Finance Report - [Date / Period]
+# Legal Report - [Date / Period]
 
 ## Status
 - Green / Yellow / Red:
@@ -15,16 +15,11 @@ The Legal / Finance department exists to reduce legal, compliance, pricing, and 
 - Current legal posture:
 - Compliance concern:
 - Contract / policy updates:
-
-## Financial State
-- Cost / burn concern:
-- Margin / pricing issue:
-- Financial visibility gap:
+- License / obligation updates:
 
 ## Risks
 - Legal risk:
 - Compliance risk:
-- Financial risk:
 
 ## Decisions Needed From Founder
 1.
