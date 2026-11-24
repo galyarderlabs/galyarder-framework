@@ -18,23 +18,6 @@ Restart OpenCode. That's it  the plugin auto-installs and registers all skills.
 
 Verify by asking: "Tell me about your forge-anything"
 
-## Migrating from the old symlink-based install
-
-If you previously installed forge-anything using `git clone` and symlinks, remove the old setup:
-
-```bash
-# Remove old symlinks
-rm -f ~/.config/opencode/plugins/forge-anything.js
-rm -rf ~/.config/opencode/skills/forge-anything
-
-# Optionally remove the cloned repo
-rm -rf ~/.config/opencode/forge-anything
-
-# Remove skills.paths from opencode.json if you added one for forge-anything
-```
-
-Then follow the installation steps above.
-
 ## Usage
 
 Use OpenCode's native `skill` tool:

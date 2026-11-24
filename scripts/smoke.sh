@@ -38,11 +38,11 @@ else
     DEPARTMENTS=("Executive" "Product" "Engineering" "Growth" "Security" "Infrastructure" "Legal-Finance" "Knowledge")
     for dept in "${DEPARTMENTS[@]}"; do
         if [ ! -d "docs/departments/$dept" ]; then
-            echo "❌ Error: Intelligence Layer Department '$dept' is missing in project."
+            echo "❌ Error: Department '$dept' is missing in project."
             exit 1
         fi
     done
-    echo "✅ All ${#DEPARTMENTS[@]} Intelligence Layer departments accounted for."
+    echo "✅ All ${#DEPARTMENTS[@]} departments accounted for."
 fi
 
 # 2. Path & Script Awareness
@@ -56,9 +56,9 @@ fi
 # 3. Documentation/HQ Readiness
 echo "[3/8] Checking Workspace Maturity..."
 if [ -d "docs/departments" ]; then
-    echo "✅ Intelligence Layer structure exists."
+    echo "✅ Department structure exists."
 else
-    echo "⚠️ Warning: Intelligence Layer not initialized. Run 'forge scaffold'."
+    echo "⚠️ Warning: Department structure not initialized. Run 'forge scaffold'."
 fi
 
 # 4. Framework Source specific checks
