@@ -40,7 +40,7 @@ The Engineering department exists to design, build, test, and stabilize software
 - Action 2
 - Action 3
 
-## Linked Linear Work
-- Project:
+## Linked Work
 - Issue(s):
+- Plan or decision:
 ```

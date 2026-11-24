@@ -9,11 +9,10 @@
 ### forge-ceo (Chief Executive Officer)
 - **Persona:** `forge-ceo`
 - **Lead Agent:** `forge-specialist`
-- **Protocol:** Agentic company strategy and verified execution
+- **Protocol:** Verified execution and executive coordination
 - **Responsibilities:**
   - Receive founder intent
   - Delegate to Department Heads (CTO, CMO, CFO/COO)
-  - Enforce the **Obsidian Loop** (Reporting)
   - Provide high-signal executive summaries
 - **Direct Reports:** forge-cto, forge-cmo, forge-cfo-coo
 
@@ -38,10 +37,10 @@
 
 ## Department Structure
 
-### 1. Founder Office / Capital
+### 1. Executive
 **Department Head:** `fundraising-operator`
 
-**Purpose:** Fundraising, investor relations, board reporting, accelerator strategy
+**Purpose:** Founder context, investor relations, board updates, and diligence readiness
 
 **Team Members (Skills):**
 - `founder-context` - Founder narrative and positioning
@@ -70,7 +69,7 @@
 **Team Members (Skills):**
 - `write-a-prd` - PRD creation
 - `prd-to-plan` - PRD to implementation plan
-- `prd-to-issues` - PRD to Linear tickets
+- `prd-to-issues` - PRD to issue breakdown
 - `brainstorming` - Socratic design refinement
 - `writing-plans` - Implementation planning
 - `ubiquitous-language` - Domain language definition
@@ -151,7 +150,6 @@
 - `onboarding-cro` - Onboarding optimization
 - `paywall-upgrade-cro` - Paywall optimization
 - `page-cro` - Landing page CRO
-- `signup-flow-cro` - Signup optimization
 - `social-content` - Social media content
 - `referral-program` - Viral loops
 - `marketing-psychology` - Behavioral psychology
@@ -205,15 +203,13 @@
 ## Operating Principles
 
 1. **Clear Ownership:** Every task has one agent owner.
-2. **The Obsidian Loop:** Every task must result in a persistent report in `docs/departments/`.
-3. **Grounding before execution:** use source files, docs, current state, and relevant tool checks before action.
-4. **Upward synthesis:** information flows from skills and agents into reports, decisions, and operator summaries.
-5. **Downward delegation:** founder intent becomes routed work through departments, agents, skills, and commands.
-6. **Technical Integrity:**
+2. **Grounding before execution:** use source files, docs, current state, and relevant tool checks before action.
+3. **Upward synthesis:** information flows from skills and agents into reports, decisions, and operator summaries.
+4. **Technical Integrity:**
    - **Think Before Coding**: STOP & ASK if uncertain.
    - **Simplicity First**: Minimum code, no speculative abstractions.
    - **Surgical Changes**: Touch only what you must.
    - **Goal-Driven**: Loop until verified via tests-first.
-7. **Task tracking:** important work should be visible in a scoped issue, plan, report, or decision record.
+5. **Task tracking:** important work should be visible in a scoped issue, plan, report, or decision record.
 
 Copyright 2026 Galyarder Labs. Forge Anything. Executive Office.

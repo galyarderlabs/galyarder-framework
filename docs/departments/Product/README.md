@@ -1,3 +1,3 @@
 # Department: Product
-This directory contains persistent reports and strategic memory for the Product department.
+Product direction, requirements, scope, roadmap, and issue breakdown. Reports and working notes for product work land here.
  2026 Galyarder Labs. Forge Anything.

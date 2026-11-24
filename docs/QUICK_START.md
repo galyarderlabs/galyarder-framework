@@ -1,11 +1,11 @@
-# Quick Start: Agentic Company Setup
+# Quick Start
 
-Get Forge Anything and Forge HQ working together as an agentic-company stack.
+Get Forge Anything running in a project.
 
 ## Prerequisites
 
 - A project where you want to deploy the operating structure, such as `~/projects/my-startup`
-- Node.js 20+ for Forge HQ
+- Node.js 20+ for the skills install (`npx skills add`)
 - Git installed
 - Rust 1.85+ only if you build the Forge Anything CLI (`forge`) from source; the prebuilt install below needs no Rust toolchain
 
@@ -61,30 +61,13 @@ forge scaffold
 
 Install Forge Anything into your harness through its own plugin manager, not through the CLI. See [docs/INTEGRATION.md](INTEGRATION.md) for the per-harness install commands.
 
-## Phase 3: Add the Command Layer (Forge HQ)
+## How the pieces connect
 
-Forge HQ gives you visibility over departments, goals, reports, and agent activity.
+1. **Forge Anything** provides the agents, skills, commands, and workflow.
+2. **The `forge` CLI** scaffolds the project structure (`forge scaffold`) and serves the MCP server (`forge mcp`).
+3. **Your harness plugin** loads the skills, commands, and MCP server into the agent you already use.
 
-```bash
-git clone https://github.com/galyarderlabs/forge-hq.git ~/forge-hq
-cd ~/forge-hq
-npm install
-npm run dev
-```
-
-The dashboard will be available at: **http://localhost:3100**
-
-## How the stack connects
-
-1. **Forge Anything** provides the agents, skills, commands, and workflow protocols.
-2. **Forge HQ** reads the project structure and shows goals, reports, and operating state.
-3. **Forge Ledger** can be added where finance, approvals, and evidence need ledger-backed execution.
-
-To connect a project in HQ:
-
-1. Open `http://localhost:3100`.
-2. Click **Connect Project**.
-3. Point it to your project directory, such as `~/projects/my-startup`.
+Work follows the Goal to Ship loop: goal, plan, build, verify, ship. See [docs/WORKFLOW.md](WORKFLOW.md).
 
 ## Troubleshooting
 

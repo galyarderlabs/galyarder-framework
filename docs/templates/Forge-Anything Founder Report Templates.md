@@ -1,10 +1,9 @@
 # Forge Anything Founder Report Templates
 
 ## Purpose
-These templates define how the digital enterprise should report upward to the founder.
+These templates define how the work reports to the founder: one compact, founder-readable report per department, plus one executive summary that brings them together.
 
-Each department should be able to submit a compact founder-readable report.
-Those reports should roll up through `forge-specialist` into a single executive summary when needed.
+Each report states the current state, what changed, the risks, and the decisions the founder needs to make. Reports link to the work they describe: the plan, the issue, or the decision record.
 
 ## Master Founder Report Template
 ```markdown
@@ -17,7 +16,7 @@ Those reports should roll up through `forge-specialist` into a single executive 
 - Most important next move:
 
 ## Department Updates
-### Founder Office / Capital
+### Executive
 - Status:
 - What changed:
 - Risks:
@@ -47,19 +46,19 @@ Those reports should roll up through `forge-specialist` into a single executive 
 - Risks:
 - Decisions needed:
 
-### Infrastructure / Operations
+### Infrastructure
 - Status:
 - What changed:
 - Risks:
 - Decisions needed:
 
-### Legal / Finance
+### Legal-Finance
 - Status:
 - What changed:
 - Risks:
 - Decisions needed:
 
-### Knowledge / Documentation
+### Knowledge
 - Status:
 - What changed:
 - Risks:
@@ -86,7 +85,7 @@ Those reports should roll up through `forge-specialist` into a single executive 
 # Department Report - [Department Name] - [Date / Period]
 
 ## Mission
-- What this department is responsible for in the company
+- What this department is responsible for
 
 ## Current Status
 - Green / Yellow / Red:
@@ -117,11 +116,15 @@ Those reports should roll up through `forge-specialist` into a single executive 
 - Action 1
 - Action 2
 - Action 3
+
+## Linked Work
+- Issue(s):
+- Plan or decision:
 ```
 
-## Founder Office / Capital Report Template
+## Executive Report Template
 ```markdown
-# Founder Office Report - [Date / Period]
+# Executive Report - [Date / Period]
 
 ## Raise Status
 - Current raise stage:
@@ -214,10 +217,10 @@ Those reports should roll up through `forge-specialist` into a single executive 
 - Decision 2:
 ```
 
-## Obsidian Reporting Rule
+## Reporting Rule
 Every report should be:
 - short enough for a founder to scan quickly
 - factual instead of performative
 - explicit about risk
 - explicit about decisions required
-- linked to the work tracked in Linear
+- linked to the work it describes

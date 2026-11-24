@@ -35,7 +35,7 @@ The Legal / Finance department exists to reduce legal, compliance, pricing, and 
 - Action 2
 - Action 3
 
-## Linked Linear Work
-- Project:
+## Linked Work
 - Issue(s):
+- Plan or decision:
 ```

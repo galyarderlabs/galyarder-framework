@@ -12,13 +12,15 @@ Security problems go privately to the maintainer; see
   agent, or command, it must fit the lifecycle and the department it
   belongs to. The loop ends at distribution.
 - **One source.** Skills, agents, and commands live once in `skills/`,
-  `agents/`, and `commands/`. The mirrors (`docs/skills`, `docs/agents`,
-  `docs/commands`) and the bundles are generated, never edit them by
+  `agents/`, and `commands/`, and that is the source: edit them directly.
+  The old mirrors (`docs/skills`, `docs/agents`, `docs/commands`) are
+  gone. The bundles and `skills.json` are generated, never edit them by
   hand. Run the sync scripts and commit their output in the same pull
   request.
-- **The header is single-source.** The GLOBAL PROTOCOLS block lives in
-  [`docs/GLOBAL-PROTOCOLS.md`](docs/GLOBAL-PROTOCOLS.md). Change it there,
-  then run `scripts/sync-global-protocols.py`.
+- **The header is single-source.** The "Forge Anything operating protocols"
+  block is defined in [AGENTS.md](AGENTS.md) under Operating protocols.
+  Change it there, then update the header in the agent/skill/command files
+  to match.
 - **No counts as value.** Never quote skill, agent, or command counts as
   the value of a change. Judge a skill on substance, not on how many there
   are.
@@ -31,7 +33,7 @@ Security problems go privately to the maintainer; see
 - **Human-directed.** Nothing in a contribution changes the approval
   gates: public, financial, and production actions need a human's
   approval.
-- **Smallest viable route.** The shortest path that satisfies the goal,
+- **Smallest viable path.** The shortest path that satisfies the goal,
   without speculative architecture.
 - **Use official references.** Fetch current docs for APIs, libraries,
   and platform behavior before relying on memory.
@@ -51,7 +53,6 @@ or the header:
 python3 scripts/sync-skills-manifest.py     # skills.json
 python3 scripts/sync-bundles.py             # the 10 bundles
 python3 scripts/sync-global-protocols.py    # the header block
-python3 scripts/generate-docs.py            # docs/AGENTS.md, CHANGELOG.md, RELEASE-NOTES.md, WORKFLOW.md
 ```
 
 ## Checks
@@ -71,8 +72,8 @@ a generated file to make it pass.
 
 - Markdown: the skills, agents, and commands are Markdown. Match the
   surrounding file.
-- Every skill, agent, and command carries the GLOBAL PROTOCOLS header
-  (see [`docs/GLOBAL-PROTOCOLS.md`](docs/GLOBAL-PROTOCOLS.md)).
+- Every skill, agent, and command carries the "Forge Anything operating
+  protocols" header (see [AGENTS.md](AGENTS.md)).
 - Every skill has frontmatter on its `SKILL.md`.
 - Comments explain *why*, not *what*.
 - Write public-facing text plainly and directly. No hype, no counts as

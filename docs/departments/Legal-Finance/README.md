@@ -1,3 +1,3 @@
 # Department: Legal-Finance
-This directory contains persistent reports and strategic memory for the Legal-Finance department.
+Legal review, contracts, privacy, compliance, cost, and financial hygiene. Reports and working notes for legal and finance work land here.
  2026 Galyarder Labs. Forge Anything.

@@ -40,7 +40,7 @@ The Security department exists to identify, reduce, and communicate product, inf
 - Action 2
 - Action 3
 
-## Linked Linear Work
-- Project:
+## Linked Work
 - Issue(s):
+- Plan or decision:
 ```

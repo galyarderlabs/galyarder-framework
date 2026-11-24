@@ -1,3 +1,3 @@
 # Department: Growth
-This directory contains persistent reports and strategic memory for the Growth department.
+Acquisition, conversion, retention, distribution, analytics, and messaging. Reports and working notes for growth work land here.
  2026 Galyarder Labs. Forge Anything.

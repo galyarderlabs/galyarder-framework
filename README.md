@@ -77,9 +77,9 @@ Step by step, including local install and other tools, is in [docs/QUICK_START.m
 - [Comparison](docs/comparison.md): how it compares with Superpowers, Agent Skills, and Matt Pocock's skills
 - [Integration](docs/INTEGRATION.md): the tools it plugs into
 - [Departments](docs/departments/): the departments and what each owns
-- [Agents](docs/agents/): the personas that do the work
-- [Skills](docs/skills/): the full skill list
-- [Commands](docs/commands/): the shortcuts
+- [Agents](agents/): the personas that do the work
+- [Skills](skills/): the full skill list
+- [Commands](commands/): the shortcuts
 - [Roadmap](ROADMAP.md): what we are building next
 - [Changelog](CHANGELOG.md): what changed
 

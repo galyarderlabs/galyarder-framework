@@ -1,6 +1,6 @@
 # Multi-Platform Integration Protocol
 
-Forge Anything is a host-agnostic logic library for agentic company execution across AI tools. Everything installs via plugin — no manual setup, no scripts, no clone-and-symlink.
+Forge Anything is a host-agnostic system of rules and workflows for AI agents, for work and for life. Everything installs via plugin, no manual setup, no scripts, no clone-and-symlink.
 
 ## Supported Platforms
 
@@ -34,7 +34,7 @@ Pi:
 pi install git:github.com/galyarderlabs/forge-anything
 ```
 
-OMP (a fork of Pi — same plugin, OMP marketplace commands):
+OMP (a fork of Pi - same plugin, OMP marketplace commands):
 
 ```bash
 omp plugin marketplace add galyarderlabs/forge-anything
@@ -99,7 +99,7 @@ Install Forge Anything as a Hermes plugin from this repository:
 hermes plugins install galyarderlabs/forge-anything --enable
 ```
 
-Restart any active Hermes sessions after installing. The plugin registers all 99 skills with Hermes' native skill loader and injects the `using-forge-anything` bootstrap on the first turn via the `pre_llm_call` hook. Note: Hermes has no post-compaction hook, so a very long session that compacts over its first turn loses the bootstrap — start a fresh session if skills stop triggering.
+Restart any active Hermes sessions after installing. The plugin registers the skills with Hermes' native skill loader and injects the `using-forge-anything` bootstrap on the first turn via the `pre_llm_call` hook. Note: Hermes has no post-compaction hook, so a very long session that compacts over its first turn loses the bootstrap - start a fresh session if skills stop triggering.
 
 ## Skills only (no harness plugin)
 
@@ -117,7 +117,7 @@ The repository is organized into 8 departments. All assets are mapped to a flat 
 
 ```text
 Silo/
-├── agents/             # Personas + Specialized Agents
+├── agents/             # Specialized Agents
 ├── skills/             # Strategic SOPs + Aesthetic Design
 ├── commands/           # Rapid orchestration triggers
 ├── plugin.json         # Portable plugin manifest (Claude Code, Codex, Cursor, Copilot CLI)

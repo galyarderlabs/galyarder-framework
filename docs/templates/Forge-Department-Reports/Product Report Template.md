@@ -45,7 +45,7 @@ The Product department exists to define what should be built, why it matters, ho
 - Action 2
 - Action 3
 
-## Linked Linear Work
-- Project:
+## Linked Work
 - Issue(s):
+- Plan or decision:
 ```

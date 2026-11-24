@@ -40,7 +40,7 @@ The Knowledge department exists to preserve memory, document decisions, maintain
 - Action 2
 - Action 3
 
-## Linked Linear Work
-- Project:
+## Linked Work
 - Issue(s):
+- Plan or decision:
 ```

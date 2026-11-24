@@ -1,3 +1,3 @@
 # Department: Security
-This directory contains persistent reports and strategic memory for the Security department.
+Security review, threat modeling, hardening, and compliance basics. Reports and working notes for security work land here.
  2026 Galyarder Labs. Forge Anything.

@@ -1,7 +1,7 @@
 # Forge Anything Decision Log Template
 
 ## Purpose
-This template is used to record important decisions made by the digital enterprise and surfaced to the founder.
+This template is used to record important decisions made in the work and surfaced to the founder.
 
 A good decision log prevents repeated debates, preserves reasoning, and gives future agents context about why something was chosen.
 
@@ -13,7 +13,7 @@ A good decision log prevents repeated debates, preserves reasoning, and gives fu
 - YYYY-MM-DD
 
 ## Department
-- Founder Office / Product / Engineering / Growth / Security / Operations / Legal-Finance / Knowledge
+- Executive / Product / Engineering / Growth / Security / Infrastructure / Legal-Finance / Knowledge
 
 ## Decision Owner
 - Agent:
@@ -50,16 +50,16 @@ A good decision log prevents repeated debates, preserves reasoning, and gives fu
 - Action 1
 - Action 2
 
-## Linked Linear Work
-- Project:
+## Linked Work
 - Issue(s):
+- Plan or report:
 
-## Linked Obsidian Notes
-- Related docs / maps / reports
+## Linked Notes
+- Related docs / reports
 ```
 
 ## Rules
 - Log only decisions that matter across time.
 - Record rationale, not just the conclusion.
-- Link every major decision to related Linear execution.
+- Link every major decision to the related work: the issue, plan, or report it came from.
 - When a decision changes later, create a new log entry instead of silently editing history.

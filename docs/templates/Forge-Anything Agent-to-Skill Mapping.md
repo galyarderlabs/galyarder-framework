@@ -1,20 +1,20 @@
 # Forge Anything Agent-to-Skill Mapping
 
 ## Purpose
-This document maps each major agent to the skills that should function as its worker stack.
+This document maps each major agent to the skills it uses.
 
-The goal is to stop thinking of Forge Anything as a flat skill library and instead treat each agent as a manager or functional owner with a defined team underneath.
+An agent is the one doing the work; a skill is a rule the agent follows while doing it. The mapping shows which skills belong with which agent, so an agent loads the rules that fit its work and nothing else.
 
 ## Mapping Rules
-- Agents are managers, leads, or senior specialists.
-- Skills are workers, task modules, or operating playbooks.
-- Not every skill needs a direct agent immediately, but every important skill should eventually belong somewhere.
-- External skills imported from other repositories should be mapped into an agent stack, not left orphaned.
+- An agent does the work; a skill is a rule for how the work is done.
+- Every skill should be paired with the agent that uses it.
+- A skill with no agent pairing yet is listed at the end, so the gap stays visible.
+- The mapping follows the curated set: a skill earns its place by being used, not by being listed.
 
-## Executive / Orchestration
+## Forge core
 ### `forge-specialist`
 Role:
-- CEO / chief orchestrator
+- handles work that does not fit one department
 
 Primary supporting skills:
 - `using-forge-anything`
@@ -24,12 +24,12 @@ Primary supporting skills:
 - `subagent-driven-development`
 - `verification-before-completion`
 
-Expansion routing:
-- founder-facing work -> `fundraising-operator`
-- knowledge / dashboards -> `obsidian-architect`
-- engineering build path -> engineering department leads
+Related agents for work outside one department:
+- founder-facing work: `fundraising-operator`
+- knowledge / documentation work: `obsidian-architect`
+- engineering build work: engineering department leads
 
-## Founder Office / Capital
+## Executive
 ### `fundraising-operator`
 Primary skills:
 - `founder-context`
@@ -192,7 +192,6 @@ Potential external upgrades:
 Primary skills:
 - `analytics-tracking`
 - `ab-test-setup`
-- `signup-flow-cro`
 - `onboarding-cro`
 - `page-cro`
 - `paywall-upgrade-cro`
@@ -224,7 +223,7 @@ Primary skills:
 - `analytics-architect`
 - `analytics-tracking`
 
-## Infrastructure / Operations
+## Infrastructure
 ### `devops-engineer`
 Primary skills:
 - `devops-engineer`
@@ -288,12 +287,11 @@ Primary skills:
 
 Future responsibilities:
 - founder report assembly
-- project memory dashboards
-- department summary rollups
+- project memory
+- department summary reports
 
 ## Current Priorities
-1. stabilize founder-office mapping
-2. audit engineering against external best-in-class repositories
-3. audit growth stack against larger marketing libraries
-4. define standard report outputs per department
-5. identify orphan skills with no clear manager
+1. stabilize the Executive mapping
+2. check each department mapping against the curated essential set
+3. define standard report outputs per department
+4. pair every skill with the agent that uses it, and list the unpaired ones here

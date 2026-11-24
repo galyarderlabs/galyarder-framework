@@ -1,33 +1,31 @@
 # Forge Anything Department Map
 
 ## Purpose
-This document translates the Forge Anything vision into a concrete company structure.
+This document maps the Forge Anything departments: what each one covers, which agents lead it, and what outputs it is expected to produce.
 
 It should answer:
 - what departments exist
 - what each department is responsible for
 - which agents currently lead them
 - what outputs they are expected to produce
-- how they report upward to the founder through `forge-specialist`
+- what each department reports to the founder
 
-## Executive Layer
-### Founder
-The human principal.
-Owns final decisions, priorities, and company direction.
+## The operator
+The founder is the human owner, the final decision-maker, and the approval gate. Agents expand what the founder can do; they do not replace the founder.
 
-### CEO / Chief Orchestrator
-- `forge-specialist`
+## Forge core
+The coordinators:
 
-Responsibilities:
-- receive founder intent
-- route work to the right departments
-- coordinate handoffs across departments
-- enforce workflow law
-- consolidate reporting back to the founder
+- `forge-ceo`: directs the work and keeps quality high across the system.
+- `forge-cfo-coo`: owns operations and finance.
+- `forge-cmo`: owns growth and message.
+- `forge-cto`: owns architecture and engineering.
+- `forge-specialist`: handles work that does not fit one department.
 
 ## Department Structure
-### 1. Founder Office / Capital
+### 1. Executive
 Purpose:
+- founder context
 - fundraising
 - investor relations
 - board reporting
@@ -47,7 +45,7 @@ Key outputs:
 - accelerator application drafts
 - founder thought-leadership plans
 
-Reports upward:
+Reports to founder:
 - raise readiness
 - investor pipeline status
 - capital risks
@@ -71,7 +69,7 @@ Key outputs:
 - acceptance criteria
 - priority calls
 
-Reports upward:
+Reports to founder:
 - what is being built
 - why it matters
 - tradeoffs and scope risk
@@ -102,7 +100,7 @@ Key outputs:
 - review findings
 - bug resolutions
 
-Reports upward:
+Reports to founder:
 - delivery status
 - technical risk
 - quality status
@@ -127,7 +125,7 @@ Key outputs:
 - exploit / abuse-path analysis
 - remediation recommendations
 
-Reports upward:
+Reports to founder:
 - security posture
 - urgent risk
 - remediation priority
@@ -156,13 +154,13 @@ Key outputs:
 - retention experiments
 - tracking plans
 
-Reports upward:
+Reports to founder:
 - demand quality
 - funnel performance
 - market response
 - leverage opportunities
 
-### 6. Infrastructure / Operations
+### 6. Infrastructure
 Purpose:
 - deployment
 - release management
@@ -180,12 +178,12 @@ Key outputs:
 - infra decisions
 - experiment rollout plans
 
-Reports upward:
+Reports to founder:
 - release readiness
 - infra risk
 - operational reliability
 
-### 7. Legal / Finance
+### 7. Legal-Finance
 Purpose:
 - legal protection
 - compliance
@@ -202,59 +200,32 @@ Key outputs:
 - compliance checks
 - cost and margin guidance
 
-Reports upward:
+Reports to founder:
 - legal risk
 - financial risk
 - compliance gaps
 
-### 8. Knowledge / Documentation
+### 8. Knowledge
 Purpose:
 - preserve memory
-- create dashboards and maps
 - maintain decision history
 - convert execution into durable knowledge
+- keep founder-readable reports
 
 Lead agent:
 - `obsidian-architect`
 
 Key outputs:
-- visual maps
 - project notes
 - knowledge base updates
 - milestone summaries
 - founder-readable reports
 
-Reports upward:
+Reports to founder:
 - current state snapshot
 - what changed
 - what has been decided
 - what must be remembered
 
-## Reporting Hierarchy
-Default reporting chain:
-1. skill workers execute task-specific work
-2. department lead synthesizes results
-3. `forge-specialist` consolidates cross-functional status
-4. founder receives a strategic summary and decision requests
-
-## System Of Record
-### Linear
-Linear should capture:
-- active work
-- ownership
-- status
-- execution progress
-- next actions
-
-### Obsidian
-Obsidian should capture:
-- strategic memory
-- progress narratives
-- decisions
-- visual maps
-- founder reports
-
-## Open Questions
-- Which departments need explicit recurring report templates first?
-- Which agents need stronger documentation as department heads?
-- Which departments should get dedicated commands in addition to skills?
+## How reporting works
+Each department reports to the founder in its own report (see the templates in `Forge-Department-Reports/`). A report states the current state, what changed, the risks, and the decisions the founder needs to make. Reports link to the work they describe: the plan, the issue, or the decision record.

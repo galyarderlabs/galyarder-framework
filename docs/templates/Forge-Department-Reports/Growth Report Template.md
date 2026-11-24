@@ -45,7 +45,7 @@ The Growth department exists to improve acquisition, conversion, retention, dist
 - Action 2
 - Action 3
 
-## Linked Linear Work
-- Project:
+## Linked Work
 - Issue(s):
+- Plan or decision:
 ```

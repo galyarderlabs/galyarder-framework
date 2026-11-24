@@ -7,7 +7,7 @@ Using an AI agent should not be just generating code, and the agent should not b
 ## How it works
 
 1. **Goal**: say what you want, in plain words.
-2. **Plan**: the work is routed to the right department and planned.
+2. **Plan**: the work gets a plan, with the rules and the workflow that fit it.
 3. **Build**: the agent does the work, with tests before anything ships.
 4. **Verify**: every claim is checked against evidence before it counts.
 5. **Ship**: the work goes out. Distribution is where the loop ends.
@@ -16,8 +16,8 @@ The full workflow is in `docs/WORKFLOW.md`.
 
 ## What is in this repo
 
-- `agents/`: the agents that do the work. The five Forge agents coordinate the work, and each department has its lead agents.
-- `skills/`: the rules the agents follow. The scaffold ships a curated essential set (38 skills); the full repo holds the wider set, which is long-term curation work to bring down to essential only. The counts are the inventory as it stands, not a target.
+- `agents/`: the agents that do the work. The Forge agents coordinate the work, and each department has its lead agents.
+- `skills/`: the rules the agents follow. The scaffold ships a curated essential set; the full repo holds the wider set, which is long-term curation work to bring down to essential only.
 - `commands/`: the shortcuts.
 - `crates/forge`: the `forge` CLI, written in Rust. Subcommands: `scaffold`, `mcp`, `smoke`, `version`, `help`. `forge scaffold` drops a tidy repo into a folder. `forge mcp` runs the MCP server.
 - The MCP (`forge mcp`): five tools (`list_skills`, `read_skill`, `read_agent`, `read_command`, `scaffold`), over stdio, local only, no network. It is the distribution: install the MCP and a chatbot or an agent gets the tools plus the workflow.
@@ -29,11 +29,11 @@ You are the operator. You are the human owner, the final decision maker, and the
 
 ## Department map
 
-The eight departments are routing labels so agents know where work belongs and what proof it needs. The scaffold creates these eight departments in a new repo.
+The eight departments are how the work is organized, so agents know where work belongs and what proof it needs. The scaffold creates these eight departments in a new repo.
 
 ### Forge core
 
-The coordinators. `forge-ceo` routes work. `forge-cfo-coo` owns operations and finance. `forge-cmo` owns growth and message. `forge-cto` owns architecture and engineering. `forge-specialist` handles work that does not fit one department.
+The coordinators. `forge-ceo` directs the work. `forge-cfo-coo` owns operations and finance. `forge-cmo` owns growth and message. `forge-cto` owns architecture and engineering. `forge-specialist` handles work that does not fit one department.
 
 Core skills: `forge`, `using-forge-anything`, `writing-plans`, `executing-plans`, `verification-before-completion`, `subagent-driven-development`, `brainstorming`, `company-creator`, `writing-skills`, `doc-maintenance`.
 
@@ -106,8 +106,8 @@ Skills: `obsidian-markdown`, `obsidian-cli`, `defuddle`.
 1. **Human command stays visible.** Agents expand what you can do; they do not replace you.
 2. **Intent becomes structure.** Turn a goal into a scoped plan, issue, checklist, doc, diff, report, or decision record.
 3. **Grounding before execution.** Inspect the source files, the current repo state, the docs, and the relevant references before acting.
-4. **Smallest viable route.** Take the shortest path that meets the goal. Do not build speculative architecture.
-5. **Specialist routing.** Send work to the right department, skill, command, or agent instead of keeping it in a generic loop.
+4. **Smallest viable path.** Take the shortest path that meets the goal. Do not build speculative architecture.
+5. **Specialist matching.** Send work to the department, skill, command, or agent that fits it instead of keeping it in a generic loop.
 6. **Verification before completion.** A claim counts only with proof you can check: tests, builds, logs, screenshots, workflow runs, citations, or other evidence.
 7. **Durable handoff.** Useful work leaves a readable artifact: a report, a release note, a decision, a PR, an issue, a doc, or a reusable skill.
 8. **Approval gates.** Public, external, financial, irreversible, access, or production-sensitive actions need the operator's approval.
