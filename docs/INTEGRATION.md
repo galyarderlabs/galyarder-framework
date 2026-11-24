@@ -111,6 +111,16 @@ npx skills add galyarderlabs/forge-anything
 
 This installs the skills into the harness of your choice (project or global scope).
 
+## Company packages
+
+To bring an existing agent-company package into a project:
+
+```bash
+forge company import --from <path> [dir]
+```
+
+This validates the package (`COMPANY.md` with `agentcompanies/v1` frontmatter) and copies it self-contained into `company/<slug>/`. See [company-import.md](company-import.md) for the full reference.
+
 ## Command Silo Structure (Universal Architecture)
 
 The repository is organized into 10 departments. All assets are mapped to a flat structure that every supported harness can read:

@@ -2,10 +2,10 @@
 //!
 //! What lands in the target directory:
 //! - `README.md`, `AGENTS.md`, `WORKFLOW.md`, `.gitignore`, `skills.json`
-//! - `skills/<curated>/` — the curated skills, copied whole from the source
-//! - `agents/<curated>.md` — the curated agents
-//! - `commands/` — all slash commands
-//! - `docs/` — specs, plans, reports, templates, design, and the 8
+//! - `skills/<curated>/` - the curated skills, copied whole from the source
+//! - `agents/<curated>.md` - the curated agents
+//! - `commands/` - all slash commands
+//! - `docs/` - specs, plans, reports, templates, design, and the 8
 //!   departments with a README and an audit template each
 //!
 //! No per-host copies or manifests: any agent or host reads `skills/` and
@@ -179,17 +179,17 @@ fn readme(project_name: &str) -> String {
          \n\
          ## Structure\n\
          \n\
-         - `skills/` — the curated Forge Anything skills (reusable AI-agent\n\
+         - `skills/` - the curated Forge Anything skills (reusable AI-agent\n\
          rules). `forge` is the entry point; the rest cover the core loop\n\
          (plan, build, verify, ship) and the ten departments.\n\
-         - `agents/` — the Forge agents plus the lead role agent per\n\
+         - `agents/` - the Forge agents plus the lead role agent per\n\
          department.\n\
-         - `commands/` — slash commands (`/plan`, `/docs`, `/release`, ...).\n\
-         - `docs/` — specs, plans, reports, templates, design, and\n\
+         - `commands/` - slash commands (`/plan`, `/docs`, `/release`, ...).\n\
+         - `docs/` - specs, plans, reports, templates, design, and\n\
          `docs/departments/` (one folder per department, with its audit\n\
          template).\n\
-         - `AGENTS.md` — the operating rules. `WORKFLOW.md` — the workflow.\n\
-         - `skills.json` — the manifest of the skills in this repo.\n\
+         - `AGENTS.md` - the operating rules. `WORKFLOW.md` - the workflow.\n\
+         - `skills.json` - the manifest of the skills in this repo.\n\
          \n\
          Any agent or host reads `skills/` and `agents/` straight from this\n\
          folder; there are no per-host copies or manifests to keep in sync.\n\

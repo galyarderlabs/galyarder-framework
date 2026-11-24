@@ -7,8 +7,7 @@
     "f-smoke": "scripts/smoke.sh"
   },
   "scripts": {
-    "test": "rtk ./scripts/smoke.sh",
-    "install-cli": "./scripts/setup-cli.sh",
+    "test": "bash scripts/smoke.sh",
     "sync": "python3 scripts/sync-skills-manifest.py"
   },
   "keywords": [

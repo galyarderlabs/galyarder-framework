@@ -44,12 +44,12 @@ Maintain the `03 - Activity Log.md`. For every major milestone or session end, a
 - Initialize the `00 - Dashboard.base`.
 
 ### Phase: Technical Mapping
-- Run `/graph` to rebuild the **Forge Neural Link** and synchronize the **Obsidian World Map**.
+- Update the department knowledge docs in `docs/departments/` so the knowledge base reflects the current state.
 - Generate `01 - Architecture.canvas` for database schemas or state machines.
 - Use `obsidian-markdown` to ensure all notes follow Forge Anything's aesthetic standards.
 
 ## 3. FINAL VERIFICATION
-1. Is the **Forge Neural Link** rebuilt and synchronized via `/graph`?
+1. Is the knowledge base updated to reflect the current state?
 2. Is the visual map updated to reflect the current state?
 3. Are all technical decisions documented in the Knowledge Base?
 4. Is the Activity Log updated with the latest session progress?
