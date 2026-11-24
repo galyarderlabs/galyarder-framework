@@ -1,6 +1,6 @@
 # Skill Registry Review vs Current Repo
 
-Maintainer review, 24 Nov 2026, repo HEAD `a03af575`. This reviews Galih's Essential Skill Registry v14 (`skill-registry.md`): the v13 text verbatim plus the ronde-14 addendum. The v13 rows were reviewed at HEAD `00b0080c`; the ronde-14 rows are reviewed in the addendum at the end of this file. It is a proposal record only: it does not add, delete, rename, or restructure anything. Curation decisions stay with Galih.
+Maintainer review, 24 Nov 2026, repo HEAD `2fa091d2`. This reviews Galih's Essential Skill Registry v15 (`skill-registry.md`): the v13 text verbatim plus the ronde-14 and ronde-15 addenda. The v13 rows were reviewed at HEAD `00b0080c`; the ronde-14 rows at HEAD `a03af575`; the ronde-15 rows are reviewed in the addendum at the end of this file. It is a proposal record only: it does not add, delete, rename, or restructure anything. Curation decisions stay with Galih.
 
 ## How to read this
 
@@ -23,6 +23,7 @@ Maintainer review, 24 Nov 2026, repo HEAD `a03af575`. This reviews Galih's Essen
 - Scaffold curated set: **38 skills**. Of those, **12** map to a registry row (full or partial). The other 26 are repo-only homegrown skills.
 - Value comparisons where the registry pick is better than the repo's current skill for the same slot: **6**, plus **1** extra slot the repo does not cover at all (ai-seo). See Value comparisons.
 - Ronde-14 addendum: **14** new rows (6 A14 Trading, 2 A4 Sales/Negotiation, 4 A13 Experimentation/BI, 2 A12 Office). All 14 are Missing from the repo. Totals for v14: **90** rows, covered **3**, partial **4**, missing **83**.
+- Ronde-15 addendum: **8** new rows (1 A15 External Relations, 4 company rows, 3 life domains). 7 Missing, 1 Partial (fundraising). Totals for v15: **98** rows, covered **3**, partial **5**, missing **90**.
 
 ## Row-by-row mapping
 
@@ -270,3 +271,58 @@ The registry now has 14 company departments (A1-A14) plus 16 life domains. The r
 1. **Count discrepancy:** the ronde-14 message says 13 new slots, but lists 14 distinct skill rows. Recorded as 14 here. The difference is counting method, not content.
 2. **4 rows without a source URL in the ronde-14 message:** borghei data-scientist, sql-queries (Anthropic), dbt (dbt Labs), meeting-notes (claude-office-skills). Their sources are unverified until URLs are supplied. They should not be adopted on name alone.
 3. **Unverified registry claims (ronde-14):** the agiprolabs 68-skill count, the "production-grade B2B AE" claim for Sales MBA, the "lolos 3 audit" claim for meeting-notes, and the v14 totals (±85 rows / 260+ skills). URLs were checked (10 of 10 return HTTP 200); counts and claims were not.
+
+---
+
+## Ronde-15 addendum
+
+Reviewed 24 Nov 2026, repo HEAD `2fa091d2`. The registry's ronde-15 adds 8 rows (1 new department A15 External Relations, 4 company rows, 3 life domains). 7 are Missing, 1 is Partial (fundraising). Totals for v15: 98 rows, covered 3, partial 5, missing 90.
+
+### A15. External Relations (new department, Missing)
+
+| Registry row | Status | Repo skill | Note |
+|---|---|---|---|
+| pr-skills (Insightful-Pipe) + autopunk-media-skills (ur-grue, 394 skill) | Missing | - | No PR/crisis-comms skill in the repo. The repo has founder-thought-leadership and copywriting, which are adjacent (thought leadership and copy) but not PR: no releases, media kits, coverage reports, or crisis comms. This is an APQC category the research agent had marked since ronde-1 and never filled. |
+
+### A1. Fundraising & investor relations (Partial)
+
+| Registry row | Status | Repo skill | Note |
+|---|---|---|---|
+| cc-skills-vc-fundraising (tjboudreaux) + pitch-deck-mastery (Stevekaplanai) | Partial | pitch-deck, investor-research | Repo has pitch-deck and investor-research skills (founder-facing workflow), but not the VC fundraising suite grounded in Sequoia/a16z/Benchmark/YC first principles or the 12-slide framework. The registry row is the suite; the repo covers the deck and research parts narrowly. |
+
+### A10. Smart contract audit (Missing)
+
+| Registry row | Status | Repo skill | Note |
+|---|---|---|---|
+| smart-contract-auditor-skill (farrellh1, Cyfrin checklist) + Smart-Contract-AI-Audit-Skill (giladHaimov, 293 vulnerabilities) | Missing | - | No smart-contract audit skill in the repo. Repo security skills are AppSec/OWASP and offensive/threat-intel, not smart-contract audit. This is Galih's core blockchain domain; the registry's v14 A8 row (binance/coinbase) only covers exchange market data/custody. |
+
+### A6. Paid media (Missing)
+
+| Registry row | Status | Repo skill | Note |
+|---|---|---|---|
+| claude-ads (AgriciDaniel, 12 platforms) | Missing | - | No paid-ads skill in the repo. Adjacent: seo-audit (organic search), campaign-analytics, marketing-demand-acquisition. None cover paid media buying across platforms. |
+
+### A4. Automation (Missing)
+
+| Registry row | Status | Repo skill | Note |
+|---|---|---|---|
+| n8n-skills (czlonkowski) + zapier-workflows (davila7) | Missing | - | No n8n or Zapier automation skill in the repo. No URL for zapier-workflows in the ronde-15 message, so that source is unverified here. |
+
+### B. Life, new domains (all 3 Missing)
+
+| Registry row | Status | Repo skill | Note |
+|---|---|---|---|
+| public-speaking-skill (guycoful) + presentation-writing-claude-skill (marcusnelson) | Missing | - | No public-speaking or presentation-writing skill in the repo. |
+| podcast-transcripts (nish-sco) + claude-transcribe-youtube (kezsmeister) | Missing | - | No podcast/audio-ops skill in the repo. Galih produces a podcast (the Ayanokoji episode, 9 Nov 2026), so this is a real workflow gap, not a hypothetical one. |
+| biohacking-advisor (Huberman/Attia) + sleep-optimizer (skillmedev, Grade A) + health-skill (googlarz) | Missing | - | No biohacking/sleep/longevity skill in the repo. The registry's B fitness-nutrition row is the only health coverage. No URL for biohacking-advisor in the ronde-15 message, so that source is unverified here. |
+
+### Taxonomy note: A15 and the life split
+
+The registry now has 15 company departments (A1-A15) plus 19 life domains. The repo still has 10 departments. A15 External Relations joins A4, A5, A7, A13, A14, and all of B Life as registry sections with no repo department. The placement of the 3 life rows (public speaking, podcast/audio ops, biohacking) is a maintainer reading of the message's totals (15 departments + 19 life domains); the message does not label which sectors are life. If Galih places them differently (for example, podcast under Creative as media production), the row counts do not change, only the section.
+
+### Flagged items (ronde-15)
+
+1. **Count discrepancy:** the ronde-15 message says ±99 rows; this addendum counts 8 new rows for a total of 98 (90 v14 + 8). The difference is 1 row inside the ± tolerance. Recorded as 98 here.
+2. **2 rows without a source URL in the ronde-15 message:** zapier-workflows (davila7), biohacking-advisor. Their sources are unverified until URLs are supplied. They should not be adopted on name alone.
+3. **Unverified registry claims (ronde-15):** the autopunk-media-skills 394-skill count and "quality-tested" claim, the "grounded from Sequoia/a16z/Benchmark/YC first principles" claim for the fundraising suite, the giladHaimov 293-vulnerability database claim, the sleep-optimizer Grade A claim, and the v15 totals (±99 rows / 300+ skills). URLs were checked (14 of 14 return HTTP 200); counts and claims were not.
+4. **"Nol gap" retired:** the research agent's own correction stands: v13/v14's "NOL GAP" was claimed too fast, and ronde-15 found 8 more sectors. The permanent rule from the message is that "complete" is never claimed again without a closure sweep. This review records that; it does not re-verify the closure sweep itself.

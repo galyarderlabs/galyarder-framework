@@ -17,7 +17,7 @@ The full workflow is in `WORKFLOW.md`.
 ## What is in this repo
 
 - `agents/`: the agents that do the work. The Forge agents coordinate the work, and each department has its lead agents.
-- `skills/`: the rules the agents follow. The scaffold ships a curated essential set; the full repo holds the wider set, which is long-term curation work to bring down to essential only. The curation standard is the Essential Skill Registry (`docs/skill-registry.md`), Galih's v14 research, with a review against the current skills in `docs/skill-registry-review.md`.
+- `skills/`: the rules the agents follow. The scaffold ships a curated essential set; the full repo holds the wider set, which is long-term curation work to bring down to essential only. The curation standard is the Essential Skill Registry (`docs/skill-registry.md`), Galih's v15 research, with a review against the current skills in `docs/skill-registry-review.md`.
 - `commands/`: the shortcuts.
 - `crates/forge`: the `forge` CLI, written in Rust. Subcommands: `scaffold`, `company`, `mcp`, `smoke`, `version`, `help`. `forge scaffold` drops a tidy repo into a folder. `forge company import` copies an agent-company package into `company/<slug>/` in a project. `forge mcp` runs the MCP server.
 - The MCP (`forge mcp`): five tools (`list_skills`, `read_skill`, `read_agent`, `read_command`, `scaffold`), over stdio, local only, no network. It is the distribution: install the MCP and a chatbot or an agent gets the tools plus the workflow.

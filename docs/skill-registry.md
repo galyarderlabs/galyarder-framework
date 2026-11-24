@@ -1,5 +1,5 @@
 ---
-> **Maintainer note (this block is not part of Galih's registry text).** This is Galih's research registry, Essential Skill Registry v14, dated 24 Nov 2026. It is the auditable source for skill curation in this repo: every skill row names a real skill, a source URL, and a value reason, derived from APQC PCF v7.4 for the company side and WHOQOL 6 domains + PERMA for the life side. The v13 text below is copied verbatim from Galih's research file; do not edit it in place. The ronde-14 additions (A14 Trading, Markets & On-chain as a new department, plus Sales/Negotiation, Experimentation/BI, and Office rows) live in the addendum at the end of this file, summarized by the maintainer from the research agent's message Galih sent on 24 Nov 2026; the addendum is maintainer text, not his verbatim file. To iterate on it, propose a change as a row: real skill name + source URL + value reason, per the curation rules in the file. The review of this registry against the repo's current skills lives in [skill-registry-review.md](skill-registry-review.md).
+> **Maintainer note (this block is not part of Galih's registry text).** This is Galih's research registry, Essential Skill Registry v15, dated 24 Nov 2026. It is the auditable source for skill curation in this repo: every skill row names a real skill, a source URL, and a value reason, derived from APQC PCF v7.4 for the company side and WHOQOL 6 domains + PERMA for the life side. The v13 text below is copied verbatim from Galih's research file; do not edit it in place. The ronde-14 and ronde-15 additions live in the addenda at the end of this file, summarized by the maintainer from the research agent's messages Galih sent on 24 Nov 2026; the addenda are maintainer text, not his verbatim file. To iterate on it, propose a change as a row: real skill name + source URL + value reason, per the curation rules in the file. The review of this registry against the repo's current skills lives in [skill-registry-review.md](skill-registry-review.md).
 
 # Forge Foundation: Essential Skill Registry v13 — NOL GAP
 
@@ -242,3 +242,57 @@ Catatan maintainer: bagian ini BUKAN teks verbatim Galih. Ini rangkuman dari pes
 **Catatan hitungan:** pesan ronde-14 menyebut "13 slot value baru", tapi pesan itu sendiri memuat 14 baris skill yang berbeda (6 A14 + 2 Sales/Negotiation + 4 Experimentation/BI + 2 Office). Addendum ini mencatat 14 baris apa adanya. Selisih 1 itu soal cara menghitung, bukan soal isi.
 
 **URL check, 24 Nov 2026:** 10 dari 10 URL yang tercantum di pesan ronde-14 mengembalikan HTTP 200. 4 item (borghei data-scientist, sql-queries, dbt, meeting-notes) tidak punya URL di pesan itu, jadi belum bisa dicek.
+
+---
+
+## Ronde-15 (v15) - addendum
+
+Catatan maintainer: bagian ini BUKAN teks verbatim Galih. Ini rangkuman dari pesan riset ronde-15 yang Galih kirim 24 Nov 2026 (teks agent research-nya), ditambahkan sebagai addendum supaya teks v13 di atas dan addendum v14 tetap utuh. Isi tiap baris (nama skill, URL, alasan value) diambil dari pesan itu.
+
+**Yang berubah di v15:** klaim "nol gap" di v13/v14 ternyata terlalu cepat. Ronde-15 nemuin 8 sektor yang bagus dan tidak pernah masuk, termasuk satu yang paling memalukan: **External Relations**, kategori APQC yang sudah ditandai sejak ronde-1 tapi tidak pernah diisi. Pesan ronde-15 juga mengamankan satu rule permanen: tidak pernah klaim "complete" lagi tanpa closure sweep; tiap kali ditanya "beneran ga ada lagi?", jawabannya harus dari riset, bukan dari kepercayaan diri. Registry sekarang **v15: ±99 baris value / 300+ skill, 15 departemen + 19 domain life**, semua dengan URL.
+
+### A15. External Relations (departemen baru)
+
+| Slot | Skill essential | Value | URL |
+|---|---|---|---|
+| PR & crisis comms | pr-skills (Insightful-Pipe) + autopunk-media-skills (ur-grue, 394 skill quality-tested untuk media pros) | PR lengkap: releases, kits, coverage reports, crisis communications | [Insightful-Pipe/pr-skills](https://github.com/Insightful-Pipe/pr-skills) · [ur-grue/autopunk-media-skills](https://github.com/ur-grue/autopunk-media-skills) |
+
+### Ronde-15: tambahan ke seksi yang sudah ada
+
+Penempatan di bawah ini adalah pilihan maintainer. Pesan ronde-15 hanya menamai 8 sektornya dan total akhirnya (15 departemen + 19 domain life); dari total itu, 3 sektor dibaca sebagai domain life baru (biohacking/sleep/longevity, podcast/audio ops, public speaking), dan 5 sisanya sebagai baris perusahaan.
+
+**A1. Executive & Strategy, Fundraising & investor relations:**
+
+| Slot | Skill essential | Value | URL |
+|---|---|---|---|
+| Fundraising | cc-skills-vc-fundraising (tjboudreaux) + pitch-deck-mastery (Stevekaplanai) | Grounded dari first-principles Sequoia/a16z/Benchmark/YC; 12-slide framework | [tjboudreaux/cc-skills-vc-fundraising](https://github.com/tjboudreaux/cc-skills-vc-fundraising) · [Stevekaplanai/pitch-deck-mastery-skill](https://github.com/Stevekaplanai/pitch-deck-mastery-skill) |
+
+**A10. Security, Smart contract audit:**
+
+| Slot | Skill essential | Value | URL |
+|---|---|---|---|
+| Smart contract audit | smart-contract-auditor-skill (farrellh1, checklist Cyfrin) + Smart-Contract-AI-Audit-Skill (giladHaimov, DB 293 vulnerability, 4 sumber) | Domain core blockchain yang di v14 cuma kena "binance/coinbase official" | [farrellh1/smart-contract-auditor-skill](https://github.com/farrellh1/smart-contract-auditor-skill) · [giladHaimov/Smart-Contract-AI-Audit-Skill](https://github.com/giladHaimov/Smart-Contract-AI-Audit-Skill) |
+
+**A6. Growth, Creative & Media, Paid media:**
+
+| Slot | Skill essential | Value | URL |
+|---|---|---|---|
+| Paid media | claude-ads (AgriciDaniel) | 12 platform (Google/Meta/TikTok/LinkedIn/dll), source-grounded audit, capability-gated changes | [AgriciDaniel/claude-ads](https://github.com/AgriciDaniel/claude-ads) |
+
+**A4. Operations & Delivery, Automation:**
+
+| Slot | Skill essential | Value | URL |
+|---|---|---|---|
+| Automation | n8n-skills (czlonkowski) + zapier-workflows (davila7) | Skema skill resmi n8n juga ada di repo n8n-io | [czlonkowski/n8n-skills](https://github.com/czlonkowski/n8n-skills) · zapier-workflows: tidak ada URL di pesan ronde-15 |
+
+**B. Kehidupan, domain baru:**
+
+| Domain | Skill essential | Value inti | URL |
+|---|---|---|---|
+| **Public speaking & presentasi** | public-speaking-skill (guycoful) + presentation-writing-claude-skill (marcusnelson) | Coaching panggung (persuasion theory) vs penulisan narasi slide, dua value beda | [guycoful/public-speaking-skill](https://github.com/guycoful/public-speaking-skill) · [marcusnelson/presentation-writing-claude-skill](https://github.com/marcusnelson/presentation-writing-claude-skill) |
+| **Podcast/audio ops** | podcast-transcripts (nish-sco) + claude-transcribe-youtube (kezsmeister) | Episode ke transcript terstruktur, speaker diarization | [nish-sco/podcast-transcripts](https://github.com/nish-sco/podcast-transcripts) · [kezsmeister/claude-transcribe-youtube](https://github.com/kezsmeister/claude-transcribe-youtube) |
+| **Biohacking/sleep/longevity** | biohacking-advisor (protocols Huberman/Attia) + sleep-optimizer (skillmedev, Grade A) + health-skill (googlarz, workspace labs longitudinal) | Domain biohacking yang di v14 cuma kena "fitness-nutrition" doang | biohacking-advisor: tidak ada URL di pesan ronde-15 · [skillmedev-sleep-optimizer](https://www.skillsdirectory.com/skills/skillmedev-sleep-optimizer) · [googlarz/health-skill](https://github.com/googlarz/health-skill) |
+
+**Catatan hitungan:** pesan ronde-15 menyebut "±99 baris value". Addendum ini mencatat 8 baris baru (1 A15 + 5 baris perusahaan + 3 domain life), jadi totalnya 98 baris (90 dari v14 + 8). Selisih 1 dari ±99 itu soal cara menghitung dan toleransi ±, bukan soal isi.
+
+**URL check, 24 Nov 2026:** 14 dari 14 URL yang tercantum di pesan ronde-15 mengembalikan HTTP 200. 2 item (zapier-workflows davila7, biohacking-advisor) tidak punya URL di pesan itu, jadi belum bisa dicek.
