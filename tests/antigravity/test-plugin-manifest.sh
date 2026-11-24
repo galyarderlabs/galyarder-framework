@@ -84,14 +84,31 @@ if not description or "Use when starting any conversation" not in description.gr
     fail("using-forge-anything description no longer says 'Use when starting any "
          "conversation'; Antigravity relies on it to bootstrap")
 
-# --- Layout agy depends on -------------------------------------------------
-# A root hooks.json would run on every model call, and Cursor loads any
-# rules/*.md shipped in a plugin. A root plugin.json is allowed here: it is
+# --- Plugin-level hooks: root hooks.json is the Antigravity SessionStart
+# hook. Antigravity loads a plugin's hooks.json from the plugin root (the
+# repo root here) and runs its SessionStart command once per session.
+# Validate its shape and handler. A root plugin.json is allowed here: it is
 # the intentional portable Agent Plugins 1.0 manifest, not an Antigravity
 # manifest, and .antigravity-plugin/plugin.json is the Antigravity one.
-for stray in ["hooks.json", "rules"]:
-    if (root / stray).exists():
-        fail(f"root {stray} must not exist")
+hooks_path = root / "hooks.json"
+if not hooks_path.is_file():
+    fail("root hooks.json must exist (Antigravity SessionStart hook)")
+hooks_config = json.loads(hooks_path.read_text(encoding="utf-8"))
+session_hook = hooks_config.get("forge-anything-session-start")
+if not session_hook:
+    fail("hooks.json must define forge-anything-session-start")
+session_start = session_hook.get("SessionStart")
+if not isinstance(session_start, list) or len(session_start) != 1:
+    fail("forge-anything-session-start must have exactly one SessionStart entry")
+handler = session_start[0]
+if handler.get("type") != "command" or handler.get("command") != "bash hooks/session-start antigravity":
+    fail("SessionStart handler must be the command \"bash hooks/session-start antigravity\"")
+if not isinstance(handler.get("timeout"), (int, float)) or handler["timeout"] <= 0:
+    fail("SessionStart handler must set a positive timeout")
+
+# No rules/ dir: Cursor loads any rules/*.md shipped in a plugin.
+if (root / "rules").exists():
+    fail("root rules must not exist")
 PY
 
 if command -v agy >/dev/null 2>&1; then

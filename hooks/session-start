@@ -3,6 +3,12 @@
 
 set -euo pipefail
 
+# Optional first argument selects the output contract. Default (no argument)
+# auto-detects Claude Code, Cursor, or Copilot CLI from the environment.
+# "antigravity" emits the Antigravity SessionStart contract (injectSteps with
+# a systemMessage step). No other argument is accepted.
+mode="${1:-}"
+
 # Determine plugin root directory
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PLUGIN_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
@@ -34,7 +40,14 @@ warning_escaped=$(escape_for_json "$warning_message")
 session_context="<EXTREMELY_IMPORTANT>\nYou have forge-anything.\n\n**Below is the full content of your 'forge-anything:using-forge-anything' skill - your introduction to using skills. For all other skills, use the 'Skill' tool:**\n\n${bootstrap_escaped}\n\n${warning_escaped}\n</EXTREMELY_IMPORTANT>"
 
 # Output context injection as JSON.
-if [ -n "${CURSOR_PLUGIN_ROOT:-}" ]; then
+if [ "$mode" = "antigravity" ]; then
+  # Antigravity SessionStart contract: injectSteps with a systemMessage step.
+  # No metadata field: agy panics on systemMessage.metadata and drops the
+  # whole hook output. The legacy warning is Claude Code-specific, so it is
+  # not part of this context.
+  antigravity_context="<EXTREMELY_IMPORTANT>\nYou have forge-anything.\n\n**Below is the full content of your 'forge-anything:using-forge-anything' skill - your introduction to using skills. For all other skills, use the 'Skill' tool:**\n\n${bootstrap_escaped}\n</EXTREMELY_IMPORTANT>"
+  printf '{\n  "injectSteps": [{\n    "systemMessage": {\n      "systemMessage": "%s"\n    }\n  }]\n}\n' "$antigravity_context"
+elif [ -n "${CURSOR_PLUGIN_ROOT:-}" ]; then
   printf '{\n  "additional_context": "%s"\n}\n' "$session_context"
 elif [ -n "${CLAUDE_PLUGIN_ROOT:-}" ] && [ -z "${COPILOT_CLI:-}" ]; then
   printf '{\n  "hookSpecificOutput": {\n    "hookEventName": "SessionStart",\n    "additionalContext": "%s"\n  }\n}\n' "$session_context"

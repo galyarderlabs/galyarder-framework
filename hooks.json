@@ -1,0 +1,11 @@
+{
+    "forge-anything-session-start": {
+        "SessionStart": [
+            {
+                "command": "bash hooks/session-start antigravity",
+                "timeout": 10,
+                "type": "command"
+            }
+        ]
+    }
+}
