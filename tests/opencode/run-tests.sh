@@ -59,6 +59,7 @@ done
 # List of tests to run (no external dependencies)
 tests=(
     "test-plugin-loading.sh"
+    "test-bootstrap-transform.sh"
 )
 
 # Integration tests (require OpenCode)
