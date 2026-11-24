@@ -2,7 +2,6 @@
   "name": "forge-anything",
   "version": "3.0.2",
   "description": "Forge anything with AI agents.",
-  "main": "index.js",
   "bin": {
     "f-smoke": "scripts/smoke.sh"
   },
@@ -47,7 +46,6 @@
     "agents",
     "commands",
     "docs",
-    "public",
     "scripts",
     "skills",
     "AGENTS.md",
