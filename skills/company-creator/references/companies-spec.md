@@ -3,7 +3,7 @@
 The normative specification lives at:
 
 - Web: https://agentcompanies.io/specification
-- Local: docs/companies/companies-spec.md
+- Local: references/companies-spec.md
 
 Read the local spec file before generating any package files. The spec defines the canonical format and all frontmatter fields. Below is a quick-reference summary for common authoring tasks.
 

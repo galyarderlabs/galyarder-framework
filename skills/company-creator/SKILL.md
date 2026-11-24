@@ -28,7 +28,7 @@ Create agent company packages that conform to the Agent Companies specification.
 
 Spec references:
 
-- Normative spec: `docs/companies/companies-spec.md` (read this before generating files)
+- Normative spec: `references/companies-spec.md` (read this before generating files)
 - Web spec: https://agentcompanies.io/specification
 - Protocol site: https://agentcompanies.io/
 
@@ -106,7 +106,7 @@ For from-repo companies, infer the pattern from the repo's structure. If skills 
 Before generating any files, read the normative spec:
 
 ```
-docs/companies/companies-spec.md
+references/companies-spec.md
 ```
 
 Also read the quick reference: [references/companies-spec.md](references/companies-spec.md)
@@ -209,7 +209,6 @@ Forge Anything's supported adapter types (these are the ONLY valid values):
 - `opencode_local`  OpenCode CLI
 - `pi_local`  Pi CLI
 - `cursor`  Cursor
-- `gemini_local`  Gemini CLI
 - `openclaw_gateway`  OpenClaw gateway
 
 Only set an adapter when:
