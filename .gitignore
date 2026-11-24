@@ -39,7 +39,8 @@ feedback-export-*
 .claude/settings.local.json
 .forge-local/
 /.idea/
-/.agents/
+/.agents/*
+!/.agents/plugins/
 
 # Doc maintenance cursor
 .doc-review-cursor

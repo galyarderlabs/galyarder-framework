@@ -1,0 +1,20 @@
+{
+    "name": "forge-anything-marketplace",
+    "interface": {
+        "displayName": "Forge Anything"
+    },
+    "plugins": [
+        {
+            "name": "forge-anything",
+            "source": {
+                "source": "url",
+                "url": "./"
+            },
+            "policy": {
+                "installation": "AVAILABLE",
+                "authentication": "ON_INSTALL"
+            },
+            "category": "Developer Tools"
+        }
+    ]
+}
