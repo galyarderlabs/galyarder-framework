@@ -22,6 +22,16 @@
         "shortDescription": "Essential skills and workflows for AI agents: goal, plan, build, verify, ship."
     },
     "license": "GPL-3.0-or-later",
+    "mcpServers": {
+        "forge-anything": {
+            "args": [
+                "mcp"
+            ],
+            "command": "forge",
+            "description": "Forge Anything MCP server: read the skills, agents, and commands, and scaffold a new Forge Anything project. Local-only, no network.",
+            "type": "stdio"
+        }
+    },
     "name": "forge-anything",
     "repository": "https://github.com/galyarderlabs/forge-anything",
     "skills": "./skills/",

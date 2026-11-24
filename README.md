@@ -37,7 +37,23 @@ The full workflow, with the five phases in detail, is in [docs/WORKFLOW.md](docs
 
 ## Install
 
-The `forge` CLI is Rust. From a checkout:
+Get the `forge` CLI as a prebuilt binary (Linux, macOS, Windows) — no Rust
+toolchain needed:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/galyarderlabs/forge-anything/main/install.sh | sh
+```
+
+Or install a specific version:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/galyarderlabs/forge-anything/main/install.sh | sh -s -- --version 3.0.2
+```
+
+The script downloads the matching binary from the latest GitHub Release,
+verifies its SHA256 checksum, and installs it to `~/.local/bin`.
+
+From source, from a checkout:
 
 ```sh
 cargo install --path crates/forge
@@ -49,6 +65,9 @@ Or get just the skills, without the CLI:
 npm install -g forge-anything
 npx skills add galyarderlabs/forge-anything --skill full
 ```
+
+The npm package is skills-only; the CLI is distributed through the
+prebuilt binaries above (or built from source).
 
 Native plugins cover Claude Code, OMP/Pi, Codex, Cursor, Antigravity, OpenCode, Copilot CLI, and Hermes; see [docs/INTEGRATION.md](docs/INTEGRATION.md).
 

@@ -2,5 +2,15 @@
   "$schema": "https://opencode.ai/config.json",
   "plugin": [
     "forge-anything@git+https://github.com/galyarderlabs/forge-anything.git"
-  ]
+  ],
+  "mcp": {
+    "forge-anything": {
+      "type": "local",
+      "command": [
+        "forge",
+        "mcp"
+      ],
+      "enabled": true
+    }
+  }
 }

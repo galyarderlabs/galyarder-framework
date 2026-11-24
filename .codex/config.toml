@@ -19,3 +19,10 @@ seo = "Diagnose and audit SEO issues. Injects Schema.org markup and optimizes fo
 tdd = "Enforce test-driven development workflow. Scaffold interfaces, generate tests FIRST, then implement minimal code to pass. Ensure 80%+ coverage."
 triage = "Triage a bug or issue. Explore the codebase to find root cause, then create a fix plan."
 video = "Programmatic video generation specialist using React and Remotion."
+
+# Forge Anything MCP server (local stdio). The Codex plugin directory only
+# accepts remote (HTTPS) MCP servers, so a local `forge mcp` server is
+# registered here, in the user's local Codex config, instead.
+[mcp_servers.forge-anything]
+command = "forge"
+args = ["mcp"]

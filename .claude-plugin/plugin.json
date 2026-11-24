@@ -9,6 +9,7 @@
     "description": "Forge anything with AI agents.",
     "homepage": "https://github.com/galyarderlabs/forge-anything",
     "license": "GPL-3.0-or-later",
+    "mcpServers": "./.mcp.json",
     "name": "forge-anything",
     "repository": "https://github.com/galyarderlabs/forge-anything",
     "skills": "./skills",

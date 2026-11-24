@@ -6,12 +6,15 @@
 //! forge <command> [options]
 //!
 //! scaffold  Initialize a new Forge Anything project (native Rust)
+//! mcp       Run the Forge Anything MCP server on stdio
 //! smoke     Run system integrity checks
 //! version   Show current Forge Anything version
 //! help      Show this help message
 //! ```
 //!
-//! `scaffold` runs the native Rust scaffold (`forge-scaffold`). `smoke`
+//! `scaffold` runs the native Rust scaffold (`forge-scaffold`). `mcp`
+//! runs the MCP server (tools: list_skills, read_skill, read_agent,
+//! read_command, scaffold) over JSON-RPC 2.0 on stdin/stdout. `smoke`
 //! still runs the repo's `scripts/smoke.sh` with the arguments passed
 //! through, and the CLI exits with the script's exit code.
 //! Installation is via each harness's native plugin manifest, not through
@@ -21,6 +24,8 @@
 //! back to the crate version.
 
 mod delegate;
+mod json;
+mod mcp;
 mod version;
 
 use forge_scaffold::{scaffold as rs_scaffold, source as rs_source};
@@ -61,6 +66,7 @@ fn run() -> Result<ExitCode, (u8, String)> {
             Ok(ExitCode::from(0))
         }
         "scaffold" => run_scaffold(&rest),
+        "mcp" => Ok(mcp::run(&rest)),
         "smoke" => run_script_command(&command, &rest),
         _ => {
             eprintln!("[ERR] Unknown command: {command}");
@@ -189,12 +195,14 @@ fn help_text() -> String {
          \n\
          Commands:\n\
          \x20 scaffold  Initialize a new Forge Anything project\n\
+         \x20 mcp       Run the Forge Anything MCP server on stdio\n\
          \x20 smoke     Run system integrity checks\n\
          \x20 version   Show current Forge Anything version\n\
          \x20 help      Show this help message\n\
          \n\
          Examples:\n\
          \x20 forge scaffold\n\
+         \x20 forge mcp\n\
          \x20 forge smoke\n\
          \x20   \n"
     )

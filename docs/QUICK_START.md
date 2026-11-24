@@ -4,15 +4,31 @@ Get Forge Anything and Forge HQ working together as an agentic-company stack.
 
 ## Prerequisites
 
-- Rust 1.85+ for the Forge Anything CLI (`forge`)
+- A project where you want to deploy the operating structure, such as `~/projects/my-startup`
 - Node.js 20+ for Forge HQ
 - Git installed
-- A project where you want to deploy the operating structure, such as `~/projects/my-startup`
+- Rust 1.85+ only if you build the Forge Anything CLI (`forge`) from source; the prebuilt install below needs no Rust toolchain
 
 ## Phase 1: Install the CLI
 
-The `forge` CLI is Rust. Clone the repo and run the setup script (it builds
-the CLI and links it into your PATH):
+Install the prebuilt `forge` CLI binary (Linux, macOS, Windows) — no Rust
+toolchain needed:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/galyarderlabs/forge-anything/main/install.sh | sh
+```
+
+Or install a specific version:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/galyarderlabs/forge-anything/main/install.sh | sh -s -- --version 3.0.2
+```
+
+The script downloads the binary for your platform from the latest GitHub
+Release, verifies its SHA256 checksum, and installs it to `~/.local/bin`.
+
+From source, from a checkout, build and link the CLI instead (requires
+Rust 1.85+):
 
 ```bash
 git clone https://github.com/galyarderlabs/forge-anything.git ~/forge-anything
