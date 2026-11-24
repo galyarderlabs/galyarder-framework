@@ -1,61 +1,34 @@
 # Forge Anything for Codex
 
-Guide for using Forge Anything with OpenAI Codex via native skill discovery.
+Guide for using Forge Anything with OpenAI Codex via its native plugin.
 
-## Quick Install
+## Install
 
-Tell Codex:
+Codex loads Forge Anything through its native plugin manifest
+(`.codex-plugin/plugin.json`). The plugin reads the root `skills/`
+directly — no clone or symlink is needed. The plugin also registers
+the Forge Anything MCP server (`forge mcp`), which runs locally over
+stdio.
 
-```
-Fetch and follow instructions from https://raw.githubusercontent.com/galyarderlabs/refs/heads/main/.codex/INSTALL.md
-```
+See [Multi-Platform Integration Protocol](INTEGRATION.md) for the
+supported platforms.
 
-## Manual Installation
+### Subagent skills (optional)
 
-### Prerequisites
+Skills like `dispatching-parallel-agents` and
+`subagent-driven-development` require Codex's multi-agent feature. Add
+to your Codex config (`~/.codex/config.toml`):
 
-- OpenAI Codex CLI
-- Git
-
-### Steps
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/galyarderlabs/forge-anything.git ~/.codex/forge-anything
-   ```
-
-2. Create the skills symlink:
-   ```bash
-   mkdir -p ~/.agents/skills
-   ln -s ~/.codex/skills ~/.agents/skills/forge-anything
-   ```
-
-3. Restart Codex.
-
-4. **For subagent skills** (optional): Skills like `dispatching-parallel-agents` and `subagent-driven-development` require Codex's multi-agent feature. Add to your Codex config:
-   ```toml
-   [features]
-   multi_agent = true
-   ```
-
-### Windows
-
-Use a junction instead of a symlink (works without Developer Mode):
-
-```powershell
-New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.agents\skills"
-cmd /c mklink /J "$env:USERPROFILE\.agents\skills\forge-anything" "$env:USERPROFILE\.codex\forge-anything\skills"
+```toml
+[features]
+multi_agent = true
 ```
 
 ## How It Works
 
-Codex has native skill discovery  it scans `~/.agents/skills/` at startup, parses SKILL.md frontmatter, and loads skills on demand. Forge Anything skills are made visible through a single symlink:
-
-```
-~/.agents/skills/  ~/.codex/skills/
-```
-
-The `using-forge-anything` skill is discovered automatically and enforces skill usage discipline  no additional configuration needed.
+Codex has native skill discovery — it reads the plugin's `skills/` at
+startup, parses SKILL.md frontmatter, and loads skills on demand.
+The `using-forge-anything` skill is discovered automatically and enforces skill usage discipline — no additional configuration needed.
 
 ## Usage
 
@@ -89,7 +62,7 @@ Codex adapter is responsible only for mapping those roles onto Codex-native
 subagent capabilities.
 
 For the exact Codex mapping, see
-[`skills/using-references/codex-tools.md`](../skills/using-forge-anything/references/codex-tools.md).
+[`skills/using-forge-anything/references/codex-tools.md`](../skills/using-forge-anything/references/codex-tools.md).
 
 ### Personal Skills
 
@@ -110,42 +83,26 @@ description: Use when [condition] - [what it does]
 [Your skill content here]
 ```
 
-The `description` field is how Codex decides when to activate a skill automatically  write it as a clear trigger condition.
+The `description` field is how Codex decides when to activate a skill automatically — write it as a clear trigger condition.
 
 ## Updating
 
-```bash
-cd ~/.codex/forge-anything && git pull
-```
-
-Skills update instantly through the symlink.
+Update the Forge Anything plugin through Codex's plugin management.
+Skills are read directly from `skills/`, so updates apply on the next
+Codex start.
 
 ## Uninstalling
 
-```bash
-rm ~/.agents/skills/forge-anything
-```
-
-**Windows (PowerShell):**
-```powershell
-Remove-Item "$env:USERPROFILE\.agents\skills\forge-anything"
-```
-
-Optionally delete the clone: `rm -rf ~/.codex/forge-anything` (Windows: `Remove-Item -Recurse -Force "$env:USERPROFILE\.codex\forge-anything"`).
+Remove the Forge Anything plugin from Codex.
 
 ## Troubleshooting
 
 ### Skills not showing up
 
-1. Verify the symlink: `ls -la ~/.agents/skills/forge-anything`
-2. Check skills exist: `ls ~/.codex/skills`
-3. Restart Codex  skills are discovered at startup
-
-### Windows junction issues
-
-Junctions normally work without special permissions. If creation fails, try running PowerShell as administrator.
+1. Verify the Forge Anything plugin is installed and enabled in Codex.
+2. Restart Codex — skills are discovered at startup.
 
 ## Getting Help
 
-- Report issues: https://github.com/galyarderlabs/issues
+- Report issues: https://github.com/galyarderlabs/forge-anything/issues
 - Main documentation: https://github.com/galyarderlabs/forge-anything

@@ -12,10 +12,10 @@ Security problems go privately to the maintainer; see
   agent, or command, it must fit the lifecycle and the department it
   belongs to. The loop ends at distribution.
 - **One source.** Skills, agents, and commands live once in `skills/`,
-  `agents/`, and `commands/`. The mirrors (`integrations/`, `.cursor/`,
-  `.codex/`, `.gemini/`, `docs/skills`, `docs/agents`, `docs/commands`)
-  and the bundles are generated — never edit them by hand. Run the sync
-  scripts and commit their output in the same pull request.
+  `agents/`, and `commands/`. The mirrors (`docs/skills`, `docs/agents`,
+  `docs/commands`) and the bundles are generated — never edit them by
+  hand. Run the sync scripts and commit their output in the same pull
+  request.
 - **The header is single-source.** The GLOBAL PROTOCOLS block lives in
   [`docs/GLOBAL-PROTOCOLS.md`](docs/GLOBAL-PROTOCOLS.md). Change it there,
   then run `scripts/sync-global-protocols.py`.
