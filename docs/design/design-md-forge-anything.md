@@ -53,7 +53,6 @@ The logo mark is three stone figures leaning inward around a glowing four-pointe
 
 - `docs/assets/logo.webp` (1600x1600): the full mark.
 - `docs/assets/favicon.webp` (256x256): the small mark.
-- `public/logo.png` (1024x1024): the web mark.
 
 Use the mark on cream. Never place it on violet, purple, or neon, and never pair it with the deleted old logo.
 

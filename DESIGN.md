@@ -4,7 +4,7 @@
 
 This is the product-specific design guide for **Forge Anything**.
 
-The reference is the README banner, `docs/assets/social-preview.png` (1280x640). That image is the design source of truth: every color, type choice, and image rule below comes from it. The logo mark is three stone figures leaning inward around a glowing four-pointed gold spark, in the banner's warm cream and stone style. It comes from Galih's example lockup (the figures + spark), which comes from the banner's stone figures. Files: `docs/assets/logo.webp` (1600x1600), `docs/assets/favicon.webp` (256x256), `public/logo.png` (1024x1024). The old purple "G" logo is deleted and must not be reintroduced.
+The reference is the README banner, `docs/assets/social-preview.png` (1280x640). That image is the design source of truth: every color, type choice, and image rule below comes from it. The logo mark is three stone figures leaning inward around a glowing four-pointed gold spark, in the banner's warm cream and stone style. It comes from Galih's example lockup (the figures + spark), which comes from the banner's stone figures. Files: `docs/assets/logo.webp` (1600x1600), `docs/assets/favicon.webp` (256x256). The old purple "G" logo is deleted and must not be reintroduced.
 
 `docs/design/design-md-forge-anything.md` is the seedable design spec derived from this guide. It carries the same palette, feel, and banner reference into scaffolded projects. This file is the canonical guide; the spec is the scaffold input.
 

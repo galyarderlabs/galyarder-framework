@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Check the Antigravity Marketplace logo: a square RGBA PNG at least 128x128
 # (the Marketplace minimum), at the path the manifest names. The logo is
-# derived from public/logo.png (converted to RGBA); there is no SVG render
-# script, so no freshness check against a re-render.
+# derived from the logo mark (docs/assets/logo.webp, converted to RGBA PNG);
+# there is no SVG render script, so no freshness check against a re-render.
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
