@@ -16,6 +16,14 @@ Using an AI agent shouldn't be just generating code, and the agent shouldn't be 
 
 </div>
 
+## Why Forge Anything
+
+Left to itself, an AI agent takes the shortest path. It generates code, skips the spec, skips the tests, skips the review, and never reaches distribution. It gets confused about what to do next, because nothing tells it what comes after the code. The work ends at a draft, not at a shipped thing.
+
+Forge Anything gives the agent opinionated rules and a workflow that ends at distribution. The agent gets the right rules for the work, the department to route it to, and the loop that carries it from a goal to a shipped result. It covers the whole company and life, not just code: product, growth, security, infrastructure, legal and finance, and knowledge, alongside engineering.
+
+The workflows bake in the practices senior engineers actually use. Test-driven development means tests come before code. Systematic debugging means tracing the root cause before changing anything. Verification before completion means a claim counts only with proof you can check. Requesting code review means the work is reviewed before it merges, and release walks it through shipping. These are not abstract principles. They are the step-by-step workflows the agent follows, and the loop ends at distribution, so the work ships instead of sitting as a draft.
+
 ## How it works
 
 1. **Goal**: say what you want, in plain words.
@@ -31,6 +39,10 @@ Three pieces make the loop work:
 - **MCP**: `forge mcp` is the MCP server. It gives any agent, or even a regular chatbot, the tools to read skills, agents, and commands, and to scaffold a project. Install the MCP, not the skills, and the agent gets the tools plus the workflow.
 
 The full workflow, with the five phases in detail, is in [docs/WORKFLOW.md](docs/WORKFLOW.md). The harness plugins are in [docs/INTEGRATION.md](docs/INTEGRATION.md).
+
+## How it compares
+
+Wondering how this stacks up against [Superpowers](https://github.com/obra/superpowers), [Agent Skills](https://github.com/addyosmani/agent-skills) by Addy Osmani, or [Matt Pocock's skills](https://github.com/mattpocock/skills)? See [docs/comparison.md](docs/comparison.md) for an honest, side-by-side look at how the four are shaped differently and when to reach for each.
 
 ## Rules
 
@@ -62,6 +74,7 @@ Step by step, including local install and other tools, is in [docs/QUICK_START.m
 
 - [Quick start](docs/QUICK_START.md): install and first run
 - [Workflow](docs/WORKFLOW.md): the five phases, in full
+- [Comparison](docs/comparison.md): how it compares with Superpowers, Agent Skills, and Matt Pocock's skills
 - [Integration](docs/INTEGRATION.md): the tools it plugs into
 - [Departments](docs/departments/): the departments and what each owns
 - [Agents](docs/agents/): the personas that do the work
