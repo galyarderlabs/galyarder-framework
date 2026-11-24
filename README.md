@@ -78,8 +78,6 @@ Step by step, including local install and other tools, is in [docs/QUICK_START.m
 - [Quick start](docs/QUICK_START.md): install and first run
 - [Workflow](docs/WORKFLOW.md): the five phases, in full
 - [Integration](docs/INTEGRATION.md): the tools it plugs into
-- [Codex guide](docs/README.codex.md): using it with OpenAI Codex
-- [OpenCode guide](docs/README.opencode.md): using it with OpenCode
 - [Departments](docs/departments/): the departments and what each owns
 - [Agents](docs/agents/): the personas that do the work
 - [Skills](docs/skills/): the full skill list

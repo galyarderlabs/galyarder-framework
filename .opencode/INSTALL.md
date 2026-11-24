@@ -80,4 +80,4 @@ When skills reference Claude Code tools:
 ## Getting Help
 
 - Report issues: https://github.com/galyarderlabs/issues
-- Full documentation: https://github.com/galyarderlabs/blob/main/docs/README.opencode.md
+- Full documentation: https://github.com/galyarderlabs/forge-anything/blob/main/docs/INTEGRATION.md

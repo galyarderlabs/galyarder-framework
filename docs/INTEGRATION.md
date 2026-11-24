@@ -1,6 +1,6 @@
 # Multi-Platform Integration Protocol
 
-Forge Anything is a host-agnostic logic library for agentic company execution across AI tools.
+Forge Anything is a host-agnostic logic library for agentic company execution across AI tools. Everything installs via plugin — no manual setup, no scripts, no clone-and-symlink.
 
 ## Supported Platforms
 
@@ -8,30 +8,88 @@ The framework ships native plugins for these harnesses:
 
 1.  **Claude Code**: Advanced CLI marketplace integration.
 2.  **OMP/Pi (Oh My Pi)**: Native Pi extension; OMP is a fork of Pi.
-3.  **OpenAI Codex**: Native plugin; Codex reads the root `skills/` directly. See [Forge Anything for Codex](README.codex.md).
+3.  **OpenAI Codex**: Native plugin; Codex reads the root `skills/` directly.
 4.  **Cursor**: Native plugin (portable root `plugin.json`).
 5.  **Antigravity**: Native plugin.
-6.  **OpenCode**: Specialized plugin ecosystem. See [Forge Anything for OpenCode](README.opencode.md).
+6.  **OpenCode**: Specialized plugin ecosystem.
 7.  **GitHub Copilot CLI**: Native plugin (portable root `plugin.json`).
 8.  **Hermes Agent**: Local-first autonomous assistant runtime. Hermes is our own agent, always a target.
 
-## Official Marketplace Integration
+## Install
 
-For cloud-native orchestrators, use the standard plugin protocol:
+### Claude Code
 
-### Claude Code & Copilot CLI
-1. **Connect Marketplace**:
-   ```bash
-   /plugin marketplace add galyarderlabs/forge-anything
-   ```
-2. **Install Asset**:
-   ```bash
-   # Full Intelligence Bundle
-   /plugin install forge-anything@galyarderlabs-marketplace
+```bash
+/plugin marketplace add galyarderlabs/forge-anything
+/plugin install forge-anything@forge-anything-marketplace
+```
 
-   # Selective Department (e.g., Engineering)
-   /plugin install engineering-dept@galyarderlabs-marketplace
-   ```
+Delivers the skills, commands, and the Forge Anything MCP server (`forge mcp`).
+
+### OMP / Pi
+
+Pi:
+
+```bash
+pi install git:github.com/galyarderlabs/forge-anything
+```
+
+OMP (a fork of Pi — same plugin, OMP marketplace commands):
+
+```bash
+omp plugin marketplace add galyarderlabs/forge-anything
+omp plugin install forge-anything@forge-anything-marketplace
+```
+
+Delivers the skills and the Pi/OMP extension (`.pi/extensions/forge-anything.ts`), which injects the `using-forge-anything` bootstrap at session start. OMP also auto-inherits skills installed for Claude Code and other harnesses.
+
+### Codex
+
+```bash
+codex plugin marketplace add galyarderlabs/forge-anything
+codex plugin add forge-anything@forge-anything
+```
+
+Delivers the skills (Codex reads the root `skills/` directly) and the Forge Anything MCP server (`forge mcp`).
+
+### Cursor
+
+In Cursor Agent chat:
+
+```text
+/add-plugin forge-anything
+```
+
+Or search for "forge-anything" in the plugin marketplace. Delivers the skills and the MCP server.
+
+### Antigravity
+
+```bash
+agy plugin install https://github.com/galyarderlabs/forge-anything
+```
+
+Delivers the skills and the MCP server.
+
+### OpenCode
+
+Add forge-anything to the `plugin` array in your `opencode.json` (global or project-level):
+
+```json
+{
+  "plugin": ["forge-anything@git+https://github.com/galyarderlabs/forge-anything.git"]
+}
+```
+
+Restart OpenCode. The plugin auto-installs and registers all skills and the MCP server. Full instructions: `.opencode/INSTALL.md`.
+
+### GitHub Copilot CLI
+
+```bash
+copilot plugin marketplace add galyarderlabs/forge-anything
+copilot plugin install forge-anything@forge-anything-marketplace
+```
+
+Delivers the skills and the MCP server.
 
 ### Hermes Agent
 
@@ -42,6 +100,16 @@ hermes plugins install galyarderlabs/forge-anything --enable
 ```
 
 Restart any active Hermes sessions after installing. The plugin registers all 99 skills with Hermes' native skill loader and injects the `using-forge-anything` bootstrap on the first turn via the `pre_llm_call` hook. Note: Hermes has no post-compaction hook, so a very long session that compacts over its first turn loses the bootstrap — start a fresh session if skills stop triggering.
+
+## Skills only (no harness plugin)
+
+If you only want the skills, without a harness plugin:
+
+```bash
+npx skills add galyarderlabs/forge-anything
+```
+
+This installs the skills into the harness of your choice (project or global scope).
 
 ## Command Silo Structure (Universal Architecture)
 
