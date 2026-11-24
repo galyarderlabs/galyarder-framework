@@ -48,8 +48,8 @@ cd ~/projects/my-startup
 forge scaffold
 
 # Deploy to a target tool
-# Available: cursor, windsurf, kilocode, augment, openclaw, hermes, antigravity, forge-agent
-forge deploy --tool <name>
+# Available: forge-agent
+forge deploy --tool forge-agent
 ```
 
 Native plugin harnesses (Claude Code, OMP/Pi, Codex, Cursor, Antigravity, OpenCode, Copilot CLI, Hermes) are installed through each harness's own plugin manager, not through `forge deploy`. See [docs/INTEGRATION.md](INTEGRATION.md).
@@ -100,4 +100,4 @@ Ensure `~/.local/bin` or your npm global bin directory is in your PATH. Restart 
 
 ### No agents detected
 
-Run `forge scaffold` inside the project directory, then deploy the framework to your target tool with `forge deploy --tool <name>`.
+Run `forge scaffold` inside the project directory, then deploy the framework: for Forge Agent use `forge deploy --tool forge-agent`; for a plugin harness, install its native plugin (see [docs/INTEGRATION.md](INTEGRATION.md)).

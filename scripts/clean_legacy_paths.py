@@ -5,7 +5,7 @@ replacements = [
     (r'\.agents/founder-context\.md', r'docs/departments/Executive/founder-context.md'),
     (r'\.agents/product-marketing-context\.md', r'docs/departments/Growth/product-marketing-context.md'),
     (r'\.claude/product-marketing-context\.md', r'docs/departments/Growth/product-marketing-context.md'),
-    (r'~/\.claude/skills` for Claude Code, `~/\.agents/skills/` for Codex', r'integrations/claude-code/` for Claude Code, `integrations/codex/` for Codex'),
+    (r'~/\.claude/skills` for Claude Code, `~/\.agents/skills/` for Codex', r'skills/` (canonical; read by each harness native plugin)'),
     (r'\.agents/skills/release-changelog/SKILL\.md', r'Infrastructure/skills/release-changelog/SKILL.md'),
     (r'New \.agents/skills/ directory convention', r'New Department Silo directory convention'),
 ]

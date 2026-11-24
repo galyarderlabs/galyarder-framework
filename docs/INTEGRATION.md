@@ -70,9 +70,9 @@ Legacy context-bloat patterns have been removed so agents load only what they ne
 
 ## Conversion Engine
 
-To maintain parity across all supported platforms, use the Forge conversion engine:
+The Forge conversion engine generates the Forge Agent surface only. Every other harness uses its native plugin manifest, which reads the canonical `skills/`, `agents/`, and `commands/` directories directly — no generated copies.
 
 ```bash
-# Full recursive conversion
-forge deploy --tool all
+# Generate the Forge Agent surface
+forge deploy --tool forge-agent
 ```
