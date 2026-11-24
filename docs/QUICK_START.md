@@ -27,16 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/galyarderlabs/forge-anything/main/i
 The script downloads the binary for your platform from the latest GitHub
 Release, verifies its SHA256 checksum, and installs it to `~/.local/bin`.
 
-From source, from a checkout, build and link the CLI instead (requires
-Rust 1.85+):
-
-```bash
-git clone https://github.com/galyarderlabs/forge-anything.git ~/forge-anything
-cd ~/forge-anything
-./scripts/setup-cli.sh
-```
-
-Or install the binary with cargo, from a checkout:
+Or install the binary with cargo, from a checkout (requires Rust 1.85+):
 
 ```bash
 cargo install --path crates/forge
