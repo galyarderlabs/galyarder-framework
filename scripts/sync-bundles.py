@@ -66,8 +66,8 @@ for bundle in sorted(SKILLS.glob("*/SKILL.md")):
     # A bundle is a skill whose frontmatter says it is a bundle.
     head = (bundle.read_text().split("---", 2)[1] if bundle.read_text().startswith("---") else "")
     if "bundle" in head.lower() or bundle.parent.name in (
-        "full", "forge", "engineering", "executive", "growth",
-        "legal-finance", "security", "knowledge", "product", "infrastructure",
+        "forge", "engineering", "executive", "growth", "security",
+        "knowledge", "product", "infrastructure", "finance", "legal", "creative",
     ):
         if regen(bundle):
             changed.append(str(bundle.relative_to(ROOT)))

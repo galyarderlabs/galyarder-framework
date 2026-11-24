@@ -9,10 +9,10 @@
 //!   security skills (red team, malware reversing, darkweb monitoring) and the
 //!   narrow CRO tactics stay in the full repo; the scaffold carries the
 //!   defensive and compliance basics instead (cloud security, GDPR, licensing).
-//! - The department bundle skills (engineering, executive, ...) and the
-//!   bundle-of-everything (`full`) are NOT copied: they aggregate the
-//!   individual skills, and the scaffold ships the individual skills directly.
-//!   The one bundle kept is `forge`, the Forge Anything entry point.
+//! - The department bundle skills (engineering, executive, ...) are NOT
+//!   copied: they aggregate the individual skills, and the scaffold ships
+//!   the individual skills directly. The one bundle kept is `forge`,
+//!   the Forge Anything entry point.
 //!
 //! This list is data, not law. To change what the scaffold ships, edit the
 //! lists below; the tests assert every entry exists in the source repo.
