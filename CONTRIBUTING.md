@@ -8,12 +8,12 @@ Security problems go privately to the maintainer; see
 ## Ground rules
 
 - **The value leads.** Essential skills for the full lifecycle of an AI
-  agent, in one place — from goal to shipped. If a change adds a skill,
+  agent, in one place, from goal to shipped. If a change adds a skill,
   agent, or command, it must fit the lifecycle and the department it
   belongs to. The loop ends at distribution.
 - **One source.** Skills, agents, and commands live once in `skills/`,
   `agents/`, and `commands/`. The mirrors (`docs/skills`, `docs/agents`,
-  `docs/commands`) and the bundles are generated — never edit them by
+  `docs/commands`) and the bundles are generated, never edit them by
   hand. Run the sync scripts and commit their output in the same pull
   request.
 - **The header is single-source.** The GLOBAL PROTOCOLS block lives in
@@ -41,7 +41,7 @@ Security problems go privately to the maintainer; see
 ```sh
 git clone https://github.com/galyarderlabs/forge-anything.git
 cd forge-anything
-npm install                 # the CLI (forge)
+cargo build --locked --manifest-path crates/forge/Cargo.toml   # the CLI (forge)
 ```
 
 Regenerate the derived surfaces after changing a skill, agent, command,
@@ -64,7 +64,7 @@ bash scripts/smoke.sh                      # the 8-point smoke test
 
 The smoke test checks the manifest parity (skills.json matches `skills/`),
 the bundles, the header block, and the marketplace manifest.
-If it fails, fix the source and re-run the sync scripts — do not hand-edit
+If it fails, fix the source and re-run the sync scripts, do not hand-edit
 a generated file to make it pass.
 
 ## Code style
@@ -94,7 +94,7 @@ a generated file to make it pass.
 1. Move the `[Unreleased]` notes in `CHANGELOG.md` under a new version
    and date, and set that version in `package.json` (the single source
    of the version).
-2. Commit, then tag and push: `git tag -a v2.0.1 -m "Forge Anything
-   2.0.1"` and `git push origin main v2.0.1`.
-3. The publish-npm workflow publishes the tagged source to npm, and the
-   deploy-docs workflow deploys the docs site.
+2. Commit, then tag and push: `git tag -a v3.0.3 -m "Forge Anything
+   3.0.3"` and `git push origin main v3.0.3`.
+3. The release workflow builds the prebuilt `forge` binaries for Linux,
+   macOS, and Windows and attaches them to the GitHub Release.

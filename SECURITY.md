@@ -34,8 +34,8 @@ verifies the downloaded binary against it before installing. You can
 verify a binary yourself by comparing its SHA256 hash with the matching
 entry in the release's `SHA256SUMS`.
 
-The npm package is skills-only. It carries the skills, agents, commands,
-and docs, not the CLI binary.
+The skills are installed with `npx skills add galyarderlabs/forge-anything`,
+or through a harness plugin. They are not distributed as an npm package.
 
 ## What leaves your computer
 
@@ -47,7 +47,6 @@ only for these:
 | What | Where to | What is sent |
 |---|---|---|
 | Install the CLI | GitHub Releases (`github.com`, `objects.githubusercontent.com`) | A plain download of the prebuilt `forge` binary, when you run `install.sh`, with its SHA256 checked against the release's `SHA256SUMS` |
-| Install the skills package | The npm registry (`registry.npmjs.org`) | A plain download of the skills-only package, when you run `npm install -g forge-anything` |
 | Install skills via skills.sh | The skills.sh service | A plain download of the skills you pick, when you run `npx skills add` |
 | Install a harness plugin | The harness plugin marketplace, or GitHub | A plain download of the plugin, when you run the harness install command in `docs/INTEGRATION.md` |
 

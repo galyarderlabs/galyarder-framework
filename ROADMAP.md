@@ -35,9 +35,10 @@ What ships today:
   `docs/INTEGRATION.md`.
 - **The install script.** `install.sh` downloads the prebuilt `forge`
   binary from GitHub Releases and verifies its SHA256 checksum.
-- **Skills via npm and skills.sh.** `npx skills add
-  galyarderlabs/forge-anything` installs the skills. The npm package is
-  skills-only; the CLI is not in npm.
+- **Skills via skills.sh.** `npx skills add
+  galyarderlabs/forge-anything` installs the skills from GitHub. npm is
+  no longer used; the skills come from GitHub, and the CLI comes from
+  GitHub Releases.
 - **CI.** Smoke test, Rust (fmt, clippy, build, test), repo hygiene, and
   CodeQL run on pushes to main.
 

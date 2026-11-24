@@ -17,10 +17,7 @@ name: release
 # for the host platform from the latest release and verifies it against
 # SHA256SUMS.
 #
-# Creating the release here triggers `publish-npm.yml` (on `release:
-# published`), which publishes the skills package to npm from the same tag.
-# The npm package stays skills-only; the CLI is distributed only through
-# these release binaries.
+# The CLI is distributed only through these release binaries.
 #
 # Toolchain matches rust.yml: Rust 1.85, the crates' MSRV (edition 2024).
 

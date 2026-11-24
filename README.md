@@ -4,8 +4,6 @@
 
 Forge anything with AI agents.
 
-[![npm version](https://img.shields.io/npm/v/forge-anything.svg)](https://www.npmjs.com/package/forge-anything)
-[![npm downloads](https://img.shields.io/npm/dm/forge-anything.svg)](https://www.npmjs.com/package/forge-anything)
 [![License: GPL-3.0-or-later](https://img.shields.io/badge/license-GPL--3.0--or--later-blue.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/galyarderlabs/forge-anything.svg)](https://github.com/galyarderlabs/forge-anything)
 [![Smoke test](https://github.com/galyarderlabs/forge-anything/actions/workflows/smoke-test.yml/badge.svg)](https://github.com/galyarderlabs/forge-anything/actions/workflows/smoke-test.yml)
@@ -26,7 +24,13 @@ Using an AI agent shouldn't be just generating code, and the agent shouldn't be 
 4. **Verify**: every claim is checked against evidence before it counts.
 5. **Ship**: the work goes out. Distribution is where the loop ends.
 
-The full workflow, with the five phases in detail, is in [docs/WORKFLOW.md](docs/WORKFLOW.md).
+Three pieces make the loop work:
+
+- **Scaffold**: `forge scaffold` drops a tidy repo into a folder, with the curated skills, agents, and commands. Start clean, not from a blank page.
+- **CLI**: `forge` is the command line tool. It scaffolds a project, serves the MCP, and smoke-tests the repo.
+- **MCP**: `forge mcp` is the MCP server. It gives any agent, or even a regular chatbot, the tools to read skills, agents, and commands, and to scaffold a project. Install the MCP, not the skills, and the agent gets the tools plus the workflow.
+
+The full workflow, with the five phases in detail, is in [docs/WORKFLOW.md](docs/WORKFLOW.md). The harness plugins are in [docs/INTEGRATION.md](docs/INTEGRATION.md).
 
 ## Rules
 
@@ -37,37 +41,18 @@ The full workflow, with the five phases in detail, is in [docs/WORKFLOW.md](docs
 
 ## Install
 
-Get the `forge` CLI as a prebuilt binary (Linux, macOS, Windows) — no Rust
+Get the `forge` CLI as a prebuilt binary (Linux, macOS, Windows), no Rust
 toolchain needed:
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/galyarderlabs/forge-anything/main/install.sh | sh
 ```
 
-Or install a specific version:
-
-```sh
-curl -fsSL https://raw.githubusercontent.com/galyarderlabs/forge-anything/main/install.sh | sh -s -- --version 3.0.2
-```
-
-The script downloads the matching binary from the latest GitHub Release,
-verifies its SHA256 checksum, and installs it to `~/.local/bin`.
-
-From source, from a checkout:
-
-```sh
-cargo install --path crates/forge
-```
-
 Or get just the skills, without the CLI:
 
 ```sh
-npm install -g forge-anything
-npx skills add galyarderlabs/forge-anything --skill full
+npx skills add galyarderlabs/forge-anything
 ```
-
-The npm package is skills-only; the CLI is distributed through the
-prebuilt binaries above (or built from source).
 
 Native plugins cover Claude Code, OMP/Pi, Codex, Cursor, Antigravity, OpenCode, Copilot CLI, and Hermes; see [docs/INTEGRATION.md](docs/INTEGRATION.md).
 

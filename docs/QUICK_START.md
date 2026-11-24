@@ -11,7 +11,7 @@ Get Forge Anything and Forge HQ working together as an agentic-company stack.
 
 ## Phase 1: Install the CLI
 
-Install the prebuilt `forge` CLI binary (Linux, macOS, Windows) — no Rust
+Install the prebuilt `forge` CLI binary (Linux, macOS, Windows), no Rust
 toolchain needed:
 
 ```bash
@@ -42,14 +42,10 @@ Or install the binary with cargo, from a checkout:
 cargo install --path crates/forge
 ```
 
-Just the skills, without the CLI, are on npm:
+Just the skills, without the CLI:
 
 ```bash
-npm install -g forge-anything
-npx skills add galyarderlabs/forge-anything --skill full
-
-# Or pull by department
-npx skills add galyarderlabs/forge-anything --skill engineering
+npx skills add galyarderlabs/forge-anything
 ```
 
 ## Phase 2: Deploy the Framework into a project
@@ -94,7 +90,7 @@ To connect a project in HQ:
 
 ### Commands not found
 
-Ensure `~/.local/bin` or your npm global bin directory is in your PATH. Restart your shell after setup.
+Ensure `~/.local/bin` (or `~/.cargo/bin` if you built from source) is in your PATH. Restart your shell after setup.
 
 ### No agents detected
 
