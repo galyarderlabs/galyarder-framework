@@ -1,0 +1,14 @@
+{
+    "hooks": {
+        "sessionStart": [
+            {
+                "bash": "bash hooks/session-start",
+                "cwd": ".",
+                "powershell": "bash hooks/session-start",
+                "timeoutSec": 10,
+                "type": "command"
+            }
+        ]
+    },
+    "version": 1
+}
