@@ -85,6 +85,10 @@ The missing piece is not another coding agent or a prompt pack. It is the operat
 - **R20 - A published roadmap and PRD.** The project should state where it is going and why, in the repo. `[implemented]` - this document and `ROADMAP.md`.
 - **R21 - Consistent public terminology.** Metadata and manifest copy should follow the same terminology rules as the rest of the repository. `[implemented]` - the 3.0.x rebrand aligned the manifests, the changelog, and the docs on the current direction.
 
+### Company packages
+
+- **R22 - Company import.** A user should be able to import an agent-company package into a project, copying it self-contained into `company/<slug>/` with validation of the package format before copying. `[implemented]` - `forge company import` (Rust, `crates/forge`), see `docs/company-import.md`.
+
 ## Success signals
 
 - A new user can install the system and scaffold a project by following the README without needing to ask how.

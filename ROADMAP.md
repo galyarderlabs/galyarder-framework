@@ -80,10 +80,6 @@ What is not there yet:
   stops at 2.0.0. It needs entries for the rebrand, the GPL-3.0 license,
   the Rust scaffold and CLI, the plugin surface, the Hermes hook, the
   integrations removal, and the distribution plus MCP build.
-- **Decide the leftover manual installer scripts.** `scripts/antigravity-install.sh`,
-  `scripts/openclaw-install.sh`, and `scripts/codex-install.bat` still
-  exist. They install skills by copying files, which the plugins already
-  do. Delete them or keep them; that is a call to make.
 - **Open issues.** #205 (a worked end-to-end mission example), #206
   (the stale directory reference; the references are removed by
   the AGENTS.md rewrite, so this can close once that lands), #207 (guard
