@@ -84,9 +84,18 @@ for skill_dir in "$SKILLS_DIR"/*/; do
   # matching as a substring, and the extension requirement keeps bare
   # directory mentions (agents/, references/templates/) from being treated
   # as file references.
+  # Resolution: references/, prompts/, templates/, agents/ are skill-local.
+  # scripts/ is both: most skills ship Python helpers in their own
+  # scripts/ directory, but the repo-root scripts/ directory holds the
+  # maintainer shell scripts (release.sh and friends) that skills invoke
+  # from the repo root as ./scripts/<name>. A scripts/ reference passes
+  # when the file exists in either location; it fails only when it exists
+  # in neither.
   while IFS= read -r ref; do
     if [[ -f "$skill_dir/$ref" ]]; then
       pass "$name: referenced file exists: $ref"
+    elif [[ "$ref" == scripts/* && -f "$REPO_ROOT/$ref" ]]; then
+      pass "$name: referenced file exists: $ref (repo-root scripts/)"
     else
       fail "$name: referenced file exists: $ref"
     fi
