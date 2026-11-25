@@ -159,8 +159,9 @@ Use the cheapest proof that actually verifies the claim.
 **Common skills:** `journal-framework`, `reflective-listening`, `faith-practice`, `personal-finance`
 
 1. Name what was earned, in plain words, before anything is returned.
-2. Return from it: share, teach, or contribute what the work proved.
+2. Return from it, in whatever form fits: the skills the process taught, educational content, tools that help people, time, money, or effort.
 3. Record the values behind the return, not just the act.
 4. Check the uncomfortable facts behind finance and politics before claiming to understand them.
+5. The return is what gives the next person hope to start, and the flow returns to Ideas for the next cycle.
 
 **Core rule:** do not call work complete until the relevant artifact exists and the verification path has been exercised.

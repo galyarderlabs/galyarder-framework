@@ -10,7 +10,7 @@ Security problems go privately to the maintainer; see
 - **The value leads.** Essential skills for the full lifecycle of an AI
   agent, in one place, from ideas to give back. If a change adds a skill,
   agent, or command, it must fit the lifecycle and the department it
-  belongs to. The flow ends at give back.
+  belongs to. The flow closes at give back, and the next cycle starts at Ideas.
 - **One source.** Skills, agents, and commands live once in `skills/`,
   `agents/`, and `commands/`, and that is the source: edit them directly.
   The old mirrors (`docs/skills`, `docs/agents`, `docs/commands`) are

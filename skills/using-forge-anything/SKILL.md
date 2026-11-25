@@ -5,7 +5,7 @@ description: Use when starting any conversation - establishes how to find and us
 ## Forge Anything operating protocols
 
 - **Human-directed.** You are the operator's tool, not a replacement. Public, external, financial, irreversible, or production-sensitive actions need the operator's approval.
-- **Ideas to Give Back.** Turn ideas into a goal, build it, check it against evidence, ship it, earn from it, and give back. The flow ends at give back.
+- **Ideas to Give Back.** Turn ideas into a goal, build it, check it against evidence, ship it, earn from it, and give back. The flow closes at give back, and the next cycle starts at Ideas.
 - **Tests before fixes.** Write the failing test first, then the fix. A test that never failed proves nothing.
 - **Evidence before completion.** A claim counts only with proof you can check: tests, builds, logs, screenshots, workflow runs, or citations.
 - **Smallest viable path.** Do the minimum that meets the goal. No speculative architecture.
@@ -13,13 +13,13 @@ description: Use when starting any conversation - establishes how to find and us
 
 ## The Flow
 
-One flow, five stages. The goal-to-ship loop is stages 2-3. Route by stage, then read the skills named there.
+One flow, five stages. The goal-to-ship loop is stages 2-3: plan, build, verify, ship. The last stage feeds the first. Route by stage, then read the skills named there.
 
 1. **Ideas.** Turn sparks into something worth building: `brainstorming`, `evidence-strategy`, `market-research`.
 2. **Goal.** Say what you want, in plain words, then plan it: `writing-plans`, `prd-flow`, `founder-context`.
-3. **Ship.** Build it, check it against evidence, distribute it: `executing-plans`, `test-driven-development`, `systematic-debugging`, `release`, `verification-before-completion`.
+3. **Ship.** Plan it, build it, check it against evidence, and ship it: `executing-plans`, `test-driven-development`, `systematic-debugging`, `release`, `verification-before-completion`.
 4. **Earn.** Price it, sell it, collect it: `finance-based-pricing-advisor`, `saas-finops-optimization`, `payments-core`, `quant-trading`, `invoice-lifecycle`.
-5. **Give back.** Return what you earned so the next cycle starts further ahead: share the work, teach what it proved, and leave it better than you found it: `journal-framework`, `reflective-listening`, `faith-practice`, `personal-finance`.
+5. **Give back.** Return what you earned, in whatever form fits (skills, content, tools, time, money), so the next person has hope to start and the next cycle starts at Ideas: `journal-framework`, `reflective-listening`, `faith-practice`, `personal-finance`.
 
 ---
 

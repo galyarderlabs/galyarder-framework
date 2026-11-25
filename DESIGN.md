@@ -31,7 +31,7 @@ Forge Anything surfaces must show:
 - workflows,
 - the five stages (Ideas, Goal, Ship, Earn, Give back),
 - tests and evidence,
-- distribution, then give back (where the flow ends).
+- distribution, then give back (where the flow closes and starts again at Ideas).
 
 Do not make Forge Anything look like:
 
@@ -89,7 +89,7 @@ Good Forge Anything diagrams show:
 - the five stages (Ideas, Goal, Ship, Earn, Give back),
 - agent delegation,
 - test gates and evidence checks,
-- distribution, then give back (where the flow ends),
+- distribution, then give back (where the flow closes and starts again at Ideas),
 - source-of-truth files.
 
 Reject diagrams that are only decorative node webs.

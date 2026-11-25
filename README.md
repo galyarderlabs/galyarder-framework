@@ -26,7 +26,7 @@ Left to itself, an AI agent takes the shortest path and stops at a draft. It has
 
 Forge Anything is the whole system, not one piece. The rules and the workflow, the scaffold to start clean, the CLI to build, serve, and check, the MCP to carry it to any agent or chatbot, and the plugins to put it in the harness the agent already uses. One system, from ideas to shipped work, earned from and given back, in the company and in life.
 
-It covers the whole company and life, not just code: product, growth, security, infrastructure, legal and finance, and knowledge, alongside engineering. The pieces fit together and the flow ends at give back, so the work ships instead of sitting as a draft.
+It covers the whole company and life, not just code: product, growth, security, infrastructure, legal and finance, and knowledge, alongside engineering. The pieces fit together and give back closes the cycle, so the work ships instead of sitting as a draft.
 
 ## How it works
 
@@ -34,9 +34,9 @@ One flow, five stages:
 
 1. **Ideas**: turn sparks into something worth building.
 2. **Goal**: say what you want, in plain words. The work gets a plan, with the rules and the workflow that fit it.
-3. **Ship**: the agent builds it, checks every claim against evidence, and ships it. Distribution is where the build loop ends.
+3. **Ship**: the agent plans it, builds it, checks every claim against evidence, and ships it. Distribution is where the build loop ends.
 4. **Earn**: price it, sell it, collect it.
-5. **Give back**: return what you earned so the next cycle starts further ahead: share the work, teach what it proved, and leave it better than you found it.
+5. **Give back**: return what you earned, in whatever form fits (skills, content, tools, time, money), so the next person has hope to start and the next cycle starts at Ideas.
 
 Three pieces make the flow work:
 

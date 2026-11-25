@@ -2,7 +2,7 @@
 
 Forge anything with AI agents.
 
-Using an AI agent should not be just generating code, and the agent should not be confused. Forge Anything gives the agent the right rules and the workflow to do the work the right way, so the work is planned, built, checked against evidence, shipped, earned from, and given back. The build loop ends at distribution; the flow ends at give back. That is the value: rules plus a workflow, in your company, and in your life.
+Using an AI agent should not be just generating code, and the agent should not be confused. Forge Anything gives the agent the right rules and the workflow to do the work the right way, so the work is planned, built, checked against evidence, shipped, earned from, and given back. The build loop ends at distribution; the flow closes at give back, and the next cycle starts at Ideas. That is the value: rules plus a workflow, in your company, and in your life.
 
 ## How it works
 
@@ -10,9 +10,9 @@ One flow, five stages:
 
 1. **Ideas**: turn sparks into something worth building.
 2. **Goal**: say what you want, in plain words. The work gets a plan, with the rules and the workflow that fit it.
-3. **Ship**: the agent builds it, checks every claim against evidence, and ships it. Distribution is where the build loop ends.
+3. **Ship**: the agent plans it, builds it, checks every claim against evidence, and ships it. Distribution is where the build loop ends.
 4. **Earn**: price it, sell it, collect it.
-5. **Give back**: return what you earned so the next cycle starts further ahead: share the work, teach what it proved, and leave it better than you found it.
+5. **Give back**: return what you earned, in whatever form fits (skills, content, tools, time, money), so the next person has hope to start and the next cycle starts at Ideas.
 
 The full workflow is in `WORKFLOW.md`.
 

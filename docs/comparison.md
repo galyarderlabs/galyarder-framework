@@ -73,7 +73,7 @@ The at-a-glance table tells you how they are shaped. This is how to choose in pr
 
 ### Start with the shape of your work
 
-- **A whole system for AI agents, not just a skill collection, or giving any chatbot the tools plus the workflow?** Forge Anything. It is the only one of the four that is a system (essential skills, agents, commands, hooks, CLI, and MCP) rather than a skill collection, and it covers work and life beyond engineering, so a regular chatbot gets the tools and the flow ends at give back.
+- **A whole system for AI agents, not just a skill collection, or giving any chatbot the tools plus the workflow?** Forge Anything. It is the only one of the four that is a system (essential skills, agents, commands, hooks, CLI, and MCP) rather than a skill collection, and it covers work and life beyond engineering, so a regular chatbot gets the tools and the flow closes at give back, with the next cycle starting at Ideas.
 - **A whole feature, front to back, with a human checkpoint at each phase?** Agent Skills. It is the only one that carries you from spec through security, performance, and launch with a checkpoint at each phase, so nothing quietly skips the review or the pre-flight.
 - **A big, ambiguous chunk you want to hand off and walk away from?** Superpowers. Its pipeline and subagent review are built to run for a long time and hand back a result that has already been reviewed against the spec.
 - **A fast, focused daily loop, especially getting requirements right before code?** Matt Pocock's skills. The grilling loop is the sharpest requirements tool of the four, and the toolkit stays out of your way.

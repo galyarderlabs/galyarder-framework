@@ -3,7 +3,7 @@
 ## Vision
 Forge Anything is one whole system for AI agents, for work and for life.
 
-Using an AI agent should not be just generating code, and the agent should not be confused. Forge Anything gives the agent the right rules and the workflow to do the work the right way, so the work is planned, built, checked against evidence, shipped, earned from, and given back. The build loop ends at distribution; the flow ends at give back. That is the value: rules plus a workflow, in your company, and in your life.
+Using an AI agent should not be just generating code, and the agent should not be confused. Forge Anything gives the agent the right rules and the workflow to do the work the right way, so the work is planned, built, checked against evidence, shipped, earned from, and given back. The build loop ends at distribution; the flow closes at give back, and the next cycle starts at Ideas. That is the value: rules plus a workflow, in your company, and in your life.
 
 ## How it works
 The loop is Goal to Ship:

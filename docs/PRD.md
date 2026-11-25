@@ -97,7 +97,7 @@ The missing piece is not another coding agent or a prompt pack. It is the operat
 - A pull request that breaks the canonical runtime or manifest parity fails CI before review.
 - A contributor can add a skill by reading one guide and getting it merged.
 - The same operating logic works across the supported harnesses without hand-maintaining parallel copies.
-- The flow ends at give back: shipped and earned-from work, not work that only looks done.
+- The flow closes at give back: shipped and earned-from work, not work that only looks done, and the next cycle starts at Ideas.
 
 ## Open questions
 

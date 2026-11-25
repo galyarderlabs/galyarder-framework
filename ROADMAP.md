@@ -4,7 +4,7 @@ Forge anything with AI agents.
 
 Using an AI agent should not be just generating code, and the agent should
 not be confused. Forge Anything gives the agent the right rules and the
-workflow to do the work the right way, and the flow ends at give back.
+workflow to do the work the right way, and the flow closes at give back, with the next cycle starting at Ideas.
 It is for solo founders and small teams who run AI agents across
 engineering, product, growth, finance, security, and docs, and who need
 that work to be routed, verified, and shipped instead of lost in a chat
