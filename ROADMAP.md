@@ -76,7 +76,7 @@ What is not there yet:
 - **Skills curation, long term.** Bring the full set down to essential
   only, after everything is tidy. The scaffold already ships the curated
   set; the rest of the repo is the work. The standard is the Essential
-  Skill Registry (`docs/skill-registry.md`), Galih's v15 research, with a
+  Skill Registry (`docs/skill-registry.md`) (v15), with a
   review against the current skills in `docs/skill-registry-review.md`.
 - **CHANGELOG and release notes for 3.0.0 and 3.0.2.** The changelog
   stops at 2.0.0. It needs entries for the rebrand, the GPL-3.0 license,
@@ -93,8 +93,14 @@ What is not there yet:
 - **The MCP tool set grows toward the full coding-agent tool set.** The
   MCP today has five tools. The direction, from the start, is for it to
   carry the tools an agent needs to forge anything: file and code work,
-  system access, web, media, and the workflow itself. There is no fixed
-  feature list beyond that; the tool set grows as the need is proven.
+  system access, web, media, and the workflow itself. The base is the
+  OpenCode tool set (24 tools, including read, write, edit, patch,
+  glob, grep, shell, webfetch, websearch, image and video generation,
+  skill, subagent, todo, artifact, automation, machine), plus Forge
+  additions for company, life, and workflow. The scope is every
+  agentic workflow the MCP can carry: write code, access systems,
+  read and write, run Python, generate images and video, and the
+  rest. It stays local-only with no network.
 
 ## Not planned
 
