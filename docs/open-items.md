@@ -1,4 +1,4 @@
-# Open items — Forge Anything
+# Open items: Forge Anything
 
 The full list of everything not done yet, in one place. Update it when
 an item closes or changes. Sources: the curation plan, ROADMAP, PRD,
