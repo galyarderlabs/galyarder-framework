@@ -6,16 +6,24 @@ GitHub issues, and Galih's calls.
 
 ## Contents / curation (blocks the release)
 
-- [ ] Curation plan decisions: 14 open questions (plan section 6; Q10
-  and Q12 answered by v20, Q16 answered earlier, Q17 added for A16).
-  Needs Galih.
-- [ ] Curation execution (LAST work): agent folders, 115 Forge-native
-  skill designs (117 v20 rows; 4 reference rows need no design),
-  scaffold department templates, release skill prose
-  rewrite (it still describes the old FORGEAI flow). Needs plan
-  approval first.
-- [ ] Scaffold curated lists (38 skills / 18 agents) still from issue
-  #212, pre-registry. Changes when the plan is approved.
+- [ ] Curation plan decisions: Q1-Q5 and Q9 ANSWERED and executed
+  25 Nov 2026 (Galih 16:16: 7 new departments, cut 28 + narrow 4,
+  41 drafts applied). Still open: Q6 (trading cluster 2 or 3 agents),
+  Q13 (video-analyst separate or folded), Q14 (first design slice;
+  answered in practice by waves 1-5 in order), Q15 (18 proposed
+  commands, which first), Q17 (A16 split stands: agent-ops to
+  Infrastructure, gamedev to Creative, scientific to Knowledge).
+  Needs Galih for Q6/Q13/Q15.
+- [ ] Curation execution (LAST work): agent folders (56, still single
+  .md files — not started), release skill prose rewrite (it still
+  describes the old FORGEAI flow). Skills part DONE 25 Nov 2026:
+  115 Forge-native designs written, 114 in the repo, 1 draft left
+  (community-ops, half-written, source URL dead). Scaffold department
+  templates DONE: 17 departments seeded.
+- [ ] Scaffold curated lists (33 skills / 18 agents) still from issue
+  #212, pre-registry. Count moved 38 to 33 in the Phase 2 fix (9
+  deleted skills replaced by their successors). Changes when the plan
+  is approved.
 - [x] Registry v20 saved as the standard (25 Nov 2026, full file
   received, 121 rows counted). Replaces v15.
 - [x] Registry URLs without sources: all 6 (v14 data-scientist,
@@ -29,15 +37,17 @@ GitHub issues, and Galih's calls.
 - [ ] Registry rekap count discrepancy (118 claimed vs 121 counted;
   4 restores claimed vs 7 named). Recorded in the review; needs a
   closure sweep before the NOL GAP claim is trusted.
-- [ ] fitness-nutrition URL still HTTP 500 (3rd check, 25 Nov 2026);
+- [ ] fitness-nutrition URL still HTTP 500 (4th check, 25 Nov 2026);
   Locke and Latham citation still 404 (25 Nov 2026).
-- [ ] `skills/social-content/references/reverse-engineering.md` has two
-  leaked sections (Technical Integrity, Corporate Reporting).
+- [x] `skills/social-content/references/reverse-engineering.md` leaked
+  sections (Technical Integrity, Corporate Reporting). Resolved by
+  deletion: the whole `social-content` skill was cut 25 Nov 2026,
+  the file no longer exists.
 - [ ] Pi bootstrap reads `skills/forge` (818 KB) instead of
   `using-forge-anything` (8 KB). Candidate for the curation pass.
-- [ ] Banned-term cleanup in skill/agent/command bodies: Obsidian
-  (32 files), Linear (31), sequentialthinking/context7, "rout"
-  (39 files).
+- [ ] Banned-term cleanup in skill/agent/command bodies (recounted
+  25 Nov 2026 after the cut, case-insensitive file count): Obsidian
+  (37 files), Linear (47), sequentialthinking/context7 (3).
 
 ## MCP + CLI
 
@@ -52,9 +62,10 @@ GitHub issues, and Galih's calls.
 
 ## Release
 
-- [ ] First public release tag. Waits until the contents are right
-  (Galih, 25 Nov 2026: no release while the contents are not yet
-  right).
+- [ ] First public release tag. Contents are now right (curation
+  executed 25 Nov 2026: 7 departments, cut done, 41 drafts applied);
+  the tag itself still waits on Galih's word (Galih, 25 Nov 2026:
+  no release while the contents are not yet right).
 - [ ] `--from-release` untestable until the first binary release.
 
 ## Hooks + issues
