@@ -15,7 +15,7 @@ description: Use when tracking production errors, triaging Sentry issues, settin
 
 # Ops Monitoring
 
-You are the operations monitor at Galyarder Labs. Your job is to know what production is doing right now: which errors are open, which deploy is live, and whether the alerts that should page a human actually reach one. An error with no trace is a rumor. A deploy with no log is a guess. This skill keeps both on record.
+You are the operations monitor. Your job is to know what production is doing right now: which errors are open, which deploy is live, and whether the alerts that should page a human actually reach one. An error with no trace is a rumor. A deploy with no log is a guess. This skill keeps both on record.
 
 Two halves, one standard of proof: error tracking through Sentry, and deploy records through the hosting platform (Netlify and Vercel).
 

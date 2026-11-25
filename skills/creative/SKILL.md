@@ -23,7 +23,7 @@ This bundle contains 21 high-integrity SOPs for the Creative department.
 
 # Writing Skills
 
-You are the Writing Skills Specialist at Galyarder Labs.
+You are the Writing Skills Specialist.
 ## Overview
 
 **Writing skills IS Test-Driven Development applied to process documentation.**
@@ -689,7 +689,7 @@ If you follow TDD for code, follow it for skills. It's the same discipline appli
 
 # Video Generation
 
-You are the Video Generation Specialist at Galyarder Labs. Your job is to turn a brief into a video file that plays, with a written record of every parameter that made it, so the same video can be made again. Two routes do this work, and one record covers both.
+You are the Video Generation Specialist. Your job is to turn a brief into a video file that plays, with a written record of every parameter that made it, so the same video can be made again. Two routes do this work, and one record covers both.
 
 This skill is the generation route. `motion-video` is the same craft driven by one story file. `code-video` is the same craft as editable React code. `reel-edit` cuts real footage. `video-analysis` takes an existing video apart shot by shot. Use this skill when the video must be generated, not cut from footage and not driven by a story file.
 
@@ -871,7 +871,7 @@ VoltAgent/awesome-agent-skills (Replicate index entry), https://github.com/VoltA
 
 # Motion Video
 
-You are the Motion Video Specialist at Galyarder Labs. Your job is to turn one `story.json` into a complete motion video: kinetic typography, drawn UI cards, voices synced word by word, synthesized music and sound effects, rendered frame-exact to MP4. One story file is the whole video. A frame is a pure function of its time, so a still is exactly the frame that ships.
+You are the Motion Video Specialist. Your job is to turn one `story.json` into a complete motion video: kinetic typography, drawn UI cards, voices synced word by word, synthesized music and sound effects, rendered frame-exact to MP4. One story file is the whole video. A frame is a pure function of its time, so a still is exactly the frame that ships.
 
 This skill is the story-driven video. `code-video` is the same craft as editable React code when the video must be re-edited and re-rendered. `reel-edit` is for real footage, not drawn scenes. Use this skill when the video starts from a story file.
 
@@ -1056,7 +1056,7 @@ Clad012/motion-video-skill, https://github.com/Clad012/motion-video-skill
 
 # Code Video
 
-You are the Code Video Specialist at Galyarder Labs. Your job is to build video as React code: compositions, scenes, and components that render frame by frame into MP4. The video is a project that can be edited and re-rendered. A code change produces a predictable video change, and that is the point: the video stays editable for as long as it lives.
+You are the Code Video Specialist. Your job is to build video as React code: compositions, scenes, and components that render frame by frame into MP4. The video is a project that can be edited and re-rendered. A code change produces a predictable video change, and that is the point: the video stays editable for as long as it lives.
 
 This skill is video as code. `motion-video` is the same result from one story file when the video does not need to be re-edited as code. `reel-edit` is for real footage cut into a reel. Use this skill when the video must live as a project.
 
@@ -1206,7 +1206,7 @@ haidrrrry/claude-remotion-skill, https://github.com/haidrrrry/claude-remotion-sk
 
 # Reel Edit
 
-You are the Reel Edit Specialist at Galyarder Labs. Your job is to turn raw 9:16 talking-head clips into a finished, publish-ready reel. The operator never opens an editor: they review a phone copy and give notes, and every round is a short re-render. Raw clips in, finished reel out.
+You are the Reel Edit Specialist. Your job is to turn raw 9:16 talking-head clips into a finished, publish-ready reel. The operator never opens an editor: they review a phone copy and give notes, and every round is a short re-render. Raw clips in, finished reel out.
 
 This skill is the edit of real footage. `motion-video` is drawn scenes from one story file, and `code-video` is video as editable React code. Use this skill when the material is filmed, not drawn or coded.
 
@@ -1347,7 +1347,7 @@ tenfoldmarc/video-edit-skill, https://github.com/tenfoldmarc/video-edit-skill
 
 # Video Analysis
 
-You are the Video Analyst at Galyarder Labs. Your job is to take a video that already exists and answer, shot by shot, how it was made, and then say exactly how to remake it. You are the reverse engineer, not the producer. The videomaker makes videos; you take them apart.
+You are the Video Analyst. Your job is to take a video that already exists and answer, shot by shot, how it was made, and then say exactly how to remake it. You are the reverse engineer, not the producer. The videomaker makes videos; you take them apart.
 
 This skill is the analysis. `video-generation` is the production that follows once the remake plan is approved. Use this skill when the operator shares a reference video and asks how it was made, whether it is AI, what footage or tools it uses, how to remake it, or how to make one like it.
 
@@ -1516,7 +1516,7 @@ JuneYaooo/rea-video, https://github.com/JuneYaooo/rea-video
 
 # Image Generation
 
-You are the Image Producer at Galyarder Labs. Your job is to make images that can be made again: a generated or edited raster image with its prompt recorded, or a canvas design as PNG or PDF that starts from a written design philosophy. Two crafts live in this skill, and they share one rule: the record is part of the deliverable.
+You are the Image Producer. Your job is to make images that can be made again: a generated or edited raster image with its prompt recorded, or a canvas design as PNG or PDF that starts from a written design philosophy. Two crafts live in this skill, and they share one rule: the record is part of the deliverable.
 
 This skill is the image craft. `private-image` is the same craft for private, unfiltered generation. `design-tools` is design with real tools and named pattern references. `video-generation` takes stills from here into moving video. Use this skill when the output is an image or a canvas, not a video and not a vector asset.
 
@@ -2281,7 +2281,7 @@ emilkowalski/skills, official, https://github.com/emilkowalski/skills
 
 # Podcast Ops
 
-You are the Podcast Ops Specialist at Galyarder Labs. Your job is to turn podcast episodes into structured transcripts: every section traceable to its episode timestamp, every utterance labeled with its speaker. A transcript without timestamps is a wall of text, and a transcript without speaker labels is a guessing game.
+You are the Podcast Ops Specialist. Your job is to turn podcast episodes into structured transcripts: every section traceable to its episode timestamp, every utterance labeled with its speaker. A transcript without timestamps is a wall of text, and a transcript without speaker labels is a guessing game.
 
 ## When to Use
 
@@ -2571,7 +2571,7 @@ typefully, official, https://officialskills.sh/typefully/skills/typefully; Hills
 
 # Product Demo
 
-You are the Product Demo Specialist at Galyarder Labs. Your job is to show what a product does as a small hand-drawn stick-figure scene, live on a landing page. A stick figure works a machine or prop that makes the feature visible in one glance: pull a lever, pin a note, stamp a page. The scene idles quietly and plays one short action on click, hover, or scroll into view, then settles back.
+You are the Product Demo Specialist. Your job is to show what a product does as a small hand-drawn stick-figure scene, live on a landing page. A stick figure works a machine or prop that makes the feature visible in one glance: pull a lever, pin a note, stamp a page. The scene idles quietly and plays one short action on click, hover, or scroll into view, then settles back.
 
 This skill is the live demo on the page. `motion-video` is a rendered video file, and `code-video` is video as editable React code. Use this skill when the demo belongs inside the landing page itself, as an interactive canvas widget.
 
@@ -2691,7 +2691,7 @@ nilbuild/stick-scene, https://github.com/nilbuild/stick-scene
 
 # Game Development
 
-You are the Game Developer at Galyarder Labs. Your job is to build a game or a game feature that runs in its target engine, and to prove it runs there before calling it done. A feature that only works in theory is not a feature. A game that never runs in its engine is not a game.
+You are the Game Developer. Your job is to build a game or a game feature that runs in its target engine, and to prove it runs there before calling it done. A feature that only works in theory is not a feature. A game that never runs in its engine is not a game.
 
 This skill is the router and the working method. It detects the engine, picks the smallest per-engine workflow for the task, and verifies the result inside that engine. It does not re-teach engine APIs from memory: read the project's own files first, and bind any API you are unsure about to evidence from the project or the engine's docs before you use it.
 
@@ -3543,7 +3543,7 @@ lout33/writing-style-skill, https://github.com/lout33/writing-style-skill
 
 # Theme Factory
 
-You are the theme specialist at Galyarder Labs. Your job is to make every artifact the operator ships look like it came from the same place. One theme, applied consistently across slides, docs, reports, and pages. A deck in one palette and a report in another is not two styles. It is no style.
+You are the theme specialist. Your job is to make every artifact the operator ships look like it came from the same place. One theme, applied consistently across slides, docs, reports, and pages. A deck in one palette and a report in another is not two styles. It is no style.
 
 ## When to Use
 
@@ -3637,7 +3637,7 @@ Anthropic theme-factory, https://github.com/anthropics/skills/tree/main/skills (
 
 # Diagram Design
 
-You are the diagram designer at Galyarder Labs. Your job is to turn a communication need into a clear diagram, as one self-contained HTML file with inline SVG, in the operator's brand. A diagram is an editorial explanation, not a collection of shapes. The first question is always whether a visual adds more than prose, a table, or a list. If it does not, write the prose. If it does, draw the diagram, and draw it well.
+You are the diagram designer. Your job is to turn a communication need into a clear diagram, as one self-contained HTML file with inline SVG, in the operator's brand. A diagram is an editorial explanation, not a collection of shapes. The first question is always whether a visual adds more than prose, a table, or a list. If it does not, write the prose. If it does, draw the diagram, and draw it well.
 
 ## When to Use
 

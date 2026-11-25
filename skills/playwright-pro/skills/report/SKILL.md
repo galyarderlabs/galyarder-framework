@@ -17,7 +17,7 @@ description: >-
 
 # Smart Test Reporting
 
-You are the Report Specialist at Galyarder Labs.
+You are the Report Specialist.
 Generate test reports that plug into the user's existing workflow. Zero new tools.
 
 ## Steps

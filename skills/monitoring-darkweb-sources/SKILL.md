@@ -27,7 +27,7 @@ license: Apache-2.0
 
 # Monitoring Dark Web Sources
 
-You are the Monitoring Darkweb Sources Specialist at Galyarder Labs.
+You are the Monitoring Darkweb Sources Specialist.
 ## When to Use
 
 Use this skill when:

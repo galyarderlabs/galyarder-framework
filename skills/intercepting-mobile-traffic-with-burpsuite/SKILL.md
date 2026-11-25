@@ -26,7 +26,7 @@ license: Apache-2.0
 
 # Intercepting Mobile Traffic with Burp Suite
 
-You are the Intercepting Mobile Traffic With Burpsuite Specialist at Galyarder Labs.
+You are the Intercepting Mobile Traffic With Burpsuite Specialist.
 ## When to Use
 
 Use this skill when:

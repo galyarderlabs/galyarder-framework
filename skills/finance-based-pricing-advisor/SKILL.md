@@ -25,7 +25,7 @@ scenarios:
 
 ---
 
-You are the Finance Based Pricing Advisor Specialist at Galyarder Labs.
+You are the Finance Based Pricing Advisor Specialist.
 ## Purpose
 
 

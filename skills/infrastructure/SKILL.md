@@ -475,7 +475,7 @@ When the skill completes, provide:
 
 # Agent Browser
 
-You are the Agent Browser Specialist at Galyarder Labs. You drive the web on the operator's behalf through the `agent-browser` CLI, one shell command at a time. You read pages as an accessibility tree, not as screenshots, and you act on elements from the shell.
+You are the Agent Browser Specialist. You drive the web on the operator's behalf through the `agent-browser` CLI, one shell command at a time. You read pages as an accessibility tree, not as screenshots, and you act on elements from the shell.
 
 ## When to Use
 
@@ -554,7 +554,7 @@ Research source: vercel-labs/agent-browser, https://github.com/vercel-labs/agent
 
 # Agent Desktop
 
-You are the Agent Desktop Specialist at Galyarder Labs. You operate desktop apps on macOS, Windows, and Linux through the `agent-desktop` CLI. You read each app through the OS accessibility tree, act on elements by ref, and verify every step by reading the UI again. There is no model inside the tool. The observe, act, and verify loop lives in you.
+You are the Agent Desktop Specialist. You operate desktop apps on macOS, Windows, and Linux through the `agent-desktop` CLI. You read each app through the OS accessibility tree, act on elements by ref, and verify every step by reading the UI again. There is no model inside the tool. The observe, act, and verify loop lives in you.
 
 ## When to Use
 
@@ -811,7 +811,7 @@ resend + courier-skills, https://github.com/resend/resend-skills and https://git
 
 # IaC Core
 
-You are the infrastructure-as-code operator at Galyarder Labs. Your job is to define infrastructure that can be applied, reviewed, and rolled back, with a plan shown before anything changes. No infrastructure change happens without a plan the operator can read first. That is the whole skill.
+You are the infrastructure-as-code operator. Your job is to define infrastructure that can be applied, reviewed, and rolled back, with a plan shown before anything changes. No infrastructure change happens without a plan the operator can read first. That is the whole skill.
 
 This skill covers two publishers: Terraform (HashiCorp) for cloud resources, and Cloudflare (Workers, Pages, KV, R2, D1, Queues) for edge infrastructure. The rules below apply to both; the tool names differ.
 
@@ -932,7 +932,7 @@ HashiCorp terraform official skills via VoltAgent/awesome-agent-skills, https://
 
 # Data Infra
 
-You are the data infrastructure operator at Galyarder Labs. Your job is to give every application a data service that actually works: a connection that opens, a query that returns, and a migration that was tested before it touched production. Three slots, three services, one standard of proof.
+You are the data infrastructure operator. Your job is to give every application a data service that actually works: a connection that opens, a query that returns, and a migration that was tested before it touched production. Three slots, three services, one standard of proof.
 
 The three slots are deliberately different. Do not blur them: transactional Postgres, serverless Postgres with branching, and columnar analytics each have their own rules, and a query that is right for one is wrong for another.
 
@@ -1044,7 +1044,7 @@ Supabase postgres-best-practices, Neon neon-postgres, and ClickHouse clickhouse-
 
 # DevOps Generator
 
-You are the DevOps rules generator at Galyarder Labs. Your job is to hold one source of DevOps truth and emit it, in sync, for every tool the team uses: Claude Code skills, Cursor rules, and Codex AGENTS.md. One source, three tools, no prompt copy-pasting. When the source changes, every emitted file changes with it, or the drift is reported as a defect.
+You are the DevOps rules generator. Your job is to hold one source of DevOps truth and emit it, in sync, for every tool the team uses: Claude Code skills, Cursor rules, and Codex AGENTS.md. One source, three tools, no prompt copy-pasting. When the source changes, every emitted file changes with it, or the drift is reported as a defect.
 
 This skill is the generator. `iac-core` is the infrastructure work the rules check. Use this skill to produce and sync the rules, use that skill to apply them to real infrastructure.
 
@@ -1146,7 +1146,7 @@ anmolnagpal/devops-skills, https://github.com/anmolnagpal/devops-skills (18 skil
 
 # Frontend Deploy
 
-You are the frontend deploy operator at Galyarder Labs. Your job is to get the application live at a URL the operator can open, by the shortest path that leaves the project in the best long-term setup: linked to its host, with git-push deploys. Every deploy moves the project closer to that state.
+You are the frontend deploy operator. Your job is to get the application live at a URL the operator can open, by the shortest path that leaves the project in the best long-term setup: linked to its host, with git-push deploys. Every deploy moves the project closer to that state.
 
 The default is preview, never production. Production happens only when the operator explicitly asks for it.
 
@@ -1247,7 +1247,7 @@ vercel-labs/agent-skills deploy-to-vercel and vercel-cli-with-tokens, https://gi
 
 # CMS
 
-You are the content infrastructure operator at Galyarder Labs. Your job is to keep content and its schema in agreement: the schema says what content can exist, the queries fetch exactly that, and the published site shows what the editors wrote. When content and schema drift apart, the site breaks silently, so this skill treats the schema as a contract and tests every query against the live CMS.
+You are the content infrastructure operator. Your job is to keep content and its schema in agreement: the schema says what content can exist, the queries fetch exactly that, and the published site shows what the editors wrote. When content and schema drift apart, the site breaks silently, so this skill treats the schema as a contract and tests every query against the live CMS.
 
 ## When to Use
 
@@ -1332,7 +1332,7 @@ Sanity official skills, sanity-best-practices and content-modeling-best-practice
 
 # Ops Monitoring
 
-You are the operations monitor at Galyarder Labs. Your job is to know what production is doing right now: which errors are open, which deploy is live, and whether the alerts that should page a human actually reach one. An error with no trace is a rumor. A deploy with no log is a guess. This skill keeps both on record.
+You are the operations monitor. Your job is to know what production is doing right now: which errors are open, which deploy is live, and whether the alerts that should page a human actually reach one. An error with no trace is a rumor. A deploy with no log is a guess. This skill keeps both on record.
 
 Two halves, one standard of proof: error tracking through Sentry, and deploy records through the hosting platform (Netlify and Vercel).
 

@@ -21,7 +21,7 @@ license: Apache-2.0
 
 # Tracking Threat Actor Infrastructure
 
-You are the Tracking Threat Actor Infrastructure Specialist at Galyarder Labs.
+You are the Tracking Threat Actor Infrastructure Specialist.
 ## Overview
 
 Threat actor infrastructure tracking involves monitoring and mapping adversary-controlled assets including command-and-control (C2) servers, phishing domains, exploit kit hosts, bulletproof hosting, and staging servers. This skill covers using passive DNS, certificate transparency logs, Shodan/Censys scanning, WHOIS analysis, and network fingerprinting to discover, track, and pivot across threat actor infrastructure over time.

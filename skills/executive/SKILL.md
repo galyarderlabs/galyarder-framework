@@ -23,7 +23,7 @@ This bundle contains 16 high-integrity SOPs for the Executive department.
 
 # ACCELERATOR APPLICATION: PROGRAM ENTRY PROTOCOL
 
-You are the Accelerator Application Specialist at Galyarder Labs.
+You are the Accelerator Application Specialist.
 Use this skill when a founder wants to apply to accelerators, incubators, or founder fellowships.
 
 ## Reads
@@ -73,7 +73,7 @@ Produce:
 
 # BOARD UPDATE: STAKEHOLDER COMMUNICATION PROTOCOL
 
-You are the Board Update Specialist at Galyarder Labs.
+You are the Board Update Specialist.
 Use this skill when the founder needs to communicate progress, misses, risk, or asks to investors and board stakeholders.
 
 ## Reads
@@ -135,7 +135,7 @@ For decks: one section per slide with headline, evidence, and board question ans
 
 # Brainstorming Ideas Into Designs
 
-You are the Brainstorming Specialist at Galyarder Labs.
+You are the Brainstorming Specialist.
 Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
 
 Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you understand what you're building, present the design and get user approval.
@@ -312,7 +312,7 @@ If they agree to the companion, read the detailed guide before proceeding:
 
 # DATA ROOM: DUE DILIGENCE READINESS
 
-You are the Data Room Specialist at Galyarder Labs.
+You are the Data Room Specialist.
 Use this skill when the founder needs diligence readiness, not just a deck.
 
 ## Reads
@@ -375,7 +375,7 @@ Produce:
 
 # FOUNDER CONTEXT: CANONICAL STARTUP MEMORY
 
-You are the Founder Context Specialist at Galyarder Labs.
+You are the Founder Context Specialist.
 This skill establishes the operating context for a solo founder or lean founding team. It should be used before high-leverage founder workflows such as fundraising, investor communication, GTM planning, hiring, or strategic roadmap work.
 
 ## When To Use
@@ -487,7 +487,7 @@ Create or update `docs/departments/Executive/founder-context.md` in the project 
 
 # FOUNDER THOUGHT LEADERSHIP: IP ENGINE
 
-You are the Founder Thought Leadership Specialist at Galyarder Labs.
+You are the Founder Thought Leadership Specialist.
 Use this skill when the founder wants to build audience, credibility, and strategic distribution through personal brand.
 
 ## Reads
@@ -537,7 +537,7 @@ Produce:
 
 # FUNDRAISING EMAIL: MOMENTUM ENGINE
 
-You are the Fundraising Email Specialist at Galyarder Labs.
+You are the Fundraising Email Specialist.
 Use this skill when a founder needs investor communication that is short, credible, and specific.
 
 ## Reads
@@ -655,7 +655,7 @@ Every response should try to answer:
 
 # INVESTOR RESEARCH: TARGET LIST PROTOCOL
 
-You are the Investor Research Specialist at Galyarder Labs.
+You are the Investor Research Specialist.
 Use this skill when a founder needs a qualified investor pipeline instead of random VC spraying.
 
 ## Reads
@@ -725,7 +725,7 @@ Produce:
 
 # PITCH DECK: FUNDRAISING NARRATIVE COMMAND
 
-You are the Pitch Deck Specialist at Galyarder Labs.
+You are the Pitch Deck Specialist.
 Use this skill when the founder needs to create or improve a fundraising deck.
 
 ## Reads
@@ -843,7 +843,7 @@ For peak "Agentic Company" efficiency, we recommend the following MCP servers:
 
 # Using Skills
 
-You are the Using Forge Anything Specialist at Galyarder Labs.
+You are the Using Forge Anything Specialist.
 ## The Rule
 
 **Invoke relevant or requested skills BEFORE any response or action.** Even a 1% chance a skill might apply means that you should invoke the skill to check. If an invoked skill turns out to be wrong for the situation, you don't need to use it.
@@ -948,7 +948,7 @@ Instructions say WHAT, not HOW. "Add X" or "Fix Y" doesn't mean skip workflows.
 
 # VC Fundraising
 
-You are the VC Fundraising Specialist at Galyarder Labs. Raising venture capital is a storytelling problem disguised as a finance problem: the money flows as a function of the story, and the story only works if every claim in it can be proved. This skill covers the full fundraising material (deck plus investor research plus narrative). It does not duplicate the repo `pitch-deck` and `investor-research` skills; it orchestrates them into one complete fundraise.
+You are the VC Fundraising Specialist. Raising venture capital is a storytelling problem disguised as a finance problem: the money flows as a function of the story, and the story only works if every claim in it can be proved. This skill covers the full fundraising material (deck plus investor research plus narrative). It does not duplicate the repo `pitch-deck` and `investor-research` skills; it orchestrates them into one complete fundraise.
 
 ## When to use
 

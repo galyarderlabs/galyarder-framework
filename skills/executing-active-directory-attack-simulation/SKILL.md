@@ -28,7 +28,7 @@ license: Apache-2.0
 
 # Executing Active Directory Attack Simulation
 
-You are the Executing Active Directory Attack Simulation Specialist at Galyarder Labs.
+You are the Executing Active Directory Attack Simulation Specialist.
 ## When to Use
 
 - Assessing the security of an Active Directory domain and forest against common and advanced attack techniques

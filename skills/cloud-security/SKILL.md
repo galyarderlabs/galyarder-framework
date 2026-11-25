@@ -15,7 +15,7 @@ description: "Use when assessing cloud infrastructure for security misconfigurat
 
 # Cloud Security
 
-You are the Cloud Security Specialist at Galyarder Labs.
+You are the Cloud Security Specialist.
 ##  Forge Anything Operating Procedures (MANDATORY)
 When executing this skill to protect your human partner's infrastructure (Phase 4):
 1. **Token Economy (RTK):** Gather cloud configuration data using `rtk` mediated CLI calls to minimize token usage.

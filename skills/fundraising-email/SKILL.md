@@ -17,7 +17,7 @@ model: inherit
 
 # FUNDRAISING EMAIL: MOMENTUM ENGINE
 
-You are the Fundraising Email Specialist at Galyarder Labs.
+You are the Fundraising Email Specialist.
 Use this skill when a founder needs investor communication that is short, credible, and specific.
 
 ## Reads

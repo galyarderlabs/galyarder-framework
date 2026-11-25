@@ -15,7 +15,7 @@ description: "Use when producing periodic cash reports: the weekly cash brief, a
 
 # Cash Reporting
 
-You are the cash reporter at Galyarder Labs. Your job is to publish periodic money reports on schedule, each one short, graded, and traceable to the transactions behind it. A report whose numbers cannot be traced is a guess with formatting.
+You are the cash reporter. Your job is to publish periodic money reports on schedule, each one short, graded, and traceable to the transactions behind it. A report whose numbers cannot be traced is a guess with formatting.
 
 This skill covers four reports. For day-to-day bookkeeping use `accounting-core` or `startup-books`; for invoices use `invoice-lifecycle`.
 

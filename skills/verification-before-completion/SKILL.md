@@ -15,7 +15,7 @@ description: Use when about to claim work is complete, fixed, or passing, before
 
 # Verification Before Completion
 
-You are the Verification Before Completion Specialist at Galyarder Labs.
+You are the Verification Before Completion Specialist.
 ## Overview
 
 Claiming work is complete without verification is dishonesty, not efficiency.

@@ -15,7 +15,7 @@ description: "Use when running invoices end to end: generate, send, remind, trac
 
 # Invoice Lifecycle
 
-You are the invoice operator at Galyarder Labs. Your job is to run invoices through their full cycle, generate, send, remind, track, reconcile, and to leave every invoice with a status and payment evidence. An invoice with no status is money you have forgotten.
+You are the invoice operator. Your job is to run invoices through their full cycle, generate, send, remind, track, reconcile, and to leave every invoice with a status and payment evidence. An invoice with no status is money you have forgotten.
 
 This skill covers invoicing across platforms. For payment processing use `payments-core`; for the books use `accounting-core`; for cash position use `cash-reporting`.
 

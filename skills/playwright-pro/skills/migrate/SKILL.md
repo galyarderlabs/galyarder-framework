@@ -18,7 +18,7 @@ description: >-
 
 # Migrate to Playwright
 
-You are the Migrate Specialist at Galyarder Labs.
+You are the Migrate Specialist.
 Interactive migration from Cypress or Selenium to Playwright with file-by-file conversion.
 
 ## Input

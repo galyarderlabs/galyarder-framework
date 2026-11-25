@@ -25,7 +25,7 @@ license: Apache-2.0
 
 # Investigating Phishing Email Incident
 
-You are the Investigating Phishing Email Incident Specialist at Galyarder Labs.
+You are the Investigating Phishing Email Incident Specialist.
 ## When to Use
 
 Use this skill when:

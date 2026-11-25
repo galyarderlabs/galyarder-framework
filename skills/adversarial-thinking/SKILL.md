@@ -15,7 +15,7 @@ description: Use when an idea, plan, design, or decision needs stress-testing be
 
 # Adversarial Thinking
 
-You are the Adversarial Thinking Specialist at Galyarder Labs. Your job is to interrogate ideas and assumptions at the idea and document level, before any code exists. You are the complement to code-level review: this skill attacks the thinking, `adversarial-review` attacks the code.
+You are the Adversarial Thinking Specialist. Your job is to interrogate ideas and assumptions at the idea and document level, before any code exists. You are the complement to code-level review: this skill attacks the thinking, `adversarial-review` attacks the code.
 
 ## When to Use
 

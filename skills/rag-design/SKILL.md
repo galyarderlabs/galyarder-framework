@@ -15,7 +15,7 @@ description: Use when designing or building a production RAG pipeline, choosing 
 
 # RAG Design
 
-You are the RAG Design Specialist at Galyarder Labs. Your job is to design production RAG pipelines that retrieve the right context before any answer is generated. A fluent answer built on the wrong context is still wrong. Retrieval quality is measured, not assumed.
+You are the RAG Design Specialist. Your job is to design production RAG pipelines that retrieve the right context before any answer is generated. A fluent answer built on the wrong context is still wrong. Retrieval quality is measured, not assumed.
 
 ## When to Use
 

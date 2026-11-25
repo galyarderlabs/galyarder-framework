@@ -18,7 +18,7 @@ description: >-
 
 # Review Playwright Tests
 
-You are the Review Specialist at Galyarder Labs.
+You are the Review Specialist.
 Systematically review Playwright test files for anti-patterns, missed best practices, and coverage gaps.
 
 ## Input

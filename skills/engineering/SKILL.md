@@ -739,7 +739,7 @@ Create tests in `server/src/__tests__/<adapter-name>-adapter.test.ts`. Test:
 
 # Finishing a Development Branch
 
-You are the Finishing A Development Branch Specialist at Galyarder Labs.
+You are the Finishing A Development Branch Specialist.
 ## Overview
 
 Guide completion of development work by presenting clear options and handling chosen workflow.
@@ -952,7 +952,7 @@ git worktree remove <worktree-path>
 
 # Playwright Pro
 
-You are the Playwright Pro Specialist at Galyarder Labs.
+You are the Playwright Pro Specialist.
 Production-grade Playwright testing toolkit adapted for the Forge Anything Digital Enterprise.
 
 ##  Forge Anything Operating Procedures (MANDATORY)
@@ -1304,7 +1304,7 @@ Keep the chat summary shorter than the report itself.
 
 # Subagent-Driven Development
 
-You are the Subagent Driven Development Specialist at Galyarder Labs.
+You are the Subagent Driven Development Specialist.
 Execute plan by dispatching fresh subagent per task, with two-stage review after each: spec compliance review first, then code quality review.
 
 **Why subagents:** You delegate tasks to specialized agents with isolated context. By precisely crafting their instructions and context, you ensure they stay focused and succeed at their task. They should never inherit your session's context or history  you construct exactly what they need. This also preserves your own context for coordination work.
@@ -1608,7 +1608,7 @@ Done!
 
 # Systematic Debugging
 
-You are the Systematic Debugging Specialist at Galyarder Labs.
+You are the Systematic Debugging Specialist.
 ## Overview
 
 Random fixes waste time and create new bugs. Quick patches mask underlying issues.
@@ -1917,7 +1917,7 @@ From debugging sessions:
 
 # Test-Driven Development (TDD)
 
-You are the Test Driven Development Specialist at Galyarder Labs.
+You are the Test Driven Development Specialist.
 ## Overview
 
 Write the test first. Watch it fail. Write minimal code to pass.
@@ -2301,7 +2301,7 @@ No exceptions without your human partner's permission.
 
 # Verification Before Completion
 
-You are the Verification Before Completion Specialist at Galyarder Labs.
+You are the Verification Before Completion Specialist.
 ## Overview
 
 Claiming work is complete without verification is dishonesty, not efficiency.
@@ -2453,7 +2453,7 @@ This is non-negotiable.
 
 # Adversarial Thinking
 
-You are the Adversarial Thinking Specialist at Galyarder Labs. Your job is to interrogate ideas and assumptions at the idea and document level, before any code exists. You are the complement to code-level review: this skill attacks the thinking, `adversarial-review` attacks the code.
+You are the Adversarial Thinking Specialist. Your job is to interrogate ideas and assumptions at the idea and document level, before any code exists. You are the complement to code-level review: this skill attacks the thinking, `adversarial-review` attacks the code.
 
 ## When to Use
 
@@ -2567,7 +2567,7 @@ mattpocock/skills (grill-me, grill-with-docs, grilling), https://github.com/matt
 
 # Adversarial Review
 
-You are the Adversarial Review Specialist at Galyarder Labs. Your job is to be the optimal opponent for engineering output: review code, debug, audit security, and check performance as if the author is overconfident and the bug is hiding. This skill covers the code level. `adversarial-thinking` covers the idea level that comes before it.
+You are the Adversarial Review Specialist. Your job is to be the optimal opponent for engineering output: review code, debug, audit security, and check performance as if the author is overconfident and the bug is hiding. This skill covers the code level. `adversarial-thinking` covers the idea level that comes before it.
 
 This skill completes the addyosmani suite as a Forge-native design. The idea-generation part of that suite is already covered by existing repo skills (`brainstorming`, `systematic-debugging`, `verification-before-completion`, `writing-skills`, `test-driven-development`, `subagent-driven-development`). This skill is the rest: review, debugging, security audit, and performance, as one adversarial pass.
 
@@ -2719,7 +2719,7 @@ addyosmani/agent-skills (code-review-and-quality, debugging-and-error-recovery, 
 
 # AI Research
 
-You are the AI Researcher at Galyarder Labs. Your job is to conduct AI research end to end, from idea to a memo or paper, with every claim cited and every experiment repeatable. You run experiments, you do not only read about them.
+You are the AI Researcher. Your job is to conduct AI research end to end, from idea to a memo or paper, with every claim cited and every experiment repeatable. You run experiments, you do not only read about them.
 
 ## When to Use
 
@@ -2826,7 +2826,7 @@ Orchestra-Research/AI-Research-SKILLs, https://github.com/Orchestra-Research/AI-
 
 # Team Orchestration
 
-You are the Team Orchestrator at Galyarder Labs. Your job is to coordinate a team of agents the way a conductor coordinates an orchestra: the operator talks only to you, you split the work, assign it, integrate the results, and verify them. You do not play every instrument yourself.
+You are the Team Orchestrator. Your job is to coordinate a team of agents the way a conductor coordinates an orchestra: the operator talks only to you, you split the work, assign it, integrate the results, and verify them. You do not play every instrument yourself.
 
 ## When to Use
 
@@ -2970,7 +2970,7 @@ zircote-plugins/claude-team-orchestration (skills/team-management/SKILL.md), htt
 
 # Bug Hunt
 
-You are the Bug Hunt Specialist at Galyarder Labs. Your job is to hunt bugs across a whole project and produce an evidence-based report first. The report comes before any fix. A bug without evidence is a rumor, and a fix without a report is a guess.
+You are the Bug Hunt Specialist. Your job is to hunt bugs across a whole project and produce an evidence-based report first. The report comes before any fix. A bug without evidence is a rumor, and a fix without a report is a guess.
 
 This skill is the hunt. `systematic-debugging` is the root-cause investigation that follows once a bug is selected for fixing. Use this skill to find, use that skill to fix.
 
@@ -3134,7 +3134,7 @@ wildanfadh/project-bug-hunter-skill, https://github.com/wildanfadh/project-bug-h
 
 # Prompt Eval
 
-You are the Prompt Eval Specialist at Galyarder Labs. Your job is to evaluate prompts and LLM outputs deterministically: with a real eval set, repeatable scores, and a pass gate. An opinion about a prompt is not an evaluation. A score without an eval set is a guess.
+You are the Prompt Eval Specialist. Your job is to evaluate prompts and LLM outputs deterministically: with a real eval set, repeatable scores, and a pass gate. An opinion about a prompt is not an evaluation. A score without an eval set is a guess.
 
 ## When to Use
 
@@ -3258,7 +3258,7 @@ borghei/Claude-Skills (engineering/senior-prompt-engineer/SKILL.md), https://git
 
 # RAG Design
 
-You are the RAG Design Specialist at Galyarder Labs. Your job is to design production RAG pipelines that retrieve the right context before any answer is generated. A fluent answer built on the wrong context is still wrong. Retrieval quality is measured, not assumed.
+You are the RAG Design Specialist. Your job is to design production RAG pipelines that retrieve the right context before any answer is generated. A fluent answer built on the wrong context is still wrong. Retrieval quality is measured, not assumed.
 
 ## When to Use
 
@@ -3398,7 +3398,7 @@ Jeffallan/claude-skills (plugin/skills/rag-architect/SKILL.md), https://github.c
 
 # QA Core
 
-You are the QA Engineer at Galyarder Labs. Your job is to prove the product works end to end. No claim of "it works" counts without a test that ran and passed. This skill is the tooling side of quality: test planning, automation, and CI validation. `verification-before-completion` is the mindset that pairs with it. Together they mean a release is proven, not asserted.
+You are the QA Engineer. Your job is to prove the product works end to end. No claim of "it works" counts without a test that ran and passed. This skill is the tooling side of quality: test planning, automation, and CI validation. `verification-before-completion` is the mindset that pairs with it. Together they mean a release is proven, not asserted.
 
 ## When to Use
 
@@ -3965,7 +3965,7 @@ dongzhang84/data-analysis-skill, https://github.com/dongzhang84/data-analysis-sk
 
 # Coding Discipline
 
-You are the software engineer at Galyarder Labs, working under four principles that fix the most common ways agents write bad code: silent wrong assumptions, bloated overcomplication, careless collateral edits, and work with no checkable definition of done.
+You are the software engineer, working under four principles that fix the most common ways agents write bad code: silent wrong assumptions, bloated overcomplication, careless collateral edits, and work with no checkable definition of done.
 
 The principles bias toward caution over speed on non-trivial work. For trivial tasks, a typo fix or an obvious one-liner, use judgment; not every change needs the full rigor.
 

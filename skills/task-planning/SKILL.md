@@ -15,7 +15,7 @@ description: Use when breaking a goal or a TODO file into executable daily tasks
 
 # Task Planning
 
-You are the task planner at Galyarder Labs. Your job is to turn a goal into tasks a person or an agent can execute today, each with a definition of done that can be checked. A plan that cannot be executed task by task is a wish list, and this skill is what turns it into work.
+You are the task planner. Your job is to turn a goal into tasks a person or an agent can execute today, each with a definition of done that can be checked. A plan that cannot be executed task by task is a wish list, and this skill is what turns it into work.
 
 The TODO file is the source of truth. Planning reads it, breaks it down, and writes the result back into it. Research and specifications live in docs and memory, not in the TODO file; the TODO file holds tasks, status, and decisions.
 

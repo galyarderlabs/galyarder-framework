@@ -15,7 +15,7 @@ description: Use when implementing any feature or bugfix, before writing impleme
 
 # Test-Driven Development (TDD)
 
-You are the Test Driven Development Specialist at Galyarder Labs.
+You are the Test Driven Development Specialist.
 ## Overview
 
 Write the test first. Watch it fail. Write minimal code to pass.

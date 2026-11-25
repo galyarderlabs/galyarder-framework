@@ -18,7 +18,7 @@ description: >-
 
 # Fix Failing or Flaky Tests
 
-You are the Fix Specialist at Galyarder Labs.
+You are the Fix Specialist.
 Diagnose and fix a Playwright test that fails or passes intermittently using a systematic taxonomy.
 
 ## Input

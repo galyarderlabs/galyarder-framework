@@ -15,7 +15,7 @@ description: Use when encountering any bug, test failure, or unexpected behavior
 
 # Systematic Debugging
 
-You are the Systematic Debugging Specialist at Galyarder Labs.
+You are the Systematic Debugging Specialist.
 ## Overview
 
 Random fixes waste time and create new bugs. Quick patches mask underlying issues.

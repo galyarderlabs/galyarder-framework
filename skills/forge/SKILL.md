@@ -739,7 +739,7 @@ Create tests in `server/src/__tests__/<adapter-name>-adapter.test.ts`. Test:
 
 # Finishing a Development Branch
 
-You are the Finishing A Development Branch Specialist at Galyarder Labs.
+You are the Finishing A Development Branch Specialist.
 ## Overview
 
 Guide completion of development work by presenting clear options and handling chosen workflow.
@@ -952,7 +952,7 @@ git worktree remove <worktree-path>
 
 # Playwright Pro
 
-You are the Playwright Pro Specialist at Galyarder Labs.
+You are the Playwright Pro Specialist.
 Production-grade Playwright testing toolkit adapted for the Forge Anything Digital Enterprise.
 
 ##  Forge Anything Operating Procedures (MANDATORY)
@@ -1304,7 +1304,7 @@ Keep the chat summary shorter than the report itself.
 
 # Subagent-Driven Development
 
-You are the Subagent Driven Development Specialist at Galyarder Labs.
+You are the Subagent Driven Development Specialist.
 Execute plan by dispatching fresh subagent per task, with two-stage review after each: spec compliance review first, then code quality review.
 
 **Why subagents:** You delegate tasks to specialized agents with isolated context. By precisely crafting their instructions and context, you ensure they stay focused and succeed at their task. They should never inherit your session's context or history  you construct exactly what they need. This also preserves your own context for coordination work.
@@ -1608,7 +1608,7 @@ Done!
 
 # Systematic Debugging
 
-You are the Systematic Debugging Specialist at Galyarder Labs.
+You are the Systematic Debugging Specialist.
 ## Overview
 
 Random fixes waste time and create new bugs. Quick patches mask underlying issues.
@@ -1917,7 +1917,7 @@ From debugging sessions:
 
 # Test-Driven Development (TDD)
 
-You are the Test Driven Development Specialist at Galyarder Labs.
+You are the Test Driven Development Specialist.
 ## Overview
 
 Write the test first. Watch it fail. Write minimal code to pass.
@@ -2301,7 +2301,7 @@ No exceptions without your human partner's permission.
 
 # Verification Before Completion
 
-You are the Verification Before Completion Specialist at Galyarder Labs.
+You are the Verification Before Completion Specialist.
 ## Overview
 
 Claiming work is complete without verification is dishonesty, not efficiency.
@@ -2453,7 +2453,7 @@ This is non-negotiable.
 
 # ACCELERATOR APPLICATION: PROGRAM ENTRY PROTOCOL
 
-You are the Accelerator Application Specialist at Galyarder Labs.
+You are the Accelerator Application Specialist.
 Use this skill when a founder wants to apply to accelerators, incubators, or founder fellowships.
 
 ## Reads
@@ -2503,7 +2503,7 @@ Produce:
 
 # BOARD UPDATE: STAKEHOLDER COMMUNICATION PROTOCOL
 
-You are the Board Update Specialist at Galyarder Labs.
+You are the Board Update Specialist.
 Use this skill when the founder needs to communicate progress, misses, risk, or asks to investors and board stakeholders.
 
 ## Reads
@@ -2565,7 +2565,7 @@ For decks: one section per slide with headline, evidence, and board question ans
 
 # Brainstorming Ideas Into Designs
 
-You are the Brainstorming Specialist at Galyarder Labs.
+You are the Brainstorming Specialist.
 Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
 
 Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you understand what you're building, present the design and get user approval.
@@ -2742,7 +2742,7 @@ If they agree to the companion, read the detailed guide before proceeding:
 
 # DATA ROOM: DUE DILIGENCE READINESS
 
-You are the Data Room Specialist at Galyarder Labs.
+You are the Data Room Specialist.
 Use this skill when the founder needs diligence readiness, not just a deck.
 
 ## Reads
@@ -2805,7 +2805,7 @@ Produce:
 
 # FOUNDER CONTEXT: CANONICAL STARTUP MEMORY
 
-You are the Founder Context Specialist at Galyarder Labs.
+You are the Founder Context Specialist.
 This skill establishes the operating context for a solo founder or lean founding team. It should be used before high-leverage founder workflows such as fundraising, investor communication, GTM planning, hiring, or strategic roadmap work.
 
 ## When To Use
@@ -2917,7 +2917,7 @@ Create or update `docs/departments/Executive/founder-context.md` in the project 
 
 # FOUNDER THOUGHT LEADERSHIP: IP ENGINE
 
-You are the Founder Thought Leadership Specialist at Galyarder Labs.
+You are the Founder Thought Leadership Specialist.
 Use this skill when the founder wants to build audience, credibility, and strategic distribution through personal brand.
 
 ## Reads
@@ -2967,7 +2967,7 @@ Produce:
 
 # FUNDRAISING EMAIL: MOMENTUM ENGINE
 
-You are the Fundraising Email Specialist at Galyarder Labs.
+You are the Fundraising Email Specialist.
 Use this skill when a founder needs investor communication that is short, credible, and specific.
 
 ## Reads
@@ -3085,7 +3085,7 @@ Every response should try to answer:
 
 # INVESTOR RESEARCH: TARGET LIST PROTOCOL
 
-You are the Investor Research Specialist at Galyarder Labs.
+You are the Investor Research Specialist.
 Use this skill when a founder needs a qualified investor pipeline instead of random VC spraying.
 
 ## Reads
@@ -3268,7 +3268,7 @@ alirezarezvani market-research, https://github.com/alirezarezvani/claude-skills/
 
 # PITCH DECK: FUNDRAISING NARRATIVE COMMAND
 
-You are the Pitch Deck Specialist at Galyarder Labs.
+You are the Pitch Deck Specialist.
 Use this skill when the founder needs to create or improve a fundraising deck.
 
 ## Reads
@@ -3386,7 +3386,7 @@ For peak "Agentic Company" efficiency, we recommend the following MCP servers:
 
 # Using Skills
 
-You are the Using Forge Anything Specialist at Galyarder Labs.
+You are the Using Forge Anything Specialist.
 ## The Rule
 
 **Invoke relevant or requested skills BEFORE any response or action.** Even a 1% chance a skill might apply means that you should invoke the skill to check. If an invoked skill turns out to be wrong for the situation, you don't need to use it.
@@ -3491,7 +3491,7 @@ Instructions say WHAT, not HOW. "Add X" or "Fix Y" doesn't mean skip workflows.
 
 # Writing Skills
 
-You are the Writing Skills Specialist at Galyarder Labs.
+You are the Writing Skills Specialist.
 ## Overview
 
 **Writing skills IS Test-Driven Development applied to process documentation.**
@@ -4157,7 +4157,7 @@ If you follow TDD for code, follow it for skills. It's the same discipline appli
 
 # Analytics Tracking & Measurement Strategy
 
-You are the Analytics Tracking Specialist at Galyarder Labs.
+You are the Analytics Tracking Specialist.
 You are an expert in **analytics implementation and measurement design**.
 Your goal is to ensure tracking produces **trustworthy signals that directly support decisions** across marketing, product, and growth.
 
@@ -4572,7 +4572,7 @@ This skill is applicable to execute the workflow or actions described in the ove
 
 # Campaign Analytics
 
-You are the Campaign Analytics Specialist at Galyarder Labs.
+You are the Campaign Analytics Specialist.
 ##  Forge Anything Operating Procedures (MANDATORY)
 When executing this skill for your human partner during Phase 5 (Growth):
 1. **Token Economy (RTK):** Process large analytics exports using `rtk` mediated scripts to minimize token overhead.
@@ -4812,7 +4812,7 @@ Calculates comprehensive ROI metrics with industry Standarding:
 
 # Programmatic SEO
 
-You are the Programmatic Seo Specialist at Galyarder Labs.
+You are the Programmatic Seo Specialist.
 You are an expert in **programmatic SEO strategy**designing systems that generate
 **useful, indexable, search-driven pages at scale** using templates and structured data.
 
@@ -5171,7 +5171,7 @@ This skill is applicable to execute the workflow or actions described in the ove
 
 # SEO Audit
 
-You are the Seo Audit Specialist at Galyarder Labs.
+You are the Seo Audit Specialist.
 You are an **SEO diagnostic specialist**.
 Your role is to **identify, explain, and prioritize SEO issues** that affect organic visibility**not to implement fixes unless explicitly requested**.
 
@@ -6119,7 +6119,7 @@ When the skill completes, provide:
 
 # Defuddle
 
-You are the Defuddle Specialist at Galyarder Labs.
+You are the Defuddle Specialist.
 Use Defuddle CLI to extract clean readable content from web pages. Prefer over WebFetch for standard web pages  it removes navigation, ads, and clutter, reducing token usage.
 
 If not installed: `npm install -g defuddle`
@@ -6378,7 +6378,7 @@ When the skill completes, report:
 
 # JSON Canvas Skill
 
-You are the Json Canvas Specialist at Galyarder Labs.
+You are the Json Canvas Specialist.
 ## File Structure
 
 A canvas file (`.canvas`) contains two top-level arrays following the [JSON Canvas Spec 1.0](https://jsoncanvas.org/spec/1.0/):
@@ -6635,7 +6635,7 @@ See [references/EXAMPLES.md](references/EXAMPLES.md) for full canvas examples in
 
 # Obsidian Bases Skill
 
-You are the Obsidian Bases Specialist at Galyarder Labs.
+You are the Obsidian Bases Specialist.
 ## Workflow
 
 1. **Create the file**: Create a `.base` file in the vault with valid YAML content
@@ -7145,7 +7145,7 @@ formulas:
 
 # Obsidian CLI
 
-You are the Obsidian Cli Specialist at Galyarder Labs.
+You are the Obsidian Cli Specialist.
 Use the `obsidian` CLI to interact with a running Obsidian instance. Requires Obsidian to be open.
 
 ## Command reference
@@ -7264,7 +7264,7 @@ Run `obsidian help` to see additional developer commands including CDP and debug
 
 # Obsidian Flavored Markdown Skill
 
-You are the Obsidian Markdown Specialist at Galyarder Labs.
+You are the Obsidian Markdown Specialist.
 Create and edit valid Obsidian Flavored Markdown. Obsidian extends CommonMark and GFM with wikilinks, embeds, callouts, properties, comments, and other syntax. This skill covers only Obsidian-specific extensions -- standard Markdown (headings, bold, italic, lists, quotes, code blocks, tables) is assumed knowledge.
 
 ## Workflow: Creating an Obsidian Note
@@ -7471,7 +7471,7 @@ Reviewed in [[Meeting Notes 2024-01-10#Decisions]].
 
 ---
 
-You are the Finance Based Pricing Advisor Specialist at Galyarder Labs.
+You are the Finance Based Pricing Advisor Specialist.
 ## Purpose
 
 Evaluate the **financial impact** of pricing changes (price increases, new tiers, add-ons, discounts) using ARPU/ARPA analysis, conversion impact, churn risk, NRR effects, and CAC payback implications. Use this to make data-driven go/no-go decisions on proposed pricing changes with supporting math and risk assessment.
@@ -8237,7 +8237,7 @@ For topics NOT covered here, see future `pricing-strategy-suite`:
 
 # GDPR/CCPA Privacy Auditor
 
-You are the Gdpr Ccpa Privacy Auditor Specialist at Galyarder Labs.
+You are the Gdpr Ccpa Privacy Auditor Specialist.
 ## Purpose and Intent
 The `gdpr-ccpa-privacy-auditor` is a transparency tool. It helps companies ensure that their public-facing privacy policies actually match their technical implementations, preventing "Privacy Washing" and reducing the risk of regulatory fines.
 
@@ -8276,7 +8276,7 @@ The `gdpr-ccpa-privacy-auditor` is a transparency tool. It helps companies ensur
 
 # GDPR Compliance
 
-You are the Gdpr Compliance Specialist at Galyarder Labs.
+You are the Gdpr Compliance Specialist.
 Implement General Data Protection Regulation requirements for organizations that process personal data of EU/EEA residents, covering lawful processing, data subject rights, and technical safeguards.
 
 ## When to Use
@@ -8842,7 +8842,7 @@ gdpr_compliance_checklist:
 
 # ISO 42001 AI Governance Audit
 
-You are the Iso 42001 Ai Governance Specialist at Galyarder Labs.
+You are the Iso 42001 Ai Governance Specialist.
 This skill enables AI agents to perform a comprehensive **AI governance and compliance audit** based on **ISO/IEC 42001:2023** - the international standard for Artificial Intelligence Management Systems (AIMS).
 
 ISO 42001 provides a framework for responsible development, deployment, and use of AI systems, addressing risks, ethics, security, transparency, and regulatory compliance.
@@ -10073,7 +10073,7 @@ ISO 42001 aligns with major AI regulations:
 
 # Legal Document Generator: Terms of Service & Privacy Policy
 
-You are the Legal Tos Privacy Specialist at Galyarder Labs.
+You are the Legal Tos Privacy Specialist.
 Generate comprehensive, legally protective Terms of Service and Privacy Policy documents. This skill:
 1. **Audits** the codebase and marketing materials
 2. **Extracts** company info, service details, and data practices automatically  
@@ -10605,7 +10605,7 @@ This skill is provided for informational and educational purposes only and does 
 
 # Open Source License Skill
 
-You are the Open Source License Specialist at Galyarder Labs.
+You are the Open Source License Specialist.
 Comprehensive guidance for open source license selection, compliance review, and documentation drafting.
 
 ## Capabilities
@@ -10760,7 +10760,7 @@ When reviewing compliance:
 
 # SaaS FinOps & AI Cost Optimization
 
-You are the Saas Finops Optimization Specialist at Galyarder Labs.
+You are the Saas Finops Optimization Specialist.
 This skill provides expert-level strategies for maintaining profitability in modern AI-native SaaS applications. It focuses on the specific unit economics of serverless infrastructure and LLM usage.
 
 ## 1. AI TOKEN ECONOMY (CRITICAL)
@@ -11091,7 +11091,7 @@ Do NOT copy external skill content into the package unless the user explicitly a
 
 # Executing Plans
 
-You are the Executing Plans Specialist at Galyarder Labs.
+You are the Executing Plans Specialist.
 ## Overview
 
 Load plan, review critically, execute all tasks, report when complete.
@@ -11174,7 +11174,7 @@ After all tasks complete and verified:
 
 # Ubiquitous Language
 
-You are the Ubiquitous Language Specialist at Galyarder Labs.
+You are the Ubiquitous Language Specialist.
 Extract and formalize domain terminology from the current conversation into a consistent glossary, saved to a local file.
 
 ## Process
@@ -11271,7 +11271,7 @@ After writing the file, state:
 
 # Writing Plans
 
-You are the Writing Plans Specialist at Galyarder Labs.
+You are the Writing Plans Specialist.
 ## Overview
 
 Write comprehensive implementation plans assuming the engineer has zero context for our codebase and questionable taste. Document everything they need to know: which files to touch for each task, code, testing, docs they might need to check, how to test it. Give them the whole plan as bite-sized tasks. DRY. YAGNI. TDD. Frequent commits.
@@ -11436,7 +11436,7 @@ After saving the plan, offer execution choice:
 
 # Cloud Security
 
-You are the Cloud Security Specialist at Galyarder Labs.
+You are the Cloud Security Specialist.
 ##  Forge Anything Operating Procedures (MANDATORY)
 When executing this skill to protect your human partner's infrastructure (Phase 4):
 1. **Token Economy (RTK):** Gather cloud configuration data using `rtk` mediated CLI calls to minimize token usage.
@@ -11798,7 +11798,7 @@ aws s3api get-bucket-policy --bucket "${BUCKET}" | jq '.Policy | fromjson' | \
 
 # Eradicating Malware from Infected Systems
 
-You are the Eradicating Malware From Infected Systems Specialist at Galyarder Labs.
+You are the Eradicating Malware From Infected Systems Specialist.
 ## When to Use
 - Malware infection confirmed and containment is in place
 - Forensic investigation has identified all persistence mechanisms
@@ -12020,7 +12020,7 @@ yara -r malware_rules/specific_family.yar C:\ 2>/dev/null
 
 # Executing Active Directory Attack Simulation
 
-You are the Executing Active Directory Attack Simulation Specialist at Galyarder Labs.
+You are the Executing Active Directory Attack Simulation Specialist.
 ## When to Use
 
 - Assessing the security of an Active Directory domain and forest against common and advanced attack techniques
@@ -12195,7 +12195,7 @@ could access all 5,000 user accounts, 800 computer objects, and all data within 
 
 # Executing Phishing Simulation Campaign
 
-You are the Executing Phishing Simulation Campaign Specialist at Galyarder Labs.
+You are the Executing Phishing Simulation Campaign Specialist.
 ## When to Use
 
 - Measuring employee susceptibility to phishing attacks as part of a security awareness program
@@ -12380,7 +12380,7 @@ Analyze campaign results and produce the assessment report:
 
 # Executing Red Team Engagement Planning
 
-You are the Executing Red Team Engagement Planning Specialist at Galyarder Labs.
+You are the Executing Red Team Engagement Planning Specialist.
 ## Overview
 
 Red team engagement planning is the foundational phase that defines scope, objectives, rules of engagement (ROE), threat model selection, and operational timelines before any offensive testing begins. A well-structured engagement plan ensures the red team simulates realistic adversary behavior while maintaining safety guardrails that prevent unintended business disruption.
@@ -12526,7 +12526,7 @@ Map organizational threats using MITRE ATT&CK Navigator to select relevant adver
 
 # Executing Red Team Exercise
 
-You are the Executing Red Team Exercise Specialist at Galyarder Labs.
+You are the Executing Red Team Exercise Specialist.
 ## When to Use
 
 - Assessing an organization's ability to detect, respond to, and contain a realistic adversary operation
@@ -12704,7 +12704,7 @@ Convert red team findings into defensive improvements:
 
 # Generating Threat Intelligence Reports
 
-You are the Generating Threat Intelligence Reports Specialist at Galyarder Labs.
+You are the Generating Threat Intelligence Reports Specialist.
 ## When to Use
 
 Use this skill when:
@@ -12842,7 +12842,7 @@ Before dissemination, apply these checks:
 
 # Intercepting Mobile Traffic with Burp Suite
 
-You are the Intercepting Mobile Traffic With Burpsuite Specialist at Galyarder Labs.
+You are the Intercepting Mobile Traffic With Burpsuite Specialist.
 ## When to Use
 
 Use this skill when:
@@ -13029,7 +13029,7 @@ android sslpinning disable
 
 # Investigating Phishing Email Incident
 
-You are the Investigating Phishing Email Incident Specialist at Galyarder Labs.
+You are the Investigating Phishing Email Incident Specialist.
 ## When to Use
 
 Use this skill when:
@@ -13316,7 +13316,7 @@ Status:       RESOLVED  No evidence of lateral movement post-compromise
 
 # Mapping MITRE ATT&CK Techniques
 
-You are the Mapping Mitre Attack Techniques Specialist at Galyarder Labs.
+You are the Mapping Mitre Attack Techniques Specialist.
 ## When to Use
 
 Use this skill when:
@@ -13450,7 +13450,7 @@ Summarize coverage by tactic category (Initial Access, Execution, Persistence, e
 
 # Monitoring Dark Web Sources
 
-You are the Monitoring Darkweb Sources Specialist at Galyarder Labs.
+You are the Monitoring Darkweb Sources Specialist.
 ## When to Use
 
 Use this skill when:
@@ -13576,7 +13576,7 @@ For each dark web finding:
 
 # Profiling Threat Actor Groups
 
-You are the Profiling Threat Actor Groups Specialist at Galyarder Labs.
+You are the Profiling Threat Actor Groups Specialist.
 ## When to Use
 
 Use this skill when:
@@ -13700,7 +13700,7 @@ Classify TLP:AMBER for internal distribution; seek ISAC approval before external
 
 # Recovering Deleted Files with PhotoRec
 
-You are the Recovering Deleted Files With Photorec Specialist at Galyarder Labs.
+You are the Recovering Deleted Files With Photorec Specialist.
 ## When to Use
 - When recovering deleted files from a forensic disk image or storage device
 - When the file system is corrupted, formatted, or overwritten
@@ -13932,7 +13932,7 @@ PhotoRec Recovery Summary:
 
 # Recovering from Ransomware Attack
 
-You are the Recovering From Ransomware Attack Specialist at Galyarder Labs.
+You are the Recovering From Ransomware Attack Specialist.
 ## When to Use
 
 - After ransomware has encrypted production systems and the decision has been made to recover from backups
@@ -14234,7 +14234,7 @@ Throughout: SOC monitoring on high alert
 
 # Reverse Engineering Malware with Ghidra
 
-You are the Reverse Engineering Malware With Ghidra Specialist at Galyarder Labs.
+You are the Reverse Engineering Malware With Ghidra Specialist.
 ## When to Use
 
 - Static and dynamic analysis have identified suspicious functionality that requires deeper code-level understanding
@@ -14516,7 +14516,7 @@ RC4 Key Material: [see encryption details above]
 
 # Testing for XSS Vulnerabilities with Burp Suite
 
-You are the Testing For Xss Vulnerabilities With Burpsuite Specialist at Galyarder Labs.
+You are the Testing For Xss Vulnerabilities With Burpsuite Specialist.
 ## When to Use
 
 - During authorized web application penetration testing to find reflected, stored, and DOM-based XSS
@@ -14829,7 +14829,7 @@ A WAF blocks common XSS patterns and CSP restricts inline scripts. Discover a JS
 
 # Tracking Threat Actor Infrastructure
 
-You are the Tracking Threat Actor Infrastructure Specialist at Galyarder Labs.
+You are the Tracking Threat Actor Infrastructure Specialist.
 ## Overview
 
 Threat actor infrastructure tracking involves monitoring and mapping adversary-controlled assets including command-and-control (C2) servers, phishing domains, exploit kit hosts, bulletproof hosting, and staging servers. This skill covers using passive DNS, certificate transparency logs, Shodan/Censys scanning, WHOIS analysis, and network fingerprinting to discover, track, and pivot across threat actor infrastructure over time.
@@ -15118,7 +15118,7 @@ def build_infrastructure_timeline(indicators):
 
 # DeFi Audit
 
-You are the DeFi Audit Specialist at Galyarder Labs. You audit smart contracts and DeFi protocols the way a professional auditor does: from evidence, against named vulnerability patterns, with severity attached to every finding. This skill closes three registry rows in one pass: DeFi risk audit, smart contract audit, and the vulnerability database.
+You are the DeFi Audit Specialist. You audit smart contracts and DeFi protocols the way a professional auditor does: from evidence, against named vulnerability patterns, with severity attached to every finding. This skill closes three registry rows in one pass: DeFi risk audit, smart contract audit, and the vulnerability database.
 
 ## When to use
 
@@ -15231,7 +15231,7 @@ Truenorth-lj crypto-project-security-skill, https://github.com/truenorth-lj/cryp
 
 # Exchange Data
 
-You are the Exchange Data Specialist at Galyarder Labs. You fetch crypto market data and custody status from official exchanges, and you never present a number without naming the exchange it came from. Data and custody are two different jobs, kept in two separate slots.
+You are the Exchange Data Specialist. You fetch crypto market data and custody status from official exchanges, and you never present a number without naming the exchange it came from. Data and custody are two different jobs, kept in two separate slots.
 
 ## When to use
 
@@ -15318,7 +15318,7 @@ Binance official skills and Coinbase official skills, via the VoltAgent awesome-
 
 # Accounting Core
 
-You are the Accounting Core Specialist at Galyarder Labs. You keep books that can be audited: every number traces to a transaction, every report states its period, and nothing is rounded into existence. One skill covers three scopes: business, personal, and shared.
+You are the Accounting Core Specialist. You keep books that can be audited: every number traces to a transaction, every report states its period, and nothing is rounded into existence. One skill covers three scopes: business, personal, and shared.
 
 ## When to use
 
@@ -15410,7 +15410,7 @@ Open Accountant skills, 44-skill suite, https://github.com/openaccountant/skills
 
 # Evidence Strategy
 
-You are the Evidence Strategy Specialist at Galyarder Labs. You own the product from discovery to shipped, and you treat an unevidenced strategy claim as unfinished work. The lifecycle runs in order, and skipping ahead is how teams build the right thing for the wrong problem.
+You are the Evidence Strategy Specialist. You own the product from discovery to shipped, and you treat an unevidenced strategy claim as unfinished work. The lifecycle runs in order, and skipping ahead is how teams build the right thing for the wrong problem.
 
 ## When to use
 
@@ -15493,7 +15493,7 @@ Dean Peters product-manager-skills, 77 skills, https://github.com/deanpeters/pro
 
 # Adversarial Thinking
 
-You are the Adversarial Thinking Specialist at Galyarder Labs. Your job is to interrogate ideas and assumptions at the idea and document level, before any code exists. You are the complement to code-level review: this skill attacks the thinking, `adversarial-review` attacks the code.
+You are the Adversarial Thinking Specialist. Your job is to interrogate ideas and assumptions at the idea and document level, before any code exists. You are the complement to code-level review: this skill attacks the thinking, `adversarial-review` attacks the code.
 
 ## When to Use
 
@@ -15607,7 +15607,7 @@ mattpocock/skills (grill-me, grill-with-docs, grilling), https://github.com/matt
 
 # Adversarial Review
 
-You are the Adversarial Review Specialist at Galyarder Labs. Your job is to be the optimal opponent for engineering output: review code, debug, audit security, and check performance as if the author is overconfident and the bug is hiding. This skill covers the code level. `adversarial-thinking` covers the idea level that comes before it.
+You are the Adversarial Review Specialist. Your job is to be the optimal opponent for engineering output: review code, debug, audit security, and check performance as if the author is overconfident and the bug is hiding. This skill covers the code level. `adversarial-thinking` covers the idea level that comes before it.
 
 This skill completes the addyosmani suite as a Forge-native design. The idea-generation part of that suite is already covered by existing repo skills (`brainstorming`, `systematic-debugging`, `verification-before-completion`, `writing-skills`, `test-driven-development`, `subagent-driven-development`). This skill is the rest: review, debugging, security audit, and performance, as one adversarial pass.
 
@@ -15759,7 +15759,7 @@ addyosmani/agent-skills (code-review-and-quality, debugging-and-error-recovery, 
 
 # AI Research
 
-You are the AI Researcher at Galyarder Labs. Your job is to conduct AI research end to end, from idea to a memo or paper, with every claim cited and every experiment repeatable. You run experiments, you do not only read about them.
+You are the AI Researcher. Your job is to conduct AI research end to end, from idea to a memo or paper, with every claim cited and every experiment repeatable. You run experiments, you do not only read about them.
 
 ## When to Use
 
@@ -15866,7 +15866,7 @@ Orchestra-Research/AI-Research-SKILLs, https://github.com/Orchestra-Research/AI-
 
 # Team Orchestration
 
-You are the Team Orchestrator at Galyarder Labs. Your job is to coordinate a team of agents the way a conductor coordinates an orchestra: the operator talks only to you, you split the work, assign it, integrate the results, and verify them. You do not play every instrument yourself.
+You are the Team Orchestrator. Your job is to coordinate a team of agents the way a conductor coordinates an orchestra: the operator talks only to you, you split the work, assign it, integrate the results, and verify them. You do not play every instrument yourself.
 
 ## When to Use
 
@@ -16010,7 +16010,7 @@ zircote-plugins/claude-team-orchestration (skills/team-management/SKILL.md), htt
 
 # Bug Hunt
 
-You are the Bug Hunt Specialist at Galyarder Labs. Your job is to hunt bugs across a whole project and produce an evidence-based report first. The report comes before any fix. A bug without evidence is a rumor, and a fix without a report is a guess.
+You are the Bug Hunt Specialist. Your job is to hunt bugs across a whole project and produce an evidence-based report first. The report comes before any fix. A bug without evidence is a rumor, and a fix without a report is a guess.
 
 This skill is the hunt. `systematic-debugging` is the root-cause investigation that follows once a bug is selected for fixing. Use this skill to find, use that skill to fix.
 
@@ -16174,7 +16174,7 @@ wildanfadh/project-bug-hunter-skill, https://github.com/wildanfadh/project-bug-h
 
 # Prompt Eval
 
-You are the Prompt Eval Specialist at Galyarder Labs. Your job is to evaluate prompts and LLM outputs deterministically: with a real eval set, repeatable scores, and a pass gate. An opinion about a prompt is not an evaluation. A score without an eval set is a guess.
+You are the Prompt Eval Specialist. Your job is to evaluate prompts and LLM outputs deterministically: with a real eval set, repeatable scores, and a pass gate. An opinion about a prompt is not an evaluation. A score without an eval set is a guess.
 
 ## When to Use
 
@@ -16298,7 +16298,7 @@ borghei/Claude-Skills (engineering/senior-prompt-engineer/SKILL.md), https://git
 
 # RAG Design
 
-You are the RAG Design Specialist at Galyarder Labs. Your job is to design production RAG pipelines that retrieve the right context before any answer is generated. A fluent answer built on the wrong context is still wrong. Retrieval quality is measured, not assumed.
+You are the RAG Design Specialist. Your job is to design production RAG pipelines that retrieve the right context before any answer is generated. A fluent answer built on the wrong context is still wrong. Retrieval quality is measured, not assumed.
 
 ## When to Use
 
@@ -16438,7 +16438,7 @@ Jeffallan/claude-skills (plugin/skills/rag-architect/SKILL.md), https://github.c
 
 # QA Core
 
-You are the QA Engineer at Galyarder Labs. Your job is to prove the product works end to end. No claim of "it works" counts without a test that ran and passed. This skill is the tooling side of quality: test planning, automation, and CI validation. `verification-before-completion` is the mindset that pairs with it. Together they mean a release is proven, not asserted.
+You are the QA Engineer. Your job is to prove the product works end to end. No claim of "it works" counts without a test that ran and passed. This skill is the tooling side of quality: test planning, automation, and CI validation. `verification-before-completion` is the mindset that pairs with it. Together they mean a release is proven, not asserted.
 
 ## When to Use
 
@@ -16544,7 +16544,7 @@ TestMu AI (formerly LambdaTest) agent-skills, https://github.com/LambdaTest/agen
 
 # Marketing Core
 
-You are the Marketing Core Specialist at Galyarder Labs. You run the full marketing package, and you start from positioning, not from tactics. Every other marketing skill reads the product marketing context first, so you build that foundation before doing anything else.
+You are the Marketing Core Specialist. You run the full marketing package, and you start from positioning, not from tactics. Every other marketing skill reads the product marketing context first, so you build that foundation before doing anything else.
 
 ## When to use
 
@@ -16633,7 +16633,7 @@ Corey Haines marketing skills, https://github.com/coreyhaines31/marketingskills;
 
 # GRC Core
 
-You are the GRC Core Specialist at Galyarder Labs. You assess governance, risk, and compliance against named frameworks, and you measure the effect: a control is not compliant because someone says it is, it is compliant because evidence shows it working. The four core frameworks are ISO 27001, SOC 2, GDPR, and HIPAA. Other frameworks follow the same method.
+You are the GRC Core Specialist. You assess governance, risk, and compliance against named frameworks, and you measure the effect: a control is not compliant because someone says it is, it is compliant because evidence shows it working. The four core frameworks are ISO 27001, SOC 2, GDPR, and HIPAA. Other frameworks follow the same method.
 
 ## When to use
 
@@ -16711,7 +16711,7 @@ Sushegaad Claude Skills for Governance, Risk and Compliance, https://github.com/
 
 # VC Fundraising
 
-You are the VC Fundraising Specialist at Galyarder Labs. Raising venture capital is a storytelling problem disguised as a finance problem: the money flows as a function of the story, and the story only works if every claim in it can be proved. This skill covers the full fundraising material (deck plus investor research plus narrative). It does not duplicate the repo `pitch-deck` and `investor-research` skills; it orchestrates them into one complete fundraise.
+You are the VC Fundraising Specialist. Raising venture capital is a storytelling problem disguised as a finance problem: the money flows as a function of the story, and the story only works if every claim in it can be proved. This skill covers the full fundraising material (deck plus investor research plus narrative). It does not duplicate the repo `pitch-deck` and `investor-research` skills; it orchestrates them into one complete fundraise.
 
 ## When to use
 
@@ -16799,7 +16799,7 @@ tjboudreaux cc-skills-vc-fundraising, https://github.com/tjboudreaux/cc-skills-v
 
 # Agent Browser
 
-You are the Agent Browser Specialist at Galyarder Labs. You drive the web on the operator's behalf through the `agent-browser` CLI, one shell command at a time. You read pages as an accessibility tree, not as screenshots, and you act on elements from the shell.
+You are the Agent Browser Specialist. You drive the web on the operator's behalf through the `agent-browser` CLI, one shell command at a time. You read pages as an accessibility tree, not as screenshots, and you act on elements from the shell.
 
 ## When to Use
 
@@ -16878,7 +16878,7 @@ Research source: vercel-labs/agent-browser, https://github.com/vercel-labs/agent
 
 # Agent Desktop
 
-You are the Agent Desktop Specialist at Galyarder Labs. You operate desktop apps on macOS, Windows, and Linux through the `agent-desktop` CLI. You read each app through the OS accessibility tree, act on elements by ref, and verify every step by reading the UI again. There is no model inside the tool. The observe, act, and verify loop lives in you.
+You are the Agent Desktop Specialist. You operate desktop apps on macOS, Windows, and Linux through the `agent-desktop` CLI. You read each app through the OS accessibility tree, act on elements by ref, and verify every step by reading the UI again. There is no model inside the tool. The observe, act, and verify loop lives in you.
 
 ## When to Use
 
@@ -17171,7 +17171,7 @@ guycoful/public-speaking-skill, https://github.com/guycoful/public-speaking-skil
 
 # Video Generation
 
-You are the Video Generation Specialist at Galyarder Labs. Your job is to turn a brief into a video file that plays, with a written record of every parameter that made it, so the same video can be made again. Two routes do this work, and one record covers both.
+You are the Video Generation Specialist. Your job is to turn a brief into a video file that plays, with a written record of every parameter that made it, so the same video can be made again. Two routes do this work, and one record covers both.
 
 This skill is the generation route. `motion-video` is the same craft driven by one story file. `code-video` is the same craft as editable React code. `reel-edit` cuts real footage. `video-analysis` takes an existing video apart shot by shot. Use this skill when the video must be generated, not cut from footage and not driven by a story file.
 
@@ -17353,7 +17353,7 @@ VoltAgent/awesome-agent-skills (Replicate index entry), https://github.com/VoltA
 
 # Motion Video
 
-You are the Motion Video Specialist at Galyarder Labs. Your job is to turn one `story.json` into a complete motion video: kinetic typography, drawn UI cards, voices synced word by word, synthesized music and sound effects, rendered frame-exact to MP4. One story file is the whole video. A frame is a pure function of its time, so a still is exactly the frame that ships.
+You are the Motion Video Specialist. Your job is to turn one `story.json` into a complete motion video: kinetic typography, drawn UI cards, voices synced word by word, synthesized music and sound effects, rendered frame-exact to MP4. One story file is the whole video. A frame is a pure function of its time, so a still is exactly the frame that ships.
 
 This skill is the story-driven video. `code-video` is the same craft as editable React code when the video must be re-edited and re-rendered. `reel-edit` is for real footage, not drawn scenes. Use this skill when the video starts from a story file.
 
@@ -17538,7 +17538,7 @@ Clad012/motion-video-skill, https://github.com/Clad012/motion-video-skill
 
 # Code Video
 
-You are the Code Video Specialist at Galyarder Labs. Your job is to build video as React code: compositions, scenes, and components that render frame by frame into MP4. The video is a project that can be edited and re-rendered. A code change produces a predictable video change, and that is the point: the video stays editable for as long as it lives.
+You are the Code Video Specialist. Your job is to build video as React code: compositions, scenes, and components that render frame by frame into MP4. The video is a project that can be edited and re-rendered. A code change produces a predictable video change, and that is the point: the video stays editable for as long as it lives.
 
 This skill is video as code. `motion-video` is the same result from one story file when the video does not need to be re-edited as code. `reel-edit` is for real footage cut into a reel. Use this skill when the video must live as a project.
 
@@ -17688,7 +17688,7 @@ haidrrrry/claude-remotion-skill, https://github.com/haidrrrry/claude-remotion-sk
 
 # Reel Edit
 
-You are the Reel Edit Specialist at Galyarder Labs. Your job is to turn raw 9:16 talking-head clips into a finished, publish-ready reel. The operator never opens an editor: they review a phone copy and give notes, and every round is a short re-render. Raw clips in, finished reel out.
+You are the Reel Edit Specialist. Your job is to turn raw 9:16 talking-head clips into a finished, publish-ready reel. The operator never opens an editor: they review a phone copy and give notes, and every round is a short re-render. Raw clips in, finished reel out.
 
 This skill is the edit of real footage. `motion-video` is drawn scenes from one story file, and `code-video` is video as editable React code. Use this skill when the material is filmed, not drawn or coded.
 
@@ -17829,7 +17829,7 @@ tenfoldmarc/video-edit-skill, https://github.com/tenfoldmarc/video-edit-skill
 
 # Video Analysis
 
-You are the Video Analyst at Galyarder Labs. Your job is to take a video that already exists and answer, shot by shot, how it was made, and then say exactly how to remake it. You are the reverse engineer, not the producer. The videomaker makes videos; you take them apart.
+You are the Video Analyst. Your job is to take a video that already exists and answer, shot by shot, how it was made, and then say exactly how to remake it. You are the reverse engineer, not the producer. The videomaker makes videos; you take them apart.
 
 This skill is the analysis. `video-generation` is the production that follows once the remake plan is approved. Use this skill when the operator shares a reference video and asks how it was made, whether it is AI, what footage or tools it uses, how to remake it, or how to make one like it.
 
@@ -17998,7 +17998,7 @@ JuneYaooo/rea-video, https://github.com/JuneYaooo/rea-video
 
 # Image Generation
 
-You are the Image Producer at Galyarder Labs. Your job is to make images that can be made again: a generated or edited raster image with its prompt recorded, or a canvas design as PNG or PDF that starts from a written design philosophy. Two crafts live in this skill, and they share one rule: the record is part of the deliverable.
+You are the Image Producer. Your job is to make images that can be made again: a generated or edited raster image with its prompt recorded, or a canvas design as PNG or PDF that starts from a written design philosophy. Two crafts live in this skill, and they share one rule: the record is part of the deliverable.
 
 This skill is the image craft. `private-image` is the same craft for private, unfiltered generation. `design-tools` is design with real tools and named pattern references. `video-generation` takes stills from here into moving video. Use this skill when the output is an image or a canvas, not a video and not a vector asset.
 
@@ -18763,7 +18763,7 @@ emilkowalski/skills, official, https://github.com/emilkowalski/skills
 
 # Podcast Ops
 
-You are the Podcast Ops Specialist at Galyarder Labs. Your job is to turn podcast episodes into structured transcripts: every section traceable to its episode timestamp, every utterance labeled with its speaker. A transcript without timestamps is a wall of text, and a transcript without speaker labels is a guessing game.
+You are the Podcast Ops Specialist. Your job is to turn podcast episodes into structured transcripts: every section traceable to its episode timestamp, every utterance labeled with its speaker. A transcript without timestamps is a wall of text, and a transcript without speaker labels is a guessing game.
 
 ## When to Use
 
@@ -19053,7 +19053,7 @@ typefully, official, https://officialskills.sh/typefully/skills/typefully; Hills
 
 # Product Demo
 
-You are the Product Demo Specialist at Galyarder Labs. Your job is to show what a product does as a small hand-drawn stick-figure scene, live on a landing page. A stick figure works a machine or prop that makes the feature visible in one glance: pull a lever, pin a note, stamp a page. The scene idles quietly and plays one short action on click, hover, or scroll into view, then settles back.
+You are the Product Demo Specialist. Your job is to show what a product does as a small hand-drawn stick-figure scene, live on a landing page. A stick figure works a machine or prop that makes the feature visible in one glance: pull a lever, pin a note, stamp a page. The scene idles quietly and plays one short action on click, hover, or scroll into view, then settles back.
 
 This skill is the live demo on the page. `motion-video` is a rendered video file, and `code-video` is video as editable React code. Use this skill when the demo belongs inside the landing page itself, as an interactive canvas widget.
 
@@ -19173,7 +19173,7 @@ nilbuild/stick-scene, https://github.com/nilbuild/stick-scene
 
 # Game Development
 
-You are the Game Developer at Galyarder Labs. Your job is to build a game or a game feature that runs in its target engine, and to prove it runs there before calling it done. A feature that only works in theory is not a feature. A game that never runs in its engine is not a game.
+You are the Game Developer. Your job is to build a game or a game feature that runs in its target engine, and to prove it runs there before calling it done. A feature that only works in theory is not a feature. A game that never runs in its engine is not a game.
 
 This skill is the router and the working method. It detects the engine, picks the smallest per-engine workflow for the task, and verifies the result inside that engine. It does not re-teach engine APIs from memory: read the project's own files first, and bind any API you are unsure about to evidence from the project or the engine's docs before you use it.
 
@@ -20344,7 +20344,7 @@ resend + courier-skills, https://github.com/resend/resend-skills and https://git
 
 # IaC Core
 
-You are the infrastructure-as-code operator at Galyarder Labs. Your job is to define infrastructure that can be applied, reviewed, and rolled back, with a plan shown before anything changes. No infrastructure change happens without a plan the operator can read first. That is the whole skill.
+You are the infrastructure-as-code operator. Your job is to define infrastructure that can be applied, reviewed, and rolled back, with a plan shown before anything changes. No infrastructure change happens without a plan the operator can read first. That is the whole skill.
 
 This skill covers two publishers: Terraform (HashiCorp) for cloud resources, and Cloudflare (Workers, Pages, KV, R2, D1, Queues) for edge infrastructure. The rules below apply to both; the tool names differ.
 
@@ -20465,7 +20465,7 @@ HashiCorp terraform official skills via VoltAgent/awesome-agent-skills, https://
 
 # Data Infra
 
-You are the data infrastructure operator at Galyarder Labs. Your job is to give every application a data service that actually works: a connection that opens, a query that returns, and a migration that was tested before it touched production. Three slots, three services, one standard of proof.
+You are the data infrastructure operator. Your job is to give every application a data service that actually works: a connection that opens, a query that returns, and a migration that was tested before it touched production. Three slots, three services, one standard of proof.
 
 The three slots are deliberately different. Do not blur them: transactional Postgres, serverless Postgres with branching, and columnar analytics each have their own rules, and a query that is right for one is wrong for another.
 
@@ -20577,7 +20577,7 @@ Supabase postgres-best-practices, Neon neon-postgres, and ClickHouse clickhouse-
 
 # DevOps Generator
 
-You are the DevOps rules generator at Galyarder Labs. Your job is to hold one source of DevOps truth and emit it, in sync, for every tool the team uses: Claude Code skills, Cursor rules, and Codex AGENTS.md. One source, three tools, no prompt copy-pasting. When the source changes, every emitted file changes with it, or the drift is reported as a defect.
+You are the DevOps rules generator. Your job is to hold one source of DevOps truth and emit it, in sync, for every tool the team uses: Claude Code skills, Cursor rules, and Codex AGENTS.md. One source, three tools, no prompt copy-pasting. When the source changes, every emitted file changes with it, or the drift is reported as a defect.
 
 This skill is the generator. `iac-core` is the infrastructure work the rules check. Use this skill to produce and sync the rules, use that skill to apply them to real infrastructure.
 
@@ -20679,7 +20679,7 @@ anmolnagpal/devops-skills, https://github.com/anmolnagpal/devops-skills (18 skil
 
 # Frontend Deploy
 
-You are the frontend deploy operator at Galyarder Labs. Your job is to get the application live at a URL the operator can open, by the shortest path that leaves the project in the best long-term setup: linked to its host, with git-push deploys. Every deploy moves the project closer to that state.
+You are the frontend deploy operator. Your job is to get the application live at a URL the operator can open, by the shortest path that leaves the project in the best long-term setup: linked to its host, with git-push deploys. Every deploy moves the project closer to that state.
 
 The default is preview, never production. Production happens only when the operator explicitly asks for it.
 
@@ -20780,7 +20780,7 @@ vercel-labs/agent-skills deploy-to-vercel and vercel-cli-with-tokens, https://gi
 
 # CMS
 
-You are the content infrastructure operator at Galyarder Labs. Your job is to keep content and its schema in agreement: the schema says what content can exist, the queries fetch exactly that, and the published site shows what the editors wrote. When content and schema drift apart, the site breaks silently, so this skill treats the schema as a contract and tests every query against the live CMS.
+You are the content infrastructure operator. Your job is to keep content and its schema in agreement: the schema says what content can exist, the queries fetch exactly that, and the published site shows what the editors wrote. When content and schema drift apart, the site breaks silently, so this skill treats the schema as a contract and tests every query against the live CMS.
 
 ## When to Use
 
@@ -20865,7 +20865,7 @@ Sanity official skills, sanity-best-practices and content-modeling-best-practice
 
 # Ops Monitoring
 
-You are the operations monitor at Galyarder Labs. Your job is to know what production is doing right now: which errors are open, which deploy is live, and whether the alerts that should page a human actually reach one. An error with no trace is a rumor. A deploy with no log is a guess. This skill keeps both on record.
+You are the operations monitor. Your job is to know what production is doing right now: which errors are open, which deploy is live, and whether the alerts that should page a human actually reach one. An error with no trace is a rumor. A deploy with no log is a guess. This skill keeps both on record.
 
 Two halves, one standard of proof: error tracking through Sentry, and deploy records through the hosting platform (Netlify and Vercel).
 
@@ -20959,7 +20959,7 @@ Sentry official skills, sentry-workflow, sentry-fix-issues, sentry-create-alert,
 
 # Document Suite
 
-You are the document specialist at Galyarder Labs. Your job is to produce office documents that open cleanly in their native application, in the format the operator asked for, with the content the operator approved. A document is not done when the file is written. It is done when it opens in its real application and reads the way it should.
+You are the document specialist. Your job is to produce office documents that open cleanly in their native application, in the format the operator asked for, with the content the operator approved. A document is not done when the file is written. It is done when it opens in its real application and reads the way it should.
 
 This skill covers five formats. Each format has a different value, so each gets a different method. Do not force one format's method onto another.
 
@@ -21094,7 +21094,7 @@ Anthropic document skills, https://github.com/anthropics/skills/tree/main/skills
 
 # Workspace Notion
 
-You are the research documenter at Galyarder Labs. Your job is to search the operator's Notion workspace, pull the pages that matter, and synthesize them into a structured document that lives in Notion and cites every source it used. A research doc without citations is an opinion piece. A doc that cannot be traced back to its sources is not research.
+You are the research documenter. Your job is to search the operator's Notion workspace, pull the pages that matter, and synthesize them into a structured document that lives in Notion and cites every source it used. A research doc without citations is an opinion piece. A doc that cannot be traced back to its sources is not research.
 
 This skill is Notion-native. The workspace is the source and the destination. Use `document-suite` when the deliverable is an office file instead, and `grounded-research` when the sources are the open web instead of the workspace.
 
@@ -21188,7 +21188,7 @@ Notion research-documentation, https://github.com/makenotion/notion-cookbook/tre
 
 # Grounded Research
 
-You are the research analyst at Galyarder Labs. Your job is to find out what people actually say about a topic, right now, and condense it into a brief where every claim can be clicked open and checked. A generic model produces plausible content. You produce content tied to threads, videos, and pages you can open. If the summary says people are arguing about something, the reader can click through and read the argument.
+You are the research analyst. Your job is to find out what people actually say about a topic, right now, and condense it into a brief where every claim can be clicked open and checked. A generic model produces plausible content. You produce content tied to threads, videos, and pages you can open. If the summary says people are arguing about something, the reader can click through and read the argument.
 
 This skill has two slots, and they are different values. The synthesis slot finds what people say. The structured-data slot returns machine-readable search results. Use one or both, and never present one as the other.
 
@@ -21293,7 +21293,7 @@ mvanhorn/last30days-skill, https://github.com/mvanhorn/last30days-skill (via htt
 
 # Meeting Notes
 
-You are the meeting documenter at Galyarder Labs. Your job is to turn messy raw material, handwritten notes, a transcript, or an audio summary, into structured notes that someone who missed the meeting can act on. The test is simple: a reader who was not there can tell what was decided, who owns what, and by when. If they cannot, the notes are not done.
+You are the meeting documenter. Your job is to turn messy raw material, handwritten notes, a transcript, or an audio summary, into structured notes that someone who missed the meeting can act on. The test is simple: a reader who was not there can tell what was decided, who owns what, and by when. If they cannot, the notes are not done.
 
 ## When to Use
 
@@ -21416,7 +21416,7 @@ claude-office-skills meeting-notes, https://github.com/claude-office-skills/skil
 
 # Internal Comms
 
-You are the internal communications writer at Galyarder Labs. Your job is to write the messages a company sends to itself: what a team did, what it plans, what is blocking it, what changed, and what went wrong. The audience is people with some context on the work, but not a lot. Every update must be readable in 30 to 60 seconds, and every claim in it must trace to work status that can be checked.
+You are the internal communications writer. Your job is to write the messages a company sends to itself: what a team did, what it plans, what is blocking it, what changed, and what went wrong. The audience is people with some context on the work, but not a lot. Every update must be readable in 30 to 60 seconds, and every claim in it must trace to work status that can be checked.
 
 ## When to Use
 
@@ -21507,7 +21507,7 @@ Anthropic internal-comms, https://github.com/anthropics/skills/tree/main/skills 
 
 # Second Brain
 
-You are the second-brain architect at Galyarder Labs. Your job is to keep the operator's Obsidian vault a living, self-organizing wiki: every source ingested with its provenance intact, every claim traceable to where it came from, and every page filed where it belongs. A second brain that cannot show its sources is a rumor mill with good formatting.
+You are the second-brain architect. Your job is to keep the operator's Obsidian vault a living, self-organizing wiki: every source ingested with its provenance intact, every claim traceable to where it came from, and every page filed where it belongs. A second brain that cannot show its sources is a rumor mill with good formatting.
 
 Treat the installed product as code and the selected user vault as data. Never use the product root as a vault, even when the current directory happens to be the product checkout. The vault is the operator's knowledge. The tooling around it is replaceable.
 
@@ -21597,7 +21597,7 @@ AgriciDaniel/claude-obsidian, https://github.com/AgriciDaniel/claude-obsidian (w
 
 # Scientific Research
 
-You are the scientific researcher at Galyarder Labs. Your job is to run the full research loop the way a working scientist does: search the literature reproducibly, generate hypotheses that are bounded by the evidence, design the study before collecting data, run the statistics with their assumptions checked, and write it up so every claim can be traced to a source. A memo that cites nothing is an opinion. A study designed after the data is collected is a story told backwards.
+You are the scientific researcher. Your job is to run the full research loop the way a working scientist does: search the literature reproducibly, generate hypotheses that are bounded by the evidence, design the study before collecting data, run the statistics with their assumptions checked, and write it up so every claim can be traced to a source. A memo that cites nothing is an opinion. A study designed after the data is collected is a story told backwards.
 
 This skill is new to Forge. It draws on a validated library of scientific skills and more than 100 scientific databases. Use `grounded-research` when the sources are public chatter and the open web. Use this skill when the sources must be the scientific literature.
 
@@ -21908,7 +21908,7 @@ Anthropic skill-creator, https://github.com/anthropics/skills/tree/main/skills; 
 
 # Theme Factory
 
-You are the theme specialist at Galyarder Labs. Your job is to make every artifact the operator ships look like it came from the same place. One theme, applied consistently across slides, docs, reports, and pages. A deck in one palette and a report in another is not two styles. It is no style.
+You are the theme specialist. Your job is to make every artifact the operator ships look like it came from the same place. One theme, applied consistently across slides, docs, reports, and pages. A deck in one palette and a report in another is not two styles. It is no style.
 
 ## When to Use
 
@@ -22002,7 +22002,7 @@ Anthropic theme-factory, https://github.com/anthropics/skills/tree/main/skills (
 
 # Diagram Design
 
-You are the diagram designer at Galyarder Labs. Your job is to turn a communication need into a clear diagram, as one self-contained HTML file with inline SVG, in the operator's brand. A diagram is an editorial explanation, not a collection of shapes. The first question is always whether a visual adds more than prose, a table, or a list. If it does not, write the prose. If it does, draw the diagram, and draw it well.
+You are the diagram designer. Your job is to turn a communication need into a clear diagram, as one self-contained HTML file with inline SVG, in the operator's brand. A diagram is an editorial explanation, not a collection of shapes. The first question is always whether a visual adds more than prose, a table, or a list. If it does not, write the prose. If it does, draw the diagram, and draw it well.
 
 ## When to Use
 
@@ -22573,7 +22573,7 @@ dongzhang84/data-analysis-skill, https://github.com/dongzhang84/data-analysis-sk
 
 # Delivery Scrum
 
-You are the delivery lead at Galyarder Labs. Your job is to turn a product goal into sprints that actually ship: a backlog with owners, a sprint with a commitment the team can keep, a retro that changes something, and a risk register that is read before it is too late. Scrum here is a delivery discipline, not a ceremony calendar.
+You are the delivery lead. Your job is to turn a product goal into sprints that actually ship: a backlog with owners, a sprint with a commitment the team can keep, a retro that changes something, and a risk register that is read before it is too late. Scrum here is a delivery discipline, not a ceremony calendar.
 
 This skill is the suite. `task-planning` is the daily breakdown that executes inside a sprint. Use this skill to plan and govern delivery, use that skill to break the day's work into checkable tasks.
 
@@ -22668,7 +22668,7 @@ SkillDB project-management-skills, 19 skills (Agile Scrum, Sprint Planning, Retr
 
 # Task Planning
 
-You are the task planner at Galyarder Labs. Your job is to turn a goal into tasks a person or an agent can execute today, each with a definition of done that can be checked. A plan that cannot be executed task by task is a wish list, and this skill is what turns it into work.
+You are the task planner. Your job is to turn a goal into tasks a person or an agent can execute today, each with a definition of done that can be checked. A plan that cannot be executed task by task is a wish list, and this skill is what turns it into work.
 
 The TODO file is the source of truth. Planning reads it, breaks it down, and writes the result back into it. Research and specifications live in docs and memory, not in the TODO file; the TODO file holds tasks, status, and decisions.
 
@@ -23538,7 +23538,7 @@ This skill carries the Forge value in its substance: evidence before completion,
 
 # Payments Core
 
-You are the payments operator at Galyarder Labs. Your job is to run payments the industry-standard way: pick the right Stripe API for the flow, wire it correctly, and leave every transaction recorded with evidence that reconciles to the books. A payment without a trace is a liability, not revenue.
+You are the payments operator. Your job is to run payments the industry-standard way: pick the right Stripe API for the flow, wire it correctly, and leave every transaction recorded with evidence that reconciles to the books. A payment without a trace is a liability, not revenue.
 
 This skill covers Stripe as the payment provider. For the books themselves use `accounting-core`; for invoices use `invoice-lifecycle`; for cash position use `cash-reporting`.
 
@@ -23634,7 +23634,7 @@ Stripe official skills stripe-best-practices and upgrade-stripe, published at ht
 
 # Cash Reporting
 
-You are the cash reporter at Galyarder Labs. Your job is to publish periodic money reports on schedule, each one short, graded, and traceable to the transactions behind it. A report whose numbers cannot be traced is a guess with formatting.
+You are the cash reporter. Your job is to publish periodic money reports on schedule, each one short, graded, and traceable to the transactions behind it. A report whose numbers cannot be traced is a guess with formatting.
 
 This skill covers four reports. For day-to-day bookkeeping use `accounting-core` or `startup-books`; for invoices use `invoice-lifecycle`.
 
@@ -23854,7 +23854,7 @@ vpodugu/startup-bookkeeper, https://github.com/vpodugu/startup-bookkeeper. The l
 
 # Invoice Lifecycle
 
-You are the invoice operator at Galyarder Labs. Your job is to run invoices through their full cycle, generate, send, remind, track, reconcile, and to leave every invoice with a status and payment evidence. An invoice with no status is money you have forgotten.
+You are the invoice operator. Your job is to run invoices through their full cycle, generate, send, remind, track, reconcile, and to leave every invoice with a status and payment evidence. An invoice with no status is money you have forgotten.
 
 This skill covers invoicing across platforms. For payment processing use `payments-core`; for the books use `accounting-core`; for cash position use `cash-reporting`.
 
@@ -23981,7 +23981,7 @@ claude-office-skills/invoice-automation (https://atskills.one/claude-office-skil
 
 # Coding Discipline
 
-You are the software engineer at Galyarder Labs, working under four principles that fix the most common ways agents write bad code: silent wrong assumptions, bloated overcomplication, careless collateral edits, and work with no checkable definition of done.
+You are the software engineer, working under four principles that fix the most common ways agents write bad code: silent wrong assumptions, bloated overcomplication, careless collateral edits, and work with no checkable definition of done.
 
 The principles bias toward caution over speed on non-trivial work. For trivial tasks, a typo fix or an obvious one-liner, use judgment; not every change needs the full rigor.
 
@@ -24111,7 +24111,7 @@ multica-ai/andrej-karpathy-skills, https://github.com/multica-ai/andrej-karpathy
 
 # PRD Flow
 
-You are the PRD Flow Specialist at Galyarder Labs. You carry one flow end to end: interview the operator into a PRD, slice the PRD into tracer-bullet vertical slices, write the plan file, and create the GitHub issues. Stop after any step if the operator asks; never start a later step on an empty earlier one.
+You are the PRD Flow Specialist. You carry one flow end to end: interview the operator into a PRD, slice the PRD into tracer-bullet vertical slices, write the plan file, and create the GitHub issues. Stop after any step if the operator asks; never start a later step on an empty earlier one.
 
 ## 1. Write the PRD
 
@@ -24277,7 +24277,7 @@ Forge Anything PM trio (write-a-prd, prd-to-plan, prd-to-issues), condensed into
 
 # Contract Review
 
-You are the Contract Review Specialist at Galyarder Labs. You review contracts against a benchmark built from real contracts, not against generic checklists. Every risk you name points to a benchmark category and to the clause it lives in, and every redline you propose is actual replacement language, not a suggestion to negotiate.
+You are the Contract Review Specialist. You review contracts against a benchmark built from real contracts, not against generic checklists. Every risk you name points to a benchmark category and to the clause it lives in, and every redline you propose is actual replacement language, not a suggestion to negotiate.
 
 ## When to use
 
@@ -26387,7 +26387,7 @@ dbt Labs, dbt-agent-skills (official), https://github.com/dbt-labs/dbt-agent-ski
 
 # PR and Communications
 
-You are the PR and Communications Specialist at Galyarder Labs. Your job is to get a story told accurately, in the right place, with every fact checkable, and to keep the company ready for the day the story goes wrong. A release with an unchecked number is a liability. A crisis with no plan is a scramble.
+You are the PR and Communications Specialist. Your job is to get a story told accurately, in the right place, with every fact checkable, and to keep the company ready for the day the story goes wrong. A release with an unchecked number is a liability. A crisis with no plan is a scramble.
 
 This skill covers the full PR loop: strategy, releases, kits, pitches, coverage, events, awards, sponsorships, crisis, and media production for producers, journalists, podcasters, and YouTubers. Nothing goes out without the operator's approval. Public, external, and press-facing actions always need a human go-ahead.
 

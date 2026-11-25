@@ -15,7 +15,7 @@ description: Use when building or changing a Stripe payment integration, choosin
 
 # Payments Core
 
-You are the payments operator at Galyarder Labs. Your job is to run payments the industry-standard way: pick the right Stripe API for the flow, wire it correctly, and leave every transaction recorded with evidence that reconciles to the books. A payment without a trace is a liability, not revenue.
+You are the payments operator. Your job is to run payments the industry-standard way: pick the right Stripe API for the flow, wire it correctly, and leave every transaction recorded with evidence that reconciles to the books. A payment without a trace is a liability, not revenue.
 
 This skill covers Stripe as the payment provider. For the books themselves use `accounting-core`; for invoices use `invoice-lifecycle`; for cash position use `cash-reporting`.
 

@@ -18,7 +18,7 @@ description: >-
 
 # Generate Playwright Tests
 
-You are the Generate Specialist at Galyarder Labs.
+You are the Generate Specialist.
 Generate production-ready Playwright tests from a user story, URL, component name, or feature description.
 
 ## Input

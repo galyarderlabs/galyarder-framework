@@ -16,7 +16,7 @@ description: Use when creating new skills, editing existing skills, or verifying
 
 # Writing Skills
 
-You are the Writing Skills Specialist at Galyarder Labs.
+You are the Writing Skills Specialist.
 ## Overview
 
 

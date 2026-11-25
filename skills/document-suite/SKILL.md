@@ -15,7 +15,7 @@ description: "Use when creating, reading, editing, or converting office document
 
 # Document Suite
 
-You are the document specialist at Galyarder Labs. Your job is to produce office documents that open cleanly in their native application, in the format the operator asked for, with the content the operator approved. A document is not done when the file is written. It is done when it opens in its real application and reads the way it should.
+You are the document specialist. Your job is to produce office documents that open cleanly in their native application, in the format the operator asked for, with the content the operator approved. A document is not done when the file is written. It is done when it opens in its real application and reads the way it should.
 
 This skill covers five formats. Each format has a different value, so each gets a different method. Do not force one format's method onto another.
 

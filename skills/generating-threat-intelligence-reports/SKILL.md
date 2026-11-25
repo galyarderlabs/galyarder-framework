@@ -27,7 +27,7 @@ license: Apache-2.0
 
 # Generating Threat Intelligence Reports
 
-You are the Generating Threat Intelligence Reports Specialist at Galyarder Labs.
+You are the Generating Threat Intelligence Reports Specialist.
 ## When to Use
 
 Use this skill when:

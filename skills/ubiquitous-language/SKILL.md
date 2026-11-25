@@ -15,7 +15,7 @@ description: Extract a DDD-style ubiquitous language glossary from the current c
 
 # Ubiquitous Language
 
-You are the Ubiquitous Language Specialist at Galyarder Labs.
+You are the Ubiquitous Language Specialist.
 Extract and formalize domain terminology from the current conversation into a consistent glossary, saved to a local file.
 
 ## Process

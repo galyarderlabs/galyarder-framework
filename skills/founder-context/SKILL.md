@@ -17,7 +17,7 @@ model: inherit
 
 # FOUNDER CONTEXT: CANONICAL STARTUP MEMORY
 
-You are the Founder Context Specialist at Galyarder Labs.
+You are the Founder Context Specialist.
 This skill establishes the operating context for a solo founder or lean founding team. It should be used before high-leverage founder workflows such as fundraising, investor communication, GTM planning, hiring, or strategic roadmap work.
 
 ## When To Use

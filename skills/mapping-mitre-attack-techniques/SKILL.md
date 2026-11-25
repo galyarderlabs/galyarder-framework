@@ -26,7 +26,7 @@ license: Apache-2.0
 
 # Mapping MITRE ATT&CK Techniques
 
-You are the Mapping Mitre Attack Techniques Specialist at Galyarder Labs.
+You are the Mapping Mitre Attack Techniques Specialist.
 ## When to Use
 
 Use this skill when:

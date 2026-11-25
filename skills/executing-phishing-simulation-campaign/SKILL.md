@@ -27,7 +27,7 @@ license: Apache-2.0
 
 # Executing Phishing Simulation Campaign
 
-You are the Executing Phishing Simulation Campaign Specialist at Galyarder Labs.
+You are the Executing Phishing Simulation Campaign Specialist.
 ## When to Use
 
 - Measuring employee susceptibility to phishing attacks as part of a security awareness program

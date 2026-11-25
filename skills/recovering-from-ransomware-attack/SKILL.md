@@ -28,7 +28,7 @@ license: Apache-2.0
 
 # Recovering from Ransomware Attack
 
-You are the Recovering From Ransomware Attack Specialist at Galyarder Labs.
+You are the Recovering From Ransomware Attack Specialist.
 ## When to Use
 
 - After ransomware has encrypted production systems and the decision has been made to recover from backups

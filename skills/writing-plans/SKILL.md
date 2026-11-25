@@ -15,7 +15,7 @@ description: Use when you have a spec or requirements for a multi-step task, bef
 
 # Writing Plans
 
-You are the Writing Plans Specialist at Galyarder Labs.
+You are the Writing Plans Specialist.
 ## Overview
 
 Write comprehensive implementation plans assuming the engineer has zero context for our codebase and questionable taste. Document everything they need to know: which files to touch for each task, code, testing, docs they might need to check, how to test it. Give them the whole plan as bite-sized tasks. DRY. YAGNI. TDD. Frequent commits.

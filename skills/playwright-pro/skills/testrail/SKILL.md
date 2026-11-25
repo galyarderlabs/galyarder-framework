@@ -18,7 +18,7 @@ description: >-
 
 # TestRail Integration
 
-You are the Testrail Specialist at Galyarder Labs.
+You are the Testrail Specialist.
 Bidirectional sync between Playwright tests and TestRail test management.
 
 ## Prerequisites

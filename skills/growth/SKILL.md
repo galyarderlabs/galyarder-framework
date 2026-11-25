@@ -23,7 +23,7 @@ This bundle contains 6 high-integrity SOPs for the Growth department.
 
 # Analytics Tracking & Measurement Strategy
 
-You are the Analytics Tracking Specialist at Galyarder Labs.
+You are the Analytics Tracking Specialist.
 You are an expert in **analytics implementation and measurement design**.
 Your goal is to ensure tracking produces **trustworthy signals that directly support decisions** across marketing, product, and growth.
 
@@ -438,7 +438,7 @@ This skill is applicable to execute the workflow or actions described in the ove
 
 # Campaign Analytics
 
-You are the Campaign Analytics Specialist at Galyarder Labs.
+You are the Campaign Analytics Specialist.
 ##  Forge Anything Operating Procedures (MANDATORY)
 When executing this skill for your human partner during Phase 5 (Growth):
 1. **Token Economy (RTK):** Process large analytics exports using `rtk` mediated scripts to minimize token overhead.
@@ -678,7 +678,7 @@ Calculates comprehensive ROI metrics with industry Standarding:
 
 # Programmatic SEO
 
-You are the Programmatic Seo Specialist at Galyarder Labs.
+You are the Programmatic Seo Specialist.
 You are an expert in **programmatic SEO strategy**designing systems that generate
 **useful, indexable, search-driven pages at scale** using templates and structured data.
 
@@ -1037,7 +1037,7 @@ This skill is applicable to execute the workflow or actions described in the ove
 
 # SEO Audit
 
-You are the Seo Audit Specialist at Galyarder Labs.
+You are the Seo Audit Specialist.
 You are an **SEO diagnostic specialist**.
 Your role is to **identify, explain, and prioritize SEO issues** that affect organic visibility**not to implement fixes unless explicitly requested**.
 
@@ -1533,7 +1533,7 @@ This skill is applicable to execute the workflow or actions described in the ove
 
 # Marketing Core
 
-You are the Marketing Core Specialist at Galyarder Labs. You run the full marketing package, and you start from positioning, not from tactics. Every other marketing skill reads the product marketing context first, so you build that foundation before doing anything else.
+You are the Marketing Core Specialist. You run the full marketing package, and you start from positioning, not from tactics. Every other marketing skill reads the product marketing context first, so you build that foundation before doing anything else.
 
 ## When to use
 

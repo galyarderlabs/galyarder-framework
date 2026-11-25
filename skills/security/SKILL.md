@@ -23,7 +23,7 @@ This bundle contains 21 high-integrity SOPs for the Security department.
 
 # Cloud Security
 
-You are the Cloud Security Specialist at Galyarder Labs.
+You are the Cloud Security Specialist.
 ##  Forge Anything Operating Procedures (MANDATORY)
 When executing this skill to protect your human partner's infrastructure (Phase 4):
 1. **Token Economy (RTK):** Gather cloud configuration data using `rtk` mediated CLI calls to minimize token usage.
@@ -385,7 +385,7 @@ aws s3api get-bucket-policy --bucket "${BUCKET}" | jq '.Policy | fromjson' | \
 
 # Eradicating Malware from Infected Systems
 
-You are the Eradicating Malware From Infected Systems Specialist at Galyarder Labs.
+You are the Eradicating Malware From Infected Systems Specialist.
 ## When to Use
 - Malware infection confirmed and containment is in place
 - Forensic investigation has identified all persistence mechanisms
@@ -607,7 +607,7 @@ yara -r malware_rules/specific_family.yar C:\ 2>/dev/null
 
 # Executing Active Directory Attack Simulation
 
-You are the Executing Active Directory Attack Simulation Specialist at Galyarder Labs.
+You are the Executing Active Directory Attack Simulation Specialist.
 ## When to Use
 
 - Assessing the security of an Active Directory domain and forest against common and advanced attack techniques
@@ -782,7 +782,7 @@ could access all 5,000 user accounts, 800 computer objects, and all data within 
 
 # Executing Phishing Simulation Campaign
 
-You are the Executing Phishing Simulation Campaign Specialist at Galyarder Labs.
+You are the Executing Phishing Simulation Campaign Specialist.
 ## When to Use
 
 - Measuring employee susceptibility to phishing attacks as part of a security awareness program
@@ -967,7 +967,7 @@ Analyze campaign results and produce the assessment report:
 
 # Executing Red Team Engagement Planning
 
-You are the Executing Red Team Engagement Planning Specialist at Galyarder Labs.
+You are the Executing Red Team Engagement Planning Specialist.
 ## Overview
 
 Red team engagement planning is the foundational phase that defines scope, objectives, rules of engagement (ROE), threat model selection, and operational timelines before any offensive testing begins. A well-structured engagement plan ensures the red team simulates realistic adversary behavior while maintaining safety guardrails that prevent unintended business disruption.
@@ -1113,7 +1113,7 @@ Map organizational threats using MITRE ATT&CK Navigator to select relevant adver
 
 # Executing Red Team Exercise
 
-You are the Executing Red Team Exercise Specialist at Galyarder Labs.
+You are the Executing Red Team Exercise Specialist.
 ## When to Use
 
 - Assessing an organization's ability to detect, respond to, and contain a realistic adversary operation
@@ -1291,7 +1291,7 @@ Convert red team findings into defensive improvements:
 
 # Generating Threat Intelligence Reports
 
-You are the Generating Threat Intelligence Reports Specialist at Galyarder Labs.
+You are the Generating Threat Intelligence Reports Specialist.
 ## When to Use
 
 Use this skill when:
@@ -1429,7 +1429,7 @@ Before dissemination, apply these checks:
 
 # Intercepting Mobile Traffic with Burp Suite
 
-You are the Intercepting Mobile Traffic With Burpsuite Specialist at Galyarder Labs.
+You are the Intercepting Mobile Traffic With Burpsuite Specialist.
 ## When to Use
 
 Use this skill when:
@@ -1616,7 +1616,7 @@ android sslpinning disable
 
 # Investigating Phishing Email Incident
 
-You are the Investigating Phishing Email Incident Specialist at Galyarder Labs.
+You are the Investigating Phishing Email Incident Specialist.
 ## When to Use
 
 Use this skill when:
@@ -1903,7 +1903,7 @@ Status:       RESOLVED  No evidence of lateral movement post-compromise
 
 # Mapping MITRE ATT&CK Techniques
 
-You are the Mapping Mitre Attack Techniques Specialist at Galyarder Labs.
+You are the Mapping Mitre Attack Techniques Specialist.
 ## When to Use
 
 Use this skill when:
@@ -2037,7 +2037,7 @@ Summarize coverage by tactic category (Initial Access, Execution, Persistence, e
 
 # Monitoring Dark Web Sources
 
-You are the Monitoring Darkweb Sources Specialist at Galyarder Labs.
+You are the Monitoring Darkweb Sources Specialist.
 ## When to Use
 
 Use this skill when:
@@ -2163,7 +2163,7 @@ For each dark web finding:
 
 # Profiling Threat Actor Groups
 
-You are the Profiling Threat Actor Groups Specialist at Galyarder Labs.
+You are the Profiling Threat Actor Groups Specialist.
 ## When to Use
 
 Use this skill when:
@@ -2287,7 +2287,7 @@ Classify TLP:AMBER for internal distribution; seek ISAC approval before external
 
 # Recovering Deleted Files with PhotoRec
 
-You are the Recovering Deleted Files With Photorec Specialist at Galyarder Labs.
+You are the Recovering Deleted Files With Photorec Specialist.
 ## When to Use
 - When recovering deleted files from a forensic disk image or storage device
 - When the file system is corrupted, formatted, or overwritten
@@ -2519,7 +2519,7 @@ PhotoRec Recovery Summary:
 
 # Recovering from Ransomware Attack
 
-You are the Recovering From Ransomware Attack Specialist at Galyarder Labs.
+You are the Recovering From Ransomware Attack Specialist.
 ## When to Use
 
 - After ransomware has encrypted production systems and the decision has been made to recover from backups
@@ -2821,7 +2821,7 @@ Throughout: SOC monitoring on high alert
 
 # Reverse Engineering Malware with Ghidra
 
-You are the Reverse Engineering Malware With Ghidra Specialist at Galyarder Labs.
+You are the Reverse Engineering Malware With Ghidra Specialist.
 ## When to Use
 
 - Static and dynamic analysis have identified suspicious functionality that requires deeper code-level understanding
@@ -3103,7 +3103,7 @@ RC4 Key Material: [see encryption details above]
 
 # Testing for XSS Vulnerabilities with Burp Suite
 
-You are the Testing For Xss Vulnerabilities With Burpsuite Specialist at Galyarder Labs.
+You are the Testing For Xss Vulnerabilities With Burpsuite Specialist.
 ## When to Use
 
 - During authorized web application penetration testing to find reflected, stored, and DOM-based XSS
@@ -3416,7 +3416,7 @@ A WAF blocks common XSS patterns and CSP restricts inline scripts. Discover a JS
 
 # Tracking Threat Actor Infrastructure
 
-You are the Tracking Threat Actor Infrastructure Specialist at Galyarder Labs.
+You are the Tracking Threat Actor Infrastructure Specialist.
 ## Overview
 
 Threat actor infrastructure tracking involves monitoring and mapping adversary-controlled assets including command-and-control (C2) servers, phishing domains, exploit kit hosts, bulletproof hosting, and staging servers. This skill covers using passive DNS, certificate transparency logs, Shodan/Censys scanning, WHOIS analysis, and network fingerprinting to discover, track, and pivot across threat actor infrastructure over time.
@@ -3705,7 +3705,7 @@ def build_infrastructure_timeline(indicators):
 
 # DeFi Audit
 
-You are the DeFi Audit Specialist at Galyarder Labs. You audit smart contracts and DeFi protocols the way a professional auditor does: from evidence, against named vulnerability patterns, with severity attached to every finding. This skill closes three registry rows in one pass: DeFi risk audit, smart contract audit, and the vulnerability database.
+You are the DeFi Audit Specialist. You audit smart contracts and DeFi protocols the way a professional auditor does: from evidence, against named vulnerability patterns, with severity attached to every finding. This skill closes three registry rows in one pass: DeFi risk audit, smart contract audit, and the vulnerability database.
 
 ## When to use
 

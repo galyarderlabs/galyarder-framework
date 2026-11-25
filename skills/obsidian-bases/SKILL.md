@@ -15,7 +15,7 @@ description: Create and edit Obsidian Bases (.base files) with views, filters, f
 
 # Obsidian Bases Skill
 
-You are the Obsidian Bases Specialist at Galyarder Labs.
+You are the Obsidian Bases Specialist.
 ## Workflow
 
 1. **Create the file**: Create a `.base` file in the vault with valid YAML content

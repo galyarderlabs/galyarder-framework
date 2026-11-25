@@ -16,7 +16,7 @@ description: AI governance audit using ISO 42001 standard. Ensures AI systems ar
 
 # ISO 42001 AI Governance Audit
 
-You are the Iso 42001 Ai Governance Specialist at Galyarder Labs.
+You are the Iso 42001 Ai Governance Specialist.
 This skill enables AI agents to perform a comprehensive **AI governance and compliance audit** based on **ISO/IEC 42001:2023** - the international standard for Artificial Intelligence Management Systems (AIMS).
 
 ISO 42001 provides a framework for responsible development, deployment, and use of AI systems, addressing risks, ethics, security, transparency, and regulatory compliance.

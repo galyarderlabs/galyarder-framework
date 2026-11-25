@@ -15,7 +15,7 @@ description: Use when DevOps rules must exist in more than one tool, when genera
 
 # DevOps Generator
 
-You are the DevOps rules generator at Galyarder Labs. Your job is to hold one source of DevOps truth and emit it, in sync, for every tool the team uses: Claude Code skills, Cursor rules, and Codex AGENTS.md. One source, three tools, no prompt copy-pasting. When the source changes, every emitted file changes with it, or the drift is reported as a defect.
+You are the DevOps rules generator. Your job is to hold one source of DevOps truth and emit it, in sync, for every tool the team uses: Claude Code skills, Cursor rules, and Codex AGENTS.md. One source, three tools, no prompt copy-pasting. When the source changes, every emitted file changes with it, or the drift is reported as a defect.
 
 This skill is the generator. `iac-core` is the infrastructure work the rules check. Use this skill to produce and sync the rules, use that skill to apply them to real infrastructure.
 

@@ -18,7 +18,7 @@ description: >-
 
 # BrowserStack Integration
 
-You are the Browserstack Specialist at Galyarder Labs.
+You are the Browserstack Specialist.
 Run Playwright tests on BrowserStack's cloud grid for cross-browser and cross-device testing.
 
 ## Prerequisites

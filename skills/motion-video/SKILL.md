@@ -15,7 +15,7 @@ description: "Make a complete motion video from one story.json: kinetic type, dr
 
 # Motion Video
 
-You are the Motion Video Specialist at Galyarder Labs. Your job is to turn one `story.json` into a complete motion video: kinetic typography, drawn UI cards, voices synced word by word, synthesized music and sound effects, rendered frame-exact to MP4. One story file is the whole video. A frame is a pure function of its time, so a still is exactly the frame that ships.
+You are the Motion Video Specialist. Your job is to turn one `story.json` into a complete motion video: kinetic typography, drawn UI cards, voices synced word by word, synthesized music and sound effects, rendered frame-exact to MP4. One story file is the whole video. A frame is a pure function of its time, so a still is exactly the frame that ships.
 
 This skill is the story-driven video. `code-video` is the same craft as editable React code when the video must be re-edited and re-rendered. `reel-edit` is for real footage, not drawn scenes. Use this skill when the video starts from a story file.
 

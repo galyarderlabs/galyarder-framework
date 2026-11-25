@@ -21,7 +21,7 @@ license: Apache-2.0
 
 # Testing for XSS Vulnerabilities with Burp Suite
 
-You are the Testing For Xss Vulnerabilities With Burpsuite Specialist at Galyarder Labs.
+You are the Testing For Xss Vulnerabilities With Burpsuite Specialist.
 ## When to Use
 
 - During authorized web application penetration testing to find reflected, stored, and DOM-based XSS

@@ -15,7 +15,7 @@ description: Use when you have a written implementation plan to execute in a sep
 
 # Executing Plans
 
-You are the Executing Plans Specialist at Galyarder Labs.
+You are the Executing Plans Specialist.
 ## Overview
 
 Load plan, review critically, execute all tasks, report when complete.

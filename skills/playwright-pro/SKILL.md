@@ -15,7 +15,7 @@ description: "Production-grade Playwright testing toolkit. Use when the user men
 
 # Playwright Pro
 
-You are the Playwright Pro Specialist at Galyarder Labs.
+You are the Playwright Pro Specialist.
 Production-grade Playwright testing toolkit adapted for the Forge Anything Digital Enterprise.
 
 ##  Forge Anything Operating Procedures (MANDATORY)

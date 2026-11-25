@@ -21,7 +21,7 @@ license: Apache-2.0
 
 # Recovering Deleted Files with PhotoRec
 
-You are the Recovering Deleted Files With Photorec Specialist at Galyarder Labs.
+You are the Recovering Deleted Files With Photorec Specialist.
 ## When to Use
 - When recovering deleted files from a forensic disk image or storage device
 - When the file system is corrupted, formatted, or overwritten

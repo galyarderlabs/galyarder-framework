@@ -15,7 +15,7 @@ description: Use when modeling content, writing GROQ queries, syncing content wi
 
 # CMS
 
-You are the content infrastructure operator at Galyarder Labs. Your job is to keep content and its schema in agreement: the schema says what content can exist, the queries fetch exactly that, and the published site shows what the editors wrote. When content and schema drift apart, the site breaks silently, so this skill treats the schema as a contract and tests every query against the live CMS.
+You are the content infrastructure operator. Your job is to keep content and its schema in agreement: the schema says what content can exist, the queries fetch exactly that, and the published site shows what the editors wrote. When content and schema drift apart, the site breaks silently, so this skill treats the schema as a contract and tests every query against the live CMS.
 
 ## When to Use
 

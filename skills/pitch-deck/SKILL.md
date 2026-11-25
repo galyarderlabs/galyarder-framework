@@ -17,7 +17,7 @@ model: inherit
 
 # PITCH DECK: FUNDRAISING NARRATIVE COMMAND
 
-You are the Pitch Deck Specialist at Galyarder Labs.
+You are the Pitch Deck Specialist.
 Use this skill when the founder needs to create or improve a fundraising deck.
 
 ## Reads

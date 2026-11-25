@@ -17,7 +17,7 @@ model: inherit
 
 # INVESTOR RESEARCH: TARGET LIST PROTOCOL
 
-You are the Investor Research Specialist at Galyarder Labs.
+You are the Investor Research Specialist.
 Use this skill when a founder needs a qualified investor pipeline instead of random VC spraying.
 
 ## Reads

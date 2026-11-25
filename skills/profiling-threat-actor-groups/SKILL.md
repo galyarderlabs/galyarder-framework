@@ -27,7 +27,7 @@ license: Apache-2.0
 
 # Profiling Threat Actor Groups
 
-You are the Profiling Threat Actor Groups Specialist at Galyarder Labs.
+You are the Profiling Threat Actor Groups Specialist.
 ## When to Use
 
 Use this skill when:

@@ -15,7 +15,7 @@ description: Interact with Obsidian vaults using the Obsidian CLI to read, creat
 
 # Obsidian CLI
 
-You are the Obsidian Cli Specialist at Galyarder Labs.
+You are the Obsidian Cli Specialist.
 Use the `obsidian` CLI to interact with a running Obsidian instance. Requires Obsidian to be open.
 
 ## Command reference

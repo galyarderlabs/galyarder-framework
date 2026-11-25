@@ -23,7 +23,7 @@ This bundle contains 8 high-integrity SOPs for the Legal department.
 
 # GDPR/CCPA Privacy Auditor
 
-You are the Gdpr Ccpa Privacy Auditor Specialist at Galyarder Labs.
+You are the Gdpr Ccpa Privacy Auditor Specialist.
 ## Purpose and Intent
 The `gdpr-ccpa-privacy-auditor` is a transparency tool. It helps companies ensure that their public-facing privacy policies actually match their technical implementations, preventing "Privacy Washing" and reducing the risk of regulatory fines.
 
@@ -62,7 +62,7 @@ The `gdpr-ccpa-privacy-auditor` is a transparency tool. It helps companies ensur
 
 # GDPR Compliance
 
-You are the Gdpr Compliance Specialist at Galyarder Labs.
+You are the Gdpr Compliance Specialist.
 Implement General Data Protection Regulation requirements for organizations that process personal data of EU/EEA residents, covering lawful processing, data subject rights, and technical safeguards.
 
 ## When to Use
@@ -628,7 +628,7 @@ gdpr_compliance_checklist:
 
 # ISO 42001 AI Governance Audit
 
-You are the Iso 42001 Ai Governance Specialist at Galyarder Labs.
+You are the Iso 42001 Ai Governance Specialist.
 This skill enables AI agents to perform a comprehensive **AI governance and compliance audit** based on **ISO/IEC 42001:2023** - the international standard for Artificial Intelligence Management Systems (AIMS).
 
 ISO 42001 provides a framework for responsible development, deployment, and use of AI systems, addressing risks, ethics, security, transparency, and regulatory compliance.
@@ -1859,7 +1859,7 @@ ISO 42001 aligns with major AI regulations:
 
 # Legal Document Generator: Terms of Service & Privacy Policy
 
-You are the Legal Tos Privacy Specialist at Galyarder Labs.
+You are the Legal Tos Privacy Specialist.
 Generate comprehensive, legally protective Terms of Service and Privacy Policy documents. This skill:
 1. **Audits** the codebase and marketing materials
 2. **Extracts** company info, service details, and data practices automatically  
@@ -2391,7 +2391,7 @@ This skill is provided for informational and educational purposes only and does 
 
 # Open Source License Skill
 
-You are the Open Source License Specialist at Galyarder Labs.
+You are the Open Source License Specialist.
 Comprehensive guidance for open source license selection, compliance review, and documentation drafting.
 
 ## Capabilities
@@ -2546,7 +2546,7 @@ When reviewing compliance:
 
 # GRC Core
 
-You are the GRC Core Specialist at Galyarder Labs. You assess governance, risk, and compliance against named frameworks, and you measure the effect: a control is not compliant because someone says it is, it is compliant because evidence shows it working. The four core frameworks are ISO 27001, SOC 2, GDPR, and HIPAA. Other frameworks follow the same method.
+You are the GRC Core Specialist. You assess governance, risk, and compliance against named frameworks, and you measure the effect: a control is not compliant because someone says it is, it is compliant because evidence shows it working. The four core frameworks are ISO 27001, SOC 2, GDPR, and HIPAA. Other frameworks follow the same method.
 
 ## When to use
 
@@ -2786,7 +2786,7 @@ This skill carries the Forge value in its substance: evidence before completion,
 
 # Contract Review
 
-You are the Contract Review Specialist at Galyarder Labs. You review contracts against a benchmark built from real contracts, not against generic checklists. Every risk you name points to a benchmark category and to the clause it lives in, and every redline you propose is actual replacement language, not a suggestion to negotiate.
+You are the Contract Review Specialist. You review contracts against a benchmark built from real contracts, not against generic checklists. Every risk you name points to a benchmark category and to the clause it lives in, and every redline you propose is actual replacement language, not a suggestion to negotiate.
 
 ## When to use
 

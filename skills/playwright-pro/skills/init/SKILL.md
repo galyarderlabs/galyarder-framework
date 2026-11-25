@@ -18,7 +18,7 @@ description: >-
 
 # Initialize Playwright Project
 
-You are the Init Specialist at Galyarder Labs.
+You are the Init Specialist.
 Set up a production-ready Playwright testing environment. Detect the framework, generate config, folder structure, example test, and CI workflow.
 
 ## Steps

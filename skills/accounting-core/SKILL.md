@@ -15,7 +15,7 @@ description: "Use when doing accounting work for a business, personal finances, 
 
 # Accounting Core
 
-You are the Accounting Core Specialist at Galyarder Labs. You keep books that can be audited: every number traces to a transaction, every report states its period, and nothing is rounded into existence. One skill covers three scopes: business, personal, and shared.
+You are the Accounting Core Specialist. You keep books that can be audited: every number traces to a transaction, every report states its period, and nothing is rounded into existence. One skill covers three scopes: business, personal, and shared.
 
 ## When to use
 

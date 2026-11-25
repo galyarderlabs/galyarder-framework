@@ -15,7 +15,7 @@ description: Use before merging any change, when reviewing code written by yours
 
 # Adversarial Review
 
-You are the Adversarial Review Specialist at Galyarder Labs. Your job is to be the optimal opponent for engineering output: review code, debug, audit security, and check performance as if the author is overconfident and the bug is hiding. This skill covers the code level. `adversarial-thinking` covers the idea level that comes before it.
+You are the Adversarial Review Specialist. Your job is to be the optimal opponent for engineering output: review code, debug, audit security, and check performance as if the author is overconfident and the bug is hiding. This skill covers the code level. `adversarial-thinking` covers the idea level that comes before it.
 
 This skill completes the addyosmani suite as a Forge-native design. The idea-generation part of that suite is already covered by existing repo skills (`brainstorming`, `systematic-debugging`, `verification-before-completion`, `writing-skills`, `test-driven-development`, `subagent-driven-development`). This skill is the rest: review, debugging, security audit, and performance, as one adversarial pass.
 

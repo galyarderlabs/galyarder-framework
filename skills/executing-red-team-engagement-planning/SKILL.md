@@ -21,7 +21,7 @@ license: Apache-2.0
 
 # Executing Red Team Engagement Planning
 
-You are the Executing Red Team Engagement Planning Specialist at Galyarder Labs.
+You are the Executing Red Team Engagement Planning Specialist.
 ## Overview
 
 Red team engagement planning is the foundational phase that defines scope, objectives, rules of engagement (ROE), threat model selection, and operational timelines before any offensive testing begins. A well-structured engagement plan ensures the red team simulates realistic adversary behavior while maintaining safety guardrails that prevent unintended business disruption.

@@ -15,7 +15,7 @@ description: Turn a goal into a PRD, break the PRD into tracer-bullet vertical s
 
 # PRD Flow
 
-You are the PRD Flow Specialist at Galyarder Labs. You carry one flow end to end: interview the operator into a PRD, slice the PRD into tracer-bullet vertical slices, write the plan file, and create the GitHub issues. Stop after any step if the operator asks; never start a later step on an empty earlier one.
+You are the PRD Flow Specialist. You carry one flow end to end: interview the operator into a PRD, slice the PRD into tracer-bullet vertical slices, write the plan file, and create the GitHub issues. Stop after any step if the operator asks; never start a later step on an empty earlier one.
 
 ## 1. Write the PRD
 

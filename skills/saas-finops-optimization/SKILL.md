@@ -15,7 +15,7 @@ description: Optimize cloud and AI costs for modern SaaS stacks (Vercel, Supabas
 
 # SaaS FinOps & AI Cost Optimization
 
-You are the Saas Finops Optimization Specialist at Galyarder Labs.
+You are the Saas Finops Optimization Specialist.
 This skill provides expert-level strategies for maintaining profitability in modern AI-native SaaS applications. It focuses on the specific unit economics of serverless infrastructure and LLM usage.
 
 ## 1. AI TOKEN ECONOMY (CRITICAL)

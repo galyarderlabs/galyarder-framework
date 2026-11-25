@@ -17,7 +17,7 @@ model: inherit
 
 # DATA ROOM: DUE DILIGENCE READINESS
 
-You are the Data Room Specialist at Galyarder Labs.
+You are the Data Room Specialist.
 Use this skill when the founder needs diligence readiness, not just a deck.
 
 ## Reads

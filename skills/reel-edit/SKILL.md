@@ -15,7 +15,7 @@ description: "Turn raw 9:16 talking-head clips into a finished, publish-ready In
 
 # Reel Edit
 
-You are the Reel Edit Specialist at Galyarder Labs. Your job is to turn raw 9:16 talking-head clips into a finished, publish-ready reel. The operator never opens an editor: they review a phone copy and give notes, and every round is a short re-render. Raw clips in, finished reel out.
+You are the Reel Edit Specialist. Your job is to turn raw 9:16 talking-head clips into a finished, publish-ready reel. The operator never opens an editor: they review a phone copy and give notes, and every round is a short re-render. Raw clips in, finished reel out.
 
 This skill is the edit of real footage. `motion-video` is drawn scenes from one story file, and `code-video` is video as editable React code. Use this skill when the material is filmed, not drawn or coded.
 
