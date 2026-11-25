@@ -69,7 +69,7 @@ jobs:
         run: |
           set -euo pipefail
           OUT=/tmp/forge-scaffold-proof
-          test "$(ls "$OUT/skills" | wc -l)" -eq 38
+          test "$(ls "$OUT/skills" | wc -l)" -eq 33
           test "$(ls "$OUT/agents" | wc -l)" -eq 18
           test "$(ls "$OUT/commands" | wc -l)" -eq 25
           test -f "$OUT/README.md"
@@ -120,7 +120,7 @@ jobs:
         run: |
           set -euo pipefail
           ./crates/forge/target/release/forge scaffold --name ci-proof /tmp/forge-cli-proof
-          test "$(ls /tmp/forge-cli-proof/skills | wc -l)" -eq 38
+          test "$(ls /tmp/forge-cli-proof/skills | wc -l)" -eq 33
           test "$(ls /tmp/forge-cli-proof/agents | wc -l)" -eq 18
           test "$(ls /tmp/forge-cli-proof/commands | wc -l)" -eq 25
           test -f /tmp/forge-cli-proof/README.md
