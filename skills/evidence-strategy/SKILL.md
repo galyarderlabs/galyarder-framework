@@ -72,11 +72,11 @@ Strategy and roadmap documents with evidence attached to every claim, plus the P
 
 ## How this skill carries the Forge value
 
-No AI slop: strategy is claims plus evidence, not confident adjectives. Flow goal to shipped: the lifecycle ends at launch or at a recorded retire decision, not at a document. Everything evidence-based: this is the whole method, not a garnish. Report by work: each phase reports what was decided, what evidence supported it, and what is still unknown. Use related skills: `write-a-prd`, `prd-to-plan`, and `prd-to-issues` for the develop phase, `market-research` for the determine phase, and `ubiquitous-language` for shared terms. Update the agent memory: record each strategy decision, its evidence, and its open assumptions in the product-manager memory.
+No AI slop: strategy is claims plus evidence, not confident adjectives. Flow goal to shipped: the lifecycle ends at launch or at a recorded retire decision, not at a document. Everything evidence-based: this is the whole method, not a garnish. Report by work: each phase reports what was decided, what evidence supported it, and what is still unknown. Use related skills: `prd-flow` for the develop phase, `market-research` for the determine phase, and `ubiquitous-language` for shared terms. Update the agent memory: record each strategy decision, its evidence, and its open assumptions in the product-manager memory.
 
 ## Related skills
 
-- `write-a-prd`, `prd-to-plan`, `prd-to-issues`, `ubiquitous-language`
+- `prd-flow`, `ubiquitous-language`
 - `market-research`, `writing-plans`, `executing-plans`
 
 ## Research source
