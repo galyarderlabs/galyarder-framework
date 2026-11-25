@@ -8,9 +8,9 @@ Security problems go privately to the maintainer; see
 ## Ground rules
 
 - **The value leads.** Essential skills for the full lifecycle of an AI
-  agent, in one place, from goal to shipped. If a change adds a skill,
+  agent, in one place, from idea to give back. If a change adds a skill,
   agent, or command, it must fit the lifecycle and the department it
-  belongs to. The loop ends at distribution.
+  belongs to. The flow ends at give back.
 - **One source.** Skills, agents, and commands live once in `skills/`,
   `agents/`, and `commands/`, and that is the source: edit them directly.
   The old mirrors (`docs/skills`, `docs/agents`, `docs/commands`) are

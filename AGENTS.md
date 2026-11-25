@@ -2,15 +2,17 @@
 
 Forge anything with AI agents.
 
-Using an AI agent should not be just generating code, and the agent should not be confused. Forge Anything gives the agent the right rules and the workflow to do the work the right way, so the work is planned, built, checked against evidence, and shipped. The loop ends at distribution. That is the value: rules plus a workflow, in your company, and in your life.
+Using an AI agent should not be just generating code, and the agent should not be confused. Forge Anything gives the agent the right rules and the workflow to do the work the right way, so the work is planned, built, checked against evidence, shipped, earned from, and given back. The build loop ends at distribution; the flow ends at give back. That is the value: rules plus a workflow, in your company, and in your life.
 
 ## How it works
 
-1. **Goal**: say what you want, in plain words.
-2. **Plan**: the work gets a plan, with the rules and the workflow that fit it.
-3. **Build**: the agent does the work, with tests before anything ships.
-4. **Verify**: every claim is checked against evidence before it counts.
-5. **Ship**: the work goes out. Distribution is where the loop ends.
+One flow, five stages:
+
+1. **Ide**: turn a spark into something worth building.
+2. **Goal**: say what you want, in plain words. The work gets a plan, with the rules and the workflow that fit it.
+3. **Ship**: the agent builds it, checks every claim against evidence, and ships it. Distribution is where the build loop ends.
+4. **Earn**: price it, sell it, collect it.
+5. **Give back**: return from what you earned: psychology, morality, gratitude, stoicism, the uncomfortable facts behind finance and politics, how to play in this life.
 
 The full workflow is in `WORKFLOW.md`.
 
@@ -33,7 +35,7 @@ The seventeen departments are how the work is organized, so agents know where wo
 
 ### Forge core
 
-The coordinators. `forge-ceo` directs the work. `forge-cfo-coo` owns operations and finance. `forge-cmo` owns growth and message. `forge-cto` owns architecture and engineering. `forge-specialist` handles work that does not fit one department.
+The coordinators. `forge-ceo` directs the work. `forge-cfo` owns finance. `forge-coo` owns operations. `forge-cmo` owns growth and message. `forge-cto` owns architecture and engineering. `forge-specialist` handles work that does not fit one department.
 
 Core skills: `using-forge-anything`, `writing-plans`, `executing-plans`, `verification-before-completion`, `subagent-driven-development`, `brainstorming`, `company-creator`, `writing-skills`, `doc-maintenance`.
 
@@ -47,7 +49,7 @@ Skills: `founder-context`, `pitch-deck`, `investor-research`.
 
 Product direction, requirements, scope, roadmap, and issue breakdown.
 
-Leads: `product-manager`, `planner`.
+Lead: `product-manager`.
 
 Skills: `prd-flow`, `ubiquitous-language`.
 
@@ -55,7 +57,7 @@ Skills: `prd-flow`, `ubiquitous-language`.
 
 Architecture, implementation, tests, code quality, delivery, and refactoring.
 
-Leads: `elite-developer`, `super-architect`.
+Leads: `software-engineer`, `super-architect`.
 
 Skills: `test-driven-development`, `systematic-debugging`, `adversarial-review`, `finishing-a-development-branch`, `release`, `create-agent-adapter`.
 
@@ -63,7 +65,7 @@ Skills: `test-driven-development`, `systematic-debugging`, `adversarial-review`,
 
 Design, video, writing, images, branding, and content creation.
 
-Leads: `ui-ux-designer`, `interface-designer`.
+Lead: `ui-ux-designer`.
 
 Skills: `social-production`, `writing-skills`.
 

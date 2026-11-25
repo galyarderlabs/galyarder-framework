@@ -29,9 +29,9 @@ Forge Anything surfaces must show:
 - skills,
 - commands,
 - workflows,
-- the five phases (Goal, Plan, Build, Verify, Ship),
+- the five stages (Ide, Goal, Ship, Earn, Give back),
 - tests and evidence,
-- distribution (where the loop ends).
+- distribution, then give back (where the flow ends).
 
 Do not make Forge Anything look like:
 
@@ -86,10 +86,10 @@ Do not turn the whole product into a monospace wall. Do not set body text in ser
 
 Good Forge Anything diagrams show:
 
-- the five phases (Goal, Plan, Build, Verify, Ship),
+- the five stages (Ide, Goal, Ship, Earn, Give back),
 - agent delegation,
 - test gates and evidence checks,
-- distribution (where the loop ends),
+- distribution, then give back (where the flow ends),
 - source-of-truth files.
 
 Reject diagrams that are only decorative node webs.

@@ -21,25 +21,27 @@ Using an AI agent shouldn't be just generating code, and the agent shouldn't be 
 
 Left to itself, an AI agent takes the shortest path and stops at a draft. It has no rules for what comes after the code, no clean place to start, no way to reach the tools and people it needs, and no way to ship. It gets confused about what to do next, and the work ends at a draft, not at a shipped thing.
 
-Forge Anything is the whole system, not one piece. The rules and the workflow, the scaffold to start clean, the CLI to build, serve, and check, the MCP to carry it to any agent or chatbot, and the plugins to put it in the harness the agent already uses. One system, from a goal to a shipped result, in the company and in life.
+Forge Anything is the whole system, not one piece. The rules and the workflow, the scaffold to start clean, the CLI to build, serve, and check, the MCP to carry it to any agent or chatbot, and the plugins to put it in the harness the agent already uses. One system, from an idea to shipped work, earned from and given back, in the company and in life.
 
-It covers the whole company and life, not just code: product, growth, security, infrastructure, legal and finance, and knowledge, alongside engineering. The pieces fit together and the loop ends at distribution, so the work ships instead of sitting as a draft.
+It covers the whole company and life, not just code: product, growth, security, infrastructure, legal and finance, and knowledge, alongside engineering. The pieces fit together and the flow ends at give back, so the work ships instead of sitting as a draft.
 
 ## How it works
 
-1. **Goal**: say what you want, in plain words.
-2. **Plan**: the work gets a plan, with the rules and the workflow that fit it.
-3. **Build**: the agent does the work, with tests before anything ships.
-4. **Verify**: every claim is checked against evidence before it counts.
-5. **Ship**: the work goes out. Distribution is where the loop ends.
+One flow, five stages:
 
-Three pieces make the loop work:
+1. **Ide**: turn a spark into something worth building.
+2. **Goal**: say what you want, in plain words. The work gets a plan, with the rules and the workflow that fit it.
+3. **Ship**: the agent builds it, checks every claim against evidence, and ships it. Distribution is where the build loop ends.
+4. **Earn**: price it, sell it, collect it.
+5. **Give back**: return from what you earned: psychology, morality, gratitude, stoicism, the uncomfortable facts behind finance and politics, how to play in this life.
+
+Three pieces make the flow work:
 
 - **Scaffold**: `forge scaffold` drops a tidy repo into a folder, with the curated skills, agents, and commands. Start clean, not from a blank page.
 - **CLI**: `forge` is the command line tool. It scaffolds a project, imports company packages ([docs/company-import.md](docs/company-import.md)), serves the MCP, and smoke-tests the repo.
 - **MCP**: `forge mcp` is the MCP server. It gives any agent, or even a regular chatbot, the tools to read skills, agents, and commands, and to scaffold a project. Install the MCP, not the skills, and the agent gets the tools plus the workflow.
 
-The full workflow, with the five phases in detail, is in [WORKFLOW.md](WORKFLOW.md). The harness plugins are in [docs/INTEGRATION.md](docs/INTEGRATION.md).
+The full workflow, with the goal-to-ship phases in detail, is in [WORKFLOW.md](WORKFLOW.md). The harness plugins are in [docs/INTEGRATION.md](docs/INTEGRATION.md).
 
 ## How it compares
 
@@ -50,7 +52,7 @@ Wondering how this stacks up against [Superpowers](https://github.com/obra/super
 - Human-directed: public, financial, and production actions need a human's approval.
 - Evidence before completion: no claim counts without proof you can check.
 - Tests before fixes: nothing ships unverified.
-- Ship it: the loop ends at distribution, not at a draft.
+- Ship it: distribution is where the build loop ends, not at a draft.
 
 ## Install
 

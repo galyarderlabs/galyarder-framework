@@ -1,7 +1,6 @@
 # Forge Anything Workflow
 
-The workflow turns a goal into reviewed, shipped work. The loop is Goal,
-Plan, Build, Verify, Ship, and it ends at distribution. Coding is one
+The workflow turns an idea into reviewed, shipped, earned-from work, and back into values. The flow is Ide, Goal, Ship, Earn, Give back; the goal-to-ship loop inside it is Goal, Plan, Build, Verify, Ship, and it ends at distribution. Coding is one
 surface; the workflow covers the whole company and life, not just code.
 
 ## How the pieces fit
@@ -137,5 +136,31 @@ Use the cheapest proof that actually verifies the claim.
 2. Save reusable knowledge into docs, skills, decisions, or reports.
 3. Update the issue/task state and name the evidence used.
 4. Hand the final decision back to the operator when public, external, financial, or irreversible action is involved.
+
+---
+
+## Phase 6: Earn
+
+**Typical owners:** `finops-manager` (plus `trading-quant`, `trading-discipline`, `accounting-ops` once their agent folders land)
+
+**Common skills:** `finance-based-pricing-advisor`, `saas-finops-optimization`, `payments-core`, `quant-trading`, `invoice-lifecycle`
+
+1. Price the work: cost, value, and the price the market bears.
+2. Collect payment through the real payment path, with an invoice for every charge.
+3. Reconcile what came in against what was expected; name every gap.
+4. Track runway and ROI so the operator knows what the work earned.
+
+---
+
+## Phase 7: Give back
+
+**Typical owners:** the operator
+
+**Common skills:** `journal-framework`, `reflective-listening`, `faith-practice`, `personal-finance`
+
+1. Name what was earned, in plain words, before anything is returned.
+2. Return from it: share, teach, or contribute what the work proved.
+3. Record the values behind the return, not just the act.
+4. Check the uncomfortable facts behind finance and politics before claiming to understand them.
 
 **Core rule:** do not call work complete until the relevant artifact exists and the verification path has been exercised.
