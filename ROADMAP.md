@@ -87,6 +87,8 @@ What is not there yet:
   the AGENTS.md rewrite, so this can close once that lands), #207 (guard
   manifest and generated-surface parity in CI), #19 (listing in
   awesome-codex-plugins).
+- **Open items.** The full list of everything not done yet, in one
+  place: `docs/open-items.md`.
 
 ## Later
 
