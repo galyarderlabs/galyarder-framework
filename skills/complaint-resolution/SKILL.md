@@ -1,6 +1,6 @@
 ---
 name: complaint-resolution
-description: Use when a customer complains: gather the full context across Gmail, HubSpot, and PayPal, draft a tone-matched response, and resolve it end to end with an approval gate on every send and refund.
+description: "Use when a customer complains: gather the full context across Gmail, HubSpot, and PayPal, draft a tone-matched response, and resolve it end to end with an approval gate on every send and refund."
 ---
 ## Forge Anything operating protocols
 

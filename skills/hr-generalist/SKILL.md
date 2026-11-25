@@ -1,6 +1,6 @@
 ---
 name: hr-generalist
-description: Use when running people operations against a benchmark: workforce planning, performance cycles, compensation strategy, org design, culture and engagement, succession, and DEI, with every process naming the benchmark it is judged by.
+description: "Use when running people operations against a benchmark: workforce planning, performance cycles, compensation strategy, org design, culture and engagement, succession, and DEI, with every process naming the benchmark it is judged by."
 ---
 ## Forge Anything operating protocols
 

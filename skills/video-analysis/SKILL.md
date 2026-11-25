@@ -1,6 +1,6 @@
 ---
 name: video-analysis
-description: Reverse-engineer any video shot by shot: detect shots, classify each one as filmed, AI-generated, or coded with visual evidence checkable in its frame, then write a remake plan that can be executed shot by shot. Use when someone shares a reference video and asks how it was made, whether it is AI, what it uses, or how to remake it.
+description: "Reverse-engineer any video shot by shot: detect shots, classify each one as filmed, AI-generated, or coded with visual evidence checkable in its frame, then write a remake plan that can be executed shot by shot. Use when someone shares a reference video and asks how it was made, whether it is AI, what it uses, or how to remake it."
 ---
 ## Forge Anything operating protocols
 

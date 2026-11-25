@@ -1,6 +1,6 @@
 ---
 name: code-video
-description: Build and edit video as React code with Remotion: B-roll, captions, and sound design as components that render frame by frame into MP4. Use when someone asks for a motion graphic, a Reel or Short, a promo or launch video, an intro or outro, captions over footage, or to fix a video that looks basic or generic, and when the video must stay editable and re-renderable.
+description: "Build and edit video as React code with Remotion: B-roll, captions, and sound design as components that render frame by frame into MP4. Use when someone asks for a motion graphic, a Reel or Short, a promo or launch video, an intro or outro, captions over footage, or to fix a video that looks basic or generic, and when the video must stay editable and re-renderable."
 ---
 ## Forge Anything operating protocols
 

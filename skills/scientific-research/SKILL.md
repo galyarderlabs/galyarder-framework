@@ -1,6 +1,6 @@
 ---
 name: scientific-research
-description: Use when doing full scientific research: literature review, paper lookup across scholarly databases, hypothesis generation, study and experimental design, statistical analysis, peer review, and scientific writing. Every claim carries a citation to a real scientific database.
+description: "Use when doing full scientific research: literature review, paper lookup across scholarly databases, hypothesis generation, study and experimental design, statistical analysis, peer review, and scientific writing. Every claim carries a citation to a real scientific database."
 ---
 ## Forge Anything operating protocols
 

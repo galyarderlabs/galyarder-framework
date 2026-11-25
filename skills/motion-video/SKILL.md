@@ -1,6 +1,6 @@
 ---
 name: motion-video
-description: Make a complete motion video from one story.json: kinetic type, drawn media cards, voices synced word by word, synthesized music and sound effects, rendered frame-exact to MP4. Use when someone asks for an animated explainer, a motion graphic, a product promo, a teaser, or a short vertical video from a single story file.
+description: "Make a complete motion video from one story.json: kinetic type, drawn media cards, voices synced word by word, synthesized music and sound effects, rendered frame-exact to MP4. Use when someone asks for an animated explainer, a motion graphic, a product promo, a teaser, or a short vertical video from a single story file."
 ---
 ## Forge Anything operating protocols
 

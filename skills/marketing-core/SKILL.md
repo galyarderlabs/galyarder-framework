@@ -1,6 +1,6 @@
 ---
 name: marketing-core
-description: Use when planning or executing marketing: positioning and messaging first, then classic SEO, AI search, copywriting, CRO, and analytics, with every claim checkable against data.
+description: "Use when planning or executing marketing: positioning and messaging first, then classic SEO, AI search, copywriting, CRO, and analytics, with every claim checkable against data."
 ---
 ## Forge Anything operating protocols
 

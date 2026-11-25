@@ -1,6 +1,6 @@
 ---
 name: faith-practice
-description: Use when the operator asks a question about Islam: evidence-first answers from the Quran and authentic Sunnah, then named scholars, with Shafi'i fiqh as the default and replies in English or Bahasa Indonesia to match the operator.
+description: "Use when the operator asks a question about Islam: evidence-first answers from the Quran and authentic Sunnah, then named scholars, with Shafi'i fiqh as the default and replies in English or Bahasa Indonesia to match the operator."
 ---
 ## Forge Anything operating protocols
 

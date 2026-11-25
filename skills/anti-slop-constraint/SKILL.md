@@ -1,6 +1,6 @@
 ---
 name: anti-slop-constraint
-description: System-level writing constraints active automatically on every write: banned vocabulary, structural variety, punctuation discipline, accuracy rules, and voice calibration. Use on any writing task where the output must not read as AI generated. Marketing copy may use the humanizer alternative instead.
+description: "System-level writing constraints active automatically on every write: banned vocabulary, structural variety, punctuation discipline, accuracy rules, and voice calibration. Use on any writing task where the output must not read as AI generated. Marketing copy may use the humanizer alternative instead."
 ---
 ## Forge Anything operating protocols
 

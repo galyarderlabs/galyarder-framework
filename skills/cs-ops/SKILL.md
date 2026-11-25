@@ -1,6 +1,6 @@
 ---
 name: cs-ops
-description: Use when running the scheduled customer success operations: QBR builder on demand, weekly churn warning and expansion finder, weekly ticket themes, daily meeting recaps, and the monthly retention report.
+description: "Use when running the scheduled customer success operations: QBR builder on demand, weekly churn warning and expansion finder, weekly ticket themes, daily meeting recaps, and the monthly retention report."
 ---
 ## Forge Anything operating protocols
 

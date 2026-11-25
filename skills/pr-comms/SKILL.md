@@ -1,6 +1,6 @@
 ---
 name: pr-comms
-description: Use when running public relations for a company or a creator: press releases, press kits, media pitches and lists, coverage reports, crisis communications, events, awards, sponsorships, and media production for producers, journalists, podcasters, and YouTubers. Every claim checkable against its source; every crisis plan has scenarios and an owner.
+description: "Use when running public relations for a company or a creator: press releases, press kits, media pitches and lists, coverage reports, crisis communications, events, awards, sponsorships, and media production for producers, journalists, podcasters, and YouTubers. Every claim checkable against its source; every crisis plan has scenarios and an owner."
 ---
 ## Forge Anything operating protocols
 

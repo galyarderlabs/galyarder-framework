@@ -1,6 +1,6 @@
 ---
 name: coding-discipline
-description: Use when writing or changing code under the four Karpathy principles: think before coding, simplicity first, surgical changes, and goal-driven execution with verifiable success criteria.
+description: "Use when writing or changing code under the four Karpathy principles: think before coding, simplicity first, surgical changes, and goal-driven execution with verifiable success criteria."
 ---
 ## Forge Anything operating protocols
 

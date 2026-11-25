@@ -1,6 +1,6 @@
 ---
 name: style-rewrite
-description: Rewrite AI output into a personal style automatically, from the bottom up: real examples and a style profile, not top-down rules. Use when asked to rewrite in my style, make this sound like me, transform this, or sound like me, for emails, messages, and professional writing.
+description: "Rewrite AI output into a personal style automatically, from the bottom up: real examples and a style profile, not top-down rules. Use when asked to rewrite in my style, make this sound like me, transform this, or sound like me, for emails, messages, and professional writing."
 ---
 ## Forge Anything operating protocols
 

@@ -1,6 +1,6 @@
 ---
 name: document-suite
-description: Use when creating, reading, editing, or converting office documents in any format: Word (.docx), PDF, PowerPoint (.pptx), Excel (.xlsx), or a co-authored doc such as a proposal, spec, or decision doc. Each format has its own value and its own method.
+description: "Use when creating, reading, editing, or converting office documents in any format: Word (.docx), PDF, PowerPoint (.pptx), Excel (.xlsx), or a co-authored doc such as a proposal, spec, or decision doc. Each format has its own value and its own method."
 ---
 ## Forge Anything operating protocols
 

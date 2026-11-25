@@ -1,6 +1,6 @@
 ---
 name: messaging-infra
-description: Use when sending transactional email or multi-channel notifications (email, SMS, push, in-app inbox, chat) through the messaging providers. Two distinct slots: single-channel transactional email, and multi-channel orchestration with templates, journeys, preferences, and delivery logs.
+description: "Use when sending transactional email or multi-channel notifications (email, SMS, push, in-app inbox, chat) through the messaging providers. Two distinct slots: single-channel transactional email, and multi-channel orchestration with templates, journeys, preferences, and delivery logs."
 ---
 ## Forge Anything operating protocols
 

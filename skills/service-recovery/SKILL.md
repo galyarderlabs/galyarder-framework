@@ -1,6 +1,6 @@
 ---
 name: service-recovery
-description: Use when a service has failed across teams or systems: define detection, ownership, customer communication, compensation boundaries, escalation, and closure evidence so the failure ends with one understandable recovery path.
+description: "Use when a service has failed across teams or systems: define detection, ownership, customer communication, compensation boundaries, escalation, and closure evidence so the failure ends with one understandable recovery path."
 ---
 ## Forge Anything operating protocols
 

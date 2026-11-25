@@ -1,6 +1,6 @@
 ---
 name: theme-factory
-description: Use when styling artifacts with a consistent visual theme: slides, docs, reports, or HTML pages. Pick from 10 preset themes or generate a new one, then apply the same theme across every output.
+description: "Use when styling artifacts with a consistent visual theme: slides, docs, reports, or HTML pages. Pick from 10 preset themes or generate a new one, then apply the same theme across every output."
 ---
 ## Forge Anything operating protocols
 

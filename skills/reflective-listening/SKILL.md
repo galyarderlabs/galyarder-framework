@@ -1,6 +1,6 @@
 ---
 name: reflective-listening
-description: Use when the operator wants to talk something through and be heard first: a reflection partner that listens, names what it hears at several depths, and guides without fast advice, positivity slogans, or judgment.
+description: "Use when the operator wants to talk something through and be heard first: a reflection partner that listens, names what it hears at several depths, and guides without fast advice, positivity slogans, or judgment."
 ---
 ## Forge Anything operating protocols
 

@@ -1,6 +1,6 @@
 ---
 name: social-production
-description: Produce and publish social content across X, LinkedIn, Threads, Bluesky, and Mastodon: content production plus scheduling and publishing through Typefully. Use when the operator wants posts, threads, carousels, short video, a content calendar, or a publish schedule across platforms.
+description: "Produce and publish social content across X, LinkedIn, Threads, Bluesky, and Mastodon: content production plus scheduling and publishing through Typefully. Use when the operator wants posts, threads, carousels, short video, a content calendar, or a publish schedule across platforms."
 ---
 ## Forge Anything operating protocols
 

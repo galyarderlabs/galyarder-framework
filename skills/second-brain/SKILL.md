@@ -1,6 +1,6 @@
 ---
 name: second-brain
-description: Use when building or maintaining a self-organizing Obsidian second brain: ingesting sources into a wiki with provenance per claim, running research-first autoresearch, and keeping the vault organized, linted, and verifiable.
+description: "Use when building or maintaining a self-organizing Obsidian second brain: ingesting sources into a wiki with provenance per claim, running research-first autoresearch, and keeping the vault organized, linted, and verifiable."
 ---
 ## Forge Anything operating protocols
 

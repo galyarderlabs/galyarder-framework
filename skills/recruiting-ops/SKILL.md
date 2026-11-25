@@ -1,6 +1,6 @@
 ---
 name: recruiting-ops
-description: Use when running a live recruiting search the operator-vetted way: define the role requirements first, rank candidates into a slate, review the slate when anything changes, and close with a blameless retrospective.
+description: "Use when running a live recruiting search the operator-vetted way: define the role requirements first, rank candidates into a slate, review the slate when anything changes, and close with a blameless retrospective."
 ---
 ## Forge Anything operating protocols
 

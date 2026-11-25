@@ -1,6 +1,6 @@
 ---
 name: video-generation
-description: Generate video two ways: HTML rendered to MP4 for motion graphics, explainers, and launch films, and a multi-model gateway for AI-generated shots that code alone cannot make, with every parameter recorded so the output plays and can be reproduced. Use when someone asks for a generated video, a launch film, an explainer, a vertical clip, or an AI shot.
+description: "Generate video two ways: HTML rendered to MP4 for motion graphics, explainers, and launch films, and a multi-model gateway for AI-generated shots that code alone cannot make, with every parameter recorded so the output plays and can be reproduced. Use when someone asks for a generated video, a launch film, an explainer, a vertical clip, or an AI shot."
 ---
 ## Forge Anything operating protocols
 

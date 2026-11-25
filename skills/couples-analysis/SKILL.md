@@ -1,6 +1,6 @@
 ---
 name: couples-analysis
-description: Use when the operator pastes a couple's dialogue and wants a structured, evidence-based analysis: Gottman four horsemen and repair attempts, attachment dimensions, NVC compliance, cognitive distortions, and communication dynamics, with limits stated honestly.
+description: "Use when the operator pastes a couple's dialogue and wants a structured, evidence-based analysis: Gottman four horsemen and repair attempts, attachment dimensions, NVC compliance, cognitive distortions, and communication dynamics, with limits stated honestly."
 ---
 ## Forge Anything operating protocols
 

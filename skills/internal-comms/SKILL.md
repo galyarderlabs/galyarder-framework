@@ -1,6 +1,6 @@
 ---
 name: internal-comms
-description: Use when writing internal company communications: 3P updates (Progress, Plans, Problems), company newsletters, FAQ answers, status reports, leadership updates, project updates, or incident reports. Each type follows its own company format.
+description: "Use when writing internal company communications: 3P updates (Progress, Plans, Problems), company newsletters, FAQ answers, status reports, leadership updates, project updates, or incident reports. Each type follows its own company format."
 ---
 ## Forge Anything operating protocols
 

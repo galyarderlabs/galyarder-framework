@@ -1,6 +1,6 @@
 ---
 name: public-speaking
-description: Prepare and deliver a talk: talk prep, persuasion theory, storytelling, body language, and slide-by-slide deck narrative. Use when the operator has a talk, pitch, keynote, or webinar to build, improve, or rehearse. Output is a talk script plus a deck ready to deliver.
+description: "Prepare and deliver a talk: talk prep, persuasion theory, storytelling, body language, and slide-by-slide deck narrative. Use when the operator has a talk, pitch, keynote, or webinar to build, improve, or rehearse. Output is a talk script plus a deck ready to deliver."
 ---
 ## Forge Anything operating protocols
 

@@ -1,6 +1,6 @@
 ---
 name: cash-reporting
-description: Use when producing periodic cash reports: the weekly cash brief, a cash-flow forecast, year-end financials, or a client migration, with every number traceable to a transaction.
+description: "Use when producing periodic cash reports: the weekly cash brief, a cash-flow forecast, year-end financials, or a client migration, with every number traceable to a transaction."
 ---
 ## Forge Anything operating protocols
 

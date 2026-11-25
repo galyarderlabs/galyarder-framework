@@ -1,6 +1,6 @@
 ---
 name: design-engineering
-description: Use when building or reviewing UI motion and polish: animations, transitions, press and hover states, popover origin, timing, and the invisible details that make an interface feel right. Every session's design corrections become rules in DESIGN.md.
+description: "Use when building or reviewing UI motion and polish: animations, transitions, press and hover states, popover origin, timing, and the invisible details that make an interface feel right. Every session's design corrections become rules in DESIGN.md."
 ---
 ## Forge Anything operating protocols
 

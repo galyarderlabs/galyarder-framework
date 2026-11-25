@@ -1,6 +1,6 @@
 ---
 name: churn-prevention
-description: Use when an account is at risk of leaving: build the cancel flow, the save offer map, the dunning sequence, and the win-back plan, with every at-risk account tied to a signal and a plan.
+description: "Use when an account is at risk of leaving: build the cancel flow, the save offer map, the dunning sequence, and the win-back plan, with every at-risk account tied to a signal and a plan."
 ---
 ## Forge Anything operating protocols
 

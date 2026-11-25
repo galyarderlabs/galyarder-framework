@@ -1,6 +1,6 @@
 ---
 name: accounting-core
-description: Use when doing accounting work for a business, personal finances, or shared books: P and L, budgeting, cash flow, tax prep, or debt payoff, with every number traceable to a transaction.
+description: "Use when doing accounting work for a business, personal finances, or shared books: P and L, budgeting, cash flow, tax prep, or debt payoff, with every number traceable to a transaction."
 ---
 ## Forge Anything operating protocols
 

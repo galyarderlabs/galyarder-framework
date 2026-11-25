@@ -1,6 +1,6 @@
 ---
 name: cs-lifecycle
-description: Use when running a customer through the full success lifecycle: onboarding, health scoring, QBRs, and expansion, with a health score that can be recomputed from its data.
+description: "Use when running a customer through the full success lifecycle: onboarding, health scoring, QBRs, and expansion, with a health score that can be recomputed from its data."
 ---
 ## Forge Anything operating protocols
 

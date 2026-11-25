@@ -1,6 +1,6 @@
 ---
 name: talent-acquisition
-description: Use when hiring: define the role, design the job description and interview scorecards, run the sourcing plan, and read the hiring funnel by the numbers at each stage.
+description: "Use when hiring: define the role, design the job description and interview scorecards, run the sourcing plan, and read the hiring funnel by the numbers at each stage."
 ---
 ## Forge Anything operating protocols
 

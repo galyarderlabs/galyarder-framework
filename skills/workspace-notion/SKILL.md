@@ -1,6 +1,6 @@
 ---
 name: workspace-notion
-description: Use when searching a Notion workspace and turning what is there into structured research documentation: briefs, summaries, comparisons, or comprehensive reports, each with citations back to its Notion sources.
+description: "Use when searching a Notion workspace and turning what is there into structured research documentation: briefs, summaries, comparisons, or comprehensive reports, each with citations back to its Notion sources."
 ---
 ## Forge Anything operating protocols
 

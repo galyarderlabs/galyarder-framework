@@ -1,6 +1,6 @@
 ---
 name: product-demo
-description: Show what a product does as a live stick-figure scene on a landing page: one canvas, no dependencies, a figure working a machine or prop that makes the feature visible in one glance. Use when someone asks for a stick-figure animation, a worker or crew scene, an animated explainer or doodle widget for a landing page, or a product feature shown as a little animated scene.
+description: "Show what a product does as a live stick-figure scene on a landing page: one canvas, no dependencies, a figure working a machine or prop that makes the feature visible in one glance. Use when someone asks for a stick-figure animation, a worker or crew scene, an animated explainer or doodle widget for a landing page, or a product feature shown as a little animated scene."
 ---
 ## Forge Anything operating protocols
 

@@ -1,6 +1,6 @@
 ---
 name: relationship-maintenance
-description: Use when the operator wants to maintain and improve an ongoing relationship over the long term: a partner profile built in five layers, a relationship health check, and scenario-specific guidance grounded in attachment theory and social exchange theory.
+description: "Use when the operator wants to maintain and improve an ongoing relationship over the long term: a partner profile built in five layers, a relationship health check, and scenario-specific guidance grounded in attachment theory and social exchange theory."
 ---
 ## Forge Anything operating protocols
 

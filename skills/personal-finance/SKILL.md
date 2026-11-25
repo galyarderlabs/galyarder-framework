@@ -1,6 +1,6 @@
 ---
 name: personal-finance
-description: Use when managing personal money: building a budget from real income and expenses, tracking spending, paying off debt, planning savings and investing, or checking net worth and progress toward financial independence.
+description: "Use when managing personal money: building a budget from real income and expenses, tracking spending, paying off debt, planning savings and investing, or checking net worth and progress toward financial independence."
 ---
 ## Forge Anything operating protocols
 

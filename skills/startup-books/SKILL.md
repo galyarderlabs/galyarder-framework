@@ -1,6 +1,6 @@
 ---
 name: startup-books
-description: Use when keeping a founder's books in plain language without accounting software: log expenses, invoices, subscriptions, and budgets by conversation, with a dashboard and P and L the founder can actually read.
+description: "Use when keeping a founder's books in plain language without accounting software: log expenses, invoices, subscriptions, and budgets by conversation, with a dashboard and P and L the founder can actually read."
 ---
 ## Forge Anything operating protocols
 

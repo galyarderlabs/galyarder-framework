@@ -1,6 +1,6 @@
 ---
 name: invoice-lifecycle
-description: Use when running invoices end to end: generate, send, remind, track, and reconcile across QuickBooks, Xero, Stripe, and FreshBooks, with every invoice carrying a status and payment evidence.
+description: "Use when running invoices end to end: generate, send, remind, track, and reconcile across QuickBooks, Xero, Stripe, and FreshBooks, with every invoice carrying a status and payment evidence."
 ---
 ## Forge Anything operating protocols
 

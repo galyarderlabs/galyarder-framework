@@ -1,6 +1,6 @@
 ---
 name: language-learning
-description: Use when learning a foreign language: vocabulary with spaced repetition, pronunciation, role-play speaking, short lessons, study plans, or exam preparation, with progress tracked and reviewed on a schedule.
+description: "Use when learning a foreign language: vocabulary with spaced repetition, pronunciation, role-play speaking, short lessons, study plans, or exam preparation, with progress tracked and reviewed on a schedule."
 ---
 ## Forge Anything operating protocols
 

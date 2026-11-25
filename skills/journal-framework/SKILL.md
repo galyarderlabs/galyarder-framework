@@ -1,6 +1,6 @@
 ---
 name: journal-framework
-description: Use when the operator wants a daily journaling practice: morning pages, gratitude, intention setting, evening reflection, and a weekly review, with entries that stay private and a review that turns patterns into next actions.
+description: "Use when the operator wants a daily journaling practice: morning pages, gratitude, intention setting, evening reflection, and a weekly review, with entries that stay private and a review that turns patterns into next actions."
 ---
 ## Forge Anything operating protocols
 

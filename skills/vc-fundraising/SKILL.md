@@ -1,6 +1,6 @@
 ---
 name: vc-fundraising
-description: Use when raising venture capital: building the narrative, the 12-slide deck, investor research, QA prep, and the fundraise plan, from first principles.
+description: "Use when raising venture capital: building the narrative, the 12-slide deck, investor research, QA prep, and the fundraise plan, from first principles."
 ---
 ## Forge Anything operating protocols
 

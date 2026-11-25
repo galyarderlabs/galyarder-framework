@@ -1,6 +1,6 @@
 ---
 name: reel-edit
-description: Turn raw 9:16 talking-head clips into a finished, publish-ready Instagram reel end to end: best take per line, dead-air cuts, punch-ins from 4K, background keying, designed looks, animated inserts, and frame-by-frame cut checks inside the Reels safe zone. Use when someone asks to edit clips into a reel, cut a reel, or make raw footage look finished.
+description: "Turn raw 9:16 talking-head clips into a finished, publish-ready Instagram reel end to end: best take per line, dead-air cuts, punch-ins from 4K, background keying, designed looks, animated inserts, and frame-by-frame cut checks inside the Reels safe zone. Use when someone asks to edit clips into a reel, cut a reel, or make raw footage look finished."
 ---
 ## Forge Anything operating protocols
 
