@@ -1,4 +1,3 @@
-
 ---
 name: market-research
 description: Use when sizing a market, planning a survey, scoring segments, or running competitive intelligence with a teardown, with every number triangulated and every claim tagged by confidence.
