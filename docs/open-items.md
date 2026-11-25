@@ -14,6 +14,10 @@ GitHub issues, and Galih's calls.
   slice; answered in practice by waves 1-5 in order), Q15 (18 proposed
   commands, which first), Q17 (A16 split stands: agent-ops to
   Infrastructure, gamedev to Creative, scientific to Knowledge).
+  Q17 agents ANSWERED 25 Nov 2026 (Galih 17:24): ai-researcher folds
+  into research, team-orchestrator folds into forge-specialist
+  (56 agents become 54); agent-ops, game-developer and
+  scientific-researcher stay separate.
   Needs Galih for Q15.
 - [ ] Curation execution (LAST work): agent folders (56, still single
   .md files — not started), release skill prose rewrite (it still

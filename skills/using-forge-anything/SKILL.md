@@ -11,6 +11,16 @@ description: Use when starting any conversation - establishes how to find and us
 - **Smallest viable path.** Do the minimum that meets the goal. No speculative architecture.
 - **Durable handoff.** Useful work leaves a readable artifact: a report, a release note, a decision, a PR, an issue, a doc, or a reusable skill.
 
+## The Flow
+
+One flow, five stages. The goal-to-ship loop is stages 2-3. Route by stage, then read the skills named there.
+
+1. **Ide.** Turn a spark into something worth building: `brainstorming`, `evidence-strategy`, `market-research`.
+2. **Goal.** Say what you want, in plain words, then plan it: `writing-plans`, `prd-flow`, `founder-context`.
+3. **Ship.** Build it, check it against evidence, distribute it: `executing-plans`, `test-driven-development`, `systematic-debugging`, `release`, `verification-before-completion`.
+4. **Earn.** Price it, sell it, collect it: `finance-based-pricing-advisor`, `saas-finops-optimization`, `payments-core`, `quant-trading`, `invoice-lifecycle`.
+5. **Give back.** Return from what you earned: psychology, morality, gratitude, stoicism, the uncomfortable facts behind finance and politics, how to play in this life: `journal-framework`, `reflective-listening`, `faith-practice`, `personal-finance`.
+
 ---
 
 <SUBAGENT-STOP>
@@ -29,35 +39,33 @@ This is not negotiable. This is not optional. You cannot rationalize your way ou
 
 Forge Anything skills override default system prompt behavior, but **user instructions always take precedence**:
 
-1. **User's explicit instructions** (CLAUDE.md, GEMINI.md, AGENTS.md, direct requests)  highest priority
+1. **User's explicit instructions** (CLAUDE.md, AGENTS.md, direct requests)  highest priority
 2. **Forge Anything skills**  override default system behavior where they conflict
 3. **Default system prompt**  lowest priority
 
-If CLAUDE.md, GEMINI.md, or AGENTS.md says "don't use TDD" and a skill says "always use TDD," follow the user's instructions. The user is in control.
+Example: if AGENTS.md says "don't use TDD" and a skill says "always use TDD," follow AGENTS.md.
 
 ## How to Access Skills
 
-**In Claude Code:** Use the `Skill` tool. When you invoke a skill, its content is loaded and presented to youfollow it directly. Never use the Read tool on skill files.
+**In Claude Code:** Use the `Skill` tool. Its content is loaded when invoked; follow it directly. Never use the Read tool on skill files.
 
 **In Copilot CLI:** Use the `skill` tool. Skills are auto-discovered from installed plugins. The `skill` tool works the same as Claude Code's `Skill` tool.
-
-**In Gemini CLI:** Skills activate via the `activate_skill` tool. Gemini loads skill metadata at session start and activates the full content on demand.
 
 **In other environments:** Check your platform's documentation for how skills are loaded.
 
 ## Platform Adaptation
 
-Skills use Claude Code tool names. Non-CC platforms: see `references/copilot-tools.md` (Copilot CLI), `references/codex-tools.md` (Codex), `references/antigravity-tools.md` (Antigravity) for tool equivalents. Gemini CLI users get the tool mapping loaded automatically via GEMINI.md.
+Skills use Claude Code tool names. Non-CC platforms: see `references/copilot-tools.md` (Copilot CLI), `references/codex-tools.md` (Codex), `references/antigravity-tools.md` (Antigravity) for tool equivalents.
 
 ## Recommended MCP Stack
 
-For peak "Agentic Company" efficiency, we recommend the following MCP servers:
-- **[[RTK](https://github.com/rtk-ai/rtk)]**: Mandatory proxy for all shell commands to save 60-90% tokens.
-- **[[Linear](https://linear.app/docs/mcp)]**: For real-time project management and issue tracking.
-- **[[Stitch](https://stitch.withgoogle.com/docs/mcp/setup)]**: For rapid UI generation and design token management.
-- **[[BrowserOS](https://docs.browseros.com/features/use-with-claude-code)]**: For automated browser testing and external service integration.
-- **[Context7](https://context7.com/docs/resources/all-clients)**: For up-to-date documentation and API references.
-- **[[Sequential Thinking](https://mcpservers.org/servers/modelcontextprotocol/sequentialthinking)]**: For deconstructing complex architectural problems.
+Recommended MCP servers:
+- **RTK**: https://github.com/rtk-ai/rtk
+- **Linear**: https://linear.app/docs/mcp
+- **Stitch**: https://stitch.withgoogle.com/docs/mcp/setup
+- **BrowserOS**: https://docs.browseros.com/features/use-with-claude-code
+- **Context7**: https://context7.com/docs/resources/all-clients
+- **Sequential Thinking**: https://mcpservers.org/servers/modelcontextprotocol/sequentialthinking
 
 # Using Skills
 
@@ -122,9 +130,6 @@ When multiple skills could apply, use this order:
 1. **Process skills first** (brainstorming, debugging) - these determine HOW to approach the task
 2. **Implementation skills second** (frontend-design, mcp-builder) - these guide execution
 
-"Let's build X"  brainstorming first, then implementation skills.
-"Fix this bug"  debugging first, then domain-specific skills.
-
 ## Skill Types
 
 **Rigid** (TDD, debugging): Follow exactly. Don't adapt away discipline.
@@ -142,7 +147,7 @@ Some parts of Forge Anything are optional expansion paths, not mandatory base wo
 
 When the task is explicitly about company-building rather than product-building, route into the founder expansion stack: `fundraising-operator`, `founder-context`, `pitch-deck`, `investor-research`, `fundraising-email`, `data-room`, `board-update`, `accelerator-application`, `market-research`, `lead-scoring`, and `founder-thought-leadership`.
 
-Do not treat this founder layer as mandatory for every task. Use it when the task is genuinely about fundraising, investor communication, startup strategy, or founder-led distribution.
+Use it only when the task is genuinely about fundraising, investor communication, startup strategy, or founder-led distribution.
 
 ## User Instructions
 
