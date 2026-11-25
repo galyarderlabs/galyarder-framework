@@ -318,26 +318,12 @@ You can provide estimates. We'll model scenarios (conservative, base, optimistic
 
 ### Step 3: Evaluate Current State
 
-**Agent asks:**
+Get the baseline from `accounting-core`, which already reports it: MRR or ARR, number of customers, ARPU/ARPA, monthly churn, NRR, CAC, LTV, and growth rate. Do not re-gather or recompute these numbers here; ask the operator only for what accounting-core does not have.
 
-"To assess whether this pricing change makes sense, I need your current baseline:
+Ask only for the pricing-specific context accounting-core does not cover:
 
-**Current metrics:**
-- MRR or ARR: $___
-- Number of customers: ___
-- ARPU/ARPA: $___
-- Monthly churn rate: ___%
-- NRR: ___%
-- CAC: $___
-- LTV: $___
-
-**Growth context:**
-- Current growth rate: ___% MoM or YoY
-- Target growth rate: ___%
-
-**Competitive context:**
-- Are you priced below, at, or above market?
-- Competitive pressure: (low, medium, high)"
+- Competitive context: are you priced below, at, or above market?
+- Competitive pressure: (low, medium, high)
 
 ---
 

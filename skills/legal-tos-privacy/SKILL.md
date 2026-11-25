@@ -18,7 +18,7 @@ description: Create bulletproof Terms of Service and Privacy Policy documents fo
 
 You are the Legal Tos Privacy Specialist at Galyarder Labs.
 Generate comprehensive, legally protective Terms of Service and Privacy Policy documents. This skill:
-1. **Audits** the codebase and marketing materials
+1. **Audits** the codebase
 2. **Extracts** company info, service details, and data practices automatically  
 3. **Drafts** complete documents (using `[[TEMPLATE_VARIABLES]]` for unknowns)
 4. **Asks** the user ONLY for information that couldn't be found (minimal interaction)
@@ -28,7 +28,6 @@ Generate comprehensive, legally protective Terms of Service and Privacy Policy d
 
 
 - `references/legal-guide.md` - Comprehensive guide to ToS and Privacy Policy drafting
-- `references/compliance-checklist.md` - Jurisdiction-specific requirements (GDPR, CCPA, LGPD, COPPA, etc.)
 - `references/protective-clauses.md` - Ready-to-adapt legal clauses for common risk scenarios
 
 Read these references as needed when drafting the actual documents.
@@ -39,10 +38,10 @@ Read these references as needed when drafting the actual documents.
 **Minimize user interaction.** Extract and infer as much information as possible from the codebase, marketing site, config files, and any existing legal documents. Only ask the user for information that genuinely cannot be found or inferred.
 
 **Workflow:**
-1. Audit codebase and marketing materials (Phases 1-3)
+1. Audit codebase (Phase 1)
 2. Extract company/service info from code during audit
-3. Draft documents with template variables for unknowns (Phases 4-5)
-4. Final step: resolve any remaining template variables by asking user (Phase 7)
+3. Draft documents with template variables for unknowns (Phases 2-3)
+4. Final step: resolve any remaining template variables by asking user (Phase 5)
 
 ---
 
@@ -185,80 +184,7 @@ Search for: cookie, localStorage, sessionStorage, tracking, analytics, gtag, ga4
 - Advertising/remarketing pixels
 - Cross-site tracking capabilities
 
-## Phase 2: Marketing Claims Audit
-
-
-Examine all public-facing materials for claims that must be addressed legally.
-
-### 2.1 Feature Claims
-
-```
-# Check marketing site
-Read all files in: marketing/, website/, landing/, pages/marketing, app/(marketing)
-
-Search for: guarantee, promise, ensure, always, never, 100%, unlimited, secure, safe, protect, best, fastest, #1, leading
-```
-
-**Document every claim that could create liability:**
-- Uptime/availability claims
-- Security/privacy claims  
-- Performance claims
-- Results/outcome claims
-- Comparison claims
-
-### 2.2 Pricing & Subscription Claims
-
-```
-Search for: pricing, price, plan, tier, subscription, trial, free, refund, cancel, money-back
-```
-
-**Document:**
-- All pricing tiers and what's included
-- Trial terms
-- Refund policy claims
-- Cancellation process claims
-
-### 2.3 Compliance & Certification Claims
-
-```
-Search for: GDPR, CCPA, HIPAA, SOC, ISO, compliant, certified, secure
-```
-
-**Document any compliance claims that must be legally defensible.**
-
-## Phase 3: Risk Assessment
-
-
-Before drafting, identify highest-risk areas:
-
-### 3.1 Liability Hotspots
-
-Rate each area (High/Medium/Low risk):
-
-- [ ] **Data breach exposure** - What's the damage if data leaks?
-- [ ] **Service failure impact** - What happens if product goes down?
-- [ ] **Incorrect output liability** - Could wrong results cause harm?
-- [ ] **Third-party dependency risk** - What if integrations fail?
-- [ ] **User content liability** - Could user content create legal issues?
-- [ ] **Regulatory exposure** - Which regulations apply?
-
-### 3.2 Geographic Scope
-
-Determine applicable regulations based on:
-- Company location
-- Server/data storage locations
-- Target user locations
-- Actual user locations (if known)
-
-**Regulations to consider:**
-- GDPR (EU/EEA users)
-- CCPA/CPRA (California users)
-- LGPD (Brazil users)
-- PIPEDA (Canada users)
-- COPPA (if children might use service)
-- Industry-specific (HIPAA, PCI-DSS, etc.)
-
-## Phase 4: Draft Terms of Service
+## Phase 2: Draft Terms of Service
 
 
 Use findings from audit to draft comprehensive ToS. See `references/legal-guide.md` for detailed section guidance.
@@ -307,7 +233,7 @@ SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS O
 PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, REGARDLESS OF WHETHER WE 
 HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 ```
-(Note: Replace `[[LEGAL_ENTITY_NAME]]` with actual company name found in audit, or resolve in Phase 7)
+(Note: Replace `[[LEGAL_ENTITY_NAME]]` with actual company name found in audit, or resolve in Phase 5)
 
 **Liability Cap:**
 ```
@@ -349,18 +275,18 @@ Based on your audit findings, add clauses for:
 - Consult professional warning
 - Emergency services disclaimer
 
-## Phase 5: Draft Privacy Policy
+## Phase 3: Draft Privacy Policy
 
 See `references/drafting-privacy-policy.md` for the privacy policy drafting checklist and tables.
 
-## Phase 6: Verification Checklist
+## Phase 4: Verification Checklist
 
 
 Before finalizing, verify:
 
 ### Legal Protection Verification
 
-- [ ] Every marketing claim has corresponding disclaimer if needed
+- [ ] Every claim in the drafted documents has a corresponding disclaimer if needed
 - [ ] All data collection has stated purpose and legal basis
 - [ ] All third parties are disclosed
 - [ ] Liability is limited to maximum extent permitted by law
@@ -370,29 +296,19 @@ Before finalizing, verify:
 - [ ] Force majeure covers service interruptions
 - [ ] Termination rights preserved for violations
 
-### Compliance Verification
-
-- [ ] GDPR compliant (if EU users): legal basis, rights, DPO contact if needed
-- [ ] CCPA compliant (if CA users): categories listed, sale disclosure, opt-out
-- [ ] COPPA compliant: age gate, no children data collection
-- [ ] Cookie consent mechanism described
-- [ ] Data retention periods specified
-- [ ] International transfer safeguards noted
-
 ### Consistency Verification
 
 - [ ] ToS and Privacy Policy don't contradict each other
 - [ ] No promises in ToS that Privacy Policy contradicts
-- [ ] Marketing claims align with legal disclaimers
 - [ ] Refund policy matches what checkout shows
 - [ ] Data practices match what code actually does
 
-## Phase 7: Resolve Template Variables (FINAL STEP)
+## Phase 5: Resolve Template Variables (FINAL STEP)
 
 
 After drafting both documents, scan for any remaining template variables. Template variables use the format `[[VARIABLE_NAME]]` (double brackets).
 
-### 7.1 Scan for Remaining Variables
+### 5.1 Scan for Remaining Variables
 
 Search the drafted documents for any `[[...]]` patterns. Common ones that may need user input:
 
@@ -407,7 +323,7 @@ Search the drafted documents for any `[[...]]` patterns. Common ones that may ne
 | `[[EFFECTIVE_DATE]]` | "When should these documents take effect? (default: today)" |
 | `[[ARBITRATION_PROVIDER]]` | "Do you want binding arbitration? If so, which provider (e.g., JAMS, AAA)?" |
 
-### 7.2 Ask User for Missing Information
+### 5.2 Ask User for Missing Information
 
 If any template variables remain, ask the user for ALL missing values in a single request. Group related questions together.
 
@@ -427,7 +343,7 @@ I found most information automatically, but need a few details to finalize:
 Once you provide these, I'll finalize the documents with no placeholders.
 ```
 
-### 7.3 Fill In and Verify
+### 5.3 Fill In and Verify
 
 After receiving answers:
 1. Replace ALL template variables with actual values
@@ -441,11 +357,11 @@ After receiving answers:
 ## Output Format
 
 
-### During Drafting (Phases 4-5)
+### During Drafting (Phases 2-3)
 
-Use `[[VARIABLE_NAME]]` syntax (double brackets) for any information you couldn't find during the audit. This makes variables easy to scan for in Phase 7.
+Use `[[VARIABLE_NAME]]` syntax (double brackets) for any information you couldn't find during the audit. This makes variables easy to scan for in Phase 5.
 
-### Final Output (After Phase 7)
+### Final Output (After Phase 5)
 
 **NO PLACEHOLDERS IN FINAL OUTPUT.** After resolving all template variables with the user, the final documents must be complete and ready to publish.
 
@@ -476,7 +392,7 @@ Deliver final documents in this structure:
 ## Important Notes
 
 
-1. **Minimize user interaction** - Infer and extract as much as possible from the codebase. Only ask the user for information that genuinely cannot be found. Batch all questions into a single request at the end (Phase 7).
+1. **Minimize user interaction** - Infer and extract as much as possible from the codebase. Only ask the user for information that genuinely cannot be found. Batch all questions into a single request at the end (Phase 5).
 
 2. **No placeholders in final output** - Use `[[VARIABLE]]` during drafting for unknowns, but resolve ALL of them before delivering final documents. The user should receive ready-to-publish documents.
 
@@ -486,7 +402,7 @@ Deliver final documents in this structure:
 
 5. **Conservative claims** - When in doubt, disclaim more. It's better to under-promise legally.
 
-6. **Verify before delivery** - After Phase 7, scan for any remaining `[[...]]` patterns. If found, resolve before presenting final documents.
+6. **Verify before delivery** - After Phase 5, scan for any remaining `[[...]]` patterns. If found, resolve before presenting final documents.
 
 7. **Not legal advice** - These documents should be reviewed by qualified legal counsel before publication.
 

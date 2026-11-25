@@ -43,17 +43,7 @@ AI tokens are often the #1 expense for modern startups. Optimize or die.
 - **Query Optimization**: Use `EXPLAIN ANALYZE` to find slow, high-CPU queries that drive up serverless compute units.
 - **Connection Pooling**: Use `PgBouncer` or Supabase Supavisor to prevent exhausting connection limits.
 
-## 3. REVENUE & UNIT ECONOMICS
-
-### 3.1 Stripe/Paddle Efficiency
-- **Fee Analysis**: Factor in 2.9% + 30c per transaction. For low ARPU products, the fixed 30c can kill margins.
-- **Tax Automation**: Use tools like Stripe Tax to avoid expensive manual compliance audits.
-
-### 3.2 Burn Rate Monitoring
-- **Actual vs. Forecast**: Do not trust "Expected Cost" charts. Audit **Actual Spend** every 7 days.
-- **Infrastructure-as-Code (IaC)**: Use Terraform/Pulumi to ensure no "forgotten" resources are left running.
-
-## 4. FINOPS AUDIT WORKFLOW
+## 3. FINOPS AUDIT WORKFLOW
 
 1. **Scan Manifests**: Check `package.json` and `.env` for all third-party integrations.
 2. **Usage Audit**: Ask for usage stats from dashboards (OpenAI, Vercel, DB).
