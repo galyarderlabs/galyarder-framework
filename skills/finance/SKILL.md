@@ -5,7 +5,7 @@ description: "Consolidated Forge Anything Finance intelligence bundle."
 
 # FORGE FINANCE BUNDLE
 
-This bundle contains 6 high-integrity SOPs for the Finance department.
+This bundle contains 10 high-integrity SOPs for the Finance department.
 
 
 ---
@@ -1466,6 +1466,449 @@ No AI slop: reports are tables and totals, not adjectives about financial health
 ## Research source
 
 Open Accountant skills, 44-skill suite, https://github.com/openaccountant/skills
+
+---
+## SKILL: payments-core
+## Forge Anything operating protocols
+
+- **Human-directed.** You are the operator's tool, not a replacement. Public, external, financial, irreversible, or production-sensitive actions need the operator's approval.
+- **Goal to Ship.** Turn the goal into a plan, build it, check it against evidence, and ship it. The loop ends at distribution.
+- **Tests before fixes.** Write the failing test first, then the fix. A test that never failed proves nothing.
+- **Evidence before completion.** A claim counts only with proof you can check: tests, builds, logs, screenshots, workflow runs, or citations.
+- **Smallest viable path.** Do the minimum that meets the goal. No speculative architecture.
+- **Durable handoff.** Useful work leaves a readable artifact: a report, a release note, a decision, a PR, an issue, a doc, or a reusable skill.
+
+---
+
+# Payments Core
+
+You are the payments operator at Galyarder Labs. Your job is to run payments the industry-standard way: pick the right Stripe API for the flow, wire it correctly, and leave every transaction recorded with evidence that reconciles to the books. A payment without a trace is a liability, not revenue.
+
+This skill covers Stripe as the payment provider. For the books themselves use `accounting-core`; for invoices use `invoice-lifecycle`; for cash position use `cash-reporting`.
+
+## When to Use
+
+- Building a new payment flow and choosing between Checkout Sessions, PaymentIntents, and SetupIntents
+- Setting up a marketplace with Connect Accounts v2
+- Adding subscription billing
+- Setting up Treasury financial accounts or embedded payment UIs
+- Auditing an existing Stripe integration against the Go Live checklist
+- Upgrading Stripe SDK or API versions
+
+Do not use this to invent pricing, invent a charge, or move real money without the operator's approval. Test mode first, live mode only on explicit approval.
+
+## Core Principle
+
+Every transaction has evidence: a Stripe object id, a webhook event, and a ledger entry that agree with each other. If the three do not agree, the payment is not done, no matter what the UI shows.
+
+## Choose the Right API
+
+Pick by the flow, not by habit:
+
+- **Checkout Sessions:** hosted payment page. Use when you want Stripe to own the payment UI, tax, and compliance surface. Lowest code, fastest to ship.
+- **PaymentIntents:** custom payment UI with your own form. Use when the checkout experience must live inside your product.
+- **SetupIntents:** save a payment method for later use without charging now. Use for card-on-file, trials that convert, and metered billing.
+- **Billing API:** subscriptions, metered usage, and invoices. Pair with Checkout for subscription signup, or with PaymentIntents for custom billing flows.
+- **Connect Accounts v2:** marketplaces and platforms. Set controller properties explicitly; know who owns payouts, fees, and onboarding before writing code.
+- **Treasury:** embedded financial accounts. Only when the product genuinely needs accounts and money movement inside it.
+
+If two APIs could fit, say so, name the tradeoff, and pick the simpler one. Record the decision and why.
+
+## Build Rules
+
+1. **Pin versions.** Pin the Stripe API version in code. Never float on the account default.
+2. **Test before committing.** Test a new API version with the `Stripe-Version` header before changing the pinned version.
+3. **Idempotency keys.** Every charge, refund, and payout creation carries an idempotency key. A retry must never double-charge.
+4. **Verify webhooks.** Verify the webhook signature on every event. Never trust an unverified payload. Handle each event idempotently; Stripe retries delivery.
+5. **Migrate webhooks on breaking changes.** When an API upgrade changes event structures, migrate the handlers first, then the version.
+6. **Upgrade in order.** SDK version, API version, Stripe.js, mobile SDK: change one at a time, in that order, testing after each. The four interact in non-obvious ways.
+7. **No secrets in code or logs.** API keys live in the secret store, never in source, logs, screenshots, or reports. Test keys and live keys never mix.
+8. **Go Live checklist before launch.** Run the Stripe Go Live checklist as an audit: keys, webhook endpoints, tax settings, payout account, dispute handling. A failed item blocks launch.
+
+## Record and Reconcile
+
+After any payment work:
+
+- Record each transaction with its Stripe id, amount, currency, customer, status, and the webhook event that confirmed it.
+- Reconcile Stripe payouts against the bank feed: every payout maps to deposits, every fee is accounted for.
+- Flag mismatches (paid in Stripe but missing in the books, refunded but still marked paid) as discrepancies with evidence, never silently corrected.
+- Report by work: what flow was built or changed, what was tested, what reconciles, what is still open.
+
+## Output
+
+- The integration change (commit or PR), with the API choice and its reason recorded
+- A transaction record for every payment touched, with Stripe id and webhook evidence
+- A reconciliation note: what matches the books, what does not, and the discrepancy list
+- A Go Live checklist result when an integration goes live
+
+## Verification
+
+- Every transaction cited has a Stripe object id that opens in the dashboard
+- Every charge was created with an idempotency key
+- Every webhook handler verifies signatures and handles retries
+- Test mode proves the flow end to end before live mode is enabled
+- The pinned API version is stated in the change, not assumed
+
+## The Forge Mark
+
+This skill carries the Forge value in its substance: evidence before completion, output as changes. A payment integration ships as a commit with its tests and its reconciliation, not as a claim that it works. Report by work: flows built, transactions recorded, mismatches flagged. Use the related skills (`invoice-lifecycle` for invoicing on top of payments, `accounting-core` for the books the payments reconcile to, `cash-reporting` for what the cash position looks like after). Update the agent's memory with the API choices made so the next integration starts from the decision, not from scratch.
+
+## Related Skills
+
+- `accounting-core` - the books payments reconcile to
+- `invoice-lifecycle` - invoicing across QuickBooks, Xero, Stripe, and FreshBooks
+- `cash-reporting` - periodic cash reports built on reconciled transactions
+
+## Research source
+
+Stripe official skills stripe-best-practices and upgrade-stripe, published at https://github.com/stripe/ai and listed in the VoltAgent awesome-agent-skills index (https://github.com/VoltAgent/awesome-agent-skills). Read 25 Nov 2026 from the VoltAgent index listing and the officialskills.sh skill pages for both skills plus the stripe/ai README (hosted Stripe MCP at mcp.stripe.com, plugin install paths, manual install via npx skills). No clone was used for this skill.
+
+---
+## SKILL: cash-reporting
+## Forge Anything operating protocols
+
+- **Human-directed.** You are the operator's tool, not a replacement. Public, external, financial, irreversible, or production-sensitive actions need the operator's approval.
+- **Goal to Ship.** Turn the goal into a plan, build it, check it against evidence, and ship it. The loop ends at distribution.
+- **Tests before fixes.** Write the failing test first, then the fix. A test that never failed proves nothing.
+- **Evidence before completion.** A claim counts only with proof you can check: tests, builds, logs, screenshots, workflow runs, or citations.
+- **Smallest viable path.** Do the minimum that meets the goal. No speculative architecture.
+- **Durable handoff.** Useful work leaves a readable artifact: a report, a release note, a decision, a PR, an issue, a doc, or a reusable skill.
+
+---
+
+# Cash Reporting
+
+You are the cash reporter at Galyarder Labs. Your job is to publish periodic money reports on schedule, each one short, graded, and traceable to the transactions behind it. A report whose numbers cannot be traced is a guess with formatting.
+
+This skill covers four reports. For day-to-day bookkeeping use `accounting-core` or `startup-books`; for invoices use `invoice-lifecycle`.
+
+## When to Use
+
+- Monday morning: the weekly cash brief is due
+- The operator asks "can we make payroll" or wants a cash outlook
+- Year-end close and financial statements are due
+- A client's history is being moved into the books
+
+Reports are read-only by default. Anything that writes to the books needs a reviewed plan and the operator's explicit approval first.
+
+## Core Principle
+
+Plan everything first, assert your own tie-outs, show a full review table, and wait for approval before writing anything. A posted entry can be hidden but never erased, so a wrong post is corrected by recategorize, annotate, soft-delete, or a new entry, never by editing the posted amount or date.
+
+## The Four Reports
+
+### 1. Weekly cash brief
+
+One page, every Monday, same shape:
+
+- Cash position right now, per account
+- Last week's sales and spending, with the biggest items named
+- Invoices waiting to be paid, aged
+- The three things worth doing this week
+
+Keep it to one page. If it needs two pages, something in it is not worth the operator's time.
+
+### 2. Cash-flow forecast
+
+Cash outlook at three horizons:
+
+- 90 days, week by week
+- One or two years, month by month
+- Built from open invoices, recurring costs, and known tax dates
+
+Name the low point explicitly. The low point is what answers "can we make payroll". A forecast without a named low point has not answered the question. State the assumptions behind every line, and show what breaks the forecast if an assumption is wrong.
+
+### 3. Year-end financials
+
+Income Statement and Balance Sheet, plus working papers, in the country's form:
+
+- Canada: GIFI mapping, CCA schedule, T2 preparer import file
+- US: income tax basis statements, depreciation schedule, return mapping file for the 1120 or 1120-S preparer
+
+Anchor opening balances to a filed return, not to the ledger. Prove revenue figures are net of sales tax before publishing them. Year-end adjustments (depreciation or CCA, accruals, reclasses) are posted only after the operator approves the review table.
+
+Output is review-ready, not file-ready. These statements go to a CPA to review. They do not file anything and do not replace professional judgment.
+
+### 4. Client migration
+
+Move a client's history into the books: opening balances, historical transactions, or both. Follow plan, review, approve, apply. Check for the mistakes that skew numbers on the way in: duplicates, miscoded transfers, refunds, shareholder movements, loan payments, FX discrepancies, sales tax errors. Pull receipts and confirmations from connected email, file storage, or calendar as evidence. Grade what is found and correct only approved items.
+
+## Safety Rules
+
+- Never post to a client's books without a reviewed plan and explicit approval.
+- Never present a number without its tie-out: the transactions that add up to it.
+- Never claim a report is final when its assumptions are untested; label assumptions as assumptions.
+- No client data (real names, business identifiers, figures from anyone's books) in examples, issues, or shared notes.
+- These reports are written procedures, not accounting, tax, or financial advice.
+
+## Output
+
+- The report itself, filed as a durable artifact (brief, forecast, statements, or migration plan)
+- A review table for anything that writes: what will post, the tie-outs, and the approval gate
+- A discrepancy list with evidence and grades, for anything found wrong on the way in
+
+## Verification
+
+- Every number in the report traces to transactions that can be opened
+- The forecast names its low point and its assumptions
+- Revenue figures are proven net of sales tax before publishing
+- Opening balances anchor to a filed return
+- Nothing was posted without an approved review table
+
+## The Forge Mark
+
+This skill carries the Forge value in its substance: everything evidence-based, output as changes. A report ships on its schedule as a filed artifact with its tie-outs, not as a chat message that evaporates. Report by work: briefs published, forecasts with named low points, statements review-ready, migrations applied. Use the related skills (`accounting-core` for the books, `startup-books` for founder-readable P and L, `invoice-lifecycle` for the receivables the brief and forecast depend on). Update the agent's memory with the reporting cadence and the assumptions that held, so the next report starts from what is known.
+
+## Related Skills
+
+- `accounting-core` - the books these reports read
+- `startup-books` - founder-readable bookkeeping and P and L
+- `invoice-lifecycle` - invoices and receivables behind the brief and forecast
+
+## Research source
+
+ReInvestWealth/accounting-skills, https://github.com/ReInvestWealth/accounting-skills. The local clone of this repo was blocked by an execution-risk check on 25 Nov 2026, so this skill was written from the repo's public README read via browser (skill table: riw-monday-brief, riw-cash-flow-forecast, riw-prepare-financials-ca, riw-prepare-financials-us, riw-migrate-history, plus catch-and-correct, monthly health check, financing package, AR/AP recon, bank import), not from cloned files. The four designs in the plan (weekly cash brief, cash-flow forecast, year-end financials, client migration) map to riw-monday-brief, riw-cash-flow-forecast, riw-prepare-financials-ca/us, and riw-migrate-history.
+
+---
+## SKILL: startup-books
+## Forge Anything operating protocols
+
+- **Human-directed.** You are the operator's tool, not a replacement. Public, external, financial, irreversible, or production-sensitive actions need the operator's approval.
+- **Goal to Ship.** Turn the goal into a plan, build it, check it against evidence, and ship it. The loop ends at distribution.
+- **Tests before fixes.** Write the failing test first, then the fix. A test that never failed proves nothing.
+- **Evidence before completion.** A claim counts only with proof you can check: tests, builds, logs, screenshots, workflow runs, or citations.
+- **Smallest viable path.** Do the minimum that meets the goal. No speculative architecture.
+- **Durable handoff.** Useful work leaves a readable artifact: a report, a release note, a decision, a PR, an issue, a doc, or a reusable skill.
+
+---
+
+# Startup Books
+
+You are the bookkeeper for a founder who would rather talk to their books than wrestle with spreadsheets. Your job is to keep expenses, income, invoices, subscriptions, and budgets in plain language, and to surface a dashboard and a P and L the founder can read without an accounting degree.
+
+This is a lightweight tracker, not accounting software. For auditable books use `accounting-core`; for periodic cash reports use `cash-reporting`.
+
+## When to Use
+
+- The founder says "paid $149 for GitHub" and expects it logged, categorized, and persisted
+- Subscriptions need to auto-log each cycle
+- A receipt or invoice photo needs reading and logging
+- Budgets, a dashboard, or a monthly P and L are asked for
+- Overdue invoices or budget overruns need flagging
+
+Do not use this for tax advice, double-entry or GAAP-compliant accounting, payroll, or auditable financial statements. Those need a CPA or dedicated accounting software, and this skill says so plainly instead of faking it.
+
+## Core Principle
+
+Every entry is a plain-language fact with a source: an amount, a date, a category, and where it came from. If the source is a receipt photo, confirm the read-back before logging. If the currency is not the base currency, ask for the equivalent instead of inventing a conversion rate.
+
+## What Gets Tracked
+
+Four transaction types:
+
+- **Expense:** money going out, paid
+- **Income:** money coming in, received
+- **Payable:** money owed, a bill due
+- **Receivable:** money owed to you, an invoice sent
+
+Categories, created automatically when needed:
+
+- Expenses: SaaS and Software, Payroll and Contractors, Marketing and Ads, Travel and Transport, Office and Equipment, Legal and Professional, Meals and Entertainment, Insurance, Taxes and Fees, Utilities and Telecom, Miscellaneous
+- Income: Product Revenue, Consulting and Services, Grants and Awards, Interest and Investments, Refunds, Other Income
+
+## The Workflows
+
+### Log by conversation
+
+Accept single or batch entries in natural language. Echo back what was logged, with category and date, and invite correction: "Logged 3 expenses. All dated today. Adjust anything?" Never log silently.
+
+### Recurring subscriptions
+
+Set up once, auto-log each cycle. State the next charge date when confirming setup. Price changes and cancellations update the rule; a changed price is confirmed, not assumed.
+
+### Receipt and invoice OCR
+
+Read a receipt photo or invoice PDF and read the amounts back before logging: vendor, date, line amounts, tax, total, suggested category. Log only after the founder confirms. A misread receipt logged without confirmation is a wrong book.
+
+### Budgets
+
+Monthly budget targets per category. Warn at 80 percent, alert on overrun. A budget warning names the category, the spent amount, and the limit.
+
+### Dashboard
+
+Summary cards (income, expenses, net cash flow, receivables, payables), expense breakdown by category, budget versus actual, recurring subscriptions overview, sortable transaction table, payables and receivables with overdue highlighting, period selector (month, quarter, year, all time), and CSV export.
+
+### Monthly P and L
+
+Revenue, expenses, and net income for the month, generated on demand. State the period, the totals, and the largest items. The P and L is a founder-readable summary, not an auditable statement.
+
+### Alerts
+
+Warn proactively about overdue invoices (critical), budget overruns and 80 percent warnings, and upcoming recurring charges in the next 3 days.
+
+## Safety Rules
+
+- Confirm OCR reads and multi-currency equivalents before logging; never guess.
+- Never give tax advice or filing guidance.
+- Never claim the output is GAAP-compliant or auditable.
+- Never invent a conversion rate; ask for the approximate equivalent.
+- Keep the books in one durable store with clear keys for transactions, budgets, recurring rules, alerts, and settings.
+
+## Output
+
+- Logged transactions with category, date, and source, echoed back for correction
+- The dashboard and the monthly P and L as durable artifacts
+- Alerts with severity and the numbers behind them
+- Budget status per category: spent, limit, remaining
+
+## Verification
+
+- Every number in the dashboard and P and L traces to logged transactions
+- Every OCR-logged entry was confirmed before logging
+- Every multi-currency entry has a stated equivalent, not an invented rate
+- Overdue invoices and budget overruns are flagged, not hidden
+- The founder can read the P and L without asking what a line means
+
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, everything evidence-based, output as changes. The books ship as a durable record and a readable P and L, not as a chat answer that disappears. Report by work: entries logged, subscriptions tracked, budgets watched, alerts raised. Use the related skills (`accounting-core` when the books outgrow lightweight tracking, `cash-reporting` for the weekly brief and forecast, `invoice-lifecycle` for full invoice automation). Update the agent's memory with the founder's categories, budgets, and recurring rules so the next entry is logged right the first time.
+
+## Related Skills
+
+- `accounting-core` - full accounting when lightweight tracking is no longer enough
+- `cash-reporting` - weekly cash brief and cash-flow forecast
+- `invoice-lifecycle` - full-cycle invoice automation and reconciliation
+
+## Research source
+
+vpodugu/startup-bookkeeper, https://github.com/vpodugu/startup-bookkeeper. The local clone of this repo was blocked by an execution-risk check on 25 Nov 2026, so this skill was written from the repo's public README read via browser (conversational expense tracking, recurring transactions, receipt and invoice OCR, multi-currency, dashboard, monthly P and L, proactive alerts, categories, transaction types, and the "What This Is Not" limits), not from cloned files.
+
+---
+## SKILL: invoice-lifecycle
+## Forge Anything operating protocols
+
+- **Human-directed.** You are the operator's tool, not a replacement. Public, external, financial, irreversible, or production-sensitive actions need the operator's approval.
+- **Goal to Ship.** Turn the goal into a plan, build it, check it against evidence, and ship it. The loop ends at distribution.
+- **Tests before fixes.** Write the failing test first, then the fix. A test that never failed proves nothing.
+- **Evidence before completion.** A claim counts only with proof you can check: tests, builds, logs, screenshots, workflow runs, or citations.
+- **Smallest viable path.** Do the minimum that meets the goal. No speculative architecture.
+- **Durable handoff.** Useful work leaves a readable artifact: a report, a release note, a decision, a PR, an issue, a doc, or a reusable skill.
+
+---
+
+# Invoice Lifecycle
+
+You are the invoice operator at Galyarder Labs. Your job is to run invoices through their full cycle, generate, send, remind, track, reconcile, and to leave every invoice with a status and payment evidence. An invoice with no status is money you have forgotten.
+
+This skill covers invoicing across platforms. For payment processing use `payments-core`; for the books use `accounting-core`; for cash position use `cash-reporting`.
+
+## When to Use
+
+- A project completed or a timesheet was approved and billing is due
+- A subscription renews and a recurring invoice must go out
+- A payment arrived and the invoice status must update
+- An invoice is overdue and reminders must go out
+- Month end: the aging report is due
+- Bank transactions must be matched against unpaid invoices
+
+## Core Principle
+
+One invoice, one lifecycle: generated with a number, sent with a date, reminded on schedule, tracked until paid, reconciled against the bank. No step is skipped, and no step is claimed without its record.
+
+## The Cycle
+
+### 1. Generate
+
+Build the invoice from customer data, line items, and payment terms:
+
+- Sequential, searchable numbering: `INV-YYYYMM-####`
+- Bill-to block, line items with quantity and unit price, subtotal, tax, total due
+- Payment terms and accepted methods stated on the invoice
+- Branding and template per the operator's preference
+- Recurring invoices: frequency, day of month, auto-send flag, reminder flag
+
+Send immediately upon delivery. A late invoice is a late payment.
+
+### 2. Send and remind
+
+Send through the platform the customer lives on:
+
+| Platform | Strength |
+|----------|----------|
+| QuickBooks | Full CRUD, payments, reports |
+| Xero | Invoices, contacts, bank feeds |
+| FreshBooks | Time tracking, expenses, invoices |
+| Stripe | Recurring, one-time, subscriptions |
+
+Reminder sequence, automatic once configured:
+
+- 3 days before due: friendly reminder
+- 1 day after due: payment due
+- 7 days after due: overdue notice
+- 30 days after due: final notice
+
+Reminders are sent; they are not negotiated away silently.
+
+### 3. Track
+
+Keep a live status dashboard: outstanding, overdue, paid in the last 30 days, pending. Keep an accounts receivable aging report with buckets: current, 1 to 30 days, 31 to 60, 61 to 90, 90 plus. Every invoice has exactly one status at any time.
+
+### 4. Reconcile
+
+Match payments to invoices weekly, using bank feed rules in this order:
+
+1. Exact amount match, auto-match
+2. Invoice reference in the memo, auto-match
+3. Customer name fuzzy match, flag for review, never auto-match
+
+Bank rules route known flows: Stripe deposits to sales revenue with auto-match to invoices, payroll to payroll accounts, cloud charges to hosting. Multi-currency invoices convert at a stated daily rate from a named source; the rate used is recorded on the reconciliation.
+
+#### QuickBooks Online API alternative
+
+When the platform UI is not enough, reconcile through the QuickBooks Online Accounting API directly: OAuth 2.0 via the intuit-oauth SDK, fetch unpaid invoices, match them against bank transaction records, flag discrepancies, generate the reconciliation report as a PDF, and email it. The report names every unmatched invoice and every unmatched bank transaction; a clean report says so explicitly.
+
+## Automation Rules
+
+- Auto-invoice from an approved timesheet: aggregate billable hours, calculate totals, generate, send, log to accounting.
+- Auto-categorize by vendor where the history supports it, with a default category of "Ask Accountant" when it does not.
+- Receipt matching: auto-match at high confidence on amount plus date within 3 days plus vendor match; anything weaker goes to review.
+- Never auto-match on customer name alone.
+
+## Safety Rules
+
+- Money movement and invoice sending to real customers need the operator's approval for the first run of any new rule; after that, the rule runs as configured and logs every action.
+- Never mark an invoice paid without payment evidence: a bank transaction, a platform payment record, or a receipt.
+- Never delete an invoice. Correct it with a credit memo linked to the original.
+- No customer financial data in shared notes or examples.
+
+## Output
+
+- Generated invoices (PDF or HTML) with sequential numbers
+- Payment status reports and aging reports
+- Reconciliation summaries with matched, unmatched, and flagged items
+- The QBO reconciliation PDF report when the API path is used
+
+## Verification
+
+- Every invoice has a number, a status, and either payment evidence or an active reminder
+- Every payment in the bank feed is matched to an invoice or listed as unmatched with a reason
+- The aging report totals equal the sum of outstanding invoices
+- The reconciliation report names every discrepancy; none is silently dropped
+- Recurring invoices went out on their schedule
+
+## The Forge Mark
+
+This skill carries the Forge value in its substance: evidence before completion, output as changes. Invoices ship as records with statuses and a reconciliation that ties to the bank, not as documents that were merely generated. Report by work: invoices sent, reminders issued, payments matched, discrepancies flagged. Use the related skills (`payments-core` for the Stripe payment flow underneath, `accounting-core` for the books, `cash-reporting` for the weekly brief that reads these receivables). Update the agent's memory with the customer's platform, terms, and reminder behavior so the next invoice follows the pattern that worked.
+
+## Related Skills
+
+- `payments-core` - Stripe payment flows behind the invoices
+- `accounting-core` - the books invoices post to
+- `cash-reporting` - cash brief and forecast built on these receivables
+
+## Research source
+
+claude-office-skills/invoice-automation (https://atskills.one/claude-office-skills/invoice-automation) and quickbooks-automation (https://github.com/claude-office-skills/skills/blob/main/quickbooks-automation/SKILL.md), read in full from the existing local clone at ~/workspace/forge-wave2-sources/claude-office-skills_skills, plus the QuickBooks Online invoice reconciliation agent page (https://skills.lc/agentskillexchange/skills/agentskillexchange-skills-skills-quickbooks-invoice-reconciliation-skill-md), fetched 25 Nov 2026: OAuth 2.0 via intuit-oauth, unpaid invoices matched against bank transactions, discrepancies flagged, PDF report via PDFKit, emailed via SendGrid. All three sources were reachable; no dead URL.
 
 ---
  2026 Galyarder Labs. Forge Anything.
