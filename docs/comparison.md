@@ -93,7 +93,7 @@ The at-a-glance table tells you how they are shaped. This is how to choose in pr
 ### Concrete scenarios
 
 - *"Set up a new company repo with departments, skills, and a workflow, and give my chatbot the tools to run it."* Forge Anything: `forge scaffold`, then `forge mcp`.
-- *"Ship a new endpoint with auth, tests, and a security pass before merge."* Agent Skills: `/spec` to `/ship`, with the security-auditor and test-engineer personas fanning out at the end. Forge Anything also covers this through its Engineering department (`test-driven-development`, `systematic-debugging`, `requesting-code-review`).
+- *"Ship a new endpoint with auth, tests, and a security pass before merge."* Agent Skills: `/spec` to `/ship`, with the security-auditor and test-engineer personas fanning out at the end. Forge Anything also covers this through its Engineering department (`test-driven-development`, `systematic-debugging`, `adversarial-review`).
 - *"Refactor a gnarly subsystem overnight and review it in the morning."* Superpowers: hand it the plan, let subagent-driven development and the task reviewer run.
 - *"I have a vague idea and keep letting the agent guess the requirements."* Pocock's `grill-me` (or Forge Anything's `brainstorming`, or Agent Skills' `interview-me`) to pin down intent before any code.
 - *"Fix one clear bug, test-first."* Any of them; reach for the lightest one you already have installed.

@@ -40,7 +40,7 @@ Primary skills:
 - `board-update`
 - `accelerator-application`
 - `market-research`
-- `lead-scoring`
+- `marketing-core`
 - `founder-thought-leadership`
 
 Future optional additions:
@@ -50,9 +50,7 @@ Future optional additions:
 
 ### `product-manager`
 Primary skills:
-- `write-a-prd`
-- `prd-to-plan`
-- `prd-to-issues`
+- `prd-flow`
 - `writing-plans`
 - `brainstorming`
 - `ubiquitous-language`
@@ -79,7 +77,7 @@ Potential external upgrades:
 ### `architect`
 Primary skills:
 - `architect`
-- `prd-to-plan`
+- `prd-flow`
 - `writing-plans`
 
 Potential external upgrades:
@@ -113,8 +111,7 @@ Potential external upgrades:
 
 ### `code-reviewer`
 Primary skills:
-- `requesting-code-review`
-- `receiving-code-review`
+- `adversarial-review`
 - `code-reviewer`
 
 Potential external upgrades:
@@ -133,7 +130,6 @@ Primary skills:
 
 ### `vercel-react-expert`
 Primary skills:
-- `vercel-react-best-practices`
 - `web-design-guidelines`
 
 Potential external upgrades:
@@ -174,13 +170,11 @@ Primary skills:
 ## Growth
 ### `growth-strategist`
 Primary skills:
-- `content-strategy`
+- `marketing-core`
 - `launch-strategy`
 - `pricing-strategy`
 - `programmatic-seo`
 - `seo-audit`
-- `schema-markup`
-- `social-content`
 
 Potential external upgrades:
 - content creator
@@ -191,11 +185,7 @@ Potential external upgrades:
 ### `growth-engineer`
 Primary skills:
 - `analytics-tracking`
-- `ab-test-setup`
-- `onboarding-cro`
-- `page-cro`
-- `paywall-upgrade-cro`
-- `referral-program`
+- `marketing-core`
 
 Potential external upgrades:
 - campaign analytics
@@ -204,9 +194,8 @@ Potential external upgrades:
 
 ### `conversion-engineer`
 Primary skills:
-- `copywriting`
+- `marketing-core`
 - `copy-editing`
-- `marketing-psychology`
 - CRO skills
 
 ### `retention-specialist`
@@ -215,7 +204,7 @@ Primary skills:
 
 ### `social-strategist`
 Primary skills:
-- `social-content`
+- `social-production`
 - launch and distribution skills
 
 ### `analytics-architect`
@@ -249,7 +238,7 @@ Potential external upgrades:
 ### `experimentation-engineer`
 Primary skills:
 - `experimentation-engineer`
-- `ab-test-setup`
+- `experimentation`
 
 ## Legal
 ### `legal-counsel`
@@ -271,7 +260,7 @@ Primary skills:
 - `finops-manager`
 - `saas-finops-optimization`
 - `finance-based-pricing-advisor`
-- `accounting`
+- `accounting-core`
 
 Potential external upgrades:
 - SaaS metrics coach

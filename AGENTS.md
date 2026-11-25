@@ -51,7 +51,7 @@ Product direction, requirements, scope, roadmap, and issue breakdown.
 
 Leads: `product-manager`, `planner`.
 
-Skills: `write-a-prd`, `prd-to-plan`, `prd-to-issues`, `ubiquitous-language`.
+Skills: `prd-flow`, `ubiquitous-language`.
 
 ### 3. Engineering
 
@@ -59,7 +59,7 @@ Architecture, implementation, tests, code quality, delivery, and refactoring.
 
 Leads: `elite-developer`, `super-architect`.
 
-Skills: `test-driven-development`, `systematic-debugging`, `requesting-code-review`, `finishing-a-development-branch`, `release`, `create-agent-adapter`.
+Skills: `test-driven-development`, `systematic-debugging`, `adversarial-review`, `finishing-a-development-branch`, `release`, `create-agent-adapter`.
 
 ### 4. Creative
 
@@ -67,7 +67,7 @@ Design, video, writing, images, branding, and content creation.
 
 Leads: `ui-ux-designer`, `interface-designer`.
 
-Skills: `content-creator`, `social-content`, `writing-skills`.
+Skills: `social-production`, `writing-skills`.
 
 ### 5. Growth
 
@@ -75,7 +75,7 @@ Acquisition, conversion, retention, distribution, analytics, and messaging.
 
 Lead: `growth-strategist`.
 
-Skills: `seo-audit`, `copywriting`, `content-strategy`, `marketing-psychology`, `analytics-tracking`.
+Skills: `seo-audit`, `marketing-core`, `analytics-tracking`.
 
 ### 6. Security
 
@@ -99,7 +99,7 @@ Cost, budgeting, accounting, financial state, and runway.
 
 Lead: `finops-manager`.
 
-Skills: `accounting`, `financial-analyst`.
+Skills: `accounting-core`.
 
 ### 9. Legal
 

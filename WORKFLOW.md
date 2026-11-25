@@ -85,7 +85,7 @@ Use the cheapest proof that actually verifies the claim.
 
 **Typical owners:** `forge-ceo`, `forge-cmo`, `product-manager`, `growth-strategist`
 
-**Common skills:** `brainstorming`, `write-a-prd`, `competitor-alternatives`, `market-research`, `founder-context`
+**Common skills:** `brainstorming`, `prd-flow`, `marketing-core`, `market-research`, `founder-context`
 
 1. Clarify the operator's goal and the real outcome.
 2. Identify the buyer, user, stakeholder, system, or workflow affected.
@@ -96,7 +96,7 @@ Use the cheapest proof that actually verifies the claim.
 
 **Typical owners:** `forge-cto`, `super-architect`, `architect`, `planner`
 
-**Common skills:** `prd-to-plan`, `writing-plans`, `ubiquitous-language`
+**Common skills:** `prd-flow`, `writing-plans`, `ubiquitous-language`
 
 1. Inspect the current codebase, docs, data, or workflow surface.
 2. Pull current official references for APIs and platform behavior.
@@ -108,7 +108,7 @@ Use the cheapest proof that actually verifies the claim.
 
 **Typical owners:** `elite-developer`, `ui-ux-designer`, `security-guardian`, `legal-counsel`, `growth-engineer`
 
-**Common skills:** `subagent-driven-development`, `test-driven-development`, `systematic-debugging`, `copywriting`, `financial-analyst`, `legal-tos-privacy`, `social-content`
+**Common skills:** `subagent-driven-development`, `test-driven-development`, `systematic-debugging`, `marketing-core`, `accounting-core`, `legal-tos-privacy`
 
 1. Move the active issue, brief, or task into progress.
 2. Execute through the correct specialist, command, tool, or subagent.
@@ -120,7 +120,7 @@ Use the cheapest proof that actually verifies the claim.
 
 **Typical owners:** `qa-automation-engineer`, `code-reviewer`, `security-reviewer`, `devops-engineer`, `legal-counsel`, `forge-cfo-coo`
 
-**Common skills:** `requesting-code-review`, `verification-before-completion`, `gdpr-ccpa-privacy-auditor`
+**Common skills:** `adversarial-review`, `verification-before-completion`, `gdpr-ccpa-privacy-auditor`
 
 1. Run the relevant test, build, lint, render, security, or source-verification checks.
 2. Review for overreach, unsafe automation, secrets, fragile assumptions, and unverified claims.
@@ -131,7 +131,7 @@ Use the cheapest proof that actually verifies the claim.
 
 **Typical owners:** `forge-cmo`, `social-strategist`, `release-manager`, `obsidian-architect`
 
-**Common skills:** `seo-audit`, `schema-markup`, `copywriting`, `social-content`, `release`, `doc-maintenance`, `obsidian-markdown`
+**Common skills:** `seo-audit`, `marketing-core`, `release`, `doc-maintenance`, `obsidian-markdown`
 
 1. Prepare release notes, documentation, launch copy, or a distribution plan when the work is meant to ship.
 2. Save reusable knowledge into docs, skills, decisions, or reports.

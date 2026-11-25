@@ -51,7 +51,7 @@
 - `board-update` - Board reporting
 - `accelerator-application` - Accelerator applications
 - `market-research` - Market analysis
-- `lead-scoring` - Investor lead qualification
+- `marketing-core` - Marketing and lead qualification
 - `founder-thought-leadership` - Founder content strategy
 
 **Reports to Founder:**
@@ -67,9 +67,7 @@
 **Purpose:** Product direction, prioritization, roadmap, scope discipline
 
 **Team Members (Skills):**
-- `write-a-prd` - PRD creation
-- `prd-to-plan` - PRD to implementation plan
-- `prd-to-issues` - PRD to issue breakdown
+- `prd-flow` - PRD to plan to issues flow
 - `brainstorming` - Socratic design refinement
 - `writing-plans` - Implementation planning
 - `ubiquitous-language` - Domain language definition
@@ -105,8 +103,7 @@
 - `verification-before-completion` - Quality gates
 - `subagent-driven-development` - Parallel execution
 - `executing-plans` - Plan execution
-- `requesting-code-review` - Review workflow
-- `receiving-code-review` - Review response
+- `adversarial-review` - Adversarial review workflow
 - `finishing-a-development-branch` - Branch completion
 
 
@@ -120,8 +117,7 @@
 - `interface-designer` - Interface design
 
 **Team Members (Skills):**
-- `content-creator` - Content creation
-- `social-content` - Social media content
+- `social-production` - Social and content production
 - `writing-skills` - Writing craft
 
 ### 5. Growth
@@ -139,16 +135,8 @@
 
 **Team Members (Skills):**
 - `seo-audit` - SEO analysis
-- `schema-markup` - Schema.org implementation
-- `copywriting` - Clear conversion and product copy
-- `onboarding-cro` - Onboarding optimization
-- `paywall-upgrade-cro` - Paywall optimization
-- `page-cro` - Landing page CRO
-- `social-content` - Social media content
-- `referral-program` - Viral loops
-- `marketing-psychology` - Behavioral psychology
+- `marketing-core` - Marketing strategy and tactics
 - `analytics-tracking` - Event tracking
-- `ab-test-setup` - A/B testing
 
 
 ### 6. Security
@@ -193,7 +181,7 @@
 **Team Members (Skills):**
 - `saas-finops-optimization` - Cloud cost optimization
 - `finance-based-pricing-advisor` - Pricing strategy
-- `accounting` - Accounting and financial records
+- `accounting-core` - Accounting and financial records
 
 ### 9. Legal
 **Department Head:** `legal-counsel`
