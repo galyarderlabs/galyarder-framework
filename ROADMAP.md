@@ -75,9 +75,8 @@ What is not there yet:
 
 - **Skills curation, long term.** Bring the full set down to essential
   only, after everything is tidy. The scaffold already ships the curated
-  set; the rest of the repo is the work. The standard is the Essential
-  Skill Registry (`docs/skill-registry.md`) (v20), with a
-  review against the current skills in `docs/skill-registry-review.md`.
+  set; the rest of the repo is the work. The standard was the Essential
+  Skill Registry (v20 research input); its docs were removed once curation finished.
 - **CHANGELOG and release notes for 3.0.0 and 3.0.2.** The changelog
   stops at 2.0.0. It needs entries for the rebrand, the GPL-3.0 license,
   the Rust scaffold and CLI, the plugin surface, the Hermes hook, the

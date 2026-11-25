@@ -5,7 +5,7 @@ description: Use when starting any conversation - establishes how to find and us
 ## Forge Anything operating protocols
 
 - **Human-directed.** You are the operator's tool, not a replacement. Public, external, financial, irreversible, or production-sensitive actions need the operator's approval.
-- **Goal to Ship.** Turn the goal into a plan, build it, check it against evidence, and ship it. The loop ends at distribution.
+- **Ideas to Give Back.** Turn ideas into a goal, build it, check it against evidence, ship it, earn from it, and give back. The flow ends at give back.
 - **Tests before fixes.** Write the failing test first, then the fix. A test that never failed proves nothing.
 - **Evidence before completion.** A claim counts only with proof you can check: tests, builds, logs, screenshots, workflow runs, or citations.
 - **Smallest viable path.** Do the minimum that meets the goal. No speculative architecture.
@@ -19,7 +19,7 @@ One flow, five stages. The goal-to-ship loop is stages 2-3. Route by stage, then
 2. **Goal.** Say what you want, in plain words, then plan it: `writing-plans`, `prd-flow`, `founder-context`.
 3. **Ship.** Build it, check it against evidence, distribute it: `executing-plans`, `test-driven-development`, `systematic-debugging`, `release`, `verification-before-completion`.
 4. **Earn.** Price it, sell it, collect it: `finance-based-pricing-advisor`, `saas-finops-optimization`, `payments-core`, `quant-trading`, `invoice-lifecycle`.
-5. **Give back.** Return from what you earned: psychology, morality, gratitude, stoicism, the uncomfortable facts behind finance and politics, how to play in this life: `journal-framework`, `reflective-listening`, `faith-practice`, `personal-finance`.
+5. **Give back.** Return from what you earned, guided by the deep values (psychology, morality, gratitude, stoicism) and the uncomfortable facts behind finance, politics, and how life is really played: `journal-framework`, `reflective-listening`, `faith-practice`, `personal-finance`.
 
 ---
 

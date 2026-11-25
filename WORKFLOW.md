@@ -17,7 +17,7 @@ workflow.
 
 ## Operational sequence
 
-The sequence below shows who talks to whom, in order, across the five
+The sequence below shows who talks to whom, in order, across the seven
 phases. The operator sets the goal, `forge-ceo` routes it, the specialist
 executes through tools, and the result returns as reviewable evidence.
 

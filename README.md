@@ -7,6 +7,9 @@ Forge anything with AI agents.
 [![License: GPL-3.0-or-later](https://img.shields.io/badge/license-GPL--3.0--or--later-blue.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/galyarderlabs/forge-anything.svg)](https://github.com/galyarderlabs/forge-anything)
 [![Smoke test](https://github.com/galyarderlabs/forge-anything/actions/workflows/smoke-test.yml/badge.svg)](https://github.com/galyarderlabs/forge-anything/actions/workflows/smoke-test.yml)
+[![Rust](https://github.com/galyarderlabs/forge-anything/actions/workflows/rust.yml/badge.svg)](https://github.com/galyarderlabs/forge-anything/actions/workflows/rust.yml)
+[![Repo hygiene](https://github.com/galyarderlabs/forge-anything/actions/workflows/repo-hygiene.yml/badge.svg)](https://github.com/galyarderlabs/forge-anything/actions/workflows/repo-hygiene.yml)
+[![Latest release](https://img.shields.io/github/v/release/galyarderlabs/forge-anything.svg)](https://github.com/galyarderlabs/forge-anything/releases/latest)
 ![Node.js 20+](https://img.shields.io/badge/Node.js-20%2B-green.svg)
 ![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue.svg)
 ![Rust 1.85+](https://img.shields.io/badge/Rust-1.85%2B-orange.svg)
@@ -33,7 +36,7 @@ One flow, five stages:
 2. **Goal**: say what you want, in plain words. The work gets a plan, with the rules and the workflow that fit it.
 3. **Ship**: the agent builds it, checks every claim against evidence, and ships it. Distribution is where the build loop ends.
 4. **Earn**: price it, sell it, collect it.
-5. **Give back**: return from what you earned: psychology, morality, gratitude, stoicism, the uncomfortable facts behind finance and politics, how to play in this life.
+5. **Give back**: return from what you earned, guided by the deep values (psychology, morality, gratitude, stoicism) and by an honest look at the uncomfortable facts behind finance, politics, and how life is really played.
 
 Three pieces make the flow work:
 
@@ -82,7 +85,6 @@ Step by step, including local install and other tools, is in [docs/QUICK_START.m
 - [Departments](docs/departments/): the departments and what each owns
 - [Agents](agents/): the personas that do the work
 - [Skills](skills/): the full skill list
-- [Skill registry](docs/skill-registry.md): the essential-skill standard (v20), with a [review](docs/skill-registry-review.md) against the current skills
 - [Commands](commands/): the shortcuts
 - [Roadmap](ROADMAP.md): what we are building next
 - [Changelog](CHANGELOG.md): what changed

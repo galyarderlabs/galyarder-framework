@@ -12,14 +12,14 @@ One flow, five stages:
 2. **Goal**: say what you want, in plain words. The work gets a plan, with the rules and the workflow that fit it.
 3. **Ship**: the agent builds it, checks every claim against evidence, and ships it. Distribution is where the build loop ends.
 4. **Earn**: price it, sell it, collect it.
-5. **Give back**: return from what you earned: psychology, morality, gratitude, stoicism, the uncomfortable facts behind finance and politics, how to play in this life.
+5. **Give back**: return from what you earned, guided by the deep values (psychology, morality, gratitude, stoicism) and by an honest look at the uncomfortable facts behind finance, politics, and how life is really played.
 
 The full workflow is in `WORKFLOW.md`.
 
 ## What is in this repo
 
 - `agents/`: the agents that do the work. The Forge agents coordinate the work, and each department has its lead agents.
-- `skills/`: the rules the agents follow. The scaffold ships a curated essential set; the full repo holds the wider set, which is long-term curation work to bring down to essential only. The curation standard is the Essential Skill Registry (`docs/skill-registry.md`) (v20), with a review against the current skills in `docs/skill-registry-review.md`.
+- `skills/`: the rules the agents follow. The scaffold ships a curated essential set; the full repo holds the wider set, which is long-term curation work to bring down to essential only. The curation is complete: 175 skills in the repo, organized by department. The registry research docs were removed once curation finished.
 - `commands/`: the shortcuts.
 - `crates/forge`: the `forge` CLI, written in Rust. Subcommands: `scaffold`, `company`, `mcp`, `smoke`, `version`, `help`. `forge scaffold` drops a tidy repo into a folder. `forge company import` copies an agent-company package into `company/<slug>/` in a project. `forge mcp` runs the MCP server.
 - The MCP (`forge mcp`): five tools (`list_skills`, `read_skill`, `read_agent`, `read_command`, `scaffold`), over stdio, local only, no network. It is the distribution: install the MCP and a chatbot or an agent gets the tools plus the workflow.
@@ -166,6 +166,6 @@ Health, mind, relationships, learning, money, and home.
 
 ## Where it is going
 
-The direction is curation to essential only. The scaffold already ships the curated set; the full repo is long-term curation work. The standard is the Essential Skill Registry (`docs/skill-registry.md`): best-in-class per slot value from real research, cross-industry (APQC) and life (WHOQOL/PERMA), iterable by anyone. The MCP grows toward the full coding-agent tool set. The first release that ships the prebuilt `forge` binary still needs a version tag push. The plain landing page is future work, not live. See `ROADMAP.md`.
+The direction is curation to essential only. The scaffold already ships the curated set; the full repo is long-term curation work. The curation standard was the Essential Skill Registry (v20 research input, best-in-class per slot value from real research, cross-industry (APQC) and life (WHOQOL/PERMA)); its docs were removed once curation finished. The MCP grows toward the full coding-agent tool set. The first release that ships the prebuilt `forge` binary still needs a version tag push. The plain landing page is future work, not live. See `ROADMAP.md`.
 
 Copyright 2026 Galyarder Labs. Forge Anything.
