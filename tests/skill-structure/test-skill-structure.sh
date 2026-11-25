@@ -10,41 +10,23 @@
 #   superpowers style rules; most Forge Anything descriptions do not follow
 #   them, and "then"/"step" are ordinary words.
 # - The 1000-word body budget does not fit this repo: 61 of 100 skills exceed
-#   it, and the bundles are multi-thousand-word consolidations by design.
-#   Byte size is covered by tests/skill-size/test-skill-size.sh instead.
+#   it. Byte size is covered by tests/skill-size/test-skill-size.sh instead.
 # - Required sections ("## Hard rules", "## Red Flags") are specific to one
 #   skill, not a repo-wide requirement.
 # - "the user" never appearing is a superpowers voice rule; Forge Anything
 #   skills address "the operator".
 #
-# Bundle skills (forge, engineering, executive, product, creative, growth,
-# security, infrastructure, finance, legal, knowledge) are excluded from the
-# referenced-files check: they are generated consolidations whose references
-# point at their member skills' directories, not their own.
 set -u
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 SKILLS_DIR="$REPO_ROOT/skills"
 
-# Generated bundle consolidations, excluded from the referenced-files check.
-BUNDLES="forge engineering executive product creative growth security infrastructure finance legal knowledge operations customer-success people data trading external-relations life"
-
 PASSES=0
 FAILURES=0
 
 pass() { echo "  [PASS] $1"; PASSES=$((PASSES + 1)); }
 fail() { echo "  [FAIL] $1"; FAILURES=$((FAILURES + 1)); }
-
-is_bundle() {
-  local name="$1"
-  for b in $BUNDLES; do
-    if [[ "$name" == "$b" ]]; then
-      return 0
-    fi
-  done
-  return 1
-}
 
 echo "skill structure (repo-wide)"
 
@@ -74,10 +56,7 @@ for skill_dir in "$SKILLS_DIR"/*/; do
     fail "$name: description present"
   fi
 
-  # --- every referenced file exists (individual skills only) ---------------
-  if is_bundle "$name"; then
-    continue
-  fi
+  # --- every referenced file exists ---------------------------------------
   # Local references: a path starting with references/, prompts/, templates/,
   # agents/ or scripts/ at a word boundary, ending in a file extension.
   # The PCRE lookbehind keeps cross-skill "using-references/..." paths from

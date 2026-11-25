@@ -9,7 +9,7 @@ const BOOTSTRAP_MARKER = "forge-anything:forge bootstrap for pi";
 const extensionDir = dirname(fileURLToPath(import.meta.url));
 const packageRoot = resolve(extensionDir, "../..");
 const skillsDir = resolve(packageRoot, "skills");
-const bootstrapSkillPath = resolve(skillsDir, "forge", "SKILL.md");
+const bootstrapSkillPath = resolve(skillsDir, "using-forge-anything", "SKILL.md");
 
 let cachedBootstrap: string | null | undefined;
 
@@ -62,7 +62,7 @@ ${BOOTSTRAP_MARKER}
 
 You have Forge Anything.
 
-The forge skill content is included below and is already loaded for this Pi session. Follow it now. Do not try to load forge again.
+The using-forge-anything skill content is included below and is already loaded for this Pi session. Follow it now. Do not try to load using-forge-anything again.
 
 ${body}
 

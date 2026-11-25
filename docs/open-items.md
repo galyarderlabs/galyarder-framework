@@ -44,8 +44,15 @@ GitHub issues, and Galih's calls.
   sections (Technical Integrity, Corporate Reporting). Resolved by
   deletion: the whole `social-content` skill was cut 25 Nov 2026,
   the file no longer exists.
-- [ ] Pi bootstrap reads `skills/forge` (818 KB) instead of
-  `using-forge-anything` (8 KB). Candidate for the curation pass.
+- [x] Pi bootstrap reads `skills/forge` (818 KB) instead of
+  `using-forge-anything` (8 KB). FIXED 25 Nov 2026:
+  `.pi/extensions/forge-anything.ts` now loads
+  `skills/using-forge-anything/SKILL.md`; Pi test 6/6 passing.
+- [x] Bundle drift (6 of 10 bundles did not match sync-bundles.py
+  regen): resolved by DELETION, not regen, 25 Nov 2026 — all 18 bundle
+  dirs + `scripts/sync-bundles.py` removed (commit 4ad7ac51);
+  `skills.json` regenerated to 175 entries, 0 bundles. Scaffold source
+  marker moved to `skills/using-forge-anything/SKILL.md`.
 - [ ] Banned-term cleanup in skill/agent/command bodies (recounted
   25 Nov 2026 after the cut, case-insensitive file count): Obsidian
   (37 files), Linear (47), sequentialthinking/context7 (3).

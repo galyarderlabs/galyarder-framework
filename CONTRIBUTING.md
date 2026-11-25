@@ -14,7 +14,7 @@ Security problems go privately to the maintainer; see
 - **One source.** Skills, agents, and commands live once in `skills/`,
   `agents/`, and `commands/`, and that is the source: edit them directly.
   The old mirrors (`docs/skills`, `docs/agents`, `docs/commands`) are
-  gone. The bundles and `skills.json` are generated, never edit them by
+  gone. The `skills.json` manifest is generated, never edit it by
   hand. Run the sync scripts and commit their output in the same pull
   request.
 - **The header is single-source.** The "Forge Anything operating protocols"
@@ -51,8 +51,6 @@ or the header:
 
 ```sh
 python3 scripts/sync-skills-manifest.py     # skills.json
-python3 scripts/sync-bundles.py             # the 10 bundles
-python3 scripts/sync-global-protocols.py    # the header block
 ```
 
 ## Checks
@@ -64,7 +62,7 @@ bash scripts/smoke.sh                      # the 8-point smoke test
 ```
 
 The smoke test checks the manifest parity (skills.json matches `skills/`),
-the bundles, the header block, and the marketplace manifest.
+the header block, and the marketplace manifest.
 If it fails, fix the source and re-run the sync scripts, do not hand-edit
 a generated file to make it pass.
 

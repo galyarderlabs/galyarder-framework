@@ -10,35 +10,18 @@
 # Measures bytes, which is stricter than characters for files with non-ASCII
 # text. Usage: tests/skill-size/test-skill-size.sh
 #
-# The bundle skills (forge, engineering, executive, product, creative,
-# growth, security, infrastructure, finance, legal, knowledge) are excluded:
-# they are generated consolidations of many individual skills, not
-# hand-written skills, so the 20,000-byte limit does not apply to them.
+# The bundle skills were deleted 25 Nov 2026: every skill is now an
+# individual hand-written skill, so the 20,000-byte limit applies to all
+# of them with no exclusions.
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 LIMIT=20000
 
-# Generated bundle consolidations, excluded from the size limit.
-BUNDLES="forge engineering executive product creative growth security infrastructure finance legal knowledge operations customer-success people data trading external-relations life"
-
-is_bundle() {
-  local name="$1"
-  for b in $BUNDLES; do
-    if [[ "$name" == "$b" ]]; then
-      return 0
-    fi
-  done
-  return 1
-}
-
 failed=0
 for skill in "$REPO_ROOT"/skills/*/SKILL.md; do
   name="$(basename "$(dirname "$skill")")"
-  if is_bundle "$name"; then
-    continue
-  fi
   size=$(wc -c <"$skill" | tr -d ' ')
   if ((size >= LIMIT)); then
     echo "FAIL: ${skill#"$REPO_ROOT"/} is $size bytes (limit: under $LIMIT)" >&2
@@ -50,4 +33,4 @@ if ((failed)); then
   echo "Move content the skill only needs sometimes into its references/ directory." >&2
   exit 1
 fi
-echo "PASS: every hand-written SKILL.md is under $LIMIT bytes (bundles excluded)"
+echo "PASS: every SKILL.md is under $LIMIT bytes"

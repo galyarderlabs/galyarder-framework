@@ -35,7 +35,7 @@ The seventeen departments are how the work is organized, so agents know where wo
 
 The coordinators. `forge-ceo` directs the work. `forge-cfo-coo` owns operations and finance. `forge-cmo` owns growth and message. `forge-cto` owns architecture and engineering. `forge-specialist` handles work that does not fit one department.
 
-Core skills: `forge`, `using-forge-anything`, `writing-plans`, `executing-plans`, `verification-before-completion`, `subagent-driven-development`, `brainstorming`, `company-creator`, `writing-skills`, `doc-maintenance`.
+Core skills: `using-forge-anything`, `writing-plans`, `executing-plans`, `verification-before-completion`, `subagent-driven-development`, `brainstorming`, `company-creator`, `writing-skills`, `doc-maintenance`.
 
 ### 1. Executive
 
