@@ -11,15 +11,19 @@
 //! 3. Walk up from the current directory looking for a checkout marker.
 //! 4. Look next to the executable (`<exe-dir>/..` and `<exe-dir>/../..`).
 //!
-//! A directory counts as a source when it contains `skills/forge/SKILL.md`
-//! and `agents/forge-ceo.md`. If nothing is found, the error tells the user
-//! exactly how to point the scaffold at a source.
+//! A directory counts as a source when it contains
+//! `skills/using-forge-anything/SKILL.md` and `agents/forge-ceo.md`. If
+//! nothing is found, the error tells the user exactly how to point the
+//! scaffold at a source.
 
 use std::env;
 use std::path::{Path, PathBuf};
 
 /// Marker files that identify a Forge Anything source checkout.
-const MARKERS: &[&str] = &["skills/forge/SKILL.md", "agents/forge-ceo.md"];
+const MARKERS: &[&str] = &[
+    "skills/using-forge-anything/SKILL.md",
+    "agents/forge-ceo.md",
+];
 
 /// True when `dir` looks like a Forge Anything source checkout.
 pub fn is_source(dir: &Path) -> bool {
@@ -84,7 +88,7 @@ pub fn resolve(explicit: Option<&Path>) -> Result<PathBuf, String> {
     Err("could not find a Forge Anything source checkout.\n\
          Run this from inside a forge-anything checkout, pass --source <dir>, \
          or set FORGE_SOURCE to the checkout directory.\n\
-         A source checkout contains skills/forge/SKILL.md and agents/forge-ceo.md."
+         A source checkout contains skills/using-forge-anything/SKILL.md and agents/forge-ceo.md."
         .to_string())
 }
 

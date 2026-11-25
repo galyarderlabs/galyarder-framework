@@ -9,19 +9,17 @@
 //!   security skills (red team, malware reversing, darkweb monitoring) and the
 //!   narrow CRO tactics stay in the full repo; the scaffold carries the
 //!   defensive and compliance basics instead (cloud security, GDPR, licensing).
-//! - The department bundle skills (engineering, executive, ...) are NOT
-//!   copied: they aggregate the individual skills, and the scaffold ships
-//!   the individual skills directly. The one bundle kept is `forge`,
-//!   the Forge Anything entry point.
+//! - There are no bundle skills: the bundles were deleted, and the
+//!   scaffold ships the individual skills directly. The Forge Anything
+//!   entry point is `using-forge-anything`.
 //!
 //! This list is data, not law. To change what the scaffold ships, edit the
 //! lists below; the tests assert every entry exists in the source repo.
 
 /// Curated skills, copied from `<source>/skills/<name>/` into the new repo.
-/// 33 skills: the Forge entry points, the core loop, and 1-6 per department.
+/// 32 skills: the Forge entry point, the core loop, and 1-6 per department.
 pub const CURATED_SKILLS: &[&str] = &[
     // Core: the Forge Anything loop itself.
-    "forge",
     "using-forge-anything",
     "writing-plans",
     "executing-plans",

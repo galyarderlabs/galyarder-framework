@@ -3,8 +3,8 @@
 //! Drives the real binary over stdin/stdout with a full MCP session:
 //! initialize, tools/list, tools/call for every tool, ping, an unknown
 //! method, and a notification. Asserts on the JSON-RPC shapes and on the
-//! actual skill content returned (read_skill `forge` must return that
-//! skill's real SKILL.md text).
+//! actual skill content returned (read_skill `using-forge-anything` must
+//! return that skill's real SKILL.md text).
 
 use std::fs;
 use std::io::{BufRead, BufReader, Write};
@@ -68,7 +68,7 @@ fn mcp_session_answers_initialize_list_and_calls() {
         "{\"jsonrpc\":\"2.0\",\"method\":\"notifications/initialized\"}".to_string(),
         "{\"jsonrpc\":\"2.0\",\"id\":2,\"method\":\"tools/list\"}".to_string(),
         tool_call(3, "list_skills", "{}"),
-        tool_call(4, "read_skill", "{\"name\":\"forge\"}"),
+        tool_call(4, "read_skill", "{\"name\":\"using-forge-anything\"}"),
         tool_call(5, "read_skill", "{\"name\":\"no-such-skill\"}"),
         tool_call(6, "read_agent", "{\"name\":\"forge-ceo\"}"),
         tool_call(7, "read_command", "{\"name\":\"plan\"}"),
@@ -119,29 +119,30 @@ fn mcp_session_answers_initialize_list_and_calls() {
         );
     }
 
-    // list_skills: the real skill inventory (99 skills, incl. forge).
-    // The inner JSON array is a text string, so it arrives backslash-escaped.
+    // list_skills: the real skill inventory (175 skills, incl.
+    // using-forge-anything). The inner JSON array is a text string, so it
+    // arrives backslash-escaped.
     assert!(
-        lines[2].contains("\\\"name\\\":\\\"forge\\\""),
-        "list_skills has forge: {}",
+        lines[2].contains("\\\"name\\\":\\\"using-forge-anything\\\""),
+        "list_skills has using-forge-anything: {}",
         &lines[2][..300]
     );
     assert!(
-        lines[2].contains("Consolidated Forge Anything intelligence bundle"),
+        lines[2].contains("Use when starting any conversation"),
         "list_skills description: {}",
         lines[2]
     );
 
-    // read_skill forge: the skill's actual SKILL.md text, not a summary.
-    let forge_md =
-        fs::read_to_string(repo_root().join("skills/forge/SKILL.md")).expect("read forge SKILL.md");
-    let first_line = forge_md.lines().nth(5).unwrap_or("").trim();
+    // read_skill using-forge-anything: the skill's actual SKILL.md text, not a summary.
+    let skill_md = fs::read_to_string(repo_root().join("skills/using-forge-anything/SKILL.md"))
+        .expect("read using-forge-anything SKILL.md");
+    let first_line = skill_md.lines().nth(4).unwrap_or("").trim();
     assert!(
         !first_line.is_empty(),
-        "forge SKILL.md has content past the frontmatter"
+        "using-forge-anything SKILL.md has content past the frontmatter"
     );
     assert!(
-        lines[3].contains("FORGE BUNDLE"),
+        lines[3].contains(first_line),
         "read_skill returns SKILL.md: {}",
         &lines[3][..200.min(lines[3].len())]
     );
@@ -187,7 +188,9 @@ fn mcp_session_answers_initialize_list_and_calls() {
         lines[7]
     );
     assert!(
-        target.join("skills/forge/SKILL.md").is_file(),
+        target
+            .join("skills/using-forge-anything/SKILL.md")
+            .is_file(),
         "scaffolded skills land"
     );
     assert!(

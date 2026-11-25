@@ -13,7 +13,7 @@ forge-scaffold [OPTIONS] <target-dir>
 - `skills/`: the curated skills (see `src/curated.rs` for the list and the
   criteria: the core loop plus 1-6 per department, defensive/compliance
   security basics instead of the offensive/threat-intel niche, no bundle
-  skills except the `forge` entry point)
+  skills; the entry point is `using-forge-anything`)
 - `agents/`: the five Forge agents plus the lead role agent per department
 - `commands/`: all slash commands
 - `docs/`: specs, plans, reports, templates, design, and the 17 departments
@@ -27,7 +27,7 @@ No per-host copies or manifests: any agent or host reads `skills/` and
 The scaffold copies from a Forge Anything checkout. It resolves the source
 in order: `--source <dir>`, the `FORGE_SOURCE` environment variable, walking
 up from the current directory, then next to the executable. A source checkout
-contains `skills/forge/SKILL.md` and `agents/forge-ceo.md`.
+contains `skills/using-forge-anything/SKILL.md` and `agents/forge-ceo.md`.
 
 ```sh
 # From inside a forge-anything checkout:

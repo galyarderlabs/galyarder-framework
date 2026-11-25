@@ -83,8 +83,10 @@ fn all_files(dir: &Path, out: &mut Vec<PathBuf>) {
 fn scaffold_produces_a_ready_repo() {
     let source = repo_root();
     assert!(
-        source.join("skills/forge/SKILL.md").is_file(),
-        "source checkout has the forge skill"
+        source
+            .join("skills/using-forge-anything/SKILL.md")
+            .is_file(),
+        "source checkout has the using-forge-anything skill"
     );
     let tmp = TempDir::new("ready");
     let target = tmp.path.join("my-project");

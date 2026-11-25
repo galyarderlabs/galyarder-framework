@@ -47,7 +47,7 @@ to the crate version. The crate version is kept in sync with `package.json`.
 The scaffold and the scripts are resolved from a Forge Anything checkout,
 in order: `--source <dir>`, `FORGE_SOURCE`, walking up from the current
 directory, then walking up from the executable's directory. A source
-checkout contains `skills/forge/SKILL.md` and `agents/forge-ceo.md`.
+checkout contains `skills/using-forge-anything/SKILL.md` and `agents/forge-ceo.md`.
 
 ## Development
 

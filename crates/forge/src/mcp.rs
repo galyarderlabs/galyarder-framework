@@ -22,7 +22,7 @@
 //! The source checkout is resolved exactly like `forge scaffold` does
 //! (`forge-scaffold::source::resolve`: explicit `--source`, `FORGE_SOURCE`,
 //! walk up from the cwd, walk up from the executable directory; a source
-//! has `skills/forge/SKILL.md` and `agents/forge-ceo.md`). When no source
+//! has `skills/using-forge-anything/SKILL.md` and `agents/forge-ceo.md`). When no source
 //! is found the server still answers `initialize`/`ping`/`tools/list`, and
 //! every tool that needs the source returns a clear error instead of
 //! crashing or inventing a source.
@@ -252,7 +252,7 @@ impl Server {
             "no Forge Anything source checkout found. Run this from inside a \
              forge-anything checkout, pass --source <dir> to `forge mcp`, or set \
              FORGE_SOURCE to the checkout directory. A source checkout contains \
-             skills/forge/SKILL.md and agents/forge-ceo.md."
+             skills/using-forge-anything/SKILL.md and agents/forge-ceo.md."
                 .to_string()
         })
     }
@@ -412,7 +412,7 @@ fn tools_list() -> Json {
             "Read a Forge Anything skill by name. Returns its SKILL.md content, plus the files in its references/ directory when it has one.",
             vec![(
                 "name",
-                str_prop("The skill name, e.g. \"forge\" or \"brainstorming\"."),
+                str_prop("The skill name, e.g. \"using-forge-anything\" or \"brainstorming\"."),
             )],
             vec!["name"],
         ),
@@ -631,12 +631,12 @@ mod tests {
 
     #[test]
     fn parses_quoted_frontmatter() {
-        let md = "---\nname: forge\ndescription: \"Consolidated Forge Anything intelligence bundle.\"\n---\n\n# FORGE\n";
+        let md = "---\nname: using-forge-anything\ndescription: \"Use when starting any conversation.\"\n---\n\n# Using Forge Anything\n";
         assert_eq!(
             parse_frontmatter(md),
             (
-                Some("forge".to_string()),
-                Some("Consolidated Forge Anything intelligence bundle.".to_string())
+                Some("using-forge-anything".to_string()),
+                Some("Use when starting any conversation.".to_string())
             )
         );
     }

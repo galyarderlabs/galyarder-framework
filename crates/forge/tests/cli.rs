@@ -430,7 +430,11 @@ fn scaffold_through_cli_produces_a_ready_repo() {
         String::from_utf8_lossy(&out.stderr)
     );
     assert!(target.join("README.md").is_file());
-    assert!(target.join("skills/forge/SKILL.md").is_file());
+    assert!(
+        target
+            .join("skills/using-forge-anything/SKILL.md")
+            .is_file()
+    );
     assert!(target.join("agents/forge-ceo.md").is_file());
     assert!(target.join("commands/plan.md").is_file());
     assert!(
@@ -438,7 +442,7 @@ fn scaffold_through_cli_produces_a_ready_repo() {
             .join("docs/departments/Executive/README.md")
             .is_file()
     );
-    assert_eq!(fs::read_dir(target.join("skills")).unwrap().count(), 33);
+    assert_eq!(fs::read_dir(target.join("skills")).unwrap().count(), 32);
     assert_eq!(fs::read_dir(target.join("agents")).unwrap().count(), 18);
     assert_eq!(fs::read_dir(target.join("commands")).unwrap().count(), 25);
     // No per-host copies or manifests in the scaffolded repo.
