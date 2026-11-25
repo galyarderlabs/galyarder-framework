@@ -9,7 +9,7 @@ GitHub issues, and Galih's calls.
 - [ ] Curation plan decisions: 14 open questions (plan section 6; Q10
   and Q12 answered by v20, Q16 answered earlier, Q17 added for A16).
   Needs Galih.
-- [ ] Curation execution (LAST work): agent folders, 114 Forge-native
+- [ ] Curation execution (LAST work): agent folders, 115 Forge-native
   skill designs (117 v20 rows; 4 reference rows need no design),
   scaffold department templates, release skill prose
   rewrite (it still describes the old FORGEAI flow). Needs plan
