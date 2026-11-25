@@ -6,23 +6,31 @@ GitHub issues, and Galih's calls.
 
 ## Contents / curation (blocks the release)
 
-- [ ] Curation plan decisions: 15 open questions (plan section 6; Q16
-  answered). Needs Galih.
-- [ ] Curation execution (LAST work): agent folders, 95 Forge-native
-  skill designs, scaffold department templates, release skill prose
+- [ ] Curation plan decisions: 14 open questions (plan section 6; Q10
+  and Q12 answered by v20, Q16 answered earlier, Q17 added for A16).
+  Needs Galih.
+- [ ] Curation execution (LAST work): agent folders, 114 Forge-native
+  skill designs (117 v20 rows; 4 reference rows need no design),
+  scaffold department templates, release skill prose
   rewrite (it still describes the old FORGEAI flow). Needs plan
   approval first.
 - [ ] Scaffold curated lists (38 skills / 18 agents) still from issue
   #212, pre-registry. Changes when the plan is approved.
-- [ ] Registry v20 remainder not sent (truncated mid-A8), so v20 is not
-  saved. Needs Galih.
-- [ ] Registry URLs without sources (v14: data-scientist, sql-queries,
-  dbt, meeting-notes; v15: zapier-workflows, biohacking-advisor).
-  Needs Galih or research.
-- [ ] Registry v20 URL fixes (rag-architect correct path,
-  community-management dead 410). Only if v20 is saved.
-- [ ] fitness-nutrition URL still HTTP 500; Locke and Latham citation
-  still 404.
+- [x] Registry v20 saved as the standard (25 Nov 2026, full file
+  received, 121 rows counted). Replaces v15.
+- [x] Registry URLs without sources: all 6 (v14 data-scientist,
+  sql-queries, dbt, meeting-notes; v15 zapier-workflows,
+  biohacking-advisor) now have URLs in v20, all checked HTTP 200
+  on 25 Nov 2026.
+- [ ] Registry URL problems recorded in the review (rag-architect wrong
+  path, community-management dead, n8n-conventions dead). The registry
+  text is verbatim, so the URLs are not edited in place; the correct
+  paths live in the review and the plan.
+- [ ] Registry rekap count discrepancy (118 claimed vs 121 counted;
+  4 restores claimed vs 7 named). Recorded in the review; needs a
+  closure sweep before the NOL GAP claim is trusted.
+- [ ] fitness-nutrition URL still HTTP 500 (3rd check, 25 Nov 2026);
+  Locke and Latham citation still 404 (25 Nov 2026).
 - [ ] `skills/social-content/references/reverse-engineering.md` has two
   leaked sections (Technical Integrity, Corporate Reporting).
 - [ ] Pi bootstrap reads `skills/forge` (818 KB) instead of

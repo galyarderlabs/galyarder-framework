@@ -1,6 +1,6 @@
 # Skill Registry Review vs Current Repo
 
-Maintainer review, 24 Nov 2026, repo HEAD `2fa091d2`. This reviews Galih's Essential Skill Registry v15 (`skill-registry.md`): the v13 text verbatim plus the ronde-14 and ronde-15 addenda. The v13 rows were reviewed at HEAD `00b0080c`; the ronde-14 rows at HEAD `a03af575`; the ronde-15 rows are reviewed in the addendum at the end of this file. It is a proposal record only: it does not add, delete, rename, or restructure anything. Curation decisions stay with Galih.
+Maintainer review, 24 Nov 2026, repo HEAD `2fa091d2`, plus the v20 addendum at the end of this file (25 Nov 2026, repo HEAD `ee652704`). This reviews Galih's Essential Skill Registry (`skill-registry.md`), now v20; the v13/v14/v15 reviews below are preserved as history. The v13 rows were reviewed at HEAD `00b0080c`; the ronde-14 rows at HEAD `a03af575`; the ronde-15 rows are reviewed in the addendum at the end of this file. It is a proposal record only: it does not add, delete, rename, or restructure anything. Curation decisions stay with Galih.
 
 ## How to read this
 
@@ -326,3 +326,125 @@ The registry now has 15 company departments (A1-A15) plus 19 life domains. The r
 2. **2 rows without a source URL in the ronde-15 message:** zapier-workflows (davila7), biohacking-advisor. Their sources are unverified until URLs are supplied. They should not be adopted on name alone.
 3. **Unverified registry claims (ronde-15):** the autopunk-media-skills 394-skill count and "quality-tested" claim, the "grounded from Sequoia/a16z/Benchmark/YC first principles" claim for the fundraising suite, the giladHaimov 293-vulnerability database claim, the sleep-optimizer Grade A claim, and the v15 totals (±99 rows / 300+ skills). URLs were checked (14 of 14 return HTTP 200); counts and claims were not.
 4. **"Nol gap" retired:** the research agent's own correction stands: v13/v14's "NOL GAP" was claimed too fast, and ronde-15 found 8 more sectors. The permanent rule from the message is that "complete" is never claimed again without a closure sweep. This review records that; it does not re-verify the closure sweep itself.
+
+---
+
+## Ronde-16/17/18/19/20 addendum (v20)
+
+Reviewed 25 Nov 2026, repo HEAD `ee652704`. The registry is now v20 (`skill-registry.md`): Galih's v20 file verbatim, replacing v15 as the standard. The v13/v14/v15 reviews above are preserved as history. This addendum reviews only what v20 changes vs v15. Rows carried over unchanged keep the status given above, except the status changes named below.
+
+### Count, counted by hand
+
+The file's rekap says 118 rows (114 post-audit + 4 restore). The maintainer counted the table rows directly: 121 rows. The file's own per-section table sums to 121 (A1 4, A2 3, A3 9, A4 4, A5 5, A6 19, A7 4, A8 6, A9 3, A10 4, A11 6, A12 11, A13 7, A14 8, A15 4, A16 4, B 20). So the rekap total (118) contradicts its own per-section table (121) by 3. The file also says 4 restores, but names 7 restored rows (TestMu, venice-image, vercel, sanity, internal-comms, theme-factory, mcp-builder). Both discrepancies are recorded here, not fixed here: the registry text is Galih's verbatim and is not edited in place.
+
+### Summary counts (v20)
+
+- Registry rows: 121 (A1-A16 company: 101, B life: 20).
+- Fully covered by a repo skill: 0.
+- Partially covered: 6.
+- Missing from the repo: 111.
+- Reference rows (registry rows that are not skills: a structure benchmark, a multi-harness library, a discovery index, a cross-library): 4. They need no repo skill.
+- Repo individual skills: 89. With at least partial registry coverage: 13. Repo-only: 76.
+- Scaffold curated set: 38 skills. Of those, 12 map to a registry row (unchanged from v15).
+
+Why covered drops from 3 to 0: the three covered obra skills (brainstorming, systematic-debugging, verification-before-completion) no longer appear as separate rows in v20. They are folded into one row, the obra champion suite, which is Partial because the repo holds 6 of the suite's 15 skills. The repo did not lose coverage; the row unit changed. The same 13 repo skills still map to registry rows.
+
+### What v20 changes vs v15
+
+- New department A16. Agent Ops Layer, Gamedev and Scientific (4 rows: agent-browser, agent-desktop, gamedev, scientific research).
+- A15 is now External Relations and Fundraising (4 rows). The fundraising suite and the pitch deck framework, which v15 kept as one row under A1, are now two rows here, and PR and media production are split into two rows.
+- Public speaking moves from B Life to A1. Podcast/audio ops moves from B Life to A6.
+- A14 Trading confirmed present (8 rows). The smart contract audit rows move from A10 (v15 addendum) into A14.
+- Restores: TestMu QA (A3), venice-image (A6), vercel and sanity (A11), internal-comms, theme-factory, mcp-builder (A12). All were lost in the ronde-11 rebuild and are back.
+- Ronde-19 audit cuts 9 redundancies/misplacements: addyosmani moves from A1 to A3; the obra rows merge into 1; delphi-ai, jakubkrehel, adam-paterson, humanizer, analystacademy email, and sleep-optimizer are demoted to alternatives under the row of their value; the QBO reconciliation row merges into the invoice row.
+- New rows vs v15 (30): mattpocock, agency-agents, Orchestra AI-research, wshobson, team-orchestration, bug-hunter, prompt/RAG, TestMu, stick-scene, venice-image, community-ops, security-audit-skill, bug-bounty, devops-skills, vercel, sanity, internal-comms, theme-factory, mcp-builder, diagram-design, claude-obsidian, market research, media production (split), pitch-deck-mastery (split), language-learning, faith, agent-browser, agent-desktop, gamedev, scientific research.
+- Rows folded or removed as rows (5): delphi-ai, humanizer, analystacademy email, adam-paterson, QBO reconciliation. The obra merge (4 rows to 1) and the sql/dbt merge (2 rows to 1) are restructures, not removals.
+
+### New and moved rows, mapped
+
+| Registry row (v20) | Status | Repo skill | Note |
+|---|---|---|---|
+| mattpocock/skills (A1, adversarial thinking) | Missing | - | Repo has requesting/receiving-code-review (code level, narrower). Idea/doc level adversarial has no repo skill. |
+| agency-agents (A1, msitarzewski) | Reference | - | Structure benchmark, not a skill. No repo equivalent needed. |
+| Orchestra AI-Research-SKILLs (A3) | Missing | - | No AI-research skill in the repo. Core Galyarder Labs domain. |
+| wshobson/agents (A3) | Reference | - | Multi-harness library, not a skill. |
+| claude-team-orchestration (A3) | Missing | - | No team-orchestration skill in the repo. Adjacent: subagent-driven-development (single-agent delegation, not team patterns). |
+| project-bug-hunter-skill (A3) | Missing | - | Adjacent: systematic-debugging (method) and build-error-resolver agent. No evidence-first bug-hunt skill. |
+| senior-prompt-engineer + rag-architect (A3) | Missing | - | No prompt-eval or RAG-design skill in the repo. The rag-architect URL in the file is the wrong path; the correct path is verified in Flagged items. |
+| TestMu QA, 40+ skills (A3) | Missing | - | Adjacent: playwright-pro (tool-specific), test-driven-development (method). No publisher QA suite. |
+| stick-scene (A6, product demo) | Missing | - | No product-demo skill in the repo. |
+| venice-image (A6, private image) | Missing | - | No private image skill in the repo. No image skill at all. |
+| community-ops (A6) | Missing | - | No community skill in the repo. Design held: the community-management URL is dead (see Flagged items). |
+| security-audit-skill (A10, cloudflare official) | Missing | - | Adjacent: security-reviewer/security-guardian agents and the 16 offensive skills. No multi-phase audit skill as such. |
+| bug-bounty-agent-skills (A10, murrtada, 93) | Missing | - | Adjacent: the 16 offensive/threat-intel skills (threat intel, not bounty workflow). |
+| devops-skills (A11, anmolnagpal) | Missing | - | Adjacent: release skill (Forge release flow, not DevOps workflows). No IaC/CI/CD skill. |
+| vercel, official (A11) | Missing | - | No frontend-deploy skill in the repo. |
+| sanity, official (A11) | Missing | - | No CMS skill in the repo. |
+| internal-comms (A12, Anthropic) | Missing | - | No internal-comms skill in the repo. Adjacent: doc-maintenance, pr-report. |
+| theme-factory (A12, Anthropic) | Missing | - | No theming skill in the repo. |
+| mcp-builder (A12, Anthropic) | Missing | - | Adjacent: mcp-builder agent (integration, not skill generation). No MCP-builder skill. |
+| diagram-design (A12, cathrynlavery) | Missing | - | No diagram skill in the repo. |
+| claude-obsidian (A12, AgriciDaniel) | Missing | - | Adjacent: obsidian-markdown, obsidian-cli, obsidian-bases (Obsidian tooling, not the second-brain method with wiki-ingest and autoresearch). |
+| market research + competitive intel (A13) | Missing | - | Adjacent: market-research (repo skill, a research primitive). The registry row is C-level intel plus a 9-dimension teardown, broader than the repo skill. |
+| media production (A15, autopunk, split) | Missing | - | No PR/media-production suite in the repo. |
+| pitch-deck-mastery (A15, split) | Partial | pitch-deck | Repo has pitch-deck. The 12-slide framework and review checklist are missing. |
+| agent-browser (A16, vercel-labs) | Missing | - | No browser-automation skill in the repo. |
+| agent-desktop (A16, vercel-labs) | Missing | - | No computer-use skill in the repo. |
+| gamedev (A16) | Missing | - | No gamedev skill in the repo. |
+| scientific research (A16, K-Dense) | Missing | - | No scientific-research skill in the repo. |
+| language-learning (B) | Missing | - | No language-learning skill in the repo. |
+| faith (B, skill-islamic-salafi + ansari-skill) | Missing | - | No faith skill in the repo. |
+| addyosmani/agent-skills (moved A1 to A3) | Missing | - | Status unchanged from v13. |
+| obra champion suite (merged, A3) | Partial | brainstorming, systematic-debugging, verification-before-completion, writing-skills, test-driven-development, subagent-driven-development | Was 3 Covered + 1 Partial in v15. Now one Partial row: the repo holds 6 of the suite's 15 skills. |
+| fundraising (moved A1 to A15) | Partial | pitch-deck, investor-research | Status unchanged from v15. |
+| smart contract audit (moved A10 to A14, 2 rows) | Missing | - | Status unchanged from v15. |
+| public speaking (moved B to A1) | Missing | - | Status unchanged from v15. |
+| podcast/audio ops (moved B to A6) | Missing | - | Status unchanged from v15. |
+| sql-queries + dbt (merged, A13) | Missing | - | Status unchanged from v14. Both now have URLs in v20. |
+| QBO reconciliation (merged into invoice row, A8) | Missing | - | Status unchanged from v13. |
+
+### Status changes vs v15
+
+- Covered 3 to 0 (obra merge, see above). The repo did not lose coverage.
+- Partial 5 to 6 (obra suite, marketing, GRC, skill factory, fundraising, pitch-deck). The pitch-deck row is the new sixth partial: it split out of the fundraising row.
+- The 6 rows that had no URL in v14/v15 (borghei data-scientist, sql-queries, dbt, meeting-notes, zapier-workflows, biohacking-advisor) all have URLs in v20. All 6 were checked; all 6 return HTTP 200 (see URL check).
+
+### URL check, 25 Nov 2026
+
+42 URLs are new in v20 vs v15. 40 return HTTP 200 (37 on the first pass, 3 after a sequential re-check: they first returned 429, GitHub rate limiting on the parallel batch, then 200). 2 are dead:
+
+1. **rag-architect (Jeffallan), wrong path in the file: HTTP 404.** The file links `github.com/Jeffallan/claude-skills/blob/main/skills/rag-architect/SKILL.md`. The skill exists at `github.com/Jeffallan/claude-skills/blob/main/plugin/skills/rag-architect/SKILL.md`, verified HTTP 200 on 25 Nov 2026. The registry text is verbatim, so the file keeps the wrong URL; the correct path is recorded here and in the curation plan.
+2. **community-management (absolutelyskilled): unreachable.** The file links crossaitools.com, which redirects to claudemarketplaces.com and returns HTTP 403 there (checked 25 Nov 2026; the earlier check returned 410 on the same redirect). The design that uses this row is held until a replacement source exists.
+
+One more dead URL was found in the same pass, also new in v20:
+
+3. **n8n official skill (`n8n-io/n8n/blob/master/.claude/skills/n8n-conventions/SKILL.md`): HTTP 404.** The `.claude/skills` path does not exist in the n8n repo at all (verified via the GitHub API on 25 Nov 2026: `.claude/` holds only README.md, plugins, and settings.json). No replacement path was found. The row's other source, czlonkowski/n8n-skills, returns HTTP 200.
+
+Re-checks from the v13 review:
+
+- **fitness-nutrition (getclaudeskills.com): still HTTP 500** (third check, 25 Nov 2026). Not confirmed dead (server error, not 404). The row still needs a manual re-check.
+- **Locke and Latham citation (med.stanford.edu PDF): still HTTP 404** (25 Nov 2026). Research citation, not a skill URL; no registry row is affected.
+
+### Value comparisons, updated
+
+The 6 comparisons from the v13 review stand (PM lifecycle, adversarial review, marketing, accounting, contract review, GRC), plus the extra slot ai-seo. One new comparison:
+
+8. **QA (A3): TestMu 40+ skill suite vs repo playwright-pro.** Registry pick is broader: a publisher QA suite (test planning, automation, CI validation) against one tool-specific skill. Unverified: the 40+ skill count.
+
+Extra slots the repo misses entirely (in addition to ai-seo): AI-research, team-orchestration, gamedev, scientific research, agent-browser and agent-desktop. All are new v20 rows with no repo skill at all.
+
+### Taxonomy note: A16 splits, the rest still have no home
+
+The registry now has 16 company departments (A1-A16) plus 20 life domains. The repo still has 10 departments. A16 has no single home: agent ops maps to Infrastructure, gamedev maps to Creative, scientific research maps to Knowledge. Whether A16 should be its own department is an open question for Galih (curation plan question 17). A4 Operations, A5 Customer Success, A7 People/HR, A13 Cross-cutting, A14 Trading, A15 External Relations, and all of B Life still have no repo department, as in v15. A1 now holds public speaking (Executive) and A6 now holds podcast/audio ops (Creative/Growth).
+
+### "NOL GAP" note
+
+The file's title and status line claim "NOL GAP + NOL REDUNDANSI". That is the research agent's claim, not a verified fact. The v15 permanent rule stands: never claim complete without a closure sweep. This review does not verify the claim, and the rekap's own arithmetic does not add up (118 vs 121, 4 restores vs 7 named), which is itself evidence a closure sweep is still owed before the claim is trusted.
+
+### Flagged items (v20)
+
+1. **Count discrepancy (see above):** rekap says 118 rows and 4 restores; the file's own per-section table sums to 121 rows and names 7 restored rows. Recorded, not fixed.
+2. **Dead URLs (3):** rag-architect wrong path (404, correct path verified 200), community-management (403 via redirect, was 410), n8n-conventions (404, path does not exist in the repo).
+3. **Still bad on re-check:** fitness-nutrition HTTP 500 (third check), Locke and Latham citation HTTP 404.
+4. **Unverified registry claims (not re-checked here):** all install counts, star counts, the GRC 92%/53% benchmark, the CUAD grounding claim, suite counts (68, 44, 394, 293, 77, 25, 40+), and the "NOL GAP" status claim. URLs were checked; counts and benchmarks were not. Re-check them when a row is adopted.
+5. **Known gap inside the registry itself (A7 note, carried from v13):** performance goal-setting and psychological safety are still research (Locke and Latham, Edmondson). No marketplace skill was found for them. Recorded here, not fixed here.
