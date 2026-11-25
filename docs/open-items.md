@@ -80,8 +80,12 @@ GitHub issues, and Galih's calls.
 
 - [ ] Codex hook fire proof. Needs Galih's Codex login/API key plus a
   canary run.
-- [ ] #213 Dependabot ws (high CVE-2026-48779, medium CVE-2026-45736).
-  Opened as an issue per Galih, not fixed.
+- [x] #213 Dependabot ws (high CVE-2026-48779, medium CVE-2026-45736).
+  CLOSED 25 Nov 2026: the vulnerable `ws` copy lived only in the
+  vendored `tests/brainstorm-server/node_modules/` for the skipped
+  brainstorm-server tests; that directory was deleted, so `ws` is gone
+  from the repo entirely. The brainstorm server itself (Node built-ins
+  only) was kept.
 - [ ] #205 end-to-end example, #206 personas/, #207 CI parity, #19
   awesome-codex-plugins listing.
 
