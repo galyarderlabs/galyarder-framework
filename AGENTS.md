@@ -12,7 +12,7 @@ One flow, five stages:
 2. **Goal**: say what you want, in plain words. The work gets a plan, with the rules and the workflow that fit it.
 3. **Ship**: the agent builds it, checks every claim against evidence, and ships it. Distribution is where the build loop ends.
 4. **Earn**: price it, sell it, collect it.
-5. **Give back**: return from what you earned, guided by the deep values (psychology, morality, gratitude, stoicism) and by an honest look at the uncomfortable facts behind finance, politics, and how life is really played.
+5. **Give back**: return what you earned so the next cycle starts further ahead: share the work, teach what it proved, and leave it better than you found it.
 
 The full workflow is in `WORKFLOW.md`.
 

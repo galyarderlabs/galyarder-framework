@@ -19,7 +19,7 @@ One flow, five stages. The goal-to-ship loop is stages 2-3. Route by stage, then
 2. **Goal.** Say what you want, in plain words, then plan it: `writing-plans`, `prd-flow`, `founder-context`.
 3. **Ship.** Build it, check it against evidence, distribute it: `executing-plans`, `test-driven-development`, `systematic-debugging`, `release`, `verification-before-completion`.
 4. **Earn.** Price it, sell it, collect it: `finance-based-pricing-advisor`, `saas-finops-optimization`, `payments-core`, `quant-trading`, `invoice-lifecycle`.
-5. **Give back.** Return from what you earned, guided by the deep values (psychology, morality, gratitude, stoicism) and the uncomfortable facts behind finance, politics, and how life is really played: `journal-framework`, `reflective-listening`, `faith-practice`, `personal-finance`.
+5. **Give back.** Return what you earned so the next cycle starts further ahead: share the work, teach what it proved, and leave it better than you found it: `journal-framework`, `reflective-listening`, `faith-practice`, `personal-finance`.
 
 ---
 
