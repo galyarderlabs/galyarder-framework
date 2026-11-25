@@ -108,4 +108,4 @@ This skill carries the Forge value in its substance: no AI slop, flow goal to sh
 
 ## Research source
 
-cathrynlavery/diagram-design, https://github.com/cathrynlavery/diagram-design (52 editorial diagram types, self-contained HTML + SVG, brand matching, redrawn imports from draw.io, Mermaid, Excalidraw, PlantUML). Note: the repository was verified through its public README and skill listings, not a local clone, because the clone step was blocked by an execution-risk check in this session; the skill content above follows the plan's elements and the verified public descriptions of the 52 types and the editorial system.
+cathrynlavery/diagram-design, https://github.com/cathrynlavery/diagram-design (52 editorial diagram types, self-contained HTML + SVG, brand matching, redrawn imports from draw.io, Mermaid, Excalidraw, PlantUML). Note: verified against a local clone of the repository on 25 Nov 2026: README confirms 52 diagram types, one self-contained HTML + SVG file in the operator's brand, no shadows, no Mermaid slop.
