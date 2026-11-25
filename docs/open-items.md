@@ -86,8 +86,16 @@ GitHub issues, and Galih's calls.
   brainstorm-server tests; that directory was deleted, so `ws` is gone
   from the repo entirely. The brainstorm server itself (Node built-ins
   only) was kept.
-- [ ] #205 end-to-end example, #206 personas/, #207 CI parity, #19
-  awesome-codex-plugins listing.
+- [x] #206 personas/ — CLOSED 25 Nov 2026: the live docs no longer
+  describe `personas/` as canonical runtime (only the historical
+  CHANGELOG.md / RELEASE-NOTES.md mention it, and history is not
+  rewritten); the only other mention was this file's own list.
+- [x] #207 CI parity — CLOSED 25 Nov 2026: `sync-skills-manifest.py`
+  gained a `--check` mode (exit 1 on drift, changes nothing) wired into
+  the smoke-test workflow; the old docs/skills/ and integrations/
+  mirrors the issue cited are already deleted, and plugin versions were
+  already checked.
+- [ ] #205 end-to-end example, #19 awesome-codex-plugins listing.
 
 ## Other
 
