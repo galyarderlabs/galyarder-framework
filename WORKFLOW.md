@@ -1,6 +1,6 @@
 # Forge Anything Workflow
 
-The workflow turns an idea into reviewed, shipped, earned-from work, and back into values. The flow is Ide, Goal, Ship, Earn, Give back; the goal-to-ship loop inside it is Goal, Plan, Build, Verify, Ship, and it ends at distribution. Coding is one
+The workflow turns ideas into reviewed, shipped, earned-from work, and back into values. The flow is Ideas, Goal, Ship, Earn, Give back; the goal-to-ship loop inside it is Goal, Plan, Build, Verify, Ship, and it ends at distribution. Coding is one
 surface; the workflow covers the whole company and life, not just code.
 
 ## How the pieces fit

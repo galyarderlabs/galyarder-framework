@@ -8,7 +8,7 @@ Using an AI agent should not be just generating code, and the agent should not b
 
 One flow, five stages:
 
-1. **Ide**: turn a spark into something worth building.
+1. **Ideas**: turn sparks into something worth building.
 2. **Goal**: say what you want, in plain words. The work gets a plan, with the rules and the workflow that fit it.
 3. **Ship**: the agent builds it, checks every claim against evidence, and ships it. Distribution is where the build loop ends.
 4. **Earn**: price it, sell it, collect it.

@@ -29,7 +29,7 @@ Forge Anything surfaces must show:
 - skills,
 - commands,
 - workflows,
-- the five stages (Ide, Goal, Ship, Earn, Give back),
+- the five stages (Ideas, Goal, Ship, Earn, Give back),
 - tests and evidence,
 - distribution, then give back (where the flow ends).
 
@@ -86,7 +86,7 @@ Do not turn the whole product into a monospace wall. Do not set body text in ser
 
 Good Forge Anything diagrams show:
 
-- the five stages (Ide, Goal, Ship, Earn, Give back),
+- the five stages (Ideas, Goal, Ship, Earn, Give back),
 - agent delegation,
 - test gates and evidence checks,
 - distribution, then give back (where the flow ends),

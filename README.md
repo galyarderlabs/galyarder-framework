@@ -21,7 +21,7 @@ Using an AI agent shouldn't be just generating code, and the agent shouldn't be 
 
 Left to itself, an AI agent takes the shortest path and stops at a draft. It has no rules for what comes after the code, no clean place to start, no way to reach the tools and people it needs, and no way to ship. It gets confused about what to do next, and the work ends at a draft, not at a shipped thing.
 
-Forge Anything is the whole system, not one piece. The rules and the workflow, the scaffold to start clean, the CLI to build, serve, and check, the MCP to carry it to any agent or chatbot, and the plugins to put it in the harness the agent already uses. One system, from an idea to shipped work, earned from and given back, in the company and in life.
+Forge Anything is the whole system, not one piece. The rules and the workflow, the scaffold to start clean, the CLI to build, serve, and check, the MCP to carry it to any agent or chatbot, and the plugins to put it in the harness the agent already uses. One system, from ideas to shipped work, earned from and given back, in the company and in life.
 
 It covers the whole company and life, not just code: product, growth, security, infrastructure, legal and finance, and knowledge, alongside engineering. The pieces fit together and the flow ends at give back, so the work ships instead of sitting as a draft.
 
@@ -29,7 +29,7 @@ It covers the whole company and life, not just code: product, growth, security, 
 
 One flow, five stages:
 
-1. **Ide**: turn a spark into something worth building.
+1. **Ideas**: turn sparks into something worth building.
 2. **Goal**: say what you want, in plain words. The work gets a plan, with the rules and the workflow that fit it.
 3. **Ship**: the agent builds it, checks every claim against evidence, and ships it. Distribution is where the build loop ends.
 4. **Earn**: price it, sell it, collect it.

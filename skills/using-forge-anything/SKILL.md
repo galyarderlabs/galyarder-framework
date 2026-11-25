@@ -15,7 +15,7 @@ description: Use when starting any conversation - establishes how to find and us
 
 One flow, five stages. The goal-to-ship loop is stages 2-3. Route by stage, then read the skills named there.
 
-1. **Ide.** Turn a spark into something worth building: `brainstorming`, `evidence-strategy`, `market-research`.
+1. **Ideas.** Turn sparks into something worth building: `brainstorming`, `evidence-strategy`, `market-research`.
 2. **Goal.** Say what you want, in plain words, then plan it: `writing-plans`, `prd-flow`, `founder-context`.
 3. **Ship.** Build it, check it against evidence, distribute it: `executing-plans`, `test-driven-development`, `systematic-debugging`, `release`, `verification-before-completion`.
 4. **Earn.** Price it, sell it, collect it: `finance-based-pricing-advisor`, `saas-finops-optimization`, `payments-core`, `quant-trading`, `invoice-lifecycle`.
