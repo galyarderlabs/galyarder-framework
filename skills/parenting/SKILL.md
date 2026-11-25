@@ -149,7 +149,7 @@ The opposite error matters too: dismissing a genuine concern with "he will grow 
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: the loop ends at a shipped artifact the family can use, a routine sheet, a conversation script, a media plan, not at a chat full of reassurance. Output as changes: the saved plan, the note in the family record, the script tried tonight. Report by work: what was tried, what worked, what to adjust. Use the related skills (`journal-framework` for the parent's own reflection, `reflective-listening` when the parent needs to be heard before advising, `education-suite` for learning support, `cooking` for family meals and nutrition structure). Update the agent's memory with each child's age band, what works for them, and what the family agreed, so the next question starts from the child, not from a generic chart.
+This skill carries the Forge value in its substance: ship means a shipped artifact the family can use, a routine sheet, a conversation script, a media plan, not a chat full of reassurance. Output as changes: the saved plan, the note in the family record, the script tried tonight. Report by work: what was tried, what worked, what to adjust. Use the related skills (`journal-framework` for the parent's own reflection, `reflective-listening` when the parent needs to be heard before advising, `education-suite` for learning support, `cooking` for family meals and nutrition structure). Update the agent's memory with each child's age band, what works for them, and what the family agreed, so the next question starts from the child, not from a generic chart.
 
 ## Related Skills
 

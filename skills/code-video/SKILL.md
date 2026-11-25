@@ -138,7 +138,7 @@ Fix, re-render, re-extract, re-inspect. Only deliver after a clean pass. Then ru
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The loop ends at a shipped MP4 with its code project committed, not at a render nobody inspected. Report by work: scenes built, frames inspected, fixes applied, render shipped. Use the related skills (`motion-video` when one story file is enough, `reel-edit` when the material is real footage, `product-demo` when the demo belongs on the landing page). Update the agent's memory with the theme, patterns, and fixes that worked so the next video starts from what is proven.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a shipped MP4 with its code project committed, not a render nobody inspected. Report by work: scenes built, frames inspected, fixes applied, render shipped. Use the related skills (`motion-video` when one story file is enough, `reel-edit` when the material is real footage, `product-demo` when the demo belongs on the landing page). Update the agent's memory with the theme, patterns, and fixes that worked so the next video starts from what is proven.
 
 ## Related Skills
 

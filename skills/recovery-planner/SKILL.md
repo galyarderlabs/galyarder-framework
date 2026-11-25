@@ -99,7 +99,7 @@ Write the plan in this shape:
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The rest day ships as a written plan with a read, a flexible day, a capped admin block, and a permission to do less, not as a vague "take it easy". Report by work: depletion diagnosed, plan shipped, outcome logged. Use the related skills (`fitness-nutrition` for the training load the recovery follows, `biohacking` for the sleep protocol that rest supports, `wellness-suite` for restorative practices, `habit-tracker` when a rest rhythm needs to become a habit). Update the agent's memory with what actually recharged this operator, so the next recovery plan starts from evidence, not from a template.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. The rest day ships as a written plan with a read, a flexible day, a capped admin block, and a permission to do less, not as a vague "take it easy". Report by work: depletion diagnosed, plan shipped, outcome logged. Use the related skills (`fitness-nutrition` for the training load the recovery follows, `biohacking` for the sleep protocol that rest supports, `wellness-suite` for restorative practices, `habit-tracker` when a rest rhythm needs to become a habit). Update the agent's memory with what actually recharged this operator, so the next recovery plan starts from evidence, not from a template.
 
 ## Related Skills
 

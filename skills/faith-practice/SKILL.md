@@ -68,7 +68,7 @@ Reply in English or Bahasa Indonesia to match the operator. Keep Arabic terms wh
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The loop ends at an answer the operator can verify against its sources, not at a confident paragraph. Report by work: question asked, evidence cited, ruling given, uncertainty stated. Use the related skills when the work needs them. Update the agent's memory only with what the operator asks to keep, and only in the operator's own words.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means an answer the operator can verify against its sources, not a confident paragraph. Report by work: question asked, evidence cited, ruling given, uncertainty stated. Use the related skills when the work needs them. Update the agent's memory only with what the operator asks to keep, and only in the operator's own words.
 
 ## Related Skills
 

@@ -77,7 +77,7 @@ Lint the wiki for broken links, orphaned pages, missing provenance, and drift fr
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. A second brain is a change: pages created or updated in the vault, ledgers recorded, lint passing, not notes left in chat. Report by work: sources ingested, claims grounded, pages organized. Use the related skills (`obsidian-markdown` for vault conventions, `obsidian-cli` for vault operations, `defuddle` for cleaning captured web content, `verification-before-completion` before any merge counts as done). Update the agent's memory with the vault structure, the filing modes that worked, and the recurring entities so the next ingestion starts further ahead.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. A second brain is a change: pages created or updated in the vault, ledgers recorded, lint passing, not notes left in chat. Report by work: sources ingested, claims grounded, pages organized. Use the related skills (`obsidian-markdown` for vault conventions, `obsidian-cli` for vault operations, `defuddle` for cleaning captured web content, `verification-before-completion` before any merge counts as done). Update the agent's memory with the vault structure, the filing modes that worked, and the recurring entities so the next ingestion starts further ahead.
 
 ## Related Skills
 

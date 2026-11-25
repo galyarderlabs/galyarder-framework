@@ -147,7 +147,7 @@ If you cannot state the concrete damage, the severity is lower than it feels.
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: evidence before completion, output as changes. The loop ends at a shipped report and, once approved, a shipped fix with its verification, not at a list of suspicions. Report by work: categories checked, findings confirmed, fixes shipped. Use the related skills (`security-audit` for the full multi-phase audit, `bug-hunt` for the general hunt, `verification-before-completion` before a fix counts). Update the agent's memory with the vulnerability patterns found so the same class is caught earlier next time.
+This skill carries the Forge value in its substance: evidence before completion, output as changes. Ship means a shipped report and, once approved, a shipped fix with its verification, not a list of suspicions. Report by work: categories checked, findings confirmed, fixes shipped. Use the related skills (`security-audit` for the full multi-phase audit, `bug-hunt` for the general hunt, `verification-before-completion` before a fix counts). Update the agent's memory with the vulnerability patterns found so the same class is caught earlier next time.
 
 ## Related Skills
 

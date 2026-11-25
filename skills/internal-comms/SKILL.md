@@ -78,7 +78,7 @@ Pull from available sources wherever possible: shipped work, tickets, dashboards
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. An internal communication is a change: an update posted, a newsletter sent, an incident report filed, not a draft left in chat. Report by work: updates shipped, incidents reported, FAQs answered. Use the related skills (`meeting-notes` when the update carries meeting outcomes, `document-suite` when the communication must become an office file, `verification-before-completion` before any communication counts as done). Update the agent's memory with the formats the company actually uses, so the next update follows the house style without being told twice.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. An internal communication is a change: an update posted, a newsletter sent, an incident report filed, not a draft left in chat. Report by work: updates shipped, incidents reported, FAQs answered. Use the related skills (`meeting-notes` when the update carries meeting outcomes, `document-suite` when the communication must become an office file, `verification-before-completion` before any communication counts as done). Update the agent's memory with the formats the company actually uses, so the next update follows the house style without being told twice.
 
 ## Related Skills
 

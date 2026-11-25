@@ -165,7 +165,7 @@ Never inject these into a text that did not already contain them: fabricated spe
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow from goal to shipped, everything evidence-based, output as changes, report by work, use related skills, update the agent's memory. The loop ends at copy that shipped clean, not at a list of suspicions. An audit is a change: a report filed as a durable artifact, and once approved, a rewritten file with its verification. Report by work: findings by tier, edits made, residuals left and why. Use the related skills (`anti-slop-constraint` to stop the next draft from needing this audit, `voice-anchor` for the voice the copy is scored against, `drift-audit` when the flags point at drift across channels). Update the agent's memory with the pattern classes found so the same class is caught earlier next time.
+This skill carries the Forge value in its substance: no AI slop, flow from ideas to give back, everything evidence-based, output as changes, report by work, use related skills, update the agent's memory. Ship means copy that shipped clean, not a list of suspicions. An audit is a change: a report filed as a durable artifact, and once approved, a rewritten file with its verification. Report by work: findings by tier, edits made, residuals left and why. Use the related skills (`anti-slop-constraint` to stop the next draft from needing this audit, `voice-anchor` for the voice the copy is scored against, `drift-audit` when the flags point at drift across channels). Update the agent's memory with the pattern classes found so the same class is caught earlier next time.
 
 ## Related Skills
 

@@ -116,7 +116,7 @@ The output is a game or a game feature running in the target engine: a playable 
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: flow from goal to shipped, everything evidence-based, output as changes. The loop ends at a playable build in the target engine, not at a design doc or a code snippet. Report by work: features built, tests run in-engine, builds shipped. Use the related skills (`test-driven-development` for the failing test before the fix, `verification-before-completion` before a feature counts, `systematic-debugging` when a feature fails in-engine). Update the agent's memory with the engine version, the verified commands, and the bugs found, so the next session starts from a working setup instead of rediscovering it.
+This skill carries the Forge value in its substance: flow from ideas to give back, everything evidence-based, output as changes. Ship means a playable build in the target engine, not a design doc or a code snippet. Report by work: features built, tests run in-engine, builds shipped. Use the related skills (`test-driven-development` for the failing test before the fix, `verification-before-completion` before a feature counts, `systematic-debugging` when a feature fails in-engine). Update the agent's memory with the engine version, the verified commands, and the bugs found, so the next session starts from a working setup instead of rediscovering it.
 
 ## Related Skills
 

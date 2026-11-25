@@ -152,7 +152,7 @@ Fix one logical bug at a time unless the operator explicitly asks for a broader 
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: evidence before completion, output as changes. The loop ends at a shipped report and, once approved, a shipped fix with its verification, not at a list of suspicions. Report by work: bugs found, evidence, fixes shipped. Use the related skills (`systematic-debugging` for root cause, `test-driven-development` for the failing test that proves the fix, `verification-before-completion` before the fix counts). Update the agent's memory with the bug patterns found so the same class of bug is caught earlier next time.
+This skill carries the Forge value in its substance: evidence before completion, output as changes. Ship means a shipped report and, once approved, a shipped fix with its verification, not a list of suspicions. Report by work: bugs found, evidence, fixes shipped. Use the related skills (`systematic-debugging` for root cause, `test-driven-development` for the failing test that proves the fix, `verification-before-completion` before the fix counts). Update the agent's memory with the bug patterns found so the same class of bug is caught earlier next time.
 
 ## Related Skills
 

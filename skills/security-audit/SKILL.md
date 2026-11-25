@@ -147,7 +147,7 @@ The ledger makes spend countable: one unit is roughly one hunter assignment, and
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: evidence before completion, output as changes. The loop ends at a shipped audit report with machine-readable findings and a verified coverage statement, not at a list of suspicions. Report by work: units covered, candidates validated, findings confirmed, gaps disclosed. Use the related skills (`appsec-audit` for the OWASP category pass, `secure-sandbox` for the execution controls this audit depends on, `verification-before-completion` before any fix counts). Update the agent's memory with the vulnerability patterns and the coverage gaps found so the next audit starts from a stronger ledger.
+This skill carries the Forge value in its substance: evidence before completion, output as changes. Ship means a shipped audit report with machine-readable findings and a verified coverage statement, not a list of suspicions. Report by work: units covered, candidates validated, findings confirmed, gaps disclosed. Use the related skills (`appsec-audit` for the OWASP category pass, `secure-sandbox` for the execution controls this audit depends on, `verification-before-completion` before any fix counts). Update the agent's memory with the vulnerability patterns and the coverage gaps found so the next audit starts from a stronger ledger.
 
 ## Related Skills
 

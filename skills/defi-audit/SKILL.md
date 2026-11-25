@@ -102,7 +102,7 @@ The report holds:
 
 ## How this skill carries the Forge value
 
-No AI slop: findings are numbers, pattern names, file lines, and severity, not adjectives. Flow goal to shipped: the audit ends as a report file committed or filed as a PR or department note, not as chat text. Everything evidence-based: no claim without a pattern and a code location. Report by work: the report lists what was checked, what was found, and what is still open. Use related skills: pull in `security-audit` and `appsec-audit` for application level findings, `quant-trading` and `token-research` for market context, and `exchange-data` for exchange sourced data. Update the agent memory: record the audit, the protocol, the severity of the worst finding, and the report path in the security-guardian memory.
+No AI slop: findings are numbers, pattern names, file lines, and severity, not adjectives. Flow ideas to give back: the audit ends as a report file committed or filed as a PR or department note, not as chat text. Everything evidence-based: no claim without a pattern and a code location. Report by work: the report lists what was checked, what was found, and what is still open. Use related skills: pull in `security-audit` and `appsec-audit` for application level findings, `quant-trading` and `token-research` for market context, and `exchange-data` for exchange sourced data. Update the agent memory: record the audit, the protocol, the severity of the worst finding, and the report path in the security-guardian memory.
 
 ## Related skills
 

@@ -91,7 +91,7 @@ Calculate net worth on a fixed cadence: assets minus liabilities, from the same 
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The loop ends when the budget, the tracking record, and the net worth note land as durable changes the operator can re-open next month, not as chat text that vanishes. Report by work: budget status, expenses tracked, debts cleared, net worth movement. Use the related skills (`accounting-core` when personal money meets company books, `career-kit` when an offer changes income, `habit-tracker` for the tracking cadence). Update the money agent's memory with the budget state, the debt list, and the net worth trend, so the next review starts from evidence instead of from zero.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. The loop ends when the budget, the tracking record, and the net worth note land as durable changes the operator can re-open next month, not as chat text that vanishes. Report by work: budget status, expenses tracked, debts cleared, net worth movement. Use the related skills (`accounting-core` when personal money meets company books, `career-kit` when an offer changes income, `habit-tracker` for the tracking cadence). Update the money agent's memory with the budget state, the debt list, and the net worth trend, so the next review starts from evidence instead of from zero.
 
 ## Related Skills
 

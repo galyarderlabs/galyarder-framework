@@ -167,7 +167,7 @@ Write `VIDEO-PARAMS.md` next to the output and keep it with the video:
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The loop ends at a shipped MP4 with its parameter record, not at a prompt draft. A video that cannot be reproduced from its record is not shipped. Report by work: shots built, checks passed, models compared, render shipped. Use the related skills (`motion-video` when one story file should drive the video, `code-video` when the video must live as editable React code, `video-analysis` when an existing video is the reference to beat, `reel-edit` when the material is real footage). Update the agent's memory with the model picks, prompts, and parameter sets that worked so the next video starts from what is proven.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a shipped MP4 with its parameter record, not a prompt draft. A video that cannot be reproduced from its record is not shipped. Report by work: shots built, checks passed, models compared, render shipped. Use the related skills (`motion-video` when one story file should drive the video, `code-video` when the video must live as editable React code, `video-analysis` when an existing video is the reference to beat, `reel-edit` when the material is real footage). Update the agent's memory with the model picks, prompts, and parameter sets that worked so the next video starts from what is proven.
 
 ## Related Skills
 

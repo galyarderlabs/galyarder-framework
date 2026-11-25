@@ -112,7 +112,7 @@ Verify the artifact against its own rules before it counts as done:
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. A lesson plan that stays in chat is not shipped. The loop ends when the plan, rubric, or assessment lands as a commit, a PR, or department notes, with its evidence note attached. Report by work: what was designed, what evidence it rests on, what shipped. Use the related skills (`socratic-tutor` to teach from the plan, `language-learning` for language goals, `grounded-research` when a claim needs a citable source). Update the learning agent's memory with the methods that worked, the ratings that held up, and the gaps the next plan must close.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. A lesson plan that stays in chat is not shipped. The loop ends when the plan, rubric, or assessment lands as a commit, a PR, or department notes, with its evidence note attached. Report by work: what was designed, what evidence it rests on, what shipped. Use the related skills (`socratic-tutor` to teach from the plan, `language-learning` for language goals, `grounded-research` when a claim needs a citable source). Update the learning agent's memory with the methods that worked, the ratings that held up, and the gaps the next plan must close.
 
 ## Related Skills
 

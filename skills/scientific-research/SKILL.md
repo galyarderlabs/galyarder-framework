@@ -78,7 +78,7 @@ The library behind this skill spans 100+ scientific databases and specialized li
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. Scientific research is a change: a memo filed, a review drafted, a study design committed, not a summary left in chat. Report by work: papers reviewed, hypotheses generated, designs written, analyses run. Use the related skills (`grounded-research` for public sources alongside the literature, `ai-research` for deeper agent research passes, `evidence-strategy` for what counts as proof, `verification-before-completion` before any memo counts as done). Update the agent's memory with the databases that proved useful and the methods that held up, so the next research pass starts further ahead.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Scientific research is a change: a memo filed, a review drafted, a study design committed, not a summary left in chat. Report by work: papers reviewed, hypotheses generated, designs written, analyses run. Use the related skills (`grounded-research` for public sources alongside the literature, `ai-research` for deeper agent research passes, `evidence-strategy` for what counts as proof, `verification-before-completion` before any memo counts as done). Update the agent's memory with the databases that proved useful and the methods that held up, so the next research pass starts further ahead.
 
 ## Related Skills
 

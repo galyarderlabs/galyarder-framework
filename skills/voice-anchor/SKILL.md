@@ -130,7 +130,7 @@ A voice profile is a living record, not a one-time form. When `drift-audit` find
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow from goal to shipped, everything evidence-based, output as changes, report by work, use related skills, update the agent's memory. The voice profile is the memory this skill updates: nine answers saved as files, enforced on every output, scored on every piece. The loop ends at copy that shipped in the operator's voice, not at a profile that sits unread. Report by work: profile built or updated, pieces written, scores attached. Use the related skills (`anti-slop-audit` to verify the output against the catalog, `anti-slop-constraint` for the floor under every write, `drift-audit` to catch the voice drifting across channels). Update the agent's memory with every profile change, because the profile is the memory.
+This skill carries the Forge value in its substance: no AI slop, flow from ideas to give back, everything evidence-based, output as changes, report by work, use related skills, update the agent's memory. The voice profile is the memory this skill updates: nine answers saved as files, enforced on every output, scored on every piece. Ship means copy that shipped in the operator's voice, not a profile that sits unread. Report by work: profile built or updated, pieces written, scores attached. Use the related skills (`anti-slop-audit` to verify the output against the catalog, `anti-slop-constraint` for the floor under every write, `drift-audit` to catch the voice drifting across channels). Update the agent's memory with every profile change, because the profile is the memory.
 
 ## Related Skills
 

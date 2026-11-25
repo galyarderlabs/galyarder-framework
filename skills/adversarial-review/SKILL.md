@@ -139,7 +139,7 @@ Severity means: blocker stops the merge, major must be fixed before ship, minor 
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: evidence before completion, applied to someone else's work. The loop ends at a shipped verdict on a real change, not at a list of opinions. Report by work: findings, verdict, re-verification. Use the related skills (`systematic-debugging` when a finding needs root cause, `test-driven-development` for the regression test that proves the fix, `verification-before-completion` before the verdict counts). Update the agent's memory with recurring finding patterns so the same mistake stops passing review twice.
+This skill carries the Forge value in its substance: evidence before completion, applied to someone else's work. Ship means a shipped verdict on a real change, not a list of opinions. Report by work: findings, verdict, re-verification. Use the related skills (`systematic-debugging` when a finding needs root cause, `test-driven-development` for the regression test that proves the fix, `verification-before-completion` before the verdict counts). Update the agent's memory with recurring finding patterns so the same mistake stops passing review twice.
 
 ## Related Skills
 

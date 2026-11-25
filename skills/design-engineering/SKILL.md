@@ -252,7 +252,7 @@ Do not pad this into a report. The code is the deliverable.
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The animation is the change, the render test is the evidence, and the DESIGN.md rule is the durable change that keeps the next session from repeating the same correction. Report by work: animations built, reviews delivered, rules added. Use the related skills (`design-tools` for the design the motion sits on, `verification-before-completion` before the motion counts as done, `test-driven-development` for the render checks that prove it). Update the agent's memory with the design rules that accumulated, so taste compounds instead of resetting every session.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. The animation is the change, the render test is the evidence, and the DESIGN.md rule is the durable change that keeps the next session from repeating the same correction. Report by work: animations built, reviews delivered, rules added. Use the related skills (`design-tools` for the design the motion sits on, `verification-before-completion` before the motion counts as done, `test-driven-development` for the render checks that prove it). Update the agent's memory with the design rules that accumulated, so taste compounds instead of resetting every session.
 
 ## Related Skills
 

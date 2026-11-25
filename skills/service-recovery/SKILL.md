@@ -118,7 +118,7 @@ A case with no closure evidence is still open, however quiet the customer has go
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence-based, output as changes. The loop ends at a shipped recovery plan and a closed case record with evidence, not at an apology. Report by work: failures recovered, cases closed with evidence, learning items shipped. Use the related skills (`complaint-resolution` for the single customer voice inside a wider failure, `cs-lifecycle` for the health impact on affected accounts, `churn-prevention` when a failure is pushing accounts toward cancel). Update the agent's memory with which scenarios have a tested path and which are still untested, so the next failure starts from a plan, not from a blank page.
+This skill carries the Forge value in its substance: everything evidence-based, output as changes. Ship means a shipped recovery plan and a closed case record with evidence, not an apology. Report by work: failures recovered, cases closed with evidence, learning items shipped. Use the related skills (`complaint-resolution` for the single customer voice inside a wider failure, `cs-lifecycle` for the health impact on affected accounts, `churn-prevention` when a failure is pushing accounts toward cancel). Update the agent's memory with which scenarios have a tested path and which are still untested, so the next failure starts from a plan, not from a blank page.
 
 ## Related Skills
 

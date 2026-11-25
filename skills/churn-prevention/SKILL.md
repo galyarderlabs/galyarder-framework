@@ -117,7 +117,7 @@ Impact model, stated as a projection, never a guarantee: monthly MRR at risk equ
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence-based, output as changes. The loop ends at a shipped cancel flow, a shipped dunning sequence, or a shipped retention plan per account, not at a churn theory. Report by work: accounts saved, payments recovered, win-backs reactivated, with the numbers behind each. Use the related skills (`cs-lifecycle` for the health score that feeds risk, `cs-ops` for the weekly risk list, `business-intelligence` for the churn numbers). Update the agent's memory with which save offers actually work per reason, so the map gets sharper every month instead of being rebuilt from zero.
+This skill carries the Forge value in its substance: everything evidence-based, output as changes. Ship means a shipped cancel flow, a shipped dunning sequence, or a shipped retention plan per account, not a churn theory. Report by work: accounts saved, payments recovered, win-backs reactivated, with the numbers behind each. Use the related skills (`cs-lifecycle` for the health score that feeds risk, `cs-ops` for the weekly risk list, `business-intelligence` for the churn numbers). Update the agent's memory with which save offers actually work per reason, so the map gets sharper every month instead of being rebuilt from zero.
 
 ## Related Skills
 

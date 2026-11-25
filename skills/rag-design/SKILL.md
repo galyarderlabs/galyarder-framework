@@ -128,7 +128,7 @@ Must not do:
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence-based, output as changes. The loop ends at a shipped pipeline tested end to end, not at an architecture diagram. Report by work: design, thresholds, measured results. Use the related skills (`prompt-eval` for the evaluation that proves retrieval quality, `ai-research` when the pipeline is research-grade, `verification-before-completion` before the pipeline counts as done). Update the agent's memory with the chosen store, embedding model, chunking parameters, and measured metrics, so the next change starts from the measured design.
+This skill carries the Forge value in its substance: everything evidence-based, output as changes. Ship means a shipped pipeline tested end to end, not an architecture diagram. Report by work: design, thresholds, measured results. Use the related skills (`prompt-eval` for the evaluation that proves retrieval quality, `ai-research` when the pipeline is research-grade, `verification-before-completion` before the pipeline counts as done). Update the agent's memory with the chosen store, embedding model, chunking parameters, and measured metrics, so the next change starts from the measured design.
 
 ## Related Skills
 

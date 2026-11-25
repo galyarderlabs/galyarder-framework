@@ -82,7 +82,7 @@ For every deploy on the hosting platform, record the site, the method (git push 
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: evidence before completion, output as changes. Errors are proven by traces, alerts are proven by delivery, deploys are proven by logs. The loop ends at a production state that is known and on record, not at a dashboard glanced at once. Report by work: issues triaged and closed, alerts verified, deploys recorded. Use the related skills (`frontend-deploy` for the deploys being recorded, `iac-core` for the infrastructure underneath, `bug-hunt` for the investigation once an issue is selected). Update the agent's memory with the incident history so the next error is triaged against what already broke.
+This skill carries the Forge value in its substance: evidence before completion, output as changes. Errors are proven by traces, alerts are proven by delivery, deploys are proven by logs. Ship means a production state that is known and on record, not a dashboard glanced at once. Report by work: issues triaged and closed, alerts verified, deploys recorded. Use the related skills (`frontend-deploy` for the deploys being recorded, `iac-core` for the infrastructure underneath, `bug-hunt` for the investigation once an issue is selected). Update the agent's memory with the incident history so the next error is triaged against what already broke.
 
 ## Related Skills
 

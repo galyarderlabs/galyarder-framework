@@ -85,7 +85,7 @@ Most of the research uses Western, often student samples in lab or speed-dating 
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The loop ends at a message the operator can send and a plan for whatever comes back, not at generic tips. Report by work: stage found, plan given, confidence stated, outcome tracked. Use the related skills when the work needs them. Update the agent's memory only with what the operator asks to keep, and only in the operator's own words.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a message the operator can send and a plan for whatever comes back, not generic tips. Report by work: stage found, plan given, confidence stated, outcome tracked. Use the related skills when the work needs them. Update the agent's memory only with what the operator asks to keep, and only in the operator's own words.
 
 ## Related Skills
 

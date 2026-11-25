@@ -76,7 +76,7 @@ Market data and custody status that can be quoted, each line carrying its source
 
 ## How this skill carries the Forge value
 
-No AI slop: numbers carry sources and times, not adjectives like hot or strong. Flow goal to shipped: fetched data lands in the artifact that asked for it (report, memo, PR, or department note), not as a loose chat answer. Everything evidence-based: a number without a named exchange is not a number. Report by work: each fetch lists what was asked, what came back, and what was unavailable. Use related skills: `quant-trading` and `token-research` consume this data for signals and memos, `defi-audit` uses the token audit slot, and `trading-discipline` gates any execution. Update the agent memory: record which exchange and query were used, and any custody action with its reference, in the crypto agent memory.
+No AI slop: numbers carry sources and times, not adjectives like hot or strong. Flow ideas to give back: fetched data lands in the artifact that asked for it (report, memo, PR, or department note), not as a loose chat answer. Everything evidence-based: a number without a named exchange is not a number. Report by work: each fetch lists what was asked, what came back, and what was unavailable. Use related skills: `quant-trading` and `token-research` consume this data for signals and memos, `defi-audit` uses the token audit slot, and `trading-discipline` gates any execution. Update the agent memory: record which exchange and query were used, and any custody action with its reference, in the crypto agent memory.
 
 ## Related skills
 

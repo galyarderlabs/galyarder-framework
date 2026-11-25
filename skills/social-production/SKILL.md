@@ -158,7 +158,7 @@ A daily 30 minute routine: respond to all comments on your posts, comment on 5 t
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow from goal to shipped, everything evidence-based, output as changes, report by work, use related skills, update the agent's memory. The loop ends at posts that shipped on a schedule, not at a folder of drafts. A schedule is a change: content plus a publish queue with a trace ID per post, approved by the operator, confirmed as published. Report by work: posts produced, posts scheduled, posts published, numbers from last cycle. Use the related skills (`content-strategy` for the plan, `anti-slop-constraint` for the floor under every post, `voice-anchor` for the voice, `campaign-analytics` for the numbers). Update the agent's memory with what performed, so the next calendar starts from evidence instead of from habit.
+This skill carries the Forge value in its substance: no AI slop, flow from ideas to give back, everything evidence-based, output as changes, report by work, use related skills, update the agent's memory. Ship means posts that shipped on a schedule, not a folder of drafts. A schedule is a change: content plus a publish queue with a trace ID per post, approved by the operator, confirmed as published. Report by work: posts produced, posts scheduled, posts published, numbers from last cycle. Use the related skills (`content-strategy` for the plan, `anti-slop-constraint` for the floor under every post, `voice-anchor` for the voice, `campaign-analytics` for the numbers). Update the agent's memory with what performed, so the next calendar starts from evidence instead of from habit.
 
 ## Related Skills
 

@@ -67,7 +67,7 @@ A compliance assessment per framework with evidence: gap analysis table, risk re
 
 ## How this skill carries the Forge value
 
-No AI slop: ratings are control IDs plus evidence, not reassuring adjectives. Flow goal to shipped: the assessment ends as filed documents and a treatment plan with dates, not as a chat verdict. Everything evidence-based: this is the whole method, a claim counts only with proof. Report by work: each assessment reports coverage, gaps, risks, and owners. Use related skills: `gdpr-compliance`, `gdpr-ccpa-privacy-auditor`, and `iso-42001-ai-governance` for framework depth, and `cloud-security` for the technical controls behind the ratings. Update the agent memory: record the framework, the coverage, the open gaps, and the risk owners in the legal-counsel memory.
+No AI slop: ratings are control IDs plus evidence, not reassuring adjectives. Flow ideas to give back: the assessment ends as filed documents and a treatment plan with dates, not as a chat verdict. Everything evidence-based: this is the whole method, a claim counts only with proof. Report by work: each assessment reports coverage, gaps, risks, and owners. Use related skills: `gdpr-compliance`, `gdpr-ccpa-privacy-auditor`, and `iso-42001-ai-governance` for framework depth, and `cloud-security` for the technical controls behind the ratings. Update the agent memory: record the framework, the coverage, the open gaps, and the risk owners in the legal-counsel memory.
 
 ## Related skills
 

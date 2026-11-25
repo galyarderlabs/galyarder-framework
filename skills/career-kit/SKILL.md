@@ -103,7 +103,7 @@ Cover letters, LinkedIn profile, portfolio case studies, and reference lists all
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The loop ends when the application is ready to send, the interview is rehearsed, or the offer is compared, with the artifacts filed as changes and the version record kept. Report by work: roles analyzed, versions produced, interviews prepared. Use the related skills (`personal-finance` when comparing offers, `grounded-research` when a market rate or company claim needs a source). Update the learning agent's memory with the operator's master resume state, the roles applied to, and what worked in interviews, so the next application starts from evidence instead of from zero.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. The loop ends when the application is ready to send, the interview is rehearsed, or the offer is compared, with the artifacts filed as changes and the version record kept. Report by work: roles analyzed, versions produced, interviews prepared. Use the related skills (`personal-finance` when comparing offers, `grounded-research` when a market rate or company claim needs a source). Update the learning agent's memory with the operator's master resume state, the roles applied to, and what worked in interviews, so the next application starts from evidence instead of from zero.
 
 ## Related Skills
 

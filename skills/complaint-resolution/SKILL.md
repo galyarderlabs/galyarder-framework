@@ -103,7 +103,7 @@ If the operator is unreachable, the case waits as a draft. Waiting is correct; s
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence-based, output as changes. The loop ends at a shipped case record and, once approved, a shipped response and resolution, not at a sympathetic draft. Report by work: complaints resolved, refunds approved and issued, patterns named with fixes. Use the related skills (`service-recovery` when the complaint sits inside a wider failure, `cs-lifecycle` for the account health behind the complaint, `cs-ops` for the weekly ticket themes that collect these patterns). Update the agent's memory with each customer's history and each pattern's fix, so the next complaint from the same customer starts from the record, not from zero.
+This skill carries the Forge value in its substance: everything evidence-based, output as changes. Ship means a shipped case record and, once approved, a shipped response and resolution, not a sympathetic draft. Report by work: complaints resolved, refunds approved and issued, patterns named with fixes. Use the related skills (`service-recovery` when the complaint sits inside a wider failure, `cs-lifecycle` for the account health behind the complaint, `cs-ops` for the weekly ticket themes that collect these patterns). Update the agent's memory with each customer's history and each pattern's fix, so the next complaint from the same customer starts from the record, not from zero.
 
 ## Related Skills
 

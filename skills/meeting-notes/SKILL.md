@@ -110,7 +110,7 @@ These two sections are the whole value of the skill. Apply them strictly.
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. Meeting notes are a change: a doc committed, a Notion page filed, or a dept note updated, not a summary left in chat. Report by work: meetings documented, decisions captured, actions owned. Use the related skills (`document-suite` when the notes must become an office file, `workspace-notion` when the notes live in Notion, `verification-before-completion` before any notes count as done). Update the agent's memory with the decisions and owners that recur, so follow-up meetings start from the last state instead of from zero.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Meeting notes are a change: a doc committed, a Notion page filed, or a dept note updated, not a summary left in chat. Report by work: meetings documented, decisions captured, actions owned. Use the related skills (`document-suite` when the notes must become an office file, `workspace-notion` when the notes live in Notion, `verification-before-completion` before any notes count as done). Update the agent's memory with the decisions and owners that recur, so follow-up meetings start from the last state instead of from zero.
 
 ## Related Skills
 

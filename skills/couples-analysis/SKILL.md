@@ -87,7 +87,7 @@ Results follow a standardized schema so sessions can be compared: anxiety score,
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The loop ends at a report the operator can check line by line against the transcript, not at a confident judgment. Report by work: patterns found, evidence quoted, limits stated, trend tracked. Use the related skills when the work needs them. Update the agent's memory only with what the operator asks to keep, and only in the operator's own words.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a report the operator can check line by line against the transcript, not a confident judgment. Report by work: patterns found, evidence quoted, limits stated, trend tracked. Use the related skills when the work needs them. Update the agent's memory only with what the operator asks to keep, and only in the operator's own words.
 
 ## Related Skills
 

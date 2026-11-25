@@ -118,7 +118,7 @@ If any check passes when it should fail, the sandbox is not trusted. Stop, repor
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: evidence before completion, output as changes. The loop ends at a shipped sandbox with a passing escape verification, not at a configuration that looks isolated. Report by work: sandboxes run, escape checks passed, results delivered. Use the related skills (`devops-generator` for the surrounding pipeline, `security-audit` for the audit that depends on these controls, `appsec-audit` for the application findings the sandbox helps reproduce). Update the agent's memory with the sandbox configuration that passed verification so the next run starts from a proven setup.
+This skill carries the Forge value in its substance: evidence before completion, output as changes. Ship means a shipped sandbox with a passing escape verification, not a configuration that looks isolated. Report by work: sandboxes run, escape checks passed, results delivered. Use the related skills (`devops-generator` for the surrounding pipeline, `security-audit` for the audit that depends on these controls, `appsec-audit` for the application findings the sandbox helps reproduce). Update the agent's memory with the sandbox configuration that passed verification so the next run starts from a proven setup.
 
 ## Related Skills
 

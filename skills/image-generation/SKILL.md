@@ -172,7 +172,7 @@ Take a second pass. Do not add more graphics. Refine what is there and make it e
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The loop ends at a shipped image or canvas with its prompt and philosophy on file, not at a prompt draft. A prompt that cannot reproduce its image is not shipped. Report by work: images generated, edits made, canvases shipped, prompts recorded. Use the related skills (`private-image` when the generation must stay private and unfiltered, `design-tools` when the design needs real tools and named pattern references, `video-generation` when a still becomes a shot in a video, `content-creator` when the image serves a piece of content). Update the agent's memory with the prompts, models, and canvas philosophies that worked so the next image starts from what is proven.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a shipped image or canvas with its prompt and philosophy on file, not a prompt draft. A prompt that cannot reproduce its image is not shipped. Report by work: images generated, edits made, canvases shipped, prompts recorded. Use the related skills (`private-image` when the generation must stay private and unfiltered, `design-tools` when the design needs real tools and named pattern references, `video-generation` when a still becomes a shot in a video, `content-creator` when the image serves a piece of content). Update the agent's memory with the prompts, models, and canvas philosophies that worked so the next image starts from what is proven.
 
 ## Related Skills
 

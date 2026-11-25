@@ -94,7 +94,7 @@ Every protocol ships with a start date, a single variable being tested, the metr
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The protocol ships as a written artifact with a start date, a metric, and a review date, not as a list of tips. Report by work: bottleneck found, protocol shipped, measurement at review. Use the related skills (`fitness-nutrition` for the training and food plan, `longevity-workspace` for the long term record, `recovery-planner` for rest that is not a protocol). Update the agent's memory with which protocols worked for this operator and which did not, so the next bottleneck starts from evidence.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. The protocol ships as a written artifact with a start date, a metric, and a review date, not as a list of tips. Report by work: bottleneck found, protocol shipped, measurement at review. Use the related skills (`fitness-nutrition` for the training and food plan, `longevity-workspace` for the long term record, `recovery-planner` for rest that is not a protocol). Update the agent's memory with which protocols worked for this operator and which did not, so the next bottleneck starts from evidence.
 
 ## Related Skills
 

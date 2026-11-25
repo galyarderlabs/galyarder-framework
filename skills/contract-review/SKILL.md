@@ -75,7 +75,7 @@ A contract review report as a markdown file: risk assessment with severity ratin
 
 ## How this skill carries the Forge value
 
-No AI slop: risks are categories, thresholds, and clause references, not vague warnings. Flow goal to shipped: the review ends as a report and redlines filed as a change, ready for counsel or negotiation, not as chat commentary. Everything evidence-based: this is the whole method, benchmark categories from real contracts. Report by work: the report lists what was checked, what was flagged, and what is still missing. Use related skills: `grc-core` for the compliance frame, `legal-tos-privacy` for terms and privacy documents, and `open-source-license` where licensing terms appear. Update the agent memory: record the document, the position taken, the worst risk, and the report path in the legal-counsel memory.
+No AI slop: risks are categories, thresholds, and clause references, not vague warnings. Flow ideas to give back: the review ends as a report and redlines filed as a change, ready for counsel or negotiation, not as chat commentary. Everything evidence-based: this is the whole method, benchmark categories from real contracts. Report by work: the report lists what was checked, what was flagged, and what is still missing. Use related skills: `grc-core` for the compliance frame, `legal-tos-privacy` for terms and privacy documents, and `open-source-license` where licensing terms appear. Update the agent memory: record the document, the position taken, the worst risk, and the report path in the legal-counsel memory.
 
 ## Related skills
 

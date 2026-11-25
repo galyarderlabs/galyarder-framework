@@ -118,7 +118,7 @@ Dashboard cadence: representation quarterly, hiring monthly, promotion annual, r
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence-based, output as changes. The loop ends at a shipped workforce plan, a shipped calibration record, or a shipped succession plan, not at a policy document nobody reads. Report by work: cycles run, gaps closed, equity checks done, successors named, with the numbers behind each. Use the related skills (`talent-acquisition` for the hiring the workforce plan calls for, `recruiting-ops` for the live search mechanics, `meeting-notes` for the calibration and talent review records). Update the agent's memory with the benchmarks, the current numbers, and the open gaps, so the next cycle starts from the last cycle's facts.
+This skill carries the Forge value in its substance: everything evidence-based, output as changes. Ship means a shipped workforce plan, a shipped calibration record, or a shipped succession plan, not a policy document nobody reads. Report by work: cycles run, gaps closed, equity checks done, successors named, with the numbers behind each. Use the related skills (`talent-acquisition` for the hiring the workforce plan calls for, `recruiting-ops` for the live search mechanics, `meeting-notes` for the calibration and talent review records). Update the agent's memory with the benchmarks, the current numbers, and the open gaps, so the next cycle starts from the last cycle's facts.
 
 ## Related Skills
 

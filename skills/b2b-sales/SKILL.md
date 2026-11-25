@@ -92,7 +92,7 @@ Write the pipeline as a durable artifact, one section per deal:
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence-based, output as changes. The loop ends at a shipped pipeline and shipped sales materials, not at a list of hopeful deals. Report by work: deals qualified, evidence gathered, plans shipped. Use the related skills (`negotiation` for terms and concessions, `marketing-core` for messaging that stays checkable, `evidence-strategy` for the product case behind the pitch). Update the agent's memory with what worked per account (real champion signals, real objections, real close steps), so the next cycle starts from evidence, not from a fresh guess.
+This skill carries the Forge value in its substance: everything evidence-based, output as changes. Ship means a shipped pipeline and shipped sales materials, not a list of hopeful deals. Report by work: deals qualified, evidence gathered, plans shipped. Use the related skills (`negotiation` for terms and concessions, `marketing-core` for messaging that stays checkable, `evidence-strategy` for the product case behind the pitch). Update the agent's memory with what worked per account (real champion signals, real objections, real close steps), so the next cycle starts from evidence, not from a fresh guess.
 
 ## Related Skills
 

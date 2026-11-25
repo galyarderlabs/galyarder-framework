@@ -130,7 +130,7 @@ Blameless retro of a finished or stalled search: requirements against the hire a
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence-based, output as changes. The loop ends at a shipped profile, a shipped slate, or a shipped retrospective, not at an opinion about a candidate. Report by work: searches run, slates presented and reviewed, feedback shipped, retros closed. Use the related skills (`talent-acquisition` for the JD, sourcing plan, funnel, and offer around the search; `hr-generalist` for the comp bands and the performance cycle the hire enters). Update the agent's memory with what each search taught about the bar: which must-haves predicted success, which axes were mis-tiered, so the next profile starts sharper.
+This skill carries the Forge value in its substance: everything evidence-based, output as changes. Ship means a shipped profile, a shipped slate, or a shipped retrospective, not an opinion about a candidate. Report by work: searches run, slates presented and reviewed, feedback shipped, retros closed. Use the related skills (`talent-acquisition` for the JD, sourcing plan, funnel, and offer around the search; `hr-generalist` for the comp bands and the performance cycle the hire enters). Update the agent's memory with what each search taught about the bar: which must-haves predicted success, which axes were mis-tiered, so the next profile starts sharper.
 
 ## Related Skills
 

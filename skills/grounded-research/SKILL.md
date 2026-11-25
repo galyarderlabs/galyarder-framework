@@ -92,7 +92,7 @@ Sources that work without keys (Reddit, Hacker News, Polymarket, GitHub, arXiv, 
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. Research is a change: a brief filed as a dept note, a dataset committed, or a calendar shipped, not a summary left in chat. Report by work: sources pulled, claims grounded, datasets delivered. Use the related skills (`ai-research` for deeper agent research, `market-research` for competitive teardowns, `evidence-strategy` for what counts as proof, `verification-before-completion` before any brief counts as done). Update the agent's memory with the sources that proved reliable and the queries that worked so the next research pass starts further ahead.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Research is a change: a brief filed as a dept note, a dataset committed, or a calendar shipped, not a summary left in chat. Report by work: sources pulled, claims grounded, datasets delivered. Use the related skills (`ai-research` for deeper agent research, `market-research` for competitive teardowns, `evidence-strategy` for what counts as proof, `verification-before-completion` before any brief counts as done). Update the agent's memory with the sources that proved reliable and the queries that worked so the next research pass starts further ahead.
 
 ## Related Skills
 

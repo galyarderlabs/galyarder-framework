@@ -89,7 +89,7 @@ Keep a persistent profile of the operator's patterns, updated only from what the
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The loop ends at something the operator can see about themselves and carry into a real decision, not at a comforting paragraph. Report by work: what was heard, what was seen, what question carries forward. Use the related skills when the work needs them. Update the agent's memory only with patterns the operator confirmed, in their own words.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means something the operator can see about themselves and carry into a real decision, not a comforting paragraph. Report by work: what was heard, what was seen, what question carries forward. Use the related skills when the work needs them. Update the agent's memory only with patterns the operator confirmed, in their own words.
 
 ## Related Skills
 

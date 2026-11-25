@@ -108,7 +108,7 @@ Then load the real page in a headless browser, scroll the element into view, wai
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The loop ends at a live demo scene embedded in the landing page, not at a drawing draft. Report by work: metaphor pitched, scene built, frames checked, motion clean, page shipped. Use the related skills (`motion-video` when the demo must be a video file, `code-video` when the video must live as editable React code, `reel-edit` when the material is real footage). Update the agent's memory with the metaphors and poses that worked so the next demo starts from what is proven.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a live demo scene embedded in the landing page, not a drawing draft. Report by work: metaphor pitched, scene built, frames checked, motion clean, page shipped. Use the related skills (`motion-video` when the demo must be a video file, `code-video` when the video must live as editable React code, `reel-edit` when the material is real footage). Update the agent's memory with the metaphors and poses that worked so the next demo starts from what is proven.
 
 ## Related Skills
 

@@ -100,7 +100,7 @@ The output names the service, the query, the result, and the evidence (plan outp
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence-based, output as changes. A connection is proven by a query that ran, a migration is proven by a branch it ran on, a performance claim is proven by a plan. The loop ends at a shipped data change with its verification on record, not at a query drafted in a chat. Report by work: connections proven, migrations shipped, queries diagnosed. Use the related skills (`iac-core` for the infrastructure the services run on, `ops-monitoring` for the errors and deploys around them). Update the agent's memory with the connection details and migration history so the next change starts from the recorded state.
+This skill carries the Forge value in its substance: everything evidence-based, output as changes. A connection is proven by a query that ran, a migration is proven by a branch it ran on, a performance claim is proven by a plan. Ship means a shipped data change with its verification on record, not a query drafted in a chat. Report by work: connections proven, migrations shipped, queries diagnosed. Use the related skills (`iac-core` for the infrastructure the services run on, `ops-monitoring` for the errors and deploys around them). Update the agent's memory with the connection details and migration history so the next change starts from the recorded state.
 
 ## Related Skills
 

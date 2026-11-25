@@ -121,7 +121,7 @@ When the health score drops a tier, or a churn indicator appears (no login 30 da
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence-based, output as changes. The loop ends at a shipped success plan, a shipped QBR brief, or a shipped expansion proposal, not at a feeling that the account is fine. Report by work: accounts onboarded, scores recomputed, QBRs held, expansions proposed. Use the related skills (`churn-prevention` for at-risk accounts, `cs-ops` for the scheduled runs, `business-intelligence` for the numbers behind the score). Update the agent's memory with what each account's health actually depends on, so the next quarter starts from facts, not from scratch.
+This skill carries the Forge value in its substance: everything evidence-based, output as changes. Ship means a shipped success plan, a shipped QBR brief, or a shipped expansion proposal, not a feeling that the account is fine. Report by work: accounts onboarded, scores recomputed, QBRs held, expansions proposed. Use the related skills (`churn-prevention` for at-risk accounts, `cs-ops` for the scheduled runs, `business-intelligence` for the numbers behind the score). Update the agent's memory with what each account's health actually depends on, so the next quarter starts from facts, not from scratch.
 
 ## Related Skills
 

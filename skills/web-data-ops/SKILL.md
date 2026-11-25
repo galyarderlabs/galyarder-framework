@@ -90,7 +90,7 @@ Write the dataset as a durable artifact (CSV, JSON, or a sheet) with this shape:
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence-based, output as changes. The loop ends at a shipped dataset with provenance, not at a pile of scraped text. Report by work: pages fetched, rows extracted, failures listed. Use the related skills (`grounded-research` for cited summaries, `agent-browser` for operating pages, `data-analysis` for analysis of the dataset once it exists). Update the agent's memory with the sources and extraction patterns that proved reliable, so the next crawl starts from what worked.
+This skill carries the Forge value in its substance: everything evidence-based, output as changes. Ship means a shipped dataset with provenance, not a pile of scraped text. Report by work: pages fetched, rows extracted, failures listed. Use the related skills (`grounded-research` for cited summaries, `agent-browser` for operating pages, `data-analysis` for analysis of the dataset once it exists). Update the agent's memory with the sources and extraction patterns that proved reliable, so the next crawl starts from what worked.
 
 ## Related Skills
 

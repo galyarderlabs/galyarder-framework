@@ -183,7 +183,7 @@ Save the output as files: next to the original for an improved deck (new version
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow from goal to shipped, everything evidence-based, output as changes, report by work, use related skills, update the agent's memory. The loop ends at a delivered talk, not at an outline. A deck narrative is a change: a script file and a slide-by-slide narrative the operator can deliver from, with every claim sourced and every slide checkable. Report by work: talk built, deck improved, prep sheet delivered, rehearsal done. Use the related skills (`pitch-deck` for the investor argument, `verification-before-completion` before the talk counts as ready, `evidence-strategy` for the claims). Update the agent's memory with what worked in the room so the next talk starts from evidence, not from scratch.
+This skill carries the Forge value in its substance: no AI slop, flow from ideas to give back, everything evidence-based, output as changes, report by work, use related skills, update the agent's memory. Ship means a delivered talk, not an outline. A deck narrative is a change: a script file and a slide-by-slide narrative the operator can deliver from, with every claim sourced and every slide checkable. Report by work: talk built, deck improved, prep sheet delivered, rehearsal done. Use the related skills (`pitch-deck` for the investor argument, `verification-before-completion` before the talk counts as ready, `evidence-strategy` for the claims). Update the agent's memory with what worked in the room so the next talk starts from evidence, not from scratch.
 
 ## Related Skills
 

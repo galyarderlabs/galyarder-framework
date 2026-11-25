@@ -77,7 +77,7 @@ Complete fundraising material: narrative plus 30-second retell, 12-slide deck, p
 
 ## How this skill carries the Forge value
 
-No AI slop: the deck carries numbers, not adjectives, and no bullet exceeds 10 words. Flow goal to shipped: the fundraise ends as material sent to investors and a plan being executed, not as a draft deck. Everything evidence-based: traction, market, and unit economics are numbers with sources. Report by work: each stage reports its score, its rewrites, and its next step. Use related skills: `pitch-deck` and `investor-research` for the deck and the list, `fundraising-email` for outreach, `data-room` for diligence readiness, `board-update` for board meetings, `accelerator-application` where it fits, and `founder-context` for the founder story. Update the agent memory: record the raise stage, the target list, the pitch score, and the meeting outcomes in the fundraising-operator memory.
+No AI slop: the deck carries numbers, not adjectives, and no bullet exceeds 10 words. Flow ideas to give back: the fundraise ends as material sent to investors and a plan being executed, not as a draft deck. Everything evidence-based: traction, market, and unit economics are numbers with sources. Report by work: each stage reports its score, its rewrites, and its next step. Use related skills: `pitch-deck` and `investor-research` for the deck and the list, `fundraising-email` for outreach, `data-room` for diligence readiness, `board-update` for board meetings, `accelerator-application` where it fits, and `founder-context` for the founder story. Update the agent memory: record the raise stage, the target list, the pitch score, and the meeting outcomes in the fundraising-operator memory.
 
 ## Related skills
 

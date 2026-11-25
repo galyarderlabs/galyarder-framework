@@ -97,7 +97,7 @@ Before generating the first diagram in a new project, verify the style guide has
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. A diagram is a change: an HTML file committed, shipped, or filed as a dept note, not a description of a diagram in chat. Report by work: diagrams drawn, types used, imports redrawn. Use the related skills (`theme-factory` for the theme a diagram must match, `design-tools` and `design-engineering` for the design system around it, `verification-before-completion` before any diagram counts as done). Update the agent's memory with the brand profile and the types the operator uses most, so the next diagram starts from their brand instead of from zero.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. A diagram is a change: an HTML file committed, shipped, or filed as a dept note, not a description of a diagram in chat. Report by work: diagrams drawn, types used, imports redrawn. Use the related skills (`theme-factory` for the theme a diagram must match, `design-tools` and `design-engineering` for the design system around it, `verification-before-completion` before any diagram counts as done). Update the agent's memory with the brand profile and the types the operator uses most, so the next diagram starts from their brand instead of from zero.
 
 ## Related Skills
 

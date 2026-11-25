@@ -81,7 +81,7 @@ Add highlights, risks, and open questions. If the operator needs follow-ups, cre
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. A research doc is a change: a Notion page created or updated, with its sources linked, not a summary left in chat. Report by work: pages searched, sources cited, docs shipped. Use the related skills (`meeting-notes` when the research feeds a meeting, `grounded-research` when the workspace needs web sources alongside it, `verification-before-completion` before any doc counts as done). Update the agent's memory with the workspace structure, the databases that proved useful, and the templates that worked so the next research pass starts further ahead.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. A research doc is a change: a Notion page created or updated, with its sources linked, not a summary left in chat. Report by work: pages searched, sources cited, docs shipped. Use the related skills (`meeting-notes` when the research feeds a meeting, `grounded-research` when the workspace needs web sources alongside it, `verification-before-completion` before any doc counts as done). Update the agent's memory with the workspace structure, the databases that proved useful, and the templates that worked so the next research pass starts further ahead.
 
 ## Related Skills
 

@@ -112,7 +112,7 @@ When the prompt drives an agent, validate the workflow the same way you validate
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence-based, output as changes. The loop ends at a shipped prompt version chosen by its eval scores, not at a prompt that reads well. Report by work: eval set, scores, decision. Use the related skills (`rag-design` for the pipeline being evaluated, `ai-research` when the eval is research-grade, `verification-before-completion` before the result counts). Update the agent's memory with the eval set location, the winning version, and the scores, so the next prompt change starts from a measured baseline.
+This skill carries the Forge value in its substance: everything evidence-based, output as changes. Ship means a shipped prompt version chosen by its eval scores, not a prompt that reads well. Report by work: eval set, scores, decision. Use the related skills (`rag-design` for the pipeline being evaluated, `ai-research` when the eval is research-grade, `verification-before-completion` before the result counts). Update the agent's memory with the eval set location, the winning version, and the scores, so the next prompt change starts from a measured baseline.
 
 ## Related Skills
 

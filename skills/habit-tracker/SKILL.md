@@ -101,7 +101,7 @@ Every Sunday evening, ask three fixed questions: score (how many days out of 7),
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The habit ships as a written definition plus a tracker that already has its first row, not as encouragement. Report by work: habits defined, scores logged, adjustments made, habits consolidated or dropped. Use the related skills (`fitness-nutrition` for the training habit's content, `biohacking` for the sleep protocol steps that become habits, `wellness-suite` for mindfulness and movement habits). Update the agent's memory with which anchors and triggers worked for this operator, so the next habit starts from evidence.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. The habit ships as a written definition plus a tracker that already has its first row, not as encouragement. Report by work: habits defined, scores logged, adjustments made, habits consolidated or dropped. Use the related skills (`fitness-nutrition` for the training habit's content, `biohacking` for the sleep protocol steps that become habits, `wellness-suite` for mindfulness and movement habits). Update the agent's memory with which anchors and triggers worked for this operator, so the next habit starts from evidence.
 
 ## Related Skills
 

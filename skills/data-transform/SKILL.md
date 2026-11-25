@@ -89,7 +89,7 @@ Iterate with dbt show until the output is right, then run dbt build so models an
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence-based, output as changes. The loop ends at shipped models with green tests, not at SQL that looks right. Report by work: models built or changed, tests written, builds passed. Use the related skills (`sql-queries` for one-off questions against the database, `data-analysis` for analysis built on the models, `business-intelligence` for the reports the models feed). Update the agent's memory with the model graph facts that proved real (grain, ownership, business rules, downstream consumers), so the next transform starts from the actual project, not from a fresh guess.
+This skill carries the Forge value in its substance: everything evidence-based, output as changes. Ship means shipped models with green tests, not SQL that looks right. Report by work: models built or changed, tests written, builds passed. Use the related skills (`sql-queries` for one-off questions against the database, `data-analysis` for analysis built on the models, `business-intelligence` for the reports the models feed). Update the agent's memory with the model graph facts that proved real (grain, ownership, business rules, downstream consumers), so the next transform starts from the actual project, not from a fresh guess.
 
 ## Related Skills
 

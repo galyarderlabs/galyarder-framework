@@ -146,7 +146,7 @@ The report includes platform health and evidence coverage, regulatory exposure, 
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The audit bundle is the evidence, the plan is the change drafted, and the gated account change is the change shipped. Report by work: platforms audited, findings with sources, plans delivered, changes gated and verified. Use the related skills (`analytics-tracking` for the measurement the plan depends on, `marketing-core` for the strategy the plan serves, `verification-before-completion` before any claim in the report counts). Update the agent's memory with the account's real state, the benchmarks that held, and the gates that caught a bad change, so the next audit starts from evidence instead of assumptions.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. The audit bundle is the evidence, the plan is the change drafted, and the gated account change is the change shipped. Report by work: platforms audited, findings with sources, plans delivered, changes gated and verified. Use the related skills (`analytics-tracking` for the measurement the plan depends on, `marketing-core` for the strategy the plan serves, `verification-before-completion` before any claim in the report counts). Update the agent's memory with the account's real state, the benchmarks that held, and the gates that caught a bad change, so the next audit starts from evidence instead of assumptions.
 
 ## Related Skills
 

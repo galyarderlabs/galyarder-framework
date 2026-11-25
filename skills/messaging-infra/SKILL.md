@@ -149,7 +149,7 @@ When you need an API signature, SDK method, or feature not covered here, verify 
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The message is the change, and the delivery log is the evidence that it landed instead of vanished. Report by work: messages sent, channels used, logs read, failures traced to their exact stop. Use the related skills (`email-marketing-bible` for the campaign the message serves, `verification-before-completion` before a send counts as done, `test-driven-development` for the webhook and template checks that prove it). Update the agent's memory with the templates, journeys, and provider traps that proved real, so the next send starts from what is proven instead of from scratch.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. The message is the change, and the delivery log is the evidence that it landed instead of vanished. Report by work: messages sent, channels used, logs read, failures traced to their exact stop. Use the related skills (`email-marketing-bible` for the campaign the message serves, `verification-before-completion` before a send counts as done, `test-driven-development` for the webhook and template checks that prove it). Update the agent's memory with the templates, journeys, and provider traps that proved real, so the next send starts from what is proven instead of from scratch.
 
 ## Related Skills
 

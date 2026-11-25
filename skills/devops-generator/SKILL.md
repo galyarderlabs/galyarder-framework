@@ -90,7 +90,7 @@ Run the fixture suite. Every rule must fire on its triggering fixture and stay s
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: one source of truth, output as changes, everything evidence-based. Rules are not opinions typed into three places; they are one authored source, generated in sync, and proven by fixtures that run. The loop ends at shipped, synced rules with a clean drift report, not at a draft pasted into one editor. Report by work: rules authored, files generated, drift found and fixed. Use the related skills (`iac-core` for the infrastructure these rules check, `ops-monitoring` for the incidents the runbooks cover). Update the agent's memory with the rule changes made so the next generation starts from the recorded catalog, not from a guess.
+This skill carries the Forge value in its substance: one source of truth, output as changes, everything evidence-based. Rules are not opinions typed into three places; they are one authored source, generated in sync, and proven by fixtures that run. Ship means shipped, synced rules with a clean drift report, not a draft pasted into one editor. Report by work: rules authored, files generated, drift found and fixed. Use the related skills (`iac-core` for the infrastructure these rules check, `ops-monitoring` for the incidents the runbooks cover). Update the agent's memory with the rule changes made so the next generation starts from the recorded catalog, not from a guess.
 
 ## Related Skills
 

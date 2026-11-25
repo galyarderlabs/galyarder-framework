@@ -115,7 +115,7 @@ Structure the EVP on five pillars, each with proof, not slogans: mission (custom
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence-based, output as changes. The loop ends at a shipped JD, a shipped scorecard set, or a shipped hire with its funnel record, not at a feeling that the search is going well. Report by work: roles filled, time to fill, offer acceptance, cost per hire, with the numbers behind each. Use the related skills (`recruiting-ops` for the requirements profile and slate review on a live search, `hr-generalist` for comp strategy and the performance cycle the hire enters). Update the agent's memory with what each role actually took to fill and where the funnel leaked, so the next search starts from the last search's facts.
+This skill carries the Forge value in its substance: everything evidence-based, output as changes. Ship means a shipped JD, a shipped scorecard set, or a shipped hire with its funnel record, not a feeling that the search is going well. Report by work: roles filled, time to fill, offer acceptance, cost per hire, with the numbers behind each. Use the related skills (`recruiting-ops` for the requirements profile and slate review on a live search, `hr-generalist` for comp strategy and the performance cycle the hire enters). Update the agent's memory with what each role actually took to fill and where the funnel leaked, so the next search starts from the last search's facts.
 
 ## Related Skills
 

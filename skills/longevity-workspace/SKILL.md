@@ -94,7 +94,7 @@ Record family history once, properly (who, what condition, at what age), and der
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The workspace is the artifact: a dossier that stays current, a timeline that grows, a packet that ships to the visit. Report by work: inbox processed, dossier updated, verdicts written, screenings flagged. Use the related skills (`fitness-nutrition` for the training log that feeds the timeline, `biohacking` for protocols tracked as interventions, `medical-ops` when a question is professional HCLS work rather than personal health). Update the agent's memory with the operator's health picture as it changes, so the next conversation starts from the record, not from zero.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. The workspace is the artifact: a dossier that stays current, a timeline that grows, a packet that ships to the visit. Report by work: inbox processed, dossier updated, verdicts written, screenings flagged. Use the related skills (`fitness-nutrition` for the training log that feeds the timeline, `biohacking` for protocols tracked as interventions, `medical-ops` when a question is professional HCLS work rather than personal health). Update the agent's memory with the operator's health picture as it changes, so the next conversation starts from the record, not from zero.
 
 ## Related Skills
 

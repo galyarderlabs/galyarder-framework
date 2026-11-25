@@ -90,7 +90,7 @@ After the server works, prove an agent can actually use it. Create 10 evaluation
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence based, output as changes. A server is not done when the code compiles. It is done when a real client calls its tools and the evaluations pass, and the loop ends at a commit or a PR, not at a local process. Report by work: servers built, tools shipped, evaluations passed. Use the related skills when the work touches them, and update the agent's memory with the servers built and the API patterns learned so the next server starts from evidence, not from scratch.
+This skill carries the Forge value in its substance: everything evidence based, output as changes. A server is not done when the code compiles. It is done when a real client calls its tools and the evaluations pass, and ship means a commit or a PR, not a local process. Report by work: servers built, tools shipped, evaluations passed. Use the related skills when the work touches them, and update the agent's memory with the servers built and the API patterns learned so the next server starts from evidence, not from scratch.
 
 ## Related Skills
 

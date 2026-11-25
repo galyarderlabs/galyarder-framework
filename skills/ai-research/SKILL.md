@@ -95,7 +95,7 @@ Route each part of the work to the domain knowledge it needs. Do not improvise d
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence-based, output as changes. The loop ends at a shipped memo and a reproducible experiment record, not at a summary. Report by work: question, evidence, result. Use the related skills (`rag-design` when the research involves retrieval, `prompt-eval` when it involves prompt or RAG evaluation, `verification-before-completion` before any claim counts). Update the agent's memory with the findings, the citations, and the dead ends, so the next research round starts from evidence rather than from scratch.
+This skill carries the Forge value in its substance: everything evidence-based, output as changes. Ship means a shipped memo and a reproducible experiment record, not a summary. Report by work: question, evidence, result. Use the related skills (`rag-design` when the research involves retrieval, `prompt-eval` when it involves prompt or RAG evaluation, `verification-before-completion` before any claim counts). Update the agent's memory with the findings, the citations, and the dead ends, so the next research round starts from evidence rather than from scratch.
 
 ## Related Skills
 

@@ -173,7 +173,7 @@ The MP4 path, length, and format; the voice cast; and the lines written that mak
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The loop ends at a shipped MP4 with its story.json, not at a script draft. Report by work: scenes built, voices timed, checks passed, render shipped. Use the related skills (`code-video` when the video must live as editable React code, `reel-edit` when the material is real footage, `product-demo` when the demo belongs on the landing page itself). Update the agent's memory with the story patterns and voice picks that worked so the next video starts from what is proven.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a shipped MP4 with its story.json, not a script draft. Report by work: scenes built, voices timed, checks passed, render shipped. Use the related skills (`code-video` when the video must live as editable React code, `reel-edit` when the material is real footage, `product-demo` when the demo belongs on the landing page itself). Update the agent's memory with the story patterns and voice picks that worked so the next video starts from what is proven.
 
 ## Related Skills
 

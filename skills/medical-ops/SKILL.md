@@ -94,7 +94,7 @@ The deliverable is a file, a table, or a report that carries its method with it:
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The work ships as a checkable artifact (a validated file, a decision record, a reproducible analysis), not as a confident paragraph. Report by work: domain routed, method applied, artifact shipped, check run. Use the related skills (`longevity-workspace` for the operator's own longitudinal record, `biohacking` when the question is a personal protocol rather than professional work). Update the agent's memory with the standards and versions used, so the next task in the same domain starts from the current standard, not from a stale one.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. The work ships as a checkable artifact (a validated file, a decision record, a reproducible analysis), not as a confident paragraph. Report by work: domain routed, method applied, artifact shipped, check run. Use the related skills (`longevity-workspace` for the operator's own longitudinal record, `biohacking` when the question is a personal protocol rather than professional work). Update the agent's memory with the standards and versions used, so the next task in the same domain starts from the current standard, not from a stale one.
 
 ## Related Skills
 

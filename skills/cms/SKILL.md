@@ -73,7 +73,7 @@ Localization follows the schema: localized fields are declared in the model, not
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence-based, output as changes. A query is proven by running it against the CMS, a schema is proven by content that validates against it, a migration is proven by documents that still check out. The loop ends at content that is live, typed, and in sync with its schema, not at a model drafted in a doc. Report by work: schemas shipped, queries proven, migrations completed. Use the related skills (`frontend-deploy` for the site that renders the content, `data-infra` for the services behind it). Update the agent's memory with the schema decisions and migration history so the next content change starts from the recorded model.
+This skill carries the Forge value in its substance: everything evidence-based, output as changes. A query is proven by running it against the CMS, a schema is proven by content that validates against it, a migration is proven by documents that still check out. Ship means content that is live, typed, and in sync with its schema, not a model drafted in a doc. Report by work: schemas shipped, queries proven, migrations completed. Use the related skills (`frontend-deploy` for the site that renders the content, `data-infra` for the services behind it). Update the agent's memory with the schema decisions and migration history so the next content change starts from the recorded model.
 
 ## Related Skills
 

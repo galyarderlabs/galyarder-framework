@@ -85,7 +85,7 @@ All data is processed locally in the operator's own store. No external servers, 
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The loop ends at a profile that exists, a health check the operator can re-run, and guidance they can actually use, not at a personality label. Report by work: profile built, health checked, scenarios handled, trend tracked. Use the related skills when the work needs them. Update the agent's memory only with what the operator asks to keep, and only in the operator's own words.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a profile that exists, a health check the operator can re-run, and guidance they can actually use, not a personality label. Report by work: profile built, health checked, scenarios handled, trend tracked. Use the related skills when the work needs them. Update the agent's memory only with what the operator asks to keep, and only in the operator's own words.
 
 ## Related Skills
 

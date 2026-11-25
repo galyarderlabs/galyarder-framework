@@ -76,7 +76,7 @@ File the query and its results as a durable artifact: the SQL text, the dialect,
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence-based, output as changes. The loop ends at a shipped query with its real results, not at SQL that looks right. Report by work: queries written, results returned, errors fixed. Use the related skills (`data-transform` for the models the query reads, `data-analysis` for analysis built on the results, `business-intelligence` for the report the results feed). Update the agent's memory with the schema facts and dialect quirks that proved real, so the next query starts from what the database actually holds.
+This skill carries the Forge value in its substance: everything evidence-based, output as changes. Ship means a shipped query with its real results, not SQL that looks right. Report by work: queries written, results returned, errors fixed. Use the related skills (`data-transform` for the models the query reads, `data-analysis` for analysis built on the results, `business-intelligence` for the report the results feed). Update the agent's memory with the schema facts and dialect quirks that proved real, so the next query starts from what the database actually holds.
 
 ## Related Skills
 

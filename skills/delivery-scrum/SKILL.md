@@ -82,7 +82,7 @@ When a project is off track, triage honestly: what is actually done, what is blo
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: flow goal to shipped, output as changes, everything evidence-based. A sprint is proven by what shipped against its commitment, a retro is proven by actions that happened, a risk is proven by a mitigation that exists. The loop ends at a shipped sprint with its record, not at a plan written in a doc. Report by work: sprints planned, items shipped, retros acted on, risks mitigated. Use the related skills (`task-planning` for the daily breakdown inside the sprint, `evidence-strategy` for the strategy the sprints serve, `writing-plans` and `executing-plans` for the plan artifacts). Update the agent's memory with the sprint outcomes and velocity so the next plan starts from the recorded track record.
+This skill carries the Forge value in its substance: flow ideas to give back, output as changes, everything evidence-based. A sprint is proven by what shipped against its commitment, a retro is proven by actions that happened, a risk is proven by a mitigation that exists. Ship means a shipped sprint with its record, not a plan written in a doc. Report by work: sprints planned, items shipped, retros acted on, risks mitigated. Use the related skills (`task-planning` for the daily breakdown inside the sprint, `evidence-strategy` for the strategy the sprints serve, `writing-plans` and `executing-plans` for the plan artifacts). Update the agent's memory with the sprint outcomes and velocity so the next plan starts from the recorded track record.
 
 ## Related Skills
 

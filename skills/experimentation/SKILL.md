@@ -95,7 +95,7 @@ The experiment ends with a decision, written down: ship, do not ship, or iterate
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence based, output as changes. An experiment is not a report about data, it is a decision that ships or blocks a change, recorded in the log and in memory, and the loop ends at that decision, not at a p-value. Report by work: experiments designed, run, and decided. Use the related skills when the work touches them, and update the agent's memory with the experiment results so the next test starts from what is already known.
+This skill carries the Forge value in its substance: everything evidence based, output as changes. An experiment is not a report about data, it is a decision that ships or blocks a change, recorded in the log and in memory, and ship means that decision, not a p-value. Report by work: experiments designed, run, and decided. Use the related skills when the work touches them, and update the agent's memory with the experiment results so the next test starts from what is already known.
 
 ## Related Skills
 

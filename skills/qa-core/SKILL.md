@@ -94,7 +94,7 @@ Where the plan requires real browsers and devices, run the suite on a cloud grid
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: evidence before completion, output as changes. The loop ends at a shipped test plan with green CI results, not at a plan document. Report by work: plan, results, failures fixed. Use the related skills (`test-driven-development` for the failing test that proves a fix, `verification-before-completion` before any release claim counts, `playwright-pro` for web E2E depth where it applies). Update the agent's memory with the test plan, the environment matrix, and the flaky-test history, so the next release starts from a proven suite rather than from scratch.
+This skill carries the Forge value in its substance: evidence before completion, output as changes. Ship means a shipped test plan with green CI results, not a plan document. Report by work: plan, results, failures fixed. Use the related skills (`test-driven-development` for the failing test that proves a fix, `verification-before-completion` before any release claim counts, `playwright-pro` for web E2E depth where it applies). Update the agent's memory with the test plan, the environment matrix, and the flaky-test history, so the next release starts from a proven suite rather than from scratch.
 
 ## Related Skills
 

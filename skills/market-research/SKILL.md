@@ -98,7 +98,7 @@ Combine sizing, sampling, segmentation, and teardown into one brief. Every numbe
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence based, output as changes. A market report is not an opinion deck, it is a committed evidence pack with triangulated numbers and tagged claims, and the loop ends at that shipped pack, not at a market size mentioned in passing. Report by work: markets sized, segments scored, teardowns shipped. Use the related skills when the work touches them, and update the agent's memory with the market sizes, segment decisions, and competitor positions found so the next decision starts from evidence, not from scratch.
+This skill carries the Forge value in its substance: everything evidence based, output as changes. A market report is not an opinion deck, it is a committed evidence pack with triangulated numbers and tagged claims, and ship means that shipped pack, not a market size mentioned in passing. Report by work: markets sized, segments scored, teardowns shipped. Use the related skills when the work touches them, and update the agent's memory with the market sizes, segment decisions, and competitor positions found so the next decision starts from evidence, not from scratch.
 
 ## Related Skills
 

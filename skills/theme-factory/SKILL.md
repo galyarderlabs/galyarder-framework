@@ -81,7 +81,7 @@ When no preset fits, generate a new theme on the fly with the same structure: a 
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. A theme is a change: styled artifacts committed or shipped, plus a recorded theme spec, not a palette described in chat. Report by work: themes applied, artifacts styled, new themes recorded. Use the related skills (`document-suite` for the artifacts being styled, `diagram-design` for diagrams that must match the theme, `design-tools` and `design-engineering` for the design system around it, `verification-before-completion` before any styled set counts as done). Update the agent's memory with the themes the operator picks most, so the next artifact starts from their taste instead of from zero.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. A theme is a change: styled artifacts committed or shipped, plus a recorded theme spec, not a palette described in chat. Report by work: themes applied, artifacts styled, new themes recorded. Use the related skills (`document-suite` for the artifacts being styled, `diagram-design` for diagrams that must match the theme, `design-tools` and `design-engineering` for the design system around it, `verification-before-completion` before any styled set counts as done). Update the agent's memory with the themes the operator picks most, so the next artifact starts from their taste instead of from zero.
 
 ## Related Skills
 

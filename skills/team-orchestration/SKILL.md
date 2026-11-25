@@ -132,7 +132,7 @@ With more than two waves, or when the work may outlive a session, keep a state f
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: cheapest capable routing, evidence before completion, output as changes. The loop ends at a shipped merged result, not at a set of agent replies. Report by work: part, agent, model, check. Use the related skills (`subagent-driven-development` for how subagents are driven, `verification-before-completion` before any part counts, `test-driven-development` for the tests that prove the build). Update the agent's memory with the routing decisions and the escalation history so the next orchestration starts from what actually worked.
+This skill carries the Forge value in its substance: cheapest capable routing, evidence before completion, output as changes. Ship means a shipped merged result, not a set of agent replies. Report by work: part, agent, model, check. Use the related skills (`subagent-driven-development` for how subagents are driven, `verification-before-completion` before any part counts, `test-driven-development` for the tests that prove the build). Update the agent's memory with the routing decisions and the escalation history so the next orchestration starts from what actually worked.
 
 ## Related Skills
 

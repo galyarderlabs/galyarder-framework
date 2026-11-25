@@ -91,7 +91,7 @@ A run that cannot run (source down, data missing, tool unconnected) is logged as
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence-based, output as changes. The loop ends at a shipped report on schedule, not at a prompt that could run. Report by work: runs shipped on time, accounts flagged, themes filed, expansions found, with the numbers behind each. Use the related skills (`cs-lifecycle` for the health score and QBR content, `churn-prevention` for the accounts the warning list surfaces, `business-intelligence` for the retention numbers, `meeting-notes` for the recap format). Update the agent's memory with which runs slip and why, so the schedule is fixed instead of quietly forgiven.
+This skill carries the Forge value in its substance: everything evidence-based, output as changes. Ship means a shipped report on schedule, not a prompt that could run. Report by work: runs shipped on time, accounts flagged, themes filed, expansions found, with the numbers behind each. Use the related skills (`cs-lifecycle` for the health score and QBR content, `churn-prevention` for the accounts the warning list surfaces, `business-intelligence` for the retention numbers, `meeting-notes` for the recap format). Update the agent's memory with which runs slip and why, so the schedule is fixed instead of quietly forgiven.
 
 ## Related Skills
 

@@ -86,7 +86,7 @@ Pick the pattern before building: webhook processing, HTTP API integration, data
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence-based, output as changes. The loop ends at a shipped workflow with test evidence, not at a validated JSON file. Report by work: workflows built, gates passed, executions monitored. Use the related skills (`messaging-infra` for the channels a workflow sends through, `data-infra` for the services it reads and writes, `ops-monitoring` for watching it once live). Update the agent's memory with the patterns that proved reliable (which nodes, which batch sizes, which error branches caught real failures), so the next workflow starts from what worked.
+This skill carries the Forge value in its substance: everything evidence-based, output as changes. Ship means a shipped workflow with test evidence, not a validated JSON file. Report by work: workflows built, gates passed, executions monitored. Use the related skills (`messaging-infra` for the channels a workflow sends through, `data-infra` for the services it reads and writes, `ops-monitoring` for watching it once live). Update the agent's memory with the patterns that proved reliable (which nodes, which batch sizes, which error branches caught real failures), so the next workflow starts from what worked.
 
 ## Related Skills
 

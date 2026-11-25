@@ -142,7 +142,7 @@ Done when every figure, duration, distance, price, hour, day, and ticket conditi
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: the loop ends at a shipped itinerary and a shipped client text, not at a chat full of suggestions. Output as changes: the saved itinerary, the proposal file, the sent-ready email. Report by work: trips planned, facts verified, planner checks closed. Use the related skills (`personal-finance` for the trip budget, `cooking` when the trip includes self-catering, `second-brain` for the traveller's notes that carry across trips). Update the agent's memory with the traveller's preferences, the suppliers that delivered, and the routes that worked, so the next trip is planned from evidence, not from scratch.
+This skill carries the Forge value in its substance: ship means a shipped itinerary and a shipped client text, not a chat full of suggestions. Output as changes: the saved itinerary, the proposal file, the sent-ready email. Report by work: trips planned, facts verified, planner checks closed. Use the related skills (`personal-finance` for the trip budget, `cooking` when the trip includes self-catering, `second-brain` for the traveller's notes that carry across trips). Update the agent's memory with the traveller's preferences, the suppliers that delivered, and the routes that worked, so the next trip is planned from evidence, not from scratch.
 
 ## Related Skills
 

@@ -132,7 +132,7 @@ Never write to the voice guide silently. Show the exact before and after for eve
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow from goal to shipped, everything evidence-based, output as changes, report by work, use related skills, update the agent's memory. Drift is measured, not vibed: scores per sample, dimensions per persona, flags by catalog ID, and a voice test sentence that either passes or does not. The loop ends at a report that shipped and, where needed, a guide update that shipped with its before and after. Report by work: samples scored, patterns found, updates made. Use the related skills (`voice-anchor` for the profile, `anti-slop-audit` for the pattern flags, `anti-slop-constraint` to stop the drift at the source). Update the agent's memory with the drift patterns found, so the next audit starts from evidence instead of from scratch.
+This skill carries the Forge value in its substance: no AI slop, flow from ideas to give back, everything evidence-based, output as changes, report by work, use related skills, update the agent's memory. Drift is measured, not vibed: scores per sample, dimensions per persona, flags by catalog ID, and a voice test sentence that either passes or does not. Ship means a report that shipped and, where needed, a guide update that shipped with its before and after. Report by work: samples scored, patterns found, updates made. Use the related skills (`voice-anchor` for the profile, `anti-slop-audit` for the pattern flags, `anti-slop-constraint` to stop the drift at the source). Update the agent's memory with the drift patterns found, so the next audit starts from evidence instead of from scratch.
 
 ## Related Skills
 

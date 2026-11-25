@@ -127,7 +127,7 @@ Configure scheduled delivery (PDF or email, chat alerts) and threshold based ale
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence based, output as changes. A report is not a deck of opinions, it is a committed dashboard plus a scored customer list with tiers and owners, and the loop ends at a shipped report, not at a screenshot. Report by work: dashboards shipped, scores run, accounts flagged, expansions found. Use the related skills when the work touches them, and update the agent's memory with the KPI definitions and the thresholds calibrated so the next report starts from agreed numbers, not from scratch.
+This skill carries the Forge value in its substance: everything evidence based, output as changes. A report is not a deck of opinions, it is a committed dashboard plus a scored customer list with tiers and owners, and ship means a shipped report, not a screenshot. Report by work: dashboards shipped, scores run, accounts flagged, expansions found. Use the related skills when the work touches them, and update the agent's memory with the KPI definitions and the thresholds calibrated so the next report starts from agreed numbers, not from scratch.
 
 ## Related Skills
 

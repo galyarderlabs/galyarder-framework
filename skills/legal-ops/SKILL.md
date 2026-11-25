@@ -148,7 +148,7 @@ Each watcher run produces a dated note. A watcher that ran with no findings says
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: evidence before completion, output as changes. The loop ends at a filed memo and a tracked deadline, not at an opinion. Report by work: reviews done, triage counts, gaps closed, deadlines tracked. Use the related skills (`contract-review` for the clause-level review, `grc-core` for the compliance frame, `evidence-strategy` for the citation discipline). Update the agent's memory with the playbook deviations and lawyer decisions so the next review starts from precedent, not from zero.
+This skill carries the Forge value in its substance: evidence before completion, output as changes. Ship means a filed memo and a tracked deadline, not an opinion. Report by work: reviews done, triage counts, gaps closed, deadlines tracked. Use the related skills (`contract-review` for the clause-level review, `grc-core` for the compliance frame, `evidence-strategy` for the citation discipline). Update the agent's memory with the playbook deviations and lawyer decisions so the next review starts from precedent, not from zero.
 
 ## Related Skills
 

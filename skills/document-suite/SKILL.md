@@ -122,7 +122,7 @@ If the operator declines the structured workflow, work freeform. The workflow is
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. A document is a change: a file committed, a PR opened, or a dept note filed, not a draft left in chat. Report by work: documents produced, format checks passed, reader tests run. Use the related skills (`theme-factory` for consistent styling, `doc-maintenance` for keeping docs current, `verification-before-completion` before any doc counts as done). Update the agent's memory with the templates, formats, and gotchas that worked so the next document starts further ahead.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. A document is a change: a file committed, a PR opened, or a dept note filed, not a draft left in chat. Report by work: documents produced, format checks passed, reader tests run. Use the related skills (`theme-factory` for consistent styling, `doc-maintenance` for keeping docs current, `verification-before-completion` before any doc counts as done). Update the agent's memory with the templates, formats, and gotchas that worked so the next document starts further ahead.
 
 ## Related Skills
 

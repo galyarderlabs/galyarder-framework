@@ -107,7 +107,7 @@ Update the record at the end of every session. A session that is not recorded is
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The loop ends at a shipped week of practice: the plan filed, the reviews done, the record updated, the next session already scheduled by the queue. Report by work: sessions run, reviews completed, items mastered. Use the related skills (`education-suite` for the learning science behind the method, `socratic-tutor` for question-driven teaching, `habit-tracker` for the daily streak). Update the learning agent's memory with the operator's profile, error patterns, and mastery levels, so the next session starts from evidence instead of from zero.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a shipped week of practice: the plan filed, the reviews done, the record updated, the next session already scheduled by the queue. Report by work: sessions run, reviews completed, items mastered. Use the related skills (`education-suite` for the learning science behind the method, `socratic-tutor` for question-driven teaching, `habit-tracker` for the daily streak). Update the learning agent's memory with the operator's profile, error patterns, and mastery levels, so the next session starts from evidence instead of from zero.
 
 ## Related Skills
 

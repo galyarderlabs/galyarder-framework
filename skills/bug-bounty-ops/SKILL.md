@@ -139,7 +139,7 @@ Title format: bug class, endpoint, role, impact. Nothing else.
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: evidence before completion, output as changes. The loop ends at a shipped, validated report and a retest note, not at a list of suspicions. Report by work: targets covered, findings validated, reports submitted, bounties tracked. Use the related skills (`security-audit` for the defensive audit of the same code, `appsec-audit` for the OWASP category pass, `evidence-strategy` for the citation and evidence discipline). Update the agent's memory with the vulnerability classes found, the chains that worked, and the techniques that failed so the next campaign starts smarter.
+This skill carries the Forge value in its substance: evidence before completion, output as changes. Ship means a shipped, validated report and a retest note, not a list of suspicions. Report by work: targets covered, findings validated, reports submitted, bounties tracked. Use the related skills (`security-audit` for the defensive audit of the same code, `appsec-audit` for the OWASP category pass, `evidence-strategy` for the citation and evidence discipline). Update the agent's memory with the vulnerability classes found, the chains that worked, and the techniques that failed so the next campaign starts smarter.
 
 ## Related Skills
 

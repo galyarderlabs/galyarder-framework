@@ -105,7 +105,7 @@ Timestamps use the episode clock. A section without a timestamp does not count a
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: evidence before completion, output as changes. The loop ends at a shipped transcript with timestamps and speakers, not at a raw audio dump. Report by work: episodes transcribed, method per episode, failures with reasons. Use the related skills (`video-analysis` when the episode also needs shot-by-shot analysis, `style-rewrite` when the transcript must be rewritten on-voice). Update the agent's memory with the shows and feeds that resolve cleanly so the next run skips the dead ends.
+This skill carries the Forge value in its substance: evidence before completion, output as changes. Ship means a shipped transcript with timestamps and speakers, not a raw audio dump. Report by work: episodes transcribed, method per episode, failures with reasons. Use the related skills (`video-analysis` when the episode also needs shot-by-shot analysis, `style-rewrite` when the transcript must be rewritten on-voice). Update the agent's memory with the shows and feeds that resolve cleanly so the next run skips the dead ends.
 
 ## Related Skills
 

@@ -98,7 +98,7 @@ After completing the task, proactively surface issues, trends, or opportunities 
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence based, output as changes. An analysis is not a chat answer, it is a committed report with conclusions, numbers, and recommendations, and the loop ends at that shipped report, not at an insight mentioned in passing. Report by work: datasets analyzed, reports shipped, recommendations acted on. Use the related skills when the work touches them, and update the agent's memory with the findings so the next analysis starts from what is already known.
+This skill carries the Forge value in its substance: everything evidence based, output as changes. An analysis is not a chat answer, it is a committed report with conclusions, numbers, and recommendations, and ship means that shipped report, not an insight mentioned in passing. Report by work: datasets analyzed, reports shipped, recommendations acted on. Use the related skills when the work touches them, and update the agent's memory with the findings so the next analysis starts from what is already known.
 
 ## Related Skills
 

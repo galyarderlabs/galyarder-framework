@@ -102,7 +102,7 @@ The session ends only when every subskill reaches the target level: 4 by default
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The loop ends at shipped mastery, proven by a final assessment, not at a pleasant chat. Report by work: subskills mapped, levels earned, reviews passed and failed, assessment result. Use the related skills (`education-suite` for the plan behind the session, `language-learning` when the topic is a language). Update the learning agent's memory with the operator's skill map, misconceptions found, and weak areas, so the next session starts from evidence instead of from zero.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means shipped mastery, proven by a final assessment, not a pleasant chat. Report by work: subskills mapped, levels earned, reviews passed and failed, assessment result. Use the related skills (`education-suite` for the plan behind the session, `language-learning` when the topic is a language). Update the learning agent's memory with the operator's skill map, misconceptions found, and weak areas, so the next session starts from evidence instead of from zero.
 
 ## Related Skills
 

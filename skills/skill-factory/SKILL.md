@@ -90,7 +90,7 @@ When an agent needs a capability, the discovery order is: search the directory a
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence based, output as changes. A skill is not done at the draft. It is done when it is tested, distributed, and discoverable, and the loop ends at a commit, a PR, or a registry entry, not at a file sitting in one folder. Report by work: skills made, distributed, and discovered. Use the related skills when the work touches them, and update the agent's memory with the skills created and the gaps found so the same capability is not built twice.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence based, output as changes. A skill is not done at the draft. It is done when it is tested, distributed, and discoverable, and ship means a commit, a PR, or a registry entry, not a file sitting in one folder. Report by work: skills made, distributed, and discovered. Use the related skills when the work touches them, and update the agent's memory with the skills created and the gaps found so the same capability is not built twice.
 
 ## Related Skills
 

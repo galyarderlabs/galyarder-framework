@@ -98,7 +98,7 @@ Keep the journal private so the operator writes honestly. If digital, use a pass
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The loop ends at a journal entry that exists and a weekly review that produces one real change, not at a template that looks good. Report by work: entries kept, themes found, action shipped. Use the related skills when the work needs them. Update the agent's memory only with what the operator asks to keep, and only in the operator's own words.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a journal entry that exists and a weekly review that produces one real change, not a template that looks good. Report by work: entries kept, themes found, action shipped. Use the related skills when the work needs them. Update the agent's memory only with what the operator asks to keep, and only in the operator's own words.
 
 ## Related Skills
 

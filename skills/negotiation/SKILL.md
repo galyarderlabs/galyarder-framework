@@ -94,7 +94,7 @@ After each round, file a record:
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence-based, output as changes. The loop ends at shipped terms with a written record, not at a handshake nobody can reconstruct. Report by work: rounds run, positions taken, terms shipped. Use the related skills (`b2b-sales` for the deal cycle that brings the negotiation to the table, `contract-review` for the clauses the terms become, `adversarial-thinking` to interrogate your own assumptions before the other side does). Update the agent's memory with what each counterpart actually cared about, so the next negotiation with them starts from evidence, not from a fresh read.
+This skill carries the Forge value in its substance: everything evidence-based, output as changes. Ship means shipped terms with a written record, not a handshake nobody can reconstruct. Report by work: rounds run, positions taken, terms shipped. Use the related skills (`b2b-sales` for the deal cycle that brings the negotiation to the table, `contract-review` for the clauses the terms become, `adversarial-thinking` to interrogate your own assumptions before the other side does). Update the agent's memory with what each counterpart actually cared about, so the next negotiation with them starts from evidence, not from a fresh read.
 
 ## Related Skills
 

@@ -129,7 +129,7 @@ Send or point to the phone copy (720p) and the full-quality render. Report in pl
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The loop ends at a publish-ready reel with its edit decision list, not at a timeline draft. Report by work: takes picked, cuts made and why, looks applied, render shipped. Use the related skills (`motion-video` when the video is drawn from a story file, `code-video` when the video must live as editable React code, `product-demo` when the demo belongs on the landing page). Update the agent's memory with the looks, cuts, and fixes that worked so the next reel starts from what is proven.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a publish-ready reel with its edit decision list, not a timeline draft. Report by work: takes picked, cuts made and why, looks applied, render shipped. Use the related skills (`motion-video` when the video is drawn from a story file, `code-video` when the video must live as editable React code, `product-demo` when the demo belongs on the landing page). Update the agent's memory with the looks, cuts, and fixes that worked so the next reel starts from what is proven.
 
 ## Related Skills
 

@@ -90,7 +90,7 @@ Report the updated content: tasks added, tasks completed, decisions recorded, an
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: flow goal to shipped, output as changes. Planning is not a chat message; it is a TODO file updated in place, with tasks that can be executed and checked one by one. The loop ends at a shipped task list that the next session can pick up and run, not at a plan that lives only in conversation. Report by work: tasks broken down, files updated, decisions recorded. Use the related skills (`delivery-scrum` for the sprint this planning serves, `executing-plans` for running the tasks, `writing-plans` for the plan the tasks come from). Update the agent's memory with the planning decisions so the next run does not re-plan what was already decided.
+This skill carries the Forge value in its substance: flow ideas to give back, output as changes. Planning is not a chat message; it is a TODO file updated in place, with tasks that can be executed and checked one by one. Ship means a shipped task list that the next session can pick up and run, not a plan that lives only in conversation. Report by work: tasks broken down, files updated, decisions recorded. Use the related skills (`delivery-scrum` for the sprint this planning serves, `executing-plans` for running the tasks, `writing-plans` for the plan the tasks come from). Update the agent's memory with the planning decisions so the next run does not re-plan what was already decided.
 
 ## Related Skills
 

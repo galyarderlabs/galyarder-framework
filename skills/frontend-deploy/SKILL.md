@@ -89,7 +89,7 @@ Read the build log first. The usual causes, in order: build command or publish d
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: flow goal to shipped, output as changes. A deploy is not a command run in a terminal; it is a live URL with a log, a project left linked for the next push, and a record the operator can open. The loop ends at distribution, which is exactly what a deploy is. Report by work: deploys shipped, previews shared, projects linked. Use the related skills (`iac-core` for the infrastructure underneath, `ops-monitoring` for the errors and deploys after launch). Update the agent's memory with the project link and deploy history so the next deploy starts from the recorded state.
+This skill carries the Forge value in its substance: flow ideas to give back, output as changes. A deploy is not a command run in a terminal; it is a live URL with a log, a project left linked for the next push, and a record the operator can open. Ship means distribution, which is exactly what a deploy is. Report by work: deploys shipped, previews shared, projects linked. Use the related skills (`iac-core` for the infrastructure underneath, `ops-monitoring` for the errors and deploys after launch). Update the agent's memory with the project link and deploy history so the next deploy starts from the recorded state.
 
 ## Related Skills
 

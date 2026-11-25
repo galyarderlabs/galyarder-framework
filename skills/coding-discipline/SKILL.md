@@ -117,7 +117,7 @@ Signs it is working: fewer unnecessary changes in diffs, fewer rewrites due to o
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: it is the discipline that makes "goal to shipped" real instead of aspirational. Think before coding is evidence before completion applied to assumptions. Simplicity first is the smallest viable path. Surgical changes keep output as clean, reviewable changes. Goal-driven execution is tests before fixes with criteria you can check. Report by work: changes shipped, assumptions surfaced, criteria met. Use the related skills (`bug-hunt` to find, `systematic-debugging` to root-cause, `test-driven-development` for the failing test, `verification-before-completion` before the change counts). Update the agent's memory with the assumptions and tradeoffs that held, so the next change starts from what is known instead of re-guessing it.
+This skill carries the Forge value in its substance: it is the discipline that makes "ideas to give back" real instead of aspirational. Think before coding is evidence before completion applied to assumptions. Simplicity first is the smallest viable path. Surgical changes keep output as clean, reviewable changes. Goal-driven execution is tests before fixes with criteria you can check. Report by work: changes shipped, assumptions surfaced, criteria met. Use the related skills (`bug-hunt` to find, `systematic-debugging` to root-cause, `test-driven-development` for the failing test, `verification-before-completion` before the change counts). Update the agent's memory with the assumptions and tradeoffs that held, so the next change starts from what is known instead of re-guessing it.
 
 ## Related Skills
 

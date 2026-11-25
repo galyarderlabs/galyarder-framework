@@ -91,7 +91,7 @@ When a practice helps three times in the same kind of moment, offer to make it a
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The practice ships as timed steps run now, plus a logged outcome, not as a list of techniques. Report by work: practice run, outcome logged, toolkit grown. Use the related skills (`habit-tracker` for turning a helping practice into a habit, `biohacking` for the full sleep protocol, `recovery-planner` for rest days, `fitness-nutrition` for movement that is training rather than a wellbeing break). Update the agent's memory with the practices that helped this operator and in which moments, so the next routing starts from evidence.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. The practice ships as timed steps run now, plus a logged outcome, not as a list of techniques. Report by work: practice run, outcome logged, toolkit grown. Use the related skills (`habit-tracker` for turning a helping practice into a habit, `biohacking` for the full sleep protocol, `recovery-planner` for rest days, `fitness-nutrition` for movement that is training rather than a wellbeing break). Update the agent's memory with the practices that helped this operator and in which moments, so the next routing starts from evidence.
 
 ## Related Skills
 

@@ -115,7 +115,7 @@ Once the operator tries a recipe, gives feedback, and iterates it to satisfactio
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: the loop ends at a shipped plan and a shipped list, not at a chat full of ideas. Output as changes: the saved meal plan, the saved shopping list, the recipe committed to the repository. Report by work: meals planned, pantry items used up, list items bought, recipes kept. Use the related skills (`personal-finance` for the food budget, `habit-tracker` for a cooking routine that sticks, `health` agent notes for nutrition goals the operator set). Update the agent's memory with what the household liked, what failed, and what the pantry holds, so the next week starts smarter.
+This skill carries the Forge value in its substance: ship means a shipped plan and a shipped list, not a chat full of ideas. Output as changes: the saved meal plan, the saved shopping list, the recipe committed to the repository. Report by work: meals planned, pantry items used up, list items bought, recipes kept. Use the related skills (`personal-finance` for the food budget, `habit-tracker` for a cooking routine that sticks, `health` agent notes for nutrition goals the operator set). Update the agent's memory with what the household liked, what failed, and what the pantry holds, so the next week starts smarter.
 
 ## Related Skills
 

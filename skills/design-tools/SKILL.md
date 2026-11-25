@@ -144,7 +144,7 @@ What that rules out:
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The design is the change, and the opened reference is the evidence. Report by work: designs built, patterns cited, searches that fell short. Use the related skills (`design-engineering` for the motion on top of the design, `content-creator` when the screen needs copy, `verification-before-completion` before the design counts as done). Update the agent's memory with the patterns and references that proved useful, so the next screen starts from a proven library instead of a fresh search.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. The design is the change, and the opened reference is the evidence. Report by work: designs built, patterns cited, searches that fell short. Use the related skills (`design-engineering` for the motion on top of the design, `content-creator` when the screen needs copy, `verification-before-completion` before the design counts as done). Update the agent's memory with the patterns and references that proved useful, so the next screen starts from a proven library instead of a fresh search.
 
 ## Related Skills
 

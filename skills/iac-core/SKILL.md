@@ -108,7 +108,7 @@ The same principles apply through `wrangler`: Workers code reviewed against prod
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: plan before apply, evidence before completion, output as changes. The loop ends at a shipped, reviewed infrastructure change with its plan and log on record, not at a draft config. Report by work: plans reviewed, modules scaffolded, upgrades shipped. Use the related skills (`devops-generator` for the rules that check this work, `frontend-deploy` for the application that runs on top of it, `ops-monitoring` for what the infrastructure does after it ships). Update the agent's memory with the infrastructure decisions made so the next change starts from the recorded state, not from memory.
+This skill carries the Forge value in its substance: plan before apply, evidence before completion, output as changes. Ship means a shipped, reviewed infrastructure change with its plan and log on record, not a draft config. Report by work: plans reviewed, modules scaffolded, upgrades shipped. Use the related skills (`devops-generator` for the rules that check this work, `frontend-deploy` for the application that runs on top of it, `ops-monitoring` for what the infrastructure does after it ships). Update the agent's memory with the infrastructure decisions made so the next change starts from the recorded state, not from memory.
 
 ## Related Skills
 

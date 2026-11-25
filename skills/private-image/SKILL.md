@@ -146,7 +146,7 @@ To reproduce, re-run the same model, prompt, seed, and settings. To vary, change
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The image is the change, and the record is the evidence that makes it reproducible instead of lucky. Report by work: images made, prompts recorded, blocks reported. Use the related skills (`content-creator` for the brief the image serves, `verification-before-completion` before the image counts as done, `prompt-eval` when a prompt keeps missing). Update the agent's memory with the prompts, models, and settings that worked, so the next brief starts from what is proven instead of from scratch.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. The image is the change, and the record is the evidence that makes it reproducible instead of lucky. Report by work: images made, prompts recorded, blocks reported. Use the related skills (`content-creator` for the brief the image serves, `verification-before-completion` before the image counts as done, `prompt-eval` when a prompt keeps missing). Update the agent's memory with the prompts, models, and settings that worked, so the next brief starts from what is proven instead of from scratch.
 
 ## Related Skills
 

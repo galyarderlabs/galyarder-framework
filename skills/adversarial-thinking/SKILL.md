@@ -102,7 +102,7 @@ Where the repo keeps decision records, file the record there. Where a glossary o
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no slop, no unchallenged claim presented as fact. The loop ends at a shipped decision record, not at a chat reply. Report by work: what was challenged, what broke, what survived. Use the related skills (`adversarial-review` for the code that follows, `brainstorming` for the idea that precedes, `verification-before-completion` before anything counts as done). Update the agent's memory with the decisions and the ledger so the next session starts from the challenged version, not the original pitch.
+This skill carries the Forge value in its substance: no slop, no unchallenged claim presented as fact. Ship means a shipped decision record, not a chat reply. Report by work: what was challenged, what broke, what survived. Use the related skills (`adversarial-review` for the code that follows, `brainstorming` for the idea that precedes, `verification-before-completion` before anything counts as done). Update the agent's memory with the decisions and the ledger so the next session starts from the challenged version, not the original pitch.
 
 ## Related Skills
 

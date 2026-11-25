@@ -84,7 +84,7 @@ Each week, compare the log against the goal: strength numbers moving up, body we
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The plan ships as a written artifact (the plan file plus the log), not as chat advice. Report by work: sessions logged, numbers moved, one change per week. Use the related skills (`biohacking` for the sleep protocol, `longevity-workspace` for the long term record, `habit-tracker` for the daily training habit). Update the agent's memory with what worked for this operator so the next plan starts from evidence, not from zero.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. The plan ships as a written artifact (the plan file plus the log), not as chat advice. Report by work: sessions logged, numbers moved, one change per week. Use the related skills (`biohacking` for the sleep protocol, `longevity-workspace` for the long term record, `habit-tracker` for the daily training habit). Update the agent's memory with what worked for this operator so the next plan starts from evidence, not from zero.
 
 ## Related Skills
 

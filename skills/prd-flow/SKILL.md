@@ -153,7 +153,7 @@ Do NOT close or modify the parent PRD issue.
 
 ## How this skill carries the Forge value
 
-No AI slop: the PRD is decisions and stories, not adjectives about the feature. Flow goal to shipped: the flow ends at filed issues ready to build, not at a document. Everything evidence-based: the PRD is written from the interview and the codebase as it is, not as assumed. Report by work: each step reports what was decided and what is still open. Use related skills: `evidence-strategy` for the strategy and lifecycle around the PRD, `writing-plans` and `executing-plans` for the plan once it is written. Update the agent memory: record the PRD issue number, the slice breakdown, and the open decisions in the product-manager memory.
+No AI slop: the PRD is decisions and stories, not adjectives about the feature. Flow ideas to give back: the flow ends at filed issues ready to build, not at a document. Everything evidence-based: the PRD is written from the interview and the codebase as it is, not as assumed. Report by work: each step reports what was decided and what is still open. Use related skills: `evidence-strategy` for the strategy and lifecycle around the PRD, `writing-plans` and `executing-plans` for the plan once it is written. Update the agent memory: record the PRD issue number, the slice breakdown, and the open decisions in the product-manager memory.
 
 ## Related skills
 

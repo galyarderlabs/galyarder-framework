@@ -156,7 +156,7 @@ Write the report in the operator's language and keep it in the project folder:
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow goal to shipped, everything evidence-based, output as changes. The loop ends at a shipped breakdown report and an executable remake plan, not at a verdict about one video. A classification without frame evidence does not ship. Report by work: shots detected, shots classified with evidence, remake steps written. Use the related skills (`video-generation` when the remake is approved and production starts, `motion-video` when a shot remakes as a story-driven video, `code-video` when a coded shot remakes as editable React code, `image-generation` when a shot needs a still reference image first). Update the agent's memory with the classification patterns and the model picks that worked so the next analysis starts from what is proven.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a shipped breakdown report and an executable remake plan, not a verdict about one video. A classification without frame evidence does not ship. Report by work: shots detected, shots classified with evidence, remake steps written. Use the related skills (`video-generation` when the remake is approved and production starts, `motion-video` when a shot remakes as a story-driven video, `code-video` when a coded shot remakes as editable React code, `image-generation` when a shot needs a still reference image first). Update the agent's memory with the classification patterns and the model picks that worked so the next analysis starts from what is proven.
 
 ## Related Skills
 

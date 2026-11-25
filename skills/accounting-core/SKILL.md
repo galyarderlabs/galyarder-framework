@@ -81,7 +81,7 @@ Books and reports that can be audited: a P and L, budget, forecast, tax prep pac
 
 ## How this skill carries the Forge value
 
-No AI slop: reports are tables and totals, not adjectives about financial health. Flow goal to shipped: the work ends as books and reports filed as changes, not as advice in chat. Everything evidence-based: a number without a transaction behind it is not reported. Report by work: each report lists what was imported, what was reconciled, and what is still open. Use related skills: `financial-analyst` for deeper analysis, `finance-based-pricing-advisor` for pricing decisions, and `accounting` for the existing repo bookkeeping flow where it fits. Update the agent memory: record the period closed, the headline totals, and any open items in the accounting-ops memory.
+No AI slop: reports are tables and totals, not adjectives about financial health. Flow ideas to give back: the work ends as books and reports filed as changes, not as advice in chat. Everything evidence-based: a number without a transaction behind it is not reported. Report by work: each report lists what was imported, what was reconciled, and what is still open. Use related skills: `financial-analyst` for deeper analysis, `finance-based-pricing-advisor` for pricing decisions, and `accounting` for the existing repo bookkeeping flow where it fits. Update the agent memory: record the period closed, the headline totals, and any open items in the accounting-ops memory.
 
 ## Related skills
 
