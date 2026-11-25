@@ -41,8 +41,6 @@ Core skills: `forge`, `using-forge-anything`, `writing-plans`, `executing-plans`
 
 Founder context, investor relations, board updates, and diligence readiness.
 
-Lead: `fundraising-operator`.
-
 Skills: `founder-context`, `pitch-deck`, `investor-research`.
 
 ### 2. Product
@@ -146,6 +144,8 @@ Skills: `exchange-data`.
 ### 16. External Relations
 
 PR, media production, crisis communications, fundraising, and external partnerships.
+
+Lead: `fundraising-operator`.
 
 ### 17. Life
 

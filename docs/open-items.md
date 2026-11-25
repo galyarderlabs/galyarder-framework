@@ -8,12 +8,13 @@ GitHub issues, and Galih's calls.
 
 - [ ] Curation plan decisions: Q1-Q5 and Q9 ANSWERED and executed
   25 Nov 2026 (Galih 16:16: 7 new departments, cut 28 + narrow 4,
-  41 drafts applied). Still open: Q6 (trading cluster 2 or 3 agents),
-  Q13 (video-analyst separate or folded), Q14 (first design slice;
-  answered in practice by waves 1-5 in order), Q15 (18 proposed
+  41 drafts applied). Q6 (trading cluster 2 agents, defi-audit stays
+  with security-guardian) and Q13 (video-analyst stays separate)
+  ANSWERED 25 Nov 2026 (Galih 16:47). Still open: Q14 (first design
+  slice; answered in practice by waves 1-5 in order), Q15 (18 proposed
   commands, which first), Q17 (A16 split stands: agent-ops to
   Infrastructure, gamedev to Creative, scientific to Knowledge).
-  Needs Galih for Q6/Q13/Q15.
+  Needs Galih for Q15.
 - [ ] Curation execution (LAST work): agent folders (56, still single
   .md files — not started), release skill prose rewrite (it still
   describes the old FORGEAI flow). Skills part DONE 25 Nov 2026:
