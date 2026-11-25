@@ -5,7 +5,7 @@
 //! - `skills/<curated>/` - the curated skills, copied whole from the source
 //! - `agents/<curated>.md` - the curated agents
 //! - `commands/` - all slash commands
-//! - `docs/` - specs, plans, reports, templates, design, and the 8
+//! - `docs/` - specs, plans, reports, templates, design, and the 17
 //!   departments with a README and an audit template each
 //!
 //! No per-host copies or manifests: any agent or host reads `skills/` and
@@ -181,7 +181,7 @@ fn readme(project_name: &str) -> String {
          \n\
          - `skills/` - the curated Forge Anything skills (reusable AI-agent\n\
          rules). `forge` is the entry point; the rest cover the core loop\n\
-         (plan, build, verify, ship) and the ten departments.\n\
+         (plan, build, verify, ship) and the seventeen departments.\n\
          - `agents/` - the Forge agents plus the lead role agent per\n\
          department.\n\
          - `commands/` - slash commands (`/plan`, `/docs`, `/release`, ...).\n\

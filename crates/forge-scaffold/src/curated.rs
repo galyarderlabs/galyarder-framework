@@ -3,7 +3,7 @@
 //! Criteria (see issue #212):
 //! - Reusable as an AI-agent rule (a real SKILL.md with clear instructions).
 //! - Covers the Forge Anything loop: goal -> plan -> build -> verify -> ship.
-//! - Covers each of the 10 departments, so the scaffolded repo works for any
+//! - Covers each of the 17 departments, so the scaffolded repo works for any
 //!   department out of the box.
 //! - Broadly useful, not niche. The ultra-specialized offensive / threat-intel
 //!   security skills (red team, malware reversing, darkweb monitoring) and the
@@ -18,7 +18,7 @@
 //! lists below; the tests assert every entry exists in the source repo.
 
 /// Curated skills, copied from `<source>/skills/<name>/` into the new repo.
-/// 38 skills: the Forge entry points, the core loop, and 1-6 per department.
+/// 33 skills: the Forge entry points, the core loop, and 1-6 per department.
 pub const CURATED_SKILLS: &[&str] = &[
     // Core: the Forge Anything loop itself.
     "forge",
@@ -36,30 +36,25 @@ pub const CURATED_SKILLS: &[&str] = &[
     "pitch-deck",
     "investor-research",
     // Product.
-    "write-a-prd",
-    "prd-to-plan",
-    "prd-to-issues",
+    "prd-flow",
     "ubiquitous-language",
     // Engineering.
     "test-driven-development",
     "systematic-debugging",
-    "requesting-code-review",
+    "adversarial-review",
     "finishing-a-development-branch",
     "release",
     "create-agent-adapter",
     // Growth.
     "seo-audit",
-    "copywriting",
-    "content-strategy",
-    "marketing-psychology",
+    "marketing-core",
     "analytics-tracking",
     // Security: defensive / compliance basics only.
     "cloud-security",
     "gdpr-compliance",
     "open-source-license",
     // Finance.
-    "accounting",
-    "financial-analyst",
+    "accounting-core",
     // Legal.
     "contract-review",
     "legal-tos-privacy",
@@ -102,7 +97,7 @@ pub const CURATED_AGENTS: &[&str] = &[
     "obsidian-architect",
 ];
 
-/// The 10 departments, in the order the shell scaffold used.
+/// The 17 departments, in the order the shell scaffold used.
 pub const DEPARTMENTS: &[&str] = &[
     "Executive",
     "Product",
@@ -114,6 +109,13 @@ pub const DEPARTMENTS: &[&str] = &[
     "Finance",
     "Legal",
     "Knowledge",
+    "Operations",
+    "Customer Success",
+    "People",
+    "Data",
+    "Trading",
+    "External Relations",
+    "Life",
 ];
 
 /// Which audit template seeds each department, from `<source>/docs/templates/`.
@@ -130,6 +132,13 @@ pub fn audit_template_for(department: &str) -> Option<&'static str> {
         "Finance" => Some("Forge-Anything Finance Audit.md"),
         "Legal" => Some("Forge-Anything Legal Audit.md"),
         "Knowledge" => Some("Forge-Anything Knowledge Audit.md"),
+        "Operations" => Some("Forge-Anything Operations Audit.md"),
+        "Customer Success" => Some("Forge-Anything Customer Success Audit.md"),
+        "People" => Some("Forge-Anything People Audit.md"),
+        "Data" => Some("Forge-Anything Data Audit.md"),
+        "Trading" => Some("Forge-Anything Trading Audit.md"),
+        "External Relations" => Some("Forge-Anything External Relations Audit.md"),
+        "Life" => Some("Forge-Anything Life Audit.md"),
         _ => None,
     }
 }

@@ -16,7 +16,7 @@ forge-scaffold [OPTIONS] <target-dir>
   skills except the `forge` entry point)
 - `agents/`: the five Forge agents plus the lead role agent per department
 - `commands/`: all slash commands
-- `docs/`: specs, plans, reports, templates, design, and the 10 departments
+- `docs/`: specs, plans, reports, templates, design, and the 17 departments
   (`docs/departments/<Dept>/`), each with a README and an audit template
 
 No per-host copies or manifests: any agent or host reads `skills/` and

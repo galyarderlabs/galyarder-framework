@@ -139,7 +139,7 @@ const HELP: &str = "forge-scaffold: drop a tidy Forge Anything repo into a folde
        --help           Show this help\n\
        --version        Show the version\n\
      \n\
-     The scaffolded repo gets the docs structure, the 10 departments with\n\
+     The scaffolded repo gets the docs structure, the 17 departments with\n\
      their audit templates, the curated skills and agents, and all slash\n\
      commands. Any agent or host reads `skills/` and `agents/` straight\n\
      from the project folder.\n\

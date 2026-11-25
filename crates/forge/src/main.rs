@@ -228,5 +228,5 @@ const SCAFFOLD_HELP: &str = "forge scaffold: initialize a new Forge Anything pro
        --help           Show this help\n\
      \n\
      No dir means the current directory. The scaffolded repo gets the docs\n\
-     structure, the 10 departments with their audit templates, the curated\n\
+     structure, the 17 departments with their audit templates, the curated\n\
      skills and agents, all slash commands, and the host manifests.\n";

@@ -438,7 +438,7 @@ fn scaffold_through_cli_produces_a_ready_repo() {
             .join("docs/departments/Executive/README.md")
             .is_file()
     );
-    assert_eq!(fs::read_dir(target.join("skills")).unwrap().count(), 38);
+    assert_eq!(fs::read_dir(target.join("skills")).unwrap().count(), 33);
     assert_eq!(fs::read_dir(target.join("agents")).unwrap().count(), 18);
     assert_eq!(fs::read_dir(target.join("commands")).unwrap().count(), 25);
     // No per-host copies or manifests in the scaffolded repo.
