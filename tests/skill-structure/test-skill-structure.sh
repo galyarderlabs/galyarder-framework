@@ -28,7 +28,7 @@ REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 SKILLS_DIR="$REPO_ROOT/skills"
 
 # Generated bundle consolidations, excluded from the referenced-files check.
-BUNDLES="forge engineering executive product creative growth security infrastructure finance legal knowledge"
+BUNDLES="forge engineering executive product creative growth security infrastructure finance legal knowledge operations customer-success people data trading external-relations life"
 
 PASSES=0
 FAILURES=0

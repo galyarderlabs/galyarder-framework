@@ -21,7 +21,7 @@ REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 LIMIT=20000
 
 # Generated bundle consolidations, excluded from the size limit.
-BUNDLES="forge engineering executive product creative growth security infrastructure finance legal knowledge"
+BUNDLES="forge engineering executive product creative growth security infrastructure finance legal knowledge operations customer-success people data trading external-relations life"
 
 is_bundle() {
   local name="$1"
