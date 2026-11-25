@@ -123,7 +123,7 @@ This validates the package (`COMPANY.md` with `agentcompanies/v1` frontmatter) a
 
 ## Command Silo Structure (Universal Architecture)
 
-The repository is organized into 10 departments. All assets are mapped to a flat structure that every supported harness can read:
+The repository is organized into 17 departments. All assets are mapped to a flat structure that every supported harness can read:
 
 ```text
 Silo/

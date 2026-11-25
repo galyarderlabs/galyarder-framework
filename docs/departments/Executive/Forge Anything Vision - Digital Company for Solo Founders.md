@@ -41,6 +41,13 @@ The departments are how the work is organized, so agents know where work belongs
 8. **Finance**: cost, budgeting, accounting, financial state, and runway.
 9. **Legal**: legal review, contracts, privacy, compliance, and intellectual property.
 10. **Knowledge**: documentation, decision history, operating reports, reusable workflows.
+11. **Operations**: web data ops, sales, automation.
+12. **Customer Success**: customer lifecycle, health scores, churn prevention, support.
+13. **People**: talent acquisition, HR processes, recruiting.
+14. **Data**: data engineering, SQL, data transformation, business intelligence.
+15. **Trading**: quantitative analysis, DeFi, token research, technical analysis, trading discipline.
+16. **External Relations**: PR, media production, crisis communications, fundraising, external partnerships.
+17. **Life**: health, mind, relationships, learning, money, home.
 
 The coordinators are `forge-ceo`, `forge-cfo-coo`, `forge-cmo`, `forge-cto`, and `forge-specialist`, which handles work that does not fit one department.
 

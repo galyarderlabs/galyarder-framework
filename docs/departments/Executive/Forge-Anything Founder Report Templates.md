@@ -78,6 +78,48 @@ The full template set lives in `docs/templates/Forge-Anything Founder Report Tem
 - Risks:
 - Decisions needed:
 
+### Operations
+- Status:
+- What changed:
+- Risks:
+- Decisions needed:
+
+### Customer Success
+- Status:
+- What changed:
+- Risks:
+- Decisions needed:
+
+### People
+- Status:
+- What changed:
+- Risks:
+- Decisions needed:
+
+### Data
+- Status:
+- What changed:
+- Risks:
+- Decisions needed:
+
+### Trading
+- Status:
+- What changed:
+- Risks:
+- Decisions needed:
+
+### External Relations
+- Status:
+- What changed:
+- Risks:
+- Decisions needed:
+
+### Life
+- Status:
+- What changed:
+- Risks:
+- Decisions needed:
+
 ## Cross-Functional Risks
 - Risk 1:
 - Risk 2:

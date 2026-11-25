@@ -29,7 +29,7 @@ You are the operator. You are the human owner, the final decision maker, and the
 
 ## Department map
 
-The ten departments are how the work is organized, so agents know where work belongs and what proof it needs. The scaffold creates these ten departments in a new repo.
+The seventeen departments are how the work is organized, so agents know where work belongs and what proof it needs. The scaffold creates these seventeen departments in a new repo.
 
 ### Forge core
 
@@ -116,6 +116,40 @@ Documentation, decision history, operating reports, and reusable workflows.
 Leads: `doc-updater`, `obsidian-architect`.
 
 Skills: `obsidian-markdown`, `obsidian-cli`, `defuddle`.
+
+### 11. Operations
+
+Web data ops, sales, and automation.
+
+### 12. Customer Success
+
+Customer lifecycle, health scores, churn prevention, and support.
+
+Lead: `support-lead`.
+
+### 13. People
+
+Talent acquisition, HR processes, and recruiting.
+
+### 14. Data
+
+Data engineering, SQL, data transformation, and business intelligence.
+
+Skills: `data-analysis`, `data-infra`, `business-intelligence`.
+
+### 15. Trading
+
+Quantitative analysis, DeFi, token research, technical analysis, and trading discipline.
+
+Skills: `exchange-data`.
+
+### 16. External Relations
+
+PR, media production, crisis communications, fundraising, and external partnerships.
+
+### 17. Life
+
+Health, mind, relationships, learning, money, and home.
 
 ## Operating protocols
 

@@ -267,5 +267,149 @@ Reports to founder:
 - what has been decided
 - what must be remembered
 
+### 11. Operations
+Purpose:
+- web data ops
+- sales pipeline and negotiation
+- workflow automation
+- data quality and source tracing
+
+Lead agent:
+- not yet assigned (agent restructure, later step)
+
+Key outputs:
+- sourced datasets
+- pipeline and negotiation records
+- tested automations
+
+Reports to founder:
+- data quality and traceability
+- pipeline and evidence status
+- automation health
+
+### 12. Customer Success
+Purpose:
+- customer lifecycle
+- health scores and at-risk accounts
+- churn prevention
+- support triage and issue ownership
+
+Lead agent:
+- `support-lead`
+
+Key outputs:
+- health score updates
+- at-risk account plans
+- support triage and resolutions
+
+Reports to founder:
+- customer health
+- churn risk
+- support load and resolution status
+
+### 13. People
+Purpose:
+- talent acquisition
+- HR processes
+- recruiting funnel
+- roles and accountability
+
+Lead agent:
+- not yet assigned (agent restructure, later step)
+
+Key outputs:
+- hiring funnel numbers
+- HR process records
+- role and ownership maps
+
+Reports to founder:
+- hiring funnel status
+- role and ownership gaps
+- team health
+
+### 14. Data
+Purpose:
+- data engineering
+- SQL queries and data models
+- data transformation
+- business intelligence
+
+Lead agent:
+- not yet assigned (agent restructure, later step)
+
+Key outputs:
+- pipelines and data models
+- tested queries and transformations
+- business intelligence reports
+
+Reports to founder:
+- pipeline health
+- report trust and data quality
+- analysis status
+
+### 15. Trading
+Purpose:
+- quantitative analysis
+- DeFi and on-chain data
+- token research
+- technical analysis
+- trading discipline and broker execution
+
+Lead agent:
+- not yet assigned (agent restructure, later step)
+
+Key outputs:
+- backtests and analysis
+- token research
+- trade records with checklists and approvals
+
+Reports to founder:
+- signal and analysis quality
+- backtest status
+- position risk and discipline gaps
+
+### 16. External Relations
+Purpose:
+- PR and media production
+- crisis communications
+- fundraising
+- external partnerships
+
+Lead agent:
+- not yet assigned (agent restructure, later step)
+
+Key outputs:
+- releases and media kits
+- coverage reports
+- crisis plans
+- fundraising materials
+
+Reports to founder:
+- release and coverage status
+- crisis readiness
+- fundraising state
+
+### 17. Life
+Purpose:
+- health and body
+- mind and focus
+- relationships and family
+- learning and growth
+- personal money and reserves
+- home and daily environment
+
+Lead agent:
+- not yet assigned (agent restructure, later step)
+
+Key outputs:
+- health and recovery check-ins
+- learning plans
+- emergency fund and cold money tracking
+
+Reports to founder:
+- health and recovery state
+- focus and deep work time
+- emergency fund and cold money status
+
 ## How reporting works
 Each department reports to the founder in its own report (see the templates in `Forge-Department-Reports/`). A report states the current state, what changed, the risks, and the decisions the founder needs to make. Reports link to the work they describe: the plan, the issue, or the decision record.

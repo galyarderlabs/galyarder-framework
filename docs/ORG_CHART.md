@@ -222,6 +222,102 @@
 - `json-canvas` - Visual mapping
 - `defuddle` - Content extraction
 
+### 11. Operations
+**Department Head:** not yet assigned (agent restructure, later step)
+
+**Purpose:** Web data ops, sales, and automation
+
+**Team Members (Skills):**
+- No skills placed yet; the skill placement step assigns them
+
+**Reports to Founder:**
+- Data quality and source traceability
+- Pipeline and evidence status
+- Automation health
+
+### 12. Customer Success
+**Department Head:** `support-lead`
+
+**Purpose:** Customer lifecycle, health scores, churn prevention, and support
+
+**Senior Support:**
+- `support-lead` - Support triage, post-launch issue ownership
+
+**Team Members (Skills):**
+- No skills placed yet; the skill placement step assigns them
+
+**Reports to Founder:**
+- Customer health and at-risk accounts
+- Churn risk
+- Support load and resolution status
+
+### 13. People
+**Department Head:** not yet assigned (agent restructure, later step)
+
+**Purpose:** Talent acquisition, HR processes, and recruiting
+
+**Team Members (Skills):**
+- No skills placed yet; the skill placement step assigns them
+
+**Reports to Founder:**
+- Hiring funnel status
+- Role and ownership gaps
+- Team health
+
+### 14. Data
+**Department Head:** not yet assigned (agent restructure, later step)
+
+**Purpose:** Data engineering, SQL, data transformation, and business intelligence
+
+**Team Members (Skills):**
+- `data-analysis` - Data analysis and reporting
+- `data-infra` - Data infrastructure
+- `business-intelligence` - Business intelligence
+
+**Reports to Founder:**
+- Pipeline health
+- Report trust and data quality
+- Analysis status
+
+### 15. Trading
+**Department Head:** not yet assigned (agent restructure, later step)
+
+**Purpose:** Quantitative analysis, DeFi, token research, technical analysis, and trading discipline
+
+**Team Members (Skills):**
+- `exchange-data` - Exchange data for analysis
+
+**Reports to Founder:**
+- Signal and analysis quality
+- Backtest status
+- Position risk and discipline gaps
+
+### 16. External Relations
+**Department Head:** not yet assigned (agent restructure, later step)
+
+**Purpose:** PR, media production, crisis communications, fundraising, and external partnerships
+
+**Team Members (Skills):**
+- No skills placed yet; the skill placement step assigns them
+
+**Reports to Founder:**
+- Release and coverage status
+- Crisis readiness
+- Fundraising state
+
+### 17. Life
+**Department Head:** not yet assigned (agent restructure, later step)
+
+**Purpose:** Health, mind, relationships, learning, money, and home
+
+**Team Members (Skills):**
+- No skills placed yet; the skill placement step assigns them
+
+**Reports to Founder:**
+- Health and recovery state
+- Focus and deep work time
+- Emergency fund and cold money status
+
 
 ## Operating Principles
 
