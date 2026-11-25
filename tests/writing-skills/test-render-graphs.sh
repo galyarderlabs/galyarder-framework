@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Tests for skills/writing-skills/render-graphs.js.
+# Tests for skills/writing-skills/render-graphs.py.
 #
 # Adapted from superpowers' tests/writing-skills/test-render-graphs.sh. The
 # missing-Graphviz case runs on every machine; the render case needs the
@@ -10,10 +10,10 @@ set -u
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
-SCRIPT_UNDER_TEST="$REPO_ROOT/skills/writing-skills/render-graphs.js"
-# Resolve the real binary: version-manager shims (mise, asdf) can't find node
-# under the empty PATH used for the missing-Graphviz case.
-NODE_BIN="$(node -p 'process.execPath')"
+SCRIPT_UNDER_TEST="$REPO_ROOT/skills/writing-skills/render-graphs.py"
+# Resolve the real binary: the empty PATH used for the missing-Graphviz case
+# must not hide the interpreter itself.
+PYTHON_BIN="$(command -v python3)"
 
 PASSES=0
 FAILURES=0
@@ -78,7 +78,7 @@ EOF
 
 echo "Writing-skills render-graphs tests"
 
-missing_dot_output="$(PATH="$TEST_ROOT/empty-path" "$NODE_BIN" "$SCRIPT_UNDER_TEST" "$fixture" 2>&1)"
+missing_dot_output="$(PATH="$TEST_ROOT/empty-path" "$PYTHON_BIN" "$SCRIPT_UNDER_TEST" "$fixture" 2>&1)"
 missing_dot_status=$?
 
 if [[ "$missing_dot_status" -ne 0 ]]; then
@@ -87,7 +87,7 @@ else
   fail "missing Graphviz exits non-zero"
 fi
 assert_contains "$missing_dot_output" "Error: graphviz (dot) not found." "missing Graphviz reports install guidance"
-assert_not_contains "$missing_dot_output" "ReferenceError: require is not defined" "script runs as an ES module"
+assert_not_contains "$missing_dot_output" "Traceback" "script fails cleanly without a Python traceback"
 
 # The render case needs the dot binary. Without Graphviz the render itself
 # is not broken, only untestable here, so skip it instead of failing.
@@ -96,7 +96,7 @@ if ! command -v dot >/dev/null 2>&1; then
   echo "  [SKIP] writes SVG output: graphviz (dot) not installed"
   echo "  [SKIP] SVG output has SVG markup: graphviz (dot) not installed"
 else
-  render_output="$("$NODE_BIN" "$SCRIPT_UNDER_TEST" "$fixture" 2>&1)"
+  render_output="$("$PYTHON_BIN" "$SCRIPT_UNDER_TEST" "$fixture" 2>&1)"
   render_status=$?
 
   if [[ "$render_status" -eq 0 ]]; then
