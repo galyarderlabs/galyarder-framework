@@ -1,6 +1,6 @@
 ---
 name: research
-description: "Riset grounded + data terstruktur + riset AI"
+description: "Grounded research + structured data + AI research"
 ---
 ## Forge Anything operating protocols
 

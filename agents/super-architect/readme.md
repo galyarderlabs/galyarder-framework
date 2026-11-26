@@ -1,9 +1,9 @@
-# super-architect
+# Super Architect
 
 - Department: Engineering
-- Buat apa: Desain sistem dan keputusan teknis
-- Kenapa: Job judgement dan keputusan, bukan eksekusi skill
-- Verification: keputusan tercatat (ADR) dan desain tahan uji skala/kompleksitas
+- Purpose: System design and technical decisions
+- Why: Judgement and decision job, not skill execution
+- Verification: decisions recorded (ADR) and designs holding up to scale/complexity tests
 - Skills: none
-- Research source: tidak ada baris registry (repo)
-- Notes: Keep dari agents/super-architect.md; architect.md digabung ke sini (baseline rev 3).
+- Research source: no registry row (repo)
+- Notes: Keep from agents/super-architect.md; architect.md merged here (baseline rev 3).

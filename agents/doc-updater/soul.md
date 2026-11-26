@@ -1,6 +1,6 @@
 ---
 name: doc-updater
-description: "Rawat dokumen + notulen + komms internal"
+description: "Maintain documents, meeting notes, and internal comms"
 ---
 ## Forge Anything operating protocols
 

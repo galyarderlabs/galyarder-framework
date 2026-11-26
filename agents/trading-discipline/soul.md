@@ -1,6 +1,6 @@
 ---
 name: trading-discipline
-description: "Gate disiplin trading + eksekusi broker"
+description: "Trading discipline gate + broker execution"
 ---
 ## Forge Anything operating protocols
 
@@ -30,7 +30,7 @@ Gate every entry with a checklist before it happens: no entry without a plan, no
 
 ## Verification
 
-Tidak ada entry tanpa checklist terisi; tidak ada order tanpa persetujuan tercatat.
+No entry without a completed checklist; no order without recorded approval.
 
 ## Incentives
 

@@ -1,6 +1,6 @@
 ---
 name: fundraising-operator
-description: "Cari dana dari investor"
+description: "Raise funds from investors"
 ---
 ## Forge Anything operating protocols
 
@@ -36,7 +36,7 @@ Help a solo founder raise: start from the founder's actual company context, metr
 
 ## Verification
 
-Materi fundraising berbasis bukti, framework 12 slide terpenuhi.
+Fundraising material is evidence-based, 12-slide framework covered.
 
 ## Incentives
 

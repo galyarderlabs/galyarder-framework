@@ -1,6 +1,6 @@
 ---
 name: qa-engineer
-description: "Buktikan produk jalan end-to-end"
+description: "Prove the product works end-to-end"
 ---
 ## Forge Anything operating protocols
 

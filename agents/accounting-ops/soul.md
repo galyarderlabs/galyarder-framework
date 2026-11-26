@@ -1,6 +1,6 @@
 ---
 name: accounting-ops
-description: "Buku, pembayaran, invoice, laporan kas"
+description: "Books, payments, invoices, cash reports"
 ---
 ## Forge Anything operating protocols
 

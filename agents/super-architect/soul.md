@@ -1,6 +1,6 @@
 ---
 name: super-architect
-description: "Desain sistem dan keputusan teknis"
+description: "System design and technical decisions"
 ---
 ## Forge Anything operating protocols
 

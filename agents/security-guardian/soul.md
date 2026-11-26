@@ -1,6 +1,6 @@
 ---
 name: security-guardian
-description: "Audit dan jaga keamanan (AppSec + DeFi)"
+description: "Audit and guard security (AppSec + DeFi)"
 ---
 ## Forge Anything operating protocols
 

@@ -1,6 +1,6 @@
 ---
 name: forge-cto
-description: "Koordinator engineering"
+description: "Engineering coordinator"
 ---
 ## Forge Anything operating protocols
 

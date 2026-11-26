@@ -1,6 +1,6 @@
 ---
 name: devops-engineer
-description: "Jalankan infra + deploy + messaging"
+description: "Run infra, deploys, and messaging"
 ---
 ## Forge Anything operating protocols
 

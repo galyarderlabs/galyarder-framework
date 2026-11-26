@@ -1,6 +1,6 @@
 ---
 name: release-manager
-description: "Jalankan rilis"
+description: "Run releases"
 ---
 ## Forge Anything operating protocols
 

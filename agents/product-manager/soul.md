@@ -1,6 +1,6 @@
 ---
 name: product-manager
-description: "Punya produk dari discovery sampai shipped, termasuk perencanaan dan delivery"
+description: "Own the product from discovery to shipped, including planning and delivery"
 ---
 ## Forge Anything operating protocols
 

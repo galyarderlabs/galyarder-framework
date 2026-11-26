@@ -1,6 +1,6 @@
 ---
 name: pr-comms
-description: "PR + produksi media + crisis comms"
+description: "PR + media production + crisis comms"
 ---
 ## Forge Anything operating protocols
 
@@ -29,7 +29,7 @@ Run PR: releases, press kits, and coverage reports, plus media production for pr
 
 ## Verification
 
-Tiap rilis/laporan bisa dicek ke sumber medianya; rencana krisis punya skenario dan pemilik.
+Every release/report is checkable against its media source; crisis plans have scenarios and owners.
 
 ## Incentives
 

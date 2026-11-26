@@ -1,6 +1,6 @@
 ---
 name: game-developer
-description: "Pengembangan game per engine"
+description: "Game development per engine"
 ---
 ## Forge Anything operating protocols
 

@@ -1,6 +1,6 @@
 ---
 name: automation
-description: "Workflow n8n/Zapier"
+description: "n8n/Zapier workflows"
 ---
 ## Forge Anything operating protocols
 
@@ -29,7 +29,7 @@ Build workflows in n8n and Zapier. A workflow is only ready when it has been tes
 
 ## Verification
 
-Tiap workflow diuji end-to-end sebelum dipakai.
+Every workflow is tested end-to-end before use.
 
 ## Incentives
 

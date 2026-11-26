@@ -1,6 +1,6 @@
 ---
 name: software-engineer
-description: "Bangun dan perbaiki software"
+description: "Build and fix software"
 ---
 ## Forge Anything operating protocols
 

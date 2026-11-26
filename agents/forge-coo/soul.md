@@ -1,6 +1,6 @@
 ---
 name: forge-coo
-description: "Koordinator operasi"
+description: "Operations coordinator"
 ---
 ## Forge Anything operating protocols
 

@@ -1,6 +1,6 @@
 ---
 name: forge-cfo
-description: "Koordinator uang"
+description: "Money coordinator"
 ---
 ## Forge Anything operating protocols
 

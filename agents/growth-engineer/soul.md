@@ -1,6 +1,6 @@
 ---
 name: growth-engineer
-description: "Bangun sistem growth (programmatic SEO, referral loop, tools)"
+description: "Build growth systems (programmatic SEO, referral loops, tools)"
 ---
 ## Forge Anything operating protocols
 

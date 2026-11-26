@@ -1,6 +1,6 @@
 ---
 name: scientific-researcher
-description: "Riset ilmiah + database ilmiah"
+description: "Scientific research + scientific databases"
 ---
 ## Forge Anything operating protocols
 

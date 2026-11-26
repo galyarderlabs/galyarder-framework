@@ -31,7 +31,7 @@ Run hiring: scorecards, funnels, and job descriptions with measurable funnel met
 
 ## Verification
 
-Tiap tahap funnel punya angka; tiap proses HR merujuk ke benchmark-nya.
+Every funnel stage has numbers; every HR process refers to its benchmark.
 
 ## Incentives
 

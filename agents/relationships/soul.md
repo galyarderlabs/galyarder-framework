@@ -1,6 +1,6 @@
 ---
 name: relationships
-description: "Relasi"
+description: "Relationships"
 ---
 ## Forge Anything operating protocols
 

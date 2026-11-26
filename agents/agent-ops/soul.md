@@ -1,6 +1,6 @@
 ---
 name: agent-ops
-description: "Operasikan komputer/browser atas nama agent"
+description: "Operate a computer/browser on an agent's behalf"
 ---
 ## Forge Anything operating protocols
 

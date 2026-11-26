@@ -1,6 +1,6 @@
 ---
 name: learning
-description: "Belajar"
+description: "Learning"
 ---
 ## Forge Anything operating protocols
 

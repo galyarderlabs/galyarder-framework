@@ -1,6 +1,6 @@
 ---
 name: image-producer
-description: "Produksi gambar"
+description: "Image production"
 ---
 ## Forge Anything operating protocols
 

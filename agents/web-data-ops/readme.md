@@ -1,9 +1,9 @@
-# web-data-ops
+# Web Data Ops
 
 - Department: Operations
-- Buat apa: Ops data web (scraping)
-- Kenapa: Verifikasi: tiap baris data merujuk ke halaman sumber
-- Verification: Tiap baris data merujuk ke halaman sumber.
+- Purpose: Web data ops (scraping)
+- Why: Verification: every data row refers to its source page
+- Verification: Every data row refers to its source page.
 - Skills: web-data-ops
 - Research source: A4 Web Data Ops: Crawlbase via VoltAgent, https://github.com/VoltAgent/awesome-agent-skills
 - Notes: New agent folder, built from the curation plan rev 4, section 3.1. No prior agents/*.md file.

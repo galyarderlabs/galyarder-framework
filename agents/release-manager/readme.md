@@ -1,9 +1,9 @@
-# release-manager
+# Release Manager
 
 - Department: Engineering
-- Buat apa: Jalankan rilis
-- Kenapa: Verifikasi: rilis keluar (tag, binary, notes)
-- Verification: rilis keluar (tag, binary, notes)
+- Purpose: Run releases
+- Why: Verification: the release ships (tag, binary, notes)
+- Verification: the release ships (tag, binary, notes)
 - Skills: release, release-changelog
-- Research source: tidak ada baris registry (repo)
-- Notes: Keep dari agents/release-manager.md.
+- Research source: no registry row (repo)
+- Notes: Keep from agents/release-manager.md.

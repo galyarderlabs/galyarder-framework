@@ -1,6 +1,6 @@
 ---
 name: crypto
-description: "Data pasar + custody crypto"
+description: "Market data + crypto custody"
 ---
 ## Forge Anything operating protocols
 

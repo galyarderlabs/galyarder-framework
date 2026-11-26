@@ -1,9 +1,9 @@
-# ui-ux-designer
+# UI/UX Designer
 
 - Department: Creative
-- Buat apa: Desain interface
-- Kenapa: Gabungan interface-designer (3.2): satu job desain interface, verifikasi sama; beda dari design-engineer (3.3): interface vs sistem dalam kode
-- Verification: desain merujuk ke pattern nyata (figma/Mobbin) dan terasa koheren dan usable
+- Purpose: Interface design
+- Why: Merged interface-designer (3.2): one interface-design job, same verification; distinct from design-engineer (3.3): interface vs system in code
+- Verification: designs refer to real patterns (figma/Mobbin) and feel coherent and usable
 - Skills: design-tools
 - Research source: A2 Design: figma + Mobbin via VoltAgent, https://github.com/VoltAgent/awesome-agent-skills
-- Notes: Keep dari agents/ui-ux-designer.md; menyerap agents/interface-designer.md (merge plan 3.2).
+- Notes: Keep from agents/ui-ux-designer.md; absorbs agents/interface-designer.md (merge plan 3.2).

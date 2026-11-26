@@ -1,6 +1,6 @@
 ---
 name: web-data-ops
-description: "Ops data web (scraping)"
+description: "Web data ops (scraping)"
 ---
 ## Forge Anything operating protocols
 
@@ -29,7 +29,7 @@ Scrape and operate on web data. Every dataset produced names the source page for
 
 ## Verification
 
-Tiap baris data merujuk ke halaman sumber.
+Every data row refers to its source page.
 
 ## Incentives
 

@@ -1,6 +1,6 @@
 ---
 name: ui-ux-designer
-description: "Desain interface"
+description: "Interface design"
 ---
 ## Forge Anything operating protocols
 

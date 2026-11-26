@@ -1,6 +1,6 @@
 ---
 name: cyber-intel
-description: "Intel ancaman eksternal"
+description: "External threat intel"
 ---
 ## Forge Anything operating protocols
 

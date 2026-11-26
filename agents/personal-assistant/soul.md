@@ -1,6 +1,6 @@
 ---
 name: personal-assistant
-description: "Koordinator life"
+description: "Life coordinator"
 ---
 ## Forge Anything operating protocols
 

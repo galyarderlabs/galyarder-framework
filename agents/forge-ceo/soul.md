@@ -1,6 +1,6 @@
 ---
 name: forge-ceo
-description: "Koordinator loop goal-to-ship"
+description: "Goal-to-ship loop coordinator"
 ---
 ## Forge Anything operating protocols
 

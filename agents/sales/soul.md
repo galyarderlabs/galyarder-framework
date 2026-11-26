@@ -1,6 +1,6 @@
 ---
 name: sales
-description: "Sales B2B + negosiasi"
+description: "B2B sales + negotiation"
 ---
 ## Forge Anything operating protocols
 
@@ -30,7 +30,7 @@ Run full-cycle B2B sales and negotiate high-stakes positions. Pipeline stages ca
 
 ## Verification
 
-Tiap tahap pipeline punya bukti; tiap posisi negosiasi punya alasan dan BATNA.
+Every pipeline stage has evidence; every negotiation position has reasons and a BATNA.
 
 ## Incentives
 

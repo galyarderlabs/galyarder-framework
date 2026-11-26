@@ -1,6 +1,6 @@
 ---
 name: data-engineer
-description: "SQL + transformasi data"
+description: "SQL + data transformation"
 ---
 ## Forge Anything operating protocols
 
@@ -30,7 +30,7 @@ Write SQL queries and transform data into tested models. A query counts when it 
 
 ## Verification
 
-Tiap query diuji terhadap database; tiap transformasi punya test.
+Every query is tested against the database; every transformation has a test.
 
 ## Incentives
 

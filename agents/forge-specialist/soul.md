@@ -1,6 +1,6 @@
 ---
 name: forge-specialist
-description: "Generalis lintas departemen + pemilik template agent + koordinasi tim agent"
+description: "Cross-department generalist, agent template owner, agent-team coordinator"
 ---
 ## Forge Anything operating protocols
 

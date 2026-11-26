@@ -1,6 +1,6 @@
 ---
 name: code-reviewer
-description: "Review kode dan ide secara adversarial"
+description: "Review code and ideas adversarially"
 ---
 ## Forge Anything operating protocols
 

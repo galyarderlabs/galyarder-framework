@@ -1,6 +1,6 @@
 ---
 name: design-engineer
-description: "Design engineering + motion + diagram + theming dalam kode"
+description: "Design engineering + motion + diagram + theming in code"
 ---
 ## Forge Anything operating protocols
 

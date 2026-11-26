@@ -1,6 +1,6 @@
 ---
 name: mind
-description: "Kehidupan mental"
+description: "Mental life"
 ---
 ## Forge Anything operating protocols
 

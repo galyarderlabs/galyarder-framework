@@ -1,6 +1,6 @@
 ---
 name: trading-quant
-description: "Analisis kuantitatif + DeFi + riset token + TA"
+description: "Quantitative analysis + DeFi + token research + TA"
 ---
 ## Forge Anything operating protocols
 
@@ -31,7 +31,7 @@ Analyse markets quantitatively and in DeFi: market data, on-chain data, backtest
 
 ## Verification
 
-Backtest tercatat dan bisa diulang; tidak ada sinyal tanpa ukuran risk.
+Backtests are recorded and repeatable; no signal without a risk measure.
 
 ## Incentives
 

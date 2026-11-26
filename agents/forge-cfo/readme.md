@@ -1,9 +1,9 @@
-# forge-cfo
+# Forge CFO
 
 - Department: Executive
-- Buat apa: Koordinator uang
-- Kenapa: Dipisah dari forge-cfo-coo (amendemen 25 Nov 13:46) karena verifikasi uang (state keuangan, runway, ROI) beda dari verifikasi operasi
-- Verification: state keuangan, runway, dan ROI benar dan mutakhir
+- Purpose: Money coordinator
+- Why: Split from forge-cfo-coo (amendment 25 Nov 13:46) because money verification (financial state, runway, ROI) differs from operations verification
+- Verification: financial state, runway, and ROI are correct and current
 - Skills: none
-- Research source: tidak ada baris registry (repo)
+- Research source: no registry row (repo)
 - Notes: split from agents/forge-cfo-coo.md, financial half; operational half is forge-coo

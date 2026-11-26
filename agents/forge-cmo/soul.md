@@ -1,6 +1,6 @@
 ---
 name: forge-cmo
-description: "Koordinator growth/marketing"
+description: "Growth and marketing coordinator"
 ---
 ## Forge Anything operating protocols
 

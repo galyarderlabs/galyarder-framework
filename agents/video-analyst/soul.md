@@ -1,6 +1,6 @@
 ---
 name: video-analyst
-description: "Analisis video yang sudah ada, shot by shot"
+description: "Analysis of existing video, shot by shot"
 ---
 ## Forge Anything operating protocols
 

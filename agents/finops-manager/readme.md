@@ -1,9 +1,9 @@
-# finops-manager
+# FinOps Manager
 
 - Department: Finance
-- Buat apa: Cloud cost + pricing
-- Kenapa: Gabungan revenue-architect (3.2): satu job keputusan uang berbasis bukti (pricing, packaging, cloud spend, burn rate)
-- Verification: spend dipahami; harga ditetapkan dengan bukti
+- Purpose: Cloud cost + pricing
+- Why: Merged revenue-architect (3.2): one evidence-based money-decision job (pricing, packaging, cloud spend, burn rate)
+- Verification: spend is understood; prices are set with evidence
 - Skills: finance-based-pricing-advisor, saas-finops-optimization
-- Research source: tidak ada baris registry (repo)
+- Research source: no registry row (repo)
 - Notes: Keep from agents/finops-manager.md; absorbed agents/revenue-architect.md (merge, plan 3.2 item 7).

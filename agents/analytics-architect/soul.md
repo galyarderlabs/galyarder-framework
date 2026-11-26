@@ -1,6 +1,6 @@
 ---
 name: analytics-architect
-description: "Belajar dari data: BI, analisis, eksperimen, riset pasar"
+description: "Learn from data: BI, analysis, experiments, market research"
 ---
 ## Forge Anything operating protocols
 

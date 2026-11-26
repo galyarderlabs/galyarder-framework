@@ -1,6 +1,6 @@
 ---
 name: writing-quality
-description: "Tulis yang manusiawi dan on-voice"
+description: "Write human and on-voice"
 ---
 ## Forge Anything operating protocols
 

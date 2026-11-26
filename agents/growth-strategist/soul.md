@@ -1,6 +1,6 @@
 ---
 name: growth-strategist
-description: "Strategi marketing + paid media + aktivasi"
+description: "Marketing strategy, paid media, activation"
 ---
 ## Forge Anything operating protocols
 

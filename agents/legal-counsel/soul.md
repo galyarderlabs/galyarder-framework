@@ -1,6 +1,6 @@
 ---
 name: legal-counsel
-description: "Review legal + GRC"
+description: "Legal review + GRC"
 ---
 ## Forge Anything operating protocols
 

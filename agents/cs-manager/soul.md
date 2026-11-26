@@ -33,7 +33,7 @@ Run the customer success lifecycle: onboarding, health scoring, QBRs, and expans
 
 ## Verification
 
-Health score bisa dihitung ulang; tiap account berisiko punya sinyal dan rencana.
+Health score is recomputable; every at-risk account has signals and a plan.
 
 ## Incentives
 

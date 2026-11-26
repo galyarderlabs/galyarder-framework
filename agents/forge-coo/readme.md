@@ -1,9 +1,9 @@
-# forge-coo
+# Forge COO
 
 - Department: Executive
-- Buat apa: Koordinator operasi
-- Kenapa: Dipisah dari forge-cfo-coo karena verifikasi operasi (delivery, uptime, cadence) beda dari verifikasi uang
-- Verification: delivery, uptime, dan cadence operasional benar dan mutakhir
+- Purpose: Operations coordinator
+- Why: Split from forge-cfo-coo because operations verification (delivery, uptime, cadence) differs from money verification
+- Verification: delivery, uptime, and operational cadence are correct and current
 - Skills: none
-- Research source: tidak ada baris registry (repo)
+- Research source: no registry row (repo)
 - Notes: split from agents/forge-cfo-coo.md, operational half; financial half is forge-cfo; owns the compliance gate with legal-counsel

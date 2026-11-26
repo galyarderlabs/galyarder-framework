@@ -1,9 +1,9 @@
-# qa-engineer
+# QA Engineer
 
 - Department: Engineering
-- Buat apa: Buktikan produk jalan end-to-end
-- Kenapa: Checker dinamis, beda dari maker dan checker statis (3.3); e2e-runner di-rename jadi qa-engineer
-- Verification: hasil test membuktikan perilaku; tidak ada klaim "jalan" tanpa test yang lolos
+- Purpose: Prove the product works end-to-end
+- Why: Dynamic checker, distinct from maker and static checker (3.3); e2e-runner renamed to qa-engineer
+- Verification: test results prove behavior; no "works" claim without a passing test
 - Skills: qa-core, playwright-pro
 - Research source: A3 QA/Testing: TestMu via VoltAgent, https://github.com/VoltAgent/awesome-agent-skills
-- Notes: Rename dari agents/e2e-runner.md; qa-automation-engineer.md digabung ke sini (baseline rev 3, plan 3.2).
+- Notes: Renamed from agents/e2e-runner.md; qa-automation-engineer.md merged here (baseline rev 3, plan 3.2).

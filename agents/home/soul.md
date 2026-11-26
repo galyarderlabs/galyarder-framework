@@ -1,6 +1,6 @@
 ---
 name: home
-description: "Kehidupan rumah"
+description: "Home life"
 ---
 ## Forge Anything operating protocols
 

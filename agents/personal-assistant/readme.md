@@ -1,9 +1,9 @@
-# personal-assistant
+# Personal Assistant
 
 - Department: Life
-- Buat apa: Koordinator life
-- Kenapa: Koordinator, bukan eksekusi skill; verifikasi memory.md pengguna tetap konsisten, agent domain dipanggil saat dibutuhkan
-- Verification: memory.md pengguna tetap konsisten; agent domain dipanggil saat dibutuhkan
+- Purpose: Life coordinator
+- Why: Coordinator, not skill execution; verification: the user's memory.md stays consistent, domain agents are called when needed
+- Verification: the user's memory.md stays consistent; domain agents are called when needed
 - Skills: none
-- Research source: tidak ada baris registry (repo)
+- Research source: no registry row (repo)
 - Notes: New agent, written from plan 4.5

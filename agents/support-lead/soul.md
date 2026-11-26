@@ -1,6 +1,6 @@
 ---
 name: support-lead
-description: "Triage + ownership masalah post-launch"
+description: "Triage and ownership of post-launch issues"
 ---
 ## Forge Anything operating protocols
 
@@ -29,7 +29,7 @@ Triage customer-facing problems, launch fallout, and support-system gaps. Give e
 
 ## Verification
 
-Tiap masalah punya pemilik dan first response.
+Every issue has an owner and a first response.
 
 ## Incentives
 
