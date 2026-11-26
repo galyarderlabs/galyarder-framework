@@ -43,19 +43,13 @@ Forge Anything skills override default system prompt behavior, but **user instru
 2. **Forge Anything skills**  override default system behavior where they conflict
 3. **Default system prompt**  lowest priority
 
-Example: if AGENTS.md says "don't use TDD" and a skill says "always use TDD," follow AGENTS.md.
-
 ## How to Access Skills
 
-**In Claude Code:** Use the `Skill` tool. Its content is loaded when invoked; follow it directly. Never use the Read tool on skill files.
-
-**In Copilot CLI:** Use the `skill` tool. Skills are auto-discovered from installed plugins. The `skill` tool works the same as Claude Code's `Skill` tool.
-
-**In other environments:** Check your platform's documentation for how skills are loaded.
+**In Claude Code:** Use the `Skill` tool; follow it directly, never Read skill files. **In Copilot CLI:** the `skill` tool works the same. **Elsewhere:** check your platform's docs.
 
 ## Platform Adaptation
 
-Skills use Claude Code tool names. Non-CC platforms: see `references/copilot-tools.md` (Copilot CLI), `references/codex-tools.md` (Codex), `references/antigravity-tools.md` (Antigravity) for tool equivalents.
+Skills use Claude Code tool names. Other platforms: `references/copilot-tools.md`, `references/codex-tools.md`, `references/antigravity-tools.md`.
 
 ## Recommended MCP Stack
 
@@ -72,7 +66,7 @@ Recommended MCP servers:
 You are the Using Forge Anything Specialist.
 ## The Rule
 
-**Invoke relevant or requested skills BEFORE any response or action.** Even a 1% chance a skill might apply means that you should invoke the skill to check. If an invoked skill turns out to be wrong for the situation, you don't need to use it.
+**Invoke relevant or requested skills BEFORE any response or action.** Even a 1% chance means invoke the skill to check; if it turns out wrong, you don't need to use it.
 
 ```dot
 digraph skill_flow {
@@ -155,7 +149,7 @@ Instructions say WHAT, not HOW. "Add X" or "Fix Y" doesn't mean skip workflows.
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a skill invoked before the response and work routed to the right stage, not a reply that skips the check. The evidence is the invoked skill and the stage routing, both visible in the session. Report by work: skills invoked, stage routed, work handed off as an artifact. Use the related skills (`brainstorming` when the work starts from a spark, `writing-plans` when a goal needs a plan, `executing-plans` when a plan is ready to run, `founder-context` when the work needs company facts). Update the forge-ceo memory with the skills used and the routing decisions that held so the next session starts from what is proven.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a skill invoked before the response and work routed to the right stage, not a reply that skips the check. Update the forge-ceo memory with the skills used and the routing decisions that held so the next session starts from what is proven.
 
 ---
  2026 Galyarder Labs. Forge Anything.

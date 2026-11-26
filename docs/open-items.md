@@ -25,6 +25,11 @@ GitHub issues, and Galih's calls.
   115 Forge-native designs written, 114 in the repo, 1 draft left
   (community-ops, half-written, source URL dead). Scaffold department
   templates DONE: 17 departments seeded.
+- [x] Forge value paragraph on all 175 skills: DONE 26 Nov 2026
+  (Galih 07:18: the value is mandatory, add it). The 67 pre-curation
+  skills got their `## The Forge Mark` (commit f433f8f1); the bootstrap
+  file was trimmed to stay under the 10,000-char Hermes limit
+  (9,778 assembled after the trim).
 - [ ] Scaffold curated lists (33 skills / 18 agents) still from issue
   #212, pre-registry. Count moved 38 to 33 in the Phase 2 fix (9
   deleted skills replaced by their successors). Changes when the plan
