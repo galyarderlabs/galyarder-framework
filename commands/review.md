@@ -12,4 +12,4 @@ description: Perform a principal-level code review of the current changes agains
 
 ---
 
-**Note**: This command is powered by the `forge-anything:requesting-code-review` skill and the `forge-anything:code-reviewer` agent.
+**Note**: This command is powered by the `forge-anything:code-reviewer` agent.

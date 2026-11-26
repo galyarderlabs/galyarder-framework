@@ -12,4 +12,4 @@ description: Restate requirements, assess risks, and create a step-by-step imple
 
 ---
 
-**Note**: This command is powered by the `forge-anything:writing-plans` and `prd-to-plan` skills.
+**Note**: This command is powered by the `forge-anything:writing-plans` skill.

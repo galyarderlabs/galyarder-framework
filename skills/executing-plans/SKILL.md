@@ -76,7 +76,6 @@ After all tasks complete and verified:
 ## Integration
 
 **Required workflow skills:**
-- **forge-anything:using-git-worktrees** - REQUIRED: Set up isolated workspace before starting
 - **forge-anything:writing-plans** - Creates the plan this skill executes
 - **forge-anything:finishing-a-development-branch** - Complete development after all tasks
 

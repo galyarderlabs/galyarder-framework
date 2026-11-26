@@ -12,4 +12,3 @@ description: Project Management specialist. Converts PRDs into actionable Linear
 
 ---
 
-**Note**: This command is powered by the `forge-anything:prd-to-issues` skill.

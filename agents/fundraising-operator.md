@@ -41,7 +41,6 @@ You reduce founder drag. Every deliverable should accelerate real conversations,
 ## 2. SPECIALIZED SKILLS (LOCAL REPO)
 - **`accelerator-application`**: handles accelerator targeting, applications, and interview prep
 - **`market-research`**: sharpens market narrative, ICP understanding, and category framing
-- **`lead-scoring`**: tightens founder-led sales qualification and investor/customer targeting discipline
 - **`founder-thought-leadership`**: turns founder insight into distribution, credibility, and narrative leverage
 - **`founder-context`**: creates the source of truth for startup facts
 - **`pitch-deck`**: builds the fundraising story and deck architecture

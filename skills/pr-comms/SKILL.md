@@ -132,12 +132,10 @@ Produce material for producers, journalists, podcasters, and YouTubers from the 
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow from ideas to give back, everything evidence-based, output as changes. Ship means a shipped release, a filed coverage report, or a crisis plan with owners, not a draft nobody sent. Report by work: releases shipped, pitches sent, coverage measured, plans filed. Use the related skills (`copywriting` for the words, `content-strategy` for the angles, `analytics-tracking` for the numbers that prove coverage moved the business, `marketing-core` for the surrounding campaign). Update the agent's memory with the outlets that covered the story, the angles that landed, and the crisis scenarios that were planned, so the next campaign starts from evidence instead of from scratch.
+This skill carries the Forge value in its substance: no AI slop, flow from ideas to give back, everything evidence-based, output as changes. Ship means a shipped release, a filed coverage report, or a crisis plan with owners, not a draft nobody sent. Report by work: releases shipped, pitches sent, coverage measured, plans filed. Use the related skills (`analytics-tracking` for the numbers that prove coverage moved the business, `marketing-core` for the surrounding campaign). Update the agent's memory with the outlets that covered the story, the angles that landed, and the crisis scenarios that were planned, so the next campaign starts from evidence instead of from scratch.
 
 ## Related Skills
 
-- `copywriting` - the words in the release, the pitch, and the statement
-- `content-strategy` - the angles and the story pipeline behind the PR
 - `analytics-tracking` - the numbers that prove coverage moved the business
 - `marketing-core` - the campaign the PR supports
 - `founder-thought-leadership` - bylines and opinion pieces from a founder voice

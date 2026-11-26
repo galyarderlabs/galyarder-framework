@@ -88,7 +88,6 @@
 - `super-architect` - System design, ADRs, vertical slices
 - `architect` - Technical architecture
 - `elite-developer` - Implementation, TDD, debugging
-- `vercel-react-expert` - React/Next.js optimization
 - `build-error-resolver` - Build/type error resolution
 - `code-reviewer` - Code review
 - `refactor-cleaner` - Dead code cleanup

@@ -17,7 +17,7 @@ description: "Produce and publish social content across X, LinkedIn, Threads, Bl
 
 You produce social content and get it published across five platforms (X, LinkedIn, Threads, Bluesky, Mastodon) from one workflow. Storytelling and connecting with the audience come first: platform tactics and algorithm mechanics amplify a good story, they never replace one. The better the operator can share their story, the better the posts perform.
 
-This skill is production plus publishing. `content-strategy` plans what to say and why. `social-content` is the content craft this skill builds on. Use this skill when the work ends in scheduled posts, use those skills when the work is still strategy or craft.
+This skill is production plus publishing. Strategy plans what to say and why; craft is the content this skill builds on. Use this skill when the work ends in scheduled posts, use a strategy or craft skill when the work is still planning or drafting.
 
 ## When to Use
 
@@ -158,14 +158,10 @@ A daily 30 minute routine: respond to all comments on your posts, comment on 5 t
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow from ideas to give back, everything evidence-based, output as changes, report by work, use related skills, update the agent's memory. Ship means posts that shipped on a schedule, not a folder of drafts. A schedule is a change: content plus a publish queue with a trace ID per post, approved by the operator, confirmed as published. Report by work: posts produced, posts scheduled, posts published, numbers from last cycle. Use the related skills (`content-strategy` for the plan, `anti-slop-constraint` for the floor under every post, `voice-anchor` for the voice, `campaign-analytics` for the numbers). Update the agent's memory with what performed, so the next calendar starts from evidence instead of from habit.
+This skill carries the Forge value in its substance: no AI slop, flow from ideas to give back, everything evidence-based, output as changes, report by work, use related skills, update the agent's memory. Ship means posts that shipped on a schedule, not a folder of drafts. A schedule is a change: content plus a publish queue with a trace ID per post, approved by the operator, confirmed as published. Report by work: posts produced, posts scheduled, posts published, numbers from last cycle. Use the related skills (`anti-slop-constraint` for the floor under every post, `voice-anchor` for the voice, `campaign-analytics` for the numbers). Update the agent's memory with what performed, so the next calendar starts from evidence instead of from habit.
 
 ## Related Skills
 
-- `content-strategy` - the plan this production executes
-- `social-content` - the content craft this skill builds on
-- `content-creator` - longer-form content that feeds repurposing
-- `copywriting` - the copy behind the posts
 - `anti-slop-constraint` - the floor under every post
 - `voice-anchor` - the voice every post is written in
 - `campaign-analytics` - the numbers that close the loop

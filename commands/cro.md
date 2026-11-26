@@ -12,4 +12,3 @@ description: Conversion Rate Optimization specialist. Optimizes onboarding, payw
 
 ---
 
-**Note**: This command is powered by the `forge-anything:onboarding-cro` and `paywall-upgrade-cro` skills.

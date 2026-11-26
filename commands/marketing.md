@@ -12,4 +12,4 @@ description: Growth, SEO, and Copywriting specialist. Use this to optimize for R
 
 ---
 
-**Note**: This command is powered by the `forge-anything:copywriting`, `seo-audit`, and `marketing-psychology` skills.
+**Note**: This command is powered by the `forge-anything:seo-audit` skill.

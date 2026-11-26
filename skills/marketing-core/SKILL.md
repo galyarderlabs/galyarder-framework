@@ -78,12 +78,12 @@ A marketing plan and its materials (context document, audit findings, copy, CRO 
 
 ## How this skill carries the Forge value
 
-No AI slop: copy uses customer words and numbers, not hype adjectives. Flow ideas to give back: the package ends as published pages, shipped copy, and running tests, not as a plan document. Everything evidence-based: claims trace to analytics, search data, or named experiments. Report by work: each piece of work reports what was done, what the data said, and what is next. Use related skills: `seo-audit`, `copywriting`, and `analytics-tracking` from the repo, plus `campaign-analytics` and `content-strategy` where they fit. Update the agent memory: record positioning changes, test results, and AI search standing in the growth-strategist memory.
+No AI slop: copy uses customer words and numbers, not hype adjectives. Flow ideas to give back: the package ends as published pages, shipped copy, and running tests, not as a plan document. Everything evidence-based: claims trace to analytics, search data, or named experiments. Report by work: each piece of work reports what was done, what the data said, and what is next. Use related skills: `seo-audit` and `analytics-tracking` from the repo, plus `campaign-analytics` where it fits. Update the agent memory: record positioning changes, test results, and AI search standing in the growth-strategist memory.
 
 ## Related skills
 
-- `seo-audit`, `copywriting`, `analytics-tracking`, `campaign-analytics`
-- `content-strategy`, `programmatic-seo`, `marketing-psychology`
+- `seo-audit`, `analytics-tracking`, `campaign-analytics`
+- `programmatic-seo`
 
 ## Research source
 

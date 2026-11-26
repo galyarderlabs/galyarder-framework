@@ -90,7 +90,6 @@ Lead agents:
 - `code-reviewer`
 - `build-error-resolver`
 - `refactor-cleaner`
-- `vercel-react-expert`
 
 Key outputs:
 - architecture decisions

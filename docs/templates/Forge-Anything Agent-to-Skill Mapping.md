@@ -128,13 +128,6 @@ Primary skills:
 - `refactor-cleaner`
 - `verification-before-completion`
 
-### `vercel-react-expert`
-Primary skills:
-- `web-design-guidelines`
-
-Potential external upgrades:
-- advanced frontend performance and accessibility review packs
-
 ## Security
 ### `security-guardian`
 Primary skills:
@@ -171,8 +164,6 @@ Primary skills:
 ### `growth-strategist`
 Primary skills:
 - `marketing-core`
-- `launch-strategy`
-- `pricing-strategy`
 - `programmatic-seo`
 - `seo-audit`
 

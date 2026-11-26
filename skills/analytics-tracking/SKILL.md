@@ -409,8 +409,6 @@ This skill carries the Forge value in its substance: no AI slop, flow ideas to g
 
 ## Related Skills
 
-* **page-cro**  Uses this data for optimization
-* **ab-test-setup**  Requires clean conversions
 * **seo-audit**  Organic performance analysis
 * **programmatic-seo**  Scale requires reliable signals
 

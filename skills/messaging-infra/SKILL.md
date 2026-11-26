@@ -27,7 +27,7 @@ Slot 1 is transactional email, single channel, through the email provider. Slot 
 - A message failed to arrive and the delivery log must say where it stopped
 - Inbound email must be received and verified through a webhook
 
-Do not use this for marketing broadcast strategy. That is `email-marketing-bible`. Do not use it to blast every channel by default; only send to channels the operator asked for or that make sense for the use case.
+Do not use this for marketing broadcast strategy. Do not use it to blast every channel by default; only send to channels the operator asked for or that make sense for the use case.
 
 ## Core Principle
 
@@ -149,11 +149,10 @@ When you need an API signature, SDK method, or feature not covered here, verify 
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. The message is the change, and the delivery log is the evidence that it landed instead of vanished. Report by work: messages sent, channels used, logs read, failures traced to their exact stop. Use the related skills (`email-marketing-bible` for the campaign the message serves, `verification-before-completion` before a send counts as done, `test-driven-development` for the webhook and template checks that prove it). Update the agent's memory with the templates, journeys, and provider traps that proved real, so the next send starts from what is proven instead of from scratch.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. The message is the change, and the delivery log is the evidence that it landed instead of vanished. Report by work: messages sent, channels used, logs read, failures traced to their exact stop. Use the related skills (`verification-before-completion` before a send counts as done, `test-driven-development` for the webhook and template checks that prove it). Update the agent's memory with the templates, journeys, and provider traps that proved real, so the next send starts from what is proven instead of from scratch.
 
 ## Related Skills
 
-- `email-marketing-bible` - the campaign and lifecycle strategy the messages serve
 - `verification-before-completion` - proving the send and its log before it counts as done
 - `test-driven-development` - the webhook and template checks that prove the send
 

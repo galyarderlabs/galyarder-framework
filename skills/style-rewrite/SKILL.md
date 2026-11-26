@@ -25,7 +25,7 @@ This skill is the transform. `anti-slop-constraint` is top-down enforcement: rul
 - AI output needs to become a message, email, or post the operator can send as their own
 - A draft is correct but reads like a machine wrote it, and the fix is voice, not facts
 
-Do not use this to write new content from scratch with no source text. That is `copywriting` or `content-creator` with a voice profile. Do not use this to audit copy. That is `anti-slop-audit`.
+Do not use this to write new content from scratch with no source text. That is writing with a voice profile. Do not use this to audit copy. That is `anti-slop-audit`.
 
 ## Process
 
@@ -109,7 +109,6 @@ This skill carries the Forge value in its substance: no AI slop, flow from ideas
 - `anti-slop-audit` - the audit that verifies the rewrite against the pattern catalog
 - `anti-slop-constraint` - top-down enforcement, the alternative when no personal profile exists
 - `drift-audit` - scoring rewrites that keep drifting from the profile
-- `copywriting` - new copy written in the operator's voice
 
 ## Research source
 

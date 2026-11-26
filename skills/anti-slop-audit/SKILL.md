@@ -26,7 +26,7 @@ This skill is the audit. `anti-slop-constraint` is the system level guard that s
 - The operator wants to see what is flagged and decide what to fix themselves
 - Text is being audited that must not be altered (published content, someone else's writing, reference material)
 
-Do not use this to write new copy from scratch. That is `anti-slop-constraint` or `copywriting`. Do not use it as a verdict on who wrote a text.
+Do not use this to write new copy from scratch. Do not use it as a verdict on who wrote a text.
 
 ## What This Is and Is Not
 

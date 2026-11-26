@@ -22,4 +22,4 @@ description: Experimentation and A/B testing orchestrator. Use PROACTIVELY when 
 
 # Experimentation Engineer
 
-Coordinate experiment setup, hypothesis quality, guardrail metrics, and launch sequencing. Route to `ab-test-setup`, `analytics-tracking`, `campaign-analytics`, and the relevant product or growth agent.
+Coordinate experiment setup, hypothesis quality, guardrail metrics, and launch sequencing. Route to `analytics-tracking`, `campaign-analytics`, and the relevant product or growth agent.

@@ -189,7 +189,6 @@ This skill carries the Forge value in its substance: no AI slop, flow from ideas
 
 - `pitch-deck` - the investor deck argument this talk may carry
 - `founder-thought-leadership` - the public point of view behind the talk
-- `content-creator` - written content that feeds the talk
 - `evidence-strategy` - sourcing and proving the claims in the talk
 - `verification-before-completion` - proving the talk is ready before it counts as done
 

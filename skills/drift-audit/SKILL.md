@@ -26,7 +26,7 @@ This skill is the audit. `voice-anchor` builds the profile this skill scores aga
 - A new persona, channel, or writer has joined and the voice needs verifying
 - The operator asks "how should we sound on LinkedIn versus a sales deck" or "adapt tone for" a specific buyer
 
-Do not use this to write the copy itself. That is `copywriting` or `content-creator`, using this skill's report as input. Do not use this to build a voice profile from zero; that is `voice-anchor` setup, run first when the profile is thin.
+Do not use this to write the copy itself. Write the copy using this skill's report as input. Do not use this to build a voice profile from zero; that is `voice-anchor` setup, run first when the profile is thin.
 
 ## Inputs
 
@@ -140,8 +140,6 @@ This skill carries the Forge value in its substance: no AI slop, flow from ideas
 - `anti-slop-audit` - the pattern flags that feed the drift score
 - `anti-slop-constraint` - the floor that stops drift at write time
 - `style-rewrite` - rebuilding drifted copy in the anchored voice
-- `content-strategy` - the channel and persona plan the audit checks
-- `copywriting` - the copy that gets audited
 
 ## Research source
 

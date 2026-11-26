@@ -42,8 +42,6 @@ You are the Finance Lead. Your mission is to ensure every dollar spent on infras
 ## 2. SPECIALIZED SKILLS (LOCAL REPO)
 - **`saas-finops-optimization`**: Core skill for Vercel, Supabase, Neon, and AI Token management.
 - **`finance-based-pricing-advisor`**: Math-driven pricing impact analysis.
-- **`accounting`**: Basic financial tracking and reporting.
-- **`cloud-budget-monitoring`**: Alerting and quota enforcement.
 
 ---
  2026 Galyarder Labs. Forge Anything. FinOps Manager.

@@ -131,7 +131,6 @@ This skill carries the Forge value in its substance: no AI slop, flow from ideas
 - `voice-anchor` - the voice profile that governs calibration
 - `drift-audit` - channel-wide drift scoring when patterns repeat across copy
 - `style-rewrite` - rewriting into a personal style after the constraints clear the slop
-- `copywriting` - longer-form copy that these constraints apply to
 
 ## Research source
 

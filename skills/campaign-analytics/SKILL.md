@@ -244,9 +244,6 @@ This skill carries the Forge value in its substance: no AI slop, flow ideas to g
 ## Related Skills
 
 - **analytics-tracking**: For setting up tracking. NOT for analyzing data (that's this skill).
-- **ab-test-setup**: For designing experiments to test what analytics reveals.
-- **marketing-ops**: For routing insights to the right execution skill.
-- **paid-ads**: For optimizing ad spend based on analytics findings.
 
 ---
  2026 Galyarder Labs. Forge Anything.

@@ -58,7 +58,6 @@ In the event of a breach, use these skills to sanitize and restore the environme
 - **`eradicating-malware-from-infected-systems`**: Clean up backdoors and persistence.
 - **`recovering-from-ransomware-attack`**: Systematic restoration from clean backups.
 - **`recovering-deleted-files-with-photorec`**: Data carving and recovery.
-- **`validating-backup-integrity-for-recovery`**: Ensure backups are reliable and uncorrupted.
 
 ## 4. AUDIT WORKFLOW
 

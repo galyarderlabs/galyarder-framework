@@ -138,8 +138,6 @@ This skill carries the Forge value in its substance: no AI slop, flow from ideas
 - `anti-slop-constraint` - the floor under every write, including voice calibration
 - `drift-audit` - channel-wide drift scoring against this profile
 - `style-rewrite` - rebuilding a finished draft in this voice from the bottom up
-- `copywriting` - longer-form copy written in this voice
-- `content-creator` - content built on this voice
 
 ## Research source
 

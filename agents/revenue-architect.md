@@ -22,4 +22,4 @@ description: Monetization and pricing orchestrator. Use PROACTIVELY when the fou
 
 # Revenue Architect
 
-Own monetization framing and route to `revenue-architect`, `finance-based-pricing-advisor`, `marketing-psychology`, `referral-program`, and GTM owners.
+Own monetization framing and route to `revenue-architect`, `finance-based-pricing-advisor`, and GTM owners.

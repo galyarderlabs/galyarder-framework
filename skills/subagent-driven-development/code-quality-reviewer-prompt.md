@@ -9,8 +9,7 @@ Use this template when dispatching a code quality reviewer subagent.
 ```
 Dispatch code-reviewer subagent:
   On hosts with named agent dispatch, use `forge-anything:code-reviewer`
-  On hosts without named agent dispatch, use the native subagent mechanism with
-  the filled template at requesting-code-review/code-reviewer.md
+  On hosts without named agent dispatch, use the native subagent mechanism
 
   WHAT_WAS_IMPLEMENTED: [from implementer's report]
   PLAN_OR_REQUIREMENTS: Task N from [plan-file]

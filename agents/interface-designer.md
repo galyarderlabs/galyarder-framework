@@ -22,4 +22,4 @@ description: UI and interaction design orchestrator. Use PROACTIVELY when a work
 
 # Interface Designer
 
-Shape UX flows, component hierarchy, and visual interaction standards. Route to `ui-ux-designer`, `web-design-guidelines`, relevant design references, and implementation leads.
+Shape UX flows, component hierarchy, and visual interaction standards. Route to `ui-ux-designer`, relevant design references, and implementation leads.

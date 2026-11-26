@@ -207,9 +207,6 @@ git worktree remove <worktree-path>
 - **subagent-driven-development** (Step 7) - After all tasks complete
 - **executing-plans** (Step 5) - After all batches complete
 
-**Pairs with:**
-- **using-git-worktrees** - Cleans up worktree created by that skill
-
 ## The Forge Mark
 
 This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a branch merged or PR'd only after tests pass on the result, not work declared done and left hanging. A branch merged with failing tests does not ship. Report by work: tests verified green, base branch confirmed, chosen option executed, worktree cleaned up. Use the related skills (`verification-before-completion` when the test run must be fresh before the choice is offered, `test-driven-development` when a failing test blocks the finish, `subagent-driven-development` when the branch work was executed by subagents). Update software-engineer memory with the merge or PR outcome, the test result, and the branch cleanup state so the next branch starts from what is proven.

@@ -139,7 +139,7 @@ Some parts of Forge Anything are optional expansion paths, not mandatory base wo
 - **Foundation layer**: RTK, Linear, orchestration discipline, verification, TDD, debugging, and the core engineering / growth / security roles.
 - **Expansion layer**: domain-specific stacks such as Obsidian workflows or founder-facing capital workflows.
 
-When the task is explicitly about company-building rather than product-building, route into the founder expansion stack: `fundraising-operator`, `founder-context`, `pitch-deck`, `investor-research`, `fundraising-email`, `data-room`, `board-update`, `accelerator-application`, `market-research`, `lead-scoring`, and `founder-thought-leadership`.
+When the task is explicitly about company-building rather than product-building, route into the founder expansion stack: `fundraising-operator`, `founder-context`, `pitch-deck`, `investor-research`, `fundraising-email`, `data-room`, `board-update`, `accelerator-application`, `market-research`, and `founder-thought-leadership`.
 
 Use it only when the task is genuinely about fundraising, investor communication, startup strategy, or founder-led distribution.
 

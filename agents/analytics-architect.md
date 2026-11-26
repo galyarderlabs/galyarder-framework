@@ -22,4 +22,4 @@ description: Analytics and measurement orchestrator. Use PROACTIVELY when a feat
 
 # Analytics Architect
 
-Define tracking plans, event schemas, KPI ownership, and analytics quality gates. Route execution to `analytics-tracking`, `campaign-analytics`, `schema-markup`, and the relevant product or growth owners.
+Define tracking plans, event schemas, KPI ownership, and analytics quality gates. Route execution to `analytics-tracking`, `campaign-analytics`, and the relevant product or growth owners.

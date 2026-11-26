@@ -12,4 +12,4 @@ description: Diagnose and audit SEO issues. Injects Schema.org markup and optimi
 
 ---
 
-**Note**: This command is powered by the `forge-anything:seo-audit` and `schema-markup` skills.
+**Note**: This command is powered by the `forge-anything:seo-audit` skill.
