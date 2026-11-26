@@ -111,5 +111,9 @@ Create or update `docs/departments/Executive/founder-context.md` in the project 
 - Update it when new information materially changes the operating picture.
 - Downstream founder skills should read this first before producing output.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a founder-context.md file with factual company, product, market, business model, team, fundraising, and goals sections, unknowns marked TBD, not a pitch told from memory. The evidence is each fact gathered from the founder in compact rounds, never hallucinated. Report by work: existing context checked, interview rounds run, context file written, downstream skills pointed at it. Use the related skills (`pitch-deck` when the context feeds a deck, `investor-research` when the context feeds targeting, `board-update` when the context feeds an update). Update the fundraising-operator memory with the company facts and the fields still TBD so the next founder workflow starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

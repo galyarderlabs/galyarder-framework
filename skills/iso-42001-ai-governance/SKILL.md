@@ -603,5 +603,9 @@ ISO 42001 aligns with major AI regulations:
 
 **Remember**: ISO 42001 is about building trustworthy AI systems through systematic risk management and governance. It's not a barrier to innovationit's a framework for responsible innovation that protects both organizations and the people affected by AI.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a scored audit report with a risk register and a phased compliance roadmap, not a verdict that an AI system is safe. A clause score without evidence from the system does not ship. Report by work: clauses assessed with scores, risks scored and owned, critical findings listed, roadmap phases written. Use the related skills (`gdpr-compliance` when the AI system processes personal data, `grc-core` when findings feed the wider governance program, `security-audit` when a technical control needs a deeper check). Update the legal-counsel memory with the risk classifications given, the recurring gaps found, and the control decisions made so the next audit starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

@@ -496,5 +496,9 @@ Use these skills **only after the audit is complete** and findings are accepted.
 ## When to Use
 This skill is applicable to execute the workflow or actions described in the overview.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a scored audit report with findings tied to evidence, not an opinion about a site. Every issue carries URLs, crawl data, headers, or metrics, and every score deduction names its severity and confidence. Report by work: SEO Health Index with category breakdown, findings with evidence and severity, prioritized action plan, score limits stated. Use the related skills (`programmatic-seo` when the plan requires scaling page creation, `analytics-tracking` when measurement gaps block confident scoring). Update the growth-strategist memory with the issues found, the scores, and which fixes moved the score so the next audit starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

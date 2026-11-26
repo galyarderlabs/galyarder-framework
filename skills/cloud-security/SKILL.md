@@ -359,5 +359,9 @@ aws s3api get-bucket-policy --bucket "${BUCKET}" | jq '.Policy | fromjson' | \
 | [red-team](../red-team/SKILL.md) | Red team exercises specifically test exploitability of cloud misconfigurations found in posture assessment |
 | [security-pen-testing](../security-pen-testing/SKILL.md) | Cloud posture findings feed into the infrastructure security section of pen test assessments |
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a filed posture report with each Critical and High finding mapped to a remediation and a Linear issue, not a scan output left in chat. A finding counts only when the tool output names the policy, bucket, or rule that proves it. Report by work: IAM escalation paths checked, public storage exposures checked, open security groups checked, IaC gaps checked. Use the related skills (`iac-core` when the finding lives in Terraform or CloudFormation, `mapping-mitre-attack-techniques` when a finding needs an ATT&CK technique ID, `security-audit` when the posture check widens into a full audit, `grc-core` when a finding needs a compliance control mapping). Update security-guardian memory with the confirmed misconfigurations and the remediations that closed them so the next assessment starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

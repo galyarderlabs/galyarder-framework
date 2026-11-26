@@ -142,5 +142,9 @@ Summarize coverage by tactic category (Initial Access, Execution, Persistence, e
 - **Static mapping without updates**: ATT&CK releases major versions annually. Coverage maps go stale as techniques are added, revised, or deprecated.
 - **Not mapping to adversary groups**: Generic coverage maps don't distinguish between techniques used by APTs targeting your sector vs. commodity malware.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a Navigator layer plus a ranked gap list, not a list of technique names. Each coverage score ties to a rule that actually fires or a logged data source; logging alone is not detection and does not ship. Report by work: detections mapped, coverage scored, gaps ranked by adversary use, mitigations recommended. Use the related skills (`profiling-threat-actor-groups` when gaps are ranked by who targets the sector, `generating-threat-intelligence-reports` when coverage becomes an executive report, `tracking-threat-actor-infrastructure` when a technique needs live infrastructure evidence). Update cyber-intel memory with the coverage scores and the gaps that were closed so the next mapping starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

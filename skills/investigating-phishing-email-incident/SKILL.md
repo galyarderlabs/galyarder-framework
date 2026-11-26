@@ -294,5 +294,9 @@ Containment:
 Status:       RESOLVED  No evidence of lateral movement post-compromise
 ```
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a closed incident report with scope, IOCs, containment proof, and disposition, not a header dump. The evidence is the SPF, DKIM, and DMARC verdicts, the sandbox detonation, and the proxy logs proving who clicked and who submitted credentials. Report by work: headers analyzed, URLs and attachments detonated, scope counted, containment completed. Use the related skills (`executing-phishing-simulation-campaign` when the incident must be checked against a running simulation, `monitoring-darkweb-sources` when the phish ties to dark web chatter, `generating-threat-intelligence-reports` when the incident becomes finished intelligence, `tracking-threat-actor-infrastructure` when the sender domain needs pivoting). Update perseus memory with the sender patterns, the IOCs, and the containment steps that worked so the next investigation starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

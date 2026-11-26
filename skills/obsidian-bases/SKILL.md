@@ -499,6 +499,10 @@ formulas:
   total: "price * quantity"
 ```
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a `.base` file that renders its views correctly in Obsidian, not a YAML draft. The file is valid YAML, every referenced property and formula is defined, and the view renders in the app. Report by work: bases created or edited, filters and formulas defined, views configured, render check passed. Use the related skills (`obsidian-markdown` when a base embeds in a note, `obsidian-cli` when validating or querying from the command line, `data-analysis` when the base drives an analysis). Update the obsidian-architect memory with the filter and formula patterns that worked so the next base starts from what is proven.
+
 ## References
 
 - [Bases Syntax](https://help.obsidian.md/bases/syntax)

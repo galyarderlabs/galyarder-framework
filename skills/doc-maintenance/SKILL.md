@@ -209,3 +209,7 @@ When the skill completes, report:
 - How many doc edits were made (and to which files)
 - PR link (if edits were made)
 - Any follow-up items that need larger doc work
+
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a merged PR that corrects doc drift, not a list of suspected drift. Every claimed drift traces to a commit in the scanned range, checked against the doc text. Report by work: commits scanned, notable changes found, doc edits made with files, PR link, follow-ups needing larger doc work. Use the related skills (`verification-before-completion` when a drift claim needs proof before the PR opens, `release-changelog` when the drift spans a release). Update the doc-updater memory with the last review cursor, the drift patterns found, and which doc sections churn most so the next review starts from what is proven.

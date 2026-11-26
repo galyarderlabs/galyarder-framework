@@ -36,5 +36,9 @@ The `gdpr-ccpa-privacy-auditor` is a transparency tool. It helps companies ensur
 - **Passive Scanning**: When scanning URLs, it acts like a standard browser.
 - **Source Code Privacy**: If providing `source_code_path`, ensure the environment is secure and the code is not transmitted externally.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means an audit report listing each tracker and cookie found against what the policy declares, with discrepancies flagged, not a claim that a site is compliant. A finding without an observed cookie, script, or data flow does not ship. Report by work: pages scanned, trackers and cookies found, policy mismatches flagged, remediation steps listed. Use the related skills (`gdpr-compliance` when a mismatch needs a fix in consent records or the ROPA, `legal-tos-privacy` when the policy text itself must change, `security-audit` when a finding points at a deeper technical issue). Update the legal-counsel memory with the trackers seen, the recurring mismatches, and the policy wording that held up so the next audit starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

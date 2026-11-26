@@ -149,5 +149,9 @@ Run the command. Read the output. THEN claim the result.
 
 This is non-negotiable.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a claim backed by a fresh verification run read in full, not a status asserted from memory. A claim without fresh evidence does not ship. Report by work: verification command identified, command run fresh, output read with exit code, claim stated with evidence. Use the related skills (`test-driven-development` when the evidence is a regression test that must show red then green, `systematic-debugging` when verification fails and the cause must be found, `subagent-driven-development` when an agent report must be checked against the diff). Update software-engineer memory with the verification commands that prove each claim and the failures they caught so the next completion check starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

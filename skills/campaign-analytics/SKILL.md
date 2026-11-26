@@ -237,6 +237,10 @@ Calculates comprehensive ROI metrics with industry Standarding:
 - **Simplified time-decay** -- Exponential decay based on configurable half-life; does not account for weekday/weekend or seasonal patterns.
 - **No cross-device tracking** -- Attribution operates on provided journey data as-is; cross-device identity resolution must be handled upstream.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means an attribution, funnel, and ROI analysis delivered as a report or a Linear update with real numbers, not a summary of what the data might mean. The scripts run on validated JSON input and compute ROI, CPA, ROAS, and funnel rates deterministically, never estimated. Report by work: attribution model results, funnel bottlenecks found, ROI metrics per campaign, budget reallocation advice. Use the related skills (`analytics-tracking` when tracking setup must precede analysis, `paid-media` when findings change ad spend, `experimentation` when a finding needs a test to confirm it, `marketing-core` when insights route to execution). Update the growth-strategist memory with the attribution insights and budget calls that worked so the next campaign review starts from what is proven.
+
 ## Related Skills
 
 - **analytics-tracking**: For setting up tracking. NOT for analyzing data (that's this skill).

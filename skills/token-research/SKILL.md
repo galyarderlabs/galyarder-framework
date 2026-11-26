@@ -75,6 +75,10 @@ Before the memo counts as done, check each line:
 - The tokenomics ratios are computed from the stated supplies, not quoted from memory.
 - The limits section exists, names the missing data, and states the falsification line.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a shipped research memo with a score earned only when every dimension has a source, not a buy call. A memo that hides its uncertainty does not ship. Report by work: what token, what was checked, what the evidence showed, what changed. Use the related skills (`quant-trading` when the memo feeds a signal and backtest, `technical-analysis` when the memo needs chart context, `trading-discipline` when the candidate must pass the gate before entry). Update trading-quant's memory with the memo and its falsification line so the next research on the same token starts from the recorded state instead of from zero.
+
 ## Related Skills
 
 - `quant-trading`: the signal and backtest flow that uses this memo as an input.

@@ -546,5 +546,9 @@ Same benefits: Better quality, fewer surprises, bulletproof results.
 
 If you follow TDD for code, follow it for skills. It's the same discipline applied to documentation.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a skill file that passes its pressure scenarios, not a document that reads well. The evidence is the RED-GREEN-REFACTOR run: baseline failures recorded, then compliance verified with the skill present. Report by work: pressure scenarios run, baseline rationalizations captured, skill written, compliance re-verified. Use the related skills (`test-driven-development` when the TDD cycle needs its source discipline, `doc-maintenance` when an existing skill needs updating, `verification-before-completion` when a claim needs its proof). Update the forge-specialist memory with the rationalizations closed and the scenarios that prove the skill so the next skill starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

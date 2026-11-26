@@ -381,5 +381,9 @@ Otherwise  not TDD
 
 No exceptions without your human partner's permission.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means production code backed by a test watched fail first, not code written and tested after. A test that never failed proves nothing and does not ship. Report by work: failing tests written and watched fail, minimal code written to pass, refactors kept green, full suite passing. Use the related skills (`systematic-debugging` when a failing test reproduces a bug, `verification-before-completion` before claiming the suite passes, `subagent-driven-development` when implementation tasks split across subagents). Update software-engineer memory with the tested behaviors and the edge cases the tests pin down so the next feature starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

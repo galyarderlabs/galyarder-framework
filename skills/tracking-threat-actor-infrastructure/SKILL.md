@@ -292,5 +292,9 @@ def build_infrastructure_timeline(indicators):
 - [PassiveTotal API](https://api.passivetotal.org/api/docs/)
 - [JARM Fingerprinting](https://github.com/salesforce/jarm)
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a STIX infrastructure object set plus a timeline filed for blocking and hunting, not a list of IPs. Each indicator pivots from a known indicator via passive DNS, a CT log, or a fingerprint, with first-seen dates recorded. Report by work: infrastructure discovered, pivots documented, timeline built, indicators exported as STIX. Use the related skills (`profiling-threat-actor-groups` when infrastructure ties to a known actor, `monitoring-darkweb-sources` when a new domain appears on a leak site or forum, `mapping-mitre-attack-techniques` when infrastructure maps to ATT&CK techniques, `generating-threat-intelligence-reports` when tracking becomes a finished report). Update cyber-intel memory with the infrastructure clusters, the pivots that worked, and which indicators went stale so the next tracking starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

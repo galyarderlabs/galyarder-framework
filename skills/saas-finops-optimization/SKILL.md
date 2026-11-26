@@ -50,5 +50,9 @@ AI tokens are often the #1 expense for modern startups. Optimize or die.
 3. **Waste Detection**: Identify unused environments or over-provisioned database instances.
 4. **Action Plan**: Provide a prioritized list of "Quick Wins" (high savings, low effort).
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a prioritized action plan with savings tied to dashboard numbers, not a list of possible optimizations. Usage stats come from the actual dashboards and manifests, with waste named per integration. Report by work: integrations scanned, usage audited, waste found with savings, quick wins prioritized. Use the related skills (`accounting-core` when the audit needs baseline costs, `finance-based-pricing-advisor` when savings change pricing, `ops-monitoring` when burn needs continuous watching). Update the finops-manager memory with the waste found and the savings that held so the next audit starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything. SaaS FinOps.

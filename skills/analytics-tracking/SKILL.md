@@ -403,6 +403,10 @@ Analytics that violate trust undermine optimization.
 
 ---
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a tracking plan with a Measurement Readiness score and validated events that map to decisions, not a dashboard of unvalidated numbers. Data scored Broken does not ship. Report by work: readiness index scored, decisions and events defined, tracking plan written, validation run. Use the related skills (`business-intelligence` when tracking feeds reporting and decisions, `seo-audit` when organic performance needs analysis, `programmatic-seo` when scale needs reliable signals, `experimentation` when the data must support a clean experiment). Update analytics-architect memory with the readiness score, the event taxonomy, and the validation failures found so the next measurement work starts from what is proven.
+
 ## Related Skills
 
 * **page-cro**  Uses this data for optimization

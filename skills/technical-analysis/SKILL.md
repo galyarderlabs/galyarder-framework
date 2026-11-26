@@ -70,6 +70,10 @@ Before the analysis counts as done, check each line:
 - The signal carries a stop, a target, a reward-to-risk ratio, and an invalidation case.
 - The timeframes agree, or the disagreement is stated in the analysis.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a shipped chart analysis with a signal, entry, stop, target, and invalidation case, not a pattern claim that cannot be pointed at. A pattern without its candle range does not ship. Report by work: what chart, what was found, what the evidence showed, what changed. Use the related skills (`quant-trading` when the analysis feeds a signal and backtest, `token-research` when the chart needs fundamental context, `trading-discipline` when the entry must pass the gate). Update trading-quant's memory with the analysis and its invalidation level so the next read starts from the recorded levels instead of from zero.
+
 ## Related Skills
 
 - `quant-trading`: the signal and backtest flow that uses this analysis as an input.

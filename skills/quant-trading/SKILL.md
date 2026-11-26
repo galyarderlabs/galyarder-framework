@@ -73,6 +73,10 @@ Before the plan counts as done, check each line:
 - No signal ships without a size, a stop, a max loss, and a reward-to-risk ratio.
 - No claim about the future is written as a fact. A forecast is a forecast, with its falsification line stated.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a shipped trading plan with a signal and explicit risk numbers, not a bare chat claim about a trade. A signal without a size, a stop, and a max loss does not ship. Report by work: what was analyzed, what the evidence showed, what changed. Use the related skills (`token-research` when the token itself needs research before any signal, `technical-analysis` when the plan needs chart patterns and levels, `trading-discipline` when the planned entry must pass the gate, `broker-execution` when an approved order must reach the market). Update trading-quant's memory with the strategy, its backtest record, and its falsification line so the next analysis starts from the recorded state instead of from zero.
+
 ## Related Skills
 
 - `token-research`: the deep multi-dimension memo for one token, used when the token itself needs research before any signal.

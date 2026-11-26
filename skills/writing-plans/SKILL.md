@@ -162,5 +162,9 @@ After saving the plan, offer execution choice:
 - **REQUIRED SUB-SKILL:** Use forge-anything:executing-plans
 - Batch execution with checkpoints for review
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a plan file saved to docs/plans with bite-sized tasks, exact file paths, complete code, and exact commands, not a spec restated as prose. The evidence is the self-review: every spec requirement points to a task and no placeholder survives. Report by work: file structure mapped, tasks written, self-review passed, plan saved. Use the related skills (`brainstorming` when the spec needs breaking into subsystems, `executing-plans` when the plan is ready to run, `prd-flow` when the work starts from a PRD). Update the product-manager memory with the plan path and the decomposition decisions so the next build starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

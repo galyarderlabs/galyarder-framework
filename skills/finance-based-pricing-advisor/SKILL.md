@@ -578,6 +578,10 @@ See `references/common-pitfalls.md` for the ten common pitfalls.
 
 ---
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a go/no-go pricing decision with the math shown, not a discussion of pricing options. Baseline metrics come from `accounting-core` and the modeled ARPU lift, churn, conversion, and CAC payback are stated for the change. Report by work: revenue impact, conversion impact, churn risk, CAC payback impact, recommendation with decision criteria. Use the related skills (`accounting-core` when baseline metrics are needed, `cash-reporting` when the change affects cash flow timing, `saas-finops-optimization` when the change shifts unit costs). Update the finops-manager memory with the pricing decisions made and the modeled versus actual outcomes so the next pricing call starts from what is proven.
+
 ## References
 
 See `references/related-resources.md` for related skills, external frameworks, and provenance.

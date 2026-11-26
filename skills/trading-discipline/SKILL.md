@@ -64,6 +64,10 @@ Before the decision counts as done, check each line:
 - Every decision has a journal entry.
 - The journal can be audited: each closed trade links back to its gate decision.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a shipped gate decision with checklist answers, a decision, a reason, and a journal entry reference, not a waved-through entry. An entry without a filled checklist does not ship. Report by work: what was gated, what failed or passed, what changed. Use the related skills (`quant-trading` when the gate needs the signal and risk numbers, `technical-analysis` when chart validation must pass before the gate runs, `broker-execution` when a passed entry proceeds to an order, `token-research` when the candidate itself needs research before entry). Update trading-discipline's memory with the decision and any rule change it caused so the next gate starts from the recorded rules instead of from zero.
+
 ## Related Skills
 
 - `quant-trading`: the analysis that produces the signal and the risk numbers the gate checks.

@@ -147,5 +147,9 @@ Before dissemination, apply these checks:
 - **Stale intelligence**: Publishing a report on a threat campaign that was resolved 2 weeks ago creates alarm without utility. Include freshness dating on all claims.
 - **Over-classification**: Applying TLP:RED to information that could be TLP:GREEN impedes community sharing and limits defensive value across the sector.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a finished, TLP-marked report delivered to its audience, not raw IOCs or a draft summary. Every key judgment carries a source citation and a confidence qualifier, and a claim without either does not ship. Report by work: report type and audience chosen, key judgments written with confidence, IOCs and mitigations attached, TLP applied. Use the related skills (`profiling-threat-actor-groups` when the report needs an actor profile, `mapping-mitre-attack-techniques` when TTPs need technique IDs, `monitoring-darkweb-sources` when the report needs dark web evidence, `tracking-threat-actor-infrastructure` when IOCs need infrastructure context). Update cyber-intel memory with the report, its sources, and which judgments held up so the next report starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

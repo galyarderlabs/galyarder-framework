@@ -69,5 +69,9 @@ Produce:
 4. Conflict list
 5. Research gaps / unverified facts
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means tiered Priority 1, 2, and 3 tables with a conflict list and research gaps, not a list of famous firms. The evidence is each investor's stage, sector, check size, and portfolio signal checked, with conflicts flagged. Report by work: filters defined, raw list built, conflicts screened, investors tiered. Use the related skills (`founder-context` when the filters need company facts, `pitch-deck` when the list feeds deck targeting, `fundraising-email` when a tier 1 investor gets outreach). Update the fundraising-operator memory with the tiered list and the conflicts found so the next raise starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

@@ -166,5 +166,9 @@ When reviewing compliance:
 3. Flag any issues with severity (critical/warning/info)
 4. Provide specific remediation steps
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a chosen license with its canonical LICENSE file written, or a compliance review listing every license found with compatibility verdicts and remediation steps, not a recommendation in chat. A license choice without the canonical text in the repo does not ship. Report by work: licenses identified, compatibility verdicts given, gaps flagged, LICENSE and NOTICE files generated. Use the related skills (`contract-review` when a license question touches a commercial agreement, `legal-tos-privacy` when the project also needs its legal pages, `release` when the licensed code ships as a versioned release). Update the legal-counsel memory with the license choices made per project, the compatibility traps seen, and the canonical texts used so the next review starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

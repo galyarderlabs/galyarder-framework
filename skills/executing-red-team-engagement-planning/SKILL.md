@@ -142,6 +142,10 @@ Map organizational threats using MITRE ATT&CK Navigator to select relevant adver
 4. **Unrealistic Threat Models**: Simulating threats irrelevant to the organization
 5. **Poor Communication**: Failing to maintain contact with stakeholders during engagement
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a signed rules of engagement and engagement plan approved by the sponsor, not a threat list. Scope boundaries, the emergency stop, legal authorization, and deconfliction are all documented and signed before any testing begins; an unsigned plan does not ship. Report by work: scope defined, threat profile selected, attack plan mapped, rules of engagement signed. Use the related skills (`executing-red-team-exercise` when the plan moves to execution, `mapping-mitre-attack-techniques` when threat profiles need technique mapping, `profiling-threat-actor-groups` when the emulated actor needs a profile, `executing-active-directory-attack-simulation` when AD is in scope for the engagement). Update perseus memory with the approved scope, the rules of engagement, and the threat profiles chosen so the next engagement starts from what is proven.
+
 ## Related Skills
 
 - performing-open-source-intelligence-gathering

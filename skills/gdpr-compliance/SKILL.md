@@ -450,5 +450,9 @@ gdpr_compliance_checklist:
 - Train all staff who handle personal data, not just the IT and legal teams
 - Regularly audit data flows to discover shadow processing or undocumented data stores
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a working consent system, a completed ROPA, an answered DSAR, or a signed DPA in the repo, not a compliance summary in chat. A legal basis without a recorded processing activity does not ship. Report by work: processing activities documented, consent records with audit trail, DSARs answered within deadline, DPAs signed and tracked. Use the related skills (`gdpr-ccpa-privacy-auditor` when the live site must be checked against the policy, `legal-tos-privacy` when the privacy policy itself needs drafting or updating, `contract-review` when a processor agreement needs review, `iso-42001-ai-governance` when the processing involves an AI system). Update the legal-counsel memory with the legal bases chosen, the retention periods set, and the gaps found so the next compliance review starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

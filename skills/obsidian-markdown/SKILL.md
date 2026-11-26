@@ -198,6 +198,10 @@ The algorithm uses $O(n \log n)$ sorting. See [[Algorithm Notes#Sorting]] for de
 Reviewed in [[Meeting Notes 2024-01-10#Decisions]].
 ````
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a note committed to the vault that renders correctly in reading view, not a syntax draft. Every wikilink resolves, every embed loads, every property parses, and callouts render as written. Report by work: notes created or edited, links and embeds added, properties set, render check passed. Use the related skills (`obsidian-cli` when edits go through the CLI, `obsidian-bases` when a note feeds a base view, `second-brain` when the note joins the wider vault system). Update the obsidian-architect memory with the syntax patterns and property conventions used so the next note starts from what is proven.
+
 ## References
 
 - [Obsidian Flavored Markdown](https://help.obsidian.md/obsidian-flavored-markdown)

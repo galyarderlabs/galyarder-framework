@@ -153,5 +153,9 @@ Use it only when the task is genuinely about fundraising, investor communication
 
 Instructions say WHAT, not HOW. "Add X" or "Fix Y" doesn't mean skip workflows.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a skill invoked before the response and work routed to the right stage, not a reply that skips the check. The evidence is the invoked skill and the stage routing, both visible in the session. Report by work: skills invoked, stage routed, work handed off as an artifact. Use the related skills (`brainstorming` when the work starts from a spark, `writing-plans` when a goal needs a plan, `executing-plans` when a plan is ready to run, `founder-context` when the work needs company facts). Update the forge-ceo memory with the skills used and the routing decisions that held so the next session starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

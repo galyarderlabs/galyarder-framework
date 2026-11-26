@@ -74,6 +74,10 @@ Before the execution counts as done, check each line:
 - Every fill is logged with quantity, price, and broker id.
 - Every day trade has a flat-by ticket, or a recorded reason it does not.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a shipped execution record with the ticket, the risk PASS reference, the operator's yes quoted word for word, and the fill, not an order sent on a vague go-ahead. An order without a recorded yes for that exact order does not ship. Report by work: what order, what was approved, what filled, what changed. Use the related skills (`trading-discipline` when the gate must pass before the ticket is shown, `quant-trading` when the ticket needs the analysis and risk numbers, `technical-analysis` when the ticket needs the chart levels behind entry, stop, and target). Update trading-discipline's memory with the trade and its max loss so the risk check and the journal both start from the recorded state.
+
 ## Related Skills
 
 - `trading-discipline`: the gate that must pass before this skill shows a ticket.

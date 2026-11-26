@@ -62,5 +62,9 @@ Produce:
 - suggested folder structure
 - what to share pre-term-sheet vs post-term-sheet
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a diligence checklist with every item marked Exists, Needs Update, Needs Creation, or Not Applicable, plus a folder structure and access levels, not a pile of documents. The evidence is each item's status checkable against the actual files, with red-risk items flagged first. Report by work: stage classified, checklist generated, items statused, red flags raised. Use the related skills (`founder-context` when the checklist needs company facts, `pitch-deck` when the room needs the deck materials, `investor-research` when access levels depend on who is diligencing). Update the fundraising-operator memory with the checklist status and the red flags cleared so the next diligence round starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

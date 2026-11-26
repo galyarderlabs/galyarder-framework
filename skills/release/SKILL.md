@@ -255,3 +255,7 @@ When the skill completes, provide:
 - git tag / GitHub Release status
 - website / announcement follow-up status
 - rollback recommendation if anything is still partially complete
+
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a stable release published with a verified candidate, a smoke-tested canary, and a git tag plus GitHub Release, not a version number announced in chat. A release whose canary failed smoke testing does not ship. Report by work: candidate chosen and verified, changelog drafted, canary validated and smoke-tested, stable published and tagged. Use the related skills (`release-changelog` when the stable notes must be drafted from commits and PRs, `verification-before-completion` before any publish claim is made, `finishing-a-development-branch` when the release work itself closes a branch). Update release-manager memory with the stable version, the candidate SHA, and the verification and smoke results so the next release starts from what is proven.

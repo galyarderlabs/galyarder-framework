@@ -249,6 +249,10 @@ If validation fails, check for duplicate IDs, dangling edge references, or malfo
 
 See [references/EXAMPLES.md](references/EXAMPLES.md) for full canvas examples including mind maps, project boards, research canvases, and flowcharts.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a `.canvas` file that opens in Obsidian with every edge resolving, not a JSON draft. The JSON parses, all IDs are unique, and every `fromNode` and `toNode` references an existing node. Report by work: canvases created or edited, nodes and edges added, validation checks passed, layout fixes made. Use the related skills (`obsidian-markdown` when canvas text links to vault notes, `diagram-design` when the canvas is a diagram, `obsidian-bases` when the canvas maps a base view). Update the obsidian-architect memory with the layouts and node patterns that worked so the next canvas starts from what is proven.
+
 ## References
 
 - [JSON Canvas Spec 1.0](https://jsoncanvas.org/spec/1.0/)

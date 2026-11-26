@@ -61,5 +61,9 @@ Use this skill when the founder needs to communicate progress, misses, risk, or 
 For emails: ready-to-send markdown.
 For decks: one section per slide with headline, evidence, and board question answered.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means an update sent to investors or a board deck with headline, metrics with comparison points, misses with root causes, and concrete asks, not a status paragraph. The evidence is every key metric paired with its comparison point and every miss paired with its remediation path. Report by work: format chosen, metrics collected, misses surfaced, asks written. Use the related skills (`founder-context` when the update needs current company facts, `fundraising-email` when the update goes out as email, `data-room` when a claim needs its diligence document). Update the fundraising-operator memory with the metrics reported and the asks made so the next update starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

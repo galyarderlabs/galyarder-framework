@@ -135,5 +135,9 @@ For each dark web finding:
 - **Inadequate legal review**: Dark web monitoring must be reviewed by legal counsel  passive monitoring is generally lawful but active participation in criminal markets is not.
 - **No evidence preservation**: Dark web content disappears rapidly. Capture timestamped evidence immediately upon discovery using commercial service exports.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a classified, evidenced finding with an escalation ticket, not a forum screenshot alone. A claim is escalated only after timestamped capture and a cross-check against known incidents; an unverified claim does not ship. Report by work: keywords monitored, matches captured with evidence, credibility assessed, severity classified. Use the related skills (`profiling-threat-actor-groups` when a mention ties to a known actor, `tracking-threat-actor-infrastructure` when a leak points at infrastructure to pivot on, `investigating-phishing-email-incident` when a mention ties to a phishing campaign, `generating-threat-intelligence-reports` when findings become a finished report). Update cyber-intel memory with the verified mentions, the actors behind them, and which claims proved false so the next monitoring starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

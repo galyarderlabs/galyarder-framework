@@ -472,3 +472,7 @@ Create tests in `server/src/__tests__/<adapter-name>-adapter.test.ts`. Test:
 - [ ] Registered in `cli/src/adapters/registry.ts`
 - [ ] Added to workspace in root `pnpm-workspace.yaml` (if not already covered by glob)
 - [ ] Tests for parsing, session codec, and config building
+
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a registered adapter package with parsing, session codec, and config building tested, not a draft interface. An adapter unregistered in all three registries does not ship. Report by work: adapter package created, server, UI, and CLI modules wired, registrations added, tests passing. Use the related skills (`test-driven-development` when parser, codec, and config tests come first, `verification-before-completion` before claiming the adapter works, `mcp-builder` when the adapter exposes tools over MCP). Update software-engineer memory with the adapter type, the output format parsed, and the registration points touched so the next adapter starts from what is proven.

@@ -306,5 +306,9 @@ From debugging sessions:
 - First-time fix rate: 95% vs 40%
 - New bugs introduced: Near zero vs common
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a fix at the proven root cause with a failing test that now passes, not a patch that quiets the symptom. A fix without a reproduced root cause does not ship. Report by work: errors read and reproduced, root cause found, hypothesis tested, fix verified with tests green. Use the related skills (`test-driven-development` when the fix needs its failing test first, `verification-before-completion` when a fix is about to be claimed done, `subagent-driven-development` when the fix spans tasks a subagent can own). Update software-engineer memory with the root cause, the failing test, and the fix that held so the next bug in the same area starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

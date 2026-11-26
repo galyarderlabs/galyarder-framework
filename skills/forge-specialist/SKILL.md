@@ -57,3 +57,7 @@ Every response should try to answer:
 - Do not route to too many specialists when one owner is enough.
 - Do not let ambiguous requests flow into engineering without product framing.
 - Do not answer as a narrow department lead if the problem is clearly cross-functional.
+
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means one founder-readable executive summary with a lead, support, next step, and done-when gate, not a pile of unsynthesized department output. The evidence is the reframed objective and the verification gate, both stated plainly. Report by work: objective reframed, lead assigned, support named, next step and gate set. Use the related skills (`writing-plans` when the request needs a scoped plan, `executing-plans` when a plan is ready to run, `founder-context` when the judgment needs company facts). Update the forge-specialist memory with the routing decisions and the gates that held so the next cross-department request starts from what is proven.

@@ -116,5 +116,9 @@ obsidian dev:mobile on
 
 Run `obsidian help` to see additional developer commands including CDP and debugger controls.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a vault change made through the CLI and confirmed in the vault, not a command typed without checking the result. The CLI output plus a read-back of the changed note, task, or property is the proof. Report by work: commands run, notes created or changed, searches and backlinks checked, plugin reloads verified. Use the related skills (`obsidian-markdown` when writing note content, `obsidian-bases` when the work touches a base view, `second-brain` when the change feeds the vault system). Update the obsidian-architect memory with the commands that worked and any vault quirks found so the next CLI run starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

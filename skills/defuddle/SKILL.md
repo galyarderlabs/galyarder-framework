@@ -51,5 +51,9 @@ defuddle parse <url> -p domain
 | (none) | HTML |
 | `-p <name>` | Specific metadata property |
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means clean markdown saved as a file from a real page, not a fetched URL with no output. The extracted markdown matches the source page content, with title and metadata checked. Report by work: URLs extracted, output files saved, metadata pulled, pages that failed extraction. Use the related skills (`grounded-research` when extracted content feeds research, `web-data-ops` when extraction is part of a data pipeline, `obsidian-markdown` when the output lands in a vault note). Update the obsidian-architect memory with the sites that extract cleanly and the flags that worked so the next extraction starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

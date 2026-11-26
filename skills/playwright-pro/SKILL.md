@@ -142,5 +142,9 @@ See `reference/` directory for:
 
 See `templates/README.md` for the full template index.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a Playwright suite that runs green in CI with resilient locators and no arbitrary waits, not a test file that passes once locally. A flaky test does not ship. Report by work: tests generated from the spec, tests reviewed for anti-patterns, flaky tests diagnosed and fixed, full suite re-run green. Use the related skills (`test-driven-development` when a test must fail first to prove it tests real behavior, `systematic-debugging` when a flaky test needs its root cause, `qa-core` when the suite must cover what Playwright alone does not). Update qa-engineer memory with the flaky-test causes fixed, the locator patterns that held, and the coverage gaps found so the next suite starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

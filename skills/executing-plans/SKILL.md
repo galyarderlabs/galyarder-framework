@@ -80,5 +80,9 @@ After all tasks complete and verified:
 - **forge-anything:writing-plans** - Creates the plan this skill executes
 - **forge-anything:finishing-a-development-branch** - Complete development after all tasks
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means every plan task executed and verified, with the branch finished through the finishing skill, not a partial run reported as done. The evidence is the verification output for each step, run as the plan specifies. Report by work: plan reviewed, tasks executed, verifications passed, branch finished. Use the related skills (`writing-plans` when the plan needs fixing before execution, `finishing-a-development-branch` when all tasks are done, `subagent-driven-development` when subagents are available for per-task execution). Update the product-manager memory with the tasks completed and the verifications that passed so the next execution starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

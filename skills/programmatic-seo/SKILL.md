@@ -361,5 +361,9 @@ If triggered, **halt indexing or roll back**:
 ## When to Use
 This skill is applicable to execute the workflow or actions described in the overview.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a page-system design with a feasibility verdict and indexation rules, not a keyword list. The Feasibility Index score carries a category breakdown, the demand data is shown, and every page type answers why it deserves to exist separately. Report by work: feasibility score and verdict, keyword pattern and scale, page system design, risks with mitigations, kill-switch criteria. Use the related skills (`seo-audit` when programmatic pages need auditing post-launch, `analytics-tracking` when performance must validate the value). Update the growth-engineer memory with the patterns and playbooks that scored well and the pages that earned indexing so the next system starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

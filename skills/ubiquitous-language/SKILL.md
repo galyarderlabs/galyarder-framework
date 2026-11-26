@@ -94,5 +94,9 @@ After writing the file, state:
 
 > I've written/updated `UBIQUITOUS_LANGUAGE.md`. From this point forward I will use these terms consistently. If I drift from this language or you notice a term that should be added, let me know.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a UBIQUITOUS_LANGUAGE.md file with canonical terms, aliases to avoid, relationships, and a worked example dialogue, not a list of words discussed in chat. The evidence is each term traced to how it was actually used in the conversation, with ambiguities flagged explicitly. Report by work: terms extracted, ambiguities flagged, glossary written, dialogue written. Use the related skills (`prd-flow` when the glossary feeds a requirements document, `writing-plans` when the terms shape an implementation plan, `founder-context` when the domain terms come from company facts). Update the product-manager memory with the canonical terms and the ambiguities resolved so the next product discussion starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

@@ -68,6 +68,10 @@ Every run ends as a change or a note, never as a bare claim in chat. Ship one of
 
 Report by work: what page, what action, what the tree showed, what changed. Then update the agent's memory with the outcome, including any site quirk found (a banner that covers the button, a flow that needs a wait, a login that needs a fresh session), so the next run does not rediscover it.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a commit, PR, department note, or bug report backed by snapshot evidence, not a claim about a page. The snapshot tree lines show the URL, the element state, and the text that prove the action landed. Report by work: page visited, actions taken, what the tree showed, what changed. Use the related skills (`agent-desktop` when the target is a native app, `systematic-debugging` when the run is diagnosing a bug, `verification-before-completion` when a claim needs evidence before it counts, `test-driven-development` when the run proves a bug and a failing test comes first). Update the agent-ops memory with the outcome and any site quirk found so the next run does not rediscover it.
+
 ## Related Skills
 
 - `agent-desktop`: desktop apps, not web pages. Use it when the target is a native app.

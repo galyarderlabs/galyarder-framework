@@ -312,5 +312,9 @@ Throughout: SOC monitoring on high alert
 - [ ] Canary files deployed
 ```
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means systems restored in dependency order, validated clean, and reconnected in phases, not backups copied back. Backup integrity is scanned before any restore, AD health is verified, persistence scans come back clean, and krbtgt is reset twice. Report by work: clean environment built, identity recovered, backups validated, systems restored and hardened. Use the related skills (`eradicating-malware-from-infected-systems` when persistence must be cleared before restore, `recovering-deleted-files-with-photorec` when files must be carved from damaged media, `executing-active-directory-attack-simulation` when the recovered AD needs its attack paths re-tested within scope). Update perseus memory with the recovery order that worked, the backup dates verified clean, and the validation checks passed so the next recovery starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

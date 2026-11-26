@@ -316,5 +316,9 @@ A WAF blocks common XSS patterns and CSP restricts inline scripts. Discover a JS
 5. Add X-Content-Type-Options: nosniff header
 ```
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a validated finding with reproduction steps, impact proof, and fix guidance, not a scanner alert. The payload executes in the browser within authorized scope, with a screenshot and the exact request recorded. Report by work: reflection points found, reflected and stored XSS tested, DOM XSS traced, filters and CSP tested. Use the related skills (`intercepting-mobile-traffic-with-burpsuite` when XSS appears in a mobile web view, `appsec-audit` when XSS findings feed a wider application audit, `security-audit` when findings need a full audit report). Update perseus memory with the payloads that executed, the bypasses that worked, and the contexts that were vulnerable so the next test starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

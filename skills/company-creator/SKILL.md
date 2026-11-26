@@ -276,3 +276,7 @@ git ls-remote https://github.com/owner/repo HEAD
 ```
 
 Do NOT copy external skill content into the package unless the user explicitly asks.
+
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a company package written to disk that conforms to the spec, not an interview summary or a hiring idea. The evidence is the generated package passing the spec rules: slugs, reporting lines, and workflow handoffs all present. Report by work: mode chosen, interview rounds completed, package files written, import path confirmed. Use the related skills (`founder-context` when the company needs real company facts, `using-forge-anything` when the work must route through the Forge flow, `writing-plans` when the package needs a build plan first). Update the forge-ceo memory with the company slug, the workflow pattern chosen, and the agent roster so the next company work starts from what is proven.

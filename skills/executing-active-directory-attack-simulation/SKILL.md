@@ -185,5 +185,9 @@ could access all 5,000 user accounts, 800 computer objects, and all data within 
 6. Deploy Microsoft Defender for Identity to detect Kerberoasting and DCSync attacks
 ```
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a verified finding report with the full attack chain and remediation, not a shell on a host. Every step is proven inside the authorized scope, from the BloodHound path to the cracked hash to the DCSync, with timestamps and commands logged; nothing outside the written authorization is tested. Report by work: attack paths mapped, Kerberos attacks proven, credentials exploited within scope, domain compromise chain documented. Use the related skills (`mapping-mitre-attack-techniques` when a technique needs an ATT&CK ID, `executing-red-team-exercise` when AD testing is one phase of a wider exercise, `executing-red-team-engagement-planning` when scope and rules of engagement need defining first, `profiling-threat-actor-groups` when emulating a specific actor's AD techniques). Update perseus memory with the attack paths proven, the weak credentials found, and the fixes that closed them so the next simulation starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

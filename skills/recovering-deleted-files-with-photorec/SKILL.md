@@ -235,5 +235,9 @@ PhotoRec Recovery Summary:
   Hash Manifest:    /cases/case-2024-001/recovered/recovered_hashes.txt
 ```
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a hashed, catalogued recovery set with a chain-of-custody manifest, not a folder of carved files. Every recovered file carries a SHA-256 hash and a file-signature check, with mismatches flagged for review. Report by work: image verified, carving run, files catalogued and hashed, integrity validated. Use the related skills (`reverse-engineering-malware-with-ghidra` when a recovered binary needs analysis, `eradicating-malware-from-infected-systems` when recovered files prove persistence, `recovering-from-ransomware-attack` when recovery supports a ransomware case). Update perseus memory with the file types recovered, the carving settings that worked, and the validation results so the next recovery starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

@@ -406,5 +406,9 @@ Deliver final documents in this structure:
 
 7. **Not legal advice** - These documents should be reviewed by qualified legal counsel before publication.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means final Terms of Service and Privacy Policy documents with zero placeholders, ready to publish, not a draft full of template variables. A clause without a data practice traced to the codebase audit does not ship. Report by work: data practices found in the audit, documents drafted, template variables resolved, final documents delivered. Use the related skills (`gdpr-compliance` when the documents must satisfy GDPR duties, `gdpr-ccpa-privacy-auditor` when the live site must be checked against the new policy, `contract-review` when a clause touches a customer or vendor agreement). Update the legal-counsel memory with the entity details inferred, the clauses that held, and the gaps that needed counsel so the next drafting round starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

@@ -174,5 +174,9 @@ A question about a UI topic is not automatically a visual question. "What does p
 If they agree to the companion, read the detailed guide before proceeding:
 `skills/brainstorming/visual-companion.md`
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means an approved design doc written and committed, not an idea talked through in chat. A design without operator approval does not ship. Report by work: context explored, questions asked one at a time, approaches proposed with trade-offs, design approved and written to docs/specs. Use the related skills (`writing-plans` when the approved design needs its implementation plan, `diagram-design` when the design needs a diagram to be understood, `evidence-strategy` when a design claim needs its evidence named). Update software-engineer memory with the approved design, the approaches rejected and why, and the open questions so the next design starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

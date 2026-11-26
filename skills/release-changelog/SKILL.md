@@ -200,3 +200,7 @@ Before handing it off:
 4. present the draft for human sign-off
 
 This skill never publishes anything. It only prepares the stable changelog artifact.
+
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a stable changelog file at releases/vYYYY.MDD.P.md with breaking changes flagged and contributors named, not a summary of commits in chat. A changelog derived from a canary tag does not ship. Report by work: stable range determined, commits and PRs gathered, breaking changes flagged with upgrade paths, changelog written and reviewed. Use the related skills (`release` when the changelog feeds a stable promotion, `pr-report` when a merged PR needs a deep read before it is summarized, `verification-before-completion` before the draft is handed off as ready). Update release-manager memory with the stable version, the breaking changes and their upgrade paths, and the contributor list so the next changelog starts from what is proven.

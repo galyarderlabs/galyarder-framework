@@ -49,5 +49,9 @@ Produce:
 - Use earned insights, numbers, and concrete lessons.
 - Optimize for relevance and inbound conversations, not just impressions.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a content system with pillars, formats, and a 2-week calendar, not a single post draft. The evidence is earned insight with numbers and concrete lessons, tied to a business outcome. Report by work: authority zones defined, pillars set, post angles drafted, calendar written. Use the related skills (`founder-context` when the content needs real company facts, `marketing-core` when a pillar needs a campaign plan, `social-production` when a format needs production). Update the forge-cmo memory with the authority zones and the formats that drew inbound conversations so the next content cycle starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

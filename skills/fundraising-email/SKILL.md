@@ -59,5 +59,9 @@ Before finalizing, verify:
 3. Is there at least one concrete personalization detail where relevant?
 4. Could a busy investor scan this in under a minute?
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a subject line plus body ready to send, one email with one ask, not a draft that needs rewriting. The evidence is the quality check: strongest metric visible early, explicit CTA, personalization present, scannable in under a minute. Report by work: email type chosen, proof point pulled, personalization added, quality check passed. Use the related skills (`founder-context` when the email needs real company facts, `investor-research` when the recipient needs targeting first, `board-update` when the email is a monthly investor update). Update the fundraising-operator memory with the proof points used and the asks sent so the next outreach starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

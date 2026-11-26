@@ -49,5 +49,9 @@ Produce:
 - Lead with traction and velocity where available.
 - Use clear language, not accelerator cosplay jargon.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a ranked program shortlist with tailored answers and an interview prep sheet, not a list of famous accelerators. The evidence is the fit filter: stage, sector, geography, and terms checked per program. Report by work: programs ranked, fit notes written, core narrative built, answers tailored. Use the related skills (`founder-context` when the narrative needs real company facts, `pitch-deck` when the application needs the deck story, `investor-research` when a program's backers need checking). Update the fundraising-operator memory with the programs applied to and the narrative that held so the next application starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

@@ -133,5 +133,9 @@ Classify TLP:AMBER for internal distribution; seek ISAC approval before external
 - **Neglecting insider and criminal groups**: Overemphasis on nation-state APTs while ignoring ransomware groups (Cl0p, LockBit, ALPHV) which represent higher probability threats for most organizations.
 - **Profile staleness**: Adversary TTPs evolve. Profiles not updated quarterly may miss technique changes, new malware, or targeting shifts.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a finished actor profile with TTPs, detection gaps, and priority actions, not a collection of IOCs. TTPs are sourced from ATT&CK and at least one commercial feed, and attribution is always qualified with a confidence level. Report by work: actors shortlisted, TTPs mapped, coverage gaps identified, profile packaged per audience. Use the related skills (`mapping-mitre-attack-techniques` when profile TTPs need coverage scoring, `tracking-threat-actor-infrastructure` when a profile needs its infrastructure mapped, `monitoring-darkweb-sources` when a profile needs fresh dark web activity, `generating-threat-intelligence-reports` when the profile becomes a briefing). Update cyber-intel memory with the profile, its TTPs, and the gaps it exposed so the next profile starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

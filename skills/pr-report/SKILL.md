@@ -210,3 +210,7 @@ In chat, summarize:
 - whether verification or tests were skipped
 
 Keep the chat summary shorter than the report itself.
+
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a maintainer-grade report artifact with findings ordered by severity and one concrete recommendation, not a vague impression of the diff. A recommendation without file-cited evidence does not ship. Report by work: target framed and change understood, system model built, findings ordered by severity, recommendation made. Use the related skills (`verification-before-completion` when a PR claim must be checked against the code before the call is made, `systematic-debugging` when a finding needs its root cause traced, `release-changelog` when a merged PR must be summarized for the next release). Update code-reviewer memory with the review findings, the design decisions explained, and the precedents compared so the next review starts from what is proven.

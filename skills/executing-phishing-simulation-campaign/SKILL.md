@@ -194,5 +194,9 @@ Analyze campaign results and produce the assessment report:
 5. Schedule quarterly phishing simulations to track improvement
 ```
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a campaign report with measured rates and targeted training recommendations, not emails sent. The evidence is the GoPhish metrics per department: delivered, opened, clicked, submitted, and reported. Work runs only under written authorization, and captured credentials are tested against real systems only when explicitly authorized. Report by work: pretexts built, campaign executed, metrics measured, departments compared. Use the related skills (`investigating-phishing-email-incident` when a real phish must be distinguished from the simulation, `executing-red-team-exercise` when phishing is the initial access phase, `generating-threat-intelligence-reports` when results become an executive briefing). Update perseus memory with the pretexts that worked, the most susceptible departments, and the report rates so the next campaign starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

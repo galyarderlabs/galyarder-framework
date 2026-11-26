@@ -188,5 +188,9 @@ Convert red team findings into defensive improvements:
 4. Deploy memory-scanning EDR capability to detect process injection
 ```
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a report with technique-by-technique detection status, mean time to detect, and prioritized fixes, not access gained. Every executed technique carries a timestamp matched against the blue team detection log, and all work stays inside the authorized scope. Report by work: objectives attempted, techniques executed with detection status, detection gaps analyzed, purple team actions agreed. Use the related skills (`executing-red-team-engagement-planning` when scope and rules of engagement come first, `executing-phishing-simulation-campaign` when phishing is the initial access vector, `executing-active-directory-attack-simulation` when the chain runs through AD, `mapping-mitre-attack-techniques` when results become a coverage heatmap). Update perseus memory with the techniques executed, the detections missed, and the fixes that closed the gaps so the next exercise starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

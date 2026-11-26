@@ -301,5 +301,9 @@ Done!
 **Alternative workflow:**
 - **forge-anything:executing-plans** - Use for parallel session instead of same-session execution
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means every plan task implemented, spec-reviewed, and quality-reviewed in its own commit, not a plan half executed. A task with an open review issue does not ship. Report by work: tasks dispatched with full context, spec reviews passed, quality reviews passed, final review done. Use the related skills (`writing-plans` when the plan to execute does not exist yet, `test-driven-development` when a subagent writes code for a task, `finishing-a-development-branch` when all tasks are done and the branch must close). Update software-engineer memory with the task breakdowns, the review findings, and the subagent patterns that worked so the next plan starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

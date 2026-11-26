@@ -71,5 +71,9 @@ Before finalizing, verify:
 2. Is traction framed with concrete numbers and timeframes?
 3. Is the ask explicit: amount, milestones, and why now?
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a slide-by-slide deck with one investor question answered per slide and an explicit raise ask, not a set of slides about the company. The evidence is traction framed with concrete numbers and timeframes and the ask stated as amount, milestones, and why now. Report by work: deck type chosen, narrative arc built, slides drafted, quality bar checked. Use the related skills (`founder-context` when the deck needs real company facts, `investor-research` when the deck targets specific investors, `data-room` when a slide claim needs its diligence document). Update the fundraising-operator memory with the narrative arc and the ask that shipped so the next deck starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.

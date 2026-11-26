@@ -195,5 +195,9 @@ android sslpinning disable
 - **Non-HTTP protocols**: Burp Suite only handles HTTP/HTTPS. Use Wireshark for WebSocket, MQTT, gRPC, or custom binary protocols.
 - **VPN-based apps**: Apps using VPN tunnels bypass device proxy settings. May need iptables rules on a rooted device to redirect traffic.
 
+## The Forge Mark
+
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a finding report with intercepted evidence and reproduction steps, not captured traffic alone. Each finding shows the intercepted request and response proving the flaw, from an app the tester is authorized to test. Report by work: proxy configured, traffic captured, API flaws tested, pinning bypasses documented. Use the related skills (`testing-for-xss-vulnerabilities-with-burpsuite` when a mobile web view shows XSS, `security-audit` when mobile findings feed a wider audit, `appsec-audit` when API flaws need application-level follow-up). Update perseus memory with the API patterns seen, the pinning bypasses that worked, and the flaws proven so the next mobile test starts from what is proven.
+
 ---
  2026 Galyarder Labs. Forge Anything.
