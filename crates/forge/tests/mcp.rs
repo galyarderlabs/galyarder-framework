@@ -119,7 +119,7 @@ fn mcp_session_answers_initialize_list_and_calls() {
         );
     }
 
-    // list_skills: the real skill inventory (175 skills, incl.
+    // list_skills: the real skill inventory (176 skills, incl.
     // using-forge-anything). The inner JSON array is a text string, so it
     // arrives backslash-escaped.
     assert!(

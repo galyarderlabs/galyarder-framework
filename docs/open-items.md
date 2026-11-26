@@ -21,9 +21,11 @@ GitHub issues, and Galih's calls.
   Needs Galih for Q15.
 - [ ] Curation execution (LAST work): agent folders (56, still single
   .md files — not started), release skill prose rewrite (it still
-  describes the old FORGEAI flow). Skills part DONE 25 Nov 2026:
-  115 Forge-native designs written, 114 in the repo, 1 draft left
-  (community-ops, half-written, source URL dead). Scaffold department
+  describes the old FORGEAI flow). Skills part DONE 26 Nov 2026:
+  115 Forge-native designs written, 115 in the repo. community-ops
+  completed 26 Nov 2026 (Galih 07:38: replacement source
+  coreyhaines31/community-marketing v2.0.5, dead absolutelyskilled
+  URL replaced). Scaffold department
   templates DONE: 17 departments seeded.
 - [x] Forge value paragraph on all 175 skills: DONE 26 Nov 2026
   (Galih 07:18: the value is mandatory, add it). The 67 pre-curation
