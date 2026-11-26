@@ -15,14 +15,14 @@
 //! Tools:
 //! - `list_skills` — every skill (name + description) from `skills/`.
 //! - `read_skill` — a skill's `SKILL.md` (+ its `references/` file list).
-//! - `read_agent` — an agent's `.md` file from `agents/`.
+//! - `read_agent` — an agent's `soul.md` file from `agents/<name>/`.
 //! - `read_command` — a command's `.md` file from `commands/`.
 //! - `scaffold` — scaffold a new project (the `forge-scaffold` library).
 //!
 //! The source checkout is resolved exactly like `forge scaffold` does
 //! (`forge-scaffold::source::resolve`: explicit `--source`, `FORGE_SOURCE`,
 //! walk up from the cwd, walk up from the executable directory; a source
-//! has `skills/using-forge-anything/SKILL.md` and `agents/forge-ceo.md`). When no source
+//! has `skills/using-forge-anything/SKILL.md` and `agents/forge-ceo/soul.md`). When no source
 //! is found the server still answers `initialize`/`ping`/`tools/list`, and
 //! every tool that needs the source returns a clear error instead of
 //! crashing or inventing a source.
@@ -252,7 +252,7 @@ impl Server {
             "no Forge Anything source checkout found. Run this from inside a \
              forge-anything checkout, pass --source <dir> to `forge mcp`, or set \
              FORGE_SOURCE to the checkout directory. A source checkout contains \
-             skills/using-forge-anything/SKILL.md and agents/forge-ceo.md."
+             skills/using-forge-anything/SKILL.md and agents/forge-ceo/soul.md."
                 .to_string()
         })
     }
@@ -320,7 +320,7 @@ impl Server {
         let name = name.ok_or("read_agent needs a 'name' argument (string)")?;
         let clean = clean_name(&name, "agent")?;
         let src = self.require_source()?;
-        let path = src.join("agents").join(format!("{clean}.md"));
+        let path = src.join("agents").join(&clean).join("soul.md");
         read_named_file(&path, "agent", &clean)
     }
 

@@ -163,12 +163,12 @@ FORGE_SOURCE="\$SRC" "\$BIN" smoke | grep -q "SMOKE TEST PASSED"
 say "[4/4] forge scaffold"
 "\$BIN" scaffold --source "\$SRC" --name smoke-test "\$PROJ" | tail -2
 test "\$(ls "\$PROJ/skills" | wc -l)" -eq 32
-test "\$(ls "\$PROJ/agents" | wc -l)" -eq 18
+test "\$(ls "\$PROJ/agents" | wc -l)" -eq 17
 test "\$(ls "\$PROJ/commands" | wc -l)" -eq 25
 test -f "\$PROJ/README.md"
 test -f "\$PROJ/skills/using-forge-anything/SKILL.md"
-test -f "\$PROJ/agents/forge-ceo.md"
-say "scaffold OK: 32 skills, 18 agents, 25 commands"
+test -f "\$PROJ/agents/forge-ceo/soul.md"
+say "scaffold OK: 32 skills, 17 agents, 25 commands"
 EOF
     chmod +x "$TMP/check.sh"
 }

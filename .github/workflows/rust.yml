@@ -70,14 +70,14 @@ jobs:
           set -euo pipefail
           OUT=/tmp/forge-scaffold-proof
           test "$(ls "$OUT/skills" | wc -l)" -eq 32
-          test "$(ls "$OUT/agents" | wc -l)" -eq 18
+          test "$(ls "$OUT/agents" | wc -l)" -eq 17
           test "$(ls "$OUT/commands" | wc -l)" -eq 25
           test -f "$OUT/README.md"
           test -f "$OUT/AGENTS.md"
           test -f "$OUT/WORKFLOW.md"
           test -f "$OUT/skills.json"
           test -f "$OUT/skills/using-forge-anything/SKILL.md"
-          test -f "$OUT/agents/forge-ceo.md"
+          test -f "$OUT/agents/forge-ceo/soul.md"
           # No per-host copies or manifests in the scaffolded repo.
           test ! -e "$OUT/.claude-plugin"
           test ! -e "$OUT/.cursor"
@@ -121,7 +121,7 @@ jobs:
           set -euo pipefail
           ./crates/forge/target/release/forge scaffold --name ci-proof /tmp/forge-cli-proof
           test "$(ls /tmp/forge-cli-proof/skills | wc -l)" -eq 32
-          test "$(ls /tmp/forge-cli-proof/agents | wc -l)" -eq 18
+          test "$(ls /tmp/forge-cli-proof/agents | wc -l)" -eq 17
           test "$(ls /tmp/forge-cli-proof/commands | wc -l)" -eq 25
           test -f /tmp/forge-cli-proof/README.md
           echo "forge scaffold: OK"

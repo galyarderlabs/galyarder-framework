@@ -194,7 +194,7 @@ fn mcp_session_answers_initialize_list_and_calls() {
         "scaffolded skills land"
     );
     assert!(
-        target.join("agents/forge-ceo.md").is_file(),
+        target.join("agents/forge-ceo/soul.md").is_file(),
         "scaffolded agents land"
     );
     assert!(

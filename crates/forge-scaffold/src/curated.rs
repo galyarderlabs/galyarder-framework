@@ -62,12 +62,12 @@ pub const CURATED_SKILLS: &[&str] = &[
     "defuddle",
 ];
 
-/// Curated agents, copied from `<source>/agents/<name>.md` into the new repo.
+/// Curated agents, copied from `<source>/agents/<name>/` into the new repo.
 /// The five Forge agents plus the lead role agent(s) per department.
 pub const CURATED_AGENTS: &[&str] = &[
     // Forge core agents.
     "forge-ceo",
-    "forge-cfo-coo",
+    "forge-cfo",
     "forge-cmo",
     "forge-cto",
     "forge-specialist",
@@ -75,9 +75,8 @@ pub const CURATED_AGENTS: &[&str] = &[
     "fundraising-operator",
     // Product.
     "product-manager",
-    "planner",
     // Engineering.
-    "elite-developer",
+    "software-engineer",
     "super-architect",
     // Growth.
     "growth-strategist",

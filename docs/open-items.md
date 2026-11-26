@@ -19,9 +19,14 @@ GitHub issues, and Galih's calls.
   (56 agents become 54); agent-ops, game-developer and
   scientific-researcher stay separate.
   Needs Galih for Q15.
-- [ ] Curation execution (LAST work): agent folders (56, still single
-  .md files — not started), release skill prose rewrite (it still
-  describes the old FORGEAI flow). Skills part DONE 26 Nov 2026:
+- [x] Curation execution (LAST work): agent folders DONE 26 Nov 2026
+  (Galih 13:02: "lanjut, bikin folder agent"): 54 folders, each
+  readme + soul.md + memory.md; 41 old single .md files removed;
+  forge-cfo-coo split, 6 agents merged into software-engineer,
+  renames videomaker + qa-engineer applied, ai-researcher and
+  team-orchestrator folded (no folders). Release skill prose rewrite
+  still open (it still describes the old FORGEAI flow). Skills part
+  DONE 26 Nov 2026:
   115 Forge-native designs written, 115 in the repo. community-ops
   completed 26 Nov 2026 (Galih 07:38: replacement source
   coreyhaines31/community-marketing v2.0.5, dead absolutelyskilled

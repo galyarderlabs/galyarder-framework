@@ -16,7 +16,7 @@
 //!
 //! The source is resolved in order: `--source`, `FORGE_SOURCE`, walking up
 //! from the current directory, then next to the executable. A source checkout
-//! contains `skills/using-forge-anything/SKILL.md` and `agents/forge-ceo.md`.
+//! contains `skills/using-forge-anything/SKILL.md` and `agents/forge-ceo/soul.md`.
 //!
 //! Exit codes: 0 on success, 1 on usage errors, 2 when the scaffold fails.
 
@@ -146,7 +146,7 @@ const HELP: &str = "forge-scaffold: drop a tidy Forge Anything repo into a folde
      \n\
      Source resolution: --source, FORGE_SOURCE, then walking up from the\n\
      current directory, then next to the executable. A source checkout\n\
-     contains skills/using-forge-anything/SKILL.md and agents/forge-ceo.md.\n";
+     contains skills/using-forge-anything/SKILL.md and agents/forge-ceo/soul.md.\n";
 
 #[cfg(test)]
 mod tests {

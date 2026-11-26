@@ -27,7 +27,7 @@ No per-host copies or manifests: any agent or host reads `skills/` and
 The scaffold copies from a Forge Anything checkout. It resolves the source
 in order: `--source <dir>`, the `FORGE_SOURCE` environment variable, walking
 up from the current directory, then next to the executable. A source checkout
-contains `skills/using-forge-anything/SKILL.md` and `agents/forge-ceo.md`.
+contains `skills/using-forge-anything/SKILL.md` and `agents/forge-ceo/soul.md`.
 
 ```sh
 # From inside a forge-anything checkout:
