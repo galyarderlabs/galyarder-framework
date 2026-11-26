@@ -26,8 +26,8 @@ What ships today:
   `company`, `mcp`, `smoke`, `version`, `help`. `forge scaffold` drops a tidy repo
   into a folder. `forge company import` copies an agent-company package into
   a project. `forge mcp` runs the MCP server.
-- **The MCP** (`forge mcp`). Five tools: `list_skills`, `read_skill`,
-  `read_agent`, `read_command`, `scaffold`. Stdio, local only, no
+- **The MCP** (`forge mcp`). Four tools: `list_skills`, `read_skill`,
+  `read_command`, `scaffold`. Stdio, local only, no
   network. It is the distribution: install the MCP and a chatbot or an
   agent gets the tools plus the workflow.
 - **The harness plugins.** Native plugins for Claude Code, OMP/Pi,
@@ -92,7 +92,7 @@ What is not there yet:
 ## Later
 
 - **The MCP tool set grows toward the full coding-agent tool set.** The
-  MCP today has five tools. The direction, from the start, is for it to
+  MCP today has four tools. The direction, from the start, is for it to
   carry the tools an agent needs to forge anything: file and code work,
   system access, web, media, and the workflow itself. The base is the
   OpenCode tool set (24 tools, including read, write, edit, patch,

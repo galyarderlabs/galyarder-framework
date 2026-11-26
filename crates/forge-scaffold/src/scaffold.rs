@@ -3,7 +3,7 @@
 //! What lands in the target directory:
 //! - `README.md`, `AGENTS.md`, `WORKFLOW.md`, `.gitignore`, `skills.json`
 //! - `skills/<curated>/` - the curated skills, copied whole from the source
-//! - `agents/<curated>/` - the curated agents (soul.md + memory.md + readme.md)
+//! - `agents/<curated>/` - the curated agents (SOUL.md + MEMORY.md + README.md)
 //! - `commands/` - all slash commands
 //! - `docs/` - specs, plans, reports, templates, design, and the 17
 //!   departments with a README and an audit template each
@@ -103,8 +103,8 @@ pub fn scaffold(
     for agent in curated::CURATED_AGENTS {
         let src = source.join("agents").join(agent);
         let dst = target.join("agents").join(agent);
-        if !src.join("soul.md").is_file() {
-            return Err(format!("source is missing agents/{agent}/soul.md"));
+        if !src.join("SOUL.md").is_file() {
+            return Err(format!("source is missing agents/{agent}/SOUL.md"));
         }
         copy_dir(&src, &dst, &mut s)?;
         s.agents += 1;

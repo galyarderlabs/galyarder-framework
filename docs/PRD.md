@@ -70,7 +70,7 @@ The missing piece is not another coding agent or a prompt pack. It is the operat
 - **R11 - Skills-only install.** Users who only want the skills should be able to install them without a harness plugin. `[implemented]` - `npx skills add galyarderlabs/forge-anything`.
 - **R12 - Prebuilt CLI install.** Users should be able to install the prebuilt `forge` CLI binary without a Rust toolchain. `[implemented]` - `curl -fsSL https://raw.githubusercontent.com/galyarderlabs/forge-anything/main/install.sh | sh`, or `cargo install --path crates/forge` from source.
 - **R13 - Per-project scaffold.** A user should be able to scaffold an operating structure into a project. `[implemented]` - `forge scaffold` (Rust, `crates/forge-scaffold`).
-- **R14 - MCP distribution.** The MCP server should expose the skills, agents, commands, and scaffold over stdio, local only, no network. `[implemented]` - `forge mcp` (`list_skills`, `read_skill`, `read_agent`, `read_command`, `scaffold`).
+- **R14 - MCP distribution.** The MCP server should expose the skills, agents, commands, and scaffold over stdio, local only, no network. `[implemented]` - `forge mcp` (`list_skills`, `read_skill`, `read_command`, `scaffold`).
 - **R15 - A single version authority.** The package metadata, the changelog, git tags, and GitHub releases should agree on one version. `[implemented]` - version 3.0.2 across `package.json`, `CHANGELOG.md`, and the release tags.
 
 ### Verification and release

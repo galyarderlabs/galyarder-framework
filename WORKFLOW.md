@@ -10,8 +10,8 @@ skills, agents, and commands are installed into the harness the agent
 already uses (Claude Code, OMP/Pi, Codex, Cursor, Antigravity, OpenCode,
 Copilot CLI, Hermes; see `docs/INTEGRATION.md`). Through the MCP, any
 agent or chatbot that can add an MCP server gets the tools plus the
-workflow: `forge mcp` exposes `list_skills`, `read_skill`, `read_agent`,
-`read_command`, and `scaffold` over stdio, local only, no network. The
+workflow: `forge mcp` exposes `list_skills`, `read_skill`, `read_command`,
+and `scaffold` over stdio, local only, no network. The
 scaffold (`forge scaffold`) drops a tidy repo that already follows this
 workflow.
 

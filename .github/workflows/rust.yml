@@ -77,7 +77,7 @@ jobs:
           test -f "$OUT/WORKFLOW.md"
           test -f "$OUT/skills.json"
           test -f "$OUT/skills/using-forge-anything/SKILL.md"
-          test -f "$OUT/agents/forge-ceo/soul.md"
+          test -f "$OUT/agents/forge-ceo/SOUL.md"
           # No per-host copies or manifests in the scaffolded repo.
           test ! -e "$OUT/.claude-plugin"
           test ! -e "$OUT/.cursor"

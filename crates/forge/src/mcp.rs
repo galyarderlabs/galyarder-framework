@@ -15,14 +15,13 @@
 //! Tools:
 //! - `list_skills` — every skill (name + description) from `skills/`.
 //! - `read_skill` — a skill's `SKILL.md` (+ its `references/` file list).
-//! - `read_agent` — an agent's `soul.md` file from `agents/<name>/`.
 //! - `read_command` — a command's `.md` file from `commands/`.
 //! - `scaffold` — scaffold a new project (the `forge-scaffold` library).
 //!
 //! The source checkout is resolved exactly like `forge scaffold` does
 //! (`forge-scaffold::source::resolve`: explicit `--source`, `FORGE_SOURCE`,
 //! walk up from the cwd, walk up from the executable directory; a source
-//! has `skills/using-forge-anything/SKILL.md` and `agents/forge-ceo/soul.md`). When no source
+//! has `skills/using-forge-anything/SKILL.md` and `agents/forge-ceo/SOUL.md`). When no source
 //! is found the server still answers `initialize`/`ping`/`tools/list`, and
 //! every tool that needs the source returns a clear error instead of
 //! crashing or inventing a source.
@@ -204,10 +203,6 @@ impl Server {
                 id,
                 self.tool_result(self.read_skill(arg_str(&args, "name"))),
             ),
-            "read_agent" => result_response(
-                id,
-                self.tool_result(self.read_agent(arg_str(&args, "name"))),
-            ),
             "read_command" => result_response(
                 id,
                 self.tool_result(self.read_command(arg_str(&args, "name"))),
@@ -252,7 +247,7 @@ impl Server {
             "no Forge Anything source checkout found. Run this from inside a \
              forge-anything checkout, pass --source <dir> to `forge mcp`, or set \
              FORGE_SOURCE to the checkout directory. A source checkout contains \
-             skills/using-forge-anything/SKILL.md and agents/forge-ceo/soul.md."
+             skills/using-forge-anything/SKILL.md and agents/forge-ceo/SOUL.md."
                 .to_string()
         })
     }
@@ -316,14 +311,6 @@ impl Server {
         Ok(out)
     }
 
-    fn read_agent(&self, name: Option<String>) -> Result<String, String> {
-        let name = name.ok_or("read_agent needs a 'name' argument (string)")?;
-        let clean = clean_name(&name, "agent")?;
-        let src = self.require_source()?;
-        let path = src.join("agents").join(&clean).join("soul.md");
-        read_named_file(&path, "agent", &clean)
-    }
-
     fn read_command(&self, name: Option<String>) -> Result<String, String> {
         let name = name.ok_or("read_command needs a 'name' argument (string)")?;
         let clean = clean_name(&name, "command")?;
@@ -361,7 +348,7 @@ impl Server {
     }
 }
 
-/// The `tools/list` payload: the five tools with their input schemas.
+/// The `tools/list` payload: the four tools with their input schemas.
 fn tools_list() -> Json {
     let tool =
         |name: &str, description: &str, properties: Vec<(&str, Json)>, required: Vec<&str>| {
@@ -413,15 +400,6 @@ fn tools_list() -> Json {
             vec![(
                 "name",
                 str_prop("The skill name, e.g. \"using-forge-anything\" or \"brainstorming\"."),
-            )],
-            vec!["name"],
-        ),
-        tool(
-            "read_agent",
-            "Read a Forge Anything agent by name. Returns the agent's .md file content.",
-            vec![(
-                "name",
-                str_prop("The agent name, e.g. \"forge-ceo\" (with or without the .md suffix)."),
             )],
             vec!["name"],
         ),
@@ -500,9 +478,9 @@ fn arg_str(args: &Json, key: &str) -> Option<String> {
     args.get(key).and_then(Json::as_str).map(str::to_string)
 }
 
-/// Validate a skill/agent/command name: a bare name, never a path, so a
+/// Validate a skill/command name: a bare name, never a path, so a
 /// tool call cannot escape the source directory. A trailing `.md` is
-/// accepted for agents and commands.
+/// accepted for commands.
 fn clean_name(name: &str, kind: &str) -> Result<String, String> {
     let base = name.strip_suffix(".md").unwrap_or(name);
     if base.is_empty()
@@ -622,7 +600,7 @@ const MCP_HELP: &str = "forge mcp: run the Forge Anything MCP server on stdio.\n
      \n\
      The server speaks JSON-RPC 2.0 (MCP) over stdin/stdout: initialize,\n\
      ping, tools/list, tools/call. Tools: list_skills, read_skill,\n\
-     read_agent, read_command, scaffold. It reads the local source checkout\n\
+     read_command, scaffold. It reads the local source checkout\n\
      only — no network, no external service.\n";
 
 #[cfg(test)]
@@ -658,17 +636,17 @@ mod tests {
         assert!(clean_name("../forge", "skill").is_err());
         assert!(clean_name("a/b", "skill").is_err());
         assert!(clean_name("", "skill").is_err());
-        assert_eq!(clean_name("forge-ceo.md", "agent").unwrap(), "forge-ceo");
+        assert_eq!(clean_name("plan.md", "command").unwrap(), "plan");
         assert_eq!(clean_name("plan", "command").unwrap(), "plan");
     }
 
     #[test]
-    fn tools_list_has_the_five_tools() {
+    fn tools_list_has_the_four_tools() {
         let list = tools_list();
         let Json::Arr(tools) = &list else {
             panic!("tools/list must be an array");
         };
-        assert_eq!(tools.len(), 5);
+        assert_eq!(tools.len(), 4);
         let names: Vec<&str> = tools
             .iter()
             .filter_map(|t| t.get("name"))
@@ -679,7 +657,6 @@ mod tests {
             [
                 "list_skills",
                 "read_skill",
-                "read_agent",
                 "read_command",
                 "scaffold"
             ]

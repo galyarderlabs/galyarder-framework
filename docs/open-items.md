@@ -21,7 +21,8 @@ GitHub issues, and Galih's calls.
   Needs Galih for Q15.
 - [x] Curation execution (LAST work): agent folders DONE 26 Nov 2026
   (Galih 13:02: "lanjut, bikin folder agent"): 54 folders, each
-  readme + soul.md + memory.md; 41 old single .md files removed;
+  README.md + SOUL.md + MEMORY.md (files fully capitalized 26 Nov 2026;
+  folders stay lowercase slugs); 41 old single .md files removed;
   forge-cfo-coo split, 6 agents merged into software-engineer,
   renames videomaker + qa-engineer applied, ai-researcher and
   team-orchestrator folded (no folders). Release skill prose rewrite
@@ -76,7 +77,11 @@ GitHub issues, and Galih's calls.
 ## MCP + CLI
 
 - [ ] MCP full tool set (OpenCode 24 tools as base plus Forge
-  additions). Now 5 tools. Needs a design go.
+  additions). Now 4 tools. Needs a design go.
+- [x] Agent-read MCP tool — CLOSED 26 Nov 2026 (Galih's order: only
+  its own test called it; a skills-only MCP is coherent). The tool is
+  removed, not open. MCP now 4 tools: `list_skills`, `read_skill`,
+  `read_command`, `scaffold`.
 - [ ] MCP company import tool. Now CLI-only.
 - [ ] MCP HTTP transport + auth (now stdio-only). Needed for deploy.
 - [ ] CLI deploy (Cloudflare tunnel, domain auto settings, URL, key

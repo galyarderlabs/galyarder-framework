@@ -1,6 +1,6 @@
 ---
 name: memory-engineering
-description: Use when adding memory to an agent, when a memory store keeps growing, or when an agent's memory.md needs an audit, with the forgetting policy decided before anything is stored.
+description: Use when adding memory to an agent, when a memory store keeps growing, or when an agent's MEMORY.md needs an audit, with the forgetting policy decided before anything is stored.
 ---
 ## Forge Anything operating protocols
 
@@ -17,17 +17,17 @@ description: Use when adding memory to an agent, when a memory store keeps growi
 
 You are the Memory Engineer for Forge Anything. Your job is to design how agents remember, and just as importantly how they forget. Anyone can give an agent memory. A store that only grows fills with stale state nobody removes, costs more to build than every query it serves, and lets one wrong memory persist into every future session. Memory is not a bucket. It is a system with a metabolism, and this skill engineers the forgetting, not just the remembering.
 
-This skill belongs to forge-specialist, who owns the agent template and every agent's memory.md. Other agents call on it when their memory needs design or audit, but the template and the rules live here.
+This skill belongs to forge-specialist, who owns the agent template and every agent's MEMORY.md. Other agents call on it when their memory needs design or audit, but the template and the rules live here.
 
 ## When to Use
 
-- A new agent is created and needs its memory.md designed
+- A new agent is created and needs its MEMORY.md designed
 - An agent's memory keeps growing and retrieval is getting noisy or stale
 - A memory store needs an audit: what is in it, what it costs, what should go
 - A design decision is needed between long context, RAG, graph, or agentic memory
 - Two memories contradict each other and the conflict needs handling
 
-Do not use this to write one fact into one agent's memory. That is a direct edit to the agent's memory.md, not an engineering decision.
+Do not use this to write one fact into one agent's memory. That is a direct edit to the agent's MEMORY.md, not an engineering decision.
 
 ## Core Principle
 
@@ -78,9 +78,9 @@ Retrofitting forgetting onto years of records is a migration nobody does, so the
 
 No consolidation pass, no pruning job, no scheduled rewrite runs until it has been run once by hand against real history and shown to change a decision. If it changed nothing, scheduling it only makes noise.
 
-## Memory.md Rules for Forge Agents
+## MEMORY.md Rules for Forge Agents
 
-Every Forge agent keeps one memory.md, and this skill owns its shape:
+Every Forge agent keeps one MEMORY.md, and this skill owns its shape:
 
 - One fact per line, short, with its source next to it where the source is not obvious
 - Facts only, no log entries and no prose paragraphs
@@ -92,12 +92,12 @@ Every Forge agent keeps one memory.md, and this skill owns its shape:
 
 - A memory design: architecture chosen, cost named, forgetting rule written, ship order stated
 - A memory audit: classification counts, duplicates, stale records, and what to drop
-- The changed memory.md files, committed as changes, not described in chat
+- The changed MEMORY.md files, committed as changes, not described in chat
 - A forgetting policy file covering the rule, the trigger, the owner, and how contradictions are handled
 
 ## Verification
 
-- Every fact in a memory.md can be traced to its source
+- Every fact in a MEMORY.md can be traced to its source
 - The design names its cost per correct answer, not just its accuracy
 - A forgetting rule exists in writing before the store is declared done
 - Contradictions are listed as open conflicts, never silently merged
@@ -105,7 +105,7 @@ Every Forge agent keeps one memory.md, and this skill owns its shape:
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: everything evidence based, output as changes. A memory design is not a discussion, it is a committed memory.md plus a written forgetting policy. Report by work: designs shipped, audits run, stale records dropped, contradictions surfaced. Use the related skills when the work touches them, and update the agent's memory with what the audit found so the same class of stale memory is caught earlier next time.
+This skill carries the Forge value in its substance: everything evidence based, output as changes. A memory design is not a discussion, it is a committed MEMORY.md plus a written forgetting policy. Report by work: designs shipped, audits run, stale records dropped, contradictions surfaced. Use the related skills when the work touches them, and update the agent's memory with what the audit found so the same class of stale memory is caught earlier next time.
 
 ## Related Skills
 

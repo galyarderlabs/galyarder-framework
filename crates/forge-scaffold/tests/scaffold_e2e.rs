@@ -117,7 +117,7 @@ fn scaffold_produces_a_ready_repo() {
 
     // Curated agents.
     for agent in curated::CURATED_AGENTS {
-        assert_file(&target.join("agents").join(agent).join("soul.md"));
+        assert_file(&target.join("agents").join(agent).join("SOUL.md"));
     }
 
     // All slash commands.
@@ -239,7 +239,7 @@ fn curated_lists_all_exist_in_source() {
     }
     for agent in curated::CURATED_AGENTS {
         assert!(
-            source.join("agents").join(agent).join("soul.md").is_file(),
+            source.join("agents").join(agent).join("SOUL.md").is_file(),
             "curated agent missing from source: {agent}"
         );
     }

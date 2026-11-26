@@ -435,7 +435,7 @@ fn scaffold_through_cli_produces_a_ready_repo() {
             .join("skills/using-forge-anything/SKILL.md")
             .is_file()
     );
-    assert!(target.join("agents/forge-ceo/soul.md").is_file());
+    assert!(target.join("agents/forge-ceo/SOUL.md").is_file());
     assert!(target.join("commands/plan.md").is_file());
     assert!(
         target

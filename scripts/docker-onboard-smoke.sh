@@ -167,7 +167,7 @@ test "\$(ls "\$PROJ/agents" | wc -l)" -eq 17
 test "\$(ls "\$PROJ/commands" | wc -l)" -eq 25
 test -f "\$PROJ/README.md"
 test -f "\$PROJ/skills/using-forge-anything/SKILL.md"
-test -f "\$PROJ/agents/forge-ceo/soul.md"
+test -f "\$PROJ/agents/forge-ceo/SOUL.md"
 say "scaffold OK: 32 skills, 17 agents, 25 commands"
 EOF
     chmod +x "$TMP/check.sh"

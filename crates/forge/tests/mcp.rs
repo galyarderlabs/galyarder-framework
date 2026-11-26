@@ -70,19 +70,18 @@ fn mcp_session_answers_initialize_list_and_calls() {
         tool_call(3, "list_skills", "{}"),
         tool_call(4, "read_skill", "{\"name\":\"using-forge-anything\"}"),
         tool_call(5, "read_skill", "{\"name\":\"no-such-skill\"}"),
-        tool_call(6, "read_agent", "{\"name\":\"forge-ceo\"}"),
-        tool_call(7, "read_command", "{\"name\":\"plan\"}"),
-        tool_call(8, "scaffold", &format!("{{\"target\":\"{target_json}\",\"name\":\"mcp-probe\"}}")),
-        "{\"jsonrpc\":\"2.0\",\"id\":9,\"method\":\"ping\"}".to_string(),
-        "{\"jsonrpc\":\"2.0\",\"id\":10,\"method\":\"bogus/method\"}".to_string(),
+        tool_call(6, "read_command", "{\"name\":\"plan\"}"),
+        tool_call(7, "scaffold", &format!("{{\"target\":\"{target_json}\",\"name\":\"mcp-probe\"}}")),
+        "{\"jsonrpc\":\"2.0\",\"id\":8,\"method\":\"ping\"}".to_string(),
+        "{\"jsonrpc\":\"2.0\",\"id\":9,\"method\":\"bogus/method\"}".to_string(),
     ];
     let req_refs: Vec<&str> = requests.iter().map(String::as_str).collect();
     let lines = run_session(&req_refs);
 
-    // The notification gets no reply: 11 requests -> 10 responses.
+    // The notification gets no reply: 10 requests -> 9 responses.
     assert_eq!(
         lines.len(),
-        10,
+        9,
         "one response per request except the notification"
     );
 
@@ -104,11 +103,10 @@ fn mcp_session_answers_initialize_list_and_calls() {
         lines[0]
     );
 
-    // tools/list: all five tools.
+    // tools/list: all four tools.
     for tool in [
         "list_skills",
         "read_skill",
-        "read_agent",
         "read_command",
         "scaffold",
     ] {
@@ -164,28 +162,18 @@ fn mcp_session_answers_initialize_list_and_calls() {
         lines[4]
     );
 
-    // read_agent / read_command return the real file contents.
+    // read_command returns the real file contents.
     assert!(
-        lines[5].contains("forge-ceo"),
-        "read_agent content: {}",
-        &lines[5][..200.min(lines[5].len())]
-    );
-    assert!(
-        lines[5].contains("Chief Executive Officer"),
-        "read_agent description: {}",
-        &lines[5][..300.min(lines[5].len())]
-    );
-    assert!(
-        lines[6].contains("Restate requirements"),
+        lines[5].contains("Restate requirements"),
         "read_command content: {}",
-        &lines[6][..300.min(lines[6].len())]
+        &lines[5][..300.min(lines[5].len())]
     );
 
     // scaffold via the MCP tool produced a ready repo (library path, no subprocess).
     assert!(
-        lines[7].contains("\"isError\":false"),
+        lines[6].contains("\"isError\":false"),
         "scaffold succeeds: {}",
-        lines[7]
+        lines[6]
     );
     assert!(
         target
@@ -194,7 +182,7 @@ fn mcp_session_answers_initialize_list_and_calls() {
         "scaffolded skills land"
     );
     assert!(
-        target.join("agents/forge-ceo/soul.md").is_file(),
+        target.join("agents/forge-ceo/SOUL.md").is_file(),
         "scaffolded agents land"
     );
     assert!(
@@ -203,21 +191,21 @@ fn mcp_session_answers_initialize_list_and_calls() {
     );
 
     // ping answers with an empty result; unknown method is -32601.
-    assert!(lines[8].contains("\"id\":9"), "ping id: {}", lines[8]);
+    assert!(lines[7].contains("\"id\":8"), "ping id: {}", lines[7]);
     assert!(
-        lines[8].contains("\"result\":{}"),
+        lines[7].contains("\"result\":{}"),
         "ping result: {}",
+        lines[7]
+    );
+    assert!(
+        lines[8].contains("\"code\":-32601"),
+        "unknown method code: {}",
         lines[8]
     );
     assert!(
-        lines[9].contains("\"code\":-32601"),
-        "unknown method code: {}",
-        lines[9]
-    );
-    assert!(
-        lines[9].contains("method not found"),
+        lines[8].contains("method not found"),
         "unknown method message: {}",
-        lines[9]
+        lines[8]
     );
 
     let _ = fs::remove_dir_all(&scaffold_tmp);

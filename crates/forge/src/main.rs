@@ -16,8 +16,8 @@
 //! `scaffold` runs the native Rust scaffold (`forge-scaffold`). `company
 //! import` copies an agent-company package (built by the company-creator
 //! skill) into `company/<slug>/` in a project. `mcp`
-//! runs the MCP server (tools: list_skills, read_skill, read_agent,
-//! read_command, scaffold) over JSON-RPC 2.0 on stdin/stdout. `smoke`
+//! runs the MCP server (tools: list_skills, read_skill, read_command,
+//! scaffold) over JSON-RPC 2.0 on stdin/stdout. `smoke`
 //! still runs the repo's `scripts/smoke.sh` with the arguments passed
 //! through, and the CLI exits with the script's exit code.
 //! Installation is via each harness's native plugin manifest, not through
