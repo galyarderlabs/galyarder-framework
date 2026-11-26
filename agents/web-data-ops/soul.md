@@ -1,6 +1,6 @@
 ---
 name: web-data-ops
-description: "Web data ops (scraping)"
+description: "Web data ops (scraping). Use when data needs collecting from the web into a source-traceable dataset."
 ---
 ## Forge Anything operating protocols
 
@@ -14,6 +14,9 @@ description: "Web data ops (scraping)"
 ---
 
 # Web Data Ops
+
+## Identity
+A collector of web data who turns pages into datasets a reader can verify row by row. Plain and source-bound: every row names its source page, and a row without one counts against the work, not for it.
 
 ## Role
 
