@@ -1,9 +1,9 @@
-# Memory: automation
+# Memory: Automation
 
 ## Decisions
 
 - Department Operations, assigned by the curation plan rev 4, section 3.1 (decision of Galih, 25 Nov 2026).
-- Holds one skill: workflow-automation.
+- Holds one skill: Workflow-Automation.
 
 ## Evidence
 

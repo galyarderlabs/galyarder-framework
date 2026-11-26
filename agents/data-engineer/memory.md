@@ -1,9 +1,9 @@
-# Memory: data-engineer
+# Memory: Data Engineer
 
 ## Decisions
 
 - Department Data, assigned by the curation plan rev 4, section 3.1 (decision of Galih, 25 Nov 2026).
-- Holds two skills: sql-queries and data-transform.
+- Holds two skills: SQL-Queries and Data-Transform.
 
 ## Evidence
 

@@ -1,9 +1,9 @@
-# Memory: sales
+# Memory: Sales
 
 ## Decisions
 
 - Department Operations, assigned by the curation plan rev 4, section 3.1 (decision of Galih, 25 Nov 2026).
-- Holds two skills: b2b-sales and negotiation.
+- Holds two skills: B2B-Sales and Negotiation.
 
 ## Evidence
 

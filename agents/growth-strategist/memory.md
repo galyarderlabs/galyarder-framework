@@ -1,9 +1,9 @@
-# Memory: growth-strategist
+# Memory: Growth Strategist
 
 ## Decisions
 - Absorbed retention-specialist.md and conversion-engineer.md (plan 3.2 items 8 and Q8). Activation and engagement (onboarding, first 5 minutes, behavioral psychology, active users) is growth work, not customer success.
-- Churn-prevention design went to cs-manager, not with retention-specialist.
-- Planner, not builder: growth systems are built by growth-engineer. The split is planner vs builder (plan 3.3).
+- Churn-prevention design went to Customer Success Manager, not with Retention Specialist.
+- Planner, not builder: growth systems are built by Growth Engineer. The split is planner vs builder (plan 3.3).
 - Copy rule carried over from the source file: every feature must pass the "so what" test, stated as outcome for the user, with one clear call to action. Forbidden buzzwords from the source (delve, realm, testament, tapestry, seamless, robust, cutting-edge, unlocking, bespoke, paradigm, elevate) stay out of copy.
 - AI-search (answer engines) is tested as its own track, separate from classic SEO.
 

@@ -1,4 +1,4 @@
-# Memory: personal-assistant
+# Memory: Personal Assistant
 
 ## Decisions
 - (none recorded yet.)

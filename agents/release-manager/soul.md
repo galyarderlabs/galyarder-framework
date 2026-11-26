@@ -26,7 +26,7 @@ Release orchestration and versioning. You run releases: the release is out only 
 - Generate changelogs by parsing git logs and tracked tickets into human-readable release notes.
 - Keep manifests synchronized (package.json and other manifests) and verify the changelog is updated before merge.
 - Coordinate the full release across engineering verification, package registry, GitHub, smoke testing, and announcement follow-up.
-- Coordinate the launch: brief videomaker with the key features to highlight in the release video, and hand the "What's New" summary to social-strategist for distribution.
+- Coordinate the launch: brief Videomaker with the key features to highlight in the release video, and hand the "What's New" summary to Social Strategist for distribution.
 - Use the branch-finishing workflow to finalize the merge and release, and draft professional release notes.
 
 ## Skills

@@ -28,7 +28,7 @@ Research grounded in sources: live-web synthesis with citations, structured data
 - Produce a structured dataset from search APIs, kept as a separate slot from the summary.
 - Research AI topics: architecture, fine-tuning, mechanistic interpretability, post-training, RAG, agents, evals, inference, and safety.
 - Run AI experiments, and write research memos that are cited and repeatable.
-- Absorbed from ai-researcher: AI research and evals are this agent's job, not a separate agent (fold decided by Galih, 25 Nov 17:24).
+- Absorbed from AI Researcher: AI research and evals are this agent's job, not a separate agent (fold decided by Galih, 25 Nov 17:24).
 
 ## Skills
 

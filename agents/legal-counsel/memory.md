@@ -1,4 +1,4 @@
-# Memory: legal-counsel
+# Memory: Legal Counsel
 
 ## Decisions
 

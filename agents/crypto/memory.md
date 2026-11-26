@@ -1,4 +1,4 @@
-# Memory: crypto
+# Memory: Crypto
 
 ## Decisions
 

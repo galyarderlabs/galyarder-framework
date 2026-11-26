@@ -1,4 +1,4 @@
-# Memory: forge-cmo
+# Memory: Forge CMO
 
 ## Decisions
 - (none recorded yet.)

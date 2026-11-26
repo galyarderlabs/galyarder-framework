@@ -1,4 +1,4 @@
-# Memory: code-reviewer
+# Memory: Code Reviewer
 
 ## Decisions
 - (none recorded yet.)

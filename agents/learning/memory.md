@@ -1,4 +1,4 @@
-# Memory: learning
+# Memory: Learning
 
 ## Decisions
 - (none recorded yet.)

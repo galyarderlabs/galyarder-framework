@@ -1,8 +1,8 @@
-# Memory: finops-manager
+# Memory: FinOps Manager
 
 ## Decisions
 
-- Absorbed revenue-architect (merge, plan 3.2 item 7): pricing, packaging, and revenue loop design tied to activation, retention, and margin are this agent's job, not a separate agent.
+- Absorbed Revenue Architect (merge, plan 3.2 item 7): pricing, packaging, and revenue loop design tied to activation, retention, and margin are this agent's job, not a separate agent.
 
 ## Evidence
 

@@ -1,4 +1,4 @@
-# Memory: relationships
+# Memory: Relationships
 
 ## Decisions
 - (none recorded yet.)

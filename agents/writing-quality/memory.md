@@ -1,4 +1,4 @@
-# Memory: writing-quality
+# Memory: Writing Quality
 
 ## Decisions
 - (none recorded yet.)

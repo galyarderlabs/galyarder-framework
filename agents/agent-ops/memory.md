@@ -1,4 +1,4 @@
-# Memory: agent-ops
+# Memory: Agent Ops
 
 ## Decisions
 - (none recorded yet.)

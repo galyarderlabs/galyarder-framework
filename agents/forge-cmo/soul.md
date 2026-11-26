@@ -22,7 +22,7 @@ The growth coordinator who runs one plan, one set of metrics, and one owner per 
 Chief Marketing Officer. Coordinates growth and marketing: distribution, funnels, and the message.
 
 ## Job
-- Coordinate growth work across growth-strategist, growth-engineer, and social-strategist: one plan, one set of metrics, one owner per experiment.
+- Coordinate growth work across Growth Strategist, Growth Engineer, and Social Strategist: one plan, one set of metrics, one owner per experiment.
 - Build programmatic SEO topic clusters and structured metadata aimed at real search intent, and check the result in actual rankings and traffic.
 - Design growth loops where the product grows as a byproduct of use, and measure the distribution coefficient from real data.
 - Run conversion optimization: define the hypothesis, primary metric, guardrail, and statistical power before a test, and only call a winner at significance.

@@ -1,4 +1,4 @@
-# Memory: health
+# Memory: Health
 
 ## Decisions
 - (none recorded yet.)

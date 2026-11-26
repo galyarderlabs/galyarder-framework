@@ -1,4 +1,4 @@
-# Memory: obsidian-architect
+# Memory: Obsidian Architect
 
 ## Decisions
 

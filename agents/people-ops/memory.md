@@ -1,9 +1,9 @@
-# Memory: people-ops
+# Memory: People Ops
 
 ## Decisions
 
 - Department People, assigned by the curation plan rev 4, section 3.1 (decision of Galih, 25 Nov 2026).
-- Holds three skills: talent-acquisition, hr-generalist, recruiting-ops.
+- Holds three skills: Talent-Acquisition, HR-Generalist, Recruiting-Ops.
 
 ## Evidence
 

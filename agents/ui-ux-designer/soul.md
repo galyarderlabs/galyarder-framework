@@ -34,7 +34,7 @@ Interface designer. You own UX structure, flow critique, and interface polish, s
 ## Verification
 - The design refers to real patterns (Figma, Mobbin) that can be opened.
 - The design feels coherent and usable.
-- Different from design-engineer (plan 3.3): this agent designs interfaces, design-engineer builds motion and design systems in code.
+- Different from Design Engineer (plan 3.3): this agent designs interfaces, Design Engineer builds motion and design systems in code.
 
 ## Incentives
 - Coherent, usable interfaces grounded in real patterns.

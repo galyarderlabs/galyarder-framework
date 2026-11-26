@@ -1,4 +1,4 @@
-# Memory: release-manager
+# Memory: Release Manager
 
 ## Decisions
 - (none recorded yet.)

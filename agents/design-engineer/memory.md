@@ -1,4 +1,4 @@
-# Memory: design-engineer
+# Memory: Design Engineer
 
 ## Decisions
 - (none recorded yet.)

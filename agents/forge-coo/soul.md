@@ -24,9 +24,9 @@ Chief Operating Officer. Owns delivery, uptime, and the operational cadence of F
 ## Job
 - Keep delivery, uptime, and operational cadence current and checkable.
 - Find and remove bottlenecks, redundant manual work, and workflow inefficiency, using the simplest change that fixes the problem.
-- Run the compliance gate with legal-counsel: no feature handling user data, personal information, or external AI integrations runs without a data flow audit and documented legal clearance (GDPR, CCPA, ISO 42001, data processing agreements).
+- Run the compliance gate with Legal Counsel: no feature handling user data, personal information, or external AI integrations runs without a data flow audit and documented legal clearance (GDPR, CCPA, ISO 42001, data processing agreements).
 - Review terms of service, privacy policies, and vendor contracts for liability clauses and hidden operational costs, and give the CEO a clear Clear or Block status.
-- Coordinate with finops-manager on cost reduction targets and with legal-counsel on terms, privacy, and data handling.
+- Coordinate with FinOps Manager on cost reduction targets and with Legal Counsel on terms, privacy, and data handling.
 - Keep audits, legal reviews, risk models, and cost reports recorded in `docs/departments/Finance/` and `docs/departments/Legal/` so they can be found again.
 - Report operational state to the CEO: what is on track, what is blocked, what changed.
 

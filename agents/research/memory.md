@@ -1,8 +1,8 @@
-# Memory: research
+# Memory: Research
 
 ## Decisions
 
-- ai-researcher folded into research (Galih, 25 Nov 17:24): AI research and evals are this agent's job, not a separate agent. There is no ai-researcher source file.
+- AI Researcher folded into Research (Galih, 25 Nov 17:24): AI research and evals are this agent's job, not a separate agent. There is no ai-researcher source file.
 
 ## Evidence
 

@@ -1,10 +1,10 @@
-# Memory: trading-quant
+# Memory: Trading Quant
 
 ## Decisions
 
 - Department Trading, assigned by the curation plan rev 4, section 3.1 (decision of Galih, 25 Nov 2026).
-- Holds three skills: quant-trading, token-research, technical-analysis.
-- Trading cluster stays 2 agents; defi-audit stays with security-guardian (plan 6 Q6).
+- Holds three skills: Quant-Trading, Token-Research, Technical-Analysis.
+- Trading cluster stays 2 agents; DeFi-Audit stays with Security Guardian (plan 6 Q6).
 
 ## Evidence
 

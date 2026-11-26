@@ -1,4 +1,4 @@
-# Memory: image-producer
+# Memory: Image Producer
 
 ## Decisions
 - (none recorded yet.)

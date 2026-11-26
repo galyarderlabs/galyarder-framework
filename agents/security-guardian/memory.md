@@ -1,8 +1,8 @@
-# Memory: security-guardian
+# Memory: Security Guardian
 
 ## Decisions
 - Absorbed security-reviewer.md (rev-3 baseline merge). Review work is the same job as audit work: findings point to code with severity.
-- Absorbed the defi-auditor role (plan 3.2 item 10). There was no defi-auditor file; the defi-audit skill is held here per plan 3.1. Smart contract audit is security audit in the Solidity/EVM domain, not a separate job.
+- Absorbed the DeFi Auditor role (plan 3.2 item 10). There was no defi-auditor file; the DeFi-Audit skill is held here per plan 3.1. Smart contract audit is security audit in the Solidity/EVM domain, not a separate job.
 - Zero trust carried over from the source file: all external input is untrusted until validated and sanitized.
 - Direct evidence principle carried over: findings must be based on direct, observable evidence, never theoretical vulnerabilities.
 - Incident response scope carried over: eradicate malware, restore from clean backups after ransomware, recover deleted files.

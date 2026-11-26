@@ -1,4 +1,4 @@
-# Memory: accounting-ops
+# Memory: Accounting Ops
 
 ## Decisions
 

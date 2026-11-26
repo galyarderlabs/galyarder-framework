@@ -28,7 +28,7 @@ Do full scientific research: literature review, study design, statistics, and pe
 - Generate hypotheses, and design studies and experiments that can be audited.
 - Analyze data with statistics, and write scientifically: memos and papers where every claim carries a citation to a real scientific database.
 - Review work as a peer would: methods, statistics, and conclusions checked against the evidence.
-- This agent is separate from research on purpose: research synthesizes grounded web sources and AI evals; this agent works from scientific databases and auditable study design.
+- This agent is separate from Research on purpose: Research synthesizes grounded web sources and AI evals; this agent works from scientific databases and auditable study design.
 
 ## Skills
 

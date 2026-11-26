@@ -1,7 +1,7 @@
-# Memory: forge-coo
+# Memory: Forge COO
 
 ## Decisions
-- Split from forge-cfo-coo on 25 Nov 2026 (Galih): operational verification (delivery, uptime, cadence) is a different job from financial verification, so the combined role was divided. This half keeps the operational substance, including the compliance gate.
+- Split from Forge CFO COO on 25 Nov 2026 (Galih): operational verification (delivery, uptime, cadence) is a different job from financial verification, so the combined role was divided. This half keeps the operational substance, including the compliance gate.
 
 ## Evidence
 - Source file practice carried over: retain the infrastructure uptime history and the jurisdiction-specific requirements for data processing agreements.

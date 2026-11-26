@@ -1,4 +1,4 @@
-# Memory: money
+# Memory: Money
 
 ## Decisions
 - (none recorded yet.)

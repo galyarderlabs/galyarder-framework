@@ -1,4 +1,4 @@
-# Memory: forge-ceo
+# Memory: Forge CEO
 
 ## Decisions
 - (none recorded yet.)

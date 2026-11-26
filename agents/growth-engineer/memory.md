@@ -1,7 +1,7 @@
-# Memory: growth-engineer
+# Memory: Growth Engineer
 
 ## Decisions
-- Builder, not planner: marketing strategy is growth-strategist. The split is builder vs planner (plan 3.3).
+- Builder, not planner: marketing strategy is Growth Strategist. The split is builder vs planner (plan 3.3).
 - Engineering-as-marketing: free tools, programmatic SEO, and referral loops are built into the product, not run as campaigns.
 
 ## Evidence

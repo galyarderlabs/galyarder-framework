@@ -1,7 +1,7 @@
-# Memory: devops-engineer
+# Memory: DevOps Engineer
 
 ## Decisions
-- messaging-infra and data-infra are skills held here, not agent files. Per plan 3.2 items 5 and 6, message delivery and data services are infrastructure work, so no agent merges were involved.
+- Messaging-Infra and Data-Infra are skills held here, not agent files. Per plan 3.2 items 5 and 6, message delivery and data services are infrastructure work, so no agent merges were involved.
 - Automation over manual ops, carried over from the source file: never recommend manual server configuration.
 - Zero downtime and reversibility, carried over: every deployment has a rollback plan (blue/green, feature flags, safe DB migrations).
 

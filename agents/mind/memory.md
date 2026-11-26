@@ -1,4 +1,4 @@
-# Memory: mind
+# Memory: Mind
 
 ## Decisions
 - (none recorded yet.)

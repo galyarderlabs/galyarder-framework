@@ -1,4 +1,4 @@
-# Memory: scientific-researcher
+# Memory: Scientific Researcher
 
 ## Decisions
 

@@ -1,4 +1,4 @@
-# Memory: forge-cto
+# Memory: Forge CTO
 
 ## Decisions
 - (none recorded yet.)

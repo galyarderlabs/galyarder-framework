@@ -1,7 +1,7 @@
-# Memory: forge-cfo
+# Memory: Forge CFO
 
 ## Decisions
-- Split from forge-cfo-coo on 25 Nov 2026 (Galih): financial verification (state, runway, ROI) is a different job from operational verification, so the combined role was divided. This half keeps the financial substance.
+- Split from Forge CFO COO on 25 Nov 2026 (Galih): financial verification (state, runway, ROI) is a different job from operational verification, so the combined role was divided. This half keeps the financial substance.
 
 ## Evidence
 - Source file practice carried over: retain the computational cost per model (token burn rate) and the cost per successful inference across providers.

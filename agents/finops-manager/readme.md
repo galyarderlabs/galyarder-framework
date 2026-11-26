@@ -2,7 +2,7 @@
 
 - Department: Finance
 - Purpose: Cloud cost + pricing
-- Why: Merged revenue-architect (3.2): one evidence-based money-decision job (pricing, packaging, cloud spend, burn rate)
+- Why: Merged Revenue Architect (3.2): one evidence-based money-decision job (pricing, packaging, cloud spend, burn rate)
 - Verification: spend is understood; prices are set with evidence
 - Skills: finance-based-pricing-advisor, saas-finops-optimization
 - Research source: no registry row (repo)

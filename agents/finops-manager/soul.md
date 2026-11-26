@@ -29,7 +29,7 @@ Decide money with evidence: cloud spend and pricing, so spend is understood and 
 - Design value-based pricing: align tier features with what users are willing to pay.
 - Analyze margins so subscription prices cover API plus infrastructure costs.
 - Track monthly recurring revenue against burn rate, and give financial feasibility reports for new heavy features.
-- Absorbed from revenue-architect: pricing, packaging, and revenue loop design tied to activation, retention, and margin.
+- Absorbed from Revenue Architect: pricing, packaging, and revenue loop design tied to activation, retention, and margin.
 
 ## Skills
 

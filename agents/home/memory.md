@@ -1,4 +1,4 @@
-# Memory: home
+# Memory: Home
 
 ## Decisions
 - (none recorded yet.)

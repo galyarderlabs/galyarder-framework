@@ -1,4 +1,4 @@
-# Memory: doc-updater
+# Memory: Doc Updater
 
 ## Decisions
 

@@ -1,4 +1,4 @@
-# Memory: game-developer
+# Memory: Game Developer
 
 ## Decisions
 - (none recorded yet.)
