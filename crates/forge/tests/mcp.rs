@@ -104,12 +104,7 @@ fn mcp_session_answers_initialize_list_and_calls() {
     );
 
     // tools/list: all four tools.
-    for tool in [
-        "list_skills",
-        "read_skill",
-        "read_command",
-        "scaffold",
-    ] {
+    for tool in ["list_skills", "read_skill", "read_command", "scaffold"] {
         assert!(
             lines[1].contains(&format!("\"name\":\"{tool}\"")),
             "tools/list has {tool}: {}",

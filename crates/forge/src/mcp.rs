@@ -654,12 +654,7 @@ mod tests {
             .collect();
         assert_eq!(
             names,
-            [
-                "list_skills",
-                "read_skill",
-                "read_command",
-                "scaffold"
-            ]
+            ["list_skills", "read_skill", "read_command", "scaffold"]
         );
     }
 }
