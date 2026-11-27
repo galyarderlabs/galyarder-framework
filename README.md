@@ -24,7 +24,7 @@ Using an AI agent shouldn't be just generating code, and the agent shouldn't be 
 
 Left to itself, an AI agent takes the shortest path and stops at a draft. It has no rules for what comes after the code, no clean place to start, no way to reach the tools and people it needs, and no way to ship. It gets confused about what to do next, and the work ends at a draft, not at a shipped thing.
 
-Forge Anything is the whole system, not one piece. The rules and the workflow, the scaffold to start clean, the CLI to build, serve, and check, the MCP to carry it to any agent or chatbot, and the plugins to put it in the harness the agent already uses. One system, from ideas to shipped work, earned from and given back, in the company and in life.
+Forge Anything is the whole system, not one piece: skills that say how each job is done, agents that do the work with judgment, and commands that start it. The rules and the workflow hold them together. The scaffold starts clean, the CLI builds, serves, and checks, the MCP carries it to any agent or chatbot, and the plugins put it in the harness the agent already uses. One system, from ideas to shipped work, earned from and given back, in the company and in life.
 
 It covers the whole company and life, not just code: product, growth, security, infrastructure, legal and finance, and knowledge, alongside engineering. The pieces fit together and give back closes the cycle, so the work ships instead of sitting as a draft.
 
@@ -38,7 +38,13 @@ One flow, five stages:
 4. **Earn**: price it, sell it, collect it.
 5. **Give back**: return what you earned, in whatever form fits (skills, content, tools, time, money), so the next person has hope to start and the next cycle starts at Ideas.
 
-Three pieces make the flow work:
+Three pieces do the work:
+
+- **Skills**: how each job is done. One skill per job, a workflow with steps and exit criteria, grouped by department, from engineering and product to finance, legal, and life.
+- **Agents**: who does it. One agent per recurring job, a role with a judgment standard, a memory of what was decided, and the skills it reads to do the work.
+- **Commands**: when it starts. One line that dispatches an agent or a skill, like `/ship` for a release, so the operator starts the work instead of explaining it.
+
+Three pieces deliver it to the agent:
 
 - **Scaffold**: `forge scaffold` drops a tidy repo into a folder, with the curated skills, agents, and commands. Start clean, not from a blank page.
 - **CLI**: `forge` is the command line tool. It scaffolds a project, imports company packages ([docs/company-import.md](docs/company-import.md)), serves the MCP, and smoke-tests the repo.
