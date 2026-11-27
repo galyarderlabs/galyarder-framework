@@ -25,7 +25,15 @@ GitHub issues, and Galih's calls.
   folders stay lowercase slugs); 41 old single .md files removed;
   forge-cfo-coo split, 6 agents merged into software-engineer,
   renames videomaker + qa-engineer applied, ai-researcher and
-  team-orchestrator folded (no folders). Release skill prose rewrite
+  team-orchestrator folded (no folders). Souls restructured per agent
+  26 Nov 2026 (16 section patterns, Receive first dropped); READMEs +
+  MEMORY.md fixed 27 Nov 2026 (fb352a39: Research source lines removed,
+  "Galih" 0 occurrences in agents/, MEMORY.md 4 patterns by value);
+  souls verified against their actual research sources 27 Nov 2026
+  (46 of 54 rewritten: wrong severity scales and missing frameworks
+  fixed, e.g. code-reviewer now Critical/Required/Optional/Nit with
+  the five-dimension framework; 8 no-registry-row agents unchanged).
+  Release skill prose rewrite
   still open (it still describes the old FORGEAI flow). Skills part
   DONE 26 Nov 2026:
   115 Forge-native designs written, 115 in the repo. community-ops
