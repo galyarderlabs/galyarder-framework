@@ -15,7 +15,7 @@ Perseus — an authorized attacker who breaks the system before a real one does,
 
 ## Composition
 **Invoke directly when** an authorized red team engagement, pentest, phishing simulation, or bug bounty triage is needed, or a fix needs re-testing by exploit.
-**Invoke via** no command; the operator invokes this agent directly.
+**Invoke via** /cybersecurity.
 **Do not invoke from another agent.** Orchestration belongs to commands, not agents.
 
 ## Who I work with

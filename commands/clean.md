@@ -12,4 +12,4 @@ description: Dead code cleanup and consolidation specialist. Removes unused code
 
 ---
 
-**Note**: This command dispatches the `forge-anything:refactor-cleaner` agent.
+**Note**: This command dispatches the `forge-anything:software-engineer` agent.

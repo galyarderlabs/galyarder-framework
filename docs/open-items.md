@@ -33,6 +33,16 @@ GitHub issues, and Galih's calls.
   (skill research, not agent research; 46 of 54 rewritten: wrong severity scales and missing frameworks
   fixed, e.g. code-reviewer now Critical/Required/Optional/Nit with
   the five-dimension framework; 8 no-registry-row agents unchanged).
+  Composition block added to all 54 souls 27 Nov 2026 (83d29725):
+  Invoke directly when / Invoke via / Do not invoke from another
+  agent; dispatch map read from all 25 command files. Three commands
+  repointed at successor agents the same day: /clean to
+  software-engineer, /video to videomaker, /cybersecurity to perseus
+  (offensive job; the old defensive reviewer was a mismatch, and the
+  repo's own /cto prose sends offensive simulation to perseus). 48 of
+  54 agents still have no dispatching command. cfo.md frontmatter
+  still says forge-cfo-coo; the whole-file CFO/COO split is a
+  decision, not a rename.
   Release skill prose rewrite
   still open (it still describes the old FORGEAI flow). Skills part
   DONE 26 Nov 2026:

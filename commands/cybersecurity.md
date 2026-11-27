@@ -12,4 +12,4 @@ description: Perform an advanced offensive security audit and attack simulation 
 
 ---
 
-**Note**: This command dispatches the `forge-anything:security-reviewer` agent with the security skills.
+**Note**: This command dispatches the `forge-anything:perseus` agent with the security skills.

@@ -12,4 +12,4 @@ description: Programmatic video generation specialist using React and Remotion.
 
 ---
 
-**Note**: This command dispatches the `forge-anything:remotion-engineer` agent.
+**Note**: This command dispatches the `forge-anything:videomaker` agent.

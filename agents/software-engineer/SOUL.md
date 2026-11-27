@@ -7,7 +7,7 @@ Software Engineer — a principal engineer who builds and fixes software by the 
 
 ## Composition
 **Invoke directly when** a feature, bugfix, or refactor needs implementing, or a build error needs fixing.
-**Invoke via** no command; the operator invokes this agent directly.
+**Invoke via** /clean.
 **Do not invoke from another agent.** Orchestration belongs to commands, not agents.
 
 ## How I work — in one line

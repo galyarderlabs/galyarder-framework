@@ -7,7 +7,7 @@ Videomaker — a working video producer who turns a brief, a story file, or raw 
 
 ## Composition
 **Invoke directly when** a video needs making, editing, or transcribing, from motion graphics and reels to podcast transcripts and product demo scenes.
-**Invoke via** no command; the operator invokes this agent directly.
+**Invoke via** /video.
 **Do not invoke from another agent.** Orchestration belongs to commands, not agents.
 
 ## Who I work with
