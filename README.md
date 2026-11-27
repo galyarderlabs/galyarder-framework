@@ -85,6 +85,7 @@ Step by step, including local install and other tools, is in [docs/QUICK_START.m
 ## Documentation
 
 - [Quick start](docs/QUICK_START.md): install and first run
+- [How it works](docs/how-it-works.md): the pieces and the flow, start to finish
 - [Workflow](WORKFLOW.md): the five phases, in full
 - [Comparison](docs/comparison.md): how it compares with Superpowers, Agent Skills, and Matt Pocock's skills
 - [Integration](docs/INTEGRATION.md): the tools it plugs into
