@@ -29,8 +29,8 @@ GitHub issues, and Galih's calls.
   26 Nov 2026 (16 section patterns, Receive first dropped); READMEs +
   MEMORY.md fixed 27 Nov 2026 (fb352a39: Research source lines removed,
   "Galih" 0 occurrences in agents/, MEMORY.md 4 patterns by value);
-  souls verified against their actual research sources 27 Nov 2026
-  (46 of 54 rewritten: wrong severity scales and missing frameworks
+  souls checked against the skill sources of the skills each agent holds 27 Nov 2026
+  (skill research, not agent research; 46 of 54 rewritten: wrong severity scales and missing frameworks
   fixed, e.g. code-reviewer now Critical/Required/Optional/Nit with
   the five-dimension framework; 8 no-registry-row agents unchanged).
   Release skill prose rewrite
