@@ -43,8 +43,9 @@ GitHub issues, and Galih's calls.
   54 agents still have no dispatching command. cfo.md frontmatter
   still says forge-cfo-coo; the whole-file CFO/COO split is a
   decision, not a rename.
-  Release skill prose rewrite
-  still open (it still describes the old FORGEAI flow). Skills part
+  Release skill prose rewrite DONE 27 Nov 2026 (release +
+  release-changelog rewritten from the real flow;
+  docker-onboard-smoke.sh 18 to 17 agents fixed). Skills part
   DONE 26 Nov 2026:
   115 Forge-native designs written, 115 in the repo. community-ops
   completed 26 Nov 2026 (Galih 07:38: replacement source

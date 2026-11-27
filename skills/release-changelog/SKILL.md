@@ -1,8 +1,9 @@
 ---
 name: release-changelog
 description: >
-  Generate the stable Forge Anything release changelog at releases/vYYYY.MDD.P.md by
-  reading commits, changesets, and merged PR context since the last stable tag.
+  Draft the Forge Anything release entry for the root CHANGELOG.md from the
+  commits and merged PRs since the last version tag. Use when the release
+  needs its changelog entry written, not merely to discuss versioning.
 ---
 ## Forge Anything operating protocols
 
@@ -17,190 +18,98 @@ description: >
 
 # Release Changelog Skill
 
-Generate the user-facing changelog for the **stable** Forge Anything release.
+Draft the user-facing changelog entry for a Forge Anything release. The entry lives in the root `CHANGELOG.md` under `## [<version>] - <YYYY-MM-DD>`. There is no `releases/` directory and no calver: the version is semver from `package.json`.
 
-## Versioning Model
+Write from the user perspective: what changed for someone installing or using Forge Anything. Group related commits into one user-facing entry. Exclude purely internal refactors, CI changes, and docs-only work unless they materially affect users.
 
-Forge Anything uses **calendar versioning (calver)**:
+## Step 0  Idempotency check
 
-- Stable releases: `YYYY.MDD.P` (e.g. `2026.318.0`)
-- Canary releases: `YYYY.MDD.P-canary.N` (e.g. `2026.318.1-canary.0`)
-- Git tags: `vYYYY.MDD.P` for stable, `canary/vYYYY.MDD.P-canary.N` for canary
-
-There are no major/minor/patch bumps. The stable version is derived from the
-intended release date (UTC) plus the next same-day stable patch slot.
-
-Output:
-
-- `releases/vYYYY.MDD.P.md`
-
-Important rules:
-
-- even if there are canary releases such as `2026.318.1-canary.0`, the changelog file stays `releases/v2026.318.1.md`
-- do not derive versions from semver bump types
-- do not create canary changelog files
-
-## Step 0  Idempotency Check
-
-Before generating anything, check whether the file already exists:
+Before writing anything, check whether `CHANGELOG.md` already has an entry for the version:
 
 ```bash
-ls releases/vYYYY.MDD.P.md 2>/dev/null
+grep -n "## \[<version>\]" CHANGELOG.md
 ```
 
-If it exists:
+If it exists, read it first, present it to the reviewer, and ask whether to keep it, regenerate it, or update specific sections. Never overwrite it silently.
 
-1. read it first
-2. present it to the reviewer
-3. ask whether to keep it, regenerate it, or update specific sections
-4. never overwrite it silently
+## Step 1  Determine the range
 
-## Step 1  Determine the Stable Range
-
-Find the last stable tag:
+Find the last version tag:
 
 ```bash
 git tag --list 'v*' --sort=-version:refname | head -1
-git log v{last}..HEAD --oneline --no-merges
+git log <last-tag>..HEAD --oneline --no-merges
 ```
 
-The stable version comes from one of:
+The range is the last tag to HEAD (or to the candidate SHA for the release). The version comes from `package.json`, never from a date or a canary tag.
 
-- an explicit maintainer request
-- `./scripts/release.sh stable --date YYYY-MM-DD --print-version`
-- the release plan already agreed in `doc/RELEASING.md`
-
-Do not derive the changelog version from a canary tag or prerelease suffix.
-Do not derive major/minor/patch bumps from API intent  calver uses the date and same-day stable slot.
-
-## Step 2  Gather the Raw Inputs
+## Step 2  Gather the raw inputs
 
 Collect release data from:
 
-1. git commits since the last stable tag
-2. `.changeset/*.md` files
-3. merged PRs via `gh` when available
+1. git commits since the last version tag
+2. merged PRs via `gh` when available
 
 Useful commands:
 
 ```bash
-git log v{last}..HEAD --oneline --no-merges
-git log v{last}..HEAD --format="%H %s" --no-merges
-ls .changeset/*.md | grep -v README.md
+git log <last-tag>..HEAD --oneline --no-merges
+git log <last-tag>..HEAD --format="%H %s" --no-merges
 gh pr list --state merged --search "merged:>={last-tag-date}" --json number,title,body,labels
 ```
 
-## Step 3  Detect Breaking Changes
+This repo has no changesets. Do not look for `.changeset` files.
+
+## Step 3  Detect breaking changes
 
 Look for:
 
 - destructive migrations
-- removed or changed API fields/endpoints
-- renamed or removed config keys
+- removed or changed API fields, endpoints, or config keys
+- renamed or removed commands, skills, or agents
 - `BREAKING:` or `BREAKING CHANGE:` commit signals
 
-Key commands:
+Flag breaking changes prominently under `### Breaking Changes`, with an upgrade path. If there are none, omit the section.
 
-```bash
-git diff --name-only v{last}..HEAD -- packages/db/src/migrations/
-git diff v{last}..HEAD -- packages/db/src/schema/
-git diff v{last}..HEAD -- server/src/routes/ server/src/api/
-git log v{last}..HEAD --format="%s" | rg -n 'BREAKING CHANGE|BREAKING:|^[a-z]+!:' || true
-```
+## Step 4  Categorize for users
 
-If breaking changes are detected, flag them prominently  they must appear in the
-Breaking Changes section with an upgrade path.
+Use the sections the changelog already uses:
 
-## Step 4  Categorize for Users
+- `### Breaking Changes` (only when there are any)
+- `### Added`
+- `### Changed`
+- `### Fixed`
+- `### Migration` (only when a migration needs steps)
 
-Use these stable changelog sections:
+Omit empty sections. Do not add a contributors section and do not add PR links: the changelog carries neither.
 
-- `Breaking Changes`
-- `Highlights`
-- `Improvements`
-- `Fixes`
-- `Upgrade Guide` when needed
+## Step 5  Write the entry
 
-Exclude purely internal refactors, CI changes, and docs-only work unless they materially affect users.
-
-Guidelines:
-
-- group related commits into one user-facing entry
-- write from the user perspective
-- keep highlights short and concrete
-- spell out upgrade actions for breaking changes
-
-### Inline PR and contributor attribution
-
-When a bullet item clearly maps to a merged pull request, add inline attribution at the
-end of the entry in this format:
-
-```
-- **Feature name**  Description. ([#123](https://github.com/galyarderlabs/forge-anything/pull/123), @contributor1, @contributor2)
-```
-
-Rules:
-
-- Only add a PR link when you can confidently trace the bullet to a specific merged PR.
-  Use merge commit messages (`Merge pull request #N from user/branch`) to map PRs.
-- List the contributor(s) who authored the PR. Use GitHub usernames, not real names or emails.
-- If multiple PRs contributed to a single bullet, list them all: `([#10](url), [#12](url), @user1, @user2)`.
-- If you cannot determine the PR number or contributor with confidence, omit the attribution
-  parenthetical  do not guess.
-- Core maintainer commits that don't have an external PR can omit the parenthetical.
-
-## Step 5  Write the File
-
-Template:
+Insert the entry at the top of `CHANGELOG.md`, under the `# Changelog` heading and its intro line, above the previous version's entry. Template:
 
 ```markdown
-# vYYYY.MDD.P
+## [<version>] - <YYYY-MM-DD>
 
-> Released: YYYY-MM-DD
+### Added
 
-## Breaking Changes
+### Changed
 
-## Highlights
-
-## Improvements
-
-## Fixes
-
-## Upgrade Guide
-
-## Contributors
-
-Thank you to everyone who contributed to this release!
-
-@username1, @username2, @username3
+### Fixed
 ```
 
-Omit empty sections except `Highlights`, `Improvements`, and `Fixes`, which should usually exist.
+Keep highlights short and concrete. Spell out upgrade actions for breaking changes.
 
-The `Contributors` section should always be included. List every person who authored
-commits in the release range, @-mentioning them by their **GitHub username** (not their
-real name or email). To find GitHub usernames:
-
-1. Extract usernames from merge commit messages: `git log v{last}..HEAD --oneline --merges`  the branch prefix (e.g. `from username/branch`) gives the GitHub username.
-2. For noreply emails like `user@users.noreply.github.com`, the username is the part before `@`.
-3. For contributors whose username is ambiguous, check `gh api users/{guess}` or the PR page.
-
-**Never expose contributor email addresses.** Use `@username` only.
-
-Exclude bot accounts (e.g. `lockfile-bot`, `dependabot`) from the list. List contributors
-in alphabetical order by GitHub username (case-insensitive).
-
-## Step 6  Review Before Release
+## Step 6  Review before release
 
 Before handing it off:
 
-1. confirm the heading is the stable version only
-2. confirm there is no `-canary` language in the title or filename
+1. confirm the heading is the version only, with the release date
+2. confirm there is no calver or canary language anywhere in the entry
 3. confirm any breaking changes have an upgrade path
 4. present the draft for human sign-off
 
-This skill never publishes anything. It only prepares the stable changelog artifact.
+This skill never publishes anything. It only prepares the changelog entry.
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a stable changelog file at releases/vYYYY.MDD.P.md with breaking changes flagged and contributors named, not a summary of commits in chat. A changelog derived from a canary tag does not ship. Report by work: stable range determined, commits and PRs gathered, breaking changes flagged with upgrade paths, changelog written and reviewed. Use the related skills (`release` when the changelog feeds a stable promotion, `pr-report` when a merged PR needs a deep read before it is summarized, `verification-before-completion` before the draft is handed off as ready). Update release-manager memory with the stable version, the breaking changes and their upgrade paths, and the contributor list so the next changelog starts from what is proven.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a `CHANGELOG.md` entry for the version with breaking changes flagged and upgrade paths spelled out, not a summary of commits in chat. An entry derived from a canary tag or written to a `releases/` file does not ship. Report by work: range determined, commits and PRs gathered, breaking changes flagged with upgrade paths, entry written and reviewed. Use the related skills (`release` when the entry feeds a release, `verification-before-completion` before the draft is handed off as ready). Update release-manager memory with the version, the breaking changes and their upgrade paths, so the next changelog starts from what is proven.

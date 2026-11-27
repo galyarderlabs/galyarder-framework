@@ -1,9 +1,11 @@
 ---
 name: release
 description: >
-  Coordinate a full Forge Anything release across engineering verification, npm,
-  GitHub, smoke testing, and announcement follow-up. Use when leadership asks
-  to ship a release, not merely to discuss versioning.
+  Coordinate a Forge Anything release: semver from package.json, checks and
+  gates through scripts/release.sh, and a version tag that triggers the
+  release workflow to build the prebuilt forge binaries and create the
+  GitHub Release. Use when leadership asks to ship a release, not merely
+  to discuss versioning.
 ---
 ## Forge Anything operating protocols
 
@@ -18,16 +20,18 @@ description: >
 
 # Release Coordination Skill
 
-Run the full Forge Anything maintainer release workflow, not just an npm publish.
+Run the Forge Anything maintainer release workflow: one version, one tag, one GitHub Release with the prebuilt binaries.
 
 This skill coordinates:
 
-- stable changelog drafting via `release-changelog`
-- canary verification and publish status from `master`
-- Docker smoke testing via `scripts/docker-onboard-smoke.sh`
-- manual stable promotion from a chosen source ref
-- GitHub Release creation
-- website / announcement follow-up tasks
+- the version decision and the CHANGELOG.md entry
+- verification through `scripts/release.sh --check`
+- local tag creation through `scripts/release.sh stable --live`
+- the tag push, which triggers `.github/workflows/release.yml`
+- verification of the built binaries and the GitHub Release
+- the install check from the published release
+
+There is no npm publish, no canary, no Docker image, and no `releases/` directory. The changelog is the root `CHANGELOG.md`, and the version comes from `package.json`.
 
 ## Trigger
 
@@ -35,227 +39,151 @@ Use this skill when leadership asks for:
 
 - "do a release"
 - "ship the release"
-- "promote this canary to stable"
-- "cut the stable release"
+- "cut the release"
+- "tag the release"
 
 ## Preconditions
 
 Before proceeding, verify all of the following:
 
-1. `Infrastructure/skills/release-changelog/SKILL.md` exists and is usable.
-2. The repo working tree is clean, including untracked files.
-3. There is at least one canary or candidate commit since the last stable tag.
-4. The candidate SHA has passed the verification gate or is about to.
-5. If manifests changed, the CI-owned `pnpm-lock.yaml` refresh is already merged on `master`.
-6. npm publish rights are available through GitHub trusted publishing, or through local npm auth for emergency/manual use.
-7. If running through Forge Anything, you have issue context for status updates and follow-up task creation.
+1. The working tree is clean, including untracked files. `release.sh --check` verifies this; commit or stash first.
+2. `package.json` holds the version to ship, and `CHANGELOG.md` has an entry for that version.
+3. The operator has approved the release. A tag push is public and irreversible in effect: it triggers the release workflow.
 
 If any precondition fails, stop and report the blocker.
 
-## Inputs
+## Step 0  Release model
 
-Collect these inputs up front:
+Forge Anything releases with semver:
 
-- whether the target is a canary check or a stable promotion
-- the candidate `source_ref` for stable
-- whether the stable run is dry-run or live
-- release issue / company context for website and announcement follow-up
+1. `package.json` is the only version source. The tag is `v<version>` (for example `v3.0.2`).
+2. Pushing the tag triggers `.github/workflows/release.yml`, which builds the `forge` CLI for 5 targets (Linux x86_64 and aarch64, macOS x86_64 and aarch64, Windows x86_64), smoke-checks each binary it can run, and creates the GitHub Release with the 5 archives plus `SHA256SUMS`. Release notes are generated from merged PRs.
+3. `install.sh` installs the prebuilt binary from the latest GitHub Release (or a specific version), verifying its SHA256 against `SHA256SUMS`.
+4. There is no npm publish, no canary, no Docker image, no `releases/` directory, no `workflow_dispatch`, and no pnpm. The branch is `main`, not `master`. Do not use the old calver and canary wording in any release work.
 
-## Step 0  Release Model
+## Step 1  Decide the version
 
-Forge Anything now uses a commit-driven release model:
-
-1. every push to `master` publishes a canary automatically
-2. canaries use `YYYY.MDD.P-canary.N`
-3. stable releases use `YYYY.MDD.P`
-4. the middle slot is `MDD`, where `M` is the UTC month and `DD` is the zero-padded UTC day
-5. the stable patch slot increments when more than one stable ships on the same UTC date
-6. stable releases are manually promoted from a chosen tested commit or canary source commit
-7. only stable releases get `releases/vYYYY.MDD.P.md`, git tag `vYYYY.MDD.P`, and a GitHub Release
-
-Critical consequences:
-
-- do not use release branches as the default path
-- do not derive major/minor/patch bumps
-- do not create canary changelog files
-- do not create canary GitHub Releases
-
-## Step 1  Choose the Candidate
-
-For canary validation:
-
-- inspect the latest successful canary run on `master`
-- record the canary version and source SHA
-
-For stable promotion:
-
-1. choose the tested source ref
-2. confirm it is the exact SHA you want to promote
-3. resolve the target stable version with `./scripts/release.sh stable --date YYYY-MM-DD --print-version`
-
-Useful commands:
+Read the version to ship:
 
 ```bash
-git tag --list 'v*' --sort=-version:refname | head -1
-git log --oneline --no-merges
-npm view forge-anything@canary version
+./scripts/release.sh --print-version
 ```
 
-## Step 2  Draft the Stable Changelog
+If the version is not the one to ship, bump it first:
 
-Stable changelog files live at:
-
-- `releases/vYYYY.MDD.P.md`
-
-Invoke `release-changelog` and generate or update the stable notes only.
-
-Rules:
-
-- review the draft with a human before publish
-- preserve manual edits if the file already exists
-- keep the filename stable-only
-- do not create a canary changelog file
-
-## Step 3  Verify the Candidate SHA
-
-Run the standard gate:
+1. Edit the `version` field in `package.json`.
+2. Add a `CHANGELOG.md` entry headed `## [<version>] - <YYYY-MM-DD>` describing the changes. Use `release-changelog` to draft it from the commits and merged PRs since the last version tag.
+3. Sync the plugin manifests to the new version:
 
 ```bash
-pnpm -r typecheck
-pnpm test:run
-pnpm build
+python3 scripts/sync-plugin-version.py
+python3 scripts/sync-plugin-version.py --check
 ```
 
-If the GitHub release workflow will run the publish, it can rerun this gate. Still report local status if you checked it.
+Never reuse a version that already has a tag or a GitHub Release. `release.sh --live` refuses to create a tag that exists locally or on origin.
 
-For PRs that touch release logic, the repo also runs a canary release dry-run in CI. That is a release-specific guard, not a substitute for the standard gate.
-
-## Step 4  Validate the Canary
-
-The normal canary path is automatic from `master` via:
-
-- `.github/workflows/release.yml`
-
-Confirm:
-
-1. verification passed
-2. npm canary publish succeeded
-3. git tag `canary/vYYYY.MDD.P-canary.N` exists
-
-Useful checks:
+## Step 2  Run the check
 
 ```bash
-npm view forge-anything@canary version
-git tag --list 'canary/v*' --sort=-version:refname | head -5
+./scripts/release.sh --check
 ```
 
-## Step 5  Smoke Test the Canary
+It verifies:
 
-Run:
+- the working tree is clean, including untracked files
+- `CHANGELOG.md` has an entry for the version
+- the plugin manifests are in sync with `package.json`
+- the local gates pass: `cargo fmt`, `cargo clippy --all-targets -- -D warnings`, and `cargo test --locked` for both crates, plus `scripts/smoke.sh`
+
+If anything fails, fix it and rerun the check. Do not tag a failing tree.
+
+## Step 3  Dry run
 
 ```bash
-FORGEAI_VERSION=canary ./scripts/docker-onboard-smoke.sh
+./scripts/release.sh --dry-run
 ```
 
-Useful isolated variant:
+This runs the check, then prints the release plan: the tag to create, the push command, and what the workflow will build. `stable` without `--live` does the same. Review the plan with the operator before anything is tagged. This step creates and pushes nothing.
+
+## Step 4  Create the tag
 
 ```bash
-HOST_PORT=3232 DATA_DIR=./data/release-smoke-canary FORGEAI_VERSION=canary ./scripts/docker-onboard-smoke.sh
+./scripts/release.sh stable --live
 ```
 
-Confirm:
+This runs the check again, then creates the local annotated tag `v<version>`. It creates nothing else and pushes nothing. If the tag already exists locally or on origin, it refuses; bump the version instead of overwriting a tag.
 
-1. install succeeds
-2. onboarding completes without crashes
-3. the server boots
-4. the UI loads
-5. basic company creation and dashboard load work
-
-If smoke testing fails:
-
-- stop the stable release
-- fix the issue on `master`
-- wait for the next automatic canary
-- rerun smoke testing
-
-## Step 6  Preview or Publish Stable
-
-The normal stable path is manual `workflow_dispatch` on:
-
-- `.github/workflows/release.yml`
-
-Inputs:
-
-- `source_ref`
-- `stable_date`
-- `dry_run`
-
-Before live stable:
-
-1. resolve the target stable version with `./scripts/release.sh stable --date YYYY-MM-DD --print-version`
-2. ensure `releases/vYYYY.MDD.P.md` exists on the source ref
-3. run the stable workflow in dry-run mode first when practical
-4. then run the real stable publish
-
-The stable workflow:
-
-- re-verifies the exact source ref
-- computes the next stable patch slot for the chosen UTC date
-- publishes `YYYY.MDD.P` under dist-tag `latest`
-- creates git tag `vYYYY.MDD.P`
-- creates or updates the GitHub Release from `releases/vYYYY.MDD.P.md`
-
-Local emergency/manual commands:
+## Step 5  Push the tag and watch the workflow
 
 ```bash
-./scripts/release.sh stable --dry-run
-./scripts/release.sh stable
-git push public-gh refs/tags/vYYYY.MDD.P
-./scripts/create-github-release.sh YYYY.MDD.P
+git push origin v<version>
 ```
 
-## Step 7  Finish the Other Surfaces
-
-Create or verify follow-up work for:
-
-- website changelog publishing
-- launch post / social announcement
-- release summary in Forge Anything issue context
-
-These should reference the stable release, not the canary.
-
-## Failure Handling
-
-If the canary is bad:
-
-- publish another canary, do not ship stable
-
-If stable npm publish succeeds but tag push or GitHub release creation fails:
-
-- fix the git/GitHub issue immediately from the same release result
-- do not republish the same version
-
-If `latest` is bad after stable publish:
+This is the step that triggers the release workflow, and it is the operator's explicit step: the script never pushes. Then watch the run until the build job finishes for all 5 targets and the release job creates the GitHub Release:
 
 ```bash
-./scripts/rollback-latest.sh <last-good-version>
+gh run list --branch main --limit 4
 ```
 
-Then fix forward with a new stable release.
+If the workflow fails, fix the cause on `main` and ship a new patch version. Never move a tag to a different commit, and never reuse a version.
+
+## Step 6  Verify the published release
+
+1. Confirm the GitHub Release exists for the tag, with all 5 archives plus `SHA256SUMS`.
+2. Install from it in a scratch prefix and check the version:
+
+```bash
+FORGE_VERSION=<version> ./install.sh --prefix /tmp/forge-<version>-check
+/tmp/forge-<version>-check/forge --version
+```
+
+3. Smoke-test the published binaries end to end:
+
+```bash
+./scripts/docker-onboard-smoke.sh --from-release <version>
+```
+
+This downloads the published release and checks the install, the reported version, `forge smoke`, and a scaffold. It only works once a published release with assets exists: the first binary release is what proves this path. If no release assets exist yet, say so instead of claiming the check ran.
+4. Confirm the default path: a plain `./install.sh` installs the version marked latest.
+
+## Step 7  Manual paths (only when the workflow did not create the release)
+
+If the workflow ran but no GitHub Release exists, create it manually:
+
+```bash
+./scripts/create-github-release.sh <version> [--dry-run]
+```
+
+Notes come from the `CHANGELOG.md` entry for the version, or from merged PRs if the entry is missing. The script refuses when a release already exists for the tag, or when the tag does not exist yet.
+
+If a bad release is marked latest, roll the latest marker back:
+
+```bash
+./scripts/rollback-latest.sh <last-good-version> [--dry-run]
+```
+
+It only moves the latest marker. It does not delete the bad release and does not move any tag. Fix forward with a new release afterwards.
+
+## Failure handling
+
+- Check fails: fix the cause, rerun the check, do not tag.
+- Tag exists: bump the version, do not overwrite the tag.
+- Workflow fails: fix on `main`, ship a new patch version. Never move a tag.
+- Release exists but an archive is missing: do not republish the same version. Fix the build and ship a new patch version.
+- Bad release already published: roll back the latest marker with `rollback-latest.sh`, then fix forward with a new release.
 
 ## Output
 
 When the skill completes, provide:
 
-- candidate SHA and tested canary version, if relevant
-- stable version, if promoted
-- verification status
-- npm status
-- smoke-test status
-- git tag / GitHub Release status
-- website / announcement follow-up status
-- rollback recommendation if anything is still partially complete
+- version shipped
+- tag pushed
+- workflow run result
+- GitHub Release URL and its assets (5 archives plus `SHA256SUMS`)
+- install check result
+- `docker-onboard-smoke.sh --from-release` result, or that it could not run because no published assets exist yet
+- follow-up status if anything is still open
 
 ## The Forge Mark
 
-This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a stable release published with a verified candidate, a smoke-tested canary, and a git tag plus GitHub Release, not a version number announced in chat. A release whose canary failed smoke testing does not ship. Report by work: candidate chosen and verified, changelog drafted, canary validated and smoke-tested, stable published and tagged. Use the related skills (`release-changelog` when the stable notes must be drafted from commits and PRs, `verification-before-completion` before any publish claim is made, `finishing-a-development-branch` when the release work itself closes a branch). Update release-manager memory with the stable version, the candidate SHA, and the verification and smoke results so the next release starts from what is proven.
+This skill carries the Forge value in its substance: no AI slop, flow ideas to give back, everything evidence-based, output as changes. Ship means a version tag pushed, a workflow run green, and a GitHub Release with the prebuilt binaries installed and verified, not a version number announced in chat. A release whose check failed or whose binaries were never verified does not ship. Report by work: version decided and changelog entry written, check passed, tag created and pushed, workflow green, release verified from install. Use the related skills (`verification-before-completion` before any publish claim is made, `release-changelog` when the CHANGELOG.md entry must be drafted from commits and PRs, `finishing-a-development-branch` when the release work itself closes a branch). Update release-manager memory with the version, the tag, the workflow result, and the install verification so the next release starts from what is proven.

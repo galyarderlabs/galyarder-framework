@@ -12,7 +12,7 @@
 #   2. forge --version reports the version under test
 #   3. forge smoke passes (the 8 system integrity checks)
 #   4. forge scaffold creates a project with the expected structure
-#      (32 skills, 18 agents, 25 commands)
+#      (32 skills, 17 agents, 25 commands)
 #
 # Usage:
 #   docker-onboard-smoke.sh [--version <ver>] [--from-release <ver>]
@@ -64,7 +64,7 @@ Smoke-test the Forge Anything distribution end to end.
   --help               Show this help and exit.
 
 Checks: install succeeds, forge --version matches, forge smoke passes,
-forge scaffold creates a project with 32 skills, 18 agents, 25 commands.
+forge scaffold creates a project with 32 skills, 17 agents, 25 commands.
 HOST_PORT and DATA_DIR are accepted for compatibility but unused (this
 repo has no server). FORGEAI_VERSION=canary is treated as the local build.
 EOF
