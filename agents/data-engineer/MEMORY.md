@@ -2,13 +2,8 @@
 
 ## Decisions
 
-- Department Data, assigned by the curation plan rev 4, section 3.1 (decision of Galih, 25 Nov 2026).
-- Holds two skills: SQL-Queries and Data-Transform.
+- Department Data, assigned by the curation plan rev 4, section 3.1 (decided 25 Nov 2026).
 
-## Evidence
-
-- Research sources: A13 SQL Correctness (Anthropic) and dbt Labs via VoltAgent.
-
-## Open questions
+## Findings
 
 - (none recorded yet.)

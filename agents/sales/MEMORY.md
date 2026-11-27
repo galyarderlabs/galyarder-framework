@@ -2,13 +2,8 @@
 
 ## Decisions
 
-- Department Operations, assigned by the curation plan rev 4, section 3.1 (decision of Galih, 25 Nov 2026).
-- Holds two skills: B2B-Sales and Negotiation.
+- Department Operations, assigned by the curation plan rev 4, section 3.1, decided 25 Nov 2026.
 
-## Evidence
-
-- Research sources: A4 Sales (lancewc) and A4 Negotiation (mikesmayer).
-
-## Open questions
+## Lessons
 
 - (none recorded yet.)

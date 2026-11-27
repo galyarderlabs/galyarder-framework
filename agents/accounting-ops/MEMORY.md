@@ -4,10 +4,6 @@
 
 - (none recorded yet.)
 
-## Evidence
-
-- (none recorded yet.)
-
-## Open questions
+## Findings
 
 - (none recorded yet.)

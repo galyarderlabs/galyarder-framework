@@ -3,8 +3,5 @@
 ## Decisions
 - (none recorded yet.)
 
-## Evidence
-- (none recorded yet.)
-
-## Open questions
+## Progress
 - (none recorded yet.)

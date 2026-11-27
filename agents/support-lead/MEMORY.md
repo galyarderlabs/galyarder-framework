@@ -6,10 +6,6 @@
 - Holds no skills; the job is judgement and decisions, not skill execution (plan 3.4).
 - Separate from Customer Success Manager: intake vs lifecycle (plan 3.3).
 
-## Evidence
+## Outcomes
 
-- Source file carried the triage and ownership job and the founder-facing summary rule; no prior decisions or evidence were recorded in it.
-
-## Open questions
-
-- (none recorded yet.)
+- No prior decisions or outcomes were recorded in the source file.
