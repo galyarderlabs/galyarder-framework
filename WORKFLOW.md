@@ -59,18 +59,6 @@ Every workflow should keep these operating constraints visible:
 
 ---
 
-## Operational Modes
-
-| Mode | Use case | Rules |
-| :--- | :--- | :--- |
-| **BUILD** | Normal product, docs, growth, finance, or engineering work | Use planning, implementation, review, and verification gates. |
-| **INCIDENT** | Urgent breakage or production risk | Move faster, document the incident, and create follow-up cleanup work. |
-| **EXPERIMENT** | Timeboxed exploration or prototype | Keep it reversible, mark assumptions, and avoid merging throwaway work into stable paths. |
-
-BUILD is the default: normal work needs no command. INCIDENT is entered with `/incident`, EXPERIMENT with `/experiment`.
-
----
-
 ## Verification Ladder
 
 Use the cheapest proof that actually verifies the claim.

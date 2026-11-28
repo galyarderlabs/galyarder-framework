@@ -13,4 +13,4 @@ description: "INCIDENT MODE: Bypass standard PRD/Planning phase for emergency ho
 
 ---
 
-**Note**: This command overrides standard planning gates but still enforces strict TDD and context validation. It is the INCIDENT mode in the Operational Modes table in WORKFLOW.md.
+**Note**: This command overrides standard planning gates but still enforces strict TDD and context validation.
