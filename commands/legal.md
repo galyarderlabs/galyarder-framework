@@ -12,4 +12,4 @@ description: Generate TOS/Privacy policies, audit GDPR compliance, and review li
 
 ---
 
-**Note**: Powered by the `legal-tos-privacy` and `gdpr-compliance` skills.
+**Note**: This command is powered by the `forge-anything:legal-tos-privacy` and `forge-anything:gdpr-compliance` skills.

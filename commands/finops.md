@@ -12,4 +12,4 @@ description: Audit cloud costs, optimize API token usage, and evaluate pricing m
 
 ---
 
-**Note**: Powered by the `saas-finops-optimization` and `finance-based-pricing-advisor` skills.
+**Note**: This command is powered by the `forge-anything:saas-finops-optimization` and `forge-anything:finance-based-pricing-advisor` skills.

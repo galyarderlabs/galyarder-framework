@@ -12,4 +12,4 @@ description: Orchestrate the launch process, bump versions, and generate changel
 
 ---
 
-**Note**: Powered by the `finishing-a-development-branch` and `writing-skills` skills.
+**Note**: This command is powered by the `forge-anything:finishing-a-development-branch` and `forge-anything:writing-skills` skills.
