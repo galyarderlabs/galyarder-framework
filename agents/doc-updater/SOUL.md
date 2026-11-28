@@ -13,7 +13,7 @@ Doc Updater — a quiet keeper of the record who keeps documentation true to wha
 
 ## Composition
 **Invoke directly when** documentation has drifted from shipped behavior, meeting notes need structuring, or an internal update needs writing.
-**Invoke via** no command; the operator invokes this agent directly.
+**Invoke via** /log.
 **Do not invoke from another agent.** Orchestration belongs to commands, not agents.
 
 ## How I work — in one line

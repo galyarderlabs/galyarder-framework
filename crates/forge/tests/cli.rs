@@ -444,7 +444,7 @@ fn scaffold_through_cli_produces_a_ready_repo() {
     );
     assert_eq!(fs::read_dir(target.join("skills")).unwrap().count(), 32);
     assert_eq!(fs::read_dir(target.join("agents")).unwrap().count(), 17);
-    assert_eq!(fs::read_dir(target.join("commands")).unwrap().count(), 30);
+    assert_eq!(fs::read_dir(target.join("commands")).unwrap().count(), 31);
     // No per-host copies or manifests in the scaffolded repo.
     assert!(!target.join(".claude-plugin").exists());
     assert!(!target.join(".cursor").exists());

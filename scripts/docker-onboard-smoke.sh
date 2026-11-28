@@ -12,7 +12,7 @@
 #   2. forge --version reports the version under test
 #   3. forge smoke passes (the 8 system integrity checks)
 #   4. forge scaffold creates a project with the expected structure
-#      (32 skills, 17 agents, 30 commands)
+#      (32 skills, 17 agents, 31 commands)
 #
 # Usage:
 #   docker-onboard-smoke.sh [--version <ver>] [--from-release <ver>]
@@ -64,7 +64,7 @@ Smoke-test the Forge Anything distribution end to end.
   --help               Show this help and exit.
 
 Checks: install succeeds, forge --version matches, forge smoke passes,
-forge scaffold creates a project with 32 skills, 17 agents, 30 commands.
+forge scaffold creates a project with 32 skills, 17 agents, 31 commands.
 HOST_PORT and DATA_DIR are accepted for compatibility but unused (this
 repo has no server). FORGEAI_VERSION=canary is treated as the local build.
 EOF
@@ -164,11 +164,11 @@ say "[4/4] forge scaffold"
 "\$BIN" scaffold --source "\$SRC" --name smoke-test "\$PROJ" | tail -2
 test "\$(ls "\$PROJ/skills" | wc -l)" -eq 32
 test "\$(ls "\$PROJ/agents" | wc -l)" -eq 17
-test "\$(ls "\$PROJ/commands" | wc -l)" -eq 30
+test "\$(ls "\$PROJ/commands" | wc -l)" -eq 31
 test -f "\$PROJ/README.md"
 test -f "\$PROJ/skills/using-forge-anything/SKILL.md"
 test -f "\$PROJ/agents/forge-ceo/SOUL.md"
-say "scaffold OK: 32 skills, 17 agents, 30 commands"
+say "scaffold OK: 32 skills, 17 agents, 31 commands"
 EOF
     chmod +x "$TMP/check.sh"
 }
