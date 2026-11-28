@@ -13,4 +13,4 @@ description: "EXPERIMENT MODE: Timeboxed, throwaway code for rapid validation. B
 
 ---
 
-**Note**: This command trades technical debt for velocity. Use only when validation is required over stability.
+**Note**: This command trades technical debt for velocity. Use only when validation is required over stability. It is the EXPERIMENT mode in the Operational Modes table in WORKFLOW.md.
