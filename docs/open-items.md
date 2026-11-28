@@ -42,8 +42,9 @@ GitHub issues, and Galih's calls.
   (offensive job; the old defensive reviewer was a mismatch, and the
   repo's own /cto prose sends offensive simulation to perseus). Five
   commands built 28 Nov 2026 (Q15: /research, /trade, /analyze-video,
-  /design, /automate): 11 commands now dispatch an agent, 12 of 54
-  agents have a dispatching command, 42 still have none. cfo.md frontmatter
+  /design, /automate): 11 commands now dispatch an agent. Agents
+  without a command of their own are reached as subagents through
+  commands, so no 1:1 command per agent is needed. cfo.md frontmatter
   still says forge-cfo-coo; the whole-file CFO/COO split is a
   decision, not a rename.
   Release skill prose rewrite DONE 27 Nov 2026 (release +
