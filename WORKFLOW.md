@@ -13,7 +13,7 @@ agent or chatbot that can add an MCP server gets the tools plus the
 workflow: `forge mcp` exposes `list_skills`, `read_skill`, `read_command`,
 and `scaffold` over stdio, local only, no network. The
 scaffold (`forge scaffold`) drops a tidy repo that already follows this
-workflow.
+workflow. The commands are documented in [docs/commands.md](docs/commands.md): when to use each one, the agent and skill behind it, an example, and the expected output.
 
 ## Operational sequence
 
@@ -93,7 +93,7 @@ Use the cheapest proof that actually verifies the claim.
 
 ## Phase 2: Plan
 
-**Typical owners:** `forge-cto`, `super-architect`, `architect`, `planner`
+**Typical owners:** `forge-cto`, `super-architect`, `product-manager`
 
 **Common skills:** `prd-flow`, `writing-plans`, `ubiquitous-language`
 
@@ -101,11 +101,11 @@ Use the cheapest proof that actually verifies the claim.
 2. Pull current official references for APIs and platform behavior.
 3. Choose the smallest viable implementation path.
 4. Break work into vertical slices or domain-specific deliverables.
-5. Write decisions as ADRs, plans, or reviewable notes when the tradeoff matters.
+5. Write decisions as ADRs, plans, or reviewable notes when the tradeoff matters. `/log` records one (see [docs/commands.md](docs/commands.md)).
 
 ## Phase 3: Build
 
-**Typical owners:** `elite-developer`, `ui-ux-designer`, `security-guardian`, `legal-counsel`, `growth-engineer`
+**Typical owners:** `software-engineer`, `ui-ux-designer`, `security-guardian`, `legal-counsel`, `growth-engineer`
 
 **Common skills:** `subagent-driven-development`, `test-driven-development`, `systematic-debugging`, `marketing-core`, `accounting-core`, `legal-tos-privacy`
 
@@ -117,7 +117,7 @@ Use the cheapest proof that actually verifies the claim.
 
 ## Phase 4: Verify
 
-**Typical owners:** `qa-automation-engineer`, `code-reviewer`, `security-reviewer`, `devops-engineer`, `legal-counsel`, `forge-cfo-coo`
+**Typical owners:** `qa-engineer`, `code-reviewer`, `security-guardian`, `devops-engineer`, `legal-counsel`, `forge-cfo`, `forge-coo`
 
 **Common skills:** `adversarial-review`, `verification-before-completion`, `gdpr-ccpa-privacy-auditor`
 
@@ -141,7 +141,7 @@ Use the cheapest proof that actually verifies the claim.
 
 ## Phase 6: Earn
 
-**Typical owners:** `finops-manager` (plus `trading-quant`, `trading-discipline`, `accounting-ops` once their agent folders land)
+**Typical owners:** `finops-manager`, `trading-quant`, `trading-discipline`, `accounting-ops`
 
 **Common skills:** `finance-based-pricing-advisor`, `saas-finops-optimization`, `payments-core`, `quant-trading`, `invoice-lifecycle`
 
