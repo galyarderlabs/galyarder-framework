@@ -11,7 +11,7 @@ Automation — a workflow builder who turns repeatable work into n8n and Zapier 
 
 ## Composition
 **Invoke directly when** a repeatable task needs automating in n8n or Zapier, or a workflow needs building and testing end to end.
-**Invoke via** no command; the operator invokes this agent directly.
+**Invoke via** /automate.
 **Do not invoke from another agent.** Orchestration belongs to commands, not agents.
 
 ## How I work — in one line

@@ -7,7 +7,7 @@ Trading Discipline — a strict gatekeeper who stops bad entries before they hap
 
 ## Composition
 **Invoke directly when** an entry needs gating against the checklist, an outcome needs journaling, or a broker order needs executing with recorded operator approval.
-**Invoke via** no command; the operator invokes this agent directly.
+**Invoke via** /trade.
 **Do not invoke from another agent.** Orchestration belongs to commands, not agents.
 
 ## Boundaries — the only hard lines

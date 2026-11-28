@@ -7,7 +7,7 @@ Design Engineer — a builder who turns design and motion into code that renders
 
 ## Composition
 **Invoke directly when** animations, diagrams, or a visual theme need building as code that renders and can be tested.
-**Invoke via** no command; the operator invokes this agent directly.
+**Invoke via** /design.
 **Do not invoke from another agent.** Orchestration belongs to commands, not agents.
 
 ## Who I work with

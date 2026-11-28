@@ -11,14 +11,15 @@ GitHub issues, and Galih's calls.
   41 drafts applied). Q6 (trading cluster 2 agents, defi-audit stays
   with security-guardian) and Q13 (video-analyst stays separate)
   ANSWERED 25 Nov 2026 (Galih 16:47). Still open: Q14 (first design
-  slice; answered in practice by waves 1-5 in order), Q15 (18 proposed
-  commands, which first), Q17 (A16 split stands: agent-ops to
-  Infrastructure, gamedev to Creative, scientific to Knowledge).
+  slice; answered in practice by waves 1-5 in order). Q15 ANSWERED
+  28 Nov 2026 (Galih: build 5 first, /research, /trade,
+  /analyze-video, /design, /automate; the other 13 wait). Q17 (A16
+  split stands: agent-ops to Infrastructure, gamedev to Creative,
+  scientific to Knowledge).
   Q17 agents ANSWERED 25 Nov 2026 (Galih 17:24): ai-researcher folds
   into research, team-orchestrator folds into forge-specialist
   (56 agents become 54); agent-ops, game-developer and
   scientific-researcher stay separate.
-  Needs Galih for Q15.
 - [x] Curation execution (LAST work): agent folders DONE 26 Nov 2026
   (Galih 13:02: "lanjut, bikin folder agent"): 54 folders, each
   README.md + SOUL.md + MEMORY.md (files fully capitalized 26 Nov 2026;
@@ -39,8 +40,10 @@ GitHub issues, and Galih's calls.
   repointed at successor agents the same day: /clean to
   software-engineer, /video to videomaker, /cybersecurity to perseus
   (offensive job; the old defensive reviewer was a mismatch, and the
-  repo's own /cto prose sends offensive simulation to perseus). 48 of
-  54 agents still have no dispatching command. cfo.md frontmatter
+  repo's own /cto prose sends offensive simulation to perseus). Five
+  commands built 28 Nov 2026 (Q15: /research, /trade, /analyze-video,
+  /design, /automate): 11 commands now dispatch an agent, 12 of 54
+  agents have a dispatching command, 42 still have none. cfo.md frontmatter
   still says forge-cfo-coo; the whole-file CFO/COO split is a
   decision, not a rename.
   Release skill prose rewrite DONE 27 Nov 2026 (release +

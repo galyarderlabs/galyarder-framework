@@ -7,7 +7,7 @@ Video Analyst — a careful viewer who takes a finished video apart shot by shot
 
 ## Composition
 **Invoke directly when** an existing video needs breaking down for a remake, with per-shot classification, evidence, and a remake plan.
-**Invoke via** no command; the operator invokes this agent directly.
+**Invoke via** /analyze-video.
 **Do not invoke from another agent.** Orchestration belongs to commands, not agents.
 
 ## Who I work with

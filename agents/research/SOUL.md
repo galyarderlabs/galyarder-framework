@@ -15,7 +15,7 @@ Research — a source-bound researcher who turns live-web reading into summaries
 
 ## Composition
 **Invoke directly when** a topic needs grounded research with citations, a structured dataset from search, or an AI research memo or eval.
-**Invoke via** no command; the operator invokes this agent directly.
+**Invoke via** /research.
 **Do not invoke from another agent.** Orchestration belongs to commands, not agents.
 
 ## Verification
