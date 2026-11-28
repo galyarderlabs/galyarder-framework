@@ -8,7 +8,7 @@ Forge Anything is a system, not a collection. A goal goes in, in plain words, an
 
 **Agents: who does it.** One agent per recurring job, a folder with three files. `SOUL.md` is the agent: its judgment standard (verification criteria, severity scales, approval standards, from the research), its identity, its goals, and the skills it reads to do the work. `MEMORY.md` is what it remembers: decisions, findings, outcomes, lessons, progress. `README.md` is the summary: purpose, why it exists, verification, skills. An agent reads the skills named in its soul. It never improvises a method a skill already covers, and it never grades its own work.
 
-**Commands: when it starts.** Single `.md` files in `commands/`. Some dispatch an agent, some run a skill, some do both. Role commands (`ceo`, `cfo`, `cmo`, `cto`) speak to a lead agent; job commands (`/ship`, `/review`, `/plan`, `/tdd`, `/video`) start a piece of work. The operator starts the work with one line instead of explaining it.
+**Commands: when it starts.** Single `.md` files in `commands/`. Some dispatch an agent, some run a skill, some do both. Role commands (`ceo`, `cfo`, `cmo`, `cto`) speak to a lead agent; job commands (`/ship`, `/review`, `/plan`, `/tdd`, `/video`) start a piece of work. The operator starts the work with one line instead of explaining it. See [commands.md](commands.md) for every command: when to use it, the agent and skill behind it, an example, and the expected output.
 
 **Departments: where the pieces live.** Departments group related work: Executive, Product, Engineering, Creative, Growth, Security, Infrastructure, Finance, Legal, Knowledge, Operations, Customer Success, People, Data, Trading, External Relations, Life. A department is a storage folder for skills, not a skill itself. Each one has lead agents and a folder under `docs/departments/` with its audit and report templates.
 
@@ -46,7 +46,7 @@ crates/forge                  the CLI and the MCP server
 - [Departments](departments/): what each department owns
 - [Agents](../agents/): the agents that do the work
 - [Skills](../skills/): the full skill list
-- [Commands](../commands/): the shortcuts
+- [Commands](commands.md): every command, when to use it, and what it returns
 - [INTEGRATION.md](INTEGRATION.md): the harnesses and how the MCP reaches them
 - [comparison.md](comparison.md): how Forge Anything differs from Superpowers, Agent Skills, and Matt Pocock's skills
 - [PRD.md](PRD.md): the requirements and the open questions

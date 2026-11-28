@@ -58,7 +58,7 @@ Install Forge Anything into your harness through its own plugin manager, not thr
 2. **The `forge` CLI** scaffolds the project structure (`forge scaffold`), imports company packages ([`forge company import`](company-import.md)), and serves the MCP server (`forge mcp`).
 3. **Your harness plugin** loads the skills, commands, and MCP server into the agent you already use.
 
-Work follows the flow in [docs/how-it-works.md](how-it-works.md): Ideas, Goal, Ship, Earn, Give back, with plan, build, verify as the inner loop. See [WORKFLOW.md](../WORKFLOW.md) for the phases in full.
+Work follows the flow in [docs/how-it-works.md](how-it-works.md): Ideas, Goal, Ship, Earn, Give back, with plan, build, verify as the inner loop. See [WORKFLOW.md](../WORKFLOW.md) for the phases in full, and [docs/commands.md](commands.md) for what each command does, with examples.
 
 ## Troubleshooting
 

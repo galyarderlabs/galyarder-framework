@@ -92,7 +92,7 @@ Step by step, including local install and other tools, is in [docs/QUICK_START.m
 - [Departments](docs/departments/): the departments and what each owns
 - [Agents](agents/): the personas that do the work
 - [Skills](skills/): the full skill list
-- [Commands](commands/): the shortcuts
+- [Commands](docs/commands.md): every command, when to use it, and what it returns
 - [Roadmap](ROADMAP.md): what we are building next
 - [Changelog](CHANGELOG.md): what changed
 
