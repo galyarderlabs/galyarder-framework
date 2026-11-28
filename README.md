@@ -42,7 +42,7 @@ Three pieces do the work:
 
 - **Skills**: how each job is done. One skill per job, a workflow with steps and exit criteria, grouped by department, from engineering and product to finance, legal, and life.
 - **Agents**: who does it. One agent per recurring job, a role with a judgment standard, a memory of what was decided, and the skills it reads to do the work.
-- **Commands**: when it starts. One line that dispatches an agent or a skill, like `/ship` for a release, so the operator starts the work instead of explaining it.
+- **Commands**: when it starts. One line that dispatches agents or a skill, like `/ship` for a release, so the operator starts the work instead of explaining it.
 
 Three pieces deliver it to the agent:
 
